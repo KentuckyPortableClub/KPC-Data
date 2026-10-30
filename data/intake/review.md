@@ -5,11 +5,11 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | verdict | rows |
 |---|---|
 | READY | 2 |
-| WATER-ONLY | 9 |
+| WATER-ONLY | 16 |
 | LIVE-ONLY | 1 |
-| ASK-THE-PUBLISHER | 74 |
-| RETRY | 90 |
-| REJECT | 528 |
+| ASK-THE-PUBLISHER | 111 |
+| RETRY | 139 |
+| REJECT | 769 |
 
 ## READY (2)
 
@@ -81,7 +81,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - GB-0198 Thames Basin Heaths SPA - Yateley Heath Woods Site of Significant Scientific Interest → polygon "Castle Bottom to Yateley and Hawley Commons"
 - TEST: ok
 
-## WATER-ONLY (9)
+## WATER-ONLY (16)
 
 ### ogc_services/Ramsar_Wetlands  ·  AU  ·  from harvester
 - url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer/0
@@ -173,6 +173,70 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: same publisher as sguta
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
+### Michigan Inland Lakes Water Clarity (2018-2023)  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/FNjlrOFR0aGJ71Tg/arcgis/rest/services/Michigan_Inland_Lakes_Water_Clarity/FeatureServer/0
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- FLAG: water only: for the 2-fer owner step only
+- terms: OPEN · source item page · "er the “Information”), is provided as a public service, and there are no restrictions on the use, reproduction, or distribution of the Information. It is your responsibility t" · item https://www.arcgis.com/home/item.html?id=292ccdb0756448e892929fa4a27b3b1f · owner EgleAdmin · org Michigan Dept. of Environment, Great Lakes, and Energy
+- facts: arcgis-layer · esriGeometryPolygon · name field LakeName · 6524 records · last edit 2026-02-27 · sample Hubbard Lake / Silver Wolf Ranch Lake / Lost Lake
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Lake Superior CEC 1M Lakes  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/FOAjZu7OcdPEtbC0/arcgis/rest/services/Lake_Superior_CEC_1M_Lakes/FeatureServer/0
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "’s mission. Users may use, copy, and share these datasets with proper attribution to the IJC and identified sources. Usage must comply with applicable laws. Attribution Re" · item https://www.arcgis.com/home/item.html?id=39534e8991a3410a99b6a69619ca29f3 · owner IJC_Authoritative · org International Joint Commission of Canada and the U.S.
+- facts: arcgis-layer · esriGeometryPolygon · name field NameEn · 297 records · last edit 2025-03-09 · sample Hulbert Lake / Au Train Lake / Cleveland Cliffs Basin
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Waterbodies Spavinaw Storymap View  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/XkZ90iCdbTJ9oNXl/arcgis/rest/services/Waterbodies_Spavinaw_Storymap_View/FeatureServer/0
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: City of)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "cessary, obtaining professional advice. The burden of determining the accuracy, completeness, timeliness of information rests solely on the user. City City of Tulsa GIS" · item https://www.arcgis.com/home/item.html?id=6c7db71fef7549d8afdbf7fff35e89fa · owner CityofTulsaGIS · org City of Tulsa
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 12 records · last edit 2024-10-30 · sample SHERRY LAKE / BIRD CREEK / MOHAWK RESERVOIR
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Spavinaw Flowline view  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/XkZ90iCdbTJ9oNXl/arcgis/rest/services/Spavinaw_FLowline_view/FeatureServer/1
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: City of)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "cessary, obtaining professional advice. The burden of determining the accuracy, completeness, timeliness of information rests solely on the user. City o City of Tulsa G" · item https://www.arcgis.com/home/item.html?id=7a7035dc83834dd289109d53bf495e13 · owner CityofTulsaGIS · org City of Tulsa
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 3 records · last edit 2024-10-30 · sample Lake Yahola (Mohawk Reservoir) / Spavinaw Lake / Lake Eucha
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Vegetation - Santa Clara and Santa Cruz Counties [ds3116]  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3116_fpu/FeatureServer/0
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Department)
+- FLAG: water only: for the 2-fer owner step only
+- terms: OPEN · source item page · "//wildlife.ca.gov/Data/VegCAMP . License: This work is licensed under Creative Commons Attribution 4.0 International License ( https://creativecommons.org/licenses/by/4.0/ ). U" · item https://www.arcgis.com/home/item.html?id=6ec54112a54f415fa132a44eb760b7a3 · owner BIOS_Admin · org California Department of Fish and Wildlife
+- facts: arcgis-layer · esriGeometryPolygon · name field MCVName · 309785 records · last edit 2025-06-27 · sample Lacustrine, Riverine / Lacustrine, Riverine / Lacustrine, Riverine
+- overlap: same publisher as sgcaa
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Riverfront Boundary  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/F7NiRLGNbA2hh7gE/arcgis/rest/services/RiverfrontBoundary/FeatureServer/0
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: City of)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "City of Eugene City of Eugene" · item https://www.arcgis.com/home/item.html?id=95b91c21904646eb9c7f49e48bd11b07 · owner ceecscz · org                                   ArcGIS Online Content
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 1 records · last edit 2024-01-05 · sample Redevelopment Site
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### UK Lakes - Lakes Portal (UKCEH)  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/Bb8lfThdhugyc4G3/arcgis/rest/services/UK_Lakes/FeatureServer/0
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Government)
+- FLAG: water only: for the 2-fer owner step only
+- terms: OPEN · source item page · "This resource is made available under the Open Government Licence v3 (OGL) © Contains data supplied by UK Centre for Ecology Hydrology. © Contains Ordnance" · item https://www.arcgis.com/home/item.html?id=c9fc4b95456e4b22ad162f91a453c0eb · owner RTjosh.jones · org The Rivers Trust
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 41830 records · last edit 2022-06-13 · sample Sothers Brecks / Sothers Brecks / Sothers Brecks
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
 ## LIVE-ONLY (1)
 
 ### Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park)  ·  CZ  ·  from chat 9
@@ -204,7 +268,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - CZ-0139 Ještěd Nature Park → polygon "Ještěd"
 - TEST: ok
 
-## ASK-THE-PUBLISHER (74)
+## ASK-THE-PUBLISHER (111)
 
 ### AerialPhotoViewer/Orthophoto_Coverage_Area  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0
@@ -851,7 +915,308 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field ORGNAME · 1 records · last edit 2019-10-22 · sample LITTLE PEND OREILLE NATIONAL WILDLIFE REFUGE
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## RETRY (90)
+### Michigan Counties  ·    ·  from gis-hunter
+- url: https://gisagocss.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gisagocss.state.mi.us)
+- terms: CREDIT · source item page · "State of Michigan" · item https://gisagocss.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 83 records · sample Alcona / Alger / Allegan
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### China Rockfish Mean Density - North Central Coast - 2010-11 - PISCO [ds1362]  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1362_fpu/FeatureServer/0
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: OPEN · source item page · "See Summary (Purpose) Statement. License: This work is licensed under Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/ ). Us" · item https://www.arcgis.com/home/item.html?id=285cace8a915494999ce2691cb93b972 · owner BIOS_Admin · org California Department of Fish and Wildlife
+- facts: arcgis-layer · esriGeometryPolygon · name field SiteName · 11 records · last edit 2025-04-17 · sample SEA_LION_REFERENCE / POINT_ARENA_REFERENCE / SAUNDERS_REFERENCE
+- overlap: same publisher as sgcaa
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Kelp, Gopher, or Black & Yellow Rockfish YOY Mean Density - North Central Coast - 2010-11 - PISCO [ds1377]  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1377_fpu/FeatureServer/0
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: OPEN · source item page · "See Summary (Purpose) Statement. License: This work is licensed under Creative Commons Attribution 4.0 International License ( https://creativecommons.org/licenses/by/4.0/ ). U" · item https://www.arcgis.com/home/item.html?id=d9ec9ad30926444cb19ac6e0ea00572b · owner BIOS_Admin · org California Department of Fish and Wildlife
+- facts: arcgis-layer · esriGeometryPolygon · name field SiteName · 11 records · last edit 2025-04-18 · sample SEA_LION_REFERENCE / POINT_ARENA_REFERENCE / SAUNDERS_REFERENCE
+- overlap: same publisher as sgcaa
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Vermilion Rockfish Mean Density - North Central Coast - 2010-11 - PISCO [ds1366]  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1366_fpu/FeatureServer/0
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: OPEN · source item page · "See Summary (Purpose) Statement. License: This work is licensed under Creative Commons Attribution 4.0 International License ( https://creativecommons.org/licenses/by/4.0/ ). U" · item https://www.arcgis.com/home/item.html?id=95d0f25e8ec240959fdedcea1a51ace4 · owner BIOS_Admin · org California Department of Fish and Wildlife
+- facts: arcgis-layer · esriGeometryPolygon · name field SiteName · 11 records · last edit 2025-04-17 · sample SEA_LION_REFERENCE / POINT_ARENA_REFERENCE / SAUNDERS_REFERENCE
+- overlap: same publisher as sgcaa
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Wildfires Potentially Impacted by Helene Storm Debris in Western North Carolina USA 2026  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/aT1T0pU1ZdpuDk1t/arcgis/rest/services/Wildfires_Potentially_Impacted_by_Helene_Storm_Debris_in_Western_North_Carolina_USA_2026/FeatureServer/3
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "This map was created using Wildfire Occurance Data obtained from the National Interagency of Fire Center, gathered by InFORM FODR and IRWIN systems. Hurricane H" · item https://www.arcgis.com/home/item.html?id=70f931aef6a94d9eb303333c4a82af17 · owner svharney_NCSU · org North Carolina State University
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 12 records · last edit 2026-04-23 · sample Avery County / Buncombe County / Haywood County
+- closes: not probed
+
+### Sable Island Black Background  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/Sable_Island_Black_Background/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: land )
+- terms: NON-COMMERCIAL · source item page · "rencetown, NS. This product is unedited, unverified, and intended for educational purposes only. (2021-2022 COGS)" · item https://www.arcgis.com/home/item.html?id=ebe8c8587d9e4495a0803bdf50755a8d · owner zProjectsStudents · org Centre of Geographic Sciences - NSCC
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 1 records · last edit 2022-04-18 · sample Background
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### True Grit West_WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/vV1o91P0uxdOGCax/arcgis/rest/services/True_Grit_West_WFL1/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (a government word of the country: Land )
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=92455a87b29e4629a55088ccd2d8a1bf · owner LISsystems · org Land Information Systems
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 1 records · last edit 2021-12-09 · sample  
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### True Grit South_WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/vV1o91P0uxdOGCax/arcgis/rest/services/True_Grit_South_WFL1/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (a government word of the country: Land )
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=0d6cf0b4495c4fb5a332ba36a12c5d41 · owner LISsystems · org Land Information Systems
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME1 · 1 records · last edit 2021-12-10 · sample SPITFIRE REALTY LLC A TX LLC
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Muddy Creek Flood Study Modelling Layers  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/ALxeDxaeNjQo1Mf0/arcgis/rest/services/Muddy_Creek_Flood_Study_Modelling_Layers/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: Natur)
+- terms: CREDIT · source item page · "Otago Regional Council does not warrant its accuracy and disclaims all liability whatsoever for any error, inaccuracy or incompleteness of the" · item https://www.arcgis.com/home/item.html?id=b6b570a8794147afb664936b1b645222 · owner OTAGOREGIONALCOUNCIL_ORCNZ · org Otago Regional Council
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 1 records · last edit 2026-09-21 · sample Perimeter 1
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Razorback Greenway Honors Thesis_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/SVgGe275cjDUavqG/arcgis/rest/services/Razorback_Greenway_Honors_Thesis_WFL1/FeatureServer/7
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "City of Fayetteville GIS Office; Washington County Assessor" · item https://www.arcgis.com/home/item.html?id=1c03c18443fd4509b762d15ccf2327a2 · owner jtshearm_uark · org University of Arkansas
+- facts: arcgis-layer · esriGeometryPolygon · name field FACILITYID · 43734 records · last edit 2023-04-30 · sample None / None / None
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Tishomingo_Service  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_Service/FeatureServer/9
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "U.S. Department of Commerce, U.S. Census Bureau, Geography Division, Spatial Data Collection and Products Branch ., Census MAF/TIGER database" · item https://www.arcgis.com/home/item.html?id=c823951fbb6845c080aad6abcde3f074 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME20 · 5 records · last edit 2026-08-27 · sample 5 / 2 / 4
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Tishomingo_addressing  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_addressing/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "U.S. Department of Commerce, U.S. Census Bureau, Geography Division, Spatial Data Collection and Products Branch ., Census MAF/TIGER database" · item https://www.arcgis.com/home/item.html?id=27a6efe8f5434524a527932f050fd6d1 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · name field name20 · 5 records · last edit 2026-02-26 · sample 5 / 2 / 4
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Cedar Park Ball Fields  ·    ·  from gis-hunter
+- url: https://gis.cedarparktexas.gov/mapping/rest/services/VIEW/BallFields/MapServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.cedarparktexas.gov)
+- terms: CREDIT · source item page · "Cedar Park Information Services Cedar Park Information Services" · item https://gis.cedarparktexas.gov/mapping/rest/services/VIEW/BallFields/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Park_Name · 20 records · sample LCP Youth Baseball & Softball Complex / LCP Youth Baseball & Softball Complex / LCP Youth Baseball & Softball Complex
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Cherokee Strip Museum Map_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/jWQlP64OuwDh6GGX/arcgis/rest/services/Cherokee_Strip_Museum_Map_WFL1/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "BLM Admin State" · item https://www.arcgis.com/home/item.html?id=2e7fe571335d47089c11bb5bc75d3b25 · owner krdyke
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 3631 records · last edit 2026-08-07 · sample Straub / H. Barrett / J. Spillman
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Cherokee Strip Museum Map_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/jWQlP64OuwDh6GGX/arcgis/rest/services/Cherokee_Strip_Museum_Map_WFL1/FeatureServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "BLM Admin State" · item https://www.arcgis.com/home/item.html?id=2e7fe571335d47089c11bb5bc75d3b25 · owner krdyke
+- facts: arcgis-layer · esriGeometryPolygon · name field SRVNAME · 21 records · last edit 2026-08-04 · sample None / None / None
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NRPC Open Data - Mason  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/2ZriDy2NFXltCIFR/arcgis/rest/services/NRPC_Open_Data_Mason_v2/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Commission)
+- terms: CREDIT · source item page · "ublic records subject to NH RSA 91-A. NRPC kindly requests that users credit NRPC GIS Program on maps or other derivative works. NRPC and its member communities, resp" · item https://www.arcgis.com/home/item.html?id=e7948c9d37e74a0cbddfe37ea623ba7a · owner skustron · org Nashua Regional Planning Commission
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · last edit 2026-10-28 · sample Mason
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NRPC Open Data - Mason  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/2ZriDy2NFXltCIFR/arcgis/rest/services/NRPC_Open_Data_Mason_v2/FeatureServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Commission)
+- terms: CREDIT · source item page · "ublic records subject to NH RSA 91-A. NRPC kindly requests that users credit NRPC GIS Program on maps or other derivative works. NRPC and its member communities, resp" · item https://www.arcgis.com/home/item.html?id=e7948c9d37e74a0cbddfe37ea623ba7a · owner skustron · org Nashua Regional Planning Commission
+- facts: arcgis-layer · esriGeometryPolygon · name field COMPOSITE_PID · 938 records · last edit 2026-10-28 · sample 293-L-24 / 293-K-33 / 293-K-51-1
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NRPC Open Data - Mason  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/2ZriDy2NFXltCIFR/arcgis/rest/services/NRPC_Open_Data_Mason_v2/FeatureServer/4
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Commission)
+- terms: CREDIT · source item page · "ublic records subject to NH RSA 91-A. NRPC kindly requests that users credit NRPC GIS Program on maps or other derivative works. NRPC and its member communities, resp" · item https://www.arcgis.com/home/item.html?id=e7948c9d37e74a0cbddfe37ea623ba7a · owner skustron · org Nashua Regional Planning Commission
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 72 records · last edit 2026-10-28 · sample Fifield Tree Farm Conservation Easement / Jefts Lot / Bronson Potter Gift
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NRPC Open Data - Mason  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/2ZriDy2NFXltCIFR/arcgis/rest/services/NRPC_Open_Data_Mason_v2/FeatureServer/5
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Commission)
+- terms: CREDIT · source item page · "ublic records subject to NH RSA 91-A. NRPC kindly requests that users credit NRPC GIS Program on maps or other derivative works. NRPC and its member communities, resp" · item https://www.arcgis.com/home/item.html?id=e7948c9d37e74a0cbddfe37ea623ba7a · owner skustron · org Nashua Regional Planning Commission
+- facts: arcgis-layer · esriGeometryPolygon · name field ZONE_NAME · 4 records · last edit 2026-10-28 · sample Gen./Res./Agricultural/Forestry District / Historic Preservation District / Village Residential District
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NRPC Open Data - Mason  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/2ZriDy2NFXltCIFR/arcgis/rest/services/NRPC_Open_Data_Mason_v2/FeatureServer/9
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Commission)
+- terms: CREDIT · source item page · "ublic records subject to NH RSA 91-A. NRPC kindly requests that users credit NRPC GIS Program on maps or other derivative works. NRPC and its member communities, resp" · item https://www.arcgis.com/home/item.html?id=e7948c9d37e74a0cbddfe37ea623ba7a · owner skustron · org Nashua Regional Planning Commission
+- facts: arcgis-layer · esriGeometryPolygon · name field BldgLabel · 1261 records · last edit 2026-10-28 · sample Mason Highway Dept. / Mason Fire Dept. / Mason Police Dept.
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Southern Oregon Northern California Coast Coho Salmon Range [ds1278]  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1278_fpu/FeatureServer/0
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Disclaimer: The State makes no claims, promises, or guarantees about the accuracy, completeness, rel" · item https://www.arcgis.com/home/item.html?id=de85cdbdf3db4408a0d41a7dc0cb8f86 · owner BIOS_Admin · org California Department of Fish and Wildlife
+- facts: arcgis-layer · esriGeometryPolygon · name field C_Name · 346 records · last edit 2025-04-02 · sample Coho salmon, Southern Oregon Northern California Coast / Coho salmon, Southern Oregon Northern California Coast / Coho salmon, Southern Oregon Northern California Coast
+- overlap: same publisher as sgcaa
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Southern Oregon Northern California Coast Fall Chinook Salmon Range - FSSC [ds1296]  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1296_fpu/FeatureServer/0
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Disclaimer: The State makes no claims, promises, or guarantees about the accuracy, completeness, rel" · item https://www.arcgis.com/home/item.html?id=b44ae71b4e4d43af883bc5f88a4da61d · owner BIOS_Admin · org California Department of Fish and Wildlife
+- facts: arcgis-layer · esriGeometryPolygon · name field C_Name · 38 records · last edit 2025-04-02 · sample Chinook salmon, Southern Oregon Northern California Coast fa / Chinook salmon, Southern Oregon Northern California Coast fa / Chinook salmon, Southern Oregon Northern California Coast fa
+- overlap: same publisher as sgcaa
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NFCR_Wild_and_Scenic  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/NFCR_Wild_and_Scenic/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (a federal / national agency named)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=d4f0dc0659a24f88b12846c7ec2edd9b · owner USFSRegion06 · org U.S. Forest Service
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 4 records · last edit 2022-10-24 · sample North Fork Crooked / North Fork Crooked / North Fork Crooked
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Lone_Tree_Boundary  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/M6RDkiPo9JtEo7N6/arcgis/rest/services/Lone_Tree_Boundary/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "User is liable City of Lone Tree GIS City of Lone Tree GIS" · item https://www.arcgis.com/home/item.html?id=4ef4d43d03c54e8f880a045e49ed7f8e · owner Damian.Sweet@cityoflonetree.com_CityofLoneTree · org City of Lone Tree
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 1 records · last edit 2026-04-30 · sample City of Lone Tree
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Cottonwood Debris Flow Analysis  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/KaHXE9OkiB9e63uE/arcgis/rest/services/Cottonwood_Debris_Flow/FeatureServer/3
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Division)
+- terms: OPEN · source item page · "This item is made publicly available by the Utah Division of Emergency Management with no restrictions on use, distribution, o" · item https://www.arcgis.com/home/item.html?id=694a22eb787a4df2b95279abf7fc234b · owner Mitigation3@UtahDEM · org Utah Division of Emergency Management
+- facts: arcgis-layer · esriGeometryPolygon · name field Fire_name · 1 records · last edit 2026-07-15 · sample Cottonwood
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Certified Unified Program Agency (CUPA) and Participating Agency (PA) Boundaries  ·    ·  from gis-hunter
+- url: https://services8.arcgis.com/elq7Fz2RcwtTdDmp/arcgis/rest/services/CUPA_and_PA_Boundaries/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Environmental Protection)
+- terms: CREDIT · source item page · "y and is subject to change without notice. The [organization name] is not liable for any inaccuracies, updates, errors, or omissions. Users are responsible for determinin" · item https://www.arcgis.com/home/item.html?id=6a48277d76784b6e8b3d6b6ea5103a4f · owner CalEPA_Admin · org California Environmental Protection Agency
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 105 records · last edit 2026-08-04 · sample Alpine County Health Department / Amador County Environmental Health / Butte County Environmental Health
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### McFarland Blight Study Evaluation Parcels  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/F0eFMri3OWS05kGc/arcgis/rest/services/McFarland_Blight_Study_Evaluation_Parcels/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (a government word of the country: land )
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=8c2680ef1e1b4d5f9e6410e561be6671 · owner amberconverse2000 · org MSA Professional Services
+- facts: arcgis-layer · esriGeometryPolygon · name field Label · 2 records · last edit 2023-10-13 · sample Study Area 2 / Study Area 1
+- closes: not probed
+
+### McFarland Blight Study Evaluation Parcels  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/F0eFMri3OWS05kGc/arcgis/rest/services/McFarland_Blight_Study_Evaluation_Parcels/FeatureServer/1
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (a government word of the country: land )
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=8c2680ef1e1b4d5f9e6410e561be6671 · owner amberconverse2000 · org MSA Professional Services
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · last edit 2023-10-13 · sample Village of McFarland
+- closes: not probed
+
+### McFarland Blight Study Evaluation Parcels  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/F0eFMri3OWS05kGc/arcgis/rest/services/McFarland_Blight_Study_Evaluation_Parcels/FeatureServer/2
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (a government word of the country: land )
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=8c2680ef1e1b4d5f9e6410e561be6671 · owner amberconverse2000 · org MSA Professional Services
+- facts: arcgis-layer · esriGeometryPolygon · name field PropertyAddress · 174 records · last edit 2023-11-13 · sample 4788 MCFARLAND CT / 4918 TRIANGLE ST / 4103 TRIANGLE ST
+- closes: not probed
+
+### McFarland Blight Study Evaluation Parcels  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/F0eFMri3OWS05kGc/arcgis/rest/services/McFarland_Blight_Study_Evaluation_Parcels/FeatureServer/3
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (a government word of the country: land )
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=8c2680ef1e1b4d5f9e6410e561be6671 · owner amberconverse2000 · org MSA Professional Services
+- facts: arcgis-layer · esriGeometryPolygon · name field PropertyAddress · 156 records · last edit 2023-11-16 · sample 5503 OSBORN DR / 5307 HOUGH ST / 5403 BASHFORD ST
+- closes: not probed
+
+### McFarland Blight Study Evaluation Parcels  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/F0eFMri3OWS05kGc/arcgis/rest/services/McFarland_Blight_Study_Evaluation_Parcels/FeatureServer/4
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (a government word of the country: land )
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=8c2680ef1e1b4d5f9e6410e561be6671 · owner amberconverse2000 · org MSA Professional Services
+- facts: arcgis-layer · esriGeometryPolygon · name field PropertyAddress · 52 records · last edit 2023-11-13 · sample 4103 TRIANGLE ST / 4107 TERMINAL DR / 4307 TRIANGLE ST
+- closes: not probed
+
+### McFarland Blight Study Evaluation Parcels  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/F0eFMri3OWS05kGc/arcgis/rest/services/McFarland_Blight_Study_Evaluation_Parcels/FeatureServer/5
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (a government word of the country: land )
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=8c2680ef1e1b4d5f9e6410e561be6671 · owner amberconverse2000 · org MSA Professional Services
+- facts: arcgis-layer · esriGeometryPolygon · name field PropertyAddress · 43 records · last edit 2023-11-16 · sample 5307 HOUGH ST / 5403 BASHFORD ST / 5813 MAIN ST
+- closes: not probed
+
+### Contra Costa Goldfield Final Critical Habitat  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/CN5O33hsFsTqOEB6/arcgis/rest/services/Contra_Costa_Goldfield_Final_Critical_Habitat/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "Disclaimer: The State makes no claims, promises, or guarantees about the accuracy, completeness, rel" · item https://www.arcgis.com/home/item.html?id=205df36a76e441bc895a0358f1c87d91 · owner d.hicks.CP
+- facts: arcgis-layer · esriGeometryPolygon · name field UNITNAME · 1 records · last edit 2026-04-20 · sample  
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Areas of Outstanding Natural Beauty _AONB_  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/HRuPlEcokYlz4mdz/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty__AONB_/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Environment Agency)
+- terms: OPEN · source item page · "©NIEA, 2019 AONB is licensed under the Open Government Licence: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/ Point Of Conta" · item https://www.arcgis.com/home/item.html?id=a0959d41bfb847ac931529f726ff8bca · owner edelaney05_QueensUB · org Centre for Geographical Information and Geomatics - QUB
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 8 records · last edit 2025-11-17 · sample Mourne / Strangford and Lecale / Ring of Gullion
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Yorkshire Wolds Area of Outstanding Natural Beauty (AONB)  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/Qptn479QktK11k72/arcgis/rest/services/Yorkshire_Wolds_AONB/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (a government word of the country: Natur)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=11e2f98b0ff141afa56eec72c4516cea · owner owen.robinson_eastriding · org East Riding of Yorkshire Council
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 2 records · last edit 2026-03-09 · sample YW Coastal Area (Proposed) / YW Inland Area (Proposed)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Gold Hill Open Space and Protected Lands  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/0jWpHMuhmHsukKE3/arcgis/rest/services/Gold_Hill_Open_Space_and_Protected_Lands/FeatureServer/5
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: OPEN · source item page · "This work is licensed under a Creative Commons by Attribution (CC BY 4.0) license . Use Constraints from COMaP Technical Report: These d" · item https://www.arcgis.com/home/item.html?id=7ba3cbdd93a34fccb55c9e26b56a88ee · owner POS_bouldercounty · org Boulder County
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 4 records · last edit 2025-06-05 · sample Gold Hill Open Space / Gold Hill Open Space / Gold Hill Meadow
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Parcels Tax Data Portal  ·    ·  from gis-hunter
+- url: https://maps.sevier.utah.gov/server/rest/services/ParcelsTaxData/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host maps.sevier.utah.gov)
+- terms: NOTHING STATED · source item page · item https://maps.sevier.utah.gov/server/rest/services/ParcelsTaxData/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Subdivision_Name · 19717 records · sample None / None / None
+- closes: not probed
+
+## RETRY (139)
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
 - url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
@@ -955,7 +1320,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/6
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -963,7 +1328,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/7
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -971,7 +1336,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/10
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -979,7 +1344,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/12
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -987,7 +1352,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/16
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -1049,7 +1414,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/20
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -1057,7 +1422,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/21
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -1065,7 +1430,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/22
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -1073,7 +1438,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/23
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -1081,7 +1446,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/27
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -1089,7 +1454,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/35
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -1097,7 +1462,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/2
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
@@ -1105,7 +1470,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/4
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
@@ -1113,7 +1478,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/5
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
@@ -1121,7 +1486,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/6
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
@@ -1129,7 +1494,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/7
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
@@ -1137,7 +1502,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/8
-- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
@@ -1145,7 +1510,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/2
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
 - facts: status budget
@@ -1153,7 +1518,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/3
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
 - facts: status budget
@@ -1161,7 +1526,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/4
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
 - facts: status budget
@@ -1169,7 +1534,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/5
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
 - facts: status budget
@@ -1177,7 +1542,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/51
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
 - facts: status budget
@@ -1185,7 +1550,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/52
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
 - facts: status budget
@@ -1193,7 +1558,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/2
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1201,7 +1566,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/3
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1209,7 +1574,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/4
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1217,7 +1582,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/5
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1225,7 +1590,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/36
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1233,7 +1598,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/37
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1241,7 +1606,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/2
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1249,7 +1614,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/3
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1257,7 +1622,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/5
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1265,7 +1630,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/6
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1273,7 +1638,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/7
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1281,7 +1646,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/8
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -1385,173 +1750,522 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Black Marble High Definition (BMHD) in Porto Alegre for the May 2024 Brasil Floods  ·    ·  from gis-hunter
 - url: https://maps.disasters.nasa.gov/ags03/rest/services/brasil_flood_202405/blackmarble_hd/MapServer
-- WHY: did not open (404): probed again next run (failed 1 of 3)
+- WHY: did not open (404): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status 404
 
 ### Cypremort_Point_State_Park  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Cypremort_Point_State_Park/FeatureServer
-- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- WHY: did not open (error Token Required): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status error Token Required
 
 ### Jimmie_Davis_State_Park  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Jimmie_Davis_State_Park/FeatureServer
-- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- WHY: did not open (error Token Required): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status error Token Required
 
 ### Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way  ·  None  ·  from gis-hunter
 - url: https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way/FeatureServer
-- WHY: did not open (bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trai): probed again next run (failed 1 of 3)
+- WHY: did not open (bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trai): probed again next run (failed 2 of 3)
 - publisher: ? → unsure ()
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trai
 
 ### Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way  ·  None  ·  from gis-hunter
 - url: https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way/FeatureServer
-- WHY: did not open (bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage ): probed again next run (failed 1 of 3)
+- WHY: did not open (bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage ): probed again next run (failed 2 of 3)
 - publisher: ? → unsure ()
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 
 
 ### Civil War Battlefields  ·  None  ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer
-- WHY: did not open (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?): probed again next run (failed 1 of 3)
+- WHY: did not open (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?): probed again next run (failed 2 of 3)
 - publisher: ? → unsure ()
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?
 
 ### Civil War Battlefields (time-enabled)  ·  None  ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer
-- WHY: did not open (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat): probed again next run (failed 1 of 3)
+- WHY: did not open (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat): probed again next run (failed 2 of 3)
 - publisher: ? → unsure ()
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat
 
 ### Walnut Woods Park JWT  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer
-- WHY: did not open (error Invalid URL): probed again next run (failed 1 of 3)
+- WHY: did not open (error Invalid URL): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status error Invalid URL
 
 ### Canyon De Chelly National Monument, AZ (Data Basin Dataset)  ·    ·  from gis-hunter
 - url: http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer
-- WHY: did not open (not json): probed again next run (failed 1 of 3)
+- WHY: did not open (not json): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status not json
 
 ### Iceland Honeymoon 2024_WFL1  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer
-- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- WHY: did not open (error Token Required): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status error Token Required
 
 ### Iceland Honeymoon 2024_WFL  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL/FeatureServer
-- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- WHY: did not open (error Token Required): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status error Token Required
 
 ### Spencer_Ramp_Sidewalk  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Ramp_Sidewalk/FeatureServer
-- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- WHY: did not open (error Token Required): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status error Token Required
 
 ### Little Turtle_WFL1  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer
-- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- WHY: did not open (error Token Required): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status error Token Required
 
 ### Little Turtle_WTL1  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer
-- WHY: did not open (error Token Required.): probed again next run (failed 1 of 3)
+- WHY: did not open (error Token Required.): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status error Token Required.
 
 ### Lieber  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/eEZvYWeDAf8dVYvQ/arcgis/rest/services/Lieber/FeatureServer
-- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- WHY: did not open (error Token Required): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status error Token Required
 
 ### Florida National Scenic Trail Line  ·  None  ·  from gis-hunter
 - url: https://services9.arcgis.com/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer
-- WHY: did not open (bot error URL can't contain control characters. '/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer?f=json' (found a): probed again next run (failed 1 of 3)
+- WHY: did not open (bot error URL can't contain control characters. '/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer?f=json' (found a): probed again next run (failed 2 of 3)
 - publisher: ? → unsure ()
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. '/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer?f=json' (found a
 
 ### Lincoln_forestplan_alts_wilderness_AltE  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/4ikJ2iF3itbByOVD/arcgis/rest/services/Lincoln_forestplan_alts_wilderness_AltE/FeatureServer
-- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- WHY: did not open (error Token Required): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status error Token Required
 
 ### Flint River Access  ·    ·  from gis-hunter
 - url: https://geoengine.utc.edu:6443/arcgis/rest/services/UTC/TVAwaterAccess/FeatureServer
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status rest
 
 ### Captain John Smith Chesapeake National Historic Trail  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/UbKyMceXgEVeTOEF/arcgis/rest/services/Captain_John_Smith_Chesapeake_National_Historic_Trail/FeatureServer
-- WHY: did not open (error Invalid URL): probed again next run (failed 1 of 3)
+- WHY: did not open (error Invalid URL): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status error Invalid URL
 
 ### Red Rocks Insta360 Oriented Imagery Video  ·  None  ·  from gis-hunter
 - url: https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer
-- WHY: did not open (bot error URL can't contain control characters. '/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer?f=j): probed again next run (failed 1 of 3)
+- WHY: did not open (bot error URL can't contain control characters. '/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer?f=j): probed again next run (failed 2 of 3)
 - publisher: ? → unsure ()
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. '/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer?f=j
 
 ### State Aquatic Management Area (AMA) Aquisitions  ·    ·  from gis-hunter
 - url: https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
 - facts: status rest
 
 ### Travel from Jessie's Office (45 Minutes - Mon@1730)  ·  None  ·  from gis-hunter
 - url: https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - Mon@1730)/FeatureServer
-- WHY: did not open (bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - ): probed again next run (failed 1 of 3)
+- WHY: did not open (bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - ): probed again next run (failed 2 of 3)
 - publisher: ? → unsure ()
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - 
 
 ### Travel from Jessie's Office (45 Minutes - no traffic)  ·  None  ·  from gis-hunter
 - url: https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - no traffic)/FeatureServer
-- WHY: did not open (bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - ): probed again next run (failed 1 of 3)
+- WHY: did not open (bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - ): probed again next run (failed 2 of 3)
 - publisher: ? → unsure ()
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - 
 
 ### Watershed of the Blanchard River  ·  None  ·  from gis-hunter
 - url: https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer
-- WHY: did not open (bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe): probed again next run (failed 1 of 3)
+- WHY: did not open (bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe): probed again next run (failed 2 of 3)
 - publisher: ? → unsure ()
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe
 
-## REJECT (528)
+### Flint River  ·    ·  from gis-hunter
+- url: https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer
+- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Token Required
+
+### Escanaba_RSX  ·    ·  from gis-hunter
+- url: https://services8.arcgis.com/hXvEEDqm4wdlfwhu/arcgis/rest/services/Escanaba_RSX/FeatureServer
+- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Token Required
+
+### Eagle Harbor Township Recreation Area  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/xrfXlDMHLr5elsRb/arcgis/rest/services/Eagle_Harbor_Township_Recreation_Area/FeatureServer
+- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Token Required
+
+### Sugarloaf Mountain Trails  ·    ·  from gis-hunter
+- url: https://services9.arcgis.com/yLH7EZZOcLJAgxVh/arcgis/rest/services/alltrailsshp/FeatureServer
+- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Token Required
+
+### Trails_Connected_to_the_Razorback_Regional_Greenway  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer
+- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Token Required
+
+### 2005 US Civil War Map (Web Mercator)  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/YpWVqIbOT80sKVHP/arcgis/rest/services/2005_US_Civil_War_Map_WM/MapServer
+- WHY: did not open (error Token Required.): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Token Required.
+
+### Layer: Southwest Asia All Data  ·  None  ·  from gis-hunter
+- url: https://services4.arcgis.com/9lICIlhSEuRFezSF/arcgis/rest/services/Southwest Asia All data/FeatureServer
+- WHY: did not open (bot error URL can't contain control characters. '/9lICIlhSEuRFezSF/arcgis/rest/services/Southwest Asia All data/FeatureServer?f=js): probed again next run (failed 1 of 3)
+- publisher: ? → unsure ()
+- terms: ? · source ?
+- facts: status bot error URL can't contain control characters. '/9lICIlhSEuRFezSF/arcgis/rest/services/Southwest Asia All data/FeatureServer?f=js
+
+### Little Missouri River  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/tq962RLzFDqUbUrN/arcgis/rest/services/LittleMissouriRiver_Analysis_line/FeatureServer
+- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Token Required
+
+### 040723 Hwy_ 271 – Hwy_ 64 _Towson Ave__ _Fort Smith__WFL1  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/7cbqsWqMe170dJ3k/arcgis/rest/services/040723_Hwy__271_–_Hwy__64__Towson_Ave____Fort_Smith__WFL1/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Oklahoma Tribal Statistical Areas  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Oklahoma_Tribal_Statistical_Areas__DOC___EPA_2023_/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Chickasaw Nation  ·  None  ·  from gis-hunter
+- url: https://services2.arcgis.com/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer
+- WHY: did not open (bot error URL can't contain control characters. '/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer?f=json' (fo): probed again next run (failed 1 of 3)
+- publisher: ? → unsure ()
+- terms: ? · source ?
+- facts: status bot error URL can't contain control characters. '/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer?f=json' (fo
+
+### Climate Indicator First Leaf Dates (EPA 2021)  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/CLM___Climate_Indicator_First_Leaf_Dates__EPA_/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Leaf_Collection_Areas  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Leaf_Collection_Areas/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Area_Caney_Fork_Fields  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Area_Caney_Fork_Fields/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Caney_Fork_Bulk_Density_2020_data_Prediction  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_data_Prediction/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Caney_Fork_Bulk_Density_2020_Prediction  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pGfbNJoYypmNq86F/arcgis/rest/services/DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Routes from Columbus State Community College to National Parks ASC  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/Kky1VmxJleu73HxO/arcgis/rest/services/Columbus_State_Community_College_(Points)_to_National_Parks/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Amory  ·    ·  from gis-hunter
+- url: https://arcgisdv.bnsf.com/arcgis/rest/services/UAS_Products/Amory/MapServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Amory Port South- property Outline  ·  None  ·  from gis-hunter
+- url: https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish185/FeatureServer
+- WHY: did not open (bot error URL can't contain control characters. '/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish18): probed again next run (failed 1 of 3)
+- publisher: ? → unsure ()
+- terms: ? · source ?
+- facts: status bot error URL can't contain control characters. '/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish18
+
+### Amory Port North- property Outline  ·  None  ·  from gis-hunter
+- url: https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish185/FeatureServer
+- WHY: did not open (bot error URL can't contain control characters. '/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish18): probed again next run (failed 1 of 3)
+- publisher: ? → unsure ()
+- terms: ? · source ?
+- facts: status bot error URL can't contain control characters. '/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish18
+
+### Antelope Reservoir Fish Advisory  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Antelope_Reservoir_Fish_Advisory/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as sgorb
+
+### PARCELS Lone Rock Ranch  ·    ·  from gis-hunter
+- url: https://services8.arcgis.com/jyRjbKRFHP2c3g5n/arcgis/rest/services/PARCELS_Lone_Rock_Ranch/FeatureServer
+- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Token Required
+
+### East Bay North Shore Impacted Census Tracts  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreImpactedCTs/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### East Bay North Shore Marine Terminals  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreMarineTerminals/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Bear Gulch Dam Failure Area  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Bear_Gulch_Dam_Failure_Area/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Clatsop County, Oregon (MOC) - Draft Floodplains (2024.01.31) - Feature Service  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_MOC_Web_Draft_20240131/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Clatsop County, Oregon - Effective Floodplains (2018.09.23) - Feature Service  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Effective/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Clatsop County, Oregon (Mouth of the Columbia) - Flood Risk Products (2024.12.02) - FS  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Draft_FRP_20241217/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### North_Santiam_Tour_POI  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/kIA6yS9KDGqZL7U3/arcgis/rest/services/North_Santiam_Tour_POI/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Oregon Dept of Forestry - Santiam Aerials  ·    ·  from gis-hunter
+- url: https://utility.arcgis.com/usrsvcs/servers/18b2fd714fb74dbab4891e71f9120aea/rest/services/Basemaps/SantiamAerial/MapServer
+- WHY: did not open (error Item does not exist or is inaccessible.): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Item does not exist or is inaccessible.
+- overlap: same publisher as sgsda
+
+### Dugway Proving Grounds  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Dugway_Proving_Grounds/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as sguta
+
+### Schools Buffer Mallo  ·  None  ·  from gis-hunter
+- url: https://services1.arcgis.com/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer
+- WHY: did not open (bot error URL can't contain control characters. '/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer?f=json'): probed again next run (failed 1 of 3)
+- publisher: ? → unsure ()
+- terms: ? · source ?
+- facts: status bot error URL can't contain control characters. '/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer?f=json'
+
+### Nashvilles Highland Rim Forest  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Nashvilles_Highland_Rim_Forest/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as sgazd
+
+### Cottonwood Canyon Weather Monitoring Data  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cottonwood_Canyon_Weather_FME/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Cottonwood Canyons Route Travel Times  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/CottonwoodCanyonRoutes/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### R1 Morgan State St Study Segments  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Study_Segments/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Morgan State St Active Transportation  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Active_Transportation/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### R1 Morgan State St Intersections  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Intersections/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### MP RV Lot Hammer Head View Layer  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/3cD3npevdeqC4ysX/arcgis/rest/services/MP_RV_Lot_Hammer_Head_View_Layer/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Wildfire Smoke Forecast in Canada - Feature Service  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/wjcPoefzjpzCgffS/arcgis/rest/services/Wildfire_Smoke_Forecast_in_Canada_(Feature_Service)_-ServiceDefinition/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### SlidingWindows_ARTESIA_view_V1  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/SlidingWindows_ARTESIA_view_33808/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Dixie Valley Toad Distribution in Nevada  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a86e58/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as sgnva
+
+### Tui Chub in Dixie Valley Distribution in Nevada  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a31962/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as sgnva
+
+### NI Areas of Outstanding Natural Beauty AONB  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/vj9gtZvrLEtbnUyw/arcgis/rest/services/NI_Areas_of_Outstanding_Natural_Beauty_AONB/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Region Four South Parowan Pine Canyon Drive Alt Model 1  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_1/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Region Four South Parowan Pine Canyon Drive Alt Model 2  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_2/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### Region Four South Parowan Pine Canyon Drive Alt Model 3  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_3/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### The Wash and North Norfolk Coast SAC  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/zmBQLV64TsFvEpV0/arcgis/rest/services/The_Wash_and_North_Norfolk_Coast_SAC/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+## REJECT (769)
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
@@ -1689,7 +2403,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/4
 - WHY: NOT A PARK LAYER (coverage): closes 24 but only 2 by name (READY needs 3+ name matches and 25%+ of the closes)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 138 records · sample Patriarch / Sellars Lagoon / Yarra
 - closes: 24 of 57 tested missing parks (by name 2, pin only 22; 57 of the area's 2871 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Tamar"
@@ -1785,7 +2499,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/5
 - WHY: closes only 1 park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 192 records · sample Pats / Seal / Chew Tobacco Creek
 - closes: 1 of 3 tested missing parks (by name 1, pin only 0; 57 of the area's 2871 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Great Lake"
@@ -2362,7 +3076,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/1
 - WHY: no name field: an outline needs a name to match a park
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · 126488 records
 - closes: not probed
 
@@ -2572,7 +3286,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 6 records · sample Point Quobba Fish Habitat Protection Area / Abrolhos Islands Fish Habitat Protection Area / Cottesloe Reef Fish Habitat Protection Area
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 1 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/0
@@ -5999,6 +6713,1943 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: ? → official (government host gismap.co.juneau.wi.us)
 - terms: CREDIT · source item page · "For use by the general public Juneau county, WI Juneau county, WI" · item https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_Historical_Imagery/MapServer/info/iteminfo
 - facts: arcgis-layer
+- closes: not probed
+
+### Juneau Co Public GIS  ·    ·  from gis-hunter
+- url: https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/10
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: ? → official (government host gismap.co.juneau.wi.us)
+- terms: CREDIT · source item page · "For use by the general public Juneau County, WI Juneau County, WI" · item https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field MCD_NAME · 31992 records · sample TOWN OF LYNDON / TOWN OF LYNDON / TOWN OF SEVEN MILE CREEK
+- closes: not probed
+
+### Juneau Co Public GIS  ·    ·  from gis-hunter
+- url: https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/11
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gismap.co.juneau.wi.us)
+- terms: CREDIT · source item page · "For use by the general public Juneau County, WI Juneau County, WI" · item https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 44 records
+- closes: not probed
+
+### Juneau Co Public GIS  ·    ·  from gis-hunter
+- url: https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/12
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gismap.co.juneau.wi.us)
+- terms: CREDIT · source item page · "For use by the general public Juneau County, WI Juneau County, WI" · item https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 376 records
+- closes: not probed
+
+### Juneau Co Public GIS  ·    ·  from gis-hunter
+- url: https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/20
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: ? → official (government host gismap.co.juneau.wi.us)
+- terms: CREDIT · source item page · "For use by the general public Juneau County, WI Juneau County, WI" · item https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field MCD_NAME · 32 records · sample T_ARMENIA / T_KINGSTON / T_FINLEY
+- closes: not probed
+
+### Juneau Co Public GIS  ·    ·  from gis-hunter
+- url: https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/21
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: ? → official (government host gismap.co.juneau.wi.us)
+- terms: CREDIT · source item page · "For use by the general public Juneau County, WI Juneau County, WI" · item https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 16 records · sample Nekoosa / Warrens / Babcock
+- closes: not probed
+
+### Juneau Co Public GIS  ·    ·  from gis-hunter
+- url: https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/22
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gismap.co.juneau.wi.us)
+- terms: CREDIT · source item page · "For use by the general public Juneau County, WI Juneau County, WI" · item https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 12618 records
+- closes: not probed
+
+### Juneau Co Public GIS  ·    ·  from gis-hunter
+- url: https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/23
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gismap.co.juneau.wi.us)
+- terms: CREDIT · source item page · "For use by the general public Juneau County, WI Juneau County, WI" · item https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 846 records
+- closes: not probed
+
+### Juneau Co Public GIS  ·    ·  from gis-hunter
+- url: https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/24
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gismap.co.juneau.wi.us)
+- terms: CREDIT · source item page · "For use by the general public Juneau County, WI Juneau County, WI" · item https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 26 records
+- closes: not probed
+
+### Wild and Scenic Rivers Survey_1  ·    ·  from gis-hunter
+- url: https://services9.arcgis.com/8xX73pXEn5IvX0U8/arcgis/rest/services/Wild_and_Scenic_Rivers_Survey_1/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (a government word of the country: Survey)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=6ee1c34ccfcc401e9ebc78b2a28be01c · owner rjones_adsci · org Adventure Scientists
+- facts: arcgis-layer · esriGeometryPoint · name field stream_name · 1442 records · last edit 2023-06-15
+- closes: not probed
+
+### Norwich  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/ilLju0m4GPRDefX5/arcgis/rest/services/Norwich/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Corporation in the publisher words)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=ad481880361442379663001f3e1be9f0 · owner spierce_ParecorpGIS · org Pare Corporation
+- facts: arcgis-layer · esriGeometryPoint · 46 records · last edit 2015-07-07
+- closes: not probed
+
+### Buffer_of_Wroxham_Norwich  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/EZHTwLaJFrjpIr0d/arcgis/rest/services/Buffer_of_Wroxham_Norwich/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=bf9c8c2cbdc04112b5c11c924387dedc · owner sgordonadmin · org Cycling UK
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 1 records · last edit 2021-11-12 · sample Wroxham Route One Norwich 75k
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NSIP - NGET Norwich to Tilbury (N2T) Waveney Valley Alternative (WVA) OHL Centreline  ·    ·  from gis-hunter
+- url: https://services-eu1.arcgis.com/IJhjmLvg2gPzHqkX/arcgis/rest/services/x231121_RG_WVA_OHL_Centreline/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a government word of the country: National)
+- terms: CREDIT · source item page · "© National Grid UK" · item https://www.arcgis.com/home/item.html?id=3d89ff7e583e48cdb5ce7bdad3b90567 · owner callum.etherton_suffolkcc
+- facts: arcgis-layer · esriGeometryPolyline · name field ProjectName · 2 records · last edit 2024-09-09
+- closes: not probed
+
+### Charge Up Michigan Program  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/FNjlrOFR0aGJ71Tg/arcgis/rest/services/Charge_Up_Michigan_Charger_Locations/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: OPEN · source item page · "er the “Information”), is provided as a public service, and there are no restrictions on the use, reproduction, or distribution of the Information. It is your responsibility t" · item https://www.arcgis.com/home/item.html?id=d1e9b35dd302490fb91fbeebeac18cba · owner EgleAdmin · org Michigan Dept. of Environment, Great Lakes, and Energy
+- facts: arcgis-layer · esriGeometryPoint · 133 records · last edit 2026-10-21
+- closes: not probed
+
+### Grand Batture Island Shorelines Feature Layer  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/GrandBatture_Shorelines/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "This is an embedded feature layer in the A Century of Change in Grand Bay, Mississippi and Alabama geonarrative and is not intended to be viewed or used alone. " · item https://www.arcgis.com/home/item.html?id=1d89fcbf94594113a03095132c81733d · owner bnwilliams@usgs.gov_USGS · org U.S. Geological Survey
+- facts: arcgis-layer · esriGeometryPolyline · name field Orig_Name · 26 records · last edit 2021-10-19
+- closes: not probed
+
+### Eastern hemlock _Tsuga canadensis_ extent_ North America  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/jnYf2Emqbv8T64a0/arcgis/rest/services/Eastern_hemlock__Tsuga_canadensis__extent__North_America/FeatureServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c66461244a034eefa137c7d097c3fb83 · owner mapping_AdvSciAdmin · org Adventure Scientists
+- facts: arcgis-layer · esriGeometryPolygon · 180 records · last edit 2024-11-01
+- closes: not probed
+
+### Western North America Priority Conservation Areas WFL1  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Western_North_America_Priority_Conservation_Areas_WFL1/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Conservancy in the publisher words)
+- terms: CREDIT · source item page · "Robles, M., Marshall, R., List, M., and C. Enquist - TNC AZ chapter For more info - https://azconservation.org/downloads/ecoregion_based_conservation_assessment" · item https://www.arcgis.com/home/item.html?id=f0ddd55c9b274340855ef82d467be40d · owner lisa.mccauley@tnc.org_TNC · org The Nature Conservancy
+- facts: arcgis-layer · esriGeometryPolygon · name field EAA_NAME · 19 records · last edit 2021-09-23 · sample Apache Highlands / Arizona-New Mexico Mountains / Black Hills
+- closes: not probed
+
+### Western North America Priority Conservation Areas WFL1  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Western_North_America_Priority_Conservation_Areas_WFL1/FeatureServer/1
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Conservancy in the publisher words)
+- terms: CREDIT · source item page · "Robles, M., Marshall, R., List, M., and C. Enquist - TNC AZ chapter For more info - https://azconservation.org/downloads/ecoregion_based_conservation_assessment" · item https://www.arcgis.com/home/item.html?id=f0ddd55c9b274340855ef82d467be40d · owner lisa.mccauley@tnc.org_TNC · org The Nature Conservancy
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 1816 records · last edit 2021-09-23 · sample Albion Mtns / Alder Creek Ridge / Blackfoot wetlands
+- closes: not probed
+
+### Western North Carolina Wildfire Vulnerability Index  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/wdQEqhSQSuYA89VW/arcgis/rest/services/Western_North_Carolina_Wildfire_Vulnerability_Index/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Please contact Lauren Andersen (andersenlm@appstate.edu) or Dr. Maggie Sugg (kovachmm@appstate.edu). U.S. Census Bureau, U.S. Forest Service, U.S. Geological Su" · item https://www.arcgis.com/home/item.html?id=970b9818457940c4b902be730d01f10a · owner MountainResilience_App
+- facts: arcgis-layer · esriGeometryPolygon · 320 records · last edit 2018-04-20
+- closes: not probed
+
+### Wildfires Potentially Impacted by Helene Storm Debris in Western North Carolina USA 2026  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/aT1T0pU1ZdpuDk1t/arcgis/rest/services/Wildfires_Potentially_Impacted_by_Helene_Storm_Debris_in_Western_North_Carolina_USA_2026/FeatureServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "This map was created using Wildfire Occurance Data obtained from the National Interagency of Fire Center, gathered by InFORM FODR and IRWIN systems. Hurricane H" · item https://www.arcgis.com/home/item.html?id=70f931aef6a94d9eb303333c4a82af17 · owner svharney_NCSU · org North Carolina State University
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2026-04-23
+- closes: not probed
+
+### Pere Marquette River Float Extent for Web_WFL1  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/PYn6bWCjT6bhw1z3/arcgis/rest/services/Pere_Marquette_River_Float_Extent_for_Web_WFL1/FeatureServer/5
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=a9b5ec21864a4c3e9bf97beb78e1a130 · owner bo77461_USG · org The University of Georgia 
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · last edit 2022-03-24 · sample Pere Marquette River
+- closes: not probed
+
+### Pere Marquette River Float Extent for Web_WFL1  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/PYn6bWCjT6bhw1z3/arcgis/rest/services/Pere_Marquette_River_Float_Extent_for_Web_WFL1/FeatureServer/6
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=a9b5ec21864a4c3e9bf97beb78e1a130 · owner bo77461_USG · org The University of Georgia 
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · last edit 2022-03-24 · sample Pere Marquette River
+- closes: not probed
+
+### Pere Marquette River Float Extent for Web_WFL1  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/PYn6bWCjT6bhw1z3/arcgis/rest/services/Pere_Marquette_River_Float_Extent_for_Web_WFL1/FeatureServer/7
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=a9b5ec21864a4c3e9bf97beb78e1a130 · owner bo77461_USG · org The University of Georgia 
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · last edit 2022-03-24 · sample Pere Marquette River
+- closes: not probed
+
+### Pere Marquette River Float Extent for Web_WFL1  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/PYn6bWCjT6bhw1z3/arcgis/rest/services/Pere_Marquette_River_Float_Extent_for_Web_WFL1/FeatureServer/8
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=a9b5ec21864a4c3e9bf97beb78e1a130 · owner bo77461_USG · org The University of Georgia 
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · last edit 2022-03-24 · sample Pere Marquette River
+- closes: not probed
+
+### Pere Marquette River Float Extent for Web_WFL1  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/PYn6bWCjT6bhw1z3/arcgis/rest/services/Pere_Marquette_River_Float_Extent_for_Web_WFL1/FeatureServer/12
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=a9b5ec21864a4c3e9bf97beb78e1a130 · owner bo77461_USG · org The University of Georgia 
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 446 records · last edit 2022-03-24 · sample Wolf Lake /   / Tallman Lake
+- closes: not probed
+
+### Pere Marquette River Float Extent for Web_WFL1  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/PYn6bWCjT6bhw1z3/arcgis/rest/services/Pere_Marquette_River_Float_Extent_for_Web_WFL1/FeatureServer/14
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=a9b5ec21864a4c3e9bf97beb78e1a130 · owner bo77461_USG · org The University of Georgia 
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · last edit 2022-03-24 · sample PERE MARQUETTE
+- closes: not probed
+
+### Pere Marquette River Float Extent for Web_WFL1  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/PYn6bWCjT6bhw1z3/arcgis/rest/services/Pere_Marquette_River_Float_Extent_for_Web_WFL1/FeatureServer/19
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=a9b5ec21864a4c3e9bf97beb78e1a130 · owner bo77461_USG · org The University of Georgia 
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 1965 records · last edit 2022-03-24 · sample Twana/Skokomish / Wailaki / Kichwa Lamista
+- closes: not probed
+
+### Pere Marquette redd survey_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/754BERmVIq3RqSf8/arcgis/rest/services/Pere_Marquette_redd_survey_WFL1/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a government word of the country: survey)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=5980a509e94043179fe64186023c69ed · owner jlemon · org Trout Unlimited
+- facts: arcgis-layer · esriGeometryPolygon · 22 records · last edit 2019-03-27
+- closes: not probed
+
+### Pere Marquette  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/rD2ylXRs80UroD90/arcgis/rest/services/Pere_Marquette_Route_WFL1/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=698cad64e40f46a5aae5bbec5eadded6 · owner dgerlach@hntb.com_HNTBCorp · org HNTB GeoShare
+- facts: arcgis-layer · esriGeometryPoint · name field Name · 5 records · last edit 2025-08-20
+- closes: not probed
+
+### Pere Marquette  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/rD2ylXRs80UroD90/arcgis/rest/services/Pere_Marquette_Route_WFL1/FeatureServer/25
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Bureau)
+- terms: CREDIT · source item page · "Acknowledgment of the Federal Railroad Administration (FRA) and the Bureau of Transportation Statistics" · item https://www.arcgis.com/home/item.html?id=698cad64e40f46a5aae5bbec5eadded6 · owner dgerlach@hntb.com_HNTBCorp · org HNTB GeoShare
+- facts: arcgis-layer · esriGeometryPolyline · 3 records · last edit 2025-08-20
+- closes: not probed
+
+### Michigan's Iron Belle Trail New  ·    ·  from gis-hunter
+- url: https://gisagodnr.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagodnr.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagodnr.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SegmentName · 816 records
+- closes: not probed
+
+### Iron Belle Trail  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/5ckbIY7K9TUKoseK/arcgis/rest/services/Iron_Belle_Trail/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: County)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=bce29169945c48dfa09ef8a31a47023f · owner cpobocik · org Genesee County, Michigan
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 28 records · last edit 2021-02-10
+- closes: not probed
+
+### Iron_Belle_Trail_Proposed_Route_Roscommon  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/XVoMA5d1f4yQykXz/arcgis/rest/services/Iron_Belle_Trail_Proposed_Route_Roscommon/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=d63addaf0db54c7cabdc021a5d2f871a · owner adoezema · org OHM Advisors
+- facts: arcgis-layer · esriGeometryPolyline · name field Seg_Name · 8 records · last edit 2018-06-21
+- closes: not probed
+
+### CPTED Principles Examples: Flint River Trail  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/4ezfu5dIwH83BUNL/arcgis/rest/services/CPTED_Principles_Examples_Flint_River_Trail/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=d22fb91c19f6445088a303152747c100 · owner jra_umich · org University of Michigan
+- facts: arcgis-layer · esriGeometryPoint · name field Example_Name · 0 records · last edit 2025-05-14
+- closes: not probed
+
+### CPTED Principles Examples: Flint River Trail  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/4ezfu5dIwH83BUNL/arcgis/rest/services/CPTED_Principles_Examples_Flint_River_Trail/FeatureServer/1
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=d22fb91c19f6445088a303152747c100 · owner jra_umich · org University of Michigan
+- facts: arcgis-layer · esriGeometryPolyline · name field Example_Name · 0 records · last edit 2021-06-22
+- closes: not probed
+
+### CPTED Principles Examples: Flint River Trail  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/4ezfu5dIwH83BUNL/arcgis/rest/services/CPTED_Principles_Examples_Flint_River_Trail/FeatureServer/2
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=d22fb91c19f6445088a303152747c100 · owner jra_umich · org University of Michigan
+- facts: arcgis-layer · esriGeometryPolyline · name field Trail_Name · 0 records · last edit 2021-06-22
+- closes: not probed
+
+### Flint_Trail_Design_2025_482_26_05_29  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/8uN5i97bMkq2Mzrt/arcgis/rest/services/Flint_Trail_Design_2025_482_26_05_29/FeatureServer/124
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a government word of the country: ign)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=d2b704809dd64064860a65bc90f8bf5e · owner traewatson_apd · org Alta Planning + Design
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 183 records · last edit 2026-10-20
+- closes: not probed
+
+### Sable Island Image Points  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/Image_Pts_FINAL/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Institute in the publisher words)
+- terms: NON-COMMERCIAL · source item page · "rencetown, NS. This product is unedited, unverified, and intended for educational purposes only. (2021-2022 COGS) Sable Island Photos and Content: Zoe Lucas, Sable Island Institute © 20" · item https://www.arcgis.com/home/item.html?id=a15c58539fce4565a9f89f1a56f8fcdf · owner zProjectsStudents · org Centre of Geographic Sciences - NSCC
+- facts: arcgis-layer · esriGeometryPoint · name field name · 85 records · last edit 2022-04-19
+- closes: not probed
+
+### DENA Wildlife Closures - Sable Pass  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/DENA_Sable_Pass_Wildlife_Closure/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "to use the related graphics as data. The National Park Service gives no warranty, expressed or implied, as to th National Park Service, NPS The National Park Service shal" · item https://www.arcgis.com/home/item.html?id=123b26d74571469aaf0f4c16f0b3716a · owner DENA_GIS · org National Park Service
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2024-05-07
+- overlap: same publisher as akht
+- closes: not probed
+
+### Copper Country Historical Mines  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/4OouWsRyOft5wqPC/arcgis/rest/services/Copper_Country_Historical_Mines/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=66b8dbebf27d4ffea2a75d826adaffe9 · owner aerospaceeducator
+- facts: arcgis-layer · esriGeometryPoint · name field Name · 10 records · last edit 2022-09-19
+- closes: not probed
+
+### 1978 Aerial Photography Escanaba Michigan  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/RPhrOu9XQzI31xTa/arcgis/rest/services/escanaba_1978/MapServer/0
+- WHY: no polygons (no geometry)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Van Pelt and Opie Library; USGS Van Pelt and Opie Library; USGS" · item https://www.arcgis.com/home/item.html?id=e0fdc509580b42c6a801fb07139875c1 · owner rcowling_mtu · org Michigan Tech University
+- facts: arcgis-layer
+- closes: not probed
+
+### 1978 Aerial Photography Escanaba Michigan  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/RPhrOu9XQzI31xTa/arcgis/rest/services/escanaba_1978/MapServer/1
+- WHY: no polygons (no geometry)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Van Pelt and Opie Library; USGS Van Pelt and Opie Library; USGS" · item https://www.arcgis.com/home/item.html?id=e0fdc509580b42c6a801fb07139875c1 · owner rcowling_mtu · org Michigan Tech University
+- facts: arcgis-layer
+- closes: not probed
+
+### 1978 Aerial Photography Escanaba Michigan  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/RPhrOu9XQzI31xTa/arcgis/rest/services/escanaba_1978/MapServer/2
+- WHY: no polygons (no geometry)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Van Pelt and Opie Library; USGS Van Pelt and Opie Library; USGS" · item https://www.arcgis.com/home/item.html?id=e0fdc509580b42c6a801fb07139875c1 · owner rcowling_mtu · org Michigan Tech University
+- facts: arcgis-layer
+- closes: not probed
+
+### 1978 Aerial Photography Escanaba Michigan  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/RPhrOu9XQzI31xTa/arcgis/rest/services/escanaba_1978/MapServer/3
+- WHY: no polygons (no geometry)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Van Pelt and Opie Library; USGS Van Pelt and Opie Library; USGS" · item https://www.arcgis.com/home/item.html?id=e0fdc509580b42c6a801fb07139875c1 · owner rcowling_mtu · org Michigan Tech University
+- facts: arcgis-layer
+- closes: not probed
+
+### 1978 Aerial Photography Escanaba Michigan  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/RPhrOu9XQzI31xTa/arcgis/rest/services/escanaba_1978/MapServer/4
+- WHY: no polygons (no geometry)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Van Pelt and Opie Library; USGS Van Pelt and Opie Library; USGS" · item https://www.arcgis.com/home/item.html?id=e0fdc509580b42c6a801fb07139875c1 · owner rcowling_mtu · org Michigan Tech University
+- facts: arcgis-layer
+- closes: not probed
+
+### 1978 Aerial Photography Escanaba Michigan  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/RPhrOu9XQzI31xTa/arcgis/rest/services/escanaba_1978/MapServer/5
+- WHY: no polygons (no geometry)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Van Pelt and Opie Library; USGS Van Pelt and Opie Library; USGS" · item https://www.arcgis.com/home/item.html?id=e0fdc509580b42c6a801fb07139875c1 · owner rcowling_mtu · org Michigan Tech University
+- facts: arcgis-layer
+- closes: not probed
+
+### 1978 Aerial Photography Escanaba Michigan  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/RPhrOu9XQzI31xTa/arcgis/rest/services/escanaba_1978/MapServer/6
+- WHY: no polygons (no geometry)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Van Pelt and Opie Library; USGS Van Pelt and Opie Library; USGS" · item https://www.arcgis.com/home/item.html?id=e0fdc509580b42c6a801fb07139875c1 · owner rcowling_mtu · org Michigan Tech University
+- facts: arcgis-layer
+- closes: not probed
+
+### 1978 Aerial Photography Escanaba Michigan  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/RPhrOu9XQzI31xTa/arcgis/rest/services/escanaba_1978/MapServer/7
+- WHY: no polygons (no geometry)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Van Pelt and Opie Library; USGS Van Pelt and Opie Library; USGS" · item https://www.arcgis.com/home/item.html?id=e0fdc509580b42c6a801fb07139875c1 · owner rcowling_mtu · org Michigan Tech University
+- facts: arcgis-layer
+- closes: not probed
+
+### Topographic Map of Escanaba, Michigan (1985)  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/RPhrOu9XQzI31xTa/arcgis/rest/services/escanaba_topos_1985_tif/MapServer/0
+- WHY: no polygons (no geometry)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Van Pelt and Opie Library; USGS" · item https://www.arcgis.com/home/item.html?id=68bff19ee6a0479fbc3d1fee4e76b70f · owner rcowling_mtu · org Michigan Tech University
+- facts: arcgis-layer
+- closes: not probed
+
+### Geological Compilation of the Superior Craton  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/w89HYkciqfy9pv9D/arcgis/rest/services/Geological_Compilation_of_the_Superior/FeatureServer/3
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "Montsion, R., Thurston, R., Ayer, J., 2018, 1:2,000,000 Scale Geological Compilation of the Superior Craton - Version 1: Mineral Exploration Research Centre, Ha" · item https://www.arcgis.com/home/item.html?id=8cf2b0aabee54953b6be3a081ae15bb5 · owner ME_bdaniels
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2019-08-19
+- closes: not probed
+
+### Geological Compilation of the Superior Craton  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/w89HYkciqfy9pv9D/arcgis/rest/services/Geological_Compilation_of_the_Superior/FeatureServer/4
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "Montsion, R., Thurston, R., Ayer, J., 2018, 1:2,000,000 Scale Geological Compilation of the Superior Craton - Version 1: Mineral Exploration Research Centre, Ha" · item https://www.arcgis.com/home/item.html?id=8cf2b0aabee54953b6be3a081ae15bb5 · owner ME_bdaniels
+- facts: arcgis-layer · esriGeometryPolygon · 34 records · last edit 2019-08-19
+- closes: not probed
+
+### Geological Compilation of the Superior Craton  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/w89HYkciqfy9pv9D/arcgis/rest/services/Geological_Compilation_of_the_Superior/FeatureServer/5
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "Montsion, R., Thurston, R., Ayer, J., 2018, 1:2,000,000 Scale Geological Compilation of the Superior Craton - Version 1: Mineral Exploration Research Centre, Ha" · item https://www.arcgis.com/home/item.html?id=8cf2b0aabee54953b6be3a081ae15bb5 · owner ME_bdaniels
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 1 records · last edit 2019-08-19 · sample  
+- closes: not probed
+
+### Geological Compilation of the Superior Craton  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/w89HYkciqfy9pv9D/arcgis/rest/services/Geological_Compilation_of_the_Superior/FeatureServer/8
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "Montsion, R., Thurston, R., Ayer, J., 2018, 1:2,000,000 Scale Geological Compilation of the Superior Craton - Version 1: Mineral Exploration Research Centre, Ha" · item https://www.arcgis.com/home/item.html?id=8cf2b0aabee54953b6be3a081ae15bb5 · owner ME_bdaniels
+- facts: arcgis-layer · esriGeometryPolygon · name field Label · 27191 records · last edit 2019-08-19 · sample 1vi / 1vf / 1vi
+- closes: not probed
+
+### Superior Court Districts in Wake County, NC   ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/a7CWfuGP5ZnLYE7I/arcgis/rest/services/SuperiorCourtDistricts/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: County)
+- terms: CREDIT · source item page · "rrors concerning the content of the data, and relative and positional accuracy of the data. These data cannot be construed to be a legal document. Primary sources from" · item https://www.arcgis.com/home/item.html?id=99579a2f4cc74a8886224d7465da77e4 · owner WakeCountyGovernment · org Wake County
+- facts: arcgis-layer · esriGeometryPolygon · 6 records · last edit 2020-06-08
+- closes: not probed
+
+### Mackinaw_Manhole  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pPTAs43AFhhk0pXQ/arcgis/rest/services/Mackinaw_Manhole/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: County)
+- terms: CREDIT · source item page · "Mackinaw Mackinaw" · item https://www.arcgis.com/home/item.html?id=4c22bcf13556494cbcf4cb3819b5fe55 · owner tcrpc_pmeyer · org Tri-County Regional Planning Commission
+- facts: arcgis-layer · esriGeometryPoint · 260 records · last edit 2026-01-27
+- closes: not probed
+
+### Mackinaw_StormManholes  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pPTAs43AFhhk0pXQ/arcgis/rest/services/Mackinaw_StormManholes/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: County)
+- terms: CREDIT · source item page · "Mackinaw Mackinaw" · item https://www.arcgis.com/home/item.html?id=98101b08510f4961b81d1e6673c054e6 · owner tcrpc_pmeyer · org Tri-County Regional Planning Commission
+- facts: arcgis-layer · esriGeometryPoint · 2 records · last edit 2026-01-23
+- closes: not probed
+
+### Mackinaw_SanSewMains  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/pPTAs43AFhhk0pXQ/arcgis/rest/services/Mackinaw_SanSewMains/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: County)
+- terms: CREDIT · source item page · "Mackinaw Mackinaw" · item https://www.arcgis.com/home/item.html?id=d773523779b04c63bb977b78f332ce01 · owner tcrpc_pmeyer · org Tri-County Regional Planning Commission
+- facts: arcgis-layer · esriGeometryPolyline · 63 records · last edit 2026-02-27
+- closes: not probed
+
+### Biotic_and_Substrate_South_Manitou_Island  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Biotic_and_Substrate_South_Manitou_Island/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=e945397096434a74b367f153fbf6958f · owner Cara.Whalen_FRCC
+- facts: arcgis-layer · esriGeometryPolygon · name field BioticCommunity · 38 records · last edit 2021-01-13 · sample Cladophora / Cladophora / Cladophora
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Biotic_and_Substrate_South_Manitou_Island  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Biotic_and_Substrate_South_Manitou_Island/FeatureServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=e945397096434a74b367f153fbf6958f · owner Cara.Whalen_FRCC
+- facts: arcgis-layer · esriGeometryPolygon · 85 records · last edit 2021-01-13
+- closes: not probed
+
+### Copper Harbor Trails  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Copper_Harbor_Trails/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Conservancy in the publisher words)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=ccdc395d04e143e4becc41d649befc0d · owner eclegg@tnc.org · org The Nature Conservancy
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 1 records · last edit 2021-11-05
+- closes: not probed
+
+### Hammond Bay Harbor Refuge Closure 03 mile restricted commercial fishing zone  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/uHAHKfH1Z5ye1Oe0/arcgis/rest/services/Hammond_Bay_Harbor_Refuge_Closure_03_mile_restricted_commercial_fishing_zone/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "N/A Lake Huron GIS Project (MIDNR, Fisheries Division, Roscommon), MI DNR (Fisheries Division), U.S. District Court (Western District of Michigan, Southern Divi" · item https://www.arcgis.com/home/item.html?id=599ac08d7d0845ce9867343400601833 · owner coopera6_msugis · org Michigan State University Online ArcGIS
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2024-10-29
+- closes: not probed
+
+### Hammond Bay Harbor Refuge Closure 05 mile restricted commercial fishing zone  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/uHAHKfH1Z5ye1Oe0/arcgis/rest/services/Hammond_Bay_Harbor_Refuge_Closure_05_mile_restricted_commercial_fishing_zone/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "N/A Lake Huron GIS Project (MIDNR, Fisheries Division, Roscommon), MI DNR (Fisheries Division), U.S. District Court (Western District of Michigan, Southern Divi" · item https://www.arcgis.com/home/item.html?id=b545296d655d4705808f5f7055c06f19 · owner coopera6_msugis · org Michigan State University Online ArcGIS
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2024-10-28
+- closes: not probed
+
+### Break Walls Presque Isle  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/b7cJ4YYc9GM63RSz/arcgis/rest/services/Break_Walls_Presque_Isle/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=248b349fa3704c15b3a6b241e3b63801 · owner marwalke_northernmichu
+- facts: arcgis-layer · esriGeometryPolyline · 9 records · last edit 2022-10-18
+- closes: not probed
+
+### Muddy Creek Flood Study Modelling Layers  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/ALxeDxaeNjQo1Mf0/arcgis/rest/services/Muddy_Creek_Flood_Study_Modelling_Layers/FeatureServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a government word of the country: Natur)
+- terms: CREDIT · source item page · "Otago Regional Council does not warrant its accuracy and disclaims all liability whatsoever for any error, inaccuracy or incompleteness of the" · item https://www.arcgis.com/home/item.html?id=b6b570a8794147afb664936b1b645222 · owner OTAGOREGIONALCOUNCIL_ORCNZ · org Otago Regional Council
+- facts: arcgis-layer · esriGeometryPolygon · 6 records · last edit 2026-09-21
+- closes: not probed
+
+### Muddy Creek Flood Study Modelling Layers  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/ALxeDxaeNjQo1Mf0/arcgis/rest/services/Muddy_Creek_Flood_Study_Modelling_Layers/FeatureServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a government word of the country: Natur)
+- terms: CREDIT · source item page · "Otago Regional Council does not warrant its accuracy and disclaims all liability whatsoever for any error, inaccuracy or incompleteness of the" · item https://www.arcgis.com/home/item.html?id=b6b570a8794147afb664936b1b645222 · owner OTAGOREGIONALCOUNCIL_ORCNZ · org Otago Regional Council
+- facts: arcgis-layer · esriGeometryPolygon · 6 records · last edit 2026-09-21
+- closes: not probed
+
+### Muddy Creek and Dead Creek Paths  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Muddy_Creek_and_Dead_Creek_Paths_WFL1/FeatureServer/1
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "herein. While the Service makes every reasonable effort to ensure the accuracy and completeness of data provided for distribution, it may not have the necessary accurac" · item https://www.arcgis.com/home/item.html?id=fe30b8320a3d44579c1189ecf29ce018 · owner john_laskaris@fws.gov_fws · org U.S. Fish & Wildlife Service
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 3 records · last edit 2023-12-01
+- overlap: same publisher as sgazd
+- closes: not probed
+
+### Australian Coastal Geomorphology Smartline - Muddy Shores  ·    ·  from gis-hunter
+- url: https://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer/14
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host services.ga.gov.au)
+- terms: OPEN · source item page · "ralia (Geoscience Australia) 2017. This product is released under the Creative Commons Attribution 4.0 International Licence. http://creativecommons.org/licenses/by/4.0/legalco" · item https://services.ga.gov.au/gis/rest/services/Geomorphology_Smartline/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · 270943 records
+- closes: not probed
+
+### Ozark National Forest Service Scenic Byway (line)  ·    ·  from gis-hunter
+- url: https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Transportation/FeatureServer/13
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.arkansas.gov)
+- terms: NOTHING STATED · source item page · item https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Transportation/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · 392 records
+- overlap: same publisher as sgara
+- closes: not probed
+
+### Sugarloaf_Mountain_Walk  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/hQOfkHGHCu8mgDpG/arcgis/rest/services/Sugarloaf_Mountain_Walk/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: County)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=825d1ec1c2ec4e9f986e32ed15086160 · owner wicklowgis · org  Wicklow County Council
+- facts: arcgis-layer · esriGeometryPolyline · 1 records
+- closes: not probed
+
+### Scenic Byway  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/8lRhdTsQyJpO52F1/arcgis/rest/services/Scenic_Byway_View/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Department)
+- terms: OPEN · source item page · "Creative Commons License This work is licensed under a Creative Commons Attribution 4.0 International Lice" · item https://www.arcgis.com/home/item.html?id=44932bb5e4424abe857bd0089a10c923 · owner IowaDOT_GIS · org Iowa Department of Transportation
+- facts: arcgis-layer · esriGeometryPolyline · 14 records · last edit 2026-10-22
+- closes: not probed
+
+### Great River Road Travelers' Resource Validated Features  ·    ·  from gis-hunter
+- url: https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host dotapp9.dot.state.mn.us)
+- terms: CREDIT · source item page · "Minnesota Department of Transportation, Office of Environmental Stewardship, and Kimley-Horn and Associates. Office of Environmental Stewardship - Environmental" · item https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 28 records
+- closes: not probed
+
+### Great River Road Travelers' Resource Validated Features  ·    ·  from gis-hunter
+- url: https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/1
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host dotapp9.dot.state.mn.us)
+- terms: CREDIT · source item page · "Minnesota Department of Transportation, Office of Environmental Stewardship, and Kimley-Horn and Associates. Office of Environmental Stewardship - Environmental" · item https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 3 records
+- closes: not probed
+
+### Great River Road Travelers' Resource Validated Features  ·    ·  from gis-hunter
+- url: https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/2
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host dotapp9.dot.state.mn.us)
+- terms: CREDIT · source item page · "Minnesota Department of Transportation, Office of Environmental Stewardship, and Kimley-Horn and Associates. Office of Environmental Stewardship - Environmental" · item https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 90 records
+- closes: not probed
+
+### Great River Road Travelers' Resource Validated Features  ·    ·  from gis-hunter
+- url: https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/3
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host dotapp9.dot.state.mn.us)
+- terms: CREDIT · source item page · "Minnesota Department of Transportation, Office of Environmental Stewardship, and Kimley-Horn and Associates. Office of Environmental Stewardship - Environmental" · item https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 57 records
+- closes: not probed
+
+### Great River Road Travelers' Resource Validated Features  ·    ·  from gis-hunter
+- url: https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/4
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host dotapp9.dot.state.mn.us)
+- terms: CREDIT · source item page · "Minnesota Department of Transportation, Office of Environmental Stewardship, and Kimley-Horn and Associates. Office of Environmental Stewardship - Environmental" · item https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 13 records
+- closes: not probed
+
+### Great River Road Travelers' Resource Validated Features  ·    ·  from gis-hunter
+- url: https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/5
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host dotapp9.dot.state.mn.us)
+- terms: CREDIT · source item page · "Minnesota Department of Transportation, Office of Environmental Stewardship, and Kimley-Horn and Associates. Minnesota Department of Agriculture, Office of Envi" · item https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 290 records
+- closes: not probed
+
+### Great River Road Travelers' Resource Validated Features  ·    ·  from gis-hunter
+- url: https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/6
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host dotapp9.dot.state.mn.us)
+- terms: CREDIT · source item page · "Minnesota Department of Transportation, Office of Environmental Stewardship, and Kimley-Horn and Associates. Office of Environmental Stewardship - Environmental" · item https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 6 records
+- closes: not probed
+
+### Great River Road Travelers' Resource Validated Features  ·    ·  from gis-hunter
+- url: https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/7
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host dotapp9.dot.state.mn.us)
+- terms: CREDIT · source item page · "Minnesota Department of Transportation, Office of Environmental Stewardship, and Kimley-Horn and Associates. Office of Environmental Stewardship - Environmental" · item https://dotapp9.dot.state.mn.us/egis12/rest/services/oes/travelersresource_viewer/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 280 records
+- closes: not probed
+
+### Arkansas Forests and Drinking Water Collaborative  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Arkansas_Forests_and_Drinking_Water_Collaborative/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a federal / national agency named)
+- terms: OPEN · source item page · "There are no use restrictions for this data. This layer is for public use and knowledge. U.S. Geological Survey Nationa" · item https://www.arcgis.com/home/item.html?id=79fecd0aafba4c5ea9fe1183aa657c39 · owner ttiendre_EPA · org U.S. EPA
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2021-11-02
+- closes: not probed
+
+### Arkansas Water Trials Lyr  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/Shortlist_layer_Water_Trails_(DO_NOT_REMOVE_OR_EDIT)/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: Commission)
+- terms: CREDIT · source item page · "Do not modify the data herein unless directed by the appropriate program point of contact. Data are available for public reference and are subject to change wit" · item https://www.arcgis.com/home/item.html?id=fb44c076b35a497bacb8604a731f4f17 · owner gisservice_agfc · org The Arkansas Game and Fish Commission
+- facts: arcgis-layer · esriGeometryPoint · name field name · 21 records · last edit 2026-06-29
+- overlap: same publisher as sgarc
+- closes: not probed
+
+### Razorback Greenway  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/arcgis/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPoint · name field name · 65 records · last edit 2026-10-27
+- closes: not probed
+
+### Razorback Greenway  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/arcgis/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/1
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPoint · 40 records · last edit 2026-10-27
+- closes: not probed
+
+### Razorback Greenway  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/arcgis/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/2
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPolyline · name field seg_name · 14 records · last edit 2026-10-27
+- closes: not probed
+
+### Razorback Greenway  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/arcgis/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/3
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPoint · name field name · 218 records · last edit 2026-10-27
+- closes: not probed
+
+### Razorback Greenway  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/arcgis/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/4
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPoint · name field name · 20 records · last edit 2026-10-27
+- closes: not probed
+
+### Razorback Greenway  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/arcgis/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/5
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPolyline · name field seg_name · 258 records · last edit 2026-10-27
+- closes: not probed
+
+### Razorback Greenway  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/arcgis/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/6
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPolyline · name field seg_name · 4859 records · last edit 2026-10-27
+- closes: not probed
+
+### Razorback Greenway  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/arcgis/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPolyline · name field seg_name · 317 records · last edit 2026-10-27
+- closes: not probed
+
+### Razorback Greenway Honors Thesis_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/SVgGe275cjDUavqG/arcgis/rest/services/Razorback_Greenway_Honors_Thesis_WFL1/FeatureServer/6
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1c03c18443fd4509b762d15ccf2327a2 · owner jtshearm_uark · org University of Arkansas
+- facts: arcgis-layer · esriGeometryPolygon · name field FACILITYID · 44176 records · last edit 2023-04-30 · sample None / None / None
+- closes: not probed
+
+### Razorback Greenway Honors Thesis_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/SVgGe275cjDUavqG/arcgis/rest/services/Razorback_Greenway_Honors_Thesis_WFL1/FeatureServer/8
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1c03c18443fd4509b762d15ccf2327a2 · owner jtshearm_uark · org University of Arkansas
+- facts: arcgis-layer · esriGeometryPolygon · 2134 records · last edit 2023-04-30
+- closes: not probed
+
+### Razorback Greenway Honors Thesis_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/SVgGe275cjDUavqG/arcgis/rest/services/Razorback_Greenway_Honors_Thesis_WFL1/FeatureServer/9
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1c03c18443fd4509b762d15ccf2327a2 · owner jtshearm_uark · org University of Arkansas
+- facts: arcgis-layer · esriGeometryPolygon · 2134 records · last edit 2023-04-30
+- closes: not probed
+
+### Razorback Greenway Honors Thesis_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/SVgGe275cjDUavqG/arcgis/rest/services/Razorback_Greenway_Honors_Thesis_WFL1/FeatureServer/10
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1c03c18443fd4509b762d15ccf2327a2 · owner jtshearm_uark · org University of Arkansas
+- facts: arcgis-layer · esriGeometryPolygon · 24 records · last edit 2023-04-30
+- closes: not probed
+
+### Razorback Greenway Honors Thesis_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/SVgGe275cjDUavqG/arcgis/rest/services/Razorback_Greenway_Honors_Thesis_WFL1/FeatureServer/11
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1c03c18443fd4509b762d15ccf2327a2 · owner jtshearm_uark · org University of Arkansas
+- facts: arcgis-layer · esriGeometryPolygon · name field PRIM_NAME · 7 records · last edit 2023-04-30 · sample None / Scull Creek Trail / Scull Creek Trail
+- closes: not probed
+
+### Razorback Greenway Honors Thesis_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/SVgGe275cjDUavqG/arcgis/rest/services/Razorback_Greenway_Honors_Thesis_WFL1/FeatureServer/12
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1c03c18443fd4509b762d15ccf2327a2 · owner jtshearm_uark · org University of Arkansas
+- facts: arcgis-layer · esriGeometryPolygon · 47 records · last edit 2023-04-30
+- closes: not probed
+
+### Razorback Greenway Honors Thesis_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/SVgGe275cjDUavqG/arcgis/rest/services/Razorback_Greenway_Honors_Thesis_WFL1/FeatureServer/13
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1c03c18443fd4509b762d15ccf2327a2 · owner jtshearm_uark · org University of Arkansas
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2023-04-30
+- closes: not probed
+
+### US States and Territories during the Civil War  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/US_States_and_Territories_during_the_Civil_War/FeatureServer/7
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "on; we will consider requests for free and commercial redistribution. Citation: You will cite NHGIS appropriately. Publications and research reports should include the" · item https://www.arcgis.com/home/item.html?id=7a235bfeedbd4a9190b457b7c433b34d · owner dasbury_storymaps · org ArcGIS StoryMaps
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 42 records · last edit 2023-09-07 · sample Alabama / Arkansas / California
+- closes: not probed
+
+### Southwest District Open House RSVP  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/service_71268e61ce82477c8c0895dc08bb1fe6/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "DISCLAIMER (for maps) The boundaries depicted on this map document are approximate. This map documen" · item https://www.arcgis.com/home/item.html?id=4007c04a34db47459817843e5e78bebf · owner nelson_re · org Florida Department of Environmental Protection
+- facts: arcgis-layer · esriGeometryPoint · last edit 2025-03-28
+- closes: not probed
+
+### Southwest Corridor Orange Line  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/SWC_OL/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "None Central Transportation Planning Staff, mbta.com, MassGIS Central Transportation Planning Staff, mbta.com, MassGIS" · item https://www.arcgis.com/home/item.html?id=aec52321215b4052a7730fa3ad23b173 · owner b.sanaiemovahed_NU · org Northeastern University
+- facts: arcgis-layer · esriGeometryPolyline · 16 records · last edit 2025-09-08
+- closes: not probed
+
+### Tishomingo_Service  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_Service/FeatureServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c823951fbb6845c080aad6abcde3f074 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · 6 records · last edit 2026-09-16
+- closes: not probed
+
+### Tishomingo_Service  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_Service/FeatureServer/4
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c823951fbb6845c080aad6abcde3f074 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2026-08-27
+- closes: not probed
+
+### Tishomingo_Service  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_Service/FeatureServer/5
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c823951fbb6845c080aad6abcde3f074 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · name field LEN_UNIT · 43 records · last edit 2026-08-27 · sample   /   /  
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Tishomingo_Service  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_Service/FeatureServer/6
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c823951fbb6845c080aad6abcde3f074 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · 17377 records · last edit 2026-08-27
+- closes: not probed
+
+### Tishomingo_Service  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_Service/FeatureServer/7
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c823951fbb6845c080aad6abcde3f074 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · name field MapUnit · 1881 records · last edit 2026-08-27 · sample SmD / OrB2 / ShB2
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Tishomingo_Service  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_Service/FeatureServer/8
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c823951fbb6845c080aad6abcde3f074 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · 467 records · last edit 2026-08-27
+- closes: not probed
+
+### Tishomingo_fldhaz_no_x  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_fldhaz_no_x/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=435c956adb6847b09e1273ba195326f6 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · name field LEN_UNIT · 93 records · last edit 2023-11-06 · sample   /   /  
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Tishomingo_addressing  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_addressing/FeatureServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=27a6efe8f5434524a527932f050fd6d1 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · 17257 records · last edit 2026-02-26
+- closes: not probed
+
+### Tishomingo_addressing  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_addressing/FeatureServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=27a6efe8f5434524a527932f050fd6d1 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2026-02-26
+- closes: not probed
+
+### Tishomingo_addressing  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_addressing/FeatureServer/4
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=27a6efe8f5434524a527932f050fd6d1 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · 2 records · last edit 2026-02-26
+- closes: not probed
+
+### Tishomingo_addressing  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/deoj2Y8l1tBr7P5X/arcgis/rest/services/Tishomingo_addressing/FeatureServer/7
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=27a6efe8f5434524a527932f050fd6d1 · owner AHOS1977
+- facts: arcgis-layer · esriGeometryPolygon · 30 records · last edit 2026-02-26
+- closes: not probed
+
+### OSU Stillwater Lake Carl Blackwell (OSU)  ·    ·  from gis-hunter
+- url: https://fm-gis-server.okstate.edu/server/rest/services/Support/OsuStwLakeCarlBlackwell/MapServer/1
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "OSU Energy Services" · item https://fm-gis-server.okstate.edu/server/rest/services/Support/OsuStwLakeCarlBlackwell/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 1 records
+- closes: not probed
+
+### OSU Stillwater Lake Carl Blackwell (OSU)  ·    ·  from gis-hunter
+- url: https://fm-gis-server.okstate.edu/server/rest/services/Support/OsuStwLakeCarlBlackwell/MapServer/4
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://fm-gis-server.okstate.edu/server/rest/services/Support/OsuStwLakeCarlBlackwell/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field CamSiteName · 388 records · sample Scissor Tail / Scissor Tail / Scissor Tail
+- closes: not probed
+
+### Scipio_Caye_Orthomosaic  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/dVL5xxth19juhrDY/arcgis/rest/services/Scipio_Caye_Orthomosaic/MapServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "Open Reef Mapping Society, Citizen Science GIS, SEA (Southern Environmental Association), and the University of Central Florida. Open Reef Mapping Society, Citi" · item https://www.arcgis.com/home/item.html?id=6611ef8b1ac64c3db43e718b60438ea7 · owner openreef1 · org University of Central Florida Federated Identity
+- facts: arcgis-layer
+- closes: not probed
+
+### Scipio LCRR 2024  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/6nrTmqbXUsmzoQY5/arcgis/rest/services/Scipio_LCRR_2024/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (a government word of the country: ign)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=397206028a904a91bcd434b34d49c551 · owner EnsignEng
+- facts: arcgis-layer · esriGeometryPoint · name field Name · 304 records · last edit 2024-11-18
+- closes: not probed
+
+### Yellow-Cedar Decline 1986 to 2024 - Cumulative  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/CDL_1980sto2024_Union_FM/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "LAYER CITATION: Title: Yellow-Cedar Decline 1986 to 2024 - Cumulative URL: https://services1.arcgis.com/" · item https://www.arcgis.com/home/item.html?id=66c51729c0f54a3d9afa91e58703175f · owner ForestHealthAlaskaRegion · org U.S. Forest Service
+- facts: arcgis-layer · esriGeometryPolygon · 50368 records · last edit 2025-06-04
+- closes: not probed
+
+### Cedar Park Civil Boundaries  ·    ·  from gis-hunter
+- url: https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer/32
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government host gisrest.cedarparktexas.gov)
+- terms: CREDIT · source item page · "N/A Cedar Park Information Services Cedar Park Information Services" · item https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer/info/iteminfo
+- facts: arcgis-layer
+- closes: not probed
+
+### Cedar Park Civil Boundaries  ·    ·  from gis-hunter
+- url: https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer/35
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gisrest.cedarparktexas.gov)
+- terms: CREDIT · source item page · "N/A Cedar Park Information Services Cedar Park Information Services" · item https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 185 records
+- closes: not probed
+
+### Cedar Park Civil Boundaries  ·    ·  from gis-hunter
+- url: https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer/36
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: ? → official (government host gisrest.cedarparktexas.gov)
+- terms: CREDIT · source item page · "N/A Cedar Park Information Services Cedar Park Information Services" · item https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 34789 records · sample 1000010001 / 1000010002 / 1000010003
+- closes: not probed
+
+### Cedar Park Civil Boundaries  ·    ·  from gis-hunter
+- url: https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer/37
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: ? → official (government host gisrest.cedarparktexas.gov)
+- terms: CREDIT · source item page · "N/A Cedar Park Information Services Cedar Park Information Services" · item https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 5487 records · sample 5003991029 / 5000992781 / 5000992780
+- closes: not probed
+
+### Cedar Park Civil Boundaries  ·    ·  from gis-hunter
+- url: https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer/38
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gisrest.cedarparktexas.gov)
+- terms: CREDIT · source item page · "N/A Cedar Park Information Services Cedar Park Information Services" · item https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 2 records
+- closes: not probed
+
+### Last Spring Freeze Station Extremes  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/stn_last_freeze_toocold_toohot/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (a government word of the country: National)
+- terms: CREDIT · source item page · "A NCEI U.S. Climate Normals data (1991-2020) on March 21, 2022. It is intended for communication, education, and outreach purposes, and can be freely re-used provided credi" · item https://www.arcgis.com/home/item.html?id=79b0b96dae814ab6bc334fb94af87da7 · owner oar.cee_noaa · org NOAA GeoPlatform
+- facts: arcgis-layer · esriGeometryPoint · name field name · 329 records · last edit 2023-07-19
+- closes: not probed
+
+### Smallest_Schools_(Points)_Density  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/tuxY7TQIaDhLWARO/arcgis/rest/services/Smallest_Schools_(Points)_Density/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=ca845bfaaefe421d9138a2c16a443a7a · owner IDM802254406_ohiostate
+- facts: arcgis-layer · esriGeometryPolygon · 20 records · last edit 2022-12-08
+- closes: not probed
+
+### Salish Sea Smallest Streams  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/qboYD3ru0louQq4F/arcgis/rest/services/Salish_Sea_Smallest_Streams/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Analysis and cartography by Aquila Flower. Washington stream lines from the USGS National Hydrography Dataset hosted by the Washington Department of Ecology (ht" · item https://www.arcgis.com/home/item.html?id=e6dc78c99a444851a7f4d94eb85e2d67 · owner aquilaflower · org Western Washington University (Academic)
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 231269 records · last edit 2021-07-03
+- closes: not probed
+
+### Spavinaw Map Tile package BIG  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/XkZ90iCdbTJ9oNXl/arcgis/rest/services/Spavinaw_Map_Tile_package_BIG/MapServer/0
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "cessary, obtaining professional advice. The burden of determining the accuracy, completeness, timeliness of information rests solely on the use City of Tulsa GIS Servic" · item https://www.arcgis.com/home/item.html?id=6fb7f8a1560c4d27b1b5904f6e511a10 · owner CityofTulsaGIS · org City of Tulsa
+- facts: arcgis-layer
+- closes: not probed
+
+### Spavinaw Map Tile package BIG  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/XkZ90iCdbTJ9oNXl/arcgis/rest/services/Spavinaw_Map_Tile_package_BIG/MapServer/1
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "cessary, obtaining professional advice. The burden of determining the accuracy, completeness, timeliness of information rests solely on the use City of Tulsa GIS Servic" · item https://www.arcgis.com/home/item.html?id=6fb7f8a1560c4d27b1b5904f6e511a10 · owner CityofTulsaGIS · org City of Tulsa
+- facts: arcgis-layer
+- closes: not probed
+
+### Spavinaw Map Tile package BIG  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/XkZ90iCdbTJ9oNXl/arcgis/rest/services/Spavinaw_Map_Tile_package_BIG/MapServer/2
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "cessary, obtaining professional advice. The burden of determining the accuracy, completeness, timeliness of information rests solely on the use City of Tulsa GIS Servic" · item https://www.arcgis.com/home/item.html?id=6fb7f8a1560c4d27b1b5904f6e511a10 · owner CityofTulsaGIS · org City of Tulsa
+- facts: arcgis-layer
+- closes: not probed
+
+### Spavinaw Map Tile package BIG  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/XkZ90iCdbTJ9oNXl/arcgis/rest/services/Spavinaw_Map_Tile_package_BIG/MapServer/3
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "cessary, obtaining professional advice. The burden of determining the accuracy, completeness, timeliness of information rests solely on the use City of Tulsa GIS Servic" · item https://www.arcgis.com/home/item.html?id=6fb7f8a1560c4d27b1b5904f6e511a10 · owner CityofTulsaGIS · org City of Tulsa
+- facts: arcgis-layer
+- closes: not probed
+
+### Spavinaw Map Tile package BIG  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/XkZ90iCdbTJ9oNXl/arcgis/rest/services/Spavinaw_Map_Tile_package_BIG/MapServer/4
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "cessary, obtaining professional advice. The burden of determining the accuracy, completeness, timeliness of information rests solely on the use City of Tulsa GIS Servic" · item https://www.arcgis.com/home/item.html?id=6fb7f8a1560c4d27b1b5904f6e511a10 · owner CityofTulsaGIS · org City of Tulsa
+- facts: arcgis-layer
+- closes: not probed
+
+### Spavinaw Map Tile package BIG  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/XkZ90iCdbTJ9oNXl/arcgis/rest/services/Spavinaw_Map_Tile_package_BIG/MapServer/5
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "cessary, obtaining professional advice. The burden of determining the accuracy, completeness, timeliness of information rests solely on the use City of Tulsa GIS Servic" · item https://www.arcgis.com/home/item.html?id=6fb7f8a1560c4d27b1b5904f6e511a10 · owner CityofTulsaGIS · org City of Tulsa
+- facts: arcgis-layer
+- closes: not probed
+
+### Spavinaw Map Tile package BIG  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/XkZ90iCdbTJ9oNXl/arcgis/rest/services/Spavinaw_Map_Tile_package_BIG/MapServer/6
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "cessary, obtaining professional advice. The burden of determining the accuracy, completeness, timeliness of information rests solely on the use City of Tulsa GIS Servic" · item https://www.arcgis.com/home/item.html?id=6fb7f8a1560c4d27b1b5904f6e511a10 · owner CityofTulsaGIS · org City of Tulsa
+- facts: arcgis-layer
+- closes: not probed
+
+### Spavinaw Map Tile package BIG  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/XkZ90iCdbTJ9oNXl/arcgis/rest/services/Spavinaw_Map_Tile_package_BIG/MapServer/7
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "cessary, obtaining professional advice. The burden of determining the accuracy, completeness, timeliness of information rests solely on the use City of Tulsa GIS Servic" · item https://www.arcgis.com/home/item.html?id=6fb7f8a1560c4d27b1b5904f6e511a10 · owner CityofTulsaGIS · org City of Tulsa
+- facts: arcgis-layer
+- closes: not probed
+
+### Santa Barbara, CA Depth Grids 6/8/2018  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/XG15cJAlne2vxtgt/arcgis/rest/services/SB_Depth_Grids_6_8_2018/MapServer/0
+- WHY: no polygons (no geometry)
+- publisher: ? → official (a government word of the country: Dept)
+- terms: CREDIT · source item page · "The Recovery Maps for Santa Barbara County have the benefit of using the latest modeling technology and topographic data available and can provide valuable insi" · item https://www.arcgis.com/home/item.html?id=94d3bb8ff016479aa033b5b1dd1ccf09 · owner FEMA_Region9_GIS · org FEMA AGOL
+- facts: arcgis-layer
+- closes: not probed
+
+### Santa Clara County Supervisorial District Boundaries 2021  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/tcv2cMrq63AgvbHF/arcgis/rest/services/Supervisorial_Districts_2021/FeatureServer/24
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: County)
+- terms: CREDIT · source item page · "officers, content providers, affiliates or other representatives are not liable for damages of any kind (including, without limitation, lost profits, direct, indirect, c" · item https://www.arcgis.com/home/item.html?id=5cae68d4bb2c47fd89d62dac2856e989 · owner SCC.Planning.Office · org Santa Clara County Planning and Development Department
+- facts: arcgis-layer · esriGeometryPolygon · 5 records · last edit 2026-06-05
+- closes: not probed
+
+### Oklahoma Tribal Statistical Areas  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Oklahoma_Tribal_Statistical_Areas_v1/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: OPEN · source item page · "This work is licensed under a Creative Commons by Attribution (CC BY 4.0) license. See Credits and Map for Attribution. View License Dee" · item https://www.arcgis.com/home/item.html?id=d0966ed973254253a93a5079899acd0e · owner Esri_US_Federal_Data · org Esri U.S. Federal Datasets
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 25 records · last edit 2026-10-29 · sample Seminole OTSA / Chickasaw OTSA / Kiowa-Comanche-Apache-Fort Sill Apache OTSA
+- closes: not probed
+
+### Oklahoma Health Regions  ·    ·  from gis-hunter
+- url: https://services9.arcgis.com/QeqGrHRDFO8mPwTf/arcgis/rest/services/Health_Regions/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "t permission from the Oklahoma State Department of Health. Users must acknowledge the Oklahoma RMRS and Oklahoma State Department of Health in any derived products or publ" · item https://www.arcgis.com/home/item.html?id=e87844f00d654524913f0db22ee06665 · owner sitrm_osdh · org Oklahoma State Department of Health
+- facts: arcgis-layer · esriGeometryPolygon · 8 records · last edit 2026-04-13
+- closes: not probed
+
+### Cherokee_Strip_Museum_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/jWQlP64OuwDh6GGX/arcgis/rest/services/Cherokee_Strip_Museum_WFL1/FeatureServer/0
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "These data are provided by BLM "as is" and may contain errors or omissions. The User assumes the entire risk associa" · item https://www.arcgis.com/home/item.html?id=1d9f934055c147c1be474df510cffd02 · owner krdyke
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 20 records · last edit 2026-08-07 · sample Watkins / Bunch Creek / Auburn
+- closes: not probed
+
+### Cherokee Strip Museum Map_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/jWQlP64OuwDh6GGX/arcgis/rest/services/Cherokee_Strip_Museum_Map_WFL1/FeatureServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "BLM Admin State" · item https://www.arcgis.com/home/item.html?id=2e7fe571335d47089c11bb5bc75d3b25 · owner krdyke
+- facts: arcgis-layer · esriGeometryPolygon · 759 records · last edit 2026-08-07
+- closes: not probed
+
+### Riverfront District  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/VKHi8CC6pMIyYUIs/arcgis/rest/services/Riverfront_District/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "Disclaimer: Albany GIS makes every effort to produce the most accurate information possible. No warr" · item https://www.arcgis.com/home/item.html?id=8de031cd909145c08d6b8ae8b5cde7cd · owner jkendall8 · org City of Albany, GA
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2021-09-30
+- closes: not probed
+
+### Riverfront Flooding June 2024 Ortho  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/tIBLyYZX96jUntYm/arcgis/rest/services/Riverfront_Flooding_June_2024_Ortho/MapServer/0
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government words: City of)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=89976dbef2d847769c96cee56ab7cd9f · owner scacioppo2 · org City of Omaha
+- facts: arcgis-layer
+- closes: not probed
+
+### Chickasaw Police  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/UyHjUN3YlQIsXJA1/arcgis/rest/services/Chickasaw_Police/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "This dataset is provided by MCCD for support purposes related to emergency services. This dataset is informational an" · item https://www.arcgis.com/home/item.html?id=dfc07c801e4b4bc6be3e87dca1e5d377 · owner abowler911
+- facts: arcgis-layer · esriGeometryPolygon · 4 records · last edit 2026-05-26
+- closes: not probed
+
+### Chickasaw Consolidation_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/OIHmIXKmWvkweUZp/arcgis/rest/services/Chickasaw_Consolidation_WFL1/FeatureServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: County)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1c0f044920ff40aabf081796b670d40b · owner brentdowns · org Orange County Public Schools
+- facts: arcgis-layer · esriGeometryPolygon · 141 records · last edit 2026-01-20
+- closes: not probed
+
+### Chickasaw Consolidation_WFL1  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/OIHmIXKmWvkweUZp/arcgis/rest/services/Chickasaw_Consolidation_WFL1/FeatureServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: County)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1c0f044920ff40aabf081796b670d40b · owner brentdowns · org Orange County Public Schools
+- facts: arcgis-layer · esriGeometryPolygon · 2 records · last edit 2026-01-20
+- closes: not probed
+
+### Mason_Fairfax_East_Campus_Boundary  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/knq5Ad7sB7AS2ev7/arcgis/rest/services/Mason_Fairfax_East_Campus_Boundary/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "See Description. Brett Spencer, Facilities Archives, FARCGIS@GMU.EDU Brett Spencer, Facilities Archives, FARCGIS@GMU.EDU" · item https://www.arcgis.com/home/item.html?id=ae6f23b5e3514244990a4a18104d54cb · owner emiles22_gmu_fm
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2018-03-23
+- closes: not probed
+
+### Leaf Collection Areas View  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/5olyYd7fCfTTiVp8/arcgis/rest/services/Leaf_Collection_Areas_view/FeatureServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "This feature layer is provided by the City of Joplin for public informational purposes only. All information is supplied “a" · item https://www.arcgis.com/home/item.html?id=6ee1024bb68c41408fce59a6c77c7df3 · owner eweber5 · org City of Joplin
+- facts: arcgis-layer · esriGeometryPolygon · 13 records · last edit 2026-10-20
+- closes: not probed
+
+### Leaf Collection Areas View  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/5olyYd7fCfTTiVp8/arcgis/rest/services/Leaf_Collection_Areas_view/FeatureServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "This feature layer is provided by the City of Joplin for public informational purposes only. All information is supplied “a" · item https://www.arcgis.com/home/item.html?id=6ee1024bb68c41408fce59a6c77c7df3 · owner eweber5 · org City of Joplin
+- facts: arcgis-layer · esriGeometryPolygon · 68 records · last edit 2026-10-20
+- closes: not probed
+
+### Red de ferrocarriles de España  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/nCKYwcSONQTkPA4K/arcgis/rest/services/RedFerrocarrilesIGN/FeatureServer/3
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: OPEN · source item page · "irse a la fuente oficial del dato, indicada en la Descripción. IGR-RT CC-BY 4.0 scne.es IGR-RT CC-BY 4.0 scne.es" · item https://www.arcgis.com/home/item.html?id=c68d7c5e350c47cb9ad7ac491c327115 · owner EsriEspanaContenidos · org Contenidos Esri España
+- facts: arcgis-layer · esriGeometryPolygon · name field nombre · 10419 records · last edit 2026-08-13 · sample Apeadero de Victoria Kent (APD) / Cargadero Villadangos Intermodal / Estación de Almussafes
+- closes: not probed
+
+### Red Natura 2000  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/nCKYwcSONQTkPA4K/arcgis/rest/services/Red_Natura_2000/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: CREDIT · source item page · "utor y propietario de la información de la siguiente manera: Fuente: «© Ministerio para la Transición Ecológica y Reto Demográfico». El uso de este Contenido imp" · item https://www.arcgis.com/home/item.html?id=11677dab1b4e4b52a730af8cfed15b5d · owner EsriEspanaContenidos · org Contenidos Esri España
+- facts: arcgis-layer · esriGeometryPolygon · name field SOName · 1832 records · last edit 2026-08-13 · sample Islas Chafarinas / Zona marítimo-terrestre del Monte Hacho / Acantilados del Monte Hacho
+- closes: not probed
+
+### Red Vial Circular 10  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/K90UQIB09TmTjUL8/arcgis/rest/services/R10/FeatureServer/1
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=587ea7f239084b4aba3c103c8c9022a5 · owner SIGSIF · org Gobernación de Antioquia
+- facts: arcgis-layer · esriGeometryPolyline · name field NOMBRE_VIA · 76 records · last edit 2024-06-19
+- closes: not probed
+
+### Red Vial Circular 10  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/K90UQIB09TmTjUL8/arcgis/rest/services/R10/FeatureServer/2
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=587ea7f239084b4aba3c103c8c9022a5 · owner SIGSIF · org Gobernación de Antioquia
+- facts: arcgis-layer · esriGeometryPolyline · name field NOMBRE_VIA · 169 records · last edit 2026-09-25
+- closes: not probed
+
+### Red Vial Circular 10  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/K90UQIB09TmTjUL8/arcgis/rest/services/R10/FeatureServer/3
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=587ea7f239084b4aba3c103c8c9022a5 · owner SIGSIF · org Gobernación de Antioquia
+- facts: arcgis-layer · esriGeometryPolyline · name field NOMBRE_VIA · 4489 records · last edit 2026-10-28
+- closes: not probed
+
+### 16.5ft Tallahala Creek - Laurel Flooding Extent  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/Tallahala_Moderate_Flooding_Extent/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "ppen, this data is open to be downloaded and shared/embedded with due credit to the NWS and USACE. National Weather Service (NWS), United States Army Corps of Enginee" · item https://www.arcgis.com/home/item.html?id=102304bc4a4646b1a52c08cb439d8981 · owner NWS.JAN_noaa · org NOAA GeoPlatform
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2019-08-13
+- closes: not probed
+
+### 19ft Tallahala Creek - Laurel Flooding Extent  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/Tallahala_Major_19ft_Flooding_Extent/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "ppen, this data is open to be downloaded and shared/embedded with due credit to the NWS and USACE. National Weather Service (NWS), United States Army Corps of Enginee" · item https://www.arcgis.com/home/item.html?id=84009c91ef1f4041959c7b7828631a32 · owner NWS.JAN_noaa · org NOAA GeoPlatform
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2019-08-13
+- closes: not probed
+
+### 13ft Tallahala Creek - Laurel Flooding Extent  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/Tallahala_Minor_13ft_Flooding_Extent/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "*Prototype - Not supported for 24/7 operations.* These inundation areas are approximate and are estimates. They are for informational purposes only and should N" · item https://www.arcgis.com/home/item.html?id=45c72e2e741b4b7c9b92a7513e238071 · owner NWS.JAN_noaa · org NOAA GeoPlatform
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2019-08-13
+- closes: not probed
+
+### Resume Story Map Monique Caston  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/Lmcs3aS4AodOs221/arcgis/rest/services/Resume_Story_Map_Monique_Caston/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=a52cd0963eab45509896dae4e66c1e53 · owner moniquecaston
+- facts: arcgis-layer · esriGeometryPoint · 3 records · last edit 2024-08-09
+- closes: not probed
+
+### Resume Story Map Monique Caston  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/Lmcs3aS4AodOs221/arcgis/rest/services/Resume_Story_Map_Monique_Caston/FeatureServer/1
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=a52cd0963eab45509896dae4e66c1e53 · owner moniquecaston
+- facts: arcgis-layer · esriGeometryPoint · 4 records · last edit 2024-10-08
+- closes: not probed
+
+### Enid Isolated Terrace Hydrologic Study, 2014 Update  ·    ·  from gis-hunter
+- url: https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Enid_Isolated_Terrace_Study/MapServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "OWRB OWRB" · item https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Enid_Isolated_Terrace_Study/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · sample Enid Isolated Terrace
+- closes: not probed
+
+### Enid Isolated Terrace Hydrologic Study, 2014 Update  ·    ·  from gis-hunter
+- url: https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Enid_Isolated_Terrace_Study/MapServer/1
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "OWRB Original Datasets: Oklahoma Geological Survey Modifications: Oklahoma Water Resources Board - Technical Studies" · item https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Enid_Isolated_Terrace_Study/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 1 records · sample Enid Isolated Terrace
+- closes: not probed
+
+### Enid Isolated Terrace Hydrologic Study, 2014 Update  ·    ·  from gis-hunter
+- url: https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Enid_Isolated_Terrace_Study/MapServer/6
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "OWRB Oklahoma Water Resources Board - Tech Studies" · item https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Enid_Isolated_Terrace_Study/MapServer/info/iteminfo
+- facts: arcgis-layer
+- closes: not probed
+
+### Enid Isolated Terrace Hydrologic Study, 2014 Update  ·    ·  from gis-hunter
+- url: https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Enid_Isolated_Terrace_Study/MapServer/7
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "OWRB Oklahoma Water Resources Board - Technical Studies" · item https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Enid_Isolated_Terrace_Study/MapServer/info/iteminfo
+- facts: arcgis-layer
+- closes: not probed
+
+### Grenada Steep Slopes  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/j80Jz20at6Bi0thr/arcgis/rest/services/Grenada_Steep_Slopes/FeatureServer/15
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: Government)
+- terms: CREDIT · source item page · "Esri, Government of Grenada, United Kingdom Government" · item https://www.arcgis.com/home/item.html?id=493847e599d44b72a91fa450c9df8d4c · owner Learn_ArcGIS · org Esri Tutorials
+- facts: arcgis-layer · esriGeometryPolygon · 408 records · last edit 2023-10-02
+- closes: not probed
+
+### Grenada Districts  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/j80Jz20at6Bi0thr/arcgis/rest/services/Grenada_Districts/FeatureServer/7
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: Government)
+- terms: CREDIT · source item page · "Government of Grenada, United Kingdom Government" · item https://www.arcgis.com/home/item.html?id=8b5b30ed55b6419eb88aa067876e5482 · owner Learn_ArcGIS · org Esri Tutorials
+- facts: arcgis-layer · esriGeometryPolygon · 19 records · last edit 2023-10-02
+- closes: not probed
+
+### Roads from Grenada Government  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/roads2/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Government)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=af41c84541c140da811619eb363df2a9 · owner khess_IVT · org Esri Imagery Virtual Team
+- facts: arcgis-layer · esriGeometryPolyline · 13660 records · last edit 2021-05-18
+- closes: not probed
+
+### Sardis Site Visit Photos_WFL1  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/TQnmvJ4NICOaocHd/arcgis/rest/services/Sardis_Site_Visit_Photos_WFL1/FeatureServer/3
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=3fe6ab3f0b4e413cb4a9fbc8038cbf09 · owner susie.wold_Waggoner
+- facts: arcgis-layer · esriGeometryPolygon · name field LABEL · 1 records · last edit 2026-07-09 · sample None
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Sardis Brook Trail  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/k4RHn3Cq6S9Ti9zx/arcgis/rest/services/Sardis_Brook_Trail/FeatureServer/19
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=de6f95a56e4c40c3aea21184612c42e3 · owner alosantinc
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 1 records · last edit 2025-09-10
+- closes: not probed
+
+### Sardis Brook Trail  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/k4RHn3Cq6S9Ti9zx/arcgis/rest/services/Sardis_Brook_Trail/FeatureServer/18
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=de6f95a56e4c40c3aea21184612c42e3 · owner alosantinc
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 1 records · last edit 2025-09-10
+- closes: not probed
+
+### Columbus, GA Buildings  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Columbus_GA_Buildings/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: OPEN · source item page · "This work is licensed under a Creative Commons by Attribution (CC BY 4.0) license. See Credits for Attribution. View License Deed | View" · item https://www.arcgis.com/home/item.html?id=84d4d849bb5f4451adf1530f1b7ebf76 · owner dkensok_osm · org OpenStreetMap
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 103738 records · last edit 2023-07-01 · sample None / None / None
+- closes: not probed
+
+### Columbus City Council Districts  ·    ·  from gis-hunter
+- url: https://maps2.columbus.gov/arcgis/rest/services/Schemas/BaseLayers/MapServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host maps2.columbus.gov)
+- terms: NOTHING STATED · source item page · item https://maps2.columbus.gov/arcgis/rest/services/Schemas/BaseLayers/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 9 records
+- closes: not probed
+
+### Distribution Pipe Network Aberdeen City  ·    ·  from gis-hunter
+- url: https://services-eu1.arcgis.com/UnrqlFBt9cFAdjsP/arcgis/rest/services/Distribution_Pipe_Network_Aberdeen_City/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: OPEN · source item page · "CC BY 4.0 License View license details" · item https://www.arcgis.com/home/item.html?id=8d57ed7fe39646adaf209c1ff146c294 · owner SGNOpenData · org SGN
+- facts: arcgis-layer · esriGeometryPolyline · name field DIAM_UNIT · 18793 records · last edit 2026-10-01
+- closes: not probed
+
+### EV Charging Infrastructure_ Aberdeen  ·    ·  from gis-hunter
+- url: https://services-eu1.arcgis.com/8fn27zOnEOMRWyUb/arcgis/rest/services/Aberdeen_EV_site_visit_data/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c7434995b0f54654aa9e82377f65e3cd · owner HBowey@hillcresthomes.org.uk · org Hillcrest Homes
+- facts: arcgis-layer · esriGeometryPoint · 15 records · last edit 2025-09-01
+- closes: not probed
+
+### Aberdeen_2025_Image  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/H3Xuuu0h4PaTeWwU/arcgis/rest/services/Aberdeen_2025/MapServer/0
+- WHY: no polygons (no geometry)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4d5d3f51f9f0454889c85eadf78d4fe3 · owner john.p
+- facts: arcgis-layer
+- closes: not probed
+
+### Caltrans UC Davis Wildfire Assessment 2020 PM  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/8CpMUd3fdw6aXef7/arcgis/rest/services/Caltrans_UC_Davis_Wildfire_Assessment_2020_PM/FeatureServer/4
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: State of)
+- terms: CREDIT · source item page · "ve, complete, factual, or timely. Information is provided on an &quot;as is&quot; and an &quot;as available&quot; basis. The Department of Transportation is not liab" · item https://www.arcgis.com/home/item.html?id=31f09e554024497aadce98507ed1b948 · owner Maintenance.GIS
+- facts: arcgis-layer · esriGeometryPolyline · 42177 records · last edit 2024-05-30
+- closes: not probed
+
+### Parsons to Davis - Phase 1 & 2 Borings (GPI, 2023)  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/cGI8zn9Oo7U9dF6z/arcgis/rest/services/Parsons2Davis_Phase_1_Borings/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NON-COMMERCIAL · source item page · "This data is for information and educational purposes only. It is provided “As-Is” with no guarantee, expressed or implied, regarding its accuracy o" · item https://www.arcgis.com/home/item.html?id=b4671f7a1a704d7f8982b17d85ec28a2 · owner DPMC_GIS · org Allegheny-Blue Ridge Alliance
+- facts: arcgis-layer · esriGeometryPoint · 575 records · last edit 2023-12-19
+- closes: not probed
+
+### Davis Swell, Parker Ridge, Three Dory Ridge  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/Parker_Ridge__Three_Dory_Ridge__Davis_Swell/FeatureServer/27
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "NOAA makes no warranties or representations whatsoever regarding the availability, quality, accuracy, content, com" · item https://www.arcgis.com/home/item.html?id=7d126d55a28541dea0d6f98e64d81d20 · owner nccos_msp_noaa · org NOAA GeoPlatform
+- facts: arcgis-layer · esriGeometryPolygon · 3 records · last edit 2024-04-29
+- closes: not probed
+
+### Oregon Coast Rockhounding Survey Results  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/survey123_df42ff0a52284a5ea7be4ed5e7e95bd6_results/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=ff7158e7451a4e42bb14afca3f9553db · owner browncod@oregonstate.edu_OSUGISci · org Oregon State University GISci
+- facts: arcgis-layer · esriGeometryPoint · 13 records · last edit 2026-03-11
+- closes: not probed
+
+### Wild and Scenic Rivers  ·    ·  from gis-hunter
+- url: https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_DESIGNATED_WATERS/MapServer/3
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host dnrmaps.wi.gov)
+- terms: CREDIT · source item page · "Waterway Protection, WDNR WI Dept. of Natural Resources, Waterway Protection Section" · item https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_DESIGNATED_WATERS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field LOCAL_NAME · 38 records
+- overlap: same publisher as sgwia
+- closes: not probed
+
+### Previous Wild and Scenic River Inventory Tongass National Forest Region 10 public view  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Previous_Wild_and_Scenic_River_Inventory_Tongass_National_Forest_Region_10_public_view/FeatureServer/0
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (a federal / national agency named)
+- terms: CLOSED · source item page · "urisdiction, or restrictions that may be in place on either public or private land. Natural hazards may or may not be depicted on the data and maps, and land users sho" · item https://www.arcgis.com/home/item.html?id=1223729d3f2148c1a3511a11fe2325e2 · owner USFS_WO_PSO_PPSG · org U.S. Forest Service
+- facts: arcgis-layer · esriGeometryPolyline · name field WSR_Label · 308 records · last edit 2024-04-23
+- closes: not probed
+
+### cole_rivers_hatchery_flood  ·    ·  from gis-hunter
+- url: https://services9.arcgis.com/TJruJkDTg7aeRw3Z/arcgis/rest/services/cole_rivers_hatchery_flood/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=a03c890fa91c49f99f72240187c3b8bf · owner rspies
+- facts: arcgis-layer · esriGeometryPolygon · name field map_name · 6 records · last edit 2022-12-09 · sample 100 year flood plane / 100 year flood plane / Floodway
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### cole_rivers_hatchery_footprint  ·    ·  from gis-hunter
+- url: https://services9.arcgis.com/TJruJkDTg7aeRw3Z/arcgis/rest/services/cole_rivers_hatchery_footprint/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=f846c53262b74f509012a5930c685fa5 · owner bszafranski
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2022-12-06
+- closes: not probed
+
+### Lone Rock Stockade Hillshade  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/RpVCghfSj7XHqAKQ/arcgis/rest/services/Lone_Rock_Stockade_Hillshade/MapServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=2d738cfbe3c246e894f7447334035de0 · owner chvandev · org University of the South GIS
+- facts: arcgis-layer
+- closes: not probed
+
+### Comparison of infectious agents detected from hatchery and wild juvenile Coho salmon in British Columbia, 2008-2018  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/yHbO69mL1QTGCPQG/arcgis/rest/services/Coho_2019_manuscript_data/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "Intellectual property rights Omid Nekouei1*, Raphael Vanderstichel1, Karia H. Kaukinen2, Krishna Thakur1, Tobi Ming2, David A. Patterson3, Marc Trudel4, Chrys N" · item https://www.arcgis.com/home/item.html?id=e8296e5934ef4f3b8f2e7721eced14fa · owner psf_salishsea · org Pacific Salmon Foundation
+- facts: arcgis-layer · esriGeometryPoint · 2615 records · last edit 2021-02-02
+- closes: not probed
+
+### Alsea_River_Hatchery_Irrigation_WRs  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/VmLllxPKgIzlr2id/arcgis/rest/services/Alsea_River_Hatchery_Irrigation_WRs/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: Dept)
+- terms: CREDIT · source item page · "This product is for informational purposes and may not have been prepared for, or be suitable for legal, engineering, or surveying purposes. Users of this infor" · item https://www.arcgis.com/home/item.html?id=b2f95c52cada487e84d901d9a7ddd338 · owner BlueWaterGIS · org Blue Water GIS
+- facts: arcgis-layer · esriGeometryPoint · name field HU_10_NAME · 222 records · last edit 2021-02-04
+- closes: not probed
+
+### alsea_hatchery_footprint  ·    ·  from gis-hunter
+- url: https://services9.arcgis.com/TJruJkDTg7aeRw3Z/arcgis/rest/services/alsea_hatchery_footprint/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=5a82a96da57648bba42bda60e1d0884b · owner bszafranski
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2022-12-06
+- closes: not probed
+
+### leaburg_hatchery_footprint  ·    ·  from gis-hunter
+- url: https://services9.arcgis.com/TJruJkDTg7aeRw3Z/arcgis/rest/services/leaburg_hatchery_footprint/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=286cf52692634a0ebf15786b53077ccc · owner bszafranski
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2022-12-06
+- closes: not probed
+
+### leaburg_hatchery_flood  ·    ·  from gis-hunter
+- url: https://services9.arcgis.com/TJruJkDTg7aeRw3Z/arcgis/rest/services/leaburg_hatchery_flood/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=691ef35850664a36aeb99ae27bd666c9 · owner rspies
+- facts: arcgis-layer · esriGeometryPolygon · name field map_name · 4 records · last edit 2022-12-16 · sample 100 year flood plane / Floodway / 500 year flood plane
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM ES GLO ROTW October 24, 2021 Bear Gulch Tile Layer  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/KbxwQRRfWyEYLgp4/arcgis/rest/services/Bear_Gulch_Cave_WTL1/MapServer/0
+- WHY: no polygons (no geometry)
+- publisher: ? → official (a federal / national agency named)
+- terms: OPEN · source item page · "R METADATA ELEMENT: ACCESS CONSTRAINT None, these data are considered public domain. ATTRIBUTE FOR METADATA ELEMENT: USE CONSTRAINT These data are provided by Bureau of Land" · item https://www.arcgis.com/home/item.html?id=cf6aabb59c254d24bb1ab20e1f2b3a64 · owner BLM_ES_ROTW_Public · org Bureau of Land Management
+- facts: arcgis-layer
+- closes: not probed
+
+### Rogue River-Siskiyou NF Administrative Boundary  ·    ·  from gis-hunter
+- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ForestSystemBoundaries_01/MapServer/1
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (government host apps.fs.usda.gov)
+- terms: CLOSED · source item page · "urisdiction, or restrictions that may be in place on either public or private land. Natural hazards may or may not be depicted on the data and maps, and land users sho" · item https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ForestSystemBoundaries_01/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field forestname · 112 records · sample Beaverhead-Deerlodge National Forest / Bitterroot National Forest / Idaho Panhandle National Forests
+- overlap: same publisher as fsod
+- closes: not probed
+
+### Rogue River-Siskiyou NF Recreation Areas  ·    ·  from gis-hunter
+- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host apps.fs.usda.gov)
+- terms: CREDIT · source item page · "The USDA Forest Service makes no warranty, expressed or implied, including the warranties of merchantability and fitness for a part" · item https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field forestname · 14211 records
+- overlap: same publisher as fsod
+- closes: not probed
+
+### OLC Santiam 5 ft BE Hillshade  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/kIA6yS9KDGqZL7U3/arcgis/rest/services/OLC_Santiam_5_ft_BE_Hillshade/MapServer/0
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government words: City of)
+- terms: CREDIT · source item page · "This product has been prepared by Salem GIS professionals for use by Salem staff and as a reference for online users. This" · item https://www.arcgis.com/home/item.html?id=08a3bea152e14b7e8f38e10dc2e76344 · owner SalemGIS · org City of Salem, Oregon
+- facts: arcgis-layer
+- closes: not probed
+
+### Dugway Proving Ground Project Area  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/Zia6VWQ4RxQ1tr9G/arcgis/rest/services/MIDA_Project_Area_Points_20260615/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: Authority)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=98ac9539d0a84546990644c0f2664a75 · owner MIDACFO · org Military Installation Development Authority
+- facts: arcgis-layer · esriGeometryPoint · name field Name · 33 records · last edit 2026-07-10
+- closes: not probed
+
+### dugway_location_only  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/1PLR1qtZvQQT7GKG/arcgis/rest/services/dugway_location_only/FeatureServer/7
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (a government word of the country: National)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=83eec991bdd446bfb476335c9eb4914b · owner jenniferb · org National Center for Atmospheric Research
+- facts: arcgis-layer · esriGeometryPoint · 29 records · last edit 2024-03-21
+- closes: not probed
+
+### Lone Tree Creek  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/qzGaVFGfQxn25AYB/arcgis/rest/services/Lone_Tree_Creek/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: City of)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=76bf5359ba104da392f1f886c88ef70b · owner CentennialOpenData · org City of Centennial - ArcGIS Online
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 1 records · last edit 2020-11-18
+- closes: not probed
+
+### Health Care Clinics Nelly Mallo_WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/PYQDcdc0d8h6iad8/arcgis/rest/services/Health_Care_Clinics_Nelly_Mallo_WFL1/FeatureServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4045c5b8d49646e48c37b4259c0e0c4b · owner nelly_mallo@redlands.edu_redlandsbusiness · org UR SBS
+- facts: arcgis-layer · esriGeometryPolygon · 6 records · last edit 2021-12-05
+- closes: not probed
+
+### Health Care Clinics Nelly Mallo_WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/PYQDcdc0d8h6iad8/arcgis/rest/services/Health_Care_Clinics_Nelly_Mallo_WFL1/FeatureServer/3
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4045c5b8d49646e48c37b4259c0e0c4b · owner nelly_mallo@redlands.edu_redlandsbusiness · org UR SBS
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · last edit 2021-12-05 · sample PITTSBURGH CITY
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Health Care Clinics Nelly Mallo_WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/PYQDcdc0d8h6iad8/arcgis/rest/services/Health_Care_Clinics_Nelly_Mallo_WFL1/FeatureServer/4
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4045c5b8d49646e48c37b4259c0e0c4b · owner nelly_mallo@redlands.edu_redlandsbusiness · org UR SBS
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · last edit 2021-12-05 · sample Allegheny
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Health Care Clinics Nelly Mallo_WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/PYQDcdc0d8h6iad8/arcgis/rest/services/Health_Care_Clinics_Nelly_Mallo_WFL1/FeatureServer/5
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4045c5b8d49646e48c37b4259c0e0c4b · owner nelly_mallo@redlands.edu_redlandsbusiness · org UR SBS
+- facts: arcgis-layer · esriGeometryPolygon · name field LANDNAME · 36 records · last edit 2021-12-05 · sample   / Lampher Reservation / Locks
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Health Care Clinics Nelly Mallo_WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/PYQDcdc0d8h6iad8/arcgis/rest/services/Health_Care_Clinics_Nelly_Mallo_WFL1/FeatureServer/6
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4045c5b8d49646e48c37b4259c0e0c4b · owner nelly_mallo@redlands.edu_redlandsbusiness · org UR SBS
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2021-12-05
+- closes: not probed
+
+### Health Care Clinics Nelly Mallo_WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/PYQDcdc0d8h6iad8/arcgis/rest/services/Health_Care_Clinics_Nelly_Mallo_WFL1/FeatureServer/7
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4045c5b8d49646e48c37b4259c0e0c4b · owner nelly_mallo@redlands.edu_redlandsbusiness · org UR SBS
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2021-12-05
+- closes: not probed
+
+### Health Care Clinics Nelly Mallo_WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/PYQDcdc0d8h6iad8/arcgis/rest/services/Health_Care_Clinics_Nelly_Mallo_WFL1/FeatureServer/8
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4045c5b8d49646e48c37b4259c0e0c4b · owner nelly_mallo@redlands.edu_redlandsbusiness · org UR SBS
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 130 records · last edit 2021-12-05 · sample Coraopolis / West Deer / East Pittsburgh
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Health Care Clinics Nelly Mallo_WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/PYQDcdc0d8h6iad8/arcgis/rest/services/Health_Care_Clinics_Nelly_Mallo_WFL1/FeatureServer/9
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4045c5b8d49646e48c37b4259c0e0c4b · owner nelly_mallo@redlands.edu_redlandsbusiness · org UR SBS
+- facts: arcgis-layer · esriGeometryPolygon · 402 records · last edit 2021-12-05
+- closes: not probed
+
+### Final_Site_Mallo  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/utVR6GjejYAZciWt/arcgis/rest/services/Final_Site_Mallo/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=324bb8a512b742b7a0f10d06d8745c5f · owner mcmaher
+- facts: arcgis-layer · esriGeometryPolygon
+- closes: not probed
+
+### Mountain Rim FSC East Little Mountain Project Grazing Area  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/8CpMUd3fdw6aXef7/arcgis/rest/services/Mountain_Rim_FSC_East_Little_Mountain_Project_Grazing_Area/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "itative, complete, factual, or timely. Information is provided on an "as is" and an "as available" basis. The Department of Transportation is not liable to any party" · item https://www.arcgis.com/home/item.html?id=58ca77949b8e4536af82a3e7e7d8c2f0 · owner Maintenance.GIS
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2025-08-27
+- closes: not probed
+
+### Rim Fire 2013 (Public)  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/wEula7SYiezXcdRv/arcgis/rest/services/RimFire/FeatureServer/0
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: ? → official (government words: County)
+- terms: CREDIT · source item page · "espects. Fires may be missing altogether or have missing or incorrect attribute data. Some fires may be missing because historical records were lost or damaged, were too" · item https://www.arcgis.com/home/item.html?id=2e25f6e6322347d68986c61aa37d6f34 · owner CountyofMariposa · org Mariposa County, California, USA.
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_ID · 1 records · last edit 2026-07-02 · sample STF
+- closes: not probed
+
+### Salt Lick  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/aaZhjjkUqOHS7oRg/arcgis/rest/services/Salt_Lick/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: District)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=0f813b74a2cc4953af1ee03dd000b223 · owner gwadduser · org Gateway Area Development District
+- facts: arcgis-layer · esriGeometryPolyline · name field RD_NAME · 29 records · last edit 2019-11-25
+- closes: not probed
+
+### The Ol Salt Lick Road  ·    ·  from gis-hunter
+- url: https://services4.arcgis.com/oS6FA2DLGfZTDHxV/arcgis/rest/services/The_Ol_Salt_Lick_Road/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c6d3a4c7c6b749879013b503067b99a9 · owner woolseyc
+- facts: arcgis-layer · esriGeometryPolyline · name field title · 1 records · last edit 2020-09-20
+- closes: not probed
+
+### The Ol Salt Lick Road  ·    ·  from gis-hunter
+- url: https://services4.arcgis.com/oS6FA2DLGfZTDHxV/arcgis/rest/services/The_Ol_Salt_Lick_Road/FeatureServer/1
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c6d3a4c7c6b749879013b503067b99a9 · owner woolseyc
+- facts: arcgis-layer · esriGeometryPoint · name field title · 6 records · last edit 2020-09-20
+- closes: not probed
+
+### Wild Horse  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/V0JDguEsaeBdf94U/arcgis/rest/services/Iron_Horse/FeatureServer/1
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: City of)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=e112dfde358844dfada364cd1813865a · owner Wesley.Hermann@coloradosprings.gov_coloradosprings · org City of Colorado Springs GIS
+- facts: arcgis-layer · esriGeometryPoint · 14 records · last edit 2026-08-27
+- closes: not probed
+
+### Idaho Centennial Trail_View (Official Route)  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Centennial_Trail_(Official_Route)_view/FeatureServer/52
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: State of)
+- terms: CREDIT · source item page · "The Idaho Department of Parks and Recreation assumes no liability for any loss that may result from the use of this data. The Idaho Department of Parks and" · item https://www.arcgis.com/home/item.html?id=e852160c6a404489b6ea2e0aa679691e · owner State_of_Idaho · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 3 records · last edit 2026-09-10
+- closes: not probed
+
+### Idaho Centennial Trail Maintenance view  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Centennial_Trail_Maintenance_view/FeatureServer/1
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: State of)
+- terms: CREDIT · source item page · "The Idaho Department of Parks and Recreation assumes no liability for any loss that may result from the use of this data. The Idaho Department of Parks and" · item https://www.arcgis.com/home/item.html?id=5f8c6450b8a740e5a22d50c1a57a7e65 · owner hbrookins_idpr · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolyline · name field Trail_Name · 89 records · last edit 2026-10-28
+- closes: not probed
+
+### Idaho Centennial Trail Points of Interest view  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Centennial_Trail_Points_of_Interest_view/FeatureServer/1
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: State of)
+- terms: CREDIT · source item page · "The Idaho Department of Parks and Recreation assumes no liability for any loss that may result from the use of this data. The Idaho Department of Parks and" · item https://www.arcgis.com/home/item.html?id=ff59e45482434cd090b548bbf38af422 · owner hbrookins_idpr · org State of Idaho
+- facts: arcgis-layer · esriGeometryPoint · name field Name · 3 records · last edit 2025-09-10
+- closes: not probed
+
+### Lava Hot Springs Parcels  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/unGRzvbK9SNTRUps/arcgis/rest/services/Lava_Hot_Springs_Parcels/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=68e863b8d10649dcaae6dbbfe064e8ba · owner StrategicCommunites
+- facts: arcgis-layer · esriGeometryPolygon · name field StName · 491 records · last edit 2026-10-08 · sample None / None / None
+- closes: not probed
+
+### Big_Cottonwood_Creek  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/mGvwEqK9FI5j4ecF/arcgis/rest/services/Big_Cottonwood_Creek/FeatureServer/56
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=cb3070df5897422c8e0e8f2e9e687062 · owner joe_bolton
+- facts: arcgis-layer · esriGeometryPolyline · 2 records · last edit 2024-11-27
+- closes: not probed
+
+### Buffer_of_Big_Cottonwood_Canyon_Data_Final  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/DJP723NX3ukQ2LtF/arcgis/rest/services/Buffer_of_Big_Cottonwood_Canyon_Data_Final/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: County)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=e41be17d906f47168188824261beccd8 · owner TArnold@slco.org_slco · org Salt Lake County
+- facts: arcgis-layer · esriGeometryPolygon · 61 records · last edit 2023-03-06
+- closes: not probed
+
+### Cottonwood Debris Flow Analysis  ·    ·  from gis-hunter
+- url: https://services6.arcgis.com/KaHXE9OkiB9e63uE/arcgis/rest/services/Cottonwood_Debris_Flow/FeatureServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: Division)
+- terms: OPEN · source item page · "This item is made publicly available by the Utah Division of Emergency Management with no restrictions on use, distribution, o" · item https://www.arcgis.com/home/item.html?id=694a22eb787a4df2b95279abf7fc234b · owner Mitigation3@UtahDEM · org Utah Division of Emergency Management
+- facts: arcgis-layer · esriGeometryPolygon · 796 records · last edit 2026-07-15
+- closes: not probed
+
+### GIP First Year Plantation Stand Units - East Fork Lewis River -  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Proposed_Units_Efk_Lewis_20250513_/FeatureServer/176
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (a federal / national agency named)
+- terms: CLOSED · source item page · "urisdiction, or restrictions that may be in place on either public or private land. Natural hazards may or may not be depicted on the data and maps, and land users sho" · item https://www.arcgis.com/home/item.html?id=9c08a6f4b529478ba7621c90c8f7b90f · owner USFSRegion06 · org U.S. Forest Service
+- facts: arcgis-layer · esriGeometryPolygon · name field FORESTNAME · 147 records · last edit 2025-05-28 · sample Gifford Pinchot National Forest / Gifford Pinchot National Forest / Gifford Pinchot National Forest
+- closes: not probed
+
+### Show Garden Relocations  ·    ·  from gis-hunter
+- url: https://services-eu1.arcgis.com/fmBEHcawbtSMmEc0/arcgis/rest/services/Show_Garden_Relocations___16_10_2025/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=3f624f3ca2414e74bb7fbe5b46b6607b · owner davidmorgan_RHSnfp
+- facts: arcgis-layer · esriGeometryPoint · name field Title_of_the_garden · 167 records · last edit 2026-07-08
+- closes: not probed
+
+### Hammer_Sources  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/GMycIhSIBQnnjV35/arcgis/rest/services/Hammer_Sources/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=acc02bde20e04823bf732d0c1cf9acf2 · owner richard_ribbans
+- facts: arcgis-layer · esriGeometryPoint · 24 records · last edit 2024-12-09
+- closes: not probed
+
+### Hammer Head New_WSL1  ·    ·  from gis-hunter
+- url: https://services7.arcgis.com/DhfyqU8QquiNHjoe/arcgis/rest/services/Hammer_Head_New_WSL1/FeatureServer/0
+- WHY: no polygons (esriGeometryMultiPatch)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=352e7a62b9044b0b97adb0d62e510554 · owner pinnacleinfotech · org Pinnacle Infotech
+- facts: arcgis-layer · esriGeometryMultiPatch · 1 records · last edit 2023-05-25
+- closes: not probed
+
+### Bar Island Trail map  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/0EOqWPtpCmgQr2ay/arcgis/rest/services/Bar_Island_Trail_map/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=e4c5db6ef0c7496294b3740ed56ee21a · owner avaher21@COAGIS · org College of the Atlantic GIS
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 1 records · last edit 2020-10-22
+- closes: not probed
+
+### Clean_Slate  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/k6HWkz7DMAcnnYfV/arcgis/rest/services/Clean_Slate/FeatureServer/0
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (government words: District)
+- terms: CLOSED · source item page · "Restricted. For internal use only. Cotswold District Council" · item https://www.arcgis.com/home/item.html?id=e75986fcf4be4e198b989409f6a8195c · owner ashtons
+- facts: arcgis-layer · esriGeometryPoint · name field Website · 2 records · last edit 2025-03-22
+- closes: not probed
+
+### Modeled Methane Potential_ Slate River Watershed _Fuzzy Logic Analysis__WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/wXYNaciObHUosEnt/arcgis/rest/services/Modeled_Methane_Potential__Slate_River_Watershed__Fuzzy_Logic_Analysis__WFL1/FeatureServer/2
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=67b5d537b80e42a79ba18ce87d731bd2 · owner emturk · org Geospatial Analysis Lab (GsAL) at USF
+- facts: arcgis-layer · esriGeometryPolygon · name field Site · 6 records · last edit 2025-12-08 · sample OBJ1-1 / OBJ1-2 / OBJ5
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Modeled Methane Potential_ Slate River Watershed _Fuzzy Logic Analysis__WFL1  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/wXYNaciObHUosEnt/arcgis/rest/services/Modeled_Methane_Potential__Slate_River_Watershed__Fuzzy_Logic_Analysis__WFL1/FeatureServer/3
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=67b5d537b80e42a79ba18ce87d731bd2 · owner emturk · org Geospatial Analysis Lab (GsAL) at USF
+- facts: arcgis-layer · esriGeometryPolygon · name field Site_name · 5 records · last edit 2025-12-08 · sample Low_1 / Low_2 / Low_3
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Past LSFC and Slate Project  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/VoYTMCxUgJQF43at/arcgis/rest/services/Past_LSFC_and_Slate_Project/FeatureServer/9
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1e561cc9a0f44fff9e3d6e55803272c8 · owner heathh
+- facts: arcgis-layer · esriGeometryPolygon · 19 records · last edit 2021-04-29
+- closes: not probed
+
+### Past LSFC and Slate Project  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/VoYTMCxUgJQF43at/arcgis/rest/services/Past_LSFC_and_Slate_Project/FeatureServer/10
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1e561cc9a0f44fff9e3d6e55803272c8 · owner heathh
+- facts: arcgis-layer · esriGeometryPolygon · 94 records · last edit 2021-04-29
+- closes: not probed
+
+### Past LSFC and Slate Project  ·    ·  from gis-hunter
+- url: https://services5.arcgis.com/VoYTMCxUgJQF43at/arcgis/rest/services/Past_LSFC_and_Slate_Project/FeatureServer/11
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=1e561cc9a0f44fff9e3d6e55803272c8 · owner heathh
+- facts: arcgis-layer · esriGeometryPolygon · 129 records · last edit 2021-04-29
+- closes: not probed
+
+### Regions of the Environmental Protection Agency  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/EPA_Regions/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: CREDIT · source item page · "This work is licensed under the Esri Master License Agreement. View Summary | View Terms of Use U.S. Environmental Protection Agency (EPA)" · item https://www.arcgis.com/home/item.html?id=b2ee0c5d62db4d1e98e2e7bd0e2c37e5 · owner Federal_User_Community · org Esri U.S. Federal Datasets
+- facts: arcgis-layer · esriGeometryPolygon · 10 records · last edit 2026-08-29
+- closes: not probed
+
+### BIA Agency, Regional, and Field Offices  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/UxqqIfhng71wUT9x/arcgis/rest/services/BIA_Agency_and_Regional_Offices/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: Bureau)
+- terms: CREDIT · source item page · "No warranty is made by the Bureau of Indian Affairs (BIA) for the use of the data for purposes not in" · item https://www.arcgis.com/home/item.html?id=76331f0d06ea40d19ebe3f78c45af98f · owner sara.hedrick@indianaffairs.gov_BIA_Geospatial · org Bureau of Indian Affairs
+- facts: arcgis-layer · esriGeometryPoint · name field JobTitle · 93 records · last edit 2026-10-29
+- closes: not probed
+
+### National Weather Service Smoke Forecast  ·    ·  from gis-hunter
+- url: https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NDGD_SmokeForecast_v1/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: CREDIT · source item page · "r the Esri Master License Agreement. View Summary | View Terms of Use Source: National Weather Service NOAA, Esri" · item https://www.arcgis.com/home/item.html?id=a98fd08751a5480c898b7cebe38807f4 · owner esri_livefeeds2 · org Esri
+- facts: arcgis-layer · esriGeometryPolygon · 7288 records · last edit 2026-10-30
+- closes: not probed
+
+### NOAA HMS Smoke Detection  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/NOAA_Satellite_Smoke_Detection_(v1)/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: OPEN · source item page · "tial copyright and related rights in these data worldwide through the Creative Commons Universal Public Domain Dedication (CC0-1.0) NOAA/NESDIS Satellite Analysis Branch" · item https://www.arcgis.com/home/item.html?id=ab7a5fbd76e3499296350eabf599fc63 · owner NESDIS.SAB_noaa · org NOAA GeoPlatform
+- facts: arcgis-layer · esriGeometryPolygon · 129 records · last edit 2026-10-30
+- closes: not probed
+
+### Artesia_LandUse_POI  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/JS0ODzK9I2ApHTX7/arcgis/rest/services/Artesia_LandUse_POI/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=9c2a39f952674fe9b4eef1707fba4d26 · owner KOAMParcgis
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2020-07-01
+- closes: not probed
+
+### Artesia_LandUse_POI  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/JS0ODzK9I2ApHTX7/arcgis/rest/services/Artesia_LandUse_POI/FeatureServer/6
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=9c2a39f952674fe9b4eef1707fba4d26 · owner KOAMParcgis
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 11 records · last edit 2020-07-01 · sample Niemes ES / Pioneer Artesia Shopping Center / Ross (Faye) MS
+- closes: not probed
+
+### Artesia_LandUse_POI  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/JS0ODzK9I2ApHTX7/arcgis/rest/services/Artesia_LandUse_POI/FeatureServer/7
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=9c2a39f952674fe9b4eef1707fba4d26 · owner KOAMParcgis
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME · 4 records · last edit 2020-07-01 · sample Artesia Park / Baber Park / A.J. Padelford Park
+- closes: not probed
+
+### Artesia_LandUse_POI  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/JS0ODzK9I2ApHTX7/arcgis/rest/services/Artesia_LandUse_POI/FeatureServer/8
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=9c2a39f952674fe9b4eef1707fba4d26 · owner KOAMParcgis
+- facts: arcgis-layer · esriGeometryPolygon · 82 records · last edit 2020-07-01
+- closes: not probed
+
+### Artesia_LandUse_POI  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/JS0ODzK9I2ApHTX7/arcgis/rest/services/Artesia_LandUse_POI/FeatureServer/9
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=9c2a39f952674fe9b4eef1707fba4d26 · owner KOAMParcgis
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 3 records · last edit 2020-07-01 · sample 5548.01 / 5548.02 / 5549
+- closes: not probed
+
+### Artesia_LandUse_POI  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/JS0ODzK9I2ApHTX7/arcgis/rest/services/Artesia_LandUse_POI/FeatureServer/10
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=9c2a39f952674fe9b4eef1707fba4d26 · owner KOAMParcgis
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 3 records · last edit 2020-07-01 · sample 5548.01 / 5548.02 / 5549
+- closes: not probed
+
+### Artesia_LandUse_POI  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/JS0ODzK9I2ApHTX7/arcgis/rest/services/Artesia_LandUse_POI/FeatureServer/11
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=9c2a39f952674fe9b4eef1707fba4d26 · owner KOAMParcgis
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 3 records · last edit 2020-07-01 · sample 5548.01 / 5548.02 / 5549
+- closes: not probed
+
+### Artesia_LandUse_POI  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/JS0ODzK9I2ApHTX7/arcgis/rest/services/Artesia_LandUse_POI/FeatureServer/12
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=9c2a39f952674fe9b4eef1707fba4d26 · owner KOAMParcgis
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 3 records · last edit 2020-07-01 · sample 5548.01 / 5548.02 / 5549
+- closes: not probed
+
+### Artesia_LandUse_POI_Updated  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/JS0ODzK9I2ApHTX7/arcgis/rest/services/Artesia_LandUse_POI_Updated/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=218cfbb3b47b49e982331dd65339c1ae · owner KOAMParcgis
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 11 records · last edit 2020-07-01 · sample Niemes ES / Pioneer Artesia Shopping Center / Ross (Faye) MS
+- closes: not probed
+
+### Elk Home Range - Dixie Valley - 2019-2023 [ds3167]  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3167_fpu/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: Department)
+- terms: OPEN · source item page · "License: This work is licensed under Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). Usi" · item https://www.arcgis.com/home/item.html?id=ee0da9e8c3b04068839e8b3658ea2fe9 · owner BIOS_Admin · org California Department of Fish and Wildlife
+- facts: arcgis-layer · esriGeometryPolygon · 2 records · last edit 2024-04-18
+- overlap: same publisher as sgcaa
+- closes: not probed
+
+### Beatty to Goldfield Adventure Route  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/Ezk9fcjSUkeadg6u/arcgis/rest/services/Beatty_to_Goldfield/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "https://ohv.nv.gov/trails/GenoaPeakIndianHills" · item https://www.arcgis.com/home/item.html?id=4209ae42546749778367c47012674817 · owner arsc_uagis · org University of Arizona GIS
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 1 records · last edit 2022-11-28
+- closes: not probed
+
+### Hill Country and Lowland Areas - Proposed Regional Plan (Decisions Version)  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/J8errK5dyxu7Xjf7/arcgis/rest/services/PROPOSED_RP_CURRENT_HillCountryAndLowland/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a government word of the country: land )
+- terms: NON-COMMERCIAL · source item page · "for use on a Creative Commons Attribution 4.0 New Zealand (CC BY 4.0) non-commercial licence . These terms of use apply to all users of the &quot;NRC OpenData&quot; service o" · item https://www.arcgis.com/home/item.html?id=a63d94a489fc4463ab24a79742675545 · owner NRC_admin · org Northland Regional Council
+- facts: arcgis-layer · esriGeometryPolygon · 13183 records · last edit 2021-12-09
+- closes: not probed
+
+### Parks of Chapel Hill  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/7KRXAKALbBGlCW77/arcgis/rest/services/Parks_of_Chapel_Hill/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: Town of)
+- terms: OPEN · source item page · "ontained in these data. License: https://opendatacommons.org/licenses/odbl/ Town of Chapel Hill Town of Chapel Hill" · item https://www.arcgis.com/home/item.html?id=f5cd402d4ae04afdab63514701dbd715 · owner ToCHadmin · org Town of Chapel Hill
+- facts: arcgis-layer · esriGeometryPoint · name field Park_Name · 16 records · last edit 2020-06-30
+- closes: not probed
+
+### Wild and Scenic Rivers - National Park Service [ds991]  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds991_fnu/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "to use the related graphics as data. The National Park Service gives no warranty, expressed or implied, as to the accuracy, re Susan Rosebrough; ; National Park Service (" · item https://www.arcgis.com/home/item.html?id=0cdd0860f2df4dafb993f6372ee4e6dc · owner BIOS_Admin · org California Department of Fish and Wildlife
+- facts: arcgis-layer · esriGeometryPolyline · name field WSR_Name · 8 records · last edit 2025-11-05
+- overlap: same publisher as sgcaa
+- closes: not probed
+
+### Portal Status Layer  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/DXfJ1UFKElRbbqT4/arcgis/rest/services/Portal_Status_Layer/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "Available for use by anyone in the State of Indiana. Can be placed in public-facing experiences as well." · item https://www.arcgis.com/home/item.html?id=a0dc3dd27f4646b1b1a1f55688f29496 · owner TimClark@iot.IN.gov_ingov · org Indiana ArcGIS Online (INGOV)
+- facts: arcgis-layer · esriGeometryPoint · 62066 records · last edit 2026-10-30
 - closes: not probed
 
 ## Known-answer test rows
