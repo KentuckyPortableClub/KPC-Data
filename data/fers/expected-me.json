@@ -1,11 +1,11 @@
 {
  "filter": {
   "rule": "pairs expected only from POTA history are kept when the outlines are within 1000 m (box to box), or a park has no outline, or one session logged both",
-  "left_out_far": 267,
-  "kept_no_outline": 30,
+  "left_out_far": 268,
+  "kept_no_outline": 29,
   "kept_same_session": 58,
   "kept_not_measured": 16,
-  "outlines_measured": 138
+  "outlines_measured": 139
  },
  "about": "MISSING CHECK (chat 2, Oct 27 2026; HQ 3:46 PM, Brandon: 'chat 8 can't verify what's missing'). For each area of a 2-fer run, every See kpc_fers_expected.py. Chat 8 reviews DROPPED + NEVER LOOKED AT.",
  "area": "US-ME",
@@ -14,7 +14,7 @@
  "counts": {
   "FOUND": 2,
   "DROPPED": 20,
-  "NEVER LOOKED AT": 91
+  "NEVER LOOKED AT": 90
  },
  "FOUND": [
   {
@@ -430,16 +430,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
-  },
-  {
-   "refs": [
-    "US-0450",
-    "US-2406"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-0450: no official boundary"
   },
   {
    "refs": [

@@ -49,27 +49,28 @@
   "with official lines": 1
  },
  "pass3": {
-  "agree with the pass before": 5,
+  "agree with the pass before": 0,
   "cell_m": 5.0,
   "date": "2026-10-30",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
-   "no outline": 3482,
+   "no outline": 3331,
    "no pin": 0,
    "pin well outside": 0
   },
   "new here only (not counted)": 0,
-  "official parks": 138,
-  "pairs tested": 4,
+  "official parks": 193,
+  "pairs tested": 0,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
   "pass": 3,
   "problems": [
    "W&S river corridors joined as area parks: 15",
-   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310"
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "55 line parks filed under another state but crossing this area kept: CA-1301, CA-5628, CA-5565, CA-5595, CA-6003, CA-5536, CA-1599, US-0881"
   ],
-  "with official lines": 1
+  "with official lines": 56
  },
  "pass5": {
   "cell_m": 5.0,
@@ -78,17 +79,18 @@
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
-   "no outline": 3482,
+   "no outline": 3331,
    "no pin": 0,
    "pin well outside": 0
   },
   "live rows held: spot far from a state park pin (rule B13)": 0,
-  "official parks": 138,
+  "official parks": 193,
   "pairs tested": 0,
   "pass": 5,
   "problems": [
    "W&S river corridors joined as area parks: 15",
-   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310"
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "55 line parks filed under another state but crossing this area kept: CA-1301, CA-5628, CA-5565, CA-5595, CA-6003, CA-5536, CA-1599, US-0881"
   ],
   "river channels listed as water only (boat spots)": 0,
   "spots given their boundary lines": 0,
@@ -96,18 +98,18 @@
   "trail stretches given their true zone": 5,
   "water only": 0,
   "water retries (won / tries)": "0 / 0",
-  "with official lines": 1
+  "with official lines": 56
  },
  "per state": {
   "US-ME": {
    "candidates": 3,
    "candidates (saved outline only)": 0,
-   "lines": 8,
+   "lines": 6,
    "n-fers": 0,
    "not sure": 0,
-   "pass1": 19,
-   "pass2": 17,
-   "spots": 19,
+   "pass1": 17,
+   "pass2": 15,
+   "spots": 17,
    "very tight": 0,
    "water only": 0
   }
