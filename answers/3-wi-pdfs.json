@@ -1,0 +1,47 @@
+{
+ "request": "requests/3-wi-pdfs.json",
+ "id": "3-wi-pdfs",
+ "chat": 3,
+ "kind": "map-check",
+ "report": "Wisconsin map PDFs (chat 3 Fable list). For each: is the park's own boundary / property line drawn, and is the park named? (Kohler-Andrae SP; Fenley SRA; Kettle Moraine North Unit = Long Lake + Mauthe Lake SRAs; Love & Strutt Creeks fishery area).",
+ "asked": {
+  "chat": 3,
+  "kind": "map-check",
+  "urls": [
+   "https://widnr.widen.net/s/kdznnsjffr/kohler-andrae_map",
+   "https://embed.widencdn.net/pdf/download/widnr/5x2yotjcr1/Fenley_Map.pdf",
+   "https://widnr.widen.net/s/nsvfvfttlc/kmsf-north_map",
+   "https://p.widencdn.net/rwsfwq/4090lovestruttcreeks"
+  ],
+  "report": "Wisconsin map PDFs (chat 3 Fable list). For each: is the park's own boundary / property line drawn, and is the park named? (Kohler-Andrae SP; Fenley SRA; Kettle Moraine North Unit = Long Lake + Mauthe Lake SRAs; Love & Strutt Creeks fishery area)."
+ },
+ "answered": "2026-10-30 00:37Z",
+ "results": [
+  {
+   "url": "https://widnr.widen.net/s/kdznnsjffr/kohler-andrae_map",
+   "status": "robots.txt says no"
+  },
+  {
+   "url": "https://embed.widencdn.net/pdf/download/widnr/5x2yotjcr1/Fenley_Map.pdf",
+   "status": "robots.txt says no"
+  },
+  {
+   "url": "https://widnr.widen.net/s/nsvfvfttlc/kmsf-north_map",
+   "status": "robots.txt says no"
+  },
+  {
+   "url": "https://p.widencdn.net/rwsfwq/4090lovestruttcreeks",
+   "status": "robots.txt says no"
+  }
+ ],
+ "seconds": 1,
+ "manners": {
+  "requests": 0,
+  "robots": 4,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "4 result(s), 0 read OK, 0 screenshot(s)"
+}
