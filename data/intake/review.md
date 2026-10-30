@@ -3672,7 +3672,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Alberta Park (LAYER line, CA-AB)  ·    ·  from chat 8 LAYER line
 - url: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → official (government host geospatial.alberta.ca)
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -3681,7 +3681,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Manitoba Par (LAYER line, CA-MB)  ·    ·  from chat 8 LAYER line
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -3691,7 +3691,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Manitoba wil (LAYER line, CA-MB)  ·    ·  from chat 8 LAYER line
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -3700,7 +3700,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Manitoba wil~2 (LAYER line, CA-MB)  ·    ·  from chat 8 LAYER line
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
 - terms: NOTHING STATED · source none
