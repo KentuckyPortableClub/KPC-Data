@@ -1,0 +1,162 @@
+{
+ "area": "US-MA",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0891": {
+   "park": "Taunton National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A MassGIS / Executive Office of Energy and: no polygon at the pin",
+    "A Massachusetts DCR (DCRStateParks account: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A National Park Service (property boundari: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"taunton scenic wild\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-0897": {
+   "park": "Westfield National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Wild and Scenic Designated Buffer",
+     "url": "https://services1.arcgis.com/yzNawWwHQXYQkxUq/arcgis/rest/services/Wild_and_Scenic_Designated_Buffer/FeatureServer",
+     "owner": "wrwa_staff1",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A MassGIS / Executive Office of Energy and: no polygon at the pin",
+    "A Massachusetts DCR (DCRStateParks account: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A National Park Service (property boundari: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"westfield scenic wild\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-2436": {
+   "park": "Greycourt State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A MassGIS / Executive Office of Energy and: no polygon at the pin",
+    "A Massachusetts DCR (DCRStateParks account: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A National Park Service (property boundari: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"greycourt\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8014": {
+   "park": "Nashua, Squannacook, and Nissitissit National Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Wild and Scenic Core Habitat",
+     "url": "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Wild_and_Scenic_Core_Habitat/FeatureServer",
+     "owner": "khartlage",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Wild and Scenic Aquatic Core",
+     "url": "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Wild_and_Scenic_Aquatic_Core/FeatureServer",
+     "owner": "khartlage",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Nashua River Wild and Scenic Towns",
+     "url": "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Nashua_River_Wild_and_Scenic_Towns/FeatureServer",
+     "owner": "khartlage",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A MassGIS / Executive Office of Energy and: no polygon at the pin",
+    "A Massachusetts DCR (DCRStateParks account: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A National Park Service (property boundari: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"nissitissit squannacook nashua\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8385": {
+   "park": "Farnham-Connolly State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A MassGIS / Executive Office of Energy and: no polygon at the pin",
+    "A Massachusetts DCR (DCRStateParks account: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A National Park Service (property boundari: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"connolly farnham\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8387": {
+   "park": "Francis D. Martini Memorial Shell Park and Moynihan State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A MassGIS / Executive Office of Energy and: no polygon at the pin",
+    "A Massachusetts DCR (DCRStateParks account: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A National Park Service (property boundari: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"moynihan martini francis\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8388": {
+   "park": "Great Falls Discovery Center State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A MassGIS / Executive Office of Energy and: no polygon at the pin",
+    "A Massachusetts DCR (DCRStateParks account: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A National Park Service (property boundari: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"discovery center falls\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8422": {
+   "park": "Pope John Paul II Park State Reserve",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
+     "agency": "Massachusetts DCR (DCRStateParks account, mass-eoeea org)",
+     "record": 277,
+     "record_name": "Neponset River Reservation",
+     "acres_approx": 1861
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A MassGIS / Executive Office of Energy and: no polygon at the pin",
+    "A Massachusetts DCR (DCRStateParks account: hit",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A National Park Service (property boundari: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"paul john pope\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  }
+ }
+}

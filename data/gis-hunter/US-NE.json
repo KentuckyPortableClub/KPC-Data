@@ -1,0 +1,391 @@
+{
+ "area": "US-NE",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0446": {
+   "park": "Funk WPA Wetland Management District",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4221,
+     "record_name": "Phelps County Waterfowl Production Area",
+     "acres_approx": 4680,
+     "Mang_Name": "FWS",
+     "Des_Tp": "RMA",
+     "Own_Type": "FED",
+     "GIS_Acres": 4677
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 5176,
+     "record_name": "Phelps County Waterfowl Production Area",
+     "acres_approx": 4680,
+     "Mang_Name": "FWS",
+     "Des_Tp": "RMA",
+     "Own_Type": "FED",
+     "GIS_Acres": 4677
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"district wetland funk\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-3373": {
+   "park": "Chimney Rock National Historic Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Chimney Rock Layer",
+     "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Map_3D4_WTL1/MapServer",
+     "owner": "sydney.luce_noaa",
+     "type": "Map Service"
+    },
+    {
+     "title": "Chimney Rock Ranch_WFL1",
+     "url": "https://services5.arcgis.com/vV1o91P0uxdOGCax/arcgis/rest/services/Chimney_Rock_Ranch_WFL1/FeatureServer",
+     "owner": "LISsystems",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Chimney Rock_WFL1",
+     "url": "https://services5.arcgis.com/vTj647Rtyurkop78/arcgis/rest/services/Chimney_Rock_WFL1/FeatureServer",
+     "owner": "jjbbrewer_WEIC",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"chimney rock\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-3374": {
+   "park": "Neligh Mill State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"neligh mill\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-3375": {
+   "park": "Stolley National Historic Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 103429,
+     "record_name": "Stolley Park",
+     "acres_approx": 36,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 39
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-3488": {
+   "park": "Alberding Lagoon National Wildlife Management Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"alberding lagoon\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-3492": {
+   "park": "Willa Cather Memorial Prairie State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"prairie cather willa\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-3493": {
+   "park": "Nine Mile Prairie National Historical Park",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"historical prairie nine\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-4010": {
+   "park": "Heron Haven State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"haven heron\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-4011": {
+   "park": "Chalco Hills State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2590,
+     "record_name": "Wehrspann Recreation Area",
+     "acres_approx": 1202,
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Own_Type": "UNK",
+     "GIS_Acres": 1196
+    }
+   ],
+   "leads": [
+    {
+     "title": "Chalco Hills Rec Area Features",
+     "url": "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Chalco_Hills_Rec_Area_Features/FeatureServer",
+     "owner": "jriebe0623",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Chalco Hills NatureTrails",
+     "url": "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Chalco_NatureTrails/FeatureServer",
+     "owner": "jriebe0623",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Chalco Hills Park Benches",
+     "url": "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Park_Benches/FeatureServer",
+     "owner": "jriebe0623",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"chalco hills\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4012": {
+   "park": "Elkhorn Crossing State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"crossing elkhorn\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-4013": {
+   "park": "Prairie View State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"prairie view\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-4015": {
+   "park": "Platte River Landing State Park",
+   "why_not": "pin-doubt",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"landing platte\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-4025": {
+   "park": "Buckley Creek State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Buckley SFB Accident Potential Zone",
+     "url": "https://ags.auroragov.org/aurora/rest/services/OpenData/MapServer/26",
+     "owner": "wkeever",
+     "type": "Feature Service"
+    },
+    {
+     "title": "HP_003_Buckley_WFL1",
+     "url": "https://services3.arcgis.com/1V8429k2MaAcIZUa/arcgis/rest/services/HP_003_Buckley_WFL1/FeatureServer",
+     "owner": "louis_pino",
+     "type": "Feature Service"
+    },
+    {
+     "title": "SP.003.Buckley",
+     "url": "https://services3.arcgis.com/1V8429k2MaAcIZUa/arcgis/rest/services/SP_003_Buckley_Renumbered/FeatureServer",
+     "owner": "louis_pino",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"buckley\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4027": {
+   "park": "Lone Star State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Lone Star College School District View",
+     "url": "https://services1.arcgis.com/PRoAPGnMSUqvTrzq/arcgis/rest/services/Lone_Star_College_School_Districts/FeatureServer",
+     "owner": "GIS.Data_MOCO",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Vectorborne Surveillance Lone Star Ticks (2021)",
+     "url": "https://services6.arcgis.com/tuxY7TQIaDhLWARO/arcgis/rest/services/Vectorborne_Surveillance_Lone_Star_Ticks_2021/FeatureServer",
+     "owner": "kxadmin",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"star lone\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4036": {
+   "park": "Walnut Creek State Recreation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 118464,
+     "record_name": "Walnut Creek Recreation Area",
+     "acres_approx": 359,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 383
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-5656": {
+   "park": "Flanagan Lake State Recreation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 117508,
+     "record_name": "Flanagan Lake & Recreation Area",
+     "acres_approx": 646,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LREC",
+     "Own_Type": "LOC",
+     "GIS_Acres": 721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Nebraska Game and Parks Commission: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  }
+ }
+}

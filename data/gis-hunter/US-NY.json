@@ -1,0 +1,714 @@
+{
+ "area": "US-NY",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0778": {
+   "park": "Hamilton Grange National Memorial",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 935,
+     "record_name": "Hamilton Grange National Memorial",
+     "acres_approx": 1
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-2001": {
+   "park": "Adirondack State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Adirondack Park Boundary",
+     "url": "https://services2.arcgis.com/8krRUWgifzA4cgL3/arcgis/rest/services/AdirondackParkBoundary/FeatureServer",
+     "owner": "APA_Administrator",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Historic Adirondack Railroads",
+     "url": "https://services2.arcgis.com/8krRUWgifzA4cgL3/arcgis/rest/services/HistoricAdirondackRailroads/FeatureServer",
+     "owner": "jwbarge",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Adirondack Park Boundary Polygon",
+     "url": "https://services2.arcgis.com/8krRUWgifzA4cgL3/arcgis/rest/services/BluelinePolygon/FeatureServer",
+     "owner": "APA_Administrator",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"adirondack\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-2081": {
+   "park": "Iona Island Wildlife Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "agency": "New York State Parks",
+     "record": 487,
+     "record_name": "Bear Mountain",
+     "acres_approx": 5207
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 237450,
+     "record_name": "Bear Mountain State Park",
+     "acres_approx": 5396,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 5477
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: hit",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-2151": {
+   "park": "Thompsons Lake State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "agency": "New York State Parks",
+     "record": 594,
+     "record_name": "John Boyd Thacher",
+     "acres_approx": 224
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 237529,
+     "record_name": "John Boyd Thacher State Park",
+     "acres_approx": 2422,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2477
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: hit",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-4567": {
+   "park": "Captain John Smith Chesapeake National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Captain John Smith Chesapeake National Historic Trail",
+     "url": "https://services6.arcgis.com/UbKyMceXgEVeTOEF/arcgis/rest/services/Captain_John_Smith_Chesapeake_National_Historic_Trail/FeatureServer",
+     "owner": "ccherava",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Capt. John Smith Trail",
+     "url": "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Capt__John_Smith_Trail/FeatureServer",
+     "owner": "StoryMaps",
+     "type": "Feature Service"
+    },
+    {
+     "title": "CAJO Captain John Smith Chesapeake NHT Centerline ln",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/CAJO_Captain_John_Smith_Chesapeake_NHT_Centerline_ln/FeatureServer",
+     "owner": "JEFARRELL@nps.gov_nps",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"chesapeake captain smith\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4582": {
+   "park": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Washington Rochambeau Auto Tour_WFL1",
+     "url": "https://services.arcgis.com/p5v98VHDX9Atv3l7/arcgis/rest/services/Washington_Rochambeau_Auto_Tour_WFL1/FeatureServer",
+     "owner": "David.Alley@vdot.virginia.gov_VDOT",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Washington-Rochambeau Trail",
+     "url": "https://services7.arcgis.com/xBaYvpTc0JtqK5u2/arcgis/rest/services/WARO_Trail/FeatureServer",
+     "owner": "mauryt_havredegracemd",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"revolutionary washington rochambeau\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5197": {
+   "park": "Dannemora State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
+     "agency": "New York State DEC",
+     "record": 61625,
+     "record_name": "Chazy Highlands State Forest",
+     "acres_approx": 5184
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 236478,
+     "record_name": "Chazy Highlands State Forest",
+     "acres_approx": 5467,
+     "Mang_Name": "SDC",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 5544
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: hit",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"dannemora\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6532": {
+   "park": "Erie Canalway Corridor National Heritage Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 860,
+     "record_name": "Oneida Indian Nation Reservation",
+     "acres_approx": 269360,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 272852
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"corridor heritage canalway\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-8061": {
+   "park": "Ellis Island National Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 928,
+     "record_name": "Statue of Liberty National Monument",
+     "acres_approx": 57
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3406,
+     "record_name": "Statue of Liberty National Monument",
+     "acres_approx": 9,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NM",
+     "Own_Type": "FED",
+     "GIS_Acres": 19
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8064": {
+   "park": "Barcelona Neck Cooperative State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
+     "agency": "New York State Parks",
+     "record": 540,
+     "record_name": "Sag Harbor",
+     "acres_approx": 31
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 237582,
+     "record_name": "Sag Harbor Golf Course State Park",
+     "acres_approx": 34,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 49
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: hit",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8070": {
+   "park": "Catskill State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Catskill Park",
+     "url": "https://services6.arcgis.com/EbVsqZ18sv1kVJ3k/arcgis/rest/services/Catskill_Park/FeatureServer",
+     "owner": "NYSGIS_GPO",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Catskill Park Boundary",
+     "url": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/arcgis/rest/services/Catskill_Park_Boundary/FeatureServer",
+     "owner": "srvDECGISPub@srv_cld.ny.gov_nysdec",
+     "type": "Feature Service"
+    },
+    {
+     "title": "catskill_park_firetowers",
+     "url": "https://services8.arcgis.com/gHHsN1i8OISt9wMD/arcgis/rest/services/catskill_park_firetowers/FeatureServer",
+     "owner": "Timothy.Ozmon_GISBSC",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"catskill\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8081": {
+   "park": "Floyd Bennett Field National Historic District",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 920,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 26777
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3501,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 18209,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 18548
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8082": {
+   "park": "Jamaica Bay State Wildlife Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 920,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 26777
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3501,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 18209,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 18548
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8083": {
+   "park": "Canarsie Pier State Recreation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 920,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 26777
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3501,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 18209,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 18548
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8084": {
+   "park": "Breezy Point Tip State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 920,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 26777
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3501,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 18209,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 18548
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8085": {
+   "park": "Fort Tilden National Historic Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 920,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 26777
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3501,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 18209,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 18548
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8086": {
+   "park": "Jacob Riis Park National Historic Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 920,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 26777
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8087": {
+   "park": "Fort Wadsworth National Historic Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 920,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 26777
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3501,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 18209,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 18548
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8088": {
+   "park": "Miller Field State Recreation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 920,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 26777
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3501,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 18209,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 18548
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8089": {
+   "park": "Great Kills Park State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 920,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 26777
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3501,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 18209,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 18548
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8090": {
+   "park": "Frank Charles Park National Recreation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 920,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 26777
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3501,
+     "record_name": "Gateway National Recreation Area",
+     "acres_approx": 18209,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 18548
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8098": {
+   "park": "Empire State Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Empire State Trail",
+     "url": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer",
+     "owner": "Christina.Croll@parks.ny.gov_nysparks",
+     "type": "Feature Service"
+    },
+    {
+     "title": "British Empire 2",
+     "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/Major_Empires/FeatureServer",
+     "owner": "Georgeanne.Hribar.GaDOE",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Mint locations of the Roman Empire",
+     "url": "https://services3.arcgis.com/nwUScSWGt2wNe9dC/arcgis/rest/services/OCRE_Mintlocations_Roman_Empire/FeatureServer",
+     "owner": "GISGILDE.Admin",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A New York State DEC: no polygon at the pin",
+    "A New York State Parks: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"empire\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  }
+ }
+}

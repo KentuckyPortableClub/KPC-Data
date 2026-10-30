@@ -1,0 +1,253 @@
+{
+ "area": "US-MD",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-10751": {
+   "park": "Idylwild Natural Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0",
+     "agency": "Maryland DNR (state parks, WMAs, forests, natural resource areas)",
+     "record": 319,
+     "record_name": "IDYLWILD WMA",
+     "acres_approx": 3583
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0",
+     "agency": "Maryland DNR (Maryland Natural Areas)",
+     "record": 16,
+     "record_name": "Idywild",
+     "acres_approx": 1541
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Maryland DNR (state parks, WMAs, forests: hit",
+    "A Maryland DNR (Maryland Natural Areas): hit",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-11231": {
+   "park": "Sideling Hill Creek State Park",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0",
+     "agency": "Maryland DNR (state parks, WMAs, forests, natural resource areas)",
+     "record": 334,
+     "record_name": "SIDELING HILL WMA",
+     "acres_approx": 3473
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 56574,
+     "record_name": "Sideling Hill Wma",
+     "acres_approx": 3362,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3384
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Maryland DNR (state parks, WMAs, forests: hit",
+    "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13564": {
+   "park": "Savage Highlands State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0",
+     "agency": "Maryland DNR (state parks, WMAs, forests, natural resource areas)",
+     "record": 132,
+     "record_name": "SAVAGE RIVER SF",
+     "acres_approx": 54941
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0",
+     "agency": "Maryland DNR (state parks, WMAs, forests, natural resource areas)",
+     "record": 406,
+     "record_name": "SAVAGE RIVER SF\t",
+     "acres_approx": 25
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Maryland DNR (state parks, WMAs, forests: hit",
+    "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-6388": {
+   "park": "Helen Avalynne Tawes Garden State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
+    "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"avalynne garden helen\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6389": {
+   "park": "Jefferson Patterson Park and Museum State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
+    "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"jefferson patterson museum\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7768": {
+   "park": "Frederick City Watershed Cooperative Wildlife Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 16458,
+     "record_name": "Frederick Municipal Forest",
+     "acres_approx": 5158,
+     "Mang_Name": "UNK",
+     "Des_Tp": "LOTH",
+     "Own_Type": "LOC",
+     "GIS_Acres": 5186
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
+    "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-7776": {
+   "park": "Oxon Cove Park & Farm National Historical Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3548,
+     "record_name": "George Washington Memorial Parkway",
+     "acres_approx": 2189,
+     "Mang_Name": "NPS",
+     "Des_Tp": "SDA",
+     "Own_Type": "FED",
+     "GIS_Acres": 2364
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
+    "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"historical cove farm\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7973": {
+   "park": "Baltimore-Washington National Parkway",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3535,
+     "record_name": "Greenbelt Park",
+     "acres_approx": 1035,
+     "Mang_Name": "NPS",
+     "Des_Tp": "SDA",
+     "Own_Type": "FED",
+     "GIS_Acres": 1079
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
+    "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"washington baltimore parkway\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7974": {
+   "park": "Harmony Hall National Heritage Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3548,
+     "record_name": "George Washington Memorial Parkway",
+     "acres_approx": 2189,
+     "Mang_Name": "NPS",
+     "Des_Tp": "SDA",
+     "Own_Type": "FED",
+     "GIS_Acres": 2364
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
+    "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"heritage harmony hall\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7975": {
+   "park": "Glen Echo National Heritage Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3548,
+     "record_name": "George Washington Memorial Parkway",
+     "acres_approx": 2189,
+     "Mang_Name": "NPS",
+     "Des_Tp": "SDA",
+     "Own_Type": "FED",
+     "GIS_Acres": 2364
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
+    "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"heritage glen echo\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  }
+ }
+}

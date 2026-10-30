@@ -1,0 +1,714 @@
+{
+ "area": "US-AZ",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0908": {
+   "park": "Canyon de Chelly National Monument",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1019,
+     "record_name": "Navajo Nation Reservation",
+     "acres_approx": 10277212,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 10345758
+    }
+   ],
+   "leads": [
+    {
+     "title": "Canyon De Chelly National Monument, AZ (Data Basin Dataset)",
+     "url": "http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer",
+     "owner": "consbio",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"monument canyon chelly\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10995": {
+   "park": "Sunshine Loop and Dutchman Mountain Bike Trails BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1879,
+     "record_name": "Arizona Strip Field Office",
+     "acres_approx": 2749998,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2766023
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mountain sunshine dutchman\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11045": {
+   "park": "Painted Rock Petroglyph Site National Historical Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 184,
+     "record_name": "Lower Gila Terraces And Historic Trails",
+     "acres_approx": 138248
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1888,
+     "record_name": "Lower Sonoran Field Office",
+     "acres_approx": 1397679,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1404336
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"historical petroglyph painted\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11122": {
+   "park": "General Crook National Recreation Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2755,
+     "record_name": "Sitgreaves National Forest",
+     "acres_approx": 817657,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 820490
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"general crook\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11123": {
+   "park": "Highline National Recreation Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2756,
+     "record_name": "Tonto National Forest",
+     "acres_approx": 2853324,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 2866817
+    }
+   ],
+   "leads": [
+    {
+     "title": "Urban Design Standards - North Highline",
+     "url": "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/URBAN_DESIGN_STANDARDS_AREA_3009/FeatureServer",
+     "owner": "KingCounty",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Urban Design Standards Designated Streets - North Highline",
+     "url": "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/URBAN_DESIGN_STANDARDS_STREETS_LINE_3008/FeatureServer",
+     "owner": "KingCounty",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Government_Highline_Canal",
+     "url": "https://services1.arcgis.com/QjiQKkFtXufcXWpu/arcgis/rest/services/Government_Highline_Canal/FeatureServer",
+     "owner": "KaseyDH",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"highline\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-11971": {
+   "park": "Virgin River Canyon BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1879,
+     "record_name": "Arizona Strip Field Office",
+     "acres_approx": 2749998,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2766023
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"canyon virgin\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11975": {
+   "park": "Table Mesa BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1883,
+     "record_name": "Hassayampa Field Office",
+     "acres_approx": 968091,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 970921
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"table mesa\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11981": {
+   "park": "Arivaca Lake State Wildlife Area",
+   "why_not": "pin-doubt",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 167506,
+     "record_name": "Arivaca Land and Lake",
+     "acres_approx": 182,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SREC",
+     "Own_Type": "STAT",
+     "GIS_Acres": 208
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-12142": {
+   "park": "Dominguez-Escalante Site National Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1879,
+     "record_name": "Arizona Strip Field Office",
+     "acres_approx": 2749998,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2766023
+    }
+   ],
+   "leads": [
+    {
+     "title": "OLSP Native Trails StoryMap Dominguez and Escalante Map Image",
+     "url": "https://tiles.arcgis.com/tiles/zbiOJznElr9EGpUY/arcgis/rest/services/DominguezEscalante/MapServer",
+     "owner": "ntirres_nps",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"escalante dominguez\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12161": {
+   "park": "Round Mountain Rockhound BLM Special Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1891,
+     "record_name": "Safford Field Office",
+     "acres_approx": 1390510,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1397557
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"rockhound mountain special\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12162": {
+   "park": "Sears Point BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 50,
+     "record_name": "Sears Point Core",
+     "acres_approx": 3663
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1896,
+     "record_name": "Yuma Field Office",
+     "acres_approx": 1186205,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1190046
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13593": {
+   "park": "Boulders OHV Staging Area BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1883,
+     "record_name": "Hassayampa Field Office",
+     "acres_approx": 968091,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 970921
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"boulders staging ohv\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13594": {
+   "park": "Black Canyon National Recreation Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1883,
+     "record_name": "Hassayampa Field Office",
+     "acres_approx": 968091,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 970921
+    }
+   ],
+   "leads": [
+    {
+     "title": "Black Canyon Golf Course_view",
+     "url": "https://services3.arcgis.com/arjIZiPnUOHQnhsl/arcgis/rest/services/Black_Canyon_Golf_Course_/FeatureServer",
+     "owner": "GISAdmin_Montrose",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Black Canyon City and Arizona Water_WFL1",
+     "url": "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Black_Canyon_City_and_Arizona_Water_WFL1/FeatureServer",
+     "owner": "estreber_asu",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Black Canyon City_ Arizona_WFL1",
+     "url": "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Black_Canyon_City__Arizona_WFL1/FeatureServer",
+     "owner": "estreber_asu",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"canyon black\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4557": {
+   "park": "Arizona Trail National Scenic Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3257,
+     "record_name": "Coronado National Memorial",
+     "acres_approx": 4852,
+     "Mang_Name": "NPS",
+     "Des_Tp": "HCA",
+     "Own_Type": "FED",
+     "GIS_Acres": 4810
+    }
+   ],
+   "leads": [
+    {
+     "title": "Arizona_National_Scenic_Trail_Feature_Layers_view",
+     "url": "https://services3.arcgis.com/IKBBLZOXy58PXgpl/arcgis/rest/services/Arizona_National_Scenic_Trail_Feature_Layers_view/FeatureServer",
+     "owner": "AZTrail",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Arizona_National_Scenic_Trail_Feature_Layers_view",
+     "url": "https://services3.arcgis.com/IKBBLZOXy58PXgpl/arcgis/rest/services/Arizona_National_Scenic_Trail_Feature_Layers_view/FeatureServer",
+     "owner": "AzTrailsAssn_official_azgeo",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Arizona National Scenic Trail Scenic Resources view",
+     "url": "https://services3.arcgis.com/IKBBLZOXy58PXgpl/arcgis/rest/services/Scenic_Resources_AGOL_view/FeatureServer",
+     "owner": "AZTrail",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"arizona scenic\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4571": {
+   "park": "Juan Bautista de Anza National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 167357,
+     "record_name": "Canoa Ranch",
+     "acres_approx": 4722,
+     "Mang_Name": "CNTY",
+     "Des_Tp": "LCA",
+     "Own_Type": "LOC",
+     "GIS_Acres": 4770
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"bautista juan anza\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-5965": {
+   "park": "Stateline Campground BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2099,
+     "record_name": "Kanab Field Office",
+     "acres_approx": 1407462,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1416246
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground stateline\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6043": {
+   "park": "Honeymoon Historic Trail National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2117,
+     "record_name": "St. George Field Office",
+     "acres_approx": 625636,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 629088
+    }
+   ],
+   "leads": [
+    {
+     "title": "Honeymoon_Photos_20230609",
+     "url": "https://services7.arcgis.com/OQmrTvuHcbVXxUp1/arcgis/rest/services/Honeymoon_Photos_20230609/FeatureServer",
+     "owner": "mstotts22",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Iceland Honeymoon 2024_WFL1",
+     "url": "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer",
+     "owner": "brokell",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Iceland Honeymoon 2024_WFL",
+     "url": "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL/FeatureServer",
+     "owner": "brokell",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"honeymoon\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-6071": {
+   "park": "Little Black Mountain Petroglyph Site State Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 85,
+     "record_name": "Little Black Mountain",
+     "acres_approx": 240
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1879,
+     "record_name": "Arizona Strip Field Office",
+     "acres_approx": 2749998,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2766023
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-7383": {
+   "park": "Tonto State Fish Hatchery",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Hatchery_Polys/FeatureServer/0",
+     "agency": "Arizona Game and Fish Department (AZGFD_GIS org)",
+     "record": 6,
+     "record_name": "Tonto Creek Hatchery",
+     "acres_approx": 62
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2756,
+     "record_name": "Tonto National Forest",
+     "acres_approx": 2853324,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 2866817
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Arizona State Parks & Trails: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: no polygon at the pin",
+    "A Arizona Game and Fish Department (AZGFD_: hit",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A Arizona State Parks and Trails (park bou: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  }
+ }
+}

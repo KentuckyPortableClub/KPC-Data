@@ -1,0 +1,433 @@
+{
+ "area": "US-TN",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-11181": {
+   "park": "Sheltowee Trace National Recreation Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Sheltowee Trace",
+     "url": "https://services3.arcgis.com/0g1gZyTiQ9uGlDEb/arcgis/rest/services/Sheltowee_Trace/FeatureServer",
+     "owner": "eonealKY",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"sheltowee trace\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-11357": {
+   "park": "Sellars Farm State Archeological Reserve",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"archeological sellars farm\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11869": {
+   "park": "Jim Cummings Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"cummings jim\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12775": {
+   "park": "Davy Crockett State Fishing Lake",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 255785,
+     "record_name": "Humboldt Hatchery",
+     "acres_approx": 236,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 240
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"crockett fishing davy\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13514": {
+   "park": "Lake Halford State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"halford fishing\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-3941": {
+   "park": "Grundy Forest State Natural Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Boundaries/FeatureServer/0",
+     "agency": "Tennessee State Parks (TDEC)",
+     "record": 394,
+     "record_name": "Fiery Gizzard State Park",
+     "acres_approx": 7873
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TNStatePark_boundaries/FeatureServer/0",
+     "agency": "Tennessee State Parks (TDEC state park boundaries)",
+     "record": 79,
+     "record_name": "South Cumberland State Park",
+     "acres_approx": 5907
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/State_Park_Boundaries_Primary_March_2024_view2/FeatureServer/331",
+     "agency": "Tennessee Department of Environment and Conservation (State Park Boundaries, Public View; multi-site parks dissolved)",
+     "record": 308,
+     "record_name": "Fiery Gizzard State Park",
+     "acres_approx": 7836
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): hit",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: hit",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : hit",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+  },
+  "US-4376": {
+   "park": "Manhattan Project National Historical Park",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Manhattan Project National Historical Park Sites - INTERIM",
+     "url": "https://services8.arcgis.com/0fu8WGujjdRBAiQR/arcgis/rest/services/NHPSITES_INTERIM/FeatureServer",
+     "owner": "h5265664@rl.gov_hanfordsite",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"historical manhattan project\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-6237": {
+   "park": "Mr. and Mrs. Harry Lee Carter State Natural Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Boundaries/FeatureServer/0",
+     "agency": "Tennessee State Parks (TDEC)",
+     "record": 405,
+     "record_name": "Head of the Crow State Park",
+     "acres_approx": 5337
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Natural_Area_Boundaries_(Public_View)/FeatureServer/0",
+     "agency": "Tennessee State Natural Areas (TDEC)",
+     "record": 77,
+     "record_name": "Sherwood Forest State Natural Area",
+     "acres_approx": 3047
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TDEC_Public_Lands/FeatureServer/0",
+     "agency": "Tennessee Department of Environment and Conservation (TDEC public lands)",
+     "record": 150,
+     "record_name": "South Cumberland State Park",
+     "acres_approx": 3047
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TNStatePark_boundaries/FeatureServer/0",
+     "agency": "Tennessee State Parks (TDEC state park boundaries)",
+     "record": 81,
+     "record_name": "South Cumberland State Park",
+     "acres_approx": 3922
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/State_Park_Boundaries_Primary_March_2024_view2/FeatureServer/331",
+     "agency": "Tennessee Department of Environment and Conservation (State Park Boundaries, Public View; multi-site parks dissolved)",
+     "record": 476,
+     "record_name": "Head of the Crow State Park",
+     "acres_approx": 5460
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 255823,
+     "record_name": "Sherwood Forest State Natural Area",
+     "acres_approx": 4029,
+     "Mang_Name": "OTHS",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 4061
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): hit",
+    "A Tennessee State Natural Areas (TDEC): hit",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : hit",
+    "A Tennessee State Parks (TDEC state park b: hit",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+  },
+  "US-6247": {
+   "park": "Hawkins Cove State Natural Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hawkins cove\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6259": {
+   "park": "Ozone Falls State Natural Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"falls ozone\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6261": {
+   "park": "Pogue Creek Canyon State Natural Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"canyon pogue\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6273": {
+   "park": "Vine Cedar Glade State Natural Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"glade cedar vine\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6280": {
+   "park": "Windows Cliffs State Natural Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: no polygon at the pin",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"windows cliffs\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7565": {
+   "park": "AEDC and Woods Reservoir Wildlife Management Area",
+   "why_not": "pin-doubt",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services3.arcgis.com/PWXNAH2YKmZY7lBq/arcgis/rest/services/Hunting_Allowed/FeatureServer/0",
+     "agency": "Tennessee Wildlife Resources Agency",
+     "record": 2901,
+     "record_name": "A.E.D.C. WMA",
+     "acres_approx": 3141
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/Tennessee_State_and_Federal_Lands_WFL1/FeatureServer/49",
+     "agency": "Tennessee Wildlife Resources Agency lands, published by TN Dept of Environment and Conservation (TDEC AGOL org) in Tennessee State and Federal Lands map",
+     "record": 2901,
+     "record_name": "A.E.D.C. WMA",
+     "acres_approx": 3247
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 395,
+     "record_name": "Arnold Air Force Base",
+     "acres_approx": 38843,
+     "Mang_Name": "DOD",
+     "Des_Tp": "MIL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 38892
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Tennessee State Parks (TDEC): no polygon at the pin",
+    "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency: hit",
+    "A Tennessee Department of Agriculture, Div: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency land: hit",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A Tennessee State Parks (TDEC state park b: no polygon at the pin",
+    "A Tennessee Natural Areas (TDEC, non-state: no polygon at the pin",
+    "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
+    "A Tennessee Department of Environment and : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"reservoir woods aedc\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  }
+ }
+}

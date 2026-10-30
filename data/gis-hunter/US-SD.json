@@ -1,0 +1,84 @@
+{
+ "area": "US-SD",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-11905": {
+   "park": "Centennial Trail State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
+     "agency": "South Dakota Game, Fish and Parks (gfp.gis.coord, SD GFP open data)",
+     "record": 1011,
+     "record_name": "Bear Butte Lake",
+     "acres_approx": 609
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0",
+     "agency": "South Dakota Game, Fish and Parks (gfp.gis.coord, SD GFP open data)",
+     "record": 1011,
+     "record_name": "Bear Butte Lake",
+     "acres_approx": 609
+    }
+   ],
+   "leads": [
+    {
+     "title": "Centennial Industrial Business Activity",
+     "url": "https://services7.arcgis.com/S7DHOirgbYgdtrbR/arcgis/rest/services/Centennial_Industrial_Business_Activity/FeatureServer",
+     "owner": "TaupoDistrictCouncil",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Centennial Entertainment District Overlay (public view)",
+     "url": "https://services.arcgis.com/0H6bQdxd9223gQB5/arcgis/rest/services/CEDO_Collab/FeatureServer",
+     "owner": "comadmin_comgis",
+     "type": "Feature Service"
+    },
+    {
+     "title": "OC Centennial Farm",
+     "url": "https://gisservices.oakgov.com/arcgisds/rest/services/Hosted/Centennial_Farm/FeatureServer",
+     "owner": "OCAGOAdmin",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A South Dakota Game, Fish and Parks (gfp.g: hit",
+    "A South Dakota Game, Fish and Parks (gfp.g: hit",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"centennial\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8164": {
+   "park": "George S. Mickelson State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 9847,
+     "record_name": "Exemption Area",
+     "acres_approx": 22319
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A South Dakota Game, Fish and Parks (gfp.g: no polygon at the pin",
+    "A South Dakota Game, Fish and Parks (gfp.g: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"mickelson george\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  }
+ }
+}

@@ -1,0 +1,550 @@
+{
+ "area": "US-MT",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0400": {
+   "park": "Halfbreed Lake National Wildlife Refuge",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3877,
+     "record_name": "Grass Lake National Wildlife Refuge",
+     "acres_approx": 3339,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 3394
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4821,
+     "record_name": "Grass Lake National Wildlife Refuge",
+     "acres_approx": 3339,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 3394
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"halfbreed\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-0405": {
+   "park": "CSKT Bison Range Protected Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 800,
+     "record_name": "Flathead Reservation",
+     "acres_approx": 1309458,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1317006
+    }
+   ],
+   "leads": [
+    {
+     "title": "CSKT Bison Range SSURGO Data",
+     "url": "https://services6.arcgis.com/PAUSLTOljlTRpN3n/arcgis/rest/services/CSKT_Bison_Range_SSURGO_Data/FeatureServer",
+     "owner": "Kyle.Bocinsky_DRIGIS4",
+     "type": "Feature Service"
+    },
+    {
+     "title": "CSKT Bison Range",
+     "url": "https://services2.arcgis.com/HRY6x8qt5qjGnAA9/arcgis/rest/services/CSKT_Bison_Range/FeatureServer",
+     "owner": "ShamonH_SI",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"bison range cskt\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10521": {
+   "park": "Garnet Ghost Town BLM Historic Preservation Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1971,
+     "record_name": "Missoula Field Office",
+     "acres_approx": 174317,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 175579
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"preservation garnet ghost\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10526": {
+   "park": "Devils Elbow (BLM) Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10979,
+     "record_name": "Hauser Lake",
+     "acres_approx": 16300
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1958,
+     "record_name": "Butte Field Office",
+     "acres_approx": 321753,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 323091
+    }
+   ],
+   "leads": [
+    {
+     "title": "PGF2020_HSCLIP_Devils_Elbow",
+     "url": "https://tiles.arcgis.com/tiles/ISqEHdhr3detVO9I/arcgis/rest/services/PGF2020_HSCLIP_Devils_Elbow/MapServer",
+     "owner": "jro156_UCNZ",
+     "type": "Map Service"
+    },
+    {
+     "title": "UC2024_HSCLIP_Devils_Elbow",
+     "url": "https://tiles.arcgis.com/tiles/ISqEHdhr3detVO9I/arcgis/rest/services/UC2024_HSCLIP_Devils_Elbow/MapServer",
+     "owner": "jro156_UCNZ",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"devils elbow\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10527": {
+   "park": "Judith Landing (BLM) Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"landing judith\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11215": {
+   "park": "Bear Paw Battlefield National Monument",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3231,
+     "record_name": "Nez Perce National Historical Park",
+     "acres_approx": 194,
+     "Mang_Name": "NPS",
+     "Des_Tp": "HCA",
+     "Own_Type": "FED",
+     "GIS_Acres": 195
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"battlefield monument bear\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11216": {
+   "park": "Big Springs Trout State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery springs trout\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11217": {
+   "park": "Bluewater Springs Trout State Fish Hatchery",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"bluewater hatchery springs\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11218": {
+   "park": "Fort Peck State Fish Hatchery",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2572,
+     "record_name": "Fort Peck Recreation Area",
+     "acres_approx": 617845,
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Own_Type": "UNK",
+     "GIS_Acres": 623432
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-11219": {
+   "park": "Jacko River Trout State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 800,
+     "record_name": "Flathead Reservation",
+     "acres_approx": 1309458,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1317006
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 211293,
+     "record_name": "Local Other or Unknown",
+     "acres_approx": 27824,
+     "Mang_Name": "UNKL",
+     "Des_Tp": "LOTH",
+     "Own_Type": "LOC",
+     "GIS_Acres": 31781
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hatchery trout jacko\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11221": {
+   "park": "Washoe Park Trout State Fish Hatchery",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery washoe trout\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12822": {
+   "park": "Big Horn State Fish and Wildlife Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_FAS/FeatureServer/0",
+     "agency": "Montana Fish, Wildlife & Parks",
+     "record": 40768,
+     "record_name": "Bighorn",
+     "acres_approx": 72
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 959,
+     "record_name": "Crow Reservation",
+     "acres_approx": 2273850,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 2288757
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 211689,
+     "record_name": "Bighorn Fishing Access Site",
+     "acres_approx": 72,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SREC",
+     "Own_Type": "UNK",
+     "GIS_Acres": 72
+    }
+   ],
+   "leads": [
+    {
+     "title": "Big_Horn_Study_Area",
+     "url": "https://services.arcgis.com/xYjDUN35YwdCEcMm/arcgis/rest/services/Big_Horn_Study_Area/FeatureServer",
+     "owner": "BGIS_ON_F21_Luigi_Ralph_Malinis",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Map of Big Horn Co WY 1908ca _low0_jpg",
+     "url": "https://tiles.arcgis.com/tiles/KbxwQRRfWyEYLgp4/arcgis/rest/services/Map_of_Big_Horn_Co_WY_1908ca__low0_jpg/MapServer",
+     "owner": "BLM_WY_Public",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"horn big\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12827": {
+   "park": "Brownes Lake State Fish and Wildlife Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 211523,
+     "record_name": "Brownes Bridge Fishing Access Site",
+     "acres_approx": 8,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SREC",
+     "Own_Type": "UNK",
+     "GIS_Acres": 10
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-12925": {
+   "park": "Thoreau State Beach",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1971,
+     "record_name": "Missoula Field Office",
+     "acres_approx": 174317,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 175579
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"thoreau beach\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-8001": {
+   "park": "Lamesteer National Wildlife Refuge",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"lamesteer\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8002": {
+   "park": "Ninepipe National Wildlife Refuge",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 800,
+     "record_name": "Flathead Reservation",
+     "acres_approx": 1309458,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1317006
+    }
+   ],
+   "leads": [
+    {
+     "title": "NinePipe_Map5",
+     "url": "https://services1.arcgis.com/ERdCHt0sNM6dENSD/arcgis/rest/services/NinePipe_Map5/FeatureServer",
+     "owner": "mr119648_umontana",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"ninepipe\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8003": {
+   "park": "Pablo National Wildlife Refuge",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 800,
+     "record_name": "Flathead Reservation",
+     "acres_approx": 1309458,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1317006
+    }
+   ],
+   "leads": [
+    {
+     "title": "San Pablo Bay Ridgway's Rail Call Count 200m Buffers",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/San_Pablo_Bay_Rail_Call_Count_200m_Buffers/FeatureServer",
+     "owner": "madison_pitman@fws.gov_fws",
+     "type": "Feature Service"
+    },
+    {
+     "title": "San Pablo Bay NWR Ridgway's Rail Call Count Stations",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/San_Pablo_Bay_Rail_Call_Count_Stations/FeatureServer",
+     "owner": "madison_pitman@fws.gov_fws",
+     "type": "Feature Service"
+    },
+    {
+     "title": "AB617 Richmond-San Pablo Monitoring Boundary",
+     "url": "https://services6.arcgis.com/xCuDJnRShQmTqPGL/arcgis/rest/services/AB617_Richmond_San_Pablo_Community_Boundary/FeatureServer",
+     "owner": "llouie",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A Montana Fish, Wildlife & Parks: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"pablo\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  }
+ }
+}

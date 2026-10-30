@@ -1,0 +1,494 @@
+{
+ "area": "US-HI",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0119": {
+   "park": "Hawaiian Islands National Wildlife Refuge",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4117,
+     "record_name": "Midway Atoll National Wildlife Refuge",
+     "acres_approx": 575915,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 581184
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 5073,
+     "record_name": "Midway Atoll National Wildlife Refuge",
+     "acres_approx": 575911,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 581184
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): no polygon at the pin",
+    "A Hawaii DLNR reserves (DOFAW): no polygon at the pin",
+    "A Hawaii State Parks (DLNR): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hawaiian islands\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-0971": {
+   "park": "World War II Valor in the Pacific National Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "agency": "Hawaii DLNR reserves (DOFAW)",
+     "record": 330,
+     "record_name": "PEARL HARBOR NATIONAL MEMORIAL",
+     "acres_approx": 15
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 1176,
+     "record_name": "Pearl Harbor National Memorial",
+     "acres_approx": 15
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 611,
+     "record_name": "Joint Base Pearl Harbor-Hickam",
+     "acres_approx": 20972,
+     "Mang_Name": "DOD",
+     "Des_Tp": "MIL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 21411
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): no polygon at the pin",
+    "A Hawaii DLNR reserves (DOFAW): hit",
+    "A Hawaii State Parks (DLNR): no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-10912": {
+   "park": "'Ualaka'a State Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "agency": "Hawaii DLNR reserves (DOFAW)",
+     "record": 261,
+     "record_name": "HONOLULU WATERSHED FOREST RESERVE",
+     "acres_approx": 10335
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): no polygon at the pin",
+    "A Hawaii DLNR reserves (DOFAW): hit",
+    "A Hawaii State Parks (DLNR): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"ualaka\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10915": {
+   "park": "Nakoa State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "agency": "Hawaii Division of State Parks (DLNR)",
+     "record": 5,
+     "record_name": "AHUPUAA O KAHANA STATE PARK",
+     "acres_approx": 5120
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "agency": "Hawaii DLNR reserves (DOFAW)",
+     "record": 277,
+     "record_name": "AHUPUAA O KAHANA STATE PARK",
+     "acres_approx": 5120
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "agency": "Hawaii State Parks (DLNR)",
+     "record": 25,
+     "record_name": "AHUPUAA O KAHANA STATE PARK",
+     "acres_approx": 5120
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 195373,
+     "record_name": "Ahupuaa O Kahana State Park",
+     "acres_approx": 5066,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 5195
+    }
+   ],
+   "leads": [
+    {
+     "title": "Health_Care_Clinics_Crispin_Nakoa_WFL1",
+     "url": "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Health_Care_Clinics_Crispin_Nakoa_WFL1/FeatureServer",
+     "owner": "jnakoa_asu",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): hit",
+    "A Hawaii DLNR reserves (DOFAW): hit",
+    "A Hawaii State Parks (DLNR): hit",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"nakoa\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10916": {
+   "park": "Kapaʻeleʻele State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "agency": "Hawaii Division of State Parks (DLNR)",
+     "record": 5,
+     "record_name": "AHUPUAA O KAHANA STATE PARK",
+     "acres_approx": 5120
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "agency": "Hawaii DLNR reserves (DOFAW)",
+     "record": 277,
+     "record_name": "AHUPUAA O KAHANA STATE PARK",
+     "acres_approx": 5120
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "agency": "Hawaii State Parks (DLNR)",
+     "record": 25,
+     "record_name": "AHUPUAA O KAHANA STATE PARK",
+     "acres_approx": 5120
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 195373,
+     "record_name": "Ahupuaa O Kahana State Park",
+     "acres_approx": 5066,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 5195
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): hit",
+    "A Hawaii DLNR reserves (DOFAW): hit",
+    "A Hawaii State Parks (DLNR): hit",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"kapa ele\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10917": {
+   "park": "ʻAiea Loop State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "agency": "Hawaii Division of State Parks (DLNR)",
+     "record": 9,
+     "record_name": "KEAIWA HEIAU STATE RECREATION AREA",
+     "acres_approx": 383
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "agency": "Hawaii DLNR reserves (DOFAW)",
+     "record": 275,
+     "record_name": "KEAIWA HEIAU STATE RECREATION AREA",
+     "acres_approx": 280
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "agency": "Hawaii State Parks (DLNR)",
+     "record": 41,
+     "record_name": "KEAIWA HEIAU STATE RECREATION AREA",
+     "acres_approx": 383
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 195383,
+     "record_name": "Keaiwa Heiau State Recreation Area",
+     "acres_approx": 284,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 385
+    }
+   ],
+   "leads": [
+    {
+     "title": "Aiea Loop",
+     "url": "https://services8.arcgis.com/tblHe99qQFMcNzpC/arcgis/rest/services/Aiea_Loop/FeatureServer",
+     "owner": "tommyphammy",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): hit",
+    "A Hawaii DLNR reserves (DOFAW): hit",
+    "A Hawaii State Parks (DLNR): hit",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"loop aiea\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10919": {
+   "park": "Na Ala Hele State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 195419,
+     "record_name": "State Department of Land State Resource Management Area",
+     "acres_approx": 242691,
+     "Mang_Name": "SDOL",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 249706
+    }
+   ],
+   "leads": [
+    {
+     "title": "Na Ala Hele Trails",
+     "url": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/34",
+     "owner": "HawaiiStateGIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Na Ala Hele Hiking Trails",
+     "url": "https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails/FeatureServer",
+     "owner": "holisgis",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Na Ala Hele Trails 2019",
+     "url": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Na_Ala_Hele_Trails_2019/FeatureServer",
+     "owner": "dlnr_dmatsuwaki",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): no polygon at the pin",
+    "A Hawaii DLNR reserves (DOFAW): no polygon at the pin",
+    "A Hawaii State Parks (DLNR): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hele ala\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10921": {
+   "park": "Hawaii Capital National Historic District",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Hawaii Capital Historic District map tour route",
+     "url": "https://services5.arcgis.com/LjEpKgpks2lYdrmt/arcgis/rest/services/Hawaii_Capital_District_map_tour_route/FeatureServer",
+     "owner": "nyokoi_CSH",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Capital District Historic Sites",
+     "url": "https://services5.arcgis.com/LjEpKgpks2lYdrmt/arcgis/rest/services/Capital_District_Historic_Sites/FeatureServer",
+     "owner": "nyokoi_CSH",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Hawaii Capital Historic District",
+     "url": "https://services5.arcgis.com/LjEpKgpks2lYdrmt/arcgis/rest/services/Hawaii_Capital_Historic_District/FeatureServer",
+     "owner": "nyokoi_CSH",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): no polygon at the pin",
+    "A Hawaii DLNR reserves (DOFAW): no polygon at the pin",
+    "A Hawaii State Parks (DLNR): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"district capital hawaii\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10922": {
+   "park": "Marconi Wireless Telegraphy Station Kahuku National Historic Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): no polygon at the pin",
+    "A Hawaii DLNR reserves (DOFAW): no polygon at the pin",
+    "A Hawaii State Parks (DLNR): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"telegraphy wireless marconi\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10923": {
+   "park": "Artillery District of Honolulu Historic Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 288,
+     "record_name": "Fort De Russy",
+     "acres_approx": 65,
+     "Mang_Name": "DOD",
+     "Des_Tp": "MIL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 73
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): no polygon at the pin",
+    "A Hawaii DLNR reserves (DOFAW): no polygon at the pin",
+    "A Hawaii State Parks (DLNR): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"artillery district honolulu\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10925": {
+   "park": "HI State Game Reserve",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "agency": "Hawaii DLNR reserves (DOFAW)",
+     "record": 20,
+     "record_name": "KAALA NATURAL AREA RESERVE",
+     "acres_approx": 1064
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 195288,
+     "record_name": "Kaala Natural Area Reserve",
+     "acres_approx": 1141,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 1087
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): no polygon at the pin",
+    "A Hawaii DLNR reserves (DOFAW): hit",
+    "A Hawaii State Parks (DLNR): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6410": {
+   "park": "Iao Valley State Preserve",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 195207,
+     "record_name": "Private Landowner Watershed Protection Area",
+     "acres_approx": 117395,
+     "Mang_Name": "PVT",
+     "Des_Tp": "WPA",
+     "Own_Type": "PVT",
+     "GIS_Acres": 118071
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): no polygon at the pin",
+    "A Hawaii DLNR reserves (DOFAW): no polygon at the pin",
+    "A Hawaii State Parks (DLNR): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"valley iao\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6431": {
+   "park": "Royal Mausoleum State Preserve",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "agency": "Hawaii DLNR reserves (DOFAW)",
+     "record": 302,
+     "record_name": "ROYAL MAUSOLEUM STATE MONUMENT",
+     "acres_approx": 2
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Hawaii Division of State Parks (DLNR): no polygon at the pin",
+    "A Hawaii DLNR reserves (DOFAW): hit",
+    "A Hawaii State Parks (DLNR): no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  }
+ }
+}

@@ -1,0 +1,203 @@
+{
+ "area": "US-LA",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0958": {
+   "park": "Poverty Point National Monument",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Louisiana Department of Wildlife & Fishe: no polygon at the pin",
+    "A LDWF (owner LDWF_ArcGIS1), Sep 2025 edit: no polygon at the pin",
+    "A Louisiana Dept. of Wildlife and Fisherie: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"monument poverty point\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10354": {
+   "park": "Forts Randolph & Buhlow State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Louisiana Department of Wildlife & Fishe: no polygon at the pin",
+    "A LDWF (owner LDWF_ArcGIS1), Sep 2025 edit: no polygon at the pin",
+    "A Louisiana Dept. of Wildlife and Fisherie: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"randolph buhlow forts\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10447": {
+   "park": "Audubon State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Audubon Chapter Boundaries Public View",
+     "url": "https://services1.arcgis.com/lDFzr3JyGEn5Eymu/arcgis/rest/services/Audubon_Chapter_Boundaries_Public_View/FeatureServer",
+     "owner": "Audubon_GIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Audubon's Cottontail Range - CWHR M047 [ds1841]",
+     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1841_fpu/FeatureServer",
+     "owner": "BIOS_Admin",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Audubon Coast Sites",
+     "url": "https://services1.arcgis.com/lDFzr3JyGEn5Eymu/arcgis/rest/services/Coast_Sites_GV/FeatureServer",
+     "owner": "GIS_Help_audubon",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Louisiana Department of Wildlife & Fishe: no polygon at the pin",
+    "A LDWF (owner LDWF_ArcGIS1), Sep 2025 edit: no polygon at the pin",
+    "A Louisiana Dept. of Wildlife and Fisherie: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"audubon\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-2360": {
+   "park": "Cypremort Point State Park",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Cypremort_Point_State_Park",
+     "url": "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Cypremort_Point_State_Park/FeatureServer",
+     "owner": "lastateparks",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Louisiana Department of Wildlife & Fishe: no polygon at the pin",
+    "A LDWF (owner LDWF_ArcGIS1), Sep 2025 edit: no polygon at the pin",
+    "A Louisiana Dept. of Wildlife and Fisherie: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"cypremort point\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-2365": {
+   "park": "Jimmie Davis State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 203110,
+     "record_name": "Caney Creek Lake State Park",
+     "acres_approx": 272,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 312
+    }
+   ],
+   "leads": [
+    {
+     "title": "Jimmie_Davis_State_Park",
+     "url": "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Jimmie_Davis_State_Park/FeatureServer",
+     "owner": "lastateparks",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Louisiana Department of Wildlife & Fishe: no polygon at the pin",
+    "A LDWF (owner LDWF_ArcGIS1), Sep 2025 edit: no polygon at the pin",
+    "A Louisiana Dept. of Wildlife and Fisherie: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"jimmie davis\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-2373": {
+   "park": "Poverty Point Reservoir State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 202974,
+     "record_name": "State Lands",
+     "acres_approx": 7525,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 7733
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Louisiana Department of Wildlife & Fishe: no polygon at the pin",
+    "A LDWF (owner LDWF_ArcGIS1), Sep 2025 edit: no polygon at the pin",
+    "A Louisiana Dept. of Wildlife and Fisherie: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"reservoir poverty point\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-2374": {
+   "park": "Saint Bernard State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Saint Bernard Preparatory School Trail Map",
+     "url": "https://services1.arcgis.com/RpVCghfSj7XHqAKQ/arcgis/rest/services/Saint_Bernard_Preparatory_School_Trail_Map/FeatureServer",
+     "owner": "sandecm0",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Saint Bernard",
+     "url": "https://services5.arcgis.com/uVUBD3VA9JxTzTy4/arcgis/rest/services/Saint_Bernard/FeatureServer",
+     "owner": "philhaas",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Louisiana Department of Wildlife & Fishe: no polygon at the pin",
+    "A LDWF (owner LDWF_ArcGIS1), Sep 2025 edit: no polygon at the pin",
+    "A Louisiana Dept. of Wildlife and Fisherie: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"bernard saint\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4568": {
+   "park": "El Camino Real de los Tejas National Historic Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 203098,
+     "record_name": "Los Adaes State Historic Site",
+     "acres_approx": 13,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SHCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 15
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Louisiana Department of Wildlife & Fishe: no polygon at the pin",
+    "A LDWF (owner LDWF_ArcGIS1), Sep 2025 edit: no polygon at the pin",
+    "A Louisiana Dept. of Wildlife and Fisherie: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  }
+ }
+}

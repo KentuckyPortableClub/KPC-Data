@@ -1,0 +1,23 @@
+## US-AZ — GIS hunter 2026-10-30 (paste into the Fable file WORK LOG)
+
+| ref | park | step | what was found | result | date | by |
+|---|---|---|---|---|---|---|
+| US-0908 | Canyon de Chelly National Monument | R-G7 step 2 | USGS PAD-US: 'Navajo Nation Reservation' (record 1019, ~10,277,212 ac, pin inside) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| US-10995 | Sunshine Loop and Dutchman Mountain Bike Trails BLM Recreation Management Area | R-G7 step 2 | USGS PAD-US: 'Arizona Strip Field Office' (record 1879, ~2,749,998 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-11045 | Painted Rock Petroglyph Site National Historical Site | R-G7 step 2 | BLM Areas of Critical Environmental Concern (national, 1,120): 'Lower Gila Terraces And Historic Trails' (record 184, ~138,248 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-11122 | General Crook National Recreation Trail | R-G7 step 2 | USGS PAD-US: 'Sitgreaves National Forest' (record 2755, ~817,657 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-11123 | Highline National Recreation Trail | R-G7 step 2 | USGS PAD-US: 'Tonto National Forest' (record 2756, ~2,853,324 ac, pin inside) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| US-11971 | Virgin River Canyon BLM Recreation Management Area | R-G7 step 2 | USGS PAD-US: 'Arizona Strip Field Office' (record 1879, ~2,749,998 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-11975 | Table Mesa BLM Recreation Management Area | R-G7 step 2 | USGS PAD-US: 'Hassayampa Field Office' (record 1883, ~968,091 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-11981 | Arivaca Lake State Wildlife Area | R-G7 step 2 | USGS PAD-US: 'Arivaca Land and Lake' (record 167506, ~182 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-12142 | Dominguez-Escalante Site National Historic Site | R-G7 step 2 | USGS PAD-US: 'Arizona Strip Field Office' (record 1879, ~2,749,998 ac, pin inside) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| US-12161 | Round Mountain Rockhound BLM Special Recreation Management Area | R-G7 step 2 | USGS PAD-US: 'Safford Field Office' (record 1891, ~1,390,510 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-12162 | Sears Point BLM Historic Preservation Site | R-G7 step 2 | BLM Areas of Critical Environmental Concern (national, 1,120): 'Sears Point Core' (record 50, ~3,663 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-13593 | Boulders OHV Staging Area BLM Recreation Management Area | R-G7 step 2 | USGS PAD-US: 'Hassayampa Field Office' (record 1883, ~968,091 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-13594 | Black Canyon National Recreation Trail | R-G7 step 2 | USGS PAD-US: 'Hassayampa Field Office' (record 1883, ~968,091 ac, pin inside) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| US-4557 | Arizona Trail National Scenic Trail | R-G7 step 2 | USGS PAD-US: 'Coronado National Memorial' (record 3257, ~4,852 ac, pin inside) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| US-4571 | Juan Bautista de Anza National Historic Trail | R-G7 step 2 | USGS PAD-US: 'Canoa Ranch' (record 167357, ~4,722 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-5965 | Stateline Campground BLM Recreation Management Area | R-G7 step 2 | USGS PAD-US: 'Kanab Field Office' (record 2099, ~1,407,462 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-6043 | Honeymoon Historic Trail National Historic Trail | R-G7 step 2 | USGS PAD-US: 'St. George Field Office' (record 2117, ~625,636 ac, pin inside) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| US-6071 | Little Black Mountain Petroglyph Site State Historic Site | R-G7 step 2 | BLM Areas of Critical Environmental Concern (national, 1,120): 'Little Black Mountain' (record 85, ~240 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-7383 | Tonto State Fish Hatchery | R-G7 step 2 | Arizona Game and Fish Department (AZGFD_GIS org): 'Tonto Creek Hatchery' (record 6, ~62 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |

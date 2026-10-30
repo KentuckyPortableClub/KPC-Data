@@ -1,0 +1,403 @@
+{
+ "area": "US-TX",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0750": {
+   "park": "Palo Alto Battlefield National Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"battlefield alto palo\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10272": {
+   "park": "Bush Family Home State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"family bush home\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10273": {
+   "park": "Charles and Mary Ann Goodnight Ranch State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"goodnight charles ranch\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10274": {
+   "park": "Palmito Ranch Battlefield State Historic Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "agency": "Texas Parks and Wildlife (public conservation lands)",
+     "record": 9250,
+     "record_name": "Lower Rio Grande Valley National Wildlife Refuge",
+     "acres_approx": 410
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4060,
+     "record_name": "Lower Rio Grande Valley National Wildlife Refuge",
+     "acres_approx": 85094,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 88266
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 5015,
+     "record_name": "Lower Rio Grande Valley National Wildlife Refuge",
+     "acres_approx": 86754,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 89898
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"battlefield palmito ranch\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10275": {
+   "park": "Presidio la Bahia State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"presidio bahia\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10276": {
+   "park": "Star of the Republic Museum State Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "agency": "Texas Parks and Wildlife (public conservation lands)",
+     "record": 528,
+     "record_name": "Washington on the Brazos SHS",
+     "acres_approx": 318
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 261746,
+     "record_name": "Washington-on-the-Brazos State Historic Site",
+     "acres_approx": 304,
+     "Mang_Name": "OTHS",
+     "Des_Tp": "SHCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 295
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"republic museum star\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11900": {
+   "park": "Blackwell School National Park",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"blackwell school\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12109": {
+   "park": "Stephen F. Austin Memorial Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Stephen F Austin slopes",
+     "url": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Stephen_F_Austin_slopes/MapServer",
+     "owner": "USFS_SouthernResearchStation",
+     "type": "Map Service"
+    },
+    {
+     "title": "Stephen F Austin aspects",
+     "url": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Stephen_F_Austin_aspects/MapServer",
+     "owner": "USFS_SouthernResearchStation",
+     "type": "Map Service"
+    },
+    {
+     "title": "Stephen F Austin NLCD",
+     "url": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Stephen_F_Austin_NLCD/MapServer",
+     "owner": "USFS_SouthernResearchStation",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"stephen austin\": 5 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4569": {
+   "park": "El Camino Real de Tierra Adentro National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "El Camino Real de Tierra Adentro National Historic Trail",
+     "url": "https://services7.arcgis.com/p0Gk2nDbPs7KEqSZ/arcgis/rest/services/ELCA_TRANS_CULT_ElCaminoRealdeTierraAdentroNHT_1/FeatureServer",
+     "owner": "Jay.puckett_wsp5",
+     "type": "Feature Service"
+    },
+    {
+     "title": "El Camino Real de Tierra Adentro NHT",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ELCA_NHT/FeatureServer",
+     "owner": "MarkScottHenderson",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Camino Real de Tierra Adentro",
+     "url": "https://services1.arcgis.com/44C95LOqZjbh8Row/arcgis/rest/services/Camino_Real_de_Tierra_Adentro/FeatureServer",
+     "owner": "Keelan.Vargas@du.edu_dugis",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"adentro camino tierra\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-6538": {
+   "park": "Barrington Plantation State Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "agency": "Texas Parks and Wildlife (public conservation lands)",
+     "record": 528,
+     "record_name": "Washington on the Brazos SHS",
+     "acres_approx": 318
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 261746,
+     "record_name": "Washington-on-the-Brazos State Historic Site",
+     "acres_approx": 304,
+     "Mang_Name": "OTHS",
+     "Des_Tp": "SHCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 295
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"barrington plantation\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6560": {
+   "park": "French Legation State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"legation french\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6582": {
+   "park": "Mission Dolores State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Mission_Dolores",
+     "url": "https://services8.arcgis.com/A76GjgcBUTTcwFGS/arcgis/rest/services/Mission_Dolores/FeatureServer",
+     "owner": "014653886_SJSUGIS",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"dolores mission\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-6597": {
+   "park": "Rio Grande National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "agency": "Texas Parks & Wildlife Department (public hunting lands)",
+     "record": 1829,
+     "record_name": "Black Gap WMA",
+     "acres_approx": 105141
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "agency": "Texas Parks & Wildlife Department (public hunting lands)",
+     "record": 1830,
+     "record_name": "",
+     "acres_approx": 668
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "agency": "TPWD Wildlife Division (owner nancy.heger@tpwd.texas.gov_TPWD)",
+     "record": null,
+     "record_name": "Black Gap WMA",
+     "acres_approx": 105141
+    }
+   ],
+   "leads": [
+    {
+     "title": "GMUG Wild and Scenic River Evaluation",
+     "url": "https://services.arcgis.com/VfpeCk3ouKVuEwug/arcgis/rest/services/GMUG_Wild_and_Scenic_River_Evaluation/FeatureServer",
+     "owner": "AlisonGallensky",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: hit",
+    "A TPWD Wildlife Division (owner nancy.hege: hit",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"scenic grande wild\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-6601": {
+   "park": "Sam Rayburn House State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"rayburn house sam\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6602": {
+   "park": "San Felipe de Austin State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "San Felipe de Austin Buildings 1824",
+     "url": "https://services1.arcgis.com/YWG34dhJxrbxQWdF/arcgis/rest/services/San_Felipe_de_Austin_Buildings_1824/FeatureServer",
+     "owner": "lynnette.cen@glo.texas.gov",
+     "type": "Feature Service"
+    },
+    {
+     "title": "San Felipe de Austin Buildings 1830",
+     "url": "https://services1.arcgis.com/YWG34dhJxrbxQWdF/arcgis/rest/services/San_Felipe_de_Austin_Buildings_1830/FeatureServer",
+     "owner": "lynnette.cen@glo.texas.gov",
+     "type": "Feature Service"
+    },
+    {
+     "title": "San Felipe de Austin Buildings 1835",
+     "url": "https://services1.arcgis.com/YWG34dhJxrbxQWdF/arcgis/rest/services/San_Felipe_de_Austin_Buildings_1835/FeatureServer",
+     "owner": "lynnette.cen@glo.texas.gov",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Texas Parks & Wildlife Department (state: no polygon at the pin",
+    "A Texas Parks & Wildlife Department (publi: no polygon at the pin",
+    "A TPWD Wildlife Division (owner nancy.hege: no polygon at the pin",
+    "A Texas Parks and Wildlife (public conserv: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"felipe austin san\": 5 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  }
+ }
+}

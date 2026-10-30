@@ -1,0 +1,323 @@
+{
+ "area": "US-CO",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-10540": {
+   "park": "Bellevue-Watson State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5",
+     "agency": "Colorado Parks & Wildlife (CPW AGOL org ttNGmDvKQA7oeDQ3)",
+     "record": 881,
+     "record_name": "Watson Lake SFU",
+     "acres_approx": 10
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 189331,
+     "record_name": "Watson Lake SFU",
+     "acres_approx": 112,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 142
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife (CPW AGOL org : hit",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Colorado Parks and Wildlife (credit: CPW: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-11907": {
+   "park": "Calamity Camp BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10881,
+     "record_name": "Gateway",
+     "acres_approx": 42878
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1900,
+     "record_name": "Grand Junction Field Office",
+     "acres_approx": 1268408,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1275594
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife (CPW AGOL org : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Colorado Parks and Wildlife (credit: CPW: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"preservation calamity camp\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11911": {
+   "park": "Damaree BLM Wilderness Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1900,
+     "record_name": "Grand Junction Field Office",
+     "acres_approx": 1268408,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1275594
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife (CPW AGOL org : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Colorado Parks and Wildlife (credit: CPW: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"damaree\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12106": {
+   "park": "Brainard Lake Recreation Area National Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2706,
+     "record_name": "Roosevelt National Forest",
+     "acres_approx": 810652,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 814009
+    }
+   ],
+   "leads": [
+    {
+     "title": "East Brainard Elementary School Walkshed_WFL1",
+     "url": "https://services2.arcgis.com/OIAIimblRxPs0xxc/arcgis/rest/services/East_Brainard_Elementary_School_Walkshed_WFL1/FeatureServer",
+     "owner": "Kayla.Ferguson_CHATTGIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Brainard Cemetery Aerial Image 2012",
+     "url": "https://tiles.arcgis.com/tiles/McQ0OlIABe29rJJy/arcgis/rest/services/Brainard_Cemetery_Aerial_Image_2012/MapServer",
+     "owner": "OregonMetro.ParksNature",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife (CPW AGOL org : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Colorado Parks and Wildlife (credit: CPW: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"brainard\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12173": {
+   "park": "Tabeguache BLM Historic Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10802,
+     "record_name": "Dry Creek, Zone 3",
+     "acres_approx": 30949
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1920,
+     "record_name": "Uncompahgre Field Office",
+     "acres_approx": 876463,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 880205
+    }
+   ],
+   "leads": [
+    {
+     "title": "Shavano_Tabeguache_WFL1",
+     "url": "https://services2.arcgis.com/RQcpPaCpMAXzUI5g/arcgis/rest/services/Shavano_Tabeguache_WFL1/FeatureServer",
+     "owner": "rre4601@rit.edu_RITArcGIS",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife (CPW AGOL org : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Colorado Parks and Wildlife (credit: CPW: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"tabeguache\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5749": {
+   "park": "Kokopelli's Trail National Recreation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10893,
+     "record_name": "MCNCA - Mack Ridge",
+     "acres_approx": 5376
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10861,
+     "record_name": "MCNCA - Mack Ridge",
+     "acres_approx": 5376
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10874,
+     "record_name": "MCNCA SRMA",
+     "acres_approx": 122648
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1900,
+     "record_name": "Grand Junction Field Office",
+     "acres_approx": 1268408,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1275594
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife (CPW AGOL org : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Colorado Parks and Wildlife (credit: CPW: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"kokopelli\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-9597": {
+   "park": "Kremmling BLM National Recreation Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Kremmling_Label_2",
+     "url": "https://services.arcgis.com/VfpeCk3ouKVuEwug/arcgis/rest/services/Kremmling_Label_2/FeatureServer",
+     "owner": "paigesinger",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Map of Potential Locations for Housing in the Town of Kremmling_WFL1",
+     "url": "https://services7.arcgis.com/uSdJCyZB78QSJIZf/arcgis/rest/services/Map_of_Potential_Locations_for_Housing_in_the_Town_of_Kremmling_WFL1/FeatureServer",
+     "owner": "CPSLLC",
+     "type": "Feature Service"
+    },
+    {
+     "title": "CO Kremmling_WFL1",
+     "url": "https://services8.arcgis.com/e8UG0RPWTF6kZDZd/arcgis/rest/services/CO_Kremmling_WFL1/FeatureServer",
+     "owner": "ViaVista",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife (CPW AGOL org : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Colorado Parks and Wildlife (credit: CPW: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"kremmling\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9683": {
+   "park": "Amache National Historic Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 1244,
+     "record_name": "Amache National Historic Site",
+     "acres_approx": 470
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife: no polygon at the pin",
+    "A Colorado Parks & Wildlife (CPW AGOL org : no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A Colorado Parks and Wildlife (credit: CPW: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  }
+ }
+}

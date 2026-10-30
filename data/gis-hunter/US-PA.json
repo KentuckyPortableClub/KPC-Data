@@ -1,0 +1,206 @@
+{
+ "area": "US-PA",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0620": {
+   "park": "Beechwood Farms State Conservation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 74542,
+     "record_name": "Beechwood Farms; Evans Nature Center",
+     "acres_approx": 3,
+     "Mang_Name": "NGO",
+     "Des_Tp": "PCON",
+     "Own_Type": "NGO",
+     "GIS_Acres": 4
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 249818,
+     "record_name": "Beechwood Farms; Evans Nature Center",
+     "acres_approx": 3,
+     "Mang_Name": "UNK",
+     "Des_Tp": "PCON",
+     "Own_Type": "NGO",
+     "GIS_Acres": 4
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Pennsylvania DCNR Bureau of State Parks: no polygon at the pin",
+    "A Pennsylvania State Parks (DCNR): no polygon at the pin",
+    "A Pennsylvania Game Commission (PGC AGOL o: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A PA DCNR Bureau of State Parks (credit): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-0621": {
+   "park": "Todd Sanctuary State Conservation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 74544,
+     "record_name": "Todd Nature Reserve",
+     "acres_approx": 176,
+     "Mang_Name": "NGO",
+     "Des_Tp": "PCON",
+     "Own_Type": "NGO",
+     "GIS_Acres": 180
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 249819,
+     "record_name": "Todd Nature Reserve",
+     "acres_approx": 174,
+     "Mang_Name": "UNK",
+     "Des_Tp": "PCON",
+     "Own_Type": "NGO",
+     "GIS_Acres": 182
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Pennsylvania DCNR Bureau of State Parks: no polygon at the pin",
+    "A Pennsylvania State Parks (DCNR): no polygon at the pin",
+    "A Pennsylvania Game Commission (PGC AGOL o: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A PA DCNR Bureau of State Parks (credit): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-0622": {
+   "park": "Bear Run State Conservation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 75757,
+     "record_name": "Bear Run Nature Reserve",
+     "acres_approx": 39,
+     "Mang_Name": "NGO",
+     "Des_Tp": "PCON",
+     "Own_Type": "NGO",
+     "GIS_Acres": 39
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 250668,
+     "record_name": "Bear Run Nature Reserve",
+     "acres_approx": 39,
+     "Mang_Name": "UNK",
+     "Des_Tp": "PCON",
+     "Own_Type": "NGO",
+     "GIS_Acres": 39
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Pennsylvania DCNR Bureau of State Parks: no polygon at the pin",
+    "A Pennsylvania State Parks (DCNR): no polygon at the pin",
+    "A Pennsylvania Game Commission (PGC AGOL o: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A PA DCNR Bureau of State Parks (credit): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-0623": {
+   "park": "Powdermill State Conservation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 74602,
+     "record_name": "Powdermill Nature Reserve",
+     "acres_approx": 1712,
+     "Mang_Name": "NGO",
+     "Des_Tp": "PCON",
+     "Own_Type": "NGO",
+     "GIS_Acres": 1720
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 249881,
+     "record_name": "Powdermill Nature Reserve",
+     "acres_approx": 1972,
+     "Mang_Name": "UNK",
+     "Des_Tp": "PCON",
+     "Own_Type": "NGO",
+     "GIS_Acres": 1998
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Pennsylvania DCNR Bureau of State Parks: no polygon at the pin",
+    "A Pennsylvania State Parks (DCNR): no polygon at the pin",
+    "A Pennsylvania Game Commission (PGC AGOL o: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A PA DCNR Bureau of State Parks (credit): no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-0684": {
+   "park": "Lower Delaware National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Lower Delaware Watershed",
+     "url": "https://services1.arcgis.com/HERT3Lrqxe0YUfxz/arcgis/rest/services/Lower_Delaware_Watershed/FeatureServer",
+     "owner": "karenreavy",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Pennsylvania DCNR Bureau of State Parks: no polygon at the pin",
+    "A Pennsylvania State Parks (DCNR): no polygon at the pin",
+    "A Pennsylvania Game Commission (PGC AGOL o: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A PA DCNR Bureau of State Parks (credit): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"delaware scenic lower\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10802": {
+   "park": "Gloria Dei Church National Historic Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Pennsylvania DCNR Bureau of State Parks: no polygon at the pin",
+    "A Pennsylvania State Parks (DCNR): no polygon at the pin",
+    "A Pennsylvania Game Commission (PGC AGOL o: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A PA DCNR Bureau of State Parks (credit): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"church gloria dei\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "area": "US-RI",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-10545": {
+   "park": "Hillsdale Preserve Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
+     "agency": "Rhode Island DEM",
+     "record": 716,
+     "record_name": "deCoppett",
+     "acres_approx": 1779
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
+     "agency": "Rhode Island DEM",
+     "record": 681,
+     "record_name": "deCoppett",
+     "acres_approx": 1779
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
+     "agency": "Rhode Island DEM (state conservation land)",
+     "record": 716,
+     "record_name": "deCoppett",
+     "acres_approx": 1779
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 57103,
+     "record_name": "Beaver River - deCoppett",
+     "acres_approx": 1751,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 1825
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 78857,
+     "record_name": "Decoppet Estate",
+     "acres_approx": 1759,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 1825
+    }
+   ],
+   "leads": [
+    {
+     "title": "Hillsdale flood pool _ LiDAR 2018",
+     "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_flood_pool___LiDAR_2018/FeatureServer",
+     "owner": "ks_biosurvey",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Hillsdale conservation pool _ LiDAR 2018",
+     "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_conservation_pool___LiDAR_2018/FeatureServer",
+     "owner": "ks_biosurvey",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Hillsdale Lake contours _ LiDAR 2018",
+     "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_Lake_contours___LiDAR_2018/FeatureServer",
+     "owner": "ks_biosurvey",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Rhode Island DEM: hit",
+    "A Rhode Island DEM: hit",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Rhode Island DEM (state conservation lan: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hillsdale\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5484": {
+   "park": "George Washington Memorial State Forest",
+   "why_not": "pin-doubt",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Federal Civilian Employment of George Washington PDC",
+     "url": "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Federal_Civilian_Employment_of_George_Washington_PDC_WFL1/FeatureServer",
+     "owner": "jkaneff_NVRC",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Rhode Island DEM: no polygon at the pin",
+    "A Rhode Island DEM: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Rhode Island DEM (state conservation lan: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"washington george\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-6980": {
+   "park": "Beach Pond Wildlife Management Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Rhode Island DEM: no polygon at the pin",
+    "A Rhode Island DEM: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Rhode Island DEM (state conservation lan: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"beach pond\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7723": {
+   "park": "John H. Chaffee Rome Point State Nature Preserve",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Rhode Island DEM: no polygon at the pin",
+    "A Rhode Island DEM: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Rhode Island DEM (state conservation lan: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"chaffee point rome\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

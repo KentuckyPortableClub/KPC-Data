@@ -1,0 +1,1701 @@
+{
+ "area": "US-WA",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0694": {
+   "park": "Ebey's Landing Reserve National Conservation Area",
+   "why_not": "pin-doubt",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3317,
+     "record_name": "Ebey's Landing National Historical Reserve",
+     "acres_approx": 1086,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NCA",
+     "Own_Type": "FED",
+     "GIS_Acres": 1093
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10408": {
+   "park": "Horse Heaven Hills Recreation Area BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2080,
+     "record_name": "Spokane Border Field Office",
+     "acres_approx": 166615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 168544
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"heaven hills horse\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10711": {
+   "park": "Marckworth State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"marckworth\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11145": {
+   "park": "Naneum Ridge State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+     "agency": "Washington Department of Fish and Wildlife",
+     "record": null,
+     "record_name": "Colockum",
+     "acres_approx": 87599
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+     "agency": "Washington Department of Fish and Wildlife",
+     "record": null,
+     "record_name": "Colockum",
+     "acres_approx": 87599
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/FeatureServer/0",
+     "agency": "Washington Dept. of Fish and Wildlife (credit: WDFW)",
+     "record": null,
+     "record_name": "Colockum",
+     "acres_approx": 87599
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/FeatureServer/1",
+     "agency": "Washington Dept. of Fish and Wildlife (credit: WDFW)",
+     "record": null,
+     "record_name": "Colockum",
+     "acres_approx": 87599
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271376,
+     "record_name": "Washington State Department of Fish & Wildlife Trust Land",
+     "acres_approx": 90297,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 91115
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: hit",
+    "A Washington Dept. of Fish and Wildlife (c: hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"naneum ridge\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12254": {
+   "park": "Crab Creek - Rocky Ford Area BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2080,
+     "record_name": "Spokane Border Field Office",
+     "acres_approx": 166615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 168544
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"rocky ford crab\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12278": {
+   "park": "Boundary Reservoir BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
+     "agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks)",
+     "record": 5881,
+     "record_name": " ",
+     "acres_approx": 1001
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2080,
+     "record_name": "Spokane Border Field Office",
+     "acres_approx": 166615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 168544
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"reservoir boundary\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12279": {
+   "park": "South Huckleberry Mountains BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2080,
+     "record_name": "Spokane Border Field Office",
+     "acres_approx": 166615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 168544
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"huckleberry mountains south\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12281": {
+   "park": "North Huckleberry Mountains BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2080,
+     "record_name": "Spokane Border Field Office",
+     "acres_approx": 166615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 168544
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"huckleberry mountains north\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12296": {
+   "park": "Raging River State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+     "agency": "Washington State Department of Natural Resources",
+     "record": 3494498,
+     "record_name": "",
+     "acres_approx": 469
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"raging\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12315": {
+   "park": "Dragoon Creek State Recreation Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+     "agency": "Washington State Department of Natural Resources",
+     "record": 3498440,
+     "record_name": "",
+     "acres_approx": 159
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-12316": {
+   "park": "Sherry Creek State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [
+    {
+     "title": "HOA Subdiv SHerry",
+     "url": "https://services6.arcgis.com/ZcuYjGGvzsyH5Zu7/arcgis/rest/services/HOA_Subdiv_SHerry/FeatureServer",
+     "owner": "WashougalStorm",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"sherry\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12403": {
+   "park": "Columbia Basin Hatchery Creek State Fish Hatchery",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271379,
+     "record_name": "Columbia Basin Wildlife Area Complex",
+     "acres_approx": 40416,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 41205
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-12480": {
+   "park": "Govan BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2080,
+     "record_name": "Spokane Border Field Office",
+     "acres_approx": 166615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 168544
+    }
+   ],
+   "leads": [
+    {
+     "title": "Govan_Sold_Prices",
+     "url": "https://services3.arcgis.com/C58X9R7Tu8cPpRcB/arcgis/rest/services/Govan_Sold_Prices/FeatureServer",
+     "owner": "2806332S_Glasgow_Uni",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"govan\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12563": {
+   "park": "Douglas Creek BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2081,
+     "record_name": "Spokane Wenatchee Field Office",
+     "acres_approx": 251107,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 254416
+    }
+   ],
+   "leads": [
+    {
+     "title": "Douglas County Boundary",
+     "url": "https://services.arcgis.com/pDAi2YK0L0QxVJHj/arcgis/rest/services/Douglas_County_Boundary/FeatureServer",
+     "owner": "Nataliya2",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Douglas County, Kansas Boundary",
+     "url": "https://gis.dgcoks.gov/server/rest/services/County_Boundary/FeatureServer",
+     "owner": "gis_lawrenceks",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Douglas County, NE Buildings",
+     "url": "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Douglas_County_NE_Buildings/FeatureServer",
+     "owner": "dkensok_osm",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"douglas\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12565": {
+   "park": "Skookum Creek State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [
+    {
+     "title": "skookum_ortho_wgs84_tif",
+     "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/skookum_ortho_wgs84_tif/MapServer",
+     "owner": "patrick.pope_noaa",
+     "type": "Map Service"
+    },
+    {
+     "title": "Skookum Archers",
+     "url": "https://services1.arcgis.com/LCWc46UbpFlCIbVN/arcgis/rest/services/Skookum_Archers/FeatureServer",
+     "owner": "tbontempo_GRC_NATRS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Storymap_Skookum_Muck",
+     "url": "https://services7.arcgis.com/buuvDFFARQiOEbVZ/arcgis/rest/services/Storymap_Skookum_Muck/FeatureServer",
+     "owner": "SPSSEG_GIS",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"skookum\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12566": {
+   "park": "Sheep Creek State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [
+    {
+     "title": "Peninsular Bighorn Sheep Habitat Vegetation Map [ds2660]",
+     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2660_fpu/FeatureServer",
+     "owner": "BIOS_Admin",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Bighorn Sheep Herd Units - CDFW [ds3400]",
+     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3400_fpu/FeatureServer",
+     "owner": "BIOS_Admin",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Utah Rocky Mountain Bighorn Sheep Habitat",
+     "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_Rocky_Mtn_Bighorn_Sheep_Habitat/FeatureServer",
+     "owner": "dwrdata",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"sheep\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12567": {
+   "park": "Douglas Falls State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"douglas falls\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12569": {
+   "park": "Beverly Dunes State Recreation Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"beverly dunes\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12828": {
+   "park": "Packer Creek BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2080,
+     "record_name": "Spokane Border Field Office",
+     "acres_approx": 166615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 168544
+    }
+   ],
+   "leads": [
+    {
+     "title": "Manitoba_Co_Packer_Services",
+     "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Co_Packer_Services/FeatureServer",
+     "owner": "Manitoba_Government",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Packer Township",
+     "url": "https://services6.arcgis.com/b4SgqAPC2VGq0h6n/arcgis/rest/services/Packer_Township/FeatureServer",
+     "owner": "dbackenstoes_bia",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"packer\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12829": {
+   "park": "Duffy Creek BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2081,
+     "record_name": "Spokane Wenatchee Field Office",
+     "acres_approx": 251107,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 254416
+    }
+   ],
+   "leads": [
+    {
+     "title": "Troop Positions _C Duffy_",
+     "url": "https://services5.arcgis.com/KEZIbVsXEvL1ZLY5/arcgis/rest/services/Troop_Positions__C_Duffy_/FeatureServer",
+     "owner": "aocarchaeology",
+     "type": "Feature Service"
+    },
+    {
+     "title": "ancient_long_established_woodland Senan Duffy",
+     "url": "https://services-eu1.arcgis.com/fj8SedOMxfUDzrBI/arcgis/rest/services/ancient_long_established_woodland_Senan_Duffy/FeatureServer",
+     "owner": "senan.duffy2@mail.dcu.ie_DCU_Student",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Earthquake_and_Volcano_Risk_Canada__(Dylan_Duffy)",
+     "url": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Earthquake_and_Volcano_Risk_Canada__(Dylan_Duffy)/FeatureServer",
+     "owner": "556122",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"duffy\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12830": {
+   "park": "Old Ruby State Park State Heritage Area",
+   "why_not": "pin-doubt",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2081,
+     "record_name": "Spokane Wenatchee Field Office",
+     "acres_approx": 251107,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 254416
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"heritage ruby old\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13383": {
+   "park": "Big Eddy Water Access State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkBoundaries/FeatureServer/2",
+     "agency": "Washington State Parks",
+     "record": 53,
+     "record_name": "Forks of the Sky",
+     "acres_approx": 1341
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+     "agency": "Washington Department of Fish and Wildlife",
+     "record": null,
+     "record_name": "Big Eddy",
+     "acres_approx": 5
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: hit",
+    "A Washington Department of Fish and Wildli: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13391": {
+   "park": "Olequa Crossing State Recreation Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"crossing olequa\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13392": {
+   "park": "Massey Bar State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"massey bar\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13396": {
+   "park": "Steel Bridge State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"bridge steel\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13399": {
+   "park": "Hand State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 158256,
+     "record_name": "Upper Kalama Water Access Site",
+     "acres_approx": 1,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SREC",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2
+    }
+   ],
+   "leads": [
+    {
+     "title": "Fiber Hand Holes",
+     "url": "https://services6.arcgis.com/iZ6GmQZ9zaRNfvWH/arcgis/rest/services/Fiber_Hand_Holes/FeatureServer",
+     "owner": "QCGIS_LisaM",
+     "type": "Feature Service"
+    },
+    {
+     "title": "2021 Hand Crew Roster",
+     "url": "https://services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/2021_Hand_Crew_Roster/FeatureServer",
+     "owner": "emily.turner_tfsgis",
+     "type": "Feature Service"
+    },
+    {
+     "title": "D-10, MGS Hand Samples and Thin Sections",
+     "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/MGS_Hand_Samples_and_Thin_Sections/FeatureServer",
+     "owner": "mgsgis_UMN",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hand\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13516": {
+   "park": "Horseshoe -Kitsap- State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+     "agency": "Washington Department of Fish and Wildlife",
+     "record": null,
+     "record_name": "Horseshoe Lake",
+     "acres_approx": 1
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-3171": {
+   "park": "Spokane River Centennial State Trail",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"centennial spokane\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-3385": {
+   "park": "Mt. St. Helens National Monument",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2897,
+     "record_name": "Gifford Pinchot National Forest",
+     "acres_approx": 1265462,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1275125
+    }
+   ],
+   "leads": [
+    {
+     "title": "Mount St_ Helens National Volcanic Monument_WFL1",
+     "url": "https://services1.arcgis.com/rCcfuAf877pT4w3i/arcgis/rest/services/Mount_St__Helens_National_Volcanic_Monument_WFL1/FeatureServer",
+     "owner": "jasmine.ortiz@wsu.edu_wsuniv",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Mount St_ Helens National Volcanic Monument_WTL3",
+     "url": "https://tiles.arcgis.com/tiles/rCcfuAf877pT4w3i/arcgis/rest/services/Mount_St__Helens_National_Volcanic_Monument_WTL3/MapServer",
+     "owner": "jasmine.ortiz@wsu.edu_wsuniv",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"monument helens\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4555": {
+   "park": "Hanford Reach National Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
+     "agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks)",
+     "record": 3978,
+     "record_name": "Hanford Reach National Monument, McGee Ranch/Riverlands Unit",
+     "acres_approx": 10151
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1797,
+     "record_name": "Hanford Site",
+     "acres_approx": 209302,
+     "Mang_Name": "DOE",
+     "Des_Tp": "FOTH",
+     "Own_Type": "UNK",
+     "GIS_Acres": 211071
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-4562": {
+   "park": "Pacific Crest Trail National Scenic Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2924,
+     "record_name": "Snoqualmie National Forest",
+     "acres_approx": 655683,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 659968
+    }
+   ],
+   "leads": [
+    {
+     "title": "Pacific Crest Trail Corridor INF LMP 2019",
+     "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/PacificCrestTrailCorridor_INF_LMP2019_gdb/FeatureServer",
+     "owner": "USFSRegion05",
+     "type": "Feature Service"
+    },
+    {
+     "title": "FEIS Pacific Crest National Scenic Trail Management Area Alternatives C & E",
+     "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/FEIS_Pacific_Crest_Trail_Management_Corridor_Alternatives_C_and_E/FeatureServer",
+     "owner": "USFSRegion05",
+     "type": "Feature Service"
+    },
+    {
+     "title": "FEIS Pacific Crest National Scenic Trail Management Area Alternatives B & B Modified",
+     "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/FEIS_Pacific_Crest_Trail_Alternative_B_and_B_Modified/FeatureServer",
+     "owner": "USFSRegion05",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"pacific scenic crest\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5565": {
+   "park": "Ahtanum State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+     "agency": "Washington State Department of Natural Resources",
+     "record": 3503949,
+     "record_name": "",
+     "acres_approx": 645
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-5566": {
+   "park": "Blanchard State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [
+    {
+     "title": "Watershed of the Blanchard River",
+     "url": "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer",
+     "owner": "brwp1237",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Blanchard School Board Wards",
+     "url": "https://services2.arcgis.com/gdgYLKfxoJmkNxos/arcgis/rest/services/Blanchard_School_Board_Wards/FeatureServer",
+     "owner": "OKHouse1",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"blanchard\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5567": {
+   "park": "Capitol State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [
+    {
+     "title": "PLANNINGCADASTRE_overlay_capitol_view_corridors",
+     "url": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_view_corridors/FeatureServer",
+     "owner": "CTM.Publisher",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Capitol Campus points",
+     "url": "https://services9.arcgis.com/VatvCKAYJJVi8sva/arcgis/rest/services/Capitol_Campus_points/FeatureServer",
+     "owner": "DES_GIS_Support",
+     "type": "Feature Service"
+    },
+    {
+     "title": "PLANNINGCADASTRE_overlay_capitol_dominance",
+     "url": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_dominance/FeatureServer",
+     "owner": "CTM.Publisher",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"capitol\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5568": {
+   "park": "Elbe Hills-Tahoma State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+     "agency": "Washington State Department of Natural Resources",
+     "record": 3495681,
+     "record_name": "",
+     "acres_approx": 161
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-5569": {
+   "park": "Green Mountain-Tahuya State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+     "agency": "Washington State Department of Natural Resources",
+     "record": 3494432,
+     "record_name": "",
+     "acres_approx": 612
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-5570": {
+   "park": "Little Pend Oreille State Forest",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Little Pend Oreille Wildlife refuge",
+     "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Little_Pend_Oreille_Wildlife_refuge/FeatureServer",
+     "owner": "ammartinez@usgs.gov_USGS",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"oreille little pend\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5571": {
+   "park": "Loomis-Loup Loup State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+     "agency": "Washington State Department of Natural Resources",
+     "record": 3496589,
+     "record_name": "",
+     "acres_approx": 495
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-5572": {
+   "park": "Olympic Peninsula State Forest",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2916,
+     "record_name": "Olympic National Forest",
+     "acres_approx": 627475,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 631799
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-5573": {
+   "park": "Teanaway State Forest",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Teanaway Cutthroat Slam",
+     "url": "https://services1.arcgis.com/754BERmVIq3RqSf8/arcgis/rest/services/survey123_69bcc2270aae41babd6c3019ca8e1f53/FeatureServer",
+     "owner": "mmayfield_tu",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Teanaway_Projects",
+     "url": "https://services2.arcgis.com/VmLllxPKgIzlr2id/arcgis/rest/services/Teanaway_Projects/FeatureServer",
+     "owner": "BlueWaterGIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Teanaway_HUC10",
+     "url": "https://services2.arcgis.com/VmLllxPKgIzlr2id/arcgis/rest/services/Teanaway_HUC10/FeatureServer",
+     "owner": "BlueWaterGIS",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"teanaway\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5576": {
+   "park": "Yacolt Burn State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+     "agency": "Washington State Department of Natural Resources",
+     "record": 3499999,
+     "record_name": "",
+     "acres_approx": 630
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-8662": {
+   "park": "Chestnut Beach National Recreation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 79782,
+     "record_name": "The Greenbelt",
+     "acres_approx": 24,
+     "Mang_Name": "OTHF",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 24
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"chestnut beach\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-8663": {
+   "park": "Plymouth Park National Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
+     "agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks)",
+     "record": 2792,
+     "record_name": " ",
+     "acres_approx": 200
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 138321,
+     "record_name": "Plymouth Park",
+     "acres_approx": 201,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 199
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  }
+ }
+}

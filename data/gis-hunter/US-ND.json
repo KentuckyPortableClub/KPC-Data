@@ -1,0 +1,915 @@
+{
+ "area": "US-ND",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-12782": {
+   "park": "Camp Arnold State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"arnold camp\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12783": {
+   "park": "Camp Corning State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"corning camp\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12784": {
+   "park": "Camp Grant State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"grant camp\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-5639": {
+   "park": "Writing Rock State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"writing rock\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-5741": {
+   "park": "Turtle Mountain State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.dmr.nd.gov/dmrpublicservices/rest/services/State_Forest/MapServer/0",
+     "agency": "North Dakota Forest Service (via ND Dept of Mineral Resources server)",
+     "record": 12,
+     "record_name": "ND Forest Service",
+     "acres_approx": 5672
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 215431,
+     "record_name": "North Dakota State Forest Service Land",
+     "acres_approx": 14369,
+     "Mang_Name": "SDOL",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 14517
+    }
+   ],
+   "leads": [
+    {
+     "title": "Turtle Mountain",
+     "url": "https://services.arcgis.com/Qmnh5K1IrqlBQ9WP/arcgis/rest/services/Turtle_Mountain/FeatureServer",
+     "owner": "rmeyer@smumn.edu_SMUMN",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mountain turtle\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5743": {
+   "park": "Mouse River State Forest",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Prebles Meadow Jumping Mouse Critical Habitat",
+     "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Prebles_Meadow_Jumping_Mouse_Critical_Habitat/FeatureServer",
+     "owner": "FEMA_Region8_GIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Habitat Model: Palm Springs Pocket Mouse",
+     "url": "https://services9.arcgis.com/CBx4dpJSQTY7NvOy/arcgis/rest/services/PalmSpringsPocketMouse_Model/FeatureServer",
+     "owner": "kwarack_CVAG",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Prebles Meadow Jumping Mouse Habitat",
+     "url": "https://maps.bouldercounty.org/arcgis/rest/services/PLANNING/BCCP_PMJM/FeatureServer/0",
+     "owner": "BoulderCountyAdmin",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"mouse\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5744": {
+   "park": "Tetrault Woods State Forest",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.dmr.nd.gov/dmrpublicservices/rest/services/State_Forest/MapServer/0",
+     "agency": "North Dakota Forest Service (via ND Dept of Mineral Resources server)",
+     "record": 10,
+     "record_name": "ND Forest Service",
+     "acres_approx": 405
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 215431,
+     "record_name": "North Dakota State Forest Service Land",
+     "acres_approx": 14369,
+     "Mang_Name": "SDOL",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 14517
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"tetrault woods\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-5745": {
+   "park": "Nowesta Memorial Grove State Forest",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.dmr.nd.gov/dmrpublicservices/rest/services/State_Forest/MapServer/0",
+     "agency": "North Dakota Forest Service (via ND Dept of Mineral Resources server)",
+     "record": 22,
+     "record_name": "ND Forest Service",
+     "acres_approx": 6
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 215431,
+     "record_name": "North Dakota State Forest Service Land",
+     "acres_approx": 14369,
+     "Mang_Name": "SDOL",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 14517
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"nowesta grove\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-5746": {
+   "park": "Sheyenne River State Forest",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "NDGISHUB Sheyenne River Contours 1ft 2002",
+     "url": "https://ndgishub.nd.gov/arcgis/rest/services/All_Elevation/MapServer/9",
+     "owner": "NDGISHub",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Sheyenne Lead Service Public Survey",
+     "url": "https://services.arcgis.com/U5e5v7pUT7BNl3dr/arcgis/rest/services/service_0de3d9623ebb4d35b0c45c4d4e5b5a55/FeatureServer",
+     "owner": "Dan.Lissick@AE2S.com_AE2S",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"sheyenne\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5748": {
+   "park": "Fort Abercrombie State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"abercrombie fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7143": {
+   "park": "International Peace Garden Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"international garden peace\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8524": {
+   "park": "Bismarck-Deadwood Stage Trail State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"deadwood bismarck stage\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8526": {
+   "park": "Camp Atchison State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"atchison camp\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8527": {
+   "park": "Camp Buell State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"buell camp\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8528": {
+   "park": "Camp Hancock State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hancock camp\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8531": {
+   "park": "Cannonball Stage Station State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"cannonball station stage\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8532": {
+   "park": "Chateau De Mores State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"chateau mores\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8534": {
+   "park": "David Thompson State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "David Thompson 1785 to 1812",
+     "url": "https://services8.arcgis.com/cAtF2MSEHqBnNwgn/arcgis/rest/services/David_Thompson_1785_to_1812/FeatureServer",
+     "owner": "Bear.Watchers.Eye",
+     "type": "Feature Service"
+    },
+    {
+     "title": "David_Thompson",
+     "url": "https://services6.arcgis.com/avXuZG0wAqMng22B/arcgis/rest/services/David_Thompson/FeatureServer",
+     "owner": "NU_HGIS",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"thompson david\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8535": {
+   "park": "Double Ditch Indian Village State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"village double indian\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8536": {
+   "park": "Fort Buford State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"buford fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8537": {
+   "park": "Fort Clark State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Fort_Clark_Road",
+     "url": "https://services8.arcgis.com/S9FfA3ZHtXhdx1pq/arcgis/rest/services/Fort_Clark_Road/FeatureServer",
+     "owner": "ALandSurveyor",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"clark fort\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8538": {
+   "park": "Fort Dilts State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"dilts fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8539": {
+   "park": "Fort Mandan Overlook State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"overlook mandan fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8540": {
+   "park": "Fort Rice State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fort rice\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8541": {
+   "park": "Fort Totten State Historic Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 900,
+     "record_name": "Spirit Lake Reservation",
+     "acres_approx": 253683,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 255631
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"totten fort\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-8542": {
+   "park": "Gingras Trading Post State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"trading gingras post\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8543": {
+   "park": "Hudson Townsite State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"townsite hudson\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8544": {
+   "park": "Huff Indian Village State Historic Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"village indian huff\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8545": {
+   "park": "Killdeer Mountain Battlefield State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"battlefield mountain killdeer\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8546": {
+   "park": "Lake Jessie State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Jessie Family Cemetery",
+     "url": "https://services6.arcgis.com/LledJs8ADlUCS7Cz/arcgis/rest/services/Jessie_Family_Cemetery/FeatureServer",
+     "owner": "BRADD_Admin",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Travel from Jessie's Office (45 Minutes - Mon@1730)",
+     "url": "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - Mon@1730)/FeatureServer",
+     "owner": "paccetturo",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Travel from Jessie's Office (45 Minutes - no traffic)",
+     "url": "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - no traffic)/FeatureServer",
+     "owner": "paccetturo",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"jessie\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8547": {
+   "park": "Lake Johnson State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Johnson City Adjusted Urban Area 2025 (Johnson City MTPO)",
+     "url": "https://services2.arcgis.com/sFeLdas1ukfB6i8T/arcgis/rest/services/Johnson_City_Adjusted_Urban_Area_2025_(Johnson_City_MTPO)/FeatureServer",
+     "owner": "jcgis_publisher",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Johnson County, IA Buildings",
+     "url": "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Johnson_County_IA_Buildings/FeatureServer",
+     "owner": "dkensok_osm",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Johnson City MTPO 2025 Metropolitan Planning Area (Johnson City MTPO)",
+     "url": "https://services2.arcgis.com/sFeLdas1ukfB6i8T/arcgis/rest/services/Johnson_City_MTPO_2025_Metropolitan_Planning_Area_(Johnson_City_MTPO)/FeatureServer",
+     "owner": "jcgis_publisher",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"johnson\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8548": {
+   "park": "Maple Creek Crossing State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"crossing maple\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8549": {
+   "park": "Menoken Indian Village State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"menoken village indian\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8550": {
+   "park": "Missouri-Yellowstone Confluence Interpretive Center State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"interpretive yellowstone confluence\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8552": {
+   "park": "November 33 Launch Facility State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"facility november launch\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8553": {
+   "park": "Oak Lawn Church State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Oak Lawn Churches",
+     "url": "https://services7.arcgis.com/HIWDYyvTtvtoCVn0/arcgis/rest/services/Oak_Lawn_Churches/FeatureServer",
+     "owner": "OakLawnRitter",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"church lawn oak\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8554": {
+   "park": "Pembina State Museum State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"pembina museum\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8555": {
+   "park": "Oscar-Zero Missile Alert Facility State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"facility missile alert\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8557": {
+   "park": "Steamboat Warehouse State Historic Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"steamboat warehouse\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8558": {
+   "park": "Wadeson Cabin State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"wadeson cabin\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8559": {
+   "park": "Welk Homestead State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8560": {
+   "park": "Whitestone Hill State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8561": {
+   "park": "Missouri River State Natural Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A North Dakota Game & Fish: no polygon at the pin",
+    "A North Dakota Parks & Recreation: no polygon at the pin",
+    "A North Dakota Parks and Recreation Depart: no polygon at the pin",
+    "A North Dakota Forest Service (via ND Dept: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

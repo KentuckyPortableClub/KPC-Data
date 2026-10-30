@@ -1,0 +1,1064 @@
+{
+ "area": "US-MS",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-11881": {
+   "park": "Dancing Rabbit Creek Treaty State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"dancing treaty rabbit\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11882": {
+   "park": "Grand Village of the Natchez State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"natchez village grand\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11883": {
+   "park": "Emerald Mound National Historical Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3552,
+     "record_name": "Natchez Trace Parkway",
+     "acres_approx": 34435,
+     "Mang_Name": "NPS",
+     "Des_Tp": "SDA",
+     "Own_Type": "FED",
+     "GIS_Acres": 31527
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"historical emerald mound\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12193": {
+   "park": "Lake Claude Bennett State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"bennett fishing claude\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12194": {
+   "park": "Lake Lamar Bruce State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fishing bruce lamar\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12195": {
+   "park": "Elvis Presley State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"presley fishing elvis\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12196": {
+   "park": "Tippah County State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fishing tippah\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12197": {
+   "park": "Lake Monroe State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fishing monroe\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12198": {
+   "park": "Neshoba County State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"neshoba fishing\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12199": {
+   "park": "Lake Tom Bailey State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fishing bailey tom\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12200": {
+   "park": "Simpson County State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fishing simpson\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12201": {
+   "park": "Prentiss Walker State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"prentiss fishing walker\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12202": {
+   "park": "Lake Bogue Homa State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fishing bogue homa\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12203": {
+   "park": "Lake Mary Crawford State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"crawford fishing mary\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12205": {
+   "park": "Lake Mike Conner State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fishing conner mike\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12206": {
+   "park": "Lake Jeff Davis State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fishing davis jeff\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12207": {
+   "park": "Lake Walthall State Fishing Lake",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"walthall fishing\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12208": {
+   "park": "Lake Perry State Fishing Lake",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 211240,
+     "record_name": "Mississippi 16th Section Public School Trust Lands",
+     "acres_approx": 642206,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 646179
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"fishing perry\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12638": {
+   "park": "Bobby Cleveland Park State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 86280,
+     "record_name": "Lakeshore Recreation Area",
+     "acres_approx": 87,
+     "Mang_Name": "RWD",
+     "Des_Tp": "LREC",
+     "Own_Type": "DIST",
+     "GIS_Acres": 103
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"cleveland bobby\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7072": {
+   "park": "Riverfront Wildlife Management Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Riverfront District",
+     "url": "https://services6.arcgis.com/VKHi8CC6pMIyYUIs/arcgis/rest/services/Riverfront_District/FeatureServer",
+     "owner": "jkendall8",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Riverfront Boundary",
+     "url": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/arcgis/rest/services/RiverfrontBoundary/FeatureServer",
+     "owner": "ceecscz",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Riverfront Flooding June 2024 Ortho",
+     "url": "https://tiles.arcgis.com/tiles/tIBLyYZX96jUntYm/arcgis/rest/services/Riverfront_Flooding_June_2024_Ortho/MapServer",
+     "owner": "scacioppo2",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"riverfront\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7097": {
+   "park": "Chickasaw Wildlife Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3025,
+     "record_name": "Tombigbee National Forest",
+     "acres_approx": 67209,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 67449
+    }
+   ],
+   "leads": [
+    {
+     "title": "Chickasaw Police",
+     "url": "https://services6.arcgis.com/UyHjUN3YlQIsXJA1/arcgis/rest/services/Chickasaw_Police/FeatureServer",
+     "owner": "abowler911",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Chickasaw Consolidation_WFL1",
+     "url": "https://services1.arcgis.com/OIHmIXKmWvkweUZp/arcgis/rest/services/Chickasaw_Consolidation_WFL1/FeatureServer",
+     "owner": "brentdowns",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Chickasaw Nation",
+     "url": "https://services2.arcgis.com/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer",
+     "owner": "okdps_workforce",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"chickasaw\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7098": {
+   "park": "Graham Waterfowl Wildlife Management Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"waterfowl graham\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7104": {
+   "park": "Chickasawhay Wildlife Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2963,
+     "record_name": "De Soto National Forest",
+     "acres_approx": 530700,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 532454
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"chickasawhay\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7105": {
+   "park": "Mason Creek Wildlife Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2963,
+     "record_name": "De Soto National Forest",
+     "acres_approx": 530700,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 532454
+    }
+   ],
+   "leads": [
+    {
+     "title": "Mason_Fairfax_East_Campus_Boundary",
+     "url": "https://services1.arcgis.com/knq5Ad7sB7AS2ev7/arcgis/rest/services/Mason_Fairfax_East_Campus_Boundary/FeatureServer",
+     "owner": "emiles22_gmu_fm",
+     "type": "Feature Service"
+    },
+    {
+     "title": "George Mason University Police and Safety Disposal Box Locations",
+     "url": "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/George_Mason_University_Police_and_Safety_Disposal_Box_Locations/FeatureServer",
+     "owner": "FairfaxCounty",
+     "type": "Feature Service"
+    },
+    {
+     "title": "NRPC Open Data - Mason",
+     "url": "https://services6.arcgis.com/2ZriDy2NFXltCIFR/arcgis/rest/services/NRPC_Open_Data_Mason_v2/FeatureServer",
+     "owner": "skustron",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mason\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7106": {
+   "park": "Leaf River Wildlife Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 80,
+     "record_name": "Camp Shelby",
+     "acres_approx": 137769,
+     "Mang_Name": "DOD",
+     "Des_Tp": "MIL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 138435
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2963,
+     "record_name": "De Soto National Forest",
+     "acres_approx": 530700,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 532454
+    }
+   ],
+   "leads": [
+    {
+     "title": "Climate Indicator First Leaf Dates (EPA 2021)",
+     "url": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/CLM___Climate_Indicator_First_Leaf_Dates__EPA_/FeatureServer",
+     "owner": "EPA_GEO",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Leaf Collection Areas View",
+     "url": "https://services1.arcgis.com/5olyYd7fCfTTiVp8/arcgis/rest/services/Leaf_Collection_Areas_view/FeatureServer",
+     "owner": "eweber5",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Leaf_Collection_Areas",
+     "url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Leaf_Collection_Areas/FeatureServer",
+     "owner": "maps.phl.data",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"leaf\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7111": {
+   "park": "Red Creek Wildlife Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2963,
+     "record_name": "De Soto National Forest",
+     "acres_approx": 530700,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 532454
+    }
+   ],
+   "leads": [
+    {
+     "title": "Red de ferrocarriles de España",
+     "url": "https://services1.arcgis.com/nCKYwcSONQTkPA4K/arcgis/rest/services/RedFerrocarrilesIGN/FeatureServer",
+     "owner": "EsriEspanaContenidos",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Red Natura 2000",
+     "url": "https://services1.arcgis.com/nCKYwcSONQTkPA4K/arcgis/rest/services/Red_Natura_2000/FeatureServer",
+     "owner": "EsriEspanaContenidos",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Red Vial Circular 10",
+     "url": "https://services5.arcgis.com/K90UQIB09TmTjUL8/arcgis/rest/services/R10/FeatureServer",
+     "owner": "SIGSIF",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"red\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7115": {
+   "park": "Tallahala Wildlife Management Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "16.5ft Tallahala Creek - Laurel Flooding Extent",
+     "url": "https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/Tallahala_Moderate_Flooding_Extent/FeatureServer",
+     "owner": "NWS.JAN_noaa",
+     "type": "Feature Service"
+    },
+    {
+     "title": "19ft Tallahala Creek - Laurel Flooding Extent",
+     "url": "https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/Tallahala_Major_19ft_Flooding_Extent/FeatureServer",
+     "owner": "NWS.JAN_noaa",
+     "type": "Feature Service"
+    },
+    {
+     "title": "13ft Tallahala Creek - Laurel Flooding Extent",
+     "url": "https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/Tallahala_Minor_13ft_Flooding_Extent/FeatureServer",
+     "owner": "NWS.JAN_noaa",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"tallahala\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7116": {
+   "park": "Caney Creek Wildlife Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2945,
+     "record_name": "Bienville National Forest",
+     "acres_approx": 179202,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 180227
+    }
+   ],
+   "leads": [
+    {
+     "title": "Area_Caney_Fork_Fields",
+     "url": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Area_Caney_Fork_Fields/FeatureServer",
+     "owner": "kjensen_Skid",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Caney_Fork_Bulk_Density_2020_data_Prediction",
+     "url": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_data_Prediction/FeatureServer",
+     "owner": "kjensen_Skid",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Caney_Fork_Bulk_Density_2020_Prediction",
+     "url": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction/FeatureServer",
+     "owner": "kjensen_Skid",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"caney\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7120": {
+   "park": "Caston Creek Wildlife Management Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Resume Story Map Monique Caston",
+     "url": "https://services5.arcgis.com/Lmcs3aS4AodOs221/arcgis/rest/services/Resume_Story_Map_Monique_Caston/FeatureServer",
+     "owner": "moniquecaston",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"caston\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7124": {
+   "park": "Arkabutla Lake State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"arkabutla\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7125": {
+   "park": "Enid Lake State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Enid Isolated Terrace Hydrologic Study, 2014 Update",
+     "url": "https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Enid_Isolated_Terrace_Study/MapServer",
+     "owner": "OWRBOnline",
+     "type": "Map Service"
+    },
+    {
+     "title": "Enid Isolated Terrace Hydrologic Study, 2014 Update (Open Data)",
+     "url": "https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Enid_Isolated_Terrace_Study/MapServer",
+     "owner": "OWRBOnline",
+     "type": "Map Service"
+    },
+    {
+     "title": "DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew",
+     "url": "https://services.arcgis.com/pGfbNJoYypmNq86F/arcgis/rest/services/DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew/FeatureServer",
+     "owner": "DCSBGI",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"enid\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7126": {
+   "park": "Grenada Lake State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Grenada Steep Slopes",
+     "url": "https://services2.arcgis.com/j80Jz20at6Bi0thr/arcgis/rest/services/Grenada_Steep_Slopes/FeatureServer",
+     "owner": "Learn_ArcGIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Grenada Districts",
+     "url": "https://services2.arcgis.com/j80Jz20at6Bi0thr/arcgis/rest/services/Grenada_Districts/FeatureServer",
+     "owner": "Learn_ArcGIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Roads from Grenada Government",
+     "url": "https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/roads2/FeatureServer",
+     "owner": "khess_IVT",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"grenada\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7128": {
+   "park": "Sardis Lake State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Sardis Site Visit Photos_WFL1",
+     "url": "https://services2.arcgis.com/TQnmvJ4NICOaocHd/arcgis/rest/services/Sardis_Site_Visit_Photos_WFL1/FeatureServer",
+     "owner": "susie.wold_Waggoner",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Sardis Brook Trail",
+     "url": "https://services7.arcgis.com/k4RHn3Cq6S9Ti9zx/arcgis/rest/services/Sardis_Brook_Trail/FeatureServer",
+     "owner": "alosantinc",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"sardis\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7129": {
+   "park": "Columbus Lake State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Routes from Columbus State Community College to National Parks ASC",
+     "url": "https://services.arcgis.com/Kky1VmxJleu73HxO/arcgis/rest/services/Columbus_State_Community_College_(Points)_to_National_Parks/FeatureServer",
+     "owner": "acriss2_ColumbusState",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Columbus, GA Buildings",
+     "url": "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Columbus_GA_Buildings/FeatureServer",
+     "owner": "dkensok_osm",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Columbus City Council Districts",
+     "url": "https://maps2.columbus.gov/arcgis/rest/services/Schemas/BaseLayers/MapServer/3",
+     "owner": "ColumbusOhioGIS",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"columbus\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7130": {
+   "park": "Aberdeen Lake State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 211177,
+     "record_name": "Canal Section Wma",
+     "acres_approx": 28688,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SCA",
+     "Own_Type": "FED",
+     "GIS_Acres": 29203
+    }
+   ],
+   "leads": [
+    {
+     "title": "Distribution Pipe Network Aberdeen City",
+     "url": "https://services-eu1.arcgis.com/UnrqlFBt9cFAdjsP/arcgis/rest/services/Distribution_Pipe_Network_Aberdeen_City/FeatureServer",
+     "owner": "SGNOpenData",
+     "type": "Feature Service"
+    },
+    {
+     "title": "EV Charging Infrastructure_ Aberdeen",
+     "url": "https://services-eu1.arcgis.com/8fn27zOnEOMRWyUb/arcgis/rest/services/Aberdeen_EV_site_visit_data/FeatureServer",
+     "owner": "HBowey@hillcresthomes.org.uk",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Aberdeen_2025_Image",
+     "url": "https://tiles.arcgis.com/tiles/H3Xuuu0h4PaTeWwU/arcgis/rest/services/Aberdeen_2025/MapServer",
+     "owner": "john.p",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"aberdeen\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7131": {
+   "park": "Bay Springs Lake State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"springs bay\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7132": {
+   "park": "Jamie Whitten Historical Center State Recreation Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"historical whitten center\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7133": {
+   "park": "Amory Recreation Area State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Amory",
+     "url": "https://arcgisdv.bnsf.com/arcgis/rest/services/UAS_Products/Amory/MapServer",
+     "owner": "Corporate_GIS",
+     "type": "Map Service"
+    },
+    {
+     "title": "Amory Port South- property Outline",
+     "url": "https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish185/FeatureServer",
+     "owner": "recruit_giswebtech",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Amory Port North- property Outline",
+     "url": "https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish185/FeatureServer",
+     "owner": "recruit_giswebtech",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"amory\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7134": {
+   "park": "Holcut Memorial State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 211178,
+     "record_name": "Divide Section",
+     "acres_approx": 15821,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SCA",
+     "Own_Type": "FED",
+     "GIS_Acres": 16145
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"holcut\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7629": {
+   "park": "Davis Lake State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Caltrans UC Davis Wildfire Assessment 2020 PM",
+     "url": "https://services1.arcgis.com/8CpMUd3fdw6aXef7/arcgis/rest/services/Caltrans_UC_Davis_Wildfire_Assessment_2020_PM/FeatureServer",
+     "owner": "Maintenance.GIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Parsons to Davis - Phase 1 & 2 Borings (GPI, 2023)",
+     "url": "https://services6.arcgis.com/cGI8zn9Oo7U9dF6z/arcgis/rest/services/Parsons2Davis_Phase_1_Borings/FeatureServer",
+     "owner": "DPMC_GIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Davis Swell, Parker Ridge, Three Dory Ridge",
+     "url": "https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/Parker_Ridge__Three_Dory_Ridge__Davis_Swell/FeatureServer",
+     "owner": "nccos_msp_noaa",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"davis\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7630": {
+   "park": "Chewalla Lake State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2977,
+     "record_name": "Holly Springs National Forest",
+     "acres_approx": 155153,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 156210
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7631": {
+   "park": "Owl Creek Mounds Archeological Reserve",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3025,
+     "record_name": "Tombigbee National Forest",
+     "acres_approx": 67209,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 67449
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7633": {
+   "park": "Turkey Fork Lake State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2963,
+     "record_name": "De Soto National Forest",
+     "acres_approx": 530700,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 532454
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7634": {
+   "park": "Ashe Lake State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2963,
+     "record_name": "De Soto National Forest",
+     "acres_approx": 530700,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 532454
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7635": {
+   "park": "Airey Lake State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2963,
+     "record_name": "De Soto National Forest",
+     "acres_approx": 530700,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 532454
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-8513": {
+   "park": "Archusa Creek State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8514": {
+   "park": "Big Creek State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8515": {
+   "park": "Dry Creek State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8516": {
+   "park": "Dunn's Falls State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8517": {
+   "park": "Flint Creek State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8518": {
+   "park": "Maynor Creek State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8519": {
+   "park": "Turkey Creek State Recreation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9849": {
+   "park": "Deer Island Coastal Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

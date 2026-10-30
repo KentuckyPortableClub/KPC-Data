@@ -1,0 +1,4291 @@
+{
+ "area": "US-NV",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-10851": {
+   "park": "East Pershing Complex BLM Herd Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2040,
+     "record_name": "Stillwater Field Office",
+     "acres_approx": 3551523,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3582451
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"pershing complex east\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12817": {
+   "park": "Moon Rocks BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2039,
+     "record_name": "Sierra Front Field Office",
+     "acres_approx": 1140026,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1146352
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"rocks moon\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13010": {
+   "park": "Dry Valley BLM Special Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2186,
+     "record_name": "Eagle Lake Field Office",
+     "acres_approx": 308434,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 310176
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"special valley dry\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13020": {
+   "park": "Smoke Creek BLM National Conservation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2011,
+     "record_name": "Black Rock Field Office",
+     "acres_approx": 2341538,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2358385
+    }
+   ],
+   "leads": [
+    {
+     "title": "National Weather Service Smoke Forecast",
+     "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NDGD_SmokeForecast_v1/FeatureServer",
+     "owner": "esri_livefeeds2",
+     "type": "Feature Service"
+    },
+    {
+     "title": "NOAA HMS Smoke Detection",
+     "url": "https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/NOAA_Satellite_Smoke_Detection_(v1)/FeatureServer",
+     "owner": "NESDIS.SAB_noaa",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Wildfire Smoke Forecast in Canada - Feature Service",
+     "url": "https://services.arcgis.com/wjcPoefzjpzCgffS/arcgis/rest/services/Wildfire_Smoke_Forecast_in_Canada_(Feature_Service)_-ServiceDefinition/FeatureServer",
+     "owner": "EsriCanadaContent",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"smoke\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13023": {
+   "park": "Artesia Lake State Wildlife Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 230119,
+     "record_name": "Alkali Lake Wildlife Management Area",
+     "acres_approx": 1626,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 1568
+    }
+   ],
+   "leads": [
+    {
+     "title": "Artesia_LandUse_POI",
+     "url": "https://services3.arcgis.com/JS0ODzK9I2ApHTX7/arcgis/rest/services/Artesia_LandUse_POI/FeatureServer",
+     "owner": "KOAMParcgis",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Artesia_LandUse_POI_Updated",
+     "url": "https://services3.arcgis.com/JS0ODzK9I2ApHTX7/arcgis/rest/services/Artesia_LandUse_POI_Updated/FeatureServer",
+     "owner": "KOAMParcgis",
+     "type": "Feature Service"
+    },
+    {
+     "title": "SlidingWindows_ARTESIA_view_V1",
+     "url": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/SlidingWindows_ARTESIA_view_33808/FeatureServer",
+     "owner": "JRuben@isd.lacounty.gov_lacounty",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"artesia\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13040": {
+   "park": "Grimes Point/Hidden Cave BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2260,
+     "record_name": "Usbr",
+     "acres_approx": 138698,
+     "Mang_Name": "USBR",
+     "Des_Tp": "FOTH",
+     "Own_Type": "FED",
+     "GIS_Acres": 139499
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"preservation hidden grimes\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13058": {
+   "park": "Wilson Canyon BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2039,
+     "record_name": "Sierra Front Field Office",
+     "acres_approx": 1140026,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1146352
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"canyon wilson\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13062": {
+   "park": "Dixie Valley Recreation Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2040,
+     "record_name": "Stillwater Field Office",
+     "acres_approx": 3551523,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3582451
+    }
+   ],
+   "leads": [
+    {
+     "title": "Dixie Valley Toad Distribution in Nevada",
+     "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a86e58/FeatureServer",
+     "owner": "NDOW_DEV",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Tui Chub in Dixie Valley Distribution in Nevada",
+     "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a31962/FeatureServer",
+     "owner": "NDOW_DEV",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Elk Home Range - Dixie Valley - 2019-2023 [ds3167]",
+     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3167_fpu/FeatureServer",
+     "owner": "BIOS_Admin",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"valley dixie\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13155": {
+   "park": "Baker Archaeological Site BLM Historic Preservation Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"archaeological preservation baker\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13180": {
+   "park": "Lovelock Cave BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2022,
+     "record_name": "Humboldt River Field Office",
+     "acres_approx": 6047490,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6081514
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"preservation lovelock cave\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13183": {
+   "park": "Walking Box Ranch Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10826,
+     "record_name": "Southern Nevada",
+     "acres_approx": 1793350
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "agency": "BLM Nevada national monuments + NCAs",
+     "record": 4823,
+     "record_name": "Avi Kwa Ame",
+     "acres_approx": 507928
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2028,
+     "record_name": "Las Vegas Field Office",
+     "acres_approx": 2366615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2378020
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"walking ranch box\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13189": {
+   "park": "Oak Springs Trilobite Site BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"interpretive trilobite springs\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13195": {
+   "park": "Jumbo Grade Trailhead BLM Historic Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2039,
+     "record_name": "Sierra Front Field Office",
+     "acres_approx": 1140026,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1146352
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"trailhead grade jumbo\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13196": {
+   "park": "Stampede-Nevada BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"stampede nevada\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13197": {
+   "park": "Ophir Mill BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2042,
+     "record_name": "Tonopah Field Office",
+     "acres_approx": 6030438,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6073247
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"preservation ophir mill\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13206": {
+   "park": "Barnes Canyon Trailhead BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"trailhead canyon barnes\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13207": {
+   "park": "Blue Mass Scenic Area BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1248,
+     "record_name": "Blue Mass Scenic Area",
+     "acres_approx": 944
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2012,
+     "record_name": "Bristlecone Field Office",
+     "acres_approx": 5615809,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5647647
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13209": {
+   "park": "Goldfield Trail BLM Historic Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2042,
+     "record_name": "Tonopah Field Office",
+     "acres_approx": 6030438,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6073247
+    }
+   ],
+   "leads": [
+    {
+     "title": "Contra Costa Goldfield Final Critical Habitat",
+     "url": "https://services7.arcgis.com/CN5O33hsFsTqOEB6/arcgis/rest/services/Contra_Costa_Goldfield_Final_Critical_Habitat/FeatureServer",
+     "owner": "d.hicks.CP",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Beatty to Goldfield Adventure Route",
+     "url": "https://services1.arcgis.com/Ezk9fcjSUkeadg6u/arcgis/rest/services/Beatty_to_Goldfield/FeatureServer",
+     "owner": "arsc_uagis",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"goldfield\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13210": {
+   "park": "Goshute Canyon and Goshute Cave BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2012,
+     "record_name": "Bristlecone Field Office",
+     "acres_approx": 5615809,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5647647
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"goshute canyon cave\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13214": {
+   "park": "Logandale Trails BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10826,
+     "record_name": "Southern Nevada",
+     "acres_approx": 1793350
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2028,
+     "record_name": "Las Vegas Field Office",
+     "acres_approx": 2366615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2378020
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"logandale trails\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13215": {
+   "park": "Mathews Canyon Dam BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mathews canyon dam\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13217": {
+   "park": "Panaca Charcoal Kilns BLM Historic Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"charcoal panaca kilns\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13218": {
+   "park": "Pine Canyon Dam BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"canyon pine dam\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13222": {
+   "park": "Shooting Gallery BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1243,
+     "record_name": "Shooting Gallery",
+     "acres_approx": 15486
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "agency": "BLM Nevada national monuments + NCAs",
+     "record": 4019,
+     "record_name": "Basin and Range",
+     "acres_approx": 5100
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2010,
+     "record_name": "Basin And Range Nm Field Office",
+     "acres_approx": 700242,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 703784
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Nevada national monuments + NCAs: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13227": {
+   "park": "White River Narrows BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "agency": "BLM Nevada national monuments + NCAs",
+     "record": 4020,
+     "record_name": "Basin and Range",
+     "acres_approx": 699344
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2010,
+     "record_name": "Basin And Range Nm Field Office",
+     "acres_approx": 700242,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 703784
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"preservation narrows white\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13228": {
+   "park": "Red Spring Picnic Area BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "agency": "BLM Nevada national monuments + NCAs",
+     "record": 4419,
+     "record_name": "Red Rock Canyon",
+     "acres_approx": 200610
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2035,
+     "record_name": "Red Rock/Sloan Field Office",
+     "acres_approx": 244170,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 245885
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13230": {
+   "park": "Fairview Peak Earthquake Faults BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1249,
+     "record_name": "Numu Newe Special Management Area",
+     "acres_approx": 208097
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2040,
+     "record_name": "Stillwater Field Office",
+     "acres_approx": 3551523,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3582451
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"interpretive earthquake fairview\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13239": {
+   "park": "Mason Valley Hatchery Outponds State Fish Hatchery",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 230595,
+     "record_name": "Mason Valley Wildlife Management Area",
+     "acres_approx": 16650,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 16717
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13240": {
+   "park": "Gallagher State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4282,
+     "record_name": "Ruby Lake National Wildlife Refuge",
+     "acres_approx": 39672,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 39950
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 5239,
+     "record_name": "Ruby Lake National Wildlife Refuge",
+     "acres_approx": 39795,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 40070
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"gallagher hatchery\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13241": {
+   "park": "Lake Mead Fish Hatchery State Fish Hatchery",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3508,
+     "record_name": "Lake Mead National Recreation Area",
+     "acres_approx": 577927,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 581651
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13242": {
+   "park": "Spring Creek Rearing Station State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2012,
+     "record_name": "Bristlecone Field Office",
+     "acres_approx": 5615809,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5647647
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hatchery station rearing\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13248": {
+   "park": "Fort Ruby National Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4282,
+     "record_name": "Ruby Lake National Wildlife Refuge",
+     "acres_approx": 39672,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 39950
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 5239,
+     "record_name": "Ruby Lake National Wildlife Refuge",
+     "acres_approx": 39795,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 40070
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13249": {
+   "park": "Nevada Northern Railway Museum State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2012,
+     "record_name": "Bristlecone Field Office",
+     "acres_approx": 5615809,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5647647
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"northern railway nevada\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13250": {
+   "park": "Leonard Rockshelter National Historic Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"rockshelter leonard\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13251": {
+   "park": "Virginia City Historic District (Comstock Lode) National Historic District",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"virginia comstock district\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13252": {
+   "park": "Stokes Castle National Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"castle stokes\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13259": {
+   "park": "Great Basin Highway Scenic Byway Scenic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2012,
+     "record_name": "Bristlecone Field Office",
+     "acres_approx": 5615809,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5647647
+    }
+   ],
+   "leads": [
+    {
+     "title": "Scenic Byway",
+     "url": "https://services.arcgis.com/8lRhdTsQyJpO52F1/arcgis/rest/services/Scenic_Byway_View/FeatureServer",
+     "owner": "IowaDOT_GIS",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"highway scenic byway\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13260": {
+   "park": "Angel Lake Road Area of Outstanding Natural Beauty",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"outstanding beauty angel\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13261": {
+   "park": "Baker Road Area of Outstanding Natural Beauty",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"outstanding beauty baker\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13262": {
+   "park": "Mt. Charleston Scenic Byway Area of Outstanding Natural Beauty",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10826,
+     "record_name": "Southern Nevada",
+     "acres_approx": 1793350
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2028,
+     "record_name": "Las Vegas Field Office",
+     "acres_approx": 2366615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2378020
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"outstanding charleston beauty\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13263": {
+   "park": "Gerlach Road Area of Outstanding Natural Beauty",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 876,
+     "record_name": "Pyramid Lake Paiute Reservation",
+     "acres_approx": 465879,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 466888
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"outstanding gerlach beauty\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13264": {
+   "park": "Lamoille Canyon Rd Area of Outstanding Natural Beauty",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"outstanding lamoille canyon\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13265": {
+   "park": "Mt Rose Scenic Byway Area of Outstanding Natural Beauty",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Areas of Outstanding Natural Beauty _AONB_",
+     "url": "https://services3.arcgis.com/HRuPlEcokYlz4mdz/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty__AONB_/FeatureServer",
+     "owner": "edelaney05_QueensUB",
+     "type": "Feature Service"
+    },
+    {
+     "title": "NI Areas of Outstanding Natural Beauty AONB",
+     "url": "https://services.arcgis.com/vj9gtZvrLEtbnUyw/arcgis/rest/services/NI_Areas_of_Outstanding_Natural_Beauty_AONB/FeatureServer",
+     "owner": "sam.brown",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Yorkshire Wolds Area of Outstanding Natural Beauty (AONB)",
+     "url": "https://services6.arcgis.com/Qptn479QktK11k72/arcgis/rest/services/Yorkshire_Wolds_AONB/FeatureServer",
+     "owner": "owen.robinson_eastriding",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"outstanding beauty scenic\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13266": {
+   "park": "North Shore Road Scenic Byway Area of Outstanding Natural Beauty",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Areas of Outstanding Natural Beauty _AONB_",
+     "url": "https://services3.arcgis.com/HRuPlEcokYlz4mdz/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty__AONB_/FeatureServer",
+     "owner": "edelaney05_QueensUB",
+     "type": "Feature Service"
+    },
+    {
+     "title": "NI Areas of Outstanding Natural Beauty AONB",
+     "url": "https://services.arcgis.com/vj9gtZvrLEtbnUyw/arcgis/rest/services/NI_Areas_of_Outstanding_Natural_Beauty_AONB/FeatureServer",
+     "owner": "sam.brown",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Yorkshire Wolds Area of Outstanding Natural Beauty (AONB)",
+     "url": "https://services6.arcgis.com/Qptn479QktK11k72/arcgis/rest/services/Yorkshire_Wolds_AONB/FeatureServer",
+     "owner": "owen.robinson_eastriding",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"outstanding beauty scenic\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13267": {
+   "park": "Pyramid Lake Road Scenic Byway Area of Outstanding Natural Beauty",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 876,
+     "record_name": "Pyramid Lake Paiute Reservation",
+     "acres_approx": 465879,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 466888
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13268": {
+   "park": "Sutcliff-Nixon Rd Scenic Byway Area of Outstanding Natural Beauty",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 876,
+     "record_name": "Pyramid Lake Paiute Reservation",
+     "acres_approx": 465879,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 466888
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"outstanding sutcliff beauty\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13274": {
+   "park": "Empire & Carson River Mills State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"historical monument carson\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13275": {
+   "park": "Pioneer Memorial Park State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13276": {
+   "park": "West End of Hastings Cutoff State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13277": {
+   "park": "Pioche State Historical Monument",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13278": {
+   "park": "El Dorado Canyon State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13280": {
+   "park": "Austin State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13281": {
+   "park": "Copper Country State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2012,
+     "record_name": "Bristlecone Field Office",
+     "acres_approx": 5615809,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5647647
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13282": {
+   "park": "Eureka State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2029,
+     "record_name": "Mount Lewis Field Office",
+     "acres_approx": 4353885,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 4383120
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13283": {
+   "park": "Nevada’s Birthplace State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13284": {
+   "park": "Carson City National Historic District",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13285": {
+   "park": "Tonopah Nevada State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2042,
+     "record_name": "Tonopah Field Office",
+     "acres_approx": 6030438,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6073247
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13286": {
+   "park": "Mineral County – Nevada State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10856,
+     "record_name": "Walker Lake SRMA",
+     "acres_approx": 24646
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2040,
+     "record_name": "Stillwater Field Office",
+     "acres_approx": 3551523,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3582451
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13287": {
+   "park": "Pershing County State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13288": {
+   "park": "Columbus Nevada State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2042,
+     "record_name": "Tonopah Field Office",
+     "acres_approx": 6030438,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6073247
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13289": {
+   "park": "The Humboldt Canal State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13290": {
+   "park": "Forty Mile Desert State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13291": {
+   "park": "Chinese in Nevada-#29 State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13292": {
+   "park": "Olinghouse Mining District BLM Historic Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2039,
+     "record_name": "Sierra Front Field Office",
+     "acres_approx": 1140026,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1146352
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13299": {
+   "park": "Moapa Valley State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13300": {
+   "park": "Powell of the Colorado State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3508,
+     "record_name": "Lake Mead National Recreation Area",
+     "acres_approx": 577927,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 581651
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13301": {
+   "park": "Pueblo Grande de Nevada State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13302": {
+   "park": "Big Smoky Valley State Historical Monument",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2042,
+     "record_name": "Tonopah Field Office",
+     "acres_approx": 6030438,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6073247
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13303": {
+   "park": "Derby Diversion Dam State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13304": {
+   "park": "Fort Halleck Military Reservation State Historic Site",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13305": {
+   "park": "Carlin Canyon State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13306": {
+   "park": "Reno Nevada State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13308": {
+   "park": "Old Boundary (Nevada’s Southern Boundary 1861-1867) #1 State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13319": {
+   "park": "Truckee River – West State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13320": {
+   "park": "Truckee River – East State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13321": {
+   "park": "Palisade Nevada State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13322": {
+   "park": "Grand Army Of The Republic Memorial Tree State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13323": {
+   "park": "Savage Mansion (c. 1863) State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13324": {
+   "park": "Sparks State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13325": {
+   "park": "Paradise Valley State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13326": {
+   "park": "Delamar BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13363": {
+   "park": "Panaca Mercantile Store State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13365": {
+   "park": "The Camel Corps State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10826,
+     "record_name": "Southern Nevada",
+     "acres_approx": 1793350
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2028,
+     "record_name": "Las Vegas Field Office",
+     "acres_approx": 2366615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2378020
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13366": {
+   "park": "Edwards Creek Valley State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2040,
+     "record_name": "Stillwater Field Office",
+     "acres_approx": 3551523,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3582451
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13367": {
+   "park": "Wabuska Nevada State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13368": {
+   "park": "Franktown Nevada State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13369": {
+   "park": "Potosi Nevada State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "agency": "BLM Nevada national monuments + NCAs",
+     "record": 4419,
+     "record_name": "Red Rock Canyon",
+     "acres_approx": 200610
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2035,
+     "record_name": "Red Rock/Sloan Field Office",
+     "acres_approx": 244170,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 245885
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13370": {
+   "park": "Searchlight Nevada State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10826,
+     "record_name": "Southern Nevada",
+     "acres_approx": 1793350
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+     "agency": "BLM Nevada national monuments + NCAs",
+     "record": 4823,
+     "record_name": "Avi Kwa Ame",
+     "acres_approx": 507928
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2028,
+     "record_name": "Las Vegas Field Office",
+     "acres_approx": 2366615,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2378020
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13405": {
+   "park": "Kingsbury Grade State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13406": {
+   "park": "Luther Canyon (Fay Canyon) State Historical Monument",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13407": {
+   "park": "Courthouse Site (1865-1907) State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13408": {
+   "park": "Toquima Cave State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2029,
+     "record_name": "Mount Lewis Field Office",
+     "acres_approx": 4353885,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 4383120
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13410": {
+   "park": "Fort McDermitt State Historical Monument",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 804,
+     "record_name": "Fort McDermitt Indian Reservation",
+     "acres_approx": 16600,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 16701
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13411": {
+   "park": "Unionville (Pershing County) State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13412": {
+   "park": "Silver Peak State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2042,
+     "record_name": "Tonopah Field Office",
+     "acres_approx": 6030438,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6073247
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13413": {
+   "park": "Chinatown State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13414": {
+   "park": "Button Point State Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2022,
+     "record_name": "Humboldt River Field Office",
+     "acres_approx": 6047490,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6081514
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13415": {
+   "park": "Nevada Test Site State Historical Monument",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13447": {
+   "park": "Glendale School (1864-1958) “Oldest Remaining School Building in Nevada” State Historical Monument",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13448": {
+   "park": "Chief Tecopa Peacemaker of the Paiutes State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13449": {
+   "park": "The Surveyors State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2813,
+     "record_name": "Toiyabe National Forest",
+     "acres_approx": 3190488,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 3206430
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13450": {
+   "park": "Hazen Nevada State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13451": {
+   "park": "Panaca Ward Chapel State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13452": {
+   "park": "Von Schmidt State Boundry Monument State Historical Monument",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1886,
+     "record_name": "Lake Havasu Field Office",
+     "acres_approx": 42074,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 42218
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13453": {
+   "park": "Original Homesite of a Las Vegas Pioneer “Pop” Squires 1865-1958 State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13454": {
+   "park": "Steamboat Springs Nevada State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13463": {
+   "park": "Wonder, Nevada BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1249,
+     "record_name": "Numu Newe Special Management Area",
+     "acres_approx": 208097
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2040,
+     "record_name": "Stillwater Field Office",
+     "acres_approx": 3551523,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3582451
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13464": {
+   "park": "Bullionville Nevada State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13465": {
+   "park": "Jackrabbit Nevada BLM Historic Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13466": {
+   "park": "Crystal Springs Nevada BLM Historic Preservation Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13467": {
+   "park": "Hiko Nevada State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13468": {
+   "park": "Chollar Mine State Historical Monument",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2039,
+     "record_name": "Sierra Front Field Office",
+     "acres_approx": 1140026,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1146352
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13469": {
+   "park": "Old Geiger Grade State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13470": {
+   "park": "Lahontan Dam State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13474": {
+   "park": "Kyle (Kiel) Ranch National Historic Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13475": {
+   "park": "Mount Rose Weather Observatory State Historical Monument",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2813,
+     "record_name": "Toiyabe National Forest",
+     "acres_approx": 3190488,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 3206430
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13476": {
+   "park": "Stonehouse Nevada State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2022,
+     "record_name": "Humboldt River Field Office",
+     "acres_approx": 6047490,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6081514
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13477": {
+   "park": "Dinner Station Nevada State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13478": {
+   "park": "Union Pacific Depot 1923 State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2017,
+     "record_name": "Caliente Field Office",
+     "acres_approx": 5046339,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5063883
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13479": {
+   "park": "Diamondfield Jack Davis State Historical Monument",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no answer (404)",
+    "A Nevada outdoor recreation areas (NV Divi: no answer (404)",
+    "A Nevada Division of State Parks (AGOL org: no answer (404)",
+    "A Nevada (SCORP recreation areas): no answer (404)",
+    "A Nevada Division of State Parks (credit: : no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13480": {
+   "park": "The Eureka Mining District Producing Ore Since 1864 State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2029,
+     "record_name": "Mount Lewis Field Office",
+     "acres_approx": 4353885,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 4383120
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13481": {
+   "park": "Spooner Summit State Historical Monument",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2813,
+     "record_name": "Toiyabe National Forest",
+     "acres_approx": 3190488,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 3206430
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13482": {
+   "park": "Galena Creek Fish Hatchery State Historical Monument",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "agency": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server)",
+     "record": 563,
+     "record_name": "GALENA CREEK REGIONAL PARK",
+     "acres_approx": 343
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "agency": "Nevada (SCORP recreation areas)",
+     "record": null,
+     "record_name": "GALENA CREEK REGIONAL PARK",
+     "acres_approx": 343
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 230144,
+     "record_name": "Galena Creek Regional Park",
+     "acres_approx": 350,
+     "Mang_Name": "CNTY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 346
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: hit",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): hit",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13484": {
+   "park": "Boulder City Navy Hangar/Bullock Field National Historic Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13494": {
+   "park": "Lida BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2042,
+     "record_name": "Tonopah Field Office",
+     "acres_approx": 6030438,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6073247
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13496": {
+   "park": "Ione, NV BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2042,
+     "record_name": "Tonopah Field Office",
+     "acres_approx": 6030438,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6073247
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13497": {
+   "park": "Middlegate Station BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2040,
+     "record_name": "Stillwater Field Office",
+     "acres_approx": 3551523,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3582451
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13504": {
+   "park": "Far East -Nevada BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2040,
+     "record_name": "Stillwater Field Office",
+     "acres_approx": 3551523,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3582451
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13505": {
+   "park": "Split Second Decision, NV BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2039,
+     "record_name": "Sierra Front Field Office",
+     "acres_approx": 1140026,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1146352
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13506": {
+   "park": "Split Second Decision II, NV BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2039,
+     "record_name": "Sierra Front Field Office",
+     "acres_approx": 1140026,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1146352
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13507": {
+   "park": "Sail Park, NV BLM Backcountry Airstrip",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13508": {
+   "park": "Stink Bug, NV BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2260,
+     "record_name": "Usbr",
+     "acres_approx": 138698,
+     "Mang_Name": "USBR",
+     "Des_Tp": "FOTH",
+     "Own_Type": "FED",
+     "GIS_Acres": 139499
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13509": {
+   "park": "Three Shot Gun Shells, NV BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2039,
+     "record_name": "Sierra Front Field Office",
+     "acres_approx": 1140026,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1146352
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13510": {
+   "park": "Easy Money BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2039,
+     "record_name": "Sierra Front Field Office",
+     "acres_approx": 1140026,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1146352
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13511": {
+   "park": "Bonnie Claire BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2042,
+     "record_name": "Tonopah Field Office",
+     "acres_approx": 6030438,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6073247
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13519": {
+   "park": "Stevens-Crosby BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2044,
+     "record_name": "Tuscarora Field Office",
+     "acres_approx": 3182501,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3199984
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13520": {
+   "park": "Denio Junction BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2022,
+     "record_name": "Humboldt River Field Office",
+     "acres_approx": 6047490,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6081514
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13521": {
+   "park": "Rosaschi Air Park Airport BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2039,
+     "record_name": "Sierra Front Field Office",
+     "acres_approx": 1140026,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1146352
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13522": {
+   "park": "Samsarg Field Airport BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2039,
+     "record_name": "Sierra Front Field Office",
+     "acres_approx": 1140026,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1146352
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13523": {
+   "park": "Kingston Airport BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2029,
+     "record_name": "Mount Lewis Field Office",
+     "acres_approx": 4353885,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 4383120
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13524": {
+   "park": "Currant Ranch Airport BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2012,
+     "record_name": "Bristlecone Field Office",
+     "acres_approx": 5615809,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5647647
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13525": {
+   "park": "Echo Bay Airport BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "agency": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server)",
+     "record": 12,
+     "record_name": "Lake Mead National Recreation Area",
+     "acres_approx": 559931
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "agency": "Nevada (SCORP recreation areas)",
+     "record": null,
+     "record_name": "Lake Mead National Recreation Area",
+     "acres_approx": 559931
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3508,
+     "record_name": "Lake Mead National Recreation Area",
+     "acres_approx": 577927,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 581651
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: hit",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): hit",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13526": {
+   "park": "Duckwater Airport BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2012,
+     "record_name": "Bristlecone Field Office",
+     "acres_approx": 5615809,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 5647647
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13579": {
+   "park": "Pinson Mine Airport BLM Backcountry Airstrip",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2022,
+     "record_name": "Humboldt River Field Office",
+     "acres_approx": 6047490,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 6081514
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13580": {
+   "park": "Bog Hot BLM Backcountry Airstrip",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2011,
+     "record_name": "Black Rock Field Office",
+     "acres_approx": 2341538,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2358385
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-2638": {
+   "park": "Van Sickle Bi State Park",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-4438": {
+   "park": "Buckland Station State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+     "agency": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server)",
+     "record": 21,
+     "record_name": "Fort Churchill Historic State Monument",
+     "acres_approx": 5284
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
+     "agency": "Nevada (SCORP recreation areas)",
+     "record": null,
+     "record_name": "Fort Churchill Historic State Monument",
+     "acres_approx": 5284
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1",
+     "agency": "Nevada Division of State Parks (credit: State of Nevada, DCNR, Nevada Division of State Lands, Nevada Division of State Parks)",
+     "record": 6,
+     "record_name": "Fort Churchill State Historic Park",
+     "acres_approx": 5284
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 230191,
+     "record_name": "Fort Churchill State Historic Park",
+     "acres_approx": 3535,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SHCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3468
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: hit",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): hit",
+    "A Nevada Division of State Parks (credit: : hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-4566": {
+   "park": "California National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 150050,
+     "record_name": "Cave Springs Park",
+     "acres_approx": 33,
+     "Mang_Name": "CNTY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 38
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-4575": {
+   "park": "Old Spanish National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3420,
+     "record_name": "Arches National Park",
+     "acres_approx": 86985,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NP",
+     "Own_Type": "FED",
+     "GIS_Acres": 87525
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-4578": {
+   "park": "Pony Express National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Nevada Department of Wildlife: no polygon at the pin",
+    "A Nevada outdoor recreation areas (NV Divi: no polygon at the pin",
+    "A Nevada Division of State Parks (AGOL org: no polygon at the pin",
+    "A Nevada (SCORP recreation areas): no polygon at the pin",
+    "A Nevada Division of State Parks (credit: : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Nevada national monuments + NCAs: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

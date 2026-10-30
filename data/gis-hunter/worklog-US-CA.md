@@ -1,0 +1,26 @@
+## US-CA — GIS hunter 2026-10-30 (paste into the Fable file WORK LOG)
+
+| ref | park | step | what was found | result | date | by |
+|---|---|---|---|---|---|---|
+| US-0198 | Kesterson National Wildlife Refuge | R-G7 step 2 | California Department of Fish & Wildlife: 'Los Banos Wildlife Area' (record 246, ~6,325 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-0754 | Rosie the Riveter WWII Home Front National Historical Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| US-0884 | Kings River National Wild and Scenic River | R-G7 step 2 | USGS PAD-US: 'Sierra National Forest' (record 2872, ~1,279,656 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-0915 | Cesar E. Chavez National Monument | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| US-10400 | Trona Pinnacles National Geologic Trail | R-G7 step 2 | BLM Areas of Critical Environmental Concern (national, 1,120): 'Trona Pinnacles' (record 608, ~4,033 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-10402 | Cow Mountain BLM Special Recreation Management Area | R-G7 step 2 | USGS PAD-US: 'Ukiah Field Office' (record 2212, ~265,252 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-11336 | Rainbow Basin Natural Area | R-G7 step 2 | BLM Areas of Critical Environmental Concern (national, 1,120): 'Rainbow Basin/Owl Canyon' (record 498, ~4,090 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-11580 | Red Hills BLM Recreation Management Area | R-G7 step 2 | BLM Areas of Critical Environmental Concern (national, 1,120): 'Red Hills' (record 568, ~9,889 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-11582 | Griswold Hills BLM Special Recreation Management Area | R-G7 step 2 | USGS PAD-US: 'Central Coast Field Office' (record 2184, ~286,264 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-11583 | Tumey Hills BLM Special Recreation Management Area | R-G7 step 2 | BLM Areas of Critical Environmental Concern (national, 1,120): 'Panoche/Coalinga' (record 463, ~54,843 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-11584 | Panoche Hills BLM Special Recreation Management Area | R-G7 step 2 | BLM Areas of Critical Environmental Concern (national, 1,120): 'Panoche/Coalinga' (record 463, ~54,843 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-12616 | Black Butte Lake Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| US-12957 | Stoddard Valley BLM Special Recreation Management Area | R-G7 step 2 | BLM recreation SITE polygons (national, 3,478): 'Stoddard/Johnson' (record 10841, ~362,108 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-13334 | Sacramento River Bend BLM Recreation Management Area | R-G7 step 2 | BLM Areas of Critical Environmental Concern (national, 1,120): 'Sacramento River Bend' (record 497, ~20,274 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-13499 | Swasey Mule Mountain BLM Recreation Management Area | R-G7 step 2 | BLM Areas of Critical Environmental Concern (national, 1,120): 'Swasey Drive' (record 648, ~470 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-13513 | Laguna Mountain Area BLM Recreation Management Area | R-G7 step 2 | USGS PAD-US: 'Central Coast Field Office' (record 2184, ~286,264 ac, pin inside) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| US-13581 | Clear Creek BLM Recreation Management Area | R-G7 step 3 | lead Pre Clear Vegetation 2021 view (https://services-ap1.arcgis.com/lnVW0dLI3fvST2hd/arcgis/rest/services/Pre_Clear_Vegetation_2021_view/FeatureServer); lead Hagerstown Regional Airport Clear Zones (https://services2.arcgis.com/uxxyl33jRTSmjre5/arcgis/rest/services/Airport_Clear_Zones/FeatureServer | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| US-3578 | Tijuana Estuary Reserve State Conservation Area | R-G7 step 2 | California State Parks: 'Border Field SP' (record 648, ~1,440 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-6448 | William Randolph Hearst Memorial State Beach | R-G7 step 2 | California State Parks: 'Hearst San Simeon SP' (record 798, ~1,684 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| US-7375 | Cowell Ranch State Beach | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| US-7888 | Alcatraz Island National Historic Site | R-G7 step 2 | USGS PAD-US: 'Golden Gate National Recreation Area' (record 3505, ~34,470 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| US-7889 | Presidio of SF National Historic Site | R-G7 step 2 | USGS PAD-US: 'Golden Gate National Recreation Area' (record 3505, ~34,470 ac, pin inside) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |

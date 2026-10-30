@@ -1,0 +1,279 @@
+{
+ "area": "US-DC",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0655": {
+   "park": "National Mall and Memorial Parks National Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3538,
+     "record_name": "National Mall",
+     "acres_approx": 133,
+     "Mang_Name": "NPS",
+     "Des_Tp": "SDA",
+     "Own_Type": "FED",
+     "GIS_Acres": 167
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-0657": {
+   "park": "President's Park (White House) Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3536,
+     "record_name": "National Capital Parks",
+     "acres_approx": 3057,
+     "Mang_Name": "NPS",
+     "Des_Tp": "SDA",
+     "Own_Type": "FED",
+     "GIS_Acres": 3908
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"president house white\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13597": {
+   "park": "George Mason National Memorial",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3536,
+     "record_name": "National Capital Parks",
+     "acres_approx": 3057,
+     "Mang_Name": "NPS",
+     "Des_Tp": "SDA",
+     "Own_Type": "FED",
+     "GIS_Acres": 3908
+    }
+   ],
+   "leads": [
+    {
+     "title": "George Mason University Police and Safety Disposal Box Locations",
+     "url": "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/George_Mason_University_Police_and_Safety_Disposal_Box_Locations/FeatureServer",
+     "owner": "FairfaxCounty",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"george mason\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13621": {
+   "park": "Desert Shield and Desert Storm National Memorial",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3536,
+     "record_name": "National Capital Parks",
+     "acres_approx": 3057,
+     "Mang_Name": "NPS",
+     "Des_Tp": "SDA",
+     "Own_Type": "FED",
+     "GIS_Acres": 3908
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"shield desert storm\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-4564": {
+   "park": "Potomac Heritage Trail National Scenic Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 36678,
+     "record_name": "Rippon Landing Park",
+     "acres_approx": 42,
+     "Mang_Name": "UNK",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 32
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 270098,
+     "record_name": "Rippon Landing Park",
+     "acres_approx": 37,
+     "Mang_Name": "CNTY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 29
+    }
+   ],
+   "leads": [
+    {
+     "title": "Potomac Heritage National Scenic Trail of Northern Virginia - August 2021 Version",
+     "url": "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Northern_Virginia_Potomac_River_Corridor/FeatureServer",
+     "owner": "jkaneff_NVRC",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Potomac Heritage National Scenic Trail of Northern Virginia_ August 2021 Version",
+     "url": "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Potomac_Heritage_National_Scenic_Trail_of_Northern_Virginia__August_2021_Version/FeatureServer",
+     "owner": "jkaneff_NVRC",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Potomac Heritage National Scenic Trail - Viewshed Scenic Locations",
+     "url": "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Scenic_Locations/FeatureServer",
+     "owner": "jkaneff_NVRC",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"heritage potomac scenic\": 5 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4581": {
+   "park": "Star-Spangled Banner National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Star-Spangled Banner National Historic Trail Official Centerline",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Sta_Spangled_Banner_National_Historic_Trail_Official_Centerline/FeatureServer",
+     "owner": "JEFARRELL@nps.gov_nps",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Star Spangled Banner Trail",
+     "url": "https://services7.arcgis.com/xBaYvpTc0JtqK5u2/arcgis/rest/services/StarSpangledBannerTrail/FeatureServer",
+     "owner": "mauryt_havredegracemd",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"spangled banner star\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7891": {
+   "park": "African American Civil War National Memorial",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3536,
+     "record_name": "National Capital Parks",
+     "acres_approx": 3057,
+     "Mang_Name": "NPS",
+     "Des_Tp": "SDA",
+     "Own_Type": "FED",
+     "GIS_Acres": 3908
+    }
+   ],
+   "leads": [
+    {
+     "title": "Civil War Battlefields",
+     "url": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer",
+     "owner": "mm.atlas",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Civil War Battlefields (time-enabled)",
+     "url": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer",
+     "owner": "mm.sappleton",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"american african civil\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9898": {
+   "park": "Mount Vernon National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271111,
+     "record_name": "George Washington Memorial Parkway",
+     "acres_approx": 2710,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NP",
+     "Own_Type": "FED",
+     "GIS_Acres": 2776
+    }
+   ],
+   "leads": [
+    {
+     "title": "GWMP Mount Vernon Trail Polygon",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GWMP_Mount_Vernon_Trail_Polygon/FeatureServer",
+     "owner": "CWanschura@nps.gov_nps",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Mount Vernon Police",
+     "url": "https://services6.arcgis.com/UyHjUN3YlQIsXJA1/arcgis/rest/services/Mount_Vernon_Police/FeatureServer",
+     "owner": "abowler911",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Impact Analysis of Natural Gas Infrastructure on Mount Vernon_s Viewshed_WFL1",
+     "url": "https://services1.arcgis.com/qTQ6qYkHpxlu0G82/arcgis/rest/services/Impact_Analysis_of_Natural_Gas_Infrastructure_on_Mount_Vernon_s_Viewshed_WFL1/FeatureServer",
+     "owner": "pfobrien_UofMD",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"vernon mount\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9901": {
+   "park": "Civil War Defenses of Washington National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"washington defenses civil\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

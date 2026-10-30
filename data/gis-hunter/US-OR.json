@@ -1,0 +1,2184 @@
+{
+ "area": "US-OR",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-10007": {
+   "park": "Oregon Coast State Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Southern Oregon Northern California Coast Coho Salmon Range [ds1278]",
+     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1278_fpu/FeatureServer",
+     "owner": "BIOS_Admin",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Southern Oregon Northern California Coast Fall Chinook Salmon Range - FSSC [ds1296]",
+     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1296_fpu/FeatureServer",
+     "owner": "BIOS_Admin",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Oregon Coast Rockhounding Survey Results",
+     "url": "https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/survey123_df42ff0a52284a5ea7be4ed5e7e95bd6_results/FeatureServer",
+     "owner": "browncod@oregonstate.edu_OSUGISci",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"oregon coast\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10008": {
+   "park": "Klamath Hills BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+     "agency": "BLM Oregon/Washington recreation management areas (2,188)",
+     "record": 111,
+     "record_name": "Lower Klamath Hills",
+     "acres_approx": 1577
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2064,
+     "record_name": "Lakeview Klamath Falls Field Office",
+     "acres_approx": 214239,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 216032
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10023": {
+   "park": "Wood River BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1835,
+     "record_name": "Wood River Wetland",
+     "acres_approx": 3106
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2064,
+     "record_name": "Lakeview Klamath Falls Field Office",
+     "acres_approx": 214239,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 216032
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10025": {
+   "park": "Lost Forest/Dunes/Fossil BLM Special Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10853,
+     "record_name": "Christmas Valley Sand Dunes",
+     "acres_approx": 9744
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1935,
+     "record_name": "Lost Forest-Sand Dunes-Fossil Lake",
+     "acres_approx": 26485
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2062,
+     "record_name": "Lakeview District Lakeview Field Office",
+     "acres_approx": 3178758,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3203414
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10030": {
+   "park": "Juniper Woodlands BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 13675,
+     "record_name": "High Desert",
+     "acres_approx": 26058
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+     "agency": "BLM Oregon/Washington recreation management areas (2,188)",
+     "record": 4895,
+     "record_name": "High Desert",
+     "acres_approx": 26058
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2076,
+     "record_name": "Prineville Deschutes Field Office",
+     "acres_approx": 738349,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 744205
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"woodlands juniper\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10032": {
+   "park": "Airport Allotment BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 12647,
+     "record_name": "High Desert",
+     "acres_approx": 716
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+     "agency": "BLM Oregon/Washington recreation management areas (2,188)",
+     "record": 4265,
+     "record_name": "High Desert",
+     "acres_approx": 716
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2076,
+     "record_name": "Prineville Deschutes Field Office",
+     "acres_approx": 738349,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 744205
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"allotment airport\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10053": {
+   "park": "Maston Area BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 12593,
+     "record_name": "High Desert",
+     "acres_approx": 31379
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+     "agency": "BLM Oregon/Washington recreation management areas (2,188)",
+     "record": 4975,
+     "record_name": "High Desert",
+     "acres_approx": 31400
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2076,
+     "record_name": "Prineville Deschutes Field Office",
+     "acres_approx": 738349,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 744205
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"maston\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10055": {
+   "park": "Cline Buttes OHV BLM Recreation Management Area",
+   "why_not": "pin-doubt",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 12593,
+     "record_name": "High Desert",
+     "acres_approx": 31379
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+     "agency": "BLM Oregon/Washington recreation management areas (2,188)",
+     "record": 4975,
+     "record_name": "High Desert",
+     "acres_approx": 31400
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2076,
+     "record_name": "Prineville Deschutes Field Office",
+     "acres_approx": 738349,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 744205
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"buttes cline ohv\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10249": {
+   "park": "Salmon River National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2908,
+     "record_name": "Mt. Hood National Forest",
+     "acres_approx": 1005284,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1014555
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"salmon scenic wild\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10251": {
+   "park": "White River National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2908,
+     "record_name": "Mt. Hood National Forest",
+     "acres_approx": 1005284,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1014555
+    }
+   ],
+   "leads": [
+    {
+     "title": "Wild and Scenic Rivers",
+     "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_DESIGNATED_WATERS/MapServer/3",
+     "owner": "Wi_DNR_Data",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Previous Wild and Scenic River Inventory Tongass National Forest Region 10 public view",
+     "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Previous_Wild_and_Scenic_River_Inventory_Tongass_National_Forest_Region_10_public_view/FeatureServer",
+     "owner": "USFS_WO_PSO_PPSG",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Wood / Pawcatuck National Wild and Scenic Rivers System",
+     "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_WoodPaw_WildScenic_Rivers_spf/FeatureServer",
+     "owner": "URIEDC_RIGIS",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"scenic white wild\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10355": {
+   "park": "I-205 Multi-Use State Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"multi use 205\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10471": {
+   "park": "Maupin Section Foreman House BLM Historic Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2076,
+     "record_name": "Prineville Deschutes Field Office",
+     "acres_approx": 738349,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 744205
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"section foreman maupin\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10476": {
+   "park": "Monument BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
+     "agency": "State of Oregon (Oregon parklands)",
+     "record": 5132,
+     "record_name": "Monument Park",
+     "acres_approx": 4
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10484": {
+   "park": "Antelope Reservoir BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 14105,
+     "record_name": "NA",
+     "acres_approx": 449968
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+     "agency": "BLM Oregon/Washington recreation management areas (2,188)",
+     "record": 4943,
+     "record_name": "<Null>",
+     "acres_approx": 449940
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2087,
+     "record_name": "Vale Malheur Field Office",
+     "acres_approx": 4586301,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 4641633
+    }
+   ],
+   "leads": [
+    {
+     "title": "Antelope Reservoir Fish Advisory",
+     "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Antelope_Reservoir_Fish_Advisory/FeatureServer",
+     "owner": "rachel.saltzman_oha",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"reservoir antelope\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10486": {
+   "park": "Warner Wetland Reserve",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1816,
+     "record_name": "Warner Wetlands",
+     "acres_approx": 51722
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2062,
+     "record_name": "Lakeview District Lakeview Field Office",
+     "acres_approx": 3178758,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3203414
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10488": {
+   "park": "Sunstone Collection BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11345,
+     "record_name": "Sunstone Dayuse Area ",
+     "acres_approx": 2
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2062,
+     "record_name": "Lakeview District Lakeview Field Office",
+     "acres_approx": 3178758,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3203414
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10610": {
+   "park": "South Santiam State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery santiam south\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10612": {
+   "park": "Wizard Falls State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2892,
+     "record_name": "Deschutes National Forest",
+     "acres_approx": 1598516,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1612322
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hatchery wizard falls\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10613": {
+   "park": "Cole M. Rivers State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "cole_rivers_hatchery_flood",
+     "url": "https://services9.arcgis.com/TJruJkDTg7aeRw3Z/arcgis/rest/services/cole_rivers_hatchery_flood/FeatureServer",
+     "owner": "rspies",
+     "type": "Feature Service"
+    },
+    {
+     "title": "cole_rivers_hatchery_footprint",
+     "url": "https://services9.arcgis.com/TJruJkDTg7aeRw3Z/arcgis/rest/services/cole_rivers_hatchery_footprint/FeatureServer",
+     "owner": "bszafranski",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery rivers cole\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10752": {
+   "park": "Cascadia short bridge day use National Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"cascadia bridge short\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12082": {
+   "park": "Roaring River State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/All_State_Owned_and_Managed_Lands/FeatureServer/0",
+     "agency": "State of Oregon (all state owned and managed lands)",
+     "record": 4314,
+     "record_name": "",
+     "acres_approx": 10
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: hit",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery roaring\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12179": {
+   "park": "Echo Meadows BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 12788,
+     "record_name": "NA",
+     "acres_approx": 316
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1887,
+     "record_name": "Oregon Trail",
+     "acres_approx": 1859
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+     "agency": "BLM Oregon/Washington recreation management areas (2,188)",
+     "record": 7342,
+     "record_name": "NA",
+     "acres_approx": 316
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2083,
+     "record_name": "Vale Baker Field Office",
+     "acres_approx": 423354,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 426273
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Oregon/Washington recreation managem: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"interpretive meadows echo\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12348": {
+   "park": "Wallowa BLM Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"wallowa scenic wild\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12462": {
+   "park": "New River BLM Special Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 9952,
+     "record_name": "Storm Ranch Day-Use Area",
+     "acres_approx": 340
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1917,
+     "record_name": "New River",
+     "acres_approx": 1175
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2056,
+     "record_name": "Coos Bay Myrtlewood Field Office",
+     "acres_approx": 122203,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 123224
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-12470": {
+   "park": "Emerald Waters BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2078,
+     "record_name": "Roseburg District Swiftwater Field Office",
+     "acres_approx": 222376,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 223710
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"emerald waters\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12471": {
+   "park": "Lone Rock BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Lone Rock Stockade Hillshade",
+     "url": "https://tiles.arcgis.com/tiles/RpVCghfSj7XHqAKQ/arcgis/rest/services/Lone_Rock_Stockade_Hillshade/MapServer",
+     "owner": "chvandev",
+     "type": "Map Service"
+    },
+    {
+     "title": "PARCELS Lone Rock Ranch",
+     "url": "https://services8.arcgis.com/jyRjbKRFHP2c3g5n/arcgis/rest/services/PARCELS_Lone_Rock_Ranch/FeatureServer",
+     "owner": "rat9045",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"rock lone\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12475": {
+   "park": "Wolf Creek BLM Special Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 13530,
+     "record_name": "Wolf Creek Falls Trail",
+     "acres_approx": 37
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2078,
+     "record_name": "Roseburg District Swiftwater Field Office",
+     "acres_approx": 222376,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 223710
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-12837": {
+   "park": "East Shore BLM Recreation Management Area",
+   "why_not": "pin-doubt",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 12534,
+     "record_name": "Loon Lake Recreation Area",
+     "acres_approx": 4
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2057,
+     "record_name": "Coos Bay Umpqua Field Office",
+     "acres_approx": 187404,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 188796
+    }
+   ],
+   "leads": [
+    {
+     "title": "East Bay North Shore Impacted Census Tracts",
+     "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreImpactedCTs/FeatureServer",
+     "owner": "Ferrar@FracTracker.org",
+     "type": "Feature Service"
+    },
+    {
+     "title": "East Bay North Shore Marine Terminals",
+     "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreMarineTerminals/FeatureServer",
+     "owner": "Ferrar@FracTracker.org",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"shore east\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12959": {
+   "park": "Quartzville BC Byway Kiosk BLM Special Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
+     "agency": "State of Oregon (Oregon parklands)",
+     "record": 12912,
+     "record_name": "Thistle Creek County Boat Ramp",
+     "acres_approx": 33
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"quartzville special kiosk\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12977": {
+   "park": "Salmon River State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/All_State_Owned_and_Managed_Lands/FeatureServer/0",
+     "agency": "State of Oregon (all state owned and managed lands)",
+     "record": 6234,
+     "record_name": "",
+     "acres_approx": 9
+    }
+   ],
+   "leads": [
+    {
+     "title": "Comparison of infectious agents detected from hatchery and wild juvenile Coho salmon in British Columbia, 2008-2018",
+     "url": "https://services7.arcgis.com/yHbO69mL1QTGCPQG/arcgis/rest/services/Coho_2019_manuscript_data/FeatureServer",
+     "owner": "psf_salishsea",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: hit",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery salmon\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12978": {
+   "park": "Willamette State Fish Hatchery",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2939,
+     "record_name": "Willamette National Forest",
+     "acres_approx": 1666023,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1681108
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-12979": {
+   "park": "Bonneville State Fish Hatchery",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"bonneville hatchery\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12980": {
+   "park": "Trask River State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/All_State_Owned_and_Managed_Lands/FeatureServer/0",
+     "agency": "State of Oregon (all state owned and managed lands)",
+     "record": 6397,
+     "record_name": "",
+     "acres_approx": 4
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: hit",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery trask\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12981": {
+   "park": "Oak Springs State Fish Hatchery",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2076,
+     "record_name": "Prineville Deschutes Field Office",
+     "acres_approx": 738349,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 744205
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hatchery springs oak\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12983": {
+   "park": "Gnat Creek State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 241270,
+     "record_name": "Forest Development Fund (Board Of Forestry)",
+     "acres_approx": 622167,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 627317
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hatchery gnat\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12985": {
+   "park": "Big Creek State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/All_State_Owned_and_Managed_Lands/FeatureServer/0",
+     "agency": "State of Oregon (all state owned and managed lands)",
+     "record": 4316,
+     "record_name": "",
+     "acres_approx": 32
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: hit",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery big\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12986": {
+   "park": "Alsea River State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Alsea_River_Hatchery_Irrigation_WRs",
+     "url": "https://services2.arcgis.com/VmLllxPKgIzlr2id/arcgis/rest/services/Alsea_River_Hatchery_Irrigation_WRs/FeatureServer",
+     "owner": "BlueWaterGIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "alsea_hatchery_footprint",
+     "url": "https://services9.arcgis.com/TJruJkDTg7aeRw3Z/arcgis/rest/services/alsea_hatchery_footprint/FeatureServer",
+     "owner": "bszafranski",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery alsea\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12988": {
+   "park": "North Nehalem State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
+     "agency": "State of Oregon (Oregon parklands)",
+     "record": 2418,
+     "record_name": "North Fork Nehalem Park",
+     "acres_approx": 2
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-12990": {
+   "park": "Rock Creek State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery rock\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12993": {
+   "park": "Elk River State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery elk\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12994": {
+   "park": "Klaskanine State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"klaskanine hatchery\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12995": {
+   "park": "Leaburg State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [
+    {
+     "title": "leaburg_hatchery_footprint",
+     "url": "https://services9.arcgis.com/TJruJkDTg7aeRw3Z/arcgis/rest/services/leaburg_hatchery_footprint/FeatureServer",
+     "owner": "bszafranski",
+     "type": "Feature Service"
+    },
+    {
+     "title": "leaburg_hatchery_flood",
+     "url": "https://services9.arcgis.com/TJruJkDTg7aeRw3Z/arcgis/rest/services/leaburg_hatchery_flood/FeatureServer",
+     "owner": "rspies",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery leaburg\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13065": {
+   "park": "Leslie Gulch BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 13584,
+     "record_name": "NA",
+     "acres_approx": 167525
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1837,
+     "record_name": "Leslie Gulch",
+     "acres_approx": 11529
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+     "agency": "BLM Oregon/Washington recreation management areas (2,188)",
+     "record": 4911,
+     "record_name": "<Null>",
+     "acres_approx": 167315
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2087,
+     "record_name": "Vale Malheur Field Office",
+     "acres_approx": 4586301,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 4641633
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Oregon/Washington recreation managem: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13070": {
+   "park": "Owyhee State Airstrip State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2087,
+     "record_name": "Vale Malheur Field Office",
+     "acres_approx": 4586301,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 4641633
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"airstrip owyhee\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13075": {
+   "park": "Bear Gulch BLM Wilderness Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Bear Gulch Dam Failure Area",
+     "url": "https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Bear_Gulch_Dam_Failure_Area/FeatureServer",
+     "owner": "sanmateocountygis",
+     "type": "Feature Service"
+    },
+    {
+     "title": "BLM ES GLO ROTW October 24, 2021 Bear Gulch Tile Layer",
+     "url": "https://tiles.arcgis.com/tiles/KbxwQRRfWyEYLgp4/arcgis/rest/services/Bear_Gulch_Cave_WTL1/MapServer",
+     "owner": "BLM_ES_ROTW_Public",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"gulch bear\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13078": {
+   "park": "Cascade State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery cascade\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13096": {
+   "park": "Bob Creek Wayside State Recreation Site",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0",
+     "agency": "Oregon Parks & Recreation Department",
+     "record": 46,
+     "record_name": "Neptune",
+     "acres_approx": 360
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/OPRD_Rec_Parks_view/FeatureServer/0",
+     "agency": "Oregon Parks and Recreation Department (AGOL owner orstateparks)",
+     "record": 39,
+     "record_name": "Neptune State Scenic Viewpoint",
+     "acres_approx": 360
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/All_State_Owned_and_Managed_Lands/FeatureServer/0",
+     "agency": "State of Oregon (all state owned and managed lands)",
+     "record": 4087,
+     "record_name": "Neptune",
+     "acres_approx": 3
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
+     "agency": "State of Oregon (Oregon parklands)",
+     "record": 21531,
+     "record_name": "Neptune",
+     "acres_approx": 360
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: hit",
+    "A Oregon Parks and Recreation Department (: hit",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: hit",
+    "A State of Oregon (Oregon parklands): hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+  },
+  "US-13097": {
+   "park": "Strawberry Hill Wayside State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0",
+     "agency": "Oregon Parks & Recreation Department",
+     "record": 46,
+     "record_name": "Neptune",
+     "acres_approx": 360
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/OPRD_Rec_Parks_view/FeatureServer/0",
+     "agency": "Oregon Parks and Recreation Department (AGOL owner orstateparks)",
+     "record": 39,
+     "record_name": "Neptune State Scenic Viewpoint",
+     "acres_approx": 360
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
+     "agency": "State of Oregon (Oregon parklands)",
+     "record": 21531,
+     "record_name": "Neptune",
+     "acres_approx": 360
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: hit",
+    "A Oregon Parks and Recreation Department (: hit",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+  },
+  "US-4383": {
+   "park": "Rogue River-Siskiyou National Forest",
+   "why_not": "pin-doubt",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2873,
+     "record_name": "Six Rivers National Forest",
+     "acres_approx": 974831,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 977951
+    }
+   ],
+   "leads": [
+    {
+     "title": "Rogue River-Siskiyou NF Administrative Boundary",
+     "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ForestSystemBoundaries_01/MapServer/1",
+     "owner": "USFSRegion06",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Rogue River-Siskiyou NF Recreation Areas",
+     "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0",
+     "owner": "USFSRegion06",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"siskiyou rogue\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5456": {
+   "park": "Clatsop State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/All_State_Owned_and_Managed_Lands/FeatureServer/0",
+     "agency": "State of Oregon (all state owned and managed lands)",
+     "record": 473,
+     "record_name": "",
+     "acres_approx": 2334
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 241270,
+     "record_name": "Forest Development Fund (Board Of Forestry)",
+     "acres_approx": 622167,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 627317
+    }
+   ],
+   "leads": [
+    {
+     "title": "Clatsop County, Oregon (MOC) - Draft Floodplains (2024.01.31) - Feature Service",
+     "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_MOC_Web_Draft_20240131/FeatureServer",
+     "owner": "FEMA_Region10_Mitigation",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Clatsop County, Oregon - Effective Floodplains (2018.09.23) - Feature Service",
+     "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Effective/FeatureServer",
+     "owner": "FEMA_Region10_Mitigation",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Clatsop County, Oregon (Mouth of the Columbia) - Flood Risk Products (2024.12.02) - FS",
+     "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Draft_FRP_20241217/FeatureServer",
+     "owner": "FEMA_Region10_Mitigation",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: hit",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"clatsop\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5459": {
+   "park": "Santiam State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/All_State_Owned_and_Managed_Lands/FeatureServer/0",
+     "agency": "State of Oregon (all state owned and managed lands)",
+     "record": 2138,
+     "record_name": "",
+     "acres_approx": 10815
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 241270,
+     "record_name": "Forest Development Fund (Board Of Forestry)",
+     "acres_approx": 622167,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 627317
+    }
+   ],
+   "leads": [
+    {
+     "title": "OLC Santiam 5 ft BE Hillshade",
+     "url": "https://tiles.arcgis.com/tiles/kIA6yS9KDGqZL7U3/arcgis/rest/services/OLC_Santiam_5_ft_BE_Hillshade/MapServer",
+     "owner": "SalemGIS",
+     "type": "Map Service"
+    },
+    {
+     "title": "North_Santiam_Tour_POI",
+     "url": "https://services.arcgis.com/kIA6yS9KDGqZL7U3/arcgis/rest/services/North_Santiam_Tour_POI/FeatureServer",
+     "owner": "SalemGIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Oregon Dept of Forestry - Santiam Aerials",
+     "url": "https://utility.arcgis.com/usrsvcs/servers/18b2fd714fb74dbab4891e71f9120aea/rest/services/Basemaps/SantiamAerial/MapServer",
+     "owner": "Marion_County",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: hit",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"santiam\": 5 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-5460": {
+   "park": "Sun Pass State Forest",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/All_State_Owned_and_Managed_Lands/FeatureServer/0",
+     "agency": "State of Oregon (all state owned and managed lands)",
+     "record": 3748,
+     "record_name": "",
+     "acres_approx": 3976
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 241270,
+     "record_name": "Forest Development Fund (Board Of Forestry)",
+     "acres_approx": 622167,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 627317
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: hit",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"pass sun\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-9156": {
+   "park": "Crooked River National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
+     "agency": "State of Oregon (Oregon parklands)",
+     "record": 23567,
+     "record_name": "Castle Rock Recreation Site",
+     "acres_approx": 4
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 12627,
+     "record_name": "High Desert",
+     "acres_approx": 56192
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+     "agency": "BLM Oregon/Washington recreation management areas (2,188)",
+     "record": 4897,
+     "record_name": "High Desert",
+     "acres_approx": 56237
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2076,
+     "record_name": "Prineville Deschutes Field Office",
+     "acres_approx": 738349,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 744205
+    }
+   ],
+   "leads": [
+    {
+     "title": "NFCR_Wild_and_Scenic",
+     "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/NFCR_Wild_and_Scenic/FeatureServer",
+     "owner": "USFSRegion06",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): hit",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"crooked scenic wild\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9157": {
+   "park": "Donner und Blitzen National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4068,
+     "record_name": "Malheur National Wildlife Refuge",
+     "acres_approx": 187065,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 188071
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 5023,
+     "record_name": "Malheur National Wildlife Refuge",
+     "acres_approx": 187084,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 188071
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-9158": {
+   "park": "John Day National Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9524": {
+   "park": "Angel's Rest State Trail",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9980": {
+   "park": "Willamette River Greenway and Water State Trail",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9983": {
+   "park": "Valley of the Giants Outstanding Natural Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1815,
+     "record_name": "Valley of the Giants",
+     "acres_approx": 1583
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2071,
+     "record_name": "Nw Oregon Marys Peak Field Office",
+     "acres_approx": 127324,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 128244
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-9984": {
+   "park": "Tualatin River Water National Scenic Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
+     "agency": "State of Oregon (Oregon parklands)",
+     "record": 4156,
+     "record_name": "Cook Park",
+     "acres_approx": 85
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-9986": {
+   "park": "West Eugene Wetlands BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2072,
+     "record_name": "Nw Oregon Siuslaw Field Office",
+     "acres_approx": 156234,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 157518
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-9990": {
+   "park": "Mayfield Pond BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 13675,
+     "record_name": "High Desert",
+     "acres_approx": 26058
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+     "agency": "BLM Oregon/Washington recreation management areas (2,188)",
+     "record": 4895,
+     "record_name": "High Desert",
+     "acres_approx": 26058
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2076,
+     "record_name": "Prineville Deschutes Field Office",
+     "acres_approx": 738349,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 744205
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Oregon Parks & Recreation Department: no polygon at the pin",
+    "A Oregon Parks and Recreation Department (: no polygon at the pin",
+    "A Oregon Department of Fish and Wildlife (: no polygon at the pin",
+    "A State of Oregon (all state owned and man: no polygon at the pin",
+    "A State of Oregon (Oregon parklands): no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  }
+ }
+}

@@ -1,0 +1,264 @@
+{
+ "area": "US-MO",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-10575": {
+   "park": "Walnut Woods State Conservation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Walnut Woods Park JWT",
+     "url": "https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer",
+     "owner": "BCrat82",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Missouri State Parks (DNR): no polygon at the pin",
+    "A Missouri Natural Areas (DNR): no polygon at the pin",
+    "A Missouri Department of Conservation (gis: no polygon at the pin",
+    "A Missouri Department of Conservation (cre: no polygon at the pin",
+    "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"walnut woods\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10576": {
+   "park": "Rush Creek State Conservation Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Rush Springs Hydrologic Study (Open Data)",
+     "url": "https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Rush_Springs_Study/MapServer",
+     "owner": "OWRBOnline",
+     "type": "Map Service"
+    },
+    {
+     "title": "Rush Hour / Night Restriction Zone",
+     "url": "https://services.arcgis.com/qWbGMYB49y8mLbRt/arcgis/rest/services/MetroRushHourZone_2021/FeatureServer",
+     "owner": "lindsey.savage_mndot",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Rush Springs Hydrologic Study",
+     "url": "https://owrb.csa.ou.edu/server/rest/services/Special_Studies/Rush_Springs/MapServer",
+     "owner": "OWRBOnline",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Missouri State Parks (DNR): no polygon at the pin",
+    "A Missouri Natural Areas (DNR): no polygon at the pin",
+    "A Missouri Department of Conservation (gis: no polygon at the pin",
+    "A Missouri Department of Conservation (cre: no polygon at the pin",
+    "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"rush\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12084": {
+   "park": "Weldon Springs National Historical Park",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Missouri State Parks (DNR): no polygon at the pin",
+    "A Missouri Natural Areas (DNR): no polygon at the pin",
+    "A Missouri Department of Conservation (gis: no polygon at the pin",
+    "A Missouri Department of Conservation (cre: no polygon at the pin",
+    "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"historical springs weldon\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-4591": {
+   "park": "World War I Museum National Memorial",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 107711,
+     "record_name": "Penn Valley Park",
+     "acres_approx": 147,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 167
+    }
+   ],
+   "leads": [
+    {
+     "title": "World War 1",
+     "url": "https://services9.arcgis.com/WGilu1i2IRlWIWQG/arcgis/rest/services/World_War_1/FeatureServer",
+     "owner": "janet.owen.earth",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Missouri State Parks (DNR): no polygon at the pin",
+    "A Missouri Natural Areas (DNR): no polygon at the pin",
+    "A Missouri Department of Conservation (gis: no polygon at the pin",
+    "A Missouri Department of Conservation (cre: no polygon at the pin",
+    "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"museum world war\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4839": {
+   "park": "Lester R. Davis Memorial State Forest",
+   "why_not": "pin-doubt",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "agency": "Missouri Department of Conservation (gisblue.mdc.mo.gov)",
+     "record": 233,
+     "record_name": "Davis (The Lester R) Mem Forest",
+     "acres_approx": 79
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 210771,
+     "record_name": "Davis (Lester R.) Memorial Forest",
+     "acres_approx": 79,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SHCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 79
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Missouri State Parks (DNR): no polygon at the pin",
+    "A Missouri Natural Areas (DNR): no polygon at the pin",
+    "A Missouri Department of Conservation (gis: hit",
+    "A Missouri Department of Conservation (cre: no polygon at the pin",
+    "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-5715": {
+   "park": "Roger Pryor Pioneer Backcountry State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
+     "agency": "Missouri State Parks (DNR)",
+     "record": 1589,
+     "record_name": "Echo Bluff State Park",
+     "acres_approx": 396
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Missouri State Parks (DNR): hit",
+    "A Missouri Natural Areas (DNR): no polygon at the pin",
+    "A Missouri Department of Conservation (gis: no polygon at the pin",
+    "A Missouri Department of Conservation (cre: no polygon at the pin",
+    "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-5716": {
+   "park": "Bruce R. Watkins Cultural Heritage Center State Park",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 107399,
+     "record_name": "Community 298",
+     "acres_approx": 8,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 15
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Missouri State Parks (DNR): no polygon at the pin",
+    "A Missouri Natural Areas (DNR): no polygon at the pin",
+    "A Missouri Department of Conservation (gis: no polygon at the pin",
+    "A Missouri Department of Conservation (cre: no polygon at the pin",
+    "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"cultural heritage watkins\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7836": {
+   "park": "Ozark State Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Ozark Hellbender Locations",
+     "url": "https://services.arcgis.com/ue9rwulIoeLEI9bj/arcgis/rest/services/Ozark_Hellbender_locations/FeatureServer",
+     "owner": "EsriTrainingSvc",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Ozark Aquifer",
+     "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Ozark_Aquifer/FeatureServer",
+     "owner": "KS_Geological_Survey",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Ozark National Forest Service Management Area (Polygon)",
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/25",
+     "owner": "matthew.delong",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Missouri State Parks (DNR): no polygon at the pin",
+    "A Missouri Natural Areas (DNR): no polygon at the pin",
+    "A Missouri Department of Conservation (gis: no polygon at the pin",
+    "A Missouri Department of Conservation (cre: no polygon at the pin",
+    "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"ozark\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9753": {
+   "park": "Katy Trail Rock Island Spur State Park",
+   "why_not": "pin-doubt",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Rock_Island_GIS_ESRI",
+     "url": "https://services1.arcgis.com/51R1xnARnjq5iyz9/arcgis/rest/services/GIS_ESRI/FeatureServer",
+     "owner": "CACC2013",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Missouri State Parks (DNR): no polygon at the pin",
+    "A Missouri Natural Areas (DNR): no polygon at the pin",
+    "A Missouri Department of Conservation (gis: no polygon at the pin",
+    "A Missouri Department of Conservation (cre: no polygon at the pin",
+    "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"island rock katy\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  }
+ }
+}

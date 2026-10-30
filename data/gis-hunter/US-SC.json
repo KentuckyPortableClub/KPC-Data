@@ -1,0 +1,233 @@
+{
+ "area": "US-SC",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-13016": {
+   "park": "Pine Island State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Audubon Pine Island Sanctuary",
+     "url": "https://services1.arcgis.com/lDFzr3JyGEn5Eymu/arcgis/rest/services/Audubon_Pine_Island_Sanctuary/FeatureServer",
+     "owner": "joanna.grand@audubon.org_audubon",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A South Carolina DNR (WMAs, heritage prese: no polygon at the pin",
+    "A South Carolina State Parks (PRT): no polygon at the pin",
+    "A South Carolina DNR (heritage preserves): no polygon at the pin",
+    "A South Carolina Department of Natural Res: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"island pine\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13198": {
+   "park": "Black River State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Maryland Highways to Black History",
+     "url": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Black_History_Month_Tour/FeatureServer",
+     "owner": "MDOTSHA.GIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Black Marble High Definition (BMHD) in Porto Alegre for the May 2024 Brasil Floods",
+     "url": "https://maps.disasters.nasa.gov/ags03/rest/services/brasil_flood_202405/blackmarble_hd/MapServer",
+     "owner": "gwlayne_NASA",
+     "type": "Map Service"
+    },
+    {
+     "title": "Historical County Population (1969 - 2019) by Race (White, Black, Other Race)",
+     "url": "https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/Historical_County_Population_1969_2019/FeatureServer",
+     "owner": "stevenaviles_UO",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A South Carolina DNR (WMAs, heritage prese: no polygon at the pin",
+    "A South Carolina State Parks (PRT): no polygon at the pin",
+    "A South Carolina DNR (heritage preserves): no polygon at the pin",
+    "A South Carolina Department of Natural Res: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"black\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9203": {
+   "park": "Palmetto State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "agency": "South Carolina DNR (WMAs, heritage preserves)",
+     "record": 49,
+     "record_name": "Wambaw WMA",
+     "acres_approx": 65411
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "agency": "South Carolina Department of Natural Resources (credit: SCDNR)",
+     "record": 224,
+     "record_name": "Wambaw WMA",
+     "acres_approx": 61670
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2974,
+     "record_name": "Francis Marion National Forest",
+     "acres_approx": 261789,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 262712
+    }
+   ],
+   "leads": [
+    {
+     "title": "Palmetto Bay Municipal Boundary",
+     "url": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/Municipal_Boundary_33/FeatureServer",
+     "owner": "MDPublisher",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Benchmarks - City of Palmetto",
+     "url": "https://services1.arcgis.com/L2Neyx2ylSeTBS0F/arcgis/rest/services/Palmetto_Benchmarks/FeatureServer",
+     "owner": "CityofPalmettoFl",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A South Carolina DNR (WMAs, heritage prese: hit",
+    "A South Carolina State Parks (PRT): no polygon at the pin",
+    "A South Carolina DNR (heritage preserves): no polygon at the pin",
+    "A South Carolina Department of Natural Res: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"palmetto\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9227": {
+   "park": "Nine Times Wildlife Management Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A South Carolina DNR (WMAs, heritage prese: no polygon at the pin",
+    "A South Carolina State Parks (PRT): no polygon at the pin",
+    "A South Carolina DNR (heritage preserves): no polygon at the pin",
+    "A South Carolina Department of Natural Res: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"times nine\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9229": {
+   "park": "Wild Turkey Wildlife Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "agency": "South Carolina DNR (WMAs, heritage preserves)",
+     "record": 166,
+     "record_name": "Unnamed Game Zone 2",
+     "acres_approx": 12287
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "agency": "South Carolina Department of Natural Resources (credit: SCDNR)",
+     "record": 541,
+     "record_name": "No official SCDNR property name",
+     "acres_approx": 453
+    }
+   ],
+   "leads": [
+    {
+     "title": "Wild Turkey Transfer_WFL1",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Wild_Turkey_Transfer_WFL1/FeatureServer",
+     "owner": "elena_campbell@fws.gov_fws",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Wild Turkey Program in Vermont - Hunting Zones",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Wild_Turkey_Program_in_Vermont_WFL1/FeatureServer",
+     "owner": "elena_campbell@fws.gov_fws",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Wild Turkey Brood Survey",
+     "url": "https://services1.arcgis.com/BEFhRGD6ppzvv08z/arcgis/rest/services/service_e65232a5431142abbdb7bb7489b7804e/FeatureServer",
+     "owner": "MDC_Resource_Science",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A South Carolina DNR (WMAs, heritage prese: hit",
+    "A South Carolina State Parks (PRT): no polygon at the pin",
+    "A South Carolina DNR (heritage preserves): no polygon at the pin",
+    "A South Carolina Department of Natural Res: hit",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"turkey wild\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9759": {
+   "park": "May Forest State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 254177,
+     "record_name": "Fort Johnson Marine Resources Center",
+     "acres_approx": 78,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 98
+    }
+   ],
+   "leads": [
+    {
+     "title": "Local Authority Districts (May 2021) Boundaries UK BGC",
+     "url": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2021_UK_BGC_2022/FeatureServer",
+     "owner": "ONSGeography_data",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Local Authority Districts (May 2024) Boundaries UK BFC",
+     "url": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2024_Boundaries_UK_BFC/FeatureServer",
+     "owner": "ONSGeography_data",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Local Authority Districts (May 2022) Boundaries UK BFE (V3)",
+     "url": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2022_UK_BFE_V3_2022/FeatureServer",
+     "owner": "ONSGeography_data",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A South Carolina DNR (WMAs, heritage prese: no polygon at the pin",
+    "A South Carolina State Parks (PRT): no polygon at the pin",
+    "A South Carolina DNR (heritage preserves): no polygon at the pin",
+    "A South Carolina Department of Natural Res: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"may\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  }
+ }
+}

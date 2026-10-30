@@ -1,0 +1,436 @@
+{
+ "area": "US-VT",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-10300": {
+   "park": "Kesick Swamp State Wildlife Habitat Management Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"kesick swamp\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-3100": {
+   "park": "Big Deer State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 15,
+     "record_name": "Groton State Forest",
+     "acres_approx": 27008
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 61248,
+     "record_name": "Groton State Forest",
+     "acres_approx": 2915,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3028
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-3102": {
+   "park": "Boulder Beach State Park",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 61248,
+     "record_name": "Groton State Forest",
+     "acres_approx": 2915,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3028
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"boulder beach\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-3118": {
+   "park": "Halfmoon Pond State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 445,
+     "record_name": "Bomoseen State Park",
+     "acres_approx": 3611
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 60986,
+     "record_name": "Bomoseen State Park",
+     "acres_approx": 289,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 296
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-3121": {
+   "park": "Kamp Kill Kare State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 447,
+     "record_name": "Burton Island State Park",
+     "acres_approx": 199
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 61004,
+     "record_name": "Burton Island State Park",
+     "acres_approx": 11,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 17
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-3122": {
+   "park": "Kettle Pond State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 15,
+     "record_name": "Groton State Forest",
+     "acres_approx": 27008
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 61252,
+     "record_name": "Groton State Forest",
+     "acres_approx": 6094,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 5952
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-3129": {
+   "park": "Little River State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 13,
+     "record_name": "Mt. Mansfield State Forest",
+     "acres_approx": 44804
+    }
+   ],
+   "leads": [
+    {
+     "title": "Little Libraries - Millcreek Promise",
+     "url": "https://services9.arcgis.com/XRrSFvEwSsReIxuA/arcgis/rest/services/LittleLibrariesGeocoded/FeatureServer",
+     "owner": "GISMillcreek",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Two Foot Topographic Contours - Little Cohas Brook-Merrimack River (0107000608) - smoothed",
+     "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01070006_smooth/FeatureServer/10",
+     "owner": "NHGRANIT",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Little_Tokyo_August_Geofence_Events",
+     "url": "https://services5.arcgis.com/7nsPwEMP38bSkCjy/arcgis/rest/services/Little_Tokyo_August_Geofence_Events/FeatureServer",
+     "owner": "Vlad_inthecity",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"little\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-3135": {
+   "park": "New Discovery State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 15,
+     "record_name": "Groton State Forest",
+     "acres_approx": 27008
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 61250,
+     "record_name": "Groton State Forest",
+     "acres_approx": 4614,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 4664
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-3139": {
+   "park": "Ricker Pond State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 15,
+     "record_name": "Groton State Forest",
+     "acres_approx": 27008
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 61252,
+     "record_name": "Groton State Forest",
+     "acres_approx": 6094,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 5952
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-3140": {
+   "park": "Sand Bar State Park",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"sand bar\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-3142": {
+   "park": "Seyon Lodge State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 15,
+     "record_name": "Groton State Forest",
+     "acres_approx": 27008
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 61267,
+     "record_name": "Groton State Forest",
+     "acres_approx": 3237,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3215
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-3144": {
+   "park": "Smugglers' Notch State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 13,
+     "record_name": "Mt. Mansfield State Forest",
+     "acres_approx": 44804
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 61387,
+     "record_name": "Mt. Mansfield State Forest",
+     "acres_approx": 37,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 47
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-3145": {
+   "park": "Stillwater State Park",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 15,
+     "record_name": "Groton State Forest",
+     "acres_approx": 27008
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 61252,
+     "record_name": "Groton State Forest",
+     "acres_approx": 6094,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 5952
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-3149": {
+   "park": "Underhill State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 13,
+     "record_name": "Mt. Mansfield State Forest",
+     "acres_approx": 44804
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 61351,
+     "record_name": "Mt. Mansfield State Forest",
+     "acres_approx": 346,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 369
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-3150": {
+   "park": "Waterbury Center State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "agency": "Vermont Agency of Natural Resources",
+     "record": 13,
+     "record_name": "Mt. Mansfield State Forest",
+     "acres_approx": 44804
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Vermont Agency of Natural Resources: hit",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  }
+ }
+}

@@ -1,0 +1,1912 @@
+{
+ "area": "US-AK",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0877": {
+   "park": "Alatna National Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1368,
+     "record_name": "Alatna Alaska Native Village Statistical Area",
+     "acres_approx": 11673,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 11793
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-0878": {
+   "park": "Aniakchak National Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 1197,
+     "record_name": "Aniakchak National Preserve",
+     "acres_approx": 462846
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3294,
+     "record_name": "Aniakchak National Preserve",
+     "acres_approx": 455979,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NCA",
+     "Own_Type": "FED",
+     "GIS_Acres": 458884
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-0879": {
+   "park": "Charley National Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 1218,
+     "record_name": "Yukon-Charley Rivers National Preserve",
+     "acres_approx": 2506133
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3315,
+     "record_name": "Yukon-Charley Rivers National Preserve",
+     "acres_approx": 2171328,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NCA",
+     "Own_Type": "FED",
+     "GIS_Acres": 2194982
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-0880": {
+   "park": "Chilikadrotna National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 1213,
+     "record_name": "Lake Clark National Park",
+     "acres_approx": 2609614
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3461,
+     "record_name": "Lake Clark National Park",
+     "acres_approx": 2467255,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NP",
+     "Own_Type": "FED",
+     "GIS_Acres": 2487856
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"chilikadrotna scenic wild\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-0887": {
+   "park": "Mulchatna National Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1497,
+     "record_name": "New Koliganek Alaska Native Village Statistical Area",
+     "acres_approx": 10776,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 10922
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mulchatna scenic wild\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-0889": {
+   "park": "Noatak National Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 1214,
+     "record_name": "Noatak National Preserve",
+     "acres_approx": 6509898
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3310,
+     "record_name": "Noatak National Preserve",
+     "acres_approx": 6478272,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NCA",
+     "Own_Type": "FED",
+     "GIS_Acres": 6542343
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-0892": {
+   "park": "Tinayguk National Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1424,
+     "record_name": "Evansville Alaska Native Village Statistical Area",
+     "acres_approx": 3854,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 3909
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"tinayguk scenic wild\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-0893": {
+   "park": "Tlikakila National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "agency": "National Park Service (legal boundary)",
+     "record": 1213,
+     "record_name": "Lake Clark National Park",
+     "acres_approx": 2609614
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3461,
+     "record_name": "Lake Clark National Park",
+     "acres_approx": 2467255,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NP",
+     "Own_Type": "FED",
+     "GIS_Acres": 2487856
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): hit",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"tlikakila scenic wild\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10464": {
+   "park": "Chena Wayside State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "agency": "Alaska State Parks (DNR)",
+     "record": 122,
+     "record_name": "Chena River State Recreation Site",
+     "acres_approx": 18
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "agency": "Alaska DNR State Parks (park boundaries)",
+     "record": 122,
+     "record_name": "Chena River State Recreation Site",
+     "acres_approx": 18
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "agency": "Alaska DNR, Division of Parks & Outdoor Recreation (credit: Alaska Department of Natural Resources)",
+     "record": 122,
+     "record_name": "Chena River State Recreation Site",
+     "acres_approx": 18
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): hit",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): hit",
+    "A Alaska DNR, Division of Parks & Outdoor : hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-11244": {
+   "park": "Knik River Public Use Area State Recreation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "agency": "Alaska Department of Natural Resources",
+     "record": 1814,
+     "record_name": "KNIK RIVER",
+     "acres_approx": 260098
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1396,
+     "record_name": "Chickaloon Alaska Native Village Statistical Area",
+     "acres_approx": 3803233,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 3851579
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 165917,
+     "record_name": "State Patented",
+     "acres_approx": 34368891,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 34779418
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: hit",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-11798": {
+   "park": "Tangle Lakes Archeological Reserve",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11428,
+     "record_name": "Denali Highway SRMA",
+     "acres_approx": 549920
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1866,
+     "record_name": "Glennallen Field Office",
+     "acres_approx": 4204102,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 4244135
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"archeological tangle lakes\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11799": {
+   "park": "Tangle Lakes Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11370,
+     "record_name": "Delta River SRMA",
+     "acres_approx": 43178
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2171,
+     "record_name": "Glennallen Field Office",
+     "acres_approx": 35850,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 36210
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"tangle lakes\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11800": {
+   "park": "Delta Wild and Scenic River Wayside Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11370,
+     "record_name": "Delta River SRMA",
+     "acres_approx": 43178
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2171,
+     "record_name": "Glennallen Field Office",
+     "acres_approx": 35850,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 36210
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-11801": {
+   "park": "Clearwater Creek Wayside Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11428,
+     "record_name": "Denali Highway SRMA",
+     "acres_approx": 549920
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"clearwater wayside\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11802": {
+   "park": "Brushkana Creek Campground Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11428,
+     "record_name": "Denali Highway SRMA",
+     "acres_approx": 549920
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1866,
+     "record_name": "Glennallen Field Office",
+     "acres_approx": 4204102,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 4244135
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground brushkana\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11803": {
+   "park": "Paxson Lake Campground Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1866,
+     "record_name": "Glennallen Field Office",
+     "acres_approx": 4204102,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 4244135
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground paxson\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11804": {
+   "park": "Gulkana BLM Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"gulkana scenic wild\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11805": {
+   "park": "Sourdough Creek Campground Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1866,
+     "record_name": "Glennallen Field Office",
+     "acres_approx": 4204102,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 4244135
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground sourdough\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11825": {
+   "park": "Eagle Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10618,
+     "record_name": "Fortymile SRMA",
+     "acres_approx": 802
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1864,
+     "record_name": "Eastern Interior Field Office",
+     "acres_approx": 3762247,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3811553
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground eagle\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11826": {
+   "park": "Walker Fork Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10850,
+     "record_name": "Fortymile SRMA",
+     "acres_approx": 244798
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2170,
+     "record_name": "Eastern Interior Field Office",
+     "acres_approx": 240050,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 241991
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground walker fork\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11827": {
+   "park": "West Fork Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10850,
+     "record_name": "Fortymile SRMA",
+     "acres_approx": 244798
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2170,
+     "record_name": "Eastern Interior Field Office",
+     "acres_approx": 240050,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 241991
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground fork west\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11830": {
+   "park": "Five Mile Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "agency": "Alaska Department of Natural Resources",
+     "record": 304,
+     "record_name": "James Dalton",
+     "acres_approx": 2239542
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10993,
+     "record_name": "Dalton Highway SRMA",
+     "acres_approx": 811029
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1863,
+     "record_name": "Central Yukon Field Office",
+     "acres_approx": 12314197,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 12497870
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 165858,
+     "record_name": "James Dalton Highway Corridor",
+     "acres_approx": 2207786,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2252606
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: hit",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-11831": {
+   "park": "Arctic Circle Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "agency": "Alaska Department of Natural Resources",
+     "record": 304,
+     "record_name": "James Dalton",
+     "acres_approx": 2239542
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10993,
+     "record_name": "Dalton Highway SRMA",
+     "acres_approx": 811029
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1863,
+     "record_name": "Central Yukon Field Office",
+     "acres_approx": 12314197,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 12497870
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 165858,
+     "record_name": "James Dalton Highway Corridor",
+     "acres_approx": 2207786,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2252606
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: hit",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-11832": {
+   "park": "Marion Creek Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "agency": "Alaska Department of Natural Resources",
+     "record": 304,
+     "record_name": "James Dalton",
+     "acres_approx": 2239542
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 165858,
+     "record_name": "James Dalton Highway Corridor",
+     "acres_approx": 2207786,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2252606
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: hit",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-11833": {
+   "park": "Galbraith Lake Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "agency": "Alaska Department of Natural Resources",
+     "record": 304,
+     "record_name": "James Dalton",
+     "acres_approx": 2239542
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10993,
+     "record_name": "Dalton Highway SRMA",
+     "acres_approx": 811029
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1734,
+     "record_name": "Galbraith Lake ACEC",
+     "acres_approx": 53295
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1863,
+     "record_name": "Central Yukon Field Office",
+     "acres_approx": 12314197,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 12497870
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: hit",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-11834": {
+   "park": "Susitna Landing (Kashwitna) State Recreation Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1463,
+     "record_name": "Knik Alaska Native Village Statistical Area",
+     "acres_approx": 4651775,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4712787
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"kashwitna susitna landing\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11835": {
+   "park": "Little Susitna Public Use Facility State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "agency": "Alaska Department of Natural Resources",
+     "record": 346,
+     "record_name": "Susitna Flats",
+     "acres_approx": 299420
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1463,
+     "record_name": "Knik Alaska Native Village Statistical Area",
+     "acres_approx": 4651775,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4712787
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 165808,
+     "record_name": "Susitna Flats State Game Refuge",
+     "acres_approx": 293572,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 296685
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: hit",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-11836": {
+   "park": "Fred Blixt Cabin BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 165917,
+     "record_name": "State Patented",
+     "acres_approx": 34368891,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 34779418
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 165918,
+     "record_name": "State Tentatively Approved (tad)",
+     "acres_approx": 42635382,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 43045454
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"cabin blixt fred\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11846": {
+   "park": "Bing's Landing Campground and Day Use Area State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "agency": "Alaska State Parks (DNR)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "agency": "Alaska Department of Natural Resources",
+     "record": 796,
+     "record_name": "Kenai River",
+     "acres_approx": 45395
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "agency": "Alaska DNR State Parks (park boundaries)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "agency": "Alaska DNR, Division of Parks & Outdoor Recreation (credit: Alaska Department of Natural Resources)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1455,
+     "record_name": "Kenaitze Alaska Native Village Statistical Area",
+     "acres_approx": 1305086,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1316059
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 165883,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 1333,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 1404
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): hit",
+    "A Alaska Department of Natural Resources: hit",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): hit",
+    "A Alaska DNR, Division of Parks & Outdoor : hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+  },
+  "US-11850": {
+   "park": "Mount Prindle Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11010,
+     "record_name": "White Mountains SRMA",
+     "acres_approx": 1005180
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2165,
+     "record_name": "Eastern Interior Field Office",
+     "acres_approx": 920769,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 932728
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground prindle mount\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11851": {
+   "park": "Ophir Creek Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11010,
+     "record_name": "White Mountains SRMA",
+     "acres_approx": 1005180
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2165,
+     "record_name": "Eastern Interior Field Office",
+     "acres_approx": 920769,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 932728
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground ophir\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11852": {
+   "park": "Beaver Creek BLM Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Wood / Pawcatuck National Wild and Scenic Rivers System",
+     "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_WoodPaw_WildScenic_Rivers_spf/FeatureServer",
+     "owner": "URIEDC_RIGIS",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"beaver scenic wild\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-11853": {
+   "park": "Cripple Creek Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10616,
+     "record_name": "White Mountains SRMA",
+     "acres_approx": 237
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1864,
+     "record_name": "Eastern Interior Field Office",
+     "acres_approx": 3762247,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3811553
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 165917,
+     "record_name": "State Patented",
+     "acres_approx": 34368891,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 34779418
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground cripple\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11854": {
+   "park": "Pinnell Mountain National Recreation Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1864,
+     "record_name": "Eastern Interior Field Office",
+     "acres_approx": 3762247,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3811553
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 165918,
+     "record_name": "State Tentatively Approved (tad)",
+     "acres_approx": 42635382,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 43045454
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mountain pinnell\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12679": {
+   "park": "Fort Egbert BLM Historic Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10618,
+     "record_name": "Fortymile SRMA",
+     "acres_approx": 802
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"egbert fort\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12709": {
+   "park": "Funny River Campground State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "agency": "Alaska State Parks (DNR)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "agency": "Alaska Department of Natural Resources",
+     "record": 796,
+     "record_name": "Kenai River",
+     "acres_approx": 45395
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "agency": "Alaska DNR State Parks (park boundaries)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "agency": "Alaska DNR, Division of Parks & Outdoor Recreation (credit: Alaska Department of Natural Resources)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1455,
+     "record_name": "Kenaitze Alaska Native Village Statistical Area",
+     "acres_approx": 1305086,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1316059
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): hit",
+    "A Alaska Department of Natural Resources: hit",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): hit",
+    "A Alaska DNR, Division of Parks & Outdoor : hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground funny\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12710": {
+   "park": "Izaak Walton Campground State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "agency": "Alaska State Parks (DNR)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "agency": "Alaska Department of Natural Resources",
+     "record": 796,
+     "record_name": "Kenai River",
+     "acres_approx": 45395
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "agency": "Alaska DNR State Parks (park boundaries)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "agency": "Alaska DNR, Division of Parks & Outdoor Recreation (credit: Alaska Department of Natural Resources)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1455,
+     "record_name": "Kenaitze Alaska Native Village Statistical Area",
+     "acres_approx": 1305086,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1316059
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): hit",
+    "A Alaska Department of Natural Resources: hit",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): hit",
+    "A Alaska DNR, Division of Parks & Outdoor : hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+  },
+  "US-12711": {
+   "park": "Morgan’s Landing Campground State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "agency": "Alaska State Parks (DNR)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "agency": "Alaska Department of Natural Resources",
+     "record": 796,
+     "record_name": "Kenai River",
+     "acres_approx": 45395
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "agency": "Alaska DNR State Parks (park boundaries)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "agency": "Alaska DNR, Division of Parks & Outdoor Recreation (credit: Alaska Department of Natural Resources)",
+     "record": 152,
+     "record_name": "Kenai River Special Management Area",
+     "acres_approx": 49615
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1455,
+     "record_name": "Kenaitze Alaska Native Village Statistical Area",
+     "acres_approx": 1305086,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1316059
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): hit",
+    "A Alaska Department of Natural Resources: hit",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): hit",
+    "A Alaska DNR, Division of Parks & Outdoor : hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+  },
+  "US-13462": {
+   "park": "Sportsman's Angler Access State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1455,
+     "record_name": "Kenaitze Alaska Native Village Statistical Area",
+     "acres_approx": 1305086,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1316059
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"sportsman access angler\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-3382": {
+   "park": "John National Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Wood / Pawcatuck National Wild and Scenic Rivers System",
+     "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_WoodPaw_WildScenic_Rivers_spf/FeatureServer",
+     "owner": "URIEDC_RIGIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "BLM UT Designated Wild and Scenic Rivers",
+     "url": "https://gis.blm.gov/utarcgis/rest/services/NLCS/BLM_UT_WSR/FeatureServer",
+     "owner": "blm_arcgis_hub_ut",
+     "type": "Feature Service"
+    },
+    {
+     "title": "BLM UT  Wild and Scenic Rivers",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_UT___Wild_and_Scenic_Rivers/FeatureServer",
+     "owner": "rarnold@blm.gov_BLM_EGIS",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"scenic wild john\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4570": {
+   "park": "Iditarod National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1463,
+     "record_name": "Knik Alaska Native Village Statistical Area",
+     "acres_approx": 4651775,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4712787
+    }
+   ],
+   "leads": [
+    {
+     "title": "Iditarod National Historic Trail BLM Official Temp",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Iditarod_National_Historic_Trail_BLM_Official_Temp/FeatureServer",
+     "owner": "cor_nps",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Iditarod National Historic Trails Story Map Public Layer",
+     "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Iditarod_National_Historic_Trails_Story_Map_Public_Layer/FeatureServer",
+     "owner": "ChugachNF",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"iditarod\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7208": {
+   "park": "Big Lake North State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "agency": "Alaska State Parks (DNR)",
+     "record": 37,
+     "record_name": "Big Lake State Recreation Site",
+     "acres_approx": 174
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "agency": "Alaska DNR State Parks (park boundaries)",
+     "record": 37,
+     "record_name": "Big Lake State Recreation Site",
+     "acres_approx": 174
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "agency": "Alaska DNR, Division of Parks & Outdoor Recreation (credit: Alaska Department of Natural Resources)",
+     "record": 37,
+     "record_name": "Big Lake State Recreation Site",
+     "acres_approx": 174
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1463,
+     "record_name": "Knik Alaska Native Village Statistical Area",
+     "acres_approx": 4651775,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4712787
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): hit",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): hit",
+    "A Alaska DNR, Division of Parks & Outdoor : hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-7209": {
+   "park": "Big Lake South State Recreation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "agency": "Alaska State Parks (DNR)",
+     "record": 37,
+     "record_name": "Big Lake State Recreation Site",
+     "acres_approx": 174
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "agency": "Alaska DNR State Parks (park boundaries)",
+     "record": 37,
+     "record_name": "Big Lake State Recreation Site",
+     "acres_approx": 174
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "agency": "Alaska DNR, Division of Parks & Outdoor Recreation (credit: Alaska Department of Natural Resources)",
+     "record": 37,
+     "record_name": "Big Lake State Recreation Site",
+     "acres_approx": 174
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1463,
+     "record_name": "Knik Alaska Native Village Statistical Area",
+     "acres_approx": 4651775,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 4712787
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): hit",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): hit",
+    "A Alaska DNR, Division of Parks & Outdoor : hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-7245": {
+   "park": "Juneau State Trail",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Juneau DOT&PF Sidewalks Winter Maintenance Priority",
+     "url": "https://services.arcgis.com/r4A0V7UzH9fcLVvv/arcgis/rest/services/Juneau_Sidewalks_Winter_Maintenance_public_priority/FeatureServer",
+     "owner": "AKDOT_GIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Juneau Co Historical Imagery",
+     "url": "https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_Historical_Imagery/MapServer",
+     "owner": "JuneauCounty",
+     "type": "Map Service"
+    },
+    {
+     "title": "Juneau Co Public GIS",
+     "url": "https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_PublicGIS/MapServer",
+     "owner": "JuneauCounty",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"juneau\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7885": {
+   "park": "Inupiat National Heritage Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1382,
+     "record_name": "Barrow Alaska Native Village Statistical Area",
+     "acres_approx": 13525,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 13746
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Alaska State Parks (DNR): no polygon at the pin",
+    "A Alaska Department of Natural Resources: no polygon at the pin",
+    "A Alaska DNR Division of Forestry (Alaska : no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Alaska DNR State Parks (park boundaries): no polygon at the pin",
+    "A Alaska DNR, Division of Parks & Outdoor : no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"heritage inupiat\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  }
+ }
+}

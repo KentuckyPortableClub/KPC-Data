@@ -1,0 +1,750 @@
+{
+ "area": "US-CA",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0198": {
+   "park": "Kesterson National Wildlife Refuge",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3077_fpu/FeatureServer/0",
+     "agency": "California Department of Fish & Wildlife",
+     "record": 246,
+     "record_name": "Los Banos Wildlife Area",
+     "acres_approx": 6325
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "agency": "US Fish and Wildlife Service (approved boundary)",
+     "record": 744,
+     "record_name": "GRASSLANDS WILDLIFE MANAGEMENT AREA",
+     "acres_approx": 220254
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3092_fpu/FeatureServer/0",
+     "agency": "California Department of Fish and Wildlife (credit: CDFW, BIOS ds3092)",
+     "record": 1710,
+     "record_name": "Los Banos Wildlife Area",
+     "acres_approx": 2411
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: hit",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: hit",
+    "A California Department of Fish and Wildli: hit",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"kesterson\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-0754": {
+   "park": "Rosie the Riveter WWII Home Front National Historical Park",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"historical riveter front\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-0884": {
+   "park": "Kings River National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2872,
+     "record_name": "Sierra National Forest",
+     "acres_approx": 1279656,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1285668
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"scenic kings wild\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-0915": {
+   "park": "Cesar E. Chavez National Monument",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"monument chavez cesar\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10400": {
+   "park": "Trona Pinnacles National Geologic Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 608,
+     "record_name": "Trona Pinnacles",
+     "acres_approx": 4033
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2205,
+     "record_name": "Ridgecrest Field Office",
+     "acres_approx": 1789393,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1797315
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10402": {
+   "park": "Cow Mountain BLM Special Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2212,
+     "record_name": "Ukiah Field Office",
+     "acres_approx": 265252,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 267019
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mountain special cow\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11336": {
+   "park": "Rainbow Basin Natural Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 498,
+     "record_name": "Rainbow Basin/Owl Canyon",
+     "acres_approx": 4090
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2179,
+     "record_name": "Barstow Field Office",
+     "acres_approx": 2718082,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2723972
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-11580": {
+   "park": "Red Hills BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 568,
+     "record_name": "Red Hills",
+     "acres_approx": 9889
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2196,
+     "record_name": "Mother Lode Field Office",
+     "acres_approx": 227527,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 230415
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-11582": {
+   "park": "Griswold Hills BLM Special Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2184,
+     "record_name": "Central Coast Field Office",
+     "acres_approx": 286264,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 288263
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"griswold special hills\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11583": {
+   "park": "Tumey Hills BLM Special Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 463,
+     "record_name": "Panoche/Coalinga",
+     "acres_approx": 54843
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2184,
+     "record_name": "Central Coast Field Office",
+     "acres_approx": 286264,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 288263
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"special hills tumey\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11584": {
+   "park": "Panoche Hills BLM Special Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 463,
+     "record_name": "Panoche/Coalinga",
+     "acres_approx": 54843
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2184,
+     "record_name": "Central Coast Field Office",
+     "acres_approx": 286264,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 288263
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-12616": {
+   "park": "Black Butte Lake Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"black butte\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12957": {
+   "park": "Stoddard Valley BLM Special Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10841,
+     "record_name": "Stoddard/Johnson",
+     "acres_approx": 362108
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2179,
+     "record_name": "Barstow Field Office",
+     "acres_approx": 2718082,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2723972
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13334": {
+   "park": "Sacramento River Bend BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 497,
+     "record_name": "Sacramento River Bend",
+     "acres_approx": 20274
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2203,
+     "record_name": "Redding Field Office",
+     "acres_approx": 250295,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 252406
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13499": {
+   "park": "Swasey Mule Mountain BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 648,
+     "record_name": "Swasey Drive",
+     "acres_approx": 470
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2203,
+     "record_name": "Redding Field Office",
+     "acres_approx": 250295,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 252406
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-13513": {
+   "park": "Laguna Mountain Area BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2184,
+     "record_name": "Central Coast Field Office",
+     "acres_approx": 286264,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 288263
+    }
+   ],
+   "leads": [
+    {
+     "title": "Mount Laguna and Carrizo Mountain",
+     "url": "https://services6.arcgis.com/zX3RUXcV2Ha1zcWA/arcgis/rest/services/Mount_Laguna_and_Carrizo_Mountain/FeatureServer",
+     "owner": "GMF2020",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mountain laguna\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13581": {
+   "park": "Clear Creek BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Pre Clear Vegetation 2021 view",
+     "url": "https://services-ap1.arcgis.com/lnVW0dLI3fvST2hd/arcgis/rest/services/Pre_Clear_Vegetation_2021_view/FeatureServer",
+     "owner": "CoGC_Admin",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Hagerstown Regional Airport Clear Zones",
+     "url": "https://services2.arcgis.com/uxxyl33jRTSmjre5/arcgis/rest/services/Airport_Clear_Zones/FeatureServer",
+     "owner": "jrathvon@washco_md.net_washcomd",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Clear Creek County, CO Buildings",
+     "url": "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Clear_Creek_County_CO_Buildings/FeatureServer",
+     "owner": "dkensok_osm",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"clear\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-3578": {
+   "park": "Tijuana Estuary Reserve State Conservation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services/ParkBoundaries/FeatureServer/0",
+     "agency": "California State Parks",
+     "record": 648,
+     "record_name": "Border Field SP",
+     "acres_approx": 1440
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "agency": "US Fish and Wildlife Service (approved boundary)",
+     "record": 715,
+     "record_name": "TIJUANA SLOUGH NATIONAL WILDLIFE REFUGE",
+     "acres_approx": 1521
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 608,
+     "record_name": "Imperial Beach Navy Outlying Field",
+     "acres_approx": 1248,
+     "Mang_Name": "DOD",
+     "Des_Tp": "MIL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 1205
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4397,
+     "record_name": "Tijuana Slough National Wildlife Refuge",
+     "acres_approx": 1008,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 1059
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: hit",
+    "A US Fish and Wildlife Service (approved b: hit",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-6448": {
+   "park": "William Randolph Hearst Memorial State Beach",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services/ParkBoundaries/FeatureServer/0",
+     "agency": "California State Parks",
+     "record": 798,
+     "record_name": "Hearst San Simeon SP",
+     "acres_approx": 1684
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 183989,
+     "record_name": "Hearst San Simeon State Park",
+     "acres_approx": 3,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 7
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: hit",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-7375": {
+   "park": "Cowell Ranch State Beach",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"cowell ranch beach\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7888": {
+   "park": "Alcatraz Island National Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3505,
+     "record_name": "Golden Gate National Recreation Area",
+     "acres_approx": 34470,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 34888
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"alcatraz island\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7889": {
+   "park": "Presidio of SF National Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3505,
+     "record_name": "Golden Gate National Recreation Area",
+     "acres_approx": 34470,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Own_Type": "FED",
+     "GIS_Acres": 34888
+    }
+   ],
+   "leads": [
+    {
+     "title": "Existing Vegetation at the Presidio",
+     "url": "https://services5.arcgis.com/KS6joEEoa0G4EO56/arcgis/rest/services/Existing_Vegetation_at_the_Presidio/FeatureServer",
+     "owner": "petronilamandeno",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Presidio Trust Boundary",
+     "url": "https://services5.arcgis.com/KS6joEEoa0G4EO56/arcgis/rest/services/Presidio_Trust_Boundary/FeatureServer",
+     "owner": "petronilamandeno",
+     "type": "Feature Service"
+    },
+    {
+     "title": "1797 Plano del Presidio de San Agustin",
+     "url": "https://tiles.arcgis.com/tiles/9lVOGNODRgsFxu7n/arcgis/rest/services/Castillo_Berrio_1797/MapServer",
+     "owner": "bmittler_DHHC",
+     "type": "Map Service"
+    }
+   ],
+   "tried": [
+    "A California Department of Fish & Wildlife: no polygon at the pin",
+    "A California State Parks: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A California Department of Fish and Wildli: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"presidio\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  }
+ }
+}

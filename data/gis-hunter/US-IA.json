@@ -1,0 +1,166 @@
+{
+ "area": "US-IA",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-11305": {
+   "park": "Wapsipinicon River Water State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "agency": "Iowa DNR",
+     "record": 106115,
+     "record_name": "Gambril Access",
+     "acres_approx": 3
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 199134,
+     "record_name": "Gambril Access",
+     "acres_approx": 3,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SREC",
+     "Own_Type": "STAT",
+     "GIS_Acres": 5
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Iowa DNR: no polygon at the pin",
+    "A Iowa DNR: no polygon at the pin",
+    "A Iowa DNR: hit",
+    "A Iowa DNR (credit: Iowa Department of Nat: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"wapsipinicon water\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-4572": {
+   "park": "Lewis and Clark National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "LECL Lewis and Clark National Historic Trail Congressionally Designated Route",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Lewis_and_Clark_National_Historic_Trail_Congressionally_Designated_Route/FeatureServer",
+     "owner": "rmcooper@nps.gov_nps",
+     "type": "Feature Service"
+    },
+    {
+     "title": "LECL Lewis and Clark NHT High Potential Historic Sites",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/HPHS/FeatureServer",
+     "owner": "rmcooper@nps.gov_nps",
+     "type": "Feature Service"
+    },
+    {
+     "title": "LECL Lewis and Clark Trail Visitor Centers and Museums",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Lewis_and_Clark_Trail_Visitor_Centers_and_Museums/FeatureServer",
+     "owner": "rmcooper@nps.gov_nps",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Iowa DNR: no polygon at the pin",
+    "A Iowa DNR: no polygon at the pin",
+    "A Iowa DNR: no polygon at the pin",
+    "A Iowa DNR (credit: Iowa Department of Nat: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"lewis clark\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-4573": {
+   "park": "Mormon Pioneer National Historic Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Mormon Pioneer Trail",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/MOPI_NHT/FeatureServer",
+     "owner": "mm.kcappelli",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Mormon Pioneer Trail (View Layer)",
+     "url": "https://services.arcgis.com/mMBpeYj0vPFotzbe/arcgis/rest/services/Mormon_Pioneer_Trail_view/FeatureServer",
+     "owner": "CameronScharrer",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Mormon Pioneer NHT",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/MOPI_NHT/FeatureServer",
+     "owner": "MarkScottHenderson",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Iowa DNR: no polygon at the pin",
+    "A Iowa DNR: no polygon at the pin",
+    "A Iowa DNR: no polygon at the pin",
+    "A Iowa DNR (credit: Iowa Department of Nat: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"pioneer mormon\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9334": {
+   "park": "Teal Basins State Waterfowl Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "agency": "Iowa DNR",
+     "record": 544,
+     "record_name": "TEAL BASINS WPA",
+     "acres_approx": 139
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "agency": "Iowa DNR",
+     "record": 106299,
+     "record_name": "Teal Basins WPA",
+     "acres_approx": 139
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3710,
+     "record_name": "Cerro Gordo County Waterfowl Production Area",
+     "acres_approx": 2711,
+     "Mang_Name": "FWS",
+     "Des_Tp": "RMA",
+     "Own_Type": "FED",
+     "GIS_Acres": 2719
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4644,
+     "record_name": "Cerro Gordo County Waterfowl Production Area",
+     "acres_approx": 2708,
+     "Mang_Name": "FWS",
+     "Des_Tp": "RMA",
+     "Own_Type": "FED",
+     "GIS_Acres": 2719
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Iowa DNR: hit",
+    "A Iowa DNR: no polygon at the pin",
+    "A Iowa DNR: hit",
+    "A Iowa DNR (credit: Iowa Department of Nat: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  }
+ }
+}

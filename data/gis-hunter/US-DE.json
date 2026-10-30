@@ -1,0 +1,360 @@
+{
+ "area": "US-DE",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-10687": {
+   "park": "Trussum Pond State Fishing Lake",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "agency": "Delaware DNREC",
+     "record": 325,
+     "record_name": "Trap Pond State Park",
+     "acres_approx": 67
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8",
+     "agency": "Delaware nature preserves (DNREC)",
+     "record": 93,
+     "record_name": "James Branch Nature Preserve",
+     "acres_approx": 259
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Delaware DNREC: hit",
+    "A Delaware Forest Service: no polygon at the pin",
+    "A Delaware Fish & Wildlife (DNREC): no polygon at the pin",
+    "A Delaware nature preserves (DNREC): hit",
+    "A Delaware public protected lands (DNREC): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-4367": {
+   "park": "First State Heritage State Park",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "First Nation Heritage Routes",
+     "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_CultureHeritage/MapServer/1",
+     "owner": "Yukon.government",
+     "type": "Feature Service"
+    },
+    {
+     "title": "First Nation Heritage Sites",
+     "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_CultureHeritage/MapServer/15",
+     "owner": "Yukon.government",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Delaware DNREC: no polygon at the pin",
+    "A Delaware Forest Service: no polygon at the pin",
+    "A Delaware Fish & Wildlife (DNREC): no polygon at the pin",
+    "A Delaware nature preserves (DNREC): no polygon at the pin",
+    "A Delaware public protected lands (DNREC): no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"heritage first\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9877": {
+   "park": "Junction and Breakwater National Recreation Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
+     "agency": "Delaware public protected lands (DNREC)",
+     "record": 1,
+     "record_name": "Cape Henlopen State Park",
+     "acres_approx": 4771
+    }
+   ],
+   "leads": [
+    {
+     "title": "Junction & Breakwater",
+     "url": "https://services7.arcgis.com/sbCtNPX9WTwhwh3s/arcgis/rest/services/DNREC_Trails_2021/FeatureServer",
+     "owner": "DelawareGreenwaysInc",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Delaware DNREC: no polygon at the pin",
+    "A Delaware Forest Service: no polygon at the pin",
+    "A Delaware Fish & Wildlife (DNREC): no polygon at the pin",
+    "A Delaware nature preserves (DNREC): no polygon at the pin",
+    "A Delaware public protected lands (DNREC): hit",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"breakwater junction\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9878": {
+   "park": "Northern Delaware Greenway National Recreation Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "agency": "Delaware DNREC",
+     "record": 124,
+     "record_name": "Alapocas Run State Park",
+     "acres_approx": 6
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
+     "agency": "Delaware public protected lands (DNREC)",
+     "record": 652,
+     "record_name": "Alapocas Run State Park",
+     "acres_approx": 132
+    }
+   ],
+   "leads": [
+    {
+     "title": "Northern Delaware Greenway Trail",
+     "url": "https://services7.arcgis.com/sbCtNPX9WTwhwh3s/arcgis/rest/services/FTND_Northern_Delaware_Greenway_Trail/FeatureServer",
+     "owner": "DelawareGreenwaysInc",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Northern_Delaware_Greenway",
+     "url": "https://services7.arcgis.com/sbCtNPX9WTwhwh3s/arcgis/rest/services/Northern_Delaware_Greenway/FeatureServer",
+     "owner": "DelawareGreenwaysInc",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Delaware DNREC: hit",
+    "A Delaware Forest Service: no polygon at the pin",
+    "A Delaware Fish & Wildlife (DNREC): no polygon at the pin",
+    "A Delaware nature preserves (DNREC): no polygon at the pin",
+    "A Delaware public protected lands (DNREC): hit",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"northern delaware greenway\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9879": {
+   "park": "Pinelands Nature National Recreation Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "agency": "Delaware DNREC",
+     "record": 29,
+     "record_name": "Cape Henlopen State Park",
+     "acres_approx": 3445
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
+     "agency": "Delaware public protected lands (DNREC)",
+     "record": 1,
+     "record_name": "Cape Henlopen State Park",
+     "acres_approx": 4771
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 60681,
+     "record_name": "Cape Henlopen State Park",
+     "acres_approx": 3627,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3641
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 76404,
+     "record_name": "Cape Henlopen State Park",
+     "acres_approx": 476,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 562
+    }
+   ],
+   "leads": [
+    {
+     "title": "Pinelands Management Areas",
+     "url": "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_ManagementAreas/FeatureServer",
+     "owner": "NJPinelands",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Pinelands Wetlands 300 foot Buffer",
+     "url": "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_Wetlands_Buffers_300_feet/FeatureServer",
+     "owner": "NJPinelands",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Pinelands Area",
+     "url": "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_Area/FeatureServer",
+     "owner": "NJPinelands",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Delaware DNREC: hit",
+    "A Delaware Forest Service: no polygon at the pin",
+    "A Delaware Fish & Wildlife (DNREC): no polygon at the pin",
+    "A Delaware nature preserves (DNREC): no polygon at the pin",
+    "A Delaware public protected lands (DNREC): hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"pinelands\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9881": {
+   "park": "Pomeroy and Newark National Recreation Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "agency": "Delaware DNREC",
+     "record": 70,
+     "record_name": "White Clay Creek State Park",
+     "acres_approx": 2986
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
+     "agency": "Delaware public protected lands (DNREC)",
+     "record": 408,
+     "record_name": "White Clay Creek State Park",
+     "acres_approx": 3002
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 76428,
+     "record_name": "White Clay Creek State Park",
+     "acres_approx": 3527,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3520
+    }
+   ],
+   "leads": [
+    {
+     "title": "Pomeroy_Trail_and_other_Trails_in_Newark",
+     "url": "https://services.arcgis.com/DCPX1PuggGH4Tici/arcgis/rest/services/Pomeroy_Trail_and_other_Trails_in_Newark/FeatureServer",
+     "owner": "swingel_udel",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Delaware DNREC: hit",
+    "A Delaware Forest Service: no polygon at the pin",
+    "A Delaware Fish & Wildlife (DNREC): no polygon at the pin",
+    "A Delaware nature preserves (DNREC): no polygon at the pin",
+    "A Delaware public protected lands (DNREC): hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"pomeroy newark\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9885": {
+   "park": "Indian River Life-Saving Station State Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "agency": "Delaware DNREC",
+     "record": 102,
+     "record_name": "Delaware Seashore State Park",
+     "acres_approx": 1560
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
+     "agency": "Delaware public protected lands (DNREC)",
+     "record": 33,
+     "record_name": "Delaware Seashore State Park",
+     "acres_approx": 1724
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Delaware DNREC: hit",
+    "A Delaware Forest Service: no polygon at the pin",
+    "A Delaware Fish & Wildlife (DNREC): no polygon at the pin",
+    "A Delaware nature preserves (DNREC): no polygon at the pin",
+    "A Delaware public protected lands (DNREC): hit",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"station saving indian\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-9886": {
+   "park": "Dupont Nature Center State Conservation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "agency": "Delaware DNREC",
+     "record": 811,
+     "record_name": "Mispillion Marine Reserve",
+     "acres_approx": 1
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+     "agency": "Delaware Fish & Wildlife (DNREC)",
+     "record": 34,
+     "record_name": "Mispillion Marine Reserve",
+     "acres_approx": 213
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
+     "agency": "Delaware public protected lands (DNREC)",
+     "record": 840,
+     "record_name": "Mispillion Marine Reserve",
+     "acres_approx": 60
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 76230,
+     "record_name": "Mispillion Marine Reserve",
+     "acres_approx": 163,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 200
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Delaware DNREC: hit",
+    "A Delaware Forest Service: no polygon at the pin",
+    "A Delaware Fish & Wildlife (DNREC): hit",
+    "A Delaware nature preserves (DNREC): no polygon at the pin",
+    "A Delaware public protected lands (DNREC): hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"dupont center\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  }
+ }
+}

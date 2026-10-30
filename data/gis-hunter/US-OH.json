@@ -1,0 +1,58 @@
+{
+ "area": "US-OH",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-3514": {
+   "park": "Fort Miamis Fallen Timbers Battlefield National Historic Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Fallen Timbers Battlefield",
+     "url": "https://services2.arcgis.com/i7Ls2H4uQGTYzm5D/arcgis/rest/services/Fallen_Timbers_Battlefield/FeatureServer",
+     "owner": "topographer",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Fallen Timbers Battlefield Points of Interest",
+     "url": "https://services2.arcgis.com/i7Ls2H4uQGTYzm5D/arcgis/rest/services/Fallen_Timbers_Battlefield_Points_of_Interest/FeatureServer",
+     "owner": "topographer",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Ohio DNR Division of Parks and Watercraf: no polygon at the pin",
+    "A Ohio DNR Division of Wildlife: no polygon at the pin",
+    "A Ohio DNR Division of Forestry: no polygon at the pin",
+    "A Ohio DNR Division of Natural Areas and P: no polygon at the pin",
+    "A Ohio DNR: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Ohio DNR, Office of Information Technolo: no polygon at the pin",
+    "A Ohio DNR (credit): city, county + NGO la: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"battlefield timbers fallen\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9423": {
+   "park": "Miller Nature Sanctuary State Nature Preserve",
+   "why_not": "pin-doubt",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Ohio DNR Division of Parks and Watercraf: no polygon at the pin",
+    "A Ohio DNR Division of Wildlife: no polygon at the pin",
+    "A Ohio DNR Division of Forestry: no polygon at the pin",
+    "A Ohio DNR Division of Natural Areas and P: no polygon at the pin",
+    "A Ohio DNR: no polygon at the pin",
+    "A National Park Service (legal boundary): no polygon at the pin",
+    "A Ohio DNR, Office of Information Technolo: no polygon at the pin",
+    "A Ohio DNR (credit): city, county + NGO la: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"sanctuary miller\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

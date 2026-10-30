@@ -1,0 +1,670 @@
+{
+ "area": "US-MN",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-10720": {
+   "park": "Forest Lake AMA Aquatic Reserve",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [
+    {
+     "title": "State Aquatic Management Area (AMA) Aquisitions",
+     "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer",
+     "owner": "commons_etl_user",
+     "type": "Feature Service"
+    },
+    {
+     "title": "State Aquatic Management Area (AMA) Aquisitions",
+     "url": "https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer",
+     "owner": "commons_etl_user",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"aquatic ama\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-11014": {
+   "park": "David Dill/Taconite and Taconite State Trails State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_state_forest/FeatureServer/4",
+     "agency": "Minnesota DNR",
+     "record": 25,
+     "record_name": "Sturgeon River",
+     "acres_approx": 169118
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: hit",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"taconite trails david\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11150": {
+   "park": "CJ Ramstad North Shore State Trail",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"ramstad shore north\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-11153": {
+   "park": "Matthew Lourey State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_state_forest/FeatureServer/4",
+     "agency": "Minnesota DNR",
+     "record": 4,
+     "record_name": "Chengwatana",
+     "acres_approx": 28984
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 207812,
+     "record_name": "Chengwatana State Forest",
+     "acres_approx": 16975,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 17023
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: hit",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"matthew lourey\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11154": {
+   "park": "Taconite State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3082,
+     "record_name": "Superior National Forest",
+     "acres_approx": 2076569,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 2093610
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"taconite\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-11904": {
+   "park": "Migizi National Recreation Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1001,
+     "record_name": "Leech Lake Reservation",
+     "acres_approx": 833399,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 838631
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3040,
+     "record_name": "Chippewa National Forest",
+     "acres_approx": 666403,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 672038
+    }
+   ],
+   "leads": [
+    {
+     "title": "Fun Places by MIGIZI Interns_form",
+     "url": "https://services4.arcgis.com/4O9OEYNKkrhmwigg/arcgis/rest/services/survey123_d43f5c819a2844fbab154440b7678f4f_form/FeatureServer",
+     "owner": "Tedi-MIGIZI",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"migizi\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-12377": {
+   "park": "Coldwater Spring Unit National Recreation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2",
+     "agency": "Minnesota State Parks (DNR)",
+     "record": 75,
+     "record_name": "Fort Snelling",
+     "acres_approx": 3545
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): hit",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-13546": {
+   "park": "Twin Points Protected Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"points twin\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13547": {
+   "park": "Two Harbors Protected Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [
+    {
+     "title": "LSL_Basemap_View- Two Harbors",
+     "url": "https://services1.arcgis.com/Fxir0Ov4y8APKoU8/arcgis/rest/services/LSL_Basemap_view_e5a577fedbb6490a8904de07161b0321/FeatureServer",
+     "owner": "BoltonMenk_TwoHarbors",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Two Harbors Zoning With NSMB Boundary_WFL1",
+     "url": "https://services1.arcgis.com/XcwN27e6wZ49zF8i/arcgis/rest/services/Two_Harbors_Zoning_With_NSMB_Boundary_WFL1/FeatureServer",
+     "owner": "ARDCGIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Two_Harbors_Bicycle_Destinations_and_Recommendations",
+     "url": "https://services1.arcgis.com/XcwN27e6wZ49zF8i/arcgis/rest/services/Two_Harbors_Bicycle_Destinations_and_Recommendations/FeatureServer",
+     "owner": "rpintern",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"harbors two\": 4 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-13548": {
+   "park": "Knife River Marine Protected Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"marine knife\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-13549": {
+   "park": "McQuade Marine Protected Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"mcquade marine\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-4239": {
+   "park": "North Country Trail National Scenic Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2584,
+     "record_name": "Sakakawea Recreation Area",
+     "acres_approx": 474559,
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Own_Type": "UNK",
+     "GIS_Acres": 478564
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 215630,
+     "record_name": "Lake Sakakawea State Park",
+     "acres_approx": 719,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 733
+    }
+   ],
+   "leads": [
+    {
+     "title": "North Country Scenic Trail in Wisconsin",
+     "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_REC_OPPS_WTM_Ext/MapServer/3",
+     "owner": "Wi_DNR_Data",
+     "type": "Feature Service"
+    },
+    {
+     "title": "North Country NST Shapefile",
+     "url": "https://services8.arcgis.com/WyuHwdftppQLa5KO/arcgis/rest/services/North_Country_NST_Shapefile/FeatureServer",
+     "owner": "Field_Programs_CDTC",
+     "type": "Feature Service"
+    },
+    {
+     "title": "North Country Trail",
+     "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/North_Country_Trail/FeatureServer",
+     "owner": "FTKaren",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"country scenic north\": 5 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7759": {
+   "park": "David Dill Arrowhead State Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"arrowhead david dill\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8095": {
+   "park": "Gitchi Gami State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2",
+     "agency": "Minnesota State Parks (DNR)",
+     "record": 4,
+     "record_name": "Split Rock Lighthouse",
+     "acres_approx": 2290
+    }
+   ],
+   "leads": [
+    {
+     "title": "Gitchi Gami Shoulder Widths_WFL1",
+     "url": "https://services1.arcgis.com/XcwN27e6wZ49zF8i/arcgis/rest/services/Gitchi_Gami_Shoulder_Widths_WFL1/FeatureServer",
+     "owner": "ARDCGIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Gitchi Gami State Trail",
+     "url": "https://services1.arcgis.com/NlvHF2FHoAfPIDvG/arcgis/rest/services/Gitchi_Gami_State_Trail/FeatureServer",
+     "owner": "amy.lewis_lakecountymn",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): hit",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"gitchi gami\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9373": {
+   "park": "Paul Bunyan State Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2",
+     "agency": "Minnesota State Parks (DNR)",
+     "record": 5,
+     "record_name": "Lake Bemidji",
+     "acres_approx": 1732
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 209832,
+     "record_name": "Lake Bemidji State Park",
+     "acres_approx": 1623,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 1614
+    }
+   ],
+   "leads": [
+    {
+     "title": "Paul Bunyan Data",
+     "url": "https://services1.arcgis.com/ROSiDsWkQXhsUAs0/arcgis/rest/services/Paul_Bunyan_Data/FeatureServer",
+     "owner": "cstults_BSUMaps",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): hit",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"bunyan paul\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9375": {
+   "park": "Harmony-Preston State Trail",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"preston harmony\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9377": {
+   "park": "Blazing Star State Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2",
+     "agency": "Minnesota State Parks (DNR)",
+     "record": 30,
+     "record_name": "Myre-Big Island",
+     "acres_approx": 2137
+    }
+   ],
+   "leads": [
+    {
+     "title": "NCDOT Hellers_Blazing_Star_Potential_Habitat",
+     "url": "https://services.arcgis.com/NuWFvHYDMVmmxMeM/arcgis/rest/services/Hellers_Blazing_Star_Potential_Habitat/FeatureServer",
+     "owner": "Atlas.NCDOT.GOV",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Suitability Map for Blazing Star",
+     "url": "https://services.arcgis.com/aScBVpZOvioggfOZ/arcgis/rest/services/Suitability_Map_for_Blazing_Star/FeatureServer",
+     "owner": "LouisLee2026@u.northwestern.edu_Northwestern",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): hit",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"blazing star\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9378": {
+   "park": "Casey Jones State Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"jones casey\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9381": {
+   "park": "Douglas State Trail",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Douglas County Boundary",
+     "url": "https://services.arcgis.com/pDAi2YK0L0QxVJHj/arcgis/rest/services/Douglas_County_Boundary/FeatureServer",
+     "owner": "Nataliya2",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Douglas County, Kansas Boundary",
+     "url": "https://gis.dgcoks.gov/server/rest/services/County_Boundary/FeatureServer",
+     "owner": "gis_lawrenceks",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Douglas County, NE Buildings",
+     "url": "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Douglas_County_NE_Buildings/FeatureServer",
+     "owner": "dkensok_osm",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"douglas\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9384": {
+   "park": "Minnesota Valley State Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2",
+     "agency": "Minnesota State Parks (DNR)",
+     "record": 2,
+     "record_name": "Minnesota Valley",
+     "acres_approx": 4101
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_stateland_dnr/FeatureServer/10",
+     "agency": "Minnesota DNR (state land admin: parks and trails)",
+     "record": 11006,
+     "record_name": "MINNESOTA VALLEY",
+     "acres_approx": 60
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): hit",
+    "A Minnesota DNR (state land admin: parks a: hit",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-9385": {
+   "park": "Gateway Overview State Trail",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"overview gateway\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9386": {
+   "park": "Browns Creek State Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"browns\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9389": {
+   "park": "Central Lakes State Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Active Faults and Folds Central Otago and Queenstown Lakes",
+     "url": "https://services6.arcgis.com/ALxeDxaeNjQo1Mf0/arcgis/rest/services/Active_Faults_and_Folds_Central_Otago_and_Queenstown_Lakes/FeatureServer",
+     "owner": "OTAGOREGIONALCOUNCIL_ORCNZ",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Central Hawke's Bay Lakes-CMP",
+     "url": "https://services.arcgis.com/DN2fPfpggEPlLhP6/arcgis/rest/services/Lakes/FeatureServer",
+     "owner": "cillian.adamson@stantec.com_stantec",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"central lakes\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9390": {
+   "park": "Williard Munger State Trail",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota DNR: no polygon at the pin",
+    "A Minnesota State Parks (DNR): no polygon at the pin",
+    "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"williard munger\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

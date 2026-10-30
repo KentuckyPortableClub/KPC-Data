@@ -1,0 +1,2845 @@
+{
+ "area": "US-WY",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-10776": {
+   "park": "Packers Lake Public Access Area BLM Special Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"packers special access\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10795": {
+   "park": "Shoshone Cavern AKA Spirit Mtn Cave BLM Special Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2134,
+     "record_name": "Cody Field Office",
+     "acres_approx": 1082798,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1090720
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2408,
+     "record_name": "Buffalo Bill Reservoir State Park",
+     "acres_approx": 13560,
+     "Mang_Name": "USBR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 13571
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"shoshone special cavern\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10817": {
+   "park": "Story State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery story\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10818": {
+   "park": "Auburn State Fish Hatchery",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2778,
+     "record_name": "Caribou National Forest",
+     "acres_approx": 965019,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 971046
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hatchery auburn\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10821": {
+   "park": "Dan Speas State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery speas dan\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10822": {
+   "park": "Daniel State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2148,
+     "record_name": "Pinedale Field Office",
+     "acres_approx": 918962,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 925688
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 278105,
+     "record_name": "State Lands 1111115411",
+     "acres_approx": 635,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 639
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hatchery daniel\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10823": {
+   "park": "Dubois State Fish Hatchery",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery dubois\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10824": {
+   "park": "Ten Sleep State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2695,
+     "record_name": "Bighorn National Forest",
+     "acres_approx": 1097669,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 1105122
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hatchery sleep ten\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10825": {
+   "park": "Tillett Springs State Fish Hatchery",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hatchery springs tillett\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10829": {
+   "park": "Fetterman Fight National Battlefield",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 292662,
+     "record_name": "Fetterman Battlefield",
+     "acres_approx": 471,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SHCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 468
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10835": {
+   "park": "Pacific Creek BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"interpretive pacific\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10836": {
+   "park": "Emigrant Gap BLM Interpretive Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"interpretive emigrant gap\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10837": {
+   "park": "Little Sandy Crossing BLM Historic Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2261,
+     "record_name": "Usbr",
+     "acres_approx": 730340,
+     "Mang_Name": "USBR",
+     "Des_Tp": "FOTH",
+     "Own_Type": "FED",
+     "GIS_Acres": 735338
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"crossing little sandy\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10838": {
+   "park": "Buckskin Crossing BLM Interpretive Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 288749,
+     "record_name": "State Lands 1111126198",
+     "acres_approx": 628,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 632
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"interpretive buckskin crossing\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10839": {
+   "park": "Devil's Gate BLM Interpretive Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"interpretive devil gate\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10840": {
+   "park": "Gebo - Causley Historic Mining District BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2161,
+     "record_name": "Worland Field Office",
+     "acres_approx": 2085305,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2099390
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"interpretive district causley\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10842": {
+   "park": "Boar's Tusk BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11337,
+     "record_name": "Killpecker Sand Dunes SRMA",
+     "acres_approx": 39035
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1599,
+     "record_name": "Greater Sand Dunes ACEC",
+     "acres_approx": 26669
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"tusk boar\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10848": {
+   "park": "Castle Gardens Scenic Area BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2161,
+     "record_name": "Worland Field Office",
+     "acres_approx": 2085305,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2099390
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"gardens scenic castle\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10850": {
+   "park": "Cedar Canyon Petroglyphs BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10751,
+     "record_name": "Rock Springs Field Office ERMA",
+     "acres_approx": 3288302
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"petroglyphs canyon cedar\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10854": {
+   "park": "Corral Creek Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10730,
+     "record_name": "North Platte River SRMA",
+     "acres_approx": 6111
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2152,
+     "record_name": "Rawlins Field Office",
+     "acres_approx": 3506581,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3531790
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground corral\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10855": {
+   "park": "Deep Gulch BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2152,
+     "record_name": "Rawlins Field Office",
+     "acres_approx": 3506581,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3531790
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 282188,
+     "record_name": "State Lands 1111119554",
+     "acres_approx": 618,
+     "Mang_Name": "SLB",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 639
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"gulch deep\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10856": {
+   "park": "Dome Rock BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10709,
+     "record_name": "Eastern Rawlins Field Office ERMA",
+     "acres_approx": 1571463
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2152,
+     "record_name": "Rawlins Field Office",
+     "acres_approx": 3506581,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3531790
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"rock dome\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10857": {
+   "park": "Dugway Recreation Site BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10730,
+     "record_name": "North Platte River SRMA",
+     "acres_approx": 6111
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2152,
+     "record_name": "Rawlins Field Office",
+     "acres_approx": 3506581,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3531790
+    }
+   ],
+   "leads": [
+    {
+     "title": "Dugway Proving Grounds",
+     "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Dugway_Proving_Grounds/FeatureServer",
+     "owner": "dwrwmi",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Dugway Proving Ground Project Area",
+     "url": "https://services3.arcgis.com/Zia6VWQ4RxQ1tr9G/arcgis/rest/services/MIDA_Project_Area_Points_20260615/FeatureServer",
+     "owner": "MIDACFO",
+     "type": "Feature Service"
+    },
+    {
+     "title": "dugway_location_only",
+     "url": "https://services1.arcgis.com/1PLR1qtZvQQT7GKG/arcgis/rest/services/dugway_location_only/FeatureServer",
+     "owner": "jenniferb",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"dugway\": 5 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10860": {
+   "park": "Four Bear Trail BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10688,
+     "record_name": "Rivers SRMA",
+     "acres_approx": 5309
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2134,
+     "record_name": "Cody Field Office",
+     "acres_approx": 1082798,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1090720
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"bear four\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10861": {
+   "park": "Fremont Lake Road / Skyline Drive BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"fremont skyline drive\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10862": {
+   "park": "Gooseberry Badlands Scenic Overlook Trail BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10710,
+     "record_name": "Badlands SRMA",
+     "acres_approx": 209849
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2161,
+     "record_name": "Worland Field Office",
+     "acres_approx": 2085305,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2099390
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10863": {
+   "park": "Green River/Warrne Bridge River Access Area BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11346,
+     "record_name": "Green and New Fork Rivers SRMA (Warren Bridge)",
+     "acres_approx": 7148
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2148,
+     "record_name": "Pinedale Field Office",
+     "acres_approx": 918962,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 925688
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10865": {
+   "park": "Lance Creek Fossil Site BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10704,
+     "record_name": "Newcastle Field Office ERMA",
+     "acres_approx": 270776
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2146,
+     "record_name": "Newcastle Field Office",
+     "acres_approx": 276711,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 279233
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"fossil lance\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10876": {
+   "park": "Lone Tree Trail BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10708,
+     "record_name": "West Slope SRMA",
+     "acres_approx": 189194
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2161,
+     "record_name": "Worland Field Office",
+     "acres_approx": 2085305,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2099390
+    }
+   ],
+   "leads": [
+    {
+     "title": "Lone_Tree_Boundary",
+     "url": "https://services7.arcgis.com/M6RDkiPo9JtEo7N6/arcgis/rest/services/Lone_Tree_Boundary/FeatureServer",
+     "owner": "Damian.Sweet@cityoflonetree.com_CityofLoneTree",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Lone Tree Creek",
+     "url": "https://services2.arcgis.com/qzGaVFGfQxn25AYB/arcgis/rest/services/Lone_Tree_Creek/FeatureServer",
+     "owner": "CentennialOpenData",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"tree lone\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10877": {
+   "park": "Mallo Trail BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Health Care Clinics Nelly Mallo_WFL1",
+     "url": "https://services5.arcgis.com/PYQDcdc0d8h6iad8/arcgis/rest/services/Health_Care_Clinics_Nelly_Mallo_WFL1/FeatureServer",
+     "owner": "nelly_mallo@redlands.edu_redlandsbusiness",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Final_Site_Mallo",
+     "url": "https://tiles.arcgis.com/tiles/utVR6GjejYAZciWt/arcgis/rest/services/Final_Site_Mallo/MapServer",
+     "owner": "mcmaher",
+     "type": "Map Service"
+    },
+    {
+     "title": "Schools Buffer Mallo",
+     "url": "https://services1.arcgis.com/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer",
+     "owner": "mcmaher",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"mallo\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10880": {
+   "park": "Paintrock Canyon Trail BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10708,
+     "record_name": "West Slope SRMA",
+     "acres_approx": 189194
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2161,
+     "record_name": "Worland Field Office",
+     "acres_approx": 2085305,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2099390
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"paintrock canyon\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10882": {
+   "park": "Prior Flat Campground BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11338,
+     "record_name": "Shirley Mountains SRMA",
+     "acres_approx": 37599
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2152,
+     "record_name": "Rawlins Field Office",
+     "acres_approx": 3506581,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3531790
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campground prior flat\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10883": {
+   "park": "Red Canyon Overlook BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 390,
+     "record_name": "Red Canyon ACEC",
+     "acres_approx": 23790
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 273814,
+     "record_name": "Red Canyon Wildlife Habitat Management Area",
+     "acres_approx": 1799,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 1837
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10884": {
+   "park": "Red Gulch/Alkali Backcountry Byway BLM Special Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2161,
+     "record_name": "Worland Field Office",
+     "acres_approx": 2085305,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2099390
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"backcountry special alkali\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10885": {
+   "park": "Rim Lake BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10699,
+     "record_name": "Continental Divide National Scenic Trail SRMA",
+     "acres_approx": 9730
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2152,
+     "record_name": "Rawlins Field Office",
+     "acres_approx": 3506581,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3531790
+    }
+   ],
+   "leads": [
+    {
+     "title": "Nashvilles Highland Rim Forest",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Nashvilles_Highland_Rim_Forest/FeatureServer",
+     "owner": "emily_granstaff@fws.gov_fws",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Mountain Rim FSC East Little Mountain Project Grazing Area",
+     "url": "https://services1.arcgis.com/8CpMUd3fdw6aXef7/arcgis/rest/services/Mountain_Rim_FSC_East_Little_Mountain_Project_Grazing_Area/FeatureServer",
+     "owner": "Maintenance.GIS",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Rim Fire 2013 (Public)",
+     "url": "https://services2.arcgis.com/wEula7SYiezXcdRv/arcgis/rest/services/RimFire/FeatureServer",
+     "owner": "CountyofMariposa",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"rim\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10886": {
+   "park": "Salt Lick Trail BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10708,
+     "record_name": "West Slope SRMA",
+     "acres_approx": 189194
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2161,
+     "record_name": "Worland Field Office",
+     "acres_approx": 2085305,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2099390
+    }
+   ],
+   "leads": [
+    {
+     "title": "Salt Lick",
+     "url": "https://services3.arcgis.com/aaZhjjkUqOHS7oRg/arcgis/rest/services/Salt_Lick/FeatureServer",
+     "owner": "gwadduser",
+     "type": "Feature Service"
+    },
+    {
+     "title": "The Ol Salt Lick Road",
+     "url": "https://services4.arcgis.com/oS6FA2DLGfZTDHxV/arcgis/rest/services/The_Ol_Salt_Lick_Road/FeatureServer",
+     "owner": "woolseyc",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"lick salt\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10888": {
+   "park": "Shirley Basin Reservoir BLM Special Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10709,
+     "record_name": "Eastern Rawlins Field Office ERMA",
+     "acres_approx": 1571463
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2152,
+     "record_name": "Rawlins Field Office",
+     "acres_approx": 3506581,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3531790
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"reservoir shirley special\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10891": {
+   "park": "Teton Reservoir BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10709,
+     "record_name": "Eastern Rawlins Field Office ERMA",
+     "acres_approx": 1571463
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2152,
+     "record_name": "Rawlins Field Office",
+     "acres_approx": 3506581,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3531790
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"reservoir teton\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10892": {
+   "park": "The Redds Day Use Area BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10732,
+     "record_name": "Trapper's Route SRMA",
+     "acres_approx": 2967
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2132,
+     "record_name": "Casper Field Office",
+     "acres_approx": 1351515,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1361339
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"redds day use\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10893": {
+   "park": "Three Patches BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 273736,
+     "record_name": "3 Patches Picnic Area",
+     "acres_approx": 29,
+     "Mang_Name": "CNTY",
+     "Des_Tp": "LREC",
+     "Own_Type": "LOC",
+     "GIS_Acres": 29
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-10896": {
+   "park": "Wild Horse Point BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11288,
+     "record_name": "Green Mountain ERMA",
+     "acres_approx": 128723
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 403,
+     "record_name": "Green Mountain ACEC",
+     "acres_approx": 24768
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2138,
+     "record_name": "Lander Field Office",
+     "acres_approx": 2375823,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2388958
+    }
+   ],
+   "leads": [
+    {
+     "title": "Wild Horse",
+     "url": "https://services1.arcgis.com/V0JDguEsaeBdf94U/arcgis/rest/services/Iron_Horse/FeatureServer",
+     "owner": "Wesley.Hermann@coloradosprings.gov_coloradosprings",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"point horse wild\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-10898": {
+   "park": "Lake Hattie BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10709,
+     "record_name": "Eastern Rawlins Field Office ERMA",
+     "acres_approx": 1571463
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2152,
+     "record_name": "Rawlins Field Office",
+     "acres_approx": 3506581,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3531790
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"hattie\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10900": {
+   "park": "South Bighorn/Red Wall Backcountry Byway BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"backcountry bighorn byway\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10929": {
+   "park": "Cottonwood Creek Trailhead BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10706,
+     "record_name": "West Slope SRMA",
+     "acres_approx": 128551
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2134,
+     "record_name": "Cody Field Office",
+     "acres_approx": 1082798,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1090720
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"cottonwood trailhead\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-10946": {
+   "park": "Crazy Woman Creek National Battlefield",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"battlefield crazy woman\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10947": {
+   "park": "The Battle of Red Buttes National Battlefield",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12718": {
+   "park": "Kortes Reservoir/Miracle Mile BOR Recreation Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12720": {
+   "park": "Ralston Reservoir BOR & State Fish and Wildlife Area",
+   "why_not": "needs-parcel",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-12721": {
+   "park": "Miles Landing BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10732,
+     "record_name": "Trapper's Route SRMA",
+     "acres_approx": 2967
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2132,
+     "record_name": "Casper Field Office",
+     "acres_approx": 1351515,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1361339
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12722": {
+   "park": "Wheatland Reservoir #3 BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10709,
+     "record_name": "Eastern Rawlins Field Office ERMA",
+     "acres_approx": 1571463
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2152,
+     "record_name": "Rawlins Field Office",
+     "acres_approx": 3506581,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3531790
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12723": {
+   "park": "Whitetail Day Use BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10732,
+     "record_name": "Trapper's Route SRMA",
+     "acres_approx": 2967
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-13244": {
+   "park": "1838 Mountain Man Rendezvous State Historic Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1096,
+     "record_name": "Wind River Reservation",
+     "acres_approx": 2236709,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 2255744
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6117": {
+   "park": "Camp Douglas WW-II POW Officers' Club State Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6119": {
+   "park": "Wyoming Pioneer Memorial Museum State Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6131": {
+   "park": "Bessemer Bend BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10732,
+     "record_name": "Trapper's Route SRMA",
+     "acres_approx": 2967
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2132,
+     "record_name": "Casper Field Office",
+     "acres_approx": 1351515,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 1361339
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6134": {
+   "park": "Indian Bathtubs Trail BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10709,
+     "record_name": "Eastern Rawlins Field Office ERMA",
+     "acres_approx": 1571463
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2152,
+     "record_name": "Rawlins Field Office",
+     "acres_approx": 3506581,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3531790
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6143": {
+   "park": "Outlaw Cave Trail BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11344,
+     "record_name": "Middle Fork Powder River SRMA",
+     "acres_approx": 10012
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2130,
+     "record_name": "Buffalo Field Office",
+     "acres_approx": 772048,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 779089
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6149": {
+   "park": "Martin's Cove National Historic Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6155": {
+   "park": "Big Cedar Ridge Fossil Site BLM Special Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2161,
+     "record_name": "Worland Field Office",
+     "acres_approx": 2085305,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2099390
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6159": {
+   "park": "Castle Gardens Petroglyph Site BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2138,
+     "record_name": "Lander Field Office",
+     "acres_approx": 2375823,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2388958
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6162": {
+   "park": "Red Gulch Dinosaur Tracksite BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 429,
+     "record_name": "Red Gulch Dinosaur Tracksite ACEC",
+     "acres_approx": 1783
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2161,
+     "record_name": "Worland Field Office",
+     "acres_approx": 2085305,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2099390
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-6164": {
+   "park": "Duck Swamp Interpretive Area BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10761,
+     "record_name": "Bighorn River ERMA",
+     "acres_approx": 1788
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2161,
+     "record_name": "Worland Field Office",
+     "acres_approx": 2085305,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2099390
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6169": {
+   "park": "Lake Cameahwait State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 1096,
+     "record_name": "Wind River Reservation",
+     "acres_approx": 2236709,
+     "Mang_Name": "TRIB",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "GIS_Acres": 2255744
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 273818,
+     "record_name": "Sand Mesa Wildlife Habitat Management Area",
+     "acres_approx": 21331,
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 21133
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6177": {
+   "park": "Johnny Behind the Rocks BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10718,
+     "record_name": "Lander Valley Community SRMA",
+     "acres_approx": 6129
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2138,
+     "record_name": "Lander Field Office",
+     "acres_approx": 2375823,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2388958
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6181": {
+   "park": "Divide Basin BLM Herd Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10751,
+     "record_name": "Rock Springs Field Office ERMA",
+     "acres_approx": 3288302
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1595,
+     "record_name": "Steamboat Mountain ACEC",
+     "acres_approx": 436286
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6182": {
+   "park": "Miner's Delight BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10760,
+     "record_name": "CDNST Destination SRMA",
+     "acres_approx": 82416
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 398,
+     "record_name": "South Pass Historical Landscape ACEC",
+     "acres_approx": 157523
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2138,
+     "record_name": "Lander Field Office",
+     "acres_approx": 2375823,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2388958
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6184": {
+   "park": "The Pinnacles Geologic Site BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10751,
+     "record_name": "Rock Springs Field Office ERMA",
+     "acres_approx": 3288302
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1595,
+     "record_name": "Steamboat Mountain ACEC",
+     "acres_approx": 436286
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1600,
+     "record_name": "Pinnacles ACEC",
+     "acres_approx": 1388
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-6185": {
+   "park": "South Pass Historic Landmark National Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1592,
+     "record_name": "South Pass Historic Landscape ACEC",
+     "acres_approx": 53117
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-6186": {
+   "park": "Atlantic City/South Pass BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10760,
+     "record_name": "CDNST Destination SRMA",
+     "acres_approx": 82416
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 398,
+     "record_name": "South Pass Historical Landscape ACEC",
+     "acres_approx": 157523
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2138,
+     "record_name": "Lander Field Office",
+     "acres_approx": 2375823,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 2388958
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-6187": {
+   "park": "South Pass Historic Mining Area BLM Historic Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6190": {
+   "park": "Oregon Buttes BLM Historic Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6191": {
+   "park": "Tri-Territory Site BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10751,
+     "record_name": "Rock Springs Field Office ERMA",
+     "acres_approx": 3288302
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1595,
+     "record_name": "Steamboat Mountain ACEC",
+     "acres_approx": 436286
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6192": {
+   "park": "Superior Mail Arrow BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10751,
+     "record_name": "Rock Springs Field Office ERMA",
+     "acres_approx": 3288302
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6193": {
+   "park": "South Pass Overlook BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10751,
+     "record_name": "Rock Springs Field Office ERMA",
+     "acres_approx": 3288302
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1592,
+     "record_name": "South Pass Historic Landscape ACEC",
+     "acres_approx": 53117
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-6194": {
+   "park": "False Parting of the Ways BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10751,
+     "record_name": "Rock Springs Field Office ERMA",
+     "acres_approx": 3288302
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1592,
+     "record_name": "South Pass Historic Landscape ACEC",
+     "acres_approx": 53117
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1601,
+     "record_name": "South Wind River ACEC",
+     "acres_approx": 278881
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6195": {
+   "park": "Crookston Ranch Cultural Site BLM Historic Preservation Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11032,
+     "record_name": "Killpecker Sand Dunes Open Play Area",
+     "acres_approx": 12724
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 11337,
+     "record_name": "Killpecker Sand Dunes SRMA",
+     "acres_approx": 39035
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6199": {
+   "park": "White Mountain Petroglyphs BLM Historic Preservation Site",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10751,
+     "record_name": "Rock Springs Field Office ERMA",
+     "acres_approx": 3288302
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+     "record": 1595,
+     "record_name": "Steamboat Mountain ACEC",
+     "acres_approx": 436286
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-6200": {
+   "park": "Overland Stage BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6203": {
+   "park": "Pilot Butte Wild Horse Scenic Tour BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10751,
+     "record_name": "Rock Springs Field Office ERMA",
+     "acres_approx": 3288302
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6215": {
+   "park": "Simpsons Hollow BLM Recreation Management Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10751,
+     "record_name": "Rock Springs Field Office ERMA",
+     "acres_approx": 3288302
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6216": {
+   "park": "Pilot Butte Overlook BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+     "agency": "BLM recreation SITE polygons (national, 3,478)",
+     "record": 10751,
+     "record_name": "Rock Springs Field Office ERMA",
+     "acres_approx": 3288302
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2155,
+     "record_name": "Rock Springs Field Office",
+     "acres_approx": 3582415,
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "GIS_Acres": 3606721
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : hit",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6219": {
+   "park": "Lombard Ferry State Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4322,
+     "record_name": "Seedskadee National Wildlife Refuge",
+     "acres_approx": 25835,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 25985
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 5279,
+     "record_name": "Seedskadee National Wildlife Refuge",
+     "acres_approx": 25835,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 25985
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6220": {
+   "park": "NHT Auto Tour Route BLM Interpretive Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 4322,
+     "record_name": "Seedskadee National Wildlife Refuge",
+     "acres_approx": 25835,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 25985
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 5279,
+     "record_name": "Seedskadee National Wildlife Refuge",
+     "acres_approx": 25835,
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Own_Type": "FED",
+     "GIS_Acres": 25985
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6221": {
+   "park": "Fontenelle Creek BLM Recreation Management Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2261,
+     "record_name": "Usbr",
+     "acres_approx": 730340,
+     "Mang_Name": "USBR",
+     "Des_Tp": "FOTH",
+     "Own_Type": "FED",
+     "GIS_Acres": 735338
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6232": {
+   "park": "Big Sandy Crossing State Historical Monument",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Wyoming State Parks: no answer (404)",
+    "A Wyoming State Parks, Historic Sites & Tr: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A Wyoming Game and Fish Department (AGOL o: no answer (404)",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

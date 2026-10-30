@@ -1,0 +1,711 @@
+{
+ "area": "US-FL",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0896": {
+   "park": "Wekiva National Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+     "agency": "Florida State Parks (DEP)",
+     "record": 101,
+     "record_name": "Lower Wekiva River Preserve State Park",
+     "acres_approx": 17935
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 191780,
+     "record_name": "Lower Wekiva River Preserve State Park",
+     "acres_approx": 17096,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 17220
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): hit",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-12121": {
+   "park": "Lower Reedy Creek: Rough Island North and South, and Johnson Island State Conservation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1",
+     "agency": "FWC",
+     "record": 64,
+     "record_name": "Kissimmee Chain of Lakes Area Wildlife Management Area",
+     "acres_approx": 19280
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "agency": "US Fish and Wildlife Service (approved boundary)",
+     "record": 403,
+     "record_name": "EVERGLADES HEADWATERS NATIONAL WILDLIFE REFUGE AND CONSERVATION AREA",
+     "acres_approx": 1415232
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 191930,
+     "record_name": "Kissimmee Chain of Lakes",
+     "acres_approx": 30660,
+     "Mang_Name": "RWD",
+     "Des_Tp": "LREC",
+     "Own_Type": "DIST",
+     "GIS_Acres": 30368
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: hit",
+    "A US Fish and Wildlife Service (approved b: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"johnson island north\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12123": {
+   "park": "Oak Creek, No Name Slough and Starvation Slough State Conservation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "agency": "US Fish and Wildlife Service (approved boundary)",
+     "record": 403,
+     "record_name": "EVERGLADES HEADWATERS NATIONAL WILDLIFE REFUGE AND CONSERVATION AREA",
+     "acres_approx": 1415232
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 191931,
+     "record_name": "Kissimmee River",
+     "acres_approx": 43221,
+     "Mang_Name": "RWD",
+     "Des_Tp": "WPA",
+     "Own_Type": "DIST",
+     "GIS_Acres": 43232
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"starvation slough name\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12124": {
+   "park": "Harold A. Campbell Public Use and STA 3/4 State Conservation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 190265,
+     "record_name": "Stormwater Treatment Areas",
+     "acres_approx": 46533,
+     "Mang_Name": "RWD",
+     "Des_Tp": "WPA",
+     "Own_Type": "DIST",
+     "GIS_Acres": 47574
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"campbell harold sta\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12125": {
+   "park": "Seaboard Marsh, Telex Marsh and Yates Marsh State Conservation Area",
+   "why_not": "needs-parcel",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "agency": "US Fish and Wildlife Service (approved boundary)",
+     "record": 417,
+     "record_name": "EVERGLADES TO GULF CONSERVATION AREA",
+     "acres_approx": 4028804
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: hit",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"seaboard marsh telex\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12130": {
+   "park": "Nubbin Slough Stormwater Treatment Area State Conservation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "agency": "US Fish and Wildlife Service (approved boundary)",
+     "record": 417,
+     "record_name": "EVERGLADES TO GULF CONSERVATION AREA",
+     "acres_approx": 4028804
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 190259,
+     "record_name": "Lake Okeechobee Water Retention Phosphorus Removal Project",
+     "acres_approx": 2331,
+     "Mang_Name": "RWD",
+     "Des_Tp": "WPA",
+     "Own_Type": "DIST",
+     "GIS_Acres": 2401
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"stormwater treatment nubbin\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12132": {
+   "park": "Chandler Slough State Conservation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "agency": "US Fish and Wildlife Service (approved boundary)",
+     "record": 403,
+     "record_name": "EVERGLADES HEADWATERS NATIONAL WILDLIFE REFUGE AND CONSERVATION AREA",
+     "acres_approx": 1415232
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 191931,
+     "record_name": "Kissimmee River",
+     "acres_approx": 43221,
+     "Mang_Name": "RWD",
+     "Des_Tp": "WPA",
+     "Own_Type": "DIST",
+     "GIS_Acres": 43232
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"chandler slough\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-12134": {
+   "park": "A-1 Flow Equalization Basin State Conservation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 190258,
+     "record_name": "Everglades Agricultural Area",
+     "acres_approx": 51890,
+     "Mang_Name": "RWD",
+     "Des_Tp": "WPA",
+     "Own_Type": "DIST",
+     "GIS_Acres": 51975
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"equalization basin flow\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-3621": {
+   "park": "Fort Foster State Historic Site",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+     "agency": "Florida State Parks (DEP)",
+     "record": 51,
+     "record_name": "Hillsborough River State Park",
+     "acres_approx": 3197
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 86290,
+     "record_name": "Open Space",
+     "acres_approx": 17943,
+     "Mang_Name": "RWD",
+     "Des_Tp": "LOTH",
+     "Own_Type": "DIST",
+     "GIS_Acres": 18062
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 191856,
+     "record_name": "Hillsborough River State Park",
+     "acres_approx": 3195,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3319
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): hit",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "US-3656": {
+   "park": "Beker - South Fork State Park",
+   "why_not": "pin-doubt",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 190301,
+     "record_name": "Little Manatee River (SWFWMD)",
+     "acres_approx": 1031,
+     "Mang_Name": "RWD",
+     "Des_Tp": "WPA",
+     "Own_Type": "DIST",
+     "GIS_Acres": 1071
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"south beker fork\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-4559": {
+   "park": "Florida Trail National Scenic Trail",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 108305,
+     "record_name": "Kissimmee Lakefront Park",
+     "acres_approx": 32,
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "GIS_Acres": 26
+    }
+   ],
+   "leads": [
+    {
+     "title": "Florida National Scenic Trail Line",
+     "url": "https://services9.arcgis.com/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer",
+     "owner": "FloridaTrailAssociation",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Florida_Scenic_Highways",
+     "url": "https://services1.arcgis.com/O1JpcwDW8sjYuddV/arcgis/rest/services/Florida_Scenic_Highways/FeatureServer",
+     "owner": "GeoMap_Publisher",
+     "type": "Feature Service"
+    },
+    {
+     "title": "[2024 FWP] OGT – Florida National Scenic Trail",
+     "url": "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/FNST/FeatureServer",
+     "owner": "Stephen.Clapp@FloridaDEP.gov_FDEP",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"florida scenic\": 5 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-6281": {
+   "park": "Loxahatchee River National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+     "agency": "Florida State Parks (DEP)",
+     "record": 95,
+     "record_name": "Jonathan Dickinson State Park",
+     "acres_approx": 10473
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 191861,
+     "record_name": "Jonathan Dickinson State Park",
+     "acres_approx": 11441,
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 11466
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): hit",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"loxahatchee scenic wild\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7374": {
+   "park": "Wysong Park State Conservation Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "FRMP_Wysong_Add",
+     "url": "https://services8.arcgis.com/pX44G7gzoOvJ5JiJ/arcgis/rest/services/FRMP_Wysong_Add/FeatureServer",
+     "owner": "orchideric",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"wysong\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8329": {
+   "park": "Choctawhatchee & Holmes Creek State Conservation Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"choctawhatchee holmes\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8689": {
+   "park": "Little Creek, McAlpin Landing State Conservation Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"mcalpin landing little\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8696": {
+   "park": "Purvis Landing, Otter Springs, Shingle Lndg State Conservation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/59dBAbzYnRk8johU/arcgis/rest/services/SRWMD_LM_Ownership/FeatureServer/0",
+     "agency": "Suwannee River Water Management District",
+     "record": null,
+     "record_name": "OTTER SPRINGS",
+     "acres_approx": 499
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "agency": "US Fish and Wildlife Service (approved boundary)",
+     "record": 365,
+     "record_name": "LOWER SUWANNEE NATIONAL WILDLIFE REFUGE",
+     "acres_approx": 87440
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 190457,
+     "record_name": "Wannee Conservation Area",
+     "acres_approx": 3133,
+     "Mang_Name": "RWD",
+     "Des_Tp": "LCA",
+     "Own_Type": "DIST",
+     "GIS_Acres": 3396
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: hit",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: hit",
+    "A USGS PAD-US: hit"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "US-8701": {
+   "park": "Shelly, Duck Pond, Hartsfield State Conservation Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"hartsfield shelly duck\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8705": {
+   "park": "Stephen Foster State Conservation Area",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/59dBAbzYnRk8johU/arcgis/rest/services/SRWMD_LM_Ownership/FeatureServer/0",
+     "agency": "Suwannee River Water Management District",
+     "record": null,
+     "record_name": "BIG PINE",
+     "acres_approx": 0
+    }
+   ],
+   "leads": [
+    {
+     "title": "Stephen Foster SP",
+     "url": "https://services1.arcgis.com/fuy3eYDIPUqhqR2U/arcgis/rest/services/Stephen_Foster_SP/FeatureServer",
+     "owner": "billparken",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: hit",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"stephen foster\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8712": {
+   "park": "White Springs, Little Shoals, Gar Pond State Conservation Area",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: no polygon at the pin",
+    "A US Fish and Wildlife Service (approved b: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"springs little shoals\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8719": {
+   "park": "Horse Creek State Conservation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1",
+     "agency": "FWC",
+     "record": 37,
+     "record_name": "Lake Marion Creek Wildlife Management Area",
+     "acres_approx": 7770
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "agency": "US Fish and Wildlife Service (approved boundary)",
+     "record": 286,
+     "record_name": "LAKE WALES RIDGE NATIONAL WILDLIFE REFUGE",
+     "acres_approx": 17281
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 190306,
+     "record_name": "Upper Lake Marion Creek Watershed",
+     "acres_approx": 289,
+     "Mang_Name": "RWD",
+     "Des_Tp": "WPA",
+     "Own_Type": "DIST",
+     "GIS_Acres": 290
+    }
+   ],
+   "leads": [
+    {
+     "title": "Horse Trailheads in Kentucky",
+     "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KDFWR_Horse_Trailheads_WM_gdb/FeatureServer",
+     "owner": "Kentucky_DGI",
+     "type": "Feature Service"
+    },
+    {
+     "title": "ACTGOV Horse Paddock Assets",
+     "url": "https://services1.arcgis.com/E5n4f1VY84i0xSjy/arcgis/rest/services/ACTGOV_Horse_Paddock_Assets/FeatureServer",
+     "owner": "cityoperationsactgov",
+     "type": "Feature Service"
+    },
+    {
+     "title": "BLM Natl Wild Horse and Burro Herd Mgmt Area Polygons",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Wild_Horse_and_Burro_Heard_Mgmt_Area_Polygons/FeatureServer",
+     "owner": "blm_arcgis_hub_natl",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Florida State Parks (DEP): no polygon at the pin",
+    "A Florida Forest Service: no polygon at the pin",
+    "A Suwannee River Water Management District: no polygon at the pin",
+    "A St. Johns River Water Management Distric: no polygon at the pin",
+    "A Florida DEP Division of State Lands: no answer (rest)",
+    "A FWC: hit",
+    "A US Fish and Wildlife Service (approved b: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"horse\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  }
+ }
+}

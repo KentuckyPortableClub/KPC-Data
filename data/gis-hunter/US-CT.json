@@ -1,0 +1,257 @@
+{
+ "area": "US-CT",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0881": {
+   "park": "Eightmile National Wild and Scenic River",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
+     "agency": "Connecticut DEEP",
+     "record": 4117,
+     "record_name": "Devils Hopyard State Park",
+     "acres_approx": 852
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0",
+     "agency": "CT DEEP (deepgis account)",
+     "record": 5437,
+     "record_name": "Devils Hopyard State Park",
+     "acres_approx": 245
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 52531,
+     "record_name": "Devils Hopyard State Park",
+     "acres_approx": 228,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SP",
+     "Own_Type": "STAT",
+     "GIS_Acres": 260
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Connecticut DEEP: hit",
+    "A CT DEEP (deepgis account): hit",
+    "A CT DEEP (credit: Department of Energy & : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"eightmile scenic wild\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-0882": {
+   "park": "Farmington National Wild and Scenic River",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0",
+     "agency": "CT DEEP (deepgis account)",
+     "record": 2889,
+     "record_name": "Chapin Park",
+     "acres_approx": 1
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Connecticut DEEP: no polygon at the pin",
+    "A CT DEEP (deepgis account): hit",
+    "A CT DEEP (credit: Department of Energy & : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"farmington scenic wild\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-4561": {
+   "park": "New England Trail National Scenic Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Connecticut DEEP: no polygon at the pin",
+    "A CT DEEP (deepgis account): no polygon at the pin",
+    "A CT DEEP (credit: Department of Energy & : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"england scenic new\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-6860": {
+   "park": "Ferry Landing State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
+     "agency": "Connecticut DEEP",
+     "record": 4057,
+     "record_name": "Marine District Headquarters",
+     "acres_approx": 12
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 51673,
+     "record_name": "Marine District Headquarters",
+     "acres_approx": 4,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 7
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Connecticut DEEP: hit",
+    "A CT DEEP (deepgis account): no polygon at the pin",
+    "A CT DEEP (credit: Department of Energy & : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"landing ferry\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-6875": {
+   "park": "The Preserve Essex Land Trust State Park Preserve",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Essex Wildlife Trust Winter Wetland Bird Surveys 2021 to 22",
+     "url": "https://services.arcgis.com/36oR7fxwYZcqhQIh/arcgis/rest/services/Essex_Wildlife_Trust_Winter_Wetland_Bird_Surveys_2021_to_22/FeatureServer",
+     "owner": "CharlotteM_EWTConsTeam",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A Connecticut DEEP: no polygon at the pin",
+    "A CT DEEP (deepgis account): no polygon at the pin",
+    "A CT DEEP (credit: Department of Energy & : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"essex trust\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-7529": {
+   "park": "Beckley Iron Furnace State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
+     "agency": "Connecticut DEEP",
+     "record": 4044,
+     "record_name": "Industrial Monument Historic Preserve",
+     "acres_approx": 2
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0",
+     "agency": "CT DEEP (deepgis account)",
+     "record": 10121,
+     "record_name": "Industrial Monument Historic Preserve",
+     "acres_approx": 1
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 51664,
+     "record_name": "Industrial Monument Historic Preserve",
+     "acres_approx": 1,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 1
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Connecticut DEEP: hit",
+    "A CT DEEP (deepgis account): hit",
+    "A CT DEEP (credit: Department of Energy & : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"beckley furnace iron\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7542": {
+   "park": "Satan's Kingdom State Recreation Area",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
+     "agency": "Connecticut DEEP",
+     "record": 4257,
+     "record_name": "Farmington River Water Access (New Hartford)",
+     "acres_approx": 7
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 57476,
+     "record_name": "Farmington River Water Access",
+     "acres_approx": 7,
+     "Mang_Name": "UNK",
+     "Des_Tp": "SREC",
+     "Own_Type": "STAT",
+     "GIS_Acres": 8
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Connecticut DEEP: hit",
+    "A CT DEEP (deepgis account): no polygon at the pin",
+    "A CT DEEP (credit: Department of Energy & : no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"kingdom satan\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-7544": {
+   "park": "Windsor Locks Canal State Trail",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Connecticut DEEP: no polygon at the pin",
+    "A CT DEEP (deepgis account): no polygon at the pin",
+    "A CT DEEP (credit: Department of Energy & : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"windsor locks canal\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7547": {
+   "park": "Captain George Comer Memorial State Park",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
+     "agency": "Connecticut DEEP",
+     "record": 4215,
+     "record_name": "Captain Comer Memorial",
+     "acres_approx": 2
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Connecticut DEEP: hit",
+    "A CT DEEP (deepgis account): no polygon at the pin",
+    "A CT DEEP (credit: Department of Energy & : no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin"
+   ],
+   "verdict": "candidate: name match"
+  }
+ }
+}

@@ -1,0 +1,215 @@
+{
+ "area": "US-ME",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "US-0337": {
+   "park": "Carlton Pond Wetland Management District",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"district wetland carlton\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-10714": {
+   "park": "International Appalachian Trail--Sentier International des Appalaches National Historic Trail",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 3386,
+     "record_name": "Katahdin Woods and Waters National Monument",
+     "acres_approx": 88876,
+     "Mang_Name": "NPS",
+     "Des_Tp": "NM",
+     "Own_Type": "FED",
+     "GIS_Acres": 89562
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 8321,
+     "record_name": "Elliotsville Plantation Inc. - Quimby Lands",
+     "acres_approx": 9702,
+     "Mang_Name": "NGO",
+     "Des_Tp": "PCON",
+     "Own_Type": "NGO",
+     "GIS_Acres": 9675
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"international appalachian appalaches\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+  },
+  "US-2402": {
+   "park": "Penobscot River Corridor - Katahdin Woods and Waters National Monument",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"penobscot monument corridor\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7976": {
+   "park": "Maine Acadian Culture National Heritage Site",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"heritage acadian culture\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-7977": {
+   "park": "Roosevelt Campobello International Park",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"international campobello roosevelt\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-8287": {
+   "park": "Capitol State Park",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Conserved_Lands_Fee/FeatureServer/0",
+     "agency": "State of Maine conserved lands (Bureau of Parks and Lands / IFW)",
+     "record": 59957,
+     "record_name": "CAPITAL PARK",
+     "acres_approx": 10
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 207532,
+     "record_name": "Capital Park",
+     "acres_approx": 10,
+     "Mang_Name": "UNK",
+     "Des_Tp": "LP",
+     "Own_Type": "UNK",
+     "GIS_Acres": 22
+    }
+   ],
+   "leads": [
+    {
+     "title": "PLANNINGCADASTRE_overlay_capitol_view_corridors",
+     "url": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_view_corridors/FeatureServer",
+     "owner": "CTM.Publisher",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Capitol Campus points",
+     "url": "https://services9.arcgis.com/VatvCKAYJJVi8sva/arcgis/rest/services/Capitol_Campus_points/FeatureServer",
+     "owner": "DES_GIS_Support",
+     "type": "Feature Service"
+    },
+    {
+     "title": "PLANNINGCADASTRE_overlay_capitol_dominance",
+     "url": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_dominance/FeatureServer",
+     "owner": "CTM.Publisher",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"capitol\": 7 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-8491": {
+   "park": "Bog Brook Wildlife Management Area",
+   "why_not": "no-layer",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Two Foot Topographic Contours - Bow Bog Brook-Merrimack River (0107000603) - smoothed",
+     "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01070006_smooth/FeatureServer/5",
+     "owner": "NHGRANIT",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way",
+     "url": "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way/FeatureServer",
+     "owner": "awilson_linwood",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way",
+     "url": "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way/FeatureServer",
+     "owner": "awilson_linwood",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"brook bog\": 3 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "US-9174": {
+   "park": "Mahoosuc Ecological Reserve",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Conserved_Lands_Fee/FeatureServer/0",
+     "agency": "State of Maine conserved lands (Bureau of Parks and Lands / IFW)",
+     "record": 10859,
+     "record_name": "International Paper Company",
+     "acres_approx": 3282
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 206767,
+     "record_name": "Mahoosucs",
+     "acres_approx": 3403,
+     "Mang_Name": "SPR",
+     "Des_Tp": "LOTH",
+     "Own_Type": "STAT",
+     "GIS_Acres": 3367
+    }
+   ],
+   "leads": [
+    {
+     "title": "Mahoosuc_Ridge_to_The_River_Challenge_Race_Map",
+     "url": "https://services5.arcgis.com/lqtrRsdwvTbuk1xO/arcgis/rest/services/Mahoosuc_Ridge_to_The_River_Challenge_Race_Map/FeatureServer",
+     "owner": "kirksiegel",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A State of Maine conserved lands (Bureau o: hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"mahoosuc\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  }
+ }
+}
