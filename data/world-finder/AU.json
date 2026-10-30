@@ -3,8 +3,8 @@
  "run": "2026-10-30",
  "parks": 11307,
  "open": 4330,
- "key_candidates": 1042,
- "layer_candidates": 153,
+ "key_candidates": 361,
+ "layer_candidates": 0,
  "layers_tried": [
   "https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer/0",
   "https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer/1",
@@ -16,11 +16,11 @@
   "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer/0",
   "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer/0",
   "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer/0",
-  "https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Aerial_Photo_Coverage_Areas/MapServer/0",
-  "https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0",
   "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer/6",
   "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer/7",
-  "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer/11"
+  "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer/11",
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/0",
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/1"
  ],
  "no_layer_groups": {
   "conservation reserve": [
@@ -864,7 +864,11 @@
    "AU-10325",
    "AU-10364",
    "AU-10381",
+   "AU-10180",
    "AU-10191",
+   "AU-10195",
+   "AU-10207",
+   "AU-10212",
    "AU-10225",
    "AU-10246",
    "AU-10261",
@@ -1240,6 +1244,7 @@
    "AU-9864",
    "AU-9865",
    "AU-9866",
+   "AU-9859",
    "AU-10050",
    "AU-10780",
    "AU-10781",
@@ -1277,6 +1282,8 @@
    "AU-9058",
    "AU-9059",
    "AU-9060",
+   "AU-8812",
+   "AU-8867",
    "AU-9640",
    "AU-9641",
    "AU-9642",
@@ -1347,6 +1354,7 @@
    "AU-9875",
    "AU-9876",
    "AU-9877",
+   "AU-8813",
    "AU-10189",
    "AU-10231",
    "AU-10238",
@@ -1493,6 +1501,8 @@
    "AU-8938",
    "AU-9311",
    "AU-9312",
+   "AU-10260",
+   "AU-10383",
    "AU-9656",
    "AU-9657",
    "AU-9658",
@@ -1818,6 +1828,7 @@
    "AU-11235",
    "AU-11287",
    "AU-11371",
+   "AU-11304",
    "AU-11317",
    "AU-11290",
    "AU-11372"
@@ -2246,6 +2257,7 @@
    "AU-10093",
    "AU-10126",
    "AU-10073",
+   "AU-10758",
    "AU-10101",
    "AU-10134",
    "AU-10084",
@@ -3145,5 +3157,5 @@
  },
  "layers_found_new": 0,
  "stage1": "paused (time): carries on next chunk",
- "seconds": 2728
+ "seconds": 2681
 }

@@ -3,11 +3,7 @@
  "cc": "GB",
  "date": "2026-10-30",
  "status": "paused (out of time, will carry on)",
- "steps_done": [
-  "known",
-  "servers",
-  "wfs"
- ],
+ "steps_done": [],
  "bands": {
   "A": 162,
   "B": 66,
@@ -24,11 +20,6 @@
   {
    "step": "known",
    "what": "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer/50",
-   "found": true
-  },
-  {
-   "step": "known",
-   "what": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
    "found": true
   }
  ],
