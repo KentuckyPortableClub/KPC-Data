@@ -68,7 +68,7 @@
    "parks": 167,
    "checked": 167,
    "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-10-29"
   },
   "US-MS": {
    "status": "done",
@@ -103,20 +103,20 @@
    "parks": 298,
    "checked": 298,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-30"
   },
   "US-IA": {
    "status": "failed",
    "parks": 181,
    "updated": "2026-10-30",
-   "why": "maps 82 -> 62"
+   "why": "maps 82 -> 64"
   },
   "US-ND": {
    "status": "done",
    "parks": 155,
    "checked": 155,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-30"
   },
   "US-SD": {
    "status": "done",
@@ -130,7 +130,7 @@
    "parks": 494,
    "checked": 494,
    "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-10-29"
   },
   "US-NY": {
    "status": "done",
@@ -144,7 +144,7 @@
    "parks": 134,
    "checked": 134,
    "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-10-29"
   },
   "US-CT": {
    "status": "done",
@@ -158,14 +158,14 @@
    "parks": 61,
    "checked": 61,
    "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-10-29"
   },
   "US-MA": {
    "status": "done",
    "parks": 421,
    "checked": 421,
    "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-10-29"
   },
   "US-VT": {
    "status": "done",
@@ -186,7 +186,7 @@
    "parks": 148,
    "checked": 148,
    "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-10-29"
   },
   "US-MD": {
    "status": "done",
@@ -200,7 +200,7 @@
    "parks": 89,
    "checked": 89,
    "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-10-29"
   },
   "US-DC": {
    "status": "done",
@@ -221,7 +221,7 @@
    "parks": 123,
    "checked": 123,
    "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-10-29"
   },
   "US-OK": {
    "status": "done",
@@ -250,52 +250,37 @@
    "checked": 5,
    "left": 193,
    "updated": "2026-10-29"
-  },
-  "US-OH": {
-   "status": "done",
-   "parks": 276,
-   "checked": 276,
-   "left": 0,
-   "updated": "2026-10-30"
-  },
-  "US-CO": {
-   "status": "partial",
-   "parks": 276,
-   "checked": 35,
-   "left": 241,
-   "updated": "2026-10-30"
   }
  },
  "hosts": {
   "map.co.door.wi.us": 1793408717.0830843,
-  "iowaculture.gov": 1793470401.4579036,
-  "www.cgcounty.org": 1793470509.805759,
-  "www.mass-trails.org": 1793480488.0613246
+  "iowaculture.gov": 1793486206.7553685,
+  "www.cgcounty.org": 1793486529.479077
  },
  "last": {
   "when": "2026-10-30",
   "areas": [
-   "US-SD",
-   "US-OH",
+   "US-MN",
    "US-IA",
-   "US-RI",
-   "US-NJ",
-   "US-SC",
+   "US-ND",
+   "US-SD",
    "US-PA",
-   "US-LA"
+   "US-NY",
+   "US-NJ",
+   "US-CT"
   ],
   "stat": {
-   "requests": 1223,
-   "parks": 600,
-   "maps_ok": 313,
-   "maps_found": 290,
-   "dates": 0,
-   "rules": 170,
-   "browser": 463,
-   "robots": 0,
-   "strikes": 0,
-   "errors": 0,
-   "skipped_fresh": 1649
+   "requests": 1650,
+   "parks": 564,
+   "maps_ok": 215,
+   "maps_found": 194,
+   "dates": 12,
+   "rules": 441,
+   "browser": 119,
+   "robots": 63,
+   "strikes": 6,
+   "errors": 6,
+   "skipped_fresh": 180
   }
  }
 }
