@@ -1,0 +1,35 @@
+{
+ "request": "requests/10-auto-US-0526.json",
+ "id": "10-auto-US-0526",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-0526",
+  "name": "Wildcat Hollow State Nature Preserve",
+  "agency": "",
+  "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130845/WildcatHollowHunterMap.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:35Z",
+ "results": [
+  {
+   "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130845/WildcatHollowHunterMap.pdf",
+   "map_url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130845/WildcatHollowHunterMap.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}
