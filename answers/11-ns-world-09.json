@@ -1,0 +1,610 @@
+{
+ "request": "requests/11-ns-world-09.json",
+ "id": "11-ns-world-09",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NOT SURE map check (world, ZA): screenshots in order: 1=ZA-0097 (record); 2=ZA-0097 (map); 3=ZA-0103 (record); 4=ZA-0103 (map); 5=ZA-0142 (record); 6=ZA-0142 (map); 7=ZA-0145 (record); 8=ZA-0145 (map); 9=ZA-0170 (record); 10=ZA-0170 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "Chat 11 NOT SURE map check (world, ZA): screenshots in order: 1=ZA-0097 (record); 2=ZA-0097 (map); 3=ZA-0103 (record); 4=ZA-0103 (map); 5=ZA-0142 (record); 6=ZA-0142 (map); 7=ZA-0145 (record); 8=ZA-0145 (map); 9=ZA-0170 (record); 10=ZA-0170 (map). The map shots are centred on the POTA pin (zoom 14).",
+  "items": [
+   {
+    "ref": "ZA-0097",
+    "park": "Mapungubwe National Park",
+    "record": "Mapungupwe National Park",
+    "area": "ZA"
+   },
+   {
+    "ref": "ZA-0103",
+    "park": "Walter Sisulu Botanical Gardens",
+    "record": "Walter Sisulu National Botanical Garden",
+    "area": "ZA"
+   },
+   {
+    "ref": "ZA-0142",
+    "park": "Pilansberg National Park",
+    "record": "Pilanesberg National Park",
+    "area": "ZA"
+   },
+   {
+    "ref": "ZA-0145",
+    "park": "Magaliesberg Protected Area",
+    "record": "Magaliesberg Protected Natural Environment",
+    "area": "ZA"
+   },
+   {
+    "ref": "ZA-0170",
+    "park": "Klipreviersberg Nature Reserve",
+    "record": "Klipriviersberg Nature Reserve",
+    "area": "ZA"
+   }
+  ],
+  "urls": [
+   "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=143&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=29.3472%2C-22.2218&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/2/query?objectIds=37&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F2&center=27.8446%2C-26.0872&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=40&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=27.0758%2C-25.2403&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=278&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=27.594%2C-25.808&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=131&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=28.0117%2C-26.3033&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   }
+  ]
+ },
+ "answered": "2026-10-30 18:16Z",
+ "results": [
+  {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=143&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=143&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Protected Areas (DFFE2022Q1) (ID: 1)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > Environmental2 (MapServer) > Protected Areas (DFFE2022Q1) > query API Reference\nQuery: Protected Areas (DFFE2022Q1) (ID: 1)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 143\nWDPAID: 308687\nCUR_NME: Mapungupwe National Park\nWMCM_TYPE: National\nMAJ_TYPE: PA\nSITE_TYPE: National Park\nD_DCLAR: 892080000000\nLEGAL_STAT: Designated\nGIS_AREA: 15236.5232121\nPROC_DOC: https://portal.environment.gov.za/PortalDownloads/PACA_Gazettes/PA/NP/Mapungubwe_NP.pdf\nShape_Length: 1.2051931650267098\nShape_Area: 0.013345304529531584",
+   "links": [
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/login?returnUrl=https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Login"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer",
+     "text": "Environmental2 (MapServer)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1",
+     "text": "Protected Areas (DFFE2022Q1)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query",
+     "text": "query"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/help/en/rest/router.html?f=rest/services/Environmental2/MapServer/1/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/143",
+     "text": "143"
+    }
+   ],
+   "screenshot": "answers/11-ns-world-09-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=29.3472%2C-22.2218&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=29.3472%2C-22.2218&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri South Africa | Esri | TomTom | Garmin | NASA | NGA | USGS | METI/NASA | Depratment of Environment Affairs, DEA\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-world-09-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/2/query?objectIds=37&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/2/query?objectIds=37&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Conservation Areas (DFFE2022Q1) (ID: 2)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > Environmental2 (MapServer) > Conservation Areas (DFFE2022Q1) > query API Reference\nQuery: Conservation Areas (DFFE2022Q1) (ID: 2)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 37\nWDPAID: 555570902\nCUR_NME: Walter Sisulu National Botanical Garden\nWMCM_TYPE: National\nMAJ_TYPE: CA\nSITE_TYPE: Botanical Garden\nD_DCLAR: 462585600000\nLEGAL_STAT: Designated\nGIS_AREA: 89.7407351591\nShape_Length: 0.08054301740857847\nShape_Area: 8.096612712740487E-5",
+   "links": [
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/login?returnUrl=https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Login"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer",
+     "text": "Environmental2 (MapServer)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/2",
+     "text": "Conservation Areas (DFFE2022Q1)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/2/query",
+     "text": "query"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/help/en/rest/router.html?f=rest/services/Environmental2/MapServer/2/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/2/37",
+     "text": "37"
+    }
+   ],
+   "screenshot": "answers/11-ns-world-09-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F2&center=27.8446%2C-26.0872&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F2&center=27.8446%2C-26.0872&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri South Africa | Esri | TomTom | Garmin | NASA | NGA | USGS | METI/NASA\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-world-09-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=40&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=40&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Protected Areas (DFFE2022Q1) (ID: 1)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > Environmental2 (MapServer) > Protected Areas (DFFE2022Q1) > query API Reference\nQuery: Protected Areas (DFFE2022Q1) (ID: 1)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 40\nWDPAID: 9129\nCUR_NME: Pilanesberg National Park\nWMCM_TYPE: National\nMAJ_TYPE: PA\nSITE_TYPE: Nature Reserve\nD_DCLAR: 449625600000\nLEGAL_STAT: Designated\nGIS_AREA: 50277.136333\nPROC_DOC: https://portal.environment.gov.za/PortalDownloads/PACA_Gazettes/PA/NR/Pilanesberg_National_Park_NR.pdf\nShape_Length: 1.6060920167819708\nShape_Area: 0.04505410974577803",
+   "links": [
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/login?returnUrl=https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Login"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer",
+     "text": "Environmental2 (MapServer)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1",
+     "text": "Protected Areas (DFFE2022Q1)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query",
+     "text": "query"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/help/en/rest/router.html?f=rest/services/Environmental2/MapServer/1/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/40",
+     "text": "40"
+    }
+   ],
+   "screenshot": "answers/11-ns-world-09-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=27.0758%2C-25.2403&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=27.0758%2C-25.2403&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri South Africa | Esri | TomTom | Garmin | NASA | NGA | USGS | METI/NASA | Depratment of Environment Affairs, DEA\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-world-09-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=278&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=278&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Protected Areas (DFFE2022Q1) (ID: 1)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > Environmental2 (MapServer) > Protected Areas (DFFE2022Q1) > query API Reference\nQuery: Protected Areas (DFFE2022Q1) (ID: 1)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 278\nWDPAID: 555563482\nCUR_NME: Magaliesberg Protected Natural Environment\nWMCM_TYPE: National\nMAJ_TYPE: PA\nSITE_TYPE: Protected Environment\nD_DCLAR: 768009600000\nLEGAL_STAT: Designated\nGIS_AREA: 34355.8645062\nPROC_DOC: https://portal.environment.gov.za/PortalDownloads/PACA_Gazettes/PA/PE/Magaliesberg_PE.pdf\nShape_Length: 2.9264902197666434\nShape_Area: 0.030916703461726872",
+   "links": [
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/login?returnUrl=https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Login"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer",
+     "text": "Environmental2 (MapServer)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1",
+     "text": "Protected Areas (DFFE2022Q1)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query",
+     "text": "query"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/help/en/rest/router.html?f=rest/services/Environmental2/MapServer/1/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/278",
+     "text": "278"
+    }
+   ],
+   "screenshot": "answers/11-ns-world-09-7.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=27.594%2C-25.808&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=27.594%2C-25.808&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri South Africa | Esri | TomTom | Garmin | NASA | NGA | USGS | METI/NASA | Depratment of Environment Affairs, DEA\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-world-09-8.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=131&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=131&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Protected Areas (DFFE2022Q1) (ID: 1)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > Environmental2 (MapServer) > Protected Areas (DFFE2022Q1) > query API Reference\nQuery: Protected Areas (DFFE2022Q1) (ID: 1)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 131\nWDPAID: 300628\nCUR_NME: Klipriviersberg Nature Reserve\nWMCM_TYPE: National\nMAJ_TYPE: PA\nSITE_TYPE: Nature Reserve\nD_DCLAR: 466128000000\nLEGAL_STAT: Designated\nGIS_AREA: 611.352253242\nPROC_DOC: https://portal.environment.gov.za/PortalDownloads/PACA_Gazettes/PA/NR/Klipriviersberg_NR.pdf\nShape_Length: 0.1830982950781727\nShape_Area: 5.525178216907112E-4",
+   "links": [
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/login?returnUrl=https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Login"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer",
+     "text": "Environmental2 (MapServer)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1",
+     "text": "Protected Areas (DFFE2022Q1)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query",
+     "text": "query"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/help/en/rest/router.html?f=rest/services/Environmental2/MapServer/1/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/131",
+     "text": "131"
+    }
+   ],
+   "screenshot": "answers/11-ns-world-09-9.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=28.0117%2C-26.3033&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=28.0117%2C-26.3033&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri South Africa | Esri | TomTom | Garmin | NASA | NGA | USGS | METI/NASA | Depratment of Environment Affairs, DEA\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-world-09-10.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 92,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 5
+ },
+ "short": "10 result(s), 10 read OK, 10 screenshot(s)"
+}
