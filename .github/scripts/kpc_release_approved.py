@@ -55,6 +55,19 @@ def keyed_parking():
     return out, added
 
 
+def changed_since_yes(it, rel):
+    """Oct 30: a folder YES is for the build chat 11 sampled. Find the commit that wrote this YES into approved.json and compare the held
+    folder then and now (git tree ids). Different = a newer rebuild came in after the YES: never released on an old YES."""
+    import subprocess
+    g = lambda *a: subprocess.run(['git', '-C', str(W.DATA)] + list(a), capture_output=True, text=True).stdout.strip()
+    snip = str(it.get('chat11') or '')[:40]
+    c = g('log', '-1', '--format=%H', '-S', snip, '--', 'data/waiting/approved.json')
+    if not c: return False   # no history to compare (shallow checkout): trust the YES as before
+    path = f'data/waiting/in/{rel}'.rstrip('/')
+    then, now = g('rev-parse', f'{c}:{path}'), g('rev-parse', f'HEAD:{path}')
+    return bool(then and now and then != now and not then.startswith(c[:0] + 'fatal'))
+
+
 def main():
     A = W.load(W.W / 'approved.json', {}) or {}
     items = A.get('items') or []
@@ -64,7 +77,7 @@ def main():
         key = json.dumps(it, sort_keys=True, ensure_ascii=False)
         if key in U: continue
         v = str(it.get('chat11') or '').strip()
-        if not (re.match(r'^(YES|PASS)\b', v, re.I) and str(it.get('by') or '').strip().lower() == 'chat 11'):   # Brandon 5:16 PM: 'Waiting Room 11 has to approve': only chat 11's own written YES / PASS
+        if not (re.match(r'^(?:KEY |LAYER )?(YES|PASS)\b', v, re.I) and str(it.get('by') or '').strip().lower() == 'chat 11'):   # Oct 30: chat 11 writes 'KEY YES ...' for keys   # Brandon 5:16 PM: 'Waiting Room 11 has to approve': only chat 11's own written YES / PASS
             log.append({'item': it, 'result': 'skipped: no YES / PASS written by chat 11'}); continue
         if it.get('what') == 'keyed-parking':
             files, n = keyed_parking()
@@ -76,6 +89,8 @@ def main():
         elif it.get('path'):
             if not str(it.get('chat2') or '').strip(): log.append({'item': it, 'result': "skipped: no chat 2 recheck (Rule G-4)"}); continue
             rel = str(it['path']).replace('data/waiting/in/', '')
+            if rel.endswith('/') and (W.W / 'in' / rel).is_dir() and changed_since_yes(it, rel):
+                log.append({'item': it, 'result': 'skipped: the held build changed after the YES (a newer rebuild was copied in): chat 11 re-samples (data/waiting/preview/)'}); continue
             if rel.endswith('/') and (W.W / 'in' / rel).is_dir():   # a whole folder approved (a key rebuild: data/us-key/)
                 for f in sorted((W.W / 'in' / rel).rglob('*.json*')):
                     r2 = str(f.relative_to(W.W / 'in'))
