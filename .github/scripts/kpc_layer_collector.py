@@ -111,6 +111,105 @@ def check(ref, agency, url, field):
     return 'asked', f"pin inside '{rn[:50]}' ({ac:,} ac), {tier}: question for chat 11", q, {'url': url}
 
 
+# ------------------------------------------------------------------------------------------------ crawler layers (Brandon Oct 30 10:41 AM)
+ATLAS_LINE = re.compile(r'^\s+- (.+?): (https?://\S+?/(?:MapServer|FeatureServer)/\d+) \(name field ([^)]*)\)')
+CRAWL_MAX = int(os.environ.get('CRAWL_MAX') or 40)
+
+
+def open_parks(area):
+    """Parks of an area still WITHOUT an official outline, with their POTA pins: {ref: (la, lo, name)}."""
+    import glob
+    if area.startswith('US-'):
+        K = (load(LINKS / 'data' / 'us-key' / f'{area}.json', {}) or {}).get('parks') or {}
+        P = (load(f'data/parkinfo/{area}.json', {}) or {}).get('parks') or {}
+        return {r: (v[5], v[6], v[0]) for r, v in P.items() if len(v) > 6 and v[5] is not None and (K.get(r) or {}).get('g') != 'official'}
+    if area.startswith('CA-'):
+        K = (load(LINKS / 'data' / 'ca-key' / f'{area}.json', {}) or {}).get('parks') or {}
+        rows = {r[1]: (r[3], r[4], r[2]) for r in (load('data/canada.json', {}) or {}).get('rows') or [] if r and r[0] == 'POTA'}
+        return {r: rows[r] for r, v in K.items() if r in rows and (v or {}).get('g') != 'official'}
+    cc = area[2:] if area.startswith('W-') else area
+    K = (load(LINKS / 'data' / 'world-key' / f'{cc}.json', {}) or {}).get('parks') or {}
+    out = {}
+    for f in glob.glob('data/pota/t/*.json'):
+        for row in load(f, []) or []:
+            if isinstance(row, list) and len(row) >= 4 and str(row[0]).startswith(cc + '-') and not (K.get(row[0]) or {}).get('m'):
+                out[row[0]] = (row[2], row[3], row[1])
+    return out
+
+
+def inside(x, y, ring):
+    c = False; j = len(ring) - 1
+    for i in range(len(ring)):
+        xi, yi = ring[i][0], ring[i][1]; xj, yj = ring[j][0], ring[j][1]
+        if (yi > y) != (yj > y) and x < (xj - xi) * (y - yi) / ((yj - yi) or 1e-12) + xi: c = not c
+        j = i
+    return c
+
+
+def crawled_layers(want):
+    """Every polygon layer the atlas crawler listed (agency-atlas/<area>.md '## Layers on these servers')."""
+    out = []
+    for f in sorted((LINKS / '.claude' / 'build' / 'research' / 'agency-atlas').glob('*.md')):
+        if want and f.stem not in want: continue
+        m = re.search(r'\n## Layers on these servers \(atlas crawler[^\n]*\n(.*?)(?=\n## |\Z)', f.read_text(encoding='utf-8'), re.S)
+        for l in (m.group(1).split('\n') if m else []):
+            a = ATLAS_LINE.match(l)
+            if a: out.append((f.stem, a.group(1).strip(), a.group(2), a.group(3).strip()))
+    return out
+
+
+def test_crawled(want, log, qs, queue, seen, n):
+    """Each crawler-listed layer, once: ONE query per 120 open pins of its area (multipoint), the hit polygons judged by the name
+    tiers; SURE / LIKELY = a question for chat 11 (same file + shape as the LAYER lines) and the layer to the intake queue."""
+    done = 0
+    for area, lname, url, field in crawled_layers(want):
+        k = f'crawl|{area}|{url}'
+        if k in log: continue
+        if done >= CRAWL_MAX: break
+        done += 1
+        P = open_parks(area)
+        if not P: log[k] = {'area': area, 'url': url, 'status': 'skipped', 'why': 'no open parks in this area', 'date': TODAY}; continue
+        try:
+            meta = get_json(url)
+            if 'olygon' not in str(meta.get('geometryType', '')): raise RuntimeError(f"not polygons ({meta.get('geometryType')})")
+            names = {f_.get('name') for f_ in meta.get('fields') or []}
+            fld = field if field in names else next((nm for nm in names if nm and re.search(r'(^|_)(name|nom|unit_?nm|prop_?name|park_?name|site_?name|label)$', nm, re.I)), None)
+            if not fld: raise RuntimeError('no name field')
+            pts = list(P.items()); hits = 0
+            for i in range(0, len(pts), 120):
+                chunk = pts[i:i + 120]
+                mp = {'points': [[round(v[1], 5), round(v[0], 5)] for _, v in chunk], 'spatialReference': {'wkid': 4326}}
+                j = get_json(url.rstrip('/') + '/query', {'geometry': json.dumps(mp, separators=(',', ':')), 'geometryType': 'esriGeometryMultipoint', 'inSR': 4326,
+                                                          'spatialRel': 'esriSpatialRelIntersects', 'outFields': '*', 'returnGeometry': 'true', 'outSR': 4326,
+                                                          'maxAllowableOffset': 0.002, 'geometryPrecision': 5})
+                feats = j.get('features') or []
+                for r, (la, lo, pn) in chunk:
+                    for f_ in feats:
+                        rings = (f_.get('geometry') or {}).get('rings') or []
+                        if not any(inside(lo, la, rg) for rg in rings): continue
+                        a_ = f_.get('attributes') or {}; rn = str(a_.get(fld) or ''); ac = acres(rings)
+                        oid = a_.get('OBJECTID') or a_.get('objectid') or a_.get('FID')
+                        under = sum(1 for _, (la2, lo2, _n) in chunk if any(inside(lo2, la2, rg) for rg in rings))
+                        tier, why = T.tier(pn, rn, ac, None, under)
+                        if tier == 'UNLIKELY': continue
+                        hits += 1
+                        qs.append({'area': area, 'ref': r, 'park': pn, 'tier': tier, 'why': why, 'kind': 'park', 'record': oid, 'record_name': rn[:120], 'acres_approx': ac,
+                                   'layer': url, 'agency': lname[:80], 'record_link': f'{url}/query?objectIds={oid}&outFields=*&returnGeometry=false&f=html',
+                                   'pota_link': f'https://pota.app/#/park/{r}', 'question': "Is this official record that park (the agency's own boundary for it)? YES / NO",
+                                   'answer': None, 'checked_by': None, 'how': None, 'source': 'layer collector (atlas crawler layer)',
+                                   'st': area[3:] if area[:3] in ('US-', 'CA-') else area.replace('W-', ''), 'url': url, 'name_field': fld,
+                                   'kind_layer': None, 'licence': ''})
+                        qs[-1]['kind'] = kind_of(lname, '', pn); qs[-1].pop('kind_layer', None)
+            if hits and url not in seen:
+                queue['rows'].append({'url': url, 'title': f'{lname[:60]} (atlas crawler, {area})', 'from': 'atlas crawler', 'added': TODAY, 'closes': sorted({q['ref'] for q in qs if q.get('url') == url})[:50], 'note': f'{hits} SURE / LIKELY park(s) at the pins'})
+                seen.add(url)
+            log[k] = {'area': area, 'url': url, 'status': 'asked' if hits else 'no match', 'why': f'{len(P)} open parks tested, {hits} SURE / LIKELY hit(s)', 'date': TODAY}
+            n['asked' if hits else 'evidence'] = n.get('asked' if hits else 'evidence', 0) + hits
+        except Exception as e:  # noqa: BLE001
+            log[k] = {'area': area, 'url': url, 'status': 'failed', 'why': f'{type(e).__name__}: {str(e)[:70]}', 'date': TODAY}; n['failed'] += 1
+    return done
+
+
 def main():
     want = set(sys.argv[1:])
     log = load(LOG, {}) or {}
@@ -139,13 +238,14 @@ def main():
                 seen.add(url)
             log[k] = {'ref': ref, 'area': f.stem, 'url': url, 'field': field, 'status': status, 'why': why, 'date': TODAY}
             n[status] = n.get(status, 0) + 1
+    crawled = test_crawled(want, log, qs, queue, seen, n)   # Oct 30 (Brandon 10:41 AM): the atlas crawler's layers are tested too, by themselves
     LOG.parent.mkdir(parents=True, exist_ok=True)
     json.dump(log, open(LOG, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     json.dump(queue, open(QUEUE, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     QF.parent.mkdir(parents=True, exist_ok=True)
     json.dump({'about': "Layers chat 8 wrote as LAYER lines in the Fable files, pin-tested by the layer collector (Rule G: pin inside, name tier, size). Chat 11 answers YES / NO; BOT A joins a YES.",
                'built': TODAY, 'open': sum(1 for q in qs if not q.get('answer')), 'questions': qs}, open(QF, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
-    print(f"::notice title=Layer collector::{n['new']} new LAYER lines: {n['asked']} asked (chat 11), {n['queued']} queued for the intake only, {n['evidence']} evidence, {n['failed']} failed (reason in data/intake/collector.json)")
+    print(f"::notice title=Layer collector::{crawled} crawler layers tested; {n['new']} new LAYER lines: {n['asked']} asked (chat 11), {n['queued']} queued for the intake only, {n['evidence']} evidence, {n['failed']} failed (reason in data/intake/collector.json)")
 
 
 if __name__ == '__main__':

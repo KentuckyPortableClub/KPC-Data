@@ -1,0 +1,54 @@
+name: KPC layer collector (starts itself when the Fable / atlas files have new work)
+# Oct 30 2026 (chat 10; HQ 8:10 AM + Brandon 10:41 AM 'just add that feature … and auto start'). Every 2 hours it looks at
+# KPC-Links .claude/build/research/fable + agency-atlas: if nothing changed since the last look it stops in seconds; else it runs
+# kpc_layer_collector.py: chat 8's LAYER lines AND every layer the atlas crawler listed are pin-tested against the area's parks still
+# without an official outline (name tiers T-1..T-6); SURE / LIKELY = questions in data/waiting/questions/layers.json for chat 11,
+# layers to the intake queue, reasons in data/intake/collector.json. Nothing goes on a map without chat 11's YES. Never red.
+on:
+  schedule:
+    - cron: '17 */2 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kpc-collector
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            .claude/build/research/fable
+            .claude/build/research/agency-atlas
+            data/us-key
+            data/ca-key
+            data/world-key
+            .github/scripts
+      - name: New work? (fingerprint of the Fable + atlas files)
+        id: fp
+        continue-on-error: true
+        run: |
+          F=$(cat links/.claude/build/research/fable/*.md links/.claude/build/research/agency-atlas/*.md 2>/dev/null | grep -E '^LAYER \||^  - .+: https?://\S+/(MapServer|FeatureServer)/[0-9]+ \(name field' | sha1sum | cut -c1-16)
+          O=$(cat kpcdata/data/intake/collector-seen.txt 2>/dev/null || echo none)
+          echo "fp=$F" >> "$GITHUB_OUTPUT"
+          if [ "$F" = "$O" ] && [ "${{ github.event_name }}" = schedule ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Layer collector::nothing new"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi
+      - name: Collect + pin-test
+        if: ${{ steps.fp.outputs.work == '1' }}
+        continue-on-error: true
+        env:
+          LINKS: ../links
+        run: |
+          cd kpcdata
+          timeout 100m python3 .github/scripts/kpc_layer_collector.py || true
+          echo "${{ steps.fp.outputs.fp }}" > data/intake/collector-seen.txt
+          python3 .github/scripts/kpc_status.py board "Layer collector" green "LAYER lines + crawler layers pin-tested" "chat 11 answers data/waiting/questions/layers.json" || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "layer collector: LAYER lines + crawler layers (questions for chat 11)" data/intake data/waiting/questions data/status || true

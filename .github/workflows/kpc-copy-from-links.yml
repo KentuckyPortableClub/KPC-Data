@@ -55,7 +55,7 @@ jobs:
       - name: Save (once)
         continue-on-error: true
         run: |
-          (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_layer_collector.py) || true   # Oct 30 (HQ 8:10 AM): chat 8's LAYER lines -> pin test + chat 11 question + intake queue
+          # the layer collector moved to kpc-collector.yml (Oct 30 10:45 AM: starts itself every 2 h when the Fable / atlas files have new work)
           (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_hunter_trigger.py > /tmp/hunt.txt) || true; cat /tmp/hunt.txt || true
           bash links/.github/scripts/kpc_push_data.sh kpcdata "Site data copied from KPC-Links (Step B3)" data locations-pota.json locations-sota.json locations-wwff.json
       - name: The picture-map branch (daily cleanup)
