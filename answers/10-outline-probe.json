@@ -1,0 +1,580 @@
+{
+ "request": "requests/10-outline-probe.json",
+ "id": "10-outline-probe",
+ "chat": 10,
+ "kind": "map-check",
+ "report": "chat 10 probe: why SHOW THIS PARK'S OUTLINE does nothing in the headless run (US-7041)",
+ "asked": {
+  "chat": 10,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "chat 10 probe: why SHOW THIS PARK'S OUTLINE does nothing in the headless run (US-7041)",
+  "urls": [
+   {
+    "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+    "read": [
+     ".leaflet-popup-content",
+     "#us-status"
+    ],
+    "steps": [
+     {
+      "wait": 2000
+     },
+     {
+      "fill": "#usq",
+      "text": "US-7041",
+      "wait": 1500
+     },
+     {
+      "click": ".kps-box button[data-i=\"0\"]",
+      "wait": 6000
+     },
+     {
+      "click": "a.ref:text-is(\"US-7041\")",
+      "wait": 4000
+     },
+     {
+      "eval": "(()=>{const bs=[...document.querySelectorAll('[data-a=\"bound\"]')];return JSON.stringify({n:bs.length,b:bs.map(b=>[b.textContent,!!b.onclick,b.isConnected,b.disabled,!!b.closest('.leaflet-popup')]),status:(document.getElementById('us-status')||{}).innerText,popups:document.querySelectorAll('.leaflet-popup').length})})()"
+     },
+     {
+      "click": ".leaflet-popup-content [data-a=\"bound\"]",
+      "wait": 1500
+     },
+     {
+      "eval": "(()=>{const bs=[...document.querySelectorAll('[data-a=\"bound\"]')];return JSON.stringify({n:bs.length,b:bs.map(b=>[b.textContent,!!b.onclick,b.isConnected,b.disabled,!!b.closest('.leaflet-popup')]),status:(document.getElementById('us-status')||{}).innerText,popups:document.querySelectorAll('.leaflet-popup').length})})()"
+     },
+     {
+      "wait": 12000
+     },
+     {
+      "eval": "(()=>{const bs=[...document.querySelectorAll('[data-a=\"bound\"]')];return JSON.stringify({n:bs.length,b:bs.map(b=>[b.textContent,!!b.onclick,b.isConnected,b.disabled,!!b.closest('.leaflet-popup')]),status:(document.getElementById('us-status')||{}).innerText,popups:document.querySelectorAll('.leaflet-popup').length})})()"
+     },
+     {
+      "eval": "(()=>{const b=document.querySelector('.leaflet-popup-content [data-a=\"bound\"]');if(!b)return 'no btn';b.dispatchEvent(new MouseEvent('click',{bubbles:true}));return 'js-clicked'})()"
+     },
+     {
+      "wait": 12000
+     },
+     {
+      "eval": "(()=>{const bs=[...document.querySelectorAll('[data-a=\"bound\"]')];return JSON.stringify({n:bs.length,b:bs.map(b=>[b.textContent,!!b.onclick,b.isConnected,b.disabled,!!b.closest('.leaflet-popup')]),status:(document.getElementById('us-status')||{}).innerText,popups:document.querySelectorAll('.leaflet-popup').length})})()"
+     }
+    ]
+   }
+  ]
+ },
+ "answered": "2026-10-30 22:26Z",
+ "results": [
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "status": 200,
+   "steps": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "eval: {\"n\":1,\"b\":[[\"SHOW THIS PARK’S OUTLINE\",false,true,false,true]],\"status\":\"49 spots within 25 miles of Plum Orchard Lake Wildlife Management Area: 8 POTA, 32 SOTA, 9 WWFF.\",\"popups\":1}",
+    "ok",
+    "eval: {\"n\":1,\"b\":[[\"SHOW THIS PARK’S OUTLINE\",false,true,false,true]],\"status\":\"49 spots within 25 miles of Plum Orchard Lake Wildlife Management Area: 8 POTA, 32 SOTA, 9 WWFF.\",\"popups\":1}",
+    "ok",
+    "eval: {\"n\":1,\"b\":[[\"SHOW THIS PARK’S OUTLINE\",false,true,false,true]],\"status\":\"49 spots within 25 miles of Plum Orchard Lake Wildlife Management Area: 8 POTA, 32 SOTA, 9 WWFF.\",\"popups\":1}",
+    "eval: js-clicked",
+    "ok",
+    "eval: {\"n\":1,\"b\":[[\"SHOW THIS PARK’S OUTLINE\",false,true,false,true]],\"status\":\"49 spots within 25 miles of Plum Orchard Lake Wildlife Management Area: 8 POTA, 32 SOTA, 9 WWFF.\",\"popups\":1}"
+   ],
+   "read_text": "[.leaflet-popup-content] Plum Orchard Lake Wildlife Management Area\nUS-7041 • POTA park • 0.0 mi away • grid EM97jw\n+ ADD TO TRIP\n👀 STREET VIEW\nDIRECTIONS\n📍 AM I IN THE PARK?\n🅿 LOOK FOR PARKING\nSHOW THIS PARK’S OUTLINE\nPOTA PAGE ↗\n[#us-status] 49 spots within 25 miles of Plum Orchard Lake Wildlife Management Area: 8 POTA, 32 SOTA, 9 WWFF.",
+   "final_url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "title": "KPC Trip Planner | KPC",
+   "text": "Kentucky Portable Club\nHome\nCampout\nKY Parks\nEvents\nPhotos\n🔍\n🌐\nLive\n✓ MEMBER\nSee More\n▾\n🌗\nKENTUCKY PORTABLE CLUB • ALL 50 STATES • POTA • SOTA • WWFF\nKPC TRIP PLANNER BETA\nPlan a radio trip anywhere in the country. Find parks, summits and WWFF references near any town or along your whole drive, tap a dot for its official website, campgrounds, picnic shelters and tips, and send your route to Google Maps. Staying in Kentucky? Try Kentucky Park Control.\n🇺🇸 Any town in the US\n🛣️ Parks along your drive\n🗺 Official boundaries\n⛺ Campgrounds & shelters\n🔥 Rare parks\n🚗 Route to Google Maps\nBETA: not every park outline is on here yet. Can’t find yours? Turn on the Official park boundaries (PAD-US) map layer, or tap SHOW UNOFFICIAL OUTLINE on the park. A dashed outline marked Approximate is one we are not sure of: check the park’s own map.\nSTART PLANNING ↓\nOn The Air\nPark Checker\nSOTA\nRare Parks\nKY Planner\nTrip Planner\nGrid & County\nPark Sheet\nBattery\nAntenna\n← Parks\n1\nWhere are you headed?\nSearch near a town, ZIP, park number or GPS spot, or along a drive from start to finish.\n📍 NEAR A PLACE\n🚗 ALONG A ROUTE\nTOWN, ADDRESS, ZIP, PARK OR GPS\nWITHIN\n10 miles\n25 miles\n50 miles\n100 miles\n150 miles\nSEARCH\n📍 NEAR ME\nPOTA PARKS\nSOTA SUMMITS\nWWFF\n⬤ BIGGER DOTS\n49 spots within 25 miles of Plum Orchard Lake Wildlife Management Area: 8 POTA, 32 SOTA, 9 WWFF.\n2\nFind new ones\nAdd your call sign to fade out what you've already activated. ATNO and RARE show the parks almost nobody has done.\nMY CALLSIGN (FOR NEW TO ME)\nCHECK\nNEW TO ME\nATNO\nRARE\n📄 LOAD MY POTA FILE\nOut of state or anywhere: on pota.app open My Stats → activated parks → ⬇ EXPORT CSV, then load that file here.\n28 ATNO spots and 1 rare in these results. Add your callsign to see which ones are new to you.\nFaded dot = you activated it\nOrange ring = ATNO (nobody has yet)\nAmber ring = rare (1-5 activations)\nPOTA parks and SOTA summits only\nKPC TRIP PLANNER\nKENTUCKY PORTABLE CLUB\n📌 DROP A PIN\nPlum Orchard Lake Wildlife Management Area\nUS-7041 • POTA park • 0.0 mi away • grid EM97jw\n+ ADD TO TRIP\n👀 STREET VIEW\nDIRECTIONS\n📍 AM I IN THE PARK?\n🅿 LOOK FOR PARKING\nSHOW THIS PARK’S OUTLINE\nPOTA PAGE ↗\n×\n+\n−\nBOUNDARIES\n▸\n◎\n⛶ FULL\nLeaflet | Imagery © Esri, Maxar, Earthstar Geographics, Boundaries: USGS PAD-US\nTap a dot for its card: add it to your trip, Street View, parking, its outline and more. Trails that are POTA parks: pink = national scenic, orange dashes = national historic, green = state trails, purple dashes = national recreation trails (tap one). 🥾 We're still adding trails: about half of the trail parks outside Kentucky have a line so far, and more are on the way. Zoom in to see official boundaries (gold = federal, light blue = state, orange = Army Corps) and tap the land to see what it is; the layers button switches maps.\nPOTA park\nSOTA summit\nWWFF\nATNO\nRare\nIn your trip\n3\nYour trip\nPut your stops in order, draw the drive and share it.\nNo stops yet. Tap a dot on the map, use ADD in the list, or drop your own pin.\n4\nWhat's nearby\nEverything in range, closest first. Tap ADD to put it in your trip.\nNearby (49)\nSPOT MILES\nUS-7041\nPlum Orchard Lake Wildlife Management Area 0.0 + ADD\nKFF-5677\nPlum Orchard Lake 0.4 + ADD\nW8V/NR-074\nHaystack Mountain\nATNO\n1.3 + ADD\nW8V/NR-065\nPacks Mountain\nATNO\n2.0 + ADD\nW8V/NR-064\n2706\nATNO\n3.5 + ADD\nW8V/NR-029\nLick Knob\nATNO\n4.3 + ADD\nW8V/NR-044\n3060\nATNO\n5.4 + ADD\nW8V/NR-068\n2580\nATNO\n5.9 + ADD\nW8V/NR-042\n3100\nATNO\n6.2 + ADD\nW8V/NR-059\nPayne Knob\nATNO\n6.3 + ADD\nW8V/NR-055\n2848\nATNO\n6.4 + ADD\nW8V/NR-058\nGarden Ground Mountain\nUNCOMMON · 11\n8.8 + ADD\nW8V/NR-016\nCoal River Mountain\nATNO\n10.0 + ADD\nUS-0696\nNew River Gorge National Park 11.8 + ADD\nW8V/NR-067\n2580\nATNO\n12.6 + ADD\nW8V/NR-086\n2220\nATNO\n13.2 + ADD\nUS-1813\nHawks Nest State Park 13.3 + ADD\nKFF-1813\nHawks Nest 13.3 + ADD\nKFF-1798\nBabcock 13.7 + ADD\nUS-7036\nBeury Mountain Wildlife Management Area\nUNCOMMON · 18\n14.0 + ADD\nKFF-5656\nBeury Mountain 14.1 + ADD\nW8V/NR-094\nMeador Benchmark\nATNO\n14.2 + ADD\nW8V/NR-082\n2300\nATNO\n15.0 + ADD\nW8V/NR-070\nGauley Mountain\nRARE · 5 ACTIVATIONS\n15.3 + ADD\nUS-1798\nBabcock State Park 15.6 + ADD\nKFF-1815\nLittle Beaver 15.8 + ADD\nUS-1815\nLittle Beaver State Park 15.8 + ADD\nW8V/NR-077\n2497\nATNO\n16.3 + ADD\nW8V/NR-047\n3002\nATNO\n17.9 + ADD\nW8V/HM-002\n3282\nATNO\n18.1 + ADD\nW8V/NR-006\nIvy Knob\nATNO\n18.2 + ADD\nW8V/NR-093\n1980\nATNO\n19.1 + ADD\nW8V/HM-003\nCherry Pond Mountain\nATNO\n19.4 + ADD\nKFF-0696\nNew River Gorge 20.1 + ADD\nW8V/NR-028\nHump Mountain\nATNO\n21.5 + ADD\nW8V/NR-053\n2882\nATNO\n21.7 + ADD\nW8V/HM-001\n3361\nATNO\n21.8 + ADD\nW8V/ML-013\n2300\nATNO\n22.0 + ADD\nW8V/NR-013\nFreezeland Mountain\nUNCOMMON · 16\n22.2 + ADD\nKFF-0695\nGauley River 22.4 + ADD\nW8V/NR-022\nHuff Mountain\nATNO\n23.1 + ADD\nW8V/NR-012\nMyles Knob\nUNCOMMON · 6\n23.1 + ADD\nUS-1807\nCarnifex Ferry Battlefield State Park 23.7 + ADD\nW8V/ML-012\nPanther Mountain\nATNO\n23.9 + ADD\nKFF-1807\nCarnifex Ferry Battlefield 24.2 + ADD\nKFF-1824\nTwin Falls Resort 24.5 + ADD\nUS-1824\nTwin Falls Resort State Park 24.6 + ADD\nW8V/NR-007\nBoggs Knob\nATNO\n24.6 + ADD\nW8V/NR-073\n2540\nATNO\n24.8 + ADD\ni\nWhere this comes from\nThis planner covers the whole US. Park types, official websites and how you can activate come from POTA’s park list, refreshed every week; campgrounds and picnic shelters come from Recreation.gov (federal land only, so check state parks on their own site; camping info last checked by date on each file); SOTA summits come from SOTA and WWFF references from the WWFF directory. Boundaries on the map are the official USGS PAD-US outlines; when a park has none, its outline is from OpenStreetMap and is labelled “OpenStreetMap outline (unofficial)”. For Kentucky, the full KPC Trip Planner adds hand-checked access points, plus 2-fer research and more. Place search by OpenStreetMap Nominatim. Routes open in Google Maps.\nWe’re volunteers working from public maps, and we make mistakes. Before you activate, check the official park map, make sure the land is public and open, and follow each program’s rules. Your activation is your responsibility. See something wrong? Let us know.\n⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.\n📋 RULES TO KNOW BEFORE YOU ACTIVATE\nOPEN ▾\nℹ️ Maps and park info are a planning aid, not a guarantee. Always check the official agency map and rules before you go. About our information\nKENTUCKY PORTABLE CLUB\nGet Outside. Get On The Air.\nEXPLORE KENTUCKY →\nVIEW EVENTS →\nJOIN KPC →\nFIND IT →\nABOUT OUR INFORMATION\nPRIVACY\nKPC tools and guides are planning aids, not official sources. We make mistakes. Do your own research and check official maps. KPC is an independent ham radio club, not part of Parks on the Air®, SOTA or WWFF.",
+   "links": [
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/index.html",
+     "text": "Kentucky Portable Club"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/index.html",
+     "text": "Home"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/campout.html",
+     "text": "Campout"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/parks.html",
+     "text": "KY Parks"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/events.html",
+     "text": "Events"
+    },
+    {
+     "url": "https://photos.google.com/share/AF1QipN_67gAbiviP12miCyaNfycMYrocCz2kSVt3TDT4DO5ujNEQTHfvXvJ_K3wjgJihg?key=TzM2S2hWSGFmRzhHMnRBcm5yMnF4NjFwUkpvdmF3",
+     "text": "Photos"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/find.html",
+     "text": "🔍"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "🌐"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-live.html",
+     "text": "Live"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#members",
+     "text": "✓ MEMBER"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-activators-lounge.html",
+     "text": "🎒Activators Lounge"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-hunters.html",
+     "text": "🎯Hunters Lounge"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-campgrounds.html",
+     "text": "🏕Campgrounds & Cabins"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/antennas.html",
+     "text": "📻Antenna & Power Room"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-pota-room.html",
+     "text": "POTA"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-wwff-room.html",
+     "text": "WWFF"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-sota-room.html",
+     "text": "SOTA"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-learning.html",
+     "text": "🎓Learning Room"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-kids.html",
+     "text": "🧒Kids Room"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/resources.html",
+     "text": "📚Library"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/news.html",
+     "text": "📰News"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-community.html",
+     "text": "🤝Community"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/videos.html",
+     "text": "🎥Videos"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-guestbook.html",
+     "text": "✍️Guestbook"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-club.html",
+     "text": "🏡Club Room (members)"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/about.html",
+     "text": "👋About KPC"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/join.html",
+     "text": "✉Join KPC"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/contact.html",
+     "text": "💬Contact"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/toolbox.html",
+     "text": "Tool Box"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/find.html",
+     "text": "Find It"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-about-info.html",
+     "text": "About our information"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#signout",
+     "text": "🔓Sign out (members)"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-park-control.html",
+     "text": "Kentucky Park Control"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#plan",
+     "text": "START PLANNING ↓"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-spots.html",
+     "text": "On The Air"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-checker.html",
+     "text": "Park Checker"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-sota.html",
+     "text": "SOTA"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-rare.html",
+     "text": "Rare Parks"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner.html",
+     "text": "KY Planner"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+     "text": "Trip Planner"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-lookup.html",
+     "text": "Grid & County"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-park-sheet.html",
+     "text": "Park Sheet"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-battery.html",
+     "text": "Battery"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-antenna.html",
+     "text": "Antenna"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/parks.html",
+     "text": "← Parks"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "pota.app"
+    },
+    {
+     "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=37.9512,-81.2304",
+     "text": "👀 STREET VIEW"
+    },
+    {
+     "url": "https://www.google.com/maps/dir/?api=1&destination=37.9512,-81.2304",
+     "text": "DIRECTIONS"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-in-park.html?ref=US-7041",
+     "text": "📍 AM I IN THE PARK?"
+    },
+    {
+     "url": "https://www.google.com/maps/search/parking/@37.9512,-81.2304,14z",
+     "text": "🅿 LOOK FOR PARKING"
+    },
+    {
+     "url": "https://pota.app/#/park/US-7041",
+     "text": "POTA PAGE ↗"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#close",
+     "text": "×"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "+"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "−"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": ""
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "◎"
+    },
+    {
+     "url": "https://leafletjs.com/",
+     "text": " Leaflet"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "US-7041"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "KFF-5677"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-074"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-065"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-064"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-029"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-044"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-068"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-042"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-059"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-055"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-058"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-016"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "US-0696"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-067"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-086"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "US-1813"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "KFF-1813"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "KFF-1798"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "US-7036"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "KFF-5656"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-094"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-082"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-070"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "US-1798"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "KFF-1815"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "US-1815"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-077"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-047"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/HM-002"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-006"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-093"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/HM-003"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "KFF-0696"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-028"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-053"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/HM-001"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/ML-013"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-013"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "KFF-0695"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-022"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-012"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "US-1807"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/ML-012"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "KFF-1807"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "KFF-1824"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "US-1824"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-007"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html#",
+     "text": "W8V/NR-073"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner.html",
+     "text": "KPC Trip Planner"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/contact.html",
+     "text": "Let us know"
+    },
+    {
+     "url": "https://parksontheair.com/rules/",
+     "text": ""
+    },
+    {
+     "url": "https://wwff.co/wwff_cont/uploads/2025/09/WWFF-Global-Rules-V_5.10.pdf",
+     "text": ""
+    },
+    {
+     "url": "https://wwff.us/",
+     "text": ""
+    },
+    {
+     "url": "https://www.sota.org.uk/",
+     "text": ""
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-about-info.html",
+     "text": "About our information"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/parks.html",
+     "text": "EXPLORE KENTUCKY →"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/events.html",
+     "text": "VIEW EVENTS →"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/join.html",
+     "text": "JOIN KPC →"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/find.html",
+     "text": "FIND IT →"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-about-info.html",
+     "text": "ABOUT OUR INFORMATION"
+    },
+    {
+     "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-privacy.html",
+     "text": "PRIVACY"
+    }
+   ],
+   "screenshot": "answers/10-outline-probe-1.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 42,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK, 1 screenshot(s)"
+}
