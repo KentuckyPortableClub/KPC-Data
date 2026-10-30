@@ -1,0 +1,3448 @@
+{
+ "request": "requests/9-cap2-mb-1.json",
+ "id": "9-cap2-mb-1",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CAP2 MB 1: 40 parks, 6 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CAP2 MB 1: 40 parks, 6 layers",
+  "probe": {
+   "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (MB, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-1050,CA-2390,CA-2410,CA-2454,CA-5465,CA-0527,CA-0558,CA-0572,CA-1048,CA-1053,CA-1055,CA-1058,CA-1067,CA-1069,CA-1079,CA-1091,CA-2373,CA-2407,CA-2408,CA-2411,CA-2412,CA-2413,CA-2431,CA-2433,CA-2443,CA-2444,CA-2464,CA-2475,CA-2478,CA-2486,CA-2496,CA-2503,CA-2527,CA-2529,CA-4799,CA-4800,CA-4803,CA-4805,CA-5120,CA-5122. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+   "refs": [
+    "CA-1050",
+    "CA-2390",
+    "CA-2410",
+    "CA-2454",
+    "CA-5465",
+    "CA-0527",
+    "CA-0558",
+    "CA-0572",
+    "CA-1048",
+    "CA-1053",
+    "CA-1055",
+    "CA-1058",
+    "CA-1067",
+    "CA-1069",
+    "CA-1079",
+    "CA-1091",
+    "CA-2373",
+    "CA-2407",
+    "CA-2408",
+    "CA-2411",
+    "CA-2412",
+    "CA-2413",
+    "CA-2431",
+    "CA-2433",
+    "CA-2443",
+    "CA-2444",
+    "CA-2464",
+    "CA-2475",
+    "CA-2478",
+    "CA-2486",
+    "CA-2496",
+    "CA-2503",
+    "CA-2527",
+    "CA-2529",
+    "CA-4799",
+    "CA-4800",
+    "CA-4803",
+    "CA-4805",
+    "CA-5120",
+    "CA-5122"
+   ],
+   "pointq": [
+    {
+     "st": "MB",
+     "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0",
+     "note": "Manitoba Par",
+     "points": [
+      [
+       51.0453,
+       -96.8353
+      ],
+      [
+       57.1669,
+       -90.833
+      ],
+      [
+       51.354,
+       -100.698
+      ],
+      [
+       50.827,
+       -95.155
+      ],
+      [
+       49.0792,
+       -96.7313
+      ],
+      [
+       50.9953,
+       -98.8852
+      ],
+      [
+       51.601,
+       -101.353
+      ],
+      [
+       49.8992,
+       -97.1207
+      ],
+      [
+       49.8703,
+       -97.2301
+      ],
+      [
+       48.9991,
+       -100.06
+      ],
+      [
+       50.1121,
+       -96.9316
+      ],
+      [
+       49.5503,
+       -96.6861
+      ],
+      [
+       58.7967,
+       -94.2135
+      ],
+      [
+       49.8188,
+       -97.1367
+      ],
+      [
+       49.8892,
+       -97.1289
+      ],
+      [
+       57.0028,
+       -92.3047
+      ],
+      [
+       52.3987,
+       -101.123
+      ],
+      [
+       50.446,
+       -101.403
+      ],
+      [
+       49.9077,
+       -97.1149
+      ],
+      [
+       49.9007,
+       -97.1294
+      ],
+      [
+       49.074,
+       -96.632
+      ],
+      [
+       49.261,
+       -96.79
+      ],
+      [
+       49.9059,
+       -97.0899
+      ],
+      [
+       49.8962,
+       -97.1146
+      ],
+      [
+       52.5,
+       -101.02
+      ],
+      [
+       52.406,
+       -100.771
+      ],
+      [
+       50.734,
+       -97.53
+      ],
+      [
+       49.8924,
+       -97.1258
+      ],
+      [
+       52.168,
+       -95.375
+      ],
+      [
+       51.768,
+       -96.66
+      ],
+      [
+       49.8915,
+       -97.1182
+      ],
+      [
+       49.3997,
+       -96.0353
+      ],
+      [
+       49.8841,
+       -97.1673
+      ],
+      [
+       49.8538,
+       -100.771
+      ],
+      [
+       49.8879,
+       -97.1353
+      ],
+      [
+       49.1165,
+       -101.02
+      ],
+      [
+       50.6832,
+       -99.5556
+      ],
+      [
+       50.0661,
+       -96.9774
+      ],
+      [
+       49.8793,
+       -96.9815
+      ],
+      [
+       49.9371,
+       -97.1004
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "MB",
+     "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0",
+     "note": "Manitoba wil",
+     "points": [
+      [
+       51.0453,
+       -96.8353
+      ],
+      [
+       57.1669,
+       -90.833
+      ],
+      [
+       51.354,
+       -100.698
+      ],
+      [
+       50.827,
+       -95.155
+      ],
+      [
+       49.0792,
+       -96.7313
+      ],
+      [
+       50.9953,
+       -98.8852
+      ],
+      [
+       51.601,
+       -101.353
+      ],
+      [
+       49.8992,
+       -97.1207
+      ],
+      [
+       49.8703,
+       -97.2301
+      ],
+      [
+       48.9991,
+       -100.06
+      ],
+      [
+       50.1121,
+       -96.9316
+      ],
+      [
+       49.5503,
+       -96.6861
+      ],
+      [
+       58.7967,
+       -94.2135
+      ],
+      [
+       49.8188,
+       -97.1367
+      ],
+      [
+       49.8892,
+       -97.1289
+      ],
+      [
+       57.0028,
+       -92.3047
+      ],
+      [
+       52.3987,
+       -101.123
+      ],
+      [
+       50.446,
+       -101.403
+      ],
+      [
+       49.9077,
+       -97.1149
+      ],
+      [
+       49.9007,
+       -97.1294
+      ],
+      [
+       49.074,
+       -96.632
+      ],
+      [
+       49.261,
+       -96.79
+      ],
+      [
+       49.9059,
+       -97.0899
+      ],
+      [
+       49.8962,
+       -97.1146
+      ],
+      [
+       52.5,
+       -101.02
+      ],
+      [
+       52.406,
+       -100.771
+      ],
+      [
+       50.734,
+       -97.53
+      ],
+      [
+       49.8924,
+       -97.1258
+      ],
+      [
+       52.168,
+       -95.375
+      ],
+      [
+       51.768,
+       -96.66
+      ],
+      [
+       49.8915,
+       -97.1182
+      ],
+      [
+       49.3997,
+       -96.0353
+      ],
+      [
+       49.8841,
+       -97.1673
+      ],
+      [
+       49.8538,
+       -100.771
+      ],
+      [
+       49.8879,
+       -97.1353
+      ],
+      [
+       49.1165,
+       -101.02
+      ],
+      [
+       50.6832,
+       -99.5556
+      ],
+      [
+       50.0661,
+       -96.9774
+      ],
+      [
+       49.8793,
+       -96.9815
+      ],
+      [
+       49.9371,
+       -97.1004
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "MB",
+     "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/1",
+     "note": "Manitoba wil~1",
+     "points": [
+      [
+       51.0453,
+       -96.8353
+      ],
+      [
+       57.1669,
+       -90.833
+      ],
+      [
+       51.354,
+       -100.698
+      ],
+      [
+       50.827,
+       -95.155
+      ],
+      [
+       49.0792,
+       -96.7313
+      ],
+      [
+       50.9953,
+       -98.8852
+      ],
+      [
+       51.601,
+       -101.353
+      ],
+      [
+       49.8992,
+       -97.1207
+      ],
+      [
+       49.8703,
+       -97.2301
+      ],
+      [
+       48.9991,
+       -100.06
+      ],
+      [
+       50.1121,
+       -96.9316
+      ],
+      [
+       49.5503,
+       -96.6861
+      ],
+      [
+       58.7967,
+       -94.2135
+      ],
+      [
+       49.8188,
+       -97.1367
+      ],
+      [
+       49.8892,
+       -97.1289
+      ],
+      [
+       57.0028,
+       -92.3047
+      ],
+      [
+       52.3987,
+       -101.123
+      ],
+      [
+       50.446,
+       -101.403
+      ],
+      [
+       49.9077,
+       -97.1149
+      ],
+      [
+       49.9007,
+       -97.1294
+      ],
+      [
+       49.074,
+       -96.632
+      ],
+      [
+       49.261,
+       -96.79
+      ],
+      [
+       49.9059,
+       -97.0899
+      ],
+      [
+       49.8962,
+       -97.1146
+      ],
+      [
+       52.5,
+       -101.02
+      ],
+      [
+       52.406,
+       -100.771
+      ],
+      [
+       50.734,
+       -97.53
+      ],
+      [
+       49.8924,
+       -97.1258
+      ],
+      [
+       52.168,
+       -95.375
+      ],
+      [
+       51.768,
+       -96.66
+      ],
+      [
+       49.8915,
+       -97.1182
+      ],
+      [
+       49.3997,
+       -96.0353
+      ],
+      [
+       49.8841,
+       -97.1673
+      ],
+      [
+       49.8538,
+       -100.771
+      ],
+      [
+       49.8879,
+       -97.1353
+      ],
+      [
+       49.1165,
+       -101.02
+      ],
+      [
+       50.6832,
+       -99.5556
+      ],
+      [
+       50.0661,
+       -96.9774
+      ],
+      [
+       49.8793,
+       -96.9815
+      ],
+      [
+       49.9371,
+       -97.1004
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "MB",
+     "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2",
+     "note": "Manitoba wil~2",
+     "points": [
+      [
+       51.0453,
+       -96.8353
+      ],
+      [
+       57.1669,
+       -90.833
+      ],
+      [
+       51.354,
+       -100.698
+      ],
+      [
+       50.827,
+       -95.155
+      ],
+      [
+       49.0792,
+       -96.7313
+      ],
+      [
+       50.9953,
+       -98.8852
+      ],
+      [
+       51.601,
+       -101.353
+      ],
+      [
+       49.8992,
+       -97.1207
+      ],
+      [
+       49.8703,
+       -97.2301
+      ],
+      [
+       48.9991,
+       -100.06
+      ],
+      [
+       50.1121,
+       -96.9316
+      ],
+      [
+       49.5503,
+       -96.6861
+      ],
+      [
+       58.7967,
+       -94.2135
+      ],
+      [
+       49.8188,
+       -97.1367
+      ],
+      [
+       49.8892,
+       -97.1289
+      ],
+      [
+       57.0028,
+       -92.3047
+      ],
+      [
+       52.3987,
+       -101.123
+      ],
+      [
+       50.446,
+       -101.403
+      ],
+      [
+       49.9077,
+       -97.1149
+      ],
+      [
+       49.9007,
+       -97.1294
+      ],
+      [
+       49.074,
+       -96.632
+      ],
+      [
+       49.261,
+       -96.79
+      ],
+      [
+       49.9059,
+       -97.0899
+      ],
+      [
+       49.8962,
+       -97.1146
+      ],
+      [
+       52.5,
+       -101.02
+      ],
+      [
+       52.406,
+       -100.771
+      ],
+      [
+       50.734,
+       -97.53
+      ],
+      [
+       49.8924,
+       -97.1258
+      ],
+      [
+       52.168,
+       -95.375
+      ],
+      [
+       51.768,
+       -96.66
+      ],
+      [
+       49.8915,
+       -97.1182
+      ],
+      [
+       49.3997,
+       -96.0353
+      ],
+      [
+       49.8841,
+       -97.1673
+      ],
+      [
+       49.8538,
+       -100.771
+      ],
+      [
+       49.8879,
+       -97.1353
+      ],
+      [
+       49.1165,
+       -101.02
+      ],
+      [
+       50.6832,
+       -99.5556
+      ],
+      [
+       50.0661,
+       -96.9774
+      ],
+      [
+       49.8793,
+       -96.9815
+      ],
+      [
+       49.9371,
+       -97.1004
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "MB",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       51.0453,
+       -96.8353
+      ],
+      [
+       57.1669,
+       -90.833
+      ],
+      [
+       51.354,
+       -100.698
+      ],
+      [
+       50.827,
+       -95.155
+      ],
+      [
+       49.0792,
+       -96.7313
+      ],
+      [
+       50.9953,
+       -98.8852
+      ],
+      [
+       51.601,
+       -101.353
+      ],
+      [
+       49.8992,
+       -97.1207
+      ],
+      [
+       49.8703,
+       -97.2301
+      ],
+      [
+       48.9991,
+       -100.06
+      ],
+      [
+       50.1121,
+       -96.9316
+      ],
+      [
+       49.5503,
+       -96.6861
+      ],
+      [
+       58.7967,
+       -94.2135
+      ],
+      [
+       49.8188,
+       -97.1367
+      ],
+      [
+       49.8892,
+       -97.1289
+      ],
+      [
+       57.0028,
+       -92.3047
+      ],
+      [
+       52.3987,
+       -101.123
+      ],
+      [
+       50.446,
+       -101.403
+      ],
+      [
+       49.9077,
+       -97.1149
+      ],
+      [
+       49.9007,
+       -97.1294
+      ],
+      [
+       49.074,
+       -96.632
+      ],
+      [
+       49.261,
+       -96.79
+      ],
+      [
+       49.9059,
+       -97.0899
+      ],
+      [
+       49.8962,
+       -97.1146
+      ],
+      [
+       52.5,
+       -101.02
+      ],
+      [
+       52.406,
+       -100.771
+      ],
+      [
+       50.734,
+       -97.53
+      ],
+      [
+       49.8924,
+       -97.1258
+      ],
+      [
+       52.168,
+       -95.375
+      ],
+      [
+       51.768,
+       -96.66
+      ],
+      [
+       49.8915,
+       -97.1182
+      ],
+      [
+       49.3997,
+       -96.0353
+      ],
+      [
+       49.8841,
+       -97.1673
+      ],
+      [
+       49.8538,
+       -100.771
+      ],
+      [
+       49.8879,
+       -97.1353
+      ],
+      [
+       49.1165,
+       -101.02
+      ],
+      [
+       50.6832,
+       -99.5556
+      ],
+      [
+       50.0661,
+       -96.9774
+      ],
+      [
+       49.8793,
+       -96.9815
+      ],
+      [
+       49.9371,
+       -97.1004
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "MB",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       51.0453,
+       -96.8353
+      ],
+      [
+       57.1669,
+       -90.833
+      ],
+      [
+       51.354,
+       -100.698
+      ],
+      [
+       50.827,
+       -95.155
+      ],
+      [
+       49.0792,
+       -96.7313
+      ],
+      [
+       50.9953,
+       -98.8852
+      ],
+      [
+       51.601,
+       -101.353
+      ],
+      [
+       49.8992,
+       -97.1207
+      ],
+      [
+       49.8703,
+       -97.2301
+      ],
+      [
+       48.9991,
+       -100.06
+      ],
+      [
+       50.1121,
+       -96.9316
+      ],
+      [
+       49.5503,
+       -96.6861
+      ],
+      [
+       58.7967,
+       -94.2135
+      ],
+      [
+       49.8188,
+       -97.1367
+      ],
+      [
+       49.8892,
+       -97.1289
+      ],
+      [
+       57.0028,
+       -92.3047
+      ],
+      [
+       52.3987,
+       -101.123
+      ],
+      [
+       50.446,
+       -101.403
+      ],
+      [
+       49.9077,
+       -97.1149
+      ],
+      [
+       49.9007,
+       -97.1294
+      ],
+      [
+       49.074,
+       -96.632
+      ],
+      [
+       49.261,
+       -96.79
+      ],
+      [
+       49.9059,
+       -97.0899
+      ],
+      [
+       49.8962,
+       -97.1146
+      ],
+      [
+       52.5,
+       -101.02
+      ],
+      [
+       52.406,
+       -100.771
+      ],
+      [
+       50.734,
+       -97.53
+      ],
+      [
+       49.8924,
+       -97.1258
+      ],
+      [
+       52.168,
+       -95.375
+      ],
+      [
+       51.768,
+       -96.66
+      ],
+      [
+       49.8915,
+       -97.1182
+      ],
+      [
+       49.3997,
+       -96.0353
+      ],
+      [
+       49.8841,
+       -97.1673
+      ],
+      [
+       49.8538,
+       -100.771
+      ],
+      [
+       49.8879,
+       -97.1353
+      ],
+      [
+       49.1165,
+       -101.02
+      ],
+      [
+       50.6832,
+       -99.5556
+      ],
+      [
+       50.0661,
+       -96.9774
+      ],
+      [
+       49.8793,
+       -96.9815
+      ],
+      [
+       49.9371,
+       -97.1004
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:17Z",
+ "results": {
+  "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (MB, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-1050,CA-2390,CA-2410,CA-2454,CA-5465,CA-0527,CA-0558,CA-0572,CA-1048,CA-1053,CA-1055,CA-1058,CA-1067,CA-1069,CA-1079,CA-1091,CA-2373,CA-2407,CA-2408,CA-2411,CA-2412,CA-2413,CA-2431,CA-2433,CA-2443,CA-2444,CA-2464,CA-2475,CA-2478,CA-2486,CA-2496,CA-2503,CA-2527,CA-2529,CA-4799,CA-4800,CA-4803,CA-4805,CA-5120,CA-5122. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "MB",
+    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0",
+    "note": "Manitoba Par",
+    "hits": [
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       51.0453,
+       -96.8353
+      ],
+      "attrs": {
+       "NAME_E": "Hecla/Grindstone Provincial Park",
+       "NOM_F": "Parc provincial d'Hecla/Grindstone",
+       "BIOME": "T",
+       "O_AREA": 108500,
+       "LOC_E": "Manitoba",
+       "LOC_F": "Manitoba",
+       "TYPE_E": "Provincial Park",
+       "TYPE_F": "Parc provincial",
+       "MGMT_E": "Manitoba Sustainable Development",
+       "MGMT_F": "Développement durable Manitoba",
+       "LEGISL_E": "Provincial Parks Act (1993); Provincial Parks Designation Regulation (37/97)",
+       "LEGISL_F": "Loi sur les parcs provinciaux (1993); Règlement sur la désignation des parcs provinciaux (37/97)",
+       "STATUS_E": "Legally Designated - Includes Protected and Not Protected Lands",
+       "STATUS_F": "Désignation légale en place - Comprend des zones protégées et d'autres non protégées",
+       "PROTDATE": 1997,
+       "YR_PP_DES": "1969",
+       "OWNER_E": "Government of Manitoba",
+       "OWNER_F": "Gouvernement du Manitoba",
+       "PRK_CLSS": "Natural Park",
+       "PR_EXP": "N/A",
+       "D_OF_S": "19816A",
+       "OIC_NM": "1170/69; 1194/69; 650/71; 941/71; 203/72; 305/72; 777/74; 884/74; 465/82; 97/91; 481/97; 115/1997; 300/2007; 249/2013",
+       "MB_RG_NM": "37/63; 199/74; 18/88R; 37/97; 179/97; 74/98; 239/2004; 118/2007; 117/2013",
+       "MB_RG_D": "19740813; 19880115; 19970228; 19970912; 19980508; 19970228; 20041221; 20070911; 20130802",
+       "GAZDATE": "20130817",
+       "O_OF_M_D": "19971022",
+       "MN_RG_NM": "212/97",
+       "MN_RG_D": "19971031",
+       "MN_GZ_D": "19971115",
+       "URL": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/central/hecla.html"
+      }
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       57.1669,
+       -90.833
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       51.354,
+       -100.698
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       50.827,
+       -95.155
+      ],
+      "attrs": {
+       "NAME_E": "Nopiming Provincial Park",
+       "NOM_F": "Park Provincial Nopiming",
+       "BIOME": "T",
+       "O_AREA": 142910,
+       "LOC_E": "Manitoba",
+       "LOC_F": "Manitoba",
+       "TYPE_E": "Provincial Park",
+       "TYPE_F": "Parc provincial",
+       "MGMT_E": "Manitoba Sustainable Development",
+       "MGMT_F": "Développement durable Manitoba",
+       "LEGISL_E": "Provincial Parks Act (1993); Provincial Parks Designation Regulation (37/97)",
+       "LEGISL_F": "Loi sur les parcs provinciaux (1993); Règlement sur la désignation des parcs provinciaux (37/97)",
+       "STATUS_E": "Legally Designated - Includes Protected and Not Protected Lands",
+       "STATUS_F": "Désignation légale en place - Comprend des zones protégées et d'autres non protégées",
+       "PROTDATE": 1997,
+       "YR_PP_DES": "1976",
+       "OWNER_E": "Government of Manitoba",
+       "OWNER_F": "Gouvernement du Manitoba",
+       "PRK_CLSS": "Natural Park",
+       "PR_EXP": "N/A",
+       "D_OF_S": "20374",
+       "OIC_NM": "389/76; 465/82; 97/91; 115/1997; 300/2007",
+       "MB_RG_NM": "82/76; 18/88R; 37/97; 118/2007",
+       "MB_RG_D": "19760420; 19880115; 19970228; 20070911",
+       "GAZDATE": "20070922",
+       "O_OF_M_D": "19971022; 20080121",
+       "MN_RG_NM": "212/97; 21/2008",
+       "MN_RG_D": "19971031; 20080128",
+       "MN_GZ_D": "19971115; 20080209",
+       "URL": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/eastern/nopiming.html"
+      }
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.0792,
+       -96.7313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       50.9953,
+       -98.8852
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       51.601,
+       -101.353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8992,
+       -97.1207
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8703,
+       -97.2301
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       48.9991,
+       -100.06
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       50.1121,
+       -96.9316
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.5503,
+       -96.6861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       58.7967,
+       -94.2135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8188,
+       -97.1367
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8892,
+       -97.1289
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       57.0028,
+       -92.3047
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       52.3987,
+       -101.123
+      ],
+      "attrs": {
+       "NAME_E": "Primrose Provincial Park",
+       "NOM_F": "Parc provincial Primrose",
+       "BIOME": "T",
+       "O_AREA": 6.476,
+       "LOC_E": "Manitoba",
+       "LOC_F": "Manitoba",
+       "TYPE_E": "Provincial Park",
+       "TYPE_F": "Parc provincial",
+       "MGMT_E": "Manitoba Sustainable Development",
+       "MGMT_F": "Développement durable Manitoba",
+       "LEGISL_E": "Provincial Parks Act (1993); Provincial Parks Designation Regulation (37/97)",
+       "LEGISL_F": "Loi sur les parcs provinciaux (1993); Règlement sur la désignation des parcs provinciaux (37/97)",
+       "STATUS_E": "Legally Designated - Not Protected",
+       "STATUS_F": "Désignation légale en place - Pas de protection",
+       "PROTDATE": 0,
+       "YR_PP_DES": "1974",
+       "OWNER_E": "Government of Manitoba",
+       "OWNER_F": "Gouvernement du Manitoba",
+       "PRK_CLSS": "Recreation Park",
+       "PR_EXP": "N/A",
+       "D_OF_S": "19652",
+       "OIC_NM": "777/74; 884/74; 97/91; 115/97",
+       "MB_RG_NM": "199/74; 18/88R; 37/97",
+       "MB_RG_D": "19740813; 19880115; 19970228",
+       "GAZDATE": "19970315",
+       "O_OF_M_D": "N/A",
+       "MN_RG_NM": "N/A",
+       "MN_RG_D": "N/A",
+       "MN_GZ_D": "N/A",
+       "URL": "https://www.gov.mb.ca/sd/forests_and_lands/land-management/park-system-plan/park_system_plan_web.pdf#page=143"
+      }
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       50.446,
+       -101.403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.9077,
+       -97.1149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.9007,
+       -97.1294
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.074,
+       -96.632
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.261,
+       -96.79
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.9059,
+       -97.0899
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8962,
+       -97.1146
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       52.5,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       52.406,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       50.734,
+       -97.53
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8924,
+       -97.1258
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       52.168,
+       -95.375
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       51.768,
+       -96.66
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8915,
+       -97.1182
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.3997,
+       -96.0353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8841,
+       -97.1673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8538,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8879,
+       -97.1353
+      ],
+      "attrs": {
+       "NAME_E": "Upper Fort Garry Heritage Provincial Park",
+       "NOM_F": "Parc provincial du patrimoine d'Upper Fort Garry",
+       "BIOME": "T",
+       "O_AREA": 1.303,
+       "LOC_E": "Manitoba",
+       "LOC_F": "Manitoba",
+       "TYPE_E": "Provincial Park",
+       "TYPE_F": "Parc provincial",
+       "MGMT_E": "Manitoba Sustainable Development",
+       "MGMT_F": "Développement durable Manitoba",
+       "LEGISL_E": "Provincial Parks Act (1993); Provincial Parks Designation Regulation (37/97)",
+       "LEGISL_F": "Loi sur les parcs provinciaux (1993); Règlement sur la désignation des parcs provinciaux (37/97)",
+       "STATUS_E": "Legally Designated - Permanent Protection",
+       "STATUS_F": "Désignation légale en place - Protection permanente",
+       "PROTDATE": 2014,
+       "YR_PP_DES": "2014",
+       "OWNER_E": "Government of Manitoba",
+       "OWNER_F": "Gouvernement du Manitoba",
+       "PRK_CLSS": "Heritage Park",
+       "PR_EXP": "N/A",
+       "D_OF_S": "20424",
+       "OIC_NM": "276/2014",
+       "MB_RG_NM": "N/A",
+       "MB_RG_D": "N/A",
+       "GAZDATE": "20140913",
+       "URL": "http://www.upperfortgarry.com/"
+      }
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.1165,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       50.6832,
+       -99.5556
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       50.0661,
+       -96.9774
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8793,
+       -96.9815
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.9371,
+       -97.1004
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MB",
+    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0",
+    "note": "Manitoba wil",
+    "hits": [
+     {
+      "layer": "0 Refuges",
+      "point": [
+       51.0453,
+       -96.8353
+      ],
+      "attrs": {
+       "NAME": "Hecla Island",
+       "TYPE": "Wildlife Refuge",
+       "D_OF_S_PLA": "18339C",
+       "OWNERSHIP": "Crown",
+       "AREA_HA": 3848,
+       "HUNTING_RESTRICTIONS": "No person shall hunt, take, kill, capture, retrieve or possess wildlife, or possess or discharge a loaded firearm"
+      }
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       57.1669,
+       -90.833
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       51.354,
+       -100.698
+      ],
+      "attrs": {
+       "NAME": "Duck Mountain",
+       "TYPE": "Wildlife Refuge",
+       "D_OF_S_PLA": "19547A",
+       "OWNERSHIP": "Crown",
+       "AREA_HA": 1480,
+       "HUNTING_RESTRICTIONS": "No person shall hunt, take, kill, capture, retrieve or possess wildlife, or possess or discharge a loaded firearm"
+      }
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       50.827,
+       -95.155
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.0792,
+       -96.7313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       50.9953,
+       -98.8852
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       51.601,
+       -101.353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8992,
+       -97.1207
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8703,
+       -97.2301
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       48.9991,
+       -100.06
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       50.1121,
+       -96.9316
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.5503,
+       -96.6861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       58.7967,
+       -94.2135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8188,
+       -97.1367
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8892,
+       -97.1289
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       57.0028,
+       -92.3047
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       52.3987,
+       -101.123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       50.446,
+       -101.403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.9077,
+       -97.1149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.9007,
+       -97.1294
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.074,
+       -96.632
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.261,
+       -96.79
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.9059,
+       -97.0899
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8962,
+       -97.1146
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       52.5,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       52.406,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       50.734,
+       -97.53
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8924,
+       -97.1258
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       52.168,
+       -95.375
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       51.768,
+       -96.66
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8915,
+       -97.1182
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.3997,
+       -96.0353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8841,
+       -97.1673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8538,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8879,
+       -97.1353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.1165,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       50.6832,
+       -99.5556
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       50.0661,
+       -96.9774
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8793,
+       -96.9815
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.9371,
+       -97.1004
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MB",
+    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/1",
+    "note": "Manitoba wil~1",
+    "hits": [
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       51.0453,
+       -96.8353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       57.1669,
+       -90.833
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       51.354,
+       -100.698
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       50.827,
+       -95.155
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.0792,
+       -96.7313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       50.9953,
+       -98.8852
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       51.601,
+       -101.353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8992,
+       -97.1207
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8703,
+       -97.2301
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       48.9991,
+       -100.06
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       50.1121,
+       -96.9316
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.5503,
+       -96.6861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       58.7967,
+       -94.2135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8188,
+       -97.1367
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8892,
+       -97.1289
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       57.0028,
+       -92.3047
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       52.3987,
+       -101.123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       50.446,
+       -101.403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.9077,
+       -97.1149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.9007,
+       -97.1294
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.074,
+       -96.632
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.261,
+       -96.79
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.9059,
+       -97.0899
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8962,
+       -97.1146
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       52.5,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       52.406,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       50.734,
+       -97.53
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8924,
+       -97.1258
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       52.168,
+       -95.375
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       51.768,
+       -96.66
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8915,
+       -97.1182
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.3997,
+       -96.0353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8841,
+       -97.1673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8538,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8879,
+       -97.1353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.1165,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       50.6832,
+       -99.5556
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       50.0661,
+       -96.9774
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8793,
+       -96.9815
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.9371,
+       -97.1004
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MB",
+    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2",
+    "note": "Manitoba wil~2",
+    "hits": [
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       51.0453,
+       -96.8353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       57.1669,
+       -90.833
+      ],
+      "attrs": {
+       "NAME_E": "Kaskatamagan Wildlife Management Area",
+       "NOM_F": "Zone de gestion de la faune de Kaskatamagan",
+       "D_OF_S": "20423",
+       "UNIT_SUB": "N/A",
+       "LOCATION": "531,190  ha, east of the Nelson River on the Hudson Bay coast.",
+       "DESCRIPTION": "This WMA features a striking and abrupt transition from spruce forest to tundra along the edge of Hudson Bay. Protection of outstanding, yet fragile, coastal and tundra ecosystems led to the establishment of this WMA. This vast WMA includes habitat for polar bears, caribou and geese. Shorebirds are an important part of the fauna and plant life is a mix of arctic, sub-arctic, and boreal species. York Factory National Historic Site at the mouth of the Hayes River is adjacent to the WMA.<br><br>The fragile nature of the ecosystem and the potential hazards from wildlife and weather are reasons to visit this WMA through established lodges or tour operators.",
+       "GAME_SPP": "Moose, Black Bear, Coastal or Barren-ground Caribou, Sharp-tailed Grouse, Ruffed Grouse, Spruce Grouse, Ptarmigan, Gray Wolf, Ducks, Geese, Sandhill Crane",
+       "HUNTING_RESTRICTIONS": "No licenced caribou hunting between August 25 - September 30",
+       "Fur_spp": "Beaver, Muskrat, Red Squirrel, Short-tailed Weasel, Marten, Mink, River Otter, Wolverine, Red Fox, Arctic Fox, Lynx"
+      }
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       51.354,
+       -100.698
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       50.827,
+       -95.155
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.0792,
+       -96.7313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       50.9953,
+       -98.8852
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       51.601,
+       -101.353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8992,
+       -97.1207
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8703,
+       -97.2301
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       48.9991,
+       -100.06
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       50.1121,
+       -96.9316
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.5503,
+       -96.6861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       58.7967,
+       -94.2135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8188,
+       -97.1367
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8892,
+       -97.1289
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       57.0028,
+       -92.3047
+      ],
+      "attrs": {
+       "NAME_E": "Kaskatamagan Wildlife Management Area",
+       "NOM_F": "Zone de gestion de la faune de Kaskatamagan",
+       "D_OF_S": "20423",
+       "UNIT_SUB": "N/A",
+       "LOCATION": "531,190  ha, east of the Nelson River on the Hudson Bay coast.",
+       "DESCRIPTION": "This WMA features a striking and abrupt transition from spruce forest to tundra along the edge of Hudson Bay. Protection of outstanding, yet fragile, coastal and tundra ecosystems led to the establishment of this WMA. This vast WMA includes habitat for polar bears, caribou and geese. Shorebirds are an important part of the fauna and plant life is a mix of arctic, sub-arctic, and boreal species. York Factory National Historic Site at the mouth of the Hayes River is adjacent to the WMA.<br><br>The fragile nature of the ecosystem and the potential hazards from wildlife and weather are reasons to visit this WMA through established lodges or tour operators.",
+       "GAME_SPP": "Moose, Black Bear, Coastal or Barren-ground Caribou, Sharp-tailed Grouse, Ruffed Grouse, Spruce Grouse, Ptarmigan, Gray Wolf, Ducks, Geese, Sandhill Crane",
+       "HUNTING_RESTRICTIONS": "No licenced caribou hunting between August 25 - September 30",
+       "Fur_spp": "Beaver, Muskrat, Red Squirrel, Short-tailed Weasel, Marten, Mink, River Otter, Wolverine, Red Fox, Arctic Fox, Lynx"
+      }
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       52.3987,
+       -101.123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       50.446,
+       -101.403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.9077,
+       -97.1149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.9007,
+       -97.1294
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.074,
+       -96.632
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.261,
+       -96.79
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.9059,
+       -97.0899
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8962,
+       -97.1146
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       52.5,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       52.406,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       50.734,
+       -97.53
+      ],
+      "attrs": {
+       "NAME_E": "Narcisse Wildlife Management Area",
+       "NOM_F": "Zone de gestion de la faune de Narcisse",
+       "D_OF_S": "Legal Description",
+       "UNIT_SUB": "N/A",
+       "LOCATION": "11,882 ha, 5 km north of Narcisse on PTH 17, on the west side of the road",
+       "DESCRIPTION": "Narcisse WMA protects the largest aggregation of snakes in the world. To many, Narcisse is synonymous with snake. Its name even sounds like something a snake might say. The WMA is the winter denning grounds of tens of thousands of red-sided garter snakes. <br><br>The Narcisse WMA has become an international attraction and research station. Thousands of visitors come each year to see the snakes. Herpetologists have been studying the red-sided garter snake at Narcisse for more than 30 years. The researchers have made some interesting discoveries about snake physiology and behaviour. A good reason to study the red-sided garter snake is that it isn't venomous. <br><br>The many research projects have helped to protect the snakes. One example is the small snake fences you will notice along the PTH #17 – they channel the snakes to culverts under the road. In past snakes were killed in the thousands on the road during spring and fall migration.<br><br>Why here is often asked. The karst topography of the Interlake allows the snakes to survive our harsh winters. The limestone bedrock is full of cracks, crevices and caverns. Over thousands of years a weak acid, made of water and carbon dioxide, has percolated through the soil to the limestone bedrock, dissolving it to form the caverns below the frost line but above the water table – a safe place for the snakes to wait out the winter. Another factor is that the snakes' summer habitat is also protected by the surrounding WMAs.<br><br>You can visit year round – Narcisse WMA is more than snakes. The WMA also protects critical winter habitat for deer. Watch for coyote, red fox and snowshoe hare. Some of the avian life you can see include ruffed and sharp-tailed grouse, eastern bluebird, veery, warbling vireo, brown thrasher, vesper sparrow, Cape May warbler, Connecticut warbler, northern harrier and other raptors. <br><br>The ideal times to see the snakes are in the spring (early May), when the snakes are first emerging from their winter hibernacula, or the fall, when they are returning to their underground dens for the winter. There are four den sites to visit on a well-marked trail. You will find interpretive signs throughout. <br><br>In addition to the interpretive trail that takes you around to the dens, the Old Pioneer Trail cuts through the Narcisse WMA on its way from Grosse Isle up to Fisher Branch. The Old Pioneer Trail is a great biking trail that takes you through the Inwood, Sandridge and Narcisse WMAs. It also passes close to the Clematis and Broad Valley WMAs. It is unlawful to kill, harass or remove any snakes from the WMA. Call the TIP line at 1-800-782-0076 if you see something that should be reported to wildlife officials.",
+       "VEHICLE_RESTRICTIONS": "In Township 20, Range 1 West and being the west half of Section 22, no person shall operate a vehicle.",
+       "GAME_SPP": "White-tailed Deer, Elk, Moose, Black Bear, Sharp-tailed Grouse, Ruffed Grouse, Woodcock, Gray Wolf",
+       "HUNTING_RESTRICTIONS": "In Township 20, Range 1 West and being the west half of Section 22, no person shall hunt, take, kill, capture or possess a garter snake",
+       "Fur_spp": "Beaver, Muskrat, Red Squirrel, Badger, Short-tailed Weasel, Fisher, Marten, Mink, Coyote, Red Fox, Lynx, Bobcat, Raccoon"
+      }
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8924,
+       -97.1258
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       52.168,
+       -95.375
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       51.768,
+       -96.66
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8915,
+       -97.1182
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.3997,
+       -96.0353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8841,
+       -97.1673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8538,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8879,
+       -97.1353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.1165,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       50.6832,
+       -99.5556
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       50.0661,
+       -96.9774
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8793,
+       -96.9815
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.9371,
+       -97.1004
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MB",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.0453,
+       -96.8353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       57.1669,
+       -90.833
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.354,
+       -100.698
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.827,
+       -95.155
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.0792,
+       -96.7313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.9953,
+       -98.8852
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.601,
+       -101.353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8992,
+       -97.1207
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8703,
+       -97.2301
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.9991,
+       -100.06
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.1121,
+       -96.9316
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.5503,
+       -96.6861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       58.7967,
+       -94.2135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8188,
+       -97.1367
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8892,
+       -97.1289
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       57.0028,
+       -92.3047
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.3987,
+       -101.123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.446,
+       -101.403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.9077,
+       -97.1149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.9007,
+       -97.1294
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.074,
+       -96.632
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.261,
+       -96.79
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.9059,
+       -97.0899
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8962,
+       -97.1146
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.5,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.406,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.734,
+       -97.53
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8924,
+       -97.1258
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.168,
+       -95.375
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.768,
+       -96.66
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8915,
+       -97.1182
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.3997,
+       -96.0353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8841,
+       -97.1673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8538,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8879,
+       -97.1353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.1165,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.6832,
+       -99.5556
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.0661,
+       -96.9774
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8793,
+       -96.9815
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.9371,
+       -97.1004
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MB",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.0453,
+       -96.8353
+      ],
+      "attrs": {
+       "NAME_E": "Hecla/Grindstone Provincial Park",
+       "NAME_F": "Parc provincial d'Hecla/Grindstone",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1997,
+       "ESTYEAR": 1969,
+       "BIOME": "T",
+       "LOC": 3,
+       "O_AREA_HA": 40050,
+       "PARENT_ID": 460004044,
+       "ZONE_ID": 460004061,
+       "ZONEDESC_E": "Backcountry",
+       "MECH_E": "The Provincial Parks Act, C.C.S.M. c. P20; Provincial Parks Designation Regulation 37/97.",
+       "TYPE_E": "Provincial Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Manitoba",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Manitoba Environment and Climate Change",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 46,
+       "JUR_ID": "460004061",
+       "MPLAN": 1,
+       "MPLAN_REF": "https://www.gov.mb.ca/sd/pubs/parks-protected-spaces/management_plan/hecla_grindstone_management_plan.pdf",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       57.1669,
+       -90.833
+      ],
+      "attrs": {
+       "NAME_E": "Kaskatamagan Wildlife Management Area",
+       "NAME_F": "Zone de gestion de la faune de Kaskatamagan",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 2009,
+       "ESTYEAR": 1973,
+       "BIOME": "T",
+       "LOC": 3,
+       "O_AREA_HA": 251314,
+       "PARENT_ID": 460005140,
+       "ZONE_ID": 460005140,
+       "MECH_E": "The Wildlife Act, C.C.S.M. c. W130; Use of Wildlife Lands Regulation 77/99.",
+       "TYPE_E": "Wildlife Management Area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Manitoba",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Manitoba Natural Resources and Indigenous Futures",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 46,
+       "JUR_ID": "460005140",
+       "MPLAN": 0,
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.354,
+       -100.698
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.827,
+       -95.155
+      ],
+      "attrs": {
+       "NAME_E": "Woodland Caribou Provincial Park (Wilderness Class)",
+       "NAME_F": "Woodland Caribou Provincial Park (Wilderness Class)",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 2,
+       "STATUS": 1,
+       "QUALYEAR": 1983,
+       "ESTYEAR": 1983,
+       "BIOME": "T",
+       "LOC": 9,
+       "O_AREA_HA": 470620,
+       "PARENT_ID": 350036600,
+       "ZONE_ID": 350036600,
+       "MECH_E": "Provincial Parks and Conservation Reserves Act, 2006",
+       "TYPE_E": "Provincial Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Province of Ontario",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Ontario Parks",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 35,
+       "JUR_ID": "P2370e",
+       "MPLAN": 1,
+       "MPLAN_REF": "https://www.ontario.ca/page/provincial-park-management-direction",
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.0792,
+       -96.7313
+      ],
+      "attrs": {
+       "NAME_E": "Loewen - MHHC",
+       "NAME_F": "Loewen - MHHC",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2019,
+       "ESTYEAR": 1992,
+       "BIOME": "T",
+       "LOC": 3,
+       "O_AREA_HA": 135.432599534,
+       "PARENT_ID": 460009405,
+       "ZONE_ID": 460009405,
+       "MECH_E": "The Manitoba Habitat Heritage Act, C.C.S.M. c. H3",
+       "TYPE_E": "Private Land",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Manitoba Habitat Heritage Corporation",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Manitoba Habitat Heritage Corporation",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 46,
+       "JUR_ID": "460009405",
+       "MPLAN": 1,
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.9953,
+       -98.8852
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.601,
+       -101.353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8992,
+       -97.1207
+      ],
+      "attrs": {
+       "NAME_E": "Whittier Park Riparian Forest",
+       "NAME_F": "Forêt riveraine de Whittier Park",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 1,
+       "QUALYEAR": 2024,
+       "BIOME": "T",
+       "LOC": 3,
+       "O_AREA_HA": 6.412801991051633,
+       "PARENT_ID": 460008270,
+       "ZONE_ID": 460008270,
+       "MECH_E": "City of Winnipeg Charter; Ecologically Significant Natural Lands Policy; Park By-law",
+       "TYPE_E": "City Park; Ecologically Signficant Natural Land",
+       "OWNER_TYPE": 3,
+       "OWNER_E": "City of Winnipeg",
+       "GOV_TYPE": 2,
+       "MGMT_E": "City of Winnipeg - Public Works Department - Parks and Open Spaces",
+       "SUBSRIGHT": "B",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 46,
+       "JUR_ID": "460008270",
+       "MPLAN": 0,
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8703,
+       -97.2301
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.9991,
+       -100.06
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.1121,
+       -96.9316
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.5503,
+       -96.6861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       58.7967,
+       -94.2135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8188,
+       -97.1367
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8892,
+       -97.1289
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       57.0028,
+       -92.3047
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.3987,
+       -101.123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.446,
+       -101.403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.9077,
+       -97.1149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.9007,
+       -97.1294
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.074,
+       -96.632
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.261,
+       -96.79
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.9059,
+       -97.0899
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8962,
+       -97.1146
+      ],
+      "attrs": {
+       "NAME_E": "Seine River Corridor",
+       "NAME_F": "corridor de la rivière Seine",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 1,
+       "QUALYEAR": 2024,
+       "BIOME": "T",
+       "LOC": 3,
+       "O_AREA_HA": 111.06,
+       "PARENT_ID": 460008040,
+       "ZONE_ID": 460008040,
+       "MECH_E": "City of Winnipeg Charter; Ecologically Significant Natural Lands Policy; Park By-law",
+       "TYPE_E": "City Park; Ecologically Signficant Natural Land",
+       "OWNER_TYPE": 3,
+       "OWNER_E": "City of Winnipeg",
+       "GOV_TYPE": 2,
+       "MGMT_E": "City of Winnipeg - Public Works Department - Parks and Open Spaces",
+       "SUBSRIGHT": "B",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 46,
+       "JUR_ID": "460008040",
+       "MPLAN": 0,
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.5,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.406,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.734,
+       -97.53
+      ],
+      "attrs": {
+       "NAME_E": "Narcisse Wildlife Management Area",
+       "NAME_F": "Zone de gestion de la faune de Narcisse",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 4,
+       "STATUS": 1,
+       "QUALYEAR": 2000,
+       "ESTYEAR": 1969,
+       "BIOME": "T",
+       "LOC": 3,
+       "O_AREA_HA": 129.596886535,
+       "PARENT_ID": 460005026,
+       "ZONE_ID": 460005026,
+       "MECH_E": "The Wildlife Act, C.C.S.M. c. W130; Use of Wildlife Lands Regulation 77/99.",
+       "TYPE_E": "Wildlife Management Area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Manitoba",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Manitoba Natural Resources and Indigenous Futures",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 46,
+       "JUR_ID": "460005026",
+       "MPLAN": 0,
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8924,
+       -97.1258
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.168,
+       -95.375
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.768,
+       -96.66
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8915,
+       -97.1182
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.3997,
+       -96.0353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8841,
+       -97.1673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8538,
+       -100.771
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8879,
+       -97.1353
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.1165,
+       -101.02
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.6832,
+       -99.5556
+      ],
+      "attrs": {
+       "NAME_E": "Riding Mountain National Park Of Canada",
+       "NAME_F": "Parc national du Canada du Mont-Riding",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1929,
+       "ESTYEAR": 1929,
+       "BIOME": "T",
+       "LOC": 3,
+       "O_AREA_HA": 296770,
+       "PARENT_ID": 717800000,
+       "ZONE_ID": 717800000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.0661,
+       -96.9774
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8793,
+       -96.9815
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.9371,
+       -97.1004
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 526,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
