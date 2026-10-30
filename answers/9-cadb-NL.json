@@ -1,0 +1,127 @@
+{
+ "request": "requests/9-cadb-NL.json",
+ "id": "9-cadb-NL",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CA dive NL: re-run P-2 for 1 name-agreeing parks to get the layer URL",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CA dive NL: re-run P-2 for 1 name-agreeing parks to get the layer URL",
+  "probe": {
+   "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-6166",
+   "refs": [
+    "CA-6166"
+   ],
+   "pointq": [
+    {
+     "st": "NL",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       46.8243,
+       -54.188
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NL",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       46.8243,
+       -54.188
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 14:47Z",
+ "results": {
+  "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-6166",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "NL",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.8243,
+       -54.188
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NL",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.8243,
+       -54.188
+      ],
+      "attrs": {
+       "NAME_E": "Cape St. Mary's Ecological Reserve",
+       "NAME_F": "Cape St. Mary's Ecological Reserve",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1964,
+       "BIOME": "T",
+       "LOC": 5,
+       "O_AREA_HA": 1000,
+       "PARENT_ID": 100002901,
+       "ZONE_ID": 100002902,
+       "ZONEDESC_E": "Terrestrial Zone, Ecological Reserve",
+       "MECH_E": "Wilderness and Ecological Reserves Act (1980)",
+       "TYPE_E": "Ecological Reserve",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Newfoundland and Labrador, Department of Environment and Climate Change, Policy, Planning and Natural Areas Division",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Government of Newfoundland and Labrador, Department of Environment and Climate Change, Policy, Planning and Natural Areas Division",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "AUDITYEAR": 2018,
+       "AUDITRES": "Qualified for inclusion with the Canadian Protected and Conserved areas Database (CPCAD) using the Decision Support Tool (DST) during (2018/2019) review.",
+       "PROVIDER": 10,
+       "JUR_ID": "100002902",
+       "MPLAN": 1,
+       "MPLAN_REF": "https://www.gov.nl.ca/ecc/natural-areas/publications/",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 8,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
