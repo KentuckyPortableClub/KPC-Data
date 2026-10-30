@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-3724.json",
+ "id": "10-auto-US-3724",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-3724",
+  "name": "Roosevelts Little White House State Historic Site",
+  "agency": "Georgia DNR",
+  "url": "https://gastateparks.org/sites/default/files/parks/pdf/littlewhitehouse/LittleWhiteHouseBrochure_Chinese.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:36Z",
+ "results": [
+  {
+   "url": "https://gastateparks.org/sites/default/files/parks/pdf/littlewhitehouse/LittleWhiteHouseBrochure_Chinese.pdf",
+   "map_url": "https://gastateparks.org/sites/default/files/parks/pdf/littlewhitehouse/LittleWhiteHouseBrochure_Chinese.pdf",
+   "saved": [
+    "maps/US-3724_roosevelts-little-white-house-st.jpg"
+   ],
+   "bytes": 492784,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
