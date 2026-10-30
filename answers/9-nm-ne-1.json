@@ -1,0 +1,43 @@
+{
+ "request": "requests/9-nm-ne-1.json",
+ "id": "9-nm-ne-1",
+ "chat": 9,
+ "kind": "page",
+ "report": "NM NE: official page name check, 1 pages: page title, H1 / main heading, any official-name line, the agency, map / GIS / boundary links (text only)",
+ "asked": {
+  "chat": 9,
+  "kind": "page",
+  "report": "NM NE: official page name check, 1 pages: page title, H1 / main heading, any official-name line, the agency, map / GIS / boundary links (text only)",
+  "urls": [
+   "https://www.papionrd.org/recreation-wildlife/parks-and-trails/chalco-hills-at-wehrspann-lake/"
+  ],
+  "refs": [
+   [
+    "US-4011",
+    "Chalco Hills State Recreation Area"
+   ]
+  ]
+ },
+ "answered": "2026-10-30 01:50Z",
+ "results": [
+  {
+   "url": "https://www.papionrd.org/recreation-wildlife/parks-and-trails/chalco-hills-at-wehrspann-lake/",
+   "status": 403,
+   "final_url": "https://www.papionrd.org/recreation-wildlife/parks-and-trails/chalco-hills-at-wehrspann-lake/",
+   "title": "Access Denied",
+   "text": "Access Denied\nYour access to this page has been blocked. Your request appears similar to malicious requests sent by robots.\nIf you are using a VPN, try disabling it.\nIf your browser is out of date, try updating it.\nIf you continue to be blocked, and believe this in error, please send an email to\nsecurity@sitedistrict.com with:\nA summary of what you were doing and why you need access to this site\nA screenshot of this page, OR the request details below:\nURL: https://www.papionrd.org/recreation-wildlife/parks-and-trails/chalco-hills-at-wehrspann-lake/\nASN: MICROSOFT-CORP-MSN-AS-BLOCK IP: 13.71.231.148\nTime: 2026-10-30 01:50:54 UTC Request: e00ed262d1e0c57b44a3ae0434ccdb19\nUA: KPC bot: shared look-up bot (https://kentuckyportableclub.github.io/KPC-Links/; ham radio club; 1 request per 2 s per host; reads page text and metadata only)",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK, 0 screenshot(s)"
+}
