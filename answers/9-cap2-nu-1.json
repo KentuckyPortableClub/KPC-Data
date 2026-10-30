@@ -1,0 +1,678 @@
+{
+ "request": "requests/9-cap2-nu-1.json",
+ "id": "9-cap2-nu-1",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CAP2 NU 1: 14 parks, 3 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CAP2 NU 1: 14 parks, 3 layers",
+  "probe": {
+   "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (NU, 14 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-0831,CA-4590,CA-4575,CA-4580,CA-4585,CA-4588,CA-4852,CA-5285,CA-5466,CA-5467,CA-5468,CA-5469,CA-5735,CA-5736. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+   "refs": [
+    "CA-0831",
+    "CA-4590",
+    "CA-4575",
+    "CA-4580",
+    "CA-4585",
+    "CA-4588",
+    "CA-4852",
+    "CA-5285",
+    "CA-5466",
+    "CA-5467",
+    "CA-5468",
+    "CA-5469",
+    "CA-5735",
+    "CA-5736"
+   ],
+   "pointq": [
+    {
+     "st": "NU",
+     "url": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21",
+     "note": "NU-TP Crown-",
+     "points": [
+      [
+       64.317,
+       -96.0506
+      ],
+      [
+       62.92,
+       -69.825
+      ],
+      [
+       64.174,
+       -83.113
+      ],
+      [
+       63.86,
+       -95.623
+      ],
+      [
+       68.663,
+       -95.883
+      ],
+      [
+       68.66,
+       -93.12
+      ],
+      [
+       68.6391,
+       -95.8725
+      ],
+      [
+       62.8177,
+       -65.4296
+      ],
+      [
+       64.9818,
+       -66.2127
+      ],
+      [
+       67.7437,
+       -115.367
+      ],
+      [
+       64.5718,
+       -78.171
+      ],
+      [
+       77.0054,
+       -96.1786
+      ],
+      [
+       61.1398,
+       -93.9934
+      ],
+      [
+       64.3186,
+       -96.0282
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NU",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       64.317,
+       -96.0506
+      ],
+      [
+       62.92,
+       -69.825
+      ],
+      [
+       64.174,
+       -83.113
+      ],
+      [
+       63.86,
+       -95.623
+      ],
+      [
+       68.663,
+       -95.883
+      ],
+      [
+       68.66,
+       -93.12
+      ],
+      [
+       68.6391,
+       -95.8725
+      ],
+      [
+       62.8177,
+       -65.4296
+      ],
+      [
+       64.9818,
+       -66.2127
+      ],
+      [
+       67.7437,
+       -115.367
+      ],
+      [
+       64.5718,
+       -78.171
+      ],
+      [
+       77.0054,
+       -96.1786
+      ],
+      [
+       61.1398,
+       -93.9934
+      ],
+      [
+       64.3186,
+       -96.0282
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NU",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       64.317,
+       -96.0506
+      ],
+      [
+       62.92,
+       -69.825
+      ],
+      [
+       64.174,
+       -83.113
+      ],
+      [
+       63.86,
+       -95.623
+      ],
+      [
+       68.663,
+       -95.883
+      ],
+      [
+       68.66,
+       -93.12
+      ],
+      [
+       68.6391,
+       -95.8725
+      ],
+      [
+       62.8177,
+       -65.4296
+      ],
+      [
+       64.9818,
+       -66.2127
+      ],
+      [
+       67.7437,
+       -115.367
+      ],
+      [
+       64.5718,
+       -78.171
+      ],
+      [
+       77.0054,
+       -96.1786
+      ],
+      [
+       61.1398,
+       -93.9934
+      ],
+      [
+       64.3186,
+       -96.0282
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:40Z",
+ "results": {
+  "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (NU, 14 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-0831,CA-4590,CA-4575,CA-4580,CA-4585,CA-4588,CA-4852,CA-5285,CA-5466,CA-5467,CA-5468,CA-5469,CA-5735,CA-5736. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "NU",
+    "url": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21",
+    "note": "NU-TP Crown-",
+    "hits": [
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       64.317,
+       -96.0506
+      ],
+      "attrs": {
+       "SOURCE": "GN-ENV",
+       "NAME_E": "Inuujaarvik Territorial Park",
+       "CATEDESC": "Territorial Park Campground",
+       "GEOMETRY.AREA": 2.080961321297e-06,
+       "GEOMETRY.LEN": 0.00647767297427262
+      }
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       62.92,
+       -69.825
+      ],
+      "attrs": {
+       "SOURCE": "GN-ENV",
+       "NAME_E": "Katannilik Territorial Park",
+       "CATEDESC": "Territorial Park",
+       "GEOMETRY.AREA": 0.26025148857056396,
+       "GEOMETRY.LEN": 4.2207590673206
+      }
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       64.174,
+       -83.113
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       63.86,
+       -95.623
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       68.663,
+       -95.883
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       68.66,
+       -93.12
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       68.6391,
+       -95.8725
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       62.8177,
+       -65.4296
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       64.9818,
+       -66.2127
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       67.7437,
+       -115.367
+      ],
+      "attrs": {
+       "SOURCE": "GN-ENV",
+       "NAME_E": "Kugluk Territorial Park",
+       "CATEDESC": "Territorial Park",
+       "GEOMETRY.AREA": 0.00185390777125886,
+       "GEOMETRY.LEN": 0.490940427409394
+      }
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       64.5718,
+       -78.171
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       77.0054,
+       -96.1786
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       61.1398,
+       -93.9934
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Territorial Park",
+      "point": [
+       64.3186,
+       -96.0282
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NU",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.317,
+       -96.0506
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       62.92,
+       -69.825
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.174,
+       -83.113
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       63.86,
+       -95.623
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       68.663,
+       -95.883
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       68.66,
+       -93.12
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       68.6391,
+       -95.8725
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       62.8177,
+       -65.4296
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.9818,
+       -66.2127
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       67.7437,
+       -115.367
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.5718,
+       -78.171
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       77.0054,
+       -96.1786
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       61.1398,
+       -93.9934
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.3186,
+       -96.0282
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NU",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.317,
+       -96.0506
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       62.92,
+       -69.825
+      ],
+      "attrs": {
+       "NAME_E": "Katannilik Territorial Park",
+       "NAME_F": "Parc territorial Katannilik",
+       "NAME_IND": "ᑲᑕᓐᓂᓕᒃ ᒥᕐᖑᐃᓯᕐᕕᒃ",
+       "PA_OECM_DF": 3,
+       "IPCA": 0,
+       "IUCN_CAT": 6,
+       "STATUS": 3,
+       "QUALYEAR": 2018,
+       "BIOME": "T",
+       "LOC": 8,
+       "O_AREA_HA": 146194,
+       "PARENT_ID": 620001200,
+       "ZONE_ID": 620001200,
+       "MECH_E": "Territorial Parks Act; Awaiting Full Establishment",
+       "TYPE_E": "Territorial Park",
+       "OWNER_TYPE": 10,
+       "OWNER_E": "Government of Nunavut; Government of Canada; Qikiqtani Inuit Association",
+       "GOV_TYPE": 5,
+       "MGMT_E": "Government of Nunavut, Department of Environment, Parks and Special Places Division",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 62,
+       "MPLAN": 1,
+       "MPLAN_REF": "https://nunavutparks.com/wp-content/uploads/2022/03/20200325-Final-Katannilik-Management-Plan.pdf",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.174,
+       -83.113
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       63.86,
+       -95.623
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       68.663,
+       -95.883
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       68.66,
+       -93.12
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       68.6391,
+       -95.8725
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       62.8177,
+       -65.4296
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.9818,
+       -66.2127
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       67.7437,
+       -115.367
+      ],
+      "attrs": {
+       "NAME_E": "Kugluk Territorial Park",
+       "NAME_F": "Parc territorial Kugluk",
+       "NAME_IND": "Qurluq Aviturvianni Unaguiqhirvik",
+       "PA_OECM_DF": 3,
+       "IPCA": 0,
+       "IUCN_CAT": 6,
+       "STATUS": 3,
+       "QUALYEAR": 2018,
+       "BIOME": "T",
+       "LOC": 8,
+       "O_AREA_HA": 833.715803375,
+       "PARENT_ID": 620001300,
+       "ZONE_ID": 620001300,
+       "MECH_E": "Territorial Parks Act; Awaiting Full Establishment",
+       "TYPE_E": "Territorial Park",
+       "OWNER_TYPE": 10,
+       "OWNER_E": "Government of Nunavut",
+       "GOV_TYPE": 5,
+       "MGMT_E": "Government of Nunavut, Department of Environment, Parks and Special Places Division",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 62,
+       "MPLAN": 1,
+       "MPLAN_REF": "https://nunavutparks.com/wp-content/uploads/2021/09/20170620-Kugluk-Mgmt-Report.pdf",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.5718,
+       -78.171
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       77.0054,
+       -96.1786
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       61.1398,
+       -93.9934
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.3186,
+       -96.0282
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 100,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
