@@ -8028,6 +8028,42 @@
      "name": "Protected_areas",
      "geom": "Polygon",
      "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "LOT",
+      "PLAN_",
+      "LOTPLAN",
+      "SYSINTCODE",
+      "ESTATENAME",
+      "NAMEABBREV",
+      "NAME_CAPS",
+      "EST_TYPE",
+      "EST_TENURE",
+      "LEGISLATED",
+      "GAZ_AREAHA",
+      "ZONE",
+      "IUCN_CODE",
+      "GLR_NUMBER",
+      "QPWS_REG",
+      "CURGAZDATE",
+      "SHIRE",
+      "FEAT_NAME_",
+      "PA_AREAHA"
+     ],
+     "records": 1926,
+     "sample": [
+      "Melsonby (Gaarraay) National Park (Cape York Penin",
+      "Daintree National Park (Cape York Peninsula Aborig",
+      "Daintree National Park (Cape York Peninsula Aborig"
+     ],
+     "name_field": "ESTATENAME"
+    },
+    {
+     "id": 177,
+     "name": "Protected_areas",
+     "geom": "Polygon",
+     "gap": "outline",
      "is": "park / protected-area polygons with a name field",
      "fields": [
       "OBJECTID",
