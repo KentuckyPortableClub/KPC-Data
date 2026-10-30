@@ -84,6 +84,11 @@ jobs:
           git commit -qm 'AUTO-3: save-map requests from the documents bot (nightly)'
           for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && break; sleep 5; done
           true
+      - name: The week's numbers + the control panel's data (data/status/week-review.md, panel.json; Brandon Oct 30 11:01 AM)
+        continue-on-error: true
+        env:
+          LINKS: ../links
+        run: cd kpcdata && python3 .github/scripts/kpc_week_numbers.py || true
       - name: The morning list for chat 11 (data/waiting/today.md; Brandon Oct 29 11:50 PM)
         continue-on-error: true
         run: cd kpcdata && python3 .github/scripts/kpc_waiting_today.py || true

@@ -11,6 +11,9 @@ on:
     - cron: '41 10 * * *'
     # Oct 29 (BOT C): a second look in the evening so a key rebuilt in the day reaches chat 11's sample the same night
     - cron: '41 1 * * *'
+    # Oct 30 (Brandon 11:01 AM, 'All 3'): every hour a quick look: only when a map key changed in KPC-Links does the copy run
+    # (so chat 11's sample shows a new build within the hour); else the run ends in seconds
+    - cron: '11 * * * *'
 permissions:
   contents: write
   actions: write
@@ -18,7 +21,35 @@ concurrency:
   group: kpc-copy-from-links
   cancel-in-progress: false
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      work: ${{ steps.g.outputs.work }}
+      fp: ${{ steps.g.outputs.fp }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            data/us-key
+            data/ca-key
+            data/world-key
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+          sparse-checkout: data/waiting/key-seen.txt
+      - id: g
+        run: |
+          F=$(cat links/data/us-key/*.json links/data/ca-key/*.json links/data/world-key/*.json 2>/dev/null | sha1sum | cut -c1-16)
+          O=$(cat kpcdata/data/waiting/key-seen.txt 2>/dev/null || echo none)
+          echo "fp=$F" >> "$GITHUB_OUTPUT"
+          H=$(date -u +%H:%M)
+          if [ "${{ github.event_name }}" = schedule ] && [ "${{ github.event.schedule }}" = '11 * * * *' ] && [ "$F" = "$O" ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Copy::no new key build: nothing to do"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi
   copy:
+    needs: gate
+    if: ${{ needs.gate.outputs.work == '1' }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -57,6 +88,7 @@ jobs:
         run: |
           # the layer collector moved to kpc-collector.yml (Oct 30 10:45 AM: starts itself every 2 h when the Fable / atlas files have new work)
           (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_hunter_trigger.py > /tmp/hunt.txt) || true; cat /tmp/hunt.txt || true
+          echo "${{ needs.gate.outputs.fp }}" > kpcdata/data/waiting/key-seen.txt   # the key build this copy carried (the hourly look compares with it)
           bash links/.github/scripts/kpc_push_data.sh kpcdata "Site data copied from KPC-Links (Step B3)" data locations-pota.json locations-sota.json locations-wwff.json
       - name: The picture-map branch (daily cleanup)
         continue-on-error: true

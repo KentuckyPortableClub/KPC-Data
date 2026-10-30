@@ -59,5 +59,6 @@ jobs:
           cd kpcdata
           timeout 100m python3 .github/scripts/kpc_layer_collector.py || true
           echo "${{ steps.fp.outputs.fp }}" > data/intake/collector-seen.txt
+          python3 .github/scripts/kpc_week_numbers.py || true   # the control panel's numbers, fresh after each collector run
           python3 .github/scripts/kpc_status.py board "Layer collector" green "LAYER lines + crawler layers pin-tested" "chat 11 answers data/waiting/questions/layers.json" || true
           bash ../links/.github/scripts/kpc_push_data.sh . "layer collector: LAYER lines + crawler layers (questions for chat 11)" data/intake data/waiting/questions data/status || true
