@@ -14,7 +14,7 @@ import json, os, pathlib, subprocess, sys, time
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 300) * 60
 CHUNK = float(os.environ.get('CHUNK') or 55)
 BOTS = (os.environ.get('BOTS') or 'truth hours campinfo').split()
-KY_ONLY = {'hours', 'campinfo'}   # SCOPE Oct 29 8:33 AM: outside Kentucky only boundaries / documents / 2-fers / access / trails
+KY_ONLY = {'hours'}   # SCOPE Oct 29 8:33 AM; Oct 30 11:10 AM (Brandon 'turn bot on'): CAMPING runs for every US state again (weekly, through the waiting room); hours / fees stay Kentucky only
 TEST = os.environ.get('TEST') == '1'
 PUSH = os.environ.get('PUSH', '1') != '0'
 LINKS = os.environ.get('LINKS') or '../links'

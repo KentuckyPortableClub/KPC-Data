@@ -1,0 +1,33 @@
+name: KPC camping refresh, every US state once a week (staggered)
+# Oct 30 2026 (chat 10; HQ 11:12 AM, Brandon 11:10 AM 'turn bot on'): CAMPING only (hours / fees / closures outside Kentucky stay
+# off and hidden). Each day one slice of the states (Kentucky on Thursdays with its slice) gets the campground info bot through the
+# workshop (kpc-workshop.yml, bots=campinfo): every changed file waits in data/waiting/in/ for the waiting room's Rule F checks +
+# chat 11's YES. State park camping (data/campstate, KPC-Links' Wednesday bot) reaches the waiting room through the daily copy.
+# Never red.
+on:
+  schedule:
+    - cron: '29 7 * * *'
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'Areas to do now instead of today''s slice (e.g. "US-TN")'
+        default: ''
+permissions:
+  actions: write
+jobs:
+  slice:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Today's slice -> the workshop (campinfo only)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          A="${{ inputs.areas }}"
+          if [ -z "$A" ]; then
+            S="AK AL AR AZ CA CO CT DC DE FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT NC ND NE NH NJ NM NV NY OH OK OR PA RI SC SD TN TX UT VA VT WA WI WV WY"
+            D=$(date -u +%u); i=0; A=""
+            for s in $S; do [ $((i % 7 + 1)) = "$D" ] && A="$A US-$s"; i=$((i+1)); done
+          fi
+          echo "::notice title=Camping weekly::today: $A"
+          gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-workshop.yml/dispatches -f ref=main -f 'inputs[bots]=campinfo' -f "inputs[areas]=$A" -f 'inputs[chain]=0' || true
