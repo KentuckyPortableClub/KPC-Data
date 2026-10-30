@@ -1,0 +1,228 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 card check redo on the US Trip Planner (chat 10 for chat 11, Oct 30): per park: steps, read_text = the park card, screenshot -N.jpg in park order: US-13177 US-7041 US-3590 US-6853 US-11105 US-2218 US-10472 US-5567 US-11801 US-5865",
+ "urls": [
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": ".leaflet-popup-content",
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-13177",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-13177\")",
+     "wait": 5000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": ".leaflet-popup-content",
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-7041",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-7041\")",
+     "wait": 5000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": ".leaflet-popup-content",
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-3590",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-3590\")",
+     "wait": 5000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": ".leaflet-popup-content",
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-6853",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-6853\")",
+     "wait": 5000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": ".leaflet-popup-content",
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-11105",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-11105\")",
+     "wait": 5000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": ".leaflet-popup-content",
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-2218",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-2218\")",
+     "wait": 5000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": ".leaflet-popup-content",
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-10472",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-10472\")",
+     "wait": 5000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": ".leaflet-popup-content",
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-5567",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-5567\")",
+     "wait": 5000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": ".leaflet-popup-content",
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-11801",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-11801\")",
+     "wait": 5000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": ".leaflet-popup-content",
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-5865",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-5865\")",
+     "wait": 5000
+    }
+   ]
+  }
+ ]
+}
