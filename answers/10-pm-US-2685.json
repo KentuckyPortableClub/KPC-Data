@@ -1,0 +1,40 @@
+{
+ "request": "requests/10-pm-US-2685.json",
+ "id": "10-pm-US-2685",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "backfill: picture-map-only row in the US Fable file (HQ Oct 29 11:12 PM)",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-2685",
+  "name": "Winslow State Park",
+  "agency": "NH State Parks",
+  "url": "https://www.nhstateparks.org/find-parks-trails/winslow-state-park",
+  "pages": 1,
+  "hint": "kearsarge winslow",
+  "report": "backfill: picture-map-only row in the US Fable file (HQ Oct 29 11:12 PM)"
+ },
+ "answered": "2026-10-30 06:32Z",
+ "results": [
+  {
+   "url": "https://www.nhstateparks.org/find-parks-trails/winslow-state-park",
+   "map_url": "https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Maps/Mt-Kearsarge-2022.pdf",
+   "saved": [
+    "maps/US-2685_winslow-state-park.jpg"
+   ],
+   "bytes": 339459,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 10,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
