@@ -103,6 +103,9 @@ jobs:
           import re
           try:
               # Oct 30 7:40 AM (HQ): the Fable book is one file per state now (fable/US-XX.md); its 'STATE XX DONE' line sits at the END
+              # the combined book too (chats 3 / 8 still write 'STATE XX DONE' lines there, Oct 30 morning)
+              for m_ in re.finditer(r'STATE\s+(?:US-)?([A-Z]{2})\s+DONE', open('links/.claude/build/research/KPC_MissingBoundaries_ForFable_desk.md', encoding='utf-8').read()):
+                  if m_.group(1) != 'XX': done.setdefault('US-' + m_.group(1), {'by': 'Fable book line'})
               import glob as _g
               for fp in _g.glob('links/.claude/build/research/fable/US-??.md'):
                   st_ = os.path.basename(fp)[:5]
