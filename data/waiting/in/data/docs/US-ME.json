@@ -1,0 +1,4649 @@
+{
+ "area": "US-ME",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0001": {
+   "n": "Acadia National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/acad/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/acad/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 27, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/acad/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0336": {
+   "n": "Aroostook National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/aroostook",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/aroostook/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/aroostook/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0337": {
+   "n": "Carlton Pond Wetland Management District",
+   "t": "Wetland Management District",
+   "page": "https://www.fws.gov/office/carlton-pond-waterfowl-production-area",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/office/carlton-pond-waterfowl-production-area/map)",
+    "how": "a link on the park's page ('Map')"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/office/carlton-pond-waterfowl-production-area/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0338": {
+   "n": "Cross Island National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/cross-island",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/cross-island/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/cross-island/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0339": {
+   "n": "Franklin Island National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/franklin-island",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/franklin-island/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/franklin-island/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0341": {
+   "n": "Moosehorn National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/moosehorn",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/moosehorn/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/moosehorn/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/refuge/moosehorn/visit-us/activities/hiking",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-30",
+     "how": "a link on the park's page ('Hiking MAPS and Trail Information')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0342": {
+   "n": "Pond Island National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/pond-island",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/pond-island/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/pond-island/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0343": {
+   "n": "Rachel Carson National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/rachel-carson",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/rachel-carson/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/rachel-carson/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0345": {
+   "n": "Sunkhaze Meadows National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/sunkhaze-meadows",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/sunkhaze-meadows/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/sunkhaze-meadows/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0450": {
+   "n": "Lake Umbagog National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/umbagog",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/umbagog/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/umbagog/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10713": {
+   "n": "Katahdin Woods and Waters National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/kaww/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/kaww/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 19, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/kaww/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10714": {
+   "n": "International Appalachian Trail--Sentier International des Appalaches National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.maineiat.org/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.maineiat.org/the-trail/maps-and-guides/)",
+    "how": "a link on the park's page ('Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.maineiat.org/the-trail/maps-and-guides/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11808": {
+   "n": "Saint Croix Island International Historic Site",
+   "t": "Historic Site",
+   "page": "https://www.nps.gov/sacr/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/sacr/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 8, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/sacr/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13146": {
+   "n": "Green Point Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrcm.org/explore-maine-map/green-point-wildlife-management-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-13312": {
+   "n": "Branch Lake State Park",
+   "t": "State Park",
+   "page": "https://www.nrcm.org/explore-maine-map/land-for-maines-future-places/branch-lake-branch-lake-public-forest/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-13572": {
+   "n": "Kennebec River Estuary Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://storymaps.arcgis.com/stories/1078870b62434784a1cf5772e0dd33e1",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "the page is built by script",
+   "ver": 7
+  },
+  "US-2378": {
+   "n": "Allagash Wilderness Waterway State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=2&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2379": {
+   "n": "Androscoggin Riverlands State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=98&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2380": {
+   "n": "Aroostook State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=7&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2381": {
+   "n": "Baxter State Park",
+   "t": "State Park",
+   "page": "https://baxterstatepark.org/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://baxterstatepark.org/rules-and-permits/",
+    "how": "a link on the park's page ('Park Rules')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2382": {
+   "n": "Birch Point Beach State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=72",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_id=72",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2383": {
+   "n": "Bradbury Mountain State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=12",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "http://www.maine.gov/dacf/parks/docs/maps/bradburymountaintrailmapeast.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('trail map (east)')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=12",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.maine.gov/dacf/parks/docs/maps/bradburymountaintrailmapeast.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('trail map (east)')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "http://www.maine.gov/dacf/parks/docs/maps/bradburymountaintrailmapwest.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('trail map (west)')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2384": {
+   "n": "Camden Hills State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=14&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2385": {
+   "n": "Cobscook Bay State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=15",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/cobscookbayguide.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('park guide & map, color 16x 9 inches')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=15",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/cobscookbayguide.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('park guide & map, color 16x 9 inches')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "https://www.mainetrailfinder.com/trails/trail/cobscook-bay-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-30",
+     "how": "a link on the park's page ('Cobscook Bay State Park trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2386": {
+   "n": "Crescent Beach State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=4",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_id=4",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2387": {
+   "n": "Damariscotta Lake State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=5&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2388": {
+   "n": "Ferry Beach State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=8",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/ferry-beach-guide.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Map & Guide 9x24-inch color')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=8",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "https://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/ferry-beach-guide.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map & Guide 9x24-inch color')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "https://www.mainetrailfinder.com/trails/trail/ferry-beach-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-30",
+     "how": "a link on the park's page ('Ferry Beach State Park trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2389": {
+   "n": "Fort Point State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=33",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/docs/maps/fortpoint.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('site map')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=33",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "https://www.maine.gov/dacf/parks/docs/maps/fortpoint.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('site map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "https://apps.web.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/fort-point.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('download brochure')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2390": {
+   "n": "Grafton Notch State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=1",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/graftonmahoosucmap.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('park map - in color, 24x18-inches')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=1",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [
+    "managed by the Maine Chapter of The Nature Conservancy"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/graftonmahoosucmap.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('park map - in color, 24x18-inches')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/graftonmahoosucguide.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('park guide & map - in color, two 24x18-inch pages')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2391": {
+   "n": "Holbrook Island Sanctuary State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=9&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2392": {
+   "n": "Lake St. George State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=27&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2393": {
+   "n": "Lamoine State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=16",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/docs/LoopTrailBrochure-LamoineStatePark.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Loop Trail Brochure (PDF 327KB)')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=16",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "https://www.maine.gov/dacf/parks/docs/LoopTrailBrochure-LamoineStatePark.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Loop Trail Brochure (PDF 327KB)')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "https://www.maine.gov/dacf/mgs/explore/explore_map.shtml",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maine Geologic Facts and Localities map.')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2394": {
+   "n": "Lily Bay State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=17&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2395": {
+   "n": "Mackworth Island State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=57",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "http://www.maine.gov/dacf/parks/docs/maps/mackworthtrail.jpg",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('View Mackworth Trail Map')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=57",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.maine.gov/dacf/parks/docs/maps/mackworthtrail.jpg",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View Mackworth Trail Map (JPG - 132 KB) Visit the Mackworth Island trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2396": {
+   "n": "Moose Point State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=19&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2397": {
+   "n": "Mount Blue State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=18",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/mtbluetumbledownmap.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Park map - color, 18 x 24 inches')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=18",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/mtbluetumbledownmap.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Park map - color, 18 x 24 inches')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/mtbluetumbledownguide.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Park Guide and Map - color, 2 pages, 18 x 24 each')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2398": {
+   "n": "Mount Kineo State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=99&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2399": {
+   "n": "Owls Head State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=92&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2400": {
+   "n": "Peacock Beach State Park",
+   "t": "State Park",
+   "page": "https://stateparks.com/peacock_beach_state_park_in_maine.html",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2401": {
+   "n": "Peaks-Kenny State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=20",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_id=20",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2402": {
+   "n": "Penobscot River Corridor - Katahdin Woods and Waters National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/kaww/planyourvisit/outdooractivities.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.nps.gov/kaww/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-2403": {
+   "n": "Popham Beach State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=22&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2404": {
+   "n": "Quoddy Head State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=10",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/quoddyheadmap.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('park map with trail information, 12x9 inches')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=10",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/quoddyheadmap.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('park map with trail information, 12x9 inches')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/quoddyheadguide.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('park guide & map, 2 pages,16x9-inches each')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2405": {
+   "n": "Range Ponds State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=11&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2406": {
+   "n": "Rangeley Lake State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=25",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/rangeleylakeguide.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Park map & guide, color 9x16-inch')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=25",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/rangeleylakeguide.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Park map & guide, color 9x16-inch')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/rangeleylakemap.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Park map - color 9x8-inch')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2407": {
+   "n": "Reid State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=13&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2408": {
+   "n": "Roque Bluffs State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=23",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/roquebluffsmap.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Park map, color 8x9-inch')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=23",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/roquebluffsmap.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Park map, color 8x9-inch')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "http://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/roquebluffsguide.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Park guide & map, color 9x16-inches')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2409": {
+   "n": "Sebago Lake State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=26",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "http://www.maine.gov/dacf/parks/camping/pdf/sebago-group-camp-map.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Group Camping & Day Use Area map - black & white')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=26",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.maine.gov/dacf/parks/camping/pdf/sebago-group-camp-map.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Group Camping & Day Use Area map - black & white')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "http://www.maine.gov/dacf/parks/camping/pdf/pine-grove-map.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Pine Grove Group Picnic Area map - black & white')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2410": {
+   "n": "Shackford Head State Park",
+   "t": "State Park",
+   "page": "https://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/shackfordheadguide.pdf",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2411": {
+   "n": "Swan Lake State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=24&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2412": {
+   "n": "Two Lights State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=28",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.mainetrailfinder.com/trails/trail/two-lights-state-park",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "the page in a browser ('Two Lights State Park trail map')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=28",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "off the government, not linked by the agency"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "https://www.mainetrailfinder.com/trails/trail/two-lights-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-30",
+     "how": "a link on the park's page ('Two Lights State Park trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    },
+    {
+     "url": "https://www.maine.gov/dacf/mgs/explore/explore_map.shtml",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maine Geologic Facts and Localities map.')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2413": {
+   "n": "Vaughan Woods State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=29",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_id=29",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-2414": {
+   "n": "Warren Island State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=30",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_id=30",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Get Google map and directions')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2415": {
+   "n": "Wolfe's Neck Woods State Park",
+   "t": "State Park",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=31&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-4512": {
+   "n": "White Mountain National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/whitemountain/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fs.usda.gov/r09/whitemountain/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/whitemountain/",
+    "posted": "March 31, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-30",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r09/whitemountain",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-4556": {
+   "n": "Appalachian Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.nps.gov/appa/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/appa/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "December 21, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/appa/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [
+    "is managed by the National Park Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4772": {
+   "n": "Durham State Forest",
+   "t": "State Forest",
+   "page": "https://stateparks.com/durham_state_forest_in_maine.html",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-7149": {
+   "n": "Petit Manan National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/petit-manan",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/petit-manan/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/petit-manan/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7150": {
+   "n": "Colonial Pemaquid (Ft. William Henry) State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=39&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-7859": {
+   "n": "Fort Edgecomb State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=32&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-7976": {
+   "n": "Maine Acadian Culture National Heritage Site",
+   "t": "National Heritage Site",
+   "page": "https://www.nps.gov/maac/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/maac/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "March 31, 2012",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/maac/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7977": {
+   "n": "Roosevelt Campobello International Park",
+   "t": "International Park",
+   "page": "https://www.nps.gov/roca/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/roca/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 30, 2023",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/roca/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7978": {
+   "n": "Fort McClary State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=38&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-7979": {
+   "n": "Fort Popham State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=40&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-7980": {
+   "n": "Fort Baldwin State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=86&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-7981": {
+   "n": "Whaleback Shell Midden State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=80&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-7982": {
+   "n": "Fort Halifax State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=53&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-7983": {
+   "n": "Katahdin Iron Works State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=36&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8287": {
+   "n": "Capitol State Park",
+   "t": "State Park",
+   "page": "https://www.alltrails.com/trail/us/maine/capitol-park-loop",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8288": {
+   "n": "Colburn House State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=85&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8289": {
+   "n": "Bible Point State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://www.maine.gov/dacf/parks/discover_history_explore_nature/history/bible_point/history.shtml#:~:text=A%20plaque%20was%20placed%20at,preserved%20as%20a%20natural%20area.",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8290": {
+   "n": "Frye Mountain Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.georgesriver.org/frye-mountain/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.georgesriver.org/_files/ugd/562502_bce70a7520524f7d9429c81)",
+    "how": "a link on the park's page ('Trail Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.georgesriver.org/_files/ugd/562502_bce70a7520524f7d9429c81900fcfaf8.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8291": {
+   "n": "Fort Knox State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=37&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8292": {
+   "n": "Lagrange to Medford State Trail",
+   "t": "State Trail",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=&public_reserved_land=&shared_use_trails=79&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8434": {
+   "n": "Big Spencer Mountain Ecological Reserve",
+   "t": "Ecological Reserve",
+   "page": "https://www.maine.gov/dacf/mnap/reservesys/bigspencer.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8435": {
+   "n": "Bigelow State Preserve",
+   "t": "State Preserve",
+   "page": "https://www.maine.gov/dacf/mnap/reservesys/bigelow.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8436": {
+   "n": "Bald Mountain Rangeley State Preserve",
+   "t": "State Preserve",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=&public_reserved_land=41&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8437": {
+   "n": "Kennebec Highlands State Trail",
+   "t": "State Trail",
+   "page": "https://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/KennebecHighlands.pdf",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8438": {
+   "n": "Days Academy State Preserve",
+   "t": "State Preserve",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=&public_reserved_land=59&shared_use_trails=&town=&distance=&submit=Go+%BB",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "the page in a browser ('Parks & Public Lands Map Search')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=&public_reserved_land=59&shared_use_trails=&town=&distance=&submit=Go+%BB",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Parks Public Lands Map Search')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Publications and Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8439": {
+   "n": "Donnell Pond State Preserve",
+   "t": "State Preserve",
+   "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=&public_reserved_land=48&shared_use_trails=&town=&distance=&submit=Go+%BB, https://www.nrcm.org/explore-maine-map/donnell-pond-public-reserved-land/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Publications and Maps')",
+    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
+   },
+   "rules": {
+    "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+    "how": "a link on the park's page ('Park Passes, Fees Rules')",
+    "status": "did not open"
+   },
+   "agency": "government agency (apps.web.maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8440": {
+   "n": "Chamberlain Lake State Preserve",
+   "t": "State Preserve",
+   "page": "https://www.maine.gov/dacf/mnap/reservesys/chamberlain.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8441": {
+   "n": "Gero Island State Preserve",
+   "t": "State Preserve",
+   "page": "https://www.nrcm.org/explore-maine-map/gero-island-public-reserved-land-unit/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8442": {
+   "n": "Lobster Lake Property State Preserve",
+   "t": "State Preserve",
+   "page": "https://www.alltrails.com/explore/list/lobster-lake--2?b_tl_lat=45.901351395458676&b_tl_lng=-69.7079844262842&b_br_lat=45.78593655340231&b_br_lng=-69.40606043711809",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8443": {
+   "n": "Seboomook Lake Property State Preserve",
+   "t": "State Preserve",
+   "page": "https://www.nrcm.org/explore-maine-map/seboomook-lake-public-reserved-land/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8444": {
+   "n": "Moxie Falls Property State Preserve",
+   "t": "State Preserve",
+   "page": "https://www.mainetrailfinder.com/trails/trail/moxie-falls",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.mainetrailfinder.com/services?lat=45.35928726196289&lon=-69.94104766845703",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map View')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8445": {
+   "n": "Spectacle Pond - Delano Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8446": {
+   "n": "Sandy Point Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8447": {
+   "n": "Steep Falls Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8448": {
+   "n": "Mt. Agamenticus Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=0129637cf6c34c1a97f947b0c1a69bee&embed#",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8449": {
+   "n": "Little Ossippee Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=0129637cf6c34c1a97f947b0c1a69bee&embed#",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8450": {
+   "n": "Merrymeeting Bay Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8451": {
+   "n": "Major Gregory Sanborn Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.mainetrailfinder.com/trails/trail/gregory-sanborn-wilderness-management-area",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.mainetrailfinder.com/services?lat=43.99616687600697&lon=-7)",
+    "how": "a link on the park's page ('Map View')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.mainetrailfinder.com/services?lat=43.99616687600697&lon=-70.90339316650768",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map View')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8452": {
+   "n": "Vernon S Walker Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8453": {
+   "n": "Dickwood Lake Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/ifw/blogs/mdifw-blog/look-dickwood-wildlife-management-area",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8454": {
+   "n": "Lt. Gordon Manuel Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/ifw/blogs/mdifw-blog/gordon-manuel-wma-offers-fishing-hunting-canoeing-and-much-more",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8455": {
+   "n": "James Dorso (Ruffingham Meadow) Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8456": {
+   "n": "Alonzo H. Garcelon Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.mainetrailfinder.com/trails/trail/garcelon-wildlife-management-area-south",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.mainetrailfinder.com/services?lat=44.29703014357772&lon=-6)",
+    "how": "a link on the park's page ('Map View')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.mainetrailfinder.com/services?lat=44.29703014357772&lon=-69.62781495444911",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map View')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8457": {
+   "n": "Cambridge Mainstream Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc&entry=3",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8458": {
+   "n": "Caesar Pond Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8459": {
+   "n": "Erle R. Kelley (Dresden Bog) Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8460": {
+   "n": "Gawler Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8461": {
+   "n": "Howard L. Mendall (Marsh stream) Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.audubon.org/important-bird-areas/upper-penobscot-bay-howard-mendall-wildlife-management-area",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8462": {
+   "n": "Jamies (Jimmie) Pond Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrcm.org/explore-maine-map/jamies-pond-wildlife-management-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8463": {
+   "n": "Madawaska Bog Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8464": {
+   "n": "Martin Stream Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8465": {
+   "n": "St. Albans Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8466": {
+   "n": "Steve Powell (Swan Island) Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/ifw/programs-resources/recreational-opportunities/swan-island/index.html",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8467": {
+   "n": "Tyler Pond Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8468": {
+   "n": "R. Waldo Tyler (Weskeag Marsh) Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/kmz/RWaldoTyler_WeskeagMarsh_WMA.kmz",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8469": {
+   "n": "Ducktrap River Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrcm.org/explore-maine-map/ducktrap-preserve/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8470": {
+   "n": "Hurds Pond Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8471": {
+   "n": "Plymouth Bog Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8472": {
+   "n": "Tolla Wolla Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://trailsnh.com/hike/w/608408561/Tolla-Wolla-WMA-ME",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: robots"
+   ],
+   "ver": 7
+  },
+  "US-8473": {
+   "n": "Black Brook Flowage Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8474": {
+   "n": "Chesterville Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.mindat.org/feature-4960774.html",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8475": {
+   "n": "Fahi Pond Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://mapcarta.com/W606134920, https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-8476": {
+   "n": "Mercer Bog Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8477": {
+   "n": "Stump (Bauds) Pond Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/ifw/blogs/mdifw-blog/stump-pond-wildlife-management-area",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8478": {
+   "n": "Strong Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8479": {
+   "n": "Kennebunk Plains Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/kennebunk-plains/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8480": {
+   "n": "Morgan Meadow Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://rrct.org/preserves-trails/morgan-meadows-wildlife-management-area-maine-difw/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-8482": {
+   "n": "Bud Leavitt (Bull Hill) Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/ifw/blogs/mdifw-blog/bud-leavitt-wildlife-management-area",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8483": {
+   "n": "David Priest (Dwinal Pond) Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/ifw/blogs/mdifw-blog/dwinal-pond-dave-priest-wma",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8484": {
+   "n": "Booming Ground Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/ifw/blogs/mdifw-blog/booming-ground-wma-edge-maine",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8485": {
+   "n": "Francis D. Dunn (Sawtelle Deadwater) Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/ifw/blogs/mdifw-blog/wildlife-and-waterfowl-abound-east-baxter-state-park-francis-dunn-wma?q=mdifw-blog/wildlife-and-waterfowl-abound-east-baxter-state-park-francis-dunn-wma&page=4",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8486": {
+   "n": "Mattawamkeag River Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrcm.org/explore-maine-map/mattawamkeag-river/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8487": {
+   "n": "Caribou Bog Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/ifw/blogs/mdifw-blog/caribou-bog-wildlife-management-area",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8488": {
+   "n": "Pond Farm Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8489": {
+   "n": "Butler Island Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8490": {
+   "n": "Pollard Flat Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8491": {
+   "n": "Bog Brook Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/kmz/BogBrookWMA.kmz",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8492": {
+   "n": "Cobscook Bay Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.mainetrailfinder.com/trails/trail/cobscook-bay-wildlife-management-area-horan-head-unit",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.mainetrailfinder.com/services?lat=44.86594390869141&lon=-6)",
+    "how": "a link on the park's page ('Map View')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.mainetrailfinder.com/services?lat=44.86594390869141&lon=-67.07023620605469",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map View')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8493": {
+   "n": "Great Works Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8494": {
+   "n": "Jonesboro Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://maine.maps.arcgis.com/apps/MapSeries/index.html?appid=8593eeef425b45fd9dc25967f985accc",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "ver": 7
+  },
+  "US-8495": {
+   "n": "Narraguagus Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrcm.org/explore-maine-map/narraguagas-river-little-falls/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8496": {
+   "n": "Orange River Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/dacf/mnap/focusarea/orange_river_focus_area.pdf",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8497": {
+   "n": "Pennamaquan Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://storymaps.arcgis.com/stories/1078870b62434784a1cf5772e0dd33e1",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page is built by script",
+   "ver": 7
+  },
+  "US-8498": {
+   "n": "Egypt Bay Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrcm.org/explore-maine-map/egypt-bay/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8499": {
+   "n": "Pleasant Bay Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrcm.org/explore-maine-map/pleasant-bay-wildlife-management-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8500": {
+   "n": "Lyle Frost (Scammon Marsh) Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/index.html",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8501": {
+   "n": "Spring Brook Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/index.html",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-9170": {
+   "n": "Machias River Corridor State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://www.nrcm.org/explore-maine-map/machias-river-corridor-public-reserved-land/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/mac; opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('this map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/machiasrivermap.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('this map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "linked from the agency page (maine.gov)"
+    },
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-9171": {
+   "n": "St. John Ponds Ecological Reserve",
+   "t": "Ecological Reserve",
+   "page": "https://www.maine.gov/dacf/mnap/reservesys/stjohnponds.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-9172": {
+   "n": "Salmon Brook Lake Bog Ecological Reserve",
+   "t": "Ecological Reserve",
+   "page": "https://www.nrcm.org/explore-maine-map/salmon-brook-lake-bog-public-reserved-land/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-9173": {
+   "n": "Scopan State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://www.nrcm.org/explore-maine-map/scopan-public-reserved-land/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-9174": {
+   "n": "Mahoosuc Ecological Reserve",
+   "t": "Ecological Reserve",
+   "page": "https://www.maine.gov/dacf/mnap/reservesys/mahoosucs.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-9175": {
+   "n": "Holeb State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://www.nrcm.org/explore-maine-map/holeb-public-reserved-land/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
+    "how": "a link on the park's page ('Explore Maine Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nrcm.org/explore-maine/explore-maine-map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore Maine Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-9176": {
+   "n": "Mount Abraham Ecological Reserve",
+   "t": "Ecological Reserve",
+   "page": "https://www.maine.gov/dacf/mnap/reservesys/mtabraham.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (maine.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  }
+ },
+ "read": "2026-10-30",
+ "counts": {
+  "parks": 148,
+  "map ok": 20,
+  "map found by the bot": 16,
+  "date on the map": 0,
+  "posted date only": 7,
+  "date unknown": 13,
+  "no map": 128,
+  "rules ok": 15,
+  "needs browser": 17,
+  "handover hints": 0,
+  "runs hints": 2,
+  "host resting / robots": 0,
+  "map names the park": 17,
+  "region overview only": 0
+ }
+}

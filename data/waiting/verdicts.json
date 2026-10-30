@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-30T20:29Z",
+ "checked": "2026-10-30T20:32Z",
  "switched_on": false,
  "results": [
   {
@@ -33,9 +33,38 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/docs/US-DE.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/docs/US-LA.json",
    "kind": "docs",
    "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/docs/US-MA.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/docs/US-ME.json",
+   "kind": "docs",
+   "why": [
+    "F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
+    "F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
    ],
    "notes": [],
@@ -234,7 +263,7 @@
    "path": "data/fers/US-ME.json",
    "kind": "fers",
    "why": [
-    "F-2 9 new candidate pairs since the live file (over 10% of 4): a person looks at them first, e.g. US-4239+US-4556, US-4556+US-4564, US-4556+US-4567"
+    "F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
    "notes": [],
    "verdict": "HOLD"
