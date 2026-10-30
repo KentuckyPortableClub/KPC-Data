@@ -102,8 +102,12 @@ jobs:
           # HQ Oct 30 6:55 AM: also read the Fable file's own 'STATE XX DONE' lines (chats 3 / 8 write them there): no hand step
           import re
           try:
-              for m_ in re.finditer(r'STATE\s+(?:US-)?([A-Z]{2})\s+DONE', open('links/.claude/build/research/KPC_MissingBoundaries_ForFable_desk.md', encoding='utf-8').read()):
-                  if m_.group(1) != 'XX': done.setdefault('US-' + m_.group(1), {'by': 'Fable file line'})   # 'STATE XX DONE' = the instruction text itself
+              # Oct 30 7:40 AM (HQ): the Fable book is one file per state now (fable/US-XX.md); its 'STATE XX DONE' line sits at the END
+              import glob as _g
+              for fp in _g.glob('links/.claude/build/research/fable/US-??.md'):
+                  st_ = os.path.basename(fp)[:5]
+                  tail = open(fp, encoding='utf-8').read()[-3000:]
+                  if re.search(r'STATE\s+(?:US-)?' + st_[3:] + r'\s+DONE', tail): done.setdefault(st_, {'by': 'fable/' + st_ + '.md'})
           except Exception: pass
           NK = 'data/fers/new-key-states.json'
           nk = json.load(open(NK)); have = set(nk.get('states') or [])

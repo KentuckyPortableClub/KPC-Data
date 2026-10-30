@@ -49,12 +49,14 @@ jobs:
           (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/us-key data/ca-key data/world-key) || true
           # Oct 29 11:45 PM (BOT C, plan KPC_Key_And_2fer_Automation_Plan.md): held build vs live key + chat 11's sample of 30
           (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_key_summary.py) || true
+          # Oct 30 7:40 AM (chat 3 via HQ): the per-program park lists come from THIS copy of locations.json, so they never go stale
+          [ -f links/locations.json ] && python3 kpcdata/.github/scripts/kpc_split_locations.py links/locations.json kpcdata || true
           echo "::notice title=Step B3 copy::$(du -sh kpcdata/data | cut -f1) in kpcdata/data"
       - name: Save (once)
         continue-on-error: true
         run: |
           (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_hunter_trigger.py > /tmp/hunt.txt) || true; cat /tmp/hunt.txt || true
-          bash links/.github/scripts/kpc_push_data.sh kpcdata "Site data copied from KPC-Links (Step B3)" data
+          bash links/.github/scripts/kpc_push_data.sh kpcdata "Site data copied from KPC-Links (Step B3)" data locations-pota.json locations-sota.json locations-wwff.json
       - name: The map key or the layer list changed, so the GIS hunter starts one full pass (Brandon Oct 29 11:50 PM)
         continue-on-error: true
         env:
