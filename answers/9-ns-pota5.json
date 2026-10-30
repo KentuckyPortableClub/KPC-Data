@@ -1,0 +1,167 @@
+{
+ "request": "requests/9-ns-pota5.json",
+ "id": "9-ns-pota5",
+ "chat": 9,
+ "kind": "page",
+ "report": "NOT SURE for chat 11: POTA park record (name, grid, type, agency) as the reference",
+ "asked": {
+  "chat": 9,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-6245",
+   "https://api.pota.app/park/US-6409",
+   "https://api.pota.app/park/US-6423",
+   "https://api.pota.app/park/US-6446",
+   "https://api.pota.app/park/US-6448",
+   "https://api.pota.app/park/US-6796",
+   "https://api.pota.app/park/US-7140",
+   "https://api.pota.app/park/US-7277",
+   "https://api.pota.app/park/US-7356",
+   "https://api.pota.app/park/US-7389",
+   "https://api.pota.app/park/US-7456",
+   "https://api.pota.app/park/US-7565",
+   "https://api.pota.app/park/US-7768",
+   "https://api.pota.app/park/US-7865"
+  ],
+  "report": "NOT SURE for chat 11: POTA park record (name, grid, type, agency) as the reference"
+ },
+ "answered": "2026-10-30 03:35Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-6245",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-6245",
+   "title": "",
+   "text": "{\"parkId\": 56001, \"reference\": \"US-6245\", \"name\": \"Ghost River\", \"latitude\": 35.0268, \"longitude\": -89.2729, \"grid4\": \"EM55\", \"grid6\": \"EM55ia\", \"parktypeId\": 97, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.tn.gov/environment/natural-areas/what-we-do/sna/cp/ghost-river.html\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"State Natural Area\", \"locationDesc\": \"US-TN\", \"locationName\": \"Tennessee\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N4MTE\", \"firstActivationDate\": \"2020-06-26\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-6409",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-6409",
+   "title": "",
+   "text": "{\"parkId\": 56428, \"reference\": \"US-6409\", \"name\": \"Waimea\", \"latitude\": 21.9548, \"longitude\": -159.67, \"grid4\": \"BL01\", \"grid6\": \"BL01dw\", \"parktypeId\": 104, \"active\": 1, \"parkComments\": \"Pier fishing and picnicking are the main activities. No fees. \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://dlnr.hawaii.gov/dsp/parks/kauai/waimea-state-recreational-pier/\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"State Recreation Area\", \"locationDesc\": \"US-HI\", \"locationName\": \"Hawaii\", \"entityId\": 110, \"entityName\": \"Hawaii\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"AF5T\", \"firstActivationDate\": \"2022-09-06\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-6423",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-6423",
+   "title": "",
+   "text": "{\"parkId\": 56442, \"reference\": \"US-6423\", \"name\": \"Manuka\", \"latitude\": 19.105, \"longitude\": -155.819, \"grid4\": \"BK29\", \"grid6\": \"BK29cc\", \"parktypeId\": 103, \"active\": 1, \"parkComments\": \"This is a rest stop with sheltered/shade picnic areas. \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile\", \"activationMethods\": \"Automobile,Other\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://dlnr.hawaii.gov/dsp/parks/hawaii/manuka-state-wayside/\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"State Preserve\", \"locationDesc\": \"US-HI\", \"locationName\": \"Hawaii\", \"entityId\": 110, \"entityName\": \"Hawaii\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KH6RF\", \"firstActivationDate\": \"2023-03-05\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-6446",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-6446",
+   "title": "",
+   "text": "{\"parkId\": 56465, \"reference\": \"US-6446\", \"name\": \"Brannan Island\", \"latitude\": 38.1101, \"longitude\": -121.697, \"grid4\": \"CM98\", \"grid6\": \"CM98dc\", \"parktypeId\": 104, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": null, \"activationMethods\": null, \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.parks.ca.gov/?page_id=487\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"State Recreation Area\", \"locationDesc\": \"US-CA\", \"locationName\": \"California\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KQ6QB\", \"firstActivationDate\": \"2020-02-22\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-6448",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-6448",
+   "title": "",
+   "text": "{\"parkId\": 56467, \"reference\": \"US-6448\", \"name\": \"William Randolph Hearst Memorial\", \"latitude\": 35.6438, \"longitude\": -121.187, \"grid4\": \"CM95\", \"grid6\": \"CM95jp\", \"parktypeId\": 86, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": null, \"activationMethods\": null, \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.parks.ca.gov/?page_id=589\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"State Beach\", \"locationDesc\": \"US-CA\", \"locationName\": \"California\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KQ6QB\", \"firstActivationDate\": \"2020-09-23\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-6796",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-6796",
+   "title": "",
+   "text": "{\"parkId\": 56845, \"reference\": \"US-6796\", \"name\": \"Tobico Marsh\", \"latitude\": 43.6958, \"longitude\": -83.9489, \"grid4\": \"EN83\", \"grid6\": \"EN83aq\", \"parktypeId\": 123, \"active\": 1, \"parkComments\": \"Dot takes you to the northernmost lot off of E River Rd, a unit of Bay City State Park\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Tobico_Marsh_Unit_of_Bay_City_SRA_map.pdf\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"Wildlife Management Area\", \"locationDesc\": \"US-MI\", \"locationName\": \"Michigan\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KU8T\", \"firstActivationDate\": \"2020-07-06\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-7140",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-7140",
+   "title": "",
+   "text": "{\"parkId\": 59572, \"reference\": \"US-7140\", \"name\": \"Charlie Elliot\", \"latitude\": 33.4625, \"longitude\": -83.7367, \"grid4\": \"EM83\", \"grid6\": \"EM83dl\", \"parktypeId\": 123, \"active\": 1, \"parkComments\": \"A three-fer (US-7140, US-7141, US-7467) per the GA Wildlife Resources Division webpage at https://georgiawildlife.com/marben-pfa. \\\" Marben Public Fishing Area is located within Charlie Elliott Wildlife Center and Clybel WMA\\\" \\nMarginal cell phone internet\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Campground,Pedestrian,Shelter\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://georgiawildlife.com/charlie-elliott-wildlife-center\", \"createdByAdmin\": \"W3AAX\", \"parktypeDesc\": \"Wildlife Management Area\", \"locationDesc\": \"US-GA\", \"locationName\": \"Georgia\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"WB4WTN\", \"firstActivationDate\": \"2020-05-21\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-7277",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-7277",
+   "title": "",
+   "text": "{\"parkId\": 60043, \"reference\": \"US-7277\", \"name\": \"Crossett Experimental Forest\", \"latitude\": 33.04, \"longitude\": -91.937, \"grid4\": \"EM43\", \"grid6\": \"EM43aa\", \"parktypeId\": 123, \"active\": 1, \"parkComments\": \"There are several roads in the area you will have to find a spot along one to activate from. \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile\", \"activationMethods\": \"Automobile\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.agfc.com/en/zone-map/678/\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"Wildlife Management Area\", \"locationDesc\": \"US-AR\", \"locationName\": \"Arkansas\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KF5PCV\", \"firstActivationDate\": \"2021-05-14\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-7356",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-7356",
+   "title": "",
+   "text": "{\"parkId\": 60122, \"reference\": \"US-7356\", \"name\": \"St. Francis National Forest\", \"latitude\": 34.724, \"longitude\": -90.724, \"grid4\": \"EM44\", \"grid6\": \"EM44pr\", \"parktypeId\": 123, \"active\": 1, \"parkComments\": \"There is a picnic area camping and boat ramp that may be used as an activation area. \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.agfc.com/en/zone-map/766/\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"Wildlife Management Area\", \"locationDesc\": \"US-AR\", \"locationName\": \"Arkansas\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KG5YMI\", \"firstActivationDate\": \"2020-09-05\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-7389",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-7389",
+   "title": "",
+   "text": "{\"parkId\": 60725, \"reference\": \"US-7389\", \"name\": \"Cypress Creek Preserve\", \"latitude\": 28.2382, \"longitude\": -82.4305, \"grid4\": \"EL88\", \"grid6\": \"EL88sf\", \"parktypeId\": 194, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.swfwmd.state.fl.us/recreation/cypress-creek-preserve\", \"createdByAdmin\": \"AB0O\", \"parktypeDesc\": \"State Conservation Area\", \"locationDesc\": \"US-FL\", \"locationName\": \"Florida\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KC1YL\", \"firstActivationDate\": \"2021-05-06\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-7456",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-7456",
+   "title": "",
+   "text": "{\"parkId\": 61111, \"reference\": \"US-7456\", \"name\": \"Dahlonega Gold Museum\", \"latitude\": 34.5327, \"longitude\": -83.9849, \"grid4\": \"EM84\", \"grid6\": \"EM84am\", \"parktypeId\": 93, \"active\": 1, \"parkComments\": \"Small greenspace areas at either end of building for setting up activations. The park site appears to be inside of the Public Square road circle. ROADS AND PARKING AREAS ARE NOT INSIDE THE PARK BOUNDARIES.\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://gastateparks.org/DahlonegaGoldMuseum\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"State Historic Site\", \"locationDesc\": \"US-GA\", \"locationName\": \"Georgia\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"AC4SH\", \"firstActivationDate\": \"2020-09-29\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-7565",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-7565",
+   "title": "",
+   "text": "{\"parkId\": 63337, \"reference\": \"US-7565\", \"name\": \"AEDC and Woods Reservoir\", \"latitude\": 35.3587, \"longitude\": -86.1837, \"grid4\": \"EM65\", \"grid6\": \"EM65vi\", \"parktypeId\": 123, \"active\": 1, \"parkComments\": \"this is part of an active Air Force Base. There are specific requirements listed which are pretty easy to follow. I had no problem activating from a boat ramp recommended by the guard at the entrance gate\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.tn.gov/twra/wildlife-management-areas/middle-tennessee-r2/aedc-wma-and-woods-reservoir-refuge.html\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"Wildlife Management Area\", \"locationDesc\": \"US-TN\", \"locationName\": \"Tennessee\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N4MTE\", \"firstActivationDate\": \"2020-12-05\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-7768",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-7768",
+   "title": "",
+   "text": "{\"parkId\": 63540, \"reference\": \"US-7768\", \"name\": \"Frederick City Watershed Cooperative\", \"latitude\": 39.5258, \"longitude\": -77.4629, \"grid4\": \"FM19\", \"grid6\": \"FM19gm\", \"parktypeId\": 123, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://dnr.maryland.gov/wildlife/pages/publiclands/western/fcw_cwma.aspx\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"Wildlife Management Area\", \"locationDesc\": \"US-MD\", \"locationName\": \"Maryland\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KB3WAV\", \"firstActivationDate\": \"2020-12-07\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-7865",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-7865",
+   "title": "",
+   "text": "{\"parkId\": 64196, \"reference\": \"US-7865\", \"name\": \"East\", \"latitude\": 41.3481, \"longitude\": -71.6733, \"grid4\": \"FN41\", \"grid6\": \"FN41di\", \"parktypeId\": 86, \"active\": 1, \"parkComments\": \"Parking fees in-season (Memorial Day to Labor Day). Gates open, no fee off-season. Limited amount of primitive campsites available.\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Boat,Foot\", \"activationMethods\": \"Automobile,Campground,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://riparks.com/beach/east-beach.php\", \"createdByAdmin\": \"AB0O\", \"parktypeDesc\": \"State Beach\", \"locationDesc\": \"US-RI\", \"locationName\": \"Rhode Island\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"W1LY\", \"firstActivationDate\": \"2021-01-13\"}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 28,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "14 result(s), 14 read OK, 0 screenshot(s)"
+}
