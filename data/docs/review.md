@@ -23,7 +23,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-IA | 181 | 82 | 77 | 12 | 6 | 50 | 26 | 99 | 124 | 0 | 0 |
 | US-ND | 155 | 33 | 28 | 29 | 1 | 8 | 24 | 122 | 32 | 0 | 0 |
 | US-SD | 120 | 63 | 57 | 56 | 15 | 41 | 7 | 57 | 21 | 0 | 0 |
-| US-PA | 494 | 172 | 140 | 171 | 1 | 25 | 146 | 322 | 29 | 113 | 0 |
+| US-PA | 494 | 173 | 141 | 171 | 1 | 26 | 146 | 321 | 29 | 57 | 0 |
 | US-NY | 851 | 560 | 532 | 560 | 198 | 348 | 14 | 291 | 67 | 0 | 0 |
 | US-NJ | 134 | 76 | 10 | 73 | 2 | 64 | 10 | 58 | 15 | 51 | 0 |
 | US-CT | 157 | 20 | 17 | 13 | 0 | 10 | 10 | 137 | 115 | 138 | 0 |
@@ -36,7 +36,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-DE | 89 | 5 | 4 | 5 | 0 | 3 | 2 | 84 | 7 | 0 | 0 |
 | US-DC | 35 | 32 | 5 | 32 | 0 | 32 | 0 | 3 | 32 | 0 | 0 |
 | US-AR | 306 | 61 | 43 | 60 | 4 | 35 | 22 | 244 | 47 | 194 | 0 |
-| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 26 | 31 | 0 |
+| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 26 | 32 | 0 |
 | US-OK | 205 | 97 | 91 | 46 | 2 | 66 | 29 | 104 | 40 | 2 | 0 |
 | US-TX | 222 | 116 | 31 | 105 | 46 | 47 | 23 | 106 | 89 | 3 | 0 |
 | US-KS | 145 | 16 | 10 | 15 | 1 | 11 | 4 | 129 | 15 | 12 | 0 |
@@ -748,8 +748,8 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-5486 | Manchester State Forest | https://www.scfc.gov/wp-content/uploads/2021/06/trailmap-manchester.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2021-06 |  ✗ |  |
 | US-2913 | Sesquicentennial State Park | https://southcarolinaparks.com/files/State%20Parks%20Files/Sesqui/MapSesquicentennial.pdf | pdf ✓name · the agency site | 2005: check it is still current (file stamp 2005 (older than the posting 2017 ) · posted Jul 28, 2017 |  ✗ |  |
 | US-2905 | Lee State Park | https://southcarolinaparks.com/lee/maps-and-brochures | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-4522 | Francis Marion National Forest | https://www.fs.usda.gov/r08/francismarionsumter/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted November 6, 2025 | https://www.fs.usda.gov/r08/francismarionsumter ✓ |  |
-| US-4523 | Sumter National Forest | https://www.fs.usda.gov/r08/francismarionsumter/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted November 6, 2025 | https://www.fs.usda.gov/r08/francismarionsumter ✓ |  |
+| US-4522 | Francis Marion National Forest | https://www.fs.usda.gov/r08/francismarionsumter/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-10-29) · posted November 6, 2025 | https://www.fs.usda.gov/r08/francismarionsumter ✓ |  |
+| US-4523 | Sumter National Forest | https://www.fs.usda.gov/r08/francismarionsumter/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-10-29) · posted November 6, 2025 | https://www.fs.usda.gov/r08/francismarionsumter ✓ |  |
 
 ### US-SC no map yet (141): the reason
 - US-0519 Carolina Sandhills National Wildlife Refuge: no working map link (tried: robots https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/docum; robots https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/docum)
@@ -1569,8 +1569,8 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-8170 | Lake Louise State Recreation Area | https://gfp.sd.gov/userdocs/louise_trail.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted May 30, 2025 |  ✗ |  |
 | US-8202 | West Whitlock State Recreation Area | https://gfp.sd.gov/userdocs/west-whitlock_trail.pdf | pdf ✓name · the agency site | 2018: check it is still current (the PDF file's own stamp (may be the print da) · posted Mar 21, 2018 |  ✗ |  |
 | US-4524 | Black Hills National Forest | https://www.fs.usda.gov/sites/nfs/files/r02/blackhills/publication/Recreation%20Sites%20Ma | pdf · the agency site | — (date unknown, checked 2026-10-30) · posted Mar 17, 2025 | https://www.fs.usda.gov/r02/blackhills ✓ |  |
-| US-7487 | Buffalo Gap National Grassland | https://www.fs.usda.gov/r02/nebraska/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-30) · posted August 28, 2026 | https://www.fs.usda.gov/r02/nebraska ✓ |  |
-| US-7488 | Fort Pierre National Grassland | https://www.fs.usda.gov/r02/nebraska/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-30) · posted August 28, 2026 | https://www.fs.usda.gov/r02/nebraska ✓ |  |
+| US-7487 | Buffalo Gap National Grassland | https://www.fs.usda.gov/r02/nebraska/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-30) · posted August 28, 2026 | https://www.fs.usda.gov/r02/nebraska ✓ |  |
+| US-7488 | Fort Pierre National Grassland | https://www.fs.usda.gov/r02/nebraska/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-30) · posted August 28, 2026 | https://www.fs.usda.gov/r02/nebraska ✓ |  |
 | US-4501 | Custer Gallatin National Forest | https://www.fs.usda.gov/r01/custergallatin/alerts/hyalite-porcupine-buffalo-horn-summer-in | page · the agency site | — (date unknown, checked 2026-10-30) · posted August 19, 2026 | https://www.fs.usda.gov/r01/custergallatin ✓ |  |
 | US-7489 | Grand River National Grassland | https://www.fs.usda.gov/r01/dpg/alerts/south-dakota-grassland-fire-danger-map | page · the agency site | — (date unknown, checked 2026-10-30) · posted March 12, 2026 | https://www.fs.usda.gov/r01/dpg ✓ |  |
 
@@ -1627,32 +1627,32 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-12234 | Allegheny National Wild & Scenic River | https://www.fws.gov/rivers/map | page ✓name · linked from the agency page (fws.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
 | US-0827 | Friendship Hill National Historic Site | https://www.nps.gov/frhi/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted March 9, 2016 | https://www.nps.gov/frhi/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0761 | Valley Forge National Historical Park | https://www.nps.gov/vafo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted September 10, 2026 | https://www.nps.gov/vafo/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4572 | Lewis and Clark National Historic Trail | https://www.nps.gov/lecl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted August 5, 2026 | https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4572 | Lewis and Clark National Historic Trail | https://www.nps.gov/lecl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted August 5, 2026 | https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0733 | First State National Historical Park | https://www.nps.gov/frst/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted March 10, 2016 | https://www.nps.gov/frst/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0810 | Eisenhower National Historic Site | https://www.nps.gov/eise/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted May 26, 2023 | https://www.nps.gov/eise/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0738 | Independence National Historical Park | https://www.nps.gov/inde/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted September 9, 2021 | https://www.nps.gov/inde/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4564 | Potomac Heritage Trail National Scenic T | https://www.nps.gov/pohe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 15, 2026 | https://www.nps.gov/pohe/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4567 | Captain John Smith Chesapeake National H | https://www.nps.gov/cajo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted November 14, 2024 | https://www.nps.gov/cajo/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4564 | Potomac Heritage Trail National Scenic T | https://www.nps.gov/pohe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted September 15, 2026 | https://www.nps.gov/pohe/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4567 | Captain John Smith Chesapeake National H | https://www.nps.gov/cajo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted November 14, 2024 | https://www.nps.gov/cajo/learn/management/lawsandpolicies.htm ✓ |  |
 | US-10802 | Gloria Dei Church National Historic Site | https://www.nps.gov/glde/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted March 10, 2016 | https://www.nps.gov/glde/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0027 | Gettysburg National Military Park | https://www.nps.gov/gett/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted May 14, 2025 | https://www.nps.gov/gett/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0864 | Steamtown National Historic Site | https://www.nps.gov/stea/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted May 23, 2024 | https://www.nps.gov/stea/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0704 | Fort Necessity National Battlefield | https://www.nps.gov/fone/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted February 24, 2022 | https://www.nps.gov/fone/learn/management/lawsandpolicies.htm ✓ |  |
-| US-1344 | Colton Point State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/colton-poi | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-1351 | Evansburg State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/evansburg- | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-1435 | Yellow Creek State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/yellow-cre | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-1407 | Pymatuning State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/pymatuning | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-1360 | Hillman State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/hillman-st | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-1372 | Laurel Summit State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/laurel-sum | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-5475 | Sproul State Forest | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/sproul | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-5479 | Tuscarora State Forest | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/tuscar | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-1396 | Patterson State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/patterson- | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-1386 | Mont Alto State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/mont-alto- | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-4361 | Kings Gap Environmental State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/kings-gap- | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-1378 | Locust Lake State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/locust-lak | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
+| US-1344 | Colton Point State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/colton-poi | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-1351 | Evansburg State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/evansburg- | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-1435 | Yellow Creek State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/yellow-cre | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-1407 | Pymatuning State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/pymatuning | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-1360 | Hillman State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/hillman-st | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-1372 | Laurel Summit State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/laurel-sum | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-5475 | Sproul State Forest | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/sproul | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-5479 | Tuscarora State Forest | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/tuscar | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-1396 | Patterson State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/patterson- | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-1386 | Mont Alto State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/mont-alto- | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-4361 | Kings Gap Environmental State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/kings-gap- | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-1378 | Locust Lake State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/locust-lak | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
+| US-0619 | Allegheny National Forest | https://www.fs.usda.gov/r09/allegheny/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-30) · posted October 29, 2026 | https://www.fs.usda.gov/r09/allegheny ✓ |  |
 | US-0622 | Bear Run State Conservation Area | https://waterlandlife.org/wp-content/uploads/2021/07/2025_Bear-Run-Maps_Andrew-Zadnik.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted 2021-07 |  ✗ |  |
 
-### US-PA no map yet (322): the reason
-- US-0619 Allegheny National Forest: no map link on file and none on the park page (needs browser: host on the browser list)
+### US-PA no map yet (321): the reason
 - US-0620 Beechwood Farms State Conservation Area: no map link on file and none on the park page
 - US-0621 Todd Sanctuary State Conservation Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.aswp.org/wp-content/uploads/2024/10/Todd-map-2022.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.aswp.org/wp-content/uploads/2025/11/TNR-map-2025-1.pdf)
 - US-0624 Roaring Run State Conservation Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)
@@ -1661,9 +1661,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-0627 Pine Ridge State Conservation Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)
 - US-0628 Charles F. Lewis State Conservation Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)
 - US-0898 White Clay Creek National Wild and Scenic Riv: no map link on file and none on the park page
-- US-11247 PA 332 State Game Land: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11824 PA 336 State Game Land: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11977 PA 339 State Game Land: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11247 PA 332 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-11824 PA 336 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-11977 PA 339 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
 - US-12664 Pine Creek Rail Trail State Trail: no map link on file and none on the park page
 - US-13079 PA 303 State Game Land: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/pgc/huntingandtrapping/where-to-hunt/state)
 - US-1327 Allegheny Islands State Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)
@@ -1671,27 +1671,28 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-1431 Upper Pine Bottom State Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)
 - US-4363 Norristown Farm State Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/fi)
 - US-5463 Buchanan State Forest: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)
-- US-8722 PA 012 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8723 PA 013 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8724 PA 014 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8725 PA 024 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8726 PA 025 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8727 PA 026 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8728 PA 028 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8729 PA 029 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8730 PA 030 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8731 PA 031 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8732 PA 033 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8733 PA 034 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8734 PA 035 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8735 PA 036 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8736 PA 037 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8737 PA 038 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8738 PA 039 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8739 PA 040 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8740 PA 041 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8741 PA 042 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
-- US-8742 PA 043 State Game Land: no map (one file shared by 197 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8722 PA 012 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8723 PA 013 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8724 PA 014 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8725 PA 024 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8726 PA 025 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8727 PA 026 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8728 PA 028 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8729 PA 029 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8730 PA 030 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8731 PA 031 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8732 PA 033 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8733 PA 034 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8734 PA 035 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8735 PA 036 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8736 PA 037 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8737 PA 038 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8738 PA 039 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8739 PA 040 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8740 PA 041 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8741 PA 042 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8742 PA 043 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
+- US-8743 PA 044 State Game Land: no map (one file shared by 249 parks was dropped: https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-) (needs browser: host on the browser list)
 
 ## US-NY sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -2507,7 +2508,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## US-LA sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| US-0299 | Bayou Teche National Wildlife Refuge | https://www.fws.gov/refuge/bayou-teche/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/bayou-teche/visit-us/rules-policies ✓ |  |
+| US-0299 | Bayou Teche National Wildlife Refuge | https://www.fws.gov/refuge/bayou-teche/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/bayou-teche/visit-us/rules-policies ✓ |  |
 | US-0300 | Big Branch Marsh National Wildlife Refug | https://www.fws.gov/refuge/big-branch-marsh/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/big-branch-marsh/visit-us/rules-policies ✓ |  |
 | US-0315 | Red River National Wildlife Refuge | https://www.fws.gov/refuge/red-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/red-river/visit-us/rules-policies ✓ |  |
 | US-0301 | Black Bayou Lake National Wildlife Refug | https://www.fws.gov/refuge/black-bayou-lake/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/black-bayou-lake/visit-us/rules-policies ✓ |  |
@@ -2520,10 +2521,10 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0319 | Upper Ouachita National Wildlife Refuge | https://www.fws.gov/refuge/upper-ouachita/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/upper-ouachita/visit-us/rules-policies ✓ |  |
 | US-0311 | Lacassine National Wildlife Refuge | https://www.fws.gov/refuge/lacassine/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/lacassine/visit-us/rules-policies ✓ |  |
 | US-0723 | Vicksburg National Military Park | https://www.nps.gov/vick/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted June 18, 2024 | https://www.nps.gov/vick/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0958 | Poverty Point National Monument | https://www.nps.gov/popo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 7, 2016 | https://www.nps.gov/popo/learn/management/lawsandpolicies.htm ✗ |  |
-| US-0040 | Jean Lafitte National Historical Park | https://www.nps.gov/jela/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted May 8, 2025 | https://www.nps.gov/jela/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0958 | Poverty Point National Monument | https://www.nps.gov/popo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted March 7, 2016 | https://www.nps.gov/popo/learn/management/lawsandpolicies.htm ✗ |  |
+| US-0040 | Jean Lafitte National Historical Park | https://www.nps.gov/jela/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted May 8, 2025 | https://www.nps.gov/jela/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0729 | Cane River Creole National Historical Pa | https://www.nps.gov/cari/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted August 1, 2024 | https://www.nps.gov/cari/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4568 | El Camino Real de los Tejas National His | https://www.nps.gov/elte/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted August 28, 2026 | https://www.nps.gov/elte/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4568 | El Camino Real de los Tejas National His | https://www.nps.gov/elte/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted August 28, 2026 | https://www.nps.gov/elte/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4486 | Kisatchie National Forest | https://www.fs.usda.gov/sites/nfs/files/publication/Caney%20RD%20November%202025_0.pdf | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted 2025 | https://www.fs.usda.gov/r08/kisatchie ✓ |  |
 
 ### US-LA no map yet (96): the reason
@@ -2536,7 +2537,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-10353 Isle Dernieres Barrier Islands Wildlife Refug: no map link on file and none on the park page
 - US-10354 Forts Randolph & Buhlow State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-10413 Acadiana Conservation Corridor Wildlife Manag: no map link on file and none on the park page
-- US-10447 Audubon State Historic Site: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
+- US-10447 Audubon State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-10448 Centenary State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-10449 Fort Jessup State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-10450 Fort St. Jean Baptiste State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
@@ -2843,7 +2844,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0813 | First Ladies National Historic Site | https://www.nps.gov/fila/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted September 25, 2024 | https://www.nps.gov/fila/learn/management/lawsandpolicies.htm ✓ |  |
 | US-1956 | Harrison Lake State Park | https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/parks/parkmaps/harrisonlake | pdf ✓name · same government (dam.assets.ohio.gov) | date unknown (date unknown, checked 2026-10-30) · posted Dec 10, 2025 | https://codes.ohio.gov/ohio-administrative-code/rule-1501:31-15-04 ✓ |  |
 | US-9491 | Parkersburg State Wildlife Area | https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps | pdf ✓name · same government (dam.assets.ohio.gov) | date unknown (date unknown, checked 2026-10-30) · posted Mar 15, 2024 | https://codes.ohio.gov/ohio-administrative-code/rule-1501:31-15-04 ✓ |  |
-| US-4521 | Wayne National Forest | https://www.fs.usda.gov/r09/wayne/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-30) · posted February 21, 2025 | https://www.fs.usda.gov/r09/wayne ✓ |  |
+| US-4521 | Wayne National Forest | https://www.fs.usda.gov/r09/wayne/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-30) · posted February 21, 2025 | https://www.fs.usda.gov/r09/wayne ✓ |  |
 
 ### US-OH no map yet (259): the reason
 - US-10632 Clark Lake State Wildlife Area: no map link on file and none on the park page
@@ -2888,9 +2889,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-1968 Lake Hope State Park: no map link on file and none on the park page
 
 ## robots.txt said no (hosts we did not read)
-- doifwsnextprod.prod.acquia-sites.com: 1 addresses (User-agent: * | Disallow: /)
-- rigov.sharepoint.com: 9 addresses (User-Agent: * | Disallow: /)
-- www.google.com: 1 addresses (User-agent: * | User-agent: Yandex | Disallow: /search | Allow: /search/about | Allow: /search/howse)
+- www.pacodeandbulletin.gov: 249 addresses (User-agent: Googlebot | Disallow: /Display/pabull | Disallow: /Display/pacode | Allow: / | User-agen)
 
 ## hosts resting a day (three strikes)
 - iowaculture.gov
