@@ -1,0 +1,167 @@
+{
+ "request": "requests/9-ns-pota3.json",
+ "id": "9-ns-pota3",
+ "chat": 9,
+ "kind": "page",
+ "report": "NOT SURE for chat 11: POTA park record (name, grid, type, agency) as the reference",
+ "asked": {
+  "chat": 9,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-12837",
+   "https://api.pota.app/park/US-13150",
+   "https://api.pota.app/park/US-13310",
+   "https://api.pota.app/park/US-13516",
+   "https://api.pota.app/park/US-2028",
+   "https://api.pota.app/park/US-2313",
+   "https://api.pota.app/park/US-2369",
+   "https://api.pota.app/park/US-3375",
+   "https://api.pota.app/park/US-3656",
+   "https://api.pota.app/park/US-3862",
+   "https://api.pota.app/park/US-3917",
+   "https://api.pota.app/park/US-4208",
+   "https://api.pota.app/park/US-4383",
+   "https://api.pota.app/park/US-4555"
+  ],
+  "report": "NOT SURE for chat 11: POTA park record (name, grid, type, agency) as the reference"
+ },
+ "answered": "2026-10-30 03:33Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-12837",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-12837",
+   "title": "",
+   "text": "{\"parkId\": 130938, \"reference\": \"US-12837\", \"name\": \"East Shore\", \"latitude\": 43.5926, \"longitude\": -123.835, \"grid4\": \"CN83\", \"grid6\": \"CN83bo\", \"parktypeId\": 224, \"active\": 1, \"parkComments\": \"This is a separate park from Loon Lake Recreation Site.\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.blm.gov/visit/east-shore\", \"createdByAdmin\": \"Charlie Bottita\", \"parktypeDesc\": \"BLM Recreation Management Area\", \"locationDesc\": \"US-OR\", \"locationName\": \"Oregon\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KK6GUK\", \"firstActivationDate\": \"2026-01-18\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-13150",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13150",
+   "title": "",
+   "text": "{\"parkId\": 134667, \"reference\": \"US-13150\", \"name\": \"Belvidere Access\", \"latitude\": 40.8282, \"longitude\": -75.0822, \"grid4\": \"FN20\", \"grid6\": \"FN20lt\", \"parktypeId\": 123, \"active\": 1, \"parkComments\": \"Parking at 45 Front St., Belvidere, NJ 07823\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Boat\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://dep.nj.gov/njfw/belvidere-access-wma/\", \"createdByAdmin\": \"Steve Rosman\", \"parktypeDesc\": \"Wildlife Management Area\", \"locationDesc\": \"US-NJ\", \"locationName\": \"New Jersey\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N2XTO\", \"firstActivationDate\": \"2026-03-29\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-13310",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13310",
+   "title": "",
+   "text": "{\"parkId\": 136000, \"reference\": \"US-13310\", \"name\": \"Foley Sand Prairie\", \"latitude\": 41.6447, \"longitude\": -89.6292, \"grid4\": \"EN51\", \"grid6\": \"EN51ep\", \"parktypeId\": 44, \"active\": 1, \"parkComments\": \"\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Foot\", \"activationMethods\": \"Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://dnr.illinois.gov/inpc/area.area1leefoleysandprairie.html\", \"createdByAdmin\": \"Kenneth Curry\", \"parktypeDesc\": \"National Preserve\", \"locationDesc\": \"US-IL\", \"locationName\": \"Illinois\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"W9EMM\", \"firstActivationDate\": \"2026-05-21\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-13516",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13516",
+   "title": "",
+   "text": "{\"parkId\": 138161, \"reference\": \"US-13516\", \"name\": \"Horseshoe -Kitsap-\", \"latitude\": 47.407, \"longitude\": -122.667, \"grid4\": \"CN87\", \"grid6\": \"CN87pj\", \"parktypeId\": 266, \"active\": 1, \"parkComments\": \"Anywhere on or over the water can be activated. Additionally, the map pin is placed on the land that WDFW owns and is used for recreation. That is the only on land activation location.\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Boat,Foot\", \"activationMethods\": \"Automobile,Other,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://wdfw.wa.gov/fishing/locations/lowland-lakes/horseshoe-lake-kitsap\", \"createdByAdmin\": \"Charlie Bottita\", \"parktypeDesc\": \"State Fishing Lake\", \"locationDesc\": \"US-WA\", \"locationName\": \"Washington\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"W7EEE\", \"firstActivationDate\": \"2026-07-20\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-2028",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-2028",
+   "title": "",
+   "text": "{\"parkId\": 2028, \"reference\": \"US-2028\", \"name\": \"Captree\", \"latitude\": 40.6468, \"longitude\": -73.2633, \"grid4\": \"FN30\", \"grid6\": \"FN30ip\", \"parktypeId\": 101, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Boat,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://parks.ny.gov/parks/65/details.aspx\", \"createdByAdmin\": null, \"parktypeDesc\": \"State Park\", \"locationDesc\": \"US-NY\", \"locationName\": \"New York\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"K2RYD\", \"firstActivationDate\": \"2017-07-09\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-2313",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-2313",
+   "title": "",
+   "text": "{\"parkId\": 2313, \"reference\": \"US-2313\", \"name\": \"Pilot Knob\", \"latitude\": 43.2517, \"longitude\": -93.5549, \"grid4\": \"EN33\", \"grid6\": \"EN33fg\", \"parktypeId\": 101, \"active\": 1, \"parkComments\": \"Older SP, but also includes the SOTA Pilot Knob site...easy to access from one of the SP parking lots. \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile\", \"activationMethods\": \"Automobile,Other,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Pilot-Knob-State-Park\", \"createdByAdmin\": null, \"parktypeDesc\": \"State Park\", \"locationDesc\": \"US-IA\", \"locationName\": \"Iowa\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N0UR\", \"firstActivationDate\": \"2018-03-16\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-2369",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-2369",
+   "title": "",
+   "text": "{\"parkId\": 2369, \"reference\": \"US-2369\", \"name\": \"Lake D'Arbonne\", \"latitude\": 32.7765, \"longitude\": -92.4876, \"grid4\": \"EM32\", \"grid6\": \"EM32ss\", \"parktypeId\": 101, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Cabin,Campground,Pedestrian,Shelter\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.lastateparks.com/parks-preserves/lake-darbonne-state-park\", \"createdByAdmin\": null, \"parktypeDesc\": \"State Park\", \"locationDesc\": \"US-LA\", \"locationName\": \"Louisiana\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"K5BIU\", \"firstActivationDate\": \"2018-01-30\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-3375",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-3375",
+   "title": "",
+   "text": "{\"parkId\": 3375, \"reference\": \"US-3375\", \"name\": \"Stolley\", \"latitude\": 40.9001, \"longitude\": -98.3611, \"grid4\": \"EN00\", \"grid6\": \"EN00tv\", \"parktypeId\": 30, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.giparks.com/departments/parks-and-recreation/parks-division/park-directory/stolley-park\", \"createdByAdmin\": null, \"parktypeDesc\": \"National Historic Site\", \"locationDesc\": \"US-NE\", \"locationName\": \"Nebraska\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KD0IRW\", \"firstActivationDate\": \"2017-03-19\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-3656",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-3656",
+   "title": "",
+   "text": "{\"parkId\": 3656, \"reference\": \"US-3656\", \"name\": \"Beker - South Fork\", \"latitude\": 27.5887, \"longitude\": -82.2393, \"grid4\": \"EL87\", \"grid6\": \"EL87vo\", \"parktypeId\": 101, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.floridastateparks.org/parks-and-trails/beker-south-fork\", \"createdByAdmin\": null, \"parktypeDesc\": \"State Park\", \"locationDesc\": \"US-FL\", \"locationName\": \"Florida\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"AA0O\", \"firstActivationDate\": \"2019-10-17\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-3862",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-3862",
+   "title": "",
+   "text": "{\"parkId\": 3862, \"reference\": \"US-3862\", \"name\": \"Nags Head Woods Ecological\", \"latitude\": 35.9861, \"longitude\": -75.6582, \"grid4\": \"FM25\", \"grid6\": \"FM25ex\", \"parktypeId\": 103, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Boat,Foot\", \"activationMethods\": \"Automobile,Other,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/nags-head-woods-ecological-preserve/?vu=r.v_nhw\", \"createdByAdmin\": null, \"parktypeDesc\": \"State Preserve\", \"locationDesc\": \"US-NC\", \"locationName\": \"North Carolina\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N4EX\", \"firstActivationDate\": \"2018-03-15\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-3917",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-3917",
+   "title": "",
+   "text": "{\"parkId\": 3917, \"reference\": \"US-3917\", \"name\": \"Little Pee Dee Bay\", \"latitude\": 34.1432, \"longitude\": -79.2009, \"grid4\": \"FM04\", \"grid6\": \"FM04jd\", \"parktypeId\": 321, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/43\", \"createdByAdmin\": null, \"parktypeDesc\": \"Heritage Preserve\", \"locationDesc\": \"US-SC\", \"locationName\": \"South Carolina\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KD4CB\", \"firstActivationDate\": \"2017-12-02\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-4208",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-4208",
+   "title": "",
+   "text": "{\"parkId\": 4208, \"reference\": \"US-4208\", \"name\": \"J. E. Roush Lake\", \"latitude\": 40.8358, \"longitude\": -85.4653, \"grid4\": \"EN70\", \"grid6\": \"EN70gu\", \"parktypeId\": 88, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.in.gov/dnr/fish-and-wildlife/properties/je-roush-lake-fwa/\", \"createdByAdmin\": null, \"parktypeDesc\": \"State Fish and Wildlife Area\", \"locationDesc\": \"US-IN\", \"locationName\": \"Indiana\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"WT8J\", \"firstActivationDate\": \"2018-04-21\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-4383",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-4383",
+   "title": "",
+   "text": "{\"parkId\": 4383, \"reference\": \"US-4383\", \"name\": \"Rogue River-Siskiyou\", \"latitude\": 41.9816, \"longitude\": -123.961, \"grid4\": \"CN81\", \"grid6\": \"CN81ax\", \"parktypeId\": 25, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile\", \"activationMethods\": \"Automobile,Other,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.fs.usda.gov/rogue-siskiyou\", \"createdByAdmin\": null, \"parktypeDesc\": \"National Forest\", \"locationDesc\": \"US-CA,US-OR\", \"locationName\": \"California,Oregon\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N4CD\", \"firstActivationDate\": \"2012-07-08\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-4555",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-4555",
+   "title": "",
+   "text": "{\"parkId\": 4555, \"reference\": \"US-4555\", \"name\": \"Hanford Reach\", \"latitude\": 46.6383, \"longitude\": -119.732, \"grid4\": \"DN06\", \"grid6\": \"DN06dp\", \"parktypeId\": 39, \"active\": 1, \"parkComments\": \"Check for any restrictions and or permits.\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Boat,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.fws.gov/national-monument/hanford-reach\", \"createdByAdmin\": null, \"parktypeDesc\": \"National Monument\", \"locationDesc\": \"US-WA\", \"locationName\": \"Washington\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KG7MVH\", \"firstActivationDate\": \"2020-03-13\"}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 27,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "14 result(s), 14 read OK, 0 screenshot(s)"
+}
