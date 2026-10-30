@@ -9,6 +9,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '41 10 * * *'
+    # Oct 29 (BOT C): a second look in the evening so a key rebuilt in the day reaches chat 11's sample the same night
+    - cron: '41 1 * * *'
 permissions:
   contents: write
 concurrency:
@@ -43,6 +45,8 @@ jobs:
           # the waiting-room workflow mode release-approved puts it live. A Rule G change on purpose = a G5 stamp (big-change alarm only).
           for d in data/us-key data/ca-key; do [ -d "links/$d" ] && mkdir -p "kpcdata/$d" && rsync -a "links/$d/" "kpcdata/$d/"; done
           (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/us-key data/ca-key) || true
+          # Oct 29 11:45 PM (BOT C, plan KPC_Key_And_2fer_Automation_Plan.md): held build vs live key + chat 11's sample of 30
+          (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_key_summary.py) || true
           echo "::notice title=Step B3 copy::$(du -sh kpcdata/data | cut -f1) in kpcdata/data"
       - name: Save (once)
         continue-on-error: true

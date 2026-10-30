@@ -6,6 +6,10 @@ name: KPC 2-fer small batches (hidden)
 on:
   schedule:
     - cron: '23 10 * * *'
+  # Oct 29 11:40 PM (BOT E, plan KPC_Key_And_2fer_Automation_Plan.md): also right after the waiting room ran (a key release)
+  workflow_run:
+    workflows: ['KPC waiting room (by hand only; NOT switched on)']
+    types: [completed]
   workflow_dispatch:
     inputs:
       force:
@@ -34,14 +38,29 @@ jobs:
           python3 - <<'PY'
           import json, os, subprocess, time
           P = json.load(open('data/fers/pending.json'))
-          try:   # the US key's own list of parks whose joined outline changed
-              ch = json.load(open('links/data/us-key/changed-parks.json'))
-              have = {(x['ref'], x.get('date')) for x in P['parks']} | {(x['ref'], x.get('date')) for x in P.get('done', [])}
-              for r in ch.get('refs') or []:
-                  if (r, ch.get('date')) not in have: P['parks'].append({'ref': r, 'why': 'outline changed (US key rebuild)', 'date': ch.get('date')})
-          except Exception: pass
+          # Oct 29 11:40 PM (BOT E): parks whose LIVE outline changed = the released key here (data/us-key, data/ca-key) vs what this
+          # bot saw last time (data/fers/key-seen.json: ref -> its joined piece ids). A held build that chat 11 rejects never shows here.
+          # Only states already rerun on the new key (data/fers/new-key-states.json) rerun by themselves; the rest wait their wave.
+          import glob, hashlib
+          SEEN = 'data/fers/key-seen.json'
+          try: seen = json.load(open(SEEN))
+          except Exception: seen = {}
+          try: newkey = set(json.load(open('data/fers/new-key-states.json')).get('states') or [])
+          except Exception: newkey = set()
+          now, key_changed = {}, False
+          for f in sorted(glob.glob('data/us-key/US-??.json') + glob.glob('data/ca-key/CA-??.json')):
+              area = os.path.basename(f)[:-5]
+              try: parks = json.load(open(f)).get('parks') or {}
+              except Exception: continue
+              for r, p in parks.items():
+                  h = hashlib.md5(','.join(sorted(str(x[0]) for x in p.get('m') or [])).encode()).hexdigest()[:10]
+                  now[f'{area}:{r}'] = h
+                  if seen and seen.get(f'{area}:{r}') != h and area in newkey:
+                      P['parks'].append({'ref': r, 'area': area, 'why': 'live outline changed (key release)', 'date': time.strftime('%Y-%m-%d')}); key_changed = True
+          json.dump(now, open(SEEN, 'w'), separators=(',', ':'))
+          if not seen: print('::notice title=2-fer small batches::first look at the live key: remembered, nothing started for it')
           wait = P['parks']; sunday = time.gmtime().tm_wday == 6
-          if not wait or not (len(wait) >= 5 or sunday or os.environ.get('FORCE') == 'yes'):
+          if not wait or not (len(wait) >= 5 or sunday or key_changed or os.environ.get('FORCE') == 'yes'):
               print(f'::notice title=2-fer small batches::{len(wait)} park(s) waiting: nothing to run today'); json.dump(P, open('data/fers/pending.json', 'w'), indent=1); raise SystemExit
           R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
                'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
@@ -63,7 +82,8 @@ jobs:
               return None
           by = {}
           for x in wait:
-              a = area_of(x['ref'])
+              # BOT E: a key-release park reruns its OWN state as one area (1/3-size areas, HQ Oct 29 3:11 PM), tag = state letters
+              a = (x['area'], x['area'].lower().replace('us-', '').replace('-', '')) if x.get('area') else area_of(x['ref'])
               if a: by.setdefault(a, []).append(x)
           started = 0
           for (sts, tag), xs in sorted(by.items(), key=lambda kv: -len(kv[1]))[:3]:
@@ -76,5 +96,5 @@ jobs:
           json.dump(P, open('data/fers/pending.json', 'w'), indent=1)
           PY
           git config user.name kpc-bot; git config user.email bot@kpc.local
-          git add data/fers/pending.json && git commit -qm "2-fer small batches: waiting list" || true
+          git add data/fers/pending.json data/fers/key-seen.json && git commit -qm "2-fer small batches: waiting list" || true
           git pull -q --rebase || true; git push -q || true
