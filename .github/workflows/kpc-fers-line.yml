@@ -86,7 +86,7 @@ jobs:
           bash .github/scripts/kpc_overlay.sh kpcdata
           # Oct 29 11:35 PM (automation plan): every stage measures against the LIVE key (KPC-Data data/us-key + ca-key); KPC-Links
           # data/us-key may be a build still HELD in the waiting room. After a release, BOT E reruns the states that changed.
-          for k in us-key ca-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
+          for k in us-key ca-key world-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
       - name: Tools + saved outlines + this area's last 2-fer files
         continue-on-error: true
         run: |
@@ -174,7 +174,7 @@ jobs:
           bash .github/scripts/kpc_overlay.sh kpcdata
           # Oct 29 11:35 PM (automation plan): every stage measures against the LIVE key (KPC-Data data/us-key + ca-key); KPC-Links
           # data/us-key may be a build still HELD in the waiting room. After a release, BOT E reruns the states that changed.
-          for k in us-key ca-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
+          for k in us-key ca-key world-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
       - name: Tools + the bundle (no bundle = a red run)
         run: |
           pip install -q numpy opencv-python-headless || true
@@ -244,7 +244,7 @@ jobs:
           bash .github/scripts/kpc_overlay.sh kpcdata
           # Oct 29 11:35 PM (automation plan): every stage measures against the LIVE key (KPC-Data data/us-key + ca-key); KPC-Links
           # data/us-key may be a build still HELD in the waiting room. After a release, BOT E reruns the states that changed.
-          for k in us-key ca-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
+          for k in us-key ca-key world-key; do [ -d kpcdata/data/$k ] && mkdir -p data/$k && cp -f kpcdata/data/$k/*.json data/$k/ 2>/dev/null; done; true
       - name: The worker's bundle (no bundle = a red run)
         run: |
           mkdir -p data/fers
