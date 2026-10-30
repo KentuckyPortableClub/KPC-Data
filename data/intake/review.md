@@ -115,7 +115,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - FLAG: water only: for the 2-fer owner step only
 - terms: OPEN · source item page · "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you a" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field cwt_suite_name
-- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/3
@@ -124,7 +124,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - FLAG: water only: for the 2-fer owner step only
 - terms: OPEN · source item page · "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you a" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field cwt_suite_name
-- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Local Authority Districts (May 2021) Boundaries UK BGC  ·    ·  from gis-hunter
 - url: https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2021_UK_BGC_2022/FeatureServer/0
@@ -428,7 +428,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field SPECIES_NAME · 5186 records · sample Rubus fruticosus / Ulex europaeus / Hypericum perforatum subsp. veronense
-- closes: 4 of 60 tested missing parks (by name 0, pin only 4; 74 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 4 of 60 tested missing parks (by name 0, pin only 4; 74 of the area's 2603 missing parks lie in the layer's extent)
   - AU-10758 Pardoe Northdown Conservation Area → polygon "Asparagus asparagoides"
   - AU-11304 Pipe Clay Lagoon - Water Management Area → polygon "Brachionichthys hirsutus"
   - AU-8812 Nutgrove Beach - State Beach → polygon "Brachionichthys hirsutus"
@@ -440,7 +440,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample Kimberley Gillnet and Barramundi Fishery / Kimberley Gillnet and Barramundi Fishery / Kimberley Gillnet and Barramundi Fishery
-- closes: 2 of 60 tested missing parks (by name 0, pin only 2; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 2 of 60 tested missing parks (by name 0, pin only 2; 2603 of the area's 2603 missing parks lie in the layer's extent)
   - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley Gillnet and Barramundi Fishery"
   - AU-0058 Ningaloo Marine Park → polygon "Point Maud to Tantabiddi Closure"
 
@@ -494,7 +494,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field SPECIES_NAME · 14 records · sample Digitalis purpurea / Ulex europaeus / Ulex europaeus
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 18 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 18 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Public/NaturalEnvironmentV2  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/12
@@ -518,7 +518,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field AREA_NAME · 6 records · sample Ninepin Point Marine Nature Reserve / Port Davey/Bathurst Harbour Marine Nature Reserve - No Fishi / Maria Island Marine Nature Reserve - No Fishing Zone
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 229 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 220 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/3
@@ -526,7 +526,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field AREA_NAME · 2 records · sample Kent Group Marine Nature Reserve - Restricted Fishing Zone / Port Davey Marine Nature Reserve 
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 229 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 220 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/1
@@ -534,7 +534,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 63 records · sample Aquaculture Instrument of Exemption / Aquaculture Instrument of Exemption / Aquaculture Instrument of Exemption
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Centennial Industrial Business Activity  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/S7DHOirgbYgdtrbR/arcgis/rest/services/Centennial_Industrial_Business_Activity/FeatureServer/0
@@ -1323,7 +1323,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name_abrv · 30 records · sample SP+LP / SP+LP / SP+LP/CL
-- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Blue Rockfish YOY Mean Density - North Central Coast - 2010-11 - PISCO [ds1375]  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1375_fpu/FeatureServer/0
@@ -3642,7 +3642,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample ACT and Jervis Bay / Central Desert / Geraldton
-- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 2603 of the area's 2603 missing parks lie in the layer's extent)
   - AU-0002 Willis Island National Park → polygon "Cape York Region"
   - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley"
   - AU-0027 Tunnel Creek National Park → polygon "Kimberley"
@@ -3675,7 +3675,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample ACT and Jervis Bay / Central Desert / Geraldton
-- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 2603 of the area's 2603 missing parks lie in the layer's extent)
   - AU-0002 Willis Island National Park → polygon "Cape York Region"
   - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley"
   - AU-0027 Tunnel Creek National Park → polygon "Kimberley"
@@ -3774,7 +3774,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 138 records · sample Patriarch / Sellars Lagoon / Yarra
-- closes: 24 of 57 tested missing parks (by name 2, pin only 22; 57 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 24 of 57 tested missing parks (by name 2, pin only 22; 57 of the area's 2603 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Tamar"
   - AU-11292 Arthurs Lake - Water Management Area → polygon "Tamar"
   - AU-11294 Lake Sorell - Water Management Area → polygon "Derwent"
@@ -3881,7 +3881,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 192 records · sample Pats / Seal / Chew Tobacco Creek
-- closes: 1 of 3 tested missing parks (by name 1, pin only 0; 57 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 1 of 3 tested missing parks (by name 1, pin only 0; 57 of the area's 2603 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Great Lake"
 
 ### Public/OpenDataWFS  ·  AU  ·  from harvester
@@ -3890,7 +3890,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field O_NAME · 57546 records · sample Landslide Hazard Area / Landslide Hazard Area / Landslide Hazard Area
-- closes: 1 of 46 tested missing parks (by name 0, pin only 1; 46 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 1 of 46 tested missing parks (by name 0, pin only 1; 46 of the area's 2603 missing parks lie in the layer's extent)
   - AU-8859 Kingston Beach - State Beach → polygon "Heritage Precinct"
 
 ### Public/PWSPublic  ·  AU  ·  from harvester
@@ -3899,7 +3899,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 29 records · sample Leven FC / Lake St Clair FC / Overland Track FC
-- closes: 1 of 60 tested missing parks (by name 0, pin only 1; 515 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 1 of 60 tested missing parks (by name 0, pin only 1; 458 of the area's 2603 missing parks lie in the layer's extent)
   - AU-0579 Kent Group National Park → polygon "Flinders Island FC"
 
 ### SLIP_Public_Services/Plants_and_Animals  ·  AU  ·  from harvester
@@ -4036,7 +4036,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 32 records · sample Albany / Barker Bay Albany / Batavia NHL
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/3
@@ -4044,7 +4044,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample PORT OF BALLA BALLA / VARANUS ISLAND PORT AUTHORITY / WYNDHAM PORT AUTHORITY
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Public/ABS_2011  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/0
@@ -4548,7 +4548,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field TILE_NAME · 22 records · sample e557n5239 / e557n5240 / e557n5241
-- closes: 0 of 1 tested missing parks (by name 0, pin only 0; 1 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 1 tested missing parks (by name 0, pin only 0; 1 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Public/OpenDataWFS  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/7
@@ -4556,7 +4556,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field TILE_NAME · 557 records · sample filnd_5835561 / filnd_5835562 / filnd_5845560
-- closes: 0 of 4 tested missing parks (by name 0, pin only 0; 56 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 4 tested missing parks (by name 0, pin only 0; 56 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Public/PWSPublic  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/1
@@ -4564,7 +4564,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 4 records · sample Whole State / Whole State / Whole State
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 515 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 458 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Public/Planning  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/1
@@ -4636,7 +4636,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 17965 records · sample None / None / None
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 80 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 80 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/19
@@ -4644,7 +4644,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 432 records · sample None / None / None
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 80 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 80 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/1
@@ -4652,7 +4652,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 107 records · sample Ballidu / Beverley / Boyup Brook
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/1
@@ -4660,7 +4660,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 107 records · sample Ballidu / Beverley / Boyup Brook
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Environment  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/0
@@ -4684,7 +4684,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 6 records · sample Point Quobba Fish Habitat Protection Area / Abrolhos Islands Fish Habitat Protection Area / Cottesloe Reef Fish Habitat Protection Area
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/0
@@ -4708,7 +4708,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 6 records · sample Point Quobba Fish Habitat Protection Area / Abrolhos Islands Fish Habitat Protection Area / Cottesloe Reef Fish Habitat Protection Area
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/0
@@ -4716,7 +4716,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 30445 records · sample NORTHAMPTON / NORTHAMPTON / WYNDHAM-EAST KIMBERLEY
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/1
@@ -10056,7 +10056,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 30445 records · sample NORTHAMPTON / NORTHAMPTON / WYNDHAM-EAST KIMBERLEY
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Farming_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer/1
@@ -10072,7 +10072,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field unit_of_me · 30614 records · sample HA. / HA. / HA.
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Industry_and_Mining  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining/MapServer/4
@@ -10080,7 +10080,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field label · 38 records · sample 80_Kimberley / 04_W Kimberley / 45_Marble Bar
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Industry_and_Mining_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer/3
@@ -10088,7 +10088,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field unit_of_me · 30614 records · sample HA. / HA. / HA.
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Industry_and_Mining_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer/4
@@ -10096,7 +10096,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field label · 38 records · sample 80_Kimberley / 04_W Kimberley / 45_Marble Bar
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Infrastructure_and_Utilities_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/9
