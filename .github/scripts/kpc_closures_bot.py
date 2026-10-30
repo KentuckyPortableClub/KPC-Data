@@ -408,6 +408,16 @@ def classify(sent, ctx=None):
         return {**base, 'class': 'note', 'note_kind': 'facility', 'what': what}
     if SEASONAL_RX.search(s) and (frm or to or flags['annually']):
         return {**base, 'class': 'seasonal', 'what': what or 'seasonal closure'}
+    # Oct 30 (KY go-live dry run): closed on certain WEEKDAYS / HOLIDAYS (Ballard WMA: 'closed to all access on Mondays, Tuesdays, Christmas
+    # Eve ...') = a recurring, season-like closure -> SEASONAL (shown as a note, Brandon Oct 29 10:17 AM), never the whole-park line
+    DAYS = r'(?:mondays?|tuesdays?|wednesdays?|thursdays?|fridays?|saturdays?|sundays?|weekends?|weekdays?|holidays?|christmas(?: eve| day)?|new year)'
+    if re.search(r'\bclosed\b[^.]{0,40}\bon ' + DAYS + r'\b', low):
+        days = ', '.join(dict.fromkeys(m.group(0) for m in re.finditer(DAYS, low)))[:80]
+        return {**base, 'class': 'seasonal', 'what': f'closed on certain days ({days})'}
+    # Oct 30: 'X WMA has two waterfowl refuge areas that are closed' = those areas (a PART), never the whole WMA
+    mh = re.search(r'\bhas (?:\w+ ){0,3}?((?:waterfowl )?(?:refuge areas?|refuges|areas|tracts|units|sections|zones|portions))\b[^.]{0,20}\b(?:that|which) (?:are|is) closed', low)
+    if mh:
+        return {**base, 'class': 'part', 'what': mh.group(1)}
     # whole or part
     names = [lowtext(n) for n in (ctx.get('names') or []) if n] + ([lowtext(ctx['park'])] if ctx.get('park') else [])
     names_core = [' '.join(KINDW.sub(' ', n).split()) for n in names]
@@ -1606,6 +1616,16 @@ def process_area(K, area, state, review):
         f, t = dt.date.fromisoformat(it['from']), dt.date.fromisoformat(it.get('to') or it['from'])
         return any(r == it['ref'] and dt.date.fromisoformat(a_) - dt.timedelta(days=1) <= t and f <= dt.date.fromisoformat(b_) + dt.timedelta(days=1) for r, a_, b_ in lst)
     items = [it for it in items if not _ruled(it)]
+    same, keep = {}, []
+    for it in items:   # Oct 30: the same sentence on two agency pages for one park = ONE item (Ballard WMA on two KDFWR waterfowl pages)
+        k = (it['ref'], re.sub(r'\W+', ' ', str(it.get('details') or '')).strip().lower(), it.get('from'), it.get('to'))
+        if k in same:
+            o = same[k]
+            if it.get('link') and it.get('link') != o.get('link') and not o.get('link2'): o['link2'] = it['link']
+            o['confirmed'] = max(o.get('confirmed') or 0, it.get('confirmed') or 0)
+            continue
+        same[k] = it; keep.append(it)
+    items = keep
     seen_ids = {}
     for it in items:   # never two items with one id (a card / the waiting room key on it): the second gets its date or a number
         n = seen_ids.get(it['id'], 0); seen_ids[it['id']] = n + 1
@@ -1798,6 +1818,8 @@ def write_review(state, review):
 
 # ======================================================================================= self test (no web)
 SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-contains, expected dates)
+    ("Peabody WMA has two waterfowl refuge areas that are closed to public access.", {}, 'part', 'refuge areas', None),   # Oct 30 dry run
+    ("Ballard WMA is closed to all access on Mondays, Tuesdays, Christmas Eve, Christmas Day, and New Year's Day.", {}, 'seasonal', 'certain days', None),
     ('Big South Fork NRRA has announced the temporary closure of the historic Blue Heron Tipple Bridge, effective immediately in the interest of visitor safety.', {'names': ['Big South Fork'], 'park': 'Big South Fork National River and Recreation Area'}, 'part', 'bridge', None),   # Oct 29 HQ: a named bridge = PART
     ('Sauerheber Unit is closed to rabbit and quail hunting.', {'names': ['Sloughs WMA']}, None, None, None),   # Brandon Oct 29 10:17 AM: hunting only = dropped
     ('The following portions of the lake are closed to all waterfowl hunting:', {'names': ['Grayson Lake State Park']}, None, None, None),
