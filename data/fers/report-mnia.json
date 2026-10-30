@@ -53,48 +53,50 @@
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
-   "no outline": 3482,
+   "no outline": 3331,
    "no pin": 0,
    "pin well outside": 0
   },
   "new here only (not counted)": 0,
-  "official parks": 461,
+  "official parks": 491,
   "pairs tested": 0,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
   "pass": 3,
   "problems": [
    "W&S river corridors joined as area parks: 15",
-   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310"
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "29 line parks filed under another state but crossing this area kept: US-10093, US-12788, US-13184, US-9762, US-9766, US-9768, US-9771, US-9773"
   ],
-  "with official lines": 26
+  "with official lines": 55
  },
  "pass5": {
   "cell_m": 5.0,
-  "checked": 69,
+  "checked": 68,
   "date": "2026-10-30",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
-   "no outline": 3482,
+   "no outline": 3331,
    "no pin": 0,
    "pin well outside": 0
   },
   "live rows held: spot far from a state park pin (rule B13)": 0,
-  "official parks": 461,
+  "official parks": 491,
   "pairs tested": 0,
   "pass": 5,
   "problems": [
    "W&S river corridors joined as area parks: 15",
-   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310"
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "29 line parks filed under another state but crossing this area kept: US-10093, US-12788, US-13184, US-9762, US-9766, US-9768, US-9771, US-9773"
   ],
-  "river channels listed as water only (boat spots)": 1,
-  "spots given their boundary lines": 320,
+  "river channels listed as water only (boat spots)": 0,
+  "spots given their boundary lines": 319,
   "still not checked": 0,
   "trail stretches given their true zone": 221,
   "water only": 0,
   "water retries (won / tries)": "0 / 0",
-  "with official lines": 26
+  "with official lines": 55
  },
  "per state": {
   "US-IA": {
