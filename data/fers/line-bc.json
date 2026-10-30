@@ -1,0 +1,68 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "bc",
+ "states": [
+  "CA-BC"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 13:58 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "water not checked: CA-BC: 13 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 0,
+  "DROPPED": 22,
+  "NEVER LOOKED AT": 0
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 559,
+   "pairs whose boxes touch": 559
+  },
+  "pass2": {
+   "agree with the pass before": 530,
+   "date": "2026-10-30",
+   "pairs tested": 194
+  },
+  "pass3": {
+   "agree with the pass before": 71,
+   "date": "2026-10-30",
+   "pairs tested": 182
+  },
+  "pass5": {
+   "checked": 29,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 14
+  }
+ },
+ "files": {
+  "CA-BC": "data/fers/CA-BC.json"
+ },
+ "CA-BC": {
+  "rows": 647,
+  "live": 44,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 13,
+   "the official outline of Twin Falls Tea House National Histor": 1,
+   "the official outline of Ruckle Provincial Park could not be": 1,
+   "the official outline of Stewart Farm Historic Site could not": 1,
+   "the official outline of Rathtrevor Beach Provincial Park cou": 1,
+   "the official outline of Fisgard Lighthouse National Historic": 1
+  },
+  "dropped": 526,
+  "merged": 59
+ },
+ "water_weak": {
+  "CA-BC": 13
+ },
+ "states_ready": [],
+ "states_held": [
+  "CA-BC"
+ ]
+}

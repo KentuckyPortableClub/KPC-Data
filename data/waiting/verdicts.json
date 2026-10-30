@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-30T11:27Z",
+ "checked": "2026-10-30T13:58Z",
  "switched_on": false,
  "results": [
   {
@@ -126,6 +126,15 @@
    "kind": "docs",
    "why": [
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/CA-BC.json",
+   "kind": "fers",
+   "why": [
+    "F-2 NOT SURE 13 -> 18 (over 30% change)"
    ],
    "notes": [],
    "verdict": "HOLD"
