@@ -1,0 +1,841 @@
+{
+ "area": "CA-NL",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "CA-4820": {
+   "park": "Kitjigattalik - Ramah Chert Quarries National Historic Site",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22046,
+     "record_name": "Torngat Mountains National Park Of Canada",
+     "acres_approx": 2393495
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "CA-4549": {
+   "park": "Grand Codroy Estuary Ramsar Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"estuary ramsar codroy\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4558": {
+   "park": "Middle Ridge Reserve Wildlife Reserve",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"middle ridge\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4816": {
+   "park": "Cape Spear Lighthouse National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"lighthouse spear cape\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4817": {
+   "park": "Castle Hill National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"castle hill\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4818": {
+   "park": "Hawthorne Cottage National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"hawthorne cottage\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4819": {
+   "park": "Hopedale Mission National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"hopedale mission\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4821": {
+   "park": "L'Anse aux Meadows National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [
+    {
+     "title": "LAnse Aux Meadows Map_WFL1",
+     "url": "https://services1.arcgis.com/0j6vZbECadDEXdAS/arcgis/rest/services/LAnse_Aux_Meadows_Map_WFL1/FeatureServer",
+     "owner": "acraig06@calpoly.edu_CalPoly",
+     "type": "Feature Service"
+    },
+    {
+     "title": "L'Anse Aux Meadows",
+     "url": "https://services.arcgis.com/ld3ZUQ1nPsV3RdE7/arcgis/rest/services/LAnse_Aux_Meadows/FeatureServer",
+     "owner": "areed_uc",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"meadows anse aux\": 2 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "CA-4822": {
+   "park": "Port au Choix National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"choix port\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4823": {
+   "park": "Red Bay National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"bay red\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4824": {
+   "park": "Ryan Premises National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"premises ryan\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4825": {
+   "park": "Signal Hill National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Signal Hill Zoning Districts",
+     "url": "https://services9.arcgis.com/LUBoZWfQwvBnZCmP/arcgis/rest/services/Zoning_2023/FeatureServer",
+     "owner": "cityofsignalhill",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Signal Hill Land Use Districts",
+     "url": "https://services9.arcgis.com/LUBoZWfQwvBnZCmP/arcgis/rest/services/Land_Use/FeatureServer",
+     "owner": "cityofsignalhill",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Signal Hill Oil and Gas Sites_WFL1",
+     "url": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/Signal_Hill_Oil_and_Gas_Sites_WFL1/FeatureServer",
+     "owner": "Ferrar@FracTracker.org",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"signal hill\": 6 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "CA-4942": {
+   "park": "Captain James Cook National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Second Voyage led by Captain James Cook on HMS Resolution",
+     "url": "https://services9.arcgis.com/WGilu1i2IRlWIWQG/arcgis/rest/services/Second_Voyage_led_by_Captain_James_Cook_on_HMS_Resolution/FeatureServer",
+     "owner": "janet.owen.earth",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"captain james cook\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "CA-5132": {
+   "park": "L'Anse Amour National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"amour anse\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5275": {
+   "park": "Discovery Geopark",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"discovery geopark\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5276": {
+   "park": "Fleur de Lys Soapstone Quarries National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"soapstone quarries fleur\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5277": {
+   "park": "Harbour Grace Court House National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"harbour house court\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5278": {
+   "park": "Indian Point National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"indian point\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5279": {
+   "park": "Murray Premises National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"premises murray\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5280": {
+   "park": "Okak National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"okak\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5281": {
+   "park": "Port Union Historic District National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"district union port\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5282": {
+   "park": "Rennies Mill Road Historic District National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"district rennies mill\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5284": {
+   "park": "Basilica of St. John the Baptist National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"basilica baptist john\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5383": {
+   "park": "Cape Pine Lighthouse National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"lighthouse cape pine\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5384": {
+   "park": "Colony of Avalon National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"avalon colony\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5385": {
+   "park": "Fort Townshend National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"townshend fort\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5386": {
+   "park": "Government House National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"government house\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5387": {
+   "park": "Hebron Mission National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"mission hebron\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5388": {
+   "park": "Mallard Cottage National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"cottage mallard\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5389": {
+   "park": "St. John the Baptist Anglican Cathedral National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"cathedral anglican baptist\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5390": {
+   "park": "St. John's Court House National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"house court john\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5391": {
+   "park": "St. Thomas Rectory / Commissariat House and Garden National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"commissariat rectory garden\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5392": {
+   "park": "Tilting National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"tilting\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5393": {
+   "park": "Battle Harbour Historic District National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"district harbour battle\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5394": {
+   "park": "Boyd's Cove Beothuk National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"beothuk boyd cove\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5395": {
+   "park": "Cable Building National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"building cable\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5396": {
+   "park": "Cape Race Lighthouse National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"lighthouse cape race\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5397": {
+   "park": "Christ Church / Quidi Vidi Church National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"church christ quidi\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5399": {
+   "park": "Former Bank of British North America National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"america british former\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5400": {
+   "park": "Former Carbonear Railway Station (Newfoundland Railway) National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"newfoundland carbonear railway\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5401": {
+   "park": "Former Newfoundland Railway Headquarters National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"newfoundland headquarters railway\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5402": {
+   "park": "Fort Amherst National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5403": {
+   "park": "Fort William National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5404": {
+   "park": "St. Patrick's Roman Catholic Church National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5405": {
+   "park": "Water Street Historic District National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5406": {
+   "park": "Winterholme National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6114": {
+   "park": "T'Railway Provincial Park",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6156": {
+   "park": "Atlantic Charter Monument National Battlefield",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6157": {
+   "park": "New Férolle Peninsula Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6158": {
+   "park": "Cape Anguille Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6159": {
+   "park": "Green Island (Catalina) Heritage Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6160": {
+   "park": "Cape Ray Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6162": {
+   "park": "Belle Isle South End Lower Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6163": {
+   "park": "Woody Point Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6164": {
+   "park": "Rocky Point Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6165": {
+   "park": "St. Jacques Island Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6166": {
+   "park": "Cape St. Mary's Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 29,
+     "record_name": "Cape St. Mary's Ecological Reserve",
+     "acres_approx": 2760
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "candidate: name match"
+  },
+  "CA-6167": {
+   "park": "Heart's Content Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6168": {
+   "park": "Green Point Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6169": {
+   "park": "Long Point (Twillingate) Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6290": {
+   "park": "Cape Bonavista Lighthouse Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6291": {
+   "park": "Mockbegger Plantation Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6295": {
+   "park": "Trinity Sites Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6296": {
+   "park": "Newman Wine Vault Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6297": {
+   "park": "Cupids Cove Plantation Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6298": {
+   "park": "Heart's Content Cable Station Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6401": {
+   "park": "Colonial Building Provincial Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}

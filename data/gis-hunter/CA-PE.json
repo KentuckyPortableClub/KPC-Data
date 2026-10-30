@@ -1,0 +1,638 @@
+{
+ "area": "CA-PE",
+ "run": "2026-10-30",
+ "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
+ "parks": {
+  "CA-0856": {
+   "park": "Mark Arendz Provincial Park",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+     "agency": "PE-PP Govern",
+     "record": 13,
+     "record_name": "BROOKVALE",
+     "acres_approx": 55
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "CA-0862": {
+   "park": "Jacques Cartier Provincial Park",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+     "agency": "PE-PP Govern",
+     "record": 27,
+     "record_name": "PARK",
+     "acres_approx": 16
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "CA-0865": {
+   "park": "Linkletter Provincial Park",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+     "agency": "PE-PP Govern",
+     "record": 19,
+     "record_name": "PARK",
+     "acres_approx": 32
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "CA-0869": {
+   "park": "Northumberland Provincial Park",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+     "agency": "PE-PP Govern",
+     "record": 14,
+     "record_name": "PROV PARK",
+     "acres_approx": 82
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "CA-6373": {
+   "park": "Fisherman's Haven Provincial Park",
+   "why_not": "pin inside",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"fisherman haven\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6439": {
+   "park": "Holman's Island National Nature Reserve",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 7257,
+     "record_name": "Privately Protected Area (NCC 142051)",
+     "acres_approx": 88
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 21925,
+     "record_name": "Scallop Buffer Zone (SFA 22)",
+     "acres_approx": 698904
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+  },
+  "CA-6594": {
+   "park": "Pinette Provincial Park",
+   "why_not": "pin inside",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+     "agency": "PE-PP Govern",
+     "record": 32,
+     "record_name": "PARK",
+     "acres_approx": 18
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "CA-0852": {
+   "park": "Basin Head Provincial Park",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Great Basin Montane Watersheds - Furthest Head (Feature Layer)",
+     "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_GreatBasinMountainRangesWatersheds_01/MapServer/2",
+     "owner": "USFSEnterpriseContent",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"basin head\": 1 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "CA-0853": {
+   "park": "Belmont Provincial Park",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Belmont, ON - July 19, 2020 - Drone Photos",
+     "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_GeoTaggedPhotosToPoints/FeatureServer",
+     "owner": "cmille92_eng",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Belmont, ON - June 10, 2020 - Drone Flight Paths",
+     "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont/FeatureServer",
+     "owner": "cmille92_eng",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Belmont, ON - June 10, 2020 - Drone Photos",
+     "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_ON_Drone_Photos/FeatureServer",
+     "owner": "cmille92_eng",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"belmont\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "CA-0860": {
+   "park": "Chelton Beach Provincial Park",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"chelton beach\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-0863": {
+   "park": "Kings Castle Provincial Park",
+   "why_not": "nothing near",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+     "agency": "PE-PP Govern",
+     "record": 28,
+     "record_name": "PARK",
+     "acres_approx": 11
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "CA-0874": {
+   "park": "Red Point Provincial Park",
+   "why_not": "nothing near",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+     "agency": "PE-PP Govern",
+     "record": 15,
+     "record_name": "PROV",
+     "acres_approx": 81
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "CA-0875": {
+   "park": "Sally's Beach Provincial Park",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"beach sally\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-0878": {
+   "park": "Tea Hill Provincial Park",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"hill tea\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-0880": {
+   "park": "Wood Islands Provincial Park",
+   "why_not": "nothing near",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+     "agency": "PE-PP Govern",
+     "record": 22,
+     "record_name": "PROV PARK",
+     "acres_approx": 34
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: hit",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin"
+   ],
+   "verdict": "candidate: name mismatch"
+  },
+  "CA-4657": {
+   "park": "St. Peters Harbour National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"harbour peters\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4673": {
+   "park": "East Point Lighthouse Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"lighthouse point east\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4696": {
+   "park": "Courtin Islands Natural Area",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"islands courtin\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4721": {
+   "park": "North Cape Natural Area",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"north cape\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4748": {
+   "park": "Tryon United Church National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"church united tryon\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4766": {
+   "park": "Victoria Park Natural Area",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [
+    {
+     "title": "Historical Map - Plan of the City of Victoria Hong Kong in 1889",
+     "url": "https://tiles.arcgis.com/tiles/6j1KwZfY2fZrfNMR/arcgis/rest/services/Historical_Map_Plan_of_the_City_of_Victoria_Hong_Kong_in_1889/MapServer",
+     "owner": "esrichinahk",
+     "type": "Map Service"
+    },
+    {
+     "title": "Harbourfront sites along the Victoria Harbour in Hong Kong",
+     "url": "https://services3.arcgis.com/6j1KwZfY2fZrfNMR/arcgis/rest/services/Harbourfront_sites_along_the_Victoria_Harbour_in_Hong_Kong/FeatureServer",
+     "owner": "esrichinahk",
+     "type": "Feature Service"
+    },
+    {
+     "title": "Burnscar_Western Victoria Bushfire February 2024",
+     "url": "https://services-ap1.arcgis.com/bqNk8Qgxn824YvRI/arcgis/rest/services/Burnscar_Western_Victoria_Bushfire_February_2024/FeatureServer",
+     "owner": "servau",
+     "type": "Feature Service"
+    }
+   ],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"victoria\": 8 lead(s)"
+   ],
+   "verdict": "lead: new layer queued for intake"
+  },
+  "CA-4891": {
+   "park": "Ardgowan National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"ardgowan\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4893": {
+   "park": "Green Gables Heritage Place (L.M. Montgomery's Cavendish NHS) National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"montgomery cavendish heritage\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4894": {
+   "park": "Skmaqn-Port-la-Joye-Fort Amherst National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"amherst skmaqn port\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5288": {
+   "park": "Covehead Harbour National Historic Site",
+   "why_not": "nothing near",
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 22028,
+     "record_name": "Prince Edward Island National Park Of Canada",
+     "acres_approx": 6846
+    },
+    {
+     "verdict": "name mismatch",
+     "layer": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
+     "agency": "CPCAD / Parks Canada",
+     "record": 24,
+     "record_name": "",
+     "acres_approx": 8564
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: hit",
+    "A CPCAD / Parks Canada: hit"
+   ],
+   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+  },
+  "CA-5414": {
+   "park": "Farmers' Bank of Rustico National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"farmers rustico bank\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5418": {
+   "park": "Jean-Pierre Roma at Three Rivers, P.E.I. National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"pierre rivers three\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5419": {
+   "park": "Kensington Railway Station National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"kensington railway station\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5753": {
+   "park": "Cape Bear National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"heritage cape bear\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5755": {
+   "park": "Cape Tryon National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"heritage tryon cape\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5776": {
+   "park": "Northport Rear Range National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"northport heritage range\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5779": {
+   "park": "Point Prim National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"heritage point prim\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5788": {
+   "park": "Rotary Friendship Park Protected Area",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"friendship rotary\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5791": {
+   "park": "Sir Andrew MacPhail Homestead National Historic Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"homestead macphail andrew\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-6172": {
+   "park": "Seacow Head Lighthouse National Heritage Site",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A PE Province : no polygon at the pin",
+    "A PE-PP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "B ArcGIS Online search \"lighthouse heritage seacow\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  }
+ }
+}
