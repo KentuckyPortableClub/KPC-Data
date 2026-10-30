@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-4581.json",
+ "id": "10-auto-US-4581",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-4581",
+  "name": "Star-Spangled Banner National Historic Trail",
+  "agency": "National Park Service",
+  "url": "https://www.nps.gov/stsp/upload/508-StarSpangled-Side2-2.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:48Z",
+ "results": [
+  {
+   "url": "https://www.nps.gov/stsp/upload/508-StarSpangled-Side2-2.pdf",
+   "map_url": "https://www.nps.gov/stsp/upload/508-StarSpangled-Side2-2.pdf",
+   "saved": [
+    "maps/US-4581_star-spangled-banner-national-hi.jpg"
+   ],
+   "bytes": 171173,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
