@@ -1562,9 +1562,15 @@ def process_area(K, area, state, review):
             if oit['id'] in now_ids: continue
             if (oit['ref'], re.sub(r'\W+', ' ', str(oit.get('details') or '')).strip().lower()) in fresh: continue   # round 11: same sentence re-read under a new id (now dated / re-classed) = one item
             if not still_valid(oit, area): STAT['unreadable'] += 1; continue   # round 11: today's rules drop it
+            if (oit.get('class') == 'whole' and re.match(r'\W*(?:it|this|that|they)\b', str(oit.get('details') or ''), re.I)
+                    and any(it['ref'] == oit['ref'] and it.get('src') == oit.get('src') and it.get('closed_class') == 'part' for it in items)):
+                STAT['unreadable'] += 1; continue   # Oct 30 (KY go-live check): an old 'it is closed' whole-park reading the semicolon fix now reads as a PART of that park (Old Trace Creek's easternmost tract)
             if oit.get('taken_down'):
                 if (TODAY - dt.date.fromisoformat(oit['taken_down'])).days <= TAKEN_DOWN_DAYS: items.append(oit)
                 continue
+            if (str(oit.get('src', '')).endswith('-hunt-plug') and oit.get('from')
+                    and any(it['ref'] == oit['ref'] and it.get('src') == oit.get('src') and it.get('from') == oit['from'] for it in items)):
+                continue   # Oct 30 (KY go-live check): the checked list re-worded this hunt (Lloyd: the area page's own words), the old wording goes
             if oit.get('to') and oit['to'] >= TODAY.isoformat(): items.append(oit); continue   # D-R5: dated items keep to their end date
             g = (oit.get('gone') or 0) + 1
             oit = {**oit, 'gone': g}
