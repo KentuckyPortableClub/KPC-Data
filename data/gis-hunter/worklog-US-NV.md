@@ -38,7 +38,7 @@
 | US-13250 | Leonard Rockshelter National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | US-13251 | Virginia City Historic District (Comstock Lode) National Historic District | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | US-13252 | Stokes Castle National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| US-13259 | Great Basin Highway Scenic Byway Scenic Site | R-G7 step 2 | USGS PAD-US: 'Bristlecone Field Office' (record 2012, ~5,615,809 ac, pin inside) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| US-13259 | Great Basin Highway Scenic Byway Scenic Site | R-G7 step 2 | USGS PAD-US: 'Bristlecone Field Office' (record 2012, ~5,615,809 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | US-13260 | Angel Lake Road Area of Outstanding Natural Beauty | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | US-13261 | Baker Road Area of Outstanding Natural Beauty | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | US-13262 | Mt. Charleston Scenic Byway Area of Outstanding Natural Beauty | R-G7 step 2 | BLM recreation SITE polygons (national, 3,478): 'Southern Nevada' (record 10826, ~1,793,350 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |

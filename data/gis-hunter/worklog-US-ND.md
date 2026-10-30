@@ -19,7 +19,7 @@
 | US-8528 | Camp Hancock State Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | US-8531 | Cannonball Stage Station State Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | US-8532 | Chateau De Mores State Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| US-8534 | David Thompson State Historic Site | R-G7 step 3 | lead David Thompson 1785 to 1812 (https://services8.arcgis.com/cAtF2MSEHqBnNwgn/arcgis/rest/services/David_Thompson_1785_to_1812/FeatureServer); lead David_Thompson (https://services6.arcgis.com/avXuZG0wAqMng22B/arcgis/rest/services/David_Thompson/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| US-8534 | David Thompson State Historic Site | R-G7 step 3 | lead David Thompson 1785 to 1812 (https://services8.arcgis.com/cAtF2MSEHqBnNwgn/arcgis/rest/services/David_Thompson_1785_to_1812/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
 | US-8535 | Double Ditch Indian Village State Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | US-8536 | Fort Buford State Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | US-8537 | Fort Clark State Historic Site | R-G7 step 3 | lead Fort_Clark_Road (https://services8.arcgis.com/S9FfA3ZHtXhdx1pq/arcgis/rest/services/Fort_Clark_Road/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
