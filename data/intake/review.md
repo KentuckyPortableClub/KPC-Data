@@ -5,11 +5,11 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | verdict | rows |
 |---|---|
 | READY | 2 |
-| WATER-ONLY | 24 |
+| WATER-ONLY | 27 |
 | LIVE-ONLY | 1 |
-| ASK-THE-PUBLISHER | 146 |
-| RETRY | 260 |
-| REJECT | 1093 |
+| ASK-THE-PUBLISHER | 152 |
+| RETRY | 265 |
+| REJECT | 1110 |
 
 ## READY (2)
 
@@ -81,7 +81,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - GB-0198 Thames Basin Heaths SPA - Yateley Heath Woods Site of Significant Scientific Interest → polygon "Castle Bottom to Yateley and Hawley Commons"
 - TEST: ok
 
-## WATER-ONLY (24)
+## WATER-ONLY (27)
 
 ### ogc_services/Ramsar_Wetlands  ·  AU  ·  from harvester
 - url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer/0
@@ -310,6 +310,34 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: same publisher as BC recreatio
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
+### LECL Lewis and Clark Expedition Historic Channel of the Missouri River in 1804  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Missouri_River1804/FeatureServer/3
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "to use the related graphics as data. The National Park Service gives no warranty, expressed or implied, as to National Park Service, NPS, James D. Harlan, University of M" · item https://www.arcgis.com/home/item.html?id=b6fe87f7273f455d9f18812351162dd0 · owner rmcooper@nps.gov_nps · org National Park Service
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 2507 records · last edit 2025-04-21 · sample   /   /  
+- overlap: same publisher as akht
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### FWS R6 RWBJV Central Platte River Image Library 1963  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1963/MapServer/0
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "None. Acknowledgement of the Rainwater Basin Joint Venture, Platte River Recovery Implementation Program, and C" · item https://www.arcgis.com/home/item.html?id=74920b463754404abfffe8d74e237d94 · owner roger_grosse@fws.gov_fws · org U.S. Fish & Wildlife Service
+- facts: arcgis-layer · esriGeometryPolygon · name field Name
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### FWS R6 RWBJV Central Platte River Image Library 1963  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1963/MapServer/1
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "None. Acknowledgement of the Rainwater Basin Joint Venture, Platte River Recovery Implementation Program, and C" · item https://www.arcgis.com/home/item.html?id=74920b463754404abfffe8d74e237d94 · owner roger_grosse@fws.gov_fws · org U.S. Fish & Wildlife Service
+- facts: arcgis-layer · esriGeometryPolygon · name field Name
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
 ## LIVE-ONLY (1)
 
 ### Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park)  ·  CZ  ·  from chat 9
@@ -341,7 +369,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - CZ-0139 Ještěd Nature Park → polygon "Ještěd"
 - TEST: ok
 
-## ASK-THE-PUBLISHER (146)
+## ASK-THE-PUBLISHER (152)
 
 ### AerialPhotoViewer/Orthophoto_Coverage_Area  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0
@@ -1574,7 +1602,58 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field NOM · 1 records · last edit 2026-03-23 · sample Soisy-sous-Montmorency
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## RETRY (260)
+### 2022 Minority Race_Ethnicity _ Black Alone - Tract Boundaries  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/YR2022_Minority_Race_Ethnicity___Black_Alone/FeatureServer/26
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "Use limitations of the population data (CNI Factor maps): counts are estimates only, please refer to the US Census Bureau source documentation for methodology n" · item https://www.arcgis.com/home/item.html?id=15c6e90ba48e45bab1b6dd60fdb97fcf · owner Jessica.Tice@flhealth.gov_FDOH · org Florida Department of Health
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 5122 records · last edit 2024-06-08 · sample Census Tract 150.02; Orange County; Florida / Census Tract 150.03; Orange County; Florida / Census Tract 146.05; Orange County; Florida
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM Natl Wild Horse and Burro Herd Area Polygons  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Wild_Horse_and_Burro_Heard_Area_Polygons/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://www.arcgis.com/home/item.html?id=e38c32d399d84ec9b00ded02c55d00df · owner blm_arcgis_hub_natl · org Bureau of Land Management
+- facts: arcgis-layer · esriGeometryPolygon · name field HA_NAME · 327 records · last edit 2026-10-13 · sample Black Rock Range East / SWEETWATER / South Catlow
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM AZ Wild Horse and Burro Herd Areas and Herd Management Areas  ·    ·  from gis-hunter
+- url: https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field HMA_NAME · 8 records · sample Cerbat Mountain / Big Sandy / Lake Pleasant
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM AZ Wild Horse and Burro Herd Areas and Herd Management Areas  ·    ·  from gis-hunter
+- url: https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field HA_NAME · 11 records · sample Harquahala / Painted Rock / Little Harquahala Mountains
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### WASO_ABPP-NPS_Civil War Battle Bndry  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Civil_War_Battle_Bndry/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "The National Park Service shall not be held liable for improper or incorrect use of the cultural resource data described and/or contained herein. These data and" · item https://www.arcgis.com/home/item.html?id=5dc6c2019079458dbac1a4c6f8b2ecde · owner ecahoon@nps.gov_nps · org National Park Service
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 376 records · last edit 2025-01-20 · sample SHEPHERDSTOWN / SMITHFIELD CROSSING / SUMMIT POINT
+- overlap: same publisher as akht
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Columbus Communities  ·    ·  from gis-hunter
+- url: https://maps2.columbus.gov/arcgis/rest/services/Schemas/Development/MapServer/25
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host maps2.columbus.gov)
+- terms: NOTHING STATED · source item page · item https://maps2.columbus.gov/arcgis/rest/services/Schemas/Development/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field AREA_NAME · 41 records · sample Far South / Livingston Avenue Area / Southwest
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+## RETRY (265)
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
 - url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
@@ -3518,7 +3597,44 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source none
 - facts: status error Token Required
 
-## REJECT (1093)
+### Little Tennessee Conservation Priority Areas by HUC12  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/LittleT_watershed_boundaries/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as sgazd
+
+### Spencer Town Boundary  ·    ·  from gis-hunter
+- url: https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Town_Boundary/FeatureServer
+- WHY: did not open (error Token Required): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Token Required
+
+### Inland Empire Utilities Agency Divisions  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/Inland_Empire_Utilities_Agency_Divisions/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+### FWS WSFR Nevada Bighorn Sheep Herds   ·    ·  from gis-hunter
+- url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/BHS_Herds_March_16_vers/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as sgazd
+
+### Rim of the World Recreation and Park Divisions  ·    ·  from gis-hunter
+- url: https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/RimWrld_PrkRec_Divisions/FeatureServer
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
+
+## REJECT (1110)
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
@@ -12520,6 +12636,153 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=642f693ad68f4d61878c3cb3d23da651 · owner boilarsa_udem · org Université de Montréal
 - facts: arcgis-layer · esriGeometryPolygon · name field Nom · 1 records · last edit 2021-11-17 · sample Maisonneuve, Golf municipal de Montréal
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Tile Layer of Long-Term Tenure Managed Forest Code 11: 2020  ·    ·  from gis-hunter
+- url: https://tiles.arcgis.com/tiles/mMUesHYPkXjaFGfS/arcgis/rest/services/Canada_Managed_Forests_2020_Long_Term_Tenure_Code_11/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: Government)
+- terms: OPEN · source item page · "Manitoba Open Data Licence Manitoba Government Manitoba Government" · item https://www.arcgis.com/home/item.html?id=894f6706c364421a99a36823b2f165c6 · owner Manitoba_Government · org Manitoba Maps
+- facts: arcgis-layer · esriGeometryPolygon
+- closes: not probed
+
+### Richmond-North Richmond-San Pablo - CERP Community Boundary  ·    ·  from gis-hunter
+- url: https://services3.arcgis.com/i2dkYWmb4wHvYPda/arcgis/rest/services/Richmond_North_Richmond_San_Pablo/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "This dataset is provided by the Bay Area Air District under its standard terms of use." · item https://www.arcgis.com/home/item.html?id=fb9a57bdd0704d57a9aade6be5a42dde · owner jlehman@bayareametro.gov_MTC · org MTC/ABAG
+- facts: arcgis-layer · esriGeometryPolygon · 1 records · last edit 2026-06-09
+- closes: not probed
+
+### Michigan Public Water Supply Sampling Hexbins and Results (Consolidated)   ·    ·  from gis-hunter
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/EGLE/PublicWaterSupplySamplingOpenData/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: NOTHING STATED · source item page · item https://gisagoegle.state.mi.us/arcgis/rest/services/EGLE/PublicWaterSupplySamplingOpenData/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 1449 records
+- closes: not probed
+
+### Town of Superior Parks & Open Space  ·    ·  from gis-hunter
+- url: https://services2.arcgis.com/RQsC4DSkpr4c1bMs/arcgis/rest/services/Parks_and_Open_Space_2025/FeatureServer/7
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: Town of)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c1cc73a5de0f43bb84cf15211a057be2 · owner AlexHTOS · org Town of Superior
+- facts: arcgis-layer · esriGeometryPolygon · 268 records · last edit 2025-07-11
+- closes: not probed
+
+### LWT Red Squirrel Stronghold Boundary  ·    ·  from gis-hunter
+- url: https://services-eu1.arcgis.com/Y9jgVEvgymHqAYPW/arcgis/rest/services/Lancashire_Wildlife_Trust_Red_Squirrel_Strong_Hold_Boundary_2/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Trust in the publisher words)
+- terms: NON-COMMERCIAL · source item page · "Non Commercial, You may not use the material for commercial purposes. Contains LWT data © Lancashire Wil" · item https://www.arcgis.com/home/item.html?id=be03972d0cb2446b9340ad4b4eea83e3 · owner cwilkinson_wildlifetrusts · org The Wildlife Trusts
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 1 records · last edit 2025-11-27 · sample Lancs. Red Squirrel Stronghold
+- closes: not probed
+
+### BLM National Surface Management Agency  ·    ·  from gis-hunter
+- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err" · item https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 464680 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM National Surface Management Agency  ·    ·  from gis-hunter
+- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/4
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err" · item https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 11304 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM National Surface Management Agency  ·    ·  from gis-hunter
+- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/5
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err" · item https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 55020 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM National Surface Management Agency  ·    ·  from gis-hunter
+- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/6
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err" · item https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 877 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM National Surface Management Agency  ·    ·  from gis-hunter
+- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/7
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err" · item https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 11472 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM National Surface Management Agency  ·    ·  from gis-hunter
+- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/8
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err" · item https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 13657 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM National Surface Management Agency  ·    ·  from gis-hunter
+- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/9
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err" · item https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 21230 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM National Surface Management Agency  ·    ·  from gis-hunter
+- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/10
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err" · item https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 27958 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM CA Land Status Surface Management Agency  ·    ·  from gis-hunter
+- url: https://gis.blm.gov/caarcgis/rest/services/lands/BLM_CA_LandStatus_SurfaceManagementAgency/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/caarcgis/rest/services/lands/BLM_CA_LandStatus_SurfaceManagementAgency/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 53342 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### Non-Productive Forest for the Cariboo Region  ·    ·  from gis-hunter
+- url: https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/20
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host maps.gov.bc.ca)
+- terms: CREDIT · source item page · "access information? © 2024 Government of British Columbia" · item https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 93968 records
+- overlap: same publisher as BC recreatio
+- closes: not probed
+
+### Predicted Spawning Periods for Reduced Risk Work Windows for Quesnel and Central Cariboo Districts  ·    ·  from gis-hunter
+- url: https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/6
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host maps.gov.bc.ca)
+- terms: CREDIT · source item page · "access information? © 2024 Government of British Columbia" · item https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 345 records
+- overlap: same publisher as BC recreatio
+- closes: not probed
+
+### Yellow-Cedar Decline 1986 to 2024 - Annual  ·    ·  from gis-hunter
+- url: https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Cumulative_Yellow_Cedar_Decline_Append_1980s_to_2024/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "LAYER CITATION: Title: Yellow-Cedar Decline 1986 to 2024- Annual URL: https://services1.arcgis.com/gGHDl" · item https://www.arcgis.com/home/item.html?id=afbeaf993e654d60a01569fa5a16d200 · owner ForestHealthAlaskaRegion · org U.S. Forest Service
+- facts: arcgis-layer · esriGeometryPolygon · 22399 records · last edit 2026-07-13
+- closes: not probed
 
 ## Known-answer test rows
 

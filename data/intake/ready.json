@@ -21519,7 +21519,7 @@
    "why": "did not open 3 times (budget): chat 9 checks the url"
   },
   {
-   "approved": true,
+   "approved": null,
    "area": "CA-BC",
    "closes": {
     "by_name": 39,
@@ -21815,10 +21815,7 @@
    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
    "ver": 1,
    "verdict": "READY",
-   "why": "official, credit terms, named polygons; closes 42 (name + pin 39, pin only 3): a pin inside a designation polygon is not a sure match",
-   "approved_by": "auto (AUTO-2)",
-   "approved_note": "35 SURE names, e.g. CA-3178 A.H.P. Matthew Park; CA-3180 Allco Park; CA-3183 Ambleside Park",
-   "approved_on": "2026-10-30"
+   "why": "official, credit terms, named polygons; closes 42 (name + pin 39, pin only 3): a pin inside a designation polygon is not a sure match"
   },
   {
    "approved": null,
@@ -138015,6 +138012,2638 @@
    "ver": 1,
    "verdict": "REJECT",
    "why": "nothing stated about use on the item page or the service"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 0,
+    "missing_in_area": 0,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 0
+   },
+   "flag": "water only: for the 2-fer owner step only",
+   "from": "gis-hunter",
+   "overlap": "same publisher as akht",
+   "probe": {
+    "copyright": "",
+    "count": 2507,
+    "description": "",
+    "extent": [
+     -112.017,
+     36.791,
+     -89.08,
+     48.275,
+     4326
+    ],
+    "fields": [
+     "OBJECTID_1",
+     "OBJECTID",
+     "AREA",
+     "PERIMETER",
+     "HISTRIV0_",
+     "HISTRIV0_I",
+     "ISLAND",
+     "WATER",
+     "NAME",
+     "LCNAME",
+     "NEWCHANNEL",
+     "Shape_Leng",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2025-04-21",
+    "layer_name": "Missouri_River1804",
+    "name_field": "NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     " ",
+     " ",
+     " "
+    ],
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       3,
+       "Missouri_River1804"
+      ]
+     ],
+     "service_name": "Historic Channel of the Missouri River in 1804."
+    },
+    "service_item": "b6fe87f7273f455d9f18812351162dd0"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "hosted for an agency",
+    "a university account holds an agency layer"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Lewis and Clark National Historic Trail (owner rmcooper@nps.gov_nps)",
+   "queue_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Missouri_River1804/FeatureServer",
+   "requests_used": 6,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Missouri_River1804/FeatureServer|LECL Lewis and Clark Expedition Historic Channel of the Missouri River in 1804|||ArcGIS Online search for Lewis and Clark National Historic Trail (owner rmcooper@nps.gov_nps)|",
+   "terms": {
+    "access": "public",
+    "class": "CREDIT",
+    "credit": "National Park Service, NPS, James D. Harlan, University of Missouri-Columbia",
+    "item_url": "https://www.arcgis.com/home/item.html?id=b6fe87f7273f455d9f18812351162dd0",
+    "licence_text": "  The National Park Service shall not be held liable for\nimproper or incorrect use of the data described and/or contained herein. These\ndata and related graphics (i.e. GIF or JPG format files) are not legal\ndocuments and are not intended to be used as such. The information contained in\nthese data is dynamic and may change over time. The data are not better than\nthe original sources from which they were derived. It is the responsibility of\nthe data user to use the data appropriately and consistent within the limitations\nof geospatial data in general and these data in particular. The related\ngraphics are intended to aid the data user in acquiring relevant data; it is\nnot appropriate to use the related graphics as data. The National Park Service\ngives no warranty, expressed or implied, as to ",
+    "line": "to use the related graphics as data. The National Park Service gives no warranty, expressed or implied, as to National Park Service, NPS, James D. Harlan, University of M",
+    "modified": "2025-06-18",
+    "org_id": "fBc8EJBxQRMcHlei",
+    "org_name": "National Park Service",
+    "org_url": "nps",
+    "owner": "rmcooper@nps.gov_nps",
+    "source": "item page",
+    "tags": [
+     "Missouri River",
+     "Lewis and Clark",
+     "river",
+     "channel",
+     "historic",
+     "ArcGIS",
+     "Service Definition",
+     ".sd",
+     "Park Atlas",
+     "Lewis and Clark National Historic Trail",
+     "LECL",
+     "history"
+    ],
+    "title": "LECL Lewis and Clark Expedition Historic Channel of the Missouri River in 1804"
+   },
+   "test": "",
+   "title": "LECL Lewis and Clark Expedition Historic Channel of the Missouri River in 1804",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Missouri_River1804/FeatureServer/3",
+   "ver": 1,
+   "verdict": "WATER-ONLY",
+   "why": "water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: hosted for an agency on another account: ask who owns and licenses it"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 0,
+    "missing_in_area": 0,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 0
+   },
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "copyright": "*U.S. Census Bureau. \"Sex by Age.\" American Community Survey, ACS 5-Year Estimates Detailed Tables, Table B01001, 2022 &\n*U.S. Census Bureau. \"Sex by Age (White Alone, Not Hispanic or Latino).\" American Community Survey, ACS 5-Year Estimates Detailed Tables, Table B01001H, 2022 &\n*U.S. Census Bureau. \"Sex by Age (Black or African American Alone).\" American Community Survey, ACS 5-Year Estimates De",
+    "count": 5122,
+    "description": "     These layers show the ratio of the population of children under 18 whose race is identified as a minority using the 2022 release of data from the American Community Survey (ACS) about “Sex by Age” (All Races-Table B01001), (White Alone, Not Hispanic or Latino-Table B01001H)\", (Hispanic or Latino-Table B01001i), and (Black or African American Alone-Table B01001B) and contain estimates and marg",
+    "extent": [
+     -87.635,
+     24.521,
+     -80.031,
+     31.001,
+     4326
+    ],
+    "fields": [
+     "FID",
+     "GEO_ID",
+     "NAME",
+     "sum_all_u1",
+     "sum_black_",
+     "pct_black_",
+     "sum_hisp_u",
+     "pct_hisp_u",
+     "sum_min_u1",
+     "pct_min_u1",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2024-06-08",
+    "layer_name": "YR2022 Minority Race_Ethnicity - Black Alone",
+    "name_field": "NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Census Tract 150.02; Orange County; Florida",
+     "Census Tract 150.03; Orange County; Florida",
+     "Census Tract 146.05; Orange County; Florida"
+    ],
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       26,
+       "YR2022 Minority Race_Ethnicity - Black Alone"
+      ]
+     ],
+     "service_name": "This layer contains data from the 2022 release of the American Community Survey (ACS) about total population count by “Sex and age” by (All Races-Table B01001), (White Alone, Not Hispanic or Latino-Table B01001H)\", (Hispanic or Latino-Table B01001i), and (Black or African American Alone-Table B01001B). These are 5-year estimates shown by tract boundaries."
+    },
+    "service_item": "15c6e90ba48e45bab1b6dd60fdb97fcf"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government words: Department"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Black River State Park (owner Jessica.Tice@flhealth.gov_FDOH)",
+   "queue_url": "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/YR2022_Minority_Race_Ethnicity___Black_Alone/FeatureServer",
+   "requests_used": 6,
+   "sig": "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/YR2022_Minority_Race_Ethnicity___Black_Alone/FeatureServer|2022 Minority Race_Ethnicity _ Black Alone - Tract Boundaries|||ArcGIS Online search for Black River State Park (owner Jessica.Tice@flhealth.gov_FDOH)|",
+   "terms": {
+    "access": "public",
+    "class": "CREDIT",
+    "credit": "*U.S. Census Bureau. \"Sex by Age.\" American Community Survey, ACS 5-Year Estimates Detailed Tables, Table B01001, 2022 &\n*U.S. Census Bureau. \"Sex by Age (White Alone, Not Hispanic or Latino).\" American Community Survey, ACS 5-Year Estimates Detailed Tables, Table B01001H, 2022 &\n* U.S. Census Burea",
+    "item_url": "https://www.arcgis.com/home/item.html?id=15c6e90ba48e45bab1b6dd60fdb97fcf",
+    "licence_text": "     Use limitations of the population data (CNI &amp; Factor maps): counts are estimates only, please refer to the US Census Bureau source documentation for methodology notes regarding the ACS collection.    https://www.census.gov/programs-surveys/acs/methodology.html      ",
+    "line": "Use limitations of the population data (CNI Factor maps): counts are estimates only, please refer to the US Census Bureau source documentation for methodology n",
+    "modified": "2024-09-17",
+    "org_id": "CY1LXxl9zlJeBuRZ",
+    "org_name": "Florida Department of Health",
+    "org_url": "FDOH",
+    "owner": "Jessica.Tice@flhealth.gov_FDOH",
+    "source": "item page",
+    "tags": [
+     "ACS",
+     "American Community Survey",
+     "Children's Medical Services",
+     "demographics",
+     "FDOH",
+     "Florida",
+     "Florida Department of Health",
+     "Health",
+     "Minority",
+     "Black or African American",
+     "Black",
+     "African American"
+    ],
+    "title": "2022 Minority Race_Ethnicity _ Black Alone - Tract Boundaries"
+   },
+   "test": "",
+   "title": "2022 Minority Race_Ethnicity _ Black Alone - Tract Boundaries",
+   "url": "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/YR2022_Minority_Race_Ethnicity___Black_Alone/FeatureServer/26",
+   "ver": 1,
+   "verdict": "ASK-THE-PUBLISHER",
+   "why": "official and usable, but no missing parks were tested (none listed for the area or no time)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": null,
+    "description": "",
+    "fields": [],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Canada's Managed Forests 2020 ",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       0,
+       "Canada's Managed Forests 2020 "
+      ]
+     ],
+     "service_name": "<div><span style='font-family:Calibri, sans-serif; font-size:16px; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><font style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;'><span style='font-family:Calibri, sans-serif; font-size:large;'>Tile layer of </span><span style='font-family:inherit; font-size:17px;'>Long-term tenure (managed forest code 11) with lands having </span></font><span style='font-family:&quot;Real Head&quot;, sans-serif;'><font color='#000000' size='3' style='font-family:inherit;'>more than five years volume- or area-based tenure </font></span><span style='font-family:&quot;Real Head&quot;, sans-serif;'><font size='3' style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>or effectively having the equivalent, such as consistently recurrent commercial forest tenure with associated forest management activity</font></font></span><span style='font-family:&quot;Real Head&quot;, sans-serif;'><font color='#000000' size='3' style='font-family:inherit;'>. </font></span><span style='font-family:&quot;Real Head&quot;, sans-serif;'><font size='3' style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>The Long-term tenure layer is</font></font></span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;'> used </span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;'>in the </span><a href='https://storymaps.arcgis.com/stories/52b71ae81a4e4ccba5771a42c2a32b25' style='color:rgb(0, 121, 193); text-decoration-line:none; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;' target='_blank' rel='nofollow ugc noopener noreferrer'>Story Map of Forest Management in Canada, 2020</a><font color='#000000' style='font-family:inherit;'> (</font><a href='https://storymaps.arcgis.com/stories/34f04d6afebb43939238a3bea7d1f80e' style='color:rgb(0, 121, 193); text-decoration-line:none; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;' target='_blank' rel='nofollow ugc noopener noreferrer'>Aménagement des forêts au Canada, 2020</a><font face='Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif' style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;'><span style='font-family:inherit;'>). </span></font></span></div>"
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government words: Government"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Long Lake State Recreation Area (owner Manitoba_Government)",
+   "queue_url": "https://tiles.arcgis.com/tiles/mMUesHYPkXjaFGfS/arcgis/rest/services/Canada_Managed_Forests_2020_Long_Term_Tenure_Code_11/MapServer",
+   "requests_used": 5,
+   "sig": "https://tiles.arcgis.com/tiles/mMUesHYPkXjaFGfS/arcgis/rest/services/Canada_Managed_Forests_2020_Long_Term_Tenure_Code_11/MapServer|Tile Layer of Long-Term Tenure Managed Forest Code 11: 2020|||ArcGIS Online search for Long Lake State Recreation Area (owner Manitoba_Government)|",
+   "terms": {
+    "access": "public",
+    "class": "OPEN",
+    "credit": "Manitoba Government",
+    "item_url": "https://www.arcgis.com/home/item.html?id=894f6706c364421a99a36823b2f165c6",
+    "licence_text": "  Manitoba Open Data Licence   ",
+    "line": "Manitoba Open Data Licence Manitoba Government Manitoba Government",
+    "modified": "2022-10-26",
+    "org_id": "mMUesHYPkXjaFGfS",
+    "org_name": "Manitoba Maps",
+    "org_url": "manitoba",
+    "owner": "Manitoba_Government",
+    "source": "item page",
+    "tags": [
+     "11",
+     "Long-term Tenure",
+     "CCFM",
+     "Forest Management",
+     "Canada",
+     "2020",
+     "Canadian Council of Forest Ministers",
+     "Public",
+     "Forestry",
+     "Environment",
+     "Forests",
+     "Resource Management"
+    ],
+    "title": "Tile Layer of Long-Term Tenure Managed Forest Code 11: 2020"
+   },
+   "test": "",
+   "title": "Tile Layer of Long-Term Tenure Managed Forest Code 11: 2020",
+   "url": "https://tiles.arcgis.com/tiles/mMUesHYPkXjaFGfS/arcgis/rest/services/Canada_Managed_Forests_2020_Long_Term_Tenure_Code_11/MapServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {},
+   "from": "gis-hunter",
+   "overlap": "same publisher as sgazd",
+   "probe": {
+    "opened": false,
+    "status": "rest"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "unsure",
+    "did not open"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Little River State Park (owner emily_granstaff@fws.gov_fws)",
+   "queue_url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/LittleT_watershed_boundaries/FeatureServer",
+   "retry": true,
+   "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/LittleT_watershed_boundaries/FeatureServer|Little Tennessee Conservation Priority Areas by HUC12|||ArcGIS Online search for Little River State Park (owner emily_granstaff@fws.gov_fws)|",
+   "terms": {
+    "class": "NOTHING STATED",
+    "line": "",
+    "source": "none"
+   },
+   "test": "",
+   "title": "Little Tennessee Conservation Priority Areas by HUC12",
+   "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/LittleT_watershed_boundaries/FeatureServer",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 1,
+    "description": "",
+    "extent": [
+     550088.054,
+     4194354.402,
+     561973.532,
+     4207446.893,
+     26910
+    ],
+    "fields": [
+     "OBJECTID",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2026-06-09",
+    "layer_name": "Richmond-North Richmond-San Pablo",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       0,
+       "Richmond-North Richmond-San Pablo"
+      ]
+     ],
+     "service_name": "CERP boundary for the Richmond-North Richmond-San Pablo AB617 community."
+    },
+    "service_item": "fb9a57bdd0704d57a9aade6be5a42dde"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "unsure",
+    "no government word in the publisher, owner, organisation or credit"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Pablo National Wildlife Refuge (owner jlehman@bayareametro.gov_MTC)",
+   "queue_url": "https://services3.arcgis.com/i2dkYWmb4wHvYPda/arcgis/rest/services/Richmond_North_Richmond_San_Pablo/FeatureServer",
+   "requests_used": 5,
+   "sig": "https://services3.arcgis.com/i2dkYWmb4wHvYPda/arcgis/rest/services/Richmond_North_Richmond_San_Pablo/FeatureServer|Richmond-North Richmond-San Pablo - CERP Community Boundary|||ArcGIS Online search for Pablo National Wildlife Refuge (owner jlehman@bayareametro.gov_MTC)|",
+   "terms": {
+    "access": "public",
+    "class": "CREDIT",
+    "credit": "",
+    "item_url": "https://www.arcgis.com/home/item.html?id=fb9a57bdd0704d57a9aade6be5a42dde",
+    "licence_text": "   This dataset is provided by the Bay Area Air District under its standard terms of use.   ",
+    "line": "This dataset is provided by the Bay Area Air District under its standard terms of use.",
+    "modified": "2026-06-09",
+    "org_id": "i2dkYWmb4wHvYPda",
+    "org_name": "MTC/ABAG",
+    "org_url": "MTC",
+    "owner": "jlehman@bayareametro.gov_MTC",
+    "source": "item page",
+    "tags": [
+     "richmond",
+     "north richmond",
+     "san pablo",
+     "cerp",
+     "ab617",
+     "community boundary"
+    ],
+    "title": "Richmond-North Richmond-San Pablo - CERP Community Boundary"
+   },
+   "test": "",
+   "title": "Richmond-North Richmond-San Pablo - CERP Community Boundary",
+   "url": "https://services3.arcgis.com/i2dkYWmb4wHvYPda/arcgis/rest/services/Richmond_North_Richmond_San_Pablo/FeatureServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {},
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "status": "error Token Required"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "unsure",
+    "did not open"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Spencer County State Forest (owner WCundiff@SpencerMA.gov)",
+   "queue_url": "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Town_Boundary/FeatureServer",
+   "retry": true,
+   "sig": "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Town_Boundary/FeatureServer|Spencer Town Boundary|||ArcGIS Online search for Spencer County State Forest (owner WCundiff@SpencerMA.gov)|",
+   "terms": {
+    "class": "NOTHING STATED",
+    "line": "",
+    "source": "none"
+   },
+   "test": "",
+   "title": "Spencer Town Boundary",
+   "url": "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Town_Boundary/FeatureServer",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (error Token Required): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 0,
+    "missing_in_area": 0,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 0
+   },
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "copyright": "BLM Admin State",
+    "count": 327,
+    "description": "Feature Class for BLM Wild Horse and Burro Herd Areas.    Herd Areas were designated in 1971 as places where wild horses and/or burros were found during the initial flights in 1971.  Federal lands identified in 1971 but not managed for wild horses and burros are called Herd Areas. As additional surveys were done and data gathered, it was determined that some of these lands were privately owned or ",
+    "extent": [
+     -122.4,
+     32.62,
+     -105.783,
+     47.874,
+     4269
+    ],
+    "fields": [
+     "OBJECTID",
+     "HA_NAME",
+     "HA_NO",
+     "ADMIN_ST",
+     "ADMIN_AGCY",
+     "HERD_TYPE",
+     "BLM_ACRES",
+     "GlobalID",
+     "Original_GlobalID",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2026-10-13",
+    "layer_name": "Herd Area Polygons",
+    "name_field": "HA_NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Black Rock Range East",
+     "SWEETWATER",
+     "South Catlow"
+    ],
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       1,
+       "Herd Area Polygons"
+      ]
+     ],
+     "service_name": "This dataset defines the boundaries for Wild Horse and Burro (WHB) Herd Areas (designated in The Wild Free-Roaming Horse and Burro Act of 1971 as areas that wild horses and burros appeared to be inhabiting) and Herd Management Areas (Congressionally designated area of land to which specific laws and regulations pertaining to the management of wild horses and burros are applied)."
+    },
+    "service_item": "e38c32d399d84ec9b00ded02c55d00df"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "a federal / national agency named"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Horse Creek State Conservation Area (owner blm_arcgis_hub_natl)",
+   "queue_url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Wild_Horse_and_Burro_Heard_Area_Polygons/FeatureServer",
+   "requests_used": 6,
+   "sig": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Wild_Horse_and_Burro_Heard_Area_Polygons/FeatureServer|BLM Natl Wild Horse and Burro Herd Area Polygons|||ArcGIS Online search for Horse Creek State Conservation Area (owner blm_arcgis_hub_natl)|",
+   "terms": {
+    "access": "public",
+    "class": "CREDIT",
+    "credit": "BLM Admin State",
+    "item_url": "https://www.arcgis.com/home/item.html?id=e38c32d399d84ec9b00ded02c55d00df",
+    "licence_text": "These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal ",
+    "line": "These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a",
+    "modified": "2026-10-13",
+    "org_id": "KbxwQRRfWyEYLgp4",
+    "org_name": "Bureau of Land Management",
+    "org_url": "BLM-EGIS",
+    "owner": "blm_arcgis_hub_natl",
+    "source": "item page",
+    "tags": [
+     "Alaska",
+     "Arizona",
+     "Authorization",
+     "BLM",
+     "boundaries",
+     "Bureau of Land Management",
+     "Burro",
+     "California",
+     "Colorado",
+     "economy",
+     "Geospatial",
+     "Herd"
+    ],
+    "title": "BLM Natl Wild Horse and Burro Herd Area Polygons"
+   },
+   "test": "",
+   "title": "BLM Natl Wild Horse and Burro Herd Area Polygons",
+   "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Wild_Horse_and_Burro_Heard_Area_Polygons/FeatureServer/1",
+   "ver": 1,
+   "verdict": "ASK-THE-PUBLISHER",
+   "why": "official and usable, but no missing parks were tested (none listed for the area or no time)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 0,
+    "missing_in_area": 0,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 0
+   },
+   "from": "gis-hunter",
+   "overlap": "same publisher as hab",
+   "probe": {
+    "copyright": "Bureau of Land Management, Arizona",
+    "count": 8,
+    "description": "This polygon feature class represents the spatial extent and boundaries for the Bureau of Land Management (BLM) Wild Horse and Burro Herd Management Areas (WHB HMAs).  \n\nThe WHB Program manages BLM land designated as Herd Areas (HA) and HMAs as well as the horses, burros, and mules that roam on BLM land. These animals are considered cultural resources by law; therefore, the BLM must manage the ani",
+    "extent": [
+     151589.749,
+     3627979.666,
+     388859.343,
+     4030636.501,
+     26912
+    ],
+    "fields": [
+     "OBJECTID",
+     "HMA_NAME",
+     "HMA_ID",
+     "HERD_TYPE",
+     "ROD_DT",
+     "LUP_ID",
+     "ADMIN_AGCY",
+     "ADMIN_ST",
+     "ADM_UNIT_CD",
+     "GIS_ACRES",
+     "BLM_ACRES",
+     "GlobalID",
+     "Shape__Length",
+     "Shape__Area"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "BLM AZ Herd Management Area (Polygon)",
+    "name_field": "HMA_NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Cerbat Mountain",
+     "Big Sandy",
+     "Lake Pleasant"
+    ],
+    "service": {
+     "layers_listed": 2,
+     "polygon_layers": [
+      [
+       0,
+       "BLM AZ Herd Management Area (Polygon)"
+      ],
+      [
+       1,
+       "BLM AZ Herd Area (Polygon)"
+      ]
+     ],
+     "service_name": "The Wild Horse and Burro (WHB) Program manages Bureau of Land Management land designated as Herd Areas (HA) and Herd Management Area (HMA) as well as the horses, burros, and mules that roam on BLM land. These animals are considered cultural resources by law; therefore, the BLM must manage the animals that roam as a resource. \n\nThe WHB Program also manages the data and tracks the animals on some land managed by other agencies under agreements with those agencies (e.g. Forest Service Herd Territories). Animal management includes monitoring the wild herds and their habitat, as well as removing some of the animals from the wild, caring for them, and finding responsible owners for them through adoptions and sales.\n\nFederal lands managed for wild horses and burros are called Herd Management Areas (HMAs). All HMAs need to be contained within an originally designated Herd Area (HA). Management status can change based on changing conditions. Specific laws and regulations pertaining to the management of wild horses and burros are applied. The BLM uses the term Herd Management Area; the Forest Service uses the term Wild Horse Territory."
+    },
+    "service_item": "7e438742cce7465e8781d8197b2e9477"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis.blm.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Horse Creek State Conservation Area (owner blm_arcgis_hub_az)",
+   "queue_url": "https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer",
+   "requests_used": 7,
+   "sig": "https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer|BLM AZ Wild Horse and Burro Herd Areas and Herd Management Areas|||ArcGIS Online search for Horse Creek State Conservation Area (owner blm_arcgis_hub_az)|",
+   "terms": {
+    "about": "The Wild Horse and Burro (WHB) Program manages Bureau of Land Management land designated as Herd Areas (HA) and Herd Management Area (HMA) as well as the horses, burros, and mules that roam on BLM land. These animals are considered cultural resources by law; therefore, the BLM must manage the animal",
+    "class": "CREDIT",
+    "credit": "Bureau of Land Management, Arizona",
+    "item_url": "https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer/info/iteminfo",
+    "licence_text": "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User's intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal ",
+    "line": "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a",
+    "source": "item page",
+    "title": "BLM_AZ_WHB"
+   },
+   "test": "",
+   "title": "BLM AZ Wild Horse and Burro Herd Areas and Herd Management Areas",
+   "url": "https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer/0",
+   "ver": 1,
+   "verdict": "ASK-THE-PUBLISHER",
+   "why": "official and usable, but no missing parks were tested (none listed for the area or no time)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 0,
+    "missing_in_area": 0,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 0
+   },
+   "from": "gis-hunter",
+   "overlap": "same publisher as hab",
+   "probe": {
+    "copyright": "Bureau of Land Management, Arizona",
+    "count": 11,
+    "description": "All Herd Management Areas (HMAs) need to be contained within an originally designated HAs. Management status can change based on changing conditions.\n\nThe WHB Program manages BLM land designated as HAs and HMAs as well as the horses, burros, and mules that roam on BLM land. These animals are considered cultural resources by law; therefore, the BLM must manage the animals that roam as a resource. T",
+    "extent": [
+     151589.749,
+     3613965.712,
+     388859.343,
+     4030636.501,
+     26912
+    ],
+    "fields": [
+     "OBJECTID",
+     "HA_NAME",
+     "HA_NO",
+     "HERD_TYPE",
+     "ADMIN_ST",
+     "ADMIN_AGCY",
+     "GIS_ACRES",
+     "BLM_ACRES",
+     "GlobalID",
+     "Shape__Length",
+     "Shape__Area"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "BLM AZ Herd Area (Polygon)",
+    "name_field": "HA_NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Harquahala",
+     "Painted Rock",
+     "Little Harquahala Mountains"
+    ],
+    "service": {
+     "layers_listed": 2,
+     "polygon_layers": [
+      [
+       0,
+       "BLM AZ Herd Management Area (Polygon)"
+      ],
+      [
+       1,
+       "BLM AZ Herd Area (Polygon)"
+      ]
+     ],
+     "service_name": "The Wild Horse and Burro (WHB) Program manages Bureau of Land Management land designated as Herd Areas (HA) and Herd Management Area (HMA) as well as the horses, burros, and mules that roam on BLM land. These animals are considered cultural resources by law; therefore, the BLM must manage the animals that roam as a resource. \n\nThe WHB Program also manages the data and tracks the animals on some land managed by other agencies under agreements with those agencies (e.g. Forest Service Herd Territories). Animal management includes monitoring the wild herds and their habitat, as well as removing some of the animals from the wild, caring for them, and finding responsible owners for them through adoptions and sales.\n\nFederal lands managed for wild horses and burros are called Herd Management Areas (HMAs). All HMAs need to be contained within an originally designated Herd Area (HA). Management status can change based on changing conditions. Specific laws and regulations pertaining to the management of wild horses and burros are applied. The BLM uses the term Herd Management Area; the Forest Service uses the term Wild Horse Territory."
+    },
+    "service_item": "7e438742cce7465e8781d8197b2e9477"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis.blm.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Horse Creek State Conservation Area (owner blm_arcgis_hub_az)",
+   "queue_url": "https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer",
+   "requests_used": 10,
+   "sig": "https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer|BLM AZ Wild Horse and Burro Herd Areas and Herd Management Areas|||ArcGIS Online search for Horse Creek State Conservation Area (owner blm_arcgis_hub_az)|",
+   "terms": {
+    "about": "The Wild Horse and Burro (WHB) Program manages Bureau of Land Management land designated as Herd Areas (HA) and Herd Management Area (HMA) as well as the horses, burros, and mules that roam on BLM land. These animals are considered cultural resources by law; therefore, the BLM must manage the animal",
+    "class": "CREDIT",
+    "credit": "Bureau of Land Management, Arizona",
+    "item_url": "https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer/info/iteminfo",
+    "licence_text": "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User's intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal ",
+    "line": "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a",
+    "source": "item page",
+    "title": "BLM_AZ_WHB"
+   },
+   "test": "",
+   "title": "BLM AZ Wild Horse and Burro Herd Areas and Herd Management Areas",
+   "url": "https://gis.blm.gov/azarcgis/rest/services/range/BLM_AZ_WHB/FeatureServer/1",
+   "ver": 1,
+   "verdict": "ASK-THE-PUBLISHER",
+   "why": "official and usable, but no missing parks were tested (none listed for the area or no time)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {},
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "status": "rest"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "unsure",
+    "did not open"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Empire State Trail (owner County_Of_San_Bernardino)",
+   "queue_url": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/Inland_Empire_Utilities_Agency_Divisions/FeatureServer",
+   "retry": true,
+   "sig": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/Inland_Empire_Utilities_Agency_Divisions/FeatureServer|Inland Empire Utilities Agency Divisions|||ArcGIS Online search for Empire State Trail (owner County_Of_San_Bernardino)|",
+   "terms": {
+    "class": "NOTHING STATED",
+    "line": "",
+    "source": "none"
+   },
+   "test": "",
+   "title": "Inland Empire Utilities Agency Divisions",
+   "url": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/Inland_Empire_Utilities_Agency_Divisions/FeatureServer",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {},
+   "from": "gis-hunter",
+   "overlap": "same publisher as sgazd",
+   "probe": {
+    "opened": false,
+    "status": "rest"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "unsure",
+    "did not open"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Sheep Creek State Recreation Area (owner elena_campbell@fws.gov_fws)",
+   "queue_url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/BHS_Herds_March_16_vers/FeatureServer",
+   "retry": true,
+   "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/BHS_Herds_March_16_vers/FeatureServer|FWS WSFR Nevada Bighorn Sheep Herds |||ArcGIS Online search for Sheep Creek State Recreation Area (owner elena_campbell@fws.gov_fws)|",
+   "terms": {
+    "class": "NOTHING STATED",
+    "line": "",
+    "source": "none"
+   },
+   "test": "",
+   "title": "FWS WSFR Nevada Bighorn Sheep Herds ",
+   "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/BHS_Herds_March_16_vers/FeatureServer",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 1449,
+    "description": "",
+    "extent": [
+     -10044350.284,
+     5113434.742,
+     -9171804.079,
+     6022309.026,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "HexID",
+     "GlobalID",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "PublicWaterSupplySamplingHexbins",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       0,
+       "PublicWaterSupplySamplingHexbins"
+      ]
+     ],
+     "service_name": ""
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gisagoegle.state.mi.us"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Lake Michigan National Recreation Area (owner EgleAdmin)",
+   "queue_url": "https://gisagoegle.state.mi.us/arcgis/rest/services/EGLE/PublicWaterSupplySamplingOpenData/FeatureServer",
+   "requests_used": 4,
+   "sig": "https://gisagoegle.state.mi.us/arcgis/rest/services/EGLE/PublicWaterSupplySamplingOpenData/FeatureServer|Michigan Public Water Supply Sampling Hexbins and Results (Consolidated) |||ArcGIS Online search for Lake Michigan National Recreation Area (owner EgleAdmin)|",
+   "terms": {
+    "about": "1/30/26",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://gisagoegle.state.mi.us/arcgis/rest/services/EGLE/PublicWaterSupplySamplingOpenData/FeatureServer/info/iteminfo",
+    "licence_text": "",
+    "line": "",
+    "source": "item page",
+    "title": "PublicWaterSupplySamplingOpenData"
+   },
+   "test": "",
+   "title": "Michigan Public Water Supply Sampling Hexbins and Results (Consolidated) ",
+   "url": "https://gisagoegle.state.mi.us/arcgis/rest/services/EGLE/PublicWaterSupplySamplingOpenData/FeatureServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 268,
+    "description": "",
+    "extent": [
+     3089987.002,
+     1210163.908,
+     3101724.945,
+     1229261.62,
+     2231
+    ],
+    "fields": [
+     "OBJECTID",
+     "OBJECTID_1",
+     "PARCEL_NO",
+     "PARCEL_NUM",
+     "Acreage",
+     "SHAPElen",
+     "Land_Use",
+     "Town_Owned_Land_Use",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2025-07-11",
+    "layer_name": "TownParksandOpenSpace",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service_item": "c1cc73a5de0f43bb84cf15211a057be2"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government words: Town of"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Lake Superior State Forest (owner POS_bouldercounty)",
+   "queue_url": "https://services2.arcgis.com/RQsC4DSkpr4c1bMs/arcgis/rest/services/Parks_and_Open_Space_2025/FeatureServer/7",
+   "requests_used": 4,
+   "sig": "https://services2.arcgis.com/RQsC4DSkpr4c1bMs/arcgis/rest/services/Parks_and_Open_Space_2025/FeatureServer/7|Town of Superior Parks & Open Space|||ArcGIS Online search for Lake Superior State Forest (owner POS_bouldercounty)|",
+   "terms": {
+    "access": "public",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://www.arcgis.com/home/item.html?id=c1cc73a5de0f43bb84cf15211a057be2",
+    "licence_text": "",
+    "line": "",
+    "modified": "2025-07-11",
+    "org_id": "RQsC4DSkpr4c1bMs",
+    "org_name": "Town of Superior",
+    "org_url": "TownofSuperior",
+    "owner": "AlexHTOS",
+    "source": "item page",
+    "tags": [
+     "Open Space",
+     "Parks"
+    ],
+    "title": "Parks and Open Space 2025"
+   },
+   "test": "",
+   "title": "Town of Superior Parks & Open Space",
+   "url": "https://services2.arcgis.com/RQsC4DSkpr4c1bMs/arcgis/rest/services/Parks_and_Open_Space_2025/FeatureServer/7",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 0,
+    "missing_in_area": 0,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 0
+   },
+   "from": "gis-hunter",
+   "overlap": "same publisher as akht",
+   "probe": {
+    "copyright": "",
+    "count": 376,
+    "description": "",
+    "extent": [
+     -12460691.917,
+     2985426.217,
+     -8404454.576,
+     6016594.626,
+     3857
+    ],
+    "fields": [
+     "FID",
+     "OBJECTID_1",
+     "SITE",
+     "STATE",
+     "WAR",
+     "NAME",
+     "BOUNDARY",
+     "CR_ID",
+     "SURVEY_ID",
+     "GEOM_ID",
+     "RESNAME",
+     "BND_TYPE",
+     "BND_OTHER",
+     "IS_EXTANT",
+     "EXTANT_OTH",
+     "CONTRIBRES",
+     "RESTRICT_",
+     "SOURCE",
+     "SRC_DATE",
+     "SRC_SCALE",
+     "SRC_ACCU",
+     "VERT_ERROR",
+     "SRC_COORD",
+     "MAP_METHOD",
+     "MAP_MTH_OT",
+     "CREATEDATE",
+     "EDIT_DATE",
+     "EDIT_BY",
+     "ORIGINATOR",
+     "CONSTRANT",
+     "CR_NOTES",
+     "ALPHA_CODE",
+     "UNIT_CODEO",
+     "UNIT",
+     "UNIT_OTHER",
+     "UNIT_TYPE",
+     "GROUP_CODE",
+     "REG_CODE",
+     "META_MIDF",
+     "Shape_Leng"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2025-01-20",
+    "layer_name": "Civil_War_Battle_Bndry",
+    "name_field": "NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "SHEPHERDSTOWN",
+     "SMITHFIELD CROSSING",
+     "SUMMIT POINT"
+    ],
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       0,
+       "Civil_War_Battle_Bndry"
+      ]
+     ],
+     "service_name": ""
+    },
+    "service_item": "5dc6c2019079458dbac1a4c6f8b2ecde"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "a federal / national agency named"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Civil War Trail State Trail (owner ecahoon@nps.gov_nps)",
+   "queue_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Civil_War_Battle_Bndry/FeatureServer",
+   "requests_used": 6,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Civil_War_Battle_Bndry/FeatureServer|WASO_ABPP-NPS_Civil War Battle Bndry|||ArcGIS Online search for Civil War Trail State Trail (owner ecahoon@nps.gov_nps)|",
+   "terms": {
+    "access": "public",
+    "class": "CREDIT",
+    "credit": "WASO - American Battlefireld Protection Program (ABPP), Cultural Resources GIS (CRGIS)",
+    "item_url": "https://www.arcgis.com/home/item.html?id=5dc6c2019079458dbac1a4c6f8b2ecde",
+    "licence_text": " The National Park Service shall not be held liable for improper or incorrect use of the cultural resource data described and/or contained herein. These data and related graphics are not legal documents and are not intended to be used as such, nor do they replace the need for consultation with appropriate state/tribal/federal historic preservation offices.  The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived. It is the responsibility of the data user to use the data appropriately and consistent within the limitations of geospatial data in general and these data in particular, as expressed in feature level metadata. The related graphics are intended to aid the data user in acquiring relev",
+    "line": "The National Park Service shall not be held liable for improper or incorrect use of the cultural resource data described and/or contained herein. These data and",
+    "modified": "2025-04-28",
+    "org_id": "fBc8EJBxQRMcHlei",
+    "org_name": "National Park Service",
+    "org_url": "nps",
+    "owner": "ecahoon@nps.gov_nps",
+    "source": "item page",
+    "tags": [
+     "Civil War",
+     "American Battlefield Protection Program",
+     "Battlefield Boundaries",
+     "Battlefields"
+    ],
+    "title": "WASO_ABPP-NPS_Civil War Battle Bndry"
+   },
+   "test": "",
+   "title": "WASO_ABPP-NPS_Civil War Battle Bndry",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Civil_War_Battle_Bndry/FeatureServer/0",
+   "ver": 1,
+   "verdict": "ASK-THE-PUBLISHER",
+   "why": "official and usable, but no missing parks were tested (none listed for the area or no time)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 1,
+    "description": "",
+    "extent": [
+     326956.645,
+     396400.226,
+     342366.25,
+     421203.547,
+     27700
+    ],
+    "fields": [
+     "FID",
+     "id",
+     "Name",
+     "Shape__Area",
+     "Shape__Length",
+     "GlobalID"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2025-11-27",
+    "layer_name": "Stronghold",
+    "name_field": "Name",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Lancs. Red Squirrel Stronghold"
+    ],
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       0,
+       "Stronghold"
+      ]
+     ],
+     "service_name": "Data from The Wildlife Trust for Lancashire, Manchester and North Merseyside's Red Squirrel Project. This data is a boundary showing the area in which Red Squirrels are still managing to survive."
+    },
+    "service_item": "be03972d0cb2446b9340ad4b4eea83e3"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "not official",
+    "Trust in the publisher words"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Red Creek Wildlife Management Area (owner cwilkinson_wildlifetrusts)",
+   "queue_url": "https://services-eu1.arcgis.com/Y9jgVEvgymHqAYPW/arcgis/rest/services/Lancashire_Wildlife_Trust_Red_Squirrel_Strong_Hold_Boundary_2/FeatureServer",
+   "requests_used": 6,
+   "sig": "https://services-eu1.arcgis.com/Y9jgVEvgymHqAYPW/arcgis/rest/services/Lancashire_Wildlife_Trust_Red_Squirrel_Strong_Hold_Boundary_2/FeatureServer|LWT Red Squirrel Stronghold Boundary|||ArcGIS Online search for Red Creek Wildlife Management Area (owner cwilkinson_wildlifetrusts)|",
+   "terms": {
+    "access": "public",
+    "class": "NON-COMMERCIAL",
+    "credit": "Contains LWT data © Lancashire Wildlife Trust.",
+    "item_url": "https://www.arcgis.com/home/item.html?id=be03972d0cb2446b9340ad4b4eea83e3",
+    "licence_text": " Non Commercial, You may not use the material for commercial purposes.   Contains LWT data © Lancashire Wildlife Trust. ",
+    "line": "Non Commercial, You may not use the material for commercial purposes. Contains LWT data © Lancashire Wil",
+    "modified": "2025-11-24",
+    "org_id": "Y9jgVEvgymHqAYPW",
+    "org_name": "The Wildlife Trusts",
+    "org_url": "wildlifetrusts",
+    "owner": "cwilkinson_wildlifetrusts",
+    "source": "item page",
+    "tags": [
+     "Red Squirrel",
+     "Red",
+     "Red Squirrels Project",
+     "Lancashire",
+     "Lancashire Manchester & North Merseyside",
+     "Lancashire Wildlife Trust"
+    ],
+    "title": "LWT Red Squirrel Stronghold Boundary"
+   },
+   "test": "",
+   "title": "LWT Red Squirrel Stronghold Boundary",
+   "url": "https://services-eu1.arcgis.com/Y9jgVEvgymHqAYPW/arcgis/rest/services/Lancashire_Wildlife_Trust_Red_Squirrel_Strong_Hold_Boundary_2/FeatureServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "not an official publisher: we take outlines only from the managing agency"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 0,
+    "missing_in_area": 0,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 0
+   },
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 41,
+    "description": "",
+    "extent": [
+     -9263077.473,
+     4838044.298,
+     -9213940.11,
+     4888923.162,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "AREA_NAME",
+     "CREATED_DATE",
+     "LAST_EDIT_DATE",
+     "SHAPE",
+     "AREA_NO",
+     "GLOBALID",
+     "SHAPE.STArea()",
+     "SHAPE.STLength()"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Columbus Communities",
+    "name_field": "AREA_NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Far South",
+     "Livingston Avenue Area",
+     "Southwest"
+    ],
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host maps2.columbus.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Columbus Lake State Recreation Area (owner ColumbusOhioGIS)",
+   "queue_url": "https://maps2.columbus.gov/arcgis/rest/services/Schemas/Development/MapServer/25",
+   "requests_used": 4,
+   "sig": "https://maps2.columbus.gov/arcgis/rest/services/Schemas/Development/MapServer/25|Columbus Communities|||ArcGIS Online search for Columbus Lake State Recreation Area (owner ColumbusOhioGIS)|",
+   "terms": {
+    "about": "",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://maps2.columbus.gov/arcgis/rest/services/Schemas/Development/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "",
+    "source": "item page",
+    "title": "Development"
+   },
+   "test": "",
+   "title": "Columbus Communities",
+   "url": "https://maps2.columbus.gov/arcgis/rest/services/Schemas/Development/MapServer/25",
+   "ver": 1,
+   "verdict": "ASK-THE-PUBLISHER",
+   "why": "nothing stated about use on the item page or the service"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {},
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "status": "rest"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "unsure",
+    "did not open"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Rim Lake BLM Recreation Management Area (owner County_Of_San_Bernardino)",
+   "queue_url": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/RimWrld_PrkRec_Divisions/FeatureServer",
+   "retry": true,
+   "sig": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/RimWrld_PrkRec_Divisions/FeatureServer|Rim of the World Recreation and Park Divisions|||ArcGIS Online search for Rim Lake BLM Recreation Management Area (owner County_Of_San_Bernardino)|",
+   "terms": {
+    "class": "NOTHING STATED",
+    "line": "",
+    "source": "none"
+   },
+   "test": "",
+   "title": "Rim of the World Recreation and Park Divisions",
+   "url": "https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/RimWrld_PrkRec_Divisions/FeatureServer",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "same publisher as hab",
+   "probe": {
+    "copyright": "Bureau of Land Management, Headquarters (HQ)",
+    "count": 464680,
+    "description": "This feature supports the Bureau of Land Management (BLM) Surface Management Agency (SMA) National data.",
+    "extent": [
+     -19942794.489,
+     2801774.6,
+     20012451.78,
+     11535890.138,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "SHAPE",
+     "SMA_ID",
+     "HOLD_ID",
+     "ADMIN_DEPT_CODE",
+     "ADMIN_AGENCY_CODE",
+     "ADMIN_UNIT_NAME",
+     "ADMIN_UNIT_TYPE",
+     "HOLD_DEPT_CODE",
+     "HOLD_AGENCY_CODE",
+     "SHAPE_Length",
+     "SHAPE_Area",
+     "ADMIN_ST",
+     "FAU_ID"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Surface Management Agency",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 30,
+     "polygon_layers": [
+      [
+       1,
+       "Surface Management Agency"
+      ],
+      [
+       4,
+       "Alaska Native Allotment"
+      ],
+      [
+       5,
+       "Alaska Native Lands (Patented or Interim Conveyed)"
+      ],
+      [
+       6,
+       "Department Of Defense (DOD)"
+      ],
+      [
+       7,
+       "Bureau of Land Management (BLM)"
+      ],
+      [
+       8,
+       "National Park Service (NPS)"
+      ],
+      [
+       9,
+       "US Forest Service (USFS)"
+      ],
+      [
+       10,
+       "US Fish and Wildlife (USFW)"
+      ]
+     ],
+     "service_name": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The Surface Management Agency (SMA) covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency’s surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data does not illustrate land status ownership pattern boundaries or contain land ownership attribute details."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis.blm.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)",
+   "queue_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer",
+   "requests_used": 4,
+   "sig": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer|BLM National Surface Management Agency|||ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)|",
+   "terms": {
+    "about": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the U",
+    "class": "OPEN",
+    "credit": "BLM Energy, Minerals & Realty Management, Headquarters (HQ)",
+    "item_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo",
+    "licence_text": "PUBLIC. BLM. These data are considered public domain.  These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file as",
+    "line": "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err",
+    "source": "item page",
+    "title": "BLM_Natl_SMA_Cached_without_PriUnk"
+   },
+   "test": "",
+   "title": "BLM National Surface Management Agency",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/1",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "same publisher as hab",
+   "probe": {
+    "copyright": "Bureau of Land Management, Headquarters (HQ)",
+    "count": 11304,
+    "description": "This is the Alaska Native Allotment (NTVALL) feature that supports the Bureau of Land Management (BLM) Surface Management Agency (SMA) National data.",
+    "extent": [
+     -18684769.578,
+     7136377.934,
+     -14723989.859,
+     11473994.034,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "SHAPE",
+     "SMA_ID",
+     "HOLD_ID",
+     "ADMIN_DEPT_CODE",
+     "ADMIN_AGENCY_CODE",
+     "ADMIN_UNIT_NAME",
+     "ADMIN_UNIT_TYPE",
+     "HOLD_DEPT_CODE",
+     "HOLD_AGENCY_CODE",
+     "SHAPE_Length",
+     "SHAPE_Area",
+     "ADMIN_ST",
+     "FAU_ID"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Alaska Native Allotment",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 30,
+     "polygon_layers": [
+      [
+       1,
+       "Surface Management Agency"
+      ],
+      [
+       4,
+       "Alaska Native Allotment"
+      ],
+      [
+       5,
+       "Alaska Native Lands (Patented or Interim Conveyed)"
+      ],
+      [
+       6,
+       "Department Of Defense (DOD)"
+      ],
+      [
+       7,
+       "Bureau of Land Management (BLM)"
+      ],
+      [
+       8,
+       "National Park Service (NPS)"
+      ],
+      [
+       9,
+       "US Forest Service (USFS)"
+      ],
+      [
+       10,
+       "US Fish and Wildlife (USFW)"
+      ]
+     ],
+     "service_name": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The Surface Management Agency (SMA) covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency’s surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data does not illustrate land status ownership pattern boundaries or contain land ownership attribute details."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis.blm.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)",
+   "queue_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer",
+   "requests_used": 6,
+   "sig": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer|BLM National Surface Management Agency|||ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)|",
+   "terms": {
+    "about": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the U",
+    "class": "OPEN",
+    "credit": "BLM Energy, Minerals & Realty Management, Headquarters (HQ)",
+    "item_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo",
+    "licence_text": "PUBLIC. BLM. These data are considered public domain.  These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file as",
+    "line": "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err",
+    "source": "item page",
+    "title": "BLM_Natl_SMA_Cached_without_PriUnk"
+   },
+   "test": "",
+   "title": "BLM National Surface Management Agency",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/4",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "same publisher as hab",
+   "probe": {
+    "copyright": "Bureau of Land Management, Headquarters (HQ)",
+    "count": 55020,
+    "description": "This is the Alaska Native Lands (Patented or Interim Conveyed)  (NTVPIC) feature that supports the Bureau of Land Management (BLM) Surface Management Agency (SMA) National data.",
+    "extent": [
+     -19935107.938,
+     6665543.206,
+     19972883.04,
+     11535890.138,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "SHAPE",
+     "SMA_ID",
+     "HOLD_ID",
+     "ADMIN_DEPT_CODE",
+     "ADMIN_AGENCY_CODE",
+     "ADMIN_UNIT_NAME",
+     "ADMIN_UNIT_TYPE",
+     "HOLD_DEPT_CODE",
+     "HOLD_AGENCY_CODE",
+     "SHAPE_Length",
+     "SHAPE_Area",
+     "ADMIN_ST",
+     "FAU_ID"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Alaska Native Lands (Patented or Interim Conveyed)",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 30,
+     "polygon_layers": [
+      [
+       1,
+       "Surface Management Agency"
+      ],
+      [
+       4,
+       "Alaska Native Allotment"
+      ],
+      [
+       5,
+       "Alaska Native Lands (Patented or Interim Conveyed)"
+      ],
+      [
+       6,
+       "Department Of Defense (DOD)"
+      ],
+      [
+       7,
+       "Bureau of Land Management (BLM)"
+      ],
+      [
+       8,
+       "National Park Service (NPS)"
+      ],
+      [
+       9,
+       "US Forest Service (USFS)"
+      ],
+      [
+       10,
+       "US Fish and Wildlife (USFW)"
+      ]
+     ],
+     "service_name": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The Surface Management Agency (SMA) covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency’s surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data does not illustrate land status ownership pattern boundaries or contain land ownership attribute details."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis.blm.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)",
+   "queue_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer",
+   "requests_used": 8,
+   "sig": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer|BLM National Surface Management Agency|||ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)|",
+   "terms": {
+    "about": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the U",
+    "class": "OPEN",
+    "credit": "BLM Energy, Minerals & Realty Management, Headquarters (HQ)",
+    "item_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo",
+    "licence_text": "PUBLIC. BLM. These data are considered public domain.  These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file as",
+    "line": "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err",
+    "source": "item page",
+    "title": "BLM_Natl_SMA_Cached_without_PriUnk"
+   },
+   "test": "",
+   "title": "BLM National Surface Management Agency",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/5",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "same publisher as hab",
+   "probe": {
+    "copyright": "Bureau of Land Management, Headquarters (HQ)",
+    "count": 877,
+    "description": "This is the Department of Defense (DOD) feature that supports the Bureau of Land Management (BLM) Surface Management Agency (SMA) National data.",
+    "extent": [
+     -19673322.431,
+     2920838.099,
+     19386968.052,
+     11513894.836,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "SHAPE",
+     "SMA_ID",
+     "HOLD_ID",
+     "ADMIN_DEPT_CODE",
+     "ADMIN_AGENCY_CODE",
+     "ADMIN_UNIT_NAME",
+     "ADMIN_UNIT_TYPE",
+     "HOLD_DEPT_CODE",
+     "HOLD_AGENCY_CODE",
+     "SHAPE_Length",
+     "SHAPE_Area",
+     "ADMIN_ST",
+     "FAU_ID"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Department Of Defense (DOD)",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 30,
+     "polygon_layers": [
+      [
+       1,
+       "Surface Management Agency"
+      ],
+      [
+       4,
+       "Alaska Native Allotment"
+      ],
+      [
+       5,
+       "Alaska Native Lands (Patented or Interim Conveyed)"
+      ],
+      [
+       6,
+       "Department Of Defense (DOD)"
+      ],
+      [
+       7,
+       "Bureau of Land Management (BLM)"
+      ],
+      [
+       8,
+       "National Park Service (NPS)"
+      ],
+      [
+       9,
+       "US Forest Service (USFS)"
+      ],
+      [
+       10,
+       "US Fish and Wildlife (USFW)"
+      ]
+     ],
+     "service_name": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The Surface Management Agency (SMA) covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency’s surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data does not illustrate land status ownership pattern boundaries or contain land ownership attribute details."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis.blm.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)",
+   "queue_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer",
+   "requests_used": 10,
+   "sig": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer|BLM National Surface Management Agency|||ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)|",
+   "terms": {
+    "about": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the U",
+    "class": "OPEN",
+    "credit": "BLM Energy, Minerals & Realty Management, Headquarters (HQ)",
+    "item_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo",
+    "licence_text": "PUBLIC. BLM. These data are considered public domain.  These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file as",
+    "line": "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err",
+    "source": "item page",
+    "title": "BLM_Natl_SMA_Cached_without_PriUnk"
+   },
+   "test": "",
+   "title": "BLM National Surface Management Agency",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/6",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "same publisher as hab",
+   "probe": {
+    "copyright": "Bureau of Land Management, Headquarters (HQ)",
+    "count": 11472,
+    "description": "This is the Bureau of Land Management (BLM) feature that supports the Bureau of Land Management (BLM) Surface Management Agency (SMA) National data.",
+    "extent": [
+     -18684854.14,
+     2828702.17,
+     -8592382.424,
+     11518174.259,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "SHAPE",
+     "SMA_ID",
+     "HOLD_ID",
+     "ADMIN_DEPT_CODE",
+     "ADMIN_AGENCY_CODE",
+     "ADMIN_UNIT_NAME",
+     "ADMIN_UNIT_TYPE",
+     "HOLD_DEPT_CODE",
+     "HOLD_AGENCY_CODE",
+     "SHAPE_Length",
+     "SHAPE_Area",
+     "ADMIN_ST",
+     "FAU_ID"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Bureau of Land Management (BLM)",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 30,
+     "polygon_layers": [
+      [
+       1,
+       "Surface Management Agency"
+      ],
+      [
+       4,
+       "Alaska Native Allotment"
+      ],
+      [
+       5,
+       "Alaska Native Lands (Patented or Interim Conveyed)"
+      ],
+      [
+       6,
+       "Department Of Defense (DOD)"
+      ],
+      [
+       7,
+       "Bureau of Land Management (BLM)"
+      ],
+      [
+       8,
+       "National Park Service (NPS)"
+      ],
+      [
+       9,
+       "US Forest Service (USFS)"
+      ],
+      [
+       10,
+       "US Fish and Wildlife (USFW)"
+      ]
+     ],
+     "service_name": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The Surface Management Agency (SMA) covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency’s surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data does not illustrate land status ownership pattern boundaries or contain land ownership attribute details."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis.blm.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)",
+   "queue_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer",
+   "requests_used": 12,
+   "sig": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer|BLM National Surface Management Agency|||ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)|",
+   "terms": {
+    "about": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the U",
+    "class": "OPEN",
+    "credit": "BLM Energy, Minerals & Realty Management, Headquarters (HQ)",
+    "item_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo",
+    "licence_text": "PUBLIC. BLM. These data are considered public domain.  These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file as",
+    "line": "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err",
+    "source": "item page",
+    "title": "BLM_Natl_SMA_Cached_without_PriUnk"
+   },
+   "test": "",
+   "title": "BLM National Surface Management Agency",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/7",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "same publisher as hab",
+   "probe": {
+    "copyright": "Bureau of Land Management, Headquarters (HQ)",
+    "count": 13657,
+    "description": "This is the National Park Service (NPS) feature that supports the Bureau of Land Management (BLM) Surface Management Agency (SMA) National data.",
+    "extent": [
+     -18651376.708,
+     2857328.924,
+     -7573875.231,
+     10644569.248,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "SHAPE",
+     "SMA_ID",
+     "HOLD_ID",
+     "ADMIN_DEPT_CODE",
+     "ADMIN_AGENCY_CODE",
+     "ADMIN_UNIT_NAME",
+     "ADMIN_UNIT_TYPE",
+     "HOLD_DEPT_CODE",
+     "HOLD_AGENCY_CODE",
+     "SHAPE_Length",
+     "SHAPE_Area",
+     "ADMIN_ST",
+     "FAU_ID"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "National Park Service (NPS)",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 30,
+     "polygon_layers": [
+      [
+       1,
+       "Surface Management Agency"
+      ],
+      [
+       4,
+       "Alaska Native Allotment"
+      ],
+      [
+       5,
+       "Alaska Native Lands (Patented or Interim Conveyed)"
+      ],
+      [
+       6,
+       "Department Of Defense (DOD)"
+      ],
+      [
+       7,
+       "Bureau of Land Management (BLM)"
+      ],
+      [
+       8,
+       "National Park Service (NPS)"
+      ],
+      [
+       9,
+       "US Forest Service (USFS)"
+      ],
+      [
+       10,
+       "US Fish and Wildlife (USFW)"
+      ]
+     ],
+     "service_name": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The Surface Management Agency (SMA) covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency’s surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data does not illustrate land status ownership pattern boundaries or contain land ownership attribute details."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis.blm.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)",
+   "queue_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer",
+   "requests_used": 14,
+   "sig": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer|BLM National Surface Management Agency|||ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)|",
+   "terms": {
+    "about": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the U",
+    "class": "OPEN",
+    "credit": "BLM Energy, Minerals & Realty Management, Headquarters (HQ)",
+    "item_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo",
+    "licence_text": "PUBLIC. BLM. These data are considered public domain.  These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file as",
+    "line": "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err",
+    "source": "item page",
+    "title": "BLM_Natl_SMA_Cached_without_PriUnk"
+   },
+   "test": "",
+   "title": "BLM National Surface Management Agency",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/8",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "same publisher as hab",
+   "probe": {
+    "copyright": "Bureau of Land Management, Headquarters (HQ)",
+    "count": 21230,
+    "description": "This is the United States Forest Service (USFS) feature that supports the Bureau of Land Management (BLM) Surface Management Agency (SMA) National data.",
+    "extent": [
+     -16698806.114,
+     3360871.676,
+     -7877550.297,
+     8745874.56,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "SHAPE",
+     "SMA_ID",
+     "HOLD_ID",
+     "ADMIN_DEPT_CODE",
+     "ADMIN_AGENCY_CODE",
+     "ADMIN_UNIT_NAME",
+     "ADMIN_UNIT_TYPE",
+     "HOLD_DEPT_CODE",
+     "HOLD_AGENCY_CODE",
+     "SHAPE_Length",
+     "SHAPE_Area",
+     "ADMIN_ST",
+     "FAU_ID"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "US Forest Service (USFS)",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 30,
+     "polygon_layers": [
+      [
+       1,
+       "Surface Management Agency"
+      ],
+      [
+       4,
+       "Alaska Native Allotment"
+      ],
+      [
+       5,
+       "Alaska Native Lands (Patented or Interim Conveyed)"
+      ],
+      [
+       6,
+       "Department Of Defense (DOD)"
+      ],
+      [
+       7,
+       "Bureau of Land Management (BLM)"
+      ],
+      [
+       8,
+       "National Park Service (NPS)"
+      ],
+      [
+       9,
+       "US Forest Service (USFS)"
+      ],
+      [
+       10,
+       "US Fish and Wildlife (USFW)"
+      ]
+     ],
+     "service_name": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The Surface Management Agency (SMA) covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency’s surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data does not illustrate land status ownership pattern boundaries or contain land ownership attribute details."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis.blm.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)",
+   "queue_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer",
+   "requests_used": 16,
+   "sig": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer|BLM National Surface Management Agency|||ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)|",
+   "terms": {
+    "about": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the U",
+    "class": "OPEN",
+    "credit": "BLM Energy, Minerals & Realty Management, Headquarters (HQ)",
+    "item_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo",
+    "licence_text": "PUBLIC. BLM. These data are considered public domain.  These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file as",
+    "line": "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err",
+    "source": "item page",
+    "title": "BLM_Natl_SMA_Cached_without_PriUnk"
+   },
+   "test": "",
+   "title": "BLM National Surface Management Agency",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/9",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "same publisher as hab",
+   "probe": {
+    "copyright": "Bureau of Land Management, Headquarters (HQ)",
+    "count": 27958,
+    "description": "This is the United States Fish and Wildlife Service (FWS) feature that supports the Bureau of Land Management (BLM) Surface Management Agency (SMA) National data.",
+    "extent": [
+     -19942784.867,
+     2808540.071,
+     20012404.472,
+     11124478.381,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "SHAPE",
+     "SMA_ID",
+     "HOLD_ID",
+     "ADMIN_DEPT_CODE",
+     "ADMIN_AGENCY_CODE",
+     "ADMIN_UNIT_NAME",
+     "ADMIN_UNIT_TYPE",
+     "HOLD_DEPT_CODE",
+     "HOLD_AGENCY_CODE",
+     "SHAPE_Length",
+     "SHAPE_Area",
+     "ADMIN_ST",
+     "FAU_ID"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "US Fish and Wildlife (USFW)",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 30,
+     "polygon_layers": [
+      [
+       1,
+       "Surface Management Agency"
+      ],
+      [
+       4,
+       "Alaska Native Allotment"
+      ],
+      [
+       5,
+       "Alaska Native Lands (Patented or Interim Conveyed)"
+      ],
+      [
+       6,
+       "Department Of Defense (DOD)"
+      ],
+      [
+       7,
+       "Bureau of Land Management (BLM)"
+      ],
+      [
+       8,
+       "National Park Service (NPS)"
+      ],
+      [
+       9,
+       "US Forest Service (USFS)"
+      ],
+      [
+       10,
+       "US Fish and Wildlife (USFW)"
+      ]
+     ],
+     "service_name": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The Surface Management Agency (SMA) covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency’s surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data does not illustrate land status ownership pattern boundaries or contain land ownership attribute details."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis.blm.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)",
+   "queue_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer",
+   "requests_used": 18,
+   "sig": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer|BLM National Surface Management Agency|||ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner BLM_CO_Public)|",
+   "terms": {
+    "about": "This is Service displays a Map Cache without the Private Unknown feature for the Bureau of Land Management (BLM) Surface Management Agency (SMA) Geographic Information System (GIS) dataset. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the U",
+    "class": "OPEN",
+    "credit": "BLM Energy, Minerals & Realty Management, Headquarters (HQ)",
+    "item_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/info/iteminfo",
+    "licence_text": "PUBLIC. BLM. These data are considered public domain.  These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file as",
+    "line": "PUBLIC. BLM. These data are considered public domain. These data are provided by Bureau of Land Management (BLM) “as is” and might contain err",
+    "source": "item page",
+    "title": "BLM_Natl_SMA_Cached_without_PriUnk"
+   },
+   "test": "",
+   "title": "BLM National Surface Management Agency",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer/10",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "same publisher as hab",
+   "probe": {
+    "copyright": "U.S. Department of the Interior, Bureau of Land Management (BLM), California State Office",
+    "count": 53342,
+    "description": "This layer is also updated whenever BLM is notified that Lands have been acquired by other Federal Agencies. For additional information regarding an acquisition search the Bureau's LR2000 system. The LND_SurfaceEstate data is edited and maintained in a single polygon feature class. Whenever possible, BLM lands are constructed from the Public Land Survey System (PLSS), also available to the public ",
+    "extent": [
+     -374670.555,
+     -604492.733,
+     540015.413,
+     450520.098,
+     3310
+    ],
+    "fields": [
+     "OBJECTID",
+     "SMA_ID",
+     "Rock_ID",
+     "HOLD_ID",
+     "CA_STATE_ID",
+     "GlobalID",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "BLM CA Land Status and Surface Management Agency",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       0,
+       "BLM CA Land Status and Surface Management Agency"
+      ]
+     ],
+     "service_name": "The SMA implementation is comprised of one feature dataset, with several polygon feature classes, rather than a single feature class. SurfaceManagementAgency: The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details. This layer is also updated whenever BLM is notified that Lands have been acquired by other Federal Agencies. For additional information regarding an acquisition search the Bureau's LR2000 system: The LND_SurfaceEstate data is edited and maintained in a single polygon feature class. Whenever possible, BLM lands are constructed from the Public Land Survey System (PLSS), also available to the public (PublicLandSurvey.gdb). Alignment of BLM data with the PLSS is a continual process, as the accuracy and density of PLSS data continues to improve and develop. Issues of misalignment with the PLSS are more common with non-BLM management areas. These discrepancies are being addressed at the BLM California State office based on U.S. Department of Interior priorities throughout the State of California."
+    },
+    "service_item": "df9383221e024b48b71d7e70d0f5004c"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host gis.blm.gov"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner blm_arcgis_hub_ca)",
+   "queue_url": "https://gis.blm.gov/caarcgis/rest/services/lands/BLM_CA_LandStatus_SurfaceManagementAgency/FeatureServer",
+   "requests_used": 6,
+   "sig": "https://gis.blm.gov/caarcgis/rest/services/lands/BLM_CA_LandStatus_SurfaceManagementAgency/FeatureServer|BLM CA Land Status Surface Management Agency|||ArcGIS Online search for Agency Creek Recreation Site BLM Recreation Management Area (owner blm_arcgis_hub_ca)|",
+   "terms": {
+    "about": "The SMA implementation is comprised of one feature dataset, with several polygon feature classes, rather than a single feature class. SurfaceManagementAgency: The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies thi",
+    "class": "CREDIT",
+    "credit": "U.S. Department of the Interior, Bureau of Land Management (BLM), California State Office",
+    "item_url": "https://gis.blm.gov/caarcgis/rest/services/lands/BLM_CA_LandStatus_SurfaceManagementAgency/FeatureServer/info/iteminfo",
+    "licence_text": "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User's intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal ",
+    "line": "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a",
+    "source": "item page",
+    "title": "BLM_CA_LandStatus_SurfaceManagementAgency"
+   },
+   "test": "",
+   "title": "BLM CA Land Status Surface Management Agency",
+   "url": "https://gis.blm.gov/caarcgis/rest/services/lands/BLM_CA_LandStatus_SurfaceManagementAgency/FeatureServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 0,
+    "missing_in_area": 0,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 0
+   },
+   "flag": "water only: for the 2-fer owner step only",
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": null,
+    "description": "",
+    "extent": [
+     -11111690.021,
+     4958104.755,
+     -10910702.339,
+     5024593.794,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "Shape",
+     "Raster",
+     "Name",
+     "Shape_Length",
+     "Shape_Area"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "cp1963",
+    "name_field": "Name",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 2,
+     "polygon_layers": [
+      [
+       0,
+       "cp1963"
+      ],
+      [
+       1,
+       "cp1963_metadata"
+      ]
+     ],
+     "service_name": "In an effort to more broadly disseminate the geospatial information funded by its partners, the Rainwater Basin Joint Venture (RWBJV) compiled these datasets from the public domain or with permission to distribute from the partner organization which owns the data property rights.  Collaborating RWBJV partners for the Platte River Image Library include the Central Platte Natural Resource District and the Platte River Recovery Implementation Program and also uses public domain data from the U.S. Department of Agriculture, U.S. Department of Interior, and the Government Land Office (Bureau of Land Management).  The RWBJV georeferenced and color-balanced many of the older U.S. Department of Interior and U.S. Department of Agriculture single framed images."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "a federal / national agency named"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Central Memorial Library and Park National Historic Site (owner roger_grosse@fws.gov_fws)",
+   "queue_url": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1963/MapServer",
+   "requests_used": 6,
+   "sig": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1963/MapServer|FWS R6 RWBJV Central Platte River Image Library 1963|||ArcGIS Online search for Central Memorial Library and Park National Historic Site (owner roger_grosse@fws.gov_fws)|",
+   "terms": {
+    "access": "public",
+    "class": "CREDIT",
+    "credit": "Rainwater Basin Joint Venture, Central Platte Natural Resource District, Platte River Recovery Implementation Program, U.S. Department of Interior, and U.S. Department of Agriculture",
+    "item_url": "https://www.arcgis.com/home/item.html?id=74920b463754404abfffe8d74e237d94",
+    "licence_text": "None. Acknowledgement of the Rainwater Basin Joint Venture, Platte River Recovery Implementation Program, and Central Platte Natural Resource District is appreciated.",
+    "line": "None. Acknowledgement of the Rainwater Basin Joint Venture, Platte River Recovery Implementation Program, and C",
+    "modified": "2016-06-20",
+    "org_id": "QVENGdaPbd4LUkLV",
+    "org_name": "U.S. Fish & Wildlife Service",
+    "org_url": "fws",
+    "owner": "roger_grosse@fws.gov_fws",
+    "source": "item page",
+    "tags": [
+     "Aerial Imagery",
+     "Central Platte River Image Library",
+     "CPNRD",
+     "Nebraska",
+     "Platte River",
+     "PRRIP",
+     "Remote Sensing",
+     "Rivers",
+     "RWBJV"
+    ],
+    "title": "FWS R6 RWBJV Central Platte River Image Library 1963"
+   },
+   "test": "",
+   "title": "FWS R6 RWBJV Central Platte River Image Library 1963",
+   "url": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1963/MapServer/0",
+   "ver": 1,
+   "verdict": "WATER-ONLY",
+   "why": "water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 0,
+    "missing_in_area": 0,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 0
+   },
+   "flag": "water only: for the 2-fer owner step only",
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": null,
+    "description": "",
+    "extent": [
+     -11111689.507,
+     4958104.832,
+     -10910702.472,
+     5024593.25,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "Shape",
+     "Id",
+     "Name",
+     "Image_Date",
+     "Source",
+     "Shape_Length",
+     "Shape_Area"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "cp1963_metadata",
+    "name_field": "Name",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 2,
+     "polygon_layers": [
+      [
+       0,
+       "cp1963"
+      ],
+      [
+       1,
+       "cp1963_metadata"
+      ]
+     ],
+     "service_name": "In an effort to more broadly disseminate the geospatial information funded by its partners, the Rainwater Basin Joint Venture (RWBJV) compiled these datasets from the public domain or with permission to distribute from the partner organization which owns the data property rights.  Collaborating RWBJV partners for the Platte River Image Library include the Central Platte Natural Resource District and the Platte River Recovery Implementation Program and also uses public domain data from the U.S. Department of Agriculture, U.S. Department of Interior, and the Government Land Office (Bureau of Land Management).  The RWBJV georeferenced and color-balanced many of the older U.S. Department of Interior and U.S. Department of Agriculture single framed images."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "a federal / national agency named"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Central Memorial Library and Park National Historic Site (owner roger_grosse@fws.gov_fws)",
+   "queue_url": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1963/MapServer",
+   "requests_used": 9,
+   "sig": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1963/MapServer|FWS R6 RWBJV Central Platte River Image Library 1963|||ArcGIS Online search for Central Memorial Library and Park National Historic Site (owner roger_grosse@fws.gov_fws)|",
+   "terms": {
+    "access": "public",
+    "class": "CREDIT",
+    "credit": "Rainwater Basin Joint Venture, Central Platte Natural Resource District, Platte River Recovery Implementation Program, U.S. Department of Interior, and U.S. Department of Agriculture",
+    "item_url": "https://www.arcgis.com/home/item.html?id=74920b463754404abfffe8d74e237d94",
+    "licence_text": "None. Acknowledgement of the Rainwater Basin Joint Venture, Platte River Recovery Implementation Program, and Central Platte Natural Resource District is appreciated.",
+    "line": "None. Acknowledgement of the Rainwater Basin Joint Venture, Platte River Recovery Implementation Program, and C",
+    "modified": "2016-06-20",
+    "org_id": "QVENGdaPbd4LUkLV",
+    "org_name": "U.S. Fish & Wildlife Service",
+    "org_url": "fws",
+    "owner": "roger_grosse@fws.gov_fws",
+    "source": "item page",
+    "tags": [
+     "Aerial Imagery",
+     "Central Platte River Image Library",
+     "CPNRD",
+     "Nebraska",
+     "Platte River",
+     "PRRIP",
+     "Remote Sensing",
+     "Rivers",
+     "RWBJV"
+    ],
+    "title": "FWS R6 RWBJV Central Platte River Image Library 1963"
+   },
+   "test": "",
+   "title": "FWS R6 RWBJV Central Platte River Image Library 1963",
+   "url": "https://tiles.arcgis.com/tiles/QVENGdaPbd4LUkLV/arcgis/rest/services/Central_Platte_River_Image_Library_1963/MapServer/1",
+   "ver": 1,
+   "verdict": "WATER-ONLY",
+   "why": "water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "same publisher as BC recreatio",
+   "probe": {
+    "copyright": "",
+    "count": 93968,
+    "description": "Feature class name is 'REG_LAND_AND_NATURAL_RESOURCE.NON_PRODUCTIVE_FOREST_CAR_POLY'. See metadata: https://catalogue.data.gov.bc.ca/dataset/8f0eabe0-f424-4062-ade1-cb4368c81b3a",
+    "extent": [
+     986512.875,
+     645220.688,
+     1403253.375,
+     951898.688,
+     3005
+    ],
+    "fields": [
+     "X_NPCD",
+     "FEATURE_AREA_SQM",
+     "FEATURE_LENGTH_M",
+     "GEOMETRY",
+     "OBJECTID",
+     "GEOMETRY.AREA",
+     "GEOMETRY.LEN"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Non-Productive Forest for the Cariboo Region",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host maps.gov.bc.ca"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Cariboo Park (owner Province.Of.British.Columbia)",
+   "queue_url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/20",
+   "requests_used": 3,
+   "sig": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/20|Non-Productive Forest for the Cariboo Region|||ArcGIS Online search for Cariboo Park (owner Province.Of.British.Columbia)|",
+   "terms": {
+    "about": "This service has been built for a specific purpose and may change at any time Map Service Courtesy of DataBC",
+    "class": "CREDIT",
+    "credit": "© 2024 Government of British Columbia",
+    "item_url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/info/iteminfo",
+    "licence_text": "access information?",
+    "line": "access information? © 2024 Government of British Columbia",
+    "source": "item page",
+    "title": "bcgw_pub_reg_land_and_natural_resource"
+   },
+   "test": "",
+   "title": "Non-Productive Forest for the Cariboo Region",
+   "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/20",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "same publisher as BC recreatio",
+   "probe": {
+    "copyright": "",
+    "count": 345,
+    "description": "Feature class name is 'REG_LAND_AND_NATURAL_RESOURCE.FISH_PREDICTED_SPAWNING_CAR_SP'. See metadata: https://catalogue.data.gov.bc.ca/dataset/8aca41a5-97c0-4b3c-939d-4622533a4fb6",
+    "extent": [
+     1027845.625,
+     676795.125,
+     1393202.25,
+     943308.125,
+     3005
+    ],
+    "fields": [
+     "PREDICTED_SPAWNING_CAR_ID",
+     "SPAWN_SEASON",
+     "ELEVATION",
+     "GEOMETRY",
+     "OBJECTID",
+     "GEOMETRY.AREA",
+     "GEOMETRY.LEN",
+     "FEATURE_AREA_SQM",
+     "FEATURE_LENGTH_M"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Predicted Spawning Periods for Reduced Risk Work Windows for Quesnel and Central Cariboo Districts",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service_item": ""
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "government host maps.gov.bc.ca"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Cariboo Park (owner Province.Of.British.Columbia)",
+   "queue_url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/6",
+   "requests_used": 3,
+   "sig": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/6|Predicted Spawning Periods for Reduced Risk Work Windows for Quesnel and Central Cariboo Districts|||ArcGIS Online search for Cariboo Park (owner Province.Of.British.Columbia)|",
+   "terms": {
+    "about": "This service has been built for a specific purpose and may change at any time Map Service Courtesy of DataBC",
+    "class": "CREDIT",
+    "credit": "© 2024 Government of British Columbia",
+    "item_url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/info/iteminfo",
+    "licence_text": "access information?",
+    "line": "access information? © 2024 Government of British Columbia",
+    "source": "item page",
+    "title": "bcgw_pub_reg_land_and_natural_resource"
+   },
+   "test": "",
+   "title": "Predicted Spawning Periods for Reduced Risk Work Windows for Quesnel and Central Cariboo Districts",
+   "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/6",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "",
+   "closes": "not probed",
+   "from": "gis-hunter",
+   "overlap": "",
+   "probe": {
+    "copyright": "USDA Forest Service Forest Health Protection and Alaska Division of Forestry and Fire Protection",
+    "count": 22399,
+    "description": "&lt;div style=\"text-align:Left;\"&gt;&lt;div&gt;&lt;div&gt;&lt;p style=\"margin:0 0 11 0;\"&gt;&lt;span&gt;This dataset represents yellow-cedar decline mapped across Southeast Alaska 1986-2024 by aerial detection surveys and three remote sensing efforts in 2004, 2006, and 2020. &lt;/span&gt;&lt;span&gt;&lt;span&gt;The &lt;/span&gt;&lt;/span&gt;&lt;span style=\"font-weight:bold;\"&gt;&lt;span&gt;survey ",
+    "extent": [
+     958887.793,
+     735490.91,
+     1491519.228,
+     1094337.375,
+     3338
+    ],
+    "fields": [
+     "OBJECTID",
+     "Acres",
+     "Severity",
+     "Severity2",
+     "DeclineType",
+     "Method",
+     "SurveyYears",
+     "SurveyType",
+     "Shape__Area",
+     "Shape__Length",
+     "GlobalID"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2026-07-13",
+    "layer_name": "Yellow-Cedar Decline 1986 to 2024 - Annual",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       0,
+       "Yellow-Cedar Decline 1986 to 2024 - Annual"
+      ]
+     ],
+     "service_name": "This dataset represents yellow-cedar decline mapped across Southeast Alaska from the mid-1980s through 2024 by aerial detection survey (ADS), as well as two projects to map decline from aerial photos and one effort to map decline using high-resolution satellite imagery. ADS is conducted jointly by the Alaska Division of Forestry & Fire Protection and USDA Forest Service - Forest Health Protection to document insect, disease, and abiotic damage as part of a forest health monitoring program. This dataset contains information about the year of detection, the type of decline mapped (active or older tree mortality), the method of mapping (aerial survey or other efforts), and the severity of decline (as available). This cumulative yellow-cedar decline layer was clipped/restricted to areas occurring within upland forest and forested wetland cover classes in the USGS National Land Cover Database-modified dataset. A significant refinement of decline extent took place in 1996, and was used to restrict decline polygons mapped prior to the refinement such that the older errors were not reincorporated into the final dataset. This dataset has used the Append tool to bring together data, making it easy to filter based on the year or method of detection (or other fields provided). It is important to note that summing the acreage in this dataset would double-count decline areas that were mapped across multiple years. Accounting for decline overlap across time and survey efforts, there is a total extent of 728,000 acres of yellow-cedar decline in this dataset. A companion cumualtive yellow-cedar decline dataset accounts for overlap in mapped decline and may be preferred for decline quantification."
+    },
+    "service_item": "afbeaf993e654d60a01569fa5a16d200"
+   },
+   "probed": "2026-10-30",
+   "publisher": "",
+   "publisher_test": [
+    "official",
+    "a federal / national agency named"
+   ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Cedar Creek Park Conservation Area (owner ForestHealthAlaskaRegion)",
+   "queue_url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Cumulative_Yellow_Cedar_Decline_Append_1980s_to_2024/FeatureServer",
+   "requests_used": 5,
+   "sig": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Cumulative_Yellow_Cedar_Decline_Append_1980s_to_2024/FeatureServer|Yellow-Cedar Decline 1986 to 2024 - Annual|||ArcGIS Online search for Cedar Creek Park Conservation Area (owner ForestHealthAlaskaRegion)|",
+   "terms": {
+    "access": "public",
+    "class": "CREDIT",
+    "credit": "USDA Forest Service Forest Health Protection and Alaska Division of Forestry and Fire Protection",
+    "item_url": "https://www.arcgis.com/home/item.html?id=afbeaf993e654d60a01569fa5a16d200",
+    "licence_text": "   LAYER CITATION:     Title: Yellow-Cedar Decline 1986 to 2024- Annual URL:    https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Cumulative_Yellow_Cedar_Decline_Append_1980s_to_2024/FeatureServer/0    .     Created: March 18, 2025.  Credit: USDA Forest Service Forest Health Protection and Alaska Division of Forestry &amp; Fire Protection. Published by ForestHealthAlaskaRegion.    Data Disclaimer:   The USDA Forest Service makes no warranty, expressed or implied, including the warranties of merchantability and fitness for a particular purpose, and assumes no legal liability or responsibility for the accuracy, reliability, completeness or utility of these geospatial data, or for the improper or incorrect use of these geospatial data. These geospatial data and related maps o",
+    "line": "LAYER CITATION: Title: Yellow-Cedar Decline 1986 to 2024- Annual URL: https://services1.arcgis.com/gGHDl",
+    "modified": "2025-06-04",
+    "org_id": "gGHDlz6USftL5Pau",
+    "org_name": "U.S. Forest Service",
+    "org_url": "usfs",
+    "owner": "ForestHealthAlaskaRegion",
+    "source": "item page",
+    "tags": [
+     "Yellow-cedar decline",
+     "Cumulative",
+     "Aerial Detection Survey",
+     "Region 10",
+     "Alaska Region",
+     "Forest Health Protection",
+     "USDA-Forest Service"
+    ],
+    "title": "Yellow-Cedar Decline 1986 to 2024 - Annual"
+   },
+   "test": "",
+   "title": "Yellow-Cedar Decline 1986 to 2024 - Annual",
+   "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Cumulative_Yellow_Cedar_Decline_Append_1980s_to_2024/FeatureServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
   }
  ],
  "updated": "2026-10-30"
