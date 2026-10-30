@@ -1,8 +1,8 @@
 {
  "about": "World harvester leads for Slovakia (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "SK",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-30",
+ "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
  "steps_done": [
   "known",
   "servers",
@@ -18,7 +18,38 @@
   "B": 0,
   "C": 0
  },
+ "failures": [
+  {
+   "catalog": "https://data.gov.sk",
+   "keyword": "národný park",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "catalog": "https://data.gov.sk",
+   "keyword": "chránená krajinná oblasť",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "catalog": "https://data.gov.sk",
+   "keyword": "prírodná rezervácia",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "catalog": "https://data.gov.sk",
+   "keyword": "chránené územie",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  }
+ ],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    1
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [],
+ "known_log": [],
  "leads": {}
 }

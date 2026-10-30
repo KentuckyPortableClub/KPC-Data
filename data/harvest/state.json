@@ -311,11 +311,12 @@
   },
   "PL": {
    "status": "done",
-   "started": "2026-10-29",
+   "started": "2026-10-30",
    "done": [
     "http://mapy.geoportal.gov.pl/wss/service/ATOM/httpauth/atom/PS",
     "https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL_kat_wlasnosci/MapServer/WMSServer",
     "https://ogcapi.bdl.lasy.gov.pl",
+    "https://sdi.gdos.gov.pl/wfs",
     "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows"
    ],
    "log": [
@@ -350,79 +351,8 @@
      "what": "https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL_kat_wlasnosci/MapServer/WMSServer: 0 feature types, 0 look like park layers"
     },
     {
-     "catalog": "https://api.dane.gov.pl/1.4",
-     "keyword": "park narodowy",
-     "hits": 30,
-     "services_read": 0,
-     "downloads_listed": 0
-    },
-    {
-     "catalog": "https://api.dane.gov.pl/1.4",
-     "keyword": "park krajobrazowy",
-     "hits": 30,
-     "services_read": 0,
-     "downloads_listed": 0
-    },
-    {
-     "catalog": "https://api.dane.gov.pl/1.4",
-     "keyword": "rezerwat przyrody",
-     "hits": 30,
-     "services_read": 0,
-     "downloads_listed": 0
-    },
-    {
-     "catalog": "https://api.dane.gov.pl/1.4",
-     "keyword": "formy ochrony przyrody",
-     "hits": 30,
-     "services_read": 0,
-     "downloads_listed": 0
-    },
-    {
-     "agol": "park narodowy",
-     "hits": 2,
-     "read": 0
-    },
-    {
-     "agol": "park krajobrazowy",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "rezerwat przyrody",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "formy ochrony przyrody",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "obszar chroniony",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "step": "known",
-     "what": "https://ogcapi.bdl.lasy.gov.pl: 20 OGC API collections, 20 look like park layers"
-    },
-    {
-     "step": "known",
-     "what": "https://ogcapi.bdl.lasy.gov.pl",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows: 20 feature types, 20 look like park layers"
-    },
-    {
-     "step": "known",
-     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows",
-     "found": true
-    },
-    {
-     "step": "server",
-     "what": "https://powietrze.gios.gov.pl/arcgis/rest/services: HTTP 404"
+     "step": "wfs",
+     "what": "https://sdi.gdos.gov.pl/wfs: HTTP 403"
     },
     {
      "catalog": "https://api.dane.gov.pl/1.4",
@@ -447,7 +377,7 @@
     },
     {
      "catalog": "https://api.dane.gov.pl/1.4",
-     "keyword": "formy ochrony przyrody",
+     "keyword": "obszar chronionego krajobrazu",
      "hits": 30,
      "services_read": 0,
      "downloads_listed": 0
@@ -455,27 +385,48 @@
     {
      "agol": "park narodowy",
      "hits": 2,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
     },
     {
      "agol": "park krajobrazowy",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "rezerwat przyrody",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "obszar chronionego krajobrazu",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "Natura 2000",
+     "hits": 7,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       7
+      ]
+     ]
     },
     {
      "agol": "formy ochrony przyrody",
      "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "obszar chroniony",
-     "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     }
    ],
    "steps": [
@@ -488,8 +439,7 @@
     "search",
     "eea"
    ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+   "finished": "2026-10-30"
   },
   "AU": {
    "status": "paused (out of time, will carry on)",
@@ -839,53 +789,98 @@
   },
   "IT": {
    "status": "done",
-   "started": "2026-10-28",
-   "done": [],
+   "started": "2026-10-30",
+   "done": [
+    "http://servizigis.regione.emilia-romagna.it/wfs/carta_della_vegetazione?service=WFS&version=2.0.0&request=GetCapabilities",
+    "http://servizigis.regione.emilia-romagna.it/wfs/rete_escursionistica?service=WFS&version=2.0.0&request=GetCapabilities",
+    "https://dati.lazio.it/geoserver/areaumidamuraglioni/wms?service=WMS&version=1.1.0&request=GetCapabilities",
+    "https://dati.lazio.it/geoserver/fontanili/wms?service=WMS&version=1.1.0&request=GetCapabilities",
+    "https://dati.lazio.it/geoserver/lacioni/wms?service=WMS&version=1.1.0&request=GetCapabilities",
+    "https://dati.lazio.it/geoserver/limiteriservalamone/wms?service=WMS&version=1.1.0&request=GetCapabilities",
+    "https://geoservices1.civis.bz.it/geoserver/p_bz-TerritorialPlans/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+    "https://geoservices1.civis.bz.it/geoserver/p_bz-TerritorialPlans/wms?",
+    "https://gn.mase.gov.it/portale/servizio-wfs",
+    "https://parcodellamaremma.ldpgis.it/services/confine_parco_r1/wfs",
+    "https://sit.comune.fe.it/geoserverckan/Ferrara/Aree_di_riequilibrio_ecologico_PUG_preview/wms?service=WMS&version=1.3.0&request=GetCapabilities"
+   ],
    "log": [
+    {
+     "step": "wfs",
+     "what": "https://gn.mase.gov.it/portale/servizio-wfs: HTTP 404"
+    },
     {
      "catalog": "https://www.dati.gov.it/opendata",
      "keyword": "parco nazionale",
-     "error": "HTTP 400"
+     "hits": 30,
+     "services_read": 3,
+     "downloads_listed": 5
     },
     {
      "catalog": "https://www.dati.gov.it/opendata",
      "keyword": "parco regionale",
-     "error": "HTTP 400"
+     "hits": 30,
+     "services_read": 1,
+     "downloads_listed": 0
     },
     {
      "catalog": "https://www.dati.gov.it/opendata",
      "keyword": "riserva naturale",
-     "error": "HTTP 400"
+     "hits": 30,
+     "services_read": 5,
+     "downloads_listed": 1
     },
     {
      "catalog": "https://www.dati.gov.it/opendata",
      "keyword": "area protetta",
-     "error": "HTTP 400"
+     "hits": 30,
+     "services_read": 1,
+     "downloads_listed": 1
     },
     {
      "agol": "parco nazionale",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "parco regionale",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "riserva naturale",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "area protetta",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "EUAP",
+     "hits": 3,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       3
+      ]
+     ]
     },
     {
      "agol": "aree protette",
      "hits": 5,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       5
+      ]
+     ]
     }
    ],
    "steps": [
@@ -898,7 +893,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   },
   "NO": {
    "status": "paused (out of time, will carry on)",
@@ -943,18 +938,25 @@
   },
   "NL": {
    "status": "done",
-   "started": "2026-10-29",
+   "started": "2026-10-30",
    "done": [
     "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
     "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
     "https://geo.rijkswaterstaat.nl/arcgis/rest/services/GDR/nwp_natura2000/FeatureServer",
     "https://geo.rijkswaterstaat.nl/arcgis/rest/services/GDR/nwp_natura2000/MapServer",
+    "https://geo.rijkswaterstaat.nl/services/ogc/gdr/nnn_begrenzing_rijkswateren/ows?service=WMS&request=getcapabilities&version=1.3.0",
     "https://geo.rijkswaterstaat.nl/services/ogc/gdr/nwp_pnz_natuurgebieden_noordzee/ows?service=WMS&request=getcapabilities&version=1.3.0",
     "https://geo2.flevoland.nl/geoserver/Extern/wms?request=GetCapabilities",
     "https://geodata.nationaalgeoregister.nl/nationaleparken/ows?LAYERS=nationaleparken&TRANSPARENT=true&FORMAT=image%2Fpng&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A28992&BBOX=-280456,309568.96,586585.28,646966.72&WIDTH=2016&HEIGHT=784",
     "https://geodata.nationaalgeoregister.nl/natura2000/ows?LAYERS=natura2000&TRANSPARENT=true&FORMAT=image%2Fpng&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A28992&BBOX=-338301.76,121946.56,639700.16,888349.12&WIDTH=284&HEIGHT=223",
+    "https://geoportaal.fryslan.nl/arcgis/services/ProvinciaalGeoRegister/PGR2/MapServer/WFSServer",
+    "https://geoportaal.fryslan.nl/arcgis/services/ProvinciaalGeoRegister/PGR2/MapServer/WMSServer",
+    "https://geoserver.gelderland.nl/geoserver/ngr_verordening/wms?service=WMS&request=GetCapabilities",
+    "https://geoserver.gelderland.nl/geoserver/ngr_visie/wms?service=WMS&request=GetCapabilities",
     "https://geoservices.noord-holland.nl/ags/services/oi_dataservice_alg/MapServer/WFSServer",
     "https://geoservices.noord-holland.nl/ags/services/oi_dataservice_alg/MapServer/WMSServer",
+    "https://geoservices.noord-holland.nl/ags/services/oi_dataservice_povnh2020/MapServer/WFSServer",
+    "https://geoservices.noord-holland.nl/ags/services/oi_dataservice_povnh2020/MapServer/WMSServer",
     "https://geoservices.portaalnatuurenlandschap.nl/geoserver/IMNa_CAT1/wms?request=GetCapabilities",
     "https://geoservices.provinciegroningen.nl/server/services/BasisdataGroningen/Omgevingsvisie/MapServer/WFSServer",
     "https://geoservices.provinciegroningen.nl/server/services/BasisdataGroningen/Omgevingsvisie/MapServer/WMSServer",
@@ -965,7 +967,6 @@
     "https://geoservices.provinciegroningen.nl/server/services/LandelijkGebied/Landschap/MapServer/WFSServer",
     "https://geoservices.provinciegroningen.nl/server/services/LandelijkGebied/Landschap/MapServer/WmsServer",
     "https://geoservices.zuid-holland.nl/arcgis/rest/services/Energie/Energie_MER_Energietransitie_2022/MapServer",
-    "https://geoservices.zuid-holland.nl/arcgis/rest/services/Energie/Energie_ruimtevragers_energietransitie/MapServer",
     "https://geoservices.zuid-holland.nl/arcgis/rest/services/Grenzen/Grenzen/MapServer",
     "https://geoservices.zuid-holland.nl/arcgis/rest/services/Landelijk_gebied/Landelijk_gebied_algemeen/MapServer",
     "https://geoservices.zuid-holland.nl/arcgis/rest/services/Landelijk_gebied/Landelijk_gebied_stikstof/MapServer",
@@ -977,12 +978,10 @@
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_AOV18_K2C_K4_K5_NAT_PARKEN_V/MapServer/WMSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_IKN_NATIONALEPARKEN_V/MapServer/WFSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_IKN_NATIONALEPARKEN_V/MapServer/WMSServer",
+    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_IKN_NNN_2022_V/MapServer/WFSServer",
+    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_IKN_NNN_2022_V/MapServer/WMSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_LNDSCHP_NATPARK_DRAA_V/MapServer/WFSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_LNDSCHP_NATPARK_DRAA_V/MapServer/WMSServer",
-    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_BEREGENINGSPUT_V/MapServer/WFSServer",
-    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_BEREGENINGSPUT_V/MapServer/WMSServer",
-    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_DRAIN_PERC_V/MapServer/WFSServer",
-    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_DRAIN_PERC_V/MapServer/WMSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_ONDERZOEKSZONE_V/MapServer/WFSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_ONDERZOEKSZONE_V/MapServer/WMSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_RICHTLIJNSOORTEN_N2000_V/MapServer/WFSServer",
@@ -998,110 +997,16 @@
     "https://opengeodata.zeeland.nl/geoserver/wbn/wms?request=GetCapabilities",
     "https://opengeodata.zeeland.nl/geoserver/wbn_geo/wms?service=WMS&version=1.1.0&request=GetCapabilities",
     "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer",
-    "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Natuurgebieden_Noordzee/FeatureServer",
     "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Overzichtskaart_Waterbeleid_uitvoering_WFL1/FeatureServer",
-    "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Structuurvisiekaart_Noordzee/FeatureServer",
-    "https://services-eu1.arcgis.com/YcscSJ1XstO6iVhP/arcgis/rest/services/Eigendom_Natuurmonumenten_d1ea7/FeatureServer",
     "https://services.geodata-utrecht.nl/geoserver/n01_2_2_natuur_beleid/wfs",
     "https://services.geodata-utrecht.nl/geoserver/n01_2_natuur_landschap/wfs",
     "https://services.geodata-utrecht.nl/geoserver/v01_1_1_1_Openbaar_vervoer/wfs",
     "https://services.geodataoverijssel.nl/geoserver/B03_projectgrenzen/wfs",
-    "https://services.geodataoverijssel.nl/geoserver/B34_beheer_grondwater/wfs",
     "https://services.geodataoverijssel.nl/geoserver/B46_natuur_en_landschap/wfs",
     "https://servicespub.risicokaart.nl/geoserver/ISOR_RK/wms",
     "https://servicespub.risicokaart.nl/geoserver/ISOR_RK/wms?service=WMS&request=GetCapabilities"
    ],
    "log": [
-    {
-     "step": "known",
-     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 1 OGC API collections, 1 look like park layers"
-    },
-    {
-     "step": "known",
-     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 1 OGC API collections, 1 look like park layers"
-    },
-    {
-     "step": "known",
-     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
-     "found": true
-    },
-    {
-     "catalog": "https://data.overheid.nl/data",
-     "keyword": "nationaal park",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.overheid.nl/data",
-     "keyword": "natuurgebied",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.overheid.nl/data",
-     "keyword": "natura 2000",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.overheid.nl/data",
-     "keyword": "natuurmonument",
-     "error": "HTTP 400"
-    },
-    {
-     "agol": "nationaal park",
-     "hits": 5,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       5
-      ]
-     ]
-    },
-    {
-     "agol": "natuurgebied",
-     "hits": 19,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       17
-      ],
-      [
-       "Esri Nederland",
-       2
-      ]
-     ]
-    },
-    {
-     "agol": "natura 2000",
-     "hits": 50,
-     "read": 2,
-     "rejected_orgs": [
-      [
-       "?",
-       48
-      ]
-     ]
-    },
-    {
-     "agol": "natuurmonument",
-     "hits": 16,
-     "read": 2,
-     "rejected_orgs": [
-      [
-       "?",
-       11
-      ],
-      [
-       "Gemeente Hilversum",
-       1
-      ]
-     ]
-    },
     {
      "step": "known",
      "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 1 OGC API collections, 1 look like park layers"
@@ -1129,23 +1034,23 @@
     },
     {
      "catalog": "https://data.overheid.nl/data",
+     "keyword": "Natura 2000",
+     "hits": 30,
+     "services_read": 5,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://data.overheid.nl/data",
      "keyword": "natuurgebied",
      "hits": 30,
-     "services_read": 9,
+     "services_read": 7,
      "downloads_listed": 0
     },
     {
      "catalog": "https://data.overheid.nl/data",
-     "keyword": "natura 2000",
+     "keyword": "natuurnetwerk",
      "hits": 30,
      "services_read": 3,
-     "downloads_listed": 0
-    },
-    {
-     "catalog": "https://data.overheid.nl/data",
-     "keyword": "natuurmonument",
-     "hits": 22,
-     "services_read": 2,
      "downloads_listed": 0
     },
     {
@@ -1156,6 +1061,17 @@
       [
        "?",
        5
+      ]
+     ]
+    },
+    {
+     "agol": "Natura 2000",
+     "hits": 50,
+     "read": 2,
+     "rejected_orgs": [
+      [
+       "?",
+       48
       ]
      ]
     },
@@ -1175,6 +1091,28 @@
      ]
     },
     {
+     "agol": "natuurnetwerk",
+     "hits": 50,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       50
+      ]
+     ]
+    },
+    {
+     "agol": "Staatsbosbeheer",
+     "hits": 3,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       3
+      ]
+     ]
+    },
+    {
      "agol": "natura 2000",
      "hits": 50,
      "read": 0,
@@ -1182,17 +1120,6 @@
       [
        "?",
        48
-      ]
-     ]
-    },
-    {
-     "agol": "natuurmonument",
-     "hits": 16,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       11
       ]
      ]
     }
@@ -1207,8 +1134,7 @@
     "search",
     "eea"
    ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+   "finished": "2026-10-30"
   },
   "CH": {
    "status": "done",
@@ -1698,7 +1624,7 @@
   },
   "SE": {
    "status": "done",
-   "started": "2026-10-29",
+   "started": "2026-10-30",
    "done": [
     "https://geodata.naturvardsverket.se/andra_skydd/wms",
     "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
@@ -1733,60 +1659,68 @@
     {
      "agol": "nationalpark",
      "hits": 50,
-     "read": 4
+     "read": 4,
+     "rejected_orgs": [
+      [
+       "?",
+       42
+      ]
+     ]
     },
     {
      "agol": "naturreservat",
      "hits": 50,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       42
+      ]
+     ]
+    },
+    {
+     "agol": "Natura 2000",
+     "hits": 50,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       42
+      ]
+     ]
+    },
+    {
+     "agol": "naturvårdsområde",
+     "hits": 43,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       35
+      ]
+     ]
+    },
+    {
+     "agol": "biotopskydd",
+     "hits": 2,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
     },
     {
      "agol": "skyddad natur",
      "hits": 2,
-     "read": 0
-    },
-    {
-     "agol": "naturvårdsregistret",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "step": "known",
-     "what": "https://geodata.naturvardsverket.se/andra_skydd/wms: 0 feature types, 0 look like park layers"
-    },
-    {
-     "step": "known",
-     "what": "https://geodata.naturvardsverket.se/andra_skydd/wms",
-     "found": false
-    },
-    {
-     "step": "known",
-     "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs: 2 feature types, 2 look like park layers"
-    },
-    {
-     "step": "known",
-     "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
-     "found": true
-    },
-    {
-     "agol": "nationalpark",
-     "hits": 50,
-     "read": 0
-    },
-    {
-     "agol": "naturreservat",
-     "hits": 50,
-     "read": 0
-    },
-    {
-     "agol": "skyddad natur",
-     "hits": 2,
-     "read": 0
-    },
-    {
-     "agol": "naturvårdsregistret",
-     "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
     }
    ],
    "steps": [
@@ -1799,8 +1733,7 @@
     "search",
     "eea"
    ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+   "finished": "2026-10-30"
   },
   "SI": {
    "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
@@ -2269,44 +2202,14 @@
    "finished": "2026-10-28"
   },
   "IE": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "paused (out of time, will carry on)",
+   "started": "2026-10-30",
    "done": [
-    "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Potential_Special_Protection_Areas_England/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(August_2026)_for_the_United_Kingdom_(Hosted_Table)/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(May_2026)_for_the_United_Kingdom/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONSPD_AUG_2025_UK/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONSPD_NOV_2025_UK/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONS_Postcode_Directory_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Access_App_Forest_Entrances/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/COILLTE_FELLING_LICENCES/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_2021_BeeKeeper_Consultation/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Biodiversity_Area/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Biodiversity_Areas/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Forest_Road_Dataset/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Harvest_Units/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Life_and_Millennium_Sites/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Wind_Damage_Assessment/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Consultation_Clearfell_2019/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Consultation_Thinnings_2019/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Mountain_Bike_Pole_Emergency_Locations/FeatureServer",
-    "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer",
-    "https://utility.arcgis.com/usrsvcs/servers/0016a8e9782b461e96523ba448f03353/rest/services/MapGenie25InchITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/0a4856ab7fe64aaf96ccc320d0dc891b/rest/services/MapGenieImagery1996to2000ITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/1245ebc052694637bd02fe5048d81c70/rest/services/ITM/basemap_public/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/1700ebb080834186a4c278aa2d26c6e8/rest/services/MapGenieImagery2006to2012ITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/46d11ec3f32f4b7c870c6fdecca4b077/rest/services/MapGenie6InchLastEditionBlackWhiteITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/4fe3ad7eda07411480dd23a0e3655cd4/rest/services/MapGenieDiscoveryHillshadeITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/5c779a7b5bd446bf802ca512d82aa335/rest/services/MapGenieImagery1995ITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/67013604919e4140bca952a7d3fa291a/rest/services/MapGenieDigitalGlobeImagery2011to2013ITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/a8b10e1feb7e4a90a7db85610c62b9ad/rest/services/MapGenie6InchFirstEditionColourITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/bb5f042a35f843498d1c12f07aae7b17/rest/services/MapGenieDiscoveryITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/dc0caa7a62cd4b1cac05469a0bd4516f/rest/services/MapGenieImagery2001to2005ITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/ec5779ea27b643a4bcbb69e83ddb483a/rest/services/MapGeniePremiumITM/MapServer"
+    "https://utility.arcgis.com/usrsvcs/servers/1245ebc052694637bd02fe5048d81c70/rest/services/ITM/basemap_public/MapServer"
    ],
    "log": [
     {
@@ -2316,64 +2219,18 @@
     },
     {
      "step": "org",
-     "what": "org 6LSAdqgf43oKRpP6 (): 13 services read"
-    },
-    {
-     "catalog": "https://data.gov.ie",
-     "keyword": "national park",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://data.gov.ie",
-     "keyword": "nature reserve",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://data.gov.ie",
-     "keyword": "special area of conservation",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://data.gov.ie",
-     "keyword": "coillte",
-     "error": "robots.txt says no"
-    },
-    {
-     "agol": "national park",
-     "hits": 50,
-     "read": 6
-    },
-    {
-     "agol": "nature reserve",
-     "hits": 50,
-     "read": 1
-    },
-    {
-     "agol": "special area of conservation",
-     "hits": 50,
-     "read": 2
-    },
-    {
-     "agol": "coillte",
-     "hits": 7,
-     "read": 0
+     "what": "org 6LSAdqgf43oKRpP6 (): 3 services read"
     }
    ],
    "steps": [
     "known",
     "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-28"
+    "wfs"
+   ]
   },
   "SK": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
+   "started": "2026-10-30",
    "done": [],
    "log": [
     {
@@ -2399,22 +2256,37 @@
     {
      "agol": "národný park",
      "hits": 1,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       1
+      ]
+     ]
     },
     {
      "agol": "chránená krajinná oblasť",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "prírodná rezervácia",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "chránené územie",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "CHKO",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
     }
    ],
    "steps": [
@@ -2427,7 +2299,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   },
   "HR": {
    "status": "done",
@@ -2488,8 +2360,8 @@
    "finished": "2026-10-28"
   },
   "FI": {
-   "status": "done",
-   "started": "2026-10-29",
+   "status": "paused (out of time, will carry on)",
+   "started": "2026-10-30",
    "done": [
     "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_Europe/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_bedrock_surface_B/MapServer",
@@ -2527,133 +2399,14 @@
     "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte_v12/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/geology_geophysics/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/LaosOneGeology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20201124_GeophysicsTest/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20220125_Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20221018_Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20221019_Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20230601_Geophysics/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20240428_Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20250205_Geophysics/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20250326_Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20251009_Exploration/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20251202_Exploration/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/GeologicalMaps/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/Geophysics/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/KorkeusAineistoENG/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/KorkeusAineistoENG2018/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/MinesDepositsJS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/Mines_deposits_waste/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/NatureETC/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/Extras/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/MPM_DemoFiles/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/MPM_Tools/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/ToolsV3/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/ToolsV6/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210429_KorkeusAineisto/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210603Maapera/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2022Kalliopera/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2022_Merenpohja/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2023Kalliopera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Ei_pohjakarttaa/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KalliokiviainesMaa_aines/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Kalliopera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KorkeusAineisto2018JP/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KorkeusAineisto2020JP/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maanpeitepaksuus/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maapera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maapera31102019/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Merenpohja/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/PohjavesiEP/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Syke17062019/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/geoenergia/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maapeitepaksuus_1m/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/LithologyFennoscandia/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/LithologyGreenland2500k/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/MetallogenicAreasFennoscandia/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/Nodd/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/NordicMineralDepositAndMines281025/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/NordicMineralDepositAndMines_20260220/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/NordicMineralDepositsAndMines/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/Nordic_mineral_deposits_and_mines_2510/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/metallogenicAreasFennoscandiaAM/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20210319_PTR_CACHE/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20220207_GDB_Sulphide/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20220324_Sulphide/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20220621_Search_Sulphide/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20260319_Sulphide/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/MuutTutkimuksetOracle/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_CACHE_esri/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_muut_pohjatutkimuspisteetOracle_20210517/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteet/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteetAK/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteetJS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteet_virallinen/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/Sulphide/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/Sulphide_20211209/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/202403groundwaterRechargePotential/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/202403pohjavedenMuodostumispotentiaali/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/geoenergiaPohjavesi/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/kaivovesienlaatu/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/pohjaveden_haavoittuvuus/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/pohjaveden_isotoopit/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/poppa_v11/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Projects/projektimaat/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Bedrock_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Geofysiikka_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kaavoitus_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kaavoitus_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kalliopera_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kalliopera_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kiviainesvarannot_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kiviainesvarannot_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Maapera_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Maapera_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Pohjatutkimukset_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Pohjatutkimukset_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/KallioperaWMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/KallioperaWMS27032020/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/Korkeusmalli/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/Korkeusmalli2018/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/kokoavaWMS/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/SampleWorldCities/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20230802_Nayte/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20240111_Nayte/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20250926_kaivosymp/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/LaajatProvinssit/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte20220429EN/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte20240327EN/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte29042022/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/kaivosymp29122020/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/provinssirajat/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/tt_alueet_2017/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Bedrock/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Kunnat/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_101_Euref/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_101_KKJ/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_10_Euref/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_Euref/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Maapera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Pohjavesialueet/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/Kaivosrekisteri/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TUKES_LYR/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TUKES_UUSI/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TukesWMS/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_soiden_ja_turvemaiden_ravinteisuustaso/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_suotyypit_ja_turvekankaat/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_turvetuotantoalueiden_maanpeite/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/20241002_turvemaiden_alueellinen_hiilivarasto/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/20241106_potentiaaliset_rahkasammalen_korjuukohteet/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/HasuGrid18032016/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/Soiden_luonnontilaisuusluokitus/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/TurvevaratJS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/Valuma_alueet101SDE2/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/rahkasammalen_korjuukohteet/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeep/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline13122019/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline23032020/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/inspire_ge_geology/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/kallionpinnan_korkeustaso_1m/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/kalliopinnan_korkeustaso_1m/MapServer",
@@ -2677,299 +2430,16 @@
     },
     {
      "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 62 services read"
-    },
-    {
-     "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 48 services read"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "kansallispuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonsuojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonpuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "suojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "agol": "kansallispuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "luonnonsuojelualue",
-     "hits": 11,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       11
-      ]
-     ]
-    },
-    {
-     "agol": "luonnonpuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "suojelualue",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 53 services read"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "kansallispuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonsuojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonpuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "suojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "agol": "kansallispuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "luonnonsuojelualue",
-     "hits": 11,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       11
-      ]
-     ]
-    },
-    {
-     "agol": "luonnonpuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "suojelualue",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 0 services read"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "kansallispuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonsuojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonpuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "suojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "agol": "kansallispuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "luonnonsuojelualue",
-     "hits": 11,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       11
-      ]
-     ]
-    },
-    {
-     "agol": "luonnonpuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "suojelualue",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 0 services read"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "kansallispuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonsuojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonpuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "suojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "agol": "kansallispuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "luonnonsuojelualue",
-     "hits": 11,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       11
-      ]
-     ]
-    },
-    {
-     "agol": "luonnonpuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "suojelualue",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 47 services read"
     }
    ],
    "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+    "known"
+   ]
   },
   "HU": {
    "status": "nothing seeded: not searched (EEA lead only)",
-   "started": "2026-10-29",
+   "started": "2026-10-30",
    "done": [],
    "log": [
     {
@@ -2991,6 +2461,18 @@
      "rejected_orgs": []
     },
     {
+     "agol": "védett természeti terület",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "Natura 2000",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
      "agol": "védett terület",
      "hits": 0,
      "read": 0,
@@ -3007,8 +2489,7 @@
     "search",
     "eea"
    ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+   "finished": "2026-10-30"
   },
   "EE": {
    "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
@@ -4442,29 +3923,70 @@
    "finished": "2026-10-30"
   },
   "PH": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched",
+   "started": "2026-10-30",
    "done": [],
    "log": [
     {
      "agol": "protected area",
      "hits": 29,
-     "read": 0
-    },
-    {
-     "agol": "national park",
-     "hits": 2,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       29
+      ]
+     ]
     },
     {
      "agol": "natural park",
      "hits": 1,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       1
+      ]
+     ]
+    },
+    {
+     "agol": "protected landscape",
+     "hits": 3,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       3
+      ]
+     ]
     },
     {
      "agol": "NIPAS",
      "hits": 2,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
+    },
+    {
+     "agol": "wildlife sanctuary",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "national park",
+     "hits": 2,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
     }
    ],
    "steps": [
@@ -4477,7 +3999,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   },
   "TR": {
    "status": "nothing seeded: not searched",
@@ -4648,6 +4170,91 @@
      "rejected_orgs": []
     }
    ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-30"
+  },
+  "GR": {
+   "status": "nothing seeded: not searched",
+   "started": "2026-10-30",
+   "done": [],
+   "log": [],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-30"
+  },
+  "CU": {
+   "status": "nothing seeded: not searched",
+   "started": "2026-10-30",
+   "done": [],
+   "log": [],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-30"
+  },
+  "RS": {
+   "status": "nothing seeded: not searched",
+   "started": "2026-10-30",
+   "done": [],
+   "log": [],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-30"
+  },
+  "MD": {
+   "status": "nothing seeded: not searched",
+   "started": "2026-10-30",
+   "done": [],
+   "log": [],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-30"
+  },
+  "BG": {
+   "status": "nothing seeded: not searched",
+   "started": "2026-10-30",
+   "done": [],
+   "log": [],
    "steps": [
     "known",
     "servers",

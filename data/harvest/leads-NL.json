@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Netherlands (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "NL",
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -16,51 +16,20 @@
  "bands": {
   "A": 3,
   "B": 4,
-  "C": 6
+  "C": 8
  },
- "failures": [
-  {
-   "catalog": "https://data.overheid.nl/data",
-   "keyword": "nationaal park",
-   "error": "HTTP 400"
-  },
-  {
-   "catalog": "https://data.overheid.nl/data",
-   "keyword": "natuurgebied",
-   "error": "HTTP 400"
-  },
-  {
-   "catalog": "https://data.overheid.nl/data",
-   "keyword": "natura 2000",
-   "error": "HTTP 400"
-  },
-  {
-   "catalog": "https://data.overheid.nl/data",
-   "keyword": "natuurmonument",
-   "error": "HTTP 400"
-  }
- ],
+ "failures": [],
  "rejected_orgs": [
   [
    [
     "?",
-    48
-   ]
-  ],
-  [
-   [
-    "?",
-    11
-   ],
-   [
-    "Gemeente Hilversum",
-    1
-   ]
-  ],
-  [
-   [
-    "?",
     5
+   ]
+  ],
+  [
+   [
+    "?",
+    48
    ]
   ],
   [
@@ -76,13 +45,19 @@
   [
    [
     "?",
-    48
+    50
    ]
   ],
   [
    [
     "?",
-    11
+    3
+   ]
+  ],
+  [
+   [
+    "?",
+    48
    ]
   ]
  ],
@@ -92,24 +67,6 @@
  ],
  "known_good_missed": [],
  "known_log": [
-  {
-   "step": "known",
-   "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 1 OGC API collections, 1 look like park layers"
-  },
-  {
-   "step": "known",
-   "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
-   "found": true
-  },
-  {
-   "step": "known",
-   "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 1 OGC API collections, 1 look like park layers"
-  },
-  {
-   "step": "known",
-   "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
-   "found": true
-  },
   {
    "step": "known",
    "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 1 OGC API collections, 1 look like park layers"
@@ -1323,6 +1280,36 @@
       "st_perimeter(shape)"
      ],
      "records": 2
+    },
+    {
+     "id": 1,
+     "name": "natura_2000-gebieden_in_het_hoofdwatersysteem__(per_1_januari_2022)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "nr",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 71
+    },
+    {
+     "id": 0,
+     "name": "afsluitdijk_houtribdijk",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "land",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 2
     }
    ],
    "note": "nwp_natura2000",
@@ -1343,6 +1330,13 @@
     "outline"
    ],
    "layers": [
+    {
+     "name": "Nationaal beschermde gebieden",
+     "type": "cdda",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
     {
      "name": "Nationaal beschermde gebieden",
      "type": "cdda",
@@ -1377,6 +1371,13 @@
     "outline"
    ],
    "layers": [
+    {
+     "name": "Protected Sites",
+     "type": "protectedsite",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
     {
      "name": "Protected Sites",
      "type": "protectedsite",
@@ -1488,9 +1489,147 @@
      "geom": "unknown (WFS)",
      "gap": "outline",
      "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Begrenzing Nationaal Park Nieuw Land",
+     "type": "Extern:gn_np_nieuwland",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
     }
    ],
    "note": "240 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://geoserver.gelderland.nl/geoserver/ngr_visie/wms": {
+   "url": "https://geoserver.gelderland.nl/geoserver/ngr_visie/wms",
+   "cc": "NL",
+   "title": "WFS geoserver.gelderland.nl",
+   "publisher": "Provincie Gelderland",
+   "catalog": "WFS capabilities",
+   "licence": "NONE NONE",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "POVI_Beschzones_nat_landnat",
+     "type": "ngr_visie:POVI_Beschzones_nat_landnat",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVI_Boringsvrije_zone",
+     "type": "ngr_visie:POVI_Boringsvrije_zone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVI_Eco_Verbindingszones",
+     "type": "ngr_visie:POVI_Eco_Verbindingszones",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVI_Groene_ontwikkelingszone",
+     "type": "ngr_visie:POVI_Groene_ontwikkelingszone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVI_Grondwaterfluctuatiezone",
+     "type": "ngr_visie:POVI_Grondwaterfluctuatiezone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVI_Grote_zonneparken",
+     "type": "ngr_visie:POVI_Grote_zonneparken",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "POVI_KWO_vrije_zone",
+     "type": "ngr_visie:POVI_KWO_vrije_zone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    }
+   ],
+   "note": "35 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://geoserver.gelderland.nl/geoserver/ngr_verordening/wms": {
+   "url": "https://geoserver.gelderland.nl/geoserver/ngr_verordening/wms",
+   "cc": "NL",
+   "title": "WFS geoserver.gelderland.nl",
+   "publisher": "Provincie Gelderland",
+   "catalog": "WFS capabilities",
+   "licence": "NONE NONE",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "POVE_Beschzones_nat_landnat",
+     "type": "ngr_verordening:POVE_Beschzones_nat_landnat",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVE_Boringsvrije_zone",
+     "type": "ngr_verordening:POVE_Boringsvrije_zone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVE_Drinkwaterreservering_ASV",
+     "type": "ngr_verordening:POVE_Drinkwaterreservering_ASV",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "POVE_Groene_ontwikkelingszone",
+     "type": "ngr_verordening:POVE_Groene_ontwikkelingszone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVE_KWO_vrije_zone",
+     "type": "ngr_verordening:POVE_KWO_vrije_zone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "POVE_Nationale_landschappen",
+     "type": "ngr_verordening:POVE_Nationale_landschappen",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "39 feature types listed",
    "grade": 2,
    "band": "C",
    "publisher_note": "not a government publisher: take the agency's own copy if one exists"
@@ -1508,6 +1647,13 @@
     "outline"
    ],
    "layers": [
+    {
+     "name": "Nationaal Park Oosterschelde",
+     "type": "wbn_geo:ext_wbn_natprkooschl010",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
     {
      "name": "Nationaal Park Oosterschelde",
      "type": "wbn_geo:ext_wbn_natprkooschl010",
@@ -1535,6 +1681,20 @@
     "outline"
    ],
    "layers": [
+    {
+     "name": "Kustzone, duingebied",
+     "type": "chs:geocmd_chskstzondgbvvl",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Park",
+     "type": "chs:geocmd_chsprkvvl",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
     {
      "name": "Kustzone, duingebied",
      "type": "chs:geocmd_chskstzondgbvvl",
@@ -1617,6 +1777,41 @@
      "geom": "unknown (WFS)",
      "gap": "area",
      "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Contracten: 2023 SKNL Kaart Natura2000 tbv uitvoering Programma Natuur",
+     "type": "natuur:ext_nat_natconsknlkrtupn023",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Contracten: 2024 SKNL Kaart Natura2000 tbv uitvoering Programma Natuur",
+     "type": "natuur:ext_nat_natconsknlkrtupn024",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Damhertgebieden - Natura2000",
+     "type": "natuur:ext_rud_damhrtgebn2000",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Damhertgebieden - Voorkeurszones",
+     "type": "natuur:ext_rud_damhrtgebvkz",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Natura 2000 (INSPIRE geharmoniseerd)",
+     "type": "natuur:beschermde-gebieden_protectedsite",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
     }
    ],
    "note": "130 feature types listed",

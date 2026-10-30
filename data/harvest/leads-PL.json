@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Poland (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "PL",
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -18,30 +18,27 @@
   "B": 3,
   "C": 0
  },
+ "failures": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    7
+   ]
+  ]
+ ],
  "known_good_found": [
   "https://ogcapi.bdl.lasy.gov.pl",
   "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows"
  ],
  "known_good_missed": [],
  "known_log": [
-  {
-   "step": "known",
-   "what": "https://ogcapi.bdl.lasy.gov.pl: 20 OGC API collections, 20 look like park layers"
-  },
-  {
-   "step": "known",
-   "what": "https://ogcapi.bdl.lasy.gov.pl",
-   "found": true
-  },
-  {
-   "step": "known",
-   "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows: 20 feature types, 20 look like park layers"
-  },
-  {
-   "step": "known",
-   "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows",
-   "found": true
-  },
   {
    "step": "known",
    "what": "https://ogcapi.bdl.lasy.gov.pl: 20 OGC API collections, 20 look like park layers"

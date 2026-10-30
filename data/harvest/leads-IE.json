@@ -1,27 +1,31 @@
 {
  "about": "World harvester leads for Ireland (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "IE",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-30",
+ "status": "paused (out of time, will carry on)",
  "steps_done": [
   "known",
   "servers",
-  "wfs",
-  "orgs",
-  "catalogs",
-  "downloads",
-  "search",
-  "eea"
+  "wfs"
  ],
  "bands": {
   "A": 1,
   "B": 1,
   "C": 10
  },
+ "failures": [],
+ "rejected_orgs": [],
  "known_good_found": [
   "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer"
  ],
  "known_good_missed": [],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer",
+   "found": true
+  }
+ ],
  "leads": {
   "https://services8.arcgis.com/wjawg84s4eayflbd/arcgis/rest/services/important_plant_areas_2020_region": {
    "url": "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer",
@@ -130,6 +134,121 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 1,
+     "name": "Forest",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "FOREST_COD",
+      "GIS_AREA",
+      "FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 320
+    },
+    {
+     "id": 4,
+     "name": "Forest Inventory",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "FOREST_COD",
+      "COMPARTMEN",
+      "SUBID",
+      "GIS_AREA",
+      "LUT",
+      "SPP1",
+      "PYR1",
+      "CANOPY1",
+      "SPP2",
+      "PYR2",
+      "CANOPY2",
+      "SPP3",
+      "PYR3",
+      "CANOPY3",
+      "SPP4",
+      "PYR4",
+      "CANOPY4",
+      "FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 126773
+    },
+    {
+     "id": 0,
+     "name": "BAU",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "BAU_NAME",
+      "GIS_AREA",
+      "FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6,
+     "sample": [
+      "1",
+      "2",
+      "3"
+     ],
+     "name_field": "BAU_NAME"
+    },
+    {
+     "id": 2,
+     "name": "Properties",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "FOREST_COD",
+      "PROPERTY_N",
+      "GIS_AREA",
+      "LAST_REFRE",
+      "FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6194
+    },
+    {
+     "id": 3,
+     "name": "Compartment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "COMPARTMEN",
+      "OS_MAP_NO",
+      "LAST_REFRE",
+      "FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 23633
+    },
+    {
+     "id": 5,
+     "name": "Ownership",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OWNER",
+      "Area",
+      "FID",
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2
+    },
     {
      "id": 1,
      "name": "Forest",
@@ -378,6 +497,57 @@
       "OBJECTID"
      ],
      "records": 244
+    },
+    {
+     "id": 4,
+     "name": "Forest Park",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Park_Name",
+      "Link",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 17,
+     "sample": [
+      "Avondale",
+      "Ballinastoe MTB",
+      "Cavan Burren"
+     ],
+     "name_field": "Park_Name"
+    },
+    {
+     "id": 0,
+     "name": "Recreation Site Info",
+     "geom": "Multipoint",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "SITE",
+      "WEBaddress",
+      "FOREST_COD",
+      "FOREST_NAM",
+      "PROPERTY_N",
+      "OBJECTID"
+     ],
+     "records": 153
+    },
+    {
+     "id": 1,
+     "name": "Mountain Bike Pole",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "ID",
+      "Site",
+      "Pole",
+      "OBJECTID"
+     ],
+     "records": 244
     }
    ],
    "note": "Coillte Recreation Information",
@@ -563,6 +733,36 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Biodiversity_2026",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "BiodID",
+      "BAU",
+      "Forest",
+      "Property",
+      "Area",
+      "Bioclass",
+      "Potential",
+      "Remcode",
+      "HabGrp1",
+      "HabTyp1",
+      "HabGrp2",
+      "HabTyp2",
+      "TarHabGrp1",
+      "TarHabTyp1",
+      "TarHabGrp2",
+      "TarHabTyp2",
+      "Origin",
+      "RetiredBio",
+      "HabCat"
+     ],
+     "records": 6028
+    },
     {
      "id": 0,
      "name": "Biodiversity_2026",

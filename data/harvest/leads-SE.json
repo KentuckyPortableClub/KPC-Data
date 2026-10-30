@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Sweden (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "SE",
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -18,6 +18,45 @@
   "B": 5,
   "C": 0
  },
+ "failures": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    42
+   ]
+  ],
+  [
+   [
+    "?",
+    42
+   ]
+  ],
+  [
+   [
+    "?",
+    42
+   ]
+  ],
+  [
+   [
+    "?",
+    35
+   ]
+  ],
+  [
+   [
+    "?",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    2
+   ]
+  ]
+ ],
  "known_good_found": [
   "https://geodata.naturvardsverket.se/naturvardsregistret/wfs"
  ],
@@ -25,24 +64,6 @@
   "https://geodata.naturvardsverket.se/andra_skydd/wms"
  ],
  "known_log": [
-  {
-   "step": "known",
-   "what": "https://geodata.naturvardsverket.se/andra_skydd/wms: 0 feature types, 0 look like park layers"
-  },
-  {
-   "step": "known",
-   "what": "https://geodata.naturvardsverket.se/andra_skydd/wms",
-   "found": false
-  },
-  {
-   "step": "known",
-   "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs: 2 feature types, 2 look like park layers"
-  },
-  {
-   "step": "known",
-   "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
-   "found": true
-  },
   {
    "step": "known",
    "what": "https://geodata.naturvardsverket.se/andra_skydd/wms: 0 feature types, 0 look like park layers"
@@ -141,6 +162,72 @@
       "Kyrkor"
      ],
      "records": 1450
+    },
+    {
+     "id": 0,
+     "name": "ras_SM",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "KOMMUNNAMN",
+      "Län",
+      "Hot",
+      "Verksamhetstyp",
+      "SUM_Anställda",
+      "SUM_Befolkning",
+      "SUM_Brandstation",
+      "SUM_Byggnader",
+      "SUM_Byggnadsminne",
+      "SUM_Dammar",
+      "SUM_Distributionsbyggnad",
+      "SUM_Fornminne",
+      "SUM_Förorenad_mark",
+      "SUM_Förskolor",
+      "SUM_Jordbruksmark",
+      "SUM_Järnvägsstation",
+      "SUM_Kulturreservat",
+      "SUM_Kyrkor",
+      "SUM_Master"
+     ],
+     "records": 1450,
+     "sample": [
+      "Ale",
+      "Ale",
+      "Ale"
+     ],
+     "name_field": "KOMMUNNAMN"
+    },
+    {
+     "id": 1,
+     "name": "Ras: alla verksamhetstyper",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Total_riskpoäng",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor"
+     ],
+     "records": 1450
     }
    ],
    "note": "Ras_ Alla verksamhetstyper_Dash",
@@ -161,6 +248,186 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 2,
+     "name": "Ras: Miljö skyddade områden",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor",
+      "Master"
+     ],
+     "records": 290
+    },
+    {
+     "id": 0,
+     "name": "Ras: Total",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "SummaaPoster",
+      "OBJECTID_1",
+      "Kommun",
+      "Total_riskpoäng",
+      "Hot",
+      "Lan",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor"
+     ],
+     "records": 290
+    },
+    {
+     "id": 1,
+     "name": "Ras: Människors hälsa",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor",
+      "Master"
+     ],
+     "records": 290
+    },
+    {
+     "id": 3,
+     "name": "Ras: Miljö - anläggning",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor",
+      "Master"
+     ],
+     "records": 290
+    },
+    {
+     "id": 4,
+     "name": "Ras: Ekonomisk konsekvens",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor",
+      "Master"
+     ],
+     "records": 290
+    },
+    {
+     "id": 5,
+     "name": "Ras: Kulturarv",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "Riskklass",
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor"
+     ],
+     "records": 290
+    },
     {
      "id": 2,
      "name": "Ras: Miljö skyddade områden",
@@ -539,6 +806,186 @@
       "Kyrkor"
      ],
      "records": 290
+    },
+    {
+     "id": 2,
+     "name": "Ras: Miljö skyddade områden",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor",
+      "Master"
+     ],
+     "records": 290
+    },
+    {
+     "id": 0,
+     "name": "Ras: Total",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "SummaaPoster",
+      "OBJECTID_1",
+      "Kommun",
+      "Total_riskpoäng",
+      "Hot",
+      "Lan",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor"
+     ],
+     "records": 290
+    },
+    {
+     "id": 1,
+     "name": "Ras: Människors hälsa",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor",
+      "Master"
+     ],
+     "records": 290
+    },
+    {
+     "id": 3,
+     "name": "Ras: Miljö - anläggning",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor",
+      "Master"
+     ],
+     "records": 290
+    },
+    {
+     "id": 4,
+     "name": "Ras: Ekonomisk konsekvens",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor",
+      "Master"
+     ],
+     "records": 290
+    },
+    {
+     "id": 5,
+     "name": "Ras: Kulturarv",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "Riskklass",
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor"
+     ],
+     "records": 290
     }
    ],
    "note": "Ras_KulturarvRU_WFL1",
@@ -559,6 +1006,36 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Ras: alla verksamhetstyper",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Kommun",
+      "Lan",
+      "Hot",
+      "Verksamhetstyp",
+      "Total_riskpoäng",
+      "Anstallda",
+      "Befolkning",
+      "Brandstation",
+      "Byggnader",
+      "Byggnadsminne",
+      "Dammar",
+      "Distributionsbyggnad",
+      "Fornminne",
+      "Förorenad_mark",
+      "Förskolor",
+      "Jordbruksmark",
+      "Järnvägsstation",
+      "Kulturreservat",
+      "Kyrkor"
+     ],
+     "records": 1450
+    },
     {
      "id": 0,
      "name": "Ras: alla verksamhetstyper",
@@ -625,6 +1102,20 @@
     "outline"
    ],
    "layers": [
+    {
+     "name": "SkyddadeOmraden",
+     "type": "Naturvardsregistret_WFS:SkyddadeOmraden",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "SkyddadePunkter",
+     "type": "Naturvardsregistret_WFS:SkyddadePunkter",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
     {
      "name": "SkyddadeOmraden",
      "type": "Naturvardsregistret_WFS:SkyddadeOmraden",

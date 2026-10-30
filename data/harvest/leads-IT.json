@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Italy (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "IT",
- "date": "2026-10-28",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -15,10 +15,473 @@
  ],
  "bands": {
   "A": 0,
-  "B": 0,
-  "C": 0
+  "B": 2,
+  "C": 9
  },
+ "failures": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    3
+   ]
+  ],
+  [
+   [
+    "?",
+    5
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [],
- "leads": {}
+ "known_log": [],
+ "leads": {
+  "http://servizigis.regione.emilia-romagna.it/wfs/carta_della_vegetazione": {
+   "url": "http://servizigis.regione.emilia-romagna.it/wfs/carta_della_vegetazione",
+   "cc": "IT",
+   "title": "WFS servizigis.regione.emilia-romagna.it",
+   "publisher": "Regione Emilia-Romagna",
+   "catalog": "WFS capabilities",
+   "licence": "none none",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Quadro_di_unione_parchi",
+     "type": "Portale_carta_della_vegetazione:Quadro_di_unione_parchi",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Parco_del_Taro",
+     "type": "Portale_carta_della_vegetazione:Parco_del_Taro",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Parco_Stirone",
+     "type": "Portale_carta_della_vegetazione:Parco_Stirone",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Foreste_Casentinesi",
+     "type": "Portale_carta_della_vegetazione:Foreste_Casentinesi",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "28 feature types listed",
+   "grade": 3,
+   "band": "B"
+  },
+  "http://servizigis.regione.emilia-romagna.it/wfs/rete_escursionistica": {
+   "url": "http://servizigis.regione.emilia-romagna.it/wfs/rete_escursionistica",
+   "cc": "IT",
+   "title": "WFS servizigis.regione.emilia-romagna.it",
+   "publisher": "Regione Emilia-Romagna",
+   "catalog": "WFS capabilities",
+   "licence": "none ",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Centro_visita_di_Parco_o_Riserva_naturale",
+     "type": "portale_rete_escursionistica:Centro_visita_di_Parco_o_Riserva_naturale",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Parcheggio",
+     "type": "portale_rete_escursionistica:Parcheggio",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "29 feature types listed",
+   "grade": 3,
+   "band": "B"
+  },
+  "dl:f45bb40d-8c17-4d75-a19e-1e49c8a2d231": {
+   "url": "https://www.dati.gov.it/opendata/dataset/dati-aperti-comunali-anzano-del-parco-013009",
+   "cc": "IT",
+   "title": "Dati aperti comunali - Anzano del Parco (013009)",
+   "publisher": "AgID - Agenzia per l'Italia Digitale",
+   "catalog": "catalog www.dati.gov.it",
+   "licence": "Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)",
+   "date": "2026-10-29",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "GeoJSON",
+    "JSON"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:e1223436-89f7-4005-97c7-f5242e2c4b08": {
+   "url": "https://www.dati.gov.it/opendata/dataset/dati-aperti-comunali-trodena-nel-parco-naturale-truden-im-naturpark-021102",
+   "cc": "IT",
+   "title": "Dati aperti comunali - Trodena nel parco naturale/Truden im Naturpark (021102)",
+   "publisher": "AgID - Agenzia per l'Italia Digitale",
+   "catalog": "catalog www.dati.gov.it",
+   "licence": "Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)",
+   "date": "2026-10-29",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "GeoJSON",
+    "JSON"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:16866a92-63fe-4682-9db6-8e3056d3cba0": {
+   "url": "https://www.dati.gov.it/opendata/dataset/parcheggio-protetto-per-biciclette-open-data",
+   "cc": "IT",
+   "title": "Parcheggio protetto per biciclette  (Open data)",
+   "publisher": "Provincia Autonoma di Trento",
+   "catalog": "catalog www.dati.gov.it",
+   "licence": "Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)",
+   "date": "2026-10-24",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "CSV",
+    "GeoJSON",
+    "OP_DATPRO"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:8ba01a75-d6d2-4926-95da-f3c401a0b56b": {
+   "url": "https://www.dati.gov.it/opendata/dataset/parchi-e-riserve-naturali",
+   "cc": "IT",
+   "title": "Parchi e Riserve Naturali",
+   "publisher": "Regione Marche",
+   "catalog": "catalog www.dati.gov.it",
+   "licence": "Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)",
+   "date": "2026-10-24",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "HTML",
+    "JSON"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:e9b45e54-943f-4bfb-8dff-b3e3026743fa": {
+   "url": "https://www.dati.gov.it/opendata/dataset/dataset-parco-circolante-dei-veicoli",
+   "cc": "IT",
+   "title": "Parco Circolante dei Veicoli",
+   "publisher": "Ministero Infrastrutture e Trasporti",
+   "catalog": "catalog www.dati.gov.it",
+   "licence": "CC-BY-4.0",
+   "date": "2026-01-08",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "JSON",
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:1e1def8b-305f-41e2-ab59-9438aab4ea8c": {
+   "url": "https://www.dati.gov.it/opendata/dataset/parco-circolante-dei-veicoli-dettaglio-2017",
+   "cc": "IT",
+   "title": "Parco Circolante dei veicoli - dettaglio 2017",
+   "publisher": "Comune di Milano",
+   "catalog": "catalog www.dati.gov.it",
+   "licence": "Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)",
+   "date": "2026-10-24",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "ZIP"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "https://geoservices1.civis.bz.it/geoserver/p_bz-territorialplans/ows": {
+   "url": "https://geoservices1.civis.bz.it/geoserver/p_bz-TerritorialPlans/ows",
+   "cc": "IT",
+   "title": "WFS geoservices1.civis.bz.it",
+   "publisher": "geoservices1.civis.bz.it",
+   "catalog": "WFS capabilities",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Abgrenzungen von Landschaftsplänen - Delimitazioni dei piani paesaggis",
+     "type": "p_bz-TerritorialPlans:LandscapePlan-Limits",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Banngebiete und spezielle Bindungen - Aree di rispetto e vincoli (COMM",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-Constraints-Common",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Banngebiete und spezielle Bindungen - Aree di rispetto e vincoli (LINE",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-Constraints-Lines",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Banngebiete und spezielle Bindungen - Aree di rispetto e vincoli (OVER",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-Constraints-Over",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Banngebiete und spezielle Bindungen - Aree di rispetto e vincoli (POIN",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-Constraints-Points",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Banngebiete und spezielle Bindungen - Aree di rispetto e vincoli (SYMB",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-Constraints-Symbols",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Baugebiete - Insediamenti (GROUND)",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-SettlementAreas-Ground",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Baugebiete - Insediamenti (SYMBOL)",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-SettlementAreas-Symbols",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Flugverbotszonen (LG 15/1997) - Zone con divieto di volo (LP 15/1997)",
+     "type": "p_bz-TerritorialPlans:NoFlyZones",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Gefahrenzonenplan: Deckung - Piano delle Zone di Pericolo: Copertura",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-HazardZonePlan-Coverages",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Gefahrenzonenplan: Lawinen - Piano delle Zone di Pericolo: Valanghe",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-HazardZonePlan-Avalanches",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Gefahrenzonenplan: Massenbewegungen - Piano delle Zone di Pericolo: Fr",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-HazardZonePlan-Landslides",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    }
+   ],
+   "note": "59 feature types listed",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://geoservices1.civis.bz.it/geoserver/p_bz-territorialplans/wms": {
+   "url": "https://geoservices1.civis.bz.it/geoserver/p_bz-TerritorialPlans/wms",
+   "cc": "IT",
+   "title": "WFS geoservices1.civis.bz.it",
+   "publisher": "geoservices1.civis.bz.it",
+   "catalog": "WFS capabilities",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Abgrenzungen von Landschaftsplänen - Delimitazioni dei piani paesaggis",
+     "type": "p_bz-TerritorialPlans:LandscapePlan-Limits",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Banngebiete und spezielle Bindungen - Aree di rispetto e vincoli (COMM",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-Constraints-Common",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Banngebiete und spezielle Bindungen - Aree di rispetto e vincoli (LINE",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-Constraints-Lines",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Banngebiete und spezielle Bindungen - Aree di rispetto e vincoli (OVER",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-Constraints-Over",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Banngebiete und spezielle Bindungen - Aree di rispetto e vincoli (POIN",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-Constraints-Points",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Banngebiete und spezielle Bindungen - Aree di rispetto e vincoli (SYMB",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-Constraints-Symbols",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Baugebiete - Insediamenti (GROUND)",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-SettlementAreas-Ground",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Baugebiete - Insediamenti (SYMBOL)",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-ZoningPlan-SettlementAreas-Symbols",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Flugverbotszonen (LG 15/1997) - Zone con divieto di volo (LP 15/1997)",
+     "type": "p_bz-TerritorialPlans:NoFlyZones",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Gefahrenzonenplan: Deckung - Piano delle Zone di Pericolo: Copertura",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-HazardZonePlan-Coverages",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Gefahrenzonenplan: Lawinen - Piano delle Zone di Pericolo: Valanghe",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-HazardZonePlan-Avalanches",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Gefahrenzonenplan: Massenbewegungen - Piano delle Zone di Pericolo: Fr",
+     "type": "p_bz-TerritorialPlans:UrbanPlan-HazardZonePlan-Landslides",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    }
+   ],
+   "note": "59 feature types listed",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://parcodellamaremma.ldpgis.it/services/confine_parco_r1/wfs": {
+   "url": "https://parcodellamaremma.ldpgis.it/services/confine_parco_r1/wfs",
+   "cc": "IT",
+   "title": "WFS parcodellamaremma.ldpgis.it",
+   "publisher": "Parco della Maremma",
+   "catalog": "WFS capabilities",
+   "licence": "NONE NONE",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "confine_parco_r1",
+     "type": "parcodellamaremma_public:confine_parco_r1",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "1 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  }
+ }
 }

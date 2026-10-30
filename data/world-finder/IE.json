@@ -1,0 +1,204 @@
+{
+ "cc": "IE",
+ "run": "2026-10-30",
+ "parks": 307,
+ "open": 211,
+ "key_candidates": 3,
+ "layer_candidates": 8,
+ "layers_tried": [
+  "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Potential_Special_Protection_Areas_England/FeatureServer/0",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/1",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/4",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/0",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/3",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/5",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/1",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/4",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/0",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/3",
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/5"
+ ],
+ "no_layer_groups": {
+  "national park": [
+   "IE-0008",
+   "IE-0201",
+   "IE-0275",
+   "IE-0204",
+   "IE-0226",
+   "IE-0229",
+   "IE-0237",
+   "IE-0245",
+   "IE-0291"
+  ],
+  "nature reserve": [
+   "IE-0014",
+   "IE-0016",
+   "IE-0067",
+   "IE-0242",
+   "IE-0121",
+   "IE-0109",
+   "IE-0114",
+   "IE-0013",
+   "IE-0077",
+   "IE-0052",
+   "IE-0053",
+   "IE-0058",
+   "IE-0059"
+  ],
+  "national forest": [
+   "IE-0018",
+   "IE-0020",
+   "IE-0021",
+   "IE-0022",
+   "IE-0024",
+   "IE-0027",
+   "IE-0028",
+   "IE-0038",
+   "IE-0070",
+   "IE-0151",
+   "IE-0080",
+   "IE-0082",
+   "IE-0085",
+   "IE-0086",
+   "IE-0087",
+   "IE-0044",
+   "IE-0102",
+   "IE-0111",
+   "IE-0116",
+   "IE-0117",
+   "IE-0118",
+   "IE-0017",
+   "IE-0023",
+   "IE-0040",
+   "IE-0041",
+   "IE-0043",
+   "IE-0047",
+   "IE-0048",
+   "IE-0051",
+   "IE-0060",
+   "IE-0062",
+   "IE-0106",
+   "IE-0108",
+   "IE-0110",
+   "IE-0128",
+   "IE-0149",
+   "IE-0150",
+   "IE-0045",
+   "IE-0046",
+   "IE-0055",
+   "IE-0056",
+   "IE-0057",
+   "IE-0091",
+   "IE-0092",
+   "IE-0093"
+  ],
+  "forest reserve": [
+   "IE-0246",
+   "IE-0256",
+   "IE-0252",
+   "IE-0215",
+   "IE-0231",
+   "IE-0279",
+   "IE-0281",
+   "IE-0306",
+   "IE-0269",
+   "IE-0255",
+   "IE-0217",
+   "IE-0221",
+   "IE-0223"
+  ],
+  "country park": [
+   "IE-0069"
+  ],
+  "national recreation area": [
+   "IE-0152",
+   "IE-0195"
+  ],
+  "mountain park": [
+   "IE-0218"
+  ],
+  "national historical park": [
+   "IE-0206",
+   "IE-0164"
+  ],
+  "historic site": [
+   "IE-0240",
+   "IE-0308",
+   "IE-0198",
+   "IE-0216",
+   "IE-0250",
+   "IE-0274",
+   "IE-0249",
+   "IE-0239"
+  ],
+  "nature recreation area": [
+   "IE-0280"
+  ],
+  "park": [
+   "IE-0127",
+   "IE-0227",
+   "IE-0259"
+  ],
+  "botanical gardens": [
+   "IE-0134"
+  ],
+  "regional park": [
+   "IE-0135",
+   "IE-0136"
+  ],
+  "national heritage area": [
+   "IE-0202"
+  ],
+  "national scenic trail": [
+   "IE-0210",
+   "IE-0196"
+  ],
+  "conservation area": [
+   "IE-0212",
+   "IE-0213"
+  ],
+  "national heritage site": [
+   "IE-0224",
+   "IE-0219"
+  ],
+  "protected landscape area": [
+   "IE-0228"
+  ],
+  "recreation park": [
+   "IE-0244",
+   "IE-0296"
+  ],
+  "blm historic area": [
+   "IE-0273"
+  ],
+  "state trail": [
+   "IE-0301",
+   "IE-0297",
+   "IE-0303"
+  ],
+  "national historic site": [
+   "IE-0302",
+   "IE-0163"
+  ],
+  "state park": [
+   "IE-0104"
+  ],
+  "historical reserve": [
+   "IE-0292"
+  ],
+  "national historic trail": [
+   "IE-0293"
+  ],
+  "wetland reserve": [
+   "IE-0197"
+  ],
+  "marine park": [
+   "IE-0261"
+  ]
+ },
+ "layers_found_new": 6,
+ "stage1": "paused (time): carries on next chunk",
+ "seconds": 114
+}
