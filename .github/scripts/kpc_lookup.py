@@ -10,6 +10,10 @@ REQUEST  {"chat": 11, "kind": "page", "urls": ["https://..."], "screenshot": tru
   kind  page        text (first 15,000 characters), links, optional screenshot
         map-check   the same + always a screenshot; a PDF renders page 1 (ask "pages": 3 for up to 3)
         layer-probe ArcGIS layers (chat 9's probe)    parcel  owner + parcel id per point on a parcel layer    probe  a chat-9 config
+        save-map    {"ref","name","agency","url","pages"?,"hint"?}: an official PICTURE map (PDF / image; or a page that links one) is
+                    shrunk (boundary page(s) only, default page 1, JPEG 2000 px long side, quality 70, 3 MB at most) and saved on the
+                    orphan branch picture-maps as maps/<ref>_<short-name>.jpg + rows/<same>.json (index.json is rebuilt from rows/).
+                    House rule Oct 29 11:10 PM; map-cleanup deletes a park's maps once its outline is OFFICIAL in the key.
 SIZE     screenshots JPEG, 1280 px wide at most, quality 60; one answer capped at 2 MB ('trimmed' note); an answer + its pictures +
          its request are DELETED when the chat writes read/<id>, or after 7 days (mode tidy). The weekly tidy squashes the branch to
          one fresh commit when it passes 150 MB. No inbox writes: each chat fetches the branch when it reads its inbox.
@@ -174,7 +178,9 @@ def run(req):
             tmp = pathlib.Path('/tmp') / f'{rid}.json'; tmp.write_text(json.dumps(q.get('probe') or q))
             P.CAND = tmp; P.OUT = tmp.with_name(tmp.stem + '-tested.json'); P.main()
             out['results'] = json.load(open(P.OUT)) if P.OUT.exists() else {'error': 'the probe wrote nothing'}
-        else: out['error'] = f'unknown kind {kind} (page, map-check, layer-probe, parcel, probe)'
+        elif kind == 'save-map':
+            out['results'] = [save_map(q, rid)]
+        else: out['error'] = f'unknown kind {kind} (page, map-check, layer-probe, parcel, probe, save-map)'
     except Exception as e: out['error'] = f'{type(e).__name__}: {str(e)[:200]}'  # noqa: BLE001
     out['seconds'] = round(time.time() - t0)
     if M: out['manners'] = M.stat
@@ -193,6 +199,107 @@ def run(req):
         if len(s.encode()) > ANSWER_MAX: out['results'] = '(too big even trimmed: ask for fewer URLs)'; s = json.dumps(out, indent=1, ensure_ascii=False)
     ans_path(req).write_text(s.replace(str(ROOT) + '/', '') + '\n')
     notice(f'{rid}: {out["short"]} in {out["seconds"]} s')
+
+
+PIC = pathlib.Path(os.environ.get('PIC_ROOT') or 'pm')
+PIC_PX, PIC_Q, PIC_MAX = 2000, 70, 3_000_000
+IMG_RX = re.compile(r'\.(?:jpe?g|png|gif|webp|tiff?)(?:$|[?#])', re.I)
+FILE_RX = re.compile(r'\.pdf(?:$|[?#])|/pdf/|/download(?:$|[?#/])|widen|\.(?:jpe?g|png|gif|webp|tiff?)(?:$|[?#])', re.I)
+
+
+def slug(s): return re.sub(r'[^a-z0-9]+', '-', (s or 'map').lower()).strip('-')[:32] or 'map'
+
+
+def fetch(u):
+    if not M or not M.robots_ok(u): return None, None, u, 'robots.txt says no (or no manners module)'
+    h = M.host(u); w = M.gap - (time.time() - M.last.get(h, 0))
+    if w > 0: time.sleep(w)
+    M.last[h] = time.time()
+    st, hd, body, final = M.get(u, accept='application/pdf,image/*,*/*')
+    if not (isinstance(st, int) and st < 400 and body): return None, None, final, f'answer {st}'
+    ct = str(hd.get('content-type', '')).lower()
+    kind = 'pdf' if body[:5] == b'%PDF-' or 'pdf' in ct else 'img' if ct.startswith('image/') or body[:3] == b'\xff\xd8\xff' or body[:8] == b'\x89PNG\r\n\x1a\n' else 'html'
+    return kind, body, final, ''
+
+
+def pick_link(links, hint):
+    """From a page's links, the most map-like PDF / image: 'map' in the link or its text, plus the request's hint words."""
+    best, bs = None, 0
+    for l in links or []:
+        u, t = l.get('url') or '', (l.get('text') or '').lower()
+        if not FILE_RX.search(u): continue
+        s = 1 + 2 * ('map' in (u.lower() + ' ' + t)) + sum(3 for w in hint if w in (u.lower() + ' ' + t))
+        if s > bs: best, bs = u, s
+    return best
+
+
+def save_map(q, rid):
+    import subprocess, tempfile
+    ref = str(q.get('ref') or '').strip(); name = q.get('name') or ''
+    if not re.match(r'^[A-Z0-9]{1,4}-\d{4,5}$', ref): return {'error': f'save-map needs a park number (ref), got {ref!r}'}
+    hint = [w.lower() for w in (q.get('hint') or '').split() if len(w) > 2]
+    u = q.get('url') or ''; seen = []
+    kind, body, final, err = fetch(u)
+    for _ in range(2):   # a page that links the map (an agency park page, a Widen share page): follow the most map-like link
+        if kind != 'html': break
+        r = read_page(final or u)
+        nxt = pick_link(r.get('links'), hint); seen.append(final or u)
+        if not nxt or nxt in seen: return {'url': u, 'error': 'no map file (PDF / image) linked on that page: give the map link itself', 'looked': seen}
+        kind, body, final, err = fetch(nxt)
+    if err or kind not in ('pdf', 'img'): return {'url': u, 'error': err or 'not a PDF or picture', 'looked': seen}
+    pages = q.get('pages') or 1
+    pages = [int(p) for p in re.findall(r'\d+', str(pages))][:3] if not isinstance(pages, int) else [pages]
+    base = f'{ref}_{slug(name)}'
+    (PIC / 'maps').mkdir(parents=True, exist_ok=True); (PIC / 'rows').mkdir(parents=True, exist_ok=True)
+    saved = []
+    with tempfile.TemporaryDirectory() as td:
+        src = pathlib.Path(td) / ('in.pdf' if kind == 'pdf' else 'in.img'); src.write_bytes(body)
+        for i, pg in enumerate(pages if kind == 'pdf' else [1]):
+            out = PIC / 'maps' / (base + ('' if i == 0 else f'-p{pg}') + '.jpg')
+            for qual in (PIC_Q, 50, 35):
+                if kind == 'pdf':
+                    stem = pathlib.Path(td) / f'p{pg}'
+                    subprocess.run(['pdftoppm', '-f', str(pg), '-l', str(pg), '-singlefile', '-jpeg', '-jpegopt', f'quality={qual}', '-scale-to', str(PIC_PX), str(src), str(stem)], capture_output=True, timeout=300)
+                    tmp = stem.with_suffix('.jpg')
+                    if not tmp.exists(): break
+                else:
+                    from PIL import Image
+                    im = Image.open(src); im.thumbnail((PIC_PX, PIC_PX)); tmp = pathlib.Path(td) / 'out.jpg'
+                    im.convert('RGB').save(tmp, 'JPEG', quality=qual, optimize=True)
+                if tmp.stat().st_size <= PIC_MAX: tmp.replace(out); saved.append(str(out.relative_to(PIC))); break
+    if not saved: return {'url': u, 'map_url': final, 'error': f'could not render page(s) {pages} under {PIC_MAX // 1_000_000} MB'}
+    row = {'ref': ref, 'name': name, 'agency': q.get('agency') or '', 'source_url': final, 'asked_url': u, 'page': pages if kind == 'pdf' else None,
+           'files': saved, 'date': time.strftime('%Y-%m-%d'), 'chat': q.get('chat'), 'request': rid}
+    json.dump(row, open(PIC / 'rows' / f'{base}.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    return {'url': u, 'map_url': final, 'saved': saved, 'bytes': sum((PIC / s).stat().st_size for s in saved), 'branch': 'picture-maps'}
+
+
+def map_index():
+    rows = []
+    for f in sorted((PIC / 'rows').glob('*.json')) if (PIC / 'rows').exists() else []:
+        try: rows.append(json.load(open(f, encoding='utf-8')))
+        except ValueError: pass
+    json.dump({'about': "Official PICTURE maps (no coordinates) for parks with no GIS outline; boundary page only, small JPEG. Deleted when the park gets an OFFICIAL outline. Never traced (G-ID3; R-G9 decides later).",
+               'built': time.strftime('%Y-%m-%d %H:%MZ', time.gmtime()), 'count': len(rows), 'maps': rows}, open(PIC / 'index.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    print(f'::notice title=Picture maps::{len(rows)} maps in the index')
+
+
+def map_cleanup():
+    """Delete every picture map whose park now has an OFFICIAL outline in KPC-Links data/us-key or data/ca-key (grade g == 'official')."""
+    links = pathlib.Path(os.environ.get('LINKS') or 'links'); gone = []
+    off = set()
+    for f in list((links / 'data' / 'us-key').glob('US-*.json')) + list((links / 'data' / 'ca-key').glob('CA-*.json')):
+        try: off |= {r for r, v in (json.load(open(f)).get('parks') or {}).items() if isinstance(v, dict) and v.get('g') == 'official'}
+        except ValueError: pass
+    if not off: print('::notice title=Picture maps::no key read: nothing deleted'); return
+    for f in sorted((PIC / 'rows').glob('*.json')) if (PIC / 'rows').exists() else []:
+        row = json.load(open(f, encoding='utf-8'))
+        if row.get('ref') in off:
+            for s in row.get('files') or []:
+                if (PIC / s).exists(): (PIC / s).unlink()
+            f.unlink(); gone.append(row['ref'])
+    map_index()
+    print(f"::notice title=Picture maps::cleanup: {len(gone)} deleted (park now has an official outline){': ' + ', '.join(gone[:20]) if gone else ''}")
 
 
 def tidy():
@@ -216,6 +323,8 @@ if __name__ == '__main__':
         if a[0] == 'todo': todo()
         elif a[0] == 'run': run(a[1])
         elif a[0] == 'tidy': tidy()
+        elif a[0] == 'map-index': map_index()
+        elif a[0] == 'map-cleanup': map_cleanup()
     except Exception as e:  # noqa: BLE001
         notice(f'stopped ({type(e).__name__}: {str(e)[:200]})')
     sys.exit(0)

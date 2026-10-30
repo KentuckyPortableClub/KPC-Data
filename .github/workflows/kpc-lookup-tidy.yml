@@ -39,3 +39,40 @@ jobs:
             for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && break; sleep 5; done
           fi
           true
+  picture-maps:
+    # Oct 30 2026 (chat 10; house rule Brandon Oct 29 11:10 PM): every Sunday, delete the picture maps of parks that now have an OFFICIAL
+    # outline in the key (KPC-Links data/us-key + data/ca-key, grade 'official'), rebuild index.json, report the branch size (HQ squashes
+    # it past 300 MB). Never goes red.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: picture-maps
+          path: pm
+          fetch-depth: 0
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          path: code
+          sparse-checkout: .github/scripts
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            data/us-key
+            data/ca-key
+      - name: Delete the maps of parks with an official outline
+        continue-on-error: true
+        run: |
+          cd pm
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          PIC_ROOT=. LINKS=../links python3 ../code/.github/scripts/kpc_lookup.py map-cleanup || true
+          git add -A; git diff --cached --quiet || git commit -qm 'picture maps: weekly cleanup (parks now with an official outline)'
+          for i in 1 2 3; do git pull -q --rebase origin picture-maps && git push -q origin HEAD:picture-maps && break; sleep 5; done
+          KB=$(git count-objects -v | awk '/size-pack|^size:/{s+=$2} END{print s}')
+          M="history $((KB/1024)) MB, files $(du -sm --exclude=.git . | cut -f1) MB"; [ "$KB" -gt 307200 ] && M="$M: OVER 300 MB, HQ squashes it"
+          echo "::notice title=Picture-map branch::$M"
+          true
