@@ -76,3 +76,26 @@ jobs:
           M="history $((KB/1024)) MB, files $(du -sm --exclude=.git . | cut -f1) MB"; [ "$KB" -gt 307200 ] && M="$M: OVER 300 MB, HQ squashes it"
           echo "::notice title=Picture-map branch::$M"
           true
+  sizes:
+    # Oct 30 2026 (chat 10; Brandon Oct 29 7:22 PM 'protect size on both repos', Oct 30 6:17 AM): every Sunday, both repos' sizes on the
+    # status board; red only when one passes its line (website 900 MB: GitHub Pages' 1 GB limit; data repo 2 GB). Never goes red itself.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: .github/scripts
+      - name: Sizes on the status board
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          L=$(gh api repos/KentuckyPortableClub/KPC-Links --jq .size 2>/dev/null || echo 0); D=$(gh api repos/${{ github.repository }} --jq .size 2>/dev/null || echo 0)
+          LM=$((L/1024)); DM=$((D/1024)); C=green; [ "$LM" -gt 900 ] && C=red; [ "$DM" -gt 2048 ] && C=red
+          M="website repo ${LM} MB (line 900), data repo ${DM} MB (line 2048), $(date -u +%F)"
+          echo "::notice title=Repo sizes::$M"
+          python3 .github/scripts/kpc_status.py board "Repo sizes (weekly)" "$C" "$M" "HQ: over the line = clean up (bot files to KPC-Data branches, squash)" || true
+          bash links/.github/scripts/kpc_push_data.sh . "repo sizes (weekly)" data/status || true

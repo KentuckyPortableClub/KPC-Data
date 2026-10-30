@@ -60,6 +60,30 @@ jobs:
             release-approved) python3 .github/scripts/kpc_release_approved.py ;;   # Brandon 3:02 PM: one batch of what chat 11 (+ chat 2) approved, on the day chat 8 + 11 PASS the key   # RULE SHEET G step 2: held key pieces -> one question each for chat 11
             *) echo "::notice title=Waiting room::unknown mode $M" ;;
           esac
+      - name: The look-up branch (AUTO-3 files save-map requests there)
+        if: ${{ github.event_name == 'schedule' }}
+        continue-on-error: true
+        uses: actions/checkout@v5
+        with:
+          ref: lookup
+          path: lk
+      - name: Work the bots do themselves (AUTO-1 recheck of SURE rows, AUTO-2 strong layers, AUTO-3 picture maps; Brandon Oct 30 6:17 AM)
+        if: ${{ github.event_name == 'schedule' }}
+        continue-on-error: true
+        env:
+          LINKS: ../links
+          LOOKUP_ROOT: ../lk
+          PIC_INDEX: /tmp/pic-index.json
+        run: |
+          cd kpcdata
+          git fetch -q origin picture-maps 2>/dev/null && git show FETCH_HEAD:index.json > /tmp/pic-index.json 2>/dev/null || true
+          python3 .github/scripts/kpc_auto_flow.py recheck layers maps || true
+          cd ../lk
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add requests 2>/dev/null; git diff --cached --quiet && exit 0
+          git commit -qm 'AUTO-3: save-map requests from the documents bot (nightly)'
+          for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && break; sleep 5; done
+          true
       - name: The morning list for chat 11 (data/waiting/today.md; Brandon Oct 29 11:50 PM)
         continue-on-error: true
         run: cd kpcdata && python3 .github/scripts/kpc_waiting_today.py || true

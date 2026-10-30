@@ -8,7 +8,7 @@ keeps every question the job does not know of, and merges state files (the job's
 Never fails."""
 import json, subprocess, sys
 
-KEYS = ('answer', 'checked_by', 'how', 'rechecked_by_chat2')
+KEYS = ('answer', 'checked_by', 'how', 'rechecked_by_chat2', 'auto', 'sample_for_chat11', 'auto_recheck')
 
 
 def origin(path):

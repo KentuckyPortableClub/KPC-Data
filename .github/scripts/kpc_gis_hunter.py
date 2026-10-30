@@ -83,7 +83,20 @@ def pins(area):
     return {r[1]: (r[3], r[4], r[2]) for r in (load('data/canada.json', {}) or {}).get('rows') or [] if r[0] == 'POTA' and (r[3], r[4]) != (0, 0)}
 
 
+def approved_layers(area):
+    """AUTO-2: intake layers approved (by chat 9 or the rule) for this area join step A the same day."""
+    out = []
+    for r in ((load('data/intake/ready.json', {}) or {}).get('rows') or []):
+        if r.get('approved') is True and r.get('verdict') == 'READY' and str(r.get('area') or '') in (area, area[3:]) and r.get('url'):
+            out.append((r['url'], 'park', (r.get('publisher') or r.get('title') or 'approved layer')[:60], None))
+    return out
+
+
 def layers(area):
+    return layers_known(area) + [l for l in approved_layers(area) if l[0] not in {k[0] for k in layers_known(area)}]
+
+
+def layers_known(area):
     if area.startswith('US-'):
         L = [(x['url'], x.get('kind', ''), x.get('ag', ''), x.get('nm')) for x in ((load('data/state-gis.json', {}) or {}).get('states') or {}).get(area[3:], []) if x.get('url')]
         return L + [(PADUS, 'padus', 'USGS PAD-US', 'Unit_Nm')]
@@ -225,6 +238,46 @@ def step_b(area, todo, P, R, queue):
                 queue['seen'].add(x['url'])
 
 
+SVC_RX = re.compile(r'https?://[^\s"\'<>]+?/(?:arcgis/rest/services|rest/services)/[^\s"\'<>]+?/(?:FeatureServer|MapServer)(?:/\d+)?|'
+                    r'https?://[^\s"\'<>]+?(?:\?|&)service=wfs[^\s"\'<>]*|https?://[^\s"\'<>]+?/ogc/features[^\s"\'<>]*|https?://[^\s"\'<>]+?\.geojson\b', re.I)
+PAGES_MAX = 40
+
+
+def park_page(area, r):
+    """The park's own official page: the documents bot's 'page' (US), else parkinfo-web's agency page / web link."""
+    if area.startswith('US-'):
+        p = (((load(f'data/docs/{area}.json', {}) or {}).get('parks') or {}).get(r) or {}).get('page')
+        if p: return p
+    w = ((load('data/parkinfo-web.json', {}) or {}).get('parks') or {}).get(r) or {}
+    return w.get('web') or w.get('agency_page') or ''
+
+
+def step_b3(area, todo, R, queue):
+    """AUTO-4 (Brandon Oct 30 6:17 AM; Fable design step B3): a park with nothing found -> read its own page ONCE (plain read,
+    manners), collect embedded map services, queue them for the intake as LEADS. A page is never a boundary."""
+    n = 0
+    for r in todo:
+        if late() or n >= PAGES_MAX: break
+        rec = R.get(r)
+        if not rec or rec['hits'] or rec['leads']: continue
+        u = park_page(area, r)
+        if not u or not u.startswith('http'): rec['tried'].append('B3 park page: none on file'); continue
+        n += 1
+        try:
+            st, hd, body, final = M.get(u)
+            html = body.decode('utf-8', 'replace') if isinstance(st, int) and st < 400 and body else ''
+        except Exception as e:  # noqa: BLE001
+            rec['tried'].append(f'B3 park page {u[:60]}: {str(e)[:40]}'); continue
+        found = sorted({m.group(0).rstrip('.,;)') for m in SVC_RX.finditer(html)})[:5]
+        rec['tried'].append(f'B3 park page {u[:60]}: {len(found)} map service link(s)' if html else f'B3 park page {u[:60]}: answer {st}')
+        for s in found:
+            rec['leads'].append({'title': f"map service linked on the park's page", 'url': s, 'owner': '', 'type': 'page link'})
+            if s not in queue['seen']:
+                queue['rows'].append({'url': s, 'title': f"linked on {rec['park'][:60]}'s own page"[:120], 'from': 'gis-hunter page (AUTO-4)', 'added': TODAY,
+                                      'closes': [r], 'note': f'found on {u[:120]}'})
+                queue['seen'].add(s)
+
+
 # ------------------------------------------------------------------------------------------------ outputs
 def verdict(rec):
     t = [h.get('tier') for h in rec['hits']]
@@ -303,6 +356,7 @@ def main():
         R = {r: {'park': (P.get(r) or (0, 0, ''))[2], 'area': area, 'why_not': t, 'hits': [], 'leads': [], 'tried': []} for r, t in pool[area]}
         step_a(area, todo, P, R)
         step_b(area, todo, P, R, queue)
+        step_b3(area, todo, R, queue)
         for rec in R.values(): rec['verdict'] = verdict(rec)
         write_area(area, R); done_R[area] = R
         c = {}
