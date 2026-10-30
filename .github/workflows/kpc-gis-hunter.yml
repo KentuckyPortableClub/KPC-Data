@@ -70,6 +70,18 @@ jobs:
             L=$(grep -o '^LEFT=[0-9]*' /tmp/h.log | tail -1 | cut -d= -f2); echo "LEFT=$L" >> "$GITHUB_ENV"
             [ "${L:-0}" = 0 ] && break
           done
+      - name: The pass is finished -> website-name reads + the documents bot for the parks still without a find (HQ Oct 30 7:50 AM (1); notes only, the hunt itself is unchanged)
+        if: ${{ env.LEFT == '0' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LINKS: ../links
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_after_hunt.py ${{ inputs.areas }} | tee /tmp/after.txt || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "after-hunt: website-name reads (notes)" data/gis-hunter/name-reads.json || true
+          A=$(grep -o '^DOCS_AREAS=.*' /tmp/after.txt | cut -d= -f2)
+          [ -n "$A" ] && gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-docs.yml/dispatches -f ref=main -f "inputs[areas]=$A" -f 'inputs[chain]=0' || true
       - name: Areas remain, so the next job starts itself
         if: ${{ env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.areas == '' }}
         continue-on-error: true
