@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-30T05:42Z",
+ "checked": "2026-10-30T05:46Z",
  "switched_on": false,
  "results": [
   {
@@ -19,14 +19,11 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-NM.json",
+   "path": "data/fers/US-OH.json",
    "kind": "fers",
-   "why": [
-    "F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 18 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-0012+US-4516, US-0678+US-4517, US-0752+US-4579"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/hours/US-KY.json",
