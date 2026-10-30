@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-5265.json",
+ "id": "10-auto-US-5265",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-5265",
+  "name": "Raecher State Forest",
+  "agency": "government agency (dec.ny.gov)",
+  "url": "https://dec.ny.gov/sites/default/files/raecherhillmap.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:49Z",
+ "results": [
+  {
+   "url": "https://dec.ny.gov/sites/default/files/raecherhillmap.pdf",
+   "map_url": "https://dec.ny.gov/sites/default/files/raecherhillmap.pdf",
+   "saved": [
+    "maps/US-5265_raecher-state-forest.jpg"
+   ],
+   "bytes": 451014,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
