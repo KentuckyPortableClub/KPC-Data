@@ -7,11 +7,9 @@
    "done": [
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer",
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/0157_OtherData_WFL1/FeatureServer",
-    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Bunbury_OREI_Declared_Areas_/FeatureServer",
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Bunbury_OREI_Region_10km_Buff_Coast_GDA1994/FeatureServer",
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/UKSACswithMarineComponents/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
-    "https://tiles-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/IHLS_Heatmap_2012to2025_Online/MapServer"
+    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer"
    ],
    "log": [
     {
@@ -26,7 +24,7 @@
     },
     {
      "step": "org",
-     "what": "org 0zuv5ZFEncBv7NQQ (GoBe Consultants): 5 services read"
+     "what": "org 0zuv5ZFEncBv7NQQ (GoBe Consultants): 3 services read"
     }
    ],
    "steps": [
@@ -1321,67 +1319,28 @@
    "finished": "2026-10-29"
   },
   "CH": {
-   "status": "done",
-   "started": "2026-10-28",
-   "done": [],
+   "status": "started",
+   "started": "2026-10-30",
+   "done": [
+    "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung"
+   ],
    "log": [
     {
-     "catalog": "https://opendata.swiss",
-     "keyword": "Nationalpark",
-     "error": "Expecting value: line 1 column 1 (char 0)"
+     "step": "known",
+     "what": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung: 0 feature types, 0 look like park layers"
     },
     {
-     "catalog": "https://opendata.swiss",
-     "keyword": "Naturpark",
-     "error": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-     "catalog": "https://opendata.swiss",
-     "keyword": "Pärke",
-     "error": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-     "catalog": "https://opendata.swiss",
-     "keyword": "Schutzgebiet",
-     "error": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-     "agol": "Nationalpark",
-     "hits": 18,
-     "read": 0
-    },
-    {
-     "agol": "Naturpark",
-     "hits": 7,
-     "read": 0
-    },
-    {
-     "agol": "Pärke",
-     "hits": 10,
-     "read": 0
-    },
-    {
-     "agol": "Schutzgebiet",
-     "hits": 9,
-     "read": 0
-    },
-    {
-     "agol": "parc naturel",
-     "hits": 4,
-     "read": 0
+     "step": "known",
+     "what": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung",
+     "found": false
     }
    ],
    "steps": [
     "known",
     "servers",
     "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-28"
+    "orgs"
+   ]
   },
   "PT": {
    "status": "paused (out of time, will carry on)",
