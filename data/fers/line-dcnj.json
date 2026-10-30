@@ -1,0 +1,68 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "dcnj",
+ "states": [
+  "US-DC",
+  "US-NJ"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 00:21 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 27,
+  "DROPPED": 158,
+  "NEVER LOOKED AT": 1358
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 191,
+   "pairs whose boxes touch": 191
+  },
+  "pass2": {
+   "agree with the pass before": 126,
+   "date": "2026-10-30",
+   "pairs tested": 56
+  },
+  "pass3": {
+   "agree with the pass before": 69,
+   "date": "2026-10-30",
+   "pairs tested": 50
+  },
+  "pass5": {
+   "checked": 28,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-DC": "data/fers/US-DC.json",
+  "US-NJ": "data/fers/US-NJ.json"
+ },
+ "US-DC": {
+  "rows": 2,
+  "live": 1,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 1,
+  "merged": 0
+ },
+ "US-NJ": {
+  "rows": 155,
+  "live": 28,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 86,
+  "merged": 41
+ },
+ "states_ready": [
+  "US-DC",
+  "US-NJ"
+ ],
+ "states_held": []
+}

@@ -1,9 +1,9 @@
 {
  "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
- "pass1": "2026-10-29",
- "pass2": "2026-10-29",
- "pass3": "2026-10-29",
- "pass5": "2026-10-29",
+ "pass1": "2026-10-30",
+ "pass2": "2026-10-30",
+ "pass3": "2026-10-30",
+ "pass5": "2026-10-30",
  "spots": [
   {
    "acres": 0.1,
@@ -17,7 +17,7 @@
     39.261187,
     -74.697767
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0452+US-0677+US-8055@area@39.261,-74.698",
    "kind": "area",
    "passes": [
@@ -36,7 +36,7 @@
      39.261187
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -64,8 +64,8 @@
     39.235307,
     -74.746881
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service"
    ],
@@ -5720,10 +5720,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0452": "downloaded 2026-10-29",
-    "US-0677": "downloaded 2026-10-29",
+    "US-0452": "downloaded 2026-10-30",
+    "US-0677": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -6204,7 +6204,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 756
   },
   {
@@ -6230,8 +6230,8 @@
     39.235307,
     -74.746881
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service"
    ],
@@ -11886,10 +11886,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0452": "downloaded 2026-10-29",
-    "US-0677": "downloaded 2026-10-29",
+    "US-0452": "downloaded 2026-10-30",
+    "US-0677": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -12378,8 +12378,8 @@
     39.200179,
     -74.766959
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -13403,10 +13403,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0452": "downloaded 2026-10-29",
-    "US-13057": "downloaded 2026-10-29",
+    "US-0452": "downloaded 2026-10-30",
+    "US-13057": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -13418,6 +13418,10 @@
      "US-13057",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/beaver_swamp_no.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0452": "Cape May National Wildlife Refuge",
@@ -13469,7 +13473,7 @@
    ],
    "small": "small overlap: tight fit, check carefully",
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 71
   },
   {
@@ -13484,7 +13488,7 @@
     39.201257,
     -74.76026
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0452+US-13057@area@39.201,-74.761",
    "kind": "area",
    "passes": [
@@ -13506,7 +13510,7 @@
      39.200714
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -13522,7 +13526,7 @@
     39.208492,
     -74.76617
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0452+US-13057@area@39.208,-74.766",
    "kind": "area",
    "passes": [
@@ -13544,7 +13548,7 @@
      39.207497
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -13560,7 +13564,7 @@
     39.211386,
     -74.761303
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0452+US-13057@area@39.211,-74.762",
    "kind": "area",
    "passes": [
@@ -13582,7 +13586,7 @@
      39.211205
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -13598,7 +13602,7 @@
     39.215904,
     -74.772947
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0452+US-4993@area@39.216,-74.773",
    "kind": "area",
    "passes": [
@@ -13628,7 +13632,7 @@
      39.214366
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -13661,8 +13665,8 @@
     39.263561,
     -74.714203
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -13842,11 +13846,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-0452": "downloaded 2026-10-29",
-    "US-8055": "downloaded 2026-10-29",
+    "US-0452": "downloaded 2026-10-30",
+    "US-8055": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -13858,6 +13862,10 @@
      "US-8055",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/tuckahoe.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0452": "Cape May National Wildlife Refuge",
@@ -13901,7 +13909,7 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 31
   },
   {
@@ -13916,7 +13924,7 @@
     40.043263,
     -74.068816
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-1621@area@40.043,-74.069",
    "kind": "area",
    "passes": [
@@ -13934,7 +13942,7 @@
      40.043263
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -13950,7 +13958,7 @@
     39.570481,
     -74.412386
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-4992@area@39.570,-74.412",
    "kind": "area",
    "passes": [
@@ -13972,7 +13980,7 @@
      39.5703
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -13988,7 +13996,7 @@
     39.572651,
     -74.400959
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-4992@area@39.573,-74.401",
    "kind": "area",
    "passes": [
@@ -14010,7 +14018,7 @@
      39.57229
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -14043,8 +14051,8 @@
     39.581262,
     -74.398998
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -14390,11 +14398,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-4992": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-4992": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -14406,6 +14414,10 @@
      "US-4992",
      "https://www.state.nj.us/dep/parksandforests/parks/bass.html"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -14476,8 +14488,8 @@
     39.581262,
     -74.398998
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -14823,11 +14835,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-4992": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-4992": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -14839,6 +14851,10 @@
      "US-4992",
      "https://www.state.nj.us/dep/parksandforests/parks/bass.html"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -14910,8 +14926,8 @@
     39.584156,
     -74.389729
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -15653,11 +15669,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-4992": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-4992": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -15669,6 +15685,10 @@
      "US-4992",
      "https://www.state.nj.us/dep/parksandforests/parks/bass.html"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -15745,7 +15765,7 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 39
   },
   {
@@ -15760,7 +15780,7 @@
     39.58572,
     -74.414416
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-4992@area@39.586,-74.414",
    "kind": "area",
    "passes": [
@@ -15794,7 +15814,7 @@
      39.582464
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -15810,7 +15830,7 @@
     39.588071,
     -74.404272
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-4992@area@39.588,-74.404",
    "kind": "area",
    "passes": [
@@ -15832,7 +15852,7 @@
      39.588071
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -15848,7 +15868,7 @@
     39.59196,
     -74.409286
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-4992@area@39.589,-74.411",
    "kind": "area",
    "passes": [
@@ -15894,7 +15914,7 @@
      39.588433
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 34
   },
@@ -15910,7 +15930,7 @@
     39.593452,
     -74.402358
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-4992@area@39.593,-74.402",
    "kind": "area",
    "passes": [
@@ -15932,7 +15952,7 @@
      39.59309
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -15965,8 +15985,8 @@
     39.584156,
     -74.389729
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -16070,11 +16090,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-4992": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-4992": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -16086,6 +16106,10 @@
      "US-4992",
      "https://www.state.nj.us/dep/parksandforests/parks/bass.html"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -16143,7 +16167,7 @@
     39.59196,
     -74.409286
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-4992@area@39.594,-74.407",
    "kind": "area",
    "passes": [
@@ -16189,7 +16213,7 @@
      39.588433
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 34
   },
@@ -16205,7 +16229,7 @@
     39.645408,
     -74.30528
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-4992@area@39.645,-74.305",
    "kind": "area",
    "passes": [
@@ -16227,7 +16251,7 @@
      39.644232
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -16260,8 +16284,8 @@
     39.473098,
     -74.478893
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -16551,10 +16575,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-8030": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-8030": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -16566,6 +16590,10 @@
      "US-8030",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/absecon.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -16636,7 +16664,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 335
   },
   {
@@ -16668,8 +16696,8 @@
     39.693451,
     -74.301955
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -17467,10 +17495,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-8052": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-8052": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -17482,6 +17510,10 @@
      "US-8052",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/stafford_forge.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -17584,8 +17616,8 @@
     39.693451,
     -74.301955
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -18383,10 +18415,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-8052": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-8052": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -18398,6 +18430,10 @@
      "US-8052",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/stafford_forge.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -18500,8 +18536,8 @@
     39.693451,
     -74.301955
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -19299,10 +19335,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-8052": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-8052": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -19314,6 +19350,10 @@
      "US-8052",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/stafford_forge.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -19416,8 +19456,8 @@
     39.70055,
     -74.300262
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -19593,11 +19633,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-8052": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-8052": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -19609,6 +19649,10 @@
      "US-8052",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/stafford_forge.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -19684,8 +19728,8 @@
     39.700867,
     -74.292089
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -23469,10 +23513,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-8052": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-8052": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -23484,6 +23528,10 @@
      "US-8052",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/stafford_forge.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -23591,7 +23639,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 145
   },
   {
@@ -23623,8 +23671,8 @@
     39.700867,
     -74.292089
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -24282,10 +24330,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-8052": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-8052": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -24297,6 +24345,10 @@
      "US-8052",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/stafford_forge.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -24402,8 +24454,8 @@
     39.714025,
     -74.320461
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -25141,10 +25193,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-8052": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-8052": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -25156,6 +25208,10 @@
      "US-8052",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/stafford_forge.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -25250,8 +25306,8 @@
     39.714025,
     -74.320461
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -25989,10 +26045,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-8052": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-8052": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -26004,6 +26060,10 @@
      "US-8052",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/stafford_forge.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -26098,8 +26158,8 @@
     39.706564,
     -74.29997
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -26629,11 +26689,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-8052": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-8052": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -26645,6 +26705,10 @@
      "US-8052",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/stafford_forge.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -26702,7 +26766,7 @@
     39.710141,
     -74.312314
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-8052@area@39.710,-74.312",
    "kind": "area",
    "passes": [
@@ -26720,7 +26784,7 @@
      39.710141
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -26736,7 +26800,7 @@
     39.710865,
     -74.309511
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-8052@area@39.711,-74.310",
    "kind": "area",
    "passes": [
@@ -26754,7 +26818,7 @@
      39.710865
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -26770,7 +26834,7 @@
     39.710503,
     -74.310913
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0453+US-8052@area@39.711,-74.311",
    "kind": "area",
    "passes": [
@@ -26788,7 +26852,7 @@
      39.710503
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -26821,8 +26885,8 @@
     39.714025,
     -74.320461
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "Fish and Wildlife Service",
     "state"
@@ -27560,10 +27624,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0453": "downloaded 2026-10-29",
-    "US-8052": "downloaded 2026-10-29",
+    "US-0453": "downloaded 2026-10-30",
+    "US-8052": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -27575,6 +27639,10 @@
      "US-8052",
      "https://www.state.nj.us/dep/fgw/pdf/wmamaps/stafford_forge.pdf"
     ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
    ],
    "names": {
     "US-0453": "Edwin B. Forsythe National Wildlife Refuge",
@@ -27652,7 +27720,7 @@
     39.606492,
     -75.554696
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0455+US-1617@area@39.606,-75.555",
    "kind": "area",
    "passes": [
@@ -27674,7 +27742,7 @@
      39.605859
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -27707,8 +27775,8 @@
     39.307893,
     -74.814774
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -28913,10 +28981,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-11964": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-11964": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -29177,7 +29245,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 447
   },
   {
@@ -29209,8 +29277,8 @@
     39.241274,
     -74.75885
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -29267,10 +29335,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-4993": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-4993": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -29355,8 +29423,8 @@
     39.296214,
     -74.778692
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -33577,10 +33645,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-4993": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-4993": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -33682,7 +33750,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 205
   },
   {
@@ -33714,8 +33782,8 @@
     39.301415,
     -74.807179
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -33892,10 +33960,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-4993": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-4993": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -33988,8 +34056,8 @@
     39.471239,
     -74.685882
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -34788,10 +34856,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8043": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8043": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -34980,8 +35048,8 @@
     39.528983,
     -74.769531
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -40992,10 +41060,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8043": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8043": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -41303,7 +41371,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 1197
   },
   {
@@ -41335,8 +41403,8 @@
     39.299492,
     -74.748899
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -41463,11 +41531,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8055": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8055": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -41560,8 +41628,8 @@
     39.304737,
     -74.669584
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -69834,10 +69902,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8055": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8055": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -70637,8 +70705,8 @@
     39.316042,
     -74.625513
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -70923,10 +70991,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8055": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8055": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -71030,8 +71098,8 @@
     39.311656,
     -74.6319
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -71380,10 +71448,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8055": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8055": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -71487,8 +71555,8 @@
     39.329788,
     -74.62441
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -73199,10 +73267,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8055": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8055": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -73434,8 +73502,8 @@
     39.330105,
     -74.661571
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -74628,10 +74696,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8055": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8055": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -74823,8 +74891,8 @@
     39.335531,
     -74.641539
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -74921,10 +74989,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8055": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8055": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -75010,8 +75078,8 @@
     39.354297,
     -74.721319
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -104730,10 +104798,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8055": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8055": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -105687,7 +105755,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 1093
   },
   {
@@ -105719,8 +105787,8 @@
     39.598309,
     -74.864888
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -105897,10 +105965,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8058": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8058": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -105958,7 +106026,7 @@
    ],
    "small": "small overlap: tight fit, check carefully",
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 47
   },
   {
@@ -105990,8 +106058,8 @@
     39.635661,
     -74.900519
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -121138,10 +121206,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0677": "downloaded 2026-10-29",
-    "US-8060": "downloaded 2026-10-29",
+    "US-0677": "downloaded 2026-10-30",
+    "US-8060": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -121930,1733 +121998,8 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 1478
-  },
-  {
-   "access": null,
-   "access_pin": {
-    "at": [
-     40.768245,
-     -74.510303
-    ],
-    "from": "road",
-    "name": "Jenks Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "box": [
-    -74.52095,
-    40.75945,
-    -74.51884,
-    40.76091
-   ],
-   "center": [
-    40.760177,
-    -74.519899
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "Park Service"
-   ],
-   "id": "US-0746+US-4582@trail@40.760,-74.520",
-   "kind": "trail",
-   "len_m": 240,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-0746": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-0746",
-     "https://www.nps.gov/morr/planyourvisit/maps.htm"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-0746": "Morristown National Historical Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go",
-    "restricted access (PAD-US): check the agency rules"
-   ],
-   "ownership": "public land (Park Service)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-0746": true,
-    "US-4582": true
-   },
-   "refs": [
-    "US-0746",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.518847,
-     40.760907
-    ],
-    [
-     -74.520952,
-     40.759446
-    ]
-   ],
-   "status": "merged into one row: US-0746+US-4582@trail@40.762,-74.517",
-   "zone": [
-    [
-     [
-      -74.519201,
-      40.760933
-     ],
-     [
-      -74.52092,
-      40.759802
-     ],
-     [
-      -74.520802,
-      40.759576
-     ],
-     [
-      -74.519023,
-      40.760752
-     ]
-    ]
-   ],
-   "zone_acres": 1.43,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 36.0
-  },
-  {
-   "access": null,
-   "access_pin": {
-    "at": [
-     40.769082,
-     -74.509326
-    ],
-    "from": "road",
-    "name": "Bailey Hollow Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "box": [
-    -74.52095,
-    40.75945,
-    -74.46653,
-    40.79851
-   ],
-   "center": [
-    40.763927,
-    -74.514755
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "Park Service"
-   ],
-   "id": "US-0746+US-4582@trail@40.762,-74.517",
-   "kind": "trail",
-   "len_m": 1268,
-   "len_main": 336,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-0746": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-0746",
-     "https://www.nps.gov/morr/planyourvisit/maps.htm"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-0746": "Morristown National Historical Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go",
-    "restricted access (PAD-US): check the agency rules"
-   ],
-   "ownership": "public land (Park Service)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins": [
-    {
-     "at": [
-      40.797751,
-      -74.468071
-     ],
-     "from": "road",
-     "name": "I- 287",
-     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-     "walk_m": 7
-    },
-    {
-     "at": [
-      40.769082,
-      -74.509326
-     ],
-     "from": "road",
-     "name": "Bailey Hollow Rd",
-     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-     "walk_m": 0
-    },
-    {
-     "at": [
-      40.769082,
-      -74.509326
-     ],
-     "from": "road",
-     "name": "Bailey Hollow Rd",
-     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-     "walk_m": 0
-    }
-   ],
-   "pins_inside": {
-    "US-0746": true,
-    "US-4582": true
-   },
-   "refs": [
-    "US-0746",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.516119,
-     40.762795
-    ],
-    [
-     -74.516141,
-     40.76278
-    ],
-    [
-     -74.516163,
-     40.762765
-    ],
-    [
-     -74.516185,
-     40.76275
-    ],
-    [
-     -74.516207,
-     40.762735
-    ],
-    [
-     -74.516229,
-     40.762719
-    ],
-    [
-     -74.516251,
-     40.762704
-    ],
-    [
-     -74.516273,
-     40.762689
-    ],
-    [
-     -74.516295,
-     40.762674
-    ],
-    [
-     -74.516317,
-     40.762658
-    ],
-    [
-     -74.516339,
-     40.762643
-    ],
-    [
-     -74.516361,
-     40.762628
-    ],
-    [
-     -74.516383,
-     40.762613
-    ],
-    [
-     -74.516405,
-     40.762598
-    ],
-    [
-     -74.516427,
-     40.762582
-    ],
-    [
-     -74.516449,
-     40.762567
-    ],
-    [
-     -74.516471,
-     40.762552
-    ],
-    [
-     -74.516493,
-     40.762537
-    ],
-    [
-     -74.516515,
-     40.762521
-    ],
-    [
-     -74.516537,
-     40.762506
-    ],
-    [
-     -74.516559,
-     40.762491
-    ],
-    [
-     -74.516581,
-     40.762476
-    ],
-    [
-     -74.516603,
-     40.762461
-    ],
-    [
-     -74.516625,
-     40.762445
-    ],
-    [
-     -74.516647,
-     40.76243
-    ],
-    [
-     -74.516669,
-     40.762415
-    ],
-    [
-     -74.516691,
-     40.7624
-    ],
-    [
-     -74.516713,
-     40.762384
-    ],
-    [
-     -74.516735,
-     40.762369
-    ],
-    [
-     -74.516757,
-     40.762354
-    ],
-    [
-     -74.516779,
-     40.762339
-    ],
-    [
-     -74.516801,
-     40.762323
-    ],
-    [
-     -74.516823,
-     40.762308
-    ],
-    [
-     -74.516844,
-     40.762293
-    ],
-    [
-     -74.516866,
-     40.762278
-    ],
-    [
-     -74.516888,
-     40.762263
-    ],
-    [
-     -74.51691,
-     40.762247
-    ],
-    [
-     -74.516932,
-     40.762232
-    ],
-    [
-     -74.516954,
-     40.762217
-    ],
-    [
-     -74.516976,
-     40.762202
-    ],
-    [
-     -74.516998,
-     40.762186
-    ],
-    [
-     -74.51702,
-     40.762171
-    ],
-    [
-     -74.517042,
-     40.762156
-    ],
-    [
-     -74.517064,
-     40.762141
-    ],
-    [
-     -74.517086,
-     40.762126
-    ],
-    [
-     -74.517108,
-     40.76211
-    ],
-    [
-     -74.51713,
-     40.762095
-    ],
-    [
-     -74.517152,
-     40.76208
-    ],
-    [
-     -74.517174,
-     40.762065
-    ],
-    [
-     -74.517196,
-     40.762049
-    ],
-    [
-     -74.517218,
-     40.762034
-    ],
-    [
-     -74.51724,
-     40.762019
-    ],
-    [
-     -74.517262,
-     40.762004
-    ],
-    [
-     -74.517284,
-     40.761989
-    ],
-    [
-     -74.517306,
-     40.761973
-    ],
-    [
-     -74.517328,
-     40.761958
-    ],
-    [
-     -74.51735,
-     40.761943
-    ],
-    [
-     -74.517372,
-     40.761928
-    ],
-    [
-     -74.517394,
-     40.761912
-    ],
-    [
-     -74.517416,
-     40.761897
-    ],
-    [
-     -74.517438,
-     40.761882
-    ],
-    [
-     -74.51746,
-     40.761867
-    ],
-    [
-     -74.517482,
-     40.761851
-    ],
-    [
-     -74.517504,
-     40.761836
-    ],
-    [
-     -74.517526,
-     40.761821
-    ],
-    [
-     -74.517548,
-     40.761806
-    ],
-    [
-     -74.51757,
-     40.761791
-    ],
-    [
-     -74.517592,
-     40.761775
-    ],
-    [
-     -74.517613,
-     40.76176
-    ],
-    [
-     -74.517635,
-     40.761745
-    ],
-    [
-     -74.517657,
-     40.76173
-    ],
-    [
-     -74.517679,
-     40.761714
-    ],
-    [
-     -74.517701,
-     40.761699
-    ],
-    [
-     -74.517723,
-     40.761684
-    ]
-   ],
-   "status": "candidate",
-   "stretches": 5,
-   "strip_wide_m": 65.9,
-   "zone": [
-    [
-     [
-      -74.516472,
-      40.762855
-     ],
-     [
-      -74.51748,
-      40.762177
-     ],
-     [
-      -74.51748,
-      40.761815
-     ],
-     [
-      -74.516353,
-      40.762674
-     ]
-    ]
-   ],
-   "zone_acres": 0.91,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 30.0
-  },
-  {
-   "access": null,
-   "access_pin": {
-    "at": [
-     40.769082,
-     -74.509326
-    ],
-    "from": "road",
-    "name": "Bailey Hollow Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "box": [
-    -74.51772,
-    40.76168,
-    -74.51416,
-    40.76446
-   ],
-   "center": [
-    40.763927,
-    -74.514755
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "Park Service"
-   ],
-   "id": "US-0746+US-4582@trail@40.764,-74.514",
-   "kind": "trail",
-   "len_m": 336,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-0746": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-0746",
-     "https://www.nps.gov/morr/planyourvisit/maps.htm"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-0746": "Morristown National Historical Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go",
-    "restricted access (PAD-US): check the agency rules"
-   ],
-   "ownership": "public land (Park Service)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-0746": true,
-    "US-4582": true
-   },
-   "refs": [
-    "US-0746",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.516119,
-     40.762795
-    ],
-    [
-     -74.516141,
-     40.76278
-    ],
-    [
-     -74.516163,
-     40.762765
-    ],
-    [
-     -74.516185,
-     40.76275
-    ],
-    [
-     -74.516207,
-     40.762735
-    ],
-    [
-     -74.516229,
-     40.762719
-    ],
-    [
-     -74.516251,
-     40.762704
-    ],
-    [
-     -74.516273,
-     40.762689
-    ],
-    [
-     -74.516295,
-     40.762674
-    ],
-    [
-     -74.516317,
-     40.762658
-    ],
-    [
-     -74.516339,
-     40.762643
-    ],
-    [
-     -74.516361,
-     40.762628
-    ],
-    [
-     -74.516383,
-     40.762613
-    ],
-    [
-     -74.516405,
-     40.762598
-    ],
-    [
-     -74.516427,
-     40.762582
-    ],
-    [
-     -74.516449,
-     40.762567
-    ],
-    [
-     -74.516471,
-     40.762552
-    ],
-    [
-     -74.516493,
-     40.762537
-    ],
-    [
-     -74.516515,
-     40.762521
-    ],
-    [
-     -74.516537,
-     40.762506
-    ],
-    [
-     -74.516559,
-     40.762491
-    ],
-    [
-     -74.516581,
-     40.762476
-    ],
-    [
-     -74.516603,
-     40.762461
-    ],
-    [
-     -74.516625,
-     40.762445
-    ],
-    [
-     -74.516647,
-     40.76243
-    ],
-    [
-     -74.516669,
-     40.762415
-    ],
-    [
-     -74.516691,
-     40.7624
-    ],
-    [
-     -74.516713,
-     40.762384
-    ],
-    [
-     -74.516735,
-     40.762369
-    ],
-    [
-     -74.516757,
-     40.762354
-    ],
-    [
-     -74.516779,
-     40.762339
-    ],
-    [
-     -74.516801,
-     40.762323
-    ],
-    [
-     -74.516823,
-     40.762308
-    ],
-    [
-     -74.516844,
-     40.762293
-    ],
-    [
-     -74.516866,
-     40.762278
-    ],
-    [
-     -74.516888,
-     40.762263
-    ],
-    [
-     -74.51691,
-     40.762247
-    ],
-    [
-     -74.516932,
-     40.762232
-    ],
-    [
-     -74.516954,
-     40.762217
-    ],
-    [
-     -74.516976,
-     40.762202
-    ],
-    [
-     -74.516998,
-     40.762186
-    ],
-    [
-     -74.51702,
-     40.762171
-    ],
-    [
-     -74.517042,
-     40.762156
-    ],
-    [
-     -74.517064,
-     40.762141
-    ],
-    [
-     -74.517086,
-     40.762126
-    ],
-    [
-     -74.517108,
-     40.76211
-    ],
-    [
-     -74.51713,
-     40.762095
-    ],
-    [
-     -74.517152,
-     40.76208
-    ],
-    [
-     -74.517174,
-     40.762065
-    ],
-    [
-     -74.517196,
-     40.762049
-    ],
-    [
-     -74.517218,
-     40.762034
-    ],
-    [
-     -74.51724,
-     40.762019
-    ],
-    [
-     -74.517262,
-     40.762004
-    ],
-    [
-     -74.517284,
-     40.761989
-    ],
-    [
-     -74.517306,
-     40.761973
-    ],
-    [
-     -74.517328,
-     40.761958
-    ],
-    [
-     -74.51735,
-     40.761943
-    ],
-    [
-     -74.517372,
-     40.761928
-    ],
-    [
-     -74.517394,
-     40.761912
-    ],
-    [
-     -74.517416,
-     40.761897
-    ],
-    [
-     -74.517438,
-     40.761882
-    ],
-    [
-     -74.51746,
-     40.761867
-    ],
-    [
-     -74.517482,
-     40.761851
-    ],
-    [
-     -74.517504,
-     40.761836
-    ],
-    [
-     -74.517526,
-     40.761821
-    ],
-    [
-     -74.517548,
-     40.761806
-    ],
-    [
-     -74.51757,
-     40.761791
-    ],
-    [
-     -74.517592,
-     40.761775
-    ],
-    [
-     -74.517613,
-     40.76176
-    ],
-    [
-     -74.517635,
-     40.761745
-    ],
-    [
-     -74.517657,
-     40.76173
-    ],
-    [
-     -74.517679,
-     40.761714
-    ],
-    [
-     -74.517701,
-     40.761699
-    ],
-    [
-     -74.517723,
-     40.761684
-    ]
-   ],
-   "status": "merged into one row: US-0746+US-4582@trail@40.762,-74.517",
-   "zone": [
-    [
-     [
-      -74.516504,
-      40.762855
-     ],
-     [
-      -74.517394,
-      40.762267
-     ],
-     [
-      -74.517453,
-      40.761815
-     ],
-     [
-      -74.516386,
-      40.762674
-     ]
-    ]
-   ],
-   "zone_acres": 0.9,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 32.0
-  },
-  {
-   "access": null,
-   "access_pin": {
-    "at": [
-     40.768236,
-     -74.510259
-    ],
-    "from": "road",
-    "name": "Jenks Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "box": [
-    -74.51053,
-    40.7677,
-    -74.50903,
-    40.76904
-   ],
-   "center": [
-    40.768441,
-    -74.509706
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "Park Service"
-   ],
-   "id": "US-0746+US-4582@trail@40.769,-74.509",
-   "kind": "trail",
-   "len_m": 178,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-0746": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-0746",
-     "https://www.nps.gov/morr/planyourvisit/maps.htm"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-0746": "Morristown National Historical Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go",
-    "restricted access (PAD-US): check the agency rules"
-   ],
-   "ownership": "public land (Park Service)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-0746": true,
-    "US-4582": true
-   },
-   "refs": [
-    "US-0746",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.509031,
-     40.769044
-    ],
-    [
-     -74.50905,
-     40.769027
-    ],
-    [
-     -74.50907,
-     40.76901
-    ],
-    [
-     -74.509089,
-     40.768992
-    ],
-    [
-     -74.509108,
-     40.768975
-    ],
-    [
-     -74.509127,
-     40.768958
-    ],
-    [
-     -74.509147,
-     40.768941
-    ],
-    [
-     -74.509166,
-     40.768923
-    ],
-    [
-     -74.509185,
-     40.768906
-    ],
-    [
-     -74.509204,
-     40.768889
-    ],
-    [
-     -74.509224,
-     40.768872
-    ],
-    [
-     -74.509243,
-     40.768855
-    ],
-    [
-     -74.509262,
-     40.768837
-    ],
-    [
-     -74.509282,
-     40.76882
-    ],
-    [
-     -74.509301,
-     40.768803
-    ],
-    [
-     -74.50932,
-     40.768786
-    ],
-    [
-     -74.509339,
-     40.768768
-    ],
-    [
-     -74.509359,
-     40.768751
-    ],
-    [
-     -74.509378,
-     40.768734
-    ],
-    [
-     -74.509397,
-     40.768717
-    ],
-    [
-     -74.509416,
-     40.768699
-    ],
-    [
-     -74.509436,
-     40.768682
-    ],
-    [
-     -74.509455,
-     40.768665
-    ],
-    [
-     -74.509474,
-     40.768648
-    ],
-    [
-     -74.509494,
-     40.768631
-    ],
-    [
-     -74.509513,
-     40.768613
-    ],
-    [
-     -74.509532,
-     40.768596
-    ],
-    [
-     -74.509551,
-     40.768579
-    ],
-    [
-     -74.509571,
-     40.768562
-    ],
-    [
-     -74.50959,
-     40.768544
-    ],
-    [
-     -74.509609,
-     40.768527
-    ],
-    [
-     -74.509628,
-     40.76851
-    ],
-    [
-     -74.509648,
-     40.768493
-    ],
-    [
-     -74.509667,
-     40.768475
-    ],
-    [
-     -74.509686,
-     40.768458
-    ],
-    [
-     -74.509706,
-     40.768441
-    ],
-    [
-     -74.509725,
-     40.768424
-    ],
-    [
-     -74.509744,
-     40.768407
-    ],
-    [
-     -74.509763,
-     40.768389
-    ],
-    [
-     -74.509783,
-     40.768372
-    ],
-    [
-     -74.509802,
-     40.768355
-    ],
-    [
-     -74.509821,
-     40.768338
-    ],
-    [
-     -74.50984,
-     40.76832
-    ],
-    [
-     -74.50986,
-     40.768303
-    ],
-    [
-     -74.509879,
-     40.768286
-    ],
-    [
-     -74.509898,
-     40.768269
-    ],
-    [
-     -74.509918,
-     40.768252
-    ],
-    [
-     -74.509937,
-     40.768234
-    ],
-    [
-     -74.509956,
-     40.768217
-    ],
-    [
-     -74.509975,
-     40.7682
-    ],
-    [
-     -74.509995,
-     40.768183
-    ],
-    [
-     -74.510014,
-     40.768165
-    ],
-    [
-     -74.510033,
-     40.768148
-    ],
-    [
-     -74.510052,
-     40.768131
-    ],
-    [
-     -74.510072,
-     40.768114
-    ],
-    [
-     -74.510091,
-     40.768096
-    ],
-    [
-     -74.51011,
-     40.768079
-    ],
-    [
-     -74.51013,
-     40.768062
-    ],
-    [
-     -74.510149,
-     40.768045
-    ],
-    [
-     -74.510168,
-     40.768028
-    ],
-    [
-     -74.510187,
-     40.76801
-    ],
-    [
-     -74.510207,
-     40.767993
-    ],
-    [
-     -74.510226,
-     40.767976
-    ],
-    [
-     -74.510245,
-     40.767959
-    ],
-    [
-     -74.510264,
-     40.767941
-    ],
-    [
-     -74.510284,
-     40.767924
-    ],
-    [
-     -74.510303,
-     40.767907
-    ],
-    [
-     -74.510322,
-     40.76789
-    ],
-    [
-     -74.510342,
-     40.767872
-    ],
-    [
-     -74.510361,
-     40.767855
-    ],
-    [
-     -74.51038,
-     40.767838
-    ]
-   ],
-   "status": "merged into one row: US-0746+US-4582@trail@40.762,-74.517",
-   "zone": [
-    [
-     [
-      -74.509433,
-      40.769063
-     ],
-     [
-      -74.510619,
-      40.767977
-     ],
-     [
-      -74.509255,
-      40.769017
-     ]
-    ]
-   ],
-   "zone_acres": 0.5,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 22.0
-  },
-  {
-   "access": null,
-   "access_pin": {
-    "at": [
-     40.797751,
-     -74.468071
-    ],
-    "from": "road",
-    "name": "I- 287",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 7
-   },
-   "box": [
-    -74.46829,
-    40.79762,
-    -74.46653,
-    40.79851
-   ],
-   "center": [
-    40.798059,
-    -74.467421
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "Park Service"
-   ],
-   "id": "US-0746+US-4582@trail@40.798,-74.467",
-   "kind": "trail",
-   "len_m": 178,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-0746": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-0746",
-     "https://www.nps.gov/morr/planyourvisit/maps.htm"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-0746": "Morristown National Historical Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go",
-    "restricted access (PAD-US): check the agency rules"
-   ],
-   "ownership": "public land (Park Service)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-0746": true,
-    "US-4582": true
-   },
-   "refs": [
-    "US-0746",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.46653,
-     40.798511
-    ],
-    [
-     -74.466554,
-     40.798499
-    ],
-    [
-     -74.466579,
-     40.798486
-    ],
-    [
-     -74.466604,
-     40.798474
-    ],
-    [
-     -74.466629,
-     40.798461
-    ],
-    [
-     -74.466653,
-     40.798448
-    ],
-    [
-     -74.466678,
-     40.798436
-    ],
-    [
-     -74.466703,
-     40.798423
-    ],
-    [
-     -74.466728,
-     40.798411
-    ],
-    [
-     -74.466752,
-     40.798398
-    ],
-    [
-     -74.466777,
-     40.798386
-    ],
-    [
-     -74.466802,
-     40.798373
-    ],
-    [
-     -74.466827,
-     40.798361
-    ],
-    [
-     -74.466851,
-     40.798348
-    ],
-    [
-     -74.466876,
-     40.798335
-    ],
-    [
-     -74.466901,
-     40.798323
-    ],
-    [
-     -74.466926,
-     40.79831
-    ],
-    [
-     -74.46695,
-     40.798298
-    ],
-    [
-     -74.466975,
-     40.798285
-    ],
-    [
-     -74.467,
-     40.798273
-    ],
-    [
-     -74.467025,
-     40.79826
-    ],
-    [
-     -74.46705,
-     40.798248
-    ],
-    [
-     -74.467074,
-     40.798235
-    ],
-    [
-     -74.467099,
-     40.798223
-    ],
-    [
-     -74.467124,
-     40.79821
-    ],
-    [
-     -74.467149,
-     40.798197
-    ],
-    [
-     -74.467173,
-     40.798185
-    ],
-    [
-     -74.467198,
-     40.798172
-    ],
-    [
-     -74.467223,
-     40.79816
-    ],
-    [
-     -74.467248,
-     40.798147
-    ],
-    [
-     -74.467272,
-     40.798135
-    ],
-    [
-     -74.467297,
-     40.798122
-    ],
-    [
-     -74.467322,
-     40.79811
-    ],
-    [
-     -74.467347,
-     40.798097
-    ],
-    [
-     -74.467371,
-     40.798084
-    ],
-    [
-     -74.467396,
-     40.798072
-    ],
-    [
-     -74.467421,
-     40.798059
-    ],
-    [
-     -74.467446,
-     40.798047
-    ],
-    [
-     -74.46747,
-     40.798034
-    ],
-    [
-     -74.467495,
-     40.798022
-    ],
-    [
-     -74.46752,
-     40.798009
-    ],
-    [
-     -74.467545,
-     40.797997
-    ],
-    [
-     -74.46757,
-     40.797984
-    ],
-    [
-     -74.467594,
-     40.797971
-    ],
-    [
-     -74.467619,
-     40.797959
-    ],
-    [
-     -74.467644,
-     40.797946
-    ],
-    [
-     -74.467669,
-     40.797934
-    ],
-    [
-     -74.467693,
-     40.797921
-    ],
-    [
-     -74.467718,
-     40.797909
-    ],
-    [
-     -74.467743,
-     40.797896
-    ],
-    [
-     -74.467768,
-     40.797884
-    ],
-    [
-     -74.467792,
-     40.797871
-    ],
-    [
-     -74.467817,
-     40.797858
-    ],
-    [
-     -74.467842,
-     40.797846
-    ],
-    [
-     -74.467867,
-     40.797833
-    ],
-    [
-     -74.467891,
-     40.797821
-    ],
-    [
-     -74.467916,
-     40.797808
-    ],
-    [
-     -74.467941,
-     40.797796
-    ],
-    [
-     -74.467966,
-     40.797783
-    ],
-    [
-     -74.46799,
-     40.797771
-    ],
-    [
-     -74.468015,
-     40.797758
-    ],
-    [
-     -74.46804,
-     40.797745
-    ],
-    [
-     -74.468065,
-     40.797733
-    ],
-    [
-     -74.46809,
-     40.79772
-    ],
-    [
-     -74.468114,
-     40.797708
-    ],
-    [
-     -74.468139,
-     40.797695
-    ],
-    [
-     -74.468164,
-     40.797683
-    ],
-    [
-     -74.468189,
-     40.79767
-    ],
-    [
-     -74.468213,
-     40.797658
-    ],
-    [
-     -74.468238,
-     40.797645
-    ],
-    [
-     -74.468263,
-     40.797632
-    ],
-    [
-     -74.468288,
-     40.79762
-    ]
-   ],
-   "status": "merged into one row: US-0746+US-4582@trail@40.762,-74.517",
-   "zone": [
-    [
-     [
-      -74.466896,
-      40.798623
-     ],
-     [
-      -74.467726,
-      40.798216
-     ],
-     [
-      -74.467845,
-      40.797809
-     ],
-     [
-      -74.468082,
-      40.797719
-     ],
-     [
-      -74.467964,
-      40.797583
-     ],
-     [
-      -74.467964,
-      40.797402
-     ],
-     [
-      -74.466777,
-      40.798035
-     ]
-    ]
-   ],
-   "zone_acres": 1.85,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 65.9
   },
   {
    "access": [
@@ -123687,8 +122030,8 @@
     39.374083,
     -74.948848
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -123941,11 +122284,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-11964": "downloaded 2026-10-29",
-    "US-13256": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-11964": "downloaded 2026-10-30",
+    "US-13256": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -124022,7 +122365,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 101
   },
   {
@@ -124054,8 +122397,8 @@
     39.317449,
     -74.947036
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -124758,10 +123101,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-11964": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-11964": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -124941,8 +123284,8 @@
     39.345982,
     -74.954649
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -125165,10 +123508,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-11964": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-11964": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -125273,8 +123616,8 @@
     39.377093,
     -74.990857
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -125423,10 +123766,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-11964": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-11964": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -125526,8 +123869,8 @@
     39.395678,
     -74.984929
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -126730,10 +125073,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-11964": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-11964": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -127086,8 +125429,8 @@
     39.42109,
     -74.908852
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -147646,10 +145989,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-11964": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-11964": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -148198,7 +146541,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 906
   },
   {
@@ -148230,8 +146573,8 @@
     39.46545,
     -74.887348
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -148692,11 +147035,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-11964": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-11964": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -148782,8 +147125,8 @@
     39.37245,
     -74.997786
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -150102,10 +148445,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-13256": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-13256": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -150314,7 +148657,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 818
   },
   {
@@ -150346,8 +148689,8 @@
     39.373988,
     -74.949794
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -150476,10 +148819,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-13256": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-13256": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -150579,8 +148922,8 @@
     39.383936,
     -74.986514
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -150721,10 +149064,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-13256": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-13256": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -150807,7 +149150,7 @@
     39.244281,
     -75.020877
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-0886+US-8038+US-8042@area@39.244,-75.021",
    "kind": "area",
    "passes": [
@@ -150830,7 +149173,7 @@
      39.2441
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -150863,8 +149206,8 @@
     39.23935,
     -75.019037
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -151395,10 +149738,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-8038": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-8038": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -151563,7 +149906,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 381
   },
   {
@@ -151595,8 +149938,8 @@
     39.243529,
     -75.013349
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -157107,10 +155450,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-8042": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-8042": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -157546,8 +155889,8 @@
     39.243529,
     -75.013349
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -163058,10 +161401,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-8042": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-8042": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -163498,8 +161841,8 @@
     39.284271,
     -74.987245
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -172180,10 +170523,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-8042": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-8042": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -172397,7 +170740,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 569
   },
   {
@@ -172430,8 +170773,8 @@
     39.278141,
     -74.98235
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -178908,10 +177251,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-8045": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-8045": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -179221,7 +177564,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 423
   },
   {
@@ -179253,8 +177596,8 @@
     39.294329,
     -74.986413
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -179925,10 +178268,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-8045": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-8045": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -180072,8 +178415,8 @@
     39.303011,
     -74.994599
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -180710,10 +179053,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-8045": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-8045": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -180849,8 +179192,8 @@
     39.31418,
     -75.005106
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -181027,10 +179370,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-8045": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-8045": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -181130,8 +179473,8 @@
     39.326344,
     -75.007312
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -181272,10 +179615,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-8045": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-8045": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -181372,8 +179715,8 @@
     39.341447,
     -75.007835
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -181620,10 +179963,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-8045": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-8045": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -181739,8 +180082,8 @@
     39.353159,
     -75.020781
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -182413,10 +180756,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0886": "downloaded 2026-10-29",
-    "US-8045": "downloaded 2026-10-29",
+    "US-0886": "downloaded 2026-10-30",
+    "US-8045": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -182592,8 +180935,8 @@
     40.873522,
     -74.80784
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -184786,11 +183129,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0888": "downloaded 2026-10-29",
-    "US-1608": "downloaded 2026-10-29",
-    "US-1631": "downloaded 2026-10-29",
+    "US-0888": "downloaded 2026-10-30",
+    "US-1608": "downloaded 2026-10-30",
+    "US-1631": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -184886,7 +183229,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 257
   },
   {
@@ -184918,8 +183261,8 @@
     40.873702,
     -74.807749
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -186746,10 +185089,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0888": "downloaded 2026-10-29",
-    "US-1608": "downloaded 2026-10-29",
+    "US-0888": "downloaded 2026-10-30",
+    "US-1608": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -186905,7 +185248,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 253
   },
   {
@@ -186937,8 +185280,8 @@
     40.739044,
     -74.941358
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -187307,10 +185650,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0888": "downloaded 2026-10-29",
-    "US-1622": "downloaded 2026-10-29",
+    "US-0888": "downloaded 2026-10-30",
+    "US-1622": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -187388,7 +185731,7 @@
    ],
    "small": "small overlap: tight fit, check carefully",
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 75
   },
   {
@@ -187420,8 +185763,8 @@
     40.86936,
     -74.805273
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -189922,10 +188265,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0888": "downloaded 2026-10-29",
-    "US-1631": "downloaded 2026-10-29",
+    "US-0888": "downloaded 2026-10-30",
+    "US-1631": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -190221,7 +188564,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 437
   },
   {
@@ -190236,7 +188579,7 @@
     41.102172,
     -74.564232
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-11337+US-8051@area@41.101,-74.566",
    "kind": "area",
    "passes": [
@@ -190258,7 +188601,7 @@
      41.101719
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -190274,7 +188617,7 @@
     41.102172,
     -74.564232
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-11337+US-8051@area@41.101,-74.567",
    "kind": "area",
    "passes": [
@@ -190296,7 +188639,7 @@
      41.101719
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -190312,7 +188655,7 @@
     39.441898,
     -75.397271
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-11338+US-13061@area@39.440,-75.401",
    "kind": "area",
    "passes": [
@@ -190350,7 +188693,7 @@
      39.438914
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -190366,7 +188709,7 @@
     39.441898,
     -75.397271
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-11338+US-13061@area@39.442,-75.398",
    "kind": "area",
    "passes": [
@@ -190404,7 +188747,7 @@
      39.438914
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -190420,7 +188763,7 @@
     39.443978,
     -75.392502
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-11338+US-13061@area@39.444,-75.392",
    "kind": "area",
    "passes": [
@@ -190442,7 +188785,7 @@
      39.443164
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -190458,7 +188801,7 @@
     38.943271,
     -74.965217
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-11340+US-1610@area@38.943,-74.965",
    "kind": "area",
    "passes": [
@@ -190476,7 +188819,7 @@
      38.943271
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -190509,8 +188852,8 @@
     39.369828,
     -74.980566
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -191775,10 +190118,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-11964": "downloaded 2026-10-29",
-    "US-13256": "downloaded 2026-10-29",
+    "US-11964": "downloaded 2026-10-30",
+    "US-13256": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -191946,7 +190289,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 1779
   },
   {
@@ -191961,7 +190304,7 @@
     39.304798,
     -74.850239
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-11964+US-4993@area@39.305,-74.854",
    "kind": "area",
    "passes": [
@@ -191983,7 +190326,7 @@
      39.304798
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -191999,7 +190342,7 @@
     39.304934,
     -74.864567
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-11964+US-4993@area@39.305,-74.865",
    "kind": "area",
    "passes": [
@@ -192021,7 +190364,7 @@
      39.304934
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -192037,7 +190380,7 @@
     39.305114,
     -74.875015
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-11964+US-4993@area@39.305,-74.875",
    "kind": "area",
    "passes": [
@@ -192059,7 +190402,7 @@
      39.305114
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -192075,7 +190418,7 @@
     39.305295,
     -74.885696
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-11964+US-4993@area@39.305,-74.886",
    "kind": "area",
    "passes": [
@@ -192097,7 +190440,7 @@
      39.305295
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -192113,7 +190456,7 @@
     40.641777,
     -74.930898
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-12101+US-6461@area@40.643,-74.931",
    "kind": "area",
    "passes": [
@@ -192699,7 +191042,7 @@
      40.658961
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 30
   },
@@ -192715,7 +191058,7 @@
     40.665743,
     -74.931727
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-12101+US-6461@area@40.666,-74.931",
    "kind": "area",
    "passes": [
@@ -192733,7 +191076,7 @@
      40.665743
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -192749,7 +191092,7 @@
     41.181964,
     -74.846871
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-12645+US-4999@area@41.182,-74.847",
    "kind": "area",
    "passes": [
@@ -192843,7 +191186,7 @@
      41.180608
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -192859,7 +191202,7 @@
     41.197158,
     -74.815835
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-12645+US-4999@area@41.197,-74.816",
    "kind": "area",
    "passes": [
@@ -192933,7 +191276,7 @@
      41.197158
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -192949,7 +191292,7 @@
     41.207558,
     -74.802943
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-12645+US-4999@area@41.208,-74.803",
    "kind": "area",
    "passes": [
@@ -192979,7 +191322,7 @@
      41.204754
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -192995,7 +191338,7 @@
     40.854429,
     -75.042277
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-13149+US-4995@area@40.859,-75.045",
    "kind": "area",
    "passes": [
@@ -193025,7 +191368,7 @@
      40.855062
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -193058,8 +191401,8 @@
     40.87352,
     -74.807827
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -195180,10 +193523,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-1608": "downloaded 2026-10-29",
-    "US-1631": "downloaded 2026-10-29",
+    "US-1608": "downloaded 2026-10-30",
+    "US-1631": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -195286,7 +193629,7 @@
     40.883042,
     -74.79687
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1608+US-1631@area@40.883,-74.797",
    "kind": "area",
    "passes": [
@@ -195320,7 +193663,7 @@
      40.876621
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -195336,7 +193679,7 @@
     40.883494,
     -74.80186
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1608+US-1631@area@40.884,-74.801",
    "kind": "area",
    "passes": [
@@ -195354,7 +193697,7 @@
      40.883494
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -195370,7 +193713,7 @@
     40.913681,
     -74.81698
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1608+US-4995@area@40.912,-74.819",
    "kind": "area",
    "passes": [
@@ -195392,7 +193735,7 @@
      40.913138
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -195408,7 +193751,7 @@
     40.929733,
     -74.818465
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1608+US-4995@area@40.930,-74.818",
    "kind": "area",
    "passes": [
@@ -195426,7 +193769,7 @@
      40.929733
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -195459,8 +193802,8 @@
     39.772001,
     -74.119036
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -197977,10 +196320,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-1609": "downloaded 2026-10-29",
-    "US-1621": "downloaded 2026-10-29",
+    "US-1609": "downloaded 2026-10-30",
+    "US-1621": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -198365,7 +196708,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 396
   },
   {
@@ -198397,8 +196740,8 @@
     40.297017,
     -74.867322
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -199390,11 +197733,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-1613": "downloaded 2026-10-29",
-    "US-1634": "downloaded 2026-10-29"
+    "US-1613": "downloaded 2026-10-30",
+    "US-1634": "downloaded 2026-10-30"
    },
    "maps": [
     [
@@ -199459,7 +197802,7 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 23
   },
   {
@@ -199474,7 +197817,7 @@
     40.302832,
     -74.871647
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1613+US-1634@area@40.303,-74.872",
    "kind": "area",
    "passes": [
@@ -199492,7 +197835,7 @@
      40.302832
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -199508,7 +197851,7 @@
     40.346717,
     -74.94306
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1613+US-1634@area@40.347,-74.943",
    "kind": "area",
    "passes": [
@@ -199526,2085 +197869,9 @@
      40.346717
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
-  },
-  {
-   "access": [
-    40.222965,
-    -74.774641,
-    "Parking: Calhoun Street Parking (n/a)",
-    "US-1613",
-    887
-   ],
-   "access_pin": {
-    "at": [
-     40.224297,
-     -74.764108
-    ],
-    "from": "road",
-    "name": "Borden Way",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "box": [
-    -74.76455,
-    40.22404,
-    -74.76437,
-    40.22492
-   ],
-   "center": [
-    40.224464,
-    -74.764389
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "state"
-   ],
-   "id": "US-1613+US-4582@trail@40.224,-74.764",
-   "kind": "trail",
-   "len_m": 191,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-1613": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-1613",
-     "https://www.state.nj.us/dep/parksandforests/parks/drcanal.html"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-1613": "Delaware and Raritan Canal State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go"
-   ],
-   "ownership": "public land (state)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-1613": false,
-    "US-4582": true
-   },
-   "refs": [
-    "US-1613",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.764547,
-     40.224922
-    ],
-    [
-     -74.764545,
-     40.2249
-    ],
-    [
-     -74.764544,
-     40.224877
-    ],
-    [
-     -74.764543,
-     40.224854
-    ],
-    [
-     -74.764542,
-     40.224832
-    ],
-    [
-     -74.764541,
-     40.224809
-    ],
-    [
-     -74.76454,
-     40.224786
-    ],
-    [
-     -74.764538,
-     40.224764
-    ],
-    [
-     -74.764537,
-     40.224741
-    ],
-    [
-     -74.764536,
-     40.224718
-    ],
-    [
-     -74.764535,
-     40.224696
-    ],
-    [
-     -74.764534,
-     40.224673
-    ],
-    [
-     -74.764533,
-     40.224651
-    ],
-    [
-     -74.764531,
-     40.224628
-    ],
-    [
-     -74.76453,
-     40.224605
-    ],
-    [
-     -74.764529,
-     40.224583
-    ],
-    [
-     -74.764528,
-     40.22456
-    ],
-    [
-     -74.764527,
-     40.224537
-    ],
-    [
-     -74.764526,
-     40.224515
-    ],
-    [
-     -74.764524,
-     40.224492
-    ],
-    [
-     -74.764523,
-     40.224469
-    ],
-    [
-     -74.764522,
-     40.224447
-    ],
-    [
-     -74.764521,
-     40.224424
-    ],
-    [
-     -74.76452,
-     40.224401
-    ],
-    [
-     -74.764519,
-     40.224379
-    ],
-    [
-     -74.764517,
-     40.224356
-    ],
-    [
-     -74.764516,
-     40.224334
-    ],
-    [
-     -74.764515,
-     40.224311
-    ],
-    [
-     -74.764514,
-     40.224288
-    ],
-    [
-     -74.764513,
-     40.224266
-    ],
-    [
-     -74.764512,
-     40.224243
-    ],
-    [
-     -74.76451,
-     40.22422
-    ],
-    [
-     -74.764509,
-     40.224198
-    ],
-    [
-     -74.764508,
-     40.224175
-    ],
-    [
-     -74.764507,
-     40.224152
-    ],
-    [
-     -74.764506,
-     40.22413
-    ],
-    [
-     -74.764505,
-     40.224107
-    ],
-    [
-     -74.764503,
-     40.224084
-    ],
-    [
-     -74.764502,
-     40.224062
-    ],
-    [
-     -74.764501,
-     40.224039
-    ]
-   ],
-   "status": "merged into one row: US-1613+US-4582@trail@40.440,-74.611",
-   "zone": [
-    [
-     [
-      -74.764874,
-      40.224717
-     ],
-     [
-      -74.764815,
-      40.224264
-     ],
-     [
-      -74.764579,
-      40.224264
-     ],
-     [
-      -74.764579,
-      40.224717
-     ]
-    ],
-    [
-     [
-      -74.764344,
-      40.22449
-     ],
-     [
-      -74.764344,
-      40.22431
-     ],
-     [
-      -74.764109,
-      40.22431
-     ],
-     [
-      -74.764109,
-      40.224445
-     ]
-    ]
-   ],
-   "zone_acres": 0.54,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 30.0
-  },
-  {
-   "access": [
-    40.374252,
-    -74.618703,
-    "Parking: Kingston Lock and Rt 27 Parking (n/a)",
-    "US-1613",
-    72
-   ],
-   "access_pin": {
-    "at": [
-     40.374504,
-     -74.618531
-    ],
-    "from": "parking / access point",
-    "name": "Parking: Kingston Lock and Rt 27 Parking (n/a)",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 29
-   },
-   "box": [
-    -74.62001,
-    40.37409,
-    -74.61712,
-    40.37472
-   ],
-   "center": [
-    40.374543,
-    -74.617945
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "state"
-   ],
-   "id": "US-1613+US-4582@trail@40.375,-74.618",
-   "kind": "trail",
-   "len_m": 203,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-1613": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-1613",
-     "https://www.state.nj.us/dep/parksandforests/parks/drcanal.html"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-1613": "Delaware and Raritan Canal State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go"
-   ],
-   "ownership": "public land (state)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-1613": false,
-    "US-4582": true
-   },
-   "refs": [
-    "US-1613",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.617123,
-     40.374724
-    ],
-    [
-     -74.617152,
-     40.374718
-    ],
-    [
-     -74.61718,
-     40.374711
-    ],
-    [
-     -74.617208,
-     40.374705
-    ],
-    [
-     -74.617237,
-     40.374699
-    ],
-    [
-     -74.617265,
-     40.374693
-    ],
-    [
-     -74.617293,
-     40.374686
-    ],
-    [
-     -74.617322,
-     40.37468
-    ],
-    [
-     -74.61735,
-     40.374674
-    ],
-    [
-     -74.617378,
-     40.374668
-    ],
-    [
-     -74.617407,
-     40.374661
-    ],
-    [
-     -74.617435,
-     40.374655
-    ],
-    [
-     -74.617463,
-     40.374649
-    ],
-    [
-     -74.617492,
-     40.374643
-    ],
-    [
-     -74.61752,
-     40.374637
-    ],
-    [
-     -74.617549,
-     40.37463
-    ],
-    [
-     -74.617577,
-     40.374624
-    ],
-    [
-     -74.617605,
-     40.374618
-    ],
-    [
-     -74.617634,
-     40.374612
-    ],
-    [
-     -74.617662,
-     40.374605
-    ],
-    [
-     -74.61769,
-     40.374599
-    ],
-    [
-     -74.617719,
-     40.374593
-    ],
-    [
-     -74.617747,
-     40.374587
-    ],
-    [
-     -74.617775,
-     40.37458
-    ],
-    [
-     -74.617804,
-     40.374574
-    ],
-    [
-     -74.617832,
-     40.374568
-    ],
-    [
-     -74.61786,
-     40.374562
-    ],
-    [
-     -74.617889,
-     40.374556
-    ],
-    [
-     -74.617917,
-     40.374549
-    ],
-    [
-     -74.617945,
-     40.374543
-    ],
-    [
-     -74.617974,
-     40.374537
-    ],
-    [
-     -74.618002,
-     40.374531
-    ],
-    [
-     -74.61803,
-     40.374524
-    ],
-    [
-     -74.618059,
-     40.374518
-    ],
-    [
-     -74.618087,
-     40.374512
-    ],
-    [
-     -74.618115,
-     40.374506
-    ],
-    [
-     -74.618144,
-     40.374499
-    ],
-    [
-     -74.618172,
-     40.374493
-    ],
-    [
-     -74.618201,
-     40.374487
-    ],
-    [
-     -74.618229,
-     40.374481
-    ],
-    [
-     -74.618257,
-     40.374475
-    ],
-    [
-     -74.618286,
-     40.374468
-    ],
-    [
-     -74.618314,
-     40.374462
-    ],
-    [
-     -74.618342,
-     40.374456
-    ],
-    [
-     -74.618371,
-     40.37445
-    ],
-    [
-     -74.618399,
-     40.374443
-    ],
-    [
-     -74.618427,
-     40.374437
-    ],
-    [
-     -74.618456,
-     40.374431
-    ],
-    [
-     -74.618484,
-     40.374425
-    ],
-    [
-     -74.618512,
-     40.374418
-    ],
-    [
-     -74.618541,
-     40.374412
-    ],
-    [
-     -74.618569,
-     40.374406
-    ],
-    [
-     -74.618597,
-     40.3744
-    ],
-    [
-     -74.618626,
-     40.374394
-    ],
-    [
-     -74.618654,
-     40.374387
-    ],
-    [
-     -74.618682,
-     40.374381
-    ],
-    [
-     -74.618711,
-     40.374375
-    ],
-    [
-     -74.618739,
-     40.374369
-    ],
-    [
-     -74.618767,
-     40.374362
-    ]
-   ],
-   "status": "merged into one row: US-1613+US-4582@trail@40.440,-74.611",
-   "zone": [
-    [
-     [
-      -74.617445,
-      40.374923
-     ],
-     [
-      -74.618507,
-      40.374697
-     ],
-     [
-      -74.618507,
-      40.374471
-     ],
-     [
-      -74.618389,
-      40.374471
-     ],
-     [
-      -74.61833,
-      40.374607
-     ],
-     [
-      -74.617327,
-      40.374607
-     ]
-    ]
-   ],
-   "zone_acres": 0.7,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 36.0
-  },
-  {
-   "access": [
-    40.438438,
-    -74.614508,
-    "Parking: Mule Tender's Barracks Parking (n/a)",
-    "US-1613",
-    311
-   ],
-   "access_pin": {
-    "at": [
-     40.43797,
-     -74.61339
-    ],
-    "from": "road",
-    "name": "Griggstown Cswy",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "box": [
-    -74.76455,
-    40.22404,
-    -74.4586,
-    40.52937
-   ],
-   "center": [
-    40.439949,
-    -74.611409
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "state"
-   ],
-   "id": "US-1613+US-4582@trail@40.440,-74.611",
-   "kind": "trail",
-   "len_m": 7318,
-   "len_main": 5043,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-1613": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-1613",
-     "https://www.state.nj.us/dep/parksandforests/parks/drcanal.html"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-1613": "Delaware and Raritan Canal State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go"
-   ],
-   "ownership": "public land (state)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins": [
-    {
-     "at": [
-      40.463521,
-      -74.578779
-     ],
-     "from": "road",
-     "name": "Canal Rd",
-     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-     "walk_m": 5
-    },
-    {
-     "at": [
-      40.43797,
-      -74.61339
-     ],
-     "from": "road",
-     "name": "Griggstown Cswy",
-     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-     "walk_m": 0
-    },
-    {
-     "at": [
-      40.525356,
-      -74.591302
-     ],
-     "from": "road",
-     "name": "Kupper Airport",
-     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-     "walk_m": 0
-    }
-   ],
-   "pins_inside": {
-    "US-1613": false,
-    "US-4582": true
-   },
-   "refs": [
-    "US-1613",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.613051,
-     40.438078
-    ],
-    [
-     -74.61773,
-     40.429491
-    ],
-    [
-     -74.624197,
-     40.422604
-    ]
-   ],
-   "status": "candidate",
-   "stretches": 9,
-   "strip_wide_m": 65.9,
-   "zone": [
-    [
-     [
-      -74.613289,
-      40.437915
-     ],
-     [
-      -74.613466,
-      40.437961
-     ],
-     [
-      -74.615824,
-      40.433665
-     ],
-     [
-      -74.61606,
-      40.433032
-     ],
-     [
-      -74.616768,
-      40.431947
-     ],
-     [
-      -74.618006,
-      40.429595
-     ],
-     [
-      -74.623961,
-      40.42331
-     ],
-     [
-      -74.624432,
-      40.422722
-     ],
-     [
-      -74.623666,
-      40.423536
-     ],
-     [
-      -74.622074,
-      40.424983
-     ],
-     [
-      -74.620187,
-      40.42652
-     ],
-     [
-      -74.618419,
-      40.428374
-     ],
-     [
-      -74.616945,
-      40.430861
-     ],
-     [
-      -74.615883,
-      40.432218
-     ],
-     [
-      -74.615706,
-      40.432851
-     ],
-     [
-      -74.615176,
-      40.433936
-     ],
-     [
-      -74.614586,
-      40.435835
-     ],
-     [
-      -74.613702,
-      40.437101
-     ]
-    ]
-   ],
-   "zone_acres": 16.19,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 63.9
-  },
-  {
-   "access": [
-    40.438438,
-    -74.614508,
-    "Parking: Mule Tender's Barracks Parking (n/a)",
-    "US-1613",
-    879
-   ],
-   "access_pin": {
-    "at": [
-     40.437852,
-     -74.613251
-    ],
-    "from": "road",
-    "name": "Griggstown Cswy",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "box": [
-    -74.60672,
-    40.44316,
-    -74.60604,
-    40.44363
-   ],
-   "center": [
-    40.443389,
-    -74.606391
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "state"
-   ],
-   "id": "US-1613+US-4582@trail@40.443,-74.606",
-   "kind": "trail",
-   "len_m": 78,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-1613": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-1613",
-     "https://www.state.nj.us/dep/parksandforests/parks/drcanal.html"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-1613": "Delaware and Raritan Canal State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go"
-   ],
-   "ownership": "public land (state)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-1613": false,
-    "US-4582": true
-   },
-   "refs": [
-    "US-1613",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.606039,
-     40.44363
-    ],
-    [
-     -74.606061,
-     40.443615
-    ],
-    [
-     -74.606083,
-     40.4436
-    ],
-    [
-     -74.606105,
-     40.443585
-    ],
-    [
-     -74.606127,
-     40.44357
-    ],
-    [
-     -74.606149,
-     40.443554
-    ],
-    [
-     -74.606171,
-     40.443539
-    ],
-    [
-     -74.606193,
-     40.443524
-    ],
-    [
-     -74.606215,
-     40.443509
-    ],
-    [
-     -74.606237,
-     40.443494
-    ],
-    [
-     -74.606259,
-     40.443479
-    ],
-    [
-     -74.606281,
-     40.443464
-    ],
-    [
-     -74.606303,
-     40.443449
-    ],
-    [
-     -74.606325,
-     40.443434
-    ],
-    [
-     -74.606347,
-     40.443419
-    ],
-    [
-     -74.606369,
-     40.443404
-    ],
-    [
-     -74.606391,
-     40.443389
-    ],
-    [
-     -74.606413,
-     40.443373
-    ],
-    [
-     -74.606435,
-     40.443358
-    ],
-    [
-     -74.606457,
-     40.443343
-    ],
-    [
-     -74.606479,
-     40.443328
-    ],
-    [
-     -74.606501,
-     40.443313
-    ],
-    [
-     -74.606523,
-     40.443298
-    ],
-    [
-     -74.606545,
-     40.443283
-    ],
-    [
-     -74.606567,
-     40.443268
-    ],
-    [
-     -74.606589,
-     40.443253
-    ],
-    [
-     -74.606611,
-     40.443238
-    ],
-    [
-     -74.606633,
-     40.443223
-    ],
-    [
-     -74.606655,
-     40.443207
-    ],
-    [
-     -74.606677,
-     40.443192
-    ],
-    [
-     -74.606699,
-     40.443177
-    ],
-    [
-     -74.606721,
-     40.443162
-    ]
-   ],
-   "status": "merged into one row: US-1613+US-4582@trail@40.440,-74.611",
-   "zone": [
-    [
-     [
-      -74.606277,
-      40.443743
-     ],
-     [
-      -74.606395,
-      40.443743
-     ],
-     [
-      -74.606809,
-      40.443381
-     ]
-    ]
-   ],
-   "zone_acres": 0.14,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 14.0
-  },
-  {
-   "access": [
-    40.438438,
-    -74.614508,
-    "Parking: Mule Tender's Barracks Parking (n/a)",
-    "US-1613",
-    2712
-   ],
-   "access_pin": {
-    "at": [
-     40.463521,
-     -74.578779
-    ],
-    "from": "road",
-    "name": "Canal Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 5
-   },
-   "box": [
-    -74.58978,
-    40.45181,
-    -74.58868,
-    40.45293
-   ],
-   "center": [
-    40.452928,
-    -74.58868
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "state"
-   ],
-   "id": "US-1613+US-4582@trail@40.453,-74.588",
-   "kind": "trail",
-   "len_m": 93,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-1613": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-1613",
-     "https://www.state.nj.us/dep/parksandforests/parks/drcanal.html"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-1613": "Delaware and Raritan Canal State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go"
-   ],
-   "ownership": "public land (state)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-1613": false,
-    "US-4582": true
-   },
-   "refs": [
-    "US-1613",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.589212,
-     40.452384
-    ],
-    [
-     -74.58923,
-     40.452366
-    ],
-    [
-     -74.589248,
-     40.452348
-    ],
-    [
-     -74.589265,
-     40.45233
-    ],
-    [
-     -74.589283,
-     40.452312
-    ],
-    [
-     -74.589301,
-     40.452294
-    ],
-    [
-     -74.589319,
-     40.452276
-    ],
-    [
-     -74.589336,
-     40.452258
-    ],
-    [
-     -74.589354,
-     40.452239
-    ],
-    [
-     -74.589372,
-     40.452221
-    ],
-    [
-     -74.58939,
-     40.452203
-    ],
-    [
-     -74.589407,
-     40.452185
-    ],
-    [
-     -74.589425,
-     40.452167
-    ],
-    [
-     -74.589443,
-     40.452149
-    ],
-    [
-     -74.58946,
-     40.452131
-    ],
-    [
-     -74.589478,
-     40.452113
-    ],
-    [
-     -74.589496,
-     40.452095
-    ],
-    [
-     -74.589514,
-     40.452076
-    ],
-    [
-     -74.589531,
-     40.452058
-    ],
-    [
-     -74.589549,
-     40.45204
-    ],
-    [
-     -74.589567,
-     40.452022
-    ],
-    [
-     -74.589585,
-     40.452004
-    ],
-    [
-     -74.589602,
-     40.451986
-    ],
-    [
-     -74.58962,
-     40.451968
-    ],
-    [
-     -74.589638,
-     40.45195
-    ],
-    [
-     -74.589656,
-     40.451932
-    ],
-    [
-     -74.589673,
-     40.451913
-    ],
-    [
-     -74.589691,
-     40.451895
-    ],
-    [
-     -74.589709,
-     40.451877
-    ],
-    [
-     -74.589726,
-     40.451859
-    ],
-    [
-     -74.589744,
-     40.451841
-    ],
-    [
-     -74.589762,
-     40.451823
-    ],
-    [
-     -74.58978,
-     40.451805
-    ]
-   ],
-   "status": "merged into one row: US-1613+US-4582@trail@40.440,-74.611",
-   "zone": [
-    [
-     [
-      -74.589455,
-      40.4525
-     ],
-     [
-      -74.589928,
-      40.452093
-     ],
-     [
-      -74.589928,
-      40.452003
-     ]
-    ]
-   ],
-   "zone_acres": 0.12,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 10.0
-  },
-  {
-   "access": [
-    40.475192,
-    -74.572882,
-    "Parking: Blackwells Mills Day Use Parking (n/a)",
-    "US-1613",
-    2726
-   ],
-   "access_pin": {
-    "at": [
-     40.489566,
-     -74.582544
-    ],
-    "from": "road",
-    "name": "Millstone River Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "box": [
-    -74.58801,
-    40.49534,
-    -74.58688,
-    40.49869
-   ],
-   "center": [
-    40.496991,
-    -74.587915
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "state"
-   ],
-   "id": "US-1613+US-4582@trail@40.498,-74.588",
-   "kind": "trail",
-   "len_m": 378,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-1613": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-1613",
-     "https://www.state.nj.us/dep/parksandforests/parks/drcanal.html"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-1613": "Delaware and Raritan Canal State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go"
-   ],
-   "ownership": "public land (state)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-1613": false,
-    "US-4582": true
-   },
-   "refs": [
-    "US-1613",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.588015,
-     40.498684
-    ],
-    [
-     -74.587903,
-     40.496722
-    ],
-    [
-     -74.586981,
-     40.495483
-    ]
-   ],
-   "status": "merged into one row: US-1613+US-4582@trail@40.440,-74.611",
-   "zone": [
-    [
-     [
-      -74.588158,
-      40.498441
-     ],
-     [
-      -74.587685,
-      40.496633
-     ],
-     [
-      -74.586681,
-      40.495547
-     ],
-     [
-      -74.586622,
-      40.495593
-     ],
-     [
-      -74.587508,
-      40.496723
-     ],
-     [
-      -74.587626,
-      40.498487
-     ]
-    ]
-   ],
-   "zone_acres": 2.45,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 50.0
-  },
-  {
-   "access": [
-    40.474421,
-    -74.570987,
-    "Parking: Six Mile Run Canal Rd Parking Six Mile Run (n/a)",
-    "US-1613",
-    9938
-   ],
-   "access_pin": {
-    "at": [
-     40.508119,
-     -74.463917
-    ],
-    "from": "road",
-    "name": "George St",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "box": [
-    -74.46407,
-    40.50706,
-    -74.4586,
-    40.50829
-   ],
-   "center": [
-    40.507401,
-    -74.461757
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "state"
-   ],
-   "id": "US-1613+US-4582@trail@40.507,-74.462",
-   "kind": "trail",
-   "len_m": 543,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-1613": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-1613",
-     "https://www.state.nj.us/dep/parksandforests/parks/drcanal.html"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-1613": "Delaware and Raritan Canal State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go"
-   ],
-   "ownership": "public land (state)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-1613": false,
-    "US-4582": true
-   },
-   "refs": [
-    "US-1613",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.464069,
-     40.507651
-    ],
-    [
-     -74.458593,
-     40.507059
-    ],
-    [
-     -74.463762,
-     40.508289
-    ]
-   ],
-   "status": "merged into one row: US-1613+US-4582@trail@40.440,-74.611",
-   "zone": [
-    [
-     [
-      -74.464336,
-      40.50777
-     ],
-     [
-      -74.462564,
-      40.507634
-     ],
-     [
-      -74.459964,
-      40.507273
-     ],
-     [
-      -74.458487,
-      40.507318
-     ],
-     [
-      -74.46026,
-      40.507725
-     ],
-     [
-      -74.461146,
-      40.50777
-     ],
-     [
-      -74.462505,
-      40.508041
-     ],
-     [
-      -74.463686,
-      40.508041
-     ],
-     [
-      -74.463981,
-      40.508132
-     ],
-     [
-      -74.463863,
-      40.507996
-     ],
-     [
-      -74.463509,
-      40.507906
-     ],
-     [
-      -74.46404,
-      40.507906
-     ]
-    ]
-   ],
-   "zone_acres": 4.79,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 52.0
-  },
-  {
-   "access": [
-    40.475192,
-    -74.572882,
-    "Parking: Blackwells Mills Day Use Parking (n/a)",
-    "US-1613",
-    4954
-   ],
-   "access_pin": {
-    "at": [
-     40.525361,
-     -74.591303
-    ],
-    "from": "road",
-    "name": "Kupper Airport",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "box": [
-    -74.58874,
-    40.51777,
-    -74.58813,
-    40.51902
-   ],
-   "center": [
-    40.518387,
-    -74.588427
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "state"
-   ],
-   "id": "US-1613+US-4582@trail@40.518,-74.588",
-   "kind": "trail",
-   "len_m": 148,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-1613": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-1613",
-     "https://www.state.nj.us/dep/parksandforests/parks/drcanal.html"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-1613": "Delaware and Raritan Canal State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go"
-   ],
-   "ownership": "public land (state)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-1613": false,
-    "US-4582": true
-   },
-   "refs": [
-    "US-1613",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.588739,
-     40.519022
-    ],
-    [
-     -74.588728,
-     40.519
-    ],
-    [
-     -74.588718,
-     40.518979
-    ],
-    [
-     -74.588707,
-     40.518958
-    ],
-    [
-     -74.588697,
-     40.518937
-    ],
-    [
-     -74.588687,
-     40.518916
-    ],
-    [
-     -74.588676,
-     40.518895
-    ],
-    [
-     -74.588666,
-     40.518873
-    ],
-    [
-     -74.588655,
-     40.518852
-    ],
-    [
-     -74.588645,
-     40.518831
-    ],
-    [
-     -74.588635,
-     40.51881
-    ],
-    [
-     -74.588624,
-     40.518789
-    ],
-    [
-     -74.588614,
-     40.518768
-    ],
-    [
-     -74.588603,
-     40.518746
-    ],
-    [
-     -74.588593,
-     40.518725
-    ],
-    [
-     -74.588583,
-     40.518704
-    ],
-    [
-     -74.588572,
-     40.518683
-    ],
-    [
-     -74.588562,
-     40.518662
-    ],
-    [
-     -74.588551,
-     40.518641
-    ],
-    [
-     -74.588541,
-     40.518619
-    ],
-    [
-     -74.588531,
-     40.518598
-    ],
-    [
-     -74.58852,
-     40.518577
-    ],
-    [
-     -74.58851,
-     40.518556
-    ],
-    [
-     -74.588499,
-     40.518535
-    ],
-    [
-     -74.588489,
-     40.518514
-    ],
-    [
-     -74.588479,
-     40.518492
-    ],
-    [
-     -74.588468,
-     40.518471
-    ],
-    [
-     -74.588458,
-     40.51845
-    ],
-    [
-     -74.588447,
-     40.518429
-    ],
-    [
-     -74.588437,
-     40.518408
-    ],
-    [
-     -74.588427,
-     40.518387
-    ],
-    [
-     -74.588416,
-     40.518366
-    ],
-    [
-     -74.588406,
-     40.518344
-    ],
-    [
-     -74.588395,
-     40.518323
-    ],
-    [
-     -74.588385,
-     40.518302
-    ],
-    [
-     -74.588375,
-     40.518281
-    ],
-    [
-     -74.588364,
-     40.51826
-    ],
-    [
-     -74.588354,
-     40.518239
-    ],
-    [
-     -74.588343,
-     40.518217
-    ],
-    [
-     -74.588333,
-     40.518196
-    ],
-    [
-     -74.588323,
-     40.518175
-    ],
-    [
-     -74.588312,
-     40.518154
-    ],
-    [
-     -74.588302,
-     40.518133
-    ],
-    [
-     -74.588292,
-     40.518112
-    ],
-    [
-     -74.588281,
-     40.51809
-    ],
-    [
-     -74.588271,
-     40.518069
-    ],
-    [
-     -74.58826,
-     40.518048
-    ],
-    [
-     -74.58825,
-     40.518027
-    ],
-    [
-     -74.58824,
-     40.518006
-    ],
-    [
-     -74.588229,
-     40.517985
-    ],
-    [
-     -74.588219,
-     40.517963
-    ],
-    [
-     -74.588208,
-     40.517942
-    ],
-    [
-     -74.588198,
-     40.517921
-    ],
-    [
-     -74.588188,
-     40.5179
-    ],
-    [
-     -74.588177,
-     40.517879
-    ],
-    [
-     -74.588167,
-     40.517858
-    ],
-    [
-     -74.588156,
-     40.517836
-    ],
-    [
-     -74.588146,
-     40.517815
-    ],
-    [
-     -74.588136,
-     40.517794
-    ],
-    [
-     -74.588125,
-     40.517773
-    ]
-   ],
-   "status": "merged into one row: US-1613+US-4582@trail@40.440,-74.611",
-   "zone": [
-    [
-     [
-      -74.588947,
-      40.518726
-     ],
-     [
-      -74.588592,
-      40.518003
-     ],
-     [
-      -74.587824,
-      40.518048
-     ],
-     [
-      -74.588297,
-      40.518952
-     ]
-    ]
-   ],
-   "zone_acres": 1.66,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 65.9
-  },
-  {
-   "access": [
-    40.475192,
-    -74.572882,
-    "Parking: Blackwells Mills Day Use Parking (n/a)",
-    "US-1613",
-    5879
-   ],
-   "access_pin": {
-    "at": [
-     40.525356,
-     -74.591302
-    ],
-    "from": "road",
-    "name": "Kupper Airport",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "box": [
-    -74.5914,
-    40.52366,
-    -74.59075,
-    40.52937
-   ],
-   "center": [
-    40.52649,
-    -74.59113
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "state"
-   ],
-   "id": "US-1613+US-4582@trail@40.526,-74.591",
-   "kind": "trail",
-   "len_m": 641,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-1613": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-1613",
-     "https://www.state.nj.us/dep/parksandforests/parks/drcanal.html"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-1613": "Delaware and Raritan Canal State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go"
-   ],
-   "ownership": "public land (state)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-1613": false,
-    "US-4582": true
-   },
-   "refs": [
-    "US-1613",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.590752,
-     40.529374
-    ],
-    [
-     -74.591402,
-     40.524441
-    ],
-    [
-     -74.591012,
-     40.523658
-    ]
-   ],
-   "status": "merged into one row: US-1613+US-4582@trail@40.440,-74.611",
-   "zone": [
-    [
-     [
-      -74.590425,
-      40.529393
-     ],
-     [
-      -74.59072,
-      40.528714
-     ],
-     [
-      -74.59078,
-      40.528036
-     ],
-     [
-      -74.591193,
-      40.528036
-     ],
-     [
-      -74.591311,
-      40.524464
-     ],
-     [
-      -74.591134,
-      40.523921
-     ],
-     [
-      -74.59078,
-      40.523966
-     ],
-     [
-      -74.591016,
-      40.524419
-     ],
-     [
-      -74.590366,
-      40.529121
-     ]
-    ]
-   ],
-   "zone_acres": 5.81,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 60.0
   },
   {
    "acres": 0.1,
@@ -201618,7 +197885,7 @@
     39.9042,
     -74.313838
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1614+US-8040@area@39.904,-74.314",
    "kind": "area",
    "passes": [
@@ -201636,7 +197903,7 @@
      39.9042
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -201652,7 +197919,7 @@
     39.905104,
     -74.312198
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1614+US-8040@area@39.905,-74.312",
    "kind": "area",
    "passes": [
@@ -201670,7 +197937,7 @@
      39.905104
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -201686,7 +197953,7 @@
     39.909626,
     -74.303767
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1614+US-8040@area@39.910,-74.304",
    "kind": "area",
    "passes": [
@@ -201704,7 +197971,7 @@
      39.909626
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -201720,7 +197987,7 @@
     40.982805,
     -74.444045
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1616+US-8059@area@40.983,-74.444",
    "kind": "area",
    "passes": [
@@ -201798,7 +198065,7 @@
      40.97973
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -201832,8 +198099,8 @@
     41.230722,
     -74.683329
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -205574,10 +201841,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-1619": "downloaded 2026-10-29",
-    "US-4999": "downloaded 2026-10-29",
+    "US-1619": "downloaded 2026-10-30",
+    "US-4999": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -205669,7 +201936,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 97
   },
   {
@@ -205701,8 +201968,8 @@
     41.235289,
     -74.700236
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -207905,10 +204172,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-1619": "downloaded 2026-10-29",
-    "US-4999": "downloaded 2026-10-29",
+    "US-1619": "downloaded 2026-10-30",
+    "US-4999": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -208036,7 +204303,7 @@
     41.265901,
     -74.771533
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1619+US-4999@area@41.266,-74.771",
    "kind": "area",
    "passes": [
@@ -208058,7 +204325,7 @@
      41.26572
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -208074,7 +204341,7 @@
     41.269518,
     -74.749076
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1619+US-4999@area@41.269,-74.749",
    "kind": "area",
    "passes": [
@@ -208104,7 +204371,7 @@
      41.260474
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -208137,8 +204404,8 @@
     40.888297,
     -74.895014
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -208292,11 +204559,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-1622": "downloaded 2026-10-29",
-    "US-4995": "downloaded 2026-10-29"
+    "US-1622": "downloaded 2026-10-30",
+    "US-4995": "downloaded 2026-10-30"
    },
    "maps": [
     [
@@ -208349,7 +204616,7 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 23
   },
   {
@@ -208364,7 +204631,7 @@
     40.91608,
     -74.851018
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1622+US-4995@area@40.919,-74.845",
    "kind": "area",
    "passes": [
@@ -208386,7 +204653,7 @@
      40.914814
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -208402,7 +204669,7 @@
     40.921235,
     -74.842579
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1622+US-4995@area@40.921,-74.843",
    "kind": "area",
    "passes": [
@@ -208424,7 +204691,7 @@
      40.920873
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -208440,7 +204707,7 @@
     40.931816,
     -74.820589
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1622+US-4995@area@40.932,-74.821",
    "kind": "area",
    "passes": [
@@ -208462,7 +204729,7 @@
      40.921596
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -208478,7 +204745,7 @@
     40.8846,
     -74.900384
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1622+US-8048@area@40.885,-74.900",
    "kind": "area",
    "passes": [
@@ -208508,7 +204775,7 @@
      40.881796
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -208524,7 +204791,7 @@
     41.1134,
     -74.318505
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1624+US-4996@area@41.113,-74.319",
    "kind": "area",
    "passes": [
@@ -208562,7 +204829,7 @@
      41.112857
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -208578,7 +204845,7 @@
     41.114576,
     -74.333767
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1624+US-4996@area@41.117,-74.343",
    "kind": "area",
    "passes": [
@@ -208624,143 +204891,9 @@
      41.117108
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
-  },
-  {
-   "access": [
-    40.330854,
-    -74.676922,
-    "Entrance: Park Entrance (n/a)",
-    "US-1628",
-    516
-   ],
-   "access_pin": {
-    "at": [
-     40.334803,
-     -74.679091
-    ],
-    "from": "road",
-    "name": "Battlebrook Ln",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 39
-   },
-   "box": [
-    -74.6795,
-    40.33488,
-    -74.67729,
-    40.33624
-   ],
-   "center": [
-    40.335272,
-    -74.678891
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "ground": [
-    "state"
-   ],
-   "id": "US-1628+US-4582@trail@40.335,-74.679",
-   "kind": "trail",
-   "len_m": 374,
-   "line_source": {
-    "US-4582": {
-     "by": "National Park Service",
-     "date": "not recorded",
-     "line": "data/trails/US-4582.json",
-     "note": "approximate line (national historic trail, about 1:100,000)"
-    }
-   },
-   "map_dates": {
-    "US-1628": "downloaded 2026-10-29",
-    "US-4582": "official line (trails bot)"
-   },
-   "maps": [
-    [
-     "US-1628",
-     "https://www.nj.gov/dep/parksandforests/parks/princeton.html"
-    ],
-    [
-     "US-4582",
-     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
-    ]
-   ],
-   "names": {
-    "US-1628": "Princeton Battlefield State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
-   },
-   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "notes": [
-    "check the agency's closures and seasons before you go"
-   ],
-   "ownership": "public land (state)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-1628": true,
-    "US-4582": true
-   },
-   "refs": [
-    "US-1628",
-    "US-4582"
-   ],
-   "shape": [
-    [
-     -74.677288,
-     40.336236
-    ],
-    [
-     -74.679503,
-     40.334875
-    ]
-   ],
-   "status": "candidate",
-   "strip_wide_m": 42.0,
-   "zone": [
-    [
-     [
-      -74.678056,
-      40.335358
-     ],
-     [
-      -74.678292,
-      40.335494
-     ],
-     [
-      -74.679294,
-      40.335042
-     ],
-     [
-      -74.678999,
-      40.33477
-     ]
-    ],
-    [
-     [
-      -74.677173,
-      40.335901
-     ],
-     [
-      -74.677585,
-      40.336127
-     ],
-     [
-      -74.677997,
-      40.335675
-     ],
-     [
-      -74.677762,
-      40.335539
-     ]
-    ]
-   ],
-   "zone_acres": 1.55,
-   "zone_read": "2026-10-29",
-   "zone_wide_m": 42.0
   },
   {
    "acres": 8.6,
@@ -208774,7 +204907,7 @@
     41.106384,
     -74.240494
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1630+US-4998@area@41.107,-74.241",
    "kind": "area",
    "passes": [
@@ -208808,7 +204941,7 @@
      41.10141
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -208824,7 +204957,7 @@
     41.136228,
     -74.218318
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1630+US-4998@area@41.130,-74.222",
    "kind": "area",
    "passes": [
@@ -208902,7 +205035,7 @@
      41.125195
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -208918,7 +205051,7 @@
     40.672939,
     -74.908223
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1633+US-6461@area@40.673,-74.908",
    "kind": "area",
    "passes": [
@@ -208940,7 +205073,7 @@
      40.671673
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -208956,7 +205089,7 @@
     41.157434,
     -74.368955
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1636+US-4991@area@41.157,-74.369",
    "kind": "area",
    "passes": [
@@ -208978,7 +205111,7 @@
      41.157434
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -208994,7 +205127,7 @@
     41.164353,
     -74.376165
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-1636+US-4991@area@41.164,-74.376",
    "kind": "area",
    "passes": [
@@ -209016,7 +205149,7 @@
      41.163629
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -209032,7 +205165,7 @@
     39.768679,
     -74.419194
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-4997@area@39.769,-74.419",
    "kind": "area",
    "passes": [
@@ -209054,7 +205187,7 @@
      39.763796
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -209070,7 +205203,7 @@
     39.641809,
     -74.515975
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-5000@area@39.650,-74.517",
    "kind": "area",
    "passes": [
@@ -209180,7 +205313,7 @@
      39.6504
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -209196,7 +205329,7 @@
     39.641809,
     -74.515975
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-5000@area@39.695,-74.479",
    "kind": "area",
    "passes": [
@@ -209306,7 +205439,7 @@
      39.6504
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -209322,7 +205455,7 @@
     39.662391,
     -74.34735
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-8052@area@39.662,-74.347",
    "kind": "area",
    "passes": [
@@ -209340,7 +205473,7 @@
      39.662391
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -209356,7 +205489,7 @@
     39.665646,
     -74.349452
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-8052@area@39.666,-74.349",
    "kind": "area",
    "passes": [
@@ -209374,7 +205507,7 @@
      39.665646
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -209390,7 +205523,7 @@
     39.673217,
     -74.378759
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-8052@area@39.671,-74.355",
    "kind": "area",
    "passes": [
@@ -209444,7 +205577,7 @@
      39.673217
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -209460,7 +205593,7 @@
     39.673307,
     -74.38378
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-8052@area@39.674,-74.384",
    "kind": "area",
    "passes": [
@@ -209482,7 +205615,7 @@
      39.672403
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -209498,7 +205631,7 @@
     39.674509,
     -74.385421
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-8052@area@39.675,-74.385",
    "kind": "area",
    "passes": [
@@ -209516,7 +205649,7 @@
      39.674509
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -209532,7 +205665,7 @@
     39.684522,
     -74.389503
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-8052@area@39.680,-74.389",
    "kind": "area",
    "passes": [
@@ -209550,7 +205683,7 @@
      39.684522
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -209566,7 +205699,7 @@
     39.749998,
     -74.37689
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-8052@area@39.750,-74.377",
    "kind": "area",
    "passes": [
@@ -209588,7 +205721,7 @@
      39.748913
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -209604,7 +205737,7 @@
     39.767479,
     -74.362765
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-8052@area@39.767,-74.363",
    "kind": "area",
    "passes": [
@@ -209622,7 +205755,7 @@
      39.767479
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -209638,7 +205771,7 @@
     39.775411,
     -74.35038
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4992+US-8052@area@39.775,-74.352",
    "kind": "area",
    "passes": [
@@ -209660,7 +205793,7 @@
      39.77532
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -209676,7 +205809,7 @@
     39.285142,
     -74.965112
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4993+US-8042@area@39.285,-74.965",
    "kind": "area",
    "passes": [
@@ -209698,7 +205831,7 @@
      39.281886
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -209714,7 +205847,7 @@
     39.919867,
     -74.407444
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4994+US-8040@area@39.920,-74.407",
    "kind": "area",
    "passes": [
@@ -209732,7 +205865,7 @@
      39.919867
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -209748,7 +205881,7 @@
     39.924132,
     -74.403036
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4994+US-8040@area@39.923,-74.404",
    "kind": "area",
    "passes": [
@@ -209766,7 +205899,7 @@
      39.924132
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -209782,7 +205915,7 @@
     39.924132,
     -74.403036
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4994+US-8040@area@39.924,-74.403",
    "kind": "area",
    "passes": [
@@ -209800,7 +205933,7 @@
      39.924132
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -209816,7 +205949,7 @@
     41.151577,
     -74.822623
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-4999+US-8031@area@41.151,-74.823",
    "kind": "area",
    "passes": [
@@ -209834,7 +205967,7 @@
      41.151577
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -209850,7 +205983,7 @@
     39.613837,
     -74.515327
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-5000+US-8053@area@39.614,-74.515",
    "kind": "area",
    "passes": [
@@ -209868,7 +206001,7 @@
      39.613837
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -209884,7 +206017,7 @@
     39.61438,
     -74.528619
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-5000+US-8053@area@39.614,-74.529",
    "kind": "area",
    "passes": [
@@ -209906,7 +206039,7 @@
      39.614199
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -209922,7 +206055,7 @@
     39.616912,
     -74.497837
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-5000+US-8053@area@39.617,-74.498",
    "kind": "area",
    "passes": [
@@ -209940,7 +206073,7 @@
      39.616912
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -209956,7 +206089,7 @@
     39.194746,
     -74.91861
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-8036+US-8042@area@39.195,-74.919",
    "kind": "area",
    "passes": [
@@ -209978,7 +206111,7 @@
      39.193842
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -210012,8 +206145,8 @@
     39.347524,
     -75.282064
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -214936,10 +211069,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-8037": "downloaded 2026-10-29",
-    "US-8046": "downloaded 2026-10-29",
+    "US-8037": "downloaded 2026-10-30",
+    "US-8046": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -215167,7 +211300,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 301
   },
   {
@@ -215199,8 +211332,8 @@
     39.355618,
     -75.27161
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "ground": [
     "state"
    ],
@@ -215357,10 +211490,10 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-8037": "downloaded 2026-10-29",
-    "US-8046": "downloaded 2026-10-29",
+    "US-8037": "downloaded 2026-10-30",
+    "US-8046": "downloaded 2026-10-30",
     "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
@@ -215439,7 +211572,7 @@
     39.244257,
     -75.020862
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-8038+US-8042@area@39.244,-75.021",
    "kind": "area",
    "passes": [
@@ -215461,7 +211594,7 @@
      39.244167
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -215477,7 +211610,7 @@
     39.534117,
     -74.674269
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-8041+US-8043@area@39.534,-74.674",
    "kind": "area",
    "passes": [
@@ -215499,7 +211632,7 @@
      39.532579
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -215515,7 +211648,7 @@
     39.53692,
     -74.679511
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-8041+US-8043@area@39.537,-74.679",
    "kind": "area",
    "passes": [
@@ -215537,7 +211670,7 @@
      39.535925
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -215553,7 +211686,7 @@
     39.538548,
     -74.681725
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-8041+US-8043@area@39.539,-74.682",
    "kind": "area",
    "passes": [
@@ -215575,7 +211708,7 @@
      39.538096
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -215591,7 +211724,7 @@
     39.556409,
     -74.714171
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-8041+US-8043@area@39.556,-74.714",
    "kind": "area",
    "passes": [
@@ -215609,7 +211742,7 @@
      39.556409
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -215625,7 +211758,7 @@
     39.557314,
     -74.715336
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-8041+US-8043@area@39.557,-74.715",
    "kind": "area",
    "passes": [
@@ -215643,7 +211776,7 @@
      39.557314
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -215659,7 +211792,7 @@
     39.563418,
     -74.722733
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-30",
    "id": "US-8041+US-8043@area@39.563,-74.723",
    "kind": "area",
    "passes": [
@@ -215681,7 +211814,7 @@
      39.56179
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   }
