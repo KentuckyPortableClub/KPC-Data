@@ -1,0 +1,1843 @@
+{
+ "request": "requests/9-p2-wi.json",
+ "id": "9-p2-wi",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 WI: 12 parks, 7 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 WI: 12 parks, 7 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State WI: 12 parks. Refs in order of points: US-10184,US-10192,US-10194,US-10195,US-10198,US-10644,US-11230,US-1458,US-4242,US-4260,US-4261,US-9829. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-10184",
+    "US-10192",
+    "US-10194",
+    "US-10195",
+    "US-10198",
+    "US-10644",
+    "US-11230",
+    "US-1458",
+    "US-4242",
+    "US-4260",
+    "US-4261",
+    "US-9829"
+   ],
+   "pointq": [
+    {
+     "st": "WI",
+     "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0",
+     "note": "WI Wisconsin DNR",
+     "points": [
+      [
+       45.2019,
+       -92.4214
+      ],
+      [
+       44.8977,
+       -92.4862
+      ],
+      [
+       45.1014,
+       -92.4573
+      ],
+      [
+       45.1622,
+       -92.5082
+      ],
+      [
+       44.8863,
+       -92.6137
+      ],
+      [
+       43.0427,
+       -89.9998
+      ],
+      [
+       44.9008,
+       -91.3682
+      ],
+      [
+       43.665,
+       -87.7197
+      ],
+      [
+       42.5726,
+       -90.6521
+      ],
+      [
+       43.6651,
+       -88.1659
+      ],
+      [
+       43.5937,
+       -88.176
+      ],
+      [
+       43.5997,
+       -87.9393
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "WI",
+     "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_WSPS_Property_Info_WTM_Ext/MapServer/0",
+     "note": "WI Wisconsin State Parks (DNR)",
+     "points": [
+      [
+       45.2019,
+       -92.4214
+      ],
+      [
+       44.8977,
+       -92.4862
+      ],
+      [
+       45.1014,
+       -92.4573
+      ],
+      [
+       45.1622,
+       -92.5082
+      ],
+      [
+       44.8863,
+       -92.6137
+      ],
+      [
+       43.0427,
+       -89.9998
+      ],
+      [
+       44.9008,
+       -91.3682
+      ],
+      [
+       43.665,
+       -87.7197
+      ],
+      [
+       42.5726,
+       -90.6521
+      ],
+      [
+       43.6651,
+       -88.1659
+      ],
+      [
+       43.5937,
+       -88.176
+      ],
+      [
+       43.5997,
+       -87.9393
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "WI",
+     "url": "https://dnrmaps.wi.gov/arcgis/rest/services/ER_Biotics/ER_Biotics_WGS84_Managed_Lands/MapServer/1",
+     "note": "WI Wisconsin DNR Natural Heritage Conservat",
+     "points": [
+      [
+       45.2019,
+       -92.4214
+      ],
+      [
+       44.8977,
+       -92.4862
+      ],
+      [
+       45.1014,
+       -92.4573
+      ],
+      [
+       45.1622,
+       -92.5082
+      ],
+      [
+       44.8863,
+       -92.6137
+      ],
+      [
+       43.0427,
+       -89.9998
+      ],
+      [
+       44.9008,
+       -91.3682
+      ],
+      [
+       43.665,
+       -87.7197
+      ],
+      [
+       42.5726,
+       -90.6521
+      ],
+      [
+       43.6651,
+       -88.1659
+      ],
+      [
+       43.5937,
+       -88.176
+      ],
+      [
+       43.5997,
+       -87.9393
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "WI",
+     "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/1",
+     "note": "WI Wisconsin DNR Bureau of Facilities and L",
+     "points": [
+      [
+       45.2019,
+       -92.4214
+      ],
+      [
+       44.8977,
+       -92.4862
+      ],
+      [
+       45.1014,
+       -92.4573
+      ],
+      [
+       45.1622,
+       -92.5082
+      ],
+      [
+       44.8863,
+       -92.6137
+      ],
+      [
+       43.0427,
+       -89.9998
+      ],
+      [
+       44.9008,
+       -91.3682
+      ],
+      [
+       43.665,
+       -87.7197
+      ],
+      [
+       42.5726,
+       -90.6521
+      ],
+      [
+       43.6651,
+       -88.1659
+      ],
+      [
+       43.5937,
+       -88.176
+      ],
+      [
+       43.5997,
+       -87.9393
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       45.2019,
+       -92.4214
+      ],
+      [
+       44.8977,
+       -92.4862
+      ],
+      [
+       45.1014,
+       -92.4573
+      ],
+      [
+       45.1622,
+       -92.5082
+      ],
+      [
+       44.8863,
+       -92.6137
+      ],
+      [
+       43.0427,
+       -89.9998
+      ],
+      [
+       44.9008,
+       -91.3682
+      ],
+      [
+       43.665,
+       -87.7197
+      ],
+      [
+       42.5726,
+       -90.6521
+      ],
+      [
+       43.6651,
+       -88.1659
+      ],
+      [
+       43.5937,
+       -88.176
+      ],
+      [
+       43.5997,
+       -87.9393
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       45.2019,
+       -92.4214
+      ],
+      [
+       44.8977,
+       -92.4862
+      ],
+      [
+       45.1014,
+       -92.4573
+      ],
+      [
+       45.1622,
+       -92.5082
+      ],
+      [
+       44.8863,
+       -92.6137
+      ],
+      [
+       43.0427,
+       -89.9998
+      ],
+      [
+       44.9008,
+       -91.3682
+      ],
+      [
+       43.665,
+       -87.7197
+      ],
+      [
+       42.5726,
+       -90.6521
+      ],
+      [
+       43.6651,
+       -88.1659
+      ],
+      [
+       43.5937,
+       -88.176
+      ],
+      [
+       43.5997,
+       -87.9393
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       45.2019,
+       -92.4214
+      ],
+      [
+       44.8977,
+       -92.4862
+      ],
+      [
+       45.1014,
+       -92.4573
+      ],
+      [
+       45.1622,
+       -92.5082
+      ],
+      [
+       44.8863,
+       -92.6137
+      ],
+      [
+       43.0427,
+       -89.9998
+      ],
+      [
+       44.9008,
+       -91.3682
+      ],
+      [
+       43.665,
+       -87.7197
+      ],
+      [
+       42.5726,
+       -90.6521
+      ],
+      [
+       43.6651,
+       -88.1659
+      ],
+      [
+       43.5937,
+       -88.176
+      ],
+      [
+       43.5997,
+       -87.9393
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 01:56Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State WI: 12 parks. Refs in order of points: US-10184,US-10192,US-10194,US-10195,US-10198,US-10644,US-11230,US-1458,US-4242,US-4260,US-4261,US-9829. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "WI",
+    "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0",
+    "note": "WI Wisconsin DNR",
+    "hits": [
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       45.2019,
+       -92.4214
+      ],
+      "attrs": {
+       "PROP_NAME": "Deer Park SHA-WPRA",
+       "PROP_CODE": 8840,
+       "PROP_ACRES": 213.18,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "WM"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       44.8977,
+       -92.4862
+      ],
+      "attrs": {
+       "PROP_NAME": "Kinnickinnic River Fishery Area",
+       "PROP_CODE": 1200,
+       "PROP_ACRES": 1209.74,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "FM"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       45.1014,
+       -92.4573
+      ],
+      "attrs": {
+       "PROP_NAME": "Erin Prairie SHA-WPRA",
+       "PROP_CODE": 8840,
+       "PROP_ACRES": 148.34,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "WM"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       45.1622,
+       -92.5082
+      ],
+      "attrs": {
+       "PROP_NAME": "New Richmond SHA-WPRA",
+       "PROP_CODE": 8840,
+       "PROP_ACRES": 77.21,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "WM"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       44.8863,
+       -92.6137
+      ],
+      "attrs": {
+       "PROP_NAME": "Kinnickinnic River Fishery Area",
+       "PROP_CODE": 1200,
+       "PROP_ACRES": 1209.74,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "FM"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       43.0427,
+       -89.9998
+      ],
+      "attrs": {
+       "PROP_NAME": "Rem-Love Creek",
+       "PROP_CODE": 4090,
+       "PROP_ACRES": 578.03,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "FM"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       44.9008,
+       -91.3682
+      ],
+      "attrs": {
+       "PROP_NAME": "Statewide Wildlife Habitat",
+       "PROP_CODE": 8523,
+       "PROP_ACRES": 1293.93,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "WM"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       43.665,
+       -87.7197
+      ],
+      "attrs": {
+       "PROP_NAME": "John Michael Kohler State Park",
+       "PROP_CODE": 9232,
+       "PROP_ACRES": 771.09,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "PR"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       42.5726,
+       -90.6521
+      ],
+      "attrs": {
+       "PROP_NAME": "Gift Lands",
+       "PROP_CODE": 9695,
+       "PROP_ACRES": 0.71,
+       "TRANS_TYPE": 2,
+       "PROGRAM": "ZZ"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       42.5726,
+       -90.6521
+      ],
+      "attrs": {
+       "PROP_NAME": "Gift Lands",
+       "PROP_CODE": 9695,
+       "PROP_ACRES": 471.39,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "ZZ"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       43.6651,
+       -88.1659
+      ],
+      "attrs": {
+       "PROP_NAME": "Kettle Moraine State Forest-Northern Unit",
+       "PROP_CODE": 9240,
+       "PROP_ACRES": 30183.01,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "SF"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       43.5937,
+       -88.176
+      ],
+      "attrs": {
+       "PROP_NAME": "Kettle Moraine State Forest-Northern Unit",
+       "PROP_CODE": 9240,
+       "PROP_ACRES": 30183.01,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "SF"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       43.5997,
+       -87.9393
+      ],
+      "attrs": {
+       "PROP_NAME": "Extensive WL Habitat",
+       "PROP_CODE": 8986,
+       "PROP_ACRES": 667.59,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "WM"
+      }
+     }
+    ]
+   },
+   {
+    "st": "WI",
+    "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_WSPS_Property_Info_WTM_Ext/MapServer/0",
+    "note": "WI Wisconsin State Parks (DNR)",
+    "hits": [
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       45.2019,
+       -92.4214
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       44.8977,
+       -92.4862
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       45.1014,
+       -92.4573
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       45.1622,
+       -92.5082
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       44.8863,
+       -92.6137
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       43.0427,
+       -89.9998
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       44.9008,
+       -91.3682
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       43.665,
+       -87.7197
+      ],
+      "attrs": {
+       "PROP_NAME": "John Michael Kohler State Park",
+       "PROP_TYPE": "SP",
+       "INFO_URL": "https://dnr.wi.gov/topic/parks/kohlerandrae/info"
+      }
+     },
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       42.5726,
+       -90.6521
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       43.6651,
+       -88.1659
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       43.5937,
+       -88.176
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       43.5997,
+       -87.9393
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "WI",
+    "url": "https://dnrmaps.wi.gov/arcgis/rest/services/ER_Biotics/ER_Biotics_WGS84_Managed_Lands/MapServer/1",
+    "note": "WI Wisconsin DNR Natural Heritage Conservat",
+    "hits": [
+     {
+      "layer": "1 SNAs",
+      "point": [
+       45.2019,
+       -92.4214
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 SNAs",
+      "point": [
+       44.8977,
+       -92.4862
+      ],
+      "attrs": {
+       "SNA_ACRE_AMT": 44.76624007,
+       "SNA_NO": 583,
+       "SNA_NAME": "Kinnickinnic Wet Prairie",
+       "SNA_URL": "https://dnr.wisconsin.gov/topic/statenaturalareas/KinnickinnicWetPrairie"
+      }
+     },
+     {
+      "layer": "1 SNAs",
+      "point": [
+       45.1014,
+       -92.4573
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 SNAs",
+      "point": [
+       45.1622,
+       -92.5082
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 SNAs",
+      "point": [
+       44.8863,
+       -92.6137
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 SNAs",
+      "point": [
+       43.0427,
+       -89.9998
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 SNAs",
+      "point": [
+       44.9008,
+       -91.3682
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 SNAs",
+      "point": [
+       43.665,
+       -87.7197
+      ],
+      "attrs": {
+       "SNA_ACRE_AMT": 154.10762245,
+       "SNA_NO": 71,
+       "SNA_NAME": "Kohler Park Dunes",
+       "SNA_URL": "https://dnr.wisconsin.gov/topic/statenaturalareas/KohlerParkDunes"
+      }
+     },
+     {
+      "layer": "1 SNAs",
+      "point": [
+       42.5726,
+       -90.6521
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 SNAs",
+      "point": [
+       43.6651,
+       -88.1659
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 SNAs",
+      "point": [
+       43.5937,
+       -88.176
+      ],
+      "attrs": {
+       "SNA_ACRE_AMT": 827.89866094,
+       "SNA_NO": 93,
+       "SNA_NAME": "Milwaukee River and Swamp",
+       "SNA_URL": "https://dnr.wisconsin.gov/topic/statenaturalareas/MilwaukeeRiverandSwamp"
+      }
+     },
+     {
+      "layer": "1 SNAs",
+      "point": [
+       43.5997,
+       -87.9393
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "WI",
+    "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/1",
+    "note": "WI Wisconsin DNR Bureau of Facilities and L",
+    "hits": [
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       45.2019,
+       -92.4214
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 86228,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 8840,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 88400005,
+       "PROP_NAME": "Deer Park SHA-WPRA",
+       "PROP_NAME_LABEL": "Deer Park SHA-WPRA",
+       "GIS_ACRES": 37.92358916,
+       "DEED_ACRES": 37.31,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       45.2019,
+       -92.4214
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 86230,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 8840,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 88400005,
+       "PROP_NAME": "Deer Park SHA-WPRA",
+       "PROP_NAME_LABEL": "Deer Park SHA-WPRA",
+       "GIS_ACRES": 40.01653854,
+       "DEED_ACRES": 40.0,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       44.8977,
+       -92.4862
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 141711,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 1200,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 12000000,
+       "PROP_NAME": "Kinnickinnic River Fishery Area",
+       "PROP_NAME_LABEL": "Kinnickinnic River Fishery Area",
+       "GIS_ACRES": 39.75338771,
+       "DEED_ACRES": 40.0,
+       "FUNCTION_MGT_CODE": "FM",
+       "ADMIN_CODE": "FM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       45.1014,
+       -92.4573
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 84171,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 8840,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 88400007,
+       "PROP_NAME": "Erin Prairie SHA-WPRA",
+       "PROP_NAME_LABEL": "Erin Prairie SHA-WPRA",
+       "GIS_ACRES": 38.37833325,
+       "DEED_ACRES": 38.11,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       45.1622,
+       -92.5082
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 89262,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 8840,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 88400010,
+       "PROP_NAME": "New Richmond SHA-WPRA",
+       "PROP_NAME_LABEL": "New Richmond SHA-WPRA",
+       "GIS_ACRES": 37.23957848,
+       "DEED_ACRES": 36.84,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       44.8863,
+       -92.6137
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 82074,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 1200,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 12000000,
+       "PROP_NAME": "Kinnickinnic River Fishery Area",
+       "PROP_NAME_LABEL": "Kinnickinnic River Fishery Area",
+       "GIS_ACRES": 37.4217363,
+       "DEED_ACRES": 36.7,
+       "FUNCTION_MGT_CODE": "FM",
+       "ADMIN_CODE": "FM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       44.8863,
+       -92.6137
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 82075,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 1200,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 12000000,
+       "PROP_NAME": "Kinnickinnic River Fishery Area",
+       "PROP_NAME_LABEL": "Kinnickinnic River Fishery Area",
+       "GIS_ACRES": 13.18550219,
+       "DEED_ACRES": 16.3,
+       "FUNCTION_MGT_CODE": "FM",
+       "ADMIN_CODE": "FM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.0427,
+       -89.9998
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 52640,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 4090,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 40900000,
+       "PROP_NAME": "Rem-Love Creek",
+       "PROP_NAME_LABEL": "Rem-Love Creek",
+       "GIS_ACRES": 38.79352995,
+       "DEED_ACRES": 39.5,
+       "FUNCTION_MGT_CODE": "FM",
+       "ADMIN_CODE": "FM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.0427,
+       -89.9998
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 52637,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 4090,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 40900000,
+       "PROP_NAME": "Rem-Love Creek",
+       "PROP_NAME_LABEL": "Rem-Love Creek",
+       "GIS_ACRES": 8.55419568,
+       "DEED_ACRES": 5.8,
+       "FUNCTION_MGT_CODE": "FM",
+       "ADMIN_CODE": "FM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.0427,
+       -89.9998
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 52638,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 4090,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 40900000,
+       "PROP_NAME": "Rem-Love Creek",
+       "PROP_NAME_LABEL": "Rem-Love Creek",
+       "GIS_ACRES": 19.79562964,
+       "DEED_ACRES": 20.0,
+       "FUNCTION_MGT_CODE": "FM",
+       "ADMIN_CODE": "FM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.0427,
+       -89.9998
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 52639,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 4090,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 40900000,
+       "PROP_NAME": "Rem-Love Creek",
+       "PROP_NAME_LABEL": "Rem-Love Creek",
+       "GIS_ACRES": 19.59863983,
+       "DEED_ACRES": 20.0,
+       "FUNCTION_MGT_CODE": "FM",
+       "ADMIN_CODE": "FM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       44.9008,
+       -91.3682
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 120040,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 8523,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 85230000,
+       "PROP_NAME": "Statewide Wildlife Habitat",
+       "PROP_NAME_LABEL": "Statewide Wildlife Habitat",
+       "GIS_ACRES": 1.19780255,
+       "DEED_ACRES": 1.2,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       44.9008,
+       -91.3682
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 120042,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 8523,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 85230000,
+       "PROP_NAME": "Statewide Wildlife Habitat",
+       "PROP_NAME_LABEL": "Statewide Wildlife Habitat",
+       "GIS_ACRES": 35.46103898,
+       "DEED_ACRES": 35.1,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       44.9008,
+       -91.3682
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 96806,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 8523,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 85230000,
+       "PROP_NAME": "Statewide Wildlife Habitat",
+       "PROP_NAME_LABEL": "Statewide Wildlife Habitat",
+       "GIS_ACRES": 15.93502879,
+       "DEED_ACRES": 16.0,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       44.9008,
+       -91.3682
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 126656,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 8523,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 85230000,
+       "PROP_NAME": "Statewide Wildlife Habitat",
+       "PROP_NAME_LABEL": "Statewide Wildlife Habitat",
+       "GIS_ACRES": 39.13992348,
+       "DEED_ACRES": 38.5,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       44.9008,
+       -91.3682
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 96807,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 8523,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 85230000,
+       "PROP_NAME": "Statewide Wildlife Habitat",
+       "PROP_NAME_LABEL": "Statewide Wildlife Habitat",
+       "GIS_ACRES": 40.35643559,
+       "DEED_ACRES": 40.0,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.665,
+       -87.7197
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 24007,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 9232,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 92320000,
+       "PROP_NAME": "John Michael Kohler State Park",
+       "PROP_NAME_LABEL": "John Michael Kohler State Park",
+       "GIS_ACRES": 52.83293336,
+       "DEED_ACRES": 41.49,
+       "FUNCTION_MGT_CODE": "PR",
+       "ADMIN_CODE": "PR"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.665,
+       -87.7197
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 23999,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 9232,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 92320000,
+       "PROP_NAME": "John Michael Kohler State Park",
+       "PROP_NAME_LABEL": "John Michael Kohler State Park",
+       "GIS_ACRES": 3.19000722,
+       "DEED_ACRES": 3.28,
+       "FUNCTION_MGT_CODE": "PR",
+       "ADMIN_CODE": "PR"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.665,
+       -87.7197
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 24001,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 9232,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 92320000,
+       "PROP_NAME": "John Michael Kohler State Park",
+       "PROP_NAME_LABEL": "John Michael Kohler State Park",
+       "GIS_ACRES": 22.7415506,
+       "DEED_ACRES": 14.5,
+       "FUNCTION_MGT_CODE": "PR",
+       "ADMIN_CODE": "PR"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       42.5726,
+       -90.6521
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 58725,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 9695,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 96950000,
+       "PROP_NAME": "Gift Lands",
+       "PROP_NAME_LABEL": "Gift Lands",
+       "GIS_ACRES": 38.59039254,
+       "DEED_ACRES": 40.0,
+       "FUNCTION_MGT_CODE": "ZZ",
+       "ADMIN_CODE": "ZZ"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       42.5726,
+       -90.6521
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 58727,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 9695,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 96950000,
+       "PROP_NAME": "Gift Lands",
+       "PROP_NAME_LABEL": "Gift Lands",
+       "GIS_ACRES": 42.63715148,
+       "DEED_ACRES": 40.52,
+       "FUNCTION_MGT_CODE": "ZZ",
+       "ADMIN_CODE": "ZZ"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       42.5726,
+       -90.6521
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 118223,
+       "TRANS_TYPE_CODE": 2,
+       "PROP_CODE": 9695,
+       "EASE_USE_CODE": 1222,
+       "PROP_NAME_CODE": 96950000,
+       "PROP_NAME": "Gift Lands",
+       "PROP_NAME_LABEL": "Gift Lands",
+       "GIS_ACRES": 0.51132399,
+       "DEED_ACRES": 0.2,
+       "FUNCTION_MGT_CODE": "ZZ",
+       "ADMIN_CODE": "ZZ"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       42.5726,
+       -90.6521
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 118222,
+       "TRANS_TYPE_CODE": 2,
+       "PROP_CODE": 9695,
+       "EASE_USE_CODE": 1222,
+       "PROP_NAME_CODE": 96950000,
+       "PROP_NAME": "Gift Lands",
+       "PROP_NAME_LABEL": "Gift Lands",
+       "GIS_ACRES": 0.1971101,
+       "DEED_ACRES": 0.26,
+       "FUNCTION_MGT_CODE": "ZZ",
+       "ADMIN_CODE": "ZZ"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       42.5726,
+       -90.6521
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 58729,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 9695,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 96950000,
+       "PROP_NAME": "Gift Lands",
+       "PROP_NAME_LABEL": "Gift Lands",
+       "GIS_ACRES": 26.44731075,
+       "DEED_ACRES": 25.1,
+       "FUNCTION_MGT_CODE": "ZZ",
+       "ADMIN_CODE": "ZZ"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.6651,
+       -88.1659
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 10178,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 9240,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 92400000,
+       "PROP_NAME": "Kettle Moraine State Forest-Northern Unit",
+       "PROP_NAME_LABEL": "Kettle Moraine State Forest-Northern Unit",
+       "GIS_ACRES": 73.67879299,
+       "DEED_ACRES": 65.7,
+       "FUNCTION_MGT_CODE": "SF",
+       "ADMIN_CODE": "SF"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.5937,
+       -88.176
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 10033,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 9240,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 92400000,
+       "PROP_NAME": "Kettle Moraine State Forest-Northern Unit",
+       "PROP_NAME_LABEL": "Kettle Moraine State Forest-Northern Unit",
+       "GIS_ACRES": 40.55302513,
+       "DEED_ACRES": 40.0,
+       "FUNCTION_MGT_CODE": "SF",
+       "ADMIN_CODE": "SF"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.5937,
+       -88.176
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 10036,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 9240,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 92400000,
+       "PROP_NAME": "Kettle Moraine State Forest-Northern Unit",
+       "PROP_NAME_LABEL": "Kettle Moraine State Forest-Northern Unit",
+       "GIS_ACRES": 40.98476368,
+       "DEED_ACRES": 40.0,
+       "FUNCTION_MGT_CODE": "SF",
+       "ADMIN_CODE": "SF"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.5937,
+       -88.176
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 10029,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 9240,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 92400000,
+       "PROP_NAME": "Kettle Moraine State Forest-Northern Unit",
+       "PROP_NAME_LABEL": "Kettle Moraine State Forest-Northern Unit",
+       "GIS_ACRES": 39.50455587,
+       "DEED_ACRES": 39.0,
+       "FUNCTION_MGT_CODE": "SF",
+       "ADMIN_CODE": "SF"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.5937,
+       -88.176
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 10034,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 9240,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 92400000,
+       "PROP_NAME": "Kettle Moraine State Forest-Northern Unit",
+       "PROP_NAME_LABEL": "Kettle Moraine State Forest-Northern Unit",
+       "GIS_ACRES": 40.54031512,
+       "DEED_ACRES": 40.0,
+       "FUNCTION_MGT_CODE": "SF",
+       "ADMIN_CODE": "SF"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.5997,
+       -87.9393
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 65331,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 8986,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 89860000,
+       "PROP_NAME": "Extensive WL Habitat",
+       "PROP_NAME_LABEL": "Extensive WL Habitat",
+       "GIS_ACRES": 12.16506623,
+       "DEED_ACRES": 12.28,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.2019,
+       -92.4214
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.8977,
+       -92.4862
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.1014,
+       -92.4573
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.1622,
+       -92.5082
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.8863,
+       -92.6137
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.0427,
+       -89.9998
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.9008,
+       -91.3682
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.665,
+       -87.7197
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       42.5726,
+       -90.6521
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.6651,
+       -88.1659
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.5937,
+       -88.176
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.5997,
+       -87.9393
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.2019,
+       -92.4214
+      ],
+      "attrs": {
+       "CostCenter": "FF03RSTW00",
+       "CMPXNAME": "ST. CROIX WETLAND MANAGEMENT DISTRICT",
+       "ORGNAME": "ZZ",
+       "ORGCODE": 32577,
+       "IFWS": "9999",
+       "LIT": "ZZ",
+       "GISACRES": 3852561.71156907,
+       "MAXACRES": 7500,
+       "APPTYPE": 1,
+       "RSL_TYPE": "WMD",
+       "FWSREGION": "3",
+       "LABELNAME": "St. Croix WMD",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1766087201000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.8977,
+       -92.4862
+      ],
+      "attrs": {
+       "CostCenter": "FF03RSTW00",
+       "CMPXNAME": "ST. CROIX WETLAND MANAGEMENT DISTRICT",
+       "ORGNAME": "ZZ",
+       "ORGCODE": 32577,
+       "IFWS": "9999",
+       "LIT": "ZZ",
+       "GISACRES": 3852561.71156907,
+       "MAXACRES": 7500,
+       "APPTYPE": 1,
+       "RSL_TYPE": "WMD",
+       "FWSREGION": "3",
+       "LABELNAME": "St. Croix WMD",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1766087201000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.1014,
+       -92.4573
+      ],
+      "attrs": {
+       "CostCenter": "FF03RSTW00",
+       "CMPXNAME": "ST. CROIX WETLAND MANAGEMENT DISTRICT",
+       "ORGNAME": "ZZ",
+       "ORGCODE": 32577,
+       "IFWS": "9999",
+       "LIT": "ZZ",
+       "GISACRES": 3852561.71156907,
+       "MAXACRES": 7500,
+       "APPTYPE": 1,
+       "RSL_TYPE": "WMD",
+       "FWSREGION": "3",
+       "LABELNAME": "St. Croix WMD",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1766087201000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.1622,
+       -92.5082
+      ],
+      "attrs": {
+       "CostCenter": "FF03RSTW00",
+       "CMPXNAME": "ST. CROIX WETLAND MANAGEMENT DISTRICT",
+       "ORGNAME": "ZZ",
+       "ORGCODE": 32577,
+       "IFWS": "9999",
+       "LIT": "ZZ",
+       "GISACRES": 3852561.71156907,
+       "MAXACRES": 7500,
+       "APPTYPE": 1,
+       "RSL_TYPE": "WMD",
+       "FWSREGION": "3",
+       "LABELNAME": "St. Croix WMD",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1766087201000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.8863,
+       -92.6137
+      ],
+      "attrs": {
+       "CostCenter": "FF03RSTW00",
+       "CMPXNAME": "ST. CROIX WETLAND MANAGEMENT DISTRICT",
+       "ORGNAME": "ZZ",
+       "ORGCODE": 32577,
+       "IFWS": "9999",
+       "LIT": "ZZ",
+       "GISACRES": 3852561.71156907,
+       "MAXACRES": 7500,
+       "APPTYPE": 1,
+       "RSL_TYPE": "WMD",
+       "FWSREGION": "3",
+       "LABELNAME": "St. Croix WMD",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1766087201000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.0427,
+       -89.9998
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.9008,
+       -91.3682
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.665,
+       -87.7197
+      ],
+      "attrs": {
+       "CostCenter": "FF03RLPW00",
+       "CMPXNAME": "LEOPOLD WETLAND MANAGEMENT DISTRICT",
+       "ORGNAME": "ZZ",
+       "ORGCODE": 32525,
+       "IFWS": "9999",
+       "LIT": "ZZ",
+       "GISACRES": 8044947.15264301,
+       "MAXACRES": 9000,
+       "APPTYPE": 1,
+       "RSL_TYPE": "WMD",
+       "FWSREGION": "3",
+       "LABELNAME": "Leopold WMD",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1772144270000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       42.5726,
+       -90.6521
+      ],
+      "attrs": {
+       "CostCenter": "FF03RDRI00",
+       "CMPXNAME": "N/A",
+       "ORGNAME": "DRIFTLESS AREA NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 32596,
+       "IFWS": "1129",
+       "LIT": "DRI",
+       "GISACRES": 10279306.60719107,
+       "MAXACRES": 6781,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "3",
+       "LABELNAME": "Driftless Area NWR",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1719855166000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.6651,
+       -88.1659
+      ],
+      "attrs": {
+       "CostCenter": "FF03RLPW00",
+       "CMPXNAME": "LEOPOLD WETLAND MANAGEMENT DISTRICT",
+       "ORGNAME": "ZZ",
+       "ORGCODE": 32525,
+       "IFWS": "9999",
+       "LIT": "ZZ",
+       "GISACRES": 8044947.15264301,
+       "MAXACRES": 9000,
+       "APPTYPE": 1,
+       "RSL_TYPE": "WMD",
+       "FWSREGION": "3",
+       "LABELNAME": "Leopold WMD",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1772144270000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.5937,
+       -88.176
+      ],
+      "attrs": {
+       "CostCenter": "FF03RLPW00",
+       "CMPXNAME": "LEOPOLD WETLAND MANAGEMENT DISTRICT",
+       "ORGNAME": "ZZ",
+       "ORGCODE": 32525,
+       "IFWS": "9999",
+       "LIT": "ZZ",
+       "GISACRES": 8044947.15264301,
+       "MAXACRES": 9000,
+       "APPTYPE": 1,
+       "RSL_TYPE": "WMD",
+       "FWSREGION": "3",
+       "LABELNAME": "Leopold WMD",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1772144270000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.5997,
+       -87.9393
+      ],
+      "attrs": {
+       "CostCenter": "FF03RLPW00",
+       "CMPXNAME": "LEOPOLD WETLAND MANAGEMENT DISTRICT",
+       "ORGNAME": "ZZ",
+       "ORGCODE": 32525,
+       "IFWS": "9999",
+       "LIT": "ZZ",
+       "GISACRES": 8044947.15264301,
+       "MAXACRES": 9000,
+       "APPTYPE": 1,
+       "RSL_TYPE": "WMD",
+       "FWSREGION": "3",
+       "LABELNAME": "Leopold WMD",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1772144270000,
+       "IntReg": "3"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 204,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
