@@ -1,0 +1,36 @@
+{
+ "request": "requests/10-pm-US-4242.json",
+ "id": "10-pm-US-4242",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "backfill: picture-map-only row in the US Fable file (HQ Oct 29 11:12 PM)",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-4242",
+  "name": "Fenley State Recreation Area",
+  "agency": "Wisconsin DNR",
+  "url": "https://embed.widencdn.net/pdf/download/widnr/5x2yotjcr1/Fenley_Map.pdf",
+  "pages": 1,
+  "hint": "fenley",
+  "report": "backfill: picture-map-only row in the US Fable file (HQ Oct 29 11:12 PM)"
+ },
+ "answered": "2026-10-30 06:32Z",
+ "results": [
+  {
+   "url": "https://embed.widencdn.net/pdf/download/widnr/5x2yotjcr1/Fenley_Map.pdf",
+   "error": "robots.txt says no (or no manners module)",
+   "looked": []
+  }
+ ],
+ "seconds": 0,
+ "manners": {
+  "requests": 0,
+  "robots": 1,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}
