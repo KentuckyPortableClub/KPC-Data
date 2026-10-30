@@ -5,6 +5,7 @@
  "parks": {
   "US-10259": {
    "park": "NC Vietnam Veteran's Memorial Historic Site",
+   "area": "US-NC",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -12,12 +13,13 @@
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"vietnam veteran\": 0 lead(s)"
+    "B ArcGIS Online search \"veteran vietnam\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-10263": {
    "park": "Bonner House Historic Site",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -26,7 +28,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 3872,
      "record_name": "Historic Bath State Historic Site",
-     "acres_approx": 5
+     "acres_approx": 5,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -38,7 +42,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SHCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 9
+     "GIS_Acres": 9,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -47,10 +53,11 @@
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10388": {
    "park": "Palmer Marsh House Historic Site",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -58,12 +65,13 @@
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"palmer marsh house\": 0 lead(s)"
+    "B ArcGIS Online search \"palmer house marsh\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-10389": {
    "park": "Hiwassee Dam Recreation Park",
+   "area": "US-NC",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -77,6 +85,7 @@
   },
   "US-10398": {
    "park": "Chatuge Dam Trail Recreation Park",
+   "area": "US-NC",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -90,6 +99,7 @@
   },
   "US-10399": {
    "park": "Apalachia Reservoir Recreation Park",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -98,7 +108,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 6597,
      "record_name": "Tennessee Valley Authority - Hiwassee Dam",
-     "acres_approx": 366
+     "acres_approx": 366,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -110,7 +122,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "UNK",
      "Own_Type": "FED",
-     "GIS_Acres": 424
+     "GIS_Acres": 424,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -119,10 +133,11 @@
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10406": {
    "park": "Lake Rim Fishing & Boating Multiple Use Area",
+   "area": "US-NC",
    "why_not": "no-layer",
    "hits": [
     {
@@ -131,7 +146,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 3491,
      "record_name": "Fayetteville Fish Hatchery",
-     "acres_approx": 204
+     "acres_approx": 204,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -143,7 +160,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 233
+     "GIS_Acres": 233,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -152,10 +171,11 @@
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10511": {
    "park": "Jessups Mill Pond State Game Land",
+   "area": "US-NC",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -169,6 +189,7 @@
   },
   "US-11238": {
    "park": "Micken's Branch Multiple Use Area",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -177,7 +198,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 6597,
      "record_name": "Tennessee Valley Authority - Hiwassee Dam",
-     "acres_approx": 366
+     "acres_approx": 366,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -189,7 +212,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "UNK",
      "Own_Type": "FED",
-     "GIS_Acres": 424
+     "GIS_Acres": 424,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -198,10 +223,11 @@
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12119": {
    "park": "Moses H. Cone National Park",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -210,7 +236,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 215,
      "record_name": "Blue Ridge Parkway",
-     "acres_approx": 52229
+     "acres_approx": 52229,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -222,7 +250,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "SDA",
      "Own_Type": "FED",
-     "GIS_Acres": 52757
+     "GIS_Acres": 52757,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -231,10 +261,11 @@
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12320": {
    "park": "Yadkin River State Trail",
+   "area": "US-NC",
    "why_not": "no-layer",
    "hits": [
     {
@@ -243,7 +274,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 13377,
      "record_name": "Yadkin River Game Land (Leased)",
-     "acres_approx": 6195
+     "acres_approx": 6195,
+     "tier": "LIKELY",
+     "why": "same name, different kind (trail vs game)"
     },
     {
      "verdict": "name match",
@@ -251,7 +284,9 @@
      "agency": "NCWRC (owner ncwildlife.gov)",
      "record": 96,
      "record_name": "Yadkin River",
-     "acres_approx": 9836
+     "acres_approx": 9836,
+     "tier": "SURE",
+     "why": "same proper name"
     },
     {
      "verdict": "inside-other",
@@ -263,7 +298,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 11651
+     "GIS_Acres": 11651,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -272,10 +309,11 @@
     "A NCWRC (owner ncwildlife.gov): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-12371": {
    "park": "Julian Price National Park",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -284,7 +322,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 215,
      "record_name": "Blue Ridge Parkway",
-     "acres_approx": 52229
+     "acres_approx": 52229,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -296,7 +336,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "SDA",
      "Own_Type": "FED",
-     "GIS_Acres": 52757
+     "GIS_Acres": 52757,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -305,10 +347,11 @@
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12414": {
    "park": "Doughton Recreation Park",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -317,7 +360,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 215,
      "record_name": "Blue Ridge Parkway",
-     "acres_approx": 52229
+     "acres_approx": 52229,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -329,7 +374,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "SDA",
      "Own_Type": "FED",
-     "GIS_Acres": 52757
+     "GIS_Acres": 52757,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -338,10 +385,11 @@
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12662": {
    "park": "Harmon Den Wildlife Management Area",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -350,7 +398,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 5870,
      "record_name": "Pisgah National Forest - Appalachian Ranger District",
-     "acres_approx": 153601
+     "acres_approx": 153601,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     },
     {
      "verdict": "inside-other",
@@ -358,7 +408,9 @@
      "agency": "NCWRC (owner ncwildlife.gov)",
      "record": 62,
      "record_name": "Pisgah",
-     "acres_approx": 516350
+     "acres_approx": 516350,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -370,7 +422,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 509978
+     "GIS_Acres": 509978,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -379,62 +433,39 @@
     "A NCWRC (owner ncwildlife.gov): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13002": {
    "park": "Dan River State Trail",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [],
-   "leads": [
-    {
-     "title": "Rencana_Infrastruktur_Pengelolaan_Air_Limbah_dan_Persampahan",
-     "url": "https://services-ap1.arcgis.com/7jIYowrTWizM57Ga/arcgis/rest/services/Rencana_Infrastruktur_Pengelolaan_Air_Limbah_dan_Persampahan/FeatureServer",
-     "owner": "DPUPRKendari",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Dan Beebe and Brad Freeman Trail Additions_gdb",
-     "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/Dan_Beebe_and_Brad_Freeman_Trail_Additions_gdb/FeatureServer",
-     "owner": "Asif.Ali@water.ca.gov_DWR",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"dan\": 2 lead(s)"
+    "B ArcGIS Online search \"dan\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-3851": {
    "park": "Brumley Forest State Nature Preserve",
+   "area": "US-NC",
    "why_not": "needs-parcel",
    "hits": [],
-   "leads": [
-    {
-     "title": "Brumley",
-     "url": "https://services8.arcgis.com/OcpsbB1t6G1k007e/arcgis/rest/services/Brumley/FeatureServer",
-     "owner": "MSI.forest",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Justin Brumley _Ski Run_69__WFL1",
-     "url": "https://services1.arcgis.com/8DJsAMKuU5pXLFcd/arcgis/rest/services/Justin_Brumley__Ski_Run_69__WFL1/FeatureServer",
-     "owner": "jlbrumley_flc",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"brumley\": 2 lead(s)"
+    "B ArcGIS Online search \"brumley\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-3862": {
    "park": "Nags Head Woods Ecological State Preserve",
+   "area": "US-NC",
    "why_not": "no-layer",
    "hits": [
     {
@@ -443,7 +474,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 7803,
      "record_name": "Town of Nags Head Open Space",
-     "acres_approx": 310
+     "acres_approx": 310,
+     "tier": "LIKELY",
+     "why": "shared head, nag; extra: park - / record open, space"
     },
     {
      "verdict": "name match",
@@ -451,7 +484,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 9200,
      "record_name": "Nags Head Woods and Jockey's Ridge - National Natural Landmark",
-     "acres_approx": 1980
+     "acres_approx": 1980,
+     "tier": "LIKELY",
+     "why": "shared head, nag; extra: park - / record jockey, landmark, ridge"
     },
     {
      "verdict": "name mismatch",
@@ -459,7 +494,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 14075,
      "record_name": "NC Land and Water Fund Project",
-     "acres_approx": 263
+     "acres_approx": 263,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -467,7 +504,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 20162,
      "record_name": "The Nature Conservancy Easement",
-     "acres_approx": 393
+     "acres_approx": 393,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -475,7 +514,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 21316,
      "record_name": "Nags Head Woods (Town of Nags Head) Registered Heritage Area",
-     "acres_approx": 298
+     "acres_approx": 298,
+     "tier": "LIKELY",
+     "why": "shared head, nag; extra: park - / record registered"
     },
     {
      "verdict": "name match",
@@ -487,7 +528,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "LOTH",
      "Own_Type": "LOC",
-     "GIS_Acres": 356
+     "GIS_Acres": 356,
+     "tier": "LIKELY",
+     "why": "shared head, nag; extra: park - / record open, space"
     },
     {
      "verdict": "name match",
@@ -499,7 +542,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SOTH",
      "Own_Type": "LOC",
-     "GIS_Acres": 283
+     "GIS_Acres": 283,
+     "tier": "LIKELY",
+     "why": "shared head, nag; extra: park - / record registered"
     }
    ],
    "leads": [],
@@ -508,10 +553,11 @@
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-3863": {
    "park": "Palmetto-Peartree State Preserve",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -520,7 +566,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 37,
      "record_name": "Alligator River Game Land",
-     "acres_approx": 24328
+     "acres_approx": 24328,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -528,7 +576,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 4878,
      "record_name": "NC Department of Transportation Mitigation Site",
-     "acres_approx": 10229
+     "acres_approx": 10229,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -536,7 +586,9 @@
      "agency": "NCWRC (owner ncwildlife.gov)",
      "record": 1,
      "record_name": "Alligator River",
-     "acres_approx": 24371
+     "acres_approx": 24371,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -548,7 +600,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "PCON",
      "Own_Type": "NGO",
-     "GIS_Acres": 11051
+     "GIS_Acres": 11051,
+     "tier": "LIKELY",
+     "why": "shared palmetto, peartree; extra: park - / record fund"
     },
     {
      "verdict": "inside-other",
@@ -560,7 +614,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SOTH",
      "Own_Type": "STAT",
-     "GIS_Acres": 24566
+     "GIS_Acres": 24566,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -569,10 +625,11 @@
     "A NCWRC (owner ncwildlife.gov): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-4577": {
    "park": "Overmountain Victory National Historic Trail",
+   "area": "US-NC",
    "why_not": "no-layer",
    "hits": [],
    "leads": [
@@ -581,30 +638,19 @@
      "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Overmountain_Victory_National_Historic_Trail_Official_Temp/FeatureServer",
      "owner": "cor_nps",
      "type": "Feature Service"
-    },
-    {
-     "title": "Overmountain Victory Trail Historic Route",
-     "url": "https://services1.arcgis.com/PwLrOgCfU0cYShcG/arcgis/rest/services/Overmountain_Victory_Trail_Historic_Route/FeatureServer",
-     "owner": "ijohnson_nemac",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Overmountain Victory Trail - Designated Corridor",
-     "url": "https://services1.arcgis.com/PwLrOgCfU0cYShcG/arcgis/rest/services/OVVI_BND_OVNHT_Corridor/FeatureServer",
-     "owner": "ijohnson_nemac",
-     "type": "Feature Service"
     }
    ],
    "tried": [
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"overmountain victory\": 4 lead(s)"
+    "B ArcGIS Online search \"overmountain victory\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-6837": {
    "park": "CSS Neuse Civil War Interpretive Center State Historic Site",
+   "area": "US-NC",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -612,12 +658,13 @@
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"interpretive center neuse\": 0 lead(s)"
+    "B ArcGIS Online search \"interpretive center civil\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-6847": {
    "park": "NC Transportation Museum State Historic Site",
+   "area": "US-NC",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -631,38 +678,21 @@
   },
   "US-6852": {
    "park": "State Capitol State Historic Site",
+   "area": "US-NC",
    "why_not": "needs-parcel",
    "hits": [],
-   "leads": [
-    {
-     "title": "PLANNINGCADASTRE_overlay_capitol_view_corridors",
-     "url": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_view_corridors/FeatureServer",
-     "owner": "CTM.Publisher",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Capitol Campus points",
-     "url": "https://services9.arcgis.com/VatvCKAYJJVi8sva/arcgis/rest/services/Capitol_Campus_points/FeatureServer",
-     "owner": "DES_GIS_Support",
-     "type": "Feature Service"
-    },
-    {
-     "title": "PLANNINGCADASTRE_overlay_capitol_dominance",
-     "url": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_dominance/FeatureServer",
-     "owner": "CTM.Publisher",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"capitol\": 7 lead(s)"
+    "B ArcGIS Online search \"capitol\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-6963": {
    "park": "Nutbush Wildlife Management Area",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -676,6 +706,7 @@
   },
   "US-8005": {
    "park": "Fontana TVA Dam National Recreation Area",
+   "area": "US-NC",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -683,12 +714,13 @@
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"fontana tva dam\": 0 lead(s)"
+    "B ArcGIS Online search \"fontana dam tva\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-8010": {
    "park": "McKinney Lake State Fish Hatchery",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -697,7 +729,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 6215,
      "record_name": "Sandhills Game Land",
-     "acres_approx": 64586
+     "acres_approx": 64586,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -705,7 +739,9 @@
      "agency": "NCWRC (owner ncwildlife.gov)",
      "record": 73,
      "record_name": "Sandhills",
-     "acres_approx": 64520
+     "acres_approx": 64520,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -717,7 +753,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 65144
+     "GIS_Acres": 65144,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -726,10 +764,11 @@
     "A NCWRC (owner ncwildlife.gov): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-8011": {
    "park": "Bobby N. Setzer State Fish Hatchery",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -738,7 +777,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 5877,
      "record_name": "Pisgah National Forest - Pisgah Ranger District",
-     "acres_approx": 164984
+     "acres_approx": 164984,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     },
     {
      "verdict": "inside-other",
@@ -746,7 +787,9 @@
      "agency": "NCWRC (owner ncwildlife.gov)",
      "record": 62,
      "record_name": "Pisgah",
-     "acres_approx": 516350
+     "acres_approx": 516350,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -758,7 +801,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 509978
+     "GIS_Acres": 509978,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -767,10 +812,11 @@
     "A NCWRC (owner ncwildlife.gov): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-8226": {
    "park": "Upchurch Lake State Fishing Lake",
+   "area": "US-NC",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -779,7 +825,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 5368,
      "record_name": "Nicholson Creek Game Land",
-     "acres_approx": 1066
+     "acres_approx": 1066,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -787,7 +835,9 @@
      "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural",
      "record": 21340,
      "record_name": "Nicholson Creek Game Land Dedicated Nature Preserve",
-     "acres_approx": 894
+     "acres_approx": 894,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -795,7 +845,9 @@
      "agency": "NCWRC (owner ncwildlife.gov)",
      "record": 56,
      "record_name": "Nicholson Creek",
-     "acres_approx": 1066
+     "acres_approx": 1066,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -807,7 +859,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 1021
+     "GIS_Acres": 1021,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -816,7 +870,7 @@
     "A NCWRC (owner ncwildlife.gov): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }
  }
 }

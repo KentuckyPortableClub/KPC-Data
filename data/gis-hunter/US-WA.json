@@ -5,6 +5,7 @@
  "parks": {
   "US-0694": {
    "park": "Ebey's Landing Reserve National Conservation Area",
+   "area": "US-WA",
    "why_not": "pin-doubt",
    "hits": [
     {
@@ -17,7 +18,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "NCA",
      "Own_Type": "FED",
-     "GIS_Acres": 1093
+     "GIS_Acres": 1093,
+     "tier": "LIKELY",
+     "why": "same name, different kind (conservation vs historical)"
     }
    ],
    "leads": [],
@@ -34,10 +37,11 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-10408": {
    "park": "Horse Heaven Hills Recreation Area BLM Recreation Management Area",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -50,7 +54,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 168544
+     "GIS_Acres": 168544,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -66,12 +72,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"heaven hills horse\": 0 lead(s)"
+    "B ArcGIS Online search \"heaven horse hills\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10711": {
    "park": "Marckworth State Forest",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -84,7 +91,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
    "leads": [],
@@ -102,10 +111,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"marckworth\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11145": {
    "park": "Naneum Ridge State Forest",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -114,7 +124,9 @@
      "agency": "Washington Department of Fish and Wildlife",
      "record": null,
      "record_name": "Colockum",
-     "acres_approx": 87599
+     "acres_approx": 87599,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -122,7 +134,9 @@
      "agency": "Washington Department of Fish and Wildlife",
      "record": null,
      "record_name": "Colockum",
-     "acres_approx": 87599
+     "acres_approx": 87599,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -130,7 +144,9 @@
      "agency": "Washington Dept. of Fish and Wildlife (credit: WDFW)",
      "record": null,
      "record_name": "Colockum",
-     "acres_approx": 87599
+     "acres_approx": 87599,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -138,7 +154,9 @@
      "agency": "Washington Dept. of Fish and Wildlife (credit: WDFW)",
      "record": null,
      "record_name": "Colockum",
-     "acres_approx": 87599
+     "acres_approx": 87599,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -150,7 +168,9 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 91115
+     "GIS_Acres": 91115,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -168,10 +188,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"naneum ridge\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12254": {
    "park": "Crab Creek - Rocky Ford Area BLM Recreation Management Area",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -184,7 +205,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 168544
+     "GIS_Acres": 168544,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -200,12 +223,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"rocky crab ford\": 0 lead(s)"
+    "B ArcGIS Online search \"rocky ford crab\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12278": {
    "park": "Boundary Reservoir BLM Recreation Management Area",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -214,7 +238,9 @@
      "agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks)",
      "record": 5881,
      "record_name": " ",
-     "acres_approx": 1001
+     "acres_approx": 1001,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "inside-other",
@@ -226,7 +252,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 168544
+     "GIS_Acres": 168544,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -244,10 +272,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"reservoir boundary\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12279": {
    "park": "South Huckleberry Mountains BLM Recreation Management Area",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -260,7 +289,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 168544
+     "GIS_Acres": 168544,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -278,10 +309,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"huckleberry mountains south\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12281": {
    "park": "North Huckleberry Mountains BLM Recreation Management Area",
+   "area": "US-WA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -294,7 +326,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 168544
+     "GIS_Acres": 168544,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -306,7 +340,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
    "leads": [],
@@ -324,10 +360,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"huckleberry mountains north\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12296": {
    "park": "Raging River State Forest",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -336,7 +373,9 @@
      "agency": "Washington State Department of Natural Resources",
      "record": 3494498,
      "record_name": "",
-     "acres_approx": 469
+     "acres_approx": 469,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "inside-other",
@@ -348,7 +387,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
    "leads": [],
@@ -366,10 +407,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"raging\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12315": {
    "park": "Dragoon Creek State Recreation Site",
+   "area": "US-WA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -378,7 +420,9 @@
      "agency": "Washington State Department of Natural Resources",
      "record": 3498440,
      "record_name": "",
-     "acres_approx": 159
+     "acres_approx": 159,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "inside-other",
@@ -390,7 +434,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
    "leads": [],
@@ -407,10 +453,11 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12316": {
    "park": "Sherry Creek State Recreation Site",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -423,17 +470,12 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "HOA Subdiv SHerry",
-     "url": "https://services6.arcgis.com/ZcuYjGGvzsyH5Zu7/arcgis/rest/services/HOA_Subdiv_SHerry/FeatureServer",
-     "owner": "WashougalStorm",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
@@ -446,12 +488,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"sherry\": 1 lead(s)"
+    "B ArcGIS Online search \"sherry\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12403": {
    "park": "Columbia Basin Hatchery Creek State Fish Hatchery",
+   "area": "US-WA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -464,7 +507,9 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 41205
+     "GIS_Acres": 41205,
+     "tier": "LIKELY",
+     "why": "shared basin, columbia; extra: park creek / record complex"
     }
    ],
    "leads": [],
@@ -481,10 +526,11 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-12480": {
    "park": "Govan BLM Recreation Management Area",
+   "area": "US-WA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -497,17 +543,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 168544
+     "GIS_Acres": 168544,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Govan_Sold_Prices",
-     "url": "https://services3.arcgis.com/C58X9R7Tu8cPpRcB/arcgis/rest/services/Govan_Sold_Prices/FeatureServer",
-     "owner": "2806332S_Glasgow_Uni",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
@@ -520,12 +561,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"govan\": 1 lead(s)"
+    "B ArcGIS Online search \"govan\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12563": {
    "park": "Douglas Creek BLM Recreation Management Area",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -538,27 +580,17 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 254416
+     "GIS_Acres": 254416,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [
-    {
-     "title": "Douglas County Boundary",
-     "url": "https://services.arcgis.com/pDAi2YK0L0QxVJHj/arcgis/rest/services/Douglas_County_Boundary/FeatureServer",
-     "owner": "Nataliya2",
-     "type": "Feature Service"
-    },
     {
      "title": "Douglas County, Kansas Boundary",
      "url": "https://gis.dgcoks.gov/server/rest/services/County_Boundary/FeatureServer",
      "owner": "gis_lawrenceks",
      "type": "Feature Service"
-    },
-    {
-     "title": "Douglas County, NE Buildings",
-     "url": "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Douglas_County_NE_Buildings/FeatureServer",
-     "owner": "dkensok_osm",
-     "type": "Feature Service"
     }
    ],
    "tried": [
@@ -573,12 +605,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"douglas\": 8 lead(s)"
+    "B ArcGIS Online search \"douglas\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-12565": {
    "park": "Skookum Creek State Recreation Area",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -591,29 +624,12 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "skookum_ortho_wgs84_tif",
-     "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/skookum_ortho_wgs84_tif/MapServer",
-     "owner": "patrick.pope_noaa",
-     "type": "Map Service"
-    },
-    {
-     "title": "Skookum Archers",
-     "url": "https://services1.arcgis.com/LCWc46UbpFlCIbVN/arcgis/rest/services/Skookum_Archers/FeatureServer",
-     "owner": "tbontempo_GRC_NATRS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Storymap_Skookum_Muck",
-     "url": "https://services7.arcgis.com/buuvDFFARQiOEbVZ/arcgis/rest/services/Storymap_Skookum_Muck/FeatureServer",
-     "owner": "SPSSEG_GIS",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
@@ -626,12 +642,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"skookum\": 6 lead(s)"
+    "B ArcGIS Online search \"skookum\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12566": {
    "park": "Sheep Creek State Recreation Area",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -644,26 +661,16 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
    "leads": [
     {
-     "title": "Peninsular Bighorn Sheep Habitat Vegetation Map [ds2660]",
-     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2660_fpu/FeatureServer",
-     "owner": "BIOS_Admin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Bighorn Sheep Herd Units - CDFW [ds3400]",
-     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3400_fpu/FeatureServer",
-     "owner": "BIOS_Admin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Utah Desert Bighorn Sheep Habitat",
-     "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_Desert_Bighorn_Sheep_Habitat/FeatureServer",
-     "owner": "dwrdata",
+     "title": "FWS WSFR Nevada Bighorn Sheep Herds ",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/BHS_Herds_March_16_vers/FeatureServer",
+     "owner": "elena_campbell@fws.gov_fws",
      "type": "Feature Service"
     }
    ],
@@ -679,12 +686,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"sheep\": 8 lead(s)"
+    "B ArcGIS Online search \"sheep\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-12567": {
    "park": "Douglas Falls State Recreation Area",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -706,6 +714,7 @@
   },
   "US-12569": {
    "park": "Beverly Dunes State Recreation Site",
+   "area": "US-WA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -718,7 +727,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
    "leads": [],
@@ -736,10 +747,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"beverly dunes\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12828": {
    "park": "Packer Creek BLM Recreation Management Area",
+   "area": "US-WA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -752,23 +764,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 168544
+     "GIS_Acres": 168544,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Manitoba_Co_Packer_Services",
-     "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Co_Packer_Services/FeatureServer",
-     "owner": "Manitoba_Government",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Packer Township",
-     "url": "https://services6.arcgis.com/b4SgqAPC2VGq0h6n/arcgis/rest/services/Packer_Township/FeatureServer",
-     "owner": "dbackenstoes_bia",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
@@ -781,12 +782,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"packer\": 2 lead(s)"
+    "B ArcGIS Online search \"packer\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12829": {
    "park": "Duffy Creek BLM Recreation Management Area",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -799,29 +801,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 254416
+     "GIS_Acres": 254416,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Troop Positions _C Duffy_",
-     "url": "https://services5.arcgis.com/KEZIbVsXEvL1ZLY5/arcgis/rest/services/Troop_Positions__C_Duffy_/FeatureServer",
-     "owner": "aocarchaeology",
-     "type": "Feature Service"
-    },
-    {
-     "title": "ancient_long_established_woodland Senan Duffy",
-     "url": "https://services-eu1.arcgis.com/fj8SedOMxfUDzrBI/arcgis/rest/services/ancient_long_established_woodland_Senan_Duffy/FeatureServer",
-     "owner": "senan.duffy2@mail.dcu.ie_DCU_Student",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Earthquake_and_Volcano_Risk_Canada__(Dylan_Duffy)",
-     "url": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Earthquake_and_Volcano_Risk_Canada__(Dylan_Duffy)/FeatureServer",
-     "owner": "556122",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
@@ -834,12 +819,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"duffy\": 6 lead(s)"
+    "B ArcGIS Online search \"duffy\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12830": {
    "park": "Old Ruby State Park State Heritage Area",
+   "area": "US-WA",
    "why_not": "pin-doubt",
    "hits": [
     {
@@ -852,7 +838,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 254416
+     "GIS_Acres": 254416,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -870,10 +858,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"heritage ruby old\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13383": {
    "park": "Big Eddy Water Access State Recreation Site",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -882,7 +871,9 @@
      "agency": "Washington State Parks",
      "record": 53,
      "record_name": "Forks of the Sky",
-     "acres_approx": 1341
+     "acres_approx": 1341,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -890,7 +881,9 @@
      "agency": "Washington Department of Fish and Wildlife",
      "record": null,
      "record_name": "Big Eddy",
-     "acres_approx": 5
+     "acres_approx": 5,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -907,10 +900,11 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13391": {
    "park": "Olequa Crossing State Recreation Site",
+   "area": "US-WA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -932,6 +926,7 @@
   },
   "US-13392": {
    "park": "Massey Bar State Recreation Site",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -953,6 +948,7 @@
   },
   "US-13396": {
    "park": "Steel Bridge State Recreation Site",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -974,6 +970,7 @@
   },
   "US-13399": {
    "park": "Hand State Recreation Site",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -986,29 +983,12 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SREC",
      "Own_Type": "STAT",
-     "GIS_Acres": 2
+     "GIS_Acres": 2,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Fiber Hand Holes",
-     "url": "https://services6.arcgis.com/iZ6GmQZ9zaRNfvWH/arcgis/rest/services/Fiber_Hand_Holes/FeatureServer",
-     "owner": "QCGIS_LisaM",
-     "type": "Feature Service"
-    },
-    {
-     "title": "2021 Hand Crew Roster",
-     "url": "https://services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/2021_Hand_Crew_Roster/FeatureServer",
-     "owner": "emily.turner_tfsgis",
-     "type": "Feature Service"
-    },
-    {
-     "title": "D-10, MGS Hand Samples and Thin Sections",
-     "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/MGS_Hand_Samples_and_Thin_Sections/FeatureServer",
-     "owner": "mgsgis_UMN",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
@@ -1021,12 +1001,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"hand\": 8 lead(s)"
+    "B ArcGIS Online search \"hand\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13516": {
    "park": "Horseshoe -Kitsap- State Fishing Lake",
+   "area": "US-WA",
    "why_not": "needs-parcel",
    "hits": [
     {
@@ -1035,7 +1016,9 @@
      "agency": "Washington Department of Fish and Wildlife",
      "record": null,
      "record_name": "Horseshoe Lake",
-     "acres_approx": 1
+     "acres_approx": 1,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -1052,10 +1035,11 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-3171": {
    "park": "Spokane River Centennial State Trail",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -1077,6 +1061,7 @@
   },
   "US-3385": {
    "park": "Mt. St. Helens National Monument",
+   "area": "US-WA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -1089,23 +1074,12 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 1275125
+     "GIS_Acres": 1275125,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Mount St_ Helens National Volcanic Monument_WFL1",
-     "url": "https://services1.arcgis.com/rCcfuAf877pT4w3i/arcgis/rest/services/Mount_St__Helens_National_Volcanic_Monument_WFL1/FeatureServer",
-     "owner": "jasmine.ortiz@wsu.edu_wsuniv",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Mount St_ Helens National Volcanic Monument_WTL3",
-     "url": "https://tiles.arcgis.com/tiles/rCcfuAf877pT4w3i/arcgis/rest/services/Mount_St__Helens_National_Volcanic_Monument_WTL3/MapServer",
-     "owner": "jasmine.ortiz@wsu.edu_wsuniv",
-     "type": "Map Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
@@ -1118,12 +1092,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"monument helens\": 2 lead(s)"
+    "B ArcGIS Online search \"monument helens\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4555": {
    "park": "Hanford Reach National Monument",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1132,7 +1107,9 @@
      "agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks)",
      "record": 3978,
      "record_name": "Hanford Reach National Monument, McGee Ranch/Riverlands Unit",
-     "acres_approx": 10151
+     "acres_approx": 10151,
+     "tier": "LIKELY",
+     "why": "shared hanford, reach; extra: park - / record mcgee, ranch, riverland"
     },
     {
      "verdict": "name match",
@@ -1144,7 +1121,9 @@
      "Mang_Name": "DOE",
      "Des_Tp": "FOTH",
      "Own_Type": "UNK",
-     "GIS_Acres": 211071
+     "GIS_Acres": 211071,
+     "tier": "UNLIKELY",
+     "why": "part of the name shared, record 209,302 ac far bigger than this kind of place"
     }
    ],
    "leads": [],
@@ -1161,10 +1140,11 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-4562": {
    "park": "Pacific Crest Trail National Scenic Trail",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1177,7 +1157,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 659968
+     "GIS_Acres": 659968,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [
@@ -1212,12 +1194,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"pacific scenic crest\": 7 lead(s)"
+    "B ArcGIS Online search \"pacific scenic crest\": 5 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-5565": {
    "park": "Ahtanum State Forest",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1226,7 +1209,9 @@
      "agency": "Washington State Department of Natural Resources",
      "record": 3503949,
      "record_name": "",
-     "acres_approx": 645
+     "acres_approx": 645,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "inside-other",
@@ -1238,7 +1223,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
    "leads": [],
@@ -1255,10 +1242,11 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5566": {
    "park": "Blanchard State Forest",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1271,23 +1259,12 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Watershed of the Blanchard River",
-     "url": "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer",
-     "owner": "brwp1237",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Blanchard School Board Wards",
-     "url": "https://services2.arcgis.com/gdgYLKfxoJmkNxos/arcgis/rest/services/Blanchard_School_Board_Wards/FeatureServer",
-     "owner": "OKHouse1",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
@@ -1300,12 +1277,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"blanchard\": 2 lead(s)"
+    "B ArcGIS Online search \"blanchard\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5567": {
    "park": "Capitol State Forest",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1318,29 +1296,12 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "PLANNINGCADASTRE_overlay_capitol_view_corridors",
-     "url": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_view_corridors/FeatureServer",
-     "owner": "CTM.Publisher",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Capitol Campus points",
-     "url": "https://services9.arcgis.com/VatvCKAYJJVi8sva/arcgis/rest/services/Capitol_Campus_points/FeatureServer",
-     "owner": "DES_GIS_Support",
-     "type": "Feature Service"
-    },
-    {
-     "title": "PLANNINGCADASTRE_overlay_capitol_dominance",
-     "url": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_dominance/FeatureServer",
-     "owner": "CTM.Publisher",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
@@ -1353,12 +1314,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"capitol\": 7 lead(s)"
+    "B ArcGIS Online search \"capitol\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5568": {
    "park": "Elbe Hills-Tahoma State Forest",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1367,7 +1329,9 @@
      "agency": "Washington State Department of Natural Resources",
      "record": 3495681,
      "record_name": "",
-     "acres_approx": 161
+     "acres_approx": 161,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "inside-other",
@@ -1379,7 +1343,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
    "leads": [],
@@ -1396,10 +1362,11 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5569": {
    "park": "Green Mountain-Tahuya State Forest",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1408,7 +1375,9 @@
      "agency": "Washington State Department of Natural Resources",
      "record": 3494432,
      "record_name": "",
-     "acres_approx": 612
+     "acres_approx": 612,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "inside-other",
@@ -1420,7 +1389,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
    "leads": [],
@@ -1437,10 +1408,11 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5570": {
    "park": "Little Pend Oreille State Forest",
+   "area": "US-WA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [
@@ -1469,6 +1441,7 @@
   },
   "US-5571": {
    "park": "Loomis-Loup Loup State Forest",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1477,7 +1450,9 @@
      "agency": "Washington State Department of Natural Resources",
      "record": 3496589,
      "record_name": "",
-     "acres_approx": 495
+     "acres_approx": 495,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "inside-other",
@@ -1489,7 +1464,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
    "leads": [],
@@ -1506,10 +1483,11 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5572": {
    "park": "Olympic Peninsula State Forest",
+   "area": "US-WA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -1522,7 +1500,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 631799
+     "GIS_Acres": 631799,
+     "tier": "LIKELY",
+     "why": "shared olympic; extra: park peninsula / record -"
     }
    ],
    "leads": [],
@@ -1539,32 +1519,14 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-5573": {
    "park": "Teanaway State Forest",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [],
-   "leads": [
-    {
-     "title": "Teanaway Cutthroat Slam",
-     "url": "https://services1.arcgis.com/754BERmVIq3RqSf8/arcgis/rest/services/survey123_69bcc2270aae41babd6c3019ca8e1f53/FeatureServer",
-     "owner": "mmayfield_tu",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Teanaway_Projects",
-     "url": "https://services2.arcgis.com/VmLllxPKgIzlr2id/arcgis/rest/services/Teanaway_Projects/FeatureServer",
-     "owner": "BlueWaterGIS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Teanaway_HUC10",
-     "url": "https://services2.arcgis.com/VmLllxPKgIzlr2id/arcgis/rest/services/Teanaway_HUC10/FeatureServer",
-     "owner": "BlueWaterGIS",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
@@ -1577,12 +1539,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"teanaway\": 8 lead(s)"
+    "B ArcGIS Online search \"teanaway\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-5576": {
    "park": "Yacolt Burn State Forest",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1591,7 +1554,9 @@
      "agency": "Washington State Department of Natural Resources",
      "record": 3499999,
      "record_name": "",
-     "acres_approx": 630
+     "acres_approx": 630,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "inside-other",
@@ -1603,7 +1568,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2562869
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
     }
    ],
    "leads": [],
@@ -1620,10 +1587,11 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-8662": {
    "park": "Chestnut Beach National Recreation Area",
+   "area": "US-WA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -1636,7 +1604,9 @@
      "Mang_Name": "OTHF",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 24
+     "GIS_Acres": 24,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -1654,10 +1624,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"chestnut beach\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-8663": {
    "park": "Plymouth Park National Recreation Area",
+   "area": "US-WA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1666,7 +1637,9 @@
      "agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks)",
      "record": 2792,
      "record_name": " ",
-     "acres_approx": 200
+     "acres_approx": 200,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name match",
@@ -1678,7 +1651,9 @@
      "Mang_Name": "CITY",
      "Des_Tp": "LP",
      "Own_Type": "LOC",
-     "GIS_Acres": 199
+     "GIS_Acres": 199,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
    "leads": [],
@@ -1695,7 +1670,7 @@
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   }
  }
 }

@@ -5,6 +5,7 @@
  "parks": {
   "US-0446": {
    "park": "Funk WPA Wetland Management District",
+   "area": "US-NE",
    "why_not": "no-layer",
    "hits": [
     {
@@ -17,7 +18,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "RMA",
      "Own_Type": "FED",
-     "GIS_Acres": 4677
+     "GIS_Acres": 4677,
+     "tier": "LIKELY",
+     "why": "shared waterfowl; extra: park funk, wetland / record phelp"
     },
     {
      "verdict": "inside-other",
@@ -29,7 +32,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "RMA",
      "Own_Type": "FED",
-     "GIS_Acres": 4677
+     "GIS_Acres": 4677,
+     "tier": "LIKELY",
+     "why": "shared waterfowl; extra: park funk, wetland / record phelp"
     }
    ],
    "leads": [],
@@ -41,44 +46,27 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"district wetland funk\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-3373": {
    "park": "Chimney Rock National Historic Site",
+   "area": "US-NE",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Chimney Rock Layer",
-     "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Map_3D4_WTL1/MapServer",
-     "owner": "sydney.luce_noaa",
-     "type": "Map Service"
-    },
-    {
-     "title": "Chimney Rock Ranch_WFL1",
-     "url": "https://services5.arcgis.com/vV1o91P0uxdOGCax/arcgis/rest/services/Chimney_Rock_Ranch_WFL1/FeatureServer",
-     "owner": "LISsystems",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Chimney Rock_WFL1",
-     "url": "https://services5.arcgis.com/vTj647Rtyurkop78/arcgis/rest/services/Chimney_Rock_WFL1/FeatureServer",
-     "owner": "jjbbrewer_WEIC",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
     "A National Park Service (legal boundary): no polygon at the pin",
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"chimney rock\": 3 lead(s)"
+    "B ArcGIS Online search \"chimney rock\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-3374": {
    "park": "Neligh Mill State Historic Site",
+   "area": "US-NE",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -94,6 +82,7 @@
   },
   "US-3375": {
    "park": "Stolley National Historic Site",
+   "area": "US-NE",
    "why_not": "no-layer",
    "hits": [
     {
@@ -106,7 +95,9 @@
      "Mang_Name": "CITY",
      "Des_Tp": "LP",
      "Own_Type": "LOC",
-     "GIS_Acres": 39
+     "GIS_Acres": 39,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
    "leads": [],
@@ -117,10 +108,11 @@
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-3488": {
    "park": "Alberding Lagoon National Wildlife Management Area",
+   "area": "US-NE",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -136,6 +128,7 @@
   },
   "US-3492": {
    "park": "Willa Cather Memorial Prairie State Historic Site",
+   "area": "US-NE",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -151,6 +144,7 @@
   },
   "US-3493": {
    "park": "Nine Mile Prairie National Historical Park",
+   "area": "US-NE",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -166,6 +160,7 @@
   },
   "US-4010": {
    "park": "Heron Haven State Park",
+   "area": "US-NE",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -175,12 +170,13 @@
     "A National Park Service (legal boundary): no polygon at the pin",
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"heron haven\": 0 lead(s)"
+    "B ArcGIS Online search \"haven heron\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-4011": {
    "park": "Chalco Hills State Recreation Area",
+   "area": "US-NE",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -193,41 +189,25 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 1196
+     "GIS_Acres": 1196,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Chalco Hills Rec Area Features",
-     "url": "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Chalco_Hills_Rec_Area_Features/FeatureServer",
-     "owner": "jriebe0623",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Chalco Hills NatureTrails",
-     "url": "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Chalco_NatureTrails/FeatureServer",
-     "owner": "jriebe0623",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Chalco Hills Park Benches",
-     "url": "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Park_Benches/FeatureServer",
-     "owner": "jriebe0623",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
     "A National Park Service (legal boundary): no polygon at the pin",
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"chalco hills\": 3 lead(s)"
+    "B ArcGIS Online search \"chalco hills\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4012": {
    "park": "Elkhorn Crossing State Park",
+   "area": "US-NE",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -243,6 +223,7 @@
   },
   "US-4013": {
    "park": "Prairie View State Recreation Area",
+   "area": "US-NE",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -258,6 +239,7 @@
   },
   "US-4015": {
    "park": "Platte River Landing State Park",
+   "area": "US-NE",
    "why_not": "pin-doubt",
    "hits": [],
    "leads": [],
@@ -273,68 +255,39 @@
   },
   "US-4025": {
    "park": "Buckley Creek State Recreation Area",
+   "area": "US-NE",
    "why_not": "needs-parcel",
    "hits": [],
-   "leads": [
-    {
-     "title": "Buckley SFB Accident Potential Zone",
-     "url": "https://ags.auroragov.org/aurora/rest/services/OpenData/MapServer/26",
-     "owner": "wkeever",
-     "type": "Feature Service"
-    },
-    {
-     "title": "HP_003_Buckley_WFL1",
-     "url": "https://services3.arcgis.com/1V8429k2MaAcIZUa/arcgis/rest/services/HP_003_Buckley_WFL1/FeatureServer",
-     "owner": "louis_pino",
-     "type": "Feature Service"
-    },
-    {
-     "title": "SP.003.Buckley",
-     "url": "https://services3.arcgis.com/1V8429k2MaAcIZUa/arcgis/rest/services/SP_003_Buckley_Renumbered/FeatureServer",
-     "owner": "louis_pino",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
     "A National Park Service (legal boundary): no polygon at the pin",
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"buckley\": 4 lead(s)"
+    "B ArcGIS Online search \"buckley\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-4027": {
    "park": "Lone Star State Recreation Area",
+   "area": "US-NE",
    "why_not": "needs-parcel",
    "hits": [],
-   "leads": [
-    {
-     "title": "Lone Star College School District View",
-     "url": "https://services1.arcgis.com/PRoAPGnMSUqvTrzq/arcgis/rest/services/Lone_Star_College_School_Districts/FeatureServer",
-     "owner": "GIS.Data_MOCO",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Vectorborne Surveillance Lone Star Ticks (2021)",
-     "url": "https://services6.arcgis.com/tuxY7TQIaDhLWARO/arcgis/rest/services/Vectorborne_Surveillance_Lone_Star_Ticks_2021/FeatureServer",
-     "owner": "kxadmin",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A NGPC (owner NGPC.GISAdmin): no polygon at the pin",
     "A National Park Service (legal boundary): no polygon at the pin",
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"star lone\": 2 lead(s)"
+    "B ArcGIS Online search \"lone star\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-4036": {
    "park": "Walnut Creek State Recreation Area",
+   "area": "US-NE",
    "why_not": "no-layer",
    "hits": [
     {
@@ -347,7 +300,9 @@
      "Mang_Name": "CITY",
      "Des_Tp": "LP",
      "Own_Type": "LOC",
-     "GIS_Acres": 383
+     "GIS_Acres": 383,
+     "tier": "SURE",
+     "why": "same proper name (recreation)"
     }
    ],
    "leads": [],
@@ -358,10 +313,11 @@
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-5656": {
    "park": "Flanagan Lake State Recreation Area",
+   "area": "US-NE",
    "why_not": "no-layer",
    "hits": [
     {
@@ -374,7 +330,9 @@
      "Mang_Name": "CITY",
      "Des_Tp": "LREC",
      "Own_Type": "LOC",
-     "GIS_Acres": 721
+     "GIS_Acres": 721,
+     "tier": "SURE",
+     "why": "same proper name (recreation)"
     }
    ],
    "leads": [],
@@ -385,7 +343,7 @@
     "A Nebraska Game and Parks Commission: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   }
  }
 }

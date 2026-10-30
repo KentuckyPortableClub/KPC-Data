@@ -5,6 +5,7 @@
  "parks": {
   "US-13456": {
    "park": "Pratt Fish Hatchery State Fish Hatchery",
+   "area": "US-KS",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -19,6 +20,7 @@
   },
   "US-2334": {
    "park": "Cross Timbers State Park",
+   "area": "US-KS",
    "why_not": "no-layer",
    "hits": [
     {
@@ -27,7 +29,9 @@
      "agency": "Kansas Wildlife & Parks (state park areas, KDOT GIS)",
      "record": 577,
      "record_name": "Toronto Point",
-     "acres_approx": 638
+     "acres_approx": 638,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -35,7 +39,9 @@
      "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
      "record": 43,
      "record_name": "Toronto State Park",
-     "acres_approx": 1228
+     "acres_approx": 1228,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -43,7 +49,9 @@
      "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
      "record": 39,
      "record_name": "Toronto Lake",
-     "acres_approx": 8640
+     "acres_approx": 8640,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -55,7 +63,9 @@
      "Mang_Name": "SPR",
      "Des_Tp": "SP",
      "Own_Type": "STAT",
-     "GIS_Acres": 1292
+     "GIS_Acres": 1292,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -65,10 +75,11 @@
     "A KDWPT (owner jjones_KDWPT; KS Natural He: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-2350": {
    "park": "Prairie Spirit Trail State Trail",
+   "area": "US-KS",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -83,27 +94,22 @@
   },
   "US-5718": {
    "park": "Flint Hills Trail State Park",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
-   "leads": [
-    {
-     "title": "Flint Hills Trail",
-     "url": "https://services1.arcgis.com/VineY8LQ39gOVtTz/arcgis/rest/services/Flint_Hills_Trail/FeatureServer",
-     "owner": "ModernEarthTech",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Kansas Wildlife & Parks (state park area: no polygon at the pin",
     "A KDWPT (owner jjones_KDWPT): no polygon at the pin",
     "A KDWPT (owner jjones_KDWPT; KS Natural He: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"flint hills\": 1 lead(s)"
+    "B ArcGIS Online search \"flint hills\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-7386": {
    "park": "Browning Oxbow State Fishing Lake",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -118,6 +124,7 @@
   },
   "US-7393": {
    "park": "Milford State Fish Hatchery",
+   "area": "US-KS",
    "why_not": "no-layer",
    "hits": [
     {
@@ -126,7 +133,9 @@
      "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
      "record": 78,
      "record_name": "Milford Lake",
-     "acres_approx": 42318
+     "acres_approx": 42318,
+     "tier": "LIKELY",
+     "why": "shared milford; extra: park - / record lake"
     },
     {
      "verdict": "name match",
@@ -134,7 +143,9 @@
      "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
      "record": 18,
      "record_name": "Milford Outlet Park",
-     "acres_approx": 892
+     "acres_approx": 892,
+     "tier": "LIKELY",
+     "why": "shared milford; extra: park - / record outlet"
     },
     {
      "verdict": "name match",
@@ -146,7 +157,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 45289
+     "GIS_Acres": 45289,
+     "tier": "LIKELY",
+     "why": "same name, different kind (fish hatchery vs recreation)"
     }
    ],
    "leads": [],
@@ -156,10 +169,11 @@
     "A KDWPT (owner jjones_KDWPT; KS Natural He: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-7405": {
    "park": "Melvern River State Fishing Lake",
+   "area": "US-KS",
    "why_not": "no-layer",
    "hits": [
     {
@@ -168,15 +182,9 @@
      "agency": "Kansas Wildlife & Parks (state park areas, KDOT GIS)",
      "record": 715,
      "record_name": "Outlet Park",
-     "acres_approx": 465
-    },
-    {
-     "verdict": "name match",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
-     "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
-     "record": 63,
-     "record_name": "Melvern Lake",
-     "acres_approx": 23619
+     "acres_approx": 465,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -184,7 +192,19 @@
      "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
      "record": 98,
      "record_name": "Melvern Lake Corps Parks",
-     "acres_approx": 624
+     "acres_approx": 624,
+     "tier": "LIKELY",
+     "why": "shared lake, melvern; extra: park river / record corp"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
+     "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
+     "record": 63,
+     "record_name": "Melvern Lake",
+     "acres_approx": 23619,
+     "tier": "LIKELY",
+     "why": "shared lake, melvern; extra: park river / record -"
     },
     {
      "verdict": "name match",
@@ -196,7 +216,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 23490
+     "GIS_Acres": 23490,
+     "tier": "LIKELY",
+     "why": "shared melvern; extra: park lake, river / record -"
     }
    ],
    "leads": [],
@@ -206,10 +228,11 @@
     "A KDWPT (owner jjones_KDWPT; KS Natural He: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-7866": {
    "park": "Mine Creek Civil War Battlefield State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -224,6 +247,7 @@
   },
   "US-7943": {
    "park": "Sandsage Bison Range State Wildlife Area",
+   "area": "US-KS",
    "why_not": "no-layer",
    "hits": [
     {
@@ -232,7 +256,9 @@
      "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
      "record": 826,
      "record_name": "Finney Game Refuge",
-     "acres_approx": 3568
+     "acres_approx": 3568,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -244,7 +270,9 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 3622
+     "GIS_Acres": 3622,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -255,10 +283,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"sandsage bison range\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9177": {
    "park": "Constitution Hall State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -273,6 +302,7 @@
   },
   "US-9179": {
    "park": "Grinter Place State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -287,6 +317,7 @@
   },
   "US-9180": {
    "park": "Hollenberg Pony Express Station State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -301,6 +332,7 @@
   },
   "US-9181": {
    "park": "Kaw Mission State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -315,6 +347,7 @@
   },
   "US-9182": {
    "park": "Pawnee Indian Museum State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -323,33 +356,28 @@
     "A KDWPT (owner jjones_KDWPT): no polygon at the pin",
     "A KDWPT (owner jjones_KDWPT; KS Natural He: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"museum pawnee indian\": 0 lead(s)"
+    "B ArcGIS Online search \"indian pawnee museum\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-9183": {
    "park": "Red Rocks State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
-   "leads": [
-    {
-     "title": "Red Rocks Insta360 Oriented Imagery Video",
-     "url": "https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer",
-     "owner": "bconnolly_IVT5",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Kansas Wildlife & Parks (state park area: no polygon at the pin",
     "A KDWPT (owner jjones_KDWPT): no polygon at the pin",
     "A KDWPT (owner jjones_KDWPT; KS Natural He: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"rocks red\": 1 lead(s)"
+    "B ArcGIS Online search \"rocks red\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-9184": {
    "park": "Cottonwood Ranch State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -364,6 +392,7 @@
   },
   "US-9185": {
    "park": "First Territorial Capitol State Historic Site",
+   "area": "US-KS",
    "why_not": "no-layer",
    "hits": [
     {
@@ -372,7 +401,9 @@
      "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
      "record": 988,
      "record_name": "Fort Riley",
-     "acres_approx": 101181
+     "acres_approx": 101181,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -384,7 +415,9 @@
      "Mang_Name": "DOD",
      "Des_Tp": "MIL",
      "Own_Type": "DESG",
-     "GIS_Acres": 101726
+     "GIS_Acres": 101726,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -395,10 +428,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"territorial capitol first\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9186": {
    "park": "Goodnow House State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -413,6 +447,7 @@
   },
   "US-9187": {
    "park": "John Brown Museum State Historic Site",
+   "area": "US-KS",
    "why_not": "no-layer",
    "hits": [
     {
@@ -425,7 +460,9 @@
      "Mang_Name": "CITY",
      "Des_Tp": "LP",
      "Own_Type": "LOC",
-     "GIS_Acres": 45
+     "GIS_Acres": 45,
+     "tier": "LIKELY",
+     "why": "shared brown, john; extra: park museum / record -"
     }
    ],
    "leads": [],
@@ -435,10 +472,11 @@
     "A KDWPT (owner jjones_KDWPT; KS Natural He: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-9189": {
    "park": "Iowa and Sac & Fox Mission State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -453,6 +491,7 @@
   },
   "US-9190": {
    "park": "Marais des Cygnes Massacre State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -461,12 +500,13 @@
     "A KDWPT (owner jjones_KDWPT): no polygon at the pin",
     "A KDWPT (owner jjones_KDWPT; KS Natural He: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"massacre marais cygnes\": 0 lead(s)"
+    "B ArcGIS Online search \"massacre cygnes marais\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-9191": {
    "park": "Pawnee Rock State Historic Site",
+   "area": "US-KS",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],

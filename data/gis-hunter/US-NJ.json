@@ -5,6 +5,7 @@
  "parks": {
   "US-6462": {
    "park": "Garret Mountain Reservation State Park",
+   "area": "US-NJ",
    "why_not": "no-layer",
    "hits": [
     {
@@ -17,7 +18,9 @@
      "Mang_Name": "CNTY",
      "Des_Tp": "LCA",
      "Own_Type": "LOC",
-     "GIS_Acres": 185
+     "GIS_Acres": 185,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
    "leads": [],
@@ -26,10 +29,11 @@
     "A New Jersey DEP (state-owned open space): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-6544": {
    "park": "New Jersey Coastal State Trail",
+   "area": "US-NJ",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -42,16 +46,12 @@
      "Mang_Name": "NPS",
      "Des_Tp": "NRA",
      "Own_Type": "FED",
-     "GIS_Acres": 1810
+     "GIS_Acres": 1810,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [
-    {
-     "title": "CAFRA and Coastal Centers of New Jersey",
-     "url": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/CAFRA_and_Coastal_Centers_2023_of_New_Jersey/FeatureServer",
-     "owner": "NJDEPBGIS",
-     "type": "Feature Service"
-    },
     {
      "title": "Coastal Area Facilities Review Act Boundary for New Jersey (polygon)",
      "url": "https://mapsdep.nj.gov/arcgis/rest/services/Features/Land_CAFRA_coast/MapServer/0",
@@ -69,12 +69,13 @@
     "A New Jersey DEP (Natural Lands Trust pres: no polygon at the pin",
     "A New Jersey DEP (state-owned open space): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"coastal jersey new\": 7 lead(s)"
+    "B ArcGIS Online search \"coastal jersey new\": 2 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-6609": {
    "park": "Pinelands Preserve National Conservation Area",
+   "area": "US-NJ",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -83,7 +84,9 @@
      "agency": "New Jersey DEP (state-owned open space)",
      "record": 339,
      "record_name": "Wharton State Forest",
-     "acres_approx": 107629
+     "acres_approx": 107629,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -95,39 +98,23 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 72322
+     "GIS_Acres": 72322,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Pinelands Management Areas",
-     "url": "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_ManagementAreas/FeatureServer",
-     "owner": "NJPinelands",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Pinelands Wetlands 300 foot Buffer",
-     "url": "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_Wetlands_Buffers_300_feet/FeatureServer",
-     "owner": "NJPinelands",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Pinelands Wetlands",
-     "url": "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_Wetlands/FeatureServer",
-     "owner": "NJPinelands",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A New Jersey DEP (Natural Lands Trust pres: no polygon at the pin",
     "A New Jersey DEP (state-owned open space): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"pinelands\": 7 lead(s)"
+    "B ArcGIS Online search \"pinelands\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7507": {
    "park": "Warren Grove State Recreation Area",
+   "area": "US-NJ",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],

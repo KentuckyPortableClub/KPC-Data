@@ -5,6 +5,7 @@
  "parks": {
   "US-12786": {
    "park": "Au Sable National Wild and Scenic River",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -17,7 +18,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 436312
+     "GIS_Acres": 436312,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -27,30 +30,25 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic sable wild\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12788": {
    "park": "Black River National Wild and Scenic River",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Wild and Scenic Rivers Survey_1",
-     "url": "https://services9.arcgis.com/8xX73pXEn5IvX0U8/arcgis/rest/services/Wild_and_Scenic_Rivers_Survey_1/FeatureServer",
-     "owner": "rjones_adsci",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"scenic black wild\": 1 lead(s)"
+    "B ArcGIS Online search \"scenic black wild\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-12789": {
    "park": "Carp National Wild and Scenic River",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -63,7 +61,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 899303
+     "GIS_Acres": 899303,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -73,10 +73,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic wild carp\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12790": {
    "park": "East Branch of the Taquamenon National Wild and Scenic River",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -89,7 +90,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 899303
+     "GIS_Acres": 899303,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -99,10 +102,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"taquamenon scenic branch\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12794": {
    "park": "Paint National Wild and Scenic River",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -115,7 +119,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 994695
+     "GIS_Acres": 994695,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -125,10 +131,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic paint wild\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12796": {
    "park": "Pine National Wild and Scenic River",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -141,7 +148,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 538905
+     "GIS_Acres": 538905,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -149,12 +158,13 @@
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"scenic pine wild\": 0 lead(s)"
+    "B ArcGIS Online search \"scenic wild pine\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12802": {
    "park": "Norwich State Game Land",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -167,39 +177,23 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 994695
+     "GIS_Acres": 994695,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Norwich",
-     "url": "https://services5.arcgis.com/ilLju0m4GPRDefX5/arcgis/rest/services/Norwich/FeatureServer",
-     "owner": "spierce_ParecorpGIS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Buffer_of_Wroxham_Norwich",
-     "url": "https://services6.arcgis.com/EZHTwLaJFrjpIr0d/arcgis/rest/services/Buffer_of_Wroxham_Norwich/FeatureServer",
-     "owner": "sgordonadmin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "NSIP - NGET Norwich to Tilbury (N2T) Waveney Valley Alternative (WVA) OHL Centreline",
-     "url": "https://services-eu1.arcgis.com/IJhjmLvg2gPzHqkX/arcgis/rest/services/x231121_RG_WVA_OHL_Centreline/FeatureServer",
-     "owner": "callum.etherton_suffolkcc",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"norwich\": 7 lead(s)"
+    "B ArcGIS Online search \"norwich\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13166": {
    "park": "Black River National Recreation Area",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [
     {
@@ -212,39 +206,30 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 994695
+     "GIS_Acres": 994695,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [
     {
-     "title": "Maryland Highways to Black History",
-     "url": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Black_History_Month_Tour/FeatureServer",
-     "owner": "MDOTSHA.GIS",
+     "title": "2022 Minority Race_Ethnicity _ Black Alone - Tract Boundaries",
+     "url": "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/YR2022_Minority_Race_Ethnicity___Black_Alone/FeatureServer",
+     "owner": "Jessica.Tice@flhealth.gov_FDOH",
      "type": "Feature Service"
-    },
-    {
-     "title": "Historical County Population (1969 - 2019) by Race (White, Black, Other Race)",
-     "url": "https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/Historical_County_Population_1969_2019/FeatureServer",
-     "owner": "stevenaviles_UO",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Black Marble High Definition (BMHD) in Porto Alegre for the May 2024 Brasil Floods",
-     "url": "https://maps.disasters.nasa.gov/ags03/rest/services/brasil_flood_202405/blackmarble_hd/MapServer",
-     "owner": "gwlayne_NASA",
-     "type": "Map Service"
     }
    ],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"black\": 8 lead(s)"
+    "B ArcGIS Online search \"black\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-13168": {
    "park": "Lake Michigan National Recreation Area",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [
     {
@@ -257,25 +242,15 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 538905
+     "GIS_Acres": 538905,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [
     {
-     "title": "Charge Up Michigan Program",
-     "url": "https://services1.arcgis.com/FNjlrOFR0aGJ71Tg/arcgis/rest/services/Charge_Up_Michigan_Charger_Locations/FeatureServer",
-     "owner": "EgleAdmin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Michigan Counties",
-     "url": "https://gisagocss.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/0",
-     "owner": "EgleAdmin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Michigan Inland Lakes Water Clarity (2018-2023)",
-     "url": "https://services1.arcgis.com/FNjlrOFR0aGJ71Tg/arcgis/rest/services/Michigan_Inland_Lakes_Water_Clarity/FeatureServer",
+     "title": "Michigan Public Water Supply Sampling Hexbins and Results (Consolidated) ",
+     "url": "https://gisagoegle.state.mi.us/arcgis/rest/services/EGLE/PublicWaterSupplySamplingOpenData/FeatureServer",
      "owner": "EgleAdmin",
      "type": "Feature Service"
     }
@@ -284,12 +259,13 @@
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"michigan\": 8 lead(s)"
+    "B ArcGIS Online search \"michigan\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-13169": {
    "park": "Lake Ottawa National Recreation Area",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [
     {
@@ -302,7 +278,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 994695
+     "GIS_Acres": 994695,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -311,10 +289,11 @@
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13170": {
    "park": "Bay De Noc/Grand Island National Recreation Trail",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -327,7 +306,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 899303
+     "GIS_Acres": 899303,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [
@@ -348,6 +329,7 @@
   },
   "US-13171": {
    "park": "Betsie Valley State Trail",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -355,192 +337,97 @@
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"betsie valley\": 0 lead(s)"
+    "B ArcGIS Online search \"valley betsie\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-13172": {
    "park": "North Central State Trail",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "China Rockfish Mean Density - North Central Coast - 2010-11 - PISCO [ds1362]",
-     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1362_fpu/FeatureServer",
-     "owner": "BIOS_Admin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Blue Rockfish YOY Mean Density - North Central Coast - 2010-11 - PISCO [ds1375]",
-     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1375_fpu/FeatureServer",
-     "owner": "BIOS_Admin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Kelp, Gopher, or Black & Yellow Rockfish YOY Mean Density - North Central Coast - 2010-11 - PISCO [ds1377]",
-     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1377_fpu/FeatureServer",
-     "owner": "BIOS_Admin",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"central north\": 8 lead(s)"
+    "B ArcGIS Online search \"central north\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-13174": {
    "park": "North Eastern State Trail",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Eastern hemlock _Tsuga canadensis_ extent_ North America",
-     "url": "https://services5.arcgis.com/jnYf2Emqbv8T64a0/arcgis/rest/services/Eastern_hemlock__Tsuga_canadensis__extent__North_America/FeatureServer",
-     "owner": "mapping_AdvSciAdmin",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"eastern north\": 1 lead(s)"
+    "B ArcGIS Online search \"eastern north\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-13176": {
    "park": "North Western State Trail",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Western North America Priority Conservation Areas WFL1",
-     "url": "https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Western_North_America_Priority_Conservation_Areas_WFL1/FeatureServer",
-     "owner": "lisa.mccauley@tnc.org_TNC",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Western North Carolina Wildfire Vulnerability Index",
-     "url": "https://services2.arcgis.com/wdQEqhSQSuYA89VW/arcgis/rest/services/Western_North_Carolina_Wildfire_Vulnerability_Index/FeatureServer",
-     "owner": "MountainResilience_App",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Wildfires Potentially Impacted by Helene Storm Debris in Western North Carolina USA 2026",
-     "url": "https://services1.arcgis.com/aT1T0pU1ZdpuDk1t/arcgis/rest/services/Wildfires_Potentially_Impacted_by_Helene_Storm_Debris_in_Western_North_Carolina_USA_2026/FeatureServer",
-     "owner": "svharney_NCSU",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"western north\": 3 lead(s)"
+    "B ArcGIS Online search \"western north\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-13179": {
    "park": "Pere Marquette State Trail",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Pere Marquette River Float Extent for Web_WFL1",
-     "url": "https://services2.arcgis.com/PYn6bWCjT6bhw1z3/arcgis/rest/services/Pere_Marquette_River_Float_Extent_for_Web_WFL1/FeatureServer",
-     "owner": "bo77461_USG",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Pere Marquette redd survey_WFL1",
-     "url": "https://services1.arcgis.com/754BERmVIq3RqSf8/arcgis/rest/services/Pere_Marquette_redd_survey_WFL1/FeatureServer",
-     "owner": "jlemon",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Pere Marquette",
-     "url": "https://services.arcgis.com/rD2ylXRs80UroD90/arcgis/rest/services/Pere_Marquette_Route_WFL1/FeatureServer",
-     "owner": "dgerlach@hntb.com_HNTBCorp",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"marquette pere\": 4 lead(s)"
+    "B ArcGIS Online search \"marquette pere\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-13184": {
    "park": "Iron Belle State Trail",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Michigan's Iron Belle Trail New",
-     "url": "https://gisagodnr.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/7",
-     "owner": "MichiganDNR",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Iron Belle Trail",
-     "url": "https://services2.arcgis.com/5ckbIY7K9TUKoseK/arcgis/rest/services/Iron_Belle_Trail/FeatureServer",
-     "owner": "cpobocik",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Iron_Belle_Trail_Proposed_Route_Roscommon",
-     "url": "https://services3.arcgis.com/XVoMA5d1f4yQykXz/arcgis/rest/services/Iron_Belle_Trail_Proposed_Route_Roscommon/FeatureServer",
-     "owner": "adoezema",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"belle iron\": 3 lead(s)"
+    "B ArcGIS Online search \"belle iron\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-13565": {
    "park": "Flint State Park",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "CPTED Principles Examples: Flint River Trail",
-     "url": "https://services1.arcgis.com/4ezfu5dIwH83BUNL/arcgis/rest/services/CPTED_Principles_Examples_Flint_River_Trail/FeatureServer",
-     "owner": "jra_umich",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Flint_Trail_Design_2025_482_26_05_29",
-     "url": "https://services2.arcgis.com/8uN5i97bMkq2Mzrt/arcgis/rest/services/Flint_Trail_Design_2025_482_26_05_29/FeatureServer",
-     "owner": "traewatson_apd",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Flint River",
-     "url": "https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer",
-     "owner": "mforde2_NatMathSci",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"flint\": 8 lead(s)"
+    "B ArcGIS Online search \"flint\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-13566": {
    "park": "Houghton-Douglass Falls and Veterans Memorial Scenic Site",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -554,38 +441,21 @@
   },
   "US-4774": {
    "park": "Au Sable State Forest",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [],
-   "leads": [
-    {
-     "title": "Sable Island Image Points",
-     "url": "https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/Image_Pts_FINAL/FeatureServer",
-     "owner": "zProjectsStudents",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Sable Island Black Background",
-     "url": "https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/Sable_Island_Black_Background/FeatureServer",
-     "owner": "zProjectsStudents",
-     "type": "Feature Service"
-    },
-    {
-     "title": "DENA Wildlife Closures - Sable Pass",
-     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/DENA_Sable_Pass_Wildlife_Closure/FeatureServer",
-     "owner": "DENA_GIS",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"sable\": 3 lead(s)"
+    "B ArcGIS Online search \"sable\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-4775": {
    "park": "Copper Country State Forest",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -594,7 +464,9 @@
      "agency": "Michigan Department of Natural Resources (AGOL owner MichiganDNR)",
      "record": 183,
      "record_name": "Ralph Grouse Enhanced Mgmt.Sys.(GEMS)(SWMA)",
-     "acres_approx": 5275
+     "acres_approx": 5275,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -606,59 +478,37 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 300717
+     "GIS_Acres": 300717,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Copper Country Historical Mines",
-     "url": "https://services1.arcgis.com/4OouWsRyOft5wqPC/arcgis/rest/services/Copper_Country_Historical_Mines/FeatureServer",
-     "owner": "aerospaceeducator",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"country copper\": 1 lead(s)"
+    "B ArcGIS Online search \"country copper\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4776": {
    "park": "Escanaba River State Forest",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [],
-   "leads": [
-    {
-     "title": "1978 Aerial Photography Escanaba Michigan",
-     "url": "https://tiles.arcgis.com/tiles/RPhrOu9XQzI31xTa/arcgis/rest/services/escanaba_1978/MapServer",
-     "owner": "rcowling_mtu",
-     "type": "Map Service"
-    },
-    {
-     "title": "Topographic Map of Escanaba, Michigan (1985)",
-     "url": "https://tiles.arcgis.com/tiles/RPhrOu9XQzI31xTa/arcgis/rest/services/escanaba_topos_1985_tif/MapServer",
-     "owner": "rcowling_mtu",
-     "type": "Map Service"
-    },
-    {
-     "title": "Escanaba_RSX",
-     "url": "https://services8.arcgis.com/hXvEEDqm4wdlfwhu/arcgis/rest/services/Escanaba_RSX/FeatureServer",
-     "owner": "kthomastu",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"escanaba\": 7 lead(s)"
+    "B ArcGIS Online search \"escanaba\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-4777": {
    "park": "Lake Superior State Forest",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -671,26 +521,16 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 348461
+     "GIS_Acres": 348461,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [
     {
-     "title": "Geological Compilation of the Superior Craton",
-     "url": "https://services5.arcgis.com/w89HYkciqfy9pv9D/arcgis/rest/services/Geological_Compilation_of_the_Superior/FeatureServer",
-     "owner": "ME_bdaniels",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Lake Superior CEC 1M Lakes",
-     "url": "https://services2.arcgis.com/FOAjZu7OcdPEtbC0/arcgis/rest/services/Lake_Superior_CEC_1M_Lakes/FeatureServer",
-     "owner": "IJC_Authoritative",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Superior Court Districts in Wake County, NC ",
-     "url": "https://services1.arcgis.com/a7CWfuGP5ZnLYE7I/arcgis/rest/services/SuperiorCourtDistricts/FeatureServer",
-     "owner": "WakeCountyGovernment",
+     "title": "Town of Superior Parks & Open Space",
+     "url": "https://services2.arcgis.com/RQsC4DSkpr4c1bMs/arcgis/rest/services/Parks_and_Open_Space_2025/FeatureServer/7",
+     "owner": "POS_bouldercounty",
      "type": "Feature Service"
     }
    ],
@@ -698,44 +538,27 @@
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"superior\": 8 lead(s)"
+    "B ArcGIS Online search \"superior\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-4778": {
    "park": "Mackinaw State Forest",
+   "area": "US-MI",
    "why_not": "needs-parcel",
    "hits": [],
-   "leads": [
-    {
-     "title": "Mackinaw_Manhole",
-     "url": "https://services.arcgis.com/pPTAs43AFhhk0pXQ/arcgis/rest/services/Mackinaw_Manhole/FeatureServer",
-     "owner": "tcrpc_pmeyer",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Mackinaw_StormManholes",
-     "url": "https://services.arcgis.com/pPTAs43AFhhk0pXQ/arcgis/rest/services/Mackinaw_StormManholes/FeatureServer",
-     "owner": "tcrpc_pmeyer",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Mackinaw_SanSewMains",
-     "url": "https://services.arcgis.com/pPTAs43AFhhk0pXQ/arcgis/rest/services/Mackinaw_SanSewMains/FeatureServer",
-     "owner": "tcrpc_pmeyer",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"mackinaw\": 8 lead(s)"
+    "B ArcGIS Online search \"mackinaw\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-4779": {
    "park": "Pere Marquette State Forest",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -748,39 +571,23 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 221994
+     "GIS_Acres": 221994,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Pere Marquette River Float Extent for Web_WFL1",
-     "url": "https://services2.arcgis.com/PYn6bWCjT6bhw1z3/arcgis/rest/services/Pere_Marquette_River_Float_Extent_for_Web_WFL1/FeatureServer",
-     "owner": "bo77461_USG",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Pere Marquette redd survey_WFL1",
-     "url": "https://services1.arcgis.com/754BERmVIq3RqSf8/arcgis/rest/services/Pere_Marquette_redd_survey_WFL1/FeatureServer",
-     "owner": "jlemon",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Pere Marquette",
-     "url": "https://services.arcgis.com/rD2ylXRs80UroD90/arcgis/rest/services/Pere_Marquette_Route_WFL1/FeatureServer",
-     "owner": "dgerlach@hntb.com_HNTBCorp",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"marquette pere\": 4 lead(s)"
+    "B ArcGIS Online search \"marquette pere\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-6666": {
    "park": "Edger Waterfowl National Wildlife Management Area",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -793,7 +600,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "RMA",
      "Own_Type": "FED",
-     "GIS_Acres": 158
+     "GIS_Acres": 158,
+     "tier": "LIKELY",
+     "why": "shared waterfowl; extra: park edger / record barry"
     }
    ],
    "leads": [],
@@ -802,10 +611,11 @@
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-6713": {
    "park": "Kinney Waterfowl National Wildlife Management Area",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -814,7 +624,9 @@
      "agency": "Michigan Department of Natural Resources (AGOL owner MichiganDNR)",
      "record": 120,
      "record_name": "Kinney Waterfowl Production Area",
-     "acres_approx": 77
+     "acres_approx": 77,
+     "tier": "LIKELY",
+     "why": "same name, different kind (management wildlife vs production)"
     },
     {
      "verdict": "name match",
@@ -826,7 +638,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "RMA",
      "Own_Type": "FED",
-     "GIS_Acres": 81
+     "GIS_Acres": 81,
+     "tier": "LIKELY",
+     "why": "shared waterfowl; extra: park kinney / record buren"
     },
     {
      "verdict": "name match",
@@ -838,7 +652,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "RMA",
      "Own_Type": "FED",
-     "GIS_Acres": 78
+     "GIS_Acres": 78,
+     "tier": "LIKELY",
+     "why": "shared waterfowl; extra: park kinney / record buren"
     }
    ],
    "leads": [],
@@ -847,10 +663,11 @@
     "A Michigan Department of Natural Resources: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-6726": {
    "park": "Malan Waterfowl National Wildlife Management Area",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -864,6 +681,7 @@
   },
   "US-6728": {
    "park": "Manitou Island Group Wildlife Management Area",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -876,27 +694,23 @@
      "Mang_Name": "NPS",
      "Des_Tp": "NLS",
      "Own_Type": "FED",
-     "GIS_Acres": 56717
+     "GIS_Acres": 56717,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Biotic_and_Substrate_South_Manitou_Island",
-     "url": "https://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/Biotic_and_Substrate_South_Manitou_Island/FeatureServer",
-     "owner": "Cara.Whalen_FRCC",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"manitou island group\": 1 lead(s)"
+    "B ArcGIS Online search \"manitou island group\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-6780": {
    "park": "Schoonover Waterfowl National Wildlife Management Area",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -910,6 +724,7 @@
   },
   "US-6796": {
    "park": "Tobico Marsh Wildlife Management Area",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -918,7 +733,9 @@
      "agency": "Michigan DNR Parks & Recreation",
      "record": 18,
      "record_name": "Bay City State Park",
-     "acres_approx": 2348
+     "acres_approx": 2348,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -926,7 +743,9 @@
      "agency": "Michigan Department of Natural Resources (AGOL owner MichiganDNR)",
      "record": 215,
      "record_name": "Tobico Marsh Unit of Bay City State Park",
-     "acres_approx": 2044
+     "acres_approx": 2044,
+     "tier": "LIKELY",
+     "why": "shared marsh, tobico; extra: park - / record bay"
     },
     {
      "verdict": "inside-other",
@@ -938,7 +757,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SREC",
      "Own_Type": "STAT",
-     "GIS_Acres": 2391
+     "GIS_Acres": 2391,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -947,10 +768,11 @@
     "A Michigan Department of Natural Resources: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-6808": {
    "park": "Cedar River State Harbor",
+   "area": "US-MI",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -964,26 +786,21 @@
   },
   "US-6809": {
    "park": "Copper Harbor State Harbor",
+   "area": "US-MI",
    "why_not": "needs-parcel",
    "hits": [],
-   "leads": [
-    {
-     "title": "Copper Harbor Trails",
-     "url": "https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Copper_Harbor_Trails/FeatureServer",
-     "owner": "eclegg@tnc.org",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"copper harbor\": 1 lead(s)"
+    "B ArcGIS Online search \"harbor copper\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-6810": {
    "park": "DeTour State Harbor",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -991,32 +808,27 @@
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"detour harbor\": 0 lead(s)"
+    "B ArcGIS Online search \"harbor detour\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-6811": {
    "park": "Eagle Harbor State Harbor",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Eagle Harbor Township Recreation Area",
-     "url": "https://services5.arcgis.com/xrfXlDMHLr5elsRb/arcgis/rest/services/Eagle_Harbor_Township_Recreation_Area/FeatureServer",
-     "owner": "KeweenawCVB",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"harbor eagle\": 1 lead(s)"
+    "B ArcGIS Online search \"harbor eagle\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-6812": {
    "park": "East Tawas State Harbor",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -1030,32 +842,21 @@
   },
   "US-6813": {
    "park": "Hammond Bay State Harbor",
+   "area": "US-MI",
    "why_not": "needs-parcel",
    "hits": [],
-   "leads": [
-    {
-     "title": "Hammond Bay Harbor Refuge Closure 03 mile restricted commercial fishing zone",
-     "url": "https://services.arcgis.com/uHAHKfH1Z5ye1Oe0/arcgis/rest/services/Hammond_Bay_Harbor_Refuge_Closure_03_mile_restricted_commercial_fishing_zone/FeatureServer",
-     "owner": "coopera6_msugis",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Hammond Bay Harbor Refuge Closure 05 mile restricted commercial fishing zone",
-     "url": "https://services.arcgis.com/uHAHKfH1Z5ye1Oe0/arcgis/rest/services/Hammond_Bay_Harbor_Refuge_Closure_05_mile_restricted_commercial_fishing_zone/FeatureServer",
-     "owner": "coopera6_msugis",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"hammond harbor bay\": 2 lead(s)"
+    "B ArcGIS Online search \"hammond harbor bay\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-6814": {
    "park": "Lac LaBelle State Harbor",
+   "area": "US-MI",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -1069,6 +870,7 @@
   },
   "US-6815": {
    "park": "Lexington State Harbor",
+   "area": "US-MI",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -1082,6 +884,7 @@
   },
   "US-6817": {
    "park": "Little Lake State Harbor",
+   "area": "US-MI",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -1095,6 +898,7 @@
   },
   "US-6819": {
    "park": "Port Austin State Harbor",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -1108,26 +912,21 @@
   },
   "US-6820": {
    "park": "Presque Isle State Harbor",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Break Walls Presque Isle",
-     "url": "https://services5.arcgis.com/b7cJ4YYc9GM63RSz/arcgis/rest/services/Break_Walls_Presque_Isle/FeatureServer",
-     "owner": "marwalke_northernmichu",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"presque harbor isle\": 1 lead(s)"
+    "B ArcGIS Online search \"presque harbor isle\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-6821": {
    "park": "Straits State Harbor",
+   "area": "US-MI",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -1141,6 +940,7 @@
   },
   "US-6822": {
    "park": "Whitefish Point State Harbor",
+   "area": "US-MI",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -1154,6 +954,7 @@
   },
   "US-7854": {
    "park": "Molasses River Flooding No 2 Wildlife Management Area",
+   "area": "US-MI",
    "why_not": "no-layer",
    "hits": [
     {
@@ -1162,7 +963,9 @@
      "agency": "Michigan Department of Natural Resources (AGOL owner MichiganDNR)",
      "record": 145,
      "record_name": "Molasses River Flooding No.2 State Wildlife Management Area & part of Lame Duck GEMS (SWMA)",
-     "acres_approx": 1533
+     "acres_approx": 1533,
+     "tier": "LIKELY",
+     "why": "shared 2, flooding, molasse, number, river; extra: park - / record duck, gem, lame, part"
     },
     {
      "verdict": "name match",
@@ -1174,7 +977,9 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 3153
+     "GIS_Acres": 3153,
+     "tier": "LIKELY",
+     "why": "shared flooding, molasse, number, river; extra: park 2 / record 1"
     }
    ],
    "leads": [],
@@ -1183,7 +988,7 @@
     "A Michigan Department of Natural Resources: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   }
  }
 }

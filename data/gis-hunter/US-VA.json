@@ -5,6 +5,7 @@
  "parks": {
   "US-10507": {
    "park": "Rock Castle Gorge National Recreation Trail",
+   "area": "US-VA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -13,7 +14,9 @@
      "agency": "Virginia DCR (Virginia's conservation lands)",
      "record": 491309,
      "record_name": "Blue Ridge Parkway National Park",
-     "acres_approx": 3423
+     "acres_approx": 3423,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -21,7 +24,9 @@
      "agency": "Virginia Dept. of Historic Resources (credit)",
      "record": 1721308,
      "record_name": "Blue Ridge Parkway (NRHP Listing), Blue Ridge Parkway Historic District (Historic/Current)",
-     "acres_approx": 40597
+     "acres_approx": 40597,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     },
     {
      "verdict": "inside-other",
@@ -33,7 +38,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "SDA",
      "Own_Type": "FED",
-     "GIS_Acres": 35237
+     "GIS_Acres": 35237,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -49,10 +56,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"castle gorge rock\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-8203": {
    "park": "Cape Henry National Memorial",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -65,17 +73,12 @@
      "Mang_Name": "DOD",
      "Des_Tp": "MIL",
      "Own_Type": "DESG",
-     "GIS_Acres": 3739
+     "GIS_Acres": 3739,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "147 - Cape Henry, VA (44099)",
-     "url": "https://services6.arcgis.com/2DGR1sZBUvcPcd8Z/arcgis/rest/services/147_Cape_Henry_VA_44099_/FeatureServer",
-     "owner": "jerad.king",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Virginia Department of Forestry: no polygon at the pin",
     "A Virginia DCR Natural Heritage: no polygon at the pin",
@@ -86,12 +89,13 @@
     "A Virginia Department of Wildlife Resource: no polygon at the pin",
     "A Virginia Dept. of Historic Resources (cr: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"henry cape\": 1 lead(s)"
+    "B ArcGIS Online search \"henry cape\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-8204": {
    "park": "Yorktown National Battlefield",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -100,7 +104,9 @@
      "agency": "Virginia Dept. of Historic Resources (credit)",
      "record": 1599328,
      "record_name": "Colonial National Historical Park, Yorktown Unit (NRHP Listing), Yorktown Historic District (Historic/Current)",
-     "acres_approx": 4496
+     "acres_approx": 4496,
+     "tier": "LIKELY",
+     "why": "shared yorktown; extra: park - / record colonial"
     }
    ],
    "leads": [],
@@ -115,10 +121,11 @@
     "A Virginia Dept. of Historic Resources (cr: hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-9897": {
    "park": "Jamestowne National Historical Site",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -127,7 +134,9 @@
      "agency": "Virginia DCR (Virginia's conservation lands)",
      "record": 490554,
      "record_name": "Colonial National Historical Park",
-     "acres_approx": 1402
+     "acres_approx": 1402,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -135,7 +144,9 @@
      "agency": "Virginia Dept. of Historic Resources (credit)",
      "record": 378224,
      "record_name": "Jamestown Island (Historic), Jamestown Island Historic District (Historic Jamestowne) (Descriptive), Jamestown National ",
-     "acres_approx": 1566
+     "acres_approx": 1566,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     },
     {
      "verdict": "inside-other",
@@ -143,7 +154,9 @@
      "agency": "Virginia Dept. of Historic Resources (credit)",
      "record": 1738905,
      "record_name": "Colonial National Historic Park (Historic/Current), Colonial Parkway (NRHP Listing), Colonial Parkway Historic District ",
-     "acres_approx": 4846
+     "acres_approx": 4846,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -151,7 +164,9 @@
      "agency": "Virginia Dept. of Historic Resources (credit)",
      "record": 1770920,
      "record_name": "Colonial National Historical Park (NRHP Listing), Colonial National Monument (Historic), Yorktown and Yorktown Battlefie",
-     "acres_approx": 8900
+     "acres_approx": 8900,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -163,7 +178,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "HCA",
      "Own_Type": "FED",
-     "GIS_Acres": 7881
+     "GIS_Acres": 7881,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -178,10 +195,11 @@
     "A Virginia Dept. of Historic Resources (cr: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9900": {
    "park": "Fort Marcy National Historical Site",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -190,7 +208,9 @@
      "agency": "Virginia Dept. of Historic Resources (credit)",
      "record": 778424,
      "record_name": "Fort Baldy Smith (Historic), Fort Marcy (NRHP Listing)",
-     "acres_approx": 46
+     "acres_approx": 46,
+     "tier": "LIKELY",
+     "why": "shared fort, marcy; extra: park - / record baldy, smith"
     },
     {
      "verdict": "inside-other",
@@ -198,7 +218,9 @@
      "agency": "Virginia Dept. of Historic Resources (credit)",
      "record": 1039613,
      "record_name": "George Washington Memorial Parkway (NRHP Listing)",
-     "acres_approx": 2678
+     "acres_approx": 2678,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -213,10 +235,11 @@
     "A Virginia Dept. of Historic Resources (cr: hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-9904": {
    "park": "Apple Orchard Falls National Recreation Trail",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -225,7 +248,9 @@
      "agency": "Virginia DCR (Virginia's conservation lands)",
      "record": 490296,
      "record_name": "George Washington and Jefferson National Forest",
-     "acres_approx": 55673
+     "acres_approx": 55673,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -237,7 +262,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 711975
+     "GIS_Acres": 711975,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -253,10 +280,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"orchard falls apple\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9905": {
    "park": "Cascades National Recreation Trail",
+   "area": "US-VA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -265,7 +293,9 @@
      "agency": "Virginia DCR (Virginia's conservation lands)",
      "record": 491505,
      "record_name": "George Washington and Jefferson National Forest",
-     "acres_approx": 201837
+     "acres_approx": 201837,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -277,7 +307,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 711975
+     "GIS_Acres": 711975,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [
@@ -292,12 +324,6 @@
      "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NOCA_VegMap/FeatureServer",
      "owner": "NAntonova@nps.gov_nps",
      "type": "Feature Service"
-    },
-    {
-     "title": "North Cascades NP Vegetation",
-     "url": "https://tiles.arcgis.com/tiles/qboYD3ru0louQq4F/arcgis/rest/services/North_Cascades_NP_Vegetation/MapServer",
-     "owner": "szegedk_wwu",
-     "type": "Map Service"
     }
    ],
    "tried": [
@@ -310,12 +336,13 @@
     "A Virginia Department of Wildlife Resource: no polygon at the pin",
     "A Virginia Dept. of Historic Resources (cr: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"cascades\": 4 lead(s)"
+    "B ArcGIS Online search \"cascades\": 2 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-9906": {
    "park": "Cornelius Creek National Recreation Trail",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -324,7 +351,9 @@
      "agency": "Virginia DCR (Virginia's conservation lands)",
      "record": 490296,
      "record_name": "George Washington and Jefferson National Forest",
-     "acres_approx": 55673
+     "acres_approx": 55673,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -336,29 +365,12 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 711975
+     "GIS_Acres": 711975,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Cornelius Impervious Tiers_WFL1",
-     "url": "https://services.arcgis.com/BWD3gDuaqc7SQmy7/arcgis/rest/services/Cornelius_Impervious_Tiers_WFL1/FeatureServer",
-     "owner": "Nir.Josipovich@mecklenburgcountync.gov_meckgov",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Cornelius Bike Ped Public Comments",
-     "url": "https://services2.arcgis.com/ZkOsbg84o8DsPPaP/arcgis/rest/services/Cornelius_Bike_Ped_Public_Comments/FeatureServer",
-     "owner": "Davidsa_BMI",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Cornelius Bike Ped Public Comments 20260309",
-     "url": "https://services2.arcgis.com/ZkOsbg84o8DsPPaP/arcgis/rest/services/Cornelius_Bike_Ped_Public_Comments_20260309/FeatureServer",
-     "owner": "evan.saunderspearce_bmi",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Virginia Department of Forestry: no polygon at the pin",
     "A Virginia DCR Natural Heritage: no polygon at the pin",
@@ -369,12 +381,13 @@
     "A Virginia Department of Wildlife Resource: no polygon at the pin",
     "A Virginia Dept. of Historic Resources (cr: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"cornelius\": 4 lead(s)"
+    "B ArcGIS Online search \"cornelius\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9908": {
    "park": "Hoop Hole National Recreation Trail",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -383,7 +396,9 @@
      "agency": "Virginia DCR (Virginia's conservation lands)",
      "record": 491505,
      "record_name": "George Washington and Jefferson National Forest",
-     "acres_approx": 201837
+     "acres_approx": 201837,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -391,7 +406,9 @@
      "agency": "Virginia Dept. of Historic Resources (credit)",
      "record": 1525704,
      "record_name": "Deane's Furnace (Historic), Roaring Run Furnace (NRHP Listing), Roaring Run Iron Furnace (Historic/Current)",
-     "acres_approx": 2
+     "acres_approx": 2,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -403,7 +420,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 711975
+     "GIS_Acres": 711975,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -419,10 +438,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"hole hoop\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9909": {
    "park": "Little Stony Creek National Recreation Trail",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -431,7 +451,9 @@
      "agency": "Virginia DCR (Virginia's conservation lands)",
      "record": 490616,
      "record_name": "George Washington and Jefferson National Forest",
-     "acres_approx": 50536
+     "acres_approx": 50536,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -443,7 +465,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 711975
+     "GIS_Acres": 711975,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -459,10 +483,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"little stony\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9910": {
    "park": "Massanutten National Recreation Trail",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -471,7 +496,9 @@
      "agency": "Virginia DCR (Virginia's conservation lands)",
      "record": 490627,
      "record_name": "George Washington and Jefferson National Forest",
-     "acres_approx": 55068
+     "acres_approx": 55068,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -483,127 +510,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 961006
-    }
-   ],
-   "leads": [
-    {
-     "title": "Massanutten_Mountain_CLuster_GW_VMT",
-     "url": "https://services4.arcgis.com/Py6dhyuhygVOz2EZ/arcgis/rest/services/Massanutten_Mountain_CLuster_GW_VMT/FeatureServer",
-     "owner": "Kasten7",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Massanutten Strategic",
-     "url": "https://tiles.arcgis.com/tiles/HRY6x8qt5qjGnAA9/arcgis/rest/services/Massanutten_Strategic/MapServer",
-     "owner": "FergusC_SI6",
-     "type": "Map Service"
-    },
-    {
-     "title": "Massanutten Reactive",
-     "url": "https://tiles.arcgis.com/tiles/HRY6x8qt5qjGnAA9/arcgis/rest/services/Massanutten_Reactive/MapServer",
-     "owner": "FergusC_SI6",
-     "type": "Map Service"
-    }
-   ],
-   "tried": [
-    "A Virginia Department of Forestry: no polygon at the pin",
-    "A Virginia DCR Natural Heritage: no polygon at the pin",
-    "A Virginia State Parks (DCR): no polygon at the pin",
-    "A Virginia DCR State Parks (tracts): no polygon at the pin",
-    "A Virginia DCR (Virginia's conservation la: hit",
-    "A Virginia DCR (local parks 2023): no polygon at the pin",
-    "A Virginia Department of Wildlife Resource: no polygon at the pin",
-    "A Virginia Dept. of Historic Resources (cr: no polygon at the pin",
-    "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"massanutten\": 6 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "US-9920": {
-   "park": "Mount Rogers National Recreation Trail",
-   "why_not": "name-mismatch",
-   "hits": [
-    {
-     "verdict": "inside-other",
-     "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
-     "agency": "Virginia DCR (Virginia's conservation lands)",
-     "record": 490599,
-     "record_name": "George Washington and Jefferson National Forest",
-     "acres_approx": 136674
-    },
-    {
-     "verdict": "inside-other",
-     "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
-     "agency": "Virginia DCR (Virginia's conservation lands)",
-     "record": 500352,
-     "record_name": "Lewis Fork NF Wilderness Area",
-     "acres_approx": 6212
-    },
-    {
-     "verdict": "inside-other",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "agency": "USGS PAD-US",
-     "record": 2984,
-     "record_name": "Jefferson National Forest",
-     "acres_approx": 711139,
-     "Mang_Name": "USFS",
-     "Des_Tp": "NF",
-     "Own_Type": "FED",
-     "GIS_Acres": 711975
-    }
-   ],
-   "leads": [
-    {
-     "title": "Smyth Multimodal - Mount Rogers National Recreation Area",
-     "url": "https://services9.arcgis.com/Wl3c8iIqFcIDE29g/arcgis/rest/services/smyth_multimodal_mount_rogers_nra_b8a8410/FeatureServer",
-     "owner": "EPRGIS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Rec_Site_Mount_Rogers_NRA",
-     "url": "https://services8.arcgis.com/QMq4T6DXbKtwLZHa/arcgis/rest/services/Rec_Site_Mount_Rogers_NRA_Test/FeatureServer",
-     "owner": "davidcohen@wildernessstewards.org",
-     "type": "Feature Service"
-    }
-   ],
-   "tried": [
-    "A Virginia Department of Forestry: no polygon at the pin",
-    "A Virginia DCR Natural Heritage: no polygon at the pin",
-    "A Virginia State Parks (DCR): no polygon at the pin",
-    "A Virginia DCR State Parks (tracts): no polygon at the pin",
-    "A Virginia DCR (Virginia's conservation la: hit",
-    "A Virginia DCR (local parks 2023): no polygon at the pin",
-    "A Virginia Department of Wildlife Resource: no polygon at the pin",
-    "A Virginia Dept. of Historic Resources (cr: no polygon at the pin",
-    "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"rogers mount\": 2 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "US-9922": {
-   "park": "The Lion's Tale National Recreation Trail",
-   "why_not": "name-mismatch",
-   "hits": [
-    {
-     "verdict": "inside-other",
-     "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
-     "agency": "Virginia DCR (Virginia's conservation lands)",
-     "record": 490627,
-     "record_name": "George Washington and Jefferson National Forest",
-     "acres_approx": 55068
-    },
-    {
-     "verdict": "inside-other",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "agency": "USGS PAD-US",
-     "record": 2975,
-     "record_name": "George Washington National Forest",
-     "acres_approx": 957717,
-     "Mang_Name": "USFS",
-     "Des_Tp": "NF",
-     "Own_Type": "FED",
-     "GIS_Acres": 961006
+     "GIS_Acres": 961006,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -617,59 +526,79 @@
     "A Virginia Department of Wildlife Resource: no polygon at the pin",
     "A Virginia Dept. of Historic Resources (cr: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"lion tale\": 0 lead(s)"
+    "B ArcGIS Online search \"massanutten\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
-  "US-9923": {
-   "park": "Virginia Creeper National Recreation Trail",
-   "why_not": "name-mismatch",
-   "hits": [],
-   "leads": [
-    {
-     "title": "Virginia Creeper Trail Trestle Status EDITING VIEW",
-     "url": "https://services3.arcgis.com/qVupYidwzMKkDQzr/arcgis/rest/services/Virginia_Creeper_Trail_Trestle_Status_EDITING_VIEW/FeatureServer",
-     "owner": "gis.vdem",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Virginia Creeper Trail",
-     "url": "https://services2.arcgis.com/ChUbz2hk6xRj7wYw/arcgis/rest/services/Virginia_Creeper_Trail/FeatureServer",
-     "owner": "alex_Equinox",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Virginia Creeper Trail Alignment 082825",
-     "url": "https://services1.arcgis.com/nWsjONL9B4B0DLnV/arcgis/rest/services/Virginia_Creeper_Trail_Alignment_082825/FeatureServer",
-     "owner": "jtrainor.rkk",
-     "type": "Feature Service"
-    }
-   ],
-   "tried": [
-    "A Virginia Department of Forestry: no polygon at the pin",
-    "A Virginia DCR Natural Heritage: no polygon at the pin",
-    "A Virginia State Parks (DCR): no polygon at the pin",
-    "A Virginia DCR State Parks (tracts): no polygon at the pin",
-    "A Virginia DCR (Virginia's conservation la: no polygon at the pin",
-    "A Virginia DCR (local parks 2023): no polygon at the pin",
-    "A Virginia Department of Wildlife Resource: no polygon at the pin",
-    "A Virginia Dept. of Historic Resources (cr: no polygon at the pin",
-    "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"virginia creeper\": 4 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "US-9925": {
-   "park": "Wild Oak National Recreation Trail",
+  "US-9920": {
+   "park": "Mount Rogers National Recreation Trail",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
      "verdict": "inside-other",
      "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
      "agency": "Virginia DCR (Virginia's conservation lands)",
-     "record": 490181,
+     "record": 500352,
+     "record_name": "Lewis Fork NF Wilderness Area",
+     "acres_approx": 6212,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
+     "agency": "Virginia DCR (Virginia's conservation lands)",
+     "record": 490599,
      "record_name": "George Washington and Jefferson National Forest",
-     "acres_approx": 321530
+     "acres_approx": 136674,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2984,
+     "record_name": "Jefferson National Forest",
+     "acres_approx": 711139,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 711975,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Virginia Department of Forestry: no polygon at the pin",
+    "A Virginia DCR Natural Heritage: no polygon at the pin",
+    "A Virginia State Parks (DCR): no polygon at the pin",
+    "A Virginia DCR State Parks (tracts): no polygon at the pin",
+    "A Virginia DCR (Virginia's conservation la: hit",
+    "A Virginia DCR (local parks 2023): no polygon at the pin",
+    "A Virginia Department of Wildlife Resource: no polygon at the pin",
+    "A Virginia Dept. of Historic Resources (cr: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"rogers mount\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-9922": {
+   "park": "The Lion's Tale National Recreation Trail",
+   "area": "US-VA",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
+     "agency": "Virginia DCR (Virginia's conservation lands)",
+     "record": 490627,
+     "record_name": "George Washington and Jefferson National Forest",
+     "acres_approx": 55068,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -681,7 +610,74 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 961006
+     "GIS_Acres": 961006,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Virginia Department of Forestry: no polygon at the pin",
+    "A Virginia DCR Natural Heritage: no polygon at the pin",
+    "A Virginia State Parks (DCR): no polygon at the pin",
+    "A Virginia DCR State Parks (tracts): no polygon at the pin",
+    "A Virginia DCR (Virginia's conservation la: hit",
+    "A Virginia DCR (local parks 2023): no polygon at the pin",
+    "A Virginia Department of Wildlife Resource: no polygon at the pin",
+    "A Virginia Dept. of Historic Resources (cr: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"tale lion\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-9923": {
+   "park": "Virginia Creeper National Recreation Trail",
+   "area": "US-VA",
+   "why_not": "name-mismatch",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Virginia Department of Forestry: no polygon at the pin",
+    "A Virginia DCR Natural Heritage: no polygon at the pin",
+    "A Virginia State Parks (DCR): no polygon at the pin",
+    "A Virginia DCR State Parks (tracts): no polygon at the pin",
+    "A Virginia DCR (Virginia's conservation la: no polygon at the pin",
+    "A Virginia DCR (local parks 2023): no polygon at the pin",
+    "A Virginia Department of Wildlife Resource: no polygon at the pin",
+    "A Virginia Dept. of Historic Resources (cr: no polygon at the pin",
+    "A USGS PAD-US: no polygon at the pin",
+    "B ArcGIS Online search \"virginia creeper\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "US-9925": {
+   "park": "Wild Oak National Recreation Trail",
+   "area": "US-VA",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
+     "agency": "Virginia DCR (Virginia's conservation lands)",
+     "record": 490181,
+     "record_name": "George Washington and Jefferson National Forest",
+     "acres_approx": 321530,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2975,
+     "record_name": "George Washington National Forest",
+     "acres_approx": 957717,
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Own_Type": "FED",
+     "GIS_Acres": 961006,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -697,10 +693,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"wild oak\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9931": {
    "park": "Frontier Culture Museum State Historic Site",
+   "area": "US-VA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -720,6 +717,7 @@
   },
   "US-9933": {
    "park": "Beaches to Bluegrass State Trail",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -728,7 +726,9 @@
      "agency": "Virginia DCR State Parks (tracts)",
      "record": 367,
      "record_name": "Staunton River State Park",
-     "acres_approx": 916
+     "acres_approx": 916,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -736,7 +736,9 @@
      "agency": "Virginia DCR (Virginia's conservation lands)",
      "record": 487090,
      "record_name": "Staunton River State Park",
-     "acres_approx": 916
+     "acres_approx": 916,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -744,7 +746,9 @@
      "agency": "Virginia Dept. of Historic Resources (credit)",
      "record": 193520,
      "record_name": "Staunton River State Park (Historic/Current), Staunton River State Park Historic District (NRHP Listing)",
-     "acres_approx": 1690
+     "acres_approx": 1690,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -756,7 +760,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SP",
      "Own_Type": "STAT",
-     "GIS_Acres": 1526
+     "GIS_Acres": 1526,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -768,23 +774,12 @@
      "Mang_Name": "SDC",
      "Des_Tp": "SP",
      "Own_Type": "STAT",
-     "GIS_Acres": 1612
+     "GIS_Acres": 1612,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Beaches to Bluegrass_2023_gdb",
-     "url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/Beaches_to_Bluegrass_2023_gdb/FeatureServer",
-     "owner": "allison.tillett_vdcr",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Beaches to Bluegrass_2023_gdb view",
-     "url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/Beaches_to_Bluegrass_2023_gdb_view/FeatureServer",
-     "owner": "allison.tillett_vdcr",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Virginia Department of Forestry: no polygon at the pin",
     "A Virginia DCR Natural Heritage: no polygon at the pin",
@@ -795,12 +790,13 @@
     "A Virginia Department of Wildlife Resource: no polygon at the pin",
     "A Virginia Dept. of Historic Resources (cr: hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"bluegrass beaches\": 2 lead(s)"
+    "B ArcGIS Online search \"bluegrass beaches\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9934": {
    "park": "James River Heritage State Trail",
+   "area": "US-VA",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -820,6 +816,7 @@
   },
   "US-9935": {
    "park": "Virginia Bird & Wildlife State Trail",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -828,7 +825,9 @@
      "agency": "Virginia DCR State Parks (tracts)",
      "record": 261,
      "record_name": "Lake Anna State Park",
-     "acres_approx": 594
+     "acres_approx": 594,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -836,7 +835,9 @@
      "agency": "Virginia DCR (Virginia's conservation lands)",
      "record": 486899,
      "record_name": "Lake Anna State Park",
-     "acres_approx": 594
+     "acres_approx": 594,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -848,7 +849,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SP",
      "Own_Type": "STAT",
-     "GIS_Acres": 1624
+     "GIS_Acres": 1624,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -860,7 +863,9 @@
      "Mang_Name": "SDC",
      "Des_Tp": "SP",
      "Own_Type": "STAT",
-     "GIS_Acres": 2156
+     "GIS_Acres": 2156,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -876,10 +881,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"virginia bird\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9961": {
    "park": "Dyke Marsh Wildlife Reserve",
+   "area": "US-VA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -888,7 +894,9 @@
      "agency": "Virginia DCR (Virginia's conservation lands)",
      "record": 491507,
      "record_name": "George Washington Memorial National Parkway",
-     "acres_approx": 2763
+     "acres_approx": 2763,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -900,7 +908,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "SDA",
      "Own_Type": "FED",
-     "GIS_Acres": 3477
+     "GIS_Acres": 3477,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -912,7 +922,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "NP",
      "Own_Type": "FED",
-     "GIS_Acres": 2776
+     "GIS_Acres": 2776,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -928,7 +940,7 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"marsh dyke\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }
  }
 }

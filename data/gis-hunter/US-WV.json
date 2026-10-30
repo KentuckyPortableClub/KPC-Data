@@ -5,39 +5,22 @@
  "parks": {
   "US-10031": {
    "park": "Elk River Trail State Trail",
+   "area": "US-WV",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Elk Migration Corridors - East Shasta Valley - 1999-2001, 2016-2020 [ds2903]",
-     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2903_fpu/FeatureServer",
-     "owner": "BIOS_Admin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Elk Migration Corridors - West Goose Lake - 1999-2002, 2018-2020 [ds2901]",
-     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2901_fpu/FeatureServer",
-     "owner": "BIOS_Admin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Elk Migration Corridors - Egg Lake - 2001-2002, 2017-2020 [ds2908]",
-     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2908_fpu/FeatureServer",
-     "owner": "BIOS_Admin",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A West Virginia DNR: no polygon at the pin",
     "A West Virginia State Forests (DNR): no polygon at the pin",
     "A West Virginia State Parks (WVDOT boundar: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"elk\": 8 lead(s)"
+    "B ArcGIS Online search \"elk\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-12052": {
    "park": "Bowden State Fish Hatchery",
+   "area": "US-WV",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -52,6 +35,7 @@
   },
   "US-12053": {
    "park": "Edray State Fish Hatchery",
+   "area": "US-WV",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -66,6 +50,7 @@
   },
   "US-12054": {
    "park": "Ridge State Fish Hatchery",
+   "area": "US-WV",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -80,6 +65,7 @@
   },
   "US-12055": {
    "park": "Petersburg State Fish Hatchery",
+   "area": "US-WV",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -94,6 +80,7 @@
   },
   "US-12056": {
    "park": "Apple Grove State Fish Hatchery",
+   "area": "US-WV",
    "why_not": "no-layer",
    "hits": [
     {
@@ -106,7 +93,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 681
+     "GIS_Acres": 681,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -115,12 +104,13 @@
     "A West Virginia State Forests (DNR): no polygon at the pin",
     "A West Virginia State Parks (WVDOT boundar: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"hatchery apple grove\": 0 lead(s)"
+    "B ArcGIS Online search \"hatchery grove apple\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9739": {
    "park": "Forks of the Coal State Natural Area",
+   "area": "US-WV",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -135,39 +125,22 @@
   },
   "US-9741": {
    "park": "North Bend Rail Trail State Trail",
+   "area": "US-WV",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "WSOR West Bend Sub North of Junction with WSOR Milwaukee Sub",
-     "url": "https://services3.arcgis.com/dZlu5nJgfmCUXRzB/arcgis/rest/services/WSOR_West_Bend_Sub_North_of_Junction_with_WSOR_Milwaukee_Sub/FeatureServer",
-     "owner": "ejohnson_SEWRPC",
-     "type": "Feature Service"
-    },
-    {
-     "title": "North Bend Rail Trail_WFL1",
-     "url": "https://services5.arcgis.com/Y41A3MtSGCNYWW3x/arcgis/rest/services/North_Bend_Rail_Trail_WFL1/FeatureServer",
-     "owner": "DNRPEM",
-     "type": "Feature Service"
-    },
-    {
-     "title": "North Bend Rail Trail 1_WFL1",
-     "url": "https://services5.arcgis.com/Y41A3MtSGCNYWW3x/arcgis/rest/services/North_Bend_Rail_Trail_1_WFL1/FeatureServer",
-     "owner": "DNRPEM",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A West Virginia DNR: no polygon at the pin",
     "A West Virginia State Forests (DNR): no polygon at the pin",
     "A West Virginia State Parks (WVDOT boundar: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"north rail bend\": 3 lead(s)"
+    "B ArcGIS Online search \"north rail bend\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-9742": {
    "park": "Greenbrier River Trail State Trail",
+   "area": "US-WV",
    "why_not": "no-layer",
    "hits": [],
    "leads": [
@@ -176,12 +149,6 @@
      "url": "https://services1.arcgis.com/OAphVRUvJVpBRovs/arcgis/rest/services/Greenbrier_Future_Land_Use_Framework/FeatureServer",
      "owner": "jvuturobrady@cityofchesapeake.net",
      "type": "Feature Service"
-    },
-    {
-     "title": "Greenbrier_Addressing_Service",
-     "url": "https://services3.arcgis.com/nJbIFHiSnaX0z0hS/arcgis/rest/services/Greenbrier_Addressing_Service/FeatureServer",
-     "owner": "tpenegar",
-     "type": "Feature Service"
     }
    ],
    "tried": [
@@ -189,12 +156,13 @@
     "A West Virginia State Forests (DNR): no polygon at the pin",
     "A West Virginia State Parks (WVDOT boundar: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"greenbrier\": 2 lead(s)"
+    "B ArcGIS Online search \"greenbrier\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-9915": {
    "park": "Cedar Lakes State Recreation Area",
+   "area": "US-WV",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],

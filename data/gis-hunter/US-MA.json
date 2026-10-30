@@ -5,6 +5,7 @@
  "parks": {
   "US-0891": {
    "park": "Taunton National Wild and Scenic River",
+   "area": "US-MA",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -20,28 +21,23 @@
   },
   "US-0897": {
    "park": "Westfield National Wild and Scenic River",
+   "area": "US-MA",
    "why_not": "name-mismatch",
    "hits": [],
-   "leads": [
-    {
-     "title": "Wild and Scenic Designated Buffer",
-     "url": "https://services1.arcgis.com/yzNawWwHQXYQkxUq/arcgis/rest/services/Wild_and_Scenic_Designated_Buffer/FeatureServer",
-     "owner": "wrwa_staff1",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A MassGIS / Executive Office of Energy and: no polygon at the pin",
     "A Massachusetts DCR (DCRStateParks account: no polygon at the pin",
     "A National Park Service (legal boundary): no polygon at the pin",
     "A National Park Service (property boundari: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"westfield scenic wild\": 1 lead(s)"
+    "B ArcGIS Online search \"westfield scenic wild\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-2436": {
    "park": "Greycourt State Park",
+   "area": "US-MA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -57,40 +53,23 @@
   },
   "US-8014": {
    "park": "Nashua, Squannacook, and Nissitissit National Wild and Scenic River",
+   "area": "US-MA",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Wild and Scenic Core Habitat",
-     "url": "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Wild_and_Scenic_Core_Habitat/FeatureServer",
-     "owner": "khartlage",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Wild and Scenic Aquatic Core",
-     "url": "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Wild_and_Scenic_Aquatic_Core/FeatureServer",
-     "owner": "khartlage",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Nashua River Wild and Scenic Towns",
-     "url": "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Nashua_River_Wild_and_Scenic_Towns/FeatureServer",
-     "owner": "khartlage",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A MassGIS / Executive Office of Energy and: no polygon at the pin",
     "A Massachusetts DCR (DCRStateParks account: no polygon at the pin",
     "A National Park Service (legal boundary): no polygon at the pin",
     "A National Park Service (property boundari: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"squannacook nissitissit scenic\": 7 lead(s)"
+    "B ArcGIS Online search \"nissitissit squannacook nashua\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-8385": {
    "park": "Farnham-Connolly State Park",
+   "area": "US-MA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -106,6 +85,7 @@
   },
   "US-8387": {
    "park": "Francis D. Martini Memorial Shell Park and Moynihan State Recreation Area",
+   "area": "US-MA",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -115,12 +95,13 @@
     "A National Park Service (legal boundary): no polygon at the pin",
     "A National Park Service (property boundari: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"moynihan martini francis\": 0 lead(s)"
+    "B ArcGIS Online search \"moynihan francis martini\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-8388": {
    "park": "Great Falls Discovery Center State Recreation Area",
+   "area": "US-MA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -130,12 +111,13 @@
     "A National Park Service (legal boundary): no polygon at the pin",
     "A National Park Service (property boundari: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"discovery center great\": 0 lead(s)"
+    "B ArcGIS Online search \"discovery center falls\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-8422": {
    "park": "Pope John Paul II Park State Reserve",
+   "area": "US-MA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -144,7 +126,9 @@
      "agency": "Massachusetts DCR (DCRStateParks account, mass-eoeea org)",
      "record": 277,
      "record_name": "Neponset River Reservation",
-     "acres_approx": 1861
+     "acres_approx": 1861,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -154,9 +138,9 @@
     "A National Park Service (legal boundary): no polygon at the pin",
     "A National Park Service (property boundari: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"john pope paul\": 0 lead(s)"
+    "B ArcGIS Online search \"pope john paul\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }
  }
 }

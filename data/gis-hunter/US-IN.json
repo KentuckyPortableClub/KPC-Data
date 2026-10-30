@@ -5,6 +5,7 @@
  "parks": {
   "US-10237": {
    "park": "Mongoquinong State Nature Preserve",
+   "area": "US-IN",
    "why_not": "pin-doubt",
    "hits": [
     {
@@ -13,7 +14,9 @@
      "agency": "Indiana DNR",
      "record": 4818,
      "record_name": "Pigeon River Fish And Wildlife Area",
-     "acres_approx": 140
+     "acres_approx": 140,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -25,7 +28,9 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 11604
+     "GIS_Acres": 11604,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -35,10 +40,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"mongoquinong\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4208": {
    "park": "J. E. Roush Lake State Fish and Wildlife Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -51,7 +57,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 8533
+     "GIS_Acres": 8533,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -60,28 +68,17 @@
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4667": {
    "park": "Spencer County State Forest",
+   "area": "US-IN",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [
     {
-     "title": "Spencer's Tract Air Photo Collection",
-     "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/ST/FeatureServer",
-     "owner": "jfulle32",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Spencer_Asset_Management_Dec2024",
-     "url": "https://services8.arcgis.com/ZybleXItoWGv9yUU/arcgis/rest/services/Spencer_Asset_Management_Dec2024/FeatureServer",
-     "owner": "mgeorge2382",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Spencer_Ramp_Sidewalk",
-     "url": "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Ramp_Sidewalk/FeatureServer",
+     "title": "Spencer Town Boundary",
+     "url": "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Town_Boundary/FeatureServer",
      "owner": "WCundiff@SpencerMA.gov",
      "type": "Feature Service"
     }
@@ -90,12 +87,13 @@
     "A Indiana DNR: no polygon at the pin",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"spencer\": 6 lead(s)"
+    "B ArcGIS Online search \"spencer\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-5680": {
    "park": "Indian-Celina State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -108,7 +106,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 204291
+     "GIS_Acres": 204291,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -116,12 +116,13 @@
     "A Indiana DNR: no polygon at the pin",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"celina indian\": 0 lead(s)"
+    "B ArcGIS Online search \"indian celina\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5681": {
    "park": "Little Turtle State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -130,7 +131,9 @@
      "agency": "Indiana DNR",
      "record": 4078,
      "record_name": "J. Edward Roush Fish and Wildlife Area",
-     "acres_approx": 7984
+     "acres_approx": 7984,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -142,7 +145,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 8533
+     "GIS_Acres": 8533,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -154,33 +159,23 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SCA",
      "Own_Type": "FED",
-     "GIS_Acres": 8475
+     "GIS_Acres": 8475,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Little Turtle_WFL1",
-     "url": "https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer",
-     "owner": "Steven.Wahweotten_Pokagon",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Little Turtle_WTL1",
-     "url": "https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer",
-     "owner": "Steven.Wahweotten_Pokagon",
-     "type": "Map Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"little turtle\": 2 lead(s)"
+    "B ArcGIS Online search \"little turtle\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5682": {
    "park": "Moores Creek State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -189,7 +184,9 @@
      "agency": "Indiana DNR",
      "record": 4577,
      "record_name": "Monroe Lake",
-     "acres_approx": 141
+     "acres_approx": 141,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -201,7 +198,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 25720
+     "GIS_Acres": 25720,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -211,10 +210,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"moores\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5683": {
    "park": "Kil-So-Quah State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -223,7 +223,9 @@
      "agency": "Indiana DNR",
      "record": 4078,
      "record_name": "J. Edward Roush Fish and Wildlife Area",
-     "acres_approx": 7984
+     "acres_approx": 7984,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -235,7 +237,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 8533
+     "GIS_Acres": 8533,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -247,7 +251,9 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SCA",
      "Own_Type": "FED",
-     "GIS_Acres": 8475
+     "GIS_Acres": 8475,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -257,10 +263,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"quah kil\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5684": {
    "park": "Allens Creek State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -269,7 +276,9 @@
      "agency": "Indiana DNR",
      "record": 4576,
      "record_name": "Monroe Lake",
-     "acres_approx": 19073
+     "acres_approx": 19073,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -281,7 +290,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 25720
+     "GIS_Acres": 25720,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -291,10 +302,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"allens\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5685": {
    "park": "Lieber State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -303,39 +315,23 @@
      "agency": "Indiana DNR",
      "record": 3226,
      "record_name": "Cagles Mill Lake",
-     "acres_approx": 772
+     "acres_approx": 772,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Lieber",
-     "url": "https://services2.arcgis.com/eEZvYWeDAf8dVYvQ/arcgis/rest/services/Lieber/FeatureServer",
-     "owner": "humanum",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Lieber",
-     "url": "https://services2.arcgis.com/eEZvYWeDAf8dVYvQ/arcgis/rest/services/Lieber/FeatureServer",
-     "owner": "g.foliot",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Lieber",
-     "url": "https://services-eu1.arcgis.com/de9awAHJGTPtVVLW/arcgis/rest/services/Lieber/FeatureServer",
-     "owner": "g.foliot",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"lieber\": 3 lead(s)"
+    "B ArcGIS Online search \"lieber\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5686": {
    "park": "Fairfax State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -344,7 +340,9 @@
      "agency": "Indiana DNR",
      "record": 4575,
      "record_name": "Monroe Lake",
-     "acres_approx": 710
+     "acres_approx": 710,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -356,39 +354,23 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 25720
+     "GIS_Acres": 25720,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Fairfax County Boundary",
-     "url": "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Fairfax_County_Boundary/FeatureServer",
-     "owner": "FX.AuthData",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Fairfax County Water Resources Monitoring Network monitoring stations",
-     "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Fairfax_monitoring_sites/FeatureServer",
-     "owner": "ckandel@usgs.gov_USGS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Fairfax County Water Resources Monitoring Network monitoring watersheds",
-     "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Fairfax_monitoring_watersheds/FeatureServer",
-     "owner": "ckandel@usgs.gov_USGS",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"fairfax\": 7 lead(s)"
+    "B ArcGIS Online search \"fairfax\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5688": {
    "park": "Salt Creek State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -397,7 +379,9 @@
      "agency": "Indiana DNR",
      "record": 4580,
      "record_name": "Monroe Lake",
-     "acres_approx": 314
+     "acres_approx": 314,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -409,39 +393,23 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 25720
+     "GIS_Acres": 25720,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Salt Water Limit",
-     "url": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Salt_Water_Limit/FeatureServer",
-     "owner": "deepgis",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Mule Deer Migration Corridors - Salt Springs - 2018-2020 [ds2975]",
-     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2975_fpu/FeatureServer",
-     "owner": "BIOS_Admin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Great Salt Lake Basin",
-     "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Great_Salt_Lake_Basin/FeatureServer",
-     "owner": "dnrwres",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"salt\": 8 lead(s)"
+    "B ArcGIS Online search \"salt\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5689": {
    "park": "Pine Grove State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -454,33 +422,23 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 25720
+     "GIS_Acres": 25720,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "m216_pine_grove_land_rds",
-     "url": "https://services3.arcgis.com/wid5AQd6BHjWWq1h/arcgis/rest/services/m216_pine_grove_land_rds/FeatureServer",
-     "owner": "mfranz_cmrpc",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Pine Grove_WFL1",
-     "url": "https://services.arcgis.com/aMv9lrl6jFsuGNu8/arcgis/rest/services/Pine_Grove_WFL1/FeatureServer",
-     "owner": "heschmidt_smithcollege",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Indiana DNR: no polygon at the pin",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"grove pine\": 2 lead(s)"
+    "B ArcGIS Online search \"grove pine\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5690": {
    "park": "Crooked Creek State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -489,7 +447,9 @@
      "agency": "Indiana DNR",
      "record": 4576,
      "record_name": "Monroe Lake",
-     "acres_approx": 19073
+     "acres_approx": 19073,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -501,7 +461,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 25720
+     "GIS_Acres": 25720,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -511,10 +473,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"crooked\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5692": {
    "park": "Cartop State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -523,7 +486,9 @@
      "agency": "Indiana DNR",
      "record": 4576,
      "record_name": "Monroe Lake",
-     "acres_approx": 19073
+     "acres_approx": 19073,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -535,53 +500,37 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 25720
+     "GIS_Acres": 25720,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "DEEP_State_Cartop_Boat_Launches (In Use)",
-     "url": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/DEEP_State_Cartop_Boat_Launches/FeatureServer",
-     "owner": "deepgis",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Cartop Boat Launches",
-     "url": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/CT_Cartop_Boat_Launches/FeatureServer",
-     "owner": "deepgis",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"cartop\": 2 lead(s)"
+    "B ArcGIS Online search \"cartop\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-6972": {
    "park": "Historic New Harmony State Historic Site",
+   "area": "US-IN",
    "why_not": "needs-parcel",
    "hits": [],
-   "leads": [
-    {
-     "title": "New Harmony Water Courses",
-     "url": "https://services3.arcgis.com/m5XxgtLpUcsjOiD1/arcgis/rest/services/New_Harmony_Water_Courses/FeatureServer",
-     "owner": "giswashco",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Indiana DNR: no polygon at the pin",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"harmony new\": 1 lead(s)"
+    "B ArcGIS Online search \"harmony new\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-6973": {
    "park": "Lanier Mansion State Historic Site",
+   "area": "US-IN",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -595,6 +544,7 @@
   },
   "US-6974": {
    "park": "Levi Coffin House State Historic Site",
+   "area": "US-IN",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -608,6 +558,7 @@
   },
   "US-7842": {
    "park": "Red Bridge State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -616,7 +567,9 @@
      "agency": "Indiana DNR",
      "record": 4563,
      "record_name": "Mississinewa Lake",
-     "acres_approx": 13078
+     "acres_approx": 13078,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -628,7 +581,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 15067
+     "GIS_Acres": 15067,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -638,10 +593,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"bridge red\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7843": {
    "park": "Pearson Mill State Recreation Area",
+   "area": "US-IN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -650,7 +606,9 @@
      "agency": "Indiana DNR",
      "record": 4563,
      "record_name": "Mississinewa Lake",
-     "acres_approx": 13078
+     "acres_approx": 13078,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -662,7 +620,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 15067
+     "GIS_Acres": 15067,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -672,7 +632,7 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"pearson mill\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }
  }
 }

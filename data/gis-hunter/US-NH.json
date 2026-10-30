@@ -5,6 +5,7 @@
  "parks": {
   "US-0885": {
    "park": "Lamprey National Wild and Scenic River",
+   "area": "US-NH",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -19,6 +20,7 @@
   },
   "US-13595": {
    "park": "Northern Recreational State Trail",
+   "area": "US-NH",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -33,72 +35,37 @@
   },
   "US-13625": {
    "park": "Ammonoosuc State Trail",
+   "area": "US-NH",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Two Foot Topographic Contours - Upper Ammonoosuc River (0108010304) - smoothed",
-     "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01080103_smooth/FeatureServer/5",
-     "owner": "NHGRANIT",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Two Foot Topographic Contours - Upper Ammonoosuc River (0108010107) - smoothed",
-     "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01080101_smooth/FeatureServer/7",
-     "owner": "NHGRANIT",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Two Foot Topographic Contours - Lower Ammonoosuc River (0108010305) - smoothed",
-     "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01080103_smooth/FeatureServer/6",
-     "owner": "NHGRANIT",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NH GRANIT: no polygon at the pin",
     "A New Hampshire Fish and Game Department (: no polygon at the pin",
     "A NH GRANIT (recreation inventory areas): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"ammonoosuc\": 6 lead(s)"
+    "B ArcGIS Online search \"ammonoosuc\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-13626": {
    "park": "Sugar River State Trail",
+   "area": "US-NH",
    "why_not": "name-mismatch",
    "hits": [],
-   "leads": [
-    {
-     "title": "Adults with Daily Sugar-Sweetened Beverage Consumption",
-     "url": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Sweet_Beverages_Adults/FeatureServer",
-     "owner": "VElmore@ph.lacounty.gov_lacounty",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Children with Daily Sugar-Sweetened Beverage Consumption",
-     "url": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Sweet_Beverages_Children/FeatureServer",
-     "owner": "VElmore@ph.lacounty.gov_lacounty",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Sugar Maple (Acer saccharum) Distribution in Minnesota",
-     "url": "https://tiles.arcgis.com/tiles/8df8p0NlLFEShl0r/arcgis/rest/services/itsp_i318_sugarmaple/MapServer",
-     "owner": "jeli0026_UMN",
-     "type": "Map Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NH GRANIT: no polygon at the pin",
     "A New Hampshire Fish and Game Department (: no polygon at the pin",
     "A NH GRANIT (recreation inventory areas): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"sugar\": 8 lead(s)"
+    "B ArcGIS Online search \"sugar\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-2642": {
    "park": "Androscoggin Wayside State Park",
+   "area": "US-NH",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -107,7 +74,9 @@
      "agency": "NH GRANIT",
      "record": 203,
      "record_name": "13 Mile Woods Community Forest",
-     "acres_approx": 4382
+     "acres_approx": 4382,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -118,10 +87,11 @@
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"androscoggin wayside\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-2654": {
    "park": "Gardner Memorial Wayside State Park",
+   "area": "US-NH",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -130,7 +100,9 @@
      "agency": "NH GRANIT",
      "record": 3591,
      "record_name": "Gile State Forest",
-     "acres_approx": 3299
+     "acres_approx": 3299,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -138,7 +110,9 @@
      "agency": "NH GRANIT (recreation inventory areas)",
      "record": 865,
      "record_name": "Gile State Forest",
-     "acres_approx": 6501
+     "acres_approx": 6501,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -150,7 +124,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 6759
+     "GIS_Acres": 6759,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -159,12 +135,13 @@
     "A New Hampshire Fish and Game Department (: no polygon at the pin",
     "A NH GRANIT (recreation inventory areas): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"gardner wayside\": 0 lead(s)"
+    "B ArcGIS Online search \"wayside gardner\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4931": {
    "park": "Max Israel State Forest",
+   "area": "US-NH",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -179,6 +156,7 @@
   },
   "US-4936": {
    "park": "Nash Stream Forest State Forest",
+   "area": "US-NH",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -193,6 +171,7 @@
   },
   "US-4980": {
    "park": "White Farm State Forest",
+   "area": "US-NH",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -207,6 +186,7 @@
   },
   "US-8021": {
    "park": "Gov. Wentworth State Historic Site",
+   "area": "US-NH",
    "why_not": "no-layer",
    "hits": [
     {
@@ -215,7 +195,9 @@
      "agency": "NH GRANIT",
      "record": 3007,
      "record_name": "Governor Wentworth Historical Site",
-     "acres_approx": 96
+     "acres_approx": 96,
+     "tier": "LIKELY",
+     "why": "same name, different kind (historic vs historical)"
     },
     {
      "verdict": "name match",
@@ -223,7 +205,9 @@
      "agency": "NH GRANIT (recreation inventory areas)",
      "record": 791,
      "record_name": "Governor Wentworth Historic Farm",
-     "acres_approx": 99
+     "acres_approx": 99,
+     "tier": "LIKELY",
+     "why": "shared governor, wentworth; extra: park - / record farm"
     },
     {
      "verdict": "name match",
@@ -235,7 +219,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SOTH",
      "Own_Type": "STAT",
-     "GIS_Acres": 91
+     "GIS_Acres": 91,
+     "tier": "LIKELY",
+     "why": "same name, different kind (historic vs historical)"
     }
    ],
    "leads": [],
@@ -245,10 +231,11 @@
     "A NH GRANIT (recreation inventory areas): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-8024": {
    "park": "Taylor Saw Mill State Historic Site",
+   "area": "US-NH",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -257,7 +244,9 @@
      "agency": "NH GRANIT (recreation inventory areas)",
      "record": 2386,
      "record_name": "Ballard State Forest",
-     "acres_approx": 75
+     "acres_approx": 75,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -268,7 +257,7 @@
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"taylor mill saw\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }
  }
 }

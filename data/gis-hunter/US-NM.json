@@ -5,6 +5,7 @@
  "parks": {
   "US-11783": {
    "park": "Fort Craig BLM Historic Area",
+   "area": "US-NM",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -17,7 +18,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1508543
+     "GIS_Acres": 1508543,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -29,10 +32,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"craig fort\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11795": {
    "park": "Lake Valley Townsite BLM Historic Preservation Site",
+   "area": "US-NM",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -45,7 +49,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 5375972
+     "GIS_Acres": 5375972,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -57,32 +63,27 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"preservation townsite valley\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11797": {
    "park": "Los Luceros Historic Site",
+   "area": "US-NM",
    "why_not": "needs-parcel",
    "hits": [],
-   "leads": [
-    {
-     "title": "Inscripción Plataforma Logística los Luceros - SAA_form",
-     "url": "https://services1.arcgis.com/yZQ9rZaq1vRYxnvY/arcgis/rest/services/service_c5936e86e6b2456e990c28d085077821_form/FeatureServer",
-     "owner": "deraa_sdde",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A New Mexico Department of Game & Fish: no polygon at the pin",
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"luceros los\": 1 lead(s)"
+    "B ArcGIS Online search \"luceros los\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-11807": {
    "park": "Simon Canyon ACEC BLM Special Recreation Management Area",
+   "area": "US-NM",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -91,7 +92,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 14029,
      "record_name": "Simón Canyon (Recreation Area)",
-     "acres_approx": 3888
+     "acres_approx": 3888,
+     "tier": "LIKELY",
+     "why": "shared canyon, simon; extra: park concern, critical, special / record -"
     },
     {
      "verdict": "name match",
@@ -99,7 +102,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1693,
      "record_name": "Simon Canyon",
-     "acres_approx": 3969
+     "acres_approx": 3969,
+     "tier": "LIKELY",
+     "why": "shared canyon, simon; extra: park concern, critical, special / record -"
     },
     {
      "verdict": "inside-other",
@@ -107,7 +112,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1659,
      "record_name": "River Tracts",
-     "acres_approx": 2184
+     "acres_approx": 2184,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -119,7 +126,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1425067
+     "GIS_Acres": 1425067,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -130,10 +139,11 @@
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-11815": {
    "park": "La Cueva Non-Motorized Trail System Recreation Site",
+   "area": "US-NM",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -146,7 +156,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 2091256
+     "GIS_Acres": 2091256,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -158,10 +170,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"motorized system cueva\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11821": {
    "park": "Bosque Redondo Memorial/Fort Sumner Historic Site",
+   "area": "US-NM",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -171,12 +184,13 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"redondo sumner bosque\": 0 lead(s)"
+    "B ArcGIS Online search \"redondo bosque sumner\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-11823": {
    "park": "Coronado Historic Site",
+   "area": "US-NM",
    "why_not": "no-layer",
    "hits": [
     {
@@ -189,7 +203,9 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "LHCA",
      "Own_Type": "TRIB",
-     "GIS_Acres": 104
+     "GIS_Acres": 104,
+     "tier": "SURE",
+     "why": "same proper name (historic)"
     }
    ],
    "leads": [],
@@ -200,10 +216,11 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-11840": {
    "park": "San Lorenzo Canyon BLM Recreation Management Area",
+   "area": "US-NM",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -219,40 +236,23 @@
   },
   "US-11859": {
    "park": "Lincoln State Historic Site",
+   "area": "US-NM",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Zoning_City_Of_Lincoln_Burleigh_County_ND",
-     "url": "https://services2.arcgis.com/8r0lsT7QHelkANsD/arcgis/rest/services/Zoning_City_Of_Lincoln_Burleigh_County_ND/FeatureServer",
-     "owner": "BurleighCounty",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Lincoln City Boundaries",
-     "url": "https://services2.arcgis.com/j80Jz20at6Bi0thr/arcgis/rest/services/lincoln/FeatureServer",
-     "owner": "Learn_ArcGIS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Lincoln_forestplan_alts_wilderness_AltE",
-     "url": "https://services9.arcgis.com/4ikJ2iF3itbByOVD/arcgis/rest/services/Lincoln_forestplan_alts_wilderness_AltE/FeatureServer",
-     "owner": "rob.lavie_EMPSI",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A New Mexico Department of Game & Fish: no polygon at the pin",
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"lincoln\": 8 lead(s)"
+    "B ArcGIS Online search \"lincoln\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-12111": {
    "park": "Tortugas Mountain BLM Recreation Management Area",
+   "area": "US-NM",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -265,7 +265,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 5375972
+     "GIS_Acres": 5375972,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -275,12 +277,13 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"tortugas mountain\": 0 lead(s)"
+    "B ArcGIS Online search \"mountain tortugas\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12592": {
    "park": "Parks Ranch Cave BLM Recreation Management Area",
+   "area": "US-NM",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -289,7 +292,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1647,
      "record_name": "Chosa Draw",
-     "acres_approx": 2852
+     "acres_approx": 2852,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -301,7 +306,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 2091256
+     "GIS_Acres": 2091256,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -313,10 +320,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"ranch cave\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12737": {
    "park": "Casamero Pueblo | New Mexico BLM Historic Area",
+   "area": "US-NM",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -332,6 +340,7 @@
   },
   "US-13001": {
    "park": "Kilbourne Hole Volcanic Crater BLM National Conservation Area",
+   "area": "US-NM",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -344,7 +353,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 5375972
+     "GIS_Acres": 5375972,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -356,10 +367,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"kilbourne volcanic crater\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13185": {
    "park": "Dow Canyon Tract BLM Recreation Management Area",
+   "area": "US-NM",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -375,6 +387,7 @@
   },
   "US-13186": {
    "park": "Lincoln Tract BLM Recreation Management Area",
+   "area": "US-NM",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -390,6 +403,7 @@
   },
   "US-2719": {
    "park": "Angel Fire Vietnam Veterans Memorial Park",
+   "area": "US-NM",
    "why_not": "no-layer",
    "hits": [
     {
@@ -402,7 +416,9 @@
      "Mang_Name": "SPR",
      "Des_Tp": "SOTH",
      "Own_Type": "UNK",
-     "GIS_Acres": 33
+     "GIS_Acres": 33,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -414,10 +430,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"veterans vietnam angel\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7543": {
    "park": "Mescalero Sands Recreation Site",
+   "area": "US-NM",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -426,7 +443,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 14083,
      "record_name": "Roswell Field Office ERMA",
-     "acres_approx": 1436168
+     "acres_approx": 1436168,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     },
     {
      "verdict": "inside-other",
@@ -438,7 +457,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1501751
+     "GIS_Acres": 1501751,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -450,10 +471,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"mescalero sands\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7876": {
    "park": "Three Rivers Petroglyphs National Historic Site",
+   "area": "US-NM",
    "why_not": "no-layer",
    "hits": [
     {
@@ -462,7 +484,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1668,
      "record_name": "Three Rivers Petroglyph",
-     "acres_approx": 1029
+     "acres_approx": 1029,
+     "tier": "SURE",
+     "why": "same proper name"
     },
     {
      "verdict": "inside-other",
@@ -474,7 +498,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 5375972
+     "GIS_Acres": 5375972,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -485,10 +511,11 @@
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-8617": {
    "park": "Perea Nature National Recreation Trail",
+   "area": "US-NM",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -497,7 +524,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 14078,
      "record_name": "White Ridge Bike Trails",
-     "acres_approx": 2864
+     "acres_approx": 2864,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -509,41 +538,25 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 992719
+     "GIS_Acres": 992719,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
-   "leads": [
-    {
-     "title": "PSF_Perea",
-     "url": "https://tiles.arcgis.com/tiles/6fH0bIcGPz3YuOKY/arcgis/rest/services/PSF_Perea/MapServer",
-     "owner": "CastDron",
-     "type": "Map Service"
-    },
-    {
-     "title": "Practica2_perea_villar_WFL1",
-     "url": "https://services7.arcgis.com/jj1NqXxfLjbkZQH0/arcgis/rest/services/Practica2_perea_villar_WFL1/FeatureServer",
-     "owner": "GJN9731_unisevilla",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Practica2_perea_villar_WTL1",
-     "url": "https://tiles.arcgis.com/tiles/jj1NqXxfLjbkZQH0/arcgis/rest/services/Practica2_perea_villar_WTL1/MapServer",
-     "owner": "GJN9731_unisevilla",
-     "type": "Map Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A New Mexico Department of Game & Fish: no polygon at the pin",
     "A NM EMNRD State Parks data, hosted in the: no polygon at the pin",
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"perea\": 5 lead(s)"
+    "B ArcGIS Online search \"perea\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-8618": {
    "park": "White Ridge National Recreation Trail",
+   "area": "US-NM",
    "why_not": "no-layer",
    "hits": [
     {
@@ -552,7 +565,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 14078,
      "record_name": "White Ridge Bike Trails",
-     "acres_approx": 2864
+     "acres_approx": 2864,
+     "tier": "LIKELY",
+     "why": "shared ridge, white; extra: park - / record bike"
     },
     {
      "verdict": "inside-other",
@@ -564,7 +579,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 992719
+     "GIS_Acres": 992719,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -575,7 +592,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   }
  }
 }

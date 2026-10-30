@@ -5,6 +5,7 @@
  "parks": {
   "US-0400": {
    "park": "Halfbreed Lake National Wildlife Refuge",
+   "area": "US-MT",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -17,7 +18,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "NWR",
      "Own_Type": "FED",
-     "GIS_Acres": 3394
+     "GIS_Acres": 3394,
+     "tier": "UNLIKELY",
+     "why": "one shared word (lake) only"
     },
     {
      "verdict": "inside-other",
@@ -29,7 +32,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "NWR",
      "Own_Type": "FED",
-     "GIS_Acres": 3394
+     "GIS_Acres": 3394,
+     "tier": "UNLIKELY",
+     "why": "one shared word (lake) only"
     }
    ],
    "leads": [],
@@ -42,10 +47,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"halfbreed\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-0405": {
    "park": "CSKT Bison Range Protected Area",
+   "area": "US-MT",
    "why_not": "no-layer",
    "hits": [
     {
@@ -58,23 +64,12 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "TRIBL",
      "Own_Type": "DESG",
-     "GIS_Acres": 1317006
+     "GIS_Acres": 1317006,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "CSKT Bison Range SSURGO Data",
-     "url": "https://services6.arcgis.com/PAUSLTOljlTRpN3n/arcgis/rest/services/CSKT_Bison_Range_SSURGO_Data/FeatureServer",
-     "owner": "Kyle.Bocinsky_DRIGIS4",
-     "type": "Feature Service"
-    },
-    {
-     "title": "CSKT Bison Range",
-     "url": "https://services2.arcgis.com/HRY6x8qt5qjGnAA9/arcgis/rest/services/CSKT_Bison_Range/FeatureServer",
-     "owner": "ShamonH_SI",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Montana Fish, Wildlife & Parks: no polygon at the pin",
     "A Montana Fish, Wildlife & Parks: no polygon at the pin",
@@ -82,12 +77,13 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"bison range cskt\": 2 lead(s)"
+    "B ArcGIS Online search \"bison range cskt\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10521": {
    "park": "Garnet Ghost Town BLM Historic Preservation Site",
+   "area": "US-MT",
    "why_not": "no-layer",
    "hits": [
     {
@@ -100,7 +96,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 175579
+     "GIS_Acres": 175579,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -113,10 +111,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"preservation garnet ghost\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10526": {
    "park": "Devils Elbow (BLM) Recreation Site",
+   "area": "US-MT",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -125,7 +124,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 10979,
      "record_name": "Hauser Lake",
-     "acres_approx": 16300
+     "acres_approx": 16300,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -137,23 +138,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 323091
+     "GIS_Acres": 323091,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
-   "leads": [
-    {
-     "title": "PGF2020_HSCLIP_Devils_Elbow",
-     "url": "https://tiles.arcgis.com/tiles/ISqEHdhr3detVO9I/arcgis/rest/services/PGF2020_HSCLIP_Devils_Elbow/MapServer",
-     "owner": "jro156_UCNZ",
-     "type": "Map Service"
-    },
-    {
-     "title": "UC2024_HSCLIP_Devils_Elbow",
-     "url": "https://tiles.arcgis.com/tiles/ISqEHdhr3detVO9I/arcgis/rest/services/UC2024_HSCLIP_Devils_Elbow/MapServer",
-     "owner": "jro156_UCNZ",
-     "type": "Map Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Montana Fish, Wildlife & Parks: no polygon at the pin",
     "A Montana Fish, Wildlife & Parks: no polygon at the pin",
@@ -161,12 +151,13 @@
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"devils elbow\": 2 lead(s)"
+    "B ArcGIS Online search \"devils elbow\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10527": {
    "park": "Judith Landing (BLM) Recreation Site",
+   "area": "US-MT",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -183,6 +174,7 @@
   },
   "US-11215": {
    "park": "Bear Paw Battlefield National Monument",
+   "area": "US-MT",
    "why_not": "no-layer",
    "hits": [
     {
@@ -195,7 +187,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "HCA",
      "Own_Type": "FED",
-     "GIS_Acres": 195
+     "GIS_Acres": 195,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -208,10 +202,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"battlefield monument bear\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11216": {
    "park": "Big Springs Trout State Fish Hatchery",
+   "area": "US-MT",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -228,6 +223,7 @@
   },
   "US-11217": {
    "park": "Bluewater Springs Trout State Fish Hatchery",
+   "area": "US-MT",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -244,6 +240,7 @@
   },
   "US-11218": {
    "park": "Fort Peck State Fish Hatchery",
+   "area": "US-MT",
    "why_not": "no-layer",
    "hits": [
     {
@@ -256,7 +253,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 623432
+     "GIS_Acres": 623432,
+     "tier": "LIKELY",
+     "why": "same name, record 617,845 ac looks big for this kind of place"
     }
    ],
    "leads": [],
@@ -268,10 +267,11 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-11219": {
    "park": "Jacko River Trout State Fish Hatchery",
+   "area": "US-MT",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -284,7 +284,9 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "TRIBL",
      "Own_Type": "DESG",
-     "GIS_Acres": 1317006
+     "GIS_Acres": 1317006,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -296,7 +298,9 @@
      "Mang_Name": "UNKL",
      "Des_Tp": "LOTH",
      "Own_Type": "LOC",
-     "GIS_Acres": 31781
+     "GIS_Acres": 31781,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -307,12 +311,13 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"hatchery jacko trout\": 0 lead(s)"
+    "B ArcGIS Online search \"hatchery trout jacko\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11221": {
    "park": "Washoe Park Trout State Fish Hatchery",
+   "area": "US-MT",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -329,6 +334,7 @@
   },
   "US-12822": {
    "park": "Big Horn State Fish and Wildlife Area",
+   "area": "US-MT",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -337,7 +343,9 @@
      "agency": "Montana Fish, Wildlife & Parks",
      "record": 40768,
      "record_name": "Bighorn",
-     "acres_approx": 72
+     "acres_approx": 72,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -349,7 +357,9 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "TRIBL",
      "Own_Type": "DESG",
-     "GIS_Acres": 2288757
+     "GIS_Acres": 2288757,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -361,16 +371,12 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SREC",
      "Own_Type": "UNK",
-     "GIS_Acres": 72
+     "GIS_Acres": 72,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [
-    {
-     "title": "Big_Horn_Study_Area",
-     "url": "https://services.arcgis.com/xYjDUN35YwdCEcMm/arcgis/rest/services/Big_Horn_Study_Area/FeatureServer",
-     "owner": "BGIS_ON_F21_Luigi_Ralph_Malinis",
-     "type": "Feature Service"
-    },
     {
      "title": "Map of Big Horn Co WY 1908ca _low0_jpg",
      "url": "https://tiles.arcgis.com/tiles/KbxwQRRfWyEYLgp4/arcgis/rest/services/Map_of_Big_Horn_Co_WY_1908ca__low0_jpg/MapServer",
@@ -385,12 +391,13 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"horn big\": 2 lead(s)"
+    "B ArcGIS Online search \"horn big\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-12827": {
    "park": "Brownes Lake State Fish and Wildlife Area",
+   "area": "US-MT",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -403,7 +410,9 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SREC",
      "Own_Type": "UNK",
-     "GIS_Acres": 10
+     "GIS_Acres": 10,
+     "tier": "LIKELY",
+     "why": "shared browne; extra: park lake / record access, bridge"
     }
    ],
    "leads": [],
@@ -415,10 +424,11 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-12925": {
    "park": "Thoreau State Beach",
+   "area": "US-MT",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -431,7 +441,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 175579
+     "GIS_Acres": 175579,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -444,10 +456,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"thoreau beach\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-8001": {
    "park": "Lamesteer National Wildlife Refuge",
+   "area": "US-MT",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -464,6 +477,7 @@
   },
   "US-8002": {
    "park": "Ninepipe National Wildlife Refuge",
+   "area": "US-MT",
    "why_not": "no-layer",
    "hits": [
     {
@@ -476,17 +490,12 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "TRIBL",
      "Own_Type": "DESG",
-     "GIS_Acres": 1317006
+     "GIS_Acres": 1317006,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "NinePipe_Map5",
-     "url": "https://services1.arcgis.com/ERdCHt0sNM6dENSD/arcgis/rest/services/NinePipe_Map5/FeatureServer",
-     "owner": "mr119648_umontana",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Montana Fish, Wildlife & Parks: no polygon at the pin",
     "A Montana Fish, Wildlife & Parks: no polygon at the pin",
@@ -494,12 +503,13 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"ninepipe\": 1 lead(s)"
+    "B ArcGIS Online search \"ninepipe\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-8003": {
    "park": "Pablo National Wildlife Refuge",
+   "area": "US-MT",
    "why_not": "no-layer",
    "hits": [
     {
@@ -512,16 +522,12 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "TRIBL",
      "Own_Type": "DESG",
-     "GIS_Acres": 1317006
+     "GIS_Acres": 1317006,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [
-    {
-     "title": "San Pablo Bay Ridgway's Rail Call Count 200m Buffers",
-     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/San_Pablo_Bay_Rail_Call_Count_200m_Buffers/FeatureServer",
-     "owner": "madison_pitman@fws.gov_fws",
-     "type": "Feature Service"
-    },
     {
      "title": "San Pablo Bay NWR Ridgway's Rail Call Count Stations",
      "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/San_Pablo_Bay_Rail_Call_Count_Stations/FeatureServer",
@@ -529,9 +535,9 @@
      "type": "Feature Service"
     },
     {
-     "title": "AB617 Richmond-San Pablo Monitoring Boundary",
-     "url": "https://services6.arcgis.com/xCuDJnRShQmTqPGL/arcgis/rest/services/AB617_Richmond_San_Pablo_Community_Boundary/FeatureServer",
-     "owner": "llouie",
+     "title": "Richmond-North Richmond-San Pablo - CERP Community Boundary",
+     "url": "https://services3.arcgis.com/i2dkYWmb4wHvYPda/arcgis/rest/services/Richmond_North_Richmond_San_Pablo/FeatureServer",
+     "owner": "jlehman@bayareametro.gov_MTC",
      "type": "Feature Service"
     }
    ],
@@ -542,7 +548,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"pablo\": 6 lead(s)"
+    "B ArcGIS Online search \"pablo\": 2 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   }

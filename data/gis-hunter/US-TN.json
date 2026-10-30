@@ -5,16 +5,10 @@
  "parks": {
   "US-11181": {
    "park": "Sheltowee Trace National Recreation Trail",
+   "area": "US-TN",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Sheltowee Trace",
-     "url": "https://services3.arcgis.com/0g1gZyTiQ9uGlDEb/arcgis/rest/services/Sheltowee_Trace/FeatureServer",
-     "owner": "eonealKY",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Tennessee State Parks (TDEC): no polygon at the pin",
     "A Tennessee State Natural Areas (TDEC): no polygon at the pin",
@@ -27,12 +21,13 @@
     "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
     "A Tennessee Department of Environment and : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"sheltowee trace\": 1 lead(s)"
+    "B ArcGIS Online search \"sheltowee trace\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-11357": {
    "park": "Sellars Farm State Archeological Reserve",
+   "area": "US-TN",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -54,6 +49,7 @@
   },
   "US-11869": {
    "park": "Jim Cummings Park",
+   "area": "US-TN",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -75,6 +71,7 @@
   },
   "US-12775": {
    "park": "Davy Crockett State Fishing Lake",
+   "area": "US-TN",
    "why_not": "no-layer",
    "hits": [
     {
@@ -87,7 +84,9 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SOTH",
      "Own_Type": "STAT",
-     "GIS_Acres": 240
+     "GIS_Acres": 240,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -105,10 +104,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"crockett fishing davy\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13514": {
    "park": "Lake Halford State Fishing Lake",
+   "area": "US-TN",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -124,12 +124,13 @@
     "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
     "A Tennessee Department of Environment and : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"halford fishing\": 0 lead(s)"
+    "B ArcGIS Online search \"fishing halford\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-3941": {
    "park": "Grundy Forest State Natural Area",
+   "area": "US-TN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -138,7 +139,9 @@
      "agency": "Tennessee State Parks (TDEC)",
      "record": 394,
      "record_name": "Fiery Gizzard State Park",
-     "acres_approx": 7873
+     "acres_approx": 7873,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -146,7 +149,9 @@
      "agency": "Tennessee State Parks (TDEC state park boundaries)",
      "record": 79,
      "record_name": "South Cumberland State Park",
-     "acres_approx": 5907
+     "acres_approx": 5907,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -154,7 +159,9 @@
      "agency": "Tennessee Department of Environment and Conservation (State Park Boundaries, Public View; multi-site parks dissolved)",
      "record": 308,
      "record_name": "Fiery Gizzard State Park",
-     "acres_approx": 7836
+     "acres_approx": 7836,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -171,10 +178,11 @@
     "A Tennessee Department of Environment and : hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4376": {
    "park": "Manhattan Project National Historical Park",
+   "area": "US-TN",
    "why_not": "no-layer",
    "hits": [],
    "leads": [
@@ -203,6 +211,7 @@
   },
   "US-6237": {
    "park": "Mr. and Mrs. Harry Lee Carter State Natural Area",
+   "area": "US-TN",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -211,7 +220,9 @@
      "agency": "Tennessee State Parks (TDEC)",
      "record": 405,
      "record_name": "Head of the Crow State Park",
-     "acres_approx": 5337
+     "acres_approx": 5337,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -219,7 +230,9 @@
      "agency": "Tennessee State Natural Areas (TDEC)",
      "record": 77,
      "record_name": "Sherwood Forest State Natural Area",
-     "acres_approx": 3047
+     "acres_approx": 3047,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -227,7 +240,9 @@
      "agency": "Tennessee Department of Environment and Conservation (TDEC public lands)",
      "record": 150,
      "record_name": "South Cumberland State Park",
-     "acres_approx": 3047
+     "acres_approx": 3047,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -235,7 +250,9 @@
      "agency": "Tennessee State Parks (TDEC state park boundaries)",
      "record": 81,
      "record_name": "South Cumberland State Park",
-     "acres_approx": 3922
+     "acres_approx": 3922,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -243,7 +260,9 @@
      "agency": "Tennessee Department of Environment and Conservation (State Park Boundaries, Public View; multi-site parks dissolved)",
      "record": 476,
      "record_name": "Head of the Crow State Park",
-     "acres_approx": 5460
+     "acres_approx": 5460,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -255,7 +274,9 @@
      "Mang_Name": "OTHS",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 4061
+     "GIS_Acres": 4061,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -272,10 +293,11 @@
     "A Tennessee Department of Environment and : hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-6247": {
    "park": "Hawkins Cove State Natural Area",
+   "area": "US-TN",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -297,6 +319,7 @@
   },
   "US-6259": {
    "park": "Ozone Falls State Natural Area",
+   "area": "US-TN",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -312,12 +335,13 @@
     "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
     "A Tennessee Department of Environment and : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"ozone falls\": 0 lead(s)"
+    "B ArcGIS Online search \"falls ozone\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-6261": {
    "park": "Pogue Creek Canyon State Natural Area",
+   "area": "US-TN",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -339,6 +363,7 @@
   },
   "US-6273": {
    "park": "Vine Cedar Glade State Natural Area",
+   "area": "US-TN",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -354,12 +379,13 @@
     "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
     "A Tennessee Department of Environment and : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"cedar glade vine\": 0 lead(s)"
+    "B ArcGIS Online search \"glade cedar vine\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-6280": {
    "park": "Windows Cliffs State Natural Area",
+   "area": "US-TN",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -381,6 +407,7 @@
   },
   "US-7565": {
    "park": "AEDC and Woods Reservoir Wildlife Management Area",
+   "area": "US-TN",
    "why_not": "pin-doubt",
    "hits": [
     {
@@ -389,7 +416,9 @@
      "agency": "Tennessee Wildlife Resources Agency",
      "record": 2901,
      "record_name": "A.E.D.C. WMA",
-     "acres_approx": 3141
+     "acres_approx": 3141,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "inside-other",
@@ -397,7 +426,9 @@
      "agency": "Tennessee Wildlife Resources Agency lands, published by TN Dept of Environment and Conservation (TDEC AGOL org) in Tennessee State and Federal Lands map",
      "record": 2901,
      "record_name": "A.E.D.C. WMA",
-     "acres_approx": 3247
+     "acres_approx": 3247,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "inside-other",
@@ -409,7 +440,9 @@
      "Mang_Name": "DOD",
      "Des_Tp": "MIL",
      "Own_Type": "DESG",
-     "GIS_Acres": 38892
+     "GIS_Acres": 38892,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -427,7 +460,7 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"reservoir woods aedc\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }
  }
 }

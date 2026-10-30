@@ -5,6 +5,7 @@
  "parks": {
   "US-12772": {
    "park": "Georgia National Fairgrounds State Recreation Area",
+   "area": "US-GA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -19,6 +20,7 @@
   },
   "US-2200": {
    "park": "Okefenokee State Park",
+   "area": "US-GA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -27,7 +29,9 @@
      "agency": "Georgia State Parks (DNR)",
      "record": 60,
      "record_name": "Stephen C. Foster State Park",
-     "acres_approx": 109
+     "acres_approx": 109,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -39,7 +43,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "NWR",
      "Own_Type": "FED",
-     "GIS_Acres": 404154
+     "GIS_Acres": 404154,
+     "tier": "LIKELY",
+     "why": "same name, record 402,480 ac looks big for this kind of place"
     },
     {
      "verdict": "name match",
@@ -51,7 +57,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "NWR",
      "Own_Type": "FED",
-     "GIS_Acres": 403528
+     "GIS_Acres": 403528,
+     "tier": "LIKELY",
+     "why": "same name, record 401,732 ac looks big for this kind of place"
     },
     {
      "verdict": "inside-other",
@@ -63,7 +71,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SP",
      "Own_Type": "FED",
-     "GIS_Acres": 135
+     "GIS_Acres": 135,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -73,10 +83,11 @@
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-3724": {
    "park": "Roosevelts Little White House State Historic Site",
+   "area": "US-GA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -85,7 +96,9 @@
      "agency": "Georgia State Parks (DNR)",
      "record": 4,
      "record_name": "F. D. Roosevelt State Park",
-     "acres_approx": 10041
+     "acres_approx": 10041,
+     "tier": "LIKELY",
+     "why": "shared roosevelt; extra: park house, little, white / record -"
     },
     {
      "verdict": "inside-other",
@@ -93,7 +106,9 @@
      "agency": "Georgia DNR Wildlife Resources Division (GA DNR AGOL org)",
      "record": 925,
      "record_name": "F. D. ROOSEVELT STATE PARK",
-     "acres_approx": 10041
+     "acres_approx": 10041,
+     "tier": "LIKELY",
+     "why": "shared roosevelt; extra: park house, little, white / record -"
     },
     {
      "verdict": "inside-other",
@@ -105,7 +120,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SP",
      "Own_Type": "STAT",
-     "GIS_Acres": 9995
+     "GIS_Acres": 9995,
+     "tier": "LIKELY",
+     "why": "shared roosevelt; extra: park house, little, white / record -"
     }
    ],
    "leads": [],
@@ -115,10 +132,11 @@
     "A Georgia DNR Wildlife Resources Division : hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-3791": {
    "park": "Trail of Tears National Historic Trail",
+   "area": "US-GA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -131,7 +149,9 @@
      "Mang_Name": "CITY",
      "Des_Tp": "LP",
      "Own_Type": "LOC",
-     "GIS_Acres": 34
+     "GIS_Acres": 34,
+     "tier": "SURE",
+     "why": "same proper name (trail)"
     }
    ],
    "leads": [],
@@ -141,10 +161,11 @@
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-4556": {
    "park": "Appalachian Trail National Scenic Trail",
+   "area": "US-GA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -157,40 +178,24 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 750991
+     "GIS_Acres": 750991,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Appalachian_National_Scenic_Trail",
-     "url": "https://services6.arcgis.com/9tSn0MQDcjQ12ht2/arcgis/rest/services/Appalachian_National_Scenic_Trail/FeatureServer",
-     "owner": "freemand",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Appalachian National Scenic Trail",
-     "url": "https://services6.arcgis.com/krSNOBBGf8rF7cNp/arcgis/rest/services/Appalachian_National_Scenic_Trail/FeatureServer",
-     "owner": "jen.kern",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Appalachian National Scenic Trail Centerline copy",
-     "url": "https://services1.arcgis.com/qTQ6qYkHpxlu0G82/arcgis/rest/services/Appalachian_National_Scenic_Trail_Centerline_copy/FeatureServer",
-     "owner": "dff416_UofMD",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Georgia DNR Wildlife Resources Division: no polygon at the pin",
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"appalachian scenic\": 3 lead(s)"
+    "B ArcGIS Online search \"appalachian scenic\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4648": {
    "park": "Bartram Educational State Forest",
+   "area": "US-GA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -199,7 +204,9 @@
      "agency": "Georgia DNR Wildlife Resources Division",
      "record": 75,
      "record_name": "BARTRAM FOREST WMA",
-     "acres_approx": 1332
+     "acres_approx": 1332,
+     "tier": "LIKELY",
+     "why": "shared bartram; extra: park educational / record -"
     },
     {
      "verdict": "name match",
@@ -207,7 +214,9 @@
      "agency": "Georgia DNR Wildlife Resources Division (GA DNR AGOL org)",
      "record": 806,
      "record_name": "BARTRAM FOREST WMA",
-     "acres_approx": 859
+     "acres_approx": 859,
+     "tier": "LIKELY",
+     "why": "shared bartram; extra: park educational / record -"
     },
     {
      "verdict": "name match",
@@ -219,7 +228,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2063
+     "GIS_Acres": 2063,
+     "tier": "LIKELY",
+     "why": "shared bartram; extra: park educational / record -"
     },
     {
      "verdict": "inside-other",
@@ -231,7 +242,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 2153
+     "GIS_Acres": 2153,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -241,10 +254,11 @@
     "A Georgia DNR Wildlife Resources Division : hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-4649": {
    "park": "Hitchiti State Forest",
+   "area": "US-GA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -257,25 +271,15 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 116196
+     "GIS_Acres": 116196,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [
     {
      "title": "Hitchiti EF aspects",
      "url": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Hitchiti_aspects_2/MapServer",
-     "owner": "USFS_SouthernResearchStation",
-     "type": "Map Service"
-    },
-    {
-     "title": "Hitchiti NLCD",
-     "url": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Hitchiti_NLCD/MapServer",
-     "owner": "USFS_SouthernResearchStation",
-     "type": "Map Service"
-    },
-    {
-     "title": "Hitchiti slopes",
-     "url": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Hitchiti_slopes_2/MapServer",
      "owner": "USFS_SouthernResearchStation",
      "type": "Map Service"
     }
@@ -285,12 +289,13 @@
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"hitchiti\": 5 lead(s)"
+    "B ArcGIS Online search \"hitchiti\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-7139": {
    "park": "Arabia Mountain National Heritage Area",
+   "area": "US-GA",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -305,6 +310,7 @@
   },
   "US-7140": {
    "park": "Charlie Elliot Wildlife Management Area",
+   "area": "US-GA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -313,7 +319,9 @@
      "agency": "Georgia DNR Wildlife Resources Division",
      "record": 32,
      "record_name": "CLYBEL WMA",
-     "acres_approx": 6225
+     "acres_approx": 6225,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -321,7 +329,9 @@
      "agency": "Georgia DNR Wildlife Resources Division (GA DNR AGOL org)",
      "record": 956,
      "record_name": "CLYBEL WMA",
-     "acres_approx": 6514
+     "acres_approx": 6514,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -333,7 +343,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 6273
+     "GIS_Acres": 6273,
+     "tier": "LIKELY",
+     "why": "shared charlie, elliot; extra: park - / record center, clybel, marben"
     }
    ],
    "leads": [],
@@ -343,10 +355,11 @@
     "A Georgia DNR Wildlife Resources Division : hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-7456": {
    "park": "Dahlonega Gold Museum State Historic Site",
+   "area": "US-GA",
    "why_not": "pin-doubt",
    "hits": [],
    "leads": [],
@@ -361,6 +374,7 @@
   },
   "US-7459": {
    "park": "Lake Nottely Dam Recreation Park",
+   "area": "US-GA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -375,6 +389,7 @@
   },
   "US-7460": {
    "park": "Lake Blue Ridge Dam Recreation Park",
+   "area": "US-GA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -389,6 +404,7 @@
   },
   "US-7471": {
    "park": "Allatoona Pass Battlefield State Historic Site",
+   "area": "US-GA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -401,7 +417,9 @@
      "Mang_Name": "USACE",
      "Des_Tp": "REC",
      "Own_Type": "UNK",
-     "GIS_Acres": 38047
+     "GIS_Acres": 38047,
+     "tier": "LIKELY",
+     "why": "shared allatoona; extra: park pass / record -"
     }
    ],
    "leads": [],
@@ -411,10 +429,11 @@
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-7473": {
    "park": "DeSoto Falls National Recreation Area",
+   "area": "US-GA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -423,7 +442,9 @@
      "agency": "Georgia DNR Wildlife Resources Division",
      "record": 15,
      "record_name": "CHESTATEE WMA",
-     "acres_approx": 21687
+     "acres_approx": 21687,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -431,7 +452,9 @@
      "agency": "Georgia DNR Wildlife Resources Division (GA DNR AGOL org)",
      "record": 751,
      "record_name": "CHESTATEE WMA",
-     "acres_approx": 21687
+     "acres_approx": 21687,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -443,7 +466,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 750991
+     "GIS_Acres": 750991,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -455,7 +480,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SCA",
      "Own_Type": "FED",
-     "GIS_Acres": 19724
+     "GIS_Acres": 19724,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -466,10 +493,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"desoto falls\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7858": {
    "park": "Dames Ferry Campground State Park",
+   "area": "US-GA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -484,6 +512,7 @@
   },
   "US-7861": {
    "park": "Suwannee River Eco-Lodge State Park",
+   "area": "US-GA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -492,7 +521,9 @@
      "agency": "Georgia State Parks (DNR)",
      "record": 32,
      "record_name": "Stephen C. Foster State Park",
-     "acres_approx": 320
+     "acres_approx": 320,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -504,7 +535,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SP",
      "Own_Type": "STAT",
-     "GIS_Acres": 320
+     "GIS_Acres": 320,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -515,10 +548,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"suwannee lodge eco\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7893": {
    "park": "Augusta Canal National Heritage Area",
+   "area": "US-GA",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],

@@ -5,6 +5,7 @@
  "parks": {
   "US-0620": {
    "park": "Beechwood Farms State Conservation Area",
+   "area": "US-PA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -17,7 +18,9 @@
      "Mang_Name": "NGO",
      "Des_Tp": "PCON",
      "Own_Type": "NGO",
-     "GIS_Acres": 4
+     "GIS_Acres": 4,
+     "tier": "LIKELY",
+     "why": "shared beechwood, farm; extra: park - / record center, evan"
     },
     {
      "verdict": "name match",
@@ -29,7 +32,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "PCON",
      "Own_Type": "NGO",
-     "GIS_Acres": 4
+     "GIS_Acres": 4,
+     "tier": "LIKELY",
+     "why": "shared beechwood, farm; extra: park - / record center, evan"
     }
    ],
    "leads": [],
@@ -41,10 +46,11 @@
     "A PA DCNR Bureau of State Parks (credit): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-0621": {
    "park": "Todd Sanctuary State Conservation Area",
+   "area": "US-PA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -57,7 +63,9 @@
      "Mang_Name": "NGO",
      "Des_Tp": "PCON",
      "Own_Type": "NGO",
-     "GIS_Acres": 180
+     "GIS_Acres": 180,
+     "tier": "LIKELY",
+     "why": "same name, different kind (conservation sanctuary vs nature)"
     },
     {
      "verdict": "name match",
@@ -69,7 +77,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "PCON",
      "Own_Type": "NGO",
-     "GIS_Acres": 182
+     "GIS_Acres": 182,
+     "tier": "LIKELY",
+     "why": "same name, different kind (conservation sanctuary vs nature)"
     }
    ],
    "leads": [],
@@ -81,10 +91,11 @@
     "A PA DCNR Bureau of State Parks (credit): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-0622": {
    "park": "Bear Run State Conservation Area",
+   "area": "US-PA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -97,7 +108,9 @@
      "Mang_Name": "NGO",
      "Des_Tp": "PCON",
      "Own_Type": "NGO",
-     "GIS_Acres": 39
+     "GIS_Acres": 39,
+     "tier": "LIKELY",
+     "why": "same name, different kind (conservation vs nature)"
     },
     {
      "verdict": "name match",
@@ -109,7 +122,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "PCON",
      "Own_Type": "NGO",
-     "GIS_Acres": 39
+     "GIS_Acres": 39,
+     "tier": "LIKELY",
+     "why": "same name, different kind (conservation vs nature)"
     }
    ],
    "leads": [],
@@ -121,10 +136,11 @@
     "A PA DCNR Bureau of State Parks (credit): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-0623": {
    "park": "Powdermill State Conservation Area",
+   "area": "US-PA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -137,7 +153,9 @@
      "Mang_Name": "NGO",
      "Des_Tp": "PCON",
      "Own_Type": "NGO",
-     "GIS_Acres": 1720
+     "GIS_Acres": 1720,
+     "tier": "LIKELY",
+     "why": "same name, different kind (conservation vs nature)"
     },
     {
      "verdict": "name match",
@@ -149,7 +167,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "PCON",
      "Own_Type": "NGO",
-     "GIS_Acres": 1998
+     "GIS_Acres": 1998,
+     "tier": "LIKELY",
+     "why": "same name, different kind (conservation vs nature)"
     }
    ],
    "leads": [],
@@ -161,20 +181,14 @@
     "A PA DCNR Bureau of State Parks (credit): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-0684": {
    "park": "Lower Delaware National Wild and Scenic River",
+   "area": "US-PA",
    "why_not": "name-mismatch",
    "hits": [],
-   "leads": [
-    {
-     "title": "Lower Delaware Watershed",
-     "url": "https://services1.arcgis.com/HERT3Lrqxe0YUfxz/arcgis/rest/services/Lower_Delaware_Watershed/FeatureServer",
-     "owner": "karenreavy",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Pennsylvania DCNR Bureau of State Parks: no polygon at the pin",
     "A Pennsylvania State Parks (DCNR): no polygon at the pin",
@@ -182,12 +196,13 @@
     "A National Park Service (legal boundary): no polygon at the pin",
     "A PA DCNR Bureau of State Parks (credit): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"delaware scenic lower\": 1 lead(s)"
+    "B ArcGIS Online search \"delaware scenic lower\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-10802": {
    "park": "Gloria Dei Church National Historic Site",
+   "area": "US-PA",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],

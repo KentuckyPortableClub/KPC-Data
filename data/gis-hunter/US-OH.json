@@ -5,22 +5,10 @@
  "parks": {
   "US-3514": {
    "park": "Fort Miamis Fallen Timbers Battlefield National Historic Site",
+   "area": "US-OH",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Fallen Timbers Battlefield",
-     "url": "https://services2.arcgis.com/i7Ls2H4uQGTYzm5D/arcgis/rest/services/Fallen_Timbers_Battlefield/FeatureServer",
-     "owner": "topographer",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Fallen Timbers Battlefield Points of Interest",
-     "url": "https://services2.arcgis.com/i7Ls2H4uQGTYzm5D/arcgis/rest/services/Fallen_Timbers_Battlefield_Points_of_Interest/FeatureServer",
-     "owner": "topographer",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Ohio DNR Division of Parks and Watercraf: no polygon at the pin",
     "A Ohio DNR Division of Wildlife: no polygon at the pin",
@@ -31,12 +19,13 @@
     "A Ohio DNR, Office of Information Technolo: no polygon at the pin",
     "A Ohio DNR (credit): city, county + NGO la: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"battlefield timbers fallen\": 2 lead(s)"
+    "B ArcGIS Online search \"battlefield timbers miamis\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-9423": {
    "park": "Miller Nature Sanctuary State Nature Preserve",
+   "area": "US-OH",
    "why_not": "pin-doubt",
    "hits": [],
    "leads": [],

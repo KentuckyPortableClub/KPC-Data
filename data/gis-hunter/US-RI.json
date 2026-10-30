@@ -5,6 +5,7 @@
  "parks": {
   "US-10545": {
    "park": "Hillsdale Preserve Management Area",
+   "area": "US-RI",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -13,7 +14,9 @@
      "agency": "Rhode Island DEM",
      "record": 716,
      "record_name": "deCoppett",
-     "acres_approx": 1779
+     "acres_approx": 1779,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -21,7 +24,9 @@
      "agency": "Rhode Island DEM",
      "record": 681,
      "record_name": "deCoppett",
-     "acres_approx": 1779
+     "acres_approx": 1779,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -29,7 +34,9 @@
      "agency": "Rhode Island DEM (state conservation land)",
      "record": 716,
      "record_name": "deCoppett",
-     "acres_approx": 1779
+     "acres_approx": 1779,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -41,7 +48,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SOTH",
      "Own_Type": "STAT",
-     "GIS_Acres": 1825
+     "GIS_Acres": 1825,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -53,63 +62,41 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SOTH",
      "Own_Type": "STAT",
-     "GIS_Acres": 1825
+     "GIS_Acres": 1825,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Hillsdale conservation pool _ LiDAR 2018",
-     "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_conservation_pool___LiDAR_2018/FeatureServer",
-     "owner": "ks_biosurvey",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Hillsdale flood pool _ LiDAR 2018",
-     "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_flood_pool___LiDAR_2018/FeatureServer",
-     "owner": "ks_biosurvey",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Hillsdale Lake contours _ LiDAR 2018",
-     "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_Lake_contours___LiDAR_2018/FeatureServer",
-     "owner": "ks_biosurvey",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Rhode Island DEM: hit",
     "A Rhode Island DEM: hit",
     "A National Park Service (legal boundary): no polygon at the pin",
     "A Rhode Island DEM (state conservation lan: hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"hillsdale\": 8 lead(s)"
+    "B ArcGIS Online search \"hillsdale\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5484": {
    "park": "George Washington Memorial State Forest",
+   "area": "US-RI",
    "why_not": "pin-doubt",
    "hits": [],
-   "leads": [
-    {
-     "title": "Federal Civilian Employment of George Washington PDC",
-     "url": "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Federal_Civilian_Employment_of_George_Washington_PDC_WFL1/FeatureServer",
-     "owner": "jkaneff_NVRC",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Rhode Island DEM: no polygon at the pin",
     "A Rhode Island DEM: no polygon at the pin",
     "A National Park Service (legal boundary): no polygon at the pin",
     "A Rhode Island DEM (state conservation lan: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"washington george\": 1 lead(s)"
+    "B ArcGIS Online search \"washington george\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-6980": {
    "park": "Beach Pond Wildlife Management Area",
+   "area": "US-RI",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -125,6 +112,7 @@
   },
   "US-7723": {
    "park": "John H. Chaffee Rome Point State Nature Preserve",
+   "area": "US-RI",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -134,7 +122,7 @@
     "A National Park Service (legal boundary): no polygon at the pin",
     "A Rhode Island DEM (state conservation lan: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"chaffee point john\": 0 lead(s)"
+    "B ArcGIS Online search \"chaffee point rome\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   }

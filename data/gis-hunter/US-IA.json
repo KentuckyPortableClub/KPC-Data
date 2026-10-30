@@ -5,6 +5,7 @@
  "parks": {
   "US-11305": {
    "park": "Wapsipinicon River Water State Trail",
+   "area": "US-IA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -13,7 +14,9 @@
      "agency": "Iowa DNR",
      "record": 106115,
      "record_name": "Gambril Access",
-     "acres_approx": 3
+     "acres_approx": 3,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -25,7 +28,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "SREC",
      "Own_Type": "STAT",
-     "GIS_Acres": 5
+     "GIS_Acres": 5,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -37,19 +42,14 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"wapsipinicon water\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4572": {
    "park": "Lewis and Clark National Historic Trail",
+   "area": "US-IA",
    "why_not": "no-layer",
    "hits": [],
    "leads": [
-    {
-     "title": "LECL Lewis and Clark National Historic Trail Congressionally Designated Route",
-     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Lewis_and_Clark_National_Historic_Trail_Congressionally_Designated_Route/FeatureServer",
-     "owner": "rmcooper@nps.gov_nps",
-     "type": "Feature Service"
-    },
     {
      "title": "LECL Lewis and Clark NHT High Potential Historic Sites",
      "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/HPHS/FeatureServer",
@@ -61,6 +61,12 @@
      "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Lewis_and_Clark_Trail_Visitor_Centers_and_Museums/FeatureServer",
      "owner": "rmcooper@nps.gov_nps",
      "type": "Feature Service"
+    },
+    {
+     "title": "LECL Lewis and Clark Expedition Historic Channel of the Missouri River in 1804",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Missouri_River1804/FeatureServer",
+     "owner": "rmcooper@nps.gov_nps",
+     "type": "Feature Service"
     }
    ],
    "tried": [
@@ -69,46 +75,29 @@
     "A Iowa DNR: no polygon at the pin",
     "A Iowa DNR (credit: Iowa Department of Nat: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"lewis clark\": 8 lead(s)"
+    "B ArcGIS Online search \"lewis clark\": 6 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-4573": {
    "park": "Mormon Pioneer National Historic Trail",
+   "area": "US-IA",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Mormon Pioneer Trail",
-     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/MOPI_NHT/FeatureServer",
-     "owner": "mm.kcappelli",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Mormon Pioneer Trail (View Layer)",
-     "url": "https://services.arcgis.com/mMBpeYj0vPFotzbe/arcgis/rest/services/Mormon_Pioneer_Trail_view/FeatureServer",
-     "owner": "CameronScharrer",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Mormon Pioneer NHT",
-     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/MOPI_NHT/FeatureServer",
-     "owner": "MarkScottHenderson",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Iowa DNR: no polygon at the pin",
     "A Iowa DNR: no polygon at the pin",
     "A Iowa DNR: no polygon at the pin",
     "A Iowa DNR (credit: Iowa Department of Nat: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"pioneer mormon\": 3 lead(s)"
+    "B ArcGIS Online search \"pioneer mormon\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-9334": {
    "park": "Teal Basins State Waterfowl Management Area",
+   "area": "US-IA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -117,7 +106,9 @@
      "agency": "Iowa DNR",
      "record": 544,
      "record_name": "TEAL BASINS WPA",
-     "acres_approx": 139
+     "acres_approx": 139,
+     "tier": "LIKELY",
+     "why": "same name, different kind (management vs production)"
     },
     {
      "verdict": "name match",
@@ -125,7 +116,9 @@
      "agency": "Iowa DNR",
      "record": 106299,
      "record_name": "Teal Basins WPA",
-     "acres_approx": 139
+     "acres_approx": 139,
+     "tier": "LIKELY",
+     "why": "same name, different kind (management vs production)"
     },
     {
      "verdict": "name match",
@@ -137,7 +130,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "RMA",
      "Own_Type": "FED",
-     "GIS_Acres": 2719
+     "GIS_Acres": 2719,
+     "tier": "UNLIKELY",
+     "why": "one shared word (waterfowl) only"
     },
     {
      "verdict": "name match",
@@ -149,7 +144,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "RMA",
      "Own_Type": "FED",
-     "GIS_Acres": 2719
+     "GIS_Acres": 2719,
+     "tier": "UNLIKELY",
+     "why": "one shared word (waterfowl) only"
     }
    ],
    "leads": [],
@@ -160,7 +157,7 @@
     "A Iowa DNR (credit: Iowa Department of Nat: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   }
  }
 }

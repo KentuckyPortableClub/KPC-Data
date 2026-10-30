@@ -5,6 +5,7 @@
  "parks": {
   "US-0337": {
    "park": "Carlton Pond Wetland Management District",
+   "area": "US-ME",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -17,6 +18,7 @@
   },
   "US-10714": {
    "park": "International Appalachian Trail--Sentier International des Appalaches National Historic Trail",
+   "area": "US-ME",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -29,7 +31,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "NM",
      "Own_Type": "FED",
-     "GIS_Acres": 89562
+     "GIS_Acres": 89562,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -41,7 +45,9 @@
      "Mang_Name": "NGO",
      "Des_Tp": "PCON",
      "Own_Type": "NGO",
-     "GIS_Acres": 9675
+     "GIS_Acres": 9675,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -50,34 +56,37 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"international appalachian appalaches\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-2402": {
    "park": "Penobscot River Corridor - Katahdin Woods and Waters National Monument",
+   "area": "US-ME",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
     "A State of Maine conserved lands (Bureau o: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"penobscot katahdin corridor\": 0 lead(s)"
+    "B ArcGIS Online search \"penobscot corridor katahdin\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-7976": {
    "park": "Maine Acadian Culture National Heritage Site",
+   "area": "US-ME",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
     "A State of Maine conserved lands (Bureau o: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"heritage acadian culture\": 0 lead(s)"
+    "B ArcGIS Online search \"heritage culture acadian\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-7977": {
    "park": "Roosevelt Campobello International Park",
+   "area": "US-ME",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -90,6 +99,7 @@
   },
   "US-8287": {
    "park": "Capitol State Park",
+   "area": "US-ME",
    "why_not": "no-layer",
    "hits": [
     {
@@ -98,7 +108,9 @@
      "agency": "State of Maine conserved lands (Bureau of Parks and Lands / IFW)",
      "record": 59957,
      "record_name": "CAPITAL PARK",
-     "acres_approx": 10
+     "acres_approx": 10,
+     "tier": "SURE",
+     "why": "same proper name"
     },
     {
      "verdict": "inside-other",
@@ -110,69 +122,35 @@
      "Mang_Name": "UNK",
      "Des_Tp": "LP",
      "Own_Type": "UNK",
-     "GIS_Acres": 22
+     "GIS_Acres": 22,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
-   "leads": [
-    {
-     "title": "PLANNINGCADASTRE_overlay_capitol_view_corridors",
-     "url": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_view_corridors/FeatureServer",
-     "owner": "CTM.Publisher",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Capitol Campus points",
-     "url": "https://services9.arcgis.com/VatvCKAYJJVi8sva/arcgis/rest/services/Capitol_Campus_points/FeatureServer",
-     "owner": "DES_GIS_Support",
-     "type": "Feature Service"
-    },
-    {
-     "title": "PLANNINGCADASTRE_overlay_capitol_dominance",
-     "url": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_dominance/FeatureServer",
-     "owner": "CTM.Publisher",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A State of Maine conserved lands (Bureau o: hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"capitol\": 7 lead(s)"
+    "B ArcGIS Online search \"capitol\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-8491": {
    "park": "Bog Brook Wildlife Management Area",
+   "area": "US-ME",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "Two Foot Topographic Contours - Bow Bog Brook-Merrimack River (0107000603) - smoothed",
-     "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01070006_smooth/FeatureServer/5",
-     "owner": "NHGRANIT",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way",
-     "url": "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way/FeatureServer",
-     "owner": "awilson_linwood",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way",
-     "url": "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way/FeatureServer",
-     "owner": "awilson_linwood",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A State of Maine conserved lands (Bureau o: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"brook bog\": 3 lead(s)"
+    "B ArcGIS Online search \"brook bog\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-9174": {
    "park": "Mahoosuc Ecological Reserve",
+   "area": "US-ME",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -181,7 +159,9 @@
      "agency": "State of Maine conserved lands (Bureau of Parks and Lands / IFW)",
      "record": 10859,
      "record_name": "International Paper Company",
-     "acres_approx": 3282
+     "acres_approx": 3282,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -193,23 +173,18 @@
      "Mang_Name": "SPR",
      "Des_Tp": "LOTH",
      "Own_Type": "STAT",
-     "GIS_Acres": 3367
+     "GIS_Acres": 3367,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
-   "leads": [
-    {
-     "title": "Mahoosuc_Ridge_to_The_River_Challenge_Race_Map",
-     "url": "https://services5.arcgis.com/lqtrRsdwvTbuk1xO/arcgis/rest/services/Mahoosuc_Ridge_to_The_River_Challenge_Race_Map/FeatureServer",
-     "owner": "kirksiegel",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A State of Maine conserved lands (Bureau o: hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"mahoosuc\": 1 lead(s)"
+    "B ArcGIS Online search \"mahoosuc\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "candidate: SURE (same proper name)"
   }
  }
 }

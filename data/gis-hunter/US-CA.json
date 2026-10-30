@@ -5,6 +5,7 @@
  "parks": {
   "US-0198": {
    "park": "Kesterson National Wildlife Refuge",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -13,7 +14,9 @@
      "agency": "California Department of Fish & Wildlife",
      "record": 246,
      "record_name": "Los Banos Wildlife Area",
-     "acres_approx": 6325
+     "acres_approx": 6325,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -21,7 +24,9 @@
      "agency": "US Fish and Wildlife Service (approved boundary)",
      "record": 744,
      "record_name": "GRASSLANDS WILDLIFE MANAGEMENT AREA",
-     "acres_approx": 220254
+     "acres_approx": 220254,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -29,7 +34,9 @@
      "agency": "California Department of Fish and Wildlife (credit: CDFW, BIOS ds3092)",
      "record": 1710,
      "record_name": "Los Banos Wildlife Area",
-     "acres_approx": 2411
+     "acres_approx": 2411,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -43,10 +50,11 @@
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"kesterson\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-0754": {
    "park": "Rosie the Riveter WWII Home Front National Historical Park",
+   "area": "US-CA",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -58,12 +66,13 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"historical riveter front\": 0 lead(s)"
+    "B ArcGIS Online search \"historical riveter rosie\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-0884": {
    "park": "Kings River National Wild and Scenic River",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -76,7 +85,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 1285668
+     "GIS_Acres": 1285668,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -90,10 +101,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic kings wild\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-0915": {
    "park": "Cesar E. Chavez National Monument",
+   "area": "US-CA",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -111,6 +123,7 @@
   },
   "US-10400": {
    "park": "Trona Pinnacles National Geologic Trail",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -119,7 +132,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 608,
      "record_name": "Trona Pinnacles",
-     "acres_approx": 4033
+     "acres_approx": 4033,
+     "tier": "LIKELY",
+     "why": "shared pinnacle, trona; extra: park geologic / record -"
     },
     {
      "verdict": "inside-other",
@@ -131,7 +146,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1797315
+     "GIS_Acres": 1797315,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -144,10 +161,11 @@
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-10402": {
    "park": "Cow Mountain BLM Special Recreation Management Area",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -160,7 +178,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 267019
+     "GIS_Acres": 267019,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -174,10 +194,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"mountain special cow\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11336": {
    "park": "Rainbow Basin Natural Area",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -186,7 +207,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 498,
      "record_name": "Rainbow Basin/Owl Canyon",
-     "acres_approx": 4090
+     "acres_approx": 4090,
+     "tier": "LIKELY",
+     "why": "shared basin, rainbow; extra: park - / record canyon, owl"
     },
     {
      "verdict": "inside-other",
@@ -198,7 +221,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 2723972
+     "GIS_Acres": 2723972,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -211,10 +236,11 @@
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-11580": {
    "park": "Red Hills BLM Recreation Management Area",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -223,7 +249,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 568,
      "record_name": "Red Hills",
-     "acres_approx": 9889
+     "acres_approx": 9889,
+     "tier": "SURE",
+     "why": "same proper name"
     },
     {
      "verdict": "inside-other",
@@ -235,7 +263,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 230415
+     "GIS_Acres": 230415,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -248,10 +278,11 @@
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-11582": {
    "park": "Griswold Hills BLM Special Recreation Management Area",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -264,7 +295,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 288263
+     "GIS_Acres": 288263,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -278,10 +311,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"griswold special hills\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11583": {
    "park": "Tumey Hills BLM Special Recreation Management Area",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -290,7 +324,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 463,
      "record_name": "Panoche/Coalinga",
-     "acres_approx": 54843
+     "acres_approx": 54843,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -302,7 +338,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 288263
+     "GIS_Acres": 288263,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -314,12 +352,13 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"special tumey hills\": 0 lead(s)"
+    "B ArcGIS Online search \"special hills tumey\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11584": {
    "park": "Panoche Hills BLM Special Recreation Management Area",
+   "area": "US-CA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -328,7 +367,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 463,
      "record_name": "Panoche/Coalinga",
-     "acres_approx": 54843
+     "acres_approx": 54843,
+     "tier": "LIKELY",
+     "why": "shared panoche; extra: park hill, special / record coalinga"
     },
     {
      "verdict": "inside-other",
@@ -340,7 +381,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 288263
+     "GIS_Acres": 288263,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -353,10 +396,11 @@
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-12616": {
    "park": "Black Butte Lake Park",
+   "area": "US-CA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -374,6 +418,7 @@
   },
   "US-12957": {
    "park": "Stoddard Valley BLM Special Recreation Management Area",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -382,7 +427,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 10841,
      "record_name": "Stoddard/Johnson",
-     "acres_approx": 362108
+     "acres_approx": 362108,
+     "tier": "UNLIKELY",
+     "why": "part of the name shared, record 362,108 ac far bigger than this kind of place"
     },
     {
      "verdict": "inside-other",
@@ -394,7 +441,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 2723972
+     "GIS_Acres": 2723972,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -407,10 +456,11 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13334": {
    "park": "Sacramento River Bend BLM Recreation Management Area",
+   "area": "US-CA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -419,7 +469,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 497,
      "record_name": "Sacramento River Bend",
-     "acres_approx": 20274
+     "acres_approx": 20274,
+     "tier": "SURE",
+     "why": "same proper name"
     },
     {
      "verdict": "inside-other",
@@ -431,7 +483,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 252406
+     "GIS_Acres": 252406,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -444,10 +498,11 @@
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-13499": {
    "park": "Swasey Mule Mountain BLM Recreation Management Area",
+   "area": "US-CA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -456,7 +511,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 648,
      "record_name": "Swasey Drive",
-     "acres_approx": 470
+     "acres_approx": 470,
+     "tier": "LIKELY",
+     "why": "shared swasey; extra: park mountain, mule / record drive"
     },
     {
      "verdict": "inside-other",
@@ -468,7 +525,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 252406
+     "GIS_Acres": 252406,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -481,10 +540,11 @@
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-13513": {
    "park": "Laguna Mountain Area BLM Recreation Management Area",
+   "area": "US-CA",
    "why_not": "no-layer",
    "hits": [
     {
@@ -497,17 +557,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 288263
+     "GIS_Acres": 288263,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Mount Laguna and Carrizo Mountain",
-     "url": "https://services6.arcgis.com/zX3RUXcV2Ha1zcWA/arcgis/rest/services/Mount_Laguna_and_Carrizo_Mountain/FeatureServer",
-     "owner": "GMF2020",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A California Department of Fish & Wildlife: no polygon at the pin",
     "A California State Parks: no polygon at the pin",
@@ -516,34 +571,16 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"mountain laguna\": 1 lead(s)"
+    "B ArcGIS Online search \"mountain laguna\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13581": {
    "park": "Clear Creek BLM Recreation Management Area",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [],
-   "leads": [
-    {
-     "title": "Pre Clear Vegetation 2021 view",
-     "url": "https://services-ap1.arcgis.com/lnVW0dLI3fvST2hd/arcgis/rest/services/Pre_Clear_Vegetation_2021_view/FeatureServer",
-     "owner": "CoGC_Admin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Hagerstown Regional Airport Clear Zones",
-     "url": "https://services2.arcgis.com/uxxyl33jRTSmjre5/arcgis/rest/services/Airport_Clear_Zones/FeatureServer",
-     "owner": "jrathvon@washco_md.net_washcomd",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Clear Creek County, CO Buildings",
-     "url": "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Clear_Creek_County_CO_Buildings/FeatureServer",
-     "owner": "dkensok_osm",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A California Department of Fish & Wildlife: no polygon at the pin",
     "A California State Parks: no polygon at the pin",
@@ -552,12 +589,13 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"clear\": 3 lead(s)"
+    "B ArcGIS Online search \"clear\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-3578": {
    "park": "Tijuana Estuary Reserve State Conservation Area",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -566,7 +604,9 @@
      "agency": "California State Parks",
      "record": 648,
      "record_name": "Border Field SP",
-     "acres_approx": 1440
+     "acres_approx": 1440,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -574,7 +614,9 @@
      "agency": "US Fish and Wildlife Service (approved boundary)",
      "record": 715,
      "record_name": "TIJUANA SLOUGH NATIONAL WILDLIFE REFUGE",
-     "acres_approx": 1521
+     "acres_approx": 1521,
+     "tier": "LIKELY",
+     "why": "shared tijuana; extra: park estuary / record slough"
     },
     {
      "verdict": "inside-other",
@@ -586,7 +628,9 @@
      "Mang_Name": "DOD",
      "Des_Tp": "MIL",
      "Own_Type": "DESG",
-     "GIS_Acres": 1205
+     "GIS_Acres": 1205,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name match",
@@ -598,7 +642,9 @@
      "Mang_Name": "FWS",
      "Des_Tp": "NWR",
      "Own_Type": "FED",
-     "GIS_Acres": 1059
+     "GIS_Acres": 1059,
+     "tier": "LIKELY",
+     "why": "shared tijuana; extra: park estuary / record slough"
     }
    ],
    "leads": [],
@@ -611,10 +657,11 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-6448": {
    "park": "William Randolph Hearst Memorial State Beach",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -623,7 +670,9 @@
      "agency": "California State Parks",
      "record": 798,
      "record_name": "Hearst San Simeon SP",
-     "acres_approx": 1684
+     "acres_approx": 1684,
+     "tier": "UNLIKELY",
+     "why": "one shared word (hearst) only"
     },
     {
      "verdict": "name match",
@@ -635,7 +684,9 @@
      "Mang_Name": "SPR",
      "Des_Tp": "SP",
      "Own_Type": "STAT",
-     "GIS_Acres": 7
+     "GIS_Acres": 7,
+     "tier": "UNLIKELY",
+     "why": "one shared word (hearst) only"
     }
    ],
    "leads": [],
@@ -648,10 +699,11 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7375": {
    "park": "Cowell Ranch State Beach",
+   "area": "US-CA",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -663,12 +715,13 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"cowell beach ranch\": 0 lead(s)"
+    "B ArcGIS Online search \"cowell ranch beach\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-7888": {
    "park": "Alcatraz Island National Historic Site",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -681,7 +734,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "NRA",
      "Own_Type": "FED",
-     "GIS_Acres": 34888
+     "GIS_Acres": 34888,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -695,10 +750,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"alcatraz island\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7889": {
    "park": "Presidio of SF National Historic Site",
+   "area": "US-CA",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -711,29 +767,12 @@
      "Mang_Name": "NPS",
      "Des_Tp": "NRA",
      "Own_Type": "FED",
-     "GIS_Acres": 34888
+     "GIS_Acres": 34888,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Existing Vegetation at the Presidio",
-     "url": "https://services5.arcgis.com/KS6joEEoa0G4EO56/arcgis/rest/services/Existing_Vegetation_at_the_Presidio/FeatureServer",
-     "owner": "petronilamandeno",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Presidio Trust Boundary",
-     "url": "https://services5.arcgis.com/KS6joEEoa0G4EO56/arcgis/rest/services/Presidio_Trust_Boundary/FeatureServer",
-     "owner": "petronilamandeno",
-     "type": "Feature Service"
-    },
-    {
-     "title": "1797 Plano del Presidio de San Agustin",
-     "url": "https://tiles.arcgis.com/tiles/9lVOGNODRgsFxu7n/arcgis/rest/services/Castillo_Berrio_1797/MapServer",
-     "owner": "bmittler_DHHC",
-     "type": "Map Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A California Department of Fish & Wildlife: no polygon at the pin",
     "A California State Parks: no polygon at the pin",
@@ -742,9 +781,9 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"presidio\": 3 lead(s)"
+    "B ArcGIS Online search \"presidio\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }
  }
 }

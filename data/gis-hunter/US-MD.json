@@ -5,6 +5,7 @@
  "parks": {
   "US-10751": {
    "park": "Idylwild Natural Area",
+   "area": "US-MD",
    "why_not": "no-layer",
    "hits": [
     {
@@ -13,7 +14,9 @@
      "agency": "Maryland DNR (state parks, WMAs, forests, natural resource areas)",
      "record": 319,
      "record_name": "IDYLWILD WMA",
-     "acres_approx": 3583
+     "acres_approx": 3583,
+     "tier": "LIKELY",
+     "why": "same name, different kind (natural vs management wildlife)"
     },
     {
      "verdict": "name mismatch",
@@ -21,7 +24,9 @@
      "agency": "Maryland DNR (Maryland Natural Areas)",
      "record": 16,
      "record_name": "Idywild",
-     "acres_approx": 1541
+     "acres_approx": 1541,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
    "leads": [],
@@ -30,10 +35,11 @@
     "A Maryland DNR (Maryland Natural Areas): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-11231": {
    "park": "Sideling Hill Creek State Park",
+   "area": "US-MD",
    "why_not": "no-layer",
    "hits": [
     {
@@ -42,7 +48,9 @@
      "agency": "Maryland DNR (state parks, WMAs, forests, natural resource areas)",
      "record": 334,
      "record_name": "SIDELING HILL WMA",
-     "acres_approx": 3473
+     "acres_approx": 3473,
+     "tier": "LIKELY",
+     "why": "shared hill, sideling; extra: park creek / record -"
     },
     {
      "verdict": "name match",
@@ -54,7 +62,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "SCA",
      "Own_Type": "STAT",
-     "GIS_Acres": 3384
+     "GIS_Acres": 3384,
+     "tier": "LIKELY",
+     "why": "shared hill, sideling; extra: park creek / record -"
     }
    ],
    "leads": [],
@@ -63,10 +73,11 @@
     "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-13564": {
    "park": "Savage Highlands State Park",
+   "area": "US-MD",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -75,7 +86,9 @@
      "agency": "Maryland DNR (state parks, WMAs, forests, natural resource areas)",
      "record": 132,
      "record_name": "SAVAGE RIVER SF",
-     "acres_approx": 54941
+     "acres_approx": 54941,
+     "tier": "LIKELY",
+     "why": "shared savage; extra: park highland / record river"
     },
     {
      "verdict": "name match",
@@ -83,7 +96,9 @@
      "agency": "Maryland DNR (state parks, WMAs, forests, natural resource areas)",
      "record": 406,
      "record_name": "SAVAGE RIVER SF\t",
-     "acres_approx": 25
+     "acres_approx": 25,
+     "tier": "LIKELY",
+     "why": "shared savage; extra: park highland / record river"
     }
    ],
    "leads": [],
@@ -92,10 +107,11 @@
     "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-6388": {
    "park": "Helen Avalynne Tawes Garden State Park",
+   "area": "US-MD",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -103,12 +119,13 @@
     "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
     "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"avalynne garden helen\": 0 lead(s)"
+    "B ArcGIS Online search \"avalynne garden tawes\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-6389": {
    "park": "Jefferson Patterson Park and Museum State Park",
+   "area": "US-MD",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -116,12 +133,13 @@
     "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
     "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"jefferson patterson museum\": 0 lead(s)"
+    "B ArcGIS Online search \"patterson jefferson museum\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-7768": {
    "park": "Frederick City Watershed Cooperative Wildlife Management Area",
+   "area": "US-MD",
    "why_not": "no-layer",
    "hits": [
     {
@@ -134,7 +152,9 @@
      "Mang_Name": "UNK",
      "Des_Tp": "LOTH",
      "Own_Type": "LOC",
-     "GIS_Acres": 5186
+     "GIS_Acres": 5186,
+     "tier": "LIKELY",
+     "why": "shared frederick; extra: park cooperative, watershed / record -"
     }
    ],
    "leads": [],
@@ -143,10 +163,11 @@
     "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-7776": {
    "park": "Oxon Cove Park & Farm National Historical Park",
+   "area": "US-MD",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -159,7 +180,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "SDA",
      "Own_Type": "FED",
-     "GIS_Acres": 2364
+     "GIS_Acres": 2364,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -167,12 +190,13 @@
     "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
     "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"historical cove farm\": 0 lead(s)"
+    "B ArcGIS Online search \"historical cove oxon\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7973": {
    "park": "Baltimore-Washington National Parkway",
+   "area": "US-MD",
    "why_not": "no-layer",
    "hits": [
     {
@@ -185,7 +209,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "SDA",
      "Own_Type": "FED",
-     "GIS_Acres": 1079
+     "GIS_Acres": 1079,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -195,10 +221,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"washington baltimore parkway\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7974": {
    "park": "Harmony Hall National Heritage Site",
+   "area": "US-MD",
    "why_not": "no-layer",
    "hits": [
     {
@@ -211,7 +238,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "SDA",
      "Own_Type": "FED",
-     "GIS_Acres": 2364
+     "GIS_Acres": 2364,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -221,10 +250,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"heritage harmony hall\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7975": {
    "park": "Glen Echo National Heritage Site",
+   "area": "US-MD",
    "why_not": "no-layer",
    "hits": [
     {
@@ -237,7 +267,9 @@
      "Mang_Name": "NPS",
      "Des_Tp": "SDA",
      "Own_Type": "FED",
-     "GIS_Acres": 2364
+     "GIS_Acres": 2364,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -247,7 +279,7 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"heritage glen echo\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }
  }
 }

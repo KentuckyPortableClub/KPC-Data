@@ -5,6 +5,7 @@
  "parks": {
   "US-1021": {
    "park": "Sangchris Lake State Park",
+   "area": "US-IL",
    "why_not": "pin-doubt",
    "hits": [
     {
@@ -13,7 +14,9 @@
      "agency": "Illinois Department of Natural Resources",
      "record": 2173,
      "record_name": "Sangchris Lake State Resource Area",
-     "acres_approx": 851
+     "acres_approx": 851,
+     "tier": "LIKELY",
+     "why": "shared lake, sangchri; extra: park - / record resource"
     }
    ],
    "leads": [],
@@ -22,10 +25,11 @@
     "A Illinois Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-10391": {
    "park": "Kishwaukee River State Fish and Wildlife Area",
+   "area": "US-IL",
    "why_not": "no-layer",
    "hits": [
     {
@@ -34,7 +38,9 @@
      "agency": "Illinois Department of Natural Resources",
      "record": 939,
      "record_name": "Kishwaukee River State Natural Area",
-     "acres_approx": 582
+     "acres_approx": 582,
+     "tier": "LIKELY",
+     "why": "same name, different kind (fish wildlife vs natural)"
     },
     {
      "verdict": "name match",
@@ -46,7 +52,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "UNK",
      "Own_Type": "STAT",
-     "GIS_Acres": 546
+     "GIS_Acres": 546,
+     "tier": "LIKELY",
+     "why": "same name, different kind (fish wildlife vs natural)"
     }
    ],
    "leads": [],
@@ -55,10 +63,11 @@
     "A Illinois Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-10661": {
    "park": "Oakwood Bottoms USFS Recreation Area",
+   "area": "US-IL",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -67,7 +76,9 @@
      "agency": "Illinois Department of Natural Resources",
      "record": 1712,
      "record_name": "Shawnee National Forest",
-     "acres_approx": 161866
+     "acres_approx": 161866,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -79,7 +90,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 273706
+     "GIS_Acres": 273706,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -88,10 +101,11 @@
     "A Illinois Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10788": {
    "park": "Ray Norbut East Hannibal Unit State Fish and Wildlife Area",
+   "area": "US-IL",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -100,7 +114,9 @@
      "agency": "Illinois Department of Natural Resources",
      "record": 1150,
      "record_name": "Miscellaneous Property",
-     "acres_approx": 30
+     "acres_approx": 30,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -112,7 +128,9 @@
      "Mang_Name": "SDNR",
      "Des_Tp": "UNK",
      "Own_Type": "STAT",
-     "GIS_Acres": 104
+     "GIS_Acres": 104,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -121,10 +139,11 @@
     "A Illinois Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12640": {
    "park": "Rauchfuss Hill State Recreation Area",
+   "area": "US-IL",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -133,7 +152,9 @@
      "agency": "Illinois Department of Natural Resources",
      "record": 1214,
      "record_name": "Golconda Marina State Recreation Area",
-     "acres_approx": 517
+     "acres_approx": 517,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -142,10 +163,11 @@
     "A Illinois Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13298": {
    "park": "North Point Marina State Recreation Area",
+   "area": "US-IL",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -154,7 +176,9 @@
      "agency": "Illinois Department of Natural Resources",
      "record": 1422,
      "record_name": "Adeline Jay Geo-Karis Illinois Beach State Park",
-     "acres_approx": 2889
+     "acres_approx": 2889,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -166,7 +190,9 @@
      "Mang_Name": "SDC",
      "Des_Tp": "SP",
      "Own_Type": "STAT",
-     "GIS_Acres": 3186
+     "GIS_Acres": 3186,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -175,10 +201,11 @@
     "A Illinois Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4118": {
    "park": "Copperhead Hollow State Wildlife Area",
+   "area": "US-IL",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -187,7 +214,9 @@
      "agency": "Illinois Department of Natural Resources",
      "record": 1404,
      "record_name": "Pere Marquette State Park",
-     "acres_approx": 9843
+     "acres_approx": 9843,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -196,10 +225,11 @@
     "A Illinois Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4153": {
    "park": "Kaskaskia unit of Shelbyville State Fish and Wildlife Area",
+   "area": "US-IL",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -208,7 +238,9 @@
      "agency": "Illinois Department of Natural Resources",
      "record": 1080,
      "record_name": "Shelbyville State Fish and Wildlife Area",
-     "acres_approx": 6270
+     "acres_approx": 6270,
+     "tier": "LIKELY",
+     "why": "shared shelbyville; extra: park kaskaskia / record -"
     }
    ],
    "leads": [],
@@ -217,10 +249,11 @@
     "A Illinois Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-4154": {
    "park": "West Okaw unit of Shelbyville State Fish and Wildlife Area",
+   "area": "US-IL",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -229,7 +262,9 @@
      "agency": "Illinois Department of Natural Resources",
      "record": 1080,
      "record_name": "Shelbyville State Fish and Wildlife Area",
-     "acres_approx": 6270
+     "acres_approx": 6270,
+     "tier": "LIKELY",
+     "why": "shared shelbyville; extra: park okaw, west / record -"
     }
    ],
    "leads": [],
@@ -238,7 +273,7 @@
     "A Illinois Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   }
  }
 }

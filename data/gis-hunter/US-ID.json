@@ -5,6 +5,7 @@
  "parks": {
   "US-0280": {
    "park": "Oxford Slough Wetland Management District",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -15,12 +16,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"district wetland oxford\": 0 lead(s)"
+    "B ArcGIS Online search \"district wetland slough\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-10006": {
    "park": "Idaho Centennial Trail State Trail",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -33,29 +35,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1321755
+     "GIS_Acres": 1321755,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Idaho Centennial Trail_View (Official Route)",
-     "url": "https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Centennial_Trail_(Official_Route)_view/FeatureServer",
-     "owner": "State_of_Idaho",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Idaho Centennial Trail Maintenance view",
-     "url": "https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Centennial_Trail_Maintenance_view/FeatureServer",
-     "owner": "hbrookins_idpr",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Idaho Centennial Trail Points of Interest view",
-     "url": "https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Centennial_Trail_Points_of_Interest_view/FeatureServer",
-     "owner": "hbrookins_idpr",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Idaho Fish & Game: no answer (404)",
     "A Idaho Department of Fish and Game (Hydro: no answer (404)",
@@ -63,12 +48,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"centennial idaho\": 8 lead(s)"
+    "B ArcGIS Online search \"centennial idaho\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10070": {
    "park": "Menan Buttes (BLM) Natural Monument",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -77,7 +63,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13921,
      "record_name": "Snake River",
-     "acres_approx": 144393
+     "acres_approx": 144393,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "inside-other",
@@ -85,7 +73,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1123,
      "record_name": "Snake River ",
-     "acres_approx": 143199
+     "acres_approx": 143199,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "inside-other",
@@ -93,7 +83,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 877,
      "record_name": "Snake River",
-     "acres_approx": 144392
+     "acres_approx": 144392,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "inside-other",
@@ -105,7 +97,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1813172
+     "GIS_Acres": 1813172,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -118,10 +112,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"monument buttes menan\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10072": {
    "park": "Big Southern Butte (BLM) Natural Monument",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -134,7 +129,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1813172
+     "GIS_Acres": 1813172,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -147,10 +144,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"monument southern butte\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10268": {
    "park": "Hoodoo Meadows Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -163,7 +161,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 1774122
+     "GIS_Acres": 1774122,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -176,10 +176,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"airstrip meadows hoodoo\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10304": {
    "park": "Experimental Breeder Reactor-1 (DOE) National Historic Site",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -192,7 +193,9 @@
      "Mang_Name": "DOE",
      "Des_Tp": "FOTH",
      "Own_Type": "UNK",
-     "GIS_Acres": 567306
+     "GIS_Acres": 567306,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -203,12 +206,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"experimental breeder reactor\": 0 lead(s)"
+    "B ArcGIS Online search \"experimental reactor breeder\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10418": {
    "park": "Western Heritage National Scenic Byway National Parkway",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -217,7 +221,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13802,
      "record_name": "Canyon",
-     "acres_approx": 28308
+     "acres_approx": 28308,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -225,7 +231,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 816,
      "record_name": "Canyon",
-     "acres_approx": 28304
+     "acres_approx": 28304,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -237,7 +245,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1255575
+     "GIS_Acres": 1255575,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -248,12 +258,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"heritage western parkway\": 0 lead(s)"
+    "B ArcGIS Online search \"heritage parkway western\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10419": {
    "park": "Payette River National Scenic Byway National Parkway",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -270,6 +281,7 @@
   },
   "US-10420": {
    "park": "Pioneer Historic National Scenic Byway National Parkway",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -280,12 +292,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"pioneer parkway scenic\": 0 lead(s)"
+    "B ArcGIS Online search \"parkway pioneer scenic\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-10421": {
    "park": "International Selkirk Loop National Scenic Byway National Parkway",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -302,6 +315,7 @@
   },
   "US-10422": {
    "park": "Northwest Passage National Scenic Byway National Parkway",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -314,7 +328,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 1682090
+     "GIS_Acres": 1682090,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -327,10 +343,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"northwest parkway passage\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10423": {
    "park": "Pend Oreille National Scenic Byway National Parkway",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -343,7 +360,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 898213
+     "GIS_Acres": 898213,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -356,10 +375,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"parkway oreille scenic\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10427": {
    "park": "Thomas Creek Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -372,7 +392,9 @@
      "Mang_Name": "SDOL",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 1982653
+     "GIS_Acres": 1982653,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     }
    ],
    "leads": [],
@@ -385,10 +407,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"airstrip thomas\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10429": {
    "park": "Middle Fork Clearwater River National Wild & Scenic River",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -401,7 +424,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2109873
+     "GIS_Acres": 2109873,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -412,12 +437,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"clearwater scenic middle\": 0 lead(s)"
+    "B ArcGIS Online search \"clearwater middle scenic\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10430": {
    "park": "St Joe River National Wild and Scenic River",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -430,7 +456,9 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "TRIBL",
      "Own_Type": "DESG",
-     "GIS_Acres": 343329
+     "GIS_Acres": 343329,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -443,10 +471,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"scenic wild joe\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10431": {
    "park": "Cabinet Gorge State Fish Hatchery",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -459,7 +488,9 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SOTH",
      "Own_Type": "PVT",
-     "GIS_Acres": 29
+     "GIS_Acres": 29,
+     "tier": "SURE",
+     "why": "same proper name (hatchery)"
     }
    ],
    "leads": [],
@@ -471,10 +502,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-10433": {
    "park": "Eagle State Fish Hatchery",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -491,6 +523,7 @@
   },
   "US-11089": {
    "park": "Ted Trueblood Wildlife Habitat Area State Wildlife Habitat Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -499,7 +532,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13802,
      "record_name": "Canyon",
-     "acres_approx": 28308
+     "acres_approx": 28308,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -507,7 +542,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 816,
      "record_name": "Canyon",
-     "acres_approx": 28304
+     "acres_approx": 28304,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -519,7 +556,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1255575
+     "GIS_Acres": 1255575,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "name match",
@@ -531,7 +570,9 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SCA",
      "Own_Type": "FED",
-     "GIS_Acres": 342
+     "GIS_Acres": 342,
+     "tier": "SURE",
+     "why": "same proper name (wildlife)"
     }
    ],
    "leads": [],
@@ -543,10 +584,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-11157": {
    "park": "Lava Hot Springs State Recreation Site",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -559,17 +601,12 @@
      "Mang_Name": "OTHS",
      "Des_Tp": "SOTH",
      "Own_Type": "STAT",
-     "GIS_Acres": 517
+     "GIS_Acres": 517,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
-   "leads": [
-    {
-     "title": "Lava Hot Springs Parcels",
-     "url": "https://services3.arcgis.com/unGRzvbK9SNTRUps/arcgis/rest/services/Lava_Hot_Springs_Parcels/FeatureServer",
-     "owner": "StrategicCommunites",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Idaho Fish & Game: no answer (404)",
     "A Idaho Department of Fish and Game (Hydro: no answer (404)",
@@ -577,12 +614,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"springs lava hot\": 1 lead(s)"
+    "B ArcGIS Online search \"springs lava hot\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11183": {
    "park": "Joe T. Fallini Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -591,7 +629,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13914,
      "record_name": "Mackay Reservoir",
-     "acres_approx": 103
+     "acres_approx": 103,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -599,7 +639,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 834,
      "record_name": "Mackay Reservoir",
-     "acres_approx": 103
+     "acres_approx": 103,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -611,7 +653,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 792074
+     "GIS_Acres": 792074,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -624,10 +668,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"fallini joe\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11254": {
    "park": "Silver Creek North and South BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -638,12 +683,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"silver south north\": 0 lead(s)"
+    "B ArcGIS Online search \"silver north south\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-11255": {
    "park": "Weiser Dunes Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -652,7 +698,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13777,
      "record_name": "Oxbow Brownlee",
-     "acres_approx": 4791
+     "acres_approx": 4791,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -660,7 +708,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 819,
      "record_name": "Oxbow Brownlee",
-     "acres_approx": 4791
+     "acres_approx": 4791,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -672,7 +722,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1255575
+     "GIS_Acres": 1255575,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -685,10 +737,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"weiser dunes\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11256": {
    "park": "Brownlee/Oxbow Reservoir BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -705,6 +758,7 @@
   },
   "US-11260": {
    "park": "North Fork Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -713,7 +767,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 810,
      "record_name": "North Fork Owyhee Backcountry",
-     "acres_approx": 57438
+     "acres_approx": 57438,
+     "tier": "UNLIKELY",
+     "why": "part of the name shared, record 57,438 ac far bigger than this kind of place"
     },
     {
      "verdict": "inside-other",
@@ -725,7 +781,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1259662
+     "GIS_Acres": 1259662,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -737,10 +795,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11261": {
    "park": "Big Cottonwood BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -749,7 +808,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13897,
      "record_name": "Jarbidge Forks",
-     "acres_approx": 1903
+     "acres_approx": 1903,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -757,7 +818,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 838,
      "record_name": "Jarbidge Forks",
-     "acres_approx": 1903
+     "acres_approx": 1903,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -769,23 +832,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1321755
+     "GIS_Acres": 1321755,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Big_Cottonwood_Creek",
-     "url": "https://services6.arcgis.com/mGvwEqK9FI5j4ecF/arcgis/rest/services/Big_Cottonwood_Creek/FeatureServer",
-     "owner": "joe_bolton",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Buffer_of_Big_Cottonwood_Canyon_Data_Final",
-     "url": "https://services1.arcgis.com/DJP723NX3ukQ2LtF/arcgis/rest/services/Buffer_of_Big_Cottonwood_Canyon_Data_Final/FeatureServer",
-     "owner": "TArnold@slco.org_slco",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Idaho Fish & Game: no answer (404)",
     "A Idaho Department of Fish and Game (Hydro: no answer (404)",
@@ -793,12 +845,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"cottonwood big\": 2 lead(s)"
+    "B ArcGIS Online search \"cottonwood big\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11275": {
    "park": "Bayhorse Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -811,7 +864,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2197868
+     "GIS_Acres": 2197868,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -824,10 +879,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"bayhorse\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11276": {
    "park": "Cottonwood Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -836,7 +892,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13919,
      "record_name": "Upper Salmon River",
-     "acres_approx": 107279
+     "acres_approx": 107279,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -844,7 +902,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 865,
      "record_name": "Upper Salmon River",
-     "acres_approx": 107280
+     "acres_approx": 107280,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -856,29 +916,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 792074
+     "GIS_Acres": 792074,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Cottonwood Canyon Weather Monitoring Data",
-     "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cottonwood_Canyon_Weather_FME/FeatureServer",
-     "owner": "bteran@utah.gov_uplan",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Cottonwood Canyons Route Travel Times",
-     "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/CottonwoodCanyonRoutes/FeatureServer",
-     "owner": "bteran@utah.gov_uplan",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Cottonwood Debris Flow Analysis",
-     "url": "https://services6.arcgis.com/KaHXE9OkiB9e63uE/arcgis/rest/services/Cottonwood_Debris_Flow/FeatureServer",
-     "owner": "Mitigation3@UtahDEM",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Idaho Fish & Game: no answer (404)",
     "A Idaho Department of Fish and Game (Hydro: no answer (404)",
@@ -886,12 +929,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"cottonwood\": 7 lead(s)"
+    "B ArcGIS Online search \"cottonwood\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11277": {
    "park": "Deadman Hole Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -900,7 +944,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13919,
      "record_name": "Upper Salmon River",
-     "acres_approx": 107279
+     "acres_approx": 107279,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -908,7 +954,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 865,
      "record_name": "Upper Salmon River",
-     "acres_approx": 107280
+     "acres_approx": 107280,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -920,7 +968,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 792074
+     "GIS_Acres": 792074,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -933,10 +983,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"deadman hole\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11278": {
    "park": "East Fork Recreation Site BLM Special Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -945,7 +996,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13919,
      "record_name": "Upper Salmon River",
-     "acres_approx": 107279
+     "acres_approx": 107279,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -953,7 +1006,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 865,
      "record_name": "Upper Salmon River",
-     "acres_approx": 107280
+     "acres_approx": 107280,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -965,17 +1020,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 792074
+     "GIS_Acres": 792074,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "GIP First Year Plantation Stand Units - East Fork Lewis River -",
-     "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Proposed_Units_Efk_Lewis_20250513_/FeatureServer",
-     "owner": "USFSRegion06",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Idaho Fish & Game: no answer (404)",
     "A Idaho Department of Fish and Game (Hydro: no answer (404)",
@@ -983,12 +1033,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"special east fork\": 1 lead(s)"
+    "B ArcGIS Online search \"special east fork\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11279": {
    "park": "Garden Creek Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -997,7 +1048,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13906,
      "record_name": "Upper Big Lost River",
-     "acres_approx": 4611
+     "acres_approx": 4611,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -1005,7 +1058,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 835,
      "record_name": "Upper Big Lost River",
-     "acres_approx": 4611
+     "acres_approx": 4611,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -1017,17 +1072,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 792074
+     "GIS_Acres": 792074,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Show Garden Relocations",
-     "url": "https://services-eu1.arcgis.com/fmBEHcawbtSMmEc0/arcgis/rest/services/Show_Garden_Relocations___16_10_2025/FeatureServer",
-     "owner": "davidmorgan_RHSnfp",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Idaho Fish & Game: no answer (404)",
     "A Idaho Department of Fish and Game (Hydro: no answer (404)",
@@ -1035,12 +1085,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"garden\": 1 lead(s)"
+    "B ArcGIS Online search \"garden\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11280": {
    "park": "Little Boulder Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1053,7 +1104,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 792074
+     "GIS_Acres": 792074,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -1066,10 +1119,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"boulder little\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11281": {
    "park": "Morgan Creek Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1082,29 +1136,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 792074
+     "GIS_Acres": 792074,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "R1 Morgan State St Study Segments",
-     "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Study_Segments/FeatureServer",
-     "owner": "cmccullock@jub.com_uplan",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Morgan State St Active Transportation",
-     "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Active_Transportation/FeatureServer",
-     "owner": "cmccullock@jub.com_uplan",
-     "type": "Feature Service"
-    },
-    {
-     "title": "R1 Morgan State St Intersections",
-     "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Intersections/FeatureServer",
-     "owner": "cmccullock@jub.com_uplan",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Idaho Fish & Game: no answer (404)",
     "A Idaho Department of Fish and Game (Hydro: no answer (404)",
@@ -1112,12 +1149,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"morgan\": 8 lead(s)"
+    "B ArcGIS Online search \"morgan\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11282": {
    "park": "Summit Creek Recreation Area BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1126,7 +1164,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1194,
      "record_name": "Summit Creek ",
-     "acres_approx": 122
+     "acres_approx": 122,
+     "tier": "SURE",
+     "why": "same proper name"
     },
     {
      "verdict": "inside-other",
@@ -1138,7 +1178,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 792074
+     "GIS_Acres": 792074,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -1150,10 +1192,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-11283": {
    "park": "Hammer Creek Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1162,7 +1205,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13874,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -1170,29 +1215,12 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 864,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Hammer_Sources",
-     "url": "https://services3.arcgis.com/GMycIhSIBQnnjV35/arcgis/rest/services/Hammer_Sources/FeatureServer",
-     "owner": "richard_ribbans",
-     "type": "Feature Service"
-    },
-    {
-     "title": "MP RV Lot Hammer Head View Layer",
-     "url": "https://services.arcgis.com/3cD3npevdeqC4ysX/arcgis/rest/services/MP_RV_Lot_Hammer_Head_View_Layer/FeatureServer",
-     "owner": "LSD@MPHOA",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Hammer Head New_WSL1",
-     "url": "https://services7.arcgis.com/DhfyqU8QquiNHjoe/arcgis/rest/services/Hammer_Head_New_WSL1/FeatureServer",
-     "owner": "pinnacleinfotech",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Idaho Fish & Game: no answer (404)",
     "A Idaho Department of Fish and Game (Hydro: no answer (404)",
@@ -1200,12 +1228,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"hammer\": 4 lead(s)"
+    "B ArcGIS Online search \"hammer\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11284": {
    "park": "Island Bar Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1214,7 +1243,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13874,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -1222,17 +1253,12 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 864,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Bar Island Trail map",
-     "url": "https://services1.arcgis.com/0EOqWPtpCmgQr2ay/arcgis/rest/services/Bar_Island_Trail_map/FeatureServer",
-     "owner": "avaher21@COAGIS",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Idaho Fish & Game: no answer (404)",
     "A Idaho Department of Fish and Game (Hydro: no answer (404)",
@@ -1240,12 +1266,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"island bar\": 1 lead(s)"
+    "B ArcGIS Online search \"island bar\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11285": {
    "park": "Lucile Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1254,7 +1281,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13874,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -1262,7 +1291,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 864,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -1275,10 +1306,11 @@
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"lucile\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11286": {
    "park": "Pine Bar Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1287,7 +1319,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13876,
      "record_name": "Lower Salmon Scenic",
-     "acres_approx": 20471
+     "acres_approx": 20471,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -1295,7 +1329,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 827,
      "record_name": "Lower Salmon Scenic",
-     "acres_approx": 20471
+     "acres_approx": 20471,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -1307,7 +1343,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 131336
+     "GIS_Acres": 131336,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -1320,10 +1358,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"pine bar\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11287": {
    "park": "Shorts Bar Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1332,7 +1371,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13874,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -1340,7 +1381,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 864,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -1353,10 +1396,11 @@
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"shorts bar\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11288": {
    "park": "Slate Creek Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1365,7 +1409,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13874,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -1373,7 +1419,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 864,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -1385,29 +1433,12 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 131336
+     "GIS_Acres": 131336,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
-   "leads": [
-    {
-     "title": "Clean_Slate",
-     "url": "https://services1.arcgis.com/k6HWkz7DMAcnnYfV/arcgis/rest/services/Clean_Slate/FeatureServer",
-     "owner": "ashtons",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Modeled Methane Potential_ Slate River Watershed _Fuzzy Logic Analysis__WFL1",
-     "url": "https://services5.arcgis.com/wXYNaciObHUosEnt/arcgis/rest/services/Modeled_Methane_Potential__Slate_River_Watershed__Fuzzy_Logic_Analysis__WFL1/FeatureServer",
-     "owner": "emturk",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Past LSFC and Slate Project",
-     "url": "https://services5.arcgis.com/VoYTMCxUgJQF43at/arcgis/rest/services/Past_LSFC_and_Slate_Project/FeatureServer",
-     "owner": "heathh",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Idaho Fish & Game: no answer (404)",
     "A Idaho Department of Fish and Game (Hydro: no answer (404)",
@@ -1415,12 +1446,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"slate\": 6 lead(s)"
+    "B ArcGIS Online search \"slate\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11289": {
    "park": "Whitebird Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1429,7 +1461,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13874,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -1437,7 +1471,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 864,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -1450,10 +1486,11 @@
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"whitebird\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11290": {
    "park": "McKay's Bend BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1462,7 +1499,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13886,
      "record_name": "Clearwater River",
-     "acres_approx": 44258
+     "acres_approx": 44258,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -1470,7 +1509,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 868,
      "record_name": "Clearwater River",
-     "acres_approx": 44259
+     "acres_approx": 44259,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -1482,7 +1523,9 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "TRIBL",
      "Own_Type": "DESG",
-     "GIS_Acres": 771187
+     "GIS_Acres": 771187,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -1494,7 +1537,9 @@
      "Mang_Name": "SFW",
      "Des_Tp": "SREC",
      "Own_Type": "STAT",
-     "GIS_Acres": 11
+     "GIS_Acres": 11,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -1507,10 +1552,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"mckay bend\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11291": {
    "park": "Pink House Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1519,7 +1565,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13886,
      "record_name": "Clearwater River",
-     "acres_approx": 44258
+     "acres_approx": 44258,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -1527,7 +1575,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 868,
      "record_name": "Clearwater River",
-     "acres_approx": 44259
+     "acres_approx": 44259,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -1539,7 +1589,9 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "TRIBL",
      "Own_Type": "DESG",
-     "GIS_Acres": 771187
+     "GIS_Acres": 771187,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -1552,10 +1604,11 @@
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"house pink\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11295": {
    "park": "Agency Creek Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1564,7 +1617,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13896,
      "record_name": "Lewis-Clark Nat Hist Trail",
-     "acres_approx": 32256
+     "acres_approx": 32256,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -1572,7 +1627,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 871,
      "record_name": "Lewis-Clark Nat Hist Trail",
-     "acres_approx": 32264
+     "acres_approx": 32264,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -1584,26 +1641,28 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 493795
+     "GIS_Acres": 493795,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [
     {
-     "title": "Regions of the Environmental Protection Agency",
-     "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/EPA_Regions/FeatureServer",
-     "owner": "Federal_User_Community",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Certified Unified Program Agency (CUPA) and Participating Agency (PA) Boundaries",
-     "url": "https://services8.arcgis.com/elq7Fz2RcwtTdDmp/arcgis/rest/services/CUPA_and_PA_Boundaries/FeatureServer",
-     "owner": "CalEPA_Admin",
-     "type": "Feature Service"
-    },
-    {
      "title": "BIA Agency, Regional, and Field Offices",
      "url": "https://services1.arcgis.com/UxqqIfhng71wUT9x/arcgis/rest/services/BIA_Agency_and_Regional_Offices/FeatureServer",
      "owner": "sara.hedrick@indianaffairs.gov_BIA_Geospatial",
+     "type": "Feature Service"
+    },
+    {
+     "title": "BLM National Surface Management Agency",
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer",
+     "owner": "BLM_CO_Public",
+     "type": "Map Service"
+    },
+    {
+     "title": "BLM CA Land Status Surface Management Agency",
+     "url": "https://gis.blm.gov/caarcgis/rest/services/lands/BLM_CA_LandStatus_SurfaceManagementAgency/FeatureServer",
+     "owner": "blm_arcgis_hub_ca",
      "type": "Feature Service"
     }
    ],
@@ -1614,22 +1673,16 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"agency\": 7 lead(s)"
+    "B ArcGIS Online search \"agency\": 3 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "US-11296": {
    "park": "McFarland Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
-   "leads": [
-    {
-     "title": "McFarland Blight Study Evaluation Parcels",
-     "url": "https://services2.arcgis.com/F0eFMri3OWS05kGc/arcgis/rest/services/McFarland_Blight_Study_Evaluation_Parcels/FeatureServer",
-     "owner": "amberconverse2000",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Idaho Fish & Game: no answer (404)",
     "A Idaho Department of Fish and Game (Hydro: no answer (404)",
@@ -1637,12 +1690,13 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"mcfarland\": 1 lead(s)"
+    "B ArcGIS Online search \"mcfarland\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "US-11297": {
    "park": "Morgan Bar Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -1651,7 +1705,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13891,
      "record_name": "Salmon River",
-     "acres_approx": 7672
+     "acres_approx": 7672,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -1659,7 +1715,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 824,
      "record_name": "Salmon River",
-     "acres_approx": 7676
+     "acres_approx": 7676,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -1671,7 +1729,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 493795
+     "GIS_Acres": 493795,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -1683,10 +1743,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11298": {
    "park": "Shoup Bridge Recreation Site National Park",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -1699,7 +1760,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 493795
+     "GIS_Acres": 493795,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -1711,10 +1774,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11299": {
    "park": "Smokey Cubs Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1727,7 +1791,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 493795
+     "GIS_Acres": 493795,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -1739,10 +1805,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11300": {
    "park": "Tower Rock Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1751,7 +1818,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13891,
      "record_name": "Salmon River",
-     "acres_approx": 7672
+     "acres_approx": 7672,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -1759,7 +1828,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 824,
      "record_name": "Salmon River",
-     "acres_approx": 7676
+     "acres_approx": 7676,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -1771,7 +1842,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 493795
+     "GIS_Acres": 493795,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -1783,10 +1856,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11301": {
    "park": "Williams Lake Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1799,7 +1873,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 493795
+     "GIS_Acres": 493795,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -1811,10 +1887,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11302": {
    "park": "Birch Creek Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1827,7 +1904,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1813172
+     "GIS_Acres": 1813172,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -1839,10 +1918,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11303": {
    "park": "Kelly Island Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1851,7 +1931,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13921,
      "record_name": "Snake River",
-     "acres_approx": 144393
+     "acres_approx": 144393,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "inside-other",
@@ -1859,7 +1941,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1123,
      "record_name": "Snake River ",
-     "acres_approx": 143199
+     "acres_approx": 143199,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "inside-other",
@@ -1867,7 +1951,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 877,
      "record_name": "Snake River",
-     "acres_approx": 144392
+     "acres_approx": 144392,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     }
    ],
    "leads": [],
@@ -1879,10 +1965,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11304": {
    "park": "Wolf Flats Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -1891,7 +1978,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13921,
      "record_name": "Snake River",
-     "acres_approx": 144393
+     "acres_approx": 144393,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "inside-other",
@@ -1899,7 +1988,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1123,
      "record_name": "Snake River ",
-     "acres_approx": 143199
+     "acres_approx": 143199,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "inside-other",
@@ -1907,7 +1998,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 877,
      "record_name": "Snake River",
-     "acres_approx": 144392
+     "acres_approx": 144392,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "inside-other",
@@ -1919,7 +2012,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1813172
+     "GIS_Acres": 1813172,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -1931,10 +2026,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11308": {
    "park": "Blackfoot Reservoir Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -1943,7 +2039,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13878,
      "record_name": "Blackfoot",
-     "acres_approx": 41077
+     "acres_approx": 41077,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "name match",
@@ -1951,7 +2049,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 850,
      "record_name": "Blackfoot",
-     "acres_approx": 41077
+     "acres_approx": 41077,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -1963,7 +2063,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 600267
+     "GIS_Acres": 600267,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     },
     {
      "verdict": "name match",
@@ -1975,7 +2077,9 @@
      "Mang_Name": "USBR",
      "Des_Tp": "RMA",
      "Own_Type": "FED",
-     "GIS_Acres": 16418
+     "GIS_Acres": 16418,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
    "leads": [],
@@ -1987,10 +2091,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-11309": {
    "park": "Cutthroat Trout Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -2006,6 +2111,7 @@
   },
   "US-11310": {
    "park": "Goodenough Creek Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2014,7 +2120,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13901,
      "record_name": "Campground - Goodenough",
-     "acres_approx": 278
+     "acres_approx": 278,
+     "tier": "LIKELY",
+     "why": "shared goodenough; extra: park creek / record -"
     },
     {
      "verdict": "name match",
@@ -2022,7 +2130,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 845,
      "record_name": "Campground - Goodenough",
-     "acres_approx": 278
+     "acres_approx": 278,
+     "tier": "LIKELY",
+     "why": "shared goodenough; extra: park creek / record -"
     },
     {
      "verdict": "inside-other",
@@ -2034,7 +2144,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 600267
+     "GIS_Acres": 600267,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2046,10 +2158,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-11311": {
    "park": "Graves Creek Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2058,7 +2171,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13878,
      "record_name": "Blackfoot",
-     "acres_approx": 41077
+     "acres_approx": 41077,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -2066,7 +2181,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 850,
      "record_name": "Blackfoot",
-     "acres_approx": 41077
+     "acres_approx": 41077,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -2078,7 +2195,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 600267
+     "GIS_Acres": 600267,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2090,10 +2209,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11313": {
    "park": "Heart Mountain Springs Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2106,7 +2226,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 600267
+     "GIS_Acres": 600267,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2118,10 +2240,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11314": {
    "park": "Maple Grove Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2130,7 +2253,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13881,
      "record_name": "Oneida Narrows",
-     "acres_approx": 4661
+     "acres_approx": 4661,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -2138,7 +2263,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 857,
      "record_name": "Oneida Narrows",
-     "acres_approx": 4661
+     "acres_approx": 4661,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -2150,10 +2277,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11315": {
    "park": "Morgan's Bridge Recreation Site BLM Special Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2162,7 +2290,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13878,
      "record_name": "Blackfoot",
-     "acres_approx": 41077
+     "acres_approx": 41077,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -2170,7 +2300,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 850,
      "record_name": "Blackfoot",
-     "acres_approx": 41077
+     "acres_approx": 41077,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -2182,7 +2314,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 600267
+     "GIS_Acres": 600267,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2194,10 +2328,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11316": {
    "park": "Pipeline Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -2210,7 +2345,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 600267
+     "GIS_Acres": 600267,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2222,10 +2359,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11317": {
    "park": "Redpoint Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2234,7 +2372,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13881,
      "record_name": "Oneida Narrows",
-     "acres_approx": 4661
+     "acres_approx": 4661,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -2242,7 +2382,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 857,
      "record_name": "Oneida Narrows",
-     "acres_approx": 4661
+     "acres_approx": 4661,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -2254,7 +2396,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 600267
+     "GIS_Acres": 600267,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2266,10 +2410,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11318": {
    "park": "Sage Hen Flats Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -2285,6 +2430,7 @@
   },
   "US-11319": {
    "park": "Trail Creek Bridge Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2293,7 +2439,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13878,
      "record_name": "Blackfoot",
-     "acres_approx": 41077
+     "acres_approx": 41077,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -2301,7 +2449,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 850,
      "record_name": "Blackfoot",
-     "acres_approx": 41077
+     "acres_approx": 41077,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -2313,7 +2463,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 600267
+     "GIS_Acres": 600267,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2325,10 +2477,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11326": {
    "park": "Crater Lake Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2337,7 +2490,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13884,
      "record_name": "Widow Mountain",
-     "acres_approx": 17729
+     "acres_approx": 17729,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -2345,7 +2500,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 841,
      "record_name": "Widow Mountain",
-     "acres_approx": 17729
+     "acres_approx": 17729,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -2357,7 +2514,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 99793
+     "GIS_Acres": 99793,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2369,10 +2528,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11327": {
    "park": "Crater Peak Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2381,7 +2541,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13884,
      "record_name": "Widow Mountain",
-     "acres_approx": 17729
+     "acres_approx": 17729,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -2389,7 +2551,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 841,
      "record_name": "Widow Mountain",
-     "acres_approx": 17729
+     "acres_approx": 17729,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -2401,7 +2565,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 99793
+     "GIS_Acres": 99793,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2413,10 +2579,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11328": {
    "park": "Huckleberry Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2425,7 +2592,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13910,
      "record_name": "Huckleberry Campground",
-     "acres_approx": 138
+     "acres_approx": 138,
+     "tier": "LIKELY",
+     "why": "same name, different kind (blm management recreation vs campground)"
     },
     {
      "verdict": "name match",
@@ -2433,7 +2602,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 856,
      "record_name": "Huckleberry Campground",
-     "acres_approx": 138
+     "acres_approx": 138,
+     "tier": "LIKELY",
+     "why": "same name, different kind (blm management recreation vs campground)"
     },
     {
      "verdict": "inside-other",
@@ -2445,7 +2616,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 99793
+     "GIS_Acres": 99793,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2457,10 +2630,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-11331": {
    "park": "Mica Bay Boater Park BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2469,7 +2643,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13875,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -2477,7 +2653,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 843,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -2489,7 +2667,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 99793
+     "GIS_Acres": 99793,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2501,10 +2681,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11332": {
    "park": "Orphan Point Saddle Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2513,7 +2694,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13884,
      "record_name": "Widow Mountain",
-     "acres_approx": 17729
+     "acres_approx": 17729,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -2521,7 +2704,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1144,
      "record_name": "Lund Creek RNA ",
-     "acres_approx": 3216
+     "acres_approx": 3216,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -2529,7 +2714,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 841,
      "record_name": "Widow Mountain",
-     "acres_approx": 17729
+     "acres_approx": 17729,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -2541,7 +2728,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 99793
+     "GIS_Acres": 99793,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2553,10 +2742,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11333": {
    "park": "Sheep Springs Overlook Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2565,7 +2755,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13908,
      "record_name": "Rochat Divide/Pine Creek",
-     "acres_approx": 74459
+     "acres_approx": 74459,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -2573,7 +2765,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 851,
      "record_name": "Rochat Divide/Pine Creek",
-     "acres_approx": 74458
+     "acres_approx": 74458,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -2585,7 +2779,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 99793
+     "GIS_Acres": 99793,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2597,10 +2793,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11334": {
    "park": "Tingly Springs Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2609,7 +2806,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13908,
      "record_name": "Rochat Divide/Pine Creek",
-     "acres_approx": 74459
+     "acres_approx": 74459,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -2617,7 +2816,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 851,
      "record_name": "Rochat Divide/Pine Creek",
-     "acres_approx": 74458
+     "acres_approx": 74458,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -2629,7 +2830,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 99793
+     "GIS_Acres": 99793,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2641,10 +2844,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11335": {
    "park": "Windy Bay Boater Park BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2653,7 +2857,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13875,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -2661,7 +2867,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 843,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -2673,7 +2881,9 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "TRIBL",
      "Own_Type": "DESG",
-     "GIS_Acres": 343329
+     "GIS_Acres": 343329,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -2685,10 +2895,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11947": {
    "park": "Lower Herd Lake Campground BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2697,7 +2908,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1124,
      "record_name": "Herd Creek Watershed ",
-     "acres_approx": 16736
+     "acres_approx": 16736,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     },
     {
      "verdict": "inside-other",
@@ -2709,7 +2922,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 792074
+     "GIS_Acres": 792074,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -2721,10 +2936,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12063": {
    "park": "BLM Pioneer Trail BLM Special Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2733,7 +2949,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13909,
      "record_name": "Pocatello",
-     "acres_approx": 114222
+     "acres_approx": 114222,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -2741,7 +2959,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 867,
      "record_name": "Pocatello",
-     "acres_approx": 114222
+     "acres_approx": 114222,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -2753,10 +2973,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12153": {
    "park": "Ross Point BLM Special Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -2772,6 +2993,7 @@
   },
   "US-12155": {
    "park": "Blue Creek Bay BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2780,7 +3002,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13875,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -2788,7 +3012,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 843,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -2800,10 +3026,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12157": {
    "park": "Poison Creek Picnic Area BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2816,7 +3043,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1448603
+     "GIS_Acres": 1448603,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -2828,10 +3057,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12163": {
    "park": "Beauty Bay BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -2840,7 +3070,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13875,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -2848,7 +3080,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 843,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -2860,7 +3094,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 99793
+     "GIS_Acres": 99793,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -2872,10 +3108,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12210": {
    "park": "Jump Creek Falls BLM Scenic Site",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -2884,7 +3121,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13749,
      "record_name": "Jump Creek",
-     "acres_approx": 8625
+     "acres_approx": 8625,
+     "tier": "LIKELY",
+     "why": "shared creek, jump; extra: park fall / record -"
     },
     {
      "verdict": "name match",
@@ -2892,7 +3131,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1105,
      "record_name": "Jump Creek Canyon ",
-     "acres_approx": 588
+     "acres_approx": 588,
+     "tier": "LIKELY",
+     "why": "shared creek, jump; extra: park fall / record canyon"
     },
     {
      "verdict": "name match",
@@ -2900,7 +3141,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 804,
      "record_name": "Jump Creek",
-     "acres_approx": 8625
+     "acres_approx": 8625,
+     "tier": "LIKELY",
+     "why": "shared creek, jump; extra: park fall / record -"
     },
     {
      "verdict": "inside-other",
@@ -2912,7 +3155,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1259662
+     "GIS_Acres": 1259662,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -2924,10 +3169,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-12211": {
    "park": "Bruneau Canyon Scenic Overlook BLM Scenic Site",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2940,7 +3186,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1321755
+     "GIS_Acres": 1321755,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -2952,10 +3200,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12212": {
    "park": "Black Magic Canyon BLM Scenic Site",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -2964,7 +3213,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13893,
      "record_name": "Magic Reservoir",
-     "acres_approx": 21156
+     "acres_approx": 21156,
+     "tier": "UNLIKELY",
+     "why": "one shared word (magic) only"
     },
     {
      "verdict": "name match",
@@ -2972,7 +3223,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 830,
      "record_name": "Magic Reservoir",
-     "acres_approx": 21155
+     "acres_approx": 21155,
+     "tier": "UNLIKELY",
+     "why": "one shared word (magic) only"
     },
     {
      "verdict": "inside-other",
@@ -2984,7 +3237,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1723598
+     "GIS_Acres": 1723598,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -2996,10 +3251,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12215": {
    "park": "Snake River Vista BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3008,7 +3264,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13912,
      "record_name": "Cedar Fields",
-     "acres_approx": 6495
+     "acres_approx": 6495,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -3016,7 +3274,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 852,
      "record_name": "Cedar Fields",
-     "acres_approx": 6495
+     "acres_approx": 6495,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -3028,10 +3288,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12219": {
    "park": "Juniper Grove Campground BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3040,7 +3301,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13897,
      "record_name": "Jarbidge Forks",
-     "acres_approx": 1903
+     "acres_approx": 1903,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -3048,7 +3311,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 838,
      "record_name": "Jarbidge Forks",
-     "acres_approx": 1903
+     "acres_approx": 1903,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -3060,7 +3325,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1321755
+     "GIS_Acres": 1321755,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -3072,10 +3339,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12220": {
    "park": "The Forks Campground BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3084,7 +3352,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13897,
      "record_name": "Jarbidge Forks",
-     "acres_approx": 1903
+     "acres_approx": 1903,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "name match",
@@ -3092,7 +3362,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 838,
      "record_name": "Jarbidge Forks",
-     "acres_approx": 1903
+     "acres_approx": 1903,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -3104,7 +3376,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1321755
+     "GIS_Acres": 1321755,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -3116,10 +3390,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12221": {
    "park": "Lud Drexler Park BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3128,7 +3403,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13883,
      "record_name": "Salmon Falls Reservoir",
-     "acres_approx": 37808
+     "acres_approx": 37808,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -3136,7 +3413,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 866,
      "record_name": "Salmon Falls Reservoir",
-     "acres_approx": 37807
+     "acres_approx": 37807,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -3148,7 +3427,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 834935
+     "GIS_Acres": 834935,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -3160,10 +3441,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12223": {
    "park": "Bonneville Point BLM Historic Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3172,7 +3454,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 818,
      "record_name": "Boise Front",
-     "acres_approx": 125508
+     "acres_approx": 125508,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -3184,10 +3468,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12224": {
    "park": "Bruneau River Access BLM Wild and Scenic River",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -3203,6 +3488,7 @@
   },
   "US-12225": {
    "park": "Shoofly Oolite Interpretive Trail BLM Interpretive Site",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3215,7 +3501,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1448603
+     "GIS_Acres": 1448603,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -3227,10 +3515,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12226": {
    "park": "Bruneau Arm Reservoir State Fishing Lake",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3239,7 +3528,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13808,
      "record_name": "C J Strike",
-     "acres_approx": 31552
+     "acres_approx": 31552,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -3247,7 +3538,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 815,
      "record_name": "C J Strike",
-     "acres_approx": 31552
+     "acres_approx": 31552,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -3259,10 +3552,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12229": {
    "park": "Blackwell Island Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3271,7 +3565,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13875,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -3279,7 +3575,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 843,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -3291,7 +3589,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 99793
+     "GIS_Acres": 99793,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -3303,10 +3603,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12230": {
    "park": "South Fork Snake River Access State Fish and Wildlife Area",
+   "area": "US-ID",
    "why_not": "needs-parcel",
    "hits": [
     {
@@ -3315,7 +3616,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13921,
      "record_name": "Snake River",
-     "acres_approx": 144393
+     "acres_approx": 144393,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "name match",
@@ -3323,7 +3626,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1123,
      "record_name": "Snake River ",
-     "acres_approx": 143199
+     "acres_approx": 143199,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "name match",
@@ -3331,7 +3636,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 877,
      "record_name": "Snake River",
-     "acres_approx": 144392
+     "acres_approx": 144392,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     }
    ],
    "leads": [],
@@ -3343,10 +3650,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12231": {
    "park": "Portneuf Gap River Access BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -3362,6 +3670,7 @@
   },
   "US-12289": {
    "park": "Old Lucile Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3370,7 +3679,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13874,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -3378,7 +3689,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 864,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -3390,10 +3703,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12290": {
    "park": "Skookumchuck Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3402,7 +3716,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13874,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -3410,7 +3726,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1184,
      "record_name": "Upper Salmon River ",
-     "acres_approx": 5030
+     "acres_approx": 5030,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -3418,7 +3736,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 864,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -3430,7 +3750,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 131336
+     "GIS_Acres": 131336,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -3442,10 +3764,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12299": {
    "park": "Mineral Ridge Scenic Area BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3454,7 +3777,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13875,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -3462,7 +3787,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 843,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -3474,10 +3801,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12300": {
    "park": "Cougar Bay Preserve BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3486,7 +3814,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13875,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     },
     {
      "verdict": "inside-other",
@@ -3494,7 +3824,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 843,
      "record_name": "Coeur d'Alene Lake",
-     "acres_approx": 63944
+     "acres_approx": 63944,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -3506,10 +3838,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12302": {
    "park": "Sun Peak Picnic Area BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3518,7 +3851,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 831,
      "record_name": "North Ketchum",
-     "acres_approx": 297
+     "acres_approx": 297,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -3530,7 +3865,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1723598
+     "GIS_Acres": 1723598,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -3542,10 +3879,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12349": {
    "park": "Owyhee Uplands Back Country Byway National Parkway",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -3558,7 +3896,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1259662
+     "GIS_Acres": 1259662,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -3570,7 +3910,9 @@
      "Mang_Name": "SDOL",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 1982653
+     "GIS_Acres": 1982653,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     }
    ],
    "leads": [],
@@ -3582,10 +3924,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12363": {
    "park": "Jackass Flats BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3594,7 +3937,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13874,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -3602,7 +3947,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 864,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -3614,7 +3961,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 131336
+     "GIS_Acres": 131336,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -3626,10 +3975,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12364": {
    "park": "Blackhawk Bar BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3638,7 +3988,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13874,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -3646,7 +3998,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 864,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -3658,10 +4012,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12379": {
    "park": "Harpers Bend Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3670,7 +4025,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13886,
      "record_name": "Clearwater River",
-     "acres_approx": 44258
+     "acres_approx": 44258,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -3678,7 +4035,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 868,
      "record_name": "Clearwater River",
-     "acres_approx": 44259
+     "acres_approx": 44259,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -3690,7 +4049,9 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "TRIBL",
      "Own_Type": "DESG",
-     "GIS_Acres": 771187
+     "GIS_Acres": 771187,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -3702,10 +4063,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12622": {
    "park": "Blackrock Canyon Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3714,7 +4076,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13909,
      "record_name": "Pocatello",
-     "acres_approx": 114222
+     "acres_approx": 114222,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -3722,7 +4086,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 867,
      "record_name": "Pocatello",
-     "acres_approx": 114222
+     "acres_approx": 114222,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -3734,7 +4100,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 600267
+     "GIS_Acres": 600267,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 9 parks"
     }
    ],
    "leads": [],
@@ -3746,10 +4114,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13107": {
    "park": "Borah Earthquake Interpretive Site BLM Interpretive Site",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3762,7 +4131,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2197868
+     "GIS_Acres": 2197868,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -3774,10 +4145,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13293": {
    "park": "McClendon Spring Campground BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3786,7 +4158,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13900,
      "record_name": "Cotterell Mounain",
-     "acres_approx": 46685
+     "acres_approx": 46685,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -3794,7 +4168,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 840,
      "record_name": "Cotterell Mounain",
-     "acres_approx": 46685
+     "acres_approx": 46685,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -3806,7 +4182,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 834935
+     "GIS_Acres": 834935,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -3818,10 +4196,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13294": {
    "park": "Tower Creek Pyramids BLM Historic Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3834,7 +4213,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 493795
+     "GIS_Acres": 493795,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -3846,10 +4227,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13295": {
    "park": "Henrys Fork Snake Rive Access BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3858,7 +4240,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13921,
      "record_name": "Snake River",
-     "acres_approx": 144393
+     "acres_approx": 144393,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "name match",
@@ -3866,7 +4250,9 @@
      "agency": "BLM Areas of Critical Environmental Concern (national, 1,120)",
      "record": 1123,
      "record_name": "Snake River ",
-     "acres_approx": 143199
+     "acres_approx": 143199,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "name match",
@@ -3874,7 +4260,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 877,
      "record_name": "Snake River",
-     "acres_approx": 144392
+     "acres_approx": 144392,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     },
     {
      "verdict": "inside-other",
@@ -3886,7 +4274,9 @@
      "Mang_Name": "CITY",
      "Des_Tp": "LP",
      "Own_Type": "LOC",
-     "GIS_Acres": 2
+     "GIS_Acres": 2,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -3898,10 +4288,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13297": {
    "park": "Challis Bridge BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -3910,7 +4301,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13919,
      "record_name": "Upper Salmon River",
-     "acres_approx": 107279
+     "acres_approx": 107279,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "inside-other",
@@ -3918,7 +4311,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 865,
      "record_name": "Upper Salmon River",
-     "acres_approx": 107280
+     "acres_approx": 107280,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     }
    ],
    "leads": [],
@@ -3930,10 +4325,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13485": {
    "park": "Twin Peaks Ranch State Park",
+   "area": "US-ID",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -3949,6 +4345,7 @@
   },
   "US-13577": {
    "park": "Jarbidge River Recreation Site BLM Recreation Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -3957,7 +4354,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13897,
      "record_name": "Jarbidge Forks",
-     "acres_approx": 1903
+     "acres_approx": 1903,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "name match",
@@ -3965,7 +4364,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 838,
      "record_name": "Jarbidge Forks",
-     "acres_approx": 1903
+     "acres_approx": 1903,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 4 parks"
     },
     {
      "verdict": "name match",
@@ -3977,7 +4378,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1321755
+     "GIS_Acres": 1321755,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -3989,10 +4392,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-2230": {
    "park": "Castle Rocks State Park",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4005,7 +4409,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 834935
+     "GIS_Acres": 834935,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -4017,10 +4423,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-2236": {
    "park": "Hells Gate State Park",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -4033,7 +4440,9 @@
      "Mang_Name": "SPR",
      "Des_Tp": "SP",
      "Own_Type": "FED",
-     "GIS_Acres": 961
+     "GIS_Acres": 961,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
    "leads": [],
@@ -4045,10 +4454,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-2238": {
    "park": "Heyburn State Park",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -4061,7 +4471,9 @@
      "Mang_Name": "TRIB",
      "Des_Tp": "TRIBL",
      "Own_Type": "DESG",
-     "GIS_Acres": 343329
+     "GIS_Acres": 343329,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "name match",
@@ -4073,7 +4485,9 @@
      "Mang_Name": "SPR",
      "Des_Tp": "SP",
      "Own_Type": "STAT",
-     "GIS_Acres": 8094
+     "GIS_Acres": 8094,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
    "leads": [],
@@ -4085,10 +4499,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "US-3424": {
    "park": "Ice Age Floods National Geologic Trail",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -4104,6 +4519,7 @@
   },
   "US-4477": {
    "park": "Idaho Panhandle National Forest",
+   "area": "US-ID",
    "why_not": "pin-doubt",
    "hits": [
     {
@@ -4116,7 +4532,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 898213
+     "GIS_Acres": 898213,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -4128,10 +4546,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4558": {
    "park": "Continental Divide Trail National Scenic Trail",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -4144,7 +4563,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 5375972
+     "GIS_Acres": 5375972,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -4156,10 +4577,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4574": {
    "park": "Nez Perce National Historic Trail",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -4172,7 +4594,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2265532
+     "GIS_Acres": 2265532,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -4184,10 +4608,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4576": {
    "park": "Oregon National Historic Trail",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -4203,6 +4628,7 @@
   },
   "US-4584": {
    "park": "Ashton-Tetonia Trail State Park",
+   "area": "US-ID",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -4218,6 +4644,7 @@
   },
   "US-4665": {
    "park": "Floodwood State Forest",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4230,7 +4657,9 @@
      "Mang_Name": "SDOL",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 1982653
+     "GIS_Acres": 1982653,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     }
    ],
    "leads": [],
@@ -4242,10 +4671,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-4666": {
    "park": "Priest Lake State Forest",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4258,7 +4688,9 @@
      "Mang_Name": "SDOL",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 1982653
+     "GIS_Acres": 1982653,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     }
    ],
    "leads": [],
@@ -4270,10 +4702,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5617": {
    "park": "St. Maries Wildlife Management Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4286,7 +4719,9 @@
      "Mang_Name": "SDOL",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 53342
+     "GIS_Acres": 53342,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -4298,10 +4733,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7805": {
    "park": "Antelope Valley Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [],
    "leads": [],
@@ -4317,6 +4753,7 @@
   },
   "US-7806": {
    "park": "Atlanta Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4329,7 +4766,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2132070
+     "GIS_Acres": 2132070,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -4341,10 +4780,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7807": {
    "park": "Bear Trap Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4357,7 +4797,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1723598
+     "GIS_Acres": 1723598,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -4369,10 +4811,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7808": {
    "park": "Big Creek Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4385,7 +4828,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2287258
+     "GIS_Acres": 2287258,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -4397,10 +4842,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7809": {
    "park": "Big Southern Butte Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -4413,7 +4859,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1813172
+     "GIS_Acres": 1813172,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -4425,10 +4873,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7810": {
    "park": "Bruce Meadows Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4441,7 +4890,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2132070
+     "GIS_Acres": 2132070,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -4453,10 +4904,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7811": {
    "park": "Cavanaugh Bay Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -4469,7 +4921,9 @@
      "Mang_Name": "SDOL",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 1289
+     "GIS_Acres": 1289,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -4481,10 +4935,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7812": {
    "park": "Copper Basin Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4497,7 +4952,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2197868
+     "GIS_Acres": 2197868,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -4509,10 +4966,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7813": {
    "park": "Cox's Well Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4525,7 +4983,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1813172
+     "GIS_Acres": 1813172,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -4537,10 +4997,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7814": {
    "park": "Garden Valley Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -4553,7 +5014,9 @@
      "Mang_Name": "SDOL",
      "Des_Tp": "SRMA",
      "Own_Type": "STAT",
-     "GIS_Acres": 1982653
+     "GIS_Acres": 1982653,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 5 parks"
     }
    ],
    "leads": [],
@@ -4565,10 +5028,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7815": {
    "park": "Grasmere Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4581,7 +5045,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1448603
+     "GIS_Acres": 1448603,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -4593,10 +5059,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7817": {
    "park": "Hollow Top Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4609,7 +5076,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1723598
+     "GIS_Acres": 1723598,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -4621,10 +5090,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7818": {
    "park": "Johnson Creek Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "needs-parcel",
    "hits": [
     {
@@ -4637,7 +5107,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2132070
+     "GIS_Acres": 2132070,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -4649,10 +5121,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7819": {
    "park": "Laidlaw Corrals Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4665,7 +5138,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1723598
+     "GIS_Acres": 1723598,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -4677,10 +5152,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7820": {
    "park": "Magee Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4693,7 +5169,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 727061
+     "GIS_Acres": 727061,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -4705,10 +5183,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7821": {
    "park": "Magic Reservoir Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "no-layer",
    "hits": [
     {
@@ -4717,7 +5196,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13893,
      "record_name": "Magic Reservoir",
-     "acres_approx": 21156
+     "acres_approx": 21156,
+     "tier": "LIKELY",
+     "why": "shared magic, reservoir; extra: park airstrip / record -"
     },
     {
      "verdict": "name match",
@@ -4725,7 +5206,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 830,
      "record_name": "Magic Reservoir",
-     "acres_approx": 21155
+     "acres_approx": 21155,
+     "tier": "LIKELY",
+     "why": "shared magic, reservoir; extra: park airstrip / record -"
     },
     {
      "verdict": "inside-other",
@@ -4737,7 +5220,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1723598
+     "GIS_Acres": 1723598,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -4749,10 +5234,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "US-7822": {
    "park": "May Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4765,7 +5251,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 792074
+     "GIS_Acres": 792074,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -4777,10 +5265,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7823": {
    "park": "Midway Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4793,7 +5282,9 @@
      "Mang_Name": "DOE",
      "Des_Tp": "FOTH",
      "Own_Type": "UNK",
-     "GIS_Acres": 567306
+     "GIS_Acres": 567306,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -4805,10 +5296,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7824": {
    "park": "Murphy Hot Springs Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4821,7 +5313,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 1321755
+     "GIS_Acres": 1321755,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
     }
    ],
    "leads": [],
@@ -4833,10 +5327,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7825": {
    "park": "New Meadows Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -4852,6 +5347,7 @@
   },
   "US-7826": {
    "park": "Pine Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4864,7 +5360,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2132070
+     "GIS_Acres": 2132070,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -4876,10 +5374,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7827": {
    "park": "Porthill/Eckhart Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "needs-parcel",
    "hits": [],
    "leads": [],
@@ -4895,6 +5394,7 @@
   },
   "US-7828": {
    "park": "Reed Ranch Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4907,7 +5407,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2287258
+     "GIS_Acres": 2287258,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -4919,10 +5421,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7829": {
    "park": "Slate Creek Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -4931,7 +5434,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13874,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     },
     {
      "verdict": "inside-other",
@@ -4939,7 +5444,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 864,
      "record_name": "Lower Salmon Recreational",
-     "acres_approx": 24928
+     "acres_approx": 24928,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -4951,10 +5458,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7830": {
    "park": "Smiley Creek Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -4970,6 +5478,7 @@
   },
   "US-7831": {
    "park": "Smith Prairie Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "needs-parcel",
    "hits": [
     {
@@ -4982,7 +5491,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2132070
+     "GIS_Acres": 2132070,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -4994,10 +5505,11 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7832": {
    "park": "Stanley Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [],
    "leads": [],
@@ -5013,6 +5525,7 @@
   },
   "US-7833": {
    "park": "Twin Bridges Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -5021,7 +5534,9 @@
      "agency": "BLM recreation SITE polygons (national, 3,478)",
      "record": 13906,
      "record_name": "Upper Big Lost River",
-     "acres_approx": 4611
+     "acres_approx": 4611,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -5029,7 +5544,9 @@
      "agency": "BLM Idaho recreation area polygons (76)",
      "record": 835,
      "record_name": "Upper Big Lost River",
-     "acres_approx": 4611
+     "acres_approx": 4611,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -5041,7 +5558,9 @@
      "Mang_Name": "BLM",
      "Des_Tp": "PUB",
      "Own_Type": "FED",
-     "GIS_Acres": 792074
+     "GIS_Acres": 792074,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 11 parks"
     }
    ],
    "leads": [],
@@ -5053,10 +5572,11 @@
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-7834": {
    "park": "Warm Springs Creek Airstrip State Recreation Area",
+   "area": "US-ID",
    "why_not": "name-mismatch",
    "hits": [
     {
@@ -5069,7 +5589,9 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Own_Type": "FED",
-     "GIS_Acres": 2132070
+     "GIS_Acres": 2132070,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 6 parks"
     }
    ],
    "leads": [],
@@ -5081,7 +5603,7 @@
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }
  }
 }
