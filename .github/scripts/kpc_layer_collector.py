@@ -21,10 +21,10 @@ except Exception:  # noqa: BLE001
     M = None
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
 LOG = pathlib.Path('data/intake/collector.json')
-QF = pathlib.Path('data/waiting/questions/layer-collector.json')
+QF = pathlib.Path('data/waiting/questions/layers.json')   # chat 2 (Oct 30 8:20 AM): kpc_key_layers.py wires every YES row into state-gis.json
 QUEUE = pathlib.Path('data/intake/queue.json')
 TODAY = dt.date.today().isoformat()
-LINE = re.compile(r'^LAYER\s*\|\s*((?:US|CA)-\d{4,5})\s*\|\s*([^|]*)\|\s*(\S+)\s*\|\s*name field:\s*([^|]*)\|?(.*)$', re.I)
+LINE = re.compile(r'^LAYER\s*\|\s*([A-Z0-9]{1,4}-\d{4,5})\s*\|\s*([^|]*)\|\s*(\S+)\s*\|\s*name field:\s*([^|]*)\|?(.*)$', re.I)
 
 
 def load(p, d=None):
@@ -50,7 +50,20 @@ def pin(ref):
             if v and len(v) > 6 and v[5] is not None: return v[5], v[6], v[0]
     for r in (load('data/canada.json', {}) or {}).get('rows') or []:
         if r and r[0] == 'POTA' and r[1] == ref: return r[3], r[4], r[2]
+    import glob
+    for f in glob.glob('data/pota/t/*.json'):   # the rest of the world (HQ 8:45 AM (3): top-15 W files)
+        for row in load(f, []) or []:
+            if isinstance(row, list) and len(row) >= 4 and row[0] == ref: return row[2], row[3], row[1]
     return None
+
+
+def kind_of(agency, note, name):
+    s = f'{agency} {note} {name}'.lower()
+    if re.search(r'wildlife|fish|game|hunting|waterfowl|faune', s): return 'wild'
+    if re.search(r'forest|forêt', s): return 'forest'
+    if re.search(r'preserve|natural area|nature reserve|conservation', s): return 'preserve'
+    if re.search(r'park|parc|recreation', s): return 'park'
+    return 'land'
 
 
 def acres(rings):
@@ -92,7 +105,8 @@ def check(ref, agency, url, field):
     q = {'area': f"{ref[:2]}-?", 'ref': ref, 'park': pn, 'tier': tier, 'why': why, 'kind': 'layer line (chat 8)', 'record': oid, 'record_name': rn[:120],
          'acres_approx': ac, 'layer': url, 'agency': agency, 'record_link': f'{url}/query?objectIds={oid}&outFields=*&returnGeometry=false&f=html',
          'pota_link': f'https://pota.app/#/park/{ref}', 'question': "Is this official record that park (the agency's own boundary for it)? YES / NO",
-         'answer': None, 'checked_by': None, 'how': None, 'source': 'layer collector (fable LAYER line)'}
+         'answer': None, 'checked_by': None, 'how': None, 'source': 'layer collector (fable LAYER line)',
+         'st': ref[3:5] if False else '', 'url': url, 'name_field': field, 'kind_layer': kind_of(agency, '', pn), 'licence': ''}
     if tier == 'UNLIKELY': return 'evidence', f"pin inside '{rn[:50]}' ({ac:,} ac) but {why}: kept as evidence, not asked", None, {'url': url}
     return 'asked', f"pin inside '{rn[:50]}' ({ac:,} ac), {tier}: question for chat 11", q, {'url': url}
 
@@ -116,7 +130,10 @@ def main():
             n['new'] += 1
             try: status, why, q, qrow = check(ref, agency, url, field)
             except Exception as e: status, why, q, qrow = 'failed', f'{type(e).__name__}: {str(e)[:60]}', None, None  # noqa: BLE001
-            if q: q['area'] = f.stem; qs.append(q)
+            if q:
+                q['area'] = f.stem; q['st'] = f.stem[3:] if f.stem[:3] in ('US-', 'CA-') else f.stem.replace('W-', '')
+                q['kind'] = q.pop('kind_layer'); q['note'] = note[:200]   # chat 2's shape: ref, st, url, name_field, agency, kind, licence, answer, checked_by
+                qs.append(q)
             if qrow and url not in seen:
                 queue['rows'].append({'url': url, 'title': f'{agency[:60]} (LAYER line, {f.stem})', 'from': 'chat 8 LAYER line', 'added': TODAY, 'closes': [ref], 'note': note[:200]})
                 seen.add(url)

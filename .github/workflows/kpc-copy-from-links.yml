@@ -58,6 +58,22 @@ jobs:
           (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_layer_collector.py) || true   # Oct 30 (HQ 8:10 AM): chat 8's LAYER lines -> pin test + chat 11 question + intake queue
           (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_hunter_trigger.py > /tmp/hunt.txt) || true; cat /tmp/hunt.txt || true
           bash links/.github/scripts/kpc_push_data.sh kpcdata "Site data copied from KPC-Links (Step B3)" data locations-pota.json locations-sota.json locations-wwff.json
+      - name: The picture-map branch (daily cleanup)
+        continue-on-error: true
+        uses: actions/checkout@v5
+        with:
+          ref: picture-maps
+          path: pm
+      - name: A park with an OFFICIAL outline now loses its picture map (HQ Oct 30 8:45 AM (2); house rule Oct 29 11:10 PM)
+        continue-on-error: true
+        run: |
+          cd pm
+          PIC_ROOT=. LINKS=../links python3 ../kpcdata/.github/scripts/kpc_lookup.py map-cleanup || true
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A; git diff --cached --quiet && exit 0
+          git commit -qm 'picture maps: daily cleanup (parks now with an official outline)'
+          for i in 1 2 3; do git pull -q --rebase origin picture-maps && git push -q origin HEAD:picture-maps && break; sleep 5; done
+          true
       - name: The look-up branch (the new-park pipeline files a page read there)
         continue-on-error: true
         uses: actions/checkout@v5
