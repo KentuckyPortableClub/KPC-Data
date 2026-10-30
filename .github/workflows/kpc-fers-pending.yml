@@ -92,6 +92,27 @@ jobs:
           P['done'] = P['done'][-500:]
           json.dump(P, open('data/fers/pending.json', 'w'), indent=1)
           PY
+          # BOT F (Oct 29 11:30 PM; plan KPC_Key_And_2fer_Automation_Plan.md): a state chat 3 / 8 marked DONE in KPC-Links
+          # .claude/build/research/fable-state-done.json gets its FIRST new-key 2-fer run (whole state), then joins new-key-states.json
+          # (BOT E reruns it from then on). At most 3 states a run, fewest parks first; AK held (file-size fix), KY never (own key).
+          python3 - <<'PY' || true
+          import json, os, subprocess
+          try: done = json.load(open('links/.claude/build/research/fable-state-done.json'))
+          except Exception: done = {}
+          NK = 'data/fers/new-key-states.json'
+          nk = json.load(open(NK)); have = set(nk.get('states') or [])
+          HOLD = {'US-AK', 'US-KY'}
+          todo = [s for s in done if s.startswith('US-') and len(s) == 5 and s not in have and s not in HOLD]
+          def size(st):
+              try: return len((json.load(open(f'data/parkinfo/{st}.json')).get('parks') or {}))
+              except Exception: return 9999
+          started = []
+          for st in sorted(todo, key=size)[:3]:
+              ok = subprocess.run(['gh', 'workflow', 'run', 'kpc-fers-line.yml', '-R', os.environ['GITHUB_REPOSITORY'], '-f', f'states={st}', '-f', f'tag={st[3:].lower()}', '-f', 'stage=all']).returncode == 0
+              if ok: started.append(st); nk['states'] = sorted(set(nk['states']) | {st})
+          json.dump(nk, open(NK, 'w'), indent=1)
+          print(f"::notice title=2-fer first runs (BOT F)::{'started: ' + ' '.join(started) if started else 'no newly finished state'}" + (f"; waiting: {' '.join(sorted(set(todo) - set(started)))}" if set(todo) - set(started) else ''))
+          PY
           git config user.name kpc-bot; git config user.email bot@kpc.local
-          git add data/fers/pending.json data/fers/key-seen.json && git commit -qm "2-fer small batches: waiting list" || true
+          git add data/fers/pending.json data/fers/key-seen.json data/fers/new-key-states.json && git commit -qm "2-fer small batches: waiting list" || true
           git pull -q --rebase || true; git push -q || true
