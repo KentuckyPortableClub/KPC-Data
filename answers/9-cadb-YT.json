@@ -1,0 +1,196 @@
+{
+ "request": "requests/9-cadb-YT.json",
+ "id": "9-cadb-YT",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CA dive YT: re-run P-2 for 1 name-agreeing parks to get the layer URL",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CA dive YT: re-run P-2 for 1 name-agreeing parks to get the layer URL",
+  "probe": {
+   "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-6265",
+   "refs": [
+    "CA-6265"
+   ],
+   "pointq": [
+    {
+     "st": "YT",
+     "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
+     "note": "Yukon campgr",
+     "points": [
+      [
+       60.316,
+       -134.27
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "YT",
+     "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+     "note": "Yukon parks",
+     "points": [
+      [
+       60.316,
+       -134.27
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "YT",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       60.316,
+       -134.27
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "YT",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       60.316,
+       -134.27
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 14:50Z",
+ "results": {
+  "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-6265",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "YT",
+    "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
+    "note": "Yukon campgr",
+    "hits": [
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.316,
+       -134.27
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 14,
+       "PARCEL_ID_NUMBER": 8016518,
+       "PARCEL_DESIGNATOR": "LOT 37 TAGISH",
+       "CLSR_PLAN": "57266 CLSR YT",
+       "LTO_PLAN": "35667 LTO YT",
+       "GEO_ADMIN_CODE": "TPK",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "LOT 37 TAGISH ( TAGISH BRIDGE TERRITORIAL PARK CAMPGROUND)",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 2472.297692
+      }
+     }
+    ]
+   },
+   {
+    "st": "YT",
+    "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+    "note": "Yukon parks",
+    "hits": [
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.316,
+       -134.27
+      ],
+      "attrs": {
+       "PARK250_ID": 21,
+       "PARK_NAME": "Tagish Narrows",
+       "PARK_TYPE": "Habitat Protection Area",
+       "PARK_LABEL": "Tagish Narrows Habitat Protection Area"
+      }
+     }
+    ]
+   },
+   {
+    "st": "YT",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.316,
+       -134.27
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "YT",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.316,
+       -134.27
+      ],
+      "attrs": {
+       "NAME_E": "Tagish River",
+       "NAME_F": "Tagish River",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 1,
+       "QUALYEAR": 2005,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 13,
+       "O_AREA_HA": 450,
+       "PARENT_ID": 600000400,
+       "ZONE_ID": 600000400,
+       "MECH_E": "Carcross/Tagish First Nation Final Agreement; Yukon Wildlife Act",
+       "TYPE_E": "Habitat Protection Area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Yukon",
+       "GOV_TYPE": 5,
+       "MGMT_E": "Environment Yukon; Carcross/Tagish First Nation",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 60,
+       "JUR_ID": "ESA_ID 4",
+       "MPLAN": 1,
+       "MPLAN_REF": "https://yukon.ca/en/parks-protected-areas",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 17,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
