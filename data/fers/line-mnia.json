@@ -6,33 +6,35 @@
   "US-IA"
  ],
  "since": "2026-10-30",
- "date": "2026-10-30 18:24 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
+ "date": "2026-10-30 20:48 UTC",
+ "verdict": "PART READY FOR CHAT 8",
+ "why": [
+  "US-IA: only 0 rows from 177 outlined parks (near-empty: check the run)"
+ ],
  "known_answers": "19/19 on 2026-10-30",
  "missing_check": {
-  "FOUND": 126,
-  "DROPPED": 203,
-  "NEVER LOOKED AT": 2338
+  "FOUND": 142,
+  "DROPPED": 296,
+  "NEVER LOOKED AT": 2250
  },
  "report": {
   "pass1": {
    "date": "2026-10-30",
-   "pairs tested": 433,
-   "pairs whose boxes touch": 433
+   "pairs tested": 826,
+   "pairs whose boxes touch": 826
   },
   "pass2": {
-   "agree with the pass before": 874,
+   "agree with the pass before": 995,
    "date": "2026-10-30",
-   "pairs tested": 166
+   "pairs tested": 189
   },
   "pass3": {
-   "agree with the pass before": 0,
+   "agree with the pass before": 804,
    "date": "2026-10-30",
-   "pairs tested": 0
+   "pairs tested": 189
   },
   "pass5": {
-   "checked": 68,
+   "checked": 70,
    "date": "2026-10-30",
    "pairs tested": 0,
    "still not checked": 0
@@ -43,21 +45,21 @@
   "US-IA": "data/fers/US-IA.json"
  },
  "US-MN": {
-  "rows": 938,
-  "live": 140,
+  "rows": 1062,
+  "live": 157,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 8,
+   "no public owner on the ownership map": 16,
    "this spot is 269 km from Beaver Creek Wildlife Management Ar": 1,
    "this spot is 130 km from Richard J. Dorer Memorial Hardwood": 1
   },
-  "dropped": 378,
-  "merged": 410
+  "dropped": 407,
+  "merged": 480
  },
  "US-IA": {
-  "rows": 2,
-  "live": 2,
+  "rows": 0,
+  "live": 0,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
@@ -65,8 +67,9 @@
   "merged": 0
  },
  "states_ready": [
-  "US-MN",
-  "US-IA"
+  "US-MN"
  ],
- "states_held": []
+ "states_held": [
+  "US-IA"
+ ]
 }
