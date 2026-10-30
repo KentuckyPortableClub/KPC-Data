@@ -1,73 +1,73 @@
 {
  "about": "NEAR MISSES (kpc_near_miss.py, nightly): parks with NO outline, and official areas from layers we already read that contain the POTA pin (or lie within 1 km) and share a main name word or are the same kind of place. NOT joined. Chat 8 reviews; an approved one goes into data/us-key/overrides.json (or data/ca-key) as {'join': [id], 'why': 'reviewed: near miss'}.",
  "counts": {
-  "AK": 9,
-  "AL": 9,
-  "AR": 19,
-  "AZ": 5,
+  "AK": 10,
+  "AL": 5,
+  "AR": 18,
+  "AZ": 6,
   "CA": 9,
-  "CA-AB": 14,
-  "CA-BC": 25,
-  "CA-MB": 13,
-  "CA-NB": 25,
+  "CA-AB": 13,
+  "CA-BC": 20,
+  "CA-MB": 14,
+  "CA-NB": 24,
   "CA-NL": 2,
-  "CA-NS": 24,
+  "CA-NS": 22,
   "CA-NT": 3,
   "CA-NU": 1,
-  "CA-ON": 57,
+  "CA-ON": 52,
   "CA-PE": 7,
-  "CA-QC": 64,
+  "CA-QC": 62,
   "CA-SI": 0,
   "CA-SK": 14,
   "CA-SP": 0,
   "CA-YT": 4,
-  "CO": 5,
-  "CT": 4,
+  "CO": 3,
+  "CT": 3,
   "DC": 4,
-  "DE": 1,
-  "FL": 10,
-  "GA": 6,
-  "HI": 4,
-  "IA": 1,
-  "ID": 28,
-  "IL": 9,
-  "IN": 14,
+  "DE": 0,
+  "FL": 6,
+  "GA": 8,
+  "HI": 3,
+  "IA": 0,
+  "ID": 33,
+  "IL": 6,
+  "IN": 13,
   "KS": 4,
   "LA": 3,
   "MA": 5,
-  "MD": 8,
-  "ME": 3,
-  "MI": 12,
-  "MN": 11,
+  "MD": 6,
+  "ME": 2,
+  "MI": 9,
+  "MN": 10,
   "MO": 3,
   "MS": 1,
-  "MT": 8,
-  "NC": 17,
-  "ND": 7,
+  "MT": 7,
+  "NC": 13,
+  "ND": 6,
   "NE": 1,
-  "NH": 4,
+  "NH": 3,
   "NJ": 1,
   "NM": 4,
-  "NV": 21,
-  "NY": 11,
+  "NV": 20,
+  "NY": 9,
   "OH": 0,
   "OK": 3,
-  "OR": 21,
+  "OR": 22,
   "PA": 1,
   "RI": 1,
   "SC": 1,
-  "SD": 2,
-  "TN": 5,
-  "TX": 4,
-  "UT": 43,
+  "SD": 0,
+  "TN": 2,
+  "TX": 3,
+  "UT": 39,
   "VA": 2,
   "VT": 3,
-  "WA": 6,
-  "WI": 10,
+  "WA": 5,
+  "WI": 7,
   "WV": 0,
-  "WY": 15
+  "WY": 11
  },
- "made": "2026-10-29",
+ "made": "2026-10-30",
  "parks": {
   "CA-0049": {
    "acts": 19,
@@ -274,7 +274,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "NT GNWT Envi:40275",
+     "id": "NT GNWT Envi:40304",
      "km": 0.0,
      "layer": "NT GNWT Environment and Natural Resources (credit: Conservation Planning and Implementation Unit, ENR; Open Government Licence - NWT)",
      "name": "Hidden Lake Territorial Park",
@@ -356,30 +356,6 @@
    "n": "Basin Head Provincial Park",
    "site": false,
    "st": "CA-PE"
-  },
-  "CA-0881": {
-   "acts": 20,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "Nova Scotia ~2:26",
-     "km": 0.03,
-     "layer": "Nova Scotia parks and protected areas",
-     "name": "Annapolis Basin Lookoff Provincial Park",
-     "why": "shares annapolis, basin"
-    },
-    {
-     "acres": 0.0,
-     "id": "NS-PPA Nova :26",
-     "km": 0.03,
-     "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
-     "name": "Annapolis Basin Lookoff Provincial Park",
-     "why": "shares annapolis, basin"
-    }
-   ],
-   "n": "Annapolis Basin Look Off Provincial Park",
-   "site": false,
-   "st": "CA-NS"
   },
   "CA-0941": {
    "acts": 10,
@@ -501,46 +477,6 @@
    "site": false,
    "st": "CA-QC"
   },
-  "CA-1006": {
-   "acts": 3,
-   "leads": [
-    {
-     "acres": 3313.67805,
-     "id": "15782",
-     "km": 0.28,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction des aires protégées",
-     "name": "Montagne-du-Diable Land set aside",
-     "why": "shares diable, montagne"
-    },
-    {
-     "acres": 0.0,
-     "id": "Québec prote:2127",
-     "km": 0.28,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Territoire mis en réserve de la Montagne-du-Diable",
-     "why": "shares diable, montagne"
-    },
-    {
-     "acres": 16355.87995,
-     "id": "15805",
-     "km": 0.85,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction des aires protégées",
-     "name": "Proposed Montagne-du-Diable Biodiversity Reserve",
-     "why": "shares diable, montagne"
-    },
-    {
-     "acres": 0.0,
-     "id": "Québec prote:2130",
-     "km": 0.85,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Réserve de biodiversité projetée de la Montagne-du-Diable",
-     "why": "shares diable, montagne"
-    }
-   ],
-   "n": "Parc régional Montagne du Diable Regional Park",
-   "site": false,
-   "st": "CA-QC"
-  },
   "CA-1048": {
    "acts": 28,
    "leads": [
@@ -597,30 +533,6 @@
    "site": false,
    "st": "CA-SK"
   },
-  "CA-1299": {
-   "acts": 11,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "ON-ABCA Ausa:4",
-     "km": 0.0,
-     "layer": "ON-ABCA Ausable Bayfield Conservation Authority",
-     "name": "Bannockburn CA",
-     "why": "shares bannockburn"
-    },
-    {
-     "acres": 0.0,
-     "id": "ON-ABCA Ausa:95",
-     "km": 0.12,
-     "layer": "ON-ABCA Ausable Bayfield Conservation Authority",
-     "name": "Bannockburn CA (Smith Tract)",
-     "why": "shares bannockburn"
-    }
-   ],
-   "n": "Bannockburn Conservation Reserve",
-   "site": false,
-   "st": "CA-ON"
-  },
   "CA-1312": {
    "acts": 27,
    "leads": [
@@ -658,46 +570,6 @@
     }
    ],
    "n": "Hilliardton Marsh Conservation Reserve",
-   "site": false,
-   "st": "CA-ON"
-  },
-  "CA-1519": {
-   "acts": 38,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "ON-TRCA Toro:1018",
-     "km": 0.0,
-     "layer": "ON-TRCA Toronto and Region Conservation Authority",
-     "name": "Milne Park",
-     "why": "shares milne"
-    },
-    {
-     "acres": 0.0,
-     "id": "ON-TRCA Toro:1017",
-     "km": 0.27,
-     "layer": "ON-TRCA Toronto and Region Conservation Authority",
-     "name": "Milne Park",
-     "why": "shares milne"
-    },
-    {
-     "acres": 0.0,
-     "id": "ON-TRCA Toro:1642",
-     "km": 0.29,
-     "layer": "ON-TRCA Toronto and Region Conservation Authority",
-     "name": "Milne Park",
-     "why": "shares milne"
-    },
-    {
-     "acres": 0.0,
-     "id": "ON-TRCA Toro:2076",
-     "km": 0.44,
-     "layer": "ON-TRCA Toronto and Region Conservation Authority",
-     "name": "Milne Park",
-     "why": "shares milne"
-    }
-   ],
-   "n": "Milne Dam Conservation Park",
    "site": false,
    "st": "CA-ON"
   },
@@ -1293,6 +1165,22 @@
    "site": false,
    "st": "CA-MB"
   },
+  "CA-2503": {
+   "acts": 0,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "Manitoba pro:22",
+     "km": 0.21,
+     "layer": "Manitoba provincial forests (Government of Manitoba; contains information licensed under the OpenMB Information and Data Use Licence)",
+     "name": "Sandilands Provincial Forest",
+     "why": "shares sandilands"
+    }
+   ],
+   "n": "Sandilands Provincial Forest Wildlife Management Area",
+   "site": false,
+   "st": "CA-MB"
+  },
   "CA-2720": {
    "acts": 0,
    "leads": [
@@ -1602,7 +1490,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6111461",
+     "id": "BC-HP Govern:6120928",
      "km": 0.0,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Barkerville",
@@ -1650,7 +1538,15 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6108216",
+     "id": "BC local and:3557360",
+     "km": 0.02,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Colony Farm Regional Park",
+     "why": "shares colony, farm"
+    },
+    {
+     "acres": 0.0,
+     "id": "BC-HP Govern:6117683",
      "km": 0.03,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Colony Farm Manager's Residence",
@@ -1658,7 +1554,7 @@
     },
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6109738",
+     "id": "BC-HP Govern:6119205",
      "km": 0.03,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Colony Farm Bunkhouse",
@@ -1669,35 +1565,19 @@
    "site": false,
    "st": "CA-BC"
   },
-  "CA-3427": {
-   "acts": 10,
+  "CA-3359": {
+   "acts": 36,
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6109511",
-     "km": 0.45,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "1053 Douglas Crescent",
-     "why": "shares douglas"
-    },
-    {
-     "acres": 0.0,
-     "id": "BC-HP Govern:6110310",
-     "km": 0.51,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "1075 Douglas Crescent",
-     "why": "shares douglas"
-    },
-    {
-     "acres": 0.0,
-     "id": "BC-HP Govern:6112528",
-     "km": 0.51,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "1069 Douglas Crescent",
-     "why": "shares douglas"
+     "id": "BC local and:3557360",
+     "km": 0.41,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Colony Farm Regional Park",
+     "why": "same kind of place (rp)"
     }
    ],
-   "n": "Douglas Park",
+   "n": "ƛ̓éxətəm Regional Park",
    "site": false,
    "st": "CA-BC"
   },
@@ -1717,51 +1597,19 @@
    "site": false,
    "st": "CA-BC"
   },
-  "CA-3508": {
-   "acts": 3,
+  "CA-3601": {
+   "acts": 23,
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6111540",
-     "km": 0.51,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "Fleetwood Memorial Baptist Church",
-     "why": "shares fleetwood"
-    }
-   ],
-   "n": "Fleetwood Meadows Park",
-   "site": false,
-   "st": "CA-BC"
-  },
-  "CA-3591": {
-   "acts": 22,
-   "leads": [
-    {
-     "acres": 49.792495185949996,
-     "id": "19467",
+     "id": "BC local and:3555705",
      "km": 0.0,
-     "layer": "City of Surrey",
-     "name": "Hawthorne Rotary Park",
-     "why": "shares hawthorne"
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Hickey Street Reservoir Park",
+     "why": "shares hickey"
     }
    ],
-   "n": "Hawthorne Park",
-   "site": false,
-   "st": "CA-BC"
-  },
-  "CA-3642": {
-   "acts": 42,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "BC-HP Govern:6113817",
-     "km": 0.3,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "Gertrude Lawson House",
-     "why": "shares lawson"
-    }
-   ],
-   "n": "John Lawson Park",
+   "n": "Hickey Park",
    "site": false,
    "st": "CA-BC"
   },
@@ -1770,7 +1618,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6113655",
+     "id": "BC-HP Govern:6123122",
      "km": 0.23,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Kilby General Store Museum",
@@ -1786,7 +1634,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6107990",
+     "id": "BC-HP Govern:6117457",
      "km": 0.0,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Point Atkinson Lighthouse",
@@ -1797,51 +1645,107 @@
    "site": false,
    "st": "CA-BC"
   },
-  "CA-3773": {
-   "acts": 13,
-   "leads": [
-    {
-     "acres": 421.72110083489997,
-     "id": "19503",
-     "km": 0.64,
-     "layer": "City of Surrey",
-     "name": "Green Timbers Urban Forest Park",
-     "why": "shares green"
-    }
-   ],
-   "n": "Maple Green Park",
-   "site": false,
-   "st": "CA-BC"
-  },
-  "CA-3882": {
-   "acts": 36,
+  "CA-3743": {
+   "acts": 34,
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6109481",
-     "km": 0.44,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "Navvy Jack Thomas House",
-     "why": "shares jack, navvy"
+     "id": "BC local and:3556271",
+     "km": 0.0,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Cates Park/ Whey-Ah-Wichen",
+     "why": "shares cates"
+    },
+    {
+     "acres": 0.0,
+     "id": "BC local and:3556444",
+     "km": 0.9,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Cates Park/ Whey-Ah-Wichen",
+     "why": "shares cates"
     }
    ],
-   "n": "Navvy Jack Point Park",
+   "n": "Little Cates Park",
    "site": false,
    "st": "CA-BC"
   },
-  "CA-4023": {
-   "acts": 4,
+  "CA-3746": {
+   "acts": 20,
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6108312",
-     "km": 0.3,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "Riverview",
-     "why": "shares riverview"
+     "id": "BC local and:3554451",
+     "km": 0.0,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Locarno Park",
+     "why": "shares locarno"
+    },
+    {
+     "acres": 0.0,
+     "id": "BC local and:3554659",
+     "km": 0.67,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Locarno Park",
+     "why": "shares locarno"
     }
    ],
-   "n": "Riverview Forest Park",
+   "n": "Locarno Beach Park",
+   "site": false,
+   "st": "CA-BC"
+  },
+  "CA-3968": {
+   "acts": 26,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "BC local and:3557372",
+     "km": 0.01,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Pitt River Greenway",
+     "why": "shares greenway, pitt"
+    }
+   ],
+   "n": "Pitt River Regional Greenway Park",
+   "site": false,
+   "st": "CA-BC"
+  },
+  "CA-4025": {
+   "acts": 79,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "BC local and:3556832",
+     "km": 0.4,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Burnaby Lake Regional Nature Park",
+     "why": "shares burnaby"
+    },
+    {
+     "acres": 0.0,
+     "id": "BC local and:3556977",
+     "km": 0.4,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Burnaby Lake Regional Nature Park",
+     "why": "shares burnaby"
+    },
+    {
+     "acres": 0.0,
+     "id": "BC local and:3556978",
+     "km": 0.4,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Burnaby Lake Regional Nature Park",
+     "why": "shares burnaby"
+    },
+    {
+     "acres": 0.0,
+     "id": "BC local and:3556838",
+     "km": 0.49,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Burnaby Lake Regional Nature Park",
+     "why": "shares burnaby"
+    }
+   ],
+   "n": "Robert Burnaby Park",
    "site": false,
    "st": "CA-BC"
   },
@@ -1866,7 +1770,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "NT GNWT Envi:40275",
+     "id": "NT GNWT Envi:40304",
      "km": 0.82,
      "layer": "NT GNWT Environment and Natural Resources (credit: Conservation Planning and Implementation Unit, ENR; Open Government Licence - NWT)",
      "name": "Hidden Lake Territorial Park",
@@ -2058,7 +1962,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6113774",
+     "id": "BC-HP Govern:6123241",
      "km": 0.0,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Athabasca Pass Trail",
@@ -2146,7 +2050,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6114551",
+     "id": "BC-HP Govern:6124018",
      "km": 0.06,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Kootenai House",
@@ -2746,30 +2650,6 @@
     }
    ],
    "n": "Parc régional des Grandes-Rivières du lac Saint-Jean Regional Park",
-   "site": false,
-   "st": "CA-QC"
-  },
-  "CA-4969": {
-   "acts": 5,
-   "leads": [
-    {
-     "acres": 1877.998,
-     "id": "15783",
-     "km": 0.49,
-     "layer": "Ministère de l'Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs, Direction des aires protégées",
-     "name": "Sept-Chutes Land set aside",
-     "why": "shares chutes, sept"
-    },
-    {
-     "acres": 0.0,
-     "id": "Québec prote:2128",
-     "km": 0.49,
-     "layer": "Québec protected areas register (MELCCFP)",
-     "name": "Territoire mis en réserve des Sept-Chutes",
-     "why": "shares chutes, sept"
-    }
-   ],
-   "n": "Parc regional des Sept-Chutes Regional Park",
    "site": false,
    "st": "CA-QC"
   },
@@ -3514,7 +3394,15 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6111735",
+     "id": "BC local and:3561959",
+     "km": 0.08,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "City Park",
+     "why": "shares city"
+    },
+    {
+     "acres": 0.0,
+     "id": "BC-HP Govern:6121202",
      "km": 0.22,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Kelowna  Fire Hall",
@@ -3522,7 +3410,7 @@
     },
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6110445",
+     "id": "BC-HP Govern:6119912",
      "km": 0.43,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Kelowna Club",
@@ -3530,18 +3418,10 @@
     },
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6114026",
+     "id": "BC-HP Govern:6123493",
      "km": 0.51,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Kelowna and District Memorial Arena",
-     "why": "shares kelowna"
-    },
-    {
-     "acres": 0.0,
-     "id": "BC-HP Govern:6114543",
-     "km": 0.69,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "Kelowna Secondary School",
      "why": "shares kelowna"
     }
    ],
@@ -3629,38 +3509,6 @@
    "site": false,
    "st": "CA-BC"
   },
-  "CA-5499": {
-   "acts": 2,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "BC-HP Govern:6112167",
-     "km": 0.42,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "Crippen Park Meadow Ruins",
-     "why": "shares crippen"
-    }
-   ],
-   "n": "Crippen Regional Park",
-   "site": false,
-   "st": "CA-BC"
-  },
-  "CA-5500": {
-   "acts": 71,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "BC-HP Govern:6113343",
-     "km": 0.58,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "Deas Island Cannery Site",
-     "why": "shares deas"
-    }
-   ],
-   "n": "Deas Island Regional Park",
-   "site": false,
-   "st": "CA-BC"
-  },
   "CA-5527": {
    "acts": 25,
    "leads": [
@@ -3676,38 +3524,6 @@
    "n": "Waterloo Pioneer Memorial Tower National Heritage Site",
    "site": false,
    "st": "CA-ON"
-  },
-  "CA-5539": {
-   "acts": 421,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "BC-HP Govern:6113083",
-     "km": 0.32,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "The Uplands Gates",
-     "why": "shares uplands"
-    }
-   ],
-   "n": "Uplands Park Natural Area",
-   "site": false,
-   "st": "CA-BC"
-  },
-  "CA-5540": {
-   "acts": 146,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "BC-HP Govern:6113816",
-     "km": 0.3,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "Old Beacon Hill School",
-     "why": "shares beacon"
-    }
-   ],
-   "n": "Beacon Hill Park",
-   "site": false,
-   "st": "CA-BC"
   },
   "CA-5553": {
    "acts": 90,
@@ -3941,22 +3757,6 @@
    "site": false,
    "st": "CA-ON"
   },
-  "CA-5649": {
-   "acts": 142,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "ON-GANA Gana:8",
-     "km": 0.24,
-     "layer": "ON-GANA Ganaraska Region Conservation Authority (maps2.grca.on.ca)",
-     "name": "Richardson's Lookout C.A.",
-     "why": "shares lookout, richardsons"
-    }
-   ],
-   "n": "Richardson's Lookout Conservation Area",
-   "site": false,
-   "st": "CA-ON"
-  },
   "CA-5650": {
    "acts": 25,
    "leads": [
@@ -3970,30 +3770,6 @@
     }
    ],
    "n": "Thurne Parks Conservation Area",
-   "site": false,
-   "st": "CA-ON"
-  },
-  "CA-5653": {
-   "acts": 22,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "ON-GSCA Grey:1070",
-     "km": 0.02,
-     "layer": "ON-GSCA Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
-     "name": "Pottawatomi",
-     "why": "shares pottawatomi"
-    },
-    {
-     "acres": 0.0,
-     "id": "ON-GSCA Grey:1139",
-     "km": 0.35,
-     "layer": "ON-GSCA Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
-     "name": "Pottawatomi",
-     "why": "shares pottawatomi"
-    }
-   ],
-   "n": "Pottawatomi and Jones Falls Conservation Area",
    "site": false,
    "st": "CA-ON"
   },
@@ -4018,22 +3794,6 @@
     }
    ],
    "n": "Bognor-Marsh Management Area",
-   "site": false,
-   "st": "CA-ON"
-  },
-  "CA-5661": {
-   "acts": 20,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "ON-GSCA Grey:989",
-     "km": 0.21,
-     "layer": "ON-GSCA Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
-     "name": "Feversham",
-     "why": "shares feversham"
-    }
-   ],
-   "n": "Feversham Gorge – Madeleine Graydon Memorial Conservation Area",
    "site": false,
    "st": "CA-ON"
   },
@@ -4797,22 +4557,6 @@
    "site": false,
    "st": "CA-AB"
   },
-  "CA-6125": {
-   "acts": 6,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "AB-PLUZ Gove:29",
-     "km": 0.37,
-     "layer": "AB-PLUZ Government of Alberta - Forestry and Parks / Public Lands",
-     "name": "Porcupine Hills",
-     "why": "shares porcupine"
-    }
-   ],
-   "n": "Porcupine Hills Public Land Use Zone Other Conservation Area",
-   "site": false,
-   "st": "CA-AB"
-  },
   "CA-6127": {
    "acts": 2,
    "leads": [
@@ -4852,22 +4596,6 @@
    "n": "Athabasca Ranch Public Land Use Zone Recreation Park",
    "site": false,
    "st": "CA-AB"
-  },
-  "CA-6161": {
-   "acts": 0,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "New Brunswic~1:79",
-     "km": 0.62,
-     "layer": "New Brunswick Nature Legacy protected areas (GNB)",
-     "name": "Restigouche Wilderness Waterway - Kedgwick River",
-     "why": "shares restigouche"
-    }
-   ],
-   "n": "Upper Restigouche (Listuguj) River National Heritage Area",
-   "site": false,
-   "st": "CA-NB"
   },
   "CA-6166": {
    "acts": 0,
@@ -5274,7 +5002,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6109390",
+     "id": "BC-HP Govern:6118857",
      "km": 0.03,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Craigflower Manor",
@@ -5282,27 +5010,27 @@
     },
     {
      "acres": 0.0,
-     "id": "BC-HP Govern:6108130",
+     "id": "BC local and:3561361",
+     "km": 0.05,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Craigflower Farm Historic Site",
+     "why": "shares craigflower"
+    },
+    {
+     "acres": 0.0,
+     "id": "BC local and:3560919",
+     "km": 0.08,
+     "layer": "BC local and regional greenspaces (BC Map Hub; Open Government Licence - British Columbia)",
+     "name": "Craigflower-Kosapsom Park",
+     "why": "shares craigflower"
+    },
+    {
+     "acres": 0.0,
+     "id": "BC-HP Govern:6117597",
      "km": 0.08,
      "layer": "BC-HP Government of British Columbia (Historic Places)",
      "name": "Craigflower Schoolhouse",
      "why": "shares craigflower"
-    },
-    {
-     "acres": 0.0,
-     "id": "BC-HP Govern:6112147",
-     "km": 0.33,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "Craigflower Bridge Store",
-     "why": "shares craigflower"
-    },
-    {
-     "acres": 0.0,
-     "id": "BC-HP Govern:6108668",
-     "km": 0.82,
-     "layer": "BC-HP Government of British Columbia (Historic Places)",
-     "name": "George Woodward House",
-     "why": "shares house"
     }
    ],
    "n": "Craigflower Manor House National Historic Site",
@@ -5388,46 +5116,6 @@
    "n": "Hampton Goal (Jail) Historic Site",
    "site": false,
    "st": "CA-NB"
-  },
-  "CA-6437": {
-   "acts": 5,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "Nova Scotia ~2:69",
-     "km": 0.05,
-     "layer": "Nova Scotia parks and protected areas",
-     "name": "Tidnish Dock Provincial Park",
-     "why": "shares dock, tidnish"
-    },
-    {
-     "acres": 0.0,
-     "id": "NS-PPA Nova :69",
-     "km": 0.05,
-     "layer": "NS-PPA Nova Scotia Environment (Parks and Protected Areas System)",
-     "name": "Tidnish Dock Provincial Park",
-     "why": "shares dock, tidnish"
-    },
-    {
-     "acres": 0.0,
-     "id": "Nova Scotia :987",
-     "km": 0.65,
-     "layer": "Nova Scotia protected areas (NS Environment)",
-     "name": "Tidnish Conservation Lands",
-     "why": "shares tidnish"
-    },
-    {
-     "acres": 0.0,
-     "id": "Nova Scotia ~2:1083",
-     "km": 0.65,
-     "layer": "Nova Scotia parks and protected areas",
-     "name": "Tidnish Conservation Lands",
-     "why": "shares tidnish"
-    }
-   ],
-   "n": "Tidnish Dock Site Historic Site",
-   "site": false,
-   "st": "CA-NS"
   },
   "CA-6444": {
    "acts": 2,
@@ -5693,54 +5381,6 @@
    "site": false,
    "st": "MT"
   },
-  "US-0428": {
-   "acts": 4,
-   "leads": [
-    {
-     "acres": 55027.0,
-     "id": "3965",
-     "km": 0.0,
-     "layer": "J. CLARK SALYER NATIONAL WILDLIFE REFUGE",
-     "name": "J. Clark Salyer National Wildlife Refuge",
-     "why": "shares clark, salyer"
-    },
-    {
-     "acres": 55029.0,
-     "id": "4912",
-     "km": 0.0,
-     "layer": "J. Clark Salyer National Wildlife Refuge",
-     "name": "J. Clark Salyer National Wildlife Refuge",
-     "why": "shares clark, salyer"
-    }
-   ],
-   "n": "J. Clark Salyer Wetland Management District",
-   "site": false,
-   "st": "ND"
-  },
-  "US-0604": {
-   "acts": 43,
-   "leads": [
-    {
-     "acres": 6140.0,
-     "id": "4351",
-     "km": 0.0,
-     "layer": "ST. CROIX COUNTY WATERFOWL PRODUCTION AREA",
-     "name": "St. Croix County Waterfowl Production Area",
-     "why": "shares croix"
-    },
-    {
-     "acres": 6418.0,
-     "id": "5309",
-     "km": 0.0,
-     "layer": "St. Croix County Waterfowl Production Area",
-     "name": "St. Croix County Waterfowl Production Area",
-     "why": "shares croix"
-    }
-   ],
-   "n": "St. Croix Wetland Management District",
-   "site": false,
-   "st": "WI"
-  },
   "US-0655": {
    "acts": 709,
    "leads": [
@@ -5973,70 +5613,6 @@
    "site": false,
    "st": "CA"
   },
-  "US-0980": {
-   "acts": 70,
-   "leads": [
-    {
-     "acres": 276.7,
-     "id": "sgilb828",
-     "km": 0.0,
-     "layer": "Illinois Department of Natural Resources (preserve, state GIS table)",
-     "name": "Beall Woods Nature Preserve",
-     "why": "shares beall, woods"
-    },
-    {
-     "acres": 634.8,
-     "id": "sgila1488",
-     "km": 0.0,
-     "layer": "Illinois Department of Natural Resources (preserve, state GIS table)",
-     "name": "Beall Woods State Conservation Area",
-     "why": "shares beall, woods"
-    },
-    {
-     "acres": 14.5,
-     "id": "sgilb827",
-     "km": 0.06,
-     "layer": "Illinois Department of Natural Resources (preserve, state GIS table)",
-     "name": "Beall Woods Nature Preserve Addition",
-     "why": "shares beall, woods"
-    },
-    {
-     "acres": 4.9,
-     "id": "sgilb829",
-     "km": 0.15,
-     "layer": "Illinois Department of Natural Resources (preserve, state GIS table)",
-     "name": "Beall Woods Nature Preserve Buffer",
-     "why": "shares beall, woods"
-    }
-   ],
-   "n": "Beall Woods State Park",
-   "site": false,
-   "st": "IL"
-  },
-  "US-0990": {
-   "acts": 23,
-   "leads": [
-    {
-     "acres": 2231.0,
-     "id": "70866",
-     "km": 0.37,
-     "layer": "Illinois Department of Natural Resources",
-     "name": "Lake DePue State Fish and Wildlife Area",
-     "why": "shares depue"
-    },
-    {
-     "acres": 2237.6,
-     "id": "sgila1693",
-     "km": 0.37,
-     "layer": "Illinois Department of Natural Resources (preserve, state GIS table)",
-     "name": "Lake DePue State Fish and Wildlife Area",
-     "why": "shares depue"
-    }
-   ],
-   "n": "Donnelley/DePue State Park",
-   "site": false,
-   "st": "IL"
-  },
   "US-10007": {
    "acts": 508,
    "leads": [
@@ -6093,37 +5669,69 @@
    "site": true,
    "st": "OR"
   },
-  "US-10025": {
-   "acts": 4,
+  "US-10055": {
+   "acts": 29,
    "leads": [
     {
-     "acres": 9821.43531,
-     "id": "rma10853",
-     "km": 0.0,
+     "acres": 8061.92508251,
+     "id": "rma11015",
+     "km": 0.09,
      "layer": "BLM recreation areas",
-     "name": "Christmas Valley Sand Dunes",
-     "why": "shares dunes"
+     "name": "Cline Buttes OHV Area-South",
+     "why": "shares buttes, cline, ohv"
     },
     {
-     "acres": 9821.43531,
-     "id": "rst10853",
-     "km": 0.0,
+     "acres": 8061.92508251,
+     "id": "rst11015",
+     "km": 0.09,
      "layer": "BLM recreation sites",
-     "name": "Christmas Valley Sand Dunes",
-     "why": "shares dunes"
+     "name": "Cline Buttes OHV Area-South",
+     "why": "shares buttes, cline, ohv"
     },
     {
-     "acres": 0.0,
-     "id": "wsa31304",
-     "km": 0.0,
-     "layer": "BLM wilderness study areas",
-     "name": "Sand Dunes WSA",
-     "why": "shares dunes"
+     "acres": 5241.83942144,
+     "id": "rma11022",
+     "km": 0.48,
+     "layer": "BLM recreation areas",
+     "name": "Cline Buttes OHV Area-North",
+     "why": "shares buttes, cline, ohv"
+    },
+    {
+     "acres": 5241.83942144,
+     "id": "rst11022",
+     "km": 0.48,
+     "layer": "BLM recreation sites",
+     "name": "Cline Buttes OHV Area-North",
+     "why": "shares buttes, cline, ohv"
     }
    ],
-   "n": "Lost Forest/Dunes/Fossil BLM Special Recreation Management Area",
+   "n": "Cline Buttes OHV BLM Recreation Management Area",
    "site": true,
    "st": "OR"
+  },
+  "US-10070": {
+   "acts": 26,
+   "leads": [
+    {
+     "acres": 780.99921898,
+     "id": "sgakh1119",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "North Menan Butte",
+     "why": "shares menan"
+    },
+    {
+     "acres": 343.90688872,
+     "id": "sgakh1134",
+     "km": 0.04,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "North Menan Butte RNA",
+     "why": "shares menan"
+    }
+   ],
+   "n": "Menan Buttes (BLM) Natural Monument",
+   "site": false,
+   "st": "ID"
   },
   "US-10184": {
    "acts": 27,
@@ -6308,30 +5916,6 @@
    "n": "Star of the Republic Museum State Historic Site",
    "site": false,
    "st": "TX"
-  },
-  "US-10319": {
-   "acts": 10,
-   "leads": [
-    {
-     "acres": 305.0,
-     "id": "255353",
-     "km": 0.0,
-     "layer": "Unknown",
-     "name": "S. Scalp Creek Recreation Area",
-     "why": "shares scalp"
-    },
-    {
-     "acres": 102941.0,
-     "id": "2574",
-     "km": 0.52,
-     "layer": "Omaha",
-     "name": "Francis Case Recreation Area",
-     "why": "same kind of place (sp)"
-    }
-   ],
-   "n": "South Scalp Creek State Recreation Area",
-   "site": false,
-   "st": "SD"
   },
   "US-10388": {
    "acts": 22,
@@ -6605,30 +6189,6 @@
    "site": true,
    "st": "OR"
   },
-  "US-10477": {
-   "acts": 13,
-   "leads": [
-    {
-     "acres": 4603.78798959,
-     "id": "rma11287",
-     "km": 0.0,
-     "layer": "BLM recreation areas",
-     "name": "Virtue Flat OHV Area",
-     "why": "shares flat, virtue"
-    },
-    {
-     "acres": 4603.78798959,
-     "id": "rst11287",
-     "km": 0.0,
-     "layer": "BLM recreation sites",
-     "name": "Virtue Flat OHV Area",
-     "why": "shares flat, virtue"
-    }
-   ],
-   "n": "Virtue Flat Off-Highway Vehicle BLM Recreation Management Area",
-   "site": true,
-   "st": "OR"
-  },
   "US-10488": {
    "acts": 8,
    "leads": [
@@ -6745,18 +6305,18 @@
      "why": "shares watson"
     },
     {
-     "acres": 148.63448562,
-     "id": "cow882",
-     "km": 0.02,
-     "layer": "Colorado Parks and Wildlife properties",
+     "acres": 0.0,
+     "id": "sgcod369",
+     "km": 0.01,
+     "layer": "Colorado Parks and Wildlife (credit: CPW GIS Unit, CPW Real Estate Unit) (land, state GIS table)",
      "name": "Watson Lake SWA",
      "why": "shares watson"
     },
     {
      "acres": 148.63448562,
-     "id": "sgcoc882",
+     "id": "cow882",
      "km": 0.02,
-     "layer": "Colorado Parks & Wildlife (CPW AGOL org ttNGmDvKQA7oeDQ3) (wild, state GIS table)",
+     "layer": "Colorado Parks and Wildlife properties",
      "name": "Watson Lake SWA",
      "why": "shares watson"
     }
@@ -6788,22 +6348,6 @@
    "n": "Love and Strutt Creeks State Fish and Wildlife Area",
    "site": false,
    "st": "WI"
-  },
-  "US-10681": {
-   "acts": 53,
-   "leads": [
-    {
-     "acres": 38.0,
-     "id": "76224",
-     "km": 0.0,
-     "layer": "DE Division of Fish and Wildlife",
-     "name": "Masseys Pond",
-     "why": "shares masseys"
-    }
-   ],
-   "n": "Masseys Millpond State Fishing Lake",
-   "site": false,
-   "st": "DE"
   },
   "US-10751": {
    "acts": 13,
@@ -6860,86 +6404,6 @@
    "n": "Ray Norbut East Hannibal Unit State Fish and Wildlife Area",
    "site": false,
    "st": "IL"
-  },
-  "US-10828": {
-   "acts": 41,
-   "leads": [
-    {
-     "acres": 5.77595605902589,
-     "id": "sgwyb63",
-     "km": 0.0,
-     "layer": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
-     "name": "Quebec 01 MAF",
-     "why": "shares one, quebec"
-    }
-   ],
-   "n": "Quebec 01 Missile Alert Facility State Park",
-   "site": false,
-   "st": "WY"
-  },
-  "US-10829": {
-   "acts": 31,
-   "leads": [
-    {
-     "acres": 457.3659602257407,
-     "id": "sgwyb42",
-     "km": 0.0,
-     "layer": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
-     "name": "Fetterman Battlefield",
-     "why": "shares fetterman"
-    },
-    {
-     "acres": 468.0,
-     "id": "292662",
-     "km": 0.0,
-     "layer": "Wyoming State Parks, Historic Sites & Trails",
-     "name": "Fetterman Battlefield",
-     "why": "shares fetterman"
-    }
-   ],
-   "n": "Fetterman Fight National Battlefield",
-   "site": false,
-   "st": "WY"
-  },
-  "US-10845": {
-   "acts": 1,
-   "leads": [
-    {
-     "acres": 57.7,
-     "id": "sgwyd10245",
-     "km": 0.0,
-     "layer": "Wyoming Game and Fish Department (AGOL org cWzdqIyxbijuhPLw) (wild, state GIS table)",
-     "name": "South Fork Shoshone River-Houlihan/Bobcat",
-     "why": "shares bobcat, houlihan"
-    },
-    {
-     "acres": 17.5,
-     "id": "sgwyd10246",
-     "km": 0.75,
-     "layer": "Wyoming Game and Fish Department (AGOL org cWzdqIyxbijuhPLw) (wild, state GIS table)",
-     "name": "South Fork Shoshone River-Houlihan/Bobcat",
-     "why": "shares bobcat, houlihan"
-    }
-   ],
-   "n": "Bobcat-Houlihan Trail BLM Recreation Management Area",
-   "site": true,
-   "st": "WY"
-  },
-  "US-10853": {
-   "acts": 6,
-   "leads": [
-    {
-     "acres": 71.5,
-     "id": "sgwyd10093",
-     "km": 0.01,
-     "layer": "Wyoming Game and Fish Department (AGOL org cWzdqIyxbijuhPLw) (wild, state GIS table)",
-     "name": "South Fork Shoshone River-Cody Canal",
-     "why": "shares canal, cody"
-    }
-   ],
-   "n": "Cody Canal BLM Recreation Management Area",
-   "site": true,
-   "st": "WY"
   },
   "US-10862": {
    "acts": 5,
@@ -7093,46 +6557,6 @@
    "site": false,
    "st": "UT"
   },
-  "US-10987": {
-   "acts": 1,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "wsa30828",
-     "km": 0.0,
-     "layer": "BLM wilderness study areas",
-     "name": "King Top",
-     "why": "same kind of place (wsa)"
-    }
-   ],
-   "n": "Fossil Mountain WSA BLM Wilderness Area",
-   "site": false,
-   "st": "UT"
-  },
-  "US-11003": {
-   "acts": 7,
-   "leads": [
-    {
-     "acres": 1042.51235874,
-     "id": "rma9736",
-     "km": 0.0,
-     "layer": "BLM recreation areas",
-     "name": "Glenwood",
-     "why": "shares glenwood"
-    },
-    {
-     "acres": 1042.51235874,
-     "id": "rst9736",
-     "km": 0.0,
-     "layer": "BLM recreation sites",
-     "name": "Glenwood",
-     "why": "shares glenwood"
-    }
-   ],
-   "n": "Glenwood Open OHV Area BLM Recreation Management Area",
-   "site": true,
-   "st": "UT"
-  },
   "US-11025": {
    "acts": 31,
    "leads": [
@@ -7146,6 +6570,30 @@
     }
    ],
    "n": "Uchee Creek Conservation Area",
+   "site": false,
+   "st": "AL"
+  },
+  "US-11027": {
+   "acts": 290,
+   "leads": [
+    {
+     "acres": 382.0,
+     "id": "sgalb181",
+     "km": 0.05,
+     "layer": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+     "name": "Big Canoe Creek",
+     "why": "shares canoe"
+    },
+    {
+     "acres": 40.0,
+     "id": "sgalb182",
+     "km": 0.47,
+     "layer": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+     "name": "Big Canoe Creek - Epps Addition",
+     "why": "shares canoe"
+    }
+   ],
+   "n": "Big Canoe Creek Nature Reserve",
    "site": false,
    "st": "AL"
   },
@@ -7202,6 +6650,38 @@
     }
    ],
    "n": "Kamas Utah State Fish Hatchery",
+   "site": true,
+   "st": "UT"
+  },
+  "US-11092": {
+   "acts": 14,
+   "leads": [
+    {
+     "acres": 43.0,
+     "id": "264024",
+     "km": 0.0,
+     "layer": "Utah State Department of Wildlife Resources",
+     "name": "Utah State Department of Wildlife Resources 130",
+     "why": "shares utah"
+    },
+    {
+     "acres": 0.0,
+     "id": "sgutb151",
+     "km": 0.0,
+     "layer": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+     "name": "Midway Hatchery",
+     "why": "shares midway"
+    },
+    {
+     "acres": 0.0,
+     "id": "264023",
+     "km": 0.11,
+     "layer": "Utah State Department of Wildlife Resources",
+     "name": "Utah State Department of Wildlife Resources 129",
+     "why": "shares utah"
+    }
+   ],
+   "n": "Midway Utah State Fish Hatchery",
    "site": true,
    "st": "UT"
   },
@@ -7477,30 +6957,6 @@
    "site": false,
    "st": "MD"
   },
-  "US-11244": {
-   "acts": 50,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "sgakb1814",
-     "km": 0.0,
-     "layer": "Alaska Department of Natural Resources (preserve, state GIS table)",
-     "name": "KNIK RIVER",
-     "why": "shares knik"
-    },
-    {
-     "acres": 79497.76882008,
-     "id": "rst9868",
-     "km": 0.82,
-     "layer": "BLM recreation sites",
-     "name": "Knik SRMA",
-     "why": "shares knik"
-    }
-   ],
-   "n": "Knik River Public Use Area State Recreation Area",
-   "site": false,
-   "st": "AK"
-  },
   "US-11256": {
    "acts": 17,
    "leads": [
@@ -7537,19 +6993,27 @@
      "why": "shares fork"
     },
     {
+     "acres": 57830.2050294,
+     "id": "sgakg13817",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "North Fork Owyhee Backcountry",
+     "why": "shares fork"
+    },
+    {
+     "acres": 57830.2050294,
+     "id": "sgidc810",
+     "km": 0.0,
+     "layer": "BLM Idaho recreation area polygons (76) (land, state GIS table)",
+     "name": "North Fork Owyhee Backcountry",
+     "why": "shares fork"
+    },
+    {
      "acres": 475.63713149,
      "id": "rst13809",
      "km": 0.01,
      "layer": "BLM recreation sites",
      "name": "North Fork Canyon",
-     "why": "shares fork"
-    },
-    {
-     "acres": 0.0,
-     "id": "wbl4925",
-     "km": 0.16,
-     "layer": "BLM wilderness",
-     "name": "North Fork Owyhee Wilderness",
      "why": "shares fork"
     }
    ],
@@ -7597,6 +7061,22 @@
    "site": true,
    "st": "ID"
   },
+  "US-11278": {
+   "acts": 4,
+   "leads": [
+    {
+     "acres": 77.95450438,
+     "id": "sgakh1131",
+     "km": 0.52,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "East Fork Salmon River Bench RNA",
+     "why": "shares fork"
+    }
+   ],
+   "n": "East Fork Recreation Site BLM Special Recreation Management Area",
+   "site": true,
+   "st": "ID"
+  },
   "US-11281": {
    "acts": 2,
    "leads": [
@@ -7610,6 +7090,22 @@
     }
    ],
    "n": "Morgan Creek Recreation Site BLM Recreation Management Area",
+   "site": true,
+   "st": "ID"
+  },
+  "US-11285": {
+   "acts": 20,
+   "leads": [
+    {
+     "acres": 135.77933402,
+     "id": "sgakh1128",
+     "km": 0.81,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Lucile Caves RNA",
+     "why": "shares lucile"
+    }
+   ],
+   "n": "Lucile Recreation Site BLM Recreation Management Area",
    "site": true,
    "st": "ID"
   },
@@ -7665,31 +7161,23 @@
      "why": "shares blackfoot"
     },
     {
-     "acres": 16890.27351531,
-     "id": "sgidb1939185",
-     "km": 0.11,
-     "layer": "Idaho Department of Fish and Game (Hydrography Public, Lakes and Reservoirs; owner idahofishandgame) (land, state GIS table)",
-     "name": "Blackfoot Reservoir",
+     "acres": 41391.33507,
+     "id": "sgakg13878",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Blackfoot",
+     "why": "shares blackfoot"
+    },
+    {
+     "acres": 41391.33507,
+     "id": "sgidc850",
+     "km": 0.0,
+     "layer": "BLM Idaho recreation area polygons (76) (land, state GIS table)",
+     "name": "Blackfoot",
      "why": "shares blackfoot"
     }
    ],
    "n": "Blackfoot Reservoir Recreation Site BLM Recreation Management Area",
-   "site": true,
-   "st": "ID"
-  },
-  "US-11310": {
-   "acts": 11,
-   "leads": [
-    {
-     "acres": 280.07808585,
-     "id": "rst13901",
-     "km": 0.0,
-     "layer": "BLM recreation sites",
-     "name": "Campground - Goodenough",
-     "why": "shares goodenough"
-    }
-   ],
-   "n": "Goodenough Creek Recreation Site BLM Recreation Management Area",
    "site": true,
    "st": "ID"
   },
@@ -7701,6 +7189,22 @@
      "id": "rst13903",
      "km": 0.04,
      "layer": "BLM recreation sites",
+     "name": "Campground - Pipeline",
+     "why": "shares pipeline"
+    },
+    {
+     "acres": 17.7690164,
+     "id": "sgakg13903",
+     "km": 0.04,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Campground - Pipeline",
+     "why": "shares pipeline"
+    },
+    {
+     "acres": 17.7690164,
+     "id": "sgidc855",
+     "km": 0.04,
+     "layer": "BLM Idaho recreation area polygons (76) (land, state GIS table)",
      "name": "Campground - Pipeline",
      "why": "shares pipeline"
     }
@@ -7741,19 +7245,19 @@
    "site": true,
    "st": "ID"
   },
-  "US-11328": {
-   "acts": 2,
+  "US-11335": {
+   "acts": 5,
    "leads": [
     {
-     "acres": 159.63908,
-     "id": "rst13910",
-     "km": 0.0,
-     "layer": "BLM recreation sites",
-     "name": "Huckleberry Campground",
-     "why": "shares huckleberry"
+     "acres": 16.05399483,
+     "id": "sgakh1196",
+     "km": 0.72,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Windy Bay RNA",
+     "why": "shares windy"
     }
    ],
-   "n": "Huckleberry Recreation Site BLM Recreation Management Area",
+   "n": "Windy Bay Boater Park BLM Recreation Management Area",
    "site": true,
    "st": "ID"
   },
@@ -7820,6 +7324,22 @@
    "n": "Muddy Creek WMA Wildlife Management Area",
    "site": false,
    "st": "AR"
+  },
+  "US-11584": {
+   "acts": 8,
+   "leads": [
+    {
+     "acres": 55209.60894279,
+     "id": "sgakh463",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Panoche/Coalinga",
+     "why": "shares panoche"
+    }
+   ],
+   "n": "Panoche Hills BLM Special Recreation Management Area",
+   "site": true,
+   "st": "CA"
   },
   "US-11650": {
    "acts": 3,
@@ -7903,6 +7423,14 @@
      "layer": "BLM recreation sites",
      "name": "Delta River SRMA",
      "why": "shares delta"
+    },
+    {
+     "acres": 43744.06052179,
+     "id": "sgakg11370",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Delta River SRMA",
+     "why": "shares delta"
     }
    ],
    "n": "Delta Wild and Scenic River Wayside Recreation Site",
@@ -7919,10 +7447,58 @@
      "layer": "BLM recreation sites",
      "name": "Gulkana River SRMA",
      "why": "shares gulkana"
+    },
+    {
+     "acres": 94512.78201959,
+     "id": "sgakg11429",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Gulkana River SRMA",
+     "why": "shares gulkana"
     }
    ],
    "n": "Gulkana BLM Wild and Scenic River",
    "site": false,
+   "st": "AK"
+  },
+  "US-11828": {
+   "acts": 6,
+   "leads": [
+    {
+     "acres": 247229.96380495,
+     "id": "rst10850",
+     "km": 0.0,
+     "layer": "BLM recreation sites",
+     "name": "Fortymile SRMA",
+     "why": "shares fortymile"
+    },
+    {
+     "acres": 247229.96380495,
+     "id": "sgakg10850",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Fortymile SRMA",
+     "why": "shares fortymile"
+    }
+   ],
+   "n": "Fortymile BLM Wild and Scenic River",
+   "site": false,
+   "st": "AK"
+  },
+  "US-11833": {
+   "acts": 1,
+   "leads": [
+    {
+     "acres": 53949.19,
+     "id": "sgakh1734",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Galbraith Lake ACEC",
+     "why": "shares galbraith"
+    }
+   ],
+   "n": "Galbraith Lake Campground BLM Recreation Management Area",
+   "site": true,
    "st": "AK"
   },
   "US-11835": {
@@ -7981,22 +7557,6 @@
    "site": false,
    "st": "AR"
   },
-  "US-11873": {
-   "acts": 17,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "sgarc342",
-     "km": 0.01,
-     "layer": "Arkansas Game and Fish Commission (AGOL org 5bMc8SlGDYGINZr5) (land, state GIS table)",
-     "name": "Iron Forks Lake",
-     "why": "shares iron"
-    }
-   ],
-   "n": "Iron Fork Reservoir State Fishing Lake",
-   "site": false,
-   "st": "AR"
-  },
   "US-11944": {
    "acts": 17,
    "leads": [
@@ -8033,6 +7593,14 @@
    "acts": 1,
    "leads": [
     {
+     "acres": 16887.11964667,
+     "id": "sgakh1124",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Herd Creek Watershed",
+     "why": "shares herd"
+    },
+    {
      "acres": 16.64551444,
      "id": "sgidb1939254",
      "km": 0.71,
@@ -8061,21 +7629,21 @@
    "site": true,
    "st": "AR"
   },
-  "US-12060": {
-   "acts": 10,
+  "US-11971": {
+   "acts": 51,
    "leads": [
     {
-     "acres": 502.0,
-     "id": "236245",
-     "km": 0.0,
-     "layer": "NYS Department of Environmental Conservation",
-     "name": "Crystal Lake Wild Forest",
-     "why": "shares crystal"
+     "acres": 2064.95982997,
+     "id": "sgakh39",
+     "km": 0.21,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Virgin River Corridor",
+     "why": "shares virgin"
     }
    ],
-   "n": "Crystal Lake State Forest",
-   "site": false,
-   "st": "NY"
+   "n": "Virgin River Canyon BLM Recreation Management Area",
+   "site": true,
+   "st": "AZ"
   },
   "US-12082": {
    "acts": 14,
@@ -8141,22 +7709,6 @@
    "site": false,
    "st": "CO"
   },
-  "US-12115": {
-   "acts": 8,
-   "leads": [
-    {
-     "acres": 230960.188,
-     "id": "fsod44",
-     "km": 0.0,
-     "layer": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
-     "name": "Sattitla Highlands National Monument",
-     "why": "shares highlands"
-    }
-   ],
-   "n": "Sáttítla Highlands Natural Monument",
-   "site": false,
-   "st": "CA"
-  },
   "US-12124": {
    "acts": 50,
    "leads": [
@@ -8213,46 +7765,62 @@
    "site": true,
    "st": "UT"
   },
-  "US-12189": {
-   "acts": 32,
+  "US-12162": {
+   "acts": 15,
    "leads": [
     {
-     "acres": 52.45519464,
-     "id": "sgcoc32",
-     "km": 0.08,
-     "layer": "Colorado Parks & Wildlife (CPW AGOL org ttNGmDvKQA7oeDQ3) (wild, state GIS table)",
-     "name": "Arkansas Headwaters RA - BV Whitewater Park",
-     "why": "same kind of place (wma)"
+     "acres": 3680.07802491,
+     "id": "sgakh50",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Sears Point Core",
+     "why": "shares sears"
     },
     {
-     "acres": 1529.14171429,
-     "id": "sgcoc29",
-     "km": 0.12,
-     "layer": "Colorado Parks & Wildlife (CPW AGOL org ttNGmDvKQA7oeDQ3) (wild, state GIS table)",
-     "name": "Arkansas Headwaters RA - BLM Site",
-     "why": "same kind of place (wma)"
-    },
-    {
-     "acres": 1.0,
-     "id": "189089",
-     "km": 0.49,
-     "layer": "Colorado Parks & Wildlife",
-     "name": "Chesmore State Wildlife Area",
-     "why": "same kind of place (wma)"
+     "acres": 24835.00488983,
+     "id": "sgakh64",
+     "km": 0.31,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Sears Point",
+     "why": "shares sears"
     }
    ],
-   "n": "Buena Vista State Wildlife Area",
-   "site": false,
-   "st": "CO"
+   "n": "Sears Point BLM Historic Preservation Site",
+   "site": true,
+   "st": "AZ"
   },
   "US-12210": {
    "acts": 28,
    "leads": [
     {
+     "acres": 613.37749777,
+     "id": "sgakh1105",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Jump Creek Canyon",
+     "why": "shares jump"
+    },
+    {
      "acres": 8710.82784607,
      "id": "rst13749",
      "km": 0.0,
      "layer": "BLM recreation sites",
+     "name": "Jump Creek",
+     "why": "shares jump"
+    },
+    {
+     "acres": 8710.82784607,
+     "id": "sgakg13749",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Jump Creek",
+     "why": "shares jump"
+    },
+    {
+     "acres": 8710.82784607,
+     "id": "sgidc804",
+     "km": 0.0,
+     "layer": "BLM Idaho recreation area polygons (76) (land, state GIS table)",
      "name": "Jump Creek",
      "why": "shares jump"
     }
@@ -8289,6 +7857,22 @@
      "why": "shares magic"
     },
     {
+     "acres": 21284.62331,
+     "id": "sgakg13893",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Magic Reservoir",
+     "why": "shares magic"
+    },
+    {
+     "acres": 21284.62331,
+     "id": "sgidc830",
+     "km": 0.0,
+     "layer": "BLM Idaho recreation area polygons (76) (land, state GIS table)",
+     "name": "Magic Reservoir",
+     "why": "shares magic"
+    },
+    {
      "acres": 0.0,
      "id": "wsa30591",
      "km": 0.08,
@@ -8309,6 +7893,22 @@
      "id": "rst13897",
      "km": 0.0,
      "layer": "BLM recreation sites",
+     "name": "Jarbidge Forks",
+     "why": "shares forks"
+    },
+    {
+     "acres": 1981.69688857,
+     "id": "sgakg13897",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Jarbidge Forks",
+     "why": "shares forks"
+    },
+    {
+     "acres": 1981.69688857,
+     "id": "sgidc838",
+     "km": 0.0,
+     "layer": "BLM Idaho recreation area polygons (76) (land, state GIS table)",
      "name": "Jarbidge Forks",
      "why": "shares forks"
     }
@@ -8343,6 +7943,30 @@
      "layer": "BLM recreation sites",
      "name": "Snake River",
      "why": "shares snake"
+    },
+    {
+     "acres": 128532.67702,
+     "id": "sgakg13921",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Snake River",
+     "why": "shares snake"
+    },
+    {
+     "acres": 128532.67702,
+     "id": "sgidc877",
+     "km": 0.0,
+     "layer": "BLM Idaho recreation area polygons (76) (land, state GIS table)",
+     "name": "Snake River",
+     "why": "shares snake"
+    },
+    {
+     "acres": 144078.46297158,
+     "id": "sgakh1123",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Snake River",
+     "why": "shares snake"
     }
    ],
    "n": "South Fork Snake River Access State Fish and Wildlife Area",
@@ -8362,6 +7986,38 @@
     }
    ],
    "n": "Portneuf Gap River Access BLM Recreation Management Area",
+   "site": true,
+   "st": "ID"
+  },
+  "US-12289": {
+   "acts": 9,
+   "leads": [
+    {
+     "acres": 135.77933402,
+     "id": "sgakh1128",
+     "km": 0.25,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Lucile Caves RNA",
+     "why": "shares lucile"
+    }
+   ],
+   "n": "Old Lucile Recreation Site BLM Recreation Management Area",
+   "site": true,
+   "st": "ID"
+  },
+  "US-12290": {
+   "acts": 13,
+   "leads": [
+    {
+     "acres": 8.67447375,
+     "id": "sgakh1141",
+     "km": 0.66,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Skookumchuck RNA",
+     "why": "shares skookumchuck"
+    }
+   ],
+   "n": "Skookumchuck Recreation Site BLM Recreation Management Area",
    "site": true,
    "st": "ID"
   },
@@ -8420,46 +8076,6 @@
    "n": "Julian Price National Park",
    "site": false,
    "st": "NC"
-  },
-  "US-12372": {
-   "acts": 14,
-   "leads": [
-    {
-     "acres": 3.28824411,
-     "id": "sgnvd26",
-     "km": 0.01,
-     "layer": "Nevada (SCORP recreation areas) (land, state GIS table)",
-     "name": "Cave Rock Lake Tahoe-Nevada State Park",
-     "why": "shares cave"
-    },
-    {
-     "acres": 3.29089135,
-     "id": "sgnvb26",
-     "km": 0.01,
-     "layer": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server) (land, state GIS table)",
-     "name": "Cave Rock Lake Tahoe-Nevada State Park",
-     "why": "shares cave"
-    },
-    {
-     "acres": 3.0,
-     "id": "230199",
-     "km": 0.06,
-     "layer": "Nevada State Parks",
-     "name": "Lake Tahoe Nevada State Park",
-     "why": "same kind of place (sp)"
-    },
-    {
-     "acres": 1.0,
-     "id": "230505",
-     "km": 0.21,
-     "layer": "Unknown",
-     "name": "Open Space",
-     "why": "same kind of place (sp)"
-    }
-   ],
-   "n": "Cave Rock State Park",
-   "site": false,
-   "st": "NV"
   },
   "US-12377": {
    "acts": 76,
@@ -8693,6 +8309,86 @@
    "site": false,
    "st": "MT"
   },
+  "US-12830": {
+   "acts": 1,
+   "leads": [
+    {
+     "acres": 7.0,
+     "id": "271501",
+     "km": 0.01,
+     "layer": "Unknown",
+     "name": "Old Ruby",
+     "why": "shares ruby"
+    }
+   ],
+   "n": "Old Ruby State Park State Heritage Area",
+   "site": false,
+   "st": "WA"
+  },
+  "US-12837": {
+   "acts": 3,
+   "leads": [
+    {
+     "acres": 2.3970874,
+     "id": "rma11252",
+     "km": 0.02,
+     "layer": "BLM recreation areas",
+     "name": "East Shore Campground",
+     "why": "shares shore"
+    },
+    {
+     "acres": 2.3970874,
+     "id": "rst11252",
+     "km": 0.02,
+     "layer": "BLM recreation sites",
+     "name": "East Shore Campground",
+     "why": "shares shore"
+    }
+   ],
+   "n": "East Shore BLM Recreation Management Area",
+   "site": true,
+   "st": "OR"
+  },
+  "US-12841": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 2.61261912,
+     "id": "rma11245",
+     "km": 0.01,
+     "layer": "BLM recreation areas",
+     "name": "Fawn Creek Campground",
+     "why": "shares fawn"
+    },
+    {
+     "acres": 2.61261912,
+     "id": "rst11245",
+     "km": 0.01,
+     "layer": "BLM recreation sites",
+     "name": "Fawn Creek Campground",
+     "why": "shares fawn"
+    },
+    {
+     "acres": 2.69776304,
+     "id": "rst12757",
+     "km": 0.03,
+     "layer": "BLM recreation sites",
+     "name": "Fawn Creek Campground",
+     "why": "shares fawn"
+    },
+    {
+     "acres": 0.0,
+     "id": "sgore23784",
+     "km": 0.03,
+     "layer": "State of Oregon (Oregon parklands) (park, state GIS table)",
+     "name": "Fawn Creek",
+     "why": "shares fawn"
+    }
+   ],
+   "n": "Fawn Creek BLM Recreation Management Area",
+   "site": true,
+   "st": "OR"
+  },
   "US-12925": {
    "acts": 1,
    "leads": [
@@ -8733,6 +8429,14 @@
      "id": "rst10841",
      "km": 0.0,
      "layer": "BLM recreation sites",
+     "name": "Stoddard/Johnson",
+     "why": "shares stoddard"
+    },
+    {
+     "acres": 364305.85002283,
+     "id": "sgakg10841",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
      "name": "Stoddard/Johnson",
      "why": "shares stoddard"
     }
@@ -8893,54 +8597,6 @@
    "site": true,
    "st": "OR"
   },
-  "US-13003": {
-   "acts": 17,
-   "leads": [
-    {
-     "acres": 1138.0,
-     "id": "1811",
-     "km": 0.0,
-     "layer": "Tennessee Valley Authority (TVA)",
-     "name": "Little Bear Creek Reservoir Retained Land",
-     "why": "shares bear"
-    }
-   ],
-   "n": "TVA Little Bear Creek Dam Multiple Use Area",
-   "site": true,
-   "st": "AL"
-  },
-  "US-13004": {
-   "acts": 15,
-   "leads": [
-    {
-     "acres": 2716.0,
-     "id": "1807",
-     "km": 0.0,
-     "layer": "Tennessee Valley Authority (TVA)",
-     "name": "Cedar Creek Reservoir Retained Land",
-     "why": "shares cedar"
-    }
-   ],
-   "n": "TVA Cedar Creek Dam Multiple Use Area",
-   "site": true,
-   "st": "AL"
-  },
-  "US-13005": {
-   "acts": 12,
-   "leads": [
-    {
-     "acres": 2327.0,
-     "id": "1806",
-     "km": 0.0,
-     "layer": "Tennessee Valley Authority (TVA)",
-     "name": "Bear Creek Reservoir Retained Land",
-     "why": "shares bear"
-    }
-   ],
-   "n": "TVA Big Bear Creek Dam Multiple Use Area",
-   "site": true,
-   "st": "AL"
-  },
   "US-13023": {
    "acts": 4,
    "leads": [
@@ -8981,30 +8637,6 @@
    "site": true,
    "st": "OR"
   },
-  "US-13081": {
-   "acts": 10,
-   "leads": [
-    {
-     "acres": 254.0,
-     "id": "sgalb56",
-     "km": 0.0,
-     "layer": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
-     "name": "Ft. Toulouse Tract",
-     "why": "shares toulouse, tract"
-    },
-    {
-     "acres": 256.0,
-     "id": "166062",
-     "km": 0.0,
-     "layer": "Alabama Department of Conservation and Natural Resources",
-     "name": "Fort Toulouse National Historic Park",
-     "why": "shares toulouse"
-    }
-   ],
-   "n": "Fort Toulouse Forever Wild Tract State Wildlife Area",
-   "site": false,
-   "st": "AL"
-  },
   "US-13083": {
    "acts": 43,
    "leads": [
@@ -9044,6 +8676,30 @@
    "n": "Lake Ottawa National Recreation Area",
    "site": false,
    "st": "MI"
+  },
+  "US-13181": {
+   "acts": 0,
+   "leads": [
+    {
+     "acres": 76970.26367442,
+     "id": "rst11394",
+     "km": 0.0,
+     "layer": "BLM recreation sites",
+     "name": "Pine Forest Creeks RMZ",
+     "why": "shares pine"
+    },
+    {
+     "acres": 0.0,
+     "id": "wbl4847",
+     "km": 0.2,
+     "layer": "BLM wilderness",
+     "name": "Pine Forest Range",
+     "why": "shares pine"
+    }
+   ],
+   "n": "Pine Forest BLM Recreation Management Area",
+   "site": true,
+   "st": "NV"
   },
   "US-13186": {
    "acts": 4,
@@ -9271,6 +8927,30 @@
      "layer": "BLM recreation sites",
      "name": "Snake River",
      "why": "shares snake"
+    },
+    {
+     "acres": 128532.67702,
+     "id": "sgakg13921",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Snake River",
+     "why": "shares snake"
+    },
+    {
+     "acres": 128532.67702,
+     "id": "sgidc877",
+     "km": 0.0,
+     "layer": "BLM Idaho recreation area polygons (76) (land, state GIS table)",
+     "name": "Snake River",
+     "why": "shares snake"
+    },
+    {
+     "acres": 144078.46297158,
+     "id": "sgakh1123",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Snake River",
+     "why": "shares snake"
     }
    ],
    "n": "Henrys Fork Snake Rive Access BLM Recreation Management Area",
@@ -9317,22 +8997,6 @@
    "site": true,
    "st": "NV"
   },
-  "US-13311": {
-   "acts": 98,
-   "leads": [
-    {
-     "acres": 3216.0,
-     "id": "1816",
-     "km": 0.0,
-     "layer": "Tennessee Valley Authority (TVA)",
-     "name": "Upper Bear Creek Reservoir Retained Land",
-     "why": "shares bear"
-    }
-   ],
-   "n": "TVA Upper Bear Creek Dam Resource Management Area",
-   "site": false,
-   "st": "AL"
-  },
   "US-13319": {
    "acts": 6,
    "leads": [
@@ -9365,22 +9029,6 @@
    "site": true,
    "st": "NV"
   },
-  "US-13364": {
-   "acts": 12,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "tnd183",
-     "km": 0.06,
-     "layer": "TDEC public access lands",
-     "name": "Cherokee Memorial State Park",
-     "why": "shares cherokee"
-    }
-   ],
-   "n": "Cherokee Trail of Tears State Park",
-   "site": false,
-   "st": "TN"
-  },
   "US-13370": {
    "acts": 4,
    "leads": [
@@ -9394,22 +9042,6 @@
     }
    ],
    "n": "Searchlight Nevada State Historical Monument",
-   "site": true,
-   "st": "NV"
-  },
-  "US-13409": {
-   "acts": 0,
-   "leads": [
-    {
-     "acres": 2.0,
-     "id": "230124",
-     "km": 0.0,
-     "layer": "Unknown",
-     "name": "Belmont Courthouse State Historical Site",
-     "why": "shares belmont"
-    }
-   ],
-   "n": "Belmont Nevada State Historical Monument",
    "site": true,
    "st": "NV"
   },
@@ -9605,21 +9237,21 @@
    "site": false,
    "st": "NV"
   },
-  "US-13545": {
-   "acts": 4,
+  "US-13499": {
+   "acts": 6,
    "leads": [
     {
-     "acres": 276.24,
-     "id": "sgmna1533",
-     "km": 0.36,
-     "layer": "Minnesota DNR (wild, state GIS table)",
-     "name": "Horseshoe Bay WMA",
-     "why": "shares horseshoe"
+     "acres": 468.56958137,
+     "id": "sgakh648",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Swasey Drive",
+     "why": "shares swasey"
     }
    ],
-   "n": "Horseshoe Bay Protected Area",
-   "site": false,
-   "st": "MN"
+   "n": "Swasey Mule Mountain BLM Recreation Management Area",
+   "site": true,
+   "st": "CA"
   },
   "US-13556": {
    "acts": 5,
@@ -9693,6 +9325,22 @@
      "id": "rst13897",
      "km": 0.0,
      "layer": "BLM recreation sites",
+     "name": "Jarbidge Forks",
+     "why": "shares jarbidge"
+    },
+    {
+     "acres": 1981.69688857,
+     "id": "sgakg13897",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Jarbidge Forks",
+     "why": "shares jarbidge"
+    },
+    {
+     "acres": 1981.69688857,
+     "id": "sgidc838",
+     "km": 0.0,
+     "layer": "BLM Idaho recreation area polygons (76) (land, state GIS table)",
      "name": "Jarbidge Forks",
      "why": "shares jarbidge"
     },
@@ -9788,38 +9436,6 @@
    "n": "Sugar River State Trail",
    "site": false,
    "st": "NH"
-  },
-  "US-1458": {
-   "acts": 172,
-   "leads": [
-    {
-     "acres": 751.0,
-     "id": "272345",
-     "km": 0.0,
-     "layer": "Wisconsin Department of Natural Resources",
-     "name": "John Michael Kohler State Park",
-     "why": "shares kohler"
-    },
-    {
-     "acres": 211.0,
-     "id": "272396",
-     "km": 0.79,
-     "layer": "Wisconsin Department of Natural Resources",
-     "name": "Terry Andrae State Park",
-     "why": "shares andrae"
-    },
-    {
-     "acres": 40.0,
-     "id": "78252",
-     "km": 0.97,
-     "layer": "Wisconsin Department of Natural Resources",
-     "name": "John Michael Kohler State Park",
-     "why": "shares kohler"
-    }
-   ],
-   "n": "Kohler-Andrae State Park",
-   "site": false,
-   "st": "WI"
   },
   "US-2001": {
    "acts": 1515,
@@ -9997,30 +9613,6 @@
    "site": false,
    "st": "MA"
   },
-  "US-2576": {
-   "acts": 64,
-   "leads": [
-    {
-     "acres": 97.89379658,
-     "id": "sgmta6574",
-     "km": 0.0,
-     "layer": "Montana Fish, Wildlife & Parks (park, state GIS table)",
-     "name": "Greycliff Prairie Dog Town",
-     "why": "shares dog, prairie"
-    },
-    {
-     "acres": 98.0,
-     "id": "211682",
-     "km": 0.0,
-     "layer": "Montana Fish, Wildlife & Parks, Region 5",
-     "name": "Greycliff Prairie Dog Town State Park",
-     "why": "shares dog, prairie"
-    }
-   ],
-   "n": "Grey Cliff Prairie Dog State Park",
-   "site": false,
-   "st": "MT"
-  },
   "US-2638": {
    "acts": 44,
    "leads": [
@@ -10157,22 +9749,6 @@
    "site": false,
    "st": "VT"
   },
-  "US-3157": {
-   "acts": 165,
-   "leads": [
-    {
-     "acres": 66.0,
-     "id": "271400",
-     "km": 0.0,
-     "layer": "Unknown",
-     "name": "Bay View",
-     "why": "same kind of place (sp)"
-    }
-   ],
-   "n": "Bayview State Park",
-   "site": false,
-   "st": "WA"
-  },
   "US-3390": {
    "acts": 55,
    "leads": [
@@ -10293,110 +9869,6 @@
    "site": false,
    "st": "NC"
   },
-  "US-3857": {
-   "acts": 100,
-   "leads": [
-    {
-     "acres": 711.87,
-     "id": "sgnca8475",
-     "km": 0.0,
-     "layer": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-     "name": "Triangle Land Conservancy - Horton Grove Preserve",
-     "why": "shares grove, horton"
-    },
-    {
-     "acres": 2913.3,
-     "id": "sgnca1030",
-     "km": 0.45,
-     "layer": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-     "name": "City of Durham Open Space",
-     "why": "same kind of place (snp)"
-    }
-   ],
-   "n": "Horton Grove State Nature Preserve",
-   "site": false,
-   "st": "NC"
-  },
-  "US-3859": {
-   "acts": 79,
-   "leads": [
-    {
-     "acres": 294.24,
-     "id": "sgnca8476",
-     "km": 0.0,
-     "layer": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-     "name": "Triangle Land Conservancy - Johnston Mill Nature Preserve",
-     "why": "shares johnston, mill"
-    },
-    {
-     "acres": 265.56,
-     "id": "sgnca18543",
-     "km": 0.0,
-     "layer": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-     "name": "NC Land and Water Fund Conservation Agreement",
-     "why": "same kind of place (snp)"
-    },
-    {
-     "acres": 5266.13,
-     "id": "sgnca13328",
-     "km": 0.0,
-     "layer": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-     "name": "USFWS Critical Habitat - Atlantic Pigtoe",
-     "why": "same kind of place (snp)"
-    },
-    {
-     "acres": 25.4,
-     "id": "sgnca18793",
-     "km": 0.14,
-     "layer": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-     "name": "NC Land and Water Fund Conservation Agreement",
-     "why": "same kind of place (snp)"
-    }
-   ],
-   "n": "Johnston Mill State Nature Preserve",
-   "site": false,
-   "st": "NC"
-  },
-  "US-3861": {
-   "acts": 114,
-   "leads": [
-    {
-     "acres": 132.04,
-     "id": "sgnca18571",
-     "km": 0.0,
-     "layer": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-     "name": "NC Land and Water Fund Conservation Agreement",
-     "why": "same kind of place (snp)"
-    },
-    {
-     "acres": 256.65,
-     "id": "sgnca3363",
-     "km": 0.0,
-     "layer": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-     "name": "Durham County - Little River Park",
-     "why": "same kind of place (snp)"
-    },
-    {
-     "acres": 131.32,
-     "id": "sgnca5548",
-     "km": 0.07,
-     "layer": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-     "name": "Orange County Open Space - Little River Regional Park",
-     "why": "same kind of place (snp)"
-    },
-    {
-     "acres": 5266.13,
-     "id": "sgnca13328",
-     "km": 0.52,
-     "layer": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-     "name": "USFWS Critical Habitat - Atlantic Pigtoe",
-     "why": "same kind of place (snp)"
-    }
-   ],
-   "n": "Little River Natural State Conservation Area",
-   "site": false,
-   "st": "NC"
-  },
   "US-3863": {
    "acts": 24,
    "leads": [
@@ -10421,22 +9893,6 @@
    "site": false,
    "st": "NC"
   },
-  "US-3950": {
-   "acts": 15,
-   "leads": [
-    {
-     "acres": 652.0,
-     "id": "255774",
-     "km": 0.0,
-     "layer": "Tennessee Wildlife Resources Agency",
-     "name": "Lake Lauderdale Refuge",
-     "why": "shares lauderdale"
-    }
-   ],
-   "n": "Lauderdale Waterfowl Wildlife Management Area",
-   "site": false,
-   "st": "TN"
-  },
   "US-4011": {
    "acts": 1514,
    "leads": [
@@ -10452,30 +9908,6 @@
    "n": "Chalco Hills State Recreation Area",
    "site": false,
    "st": "NE"
-  },
-  "US-4105": {
-   "acts": 69,
-   "leads": [
-    {
-     "acres": 1464.6,
-     "id": "sgila1142",
-     "km": 0.0,
-     "layer": "Illinois Department of Natural Resources (preserve, state GIS table)",
-     "name": "Washington County State Natural Area",
-     "why": "shares washington"
-    },
-    {
-     "acres": 1465.0,
-     "id": "70791",
-     "km": 0.0,
-     "layer": "Illinois Department of Natural Resources",
-     "name": "Washington County State Natural Area",
-     "why": "shares washington"
-    }
-   ],
-   "n": "Washington County State Recreation Area",
-   "site": false,
-   "st": "IL"
   },
   "US-4153": {
    "acts": 80,
@@ -10508,30 +9940,6 @@
    "n": "West Okaw unit of Shelbyville State Fish and Wildlife Area",
    "site": false,
    "st": "IL"
-  },
-  "US-4188": {
-   "acts": 78,
-   "leads": [
-    {
-     "acres": 30.0,
-     "id": "200778",
-     "km": 0.0,
-     "layer": "Indiana DNR, Nature Preserve Division",
-     "name": "Bryan (Eunice Hamilton) Nature Preserve",
-     "why": "shares bryan"
-    },
-    {
-     "acres": 33.0,
-     "id": "sgina3201",
-     "km": 0.0,
-     "layer": "Indiana DNR (land, state GIS table)",
-     "name": "Bryan (Eunice Hamilton) Nature Preserve",
-     "why": "shares bryan"
-    }
-   ],
-   "n": "Bryan Woods State Nature Preserve",
-   "site": false,
-   "st": "IN"
   },
   "US-4208": {
    "acts": 896,
@@ -10578,22 +9986,6 @@
     }
    ],
    "n": "Fenley State Recreation Area",
-   "site": false,
-   "st": "WI"
-  },
-  "US-4250": {
-   "acts": 232,
-   "leads": [
-    {
-     "acres": 291.0,
-     "id": "272304",
-     "km": 0.0,
-     "layer": "Wisconsin Department of Natural Resources",
-     "name": "Capital Springs Centennial State Park And Recreation Area",
-     "why": "same kind of place (sp)"
-    }
-   ],
-   "n": "Capitol Springs State Recreation Area",
    "site": false,
    "st": "WI"
   },
@@ -10829,22 +10221,6 @@
    "site": false,
    "st": "NY"
   },
-  "US-5308": {
-   "acts": 13,
-   "leads": [
-    {
-     "acres": 3543.0,
-     "id": "236368",
-     "km": 0.0,
-     "layer": "NYS Department of Environmental Conservation",
-     "name": "Split Rock Wild Forest",
-     "why": "shares split"
-    }
-   ],
-   "n": "Split Rock State Forest",
-   "site": false,
-   "st": "NY"
-  },
   "US-5571": {
    "acts": 4,
    "leads": [
@@ -11020,30 +10396,6 @@
    "n": "Cartop State Recreation Area",
    "site": false,
    "st": "IN"
-  },
-  "US-5707": {
-   "acts": 30,
-   "leads": [
-    {
-     "acres": 938.0,
-     "id": "210780",
-     "km": 0.0,
-     "layer": "Unknown",
-     "name": "Lost Valley Fish Hatchery",
-     "why": "shares lost"
-    },
-    {
-     "acres": 969.11,
-     "id": "sgmoc683",
-     "km": 0.0,
-     "layer": "Missouri Department of Conservation (gisblue.mdc.mo.gov) (land, state GIS table)",
-     "name": "Lost Valley Fish Hatchery",
-     "why": "shares lost"
-    }
-   ],
-   "n": "Lost Valley State Fish and Wildlife Area",
-   "site": false,
-   "st": "MO"
   },
   "US-5715": {
    "acts": 12,
@@ -11291,22 +10643,6 @@
    ],
    "n": "Gemini Bridges Trailhead BLM Recreation Management Area",
    "site": true,
-   "st": "UT"
-  },
-  "US-5837": {
-   "acts": 2,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "wbl4906",
-     "km": 0.0,
-     "layer": "BLM wilderness",
-     "name": "Labyrinth Canyon",
-     "why": "same kind of place (wild)"
-    }
-   ],
-   "n": "Labrynth Canyon BLM Wilderness Area",
-   "site": false,
    "st": "UT"
   },
   "US-5852": {
@@ -11565,22 +10901,6 @@
    "site": false,
    "st": "UT"
   },
-  "US-6019": {
-   "acts": 12,
-   "leads": [
-    {
-     "acres": 376609.489,
-     "id": "hab30",
-     "km": 0.0,
-     "layer": "BLM herd areas",
-     "name": "Onagui",
-     "why": "same kind of place (hma)"
-    }
-   ],
-   "n": "Onaqui BLM Herd Management Area",
-   "site": false,
-   "st": "UT"
-  },
   "US-6025": {
    "acts": 0,
    "leads": [
@@ -11595,30 +10915,6 @@
    ],
    "n": "Willis Creek BLM Wild and Scenic River",
    "site": false,
-   "st": "UT"
-  },
-  "US-6042": {
-   "acts": 22,
-   "leads": [
-    {
-     "acres": 40361.90950337,
-     "id": "rma11030",
-     "km": 0.0,
-     "layer": "BLM recreation areas",
-     "name": "Knolls ORV",
-     "why": "shares knolls"
-    },
-    {
-     "acres": 40361.90950337,
-     "id": "rst11030",
-     "km": 0.0,
-     "layer": "BLM recreation sites",
-     "name": "Knolls ORV",
-     "why": "shares knolls"
-    }
-   ],
-   "n": "Knolls Off-Highway Vehicle BLM Special Recreation Management Area",
-   "site": true,
    "st": "UT"
   },
   "US-6048": {
@@ -11877,61 +11173,45 @@
    "site": false,
    "st": "TN"
   },
-  "US-6392": {
-   "acts": 106,
+  "US-6409": {
+   "acts": 14,
    "leads": [
     {
-     "acres": 0.0,
-     "id": "mdd105",
-     "km": 0.0,
-     "layer": "Maryland DNR lands",
-     "name": "MONOCACY NRMA",
-     "why": "shares monocacy"
+     "acres": 1.2283571,
+     "id": "sghib265",
+     "km": 0.03,
+     "layer": "Hawaii DLNR reserves (DOFAW) (wild, state GIS table)",
+     "name": "WAIMEA STATE RECREATION PIER",
+     "why": "shares waimea"
     },
     {
-     "acres": 0.0,
-     "id": "sgmda105",
-     "km": 0.0,
-     "layer": "Maryland DNR (state parks, WMAs, forests, natural resource areas) (land, state GIS table)",
-     "name": "MONOCACY NRMA",
-     "why": "shares monocacy"
+     "acres": 1.2291945499,
+     "id": "sghic49",
+     "km": 0.03,
+     "layer": "Hawaii State Parks (DLNR) (park, state GIS table)",
+     "name": "WAIMEA STATE RECREATION PIER",
+     "why": "shares waimea"
+    },
+    {
+     "acres": 1.22919455,
+     "id": "sghia49",
+     "km": 0.03,
+     "layer": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+     "name": "WAIMEA STATE RECREATION PIER",
+     "why": "shares waimea"
+    },
+    {
+     "acres": 2.0,
+     "id": "195416",
+     "km": 0.04,
+     "layer": "Unknown",
+     "name": "Waimea State Recreation Pier",
+     "why": "shares waimea"
     }
    ],
-   "n": "Monocacy River Natural Resources Management Area State Natural Area",
+   "n": "Waimea State Recreation Area",
    "site": false,
-   "st": "MD"
-  },
-  "US-6395": {
-   "acts": 19,
-   "leads": [
-    {
-     "acres": 971.0,
-     "id": "56711",
-     "km": 0.0,
-     "layer": " ",
-     "name": "Sassafrass Nrma",
-     "why": "same kind of place (snp)"
-    },
-    {
-     "acres": 0.0,
-     "id": "mdd106",
-     "km": 0.0,
-     "layer": "Maryland DNR lands",
-     "name": "SASSAFRASS NRMA",
-     "why": "same kind of place (snp)"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgmda106",
-     "km": 0.0,
-     "layer": "Maryland DNR (state parks, WMAs, forests, natural resource areas) (land, state GIS table)",
-     "name": "SASSAFRASS NRMA",
-     "why": "same kind of place (snp)"
-    }
-   ],
-   "n": "Sassafras Natural Resources Management Area State Natural Area",
-   "site": false,
-   "st": "MD"
+   "st": "HI"
   },
   "US-6410": {
    "acts": 9,
@@ -11962,38 +11242,6 @@
     }
    ],
    "n": "Iao Valley State Preserve",
-   "site": false,
-   "st": "HI"
-  },
-  "US-6431": {
-   "acts": 2,
-   "leads": [
-    {
-     "acres": 3.35004689,
-     "id": "sghib302",
-     "km": 0.0,
-     "layer": "Hawaii DLNR reserves (DOFAW) (wild, state GIS table)",
-     "name": "ROYAL MAUSOLEUM STATE MONUMENT",
-     "why": "shares mausoleum, royal"
-    },
-    {
-     "acres": 3.30449952,
-     "id": "sghia62",
-     "km": 0.02,
-     "layer": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
-     "name": "ROYAL MAUSOLEUM STATE MONUMENT",
-     "why": "shares mausoleum, royal"
-    },
-    {
-     "acres": 3.30449952347,
-     "id": "sghic62",
-     "km": 0.02,
-     "layer": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "name": "ROYAL MAUSOLEUM STATE MONUMENT",
-     "why": "shares mausoleum, royal"
-    }
-   ],
-   "n": "Royal Mausoleum State Preserve",
    "site": false,
    "st": "HI"
   },
@@ -12037,70 +11285,6 @@
    "site": false,
    "st": "CA"
   },
-  "US-6454": {
-   "acts": 40,
-   "leads": [
-    {
-     "acres": 125.0,
-     "id": "183972",
-     "km": 0.0,
-     "layer": "California Department of Parks and Recreation",
-     "name": "El Capitán State Beach",
-     "why": "same kind of place (sp)"
-    },
-    {
-     "acres": 2648.26745889,
-     "id": "sgcab915",
-     "km": 0.0,
-     "layer": "California State Parks (park, state GIS table)",
-     "name": "El Capitán SB",
-     "why": "same kind of place (sp)"
-    },
-    {
-     "acres": 2522.0,
-     "id": "183971",
-     "km": 0.49,
-     "layer": "California Department of Parks and Recreation",
-     "name": "El Capitán State Beach",
-     "why": "same kind of place (sp)"
-    },
-    {
-     "acres": 139.0,
-     "id": "184063",
-     "km": 0.74,
-     "layer": "California Department of Parks and Recreation",
-     "name": "Refugio State Beach",
-     "why": "same kind of place (sp)"
-    }
-   ],
-   "n": "El Capitan State Beach",
-   "site": false,
-   "st": "CA"
-  },
-  "US-6473": {
-   "acts": 12,
-   "leads": [
-    {
-     "acres": 11467.0,
-     "id": "158291",
-     "km": 0.0,
-     "layer": "Washington Department of Fish & Wildlife",
-     "name": "Chief Joseph",
-     "why": "shares chief"
-    },
-    {
-     "acres": 0.0,
-     "id": "wdw6",
-     "km": 0.0,
-     "layer": "WDFW wildlife areas",
-     "name": "Chief Joseph",
-     "why": "shares chief"
-    }
-   ],
-   "n": "Chief Joesph State Wildlife Area",
-   "site": false,
-   "st": "WA"
-  },
   "US-6538": {
    "acts": 209,
    "leads": [
@@ -12116,94 +11300,6 @@
    "n": "Barrington Plantation State Historic Site",
    "site": false,
    "st": "TX"
-  },
-  "US-6608": {
-   "acts": 15,
-   "leads": [
-    {
-     "acres": 890.0,
-     "id": "263423",
-     "km": 0.0,
-     "layer": "Unknown",
-     "name": "Gene Howe Wildlife Management Area",
-     "why": "same kind of place (wma)"
-    }
-   ],
-   "n": "W.A. Pat Murphy Unit Wildlife Management Area",
-   "site": false,
-   "st": "TX"
-  },
-  "US-6666": {
-   "acts": 261,
-   "leads": [
-    {
-     "acres": 158.0,
-     "id": "3609",
-     "km": 0.0,
-     "layer": "BARRY COUNTY WATERFOWL PRODUCTION AREA",
-     "name": "Barry County Waterfowl Production Area",
-     "why": "shares waterfowl"
-    },
-    {
-     "acres": 158.0,
-     "id": "4539",
-     "km": 0.0,
-     "layer": "Barry County Waterfowl Production Area",
-     "name": "Barry County Waterfowl Production Area",
-     "why": "shares waterfowl"
-    },
-    {
-     "acres": 158.30199166,
-     "id": "sgmib70",
-     "km": 0.0,
-     "layer": "Michigan Department of Natural Resources (AGOL owner MichiganDNR) (wild, state GIS table)",
-     "name": "Edger Waterfowl Production Area",
-     "why": "shares edger, waterfowl"
-    }
-   ],
-   "n": "Edger Waterfowl National Wildlife Management Area",
-   "site": false,
-   "st": "MI"
-  },
-  "US-6713": {
-   "acts": 53,
-   "leads": [
-    {
-     "acres": 78.0,
-     "id": "5399",
-     "km": 0.0,
-     "layer": "Van Buren County Waterfowl Production Area",
-     "name": "Van Buren County Waterfowl Production Area",
-     "why": "shares waterfowl"
-    },
-    {
-     "acres": 78.30121168,
-     "id": "sgmib120",
-     "km": 0.0,
-     "layer": "Michigan Department of Natural Resources (AGOL owner MichiganDNR) (wild, state GIS table)",
-     "name": "Kinney Waterfowl Production Area",
-     "why": "shares kinney, waterfowl"
-    },
-    {
-     "acres": 81.0,
-     "id": "4442",
-     "km": 0.0,
-     "layer": "VAN BUREN COUNTY WATERFOWL PRODUCTION AREA",
-     "name": "Van Buren County Waterfowl Production Area",
-     "why": "shares waterfowl"
-    },
-    {
-     "acres": 2536.0,
-     "id": "mid687",
-     "km": 0.0,
-     "layer": "Michigan DNR project boundaries",
-     "name": "Cornish State Game Area",
-     "why": "same kind of place (wma)"
-    }
-   ],
-   "n": "Kinney Waterfowl National Wildlife Management Area",
-   "site": false,
-   "st": "MI"
   },
   "US-6726": {
    "acts": 129,
@@ -12276,30 +11372,6 @@
    "n": "Tobico Marsh Wildlife Management Area",
    "site": false,
    "st": "MI"
-  },
-  "US-6848": {
-   "acts": 348,
-   "leads": [
-    {
-     "acres": 19.58,
-     "id": "sgnca5938",
-     "km": 0.0,
-     "layer": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-     "name": "Polk Memorial State Historic Site",
-     "why": "shares polk"
-    },
-    {
-     "acres": 20.0,
-     "id": "214577",
-     "km": 0.0,
-     "layer": "UNK",
-     "name": "Polk Memorial State Historic Site",
-     "why": "shares polk"
-    }
-   ],
-   "n": "President James K. Polk State Historic Site",
-   "site": false,
-   "st": "NC"
   },
   "US-6875": {
    "acts": 81,
@@ -12517,30 +11589,6 @@
    "site": false,
    "st": "CA"
   },
-  "US-7383": {
-   "acts": 26,
-   "leads": [
-    {
-     "acres": 2866817.0,
-     "id": "2756",
-     "km": 0.0,
-     "layer": "Forest Service Region 03 Southwestern",
-     "name": "Tonto National Forest",
-     "why": "shares tonto"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgazc6",
-     "km": 0.0,
-     "layer": "Arizona Game and Fish Department (AZGFD_GIS org) (land, state GIS table)",
-     "name": "Tonto Creek Hatchery",
-     "why": "shares tonto"
-    }
-   ],
-   "n": "Tonto State Fish Hatchery",
-   "site": true,
-   "st": "AZ"
-  },
   "US-7393": {
    "acts": 28,
    "leads": [
@@ -12644,6 +11692,38 @@
    "n": "Nimrood Lake River Road State Recreation Area",
    "site": false,
    "st": "AR"
+  },
+  "US-7456": {
+   "acts": 812,
+   "leads": [
+    {
+     "acres": 1.0,
+     "id": "195096",
+     "km": 0.01,
+     "layer": "Georgia Department of Natural Resources",
+     "name": "Dahlonega Museum Historic Site",
+     "why": "shares dahlonega, museum"
+    }
+   ],
+   "n": "Dahlonega Gold Museum State Historic Site",
+   "site": false,
+   "st": "GA"
+  },
+  "US-7467": {
+   "acts": 248,
+   "leads": [
+    {
+     "acres": 6273.0,
+     "id": "195024",
+     "km": 0.0,
+     "layer": "Georgia Department of Natural Resources",
+     "name": "Charlie Elliott Wildlife Center Clybel Wildlife Management Area Marben Public Fishing Area",
+     "why": "shares marben"
+    }
+   ],
+   "n": "Marben State Fishing Lake",
+   "site": false,
+   "st": "GA"
   },
   "US-7471": {
    "acts": 242,
@@ -12757,78 +11837,6 @@
    "site": true,
    "st": "NM"
   },
-  "US-7547": {
-   "acts": 33,
-   "leads": [
-    {
-     "acres": 2.53869,
-     "id": "sgcta4215",
-     "km": 0.0,
-     "layer": "Connecticut DEEP (land, state GIS table)",
-     "name": "Captain Comer Memorial",
-     "why": "shares captain, comer"
-    }
-   ],
-   "n": "Captain George Comer Memorial State Park",
-   "site": false,
-   "st": "CT"
-  },
-  "US-7577": {
-   "acts": 58,
-   "leads": [
-    {
-     "acres": 496.0,
-     "id": "256216",
-     "km": 0.0,
-     "layer": "SFW",
-     "name": "Charlotte Anne Finnell Neal Wildlife Management Area",
-     "why": "shares charlotte, neal"
-    }
-   ],
-   "n": "Charlotte Ann Finnel Neal Wildlife Management Area",
-   "site": false,
-   "st": "TN"
-  },
-  "US-7693": {
-   "acts": 9,
-   "leads": [
-    {
-     "acres": 96.39763157,
-     "id": "sghib270",
-     "km": 0.18,
-     "layer": "Hawaii DLNR reserves (DOFAW) (wild, state GIS table)",
-     "name": "HANAUMA BAY STATE UNDERWATER PARK",
-     "why": "shares hanauma"
-    },
-    {
-     "acres": 96.43102877,
-     "id": "sghia20",
-     "km": 0.18,
-     "layer": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
-     "name": "HANAUMA BAY STATE UNDERWATER PARK",
-     "why": "shares hanauma"
-    },
-    {
-     "acres": 96.4310287709,
-     "id": "sghic20",
-     "km": 0.18,
-     "layer": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "name": "HANAUMA BAY STATE UNDERWATER PARK",
-     "why": "shares hanauma"
-    },
-    {
-     "acres": 99.0,
-     "id": "158431",
-     "km": 0.22,
-     "layer": "City and County of Honolulu",
-     "name": "Hanauma Bay State Underwater Park",
-     "why": "shares hanauma"
-    }
-   ],
-   "n": "Hanauma Bay Nature Reserve",
-   "site": false,
-   "st": "HI"
-  },
   "US-7769": {
    "acts": 19,
    "leads": [
@@ -12869,6 +11877,22 @@
    "site": false,
    "st": "MD"
   },
+  "US-7816": {
+   "acts": 32,
+   "leads": [
+    {
+     "acres": 35870.36098927,
+     "id": "sgakh1203",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Henrys Lake",
+     "why": "shares henrys"
+    }
+   ],
+   "n": "Henrys Lake Airstrip State Recreation Area",
+   "site": true,
+   "st": "ID"
+  },
   "US-7821": {
    "acts": 18,
    "leads": [
@@ -12877,6 +11901,22 @@
      "id": "rst13893",
      "km": 0.0,
      "layer": "BLM recreation sites",
+     "name": "Magic Reservoir",
+     "why": "shares magic"
+    },
+    {
+     "acres": 21284.62331,
+     "id": "sgakg13893",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Magic Reservoir",
+     "why": "shares magic"
+    },
+    {
+     "acres": 21284.62331,
+     "id": "sgidc830",
+     "km": 0.0,
+     "layer": "BLM Idaho recreation area polygons (76) (land, state GIS table)",
      "name": "Magic Reservoir",
      "why": "shares magic"
     },
@@ -12924,54 +11964,6 @@
    "n": "Pearson Mill State Recreation Area",
    "site": false,
    "st": "IN"
-  },
-  "US-7844": {
-   "acts": 72,
-   "leads": [
-    {
-     "acres": 1503.0,
-     "id": "255265",
-     "km": 0.0,
-     "layer": "Unknown",
-     "name": "Adams Nature Area",
-     "why": "shares adams"
-    }
-   ],
-   "n": "Adams Homestead State Nature Preserve",
-   "site": false,
-   "st": "SD"
-  },
-  "US-7854": {
-   "acts": 55,
-   "leads": [
-    {
-     "acres": 1508.76587309,
-     "id": "sgmib145",
-     "km": 0.0,
-     "layer": "Michigan Department of Natural Resources (AGOL owner MichiganDNR) (wild, state GIS table)",
-     "name": "Molasses River Flooding No.2 State Wildlife Management Area & part of Lame Duck GEMS (SWMA)",
-     "why": "shares flooding, molasses, two"
-    },
-    {
-     "acres": 3153.0,
-     "id": "71478",
-     "km": 0.0,
-     "layer": "MIDNR Wildlife Division",
-     "name": "Molasses River Flooding No.1 State Wildlife Management Area",
-     "why": "shares flooding, molasses"
-    },
-    {
-     "acres": 8171.28125364,
-     "id": "sgmib125",
-     "km": 0.03,
-     "layer": "Michigan Department of Natural Resources (AGOL owner MichiganDNR) (wild, state GIS table)",
-     "name": "Lame Duck Grouse Enhanced Mgmt System (GEMS)(SWMA)",
-     "why": "same kind of place (wma)"
-    }
-   ],
-   "n": "Molasses River Flooding No 2 Wildlife Management Area",
-   "site": false,
-   "st": "MI"
   },
   "US-7861": {
    "acts": 35,
@@ -13034,38 +12026,6 @@
     }
    ],
    "n": "Nashua, Squannacook, and Nissitissit National Wild and Scenic River",
-   "site": false,
-   "st": "NH"
-  },
-  "US-8021": {
-   "acts": 11,
-   "leads": [
-    {
-     "acres": 90.764,
-     "id": "sgnhc791",
-     "km": 0.0,
-     "layer": "NH GRANIT (recreation inventory areas) (land, state GIS table)",
-     "name": "Governor Wentworth Historic Farm",
-     "why": "shares wentworth"
-    },
-    {
-     "acres": 91.0,
-     "id": "56874",
-     "km": 0.0,
-     "layer": " ",
-     "name": "Governor Wentworth Historical Site",
-     "why": "shares wentworth"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgnha3007",
-     "km": 0.0,
-     "layer": "NH GRANIT (land, state GIS table)",
-     "name": "Governor Wentworth Historical Site",
-     "why": "shares wentworth"
-    }
-   ],
-   "n": "Gov. Wentworth State Historic Site",
    "site": false,
    "st": "NH"
   },
@@ -13397,110 +12357,6 @@
    "site": false,
    "st": "FL"
   },
-  "US-8692": {
-   "acts": 19,
-   "leads": [
-    {
-     "acres": 292.88301783191,
-     "id": "sgfld947",
-     "km": 0.0,
-     "layer": "Suwannee River Water Management District (land, state GIS table)",
-     "name": "LAMONT",
-     "why": "shares lamont"
-    },
-    {
-     "acres": 9125.0,
-     "id": "190439",
-     "km": 0.0,
-     "layer": "Suwannee River Water Management District",
-     "name": "Middle Aucilla Conservation Area",
-     "why": "same kind of place (ca)"
-    }
-   ],
-   "n": "Lamont, Mt. Gilead State Conservation Area",
-   "site": false,
-   "st": "FL"
-  },
-  "US-8696": {
-   "acts": 22,
-   "leads": [
-    {
-     "acres": 0.21962172019,
-     "id": "sgfld1458",
-     "km": 0.0,
-     "layer": "Suwannee River Water Management District (land, state GIS table)",
-     "name": "OTTER SPRINGS",
-     "why": "shares otter"
-    },
-    {
-     "acres": 510.77438530856,
-     "id": "sgfld1326",
-     "km": 0.0,
-     "layer": "Suwannee River Water Management District (land, state GIS table)",
-     "name": "OTTER SPRINGS",
-     "why": "shares otter"
-    },
-    {
-     "acres": 20.7326781708,
-     "id": "sgfld1462",
-     "km": 0.06,
-     "layer": "Suwannee River Water Management District (land, state GIS table)",
-     "name": "OTTER SPRINGS CAMPGROUND",
-     "why": "shares otter"
-    },
-    {
-     "acres": 0.07253874086,
-     "id": "sgfld1330",
-     "km": 0.08,
-     "layer": "Suwannee River Water Management District (land, state GIS table)",
-     "name": "OTTER SPRINGS",
-     "why": "shares otter"
-    }
-   ],
-   "n": "Purvis Landing, Otter Springs, Shingle Lndg State Conservation Area",
-   "site": false,
-   "st": "FL"
-  },
-  "US-8701": {
-   "acts": 15,
-   "leads": [
-    {
-     "acres": 596.14790845112,
-     "id": "sgfld681",
-     "km": 0.0,
-     "layer": "Suwannee River Water Management District (land, state GIS table)",
-     "name": "SHELLY",
-     "why": "shares shelly"
-    },
-    {
-     "acres": 43.41484060934,
-     "id": "sgfld43",
-     "km": 0.05,
-     "layer": "Suwannee River Water Management District (land, state GIS table)",
-     "name": "SHELLY",
-     "why": "shares shelly"
-    },
-    {
-     "acres": 172.66896740658,
-     "id": "sgfld1080",
-     "km": 0.9,
-     "layer": "Suwannee River Water Management District (land, state GIS table)",
-     "name": "SHELLY",
-     "why": "shares shelly"
-    },
-    {
-     "acres": 2818.0,
-     "id": "190453",
-     "km": 0.0,
-     "layer": "Suwannee River Water Management District",
-     "name": "Upper Aucilla Conservation Area",
-     "why": "same kind of place (ca)"
-    }
-   ],
-   "n": "Shelly, Duck Pond, Hartsfield State Conservation Area",
-   "site": false,
-   "st": "FL"
-  },
   "US-8705": {
    "acts": 49,
    "leads": [
@@ -13581,46 +12437,6 @@
    "site": false,
    "st": "FL"
   },
-  "US-8712": {
-   "acts": 43,
-   "leads": [
-    {
-     "acres": 55.29735413809,
-     "id": "sgfld370",
-     "km": 0.0,
-     "layer": "Suwannee River Water Management District (land, state GIS table)",
-     "name": "WHITE SPRINGS",
-     "why": "shares white"
-    },
-    {
-     "acres": 47.47102532619,
-     "id": "sgfld609",
-     "km": 0.09,
-     "layer": "Suwannee River Water Management District (land, state GIS table)",
-     "name": "GAR POND",
-     "why": "shares gar"
-    },
-    {
-     "acres": 1703.0,
-     "id": "190415",
-     "km": 0.15,
-     "layer": "Suwannee River Water Management District",
-     "name": "Big Shoals Conservation Area",
-     "why": "shares shoals"
-    },
-    {
-     "acres": 6.70958188816,
-     "id": "sgfld1072",
-     "km": 0.16,
-     "layer": "Suwannee River Water Management District (land, state GIS table)",
-     "name": "LITTLE SHOALS",
-     "why": "shares shoals"
-    }
-   ],
-   "n": "White Springs, Little Shoals, Gar Pond State Conservation Area",
-   "site": false,
-   "st": "FL"
-  },
   "US-9158": {
    "acts": 14,
    "leads": [
@@ -13660,70 +12476,6 @@
    "n": "Saracen State Trail",
    "site": false,
    "st": "AR"
-  },
-  "US-9171": {
-   "acts": 1,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "sgmea326",
-     "km": 0.06,
-     "layer": "State of Maine conserved lands (Bureau of Parks and Lands / IFW) (land, state GIS table)",
-     "name": "St John Ponds",
-     "why": "shares john, ponds"
-    },
-    {
-     "acres": 3884.0,
-     "id": "9734",
-     "km": 0.09,
-     "layer": "Maine Bureau of Parks and Lands",
-     "name": "Upper St John River Watershed Ecological Reserve",
-     "why": "shares john"
-    }
-   ],
-   "n": "St. John Ponds Ecological Reserve",
-   "site": false,
-   "st": "ME"
-  },
-  "US-9334": {
-   "acts": 23,
-   "leads": [
-    {
-     "acres": 151.0,
-     "id": "sgiaa34031",
-     "km": 0.0,
-     "layer": "Iowa DNR (wild, state GIS table)",
-     "name": "TEAL BASINS WPA",
-     "why": "shares basins, teal"
-    },
-    {
-     "acres": 151.18,
-     "id": "sgiac95307",
-     "km": 0.0,
-     "layer": "Iowa DNR (land, state GIS table)",
-     "name": "Teal Basins WPA",
-     "why": "shares basins, teal"
-    },
-    {
-     "acres": 2719.0,
-     "id": "3710",
-     "km": 0.0,
-     "layer": "CERRO GORDO COUNTY WATERFOWL PRODUCTION AREA",
-     "name": "Cerro Gordo County Waterfowl Production Area",
-     "why": "shares waterfowl"
-    },
-    {
-     "acres": 2719.0,
-     "id": "4644",
-     "km": 0.0,
-     "layer": "Cerro Gordo County Waterfowl Production Area",
-     "name": "Cerro Gordo County Waterfowl Production Area",
-     "why": "shares waterfowl"
-    }
-   ],
-   "n": "Teal Basins State Waterfowl Management Area",
-   "site": false,
-   "st": "IA"
   },
   "US-9375": {
    "acts": 21,
@@ -13997,22 +12749,6 @@
    "site": false,
    "st": "MN"
   },
-  "US-9598": {
-   "acts": 24,
-   "leads": [
-    {
-     "acres": 11387.64571878,
-     "id": "rst10946",
-     "km": 0.0,
-     "layer": "BLM recreation sites",
-     "name": "Hardscrabble Zone 2 Motorized SRMA",
-     "why": "shares hardscrabble"
-    }
-   ],
-   "n": "Hardscrabble-East Eagle BLM National Recreation Area",
-   "site": false,
-   "st": "CO"
-  },
   "US-9652": {
    "acts": 23,
    "leads": [
@@ -14052,6 +12788,46 @@
    "n": "Grenada State Wildlife Area",
    "site": false,
    "st": "CO"
+  },
+  "US-9753": {
+   "acts": 44,
+   "leads": [
+    {
+     "acres": 191.0,
+     "id": "211133",
+     "km": 0.01,
+     "layer": "Missouri State Parks",
+     "name": "Katy Trail",
+     "why": "shares katy"
+    },
+    {
+     "acres": 340.84698486,
+     "id": "sgmoa1592",
+     "km": 0.01,
+     "layer": "Missouri State Parks (DNR) (park, state GIS table)",
+     "name": "Katy Trail State Park",
+     "why": "shares katy"
+    },
+    {
+     "acres": 1.0,
+     "id": "157691",
+     "km": 0.01,
+     "layer": "State of Missouri",
+     "name": "Unknown Trailhead",
+     "why": "same kind of place (sp)"
+    },
+    {
+     "acres": 172.353247,
+     "id": "sgmoa1631",
+     "km": 0.62,
+     "layer": "Missouri State Parks (DNR) (park, state GIS table)",
+     "name": "Rock Island Trail",
+     "why": "same kind of place (sp)"
+    }
+   ],
+   "n": "Katy Trail Rock Island Spur State Park",
+   "site": false,
+   "st": "MO"
   },
   "US-9759": {
    "acts": 74,
@@ -14160,9 +12936,9 @@
  },
  "skipped": [],
  "totals": {
-  "canada": 253,
-  "name_word": 469,
-  "parks": 628,
-  "us": 378
+  "canada": 238,
+  "name_word": 419,
+  "parks": 569,
+  "us": 334
  }
 }
