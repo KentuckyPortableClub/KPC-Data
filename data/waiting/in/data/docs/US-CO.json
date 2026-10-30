@@ -1,0 +1,573 @@
+{
+ "area": "US-CO",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-10540": {
+   "n": "Bellevue-Watson State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://cpw.state.co.us/hatchery/bellvue-watson",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://cpw.state.co.us/sites/default/files/dam/ieozaiss1x/bellvue-watson-state-fish-hatchery.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('View Hatchery Brochure')",
+    "posted": "Mar 18, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [
+    "operated by Colorado Parks"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11902": {
+   "n": "Camp Hale National Monument",
+   "t": "National Monument",
+   "page": "https://www.fs.usda.gov/detail/whiteriver/specialplaces/?cid=FSEPRD1069051",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r02/whiteriver",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11907": {
+   "n": "Calamity Camp BLM Historic Preservation Site",
+   "t": "BLM Historic Preservation Site",
+   "page": "https://www.blm.gov/visit/calamity-camp-mining-site",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11911": {
+   "n": "Damaree BLM Wilderness Area",
+   "t": "BLM Wilderness Area",
+   "page": "https://www.blm.gov/site-page/programs-national-conservation-lands-colorado-demaree-wsa",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1208": {
+   "n": "Arkansas River Headwaters Recreation Park",
+   "t": "Recreation Park",
+   "page": "https://cpw.state.co.us/placestogo/parks/ArkansasHeadwatersRecreationArea",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/iv4cywcl7k/ahra-state-)",
+    "how": "a link on the park's page ('Download The Park Brochure')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://cpw.state.co.us/sites/default/files/dam/iv4cywcl7k/ahra-state-park-brochure.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download The Park Brochure')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12106": {
+   "n": "Brainard Lake Recreation Area National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/recarea/arp/recarea/?recid=28182",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r02/arp",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12173": {
+   "n": "Tabeguache BLM Historic Trail",
+   "t": "BLM Historic Trail",
+   "page": "https://www.blm.gov/visit/tabeguache",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12189": {
+   "n": "Buena Vista State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://cpw.state.co.us/state-wildlife-areas/buena-vista-swa-fishing-easement",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/ioxpf0j8to/buenavistac)",
+    "how": "a link on the park's page ('Download Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [
+    "managed by Colorado Parks"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://cpw.state.co.us/sites/default/files/dam/ioxpf0j8to/buenavistachesmorecottonwoodcreekswa_geo.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-13106": {
+   "n": "Penitente Canyon Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/sites/default/files/docs/2024-04/2023%20-%20Penitente%20Canyon%20Special%20Recreation%20Management%20Area%20brochure.pdf",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4397": {
+   "n": "Manti-La Sal National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/mantilasal",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r04/manti-lasal",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4558": {
+   "n": "Continental Divide Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.fs.usda.gov/managing-land/trails/cdt",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fs.usda.gov/trails/continental-divide-nst",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/trails/continental-divide-nst/plan-visit/know-before-go",
+    "how": "a link on the park's page ('Know Before You Go')",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-4566": {
+   "n": "California National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/cali/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/cali/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/cali/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4575": {
+   "n": "Old Spanish National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/olsp/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-Map-508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Mar 22, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/olsp/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4578": {
+   "n": "Pony Express National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/poex/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Mar 22, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/poex/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4579": {
+   "n": "Santa Fe National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/safe/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/safe/planyourvisit/upload/National-Park-Service-Santa-Fe-Trail-Map-508-2.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Side 2 - Map' file",
+    "posted": "Mar 22, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "page": "https://www.nps.gov/safe/planyourvisit/trail-brochures.htm",
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/safe/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5749": {
+   "n": "Kokopelli's Trail National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.blm.gov/visit/kokopellis-trail",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-9597": {
+   "n": "Kremmling BLM National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.blm.gov/visit/kremmling-recreation-management-area",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-9652": {
+   "n": "Grenada State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://cpw.state.co.us/learn/Maps/GranadaDeadmanSWA_geo.pdf",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-9683": {
+   "n": "Amache National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/amch/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/amch/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 22, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/amch/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0008": {
+   "n": "Black Canyon of the Gunnison National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/blca/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/blca/planyourvisit/upload/Black_Canyon_unigrid_2023_508_web.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'digital brochure map' file",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "page": "https://www.nps.gov/blca/planyourvisit/maps.htm",
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/blca/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  }
+ },
+ "read": "2026-10-30",
+ "counts": {
+  "parks": 20,
+  "map ok": 8,
+  "map found by the bot": 1,
+  "date on the map": 0,
+  "posted date only": 7,
+  "date unknown": 1,
+  "no map": 12,
+  "rules ok": 9,
+  "needs browser": 10,
+  "handover hints": 0,
+  "runs hints": 2,
+  "host resting / robots": 0,
+  "map names the park": 8,
+  "region overview only": 0
+ }
+}

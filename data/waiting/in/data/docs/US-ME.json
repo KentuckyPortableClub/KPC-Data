@@ -526,6 +526,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page is built by script",
@@ -2070,7 +2071,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-30",
     "via": "the agency site",
-    "kind_note": "forest map only"
+    "kind_note": "forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/whitemountain",
@@ -3739,6 +3740,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -3810,7 +3812,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-8478": {
    "n": "Strong Wildlife Management Area",
@@ -3899,7 +3902,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-8483": {
    "n": "David Priest (Dwinal Pond) Wildlife Management Area",
@@ -3921,7 +3925,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-8484": {
    "n": "Booming Ground Wildlife Management Area",
@@ -3943,7 +3948,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-8485": {
    "n": "Francis D. Dunn (Sawtelle Deadwater) Wildlife Management Area",
@@ -3965,7 +3971,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-8486": {
    "n": "Mattawamkeag River Wildlife Management Area",
@@ -4024,7 +4031,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-8488": {
    "n": "Pond Farm Wildlife Management Area",
@@ -4115,7 +4123,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-8492": {
    "n": "Cobscook Bay Wildlife Management Area",
@@ -4257,7 +4266,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-8497": {
    "n": "Pennamaquan Wildlife Management Area",
@@ -4277,7 +4287,9 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page is built by script",
    "ver": 7
   },
@@ -4375,7 +4387,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-8501": {
    "n": "Spring Brook Wildlife Management Area",
@@ -4397,7 +4410,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-9170": {
    "n": "Machias River Corridor State Conservation Area",
@@ -4405,9 +4419,17 @@
    "page": "https://www.nrcm.org/explore-maine-map/machias-river-corridor-public-reserved-land/",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: HTTP 403 https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/mac; opened, a page that does not name this park (a generic agency page is not its map) https://www.nrcm.org/explore-maine/explore-maine-map/)",
-    "how": "a link on the park's page ('this map')"
+    "url": "https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/machiasrivermap.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('this map')",
+    "page": "https://www.nrcm.org/explore-maine-map/machias-river-corridor-public-reserved-land/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "linked from the agency page (maine.gov)"
    },
    "rules": {
     "url": "",
@@ -4449,7 +4471,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-9171": {
    "n": "St. John Ponds Ecological Reserve",
@@ -4471,7 +4494,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-9172": {
    "n": "Salmon Brook Lake Bog Ecological Reserve",
@@ -4567,7 +4591,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-9175": {
    "n": "Holeb State Conservation Area",
@@ -4626,7 +4651,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   }
  },
  "read": "2026-10-30",
@@ -4639,7 +4665,7 @@
   "date unknown": 13,
   "no map": 128,
   "rules ok": 15,
-  "needs browser": 17,
+  "needs browser": 3,
   "handover hints": 0,
   "runs hints": 2,
   "host resting / robots": 0,

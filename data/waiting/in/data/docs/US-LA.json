@@ -1038,6 +1038,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -1103,9 +1104,17 @@
    "page": "https://www.lastateparks.com/historic-sites/centenary-state-historic-site",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.lastateparks.com/louisiana-state-parks/request-brochure",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Request A Brochure')",
+    "page": "https://www.lastateparks.com/historic-sites/centenary-state-historic-site",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-30",
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -1119,7 +1128,8 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-10449": {
    "n": "Fort Jessup State Historic Site",
@@ -1140,6 +1150,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -1164,6 +1175,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -1187,7 +1199,9 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7
   },
@@ -3140,7 +3154,7 @@
   "date unknown": 20,
   "no map": 96,
   "rules ok": 26,
-  "needs browser": 31,
+  "needs browser": 30,
   "handover hints": 0,
   "runs hints": 0,
   "host resting / robots": 0,

@@ -109,7 +109,7 @@
    "status": "failed",
    "parks": 181,
    "updated": "2026-10-30",
-   "why": "maps 82 -> 64"
+   "why": "maps 82 -> 62"
   },
   "US-ND": {
    "status": "done",
@@ -161,11 +161,10 @@
    "updated": "2026-10-30"
   },
   "US-MA": {
-   "status": "done",
+   "status": "failed",
    "parks": 421,
-   "checked": 421,
-   "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-10-30",
+   "why": "maps 114 -> 77"
   },
   "US-VT": {
    "status": "done",
@@ -257,12 +256,20 @@
    "checked": 276,
    "left": 0,
    "updated": "2026-10-30"
+  },
+  "US-CO": {
+   "status": "partial",
+   "parks": 276,
+   "checked": 20,
+   "left": 256,
+   "updated": "2026-10-30"
   }
  },
  "hosts": {
   "map.co.door.wi.us": 1793408717.0830843,
   "iowaculture.gov": 1793470401.4579036,
-  "www.cgcounty.org": 1793470509.805759
+  "www.cgcounty.org": 1793470509.805759,
+  "www.mass-trails.org": 1793480488.0613246
  },
  "last": {
   "when": "2026-10-30",
@@ -277,17 +284,17 @@
    "US-LA"
   ],
   "stat": {
-   "requests": 1383,
-   "parks": 541,
-   "maps_ok": 253,
-   "maps_found": 239,
-   "dates": 1,
-   "rules": 171,
-   "browser": 255,
-   "robots": 58,
-   "strikes": 0,
-   "errors": 0,
-   "skipped_fresh": 1269
+   "requests": 1156,
+   "parks": 605,
+   "maps_ok": 284,
+   "maps_found": 257,
+   "dates": 0,
+   "rules": 166,
+   "browser": 427,
+   "robots": 0,
+   "strikes": 3,
+   "errors": 3,
+   "skipped_fresh": 1629
   }
  }
 }

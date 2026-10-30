@@ -31,16 +31,17 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-MA | 421 | 114 | 98 | 28 | 26 | 78 | 10 | 307 | 46 | 10 | 0 |
 | US-VT | 109 | 72 | 69 | 11 | 23 | 44 | 5 | 37 | 6 | 0 | 0 |
 | US-NH | 206 | 23 | 21 | 8 | 1 | 16 | 6 | 183 | 11 | 0 | 1 |
-| US-ME | 148 | 20 | 16 | 17 | 0 | 7 | 13 | 128 | 15 | 17 | 0 |
+| US-ME | 148 | 20 | 16 | 17 | 0 | 7 | 13 | 128 | 15 | 3 | 0 |
 | US-MD | 186 | 75 | 55 | 71 | 12 | 33 | 30 | 111 | 37 | 0 | 0 |
 | US-DE | 89 | 7 | 6 | 7 | 0 | 5 | 2 | 82 | 7 | 0 | 0 |
 | US-DC | 35 | 32 | 5 | 32 | 0 | 32 | 0 | 3 | 32 | 0 | 0 |
 | US-AR | 306 | 61 | 43 | 60 | 4 | 35 | 22 | 244 | 47 | 194 | 0 |
-| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 26 | 31 | 0 |
+| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 26 | 30 | 0 |
 | US-OK | 205 | 97 | 91 | 46 | 2 | 66 | 29 | 104 | 40 | 2 | 0 |
 | US-TX | 222 | 116 | 31 | 105 | 46 | 47 | 23 | 106 | 89 | 3 | 0 |
 | US-KS | 145 | 16 | 10 | 15 | 1 | 11 | 4 | 129 | 15 | 12 | 0 |
 | US-NE | 5 | 4 | 4 | 4 | 0 | 0 | 4 | 1 | 5 | 0 | 0 |
+| US-CO | 20 | 8 | 1 | 8 | 0 | 7 | 1 | 12 | 9 | 10 | 0 |
 | US-OH | 276 | 17 | 5 | 16 | 0 | 14 | 3 | 259 | 274 | 0 | 0 |
 
 ## US-KY sample (random 12 per agency group, seed 28)
@@ -1649,7 +1650,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-1386 | Mont Alto State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/mont-alto- | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
 | US-4361 | Kings Gap Environmental State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/kings-gap- | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
 | US-1378 | Locust Lake State Park | https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/locust-lak | page ✓name · linked from the agency page (pa.gov) | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
-| US-0619 | Allegheny National Forest | https://www.fs.usda.gov/r09/allegheny/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-30) · posted October 29, 2026 | https://www.fs.usda.gov/r09/allegheny ✓ |  |
+| US-0619 | Allegheny National Forest | https://www.fs.usda.gov/r09/allegheny/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-10-30) · posted October 29, 2026 | https://www.fs.usda.gov/r09/allegheny ✓ |  |
 | US-0622 | Bear Run State Conservation Area | https://waterlandlife.org/wp-content/uploads/2021/07/2025_Bear-Run-Maps_Andrew-Zadnik.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted 2021-07 |  ✗ |  |
 
 ### US-PA no map yet (321): the reason
@@ -2217,7 +2218,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0001 | Acadia National Park | https://www.nps.gov/acad/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted August 27, 2026 | https://www.nps.gov/acad/learn/management/lawsandpolicies.htm ✓ |  |
 | US-11808 | Saint Croix Island International Histori | https://www.nps.gov/sacr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted April 8, 2016 | https://www.nps.gov/sacr/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4556 | Appalachian Trail National Scenic Trail | https://www.nps.gov/appa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted December 21, 2022 | https://www.nps.gov/appa/learn/management/lawsandpolicies.htm ✓ | is managed by the National Park Service |
-| US-4512 | White Mountain National Forest | https://www.fs.usda.gov/r09/whitemountain/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-30) · posted March 31, 2026 | https://www.fs.usda.gov/r09/whitemountain ✓ |  |
+| US-4512 | White Mountain National Forest | https://www.fs.usda.gov/r09/whitemountain/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-30) · posted March 31, 2026 | https://www.fs.usda.gov/r09/whitemountain ✓ |  |
 
 ### US-ME no map yet (128): the reason
 - US-0337 Carlton Pond Wetland Management District: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/office/carlton-pond-waterfowl-production-area/map)
@@ -2539,7 +2540,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-10354 Forts Randolph & Buhlow State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-10413 Acadiana Conservation Corridor Wildlife Manag: no map link on file and none on the park page
 - US-10447 Audubon State Historic Site: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
-- US-10448 Centenary State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- US-10448 Centenary State Historic Site: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
 - US-10449 Fort Jessup State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-10450 Fort St. Jean Baptiste State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-10451 Longfellow-Evangeline State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
@@ -2826,6 +2827,32 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ### US-NE no map yet (1): the reason
 - US-0446 Funk WPA Wetland Management District: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/rainwater-basin-wetland-management-district)
 
+## US-CO sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-10540 | Bellevue-Watson State Fish Hatchery | https://cpw.state.co.us/sites/default/files/dam/ieozaiss1x/bellvue-watson-state-fish-hatch | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 18, 2026 |  ✗ | operated by Colorado Parks |
+| US-9683 | Amache National Historic Site | https://www.nps.gov/amch/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted April 22, 2025 | https://www.nps.gov/amch/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4566 | California National Historic Trail | https://www.nps.gov/cali/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted August 28, 2026 | https://www.nps.gov/cali/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4579 | Santa Fe National Historic Trail | https://www.nps.gov/safe/planyourvisit/upload/National-Park-Service-Santa-Fe-Trail-Map-508 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 22, 2018 | https://www.nps.gov/safe/learn/management/lawsandpolicies.htm ✗ |  |
+| US-0008 | Black Canyon of the Gunnison National Pa | https://www.nps.gov/blca/planyourvisit/upload/Black_Canyon_unigrid_2023_508_web.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted 2023 | https://www.nps.gov/blca/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4575 | Old Spanish National Historic Trail | https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-M | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 22, 2018 | https://www.nps.gov/olsp/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4578 | Pony Express National Historic Trail | https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.p | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 22, 2018 | https://www.nps.gov/poex/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4558 | Continental Divide Trail National Scenic | https://www.fs.usda.gov/trails/continental-divide-nst | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fs.usda.gov/trails/continental-divide-nst/plan-visit/know- ✓ |  |
+
+### US-CO no map yet (12): the reason
+- US-11902 Camp Hale National Monument: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11907 Calamity Camp BLM Historic Preservation Site: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11911 Damaree BLM Wilderness Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1208 Arkansas River Headwaters Recreation Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/iv4cywcl7k/ahra-state-)
+- US-12106 Brainard Lake Recreation Area National Forest: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12173 Tabeguache BLM Historic Trail: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12189 Buena Vista State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/ioxpf0j8to/buenavistac)
+- US-13106 Penitente Canyon Recreation Site: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-4397 Manti-La Sal National Forest: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-5749 Kokopelli's Trail National Recreation Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-9597 Kremmling BLM National Recreation Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-9652 Grenada State Wildlife Area: no map link on file and none on the park page
+
 ## US-OH sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
@@ -2889,11 +2916,8 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-1967 Lake Alma State Park: no map link on file and none on the park page
 - US-1968 Lake Hope State Park: no map link on file and none on the park page
 
-## robots.txt said no (hosts we did not read)
-- trailsnh.com: 1 addresses (User-agent: Googlebot | User-agent: DuckDuckBot | Allow: /*.css | Allow: /*.js | Allow: /about/ | Al)
-- www.pacodeandbulletin.gov: 57 addresses (User-agent: Googlebot | Disallow: /Display/pabull | Disallow: /Display/pacode | Allow: / | User-agen)
-
 ## hosts resting a day (three strikes)
 - iowaculture.gov
 - map.co.door.wi.us
 - www.cgcounty.org
+- www.mass-trails.org
