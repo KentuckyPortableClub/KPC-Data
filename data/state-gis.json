@@ -51,6 +51,24 @@
     "read": "2026-10-28",
     "note": "157 state park units incl. State Recreation Sites (HT-19)",
     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "AR": [
@@ -114,6 +132,24 @@
     "read": "2026-10-28",
     "note": "1,862 CDFW owned + operated lands (ecological reserves, wildlife areas); conservation easements left out (private land)",
     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3092_fpu/FeatureServer/0"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "CO": [
@@ -159,6 +195,24 @@
     "read": "2026-10-28",
     "note": "386 State Wildlife Areas + State Parks, 2026 (HT-26); names carry SWA / SP",
     "url": "https://gisdnr.state.co.us/arcgis/rest/services/ECMC_Public/High_Priority_Habitat_2026/MapServer/9"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "DE": [
@@ -372,6 +426,33 @@
     "host": "agency",
     "note": "outside research bot round 2, tested 2026-10-25; matched 51 of 52",
     "water": 1
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Idaho recreation area polygons (76)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "IN": [
@@ -530,6 +611,24 @@
     "url": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_FAS/FeatureServer/0",
     "host": "agency",
     "note": "outside research bot round 2 (all states), tested 2026-10-25; matched 2 of 3"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "ND": [
@@ -557,6 +656,33 @@
     "read": "2026-10-28",
     "note": "39 NDPRD properties (the NDGISHUB copy has 21)",
     "url": "https://services3.arcgis.com/G9FKQ0xH9VagrUos/arcgis/rest/services/NDPRD_Boundaries/FeatureServer/0"
+   },
+   {
+    "kind": "forest",
+    "ag": "North Dakota Forest Service (via ND Dept of Mineral Resources server)",
+    "nm": "DESCRIPTION",
+    "url": "https://gis.dmr.nd.gov/dmrpublicservices/rest/services/State_Forest/MapServer/0",
+    "host": "agency",
+    "lic": "none stated (HQ Oct 29 11:27 AM: use, credit the agency)",
+    "note": "chat 9 probe Oct 29 (27 records, name in DESCRIPTION); added by chat 2 for the 5 ND state forests"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "NJ": [
@@ -592,6 +718,24 @@
     "url": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "host": "agency",
     "note": "outside research bot round 2 (all states), tested 2026-10-25; matched 3 of 3; uploaded by a contractor account inside the state of New Mexico ArcGIS org"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "NV": [
@@ -637,6 +781,33 @@
     "read": "2026-10-28",
     "note": "30 state parks, historic state monuments + rec areas (HT-11)",
     "url": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Nevada national monuments + NCAs",
+    "nm": "NLCS_NAME",
+    "url": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "NY": [
@@ -730,6 +901,33 @@
     "url": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
     "host": "agency",
     "note": "outline layer explorer + lead tester, chat 2, 2026-10-26; would give 3 outline-less parks"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Oregon/Washington recreation management areas (2,188)",
+    "nm": "RMA_NAME",
+    "url": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "PA": [
@@ -882,6 +1080,14 @@
     "read": "2026-10-27",
     "note": "228 areas; OWNERSHIP + OWNCODE = rule 14 (federal-owned WMAs are SE-1: NOT SURE)",
     "url": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3"
+   },
+   {
+    "kind": "park",
+    "ag": "Tennessee Department of Environment and Conservation (State Park Boundaries, Public View; multi-site parks dissolved)",
+    "nm": "PRIMARY_NAME__LONG_",
+    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/State_Park_Boundaries_Primary_March_2024_view2/FeatureServer/331",
+    "host": "agol",
+    "note": "chat 3 find + look-up 2-tn-parks-b, Oct 29: 70 parks, edited 2026-10-29"
    }
   ],
   "TX": [
@@ -942,6 +1148,33 @@
     "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/Utah_National_Historic_Landmarks/FeatureServer/0",
     "host": "agol",
     "note": "outline layer explorer + lead tester, chat 2, 2026-10-26; would give 2 outline-less parks"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Utah State Office (congressionally designated recreation areas)",
+    "nm": "RECS_NAME",
+    "url": "https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/MapServer/1",
+    "host": "agency",
+    "lic": "credit line",
+    "note": "chat 9 probe Oct 29 (PASS, 26 NCAs / recreation areas); added by chat 2"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "VA": [
@@ -1043,8 +1276,8 @@
     "nm": "NAME",
     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
     "host": "agency",
-    "note": "outside research bot round 2, tested 2026-10-25; matched 7 of 54",
-    "where": "OWNER='State Government'"
+    "note": "outside research bot round 2, tested 2026-10-25; matched 7 of 54 · Oct 29 chat 2: plus the 3 federal parcels POTA numbers by these names (BLM Rock Creek + Telford recreation areas, Hanford Reach McGee Ranch/Riverlands unit), which the state-owned filter hid",
+    "where": "OWNER='State Government' OR (OWNER='Federal Government' AND NAME IN ('Rock Creek Recreation Area','Telford Recreation Area','Hanford Reach National Monument, McGee Ranch/Riverlands Unit'))"
    },
    {
     "kind": "land",
@@ -1075,6 +1308,33 @@
     "read": "2026-10-28",
     "note": "33 wildlife areas on WDFW's own server (HT-20)",
     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/FeatureServer/1"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Oregon/Washington recreation management areas (2,188)",
+    "nm": "RMA_NAME",
+    "url": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "WI": [
@@ -1166,6 +1426,24 @@
     "url": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Boundaries/FeatureServer/1",
     "host": "agency",
     "note": "outside research bot round 2, tested 2026-10-25; matched 5 of 16"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "OH": [
@@ -1381,6 +1659,24 @@
     "url": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
     "host": "agol",
     "note": "outline layer explorer + lead tester, chat 2, 2026-10-26; would give 2 outline-less parks"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "MO": [
@@ -1469,14 +1765,6 @@
     "nm": "Site_Name",
     "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/3",
     "host": "agency"
-   },
-   {
-    "kind": "land",
-    "ag": "Illinois DNR (public conservation lands)",
-    "nm": "Site_Name",
-    "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/HolmanConservationPropertiesUpdate_7_18/FeatureServer/2",
-    "host": "agol",
-    "note": "outline layer explorer + lead tester, chat 2, 2026-10-26; would give 3 outline-less parks"
    }
   ],
   "VT": [
@@ -1937,6 +2225,24 @@
     "host": "agency",
     "where": "UNIT_CODE IN ('CURE','KALA','UPDE','MNRR','DAAV','BLRV','CAKR')",
     "note": "NPS Land Resources Division legislated boundary, only the 7 round-5 parks whose PAD-US piece is a sliver (good bot, tested Oct 25 2026). chat 2"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM recreation SITE polygons (national, 3,478)",
+    "nm": "FET_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
+   },
+   {
+    "kind": "land",
+    "ag": "BLM Areas of Critical Environmental Concern (national, 1,120)",
+    "nm": "ACEC_NAME",
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+    "host": "agency",
+    "lic": "US federal data",
+    "note": "chat 2 more-layers probe2 Oct 29 8:05 PM (polygons + names confirmed); staged for the rebuild after the release"
    }
   ],
   "BC": [
