@@ -155,7 +155,8 @@ def crawled_layers(want):
         for l in (m.group(1).split('\n') if m else []):
             a = ATLAS_LINE.match(l)
             if a: out.append((f.stem, a.group(1).strip(), a.group(2), a.group(3).strip()))
-    for u, v in ((load('data/intake/found-layers.json', {}) or {}).items()):   # the two GIS finders (map viewers, open-data portals)
+    found = {**(load('data/intake/found-layers-stage2.json', {}) or {}), **(load('data/intake/found-layers.json', {}) or {})}   # + world stage 2 (phone book)
+    for u, v in found.items():   # the two GIS finders (map viewers, open-data portals) + the world finder's stage 2
         area = str(v.get('area') or '')
         if '?' in area or not area or (want and area not in want): continue
         out.append((area, f"{v.get('name', '')} ({v.get('from', '')})", u, '?'))

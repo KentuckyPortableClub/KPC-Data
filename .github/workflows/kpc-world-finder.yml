@@ -43,6 +43,7 @@ jobs:
           sparse-checkout: |
             data/world-key
             .claude/build/research/WORLD
+            .claude/build/research/agency-atlas
             .github/scripts
       - name: Find, one save per chunk
         continue-on-error: true
@@ -58,7 +59,7 @@ jobs:
             MINUTES=55 python3 .github/scripts/kpc_world_finder.py | tee /tmp/w.log || true
             python3 .github/scripts/kpc_status.py board "world finder v2" green "chunk $i: data/world-finder + questions" "chat 11 answers data/waiting/questions/world-finder.json" || true
             python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/world-finder.json || true; python3 .github/scripts/kpc_keep_answers.py state data/world-finder/state.json || true   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
-            bash ../links/.github/scripts/kpc_push_data.sh . "world finder v2: chunk $i (hidden)" data/world-finder data/harvest data/waiting/questions data/status || true
+            bash ../links/.github/scripts/kpc_push_data.sh . "world finder v2: chunk $i (hidden)" data/world-finder data/harvest data/waiting/questions data/status data/intake/found-layers-stage2.json || true
             L=$(grep -o '^LEFT=[0-9]*' /tmp/w.log | tail -1 | cut -d= -f2); echo "LEFT=$L" >> "$GITHUB_ENV"
             [ "${L:-0}" = 0 ] && break
           done

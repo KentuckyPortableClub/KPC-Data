@@ -46,7 +46,7 @@ jobs:
         id: fp
         continue-on-error: true
         run: |
-          F=$( (cat links/.claude/build/research/fable/*.md links/.claude/build/research/agency-atlas/*.md 2>/dev/null | grep -E '^LAYER \||^  - .+: https?://\S+/(MapServer|FeatureServer)/[0-9]+ \(name field'; cat kpcdata/data/intake/found-layers.json 2>/dev/null) | sha1sum | cut -c1-16)
+          F=$( (cat links/.claude/build/research/fable/*.md links/.claude/build/research/agency-atlas/*.md 2>/dev/null | grep -E '^LAYER \||^  - .+: https?://\S+/(MapServer|FeatureServer)/[0-9]+ \(name field'; cat kpcdata/data/intake/found-layers.json kpcdata/data/intake/found-layers-stage2.json 2>/dev/null) | sha1sum | cut -c1-16)
           O=$(cat kpcdata/data/intake/collector-seen.txt 2>/dev/null || echo none)
           echo "fp=$F" >> "$GITHUB_OUTPUT"
           if [ "$F" = "$O" ] && [ "${{ github.event_name }}" = schedule ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Layer collector::nothing new"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi

@@ -20,13 +20,19 @@ Per country:
 Env: COUNTRIES (blank = the whole world list in gap order, skipping countries finished in this stage) · LINKS · MINUTES (55)
      · PER_COUNTRY_MIN (25: a big country carries on next chunk) · W9=0 · W2=0 (stage 2 / 3 flags: leave OFF)
 Manners: the harvester's (robots.txt, ArcGIS REST exempt, 2 s per host, a day's rest after 3 strikes). Never fails (exit 0)."""
-import copy, glob, json, os, pathlib, re, sys, time
+import copy, glob, json, os, pathlib, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_world_harvest as H   # noqa: E402  (the harvester's finders, manners and lead format)
 import kpc_gis_hunter as G
 import kpc_tiers as T  # noqa: E402      # noqa: E402  (step A: multipoint pins on a layer, point in polygon, name words)
 
 W9 = os.environ.get('W9') == '1'; W2 = os.environ.get('W2') == '1'   # Brandon 10:09 PM: stage 2 / 3 only after stage 1 everywhere
+# Oct 30 11:10 AM (Brandon: 'turn switches on once stage 1 done, does stage 2 then stage 3 automatically'): data/world-finder/stage.json
+# holds the stage; when a stage's pass is done for EVERY country the next one starts by itself (stage 2 = W-9 phone book: agency
+# NAMES -> their own servers; stage 3 = W-2 EU compilations as LABELLED candidates, Approximate at best, never the bot's YES).
+STAGE_F = pathlib.Path('data/world-finder/stage.json')
+STAGE = 1
+EEA_CC = set('AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE IS LI NO CH TR'.split())
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
 OUT = pathlib.Path('data/world-finder'); QF = pathlib.Path('data/waiting/questions/world-finder.json')
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 55) * 60
@@ -64,7 +70,8 @@ def gap_queue(pins, state):
     # (biggest gap first), a paused big country goes to the back until the others had their turn (oldest touch first)
     def touched(cc): s = state.get(cc) or {}; return s.get('touched') or (s.get('run') if s.get('stage1') else '') or ''
     rows.sort(key=lambda x: (x[0] == 'FR', bool(touched(x[0])), touched(x[0]), -len(x[1])))
-    return [r for r in rows if (state.get(r[0]) or {}).get('stage1') != 'done']
+    k = f'stage{STAGE}'
+    return [r for r in rows if (state.get(r[0]) or {}).get(k) != 'done' and (STAGE != 3 or r[0] in EEA_CC)]
 
 
 def country_cfg(cc, cfg, table):
@@ -186,7 +193,55 @@ def write_questions(Q, areas_run):
     QF.with_suffix('.md').write_text('\n'.join(L) + '\n', encoding='utf-8')
 
 
+def agency_names(cc, table):
+    """Stage 2 (W-9): the managing-agency NAMES for a country: chat 8's table + the atlas file (chat 9's Protected Planet / EEA leads)."""
+    t = ((table.get('countries') or table) or {}).get(cc) or {}
+    names = [t.get('agency_local'), t.get('agency_en'), t.get('abbr')] + [a for a in (t.get('also') or []) if isinstance(a, str)]
+    f = LINKS / '.claude' / 'build' / 'research' / 'agency-atlas' / f'W-{cc}.md'
+    if f.exists():
+        tx = f.read_text(encoding='utf-8')
+        m = re.search(r'## Managing agencies[^\n]*\n(.*?)(?=\n## |\Z)', tx, re.S)
+        names += [re.sub(r'\s*\(.*$', '', l[2:]).strip() for l in (m.group(1).split('\n') if m else []) if l.startswith('- ') and '(add)' not in l]
+        names += [re.sub(r'^\*\*|\*\*$', '', l.split(' · ')[0][2:]).strip() for l in tx.split('\n') if 'Protected Planet' in l or 'EEA lead' in l]
+    out = []
+    for n in names:
+        for part in re.split(r'\s+/\s+|;', str(n or '')):
+            part = re.sub(r'\s*\([^)]*\)', '', part).strip(' .,-')
+            if 3 <= len(part) <= 90 and part.lower() not in ('same', 'n/a', 'none', 'unknown'): out.append(part)
+    return list(dict.fromkeys(out))
+
+
+def run_stage2(cc, table):
+    """W-9: each agency NAME -> ArcGIS Online search for that agency's own feature services -> official ones walked -> polygon layers
+    go to data/intake/found-layers.json (area W-<cc>), where the layer collector pin-tests them against the country's open parks."""
+    found = load('data/intake/found-layers-stage2.json', {}) or {}; n = 0; tried = []
+    for name in agency_names(cc, table)[:8]:
+        if late(): break
+        tried.append(name)
+        try:
+            j = H.get('https://www.arcgis.com/sharing/rest/search?' + urllib.parse.urlencode({'q': f'"{name}" (type:"Feature Service" OR type:"Map Service")', 'num': 20, 'f': 'json'}))
+        except Exception: continue  # noqa: BLE001
+        for it in (j or {}).get('results') or []:
+            u = str(it.get('url') or '')
+            if not re.search(r'/(FeatureServer|MapServer)/?$', u): continue
+            if not H.official(it.get('owner') or '', u, cc, '|'.join([re.escape(w) for w in name.lower().split()[:3]] + ['gov'])): continue
+            try: d = H.get(u.rstrip('/') + '?f=json') or {}
+            except Exception: continue  # noqa: BLE001
+            for l in d.get('layers') or []:
+                lu = f"{u.rstrip('/')}/{l.get('id')}"
+                if lu not in found and re.search(r'park|reserv|protect|natur|forest|wild|refug|sanctuar|conserv|boundar|parc|parque|parco|schutz|rezerwat', str(l.get('name', '')) + ' ' + u, re.I):
+                    found[lu] = {'area': f'W-{cc}', 'name': f"{it.get('title', '')}: {l.get('name', '')}"[:100], 'from': 'world stage 2 (phone book agency name)', 'source': f'{name} ({it.get("owner", "")})', 'date': TODAY}; n += 1
+    pathlib.Path('data/intake').mkdir(parents=True, exist_ok=True)
+    json.dump(found, open('data/intake/found-layers-stage2.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)   # its own file: the collector job writes found-layers.json
+    notice(f'{cc} STAGE 2: {len(tried)} agency names searched, {n} new layers for the collector')
+    return 'done' if not late() else 'paused (time): carries on next chunk'
+
+
 def main():
+    global STAGE, W9, W2
+    STAGE = int((load(STAGE_F, {}) or {}).get('stage') or 1) if str((load(STAGE_F, {}) or {}).get('stage') or 1).isdigit() else 4
+    if STAGE >= 4: notice('ALL STAGES COMPLETE (1 Fable plan, 2 phone book, 3 EU compilations): nothing to do'); print('LEFT=0'); return
+    W9 = W9 or STAGE >= 2; W2 = W2 or STAGE >= 3
     state = load(OUT / 'state.json', {}) or {}
     pins = all_pins()
     cfg = load(H.OUT / 'countries.json', {}) or {}
@@ -200,15 +255,31 @@ def main():
     Q, ran = [], []
     for cc, open_, K in queue:
         if late(): break
+        if STAGE == 2:
+            state.setdefault(cc, {})['stage2'] = run_stage2(cc, table); state[cc]['touched'] = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
+            json.dump(state, open(OUT / 'state.json', 'w'), indent=1); ran.append(cc); continue
         rec = run_country(cc, open_, K, pins[cc], cfg, table, hstate, Q)
-        state[cc] = {'stage1': rec['stage1'], 'run': TODAY, 'touched': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'open': rec['open'], 'candidates': rec['key_candidates'] + rec['layer_candidates']}
+        prev = state.get(cc) or {}
+        state[cc] = {**prev, f'stage{STAGE}': rec['stage1'], 'run': TODAY, 'touched': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'open': rec['open'],
+                     'candidates': rec['key_candidates'] + rec['layer_candidates']}
+        if STAGE == 1: state[cc]['stage1'] = rec['stage1']
         ran.append(cc)
         H.save(H.OUT / 'state.json', hstate)
         json.dump(state, open(OUT / 'state.json', 'w'), indent=1)
-    if ran: write_questions(Q, set(ran))
+    if STAGE == 3:
+        for q in Q:
+            if re.search(r'eea|natura|cdda|discomap', str(q.get('layer') or ''), re.I):
+                q['label'] = 'EU compilation of national data (W-2): Approximate at best, never Official'; q['tier'] = 'LIKELY' if q.get('tier') == 'SURE' else q.get('tier')
+    if ran and STAGE != 2: write_questions(Q, set(ran))
     left = [q[0] for q in gap_queue(pins, state)]
+    if not left and not want:   # this stage is done for EVERY country: the next one starts by itself (Brandon Oct 30 11:10 AM)
+        nxt = STAGE + 1
+        json.dump({'stage': nxt if nxt <= 3 else 'complete', 'since': TODAY, 'history': ((load(STAGE_F, {}) or {}).get('history') or []) + [f'stage {STAGE} complete {TODAY}']},
+                  open(STAGE_F, 'w'), indent=1)
+        notice(f'STAGE {STAGE} COMPLETE for every country: ' + (f'stage {nxt} starts by itself next run' if nxt <= 3 else 'all stages done'))
+        left = ['next stage'] if nxt <= 3 else []
     print(f'LEFT={len(left)}')
-    notice(f"ran {len(ran)} countries ({' '.join(ran)[:300]}); {len(left)} still need their stage-1 pass" + (f" (next: {' '.join(left[:8])})" if left else ': STAGE 1 COMPLETE (report to HQ before W9 / W2)'))
+    notice(f"stage {STAGE}: ran {len(ran)} countries ({' '.join(ran)[:300]}); {len(left)} left" + (f" (next: {' '.join(left[:8])})" if left else ''))
 
 
 if __name__ == '__main__':
