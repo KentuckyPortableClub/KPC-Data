@@ -1,0 +1,40 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (us, US-WY): screenshots in order: 1=US-6184 (record); 2=US-6184 (map); 3=US-6185 (record); 4=US-6185 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "US-6184",
+   "park": "The Pinnacles Geologic Site BLM Recreation Management Area",
+   "record": "Pinnacles ACEC",
+   "area": "US-WY"
+  },
+  {
+   "ref": "US-6185",
+   "park": "South Pass Historic Landmark National Historic Site",
+   "record": "South Pass Historic Landscape ACEC",
+   "area": "US-WY"
+  }
+ ],
+ "urls": [
+  "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1600&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.7%2C42.06&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1592&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.886%2C42.3437&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  }
+ ]
+}

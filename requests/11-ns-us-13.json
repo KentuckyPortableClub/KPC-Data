@@ -1,0 +1,97 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (us, US-ND, US-NE, US-NJ, US-NM): screenshots in order: 1=US-8607 (record); 2=US-8607 (map); 3=US-3375 (record); 4=US-3375 (map); 5=US-13150 (record); 6=US-13150 (map); 7=US-8319 (map); 8=US-8319 (map); 9=US-11780 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "US-8607",
+   "park": "Sweet Briar Lake Wildlife Management Area",
+   "record": "Sweetbriar Lake",
+   "area": "US-ND"
+  },
+  {
+   "ref": "US-3375",
+   "park": "Stolley National Historic Site",
+   "record": "Stolley Park",
+   "area": "US-NE"
+  },
+  {
+   "ref": "US-13150",
+   "park": "Belvidere Access Wildlife Management Area",
+   "record": "Belvidere Fishing Access",
+   "area": "US-NJ"
+  },
+  {
+   "ref": "US-8319",
+   "park": "Palisades Interstate Park",
+   "record": "Palisades",
+   "area": "US-NJ"
+  },
+  {
+   "ref": "US-8319",
+   "park": "Palisades Interstate Park",
+   "record": "",
+   "area": "US-NJ"
+  },
+  {
+   "ref": "US-11780",
+   "park": "Datil Well Campground BLM Recreation Management Area",
+   "record": "Datil Well",
+   "area": "US-NM"
+  }
+ ],
+ "urls": [
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=215615&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-101.276%2C46.8666&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=103429&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-98.3611%2C40.9001&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=229130&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.0822%2C40.8282&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-73.9207%2C40.953&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-73.9207%2C40.953&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-107.857%2C34.1527&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  }
+ ]
+}

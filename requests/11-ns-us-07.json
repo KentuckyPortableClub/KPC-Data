@@ -1,0 +1,98 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (us, US-IA, US-ID): screenshots in order: 1=US-2313 (map); 2=US-9331 (map); 3=US-12210 (record); 4=US-12210 (map); 5=US-5592 (record); 6=US-5592 (map); 7=US-5615 (record); 8=US-5615 (map); 9=US-5615 (record); 10=US-5615 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "US-2313",
+   "park": "Pilot Knob State Park",
+   "record": "Pilot Knob State Preserve",
+   "area": "US-IA"
+  },
+  {
+   "ref": "US-9331",
+   "park": "Eagle Lake Wildlife Management Area",
+   "record": "EAGLE LAKE WETLAND COMPLEX",
+   "area": "US-IA"
+  },
+  {
+   "ref": "US-12210",
+   "park": "Jump Creek Falls BLM Scenic Site",
+   "record": "Jump Creek Canyon ",
+   "area": "US-ID"
+  },
+  {
+   "ref": "US-5592",
+   "park": "Blackfoot River Wildlife Management Area",
+   "record": "Blackfoot River Park Access Site",
+   "area": "US-ID"
+  },
+  {
+   "ref": "US-5615",
+   "park": "Portneuf Wildlife Management Area",
+   "record": "Portneuf (Upper) Access Site",
+   "area": "US-ID"
+  },
+  {
+   "ref": "US-5615",
+   "park": "Portneuf Wildlife Management Area",
+   "record": "Portneuf (Lower) Access Site",
+   "area": "US-ID"
+  }
+ ],
+ "urls": [
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.5549%2C43.2517&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.732%2C43.1124&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1105&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-116.924%2C43.4799&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199587&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-111.355%2C42.8199&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199664&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-112.201%2C42.7033&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199663&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-112.201%2C42.7033&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  }
+ ]
+}

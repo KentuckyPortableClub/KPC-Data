@@ -1,0 +1,99 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (us, US-MO, US-NC): screenshots in order: 1=US-9753 (map); 2=US-3862 (record); 3=US-3862 (map); 4=US-3862 (record); 5=US-3862 (map); 6=US-3862 (record); 7=US-3862 (map); 8=US-3862 (record); 9=US-3862 (map); 10=US-3862 (record); 11=US-3862 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "US-9753",
+   "park": "Katy Trail Rock Island Spur SP",
+   "record": "",
+   "area": "US-MO"
+  },
+  {
+   "ref": "US-3862",
+   "park": "Nags Head Woods Ecological State Preserve",
+   "record": "Town of Nags Head Open Space",
+   "area": "US-NC"
+  },
+  {
+   "ref": "US-3862",
+   "park": "Nags Head Woods Ecological State Preserve",
+   "record": "Nags Head Woods and Jockey's Ridge - National Natural Landmark",
+   "area": "US-NC"
+  },
+  {
+   "ref": "US-3862",
+   "park": "Nags Head Woods Ecological State Preserve",
+   "record": "Nags Head Woods (Town of Nags Head) Registered Heritage Area",
+   "area": "US-NC"
+  },
+  {
+   "ref": "US-3862",
+   "park": "Nags Head Woods Ecological State Preserve",
+   "record": "Town of Nags Head Open Space",
+   "area": "US-NC"
+  },
+  {
+   "ref": "US-3862",
+   "park": "Nags Head Woods Ecological State Preserve",
+   "record": "Nags Head Woods (Town of Nags Head) Registered Heritage Area",
+   "area": "US-NC"
+  }
+ ],
+ "urls": [
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.5251%2C38.5355&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=7803&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fncnhde.natureserve.org%2Farcgis%2Frest%2Fservices%2FNC_Public%2FManaged_Areas%2FMapServer%2F0&center=-75.6582%2C35.9861&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=9200&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fncnhde.natureserve.org%2Farcgis%2Frest%2Fservices%2FNC_Public%2FManaged_Areas%2FMapServer%2F0&center=-75.6582%2C35.9861&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=21316&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fncnhde.natureserve.org%2Farcgis%2Frest%2Fservices%2FNC_Public%2FManaged_Areas%2FMapServer%2F0&center=-75.6582%2C35.9861&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=212278&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.6582%2C35.9861&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=214926&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.6582%2C35.9861&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  }
+ ]
+}

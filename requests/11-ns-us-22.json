@@ -1,0 +1,98 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (us, US-VA, US-WA): screenshots in order: 1=US-9897 (record); 2=US-9897 (map); 3=US-0694 (record); 4=US-0694 (map); 5=US-0694 (record); 6=US-0694 (map); 7=US-12315 (record); 8=US-12315 (map); 9=US-12551 (map); 10=US-12551 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "US-9897",
+   "park": "Jamestowne National Historical Site",
+   "record": "Jamestown Island (Historic), Jamestown Island Historic District (Historic Jamestowne) (Descriptive), Jamestown National ",
+   "area": "US-VA"
+  },
+  {
+   "ref": "US-0694",
+   "park": "Ebey's Landing Reserve National Conservation Area",
+   "record": "Ebey's Landing National Historical Reserve",
+   "area": "US-WA"
+  },
+  {
+   "ref": "US-0694",
+   "park": "Ebey's Landing Reserve National Conservation Area",
+   "record": "Ebey's Landing",
+   "area": "US-WA"
+  },
+  {
+   "ref": "US-12315",
+   "park": "Dragoon Creek State Recreation Site",
+   "record": "",
+   "area": "US-WA"
+  },
+  {
+   "ref": "US-12551",
+   "park": "Samish State Wildlife Area",
+   "record": "Samish River",
+   "area": "US-WA"
+  },
+  {
+   "ref": "US-12551",
+   "park": "Samish State Wildlife Area",
+   "record": "Samish River",
+   "area": "US-WA"
+  }
+ ],
+ "urls": [
+  "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3/query?objectIds=378224&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fvcris.dhr.virginia.gov%2Farcgis%2Frest%2Fservices%2Fdhr%2Fdhr_public%2FMapServer%2F3&center=-76.7749%2C37.2092&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3317&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.706%2C48.205&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=271431&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.706%2C48.205&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?objectIds=3498440&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Cadastre_OpenData%2FMapServer%2F6&center=-117.443%2C47.8884&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.487%2C48.5477&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.487%2C48.5477&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  }
+ ]
+}

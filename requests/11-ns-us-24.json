@@ -1,0 +1,97 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (us, US-WA, US-WI, US-WY): screenshots in order: 1=US-5569 (record); 2=US-5569 (map); 3=US-5571 (record); 4=US-5571 (map); 5=US-5576 (record); 6=US-5576 (map); 7=US-9831 (map); 8=US-9831 (map); 9=US-6160 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "US-5569",
+   "park": "Green Mountain-Tahuya State Forest",
+   "record": "",
+   "area": "US-WA"
+  },
+  {
+   "ref": "US-5571",
+   "park": "Loomis-Loup Loup State Forest",
+   "record": "",
+   "area": "US-WA"
+  },
+  {
+   "ref": "US-5576",
+   "park": "Yacolt Burn State Forest",
+   "record": "",
+   "area": "US-WA"
+  },
+  {
+   "ref": "US-9831",
+   "park": "Allenton Marsh State Wildlife Area",
+   "record": "Allenton Wildlife Area",
+   "area": "US-WI"
+  },
+  {
+   "ref": "US-9831",
+   "park": "Allenton Marsh SWA",
+   "record": "",
+   "area": "US-WI"
+  },
+  {
+   "ref": "US-6160",
+   "park": "Stewart Creek BLM Herd Management Area",
+   "record": "Stewart Creek/Chain Lakes",
+   "area": "US-WY"
+  }
+ ],
+ "urls": [
+  "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?objectIds=3494432&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Cadastre_OpenData%2FMapServer%2F6&center=-122.911%2C47.4711&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?objectIds=3496589&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Cadastre_OpenData%2FMapServer%2F6&center=-119.792%2C48.9395&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?objectIds=3499999&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Cadastre_OpenData%2FMapServer%2F6&center=-122.385%2C45.7107&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-88.3406%2C43.3978&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-88.3406%2C43.3978&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-107.69%2C42.1327&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  }
+ ]
+}

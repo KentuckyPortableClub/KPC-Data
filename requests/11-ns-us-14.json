@@ -1,0 +1,97 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (us, US-NM, US-NY): screenshots in order: 1=US-8618 (record); 2=US-8618 (map); 3=US-2028 (record); 4=US-2028 (map); 5=US-2028 (map); 6=US-5154 (map); 7=US-5154 (record); 8=US-5154 (map); 9=US-5154 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "US-8618",
+   "park": "White Ridge National Recreation Trail",
+   "record": "White Ridge Bike Trails",
+   "area": "US-NM"
+  },
+  {
+   "ref": "US-2028",
+   "park": "Captree State Park",
+   "record": "Captree/Robert Moses State Park",
+   "area": "US-NY"
+  },
+  {
+   "ref": "US-2028",
+   "park": "Captree State Park",
+   "record": "Captree/Robert Moses",
+   "area": "US-NY"
+  },
+  {
+   "ref": "US-5154",
+   "park": "Cameron Mills State Forest",
+   "record": "Cameron State Forest",
+   "area": "US-NY"
+  },
+  {
+   "ref": "US-5154",
+   "park": "Cameron Mills State Forest",
+   "record": "Cameron State Forest",
+   "area": "US-NY"
+  },
+  {
+   "ref": "US-5154",
+   "park": "Cameron SF",
+   "record": "",
+   "area": "US-NY"
+  }
+ ],
+ "urls": [
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=14078&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Frecreation%2FBLM_Natl_Recs_poly%2FMapServer%2F1&center=-106.841%2C35.4985&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=237470&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-73.2633%2C40.6468&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-73.2633%2C40.6468&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-77.3802%2C42.1949&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=236464&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-77.3802%2C42.1949&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-77.3802%2C42.1949&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  }
+ ]
+}

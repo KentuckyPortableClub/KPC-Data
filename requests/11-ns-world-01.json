@@ -1,0 +1,59 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (world, AT, AU, BE, CL): screenshots in order: 1=AT-0069 (record); 2=BE-0231 (record); 3=BE-0401 (record); 4=BE-0412 (record); 5=CL-0106 (record); 6=CL-0106 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "AT-0069",
+   "park": "Poellauer Tal Nature Reserve",
+   "record": "P\u00f6llauer Tal",
+   "area": "AT"
+  },
+  {
+   "ref": "AU-7323",
+   "park": "Creswick Regional Park",
+   "record": "Creswick N.F.R",
+   "area": "AU"
+  },
+  {
+   "ref": "BE-0231",
+   "park": "De Vlinderhoutse bossen Nature Reserve",
+   "record": "De Vinderhoutse bossen",
+   "area": "BE"
+  },
+  {
+   "ref": "BE-0401",
+   "park": "Thier-la-tombe Nature Reserve",
+   "record": "Thier \u00e0 la Tombe",
+   "area": "BE"
+  },
+  {
+   "ref": "BE-0412",
+   "park": "Vall\u00e9e de l'Eisch et Clarefontaine Park",
+   "record": "Vall\u00e9es de l'Eisch et de Clairefontaine",
+   "area": "BE"
+  },
+  {
+   "ref": "CL-0106",
+   "park": "Rio Blanco National Reserve",
+   "record": "Reserva R\u00edo Blanco",
+   "area": "CL"
+  }
+ ],
+ "urls": [
+  "https://eunis.eea.europa.eu/sites/100121",
+  "https://eunis.eea.europa.eu/sites/119303",
+  "https://eunis.eea.europa.eu/sites/128473",
+  "https://natura2000.eea.europa.eu/Natura2000/SDF.aspx?site=594",
+  "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer/2/query?objectIds=1724&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Farcgis.mma.gob.cl%2Fserver%2Frest%2Fservices%2FSIMBIO%2FSIMBIO_AP%2FFeatureServer%2F2&center=-70.3079%2C-32.9529&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  }
+ ]
+}

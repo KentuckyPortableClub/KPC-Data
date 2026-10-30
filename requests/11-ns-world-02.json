@@ -1,0 +1,92 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (world, CL, CO, ES): screenshots in order: 1=CL-0339 (record); 2=CL-0339 (map); 3=CO-0089 (record); 4=CO-0089 (map); 5=CO-0190 (record); 6=CO-0190 (map); 7=CO-0337 (record); 8=CO-0337 (map); 9=CO-0379 (record); 10=CO-0379 (map); 11=ES-0147 (record). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "CL-0339",
+   "park": "QUEBRADA DE CORDOVA Sanctuary",
+   "record": "Quebrada de Cordoba",
+   "area": "CL"
+  },
+  {
+   "ref": "CO-0089",
+   "park": "Territorio Colectivo del Consejo Comunitario de la Comunidad Negra de la Plata State Conservation Area",
+   "record": "En el Territorio Colectivo del Consejo Comunitario de la Comunidad Negra de la Plata",
+   "area": "CO"
+  },
+  {
+   "ref": "CO-0190",
+   "park": "Cerro Pintao - Serrani\u00eda del Perij\u00e1 State Natural Reserve",
+   "record": "Cerro Pintao - Serran\u00eda del Perij\u00e1",
+   "area": "CO"
+  },
+  {
+   "ref": "CO-0337",
+   "park": "Futuras Generaciones de Sibate State Forest",
+   "record": "Futuras Generaciones de Sibat\u00e9 I y II",
+   "area": "CO"
+  },
+  {
+   "ref": "CO-0379",
+   "park": "Purace Porvenir Las Violetas State Forest",
+   "record": "Purac\u00e9 Porvenir las Violetas, Porvenir  I  Porvenir II",
+   "area": "CO"
+  },
+  {
+   "ref": "ES-0147",
+   "park": "La Albera Natural Area",
+   "record": "L'Albera",
+   "area": "ES"
+  }
+ ],
+ "urls": [
+  "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer/2/query?objectIds=1723&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Farcgis.mma.gob.cl%2Fserver%2Frest%2Fservices%2FSIMBIO%2FSIMBIO_AP%2FFeatureServer%2F2&center=-71.6519%2C-33.4401&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://mapasdnp.dnp.gov.co/server/rest/services/Hosted/RUNAP_Registro_%C3%9Anico_Nacional_de_%C3%81reas_Protegidas/FeatureServer/0/query?objectIds=20001&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fmapasdnp.dnp.gov.co%2Fserver%2Frest%2Fservices%2FHosted%2FRUNAP_Registro_%25C3%259Anico_Nacional_de_%25C3%2581reas_Protegidas%2FFeatureServer%2F0&center=-77.177%2C4.08614&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://mapasdnp.dnp.gov.co/server/rest/services/Hosted/RUNAP_Registro_%C3%9Anico_Nacional_de_%C3%81reas_Protegidas/FeatureServer/0/query?objectIds=20522&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fmapasdnp.dnp.gov.co%2Fserver%2Frest%2Fservices%2FHosted%2FRUNAP_Registro_%25C3%259Anico_Nacional_de_%25C3%2581reas_Protegidas%2FFeatureServer%2F0&center=-72.8739%2C10.4691&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://mapasdnp.dnp.gov.co/server/rest/services/Hosted/RUNAP_Registro_%C3%9Anico_Nacional_de_%C3%81reas_Protegidas/FeatureServer/0/query?objectIds=20066&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fmapasdnp.dnp.gov.co%2Fserver%2Frest%2Fservices%2FHosted%2FRUNAP_Registro_%25C3%259Anico_Nacional_de_%25C3%2581reas_Protegidas%2FFeatureServer%2F0&center=-74.2108%2C4.41981&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://mapasdnp.dnp.gov.co/server/rest/services/Hosted/RUNAP_Registro_%C3%9Anico_Nacional_de_%C3%81reas_Protegidas/FeatureServer/0/query?objectIds=19977&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fmapasdnp.dnp.gov.co%2Fserver%2Frest%2Fservices%2FHosted%2FRUNAP_Registro_%25C3%259Anico_Nacional_de_%25C3%2581reas_Protegidas%2FFeatureServer%2F0&center=-75.0207%2C4.72383&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://natura2000.eea.europa.eu/Natura2000/SDF.aspx?site=9387"
+ ]
+}

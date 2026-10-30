@@ -1,0 +1,60 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (world, SE, SK, ZA): screenshots in order: 1=SE-1977 (record); 2=SE-2009 (record); 3=SK-0003 (record); 4=SK-0006 (record); 5=SK-0008 (record); 6=ZA-0061 (record); 7=ZA-0061 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "SE-1977",
+   "park": "Klibbalsreservatet Nature Reserve",
+   "record": "Klibbalreservatet",
+   "area": "SE"
+  },
+  {
+   "ref": "SE-2009",
+   "park": "Grimestorp Nature Reserve",
+   "record": "Grimmestorp",
+   "area": "SE"
+  },
+  {
+   "ref": "SK-0003",
+   "park": "Slovensk\u00fd raj National Park",
+   "record": "Slovensk\u00fd raj- OP",
+   "area": "SK"
+  },
+  {
+   "ref": "SK-0006",
+   "park": "Ve\u013ek\u00e1 Fatra National Park",
+   "record": "Ve\u013ek\u00e1 Fatra- OP",
+   "area": "SK"
+  },
+  {
+   "ref": "SK-0008",
+   "park": "Slovensk\u00fd kras National Park",
+   "record": "Slovensk\u00fd kras- OP",
+   "area": "SK"
+  },
+  {
+   "ref": "ZA-0061",
+   "park": "Lotheni Nature Reserve",
+   "record": "Loteni Nature Reserve",
+   "area": "ZA"
+  }
+ ],
+ "urls": [
+  "https://natura2000.eea.europa.eu/Natura2000/SDF.aspx?site=25085",
+  "https://natura2000.eea.europa.eu/Natura2000/SDF.aspx?site=24538",
+  "https://eunis.eea.europa.eu/sites/74780",
+  "https://eunis.eea.europa.eu/sites/79349",
+  "https://eunis.eea.europa.eu/sites/75148",
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=640&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=29.5289%2C-29.4545&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (world, IE, IT, NO): screenshots in order: 1=IE-0277 (record); 2=IE-0277 (map); 3=IT-0247 (record); 4=IT-0324 (record); 5=IT-1215 (record); 6=NO-0363 (record); 7=NO-0563 (record). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "IE-0277",
+   "park": "Corrvaddy Forest Reserve",
+   "record": "CORRAVADDY",
+   "area": "IE"
+  },
+  {
+   "ref": "IT-0247",
+   "park": "Riserva Naturale Provinciale Bosco della SS. Trinita Provincial Park",
+   "record": "Riserva naturale provinciale Bosco della SS. Trinit\u00c3\u0192\u00c2",
+   "area": "IT"
+  },
+  {
+   "ref": "IT-0324",
+   "park": "Isola di Pantelleria National Park",
+   "record": "P N ISOLA DI PANTELLERIA",
+   "area": "IT"
+  },
+  {
+   "ref": "IT-1215",
+   "park": "Monumento Naturale Sasso di Guidino Provincial Park",
+   "record": "Monumento naturale regionale del Sasso di Guidino",
+   "area": "IT"
+  },
+  {
+   "ref": "NO-0363",
+   "park": "Ertsvikskj\u00e6r Nature Reserve",
+   "record": "Ersvikskj\u00e6r",
+   "area": "NO"
+  },
+  {
+   "ref": "NO-0563",
+   "park": "Gj\u00f8rahaugen Nature Reserve",
+   "record": "Gj\u00f8rashaugen",
+   "area": "NO"
+  }
+ ],
+ "urls": [
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2/query?objectIds=1429&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices7.arcgis.com%2F6LSAdqgf43oKRpP6%2Farcgis%2Frest%2Fservices%2FCoillte_Boundaries_Consultation%2FFeatureServer%2F2&center=-7.76447%2C54.9013&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://eunis.eea.europa.eu/sites/137346",
+  "https://eunis.eea.europa.eu/sites/132833",
+  "https://eunis.eea.europa.eu/sites/134629",
+  "https://eunis.eea.europa.eu/sites/63571",
+  "https://eunis.eea.europa.eu/sites/53637"
+ ]
+}

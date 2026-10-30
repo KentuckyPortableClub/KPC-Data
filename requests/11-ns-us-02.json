@@ -1,0 +1,98 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (us, US-AR, US-AZ): screenshots in order: 1=US-7277 (record); 2=US-7277 (map); 3=US-7277 (map); 4=US-7356 (record); 5=US-7356 (map); 6=US-7356 (map); 7=US-11981 (record); 8=US-11981 (map); 9=US-12162 (record); 10=US-12162 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "US-7277",
+   "park": "Crossett Experimental Forest Wildlife Management Area",
+   "record": "Crossett Experimental Area",
+   "area": "US-AR"
+  },
+  {
+   "ref": "US-7277",
+   "park": "Crossett Exp. Forest",
+   "record": "",
+   "area": "US-AR"
+  },
+  {
+   "ref": "US-7356",
+   "park": "St. Francis National Forest Wildlife Management Area",
+   "record": "Stumpy Point Purchase Unit",
+   "area": "US-AR"
+  },
+  {
+   "ref": "US-7356",
+   "park": "St. Francis NF WMA",
+   "record": "",
+   "area": "US-AR"
+  },
+  {
+   "ref": "US-11981",
+   "park": "Arivaca Lake State Wildlife Area",
+   "record": "Arivaca Land and Lake",
+   "area": "US-AZ"
+  },
+  {
+   "ref": "US-12162",
+   "park": "Sears Point BLM Historic Preservation Site",
+   "record": "Sears Point Core",
+   "area": "US-AZ"
+  }
+ ],
+ "urls": [
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2959&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-91.937%2C33.04&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-91.937%2C33.04&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3019&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-90.724%2C34.724&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-90.724%2C34.724&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167506&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-111.254%2C31.5259&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=50&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-113.375%2C32.9324&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  }
+ ]
+}

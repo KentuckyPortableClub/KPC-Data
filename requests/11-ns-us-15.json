@@ -1,0 +1,96 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (us, US-NY, US-OH): screenshots in order: 1=US-8102 (record); 2=US-8102 (map); 3=US-8102 (map); 4=US-9095 (record); 5=US-9095 (map); 6=US-9095 (map); 7=US-9095 (map); 8=US-9423 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "items": [
+  {
+   "ref": "US-8102",
+   "park": "Catharine Creek Wildlife Management Area",
+   "record": "Catharine Creek Fishing Access",
+   "area": "US-NY"
+  },
+  {
+   "ref": "US-8102",
+   "park": "Catharine Creek Wildlife Management Area",
+   "record": "Catharine Creek Fishing Access",
+   "area": "US-NY"
+  },
+  {
+   "ref": "US-9095",
+   "park": "Indian River Wildlife Management Area",
+   "record": "Indian River Fishing Access",
+   "area": "US-NY"
+  },
+  {
+   "ref": "US-9095",
+   "park": "Indian River Wildlife Management Area",
+   "record": "Indian River Fishing Access",
+   "area": "US-NY"
+  },
+  {
+   "ref": "US-9095",
+   "park": "Indian River WMA",
+   "record": "",
+   "area": "US-NY"
+  },
+  {
+   "ref": "US-9423",
+   "park": "Miller Nature Sanctuary State Nature Preserve",
+   "record": "RFGrrMrStNP",
+   "area": "US-OH"
+  }
+ ],
+ "urls": [
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=236947&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-76.8554%2C42.3524&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-76.8554%2C42.3524&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=236972&outFields=*&returnGeometry=false&f=html",
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-83.3936%2C39.2018&level=14",
+   "steps": [
+    {
+     "wait": 10000
+    }
+   ]
+  }
+ ]
+}
