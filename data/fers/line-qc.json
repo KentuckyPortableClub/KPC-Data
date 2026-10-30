@@ -1,0 +1,117 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "qc",
+ "states": [
+  "CA-QC"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 14:23 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 0,
+  "DROPPED": 7,
+  "NEVER LOOKED AT": 0
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 280,
+   "pairs whose boxes touch": 280
+  },
+  "pass2": {
+   "agree with the pass before": 361,
+   "date": "2026-10-30",
+   "pairs tested": 29
+  },
+  "pass3": {
+   "agree with the pass before": 216,
+   "date": "2026-10-30",
+   "pairs tested": 28
+  },
+  "pass5": {
+   "checked": 7,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "CA-QC": "data/fers/CA-QC.json"
+ },
+ "CA-QC": {
+  "rows": 885,
+  "live": 9,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the official outline of La Mauricie National Park, R\u00e9serve f": 1,
+   "the official outline of ZEC de la Riviere Sainte Marguerite": 5,
+   "the official outline of Zec Buteux-Bas-Saguenay Nature Reser": 1,
+   "the official outline of ZEC de la Riviere Saint Jean du Sagu": 1,
+   "the official outline of Zec Saint-Romain Nature Reserve coul": 1,
+   "the official outline of R\u00e9serve faunique de Matane Wildlife": 8,
+   "the official outline of R\u00e9serve faunique des Chic-Chocs Wild": 3,
+   "the official outline of ZEC Riviere Madeleine Nature Reserve": 1,
+   "the official outline of R\u00e9serve faunique des Laurentides Wil": 8,
+   "the official outline of Zec Des Martres Nature Reserve could": 2,
+   "the official outline of Zec Lac-au-Sable Nature Reserve coul": 1,
+   "the official outline of Zec Lac-Br\u00e9beuf Nature Reserve could": 1,
+   "the official outline of R\u00e9serve faunique Rouge-Matawin Wildl": 5,
+   "the official outline of Zec Lavigne Nature Reserve could not": 1,
+   "the official outline of Zec Martin-Valin Nature Reserve, ZEC": 2,
+   "the official outline of Zec Martin-Valin Nature Reserve coul": 2,
+   "the official outline of R\u00e9serve faunique La V\u00e9rendrye Wildli": 5,
+   "the official outline of R\u00e9serve faunique Mastigouche Wildlif": 2,
+   "the official outline of Zec Rapides-des-Joachims Nature Rese": 3,
+   "the official outline of Ashuapmushuan Nature Reserve could n": 1,
+   "the official outline of Deux Montagnes Preserve Wildlife Are": 1,
+   "the official outline of ZEC du Bas-Saint-Laurent Nature Rese": 2,
+   "the official outline of ZEC de la Petite Riviere Cascapedia": 1,
+   "the official outline of ZEC de la Grande Riviere Nature Rese": 1,
+   "the official outline of Zec La Li\u00e8vre Nature Reserve could n": 1,
+   "the official outline of Zec Saint-Patrice Nature Reserve cou": 2,
+   "the official outline of ZEC de la Riviere Bonaventure Nature": 1,
+   "the official outline of Zec Jaro Nature Reserve could not be": 1,
+   "the official outline of Zec Chauvin Nature Reserve could not": 1,
+   "the official outline of ZEC de l'Oie Blanche de Montmagny Na": 1,
+   "the official outline of Rimouski Reserve Nature Reserve coul": 1,
+   "the official outline of Zec Louise-Gosford Nature Reserve co": 1,
+   "the official outline of Port-Cartier-Sept-Iles Nature Reserv": 1,
+   "the official outline of Port-Daniel  Reserve Nature Reserve,": 3,
+   "the official outline of Portneuf Reserve faunique Nature Res": 4,
+   "the official outline of Zec Bras-Coup\u00e9-D\u00e9sert Nature Reserve": 2,
+   "the official outline of Saint-Maurice Reserve Nature Reserve": 1,
+   "the official outline of ZEC Batiscan-Neilson Nature Reserve": 1,
+   "the official outline of ZEC Anse-St-Jean Nature Reserve, Zec": 1,
+   "the official outline of ZEC des Anses Nature Reserve, ZEC Pa": 1,
+   "the official outline of ZEC Baillargeon Nature Reserve, ZEC": 1,
+   "the official outline of ZEC de la Bessonne Nature Reserve, Z": 1,
+   "the official outline of Zec Borgia Nature Reserve, Zec Kiski": 1,
+   "the official outline of Zec Borgia Nature Reserve, Zec Menok": 1,
+   "the official outline of Zec Boull\u00e9 Nature Reserve, Zec Colli": 1,
+   "the official outline of Zec Boull\u00e9 Nature Reserve, Zec Maiso": 2,
+   "the official outline of Zec Boull\u00e9 Nature Reserve, Zec Mazan": 1,
+   "the official outline of Zec Cap-Chat Nature Reserve, ZEC de": 1,
+   "the official outline of Zec Capitachouane Nature Reserve, Ze": 1,
+   "the official outline of Zec Chauvin Nature Reserve, ZEC de l": 1,
+   "the official outline of Zec Dumoine Nature Reserve, Zec Maga": 1,
+   "the official outline of Zec Dumoine Nature Reserve, Zec Rapi": 1,
+   "the official outline of Zec Forestville Nature Reserve, ZEC": 1,
+   "the official outline of Zec Fremont Nature Reserve, Zec Gros": 1,
+   "the official outline of Zec Gros-Brochet Nature Reserve, Zec": 1,
+   "the official outline of Zec Kiskissink Nature Reserve, Zec M": 1,
+   "the official outline of Zec Lac-au-Sable Nature Reserve, Zec": 1,
+   "the official outline of Zec Lesueur Nature Reserve, Zec Mitc": 1,
+   "the official outline of Zec Lesueur Nature Reserve, Zec Peta": 1,
+   "the official outline of Zec Maison-de-Pierre Nature Reserve,": 1
+  },
+  "dropped": 159,
+  "merged": 614
+ },
+ "states_ready": [
+  "CA-QC"
+ ],
+ "states_held": []
+}
