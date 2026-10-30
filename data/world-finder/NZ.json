@@ -1,26 +1,26 @@
 {
  "cc": "NZ",
  "run": "2026-10-30",
- "parks": 904,
- "open": 904,
+ "parks": 907,
+ "open": 907,
  "key_candidates": 0,
- "layer_candidates": 3,
+ "layer_candidates": 0,
  "layers_tried": [
   "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/AATH_Concession_Locations_view/FeatureServer/0",
   "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/AATH_Concession_Locations_view/FeatureServer/0",
+  "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/AATH_Concession_Locations_view/FeatureServer/0",
+  "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/ATES_Avalanche_Classification/FeatureServer/0",
   "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/ATES_Avalanche_Classification/FeatureServer/0",
   "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/ATES_Avalanche_Classification/FeatureServer/0",
   "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Chamois_Distribution_2007/FeatureServer/0",
   "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Chamois_Distribution_2007/FeatureServer/0",
+  "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Chamois_Distribution_2007/FeatureServer/0",
+  "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Covenant_Areas/FeatureServer/0",
   "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Covenant_Areas/FeatureServer/0",
   "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Covenant_Areas/FeatureServer/0",
   "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOCFreedomCamping/FeatureServer/0",
   "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOCFreedomCamping/FeatureServer/0",
-  "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_CMS_Place_Boundaries/FeatureServer/0",
-  "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_CMS_Place_Boundaries/FeatureServer/0",
-  "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_FreedomCampingSites/FeatureServer/0",
-  "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_FreedomCampingSites/FeatureServer/0",
-  "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Protections/FeatureServer/0"
+  "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOCFreedomCamping/FeatureServer/0"
  ],
  "no_layer_groups": {
   "scenic reserve": [
@@ -188,7 +188,14 @@
    "NZ-0580",
    "NZ-0643",
    "NZ-0862",
-   "NZ-0686"
+   "NZ-0686",
+   "NZ-0226",
+   "NZ-0483",
+   "NZ-0795",
+   "NZ-0413",
+   "NZ-0730",
+   "NZ-0741",
+   "NZ-0743"
   ],
   "marine reserve": [
    "NZ-0909",
@@ -216,6 +223,7 @@
    "NZ-0460",
    "NZ-0613",
    "NZ-0609",
+   "NZ-0928",
    "NZ-0612",
    "NZ-0598",
    "NZ-0594",
@@ -250,7 +258,9 @@
    "NZ-0905",
    "NZ-0906",
    "NZ-0907",
-   "NZ-0890"
+   "NZ-0890",
+   "NZ-0911",
+   "NZ-0927"
   ],
   "ecological area": [
    "NZ-0071",
@@ -328,7 +338,15 @@
    "NZ-0856",
    "NZ-0876",
    "NZ-0301",
-   "NZ-0847"
+   "NZ-0578",
+   "NZ-0583",
+   "NZ-0584",
+   "NZ-0847",
+   "NZ-0122",
+   "NZ-0502",
+   "NZ-0519",
+   "NZ-0406",
+   "NZ-0586"
   ],
   "conservation park": [
    "NZ-0081",
@@ -690,10 +708,29 @@
    "NZ-0845",
    "NZ-0854",
    "NZ-0861",
+   "NZ-0562",
    "NZ-0581",
+   "NZ-0853",
+   "NZ-0883",
+   "NZ-0075",
+   "NZ-0099",
+   "NZ-0104",
+   "NZ-0137",
+   "NZ-0163",
+   "NZ-0189",
+   "NZ-0223",
+   "NZ-0224",
+   "NZ-0225",
+   "NZ-0489",
    "NZ-0490",
+   "NZ-0540",
    "NZ-0791",
+   "NZ-0796",
+   "NZ-0803",
+   "NZ-0804",
    "NZ-0841",
+   "NZ-0404",
+   "NZ-0735",
    "NZ-0690"
   ],
   "wilderness area": [
@@ -706,7 +743,8 @@
    "NZ-0198",
    "NZ-0136",
    "NZ-0127",
-   "NZ-0183"
+   "NZ-0183",
+   "NZ-0213"
   ],
   "management area": [
    "NZ-0501",
@@ -732,7 +770,10 @@
    "NZ-0059",
    "NZ-0281",
    "NZ-0068",
-   "NZ-0064"
+   "NZ-0064",
+   "NZ-0057",
+   "NZ-0063",
+   "NZ-0067"
   ],
   "recreation park": [
    "NZ-0790",
@@ -746,7 +787,8 @@
    "NZ-0708",
    "NZ-0746",
    "NZ-0885",
-   "NZ-0216"
+   "NZ-0216",
+   "NZ-0872"
   ],
   "mammal sanctuary": [
    "NZ-0593",
@@ -895,7 +937,8 @@
   ],
   "regional reserve": [
    "NZ-0170",
-   "NZ-0166"
+   "NZ-0166",
+   "NZ-0245"
   ],
   "recreation reserve": [
    "NZ-0457",
@@ -924,6 +967,9 @@
   ],
   "landscape area": [
    "NZ-0889"
+  ],
+  "marine park": [
+   "NZ-0929"
   ],
   "ramsar site": [
    "NZ-0758"
@@ -975,5 +1021,5 @@
  },
  "layers_found_new": 0,
  "stage1": "paused (time): carries on next chunk",
- "seconds": 1820
+ "seconds": 1738
 }

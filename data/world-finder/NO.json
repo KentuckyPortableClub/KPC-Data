@@ -3,7 +3,7 @@
  "run": "2026-10-30",
  "parks": 3366,
  "open": 322,
- "key_candidates": 42,
+ "key_candidates": 35,
  "layer_candidates": 0,
  "layers_tried": [
   "https://kart.miljodirektoratet.no/arcgis/rest/services/anadrome_laksefisk/FeatureServer/5",
@@ -12,15 +12,15 @@
   "https://kart.miljodirektoratet.no/arcgis/rest/services/anadrome_laksefisk/FeatureServer/8",
   "https://kart.miljodirektoratet.no/arcgis/rest/services/anadrome_laksefisk/FeatureServer/9",
   "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/MapServer/0",
+  "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/MapServer/0",
   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/FeatureServer/1",
   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/FeatureServer/0",
   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/FeatureServer/0",
   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/FeatureServer/1",
-  "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_hb13/MapServer/0",
-  "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_hb13/MapServer/1",
-  "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_hb13/MapServer/2",
-  "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_hb13/MapServer/3",
-  "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_hb13/MapServer/4"
+  "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/FeatureServer/1",
+  "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/FeatureServer/0",
+  "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/FeatureServer/0",
+  "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/FeatureServer/1"
  ],
  "no_layer_groups": {
   "national park": [
@@ -318,6 +318,6 @@
   ]
  },
  "layers_found_new": 0,
- "stage1": "paused (time): carries on next chunk",
- "seconds": 250
+ "stage1": "done",
+ "seconds": 1157
 }

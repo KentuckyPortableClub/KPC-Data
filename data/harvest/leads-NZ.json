@@ -97,6 +97,35 @@
       "Aerially Assisted Trophy Hunting Block CA03 - Snow"
      ],
      "name_field": "BlockName"
+    },
+    {
+     "id": 0,
+     "name": "AATH Concession Locations",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "BlockType",
+      "Status",
+      "BlockName",
+      "BlockID",
+      "LocationID",
+      "Restriction_1",
+      "Restriction_2",
+      "Restriction_3",
+      "Created_Date_Editor_Tracking",
+      "Last_Updated_Date_Editor_Track",
+      "GlobalID",
+      "Shape__Area"
+     ],
+     "records": 72,
+     "sample": [
+      "Aerially Assisted Trophy Hunting Block CA01 - St J",
+      "Aerially Assisted Trophy Hunting Block CA02 - St J",
+      "Aerially Assisted Trophy Hunting Block CA03 - Snow"
+     ],
+     "name_field": "BlockName"
     }
    ],
    "note": "AATH Concession Locations",
@@ -116,6 +145,31 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "ATES Avalanche Classification",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "ATES_CLASSIFICATION",
+      "SITE_NAME",
+      "NOTES",
+      "CREATED_DATE",
+      "MODIFIED_DATE",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 546,
+     "sample": [
+      "Ewe Range",
+      "East / West Branch",
+      "Timber Creek"
+     ],
+     "name_field": "SITE_NAME"
+    },
     {
      "id": 0,
      "name": "ATES Avalanche Classification",
@@ -251,6 +305,40 @@
       "Chamois"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Chamois - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 41,
+     "sample": [
+      "Chamois",
+      "Chamois",
+      "Chamois"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Chamois in New Zealand (2007)",
@@ -270,6 +358,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Conservation Covenant Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "GlobalID",
+      "GIS_AREA",
+      "GIS_AREA_HA",
+      "DOC_FIRE_RESPONSIBILITY",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1019,
+     "sample": [
+      "Conservation Covenant - Lake Tarleton and Tarleton",
+      "Rangitihi Covenant",
+      "Table Hill Covenant"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "Conservation Covenant Areas",
@@ -427,6 +549,42 @@
       "Hawkes Lookout Carpark"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "DOC Freedom Camping Sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Site_Category_Type",
+      "Site_Category_Code",
+      "Condition_1",
+      "Condition_2",
+      "Condition_3",
+      "Condition_4",
+      "Action_Date",
+      "Functional_Location",
+      "Address",
+      "Location",
+      "Area_Phone",
+      "Notice_Number",
+      "Status",
+      "Operations_Region",
+      "Operations_District",
+      "NaPALIS_ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 287,
+     "sample": [
+      "Riwaka Resurgence",
+      "W F Moss Scenic Reserve",
+      "Hawkes Lookout Carpark"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "DOC Freedom Camping Sites",
@@ -491,6 +649,29 @@
       "Tiritiri Matangi Island Place"
      ],
      "name_field": "CMS_Place_Name"
+    },
+    {
+     "id": 0,
+     "name": "Conservation Management Strategy place boundaries",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CREATED_DATE",
+      "CMS_AREA",
+      "CMS_Place_Name",
+      "CMS_PublishDate",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 82,
+     "sample": [
+      "Kaipara Harbour Place",
+      "Motuora Island Place",
+      "Tiritiri Matangi Island Place"
+     ],
+     "name_field": "CMS_Place_Name"
     }
    ],
    "note": "Conservation Management Strategy Places",
@@ -510,6 +691,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "DOC_FreedomCampingSites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "Name",
+      "Site_Category_Type",
+      "Site_Category_Code",
+      "Condition_1",
+      "Condition_2",
+      "Condition_3",
+      "Condition_4",
+      "Action_Date",
+      "Functional_Location",
+      "Address",
+      "Location",
+      "Area_Phone",
+      "Notice_Number",
+      "Status",
+      "Operations_Region",
+      "Operations_District",
+      "NaPALIS_ID",
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 287,
+     "sample": [
+      "Riwaka Resurgence",
+      "W F Moss Scenic Reserve",
+      "Hawkes Lookout Carpark"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "DOC_FreedomCampingSites",
@@ -666,6 +883,42 @@
      ],
      "records": 78,
      "sample": [
+      "Horoirangi Marine Reserve",
+      "Banks Peninsula Marine Mammal Sanctuary",
+      "Poor Knights Islands Marine Reserve"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "NAPALIS_ProtectedArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "GlobalID",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 78,
+     "sample": [
       "Poor Knights Islands Marine Reserve",
       "Banks Peninsula Marine Mammal Sanctuary",
       "Parininihi Marine Reserve"
@@ -690,6 +943,32 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "DOC Marine Reserves",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Recorded_Area",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 49,
+     "sample": [
+      "Tuhua (Mayor Island) Marine Reserve",
+      "Poor Knights Islands Marine Reserve",
+      "Parininihi Marine Reserve"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "DOC Marine Reserves",
@@ -826,6 +1105,42 @@
      ],
      "records": 51,
      "sample": [
+      "Horoirangi Marine Reserve",
+      "Poor Knights Islands Marine Reserve",
+      "Tuhua (Mayor Island) Marine Reserve"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "NAPALIS_ProtectedArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "GlobalID",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 51,
+     "sample": [
       "Poor Knights Islands Marine Reserve",
       "Parininihi Marine Reserve",
       "Piopiotahi (Milford Sound) Marine Reserve"
@@ -850,6 +1165,29 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Operations Districts",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "DistrictName",
+      "DistrictCode",
+      "RegionCode",
+      "RegionName",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 46,
+     "sample": [
+      "Central Otago",
+      "Aoraki Mt Cook",
+      "South Marlborough"
+     ],
+     "name_field": "DistrictName"
+    },
     {
      "id": 0,
      "name": "Operations Districts",
@@ -960,6 +1298,32 @@
      ],
      "records": 11045,
      "sample": [
+      "Te Ramarama Scenic Reserve",
+      "Bird Island Scenic Reserve",
+      "Conservation Area - Te Ramarama (proposed Scenic R"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "NAPALIS_ProtectedArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Recorded_Area",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11045,
+     "sample": [
       "Conservation Area - Pureora",
       "Marginal Strip - Komata Stream",
       "Conservation Area - Pureora"
@@ -984,6 +1348,146 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "DOC Public Conservation Land",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10967,
+     "sample": [
+      "Marginal Strip - Jubilee Stream",
+      "Marginal Strip - Jubilee Stream",
+      "Marginal Strip - Waihou River, Strange Road"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "DOC Public Conservation Land",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10967,
+     "sample": [
+      "Marginal Strip - Jubilee Stream",
+      "Marginal Strip - Jubilee Stream",
+      "Marginal Strip - Waihou River, Strange Road"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "DOC Public Conservation Land",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10967,
+     "sample": [
+      "Marginal Strip - Jubilee Stream",
+      "Marginal Strip - Jubilee Stream",
+      "Marginal Strip - Waihou River, Strange Road"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "DOC Public Conservation Land",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10967,
+     "sample": [
+      "Marginal Strip - Jubilee Stream",
+      "Marginal Strip - Jubilee Stream",
+      "Marginal Strip - Waihou River, Strange Road"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "DOC Public Conservation Land",
@@ -1351,6 +1855,42 @@
      ],
      "records": 10967,
      "sample": [
+      "Te Ramarama Scenic Reserve",
+      "Bird Island Scenic Reserve",
+      "Conservation Area - Te Ramarama (proposed Scenic R"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "NAPALIS_ProtectedArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "GlobalID",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10967,
+     "sample": [
       "Conservation Area - Pureora",
       "Marginal Strip - Komata Stream",
       "Conservation Area - Pureora"
@@ -1375,6 +1915,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "DOC Recreational Hunting Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CreatedDate",
+      "ModifiedDate",
+      "Conservancy",
+      "PermitArea",
+      "BlockID",
+      "HuntBlockName",
+      "BlockType",
+      "HuntStatus",
+      "DateConditions",
+      "AccessConditions",
+      "DogConditions",
+      "SpecialConditions",
+      "Ha",
+      "Scale",
+      "GlobalID",
+      "Web_ID",
+      "HuntingWebPage",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1916,
+     "sample": [
+      "Pomahaka Conservation Area",
+      "Catlins-MacLennan",
+      "Catlins-MacLennan"
+     ],
+     "name_field": "HuntBlockName"
+    },
     {
      "id": 0,
      "name": "DOC Recreational Hunting Areas",
@@ -1532,6 +2108,40 @@
       "Fallow deer"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Fallow Deer - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 130,
+     "sample": [
+      "Fallow deer",
+      "Fallow deer",
+      "Fallow deer"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Fallow Deer in New Zealand (2007)",
@@ -1551,6 +2161,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Feral Goat - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 707,
+     "sample": [
+      "Goat",
+      "Goat",
+      "Goat"
+     ],
+     "name_field": "CommonName"
+    },
     {
      "id": 0,
      "name": "Feral Goat - 2007",
@@ -1704,6 +2348,40 @@
       "Goat"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Feral Goat - 2014",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 309,
+     "sample": [
+      "Goat",
+      "Goat",
+      "Goat"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Feral Goat in New Zealand (2014)",
@@ -1723,6 +2401,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Feral Pig - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 637,
+     "sample": [
+      "Pig",
+      "Pig",
+      "Pig"
+     ],
+     "name_field": "CommonName"
+    },
     {
      "id": 0,
      "name": "Feral Pig - 2007",
@@ -1876,6 +2588,40 @@
       "Ferret"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Ferret - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 81,
+     "sample": [
+      "Ferret",
+      "Ferret",
+      "Ferret"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Ferret in New Zealand (2007)",
@@ -1895,6 +2641,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Hare - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 67,
+     "sample": [
+      "Hare",
+      "Hare",
+      "Hare"
+     ],
+     "name_field": "CommonName"
+    },
     {
      "id": 0,
      "name": "Hare - 2007",
@@ -2048,6 +2828,40 @@
       "Himalayan thar"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Himalayan Tahr - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 35,
+     "sample": [
+      "Himalayan thar",
+      "Himalayan thar",
+      "Himalayan thar"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Himalayan Tahr in New Zealand (2007)",
@@ -2067,6 +2881,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Himalayan Tahr - 2014",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 30,
+     "sample": [
+      "Himalayan thar",
+      "Himalayan thar",
+      "Himalayan thar"
+     ],
+     "name_field": "CommonName"
+    },
     {
      "id": 0,
      "name": "Himalayan Tahr - 2014",
@@ -2255,6 +3103,34 @@
       "Wild Animal Recovery Operations - Tangitu Scenic R"
      ],
      "name_field": "BlockName"
+    },
+    {
+     "id": 0,
+     "name": "National WARO Concession Locations",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "BlockType",
+      "Status",
+      "BlockName",
+      "LocationID",
+      "Restriction_1",
+      "Restriction_2",
+      "Restriction_3",
+      "Created_Date_Editor_Tracking",
+      "Last_Updated_Date_Editor_Track",
+      "GlobalID",
+      "Shape__Area"
+     ],
+     "records": 1196,
+     "sample": [
+      "Aerially Assisted Trophy Hunting Block CA03 - Snow",
+      "Wild Animal Recovery Operations - Waitaka Scenic R",
+      "Wild Animal Recovery Operations - Tangitu Scenic R"
+     ],
+     "name_field": "BlockName"
     }
    ],
    "note": "National WARO Concession Locations",
@@ -2339,6 +3215,39 @@
       "None"
      ],
      "name_field": "Location_DOC_name"
+    },
+    {
+     "id": 0,
+     "name": "Non migratory Freshwater Fish Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Location_number",
+      "Species",
+      "Vernacular",
+      "Catchment",
+      "Location_Gazetted",
+      "Location_DOC_name",
+      "DOC_Region",
+      "DOC_District",
+      "Regional_Council",
+      "District_Council",
+      "Status",
+      "Spatial_order",
+      "Updated",
+      "Perimeter",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2321,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "Location_DOC_name"
     }
    ],
    "note": "Non migratory Freshwater Fish Distribution",
@@ -2358,6 +3267,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Possum - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 432,
+     "sample": [
+      "Possum",
+      "Possum",
+      "Possum"
+     ],
+     "name_field": "CommonName"
+    },
     {
      "id": 0,
      "name": "Possum - 2007",
@@ -2513,6 +3456,41 @@
       "Possum"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Possum - 2014",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "PA_2014",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 173,
+     "sample": [
+      "Possum",
+      "Possum",
+      "Possum"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Possum in New Zealand (2014)",
@@ -2532,6 +3510,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Rabbit - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 391,
+     "sample": [
+      "Rabbit",
+      "Rabbit",
+      "Rabbit"
+     ],
+     "name_field": "CommonName"
+    },
     {
      "id": 0,
      "name": "Rabbit - 2007",
@@ -2685,6 +3697,40 @@
       "Red deer"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Red Deer - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 251,
+     "sample": [
+      "Red deer",
+      "Red deer",
+      "Red deer"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Red Deer in New Zealand (2007)",
@@ -2704,6 +3750,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Red Deer - 2014",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 278,
+     "sample": [
+      "Red deer",
+      "Red deer",
+      "Red deer"
+     ],
+     "name_field": "CommonName"
+    },
     {
      "id": 0,
      "name": "Red Deer - 2014",
@@ -2857,6 +3937,40 @@
       "Sika deer"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Sika Deer - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 21,
+     "sample": [
+      "Sika deer",
+      "Sika deer",
+      "Sika deer"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Sika Deer in New Zealand (2007)",
@@ -2943,6 +4057,40 @@
       "Stoat"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Stoat - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 339,
+     "sample": [
+      "Stoat",
+      "Stoat",
+      "Stoat"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Stoat in New Zealand (2007)",
@@ -2962,6 +4110,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Stoat - 2014",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 384,
+     "sample": [
+      "Stoat",
+      "Stoat",
+      "Stoat"
+     ],
+     "name_field": "CommonName"
+    },
     {
      "id": 0,
      "name": "Stoat - 2014",
@@ -3119,6 +4301,42 @@
       "Weasel"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Weasel - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "ShapeFileI",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "BioStatusC",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 93,
+     "sample": [
+      "Weasel",
+      "Weasel",
+      "Weasel"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Weasel in New Zealand (2007)",
@@ -3201,6 +4419,38 @@
       "Kapowairua Stream"
      ],
      "name_field": "Waterway_Name"
+    },
+    {
+     "id": 0,
+     "name": "Whitebait Catchments",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Waterway_Name",
+      "Percentage_Protection",
+      "Catchment_Name",
+      "Planning_Unit",
+      "Regional_Council",
+      "retret",
+      "galfas",
+      "galmac",
+      "galbre",
+      "galpos",
+      "galarg",
+      "Whitebait_Richness",
+      "Unit_Label",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 769,
+     "sample": [
+      "Te Kanakana Stream",
+      " ",
+      "Kapowairua Stream"
+     ],
+     "name_field": "Waterway_Name"
     }
    ],
    "note": "Whitebait_Catchments",
@@ -3220,6 +4470,32 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "ADMIN_TONGATAUPO_FisheryArea_HFLr",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CREATEDDATE",
+      "MODIFIEDDATE",
+      "GIS_USER",
+      "ID",
+      "NAME",
+      "HECTARES",
+      "AREA_",
+      "PERIMETER",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Taupo Fishery Area"
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "ADMIN_TONGATAUPO_FisheryArea_HFLr",
@@ -3477,6 +4753,100 @@
       "Blue Mountains"
      ],
      "name_field": "SiteName"
+    },
+    {
+     "id": 0,
+     "name": "BFOB Actual - 2017 sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID_1",
+      "BlockName",
+      "AreaName",
+      "TargetPest",
+      "Funding",
+      "Status",
+      "GIS_Unique_ID",
+      "Region",
+      "Ground_Air",
+      "SpeciesValue1",
+      "SpeciesValue2",
+      "Hectares",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 44,
+     "sample": [
+      "Karioi",
+      "Hope Cascade",
+      "Russell Forest"
+     ],
+     "name_field": "BlockName"
+    },
+    {
+     "id": 1,
+     "name": "BFOB Actual - 2016 sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID_1",
+      "BlockName",
+      "AreaName",
+      "TargetPest",
+      "StartDate",
+      "FinishDate",
+      "MethodName",
+      "Pesticide",
+      "LeadAgency",
+      "Status",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 58,
+     "sample": [
+      "Clinton",
+      "Haast Range Arawhata",
+      "Kakapo"
+     ],
+     "name_field": "BlockName"
+    },
+    {
+     "id": 2,
+     "name": "BFOB Actual - 2014 sites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SiteName",
+      "TreatmentBlock",
+      "Pesticide",
+      "BoundaryStatus",
+      "StartDate",
+      "FinishDate",
+      "Operation",
+      "OperationStatus",
+      "TreatmentMethod",
+      "Delivery",
+      "ApplicationRate",
+      "BaitWeight",
+      "BaitType",
+      "WholeTreatmentBlock",
+      "Funding",
+      "PestlinkReference",
+      "Last_updated_date",
+      "Last_updated_by",
+      "Last_update_source"
+     ],
+     "records": 35,
+     "sample": [
+      "Tongariro",
+      "Pouiatoa",
+      "Blue Mountains"
+     ],
+     "name_field": "SiteName"
     }
    ],
    "note": "BFOB_Actuals_2014_2017",
@@ -3497,6 +4867,31 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Conservation Management Strategy visitor management zones",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "PCL_Date",
+      "CMS_AREA",
+      "CMS_PublishDate",
+      "ROS_CLASS",
+      "VMZ_NAME",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 683,
+     "sample": [
+      "Urban",
+      "Urban",
+      "Frontcountry"
+     ],
+     "name_field": "VMZ_NAME"
+    },
     {
      "id": 0,
      "name": "Conservation Management Strategy visitor management zones",
@@ -3685,6 +5080,42 @@
      ],
      "records": 321,
      "sample": [
+      "Clements Clearing Campsite",
+      "Te Iringa Campsite",
+      "Kerr Bay Campsite"
+     ],
+     "name_field": "TechObjectName"
+    },
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPt",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "EquipmentID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "EquipCat",
+      "EquipCatStr",
+      "DataCaptureAccuracy",
+      "DataCaptureAccuracyStr",
+      "GISStatus",
+      "GISStatusStr",
+      "GeometrySource",
+      "CharGlobalID",
+      "CharName1",
+      "CharValue1"
+     ],
+     "records": 321,
+     "sample": [
       "Walter Peak Campsite (Beach Point)",
       "Daleys Flat Campsite (Lawn At Hut)",
       "Bettjemann Campsite"
@@ -3709,6 +5140,42 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "GeometrySource",
+      "CharName2",
+      "CharValue2",
+      "CharName3",
+      "CharValue3",
+      "CharName4",
+      "CharValue4",
+      "CharName5",
+      "CharValue5",
+      "CharName6",
+      "CharValue6"
+     ],
+     "records": 328,
+     "sample": [
+      "Broken Hills Campsite",
+      "Deer Flat Campsite",
+      "Brod Bay Campsite"
+     ],
+     "name_field": "TechObjectName"
+    },
     {
      "id": 0,
      "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
@@ -3844,6 +5311,29 @@
       "Dart River - Upper"
      ],
      "name_field": "PrescriptionName"
+    },
+    {
+     "id": 0,
+     "name": "DOC Ecosystem Management Units",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "PrescriptionID",
+      "PrescriptionName",
+      "Description",
+      "Rank",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 779,
+     "sample": [
+      "Moeraki",
+      "Granville Ecological Area",
+      "Dart River - Upper"
+     ],
+     "name_field": "PrescriptionName"
     }
    ],
    "note": "DOC Ecosystem Management Units",
@@ -3863,6 +5353,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "NAPALIS_ProtectedArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "GlobalID",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 17,
+     "sample": [
+      "The Noises High Protection Area",
+      "Cape Colville High Protection Area",
+      "Rangitoto and Motutapu High Protection Area"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "NAPALIS_ProtectedArea",
@@ -4068,6 +5594,42 @@
      ],
      "records": 943,
      "sample": [
+      "Gabriel Hut",
+      "Upper Nina Bivvy",
+      "Doubtful Hut"
+     ],
+     "name_field": "TechObjectName"
+    },
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPt",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "EquipmentID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "EquipCat",
+      "EquipCatStr",
+      "DataCaptureAccuracy",
+      "DataCaptureAccuracyStr",
+      "GISStatus",
+      "GISStatusStr",
+      "GeometrySource",
+      "CharGlobalID",
+      "CharName1",
+      "CharValue1"
+     ],
+     "records": 943,
+     "sample": [
       "Avoca Homestead",
       "Bog Inn Hut",
       "Watchdog Hut"
@@ -4092,6 +5654,42 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "GeometrySource",
+      "CharName2",
+      "CharValue2",
+      "CharName3",
+      "CharValue3",
+      "CharName4",
+      "CharValue4",
+      "SortField",
+      "GlobalID",
+      "CharName14",
+      "CharValue14"
+     ],
+     "records": 963,
+     "sample": [
+      "Kohanga Atawhai - Manson Nicholls Hut",
+      "Lawrence Bivvy",
+      "Worsley Bivvy"
+     ],
+     "name_field": "TechObjectName"
+    },
     {
      "id": 0,
      "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
@@ -4250,6 +5848,42 @@
      "sample": [
       "Water tank #1, Kawau Bunkhouse",
       "Water tank #2, Kawau Bunkhouse",
+      "Waiuta Lodge"
+     ],
+     "name_field": "TechObjectName"
+    },
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPt",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "EquipmentID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "EquipCat",
+      "EquipCatStr",
+      "DataCaptureAccuracy",
+      "DataCaptureAccuracyStr",
+      "GISStatus",
+      "GISStatusStr",
+      "GeometrySource",
+      "CharGlobalID",
+      "CharName1",
+      "CharValue1"
+     ],
+     "records": 28,
+     "sample": [
+      "Water tank #1, Kawau Bunkhouse",
+      "Water tank #2, Kawau Bunkhouse",
       "Lighthouse Keepers House (Bunkhouse)"
      ],
      "name_field": "TechObjectName"
@@ -4272,6 +5906,42 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "TechObjectName",
+      "FlocID",
+      "ObjectType",
+      "ObjectTypeKey",
+      "SubObjectType",
+      "SubObjectTypeKey",
+      "FlocCat",
+      "FlocCatStr",
+      "DataCaptureAccuracy",
+      "DataCaptureAccuracyStr",
+      "GISStatus",
+      "GeometrySource",
+      "CharName2",
+      "CharValue2",
+      "CharName3",
+      "CharValue3",
+      "CharName4",
+      "CharValue4",
+      "CharName5"
+     ],
+     "records": 25,
+     "sample": [
+      "Lighthouse Keepers House (Bunkhouse)",
+      "Matai Bay Hut (Booked Accommodation)",
+      "Waiuta Lodge"
+     ],
+     "name_field": "TechObjectName"
+    },
     {
      "id": 0,
      "name": "INFRASTRUCTURE_EAM_AssetPts_Raw",
@@ -4411,6 +6081,31 @@
       "Clifford and Cloudy Bay Marine Mammal Sanctuary"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "DOC Sanctuaries to Protect Marine Mammals",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Recorded_Area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10,
+     "sample": [
+      "Banks Peninsula Marine Mammal Sanctuary",
+      "Te Waewae Bay Marine Mammal Sanctuary",
+      "Clifford and Cloudy Bay Marine Mammal Sanctuary"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "DOC Sanctuaries to Protect Marine Mammals - Superseded",
@@ -4430,6 +6125,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "NAPALIS_ProtectedArea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "GlobalID",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10,
+     "sample": [
+      "Banks Peninsula Marine Mammal Sanctuary",
+      "Te Waewae Bay Marine Mammal Sanctuary",
+      "Catlins Coast Marine Mammal Sanctuary"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "NAPALIS_ProtectedArea",
@@ -4660,6 +6391,28 @@
       "Hauraki-Waikato-Taranaki"
      ],
      "name_field": "RegionName"
+    },
+    {
+     "id": 0,
+     "name": "Operations Regions",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RegionName",
+      "RegionCode",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID"
+     ],
+     "records": 11,
+     "sample": [
+      "Auckland",
+      "Northern North Island",
+      "Hauraki-Waikato-Taranaki"
+     ],
+     "name_field": "RegionName"
     }
    ],
    "note": "DOC Operations Regions",
@@ -4722,6 +6475,24 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 2,
+     "name": "DOC Website Regions",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "REGION",
+      "MODIFIED",
+      "CREATED",
+      "Perimeter",
+      "Hectares",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 20
+    },
     {
      "id": 2,
      "name": "DOC Website Regions",
@@ -4866,6 +6637,22 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Ecological Districts",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "ECOLOGICAL_CODE",
+      "ECOLOGICAL_DISTRICT",
+      "ECOLOGICAL_REGION",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 403
+    },
     {
      "id": 0,
      "name": "Ecological Districts",
@@ -5423,6 +7210,35 @@
       "Kopuatai Peat Dome Ramsar Site"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Internationally Recognised Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Name",
+      "Recognised_By",
+      "Conservation_Unit_Number",
+      "Legislation",
+      "Section",
+      "Recorded_Area",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10,
+     "sample": [
+      "Manawatu river mouth and estuary Ramsar Site",
+      "Firth Of Thames Ramsar Site",
+      "Kopuatai Peat Dome Ramsar Site"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "Internationally Recognised Areas",
@@ -5442,6 +7258,25 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "MPA Policy Habitats of the Territorial Sea",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "HAB_LEG",
+      "BIOREGION",
+      "DEPTH",
+      "SUBSTRATA",
+      "EXPOSURE",
+      "BIOGEN_TYP",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 45496
+    },
     {
      "id": 0,
      "name": "MPA Policy Habitats of the Territorial Sea",
@@ -5724,6 +7559,37 @@
       "Kiwi Coast"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Stocktake_Projects",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Stock_ID",
+      "Name",
+      "Stocktake_Status",
+      "SmallMapURL",
+      "URL",
+      "EMU_List",
+      "QE2_List",
+      "Grass_Area",
+      "CommForest",
+      "Grass_Percentage",
+      "CommForest_Percentage",
+      "Ha",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 70,
+     "sample": [
+      "Mokihinui, Gentle Annie, Glass Eye Creek",
+      "Ngakawau, Orikaka, Denniston",
+      "Kiwi Coast"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "PFNZ_Projects_Service",
@@ -5743,6 +7609,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "TreatmentBlocks_PesticideSummary",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "BlockName",
+      "AreaName",
+      "StartDate",
+      "FinishDate",
+      "MethodName",
+      "Pesticide",
+      "PesticideTradeName",
+      "BaitValuePrefeed",
+      "BaitUnitPrefeed",
+      "ToxicLoading",
+      "BaitValueToxic",
+      "BaitUnitToxic",
+      "ControlMethodStatus",
+      "LeadAgency",
+      "RemoveOrDegrade",
+      "CautionPeriod",
+      "DateOfLastApplicationOrRemoval",
+      "VersionFromDate",
+      "VersionToDate"
+     ],
+     "records": 649,
+     "sample": [
+      "Martins Bay Pindone - Hollyford Conservation Trust",
+      "Clutha Buffer Feratox Bait Bags",
+      "Taupo_TaupoTMA_Epro_Feratox_BaitStations"
+     ],
+     "name_field": "BlockName"
+    },
     {
      "id": 0,
      "name": "TreatmentBlocks_PesticideSummary",
@@ -5938,6 +7840,31 @@
       "Aramoana Recreation Reserve"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "PCL with recommendation",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "NaPALIS_ID",
+      "Directly_affected_parcel",
+      "Additional_proposed_polygon",
+      "DOC_parcel",
+      "Notification_recommendation",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 348,
+     "sample": [
+      "Aldinga Conservation Area",
+      "Allison Conservation Area",
+      "Aramoana Recreation Reserve"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "Public Conservation Land with recommendation",
@@ -5957,6 +7884,36 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "River Mouth Labels",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Waterway_Name",
+      "Percentage_Protection",
+      "Catchment_Name",
+      "Planning_Unit",
+      "Regional_Council",
+      "retret",
+      "galfas",
+      "galmac",
+      "galbre",
+      "galpos",
+      "galarg",
+      "Whitebait_Richness",
+      "Unit_Label"
+     ],
+     "records": 180,
+     "sample": [
+      "Kapowairua Stream",
+      "Waitiki Stream",
+      "Whakatereohao Stream"
+     ],
+     "name_field": "Waterway_Name"
+    },
     {
      "id": 0,
      "name": "River Mouth Labels",
@@ -6102,6 +8059,40 @@
       "Rusa deer"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Rusa Deer - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10,
+     "sample": [
+      "Rusa deer",
+      "Rusa deer",
+      "Rusa deer"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Rusa Deer in New Zealand (2007)",
@@ -6121,6 +8112,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Sambar Deer - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 18,
+     "sample": [
+      "Sambar deer",
+      "Sambar deer",
+      "Sambar deer"
+     ],
+     "name_field": "CommonName"
+    },
     {
      "id": 0,
      "name": "Sambar Deer - 2007",
@@ -6316,6 +8341,36 @@
       "Te Urewera"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Te Urewera Establishment Land",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "Overlays",
+      "Private_Ownership",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Te Urewera"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "Te Urewera Establishment Land",
@@ -6335,6 +8390,42 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Threatened Freshwater Invertebrates",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Common_name",
+      "Scientific_Name",
+      "Umbrella_Category",
+      "Threat_Class",
+      "Eastings",
+      "Northings",
+      "Locality",
+      "Number_",
+      "Habitat",
+      "Original_Reference",
+      "Data_Source",
+      "Number_of_individuals",
+      "Certainty_of_location",
+      "Date_",
+      "Threat_Assessment_Notes",
+      "Former_Name",
+      "Family",
+      "GroupA",
+      "Comments"
+     ],
+     "records": 2526,
+     "sample": [
+      "Amphipod",
+      "Amphipod",
+      "Amphipod"
+     ],
+     "name_field": "Common_name"
+    },
     {
      "id": 0,
      "name": "Threatened Freshwater Invertebrates",
@@ -6968,6 +9059,40 @@
       "Wapiti"
      ],
      "name_field": "CommonName"
+    },
+    {
+     "id": 0,
+     "name": "Wapiti - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 4,
+     "sample": [
+      "Wapiti",
+      "Wapiti",
+      "Wapiti"
+     ],
+     "name_field": "CommonName"
     }
    ],
    "note": "Distribution of Wapiti in New Zealand (2007)",
@@ -6987,6 +9112,40 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "White-tailed Deer - 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "RecID",
+      "Office",
+      "ShapeFileN",
+      "RefElectSh",
+      "Scientific",
+      "CommonName",
+      "Observatio",
+      "PA",
+      "Abundance",
+      "AbundRelia",
+      "AbundIndex",
+      "AbundMetho",
+      "AbundDataS",
+      "AbundNotes",
+      "Organisati",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 8,
+     "sample": [
+      "White-tailed deer",
+      "White-tailed deer",
+      "White-tailed deer"
+     ],
+     "name_field": "CommonName"
+    },
     {
      "id": 0,
      "name": "White-tailed Deer - 2007",
@@ -7118,6 +9277,29 @@
       "Tuhawaiki Mātaitai"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Mātaitai Reserve Boundaries (December 2021)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Name",
+      "ShortName",
+      "Location",
+      "LegalInstr",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 51,
+     "sample": [
+      "Waikouaiti Mātaitai",
+      "Te Ahi Tarakihi Mātaitai",
+      "Tuhawaiki Mātaitai"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "Mātaitai Reserve Boundaries (December 2021)",
@@ -7170,6 +9352,23 @@
       "Shape__Length"
      ],
      "records": 146
+    },
+    {
+     "id": 0,
+     "name": "2022NZSLCatlinsMarineRange",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Id",
+      "gridcode",
+      "AREA_sqm",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 146
     }
    ],
    "note": "Catlins New Zealand sea lion marine habitat use winter 2022",
@@ -7189,6 +9388,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 83,
+     "name": "Antipodean_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Antipodean Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 83,
      "name": "Antipodean_Albatross_H75",
@@ -7286,6 +9505,26 @@
       "Antipodean Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 82,
+     "name": "Antipodean_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Antipodean Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Antipodean Albatross 95% UD",
@@ -7305,6 +9544,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 81,
+     "name": "Antipodean_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Antipodean Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 81,
      "name": "Antipodean_Albatross_H99",
@@ -7402,6 +9661,26 @@
       "Atlantic Yellow-nosed Albatross "
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 80,
+     "name": "Atlantic_Yellow_nosed_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Atlantic Yellow-nosed Albatross "
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Atlantic Yellow-nosed Albatross 75% UD",
@@ -7460,6 +9739,26 @@
       "Atlantic Yellow-nosed Albatross "
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 79,
+     "name": "Atlantic_Yellow_nosed_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Atlantic Yellow-nosed Albatross "
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Atlantic Yellow-nosed Albatross 95% UD",
@@ -7479,6 +9778,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 78,
+     "name": "Atlantic_Yellow_nosed_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Atlantic Yellow-nosed Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 78,
      "name": "Atlantic_Yellow_nosed_Albatross_H99",
@@ -7588,6 +9907,32 @@
       "BOAT HAULOUT page 19"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Heritage_data_from_Matt_Schmidt_cleaned_actual_AITM",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Name",
+      "Descript",
+      "Type",
+      "Comment",
+      "Symbol",
+      "DateTimeS",
+      "Elevation",
+      "DateTime",
+      "Label"
+     ],
+     "records": 50,
+     "sample": [
+      "ABUTMENT BRIDGE pages 19 and 20",
+      "BLACK BOTTLE Hardwicke page 1",
+      "BOAT HAULOUT page 19"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "Auckland Island Heritage Data Operation Endurance",
@@ -7646,6 +9991,26 @@
       "Black Petrel"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 71,
+     "name": "Black_Petrel_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Black Petrel"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Black Petrel 75% UD",
@@ -7665,6 +10030,28 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 70,
+     "name": "Black_Petrel_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11,
+     "sample": [
+      "Black Petrel",
+      "Black Petrel",
+      "Black Petrel"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 70,
      "name": "Black_Petrel_H95",
@@ -7770,6 +10157,28 @@
       "Black Petrel"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 69,
+     "name": "Black_Petrel_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10,
+     "sample": [
+      "Black Petrel",
+      "Black Petrel",
+      "Black Petrel"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Black Petrel 99% UD",
@@ -7789,6 +10198,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 77,
+     "name": "Black_browed_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Black-browed Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 77,
      "name": "Black_browed_Albatross_H75",
@@ -7886,6 +10315,26 @@
       "Black-browed Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 76,
+     "name": "Black_browed_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Black-browed Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Black-browed Albatross 95% UD",
@@ -7905,6 +10354,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 75,
+     "name": "Black_browed_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Black-browed Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 75,
      "name": "Black_browed_Albatross_H99",
@@ -8002,6 +10471,26 @@
       "Black-footed Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 74,
+     "name": "Black_footed_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Black-footed Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Black-footed Albatross 75% UD",
@@ -8021,6 +10510,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 73,
+     "name": "Black_footed_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Black-footed Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 73,
      "name": "Black_footed_Albatross_H95",
@@ -8118,6 +10627,26 @@
       "Black-footed Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 72,
+     "name": "Black_footed_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Black-footed Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Black-footed Albatross 99% UD",
@@ -8137,6 +10666,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 68,
+     "name": "Campbell_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Campbell Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 68,
      "name": "Campbell_Albatross_H75",
@@ -8234,6 +10783,26 @@
       "Campbell Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 67,
+     "name": "Campbell_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Campbell Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Campbell Albatross 95% UD",
@@ -8253,6 +10822,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 66,
+     "name": "Campbell_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Campbell Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 66,
      "name": "Campbell_Albatross_H99",
@@ -8483,6 +11072,26 @@
       "Chatham Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 65,
+     "name": "Chatham_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Chatham Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Chatham Albatross 75% UD",
@@ -8502,6 +11111,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 64,
+     "name": "Chatham_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Chatham Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 64,
      "name": "Chatham_Albatross_H95",
@@ -8599,6 +11228,26 @@
       "Chatham Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 63,
+     "name": "Chatham_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Chatham Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Chatham Albatross 99% UD",
@@ -8618,6 +11267,30 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "DIISE_NZEradIsl_WGS84_20200211",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Island_Name",
+      "Archipelago",
+      "Area_sq_km",
+      "Inhabited",
+      "Eradications_Coding",
+      "Latitude",
+      "Longitude"
+     ],
+     "records": 218,
+     "sample": [
+      "Middle Chain",
+      "Antipodes",
+      "Auckland"
+     ],
+     "name_field": "Island_Name"
+    },
     {
      "id": 0,
      "name": "DIISE_NZEradIsl_WGS84_20200211",
@@ -8743,6 +11416,36 @@
       "Antipodes"
      ],
      "name_field": "Island_Name"
+    },
+    {
+     "id": 0,
+     "name": "DIISE_SubantsErad_WGS84_20200128",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Island_Name",
+      "Archipelago",
+      "Country",
+      "Area__sq_km_",
+      "Inhabited_",
+      "Status__Eradication_",
+      "Eradications",
+      "Latitude",
+      "Longitude",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date"
+     ],
+     "records": 144,
+     "sample": [
+      "Amsterdam",
+      "Saint-Paul",
+      "Antipodes"
+     ],
+     "name_field": "Island_Name"
     }
    ],
    "note": "DIISE_SubantsErad_WGS84_20200128",
@@ -8762,6 +11465,24 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Conservation Management Strategy air access zones",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "CMS_AIRZONE",
+      "PCL_Date",
+      "CMS_AREA",
+      "CMS_PublishDate",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 4443
+    },
     {
      "id": 0,
      "name": "Conservation Management Strategy air access zones",
@@ -8916,6 +11637,22 @@
       "Shape__Length"
      ],
      "records": 20
+    },
+    {
+     "id": 0,
+     "name": "Region_PestReport",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "region",
+      "URL",
+      "globalid",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 20
     }
    ],
    "note": "DOC Regions Pesticide Summary",
@@ -8936,6 +11673,27 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "DOC_WebsiteGenericPts_DTO",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "INITIATIVE",
+      "NAME",
+      "EPISERVERGUID",
+      "SYMBOLOGYCODE"
+     ],
+     "records": 9,
+     "sample": [
+      "Waitahanui River",
+      "Waiotaka River",
+      "Hinemaiaia River"
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "DOC_WebsiteGenericPts_DTO",
@@ -9067,6 +11825,42 @@
       "Paparoa National Park"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "DOC_Offices_Raw",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "OfficeID",
+      "Name",
+      "Acronym",
+      "Type",
+      "PhysicalAddressLine1",
+      "PhysicalAddressLine2",
+      "PhysicalAddressLine3",
+      "PhysicalAddressLine4",
+      "PostalAddressLine1",
+      "PostalAddressLine2",
+      "PostalAddressLine3",
+      "PostalAddressLine4",
+      "PhoneNumber",
+      "Email",
+      "OpeningHour",
+      "OpeningMinutes",
+      "ClosingHour",
+      "ClosingMinutes",
+      "DateModified"
+     ],
+     "records": 14,
+     "sample": [
+      "Nelson Lakes",
+      "Kauaeranga",
+      "Paparoa National Park"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "DOC_Vistor_Centres_DTO",
@@ -9086,6 +11880,20 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "DOC_WebsiteMountainBikingPts_DTO",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "DIFFICULTY",
+      "POINT_POSITION_LOCKED",
+      "EPISERVERGUID"
+     ],
+     "records": 206
+    },
     {
      "id": 0,
      "name": "DOC_WebsiteMountainBikingPts_DTO",
@@ -9159,6 +11967,20 @@
       "EPISERVERGUID"
      ],
      "records": 1461
+    },
+    {
+     "id": 0,
+     "name": "DOC_WebsiteWalkingandTrampingPts_DTO",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "DIFFICULTY",
+      "POINT_POSITION_LOCKED",
+      "EPISERVERGUID"
+     ],
+     "records": 1461
     }
    ],
    "note": "DOC_WebsiteWalkingandTrampingPts_DTO",
@@ -9178,6 +12000,25 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "DOC_WebsiteGenericPts_DTO",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "INITIATIVE",
+      "NAME",
+      "EPISERVERGUID",
+      "SYMBOLOGYCODE"
+     ],
+     "records": 1,
+     "sample": [
+      "Whanganui Journey"
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "DOC_WebsiteGenericPts_DTO",
@@ -9833,6 +12674,19 @@
       "Shape__Length"
      ],
      "records": 52
+    },
+    {
+     "id": 0,
+     "name": "FAUNA_Hedgehog_2007_BDI_simplified_distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 52
     }
    ],
    "note": "FAUNA_Hedgehog_2007_BDI_simplified_distribution",
@@ -10166,6 +13020,19 @@
       "Shape__Length"
      ],
      "records": 47
+    },
+    {
+     "id": 0,
+     "name": "FAUNA_Stoats_2014_BDI_simplified_distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 47
     }
    ],
    "note": "FAUNA_Stoats_2014_BDI_simplified_distribution",
@@ -10218,6 +13085,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 62,
+     "name": "Gibson_s_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Gibson's albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 62,
      "name": "Gibson_s_Albatross_H75",
@@ -10315,6 +13202,26 @@
       "Gibson's albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 61,
+     "name": "Gibson_s_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Gibson's albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Gibson's Albatross 95% UD",
@@ -10334,6 +13241,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 60,
+     "name": "Gibson_s_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Gibson's albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 60,
      "name": "Gibson_s_Albatross_H99",
@@ -10431,6 +13358,26 @@
       "Grey Petrel"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 56,
+     "name": "Grey_Petrel_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Grey Petrel"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Grey Petrel 75% UD",
@@ -10450,6 +13397,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 55,
+     "name": "Grey_Petrel_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Grey Petrel"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 55,
      "name": "Grey_Petrel_H95",
@@ -10547,6 +13514,26 @@
       "Grey Petrel"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 54,
+     "name": "Grey_Petrel_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Grey Petrel"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Grey Petrel 99% UD",
@@ -10566,6 +13553,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 59,
+     "name": "Grey_headed_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Grey-headed Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 59,
      "name": "Grey_headed_Albatross_H75",
@@ -10663,6 +13670,26 @@
       "Grey-headed Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 58,
+     "name": "Grey_headed_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Grey-headed Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Grey-headed Albatross 95% UD",
@@ -10721,6 +13748,26 @@
       "Grey-headed Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 57,
+     "name": "Grey_headed_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Grey-headed Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Grey-headed Albatross 99% UD",
@@ -10740,6 +13787,23 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "HGMSP_Habitats_Classification_2021v2_FINAL",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID_1",
+      "Exposure",
+      "Depth",
+      "substrate_",
+      "Habitat",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 45490
+    },
     {
      "id": 0,
      "name": "HGMSP_Habitats_Classification_2021v2_FINAL",
@@ -10857,6 +13921,39 @@
       "Hauraki Gulf Marine Park - Seawater"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 4,
+     "name": "Hauraki Gulf Marine Park",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Hauraki Gulf Marine Park - Seawater"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "Hauraki Gulf Marine Park",
@@ -10876,6 +13973,29 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Hauraki Gulf Marine Park Catchment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Name",
+      "Legislation",
+      "Section",
+      "GlobalID",
+      "Area_KM2",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Hauraki Gulf Marine Park - Catchment"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": "Hauraki Gulf Marine Park Catchment",
@@ -11011,6 +14131,42 @@
       "The Noises High Protection Area"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Hauraki Gulf Tikapa Moana Marine Protection Act",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NaPALIS_ID",
+      "Start_Date",
+      "End_Date",
+      "Type",
+      "Name",
+      "Legislation",
+      "Section",
+      "Local_Purpose",
+      "Government_Purpose",
+      "Conservation_Unit_Number",
+      "Vested",
+      "Control_Managed",
+      "Recorded_Area",
+      "Overlays",
+      "Private_Ownership",
+      "Classified",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 19,
+     "sample": [
+      "Kawau Bay High Protection Area",
+      "Te Whanganui-o-Hei / Cathedral Cove Extension Mari",
+      "The Noises High Protection Area"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "Hauraki Gulf / Tīkapa Moana Marine Protection Act - Superseded",
@@ -11030,6 +14186,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 53,
+     "name": "Indian_Yellow_nosed_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Indian Yellow-nosed Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 53,
      "name": "Indian_Yellow_nosed_Albatross_H75",
@@ -11127,6 +14303,26 @@
       "Indian Yellow-nosed Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 52,
+     "name": "Indian_Yellow_nosed_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Indian Yellow-nosed Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Indian Yellow-nosed Albatross 95% UD",
@@ -11146,6 +14342,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 51,
+     "name": "Indian_Yellow_nosed_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Indian Yellow-nosed Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 51,
      "name": "Indian_Yellow_nosed_Albatross_H99",
@@ -11239,6 +14455,24 @@
       "Shape__Length"
      ],
      "records": 5
+    },
+    {
+     "id": 0,
+     "name": "Kea Habitat",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Kea_Presen",
+      "Source_dat",
+      "Edit",
+      "EditNotes",
+      "Scrounge_Influenced",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 5
     }
    ],
    "note": "Kea Habitat",
@@ -11258,6 +14492,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 50,
+     "name": "Laysan_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Laysan Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 50,
      "name": "Laysan_Albatross_H75",
@@ -11355,6 +14609,26 @@
       "Laysan Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 49,
+     "name": "Laysan_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Laysan Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Laysan Albatross 95% UD",
@@ -11374,6 +14648,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 48,
+     "name": "Laysan_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Laysan Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 48,
      "name": "Laysan_Albatross_H99",
@@ -11471,6 +14765,26 @@
       "Light-mantled Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 47,
+     "name": "Light_mantled_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Light-mantled Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Light-mantled Albatross 75% UD",
@@ -11529,6 +14843,26 @@
       "Light-mantled Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 46,
+     "name": "Light_mantled_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Light-mantled Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Light-mantled Albatross 95% UD",
@@ -11548,6 +14882,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 45,
+     "name": "Light_mantled_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Light-mantled Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 45,
      "name": "Light_mantled_Albatross_H99",
@@ -11824,6 +15178,20 @@
       "GlobalID"
      ],
      "records": 11
+    },
+    {
+     "id": 0,
+     "name": "New Zealand Territorial Seas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID"
+     ],
+     "records": 11
     }
    ],
    "note": "New Zealand Territorial Seas",
@@ -11843,6 +15211,26 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "NatureSpaceGroupsLocations",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Group_Name",
+      "Ecosystem",
+      "Website"
+     ],
+     "records": 155,
+     "sample": [
+      "Pukawa Wildlife Management Trust",
+      "Te Kauae O Maui Nature Reserve",
+      "Moehau Environment Group"
+     ],
+     "name_field": "Group_Name"
+    },
     {
      "id": 0,
      "name": "NatureSpaceGroupsLocations",
@@ -11932,6 +15320,22 @@
       "Shape__Length"
      ],
      "records": 661
+    },
+    {
+     "id": 1,
+     "name": "New Zealand Seafloor Bioregionalisation",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "Shape_Leng",
+      "Bioregion",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 661
     }
    ],
    "note": "New Zealand Seafloor Bioregionalisation",
@@ -11951,6 +15355,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 44,
+     "name": "Northern_Buller_s_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Northern Buller's albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 44,
      "name": "Northern_Buller_s_Albatross_H75",
@@ -12048,6 +15472,26 @@
       "Northern Buller's albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 43,
+     "name": "Northern_Buller_s_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Northern Buller's albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Northern Buller's Albatross 95% UD",
@@ -12067,6 +15511,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 42,
+     "name": "Northern_Buller_s_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Northern Buller's albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 42,
      "name": "Northern_Buller_s_Albatross_H99",
@@ -12164,6 +15628,26 @@
       "Northern Giant Petrel"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 41,
+     "name": "Northern_Giant_Petrel_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Northern Giant Petrel"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Northern Giant Petrel 75% UD",
@@ -12183,6 +15667,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 40,
+     "name": "Northern_Giant_Petrel_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Northern Giant Petrel"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 40,
      "name": "Northern_Giant_Petrel_H95",
@@ -12280,6 +15784,26 @@
       "Northern Giant Petrel"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 39,
+     "name": "Northern_Giant_Petrel_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Northern Giant Petrel"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Northern Giant Petrel 99% UD",
@@ -12299,6 +15823,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 38,
+     "name": "Northern_Royal_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Northern Royal Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 38,
      "name": "Northern_Royal_Albatross_H75",
@@ -12396,6 +15940,26 @@
       "Northern Royal Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 37,
+     "name": "Northern_Royal_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Northern Royal Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Northern Royal Albatross 95% UD",
@@ -12454,6 +16018,26 @@
       "Northern Royal Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 36,
+     "name": "Northern_Royal_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Northern Royal Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Northern Royal Albatross 99% UD",
@@ -12473,6 +16057,29 @@
     "trail line"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Otago_CMS_proposed_bike_trails",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "TrailName",
+      "ProposingGroup",
+      "Trail_length_m",
+      "Reference",
+      "Shape__Length",
+      "Shape__Length_2"
+     ],
+     "records": 111,
+     "sample": [
+      "QMTBC - Mt Crichton Scenic Epic Return 2\r\n",
+      "Roys Peak Descent Trail\r\n",
+      "Clutha Gold Trail - Beaumont to Tuapeka Mouth\r\n"
+     ],
+     "name_field": "TrailName"
+    },
     {
      "id": 0,
      "name": "Otago_CMS_proposed_bike_trails",
@@ -12734,6 +16341,28 @@
       "Papanui Marine Reserve"
      ],
      "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "SE_marine_reserves_type1_CURRENT",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "MANAGEMENT",
+      "area_km2",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6,
+     "sample": [
+      "Te Umu Kōau Marine Reserve",
+      "Waitaki Marine Reserve",
+      "Papanui Marine Reserve"
+     ],
+     "name_field": "NAME"
     }
    ],
    "note": "South East Marine Reserves - 2023",
@@ -12753,6 +16382,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 35,
+     "name": "Salvin_s_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Salvin's Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 35,
      "name": "Salvin_s_Albatross_H75",
@@ -12850,6 +16499,26 @@
       "Salvin's Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 34,
+     "name": "Salvin_s_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Salvin's Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Salvin's Albatross 95% UD",
@@ -12869,6 +16538,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 33,
+     "name": "Salvin_s_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Salvin's Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 33,
      "name": "Salvin_s_Albatross_H99",
@@ -12966,6 +16655,26 @@
       "Short-tailed Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 32,
+     "name": "Short_tailed_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Short-tailed Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Short-tailed Albatross 75% UD",
@@ -12985,6 +16694,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 31,
+     "name": "Short_tailed_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Short-tailed Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 31,
      "name": "Short_tailed_Albatross_H95",
@@ -13082,6 +16811,26 @@
       "Short-tailed Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 30,
+     "name": "Short_tailed_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Short-tailed Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Short-tailed Albatross 99% UD",
@@ -13101,6 +16850,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 29,
+     "name": "Shy_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Shy Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 29,
      "name": "Shy_Albatross_H75",
@@ -13198,6 +16967,26 @@
       "Shy Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 28,
+     "name": "Shy_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Shy Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Shy Albatross 95% UD",
@@ -13217,6 +17006,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 27,
+     "name": "Shy_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Shy Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 27,
      "name": "Shy_Albatross_H99",
@@ -13314,6 +17123,26 @@
       "Sooty Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 26,
+     "name": "Sooty_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Sooty Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Sooty Albatross 75% UD",
@@ -13333,6 +17162,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 25,
+     "name": "Sooty_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Sooty Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 25,
      "name": "Sooty_Albatross_H95",
@@ -13430,6 +17279,26 @@
       "Sooty Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 24,
+     "name": "Sooty_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Sooty Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Sooty Albatross 99% UD",
@@ -13449,6 +17318,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 23,
+     "name": "Southern_Buller_s_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Southern Buller's Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 23,
      "name": "Southern_Buller_s_Albatross_H75",
@@ -13546,6 +17435,26 @@
       "Southern Buller's Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 22,
+     "name": "Southern_Buller_s_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Southern Buller's Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Southern Buller's Albatross 95% UD",
@@ -13565,6 +17474,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 21,
+     "name": "Southern_Buller_s_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Southern Buller's Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 21,
      "name": "Southern_Buller_s_Albatross_H99",
@@ -13662,6 +17591,26 @@
       "Southern Royal Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 20,
+     "name": "Southern_Royal_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Southern Royal Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Southern Royal Albatross 75% UD",
@@ -13681,6 +17630,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 19,
+     "name": "Southern_Royal_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Southern Royal Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 19,
      "name": "Southern_Royal_Albatross_H95",
@@ -13778,6 +17747,26 @@
       "Southern Royal Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 18,
+     "name": "Southern_Royal_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Southern Royal Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Southern Royal Albatross 99% UD",
@@ -13797,6 +17786,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 17,
+     "name": "Tristan_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Tristan Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 17,
      "name": "Tristan_Albatross_H75",
@@ -13894,6 +17903,26 @@
       "Tristan Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 16,
+     "name": "Tristan_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Tristan Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Tristan Albatross 95% UD",
@@ -13913,6 +17942,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 15,
+     "name": "Tristan_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Tristan Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 15,
      "name": "Tristan_Albatross_H99",
@@ -14445,6 +18494,26 @@
       "Wandering Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 14,
+     "name": "Wandering_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Wandering Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Wandering Albatross 75% UD",
@@ -14464,6 +18533,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 13,
+     "name": "Wandering_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Wandering Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 13,
      "name": "Wandering_Albatross_H95",
@@ -14561,6 +18650,26 @@
       "Wandering Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 12,
+     "name": "Wandering_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Wandering Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Wandering Albatross 99% UD",
@@ -14580,6 +18689,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 11,
+     "name": "Waved_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Waved Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 11,
      "name": "Waved_Albatross_H75",
@@ -14677,6 +18806,26 @@
       "Waved Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 10,
+     "name": "Waved_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Waved Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Waved Albatross 95% UD",
@@ -14696,6 +18845,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 9,
+     "name": "Waved_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Waved Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 9,
      "name": "Waved_Albatross_H99",
@@ -14793,6 +18962,26 @@
       "Westland Petrel"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 8,
+     "name": "Westland_Petrel_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Westland Petrel"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Westland Petrel 75% UD",
@@ -14812,6 +19001,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 7,
+     "name": "Westland_Petrel_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Westland Petrel"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 7,
      "name": "Westland_Petrel_H95",
@@ -14909,6 +19118,26 @@
       "Westland Petrel"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 6,
+     "name": "Westland_Petrel_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Westland Petrel"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "Westland Petrel 99% UD",
@@ -14928,6 +19157,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 5,
+     "name": "White_capped_Albatross_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "White-capped Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 5,
      "name": "White_capped_Albatross_H75",
@@ -15025,6 +19274,26 @@
       "White-capped Albatross"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 4,
+     "name": "White_capped_Albatross_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "White-capped Albatross"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "White-capped Albatross 95% UD",
@@ -15044,6 +19313,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 3,
+     "name": "White_capped_Albatross_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IUCN",
+      "code",
+      "Species_name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "White-capped Albatross"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 3,
      "name": "White_capped_Albatross_H99",
@@ -15141,6 +19430,26 @@
       "White-chinned Petrel"
      ],
      "name_field": "Species_name"
+    },
+    {
+     "id": 2,
+     "name": "White_chinned_Petrel_H75",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "White-chinned Petrel"
+     ],
+     "name_field": "Species_name"
     }
    ],
    "note": "White-chinned Petrel 75% UD",
@@ -15160,6 +19469,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 1,
+     "name": "White_chinned_Petrel_H95",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Species_name",
+      "IUCN",
+      "code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "White-chinned Petrel"
+     ],
+     "name_field": "Species_name"
+    },
     {
      "id": 1,
      "name": "White_chinned_Petrel_H95",
@@ -15255,6 +19584,25 @@
       "High"
      ],
      "name_field": "Name1"
+    },
+    {
+     "id": 89,
+     "name": "high_risk_final_dissolve",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Name1",
+      "Location",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "High"
+     ],
+     "name_field": "Name1"
     }
    ],
    "note": "Combined seabird risk - high",
@@ -15274,6 +19622,25 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 90,
+     "name": "smoothed_low_excl",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID_12",
+      "Name",
+      "Location",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Low"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 90,
      "name": "smoothed_low_excl",
@@ -15367,6 +19734,25 @@
       "Medium"
      ],
      "name_field": "Name1"
+    },
+    {
+     "id": 91,
+     "name": "smoothed_med_excl",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID_1",
+      "Name1",
+      "Location1",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Medium"
+     ],
+     "name_field": "Name1"
     }
    ],
    "note": "Combined seabird risk - medium",
@@ -15386,6 +19772,29 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": " Geographic Representation of Taiāpure (December 2021)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Name",
+      "ShortName",
+      "Location",
+      "LegalInst",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 10,
+     "sample": [
+      "Kawhia Aotea Taiāpure",
+      "Maketu Taiāpure",
+      "Palliser Bay Taiāpure"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 0,
      "name": " Geographic Representation of Taiāpure (December 2021)",
@@ -15497,6 +19906,30 @@
       "Latitude"
      ],
      "records": 5576
+    },
+    {
+     "id": 0,
+     "name": "2022CatlinsAllLocationsIncOtago",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "FID",
+      "DeployID",
+      "Ptt",
+      "Instr",
+      "LocID",
+      "nzDate",
+      "nzTime",
+      "datetimenu",
+      "nzdatenum",
+      "nztimenum",
+      "Type",
+      "Quality",
+      "Longitude",
+      "Latitude"
+     ],
+     "records": 5576
     }
    ],
    "note": "Catlins New Zealand sea lion GPS tracking locations 2022",
@@ -15516,6 +19949,22 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "2022NZSLCatlinsLandRange",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "DeployID",
+      "area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6
+    },
     {
      "id": 0,
      "name": "2022NZSLCatlinsLandRange",
@@ -15655,6 +20104,25 @@
       "GMTtime"
      ],
      "records": 3123
+    },
+    {
+     "id": 3,
+     "name": "Catlins New Zealand sea lion satellite tracking locations 2019",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "FID",
+      "ID",
+      "Longitude",
+      "Latitude",
+      "Timestep",
+      "Minutes",
+      "Error_radi",
+      "GMTdate",
+      "GMTtime"
+     ],
+     "records": 3123
     }
    ],
    "note": "Catlins New Zealand sea lion satellite tracking locations 2019",
@@ -15674,6 +20142,21 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 2,
+     "name": "Catlins New Zealand sea lion winter home range 2019",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "level_",
+      "area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2
+    },
     {
      "id": 2,
      "name": "Catlins New Zealand sea lion winter home range 2019",
@@ -16639,6 +21122,24 @@
       "Shape__Length"
      ],
      "records": 19
+    },
+    {
+     "id": 0,
+     "name": "MARINE_BioGeoRegions",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "BioRegion_2",
+      "Hectares",
+      "GlobalID",
+      "BioRegion",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 19
     }
    ],
    "note": "NZ Coastal Marine Biogeographic Regions",
@@ -16694,6 +21195,20 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "SEISMICCODE_AreasOfEcologicalImportance",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 4
+    },
     {
      "id": 0,
      "name": "SEISMICCODE_AreasOfEcologicalImportance",
@@ -17028,6 +21543,19 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "White_chinned_Petrel_H99",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
     {
      "id": 0,
      "name": "White_chinned_Petrel_H99",

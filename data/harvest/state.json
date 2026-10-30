@@ -920,7 +920,7 @@
    "finished": "2026-10-28"
   },
   "NO": {
-   "status": "paused (out of time, will carry on)",
+   "status": "done",
    "started": "2026-10-30",
    "done": [
     "https://kart.miljodirektoratet.no/arcgis/rest/services/anadrome_laksefisk/FeatureServer",
@@ -930,7 +930,35 @@
     "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/MapServer",
     "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/mapserver",
     "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_vern/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver"
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/grunnforurensning2/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/FeatureServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/kulturlandskap_utvalgte/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/kulturlandskap_verdifulle/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_hb13/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_kuverdi/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_marine_hb19/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_nin/FeatureServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_nin/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_utvalgte2/FeatureServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_utvalgte2/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/nin_innsyn/nin_flat_struktur/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/nin_landskapstyper/nin_landskapstyper/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/ramsar/FeatureServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/ramsar/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/sensitive_artsdata/sensitive_artsdata_maskering/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/snoscooterloyper/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/FeatureServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_hovedtyper/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_hovedtyper/MapServer/6",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_naturomrader_nin/FeatureServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_naturomrader_nin/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_restriksjonsomrader/FeatureServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_restriksjonsomrader/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/villrein/MapServer",
+    "https://kart.miljodirektoratet.no/arcgis/services/vern/mapserver/WMSServer"
    ],
    "log": [
     {
@@ -940,7 +968,7 @@
     {
      "step": "known",
      "what": "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/mapserver",
-     "found": false
+     "found": true
     },
     {
      "step": "known",
@@ -953,12 +981,75 @@
     },
     {
      "step": "server",
-     "what": "https://kart.miljodirektoratet.no/arcgis/rest/services: 5 folders, 6 services read"
+     "what": "https://kart.miljodirektoratet.no/arcgis/rest/services: 5 folders, 32 services read"
+    },
+    {
+     "step": "wfs",
+     "what": "https://kart.miljodirektoratet.no/arcgis/services/vern/mapserver/WMSServer: 0 feature types, 0 look like park layers"
+    },
+    {
+     "agol": "nasjonalpark",
+     "hits": 1,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       1
+      ]
+     ]
+    },
+    {
+     "agol": "naturreservat",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "landskapsvernområde",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "verneområde",
+     "hits": 10,
+     "read": 1,
+     "rejected_orgs": [
+      [
+       "?",
+       6
+      ]
+     ]
+    },
+    {
+     "agol": "statsallmenning",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "friluftsliv",
+     "hits": 3,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       3
+      ]
+     ]
     }
    ],
    "steps": [
-    "known"
-   ]
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-30"
   },
   "NL": {
    "status": "done",
@@ -2288,44 +2379,14 @@
    "finished": "2026-10-28"
   },
   "IE": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "paused (out of time, will carry on)",
+   "started": "2026-10-30",
    "done": [
-    "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Potential_Special_Protection_Areas_England/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(August_2026)_for_the_United_Kingdom_(Hosted_Table)/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(May_2026)_for_the_United_Kingdom/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONSPD_AUG_2025_UK/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONSPD_NOV_2025_UK/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONS_Postcode_Directory_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Access_App_Forest_Entrances/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/COILLTE_FELLING_LICENCES/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_2021_BeeKeeper_Consultation/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Biodiversity_Area/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Biodiversity_Areas/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Forest_Road_Dataset/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Harvest_Units/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Life_and_Millennium_Sites/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Wind_Damage_Assessment/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Consultation_Clearfell_2019/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Consultation_Thinnings_2019/FeatureServer",
-    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Mountain_Bike_Pole_Emergency_Locations/FeatureServer",
-    "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer",
-    "https://utility.arcgis.com/usrsvcs/servers/0016a8e9782b461e96523ba448f03353/rest/services/MapGenie25InchITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/0a4856ab7fe64aaf96ccc320d0dc891b/rest/services/MapGenieImagery1996to2000ITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/1245ebc052694637bd02fe5048d81c70/rest/services/ITM/basemap_public/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/1700ebb080834186a4c278aa2d26c6e8/rest/services/MapGenieImagery2006to2012ITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/46d11ec3f32f4b7c870c6fdecca4b077/rest/services/MapGenie6InchLastEditionBlackWhiteITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/4fe3ad7eda07411480dd23a0e3655cd4/rest/services/MapGenieDiscoveryHillshadeITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/5c779a7b5bd446bf802ca512d82aa335/rest/services/MapGenieImagery1995ITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/67013604919e4140bca952a7d3fa291a/rest/services/MapGenieDigitalGlobeImagery2011to2013ITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/a8b10e1feb7e4a90a7db85610c62b9ad/rest/services/MapGenie6InchFirstEditionColourITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/bb5f042a35f843498d1c12f07aae7b17/rest/services/MapGenieDiscoveryITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/dc0caa7a62cd4b1cac05469a0bd4516f/rest/services/MapGenieImagery2001to2005ITM/MapServer",
-    "https://utility.arcgis.com/usrsvcs/servers/ec5779ea27b643a4bcbb69e83ddb483a/rest/services/MapGeniePremiumITM/MapServer"
+    "https://utility.arcgis.com/usrsvcs/servers/1245ebc052694637bd02fe5048d81c70/rest/services/ITM/basemap_public/MapServer"
    ],
    "log": [
     {
@@ -2335,60 +2396,14 @@
     },
     {
      "step": "org",
-     "what": "org 6LSAdqgf43oKRpP6 (): 13 services read"
-    },
-    {
-     "catalog": "https://data.gov.ie",
-     "keyword": "national park",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://data.gov.ie",
-     "keyword": "nature reserve",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://data.gov.ie",
-     "keyword": "special area of conservation",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://data.gov.ie",
-     "keyword": "coillte",
-     "error": "robots.txt says no"
-    },
-    {
-     "agol": "national park",
-     "hits": 50,
-     "read": 6
-    },
-    {
-     "agol": "nature reserve",
-     "hits": 50,
-     "read": 1
-    },
-    {
-     "agol": "special area of conservation",
-     "hits": 50,
-     "read": 2
-    },
-    {
-     "agol": "coillte",
-     "hits": 7,
-     "read": 0
+     "what": "org 6LSAdqgf43oKRpP6 (): 3 services read"
     }
    ],
    "steps": [
     "known",
     "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-28"
+    "wfs"
+   ]
   },
   "SK": {
    "status": "done",
@@ -2507,176 +2522,15 @@
    "finished": "2026-10-28"
   },
   "FI": {
-   "status": "done",
-   "started": "2026-10-29",
+   "status": "paused (out of time, will carry on)",
+   "started": "2026-10-30",
    "done": [
     "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_Europe/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_bedrock_surface_B/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/EMODnet/EMODnet_3_Geology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/EMODnet/EMODnet_Geology/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/EST_1GE_surface/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera07112018/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera20210322/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera22/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera_NO_CAHE/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/GeophysicMaps/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fmd/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fmd_v4/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fodd_FDM_MASTER/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fodd_FDM_v5/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fods_lithology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/metallogenic_aeras/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/metallogenic_areas/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWMS/GTKWMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWMS/GTKWMS_test/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/GTK_Bedrock_and_Superficial_Geology/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/GTK_Bedrock_and_Superficial_Geology2/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasu1000/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasu250_02072018/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasukairaus02072018/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasumuutMustaliuske/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/maapera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/maaperaNew25092017/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Inspire/GTK_Bedrock_and_Superficial_Geology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Inspire/pangeo/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte_v11/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte_v12/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/geology_geophysics/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/LaosOneGeology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20201124_GeophysicsTest/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20220125_Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20221018_Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20221019_Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20230601_Geophysics/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20240428_Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20250205_Geophysics/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20250326_Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20251009_Exploration/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20251202_Exploration/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/GeologicalMaps/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/Geophysics/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/KorkeusAineistoENG/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/KorkeusAineistoENG2018/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/MinesDepositsJS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/Mines_deposits/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/Mines_deposits_waste/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/NatureETC/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/Extras/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/MPM_DemoFiles/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/MPM_Tools/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/ToolsV3/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/ToolsV6/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210429_KorkeusAineisto/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210603Maapera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2022Kalliopera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2022_Merenpohja/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2023Kalliopera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Ei_pohjakarttaa/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KalliokiviainesMaa_aines/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Kalliopera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KorkeusAineisto2018JP/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KorkeusAineisto2020JP/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maanpeitepaksuus/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maapera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maapera31102019/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Merenpohja/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/PohjavesiEP/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Syke17062019/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/geoenergia/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Maapeitepaksuus_1m/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/LithologyFennoscandia/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/LithologyGreenland2500k/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/MetallogenicAreasFennoscandia/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/Nodd/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/NordicMineralDepositAndMines281025/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/NordicMineralDepositAndMines_20260220/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/NordicMineralDepositsAndMines/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/Nordic_mineral_deposits_and_mines_2510/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/metallogenicAreasFennoscandiaAM/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20210319_PTR_CACHE/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20220207_GDB_Sulphide/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20220324_Sulphide/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20220621_Search_Sulphide/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20260319_Sulphide/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/MuutTutkimuksetOracle/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_CACHE_esri/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_muut_pohjatutkimuspisteetOracle_20210517/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteet/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteetAK/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteetJS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteet_virallinen/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/Sulphide/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/Sulphide_20211209/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/202403groundwaterRechargePotential/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/202403pohjavedenMuodostumispotentiaali/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/geoenergiaPohjavesi/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/kaivovesienlaatu/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/pohjaveden_haavoittuvuus/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/pohjaveden_isotoopit/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/poppa_v11/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Projects/projektimaat/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Bedrock_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Geofysiikka_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kaavoitus_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kaavoitus_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kalliopera_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kalliopera_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kiviainesvarannot_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kiviainesvarannot_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Maapera_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Maapera_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Pohjatutkimukset_WFS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Pohjatutkimukset_WMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/KallioperaWMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/KallioperaWMS27032020/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/Korkeusmalli/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/Korkeusmalli2018/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/kokoavaWMS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/SampleWorldCities/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20230802_Nayte/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20240111_Nayte/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20250926_kaivosymp/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/LaajatProvinssit/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte20220429EN/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte20240327EN/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte29042022/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/kaivosymp29122020/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/provinssirajat/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/tt_alueet_2017/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Bedrock/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Kunnat/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_101_Euref/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_101_KKJ/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_10_Euref/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_Euref/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Maapera/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Pohjavesialueet/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/Kaivosrekisteri/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TUKES_LYR/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TUKES_UUSI/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TukesWMS/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_soiden_ja_turvemaiden_ravinteisuustaso/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_suotyypit_ja_turvekankaat/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_turvetuotantoalueiden_maanpeite/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/20241002_turvemaiden_alueellinen_hiilivarasto/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/20241106_potentiaaliset_rahkasammalen_korjuukohteet/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/HasuGrid18032016/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/Soiden_luonnontilaisuusluokitus/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/TurvevaratJS/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/Valuma_alueet101SDE2/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/rahkasammalen_korjuukohteet/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeep/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline13122019/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline23032020/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/inspire_ge_geology/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/kallionpinnan_korkeustaso_1m/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/kalliopinnan_korkeustaso_1m/MapServer",
-    "https://gtkdata.gtk.fi/arcgis/rest/services/kunnat/MapServer",
     "https://paikkatieto.ymparisto.fi/geoserver/wfs"
    ],
    "log": [
@@ -2696,295 +2550,12 @@
     },
     {
      "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 62 services read"
-    },
-    {
-     "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 48 services read"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "kansallispuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonsuojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonpuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "suojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "agol": "kansallispuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "luonnonsuojelualue",
-     "hits": 11,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       11
-      ]
-     ]
-    },
-    {
-     "agol": "luonnonpuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "suojelualue",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 53 services read"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "kansallispuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonsuojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonpuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "suojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "agol": "kansallispuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "luonnonsuojelualue",
-     "hits": 11,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       11
-      ]
-     ]
-    },
-    {
-     "agol": "luonnonpuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "suojelualue",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 0 services read"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "kansallispuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonsuojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonpuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "suojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "agol": "kansallispuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "luonnonsuojelualue",
-     "hits": 11,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       11
-      ]
-     ]
-    },
-    {
-     "agol": "luonnonpuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "suojelualue",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
-    },
-    {
-     "step": "known",
-     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 0 services read"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "kansallispuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonsuojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonpuisto",
-     "error": "HTTP 403"
-    },
-    {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "suojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "agol": "kansallispuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "luonnonsuojelualue",
-     "hits": 11,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       11
-      ]
-     ]
-    },
-    {
-     "agol": "luonnonpuisto",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "suojelualue",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 5 services read"
     }
    ],
    "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+    "known"
+   ]
   },
   "HU": {
    "status": "nothing seeded: not searched (EEA lead only)",
@@ -3287,17 +2858,9 @@
    "finished": "2026-10-28"
   },
   "NZ": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "paused (out of time, will carry on)",
+   "started": "2026-10-30",
    "done": [
-    "https://geospatial.mpi.govt.nz/portal/rest/services/Hosted/Fish_Species_Distribution_FSH/FeatureServer",
-    "https://geospatial.mpi.govt.nz/portal/rest/services/MARINE/Marine_Protected_Areas_Full/FeatureServer/1",
-    "https://geospatial.mpi.govt.nz/portal/rest/services/MARINE/Marine_Protected_Areas_Full/MapServer/1",
-    "https://gis.ecan.govt.nz/arcgis/rest/services/Public/SOE_PANNZ/MapServer",
-    "https://maps.mpi.govt.nz/wss/service/ags-relay/arcgis1/guest/arcgis/rest/services/MARINE/MARINE_Habitat/MapServer/3",
-    "https://maps.waikatoregion.govt.nz/arcgis/rest/services/WRCMAPS/Base_Layers_Ext/MapServer",
-    "https://maps.waikatoregion.govt.nz/arcgis/rest/services/WRCMAPS/Base_Layers_Ext/MapServer/0",
-    "https://services.arcgis.com/xdsHIIxuCWByZiCB/arcgis/rest/services/LINZ_NZ_Facilities/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/ArcGIS/rest/services/DOC_Public_Conservation_Land/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/2022CatlinsAllLocationsIncOtago/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/2022NZSLCatlinsLandRange/FeatureServer",
@@ -3311,7 +2874,6 @@
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Atlantic_Yellow_nosed_Albatross_H75/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Atlantic_Yellow_nosed_Albatross_H95/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Atlantic_Yellow_nosed_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Auckland_Island_2019_expedition_bait_dumps/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Auckland_Island_Heritage_Data_Operation_Endurance_lowres_photo/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/BFOB_Actuals_2014_2017/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Black_Petrel_H75/FeatureServer",
@@ -3326,7 +2888,6 @@
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Campbell_Albatross_H75/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Campbell_Albatross_H95/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Campbell_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/CatGPSFixes/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Catlins_New_Zealand_sea_lion_satellite_tracking_locations_2019/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Catlins_New_Zealand_sea_lion_winter_home_range_2019/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Chamois_Distribution_2007/FeatureServer",
@@ -3337,18 +2898,14 @@
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DIISE_NZEradIsl_WGS84_20200211/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DIISE_SubantsErad_WGS84_20200128/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOCFreedomCamping/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOCTracks/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_CMS_Air_Access_Zones/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_CMS_Place_Boundaries/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_CMS_Visitor_Management_Zones/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Campsites/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Campsites_DTO/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Campsites_Open_Data/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Conservancies/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Ecosystems_Management_Units/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_FreedomCampingSites/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_HaurakiGulf_TikapaMoana_MarineProtectionAct_HFV/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Huts/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Huts_DTO/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Huts_Open_Data/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Lodges_Cabins_Cottages_DTO/FeatureServer",
@@ -3359,27 +2916,19 @@
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Protections/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Reserves/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Reserves_FHV/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Mountain_Bike_Tracks/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Offices/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Offices_view/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Operations_Districts/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Operations_Regions/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_PlacesToGoPly_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_PlacesToGoPts_DTO/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_PublicConservationAreas_3Colour_HFV/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Public_Conservation_Land/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Public_Conservation_Land_FHV/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Recreational_Hunting_Areas/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Regions_Pesticide_Summary/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Roads_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Roads_EAM/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Roads_Open_Data/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_TaupoFishery_DTO/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Tracks_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Tracks_EAM/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Tracks_Open_Data/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Vistor_Centres_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Walking_Experiences/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_WebsiteMountainBikingLns_DTO/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_WebsiteMountainBikingPts_DTO/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_WebsiteWalkingandTrampingLns_DTO/FeatureServer",
@@ -3387,56 +2936,11 @@
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Website_Regions/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_WhanganuiJourneyLine_DTO/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_WhanganuiJourneyPoint_DTO/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_marine_portal_webmap_WFL1/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Deprivation_Index1/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Draft_AMC_NPMP_Aircraft_access_zones/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Draft_AMC_NPMP_Web_Map/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Drone_Zones/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/EEZ_OuterLimits/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Ecological_Districts/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Est_PlantPoints/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Experience_Est/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_ArgentineAnt_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_BennettsWallaby_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_BrownTreeFrog_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_BrushtailedRockWallaby_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Chamois_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_CommonWasp_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_DamaWallaby_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_FallowDeer_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_FeralCat_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_FeralCattle_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_FeralGoat_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_FeralGoat_2014_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_FeralHorse_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_FeralPig_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_FeralSheep_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Ferret_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Hare_2007_BDI_simplified_distribution/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Hedgehog_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_HimalayanTahr_2014_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_HimalayanThar_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Kiore_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Mouse_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_NorwayRat_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_ParmaWallaby_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Possum_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Possums_2014_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Rabbit_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_RedDeer_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_RedDeer_2014_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_RusaDeer_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_SambarDeer_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_ShipRat_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_ShipRat_2014_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_SikaDeer_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_SouthernBellFrog_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Stoat_2007_BDI_simplified_distribution/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Stoats_2014_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_SwampWallaby_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Wapiti_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Weasel_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_WhitetailedDeer_2007_BDI_simplified_distribution/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Fallow_Deer_Distribution_2007/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Feral_Goat_Distribution_2007/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Feral_Goat_Distribution_2014/FeatureServer",
@@ -3462,7 +2966,6 @@
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Indian_Yellow_nosed_Albatross_H95/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Indian_Yellow_nosed_Albatross_H99/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Internationally_Recognised_Areas/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/KEA completed/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Kea_Habitat_2019/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Laysan_Albatross_H75/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Laysan_Albatross_H95/FeatureServer",
@@ -3472,11 +2975,6 @@
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Light_mantled_Albatross_H99/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/MARINE_BioGeoRegions/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/MarineProtectedArea/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Monitoring_Groups/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/NAPALIS_CollectionOther_Permissions/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/NAPALIS_CollectionPlants_Permissions/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/NAPALIS_Filming_Permissions_View/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/NZ_Community_Project_Catchments/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/NZ_Territorial_Sea/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/National_WARO_Concession_Locations_view/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/NatureSpaceGroupsLocations/FeatureServer",
@@ -3493,18 +2991,13 @@
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Northern_Royal_Albatross_H99/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Otago_CMS_Proposed_bike_trails/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/PFNZ_Projects_Service/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Permissions_Collection_Plants/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Pesticides_HaveBeenLaid_HFV/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Pesticides_ProposedApplication_HFV/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Pesticides_WillBeLaid_HFV/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Possum_Distribution_2007/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Possum_Distribution_2014/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Public_Conservation_Land_with_recommendation/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Rabbit_Distribution_2007/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Red_Deer_Distribution_2007/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Red_Deer_Distribution_2014/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Regional_Council_Boundaries/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Restoration_Groups/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/River_Labels/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Rivers/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Rusa_Deer_Distribution_2007/FeatureServer",
@@ -3532,38 +3025,12 @@
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Southern_Royal_Albatross_H99/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Stoat_Distribution_2007/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Stoat_Distribution_2014/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Stocktake_Projects/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Te_Urewera_Establishment_Land/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/ThreatenedFreshwaterInvertebrates/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Topo50_Index/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Topo_Grid_HFLr/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Tristan_Albatross_H75/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Tristan_Albatross_H95/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Tristan_Albatross_H99/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_BananaPassionfruit_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_Boneseed_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_Broom_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_Buddleia_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_ChileanFlameCreeper_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_ChileanRhubarb_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_CrackWillow_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_DarwinsBarberry_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_DouglasFir_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_DouglasFir_2014_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_Gorse_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_GreyWillow_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_JapaneseHoneysuckle_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_KahiliGinger_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_LodgepolePine_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_LodgepolePine_2014_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_MarramGrass_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_OldMansBeard_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_PampasGrass_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_RussellLupin_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WEEDS_WanderingJew_2007_BDI_simplified_distribution/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WTP_Aircraft_access_zones_20181127/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WTP_Aircraft_layers/FeatureServer",
-    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/WTP_All_other_layers_for_web_viewer_20181127/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Wandering_Albatross_H75/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Wandering_Albatross_H95/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Wandering_Albatross_H99/FeatureServer",
@@ -3594,8 +3061,7 @@
     "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Beech_Seeding_Forecast_2018/MapServer",
     "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Rimu_Seeding_Forecast_2018/MapServer",
     "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Simplified_LCDBV4_1/MapServer",
-    "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/deltaT_Masting_Forecast_Summer2018_19/MapServer",
-    "https://www.sciencebase.gov/arcgis/rest/services/Catalog/594d3c8ee4b062508e39b332/MapServer"
+    "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/deltaT_Masting_Forecast_Summer2018_19/MapServer"
    ],
    "log": [
     {
@@ -3605,70 +3071,14 @@
     },
     {
      "step": "org",
-     "what": "org 3JjYDyG3oajxU6HO (Department of Conservation): 295 services read"
-    },
-    {
-     "catalog": "https://catalogue.data.govt.nz",
-     "keyword": "public conservation land",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://catalogue.data.govt.nz",
-     "keyword": "national park",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://catalogue.data.govt.nz",
-     "keyword": "regional park",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://catalogue.data.govt.nz",
-     "keyword": "conservation area",
-     "error": "robots.txt says no"
-    },
-    {
-     "agol": "public conservation land",
-     "hits": 50,
-     "read": 0
-    },
-    {
-     "agol": "public conservation land",
-     "hits": 50,
-     "read": 0
-    },
-    {
-     "agol": "national park",
-     "hits": 50,
-     "read": 0
-    },
-    {
-     "agol": "regional park",
-     "hits": 7,
-     "read": 3
-    },
-    {
-     "agol": "conservation area",
-     "hits": 50,
-     "read": 0
-    },
-    {
-     "agol": "reserve",
-     "hits": 50,
-     "read": 2
+     "what": "org 3JjYDyG3oajxU6HO (Department of Conservation): 200 services read"
     }
    ],
    "steps": [
     "known",
     "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-28"
+    "wfs"
+   ]
   },
   "DO": {
    "status": "nothing seeded: not searched",

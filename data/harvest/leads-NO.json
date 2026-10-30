@@ -2,9 +2,16 @@
  "about": "World harvester leads for Norway (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "NO",
  "date": "2026-10-30",
- "status": "paused (out of time, will carry on)",
+ "status": "done",
  "steps_done": [
-  "known"
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
  ],
  "bands": {
   "A": 14,
@@ -12,7 +19,26 @@
   "C": 0
  },
  "failures": [],
- "rejected_orgs": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    6
+   ]
+  ],
+  [
+   [
+    "?",
+    3
+   ]
+  ]
+ ],
  "known_good_found": [
   "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/mapserver",
   "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver"
@@ -26,7 +52,7 @@
   {
    "step": "known",
    "what": "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/mapserver",
-   "found": false
+   "found": true
   },
   {
    "step": "known",
@@ -419,6 +445,40 @@
       "Reinshaugen (Reins kloster)"
      ],
      "name_field": "omraadeNavn"
+    },
+    {
+     "id": 0,
+     "name": "friluftsliv_statlig_sikra",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "brukergrupper",
+      "offentligKommunikasjon",
+      "omraadeNavn",
+      "omraadeVerdi",
+      "tilgjengelighetKartlagt",
+      "driftstilsynAnsvarlig",
+      "friluftId",
+      "maalemetode",
+      "noeyaktighet",
+      "datafangstDato",
+      "SHAPE",
+      "omraadeBeskrivelse",
+      "bruksfrekvens",
+      "faktaark",
+      "utvalgt",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 2351,
+     "sample": [
+      "Kystad",
+      "Kullsjøen",
+      "Reinshaugen (Reins kloster)"
+     ],
+     "name_field": "omraadeNavn"
     }
    ],
    "note": "",
@@ -439,6 +499,150 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 1,
+     "name": "Naturomrader_5K",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Kartleggingsenhet5kid",
+      "Område5kid",
+      "Kartleggingsenhetkode",
+      "Hovedtypegruppe",
+      "Hovedtypegruppebeskrivelse",
+      "Hovedtype",
+      "Hovedtypebeskrivelse",
+      "Kartleggingsenhet",
+      "Kartleggingsenhetbeskrivelse",
+      "Andel",
+      "Kartlagtdato",
+      "Sammensatt",
+      "Nøyaktighet",
+      "ULKM",
+      "Beskrivelsesvariabler",
+      "LKM",
+      "Usikkerhet",
+      "Usikkerhetsbeskrivelse",
+      "Oppdragsgiver"
+     ],
+     "records": 360941,
+     "sample": [
+      "RUTE_2016_NORGE_1",
+      "RUTE_2016_NORGE_1",
+      "RUTE_2016_NORGE_1"
+     ],
+     "name_field": "Programnavn"
+    },
+    {
+     "id": 0,
+     "name": "Naturomrader_20K",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Kartleggingsenhet20kid",
+      "Område20kid",
+      "Kartleggingsenhetkode",
+      "Hovedtypegruppe",
+      "Hovedtypegruppebeskrivelse",
+      "Hovedtype",
+      "Hovedtypebeskrivelse",
+      "Kartleggingsenhet",
+      "Kartleggingsenhetbeskrivelse",
+      "Andel",
+      "Kartlagtdato",
+      "Sammensatt",
+      "Nøyaktighet",
+      "ULKM",
+      "Beskrivelsesvariabler",
+      "Usikkerhet",
+      "Usikkerhetsbeskrivelse",
+      "Oppdragsgiver",
+      "Oppdragstaker"
+     ],
+     "records": 32999,
+     "sample": [
+      "Rutekartlegging 2017",
+      "Rutekartlegging 2017",
+      "Rutekartlegging 2017"
+     ],
+     "name_field": "Programnavn"
+    },
+    {
+     "id": 0,
+     "name": "Naturomrader_20K",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Kartleggingsenhet20kid",
+      "Område20kid",
+      "Kartleggingsenhetkode",
+      "Hovedtypegruppe",
+      "Hovedtypegruppebeskrivelse",
+      "Hovedtype",
+      "Hovedtypebeskrivelse",
+      "Kartleggingsenhet",
+      "Kartleggingsenhetbeskrivelse",
+      "Andel",
+      "Kartlagtdato",
+      "Sammensatt",
+      "Nøyaktighet",
+      "ULKM",
+      "Beskrivelsesvariabler",
+      "Usikkerhet",
+      "Usikkerhetsbeskrivelse",
+      "Oppdragsgiver",
+      "Oppdragstaker"
+     ],
+     "records": 32999,
+     "sample": [
+      "Rutekartlegging 2017",
+      "Rutekartlegging 2017",
+      "Rutekartlegging 2017"
+     ],
+     "name_field": "Programnavn"
+    },
+    {
+     "id": 1,
+     "name": "Naturomrader_5K",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Kartleggingsenhet5kid",
+      "Område5kid",
+      "Kartleggingsenhetkode",
+      "Hovedtypegruppe",
+      "Hovedtypegruppebeskrivelse",
+      "Hovedtype",
+      "Hovedtypebeskrivelse",
+      "Kartleggingsenhet",
+      "Kartleggingsenhetbeskrivelse",
+      "Andel",
+      "Kartlagtdato",
+      "Sammensatt",
+      "Nøyaktighet",
+      "ULKM",
+      "Beskrivelsesvariabler",
+      "LKM",
+      "Usikkerhet",
+      "Usikkerhetsbeskrivelse",
+      "Oppdragsgiver"
+     ],
+     "records": 360941,
+     "sample": [
+      "RUTE_2016_NORGE_1",
+      "RUTE_2016_NORGE_1",
+      "RUTE_2016_NORGE_1"
+     ],
+     "name_field": "Programnavn"
+    },
     {
      "id": 1,
      "name": "Naturomrader_5K",
@@ -924,6 +1128,114 @@
       "Tjern sør for Søråsen"
      ],
      "name_field": "omraadenavn"
+    },
+    {
+     "id": 0,
+     "name": "naturtyper_hb13_alle",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "naturtypeId",
+      "omraadenavn",
+      "naturtype",
+      "verdi",
+      "registreringsDato",
+      "utvalgtNaturtype",
+      "hevdstatus",
+      "utforming",
+      "kommune",
+      "noeyaktighetsklasse",
+      "forvaltningsplan",
+      "forvaltningsavtale",
+      "forvaltningsavtaleInngaatt",
+      "forvaltningsavtaleUtloeper",
+      "faktaark",
+      "datafangstdato",
+      "punkt",
+      "SHAPE",
+      "SHAPE.STArea()"
+     ],
+     "records": 87988,
+     "sample": [
+      "Bartnes NØ",
+      "Bragstad SØ",
+      "Graveltjern"
+     ],
+     "name_field": "omraadenavn"
+    },
+    {
+     "id": 1,
+     "name": "hovednaturtype_hb13_myr_og_kilde",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "naturtypeId",
+      "omraadenavn",
+      "naturtype",
+      "verdi",
+      "registreringsDato",
+      "utvalgtNaturtype",
+      "hevdstatus",
+      "utforming",
+      "kommune",
+      "noeyaktighetsklasse",
+      "forvaltningsplan",
+      "forvaltningsavtale",
+      "forvaltningsavtaleInngaatt",
+      "forvaltningsavtaleUtloeper",
+      "faktaark",
+      "datafangstdato",
+      "punkt",
+      "SHAPE",
+      "SHAPE.STArea()"
+     ],
+     "records": 5509,
+     "sample": [
+      "Venåsmyra/Venåstjønna",
+      "Julsundet: Langmyra",
+      "Julsundet: ved Fosselva"
+     ],
+     "name_field": "omraadenavn"
+    },
+    {
+     "id": 2,
+     "name": "hovednaturtype_hb13_rasmark_berg_kantkratt",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "naturtypeId",
+      "omraadenavn",
+      "naturtype",
+      "verdi",
+      "registreringsDato",
+      "utvalgtNaturtype",
+      "hevdstatus",
+      "utforming",
+      "kommune",
+      "noeyaktighetsklasse",
+      "forvaltningsplan",
+      "forvaltningsavtale",
+      "forvaltningsavtaleInngaatt",
+      "forvaltningsavtaleUtloeper",
+      "faktaark",
+      "datafangstdato",
+      "punkt",
+      "SHAPE",
+      "SHAPE.STArea()"
+     ],
+     "records": 2250,
+     "sample": [
+      "Steinstad 2",
+      "Vest for Volholmen",
+      "Vangshylla"
+     ],
+     "name_field": "omraadenavn"
     }
    ],
    "note": "",
@@ -1172,6 +1484,122 @@
       "Botnan 4",
       "Grønbukta 2",
       "Grunnavågen sør 2"
+     ],
+     "name_field": "Områdenavn"
+    },
+    {
+     "id": 0,
+     "name": "kuverdi_naturtype_alle",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "KuverdiNaturtypeId",
+      "Opphav",
+      "Verdikategori",
+      "Verdikriterier",
+      "Naturtype",
+      "Områdenavn",
+      "Registreringsdato",
+      "Nøyaktighetsklasse",
+      "Faktaark",
+      "FaktaarkLokalitet",
+      "Kommune",
+      "SHAPE",
+      "OBJECTID"
+     ],
+     "records": 284554,
+     "sample": [
+      "73-1 Strand",
+      "379-10 Kjeholmen",
+      "Oksenøya bruk 4"
+     ],
+     "name_field": "Områdenavn"
+    },
+    {
+     "id": 6,
+     "name": "kuverdi_vurderes_per_naturtype",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "KuverdiNaturtypeId",
+      "Opphav",
+      "Verdikategori",
+      "Verdikriterier",
+      "Naturtype",
+      "Områdenavn",
+      "Registreringsdato",
+      "Nøyaktighetsklasse",
+      "Faktaark",
+      "FaktaarkLokalitet",
+      "Kommune",
+      "SHAPE",
+      "OBJECTID"
+     ],
+     "records": 966,
+     "sample": [
+      "Høgåstangen",
+      "Sundås 2",
+      "Sommerrud ravine"
+     ],
+     "name_field": "Områdenavn"
+    },
+    {
+     "id": 1,
+     "name": "kuverdi_svært_stor_verdi",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "KuverdiNaturtypeId",
+      "Opphav",
+      "Verdikategori",
+      "Verdikriterier",
+      "Naturtype",
+      "Områdenavn",
+      "Registreringsdato",
+      "Nøyaktighetsklasse",
+      "Faktaark",
+      "FaktaarkLokalitet",
+      "Kommune",
+      "SHAPE",
+      "OBJECTID"
+     ],
+     "records": 76218,
+     "sample": [
+      "73-1 Strand",
+      "379-10 Kjeholmen",
+      "Oksenøya bruk 4"
+     ],
+     "name_field": "Områdenavn"
+    },
+    {
+     "id": 2,
+     "name": "kuverdi_stor_verdi",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "KuverdiNaturtypeId",
+      "Opphav",
+      "Verdikategori",
+      "Verdikriterier",
+      "Naturtype",
+      "Områdenavn",
+      "Registreringsdato",
+      "Nøyaktighetsklasse",
+      "Faktaark",
+      "FaktaarkLokalitet",
+      "Kommune",
+      "SHAPE",
+      "OBJECTID"
+     ],
+     "records": 117683,
+     "sample": [
+      "Store meland 5",
+      "Store meland 6",
+      "Store meland 4"
      ],
      "name_field": "Områdenavn"
     }
@@ -1508,6 +1936,70 @@
       "Vest for Apalvikneset",
       "Bømlafjorden",
       "Storeviknibba"
+     ],
+     "name_field": "omraadenavn"
+    },
+    {
+     "id": 0,
+     "name": "naturtyper_marine_hb19_alle",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "marinNaturtypeId",
+      "omraadenavn",
+      "naturtype",
+      "verdi",
+      "registreringsDato",
+      "noeyaktighetsklasse",
+      "utforming",
+      "kommune",
+      "modellert",
+      "faktaark",
+      "datafangstdato",
+      "punkt",
+      "SHAPE",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 20491,
+     "sample": [
+      "Grimstadvågen",
+      "Leirvågen, Korsnes",
+      "Kviturspollen og Vågsbøpollen"
+     ],
+     "name_field": "omraadenavn"
+    },
+    {
+     "id": 1,
+     "name": "naturtype_marin_hb19_tare",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "marinNaturtypeId",
+      "omraadenavn",
+      "naturtype",
+      "verdi",
+      "registreringsDato",
+      "noeyaktighetsklasse",
+      "utforming",
+      "kommune",
+      "modellert",
+      "faktaark",
+      "datafangstdato",
+      "punkt",
+      "SHAPE",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 7245,
+     "sample": [
+      "Tvedestrand-ytre",
+      "Tvedestrand-ytre",
+      "Tvedestrand-ytre"
      ],
      "name_field": "omraadenavn"
     }
@@ -2034,6 +2526,75 @@
       "Nordre Helløya (Smågehelløya)"
      ],
      "name_field": "Områdenavn"
+    },
+    {
+     "id": 0,
+     "name": "naturtype_utvalgt_omr",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "UtvalgtNaturtypeId",
+      "UtvalgtNaturtypeKode",
+      "UtvalgtNaturtype",
+      "Opphav",
+      "Områdenavn",
+      "Registreringsdato",
+      "Nøyaktighetsklasse",
+      "Verdi",
+      "Lokalitetskvalitet",
+      "Tilstand",
+      "Naturmangfold",
+      "Faktaark",
+      "FaktaarkOpphav",
+      "Kommune",
+      "GlobalId",
+      "crc",
+      "SHAPE",
+      "OBJECTID",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 58037,
+     "sample": [
+      "Rostad 1",
+      "Røyrvika: Ånnholmen",
+      "Nordre Helløya (Smågehelløya)"
+     ],
+     "name_field": "Områdenavn"
+    },
+    {
+     "id": 0,
+     "name": "naturtype_utvalgt_omr",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "UtvalgtNaturtypeId",
+      "UtvalgtNaturtypeKode",
+      "UtvalgtNaturtype",
+      "Opphav",
+      "Områdenavn",
+      "Registreringsdato",
+      "Nøyaktighetsklasse",
+      "Verdi",
+      "Lokalitetskvalitet",
+      "Tilstand",
+      "Naturmangfold",
+      "Faktaark",
+      "FaktaarkOpphav",
+      "Kommune",
+      "GlobalId",
+      "crc",
+      "OBJECTID"
+     ],
+     "records": 58037,
+     "sample": [
+      "Rostad 1",
+      "Røyrvika: Ånnholmen",
+      "Nordre Helløya (Smågehelløya)"
+     ],
+     "name_field": "Områdenavn"
     }
    ],
    "note": "",
@@ -2053,6 +2614,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "NiN Naturområder",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "naturomraadeLokalId",
+      "ninID",
+      "prosjektFKID",
+      "mosaikk",
+      "noeyaktighet",
+      "registreringsStatus",
+      "omraadeTypeLokalId",
+      "kartleggingsMaalestokk",
+      "kartlagtDato",
+      "brukernavn",
+      "andel",
+      "natOmrTypeKartlagDato",
+      "kode",
+      "nivaa",
+      "ninHovedgruppe",
+      "ninHovedtype",
+      "ninGrunntype",
+      "omraadetypeid",
+      "ninHovedgrOgHovedtype"
+     ],
+     "records": 103797,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "brukernavn"
+    },
     {
      "id": 0,
      "name": "NiN Naturområder",
@@ -2167,6 +2764,67 @@
       "Dokkadeltaet"
      ],
      "name_field": "norskNavn"
+    },
+    {
+     "id": 0,
+     "name": "ramsaromrader",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "ramsarId",
+      "norskNavn",
+      "engelskNavn",
+      "omraadeBeskrivelse",
+      "siteNumber",
+      "faktaark",
+      "RamsarSIS_Url",
+      "datafangstdato",
+      "maalemetode",
+      "noeyaktighet",
+      "SHAPE",
+      "GlobalID",
+      "OBJECTID",
+      "ramsarFKID",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 63,
+     "sample": [
+      "Balsfjord våtmarkssystem",
+      "Bliksvær",
+      "Dokkadeltaet"
+     ],
+     "name_field": "norskNavn"
+    },
+    {
+     "id": 0,
+     "name": "ramsaromrader",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "ramsarId",
+      "norskNavn",
+      "engelskNavn",
+      "omraadeBeskrivelse",
+      "siteNumber",
+      "faktaark",
+      "RamsarSIS_Url",
+      "datafangstdato",
+      "maalemetode",
+      "noeyaktighet",
+      "GlobalID",
+      "OBJECTID",
+      "ramsarFKID"
+     ],
+     "records": 63,
+     "sample": [
+      "Balsfjord våtmarkssystem",
+      "Bliksvær",
+      "Dokkadeltaet"
+     ],
+     "name_field": "norskNavn"
     }
    ],
    "note": "",
@@ -2187,6 +2845,329 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "naturvern_omrade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "naturvernId",
+      "cddaId",
+      "navn",
+      "offisieltNavn",
+      "faktaark",
+      "verneform",
+      "verneforskrift",
+      "vernedato",
+      "foerstegangVernet",
+      "verneplan",
+      "kommune",
+      "forvaltningsmyndighet",
+      "forvaltningsmyndighetType",
+      "iucn",
+      "revisjon",
+      "truetVurdering",
+      "majorEcosystemType",
+      "SHAPE",
+      "GlobalID",
+      "verneformAggregert"
+     ],
+     "records": 3514,
+     "sample": [
+      "Blåfjell",
+      "Skåland",
+      "Litlrien"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 1,
+     "name": "naturvern_klasser_omrade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "naturvernId",
+      "cddaId",
+      "navn",
+      "offisieltNavn",
+      "faktaark",
+      "verneform",
+      "verneforskrift",
+      "vernedato",
+      "foerstegangVernet",
+      "verneplan",
+      "kommune",
+      "forvaltningsmyndighet",
+      "forvaltningsmyndighetType",
+      "iucn",
+      "revisjon",
+      "majorEcosystemType",
+      "SHAPE",
+      "GlobalID",
+      "verneformAggregert",
+      "OBJECTID"
+     ],
+     "records": 3514,
+     "sample": [
+      "Blåfjell",
+      "Skåland",
+      "Litlrien"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 2,
+     "name": "naturvern_teiggrensepunkt",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "navnerom",
+      "objekttype",
+      "datafangstdato",
+      "maalemetode",
+      "noeyaktighet",
+      "grensepunkttype",
+      "grensemerkeNedsattI",
+      "grensepunktnummer",
+      "informasjon",
+      "jordskifterettenSaksnummer",
+      "SHAPE",
+      "GlobalID",
+      "OBJECTID"
+     ],
+     "records": 50758,
+     "sample": [
+      "NO.MILJODIREKTORATET.NATURBASE",
+      "NO.MILJODIREKTORATET.NATURBASE",
+      "NO.MILJODIREKTORATET.NATURBASE"
+     ],
+     "name_field": "navnerom"
+    },
+    {
+     "id": 4,
+     "name": "foreslatt_naturvern_omrade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "foreslattVernId",
+      "navn",
+      "verneform",
+      "verneplan",
+      "kommune",
+      "faktaark",
+      "objekttype",
+      "datafangstdato",
+      "maalemetode",
+      "noeyaktighet",
+      "SHAPE",
+      "GlobalID",
+      "OBJECTID",
+      "foreslattVernFKID",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 326,
+     "sample": [
+      "Iesjávri",
+      "Steinvatnmyran",
+      "Goahteluoppal"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 5,
+     "name": "foreslatt_naturvern_grense",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "foreslattVernId",
+      "navn",
+      "verneform",
+      "verneplan",
+      "kommune",
+      "faktaark",
+      "objekttype",
+      "datafangstdato",
+      "maalemetode",
+      "noeyaktighet",
+      "SHAPE",
+      "GlobalID",
+      "OBJECTID",
+      "foreslattVernFKID",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 326,
+     "sample": [
+      "Iesjávri",
+      "Steinvatnmyran",
+      "Goahteluoppal"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 0,
+     "name": "naturvern_omrade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "naturvernId",
+      "cddaId",
+      "navn",
+      "offisieltNavn",
+      "faktaark",
+      "verneform",
+      "verneforskrift",
+      "vernedato",
+      "foerstegangVernet",
+      "verneplan",
+      "kommune",
+      "forvaltningsmyndighet",
+      "forvaltningsmyndighetType",
+      "iucn",
+      "revisjon",
+      "truetVurdering",
+      "majorEcosystemType",
+      "GlobalID",
+      "verneformAggregert",
+      "OBJECTID"
+     ],
+     "records": 3514,
+     "sample": [
+      "Blåfjell",
+      "Skåland",
+      "Litlrien"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 1,
+     "name": "naturvern_klasser_omrade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "naturvernId",
+      "cddaId",
+      "navn",
+      "offisieltNavn",
+      "faktaark",
+      "verneform",
+      "verneforskrift",
+      "vernedato",
+      "foerstegangVernet",
+      "verneplan",
+      "kommune",
+      "forvaltningsmyndighet",
+      "forvaltningsmyndighetType",
+      "iucn",
+      "revisjon",
+      "majorEcosystemType",
+      "GlobalID",
+      "verneformAggregert",
+      "OBJECTID",
+      "NaturvernFKID"
+     ],
+     "records": 3514,
+     "sample": [
+      "Blåfjell",
+      "Skåland",
+      "Litlrien"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 2,
+     "name": "naturvern_teiggrensepunkt",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "navnerom",
+      "objekttype",
+      "datafangstdato",
+      "maalemetode",
+      "noeyaktighet",
+      "grensepunkttype",
+      "grensemerkeNedsattI",
+      "grensepunktnummer",
+      "informasjon",
+      "jordskifterettenSaksnummer",
+      "GlobalID",
+      "OBJECTID"
+     ],
+     "records": 50758,
+     "sample": [
+      "NO.MILJODIREKTORATET.NATURBASE",
+      "NO.MILJODIREKTORATET.NATURBASE",
+      "NO.MILJODIREKTORATET.NATURBASE"
+     ],
+     "name_field": "navnerom"
+    },
+    {
+     "id": 4,
+     "name": "foreslatt_naturvern_omrade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "foreslattVernId",
+      "navn",
+      "verneform",
+      "verneplan",
+      "kommune",
+      "faktaark",
+      "objekttype",
+      "datafangstdato",
+      "maalemetode",
+      "noeyaktighet",
+      "GlobalID",
+      "OBJECTID",
+      "foreslattVernFKID"
+     ],
+     "records": 326,
+     "sample": [
+      "Iesjávri",
+      "Steinvatnmyran",
+      "Goahteluoppal"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 5,
+     "name": "foreslatt_naturvern_grense",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "foreslattVernId",
+      "navn",
+      "verneform",
+      "verneplan",
+      "kommune",
+      "faktaark",
+      "objekttype",
+      "datafangstdato",
+      "maalemetode",
+      "noeyaktighet",
+      "GlobalID",
+      "OBJECTID",
+      "foreslattVernFKID"
+     ],
+     "records": 326,
+     "sample": [
+      "Iesjávri",
+      "Steinvatnmyran",
+      "Goahteluoppal"
+     ],
+     "name_field": "navn"
+    },
     {
      "id": 0,
      "name": "naturvern_omrade",
@@ -2256,257 +3237,6 @@
       "Blåfjell",
       "Skåland",
       "Litlrien"
-     ],
-     "name_field": "navn"
-    },
-    {
-     "id": 2,
-     "name": "naturvern_teiggrensepunkt",
-     "geom": "Point",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "navnerom",
-      "objekttype",
-      "datafangstdato",
-      "maalemetode",
-      "noeyaktighet",
-      "grensepunkttype",
-      "grensemerkeNedsattI",
-      "grensepunktnummer",
-      "informasjon",
-      "jordskifterettenSaksnummer",
-      "SHAPE",
-      "GlobalID",
-      "OBJECTID"
-     ],
-     "records": 50676,
-     "sample": [
-      "NO.MILJODIREKTORATET.NATURBASE",
-      "NO.MILJODIREKTORATET.NATURBASE",
-      "NO.MILJODIREKTORATET.NATURBASE"
-     ],
-     "name_field": "navnerom"
-    },
-    {
-     "id": 4,
-     "name": "foreslatt_naturvern_omrade",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "foreslattVernId",
-      "navn",
-      "verneform",
-      "verneplan",
-      "kommune",
-      "faktaark",
-      "objekttype",
-      "datafangstdato",
-      "maalemetode",
-      "noeyaktighet",
-      "SHAPE",
-      "GlobalID",
-      "OBJECTID",
-      "foreslattVernFKID",
-      "SHAPE.STArea()",
-      "SHAPE.STLength()"
-     ],
-     "records": 326,
-     "sample": [
-      "Iesjávri",
-      "Steinvatnmyran",
-      "Goahteluoppal"
-     ],
-     "name_field": "navn"
-    },
-    {
-     "id": 5,
-     "name": "foreslatt_naturvern_grense",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "foreslattVernId",
-      "navn",
-      "verneform",
-      "verneplan",
-      "kommune",
-      "faktaark",
-      "objekttype",
-      "datafangstdato",
-      "maalemetode",
-      "noeyaktighet",
-      "SHAPE",
-      "GlobalID",
-      "OBJECTID",
-      "foreslattVernFKID",
-      "SHAPE.STArea()",
-      "SHAPE.STLength()"
-     ],
-     "records": 326,
-     "sample": [
-      "Iesjávri",
-      "Steinvatnmyran",
-      "Goahteluoppal"
-     ],
-     "name_field": "navn"
-    },
-    {
-     "id": 0,
-     "name": "naturvern_omrade",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "naturvernId",
-      "cddaId",
-      "navn",
-      "offisieltNavn",
-      "faktaark",
-      "verneform",
-      "verneforskrift",
-      "vernedato",
-      "foerstegangVernet",
-      "verneplan",
-      "kommune",
-      "forvaltningsmyndighet",
-      "forvaltningsmyndighetType",
-      "iucn",
-      "revisjon",
-      "truetVurdering",
-      "majorEcosystemType",
-      "GlobalID",
-      "verneformAggregert",
-      "OBJECTID"
-     ],
-     "records": 3514,
-     "sample": [
-      "Blåfjell",
-      "Skåland",
-      "Litlrien"
-     ],
-     "name_field": "navn"
-    },
-    {
-     "id": 1,
-     "name": "naturvern_klasser_omrade",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "naturvernId",
-      "cddaId",
-      "navn",
-      "offisieltNavn",
-      "faktaark",
-      "verneform",
-      "verneforskrift",
-      "vernedato",
-      "foerstegangVernet",
-      "verneplan",
-      "kommune",
-      "forvaltningsmyndighet",
-      "forvaltningsmyndighetType",
-      "iucn",
-      "revisjon",
-      "majorEcosystemType",
-      "GlobalID",
-      "verneformAggregert",
-      "OBJECTID",
-      "NaturvernFKID"
-     ],
-     "records": 3514,
-     "sample": [
-      "Blåfjell",
-      "Skåland",
-      "Litlrien"
-     ],
-     "name_field": "navn"
-    },
-    {
-     "id": 2,
-     "name": "naturvern_teiggrensepunkt",
-     "geom": "Point",
-     "gap": "access",
-     "is": "park points (sites / entrances)",
-     "fields": [
-      "navnerom",
-      "objekttype",
-      "datafangstdato",
-      "maalemetode",
-      "noeyaktighet",
-      "grensepunkttype",
-      "grensemerkeNedsattI",
-      "grensepunktnummer",
-      "informasjon",
-      "jordskifterettenSaksnummer",
-      "GlobalID",
-      "OBJECTID"
-     ],
-     "records": 50676,
-     "sample": [
-      "NO.MILJODIREKTORATET.NATURBASE",
-      "NO.MILJODIREKTORATET.NATURBASE",
-      "NO.MILJODIREKTORATET.NATURBASE"
-     ],
-     "name_field": "navnerom"
-    },
-    {
-     "id": 4,
-     "name": "foreslatt_naturvern_omrade",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "foreslattVernId",
-      "navn",
-      "verneform",
-      "verneplan",
-      "kommune",
-      "faktaark",
-      "objekttype",
-      "datafangstdato",
-      "maalemetode",
-      "noeyaktighet",
-      "GlobalID",
-      "OBJECTID",
-      "foreslattVernFKID"
-     ],
-     "records": 326,
-     "sample": [
-      "Iesjávri",
-      "Steinvatnmyran",
-      "Goahteluoppal"
-     ],
-     "name_field": "navn"
-    },
-    {
-     "id": 5,
-     "name": "foreslatt_naturvern_grense",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "foreslattVernId",
-      "navn",
-      "verneform",
-      "verneplan",
-      "kommune",
-      "faktaark",
-      "objekttype",
-      "datafangstdato",
-      "maalemetode",
-      "noeyaktighet",
-      "GlobalID",
-      "OBJECTID",
-      "foreslattVernFKID"
-     ],
-     "records": 326,
-     "sample": [
-      "Iesjávri",
-      "Steinvatnmyran",
-      "Goahteluoppal"
      ],
      "name_field": "navn"
     }
@@ -2839,7 +3569,7 @@
       "GlobalID",
       "OBJECTID"
      ],
-     "records": 50676,
+     "records": 50758,
      "sample": [
       "NO.MILJODIREKTORATET.NATURBASE",
       "NO.MILJODIREKTORATET.NATURBASE",
@@ -2908,6 +3638,42 @@
       "Iesjávri",
       "Steinvatnmyran",
       "Goahteluoppal"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 6,
+     "name": "naturvern_klasser_omrade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "naturvernId",
+      "cddaId",
+      "navn",
+      "offisieltNavn",
+      "faktaark",
+      "verneform",
+      "verneforskrift",
+      "vernedato",
+      "foerstegangVernet",
+      "verneplan",
+      "kommune",
+      "forvaltningsmyndighet",
+      "forvaltningsmyndighetType",
+      "iucn",
+      "revisjon",
+      "majorEcosystemType",
+      "SHAPE",
+      "GlobalID",
+      "verneformAggregert",
+      "OBJECTID"
+     ],
+     "records": 3514,
+     "sample": [
+      "Blåfjell",
+      "Skåland",
+      "Litlrien"
      ],
      "name_field": "navn"
     }
@@ -3206,6 +3972,146 @@
       "Tanarkjølen (Naturreservat)"
      ],
      "name_field": "NaturvernOmrådenavn"
+    },
+    {
+     "id": 2,
+     "name": "Vern_Rodliste_Naturomrader_NiN",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Naturtype",
+      "kategori",
+      "Merknad",
+      "merknad2",
+      "BioklimatiskSone",
+      "ProsentEdellovtraer",
+      "Kriterier",
+      "concat_var_list",
+      "bool_list",
+      "Kartleggingsenhet5kid",
+      "Område5kid",
+      "Kartleggingsenhetkode",
+      "Hovedtypegruppe",
+      "Hovedtypegruppebeskrivelse",
+      "Hovedtype",
+      "Hovedtypebeskrivelse",
+      "Kartleggingsenhet",
+      "Kartleggingsenhetbeskrivelse",
+      "Andel"
+     ],
+     "records": 37560,
+     "sample": [
+      "Tjeldneset (Naturreservat)",
+      "Tjeldneset (Naturreservat)",
+      "Tjeldneset (Naturreservat)"
+     ],
+     "name_field": "NaturvernOmrådenavn"
+    },
+    {
+     "id": 0,
+     "name": "Vern_Naturomrader_NiN",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Kartleggingsenhet5kid",
+      "Område5kid",
+      "Kartleggingsenhetkode",
+      "Hovedtypegruppe",
+      "Hovedtypegruppebeskrivelse",
+      "Hovedtype",
+      "Hovedtypebeskrivelse",
+      "Kartleggingsenhet",
+      "Kartleggingsenhetbeskrivelse",
+      "Andel",
+      "Kartlagtdato",
+      "Sammensatt",
+      "Nøyaktighet",
+      "NaturvernId",
+      "NaturvernOmrådenavn",
+      "ULKM",
+      "Beskrivelsesvariabler",
+      "Usikkerhet",
+      "Usikkerhetsbeskrivelse"
+     ],
+     "records": 192698,
+     "sample": [
+      "Gartlandselva (Naturreservat)",
+      "Geiterøya (Naturreservat)",
+      "Fisklausvatnet (Naturreservat)"
+     ],
+     "name_field": "NaturvernOmrådenavn"
+    },
+    {
+     "id": 1,
+     "name": "Dekningskart_Vern_Naturomr_NiN",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Prosjektnavn",
+      "Basiskartlegging",
+      "Dekningskartverdi",
+      "Formål",
+      "Kartlagtfradato",
+      "Kartlagttildato",
+      "Oppdragsgiver",
+      "Oppdragstaker",
+      "Programnavn",
+      "Kartleggingsinstruks",
+      "Prosjektbeskrivelse",
+      "Prosjektid",
+      "SHAPE",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 1791,
+     "sample": [
+      "RUT_16_ECON_03-NT1_GARTLAND_1",
+      "114438__Grønningsrenna__2020__NTYP",
+      "VERDI_17_NINA_25_OP_Geitberget"
+     ],
+     "name_field": "Prosjektnavn"
+    },
+    {
+     "id": 3,
+     "name": "Vern_Rodliste_Landformer_Torvmarksformer_NiN",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Landform",
+      "BioklimatiskSone",
+      "Kartleggingsenhet5kid",
+      "Område5kid",
+      "Kartleggingsenhetkode",
+      "Hovedtypegruppe",
+      "Hovedtypegruppebeskrivelse",
+      "Hovedtype",
+      "Hovedtypebeskrivelse",
+      "Kartleggingsenhet",
+      "Kartleggingsenhetbeskrivelse",
+      "Andel",
+      "Kartlagtdato",
+      "Sammensatt",
+      "Nøyaktighet",
+      "NaturvernId",
+      "NaturvernOmrådenavn",
+      "ULKM",
+      "Beskrivelsesvariabler"
+     ],
+     "records": 3523,
+     "sample": [
+      "Tanarkjølen (Naturreservat)",
+      "Tanarkjølen (Naturreservat)",
+      "Tanarkjølen (Naturreservat)"
+     ],
+     "name_field": "NaturvernOmrådenavn"
     }
    ],
    "note": "",
@@ -3370,6 +4276,152 @@
       "Djupvika"
      ],
      "name_field": "navn"
+    },
+    {
+     "id": 0,
+     "name": "ferdselsforbud",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "vernRestriksjonId",
+      "datafangstdato",
+      "naturvernId",
+      "navn",
+      "verneform",
+      "faktaark",
+      "likGeometriVernOmr",
+      "andreVRiVerneomr",
+      "restriksjonerBeskrivelse",
+      "restriksjoner",
+      "GlobalID",
+      "OBJECTID",
+      "vernRestriksjonFKID"
+     ],
+     "records": 651,
+     "sample": [
+      "Eggøya",
+      "Nord-Fugløya",
+      "Auvær"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 1,
+     "name": "lavflyving_forbudt_under_300m",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "vernRestriksjonId",
+      "datafangstdato",
+      "naturvernId",
+      "navn",
+      "verneform",
+      "faktaark",
+      "likGeometriVernOmr",
+      "andreVRiVerneomr",
+      "restriksjonerBeskrivelse",
+      "restriksjoner",
+      "crc",
+      "GlobalID",
+      "OBJECTID",
+      "vernRestriksjonFKID"
+     ],
+     "records": 861,
+     "sample": [
+      "Pasvik",
+      "Hjelmsøysandfjorden",
+      "Tanamunningen"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 2,
+     "name": "landingsforbud",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "vernRestriksjonId",
+      "datafangstdato",
+      "naturvernId",
+      "navn",
+      "verneform",
+      "faktaark",
+      "likGeometriVernOmr",
+      "andreVRiVerneomr",
+      "restriksjonerBeskrivelse",
+      "restriksjoner",
+      "GlobalID",
+      "OBJECTID",
+      "vernRestriksjonFKID"
+     ],
+     "records": 3124,
+     "sample": [
+      "Færdesmyra",
+      "Gjøkvassneset",
+      "Djupvika"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 3,
+     "name": "lavflyving_forbudt_under_300m_forsvaret",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "vernRestriksjonId",
+      "datafangstdato",
+      "naturvernId",
+      "navn",
+      "verneform",
+      "faktaark",
+      "likGeometriVernOmr",
+      "andreVRiVerneomr",
+      "restriksjonerBeskrivelseForsva",
+      "restriksjonerForsvaret",
+      "GlobalID",
+      "OBJECTID",
+      "vernRestriksjonFKID"
+     ],
+     "records": 757,
+     "sample": [
+      "Pasvik",
+      "Hjelmsøysandfjorden",
+      "Tanamunningen"
+     ],
+     "name_field": "navn"
+    },
+    {
+     "id": 4,
+     "name": "landingsforbud_forsvaret",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "vernRestriksjonId",
+      "datafangstdato",
+      "naturvernId",
+      "navn",
+      "verneform",
+      "faktaark",
+      "likGeometriVernOmr",
+      "andreVRiVerneomr",
+      "restriksjonerBeskrivelseForsva",
+      "restriksjonerForsvaret",
+      "GlobalID",
+      "OBJECTID",
+      "vernRestriksjonFKID"
+     ],
+     "records": 2350,
+     "sample": [
+      "Færdesmyra",
+      "Gjøkvassneset",
+      "Djupvika"
+     ],
+     "name_field": "navn"
     }
    ],
    "note": "",
@@ -3389,6 +4441,38 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "friluftsliv_verneomrader",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "friluftsvernId",
+      "navn",
+      "offisieltNavn",
+      "vernedato",
+      "foerstegangVernet",
+      "forvaltningsmyndighet",
+      "forvaltningsmyndighetType",
+      "faktaark",
+      "verneforskrift",
+      "kommune",
+      "GlobalID",
+      "SHAPE",
+      "datafangstdato",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 4,
+     "sample": [
+      "Skjennungsåsen",
+      "Godbekken",
+      "Kopperhaugene og Vindernhøgda"
+     ],
+     "name_field": "navn"
+    },
     {
      "id": 0,
      "name": "friluftsliv_verneomrader",

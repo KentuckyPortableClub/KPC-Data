@@ -254,7 +254,7 @@
      "name": "Forest",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "FOREST_COD",
       "GIS_AREA",
@@ -269,7 +269,7 @@
      "name": "Forest Inventory",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "FOREST_COD",
       "COMPARTMEN",
@@ -299,7 +299,7 @@
      "name": "BAU",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "BAU_NAME",
       "GIS_AREA",
@@ -320,7 +320,7 @@
      "name": "Properties",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "FOREST_COD",
       "PROPERTY_N",
@@ -337,7 +337,7 @@
      "name": "Compartment",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "COMPARTMEN",
       "OS_MAP_NO",
@@ -353,7 +353,7 @@
      "name": "Ownership",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OWNER",
       "Area",
@@ -447,6 +447,57 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 4,
+     "name": "Forest Park",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Park_Name",
+      "Link",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 17,
+     "sample": [
+      "Avondale",
+      "Ballinastoe MTB",
+      "Cavan Burren"
+     ],
+     "name_field": "Park_Name"
+    },
+    {
+     "id": 0,
+     "name": "Recreation Site Info",
+     "geom": "Multipoint",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "SITE",
+      "WEBaddress",
+      "FOREST_COD",
+      "FOREST_NAM",
+      "PROPERTY_N",
+      "OBJECTID"
+     ],
+     "records": 153
+    },
+    {
+     "id": 1,
+     "name": "Mountain Bike Pole",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "ID",
+      "Site",
+      "Pole",
+      "OBJECTID"
+     ],
+     "records": 244
+    },
     {
      "id": 4,
      "name": "Forest Park",
@@ -733,6 +784,36 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Biodiversity_2026",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "BiodID",
+      "BAU",
+      "Forest",
+      "Property",
+      "Area",
+      "Bioclass",
+      "Potential",
+      "Remcode",
+      "HabGrp1",
+      "HabTyp1",
+      "HabGrp2",
+      "HabTyp2",
+      "TarHabGrp1",
+      "TarHabTyp1",
+      "TarHabGrp2",
+      "TarHabTyp2",
+      "Origin",
+      "RetiredBio",
+      "HabCat"
+     ],
+     "records": 6028
+    },
     {
      "id": 0,
      "name": "Biodiversity_2026",
