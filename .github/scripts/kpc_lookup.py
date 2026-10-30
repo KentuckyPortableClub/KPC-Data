@@ -48,7 +48,7 @@ def todo():
     except Exception: rk = lambda p: p.name  # noqa: BLE001
     for p in sorted(REQ.glob('*.json') if REQ.exists() else [], key=rk):
         if not ans_path(p).exists(): out.append(str(p.relative_to(ROOT)))
-    print(json.dumps(out[:30]))
+    print(json.dumps(out[:100]))   # Oct 30: 100 per run (was 30): a night's picture maps in one go; 6 at a time
 
 
 _BR = None

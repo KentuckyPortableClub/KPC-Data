@@ -74,6 +74,7 @@ jobs:
           LINKS: ../links
           LOOKUP_ROOT: ../lk
           PIC_INDEX: /tmp/pic-index.json
+          GH_TOKEN: ${{ github.token }}
         run: |
           cd kpcdata
           git fetch -q origin picture-maps 2>/dev/null && git show FETCH_HEAD:index.json > /tmp/pic-index.json 2>/dev/null || true
@@ -83,6 +84,7 @@ jobs:
           git add requests 2>/dev/null; git diff --cached --quiet && exit 0
           git commit -qm 'AUTO-3: save-map requests from the documents bot (nightly)'
           for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && break; sleep 5; done
+          gh workflow run kpc-lookup.yml -R ${{ github.repository }} --ref lookup || true   # a bot push starts nothing by itself: start the look-up bot
           true
       - name: The week's numbers + the control panel's data (data/status/week-review.md, panel.json; Brandon Oct 30 11:01 AM)
         continue-on-error: true

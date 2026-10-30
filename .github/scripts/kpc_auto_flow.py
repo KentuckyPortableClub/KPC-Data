@@ -136,6 +136,9 @@ def layers():
 
 
 # ------------------------------------------------------------------------------------------------ AUTO-3
+CAP_MAPS = int(os.environ.get('CAP_MAPS') or 150)
+
+
 def maps():
     root = pathlib.Path(os.environ.get('LOOKUP_ROOT') or 'lk')
     if not (root / 'requests').exists(): notice('AUTO-3 maps: no lookup branch checkout: skipped'); return
@@ -144,24 +147,28 @@ def maps():
     try: done = {r.get('ref') for r in (json.load(open(os.environ.get('PIC_INDEX') or '/tmp/pic-index.json')).get('maps') or [])}
     except Exception: pass  # noqa: BLE001
     off = set()
-    for f in glob.glob(str(LINKS / 'data' / 'us-key' / 'US-*.json')):
+    for f in glob.glob(str(LINKS / 'data' / 'us-key' / 'US-*.json')) + glob.glob(str(LINKS / 'data' / 'ca-key' / 'CA-*.json')):
         off |= {r for r, v in ((load(f, {}) or {}).get('parks') or {}).items() if isinstance(v, dict) and v.get('g') == 'official'}
     n = 0
-    for f in sorted(glob.glob('data/docs/US-*.json')):
+    # Oct 30 1:25 PM (Brandon 'can it be turned up?'): 150 a night (was 25), the main map AND the extra maps, US first then Canada
+    files = sorted(glob.glob('data/docs/US-*.json')) + sorted(glob.glob('data/docs/CA-*.json'))
+    for f in files:
         if f.endswith('US-KY.json'): continue
         for r, v in ((load(f, {}) or {}).get('parks') or {}).items():
-            if n >= 25: break
-            m = v.get('map') or {}
-            u = str(m.get('url') or '')
-            if r in off or r in done or m.get('status') != 'ok' or not m.get('names_park'): continue
-            if not (m.get('kind') in ('pdf', 'image') or re.search(r'\.(pdf|jpe?g|png|gif)(?:$|[?#])', u, re.I)): continue
-            if re.search(r'widen\.net|widencdn\.net', u, re.I): continue
-            rid = f'10-auto-{r}'
-            if rid in have: continue
-            json.dump({'chat': 10, 'kind': 'save-map', 'ref': r, 'name': v.get('n') or '', 'agency': v.get('agency') or '', 'url': u, 'pages': 1,
-                       'report': 'AUTO-3: documents-bot map for a park with no official outline'}, open(root / 'requests' / f'{rid}.json', 'w'), indent=1)
-            n += 1
-    notice(f'AUTO-3 maps: {n} save-map requests filed (25 a night at most)')
+            if n >= CAP_MAPS: break
+            if r in off or r in done: continue
+            for j, m in enumerate([v.get('map') or {}] + list(v.get('map_also') or [])):
+                u = str((m or {}).get('url') or '')
+                if m.get('status') != 'ok' or not m.get('names_park'): continue
+                if not (m.get('kind') in ('pdf', 'image') or re.search(r'\.(pdf|jpe?g|png|gif)(?:$|[?#])', u, re.I)): continue
+                if re.search(r'widen\.net|widencdn\.net', u, re.I): continue
+                rid = f'10-auto-{r}' + (f'-{j}' if j else '')
+                if rid in have: continue
+                json.dump({'chat': 10, 'kind': 'save-map', 'ref': r, 'name': v.get('n') or '', 'agency': v.get('agency') or '', 'url': u, 'pages': 1,
+                           'report': 'AUTO-3: documents-bot map for a park with no official outline'}, open(root / 'requests' / f'{rid}.json', 'w'), indent=1)
+                n += 1
+                break   # one map per park a night; the next one if this one is not a boundary map
+    notice(f'AUTO-3 maps: {n} save-map requests filed ({CAP_MAPS} a night at most)')
 
 
 if __name__ == '__main__':
