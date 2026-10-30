@@ -1,105 +1,7 @@
 {
- "checked": "2026-10-30T14:39Z",
+ "checked": "2026-10-30T14:46Z",
  "switched_on": false,
  "results": [
-  {
-   "path": "data/ca-key/CA-AB.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-BC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-MB.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NB.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NS.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NU.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-ON.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-PE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-QC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-SI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-SK.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-YT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/index.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
   {
    "path": "data/ca-key/layers.json",
    "kind": "key",
@@ -131,6 +33,45 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/fers/CA-BC.json",
+   "kind": "fers",
+   "why": [
+    "F-2 NOT SURE 13 -> 18 (over 30% change)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/CA-MB.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-NB.json",
+   "kind": "fers",
+   "why": [
+    "F-S3 10 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-6540+CA-6549 125 km, CA-6542+CA-6545 114 km"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/CA-NL.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-NS.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/fers/CA-NT.json",
    "kind": "fers",
    "why": [],
@@ -145,6 +86,31 @@
    ],
    "notes": [],
    "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/CA-ON.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-S3 54 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-0154+CA-0304 102 km, CA-0444+CA-1699 118 km"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/CA-PE.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-SK.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/CA-YT.json",
@@ -259,112 +225,7 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/us-key/US-AK.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-AL.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-AR.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-AZ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-CA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-CO.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-CT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/US-DC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-DE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-FL.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-GA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-HI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-IA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-ID.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-IL.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-IN.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -385,112 +246,7 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/us-key/US-ME.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MN.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MO.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/US-MS.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-ND.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NH.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NJ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NM.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NV.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NY.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-OH.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-OR.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -504,42 +260,7 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/us-key/US-RI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-SC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-SD.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-TN.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/US-TX.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-UT.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -553,51 +274,7 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/us-key/US-WA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-WI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-WY.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/answers-applied.json",
-   "kind": "key",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/changed-parks.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/index.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/layers.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -605,27 +282,6 @@
   },
   {
    "path": "data/us-key/overrides.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/zip-mszp.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/zip-mszw.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/AU.json",
    "kind": "key",
    "why": [],
    "notes": [],
