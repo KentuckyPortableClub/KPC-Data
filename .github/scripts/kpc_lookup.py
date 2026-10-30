@@ -97,6 +97,7 @@ def do_steps(pg, steps):
             if 'fill' in st: pg.fill(st['fill'], str(st.get('text', '')))
             elif 'press' in st: pg.press(st['press'], st.get('key', 'Enter'))
             elif 'click' in st: pg.click(st['click'], timeout=15000)
+            elif 'eval' in st: done.append('eval: ' + str(pg.evaluate(st['eval']))[:1500]); continue   # our own pages only (a check of our own page's state)
             if 'wait' in st: pg.wait_for_timeout(min(int(st['wait']), 15000))
             done.append('ok')
         except Exception as e: done.append(f'{type(e).__name__}: {str(e)[:80]}')  # noqa: BLE001
