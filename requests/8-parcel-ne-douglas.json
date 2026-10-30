@@ -1,0 +1,5 @@
+{"chat": 8, "kind": "parcel", "layer": "https://giscat.ne.gov/enterprise/rest/services/StatewideParcelsExternal/MapServer/0", "sites": [
+  {"ref": "US-4010", "name": "Heron Haven State Park", "lat": 41.2926, "lon": -96.0971},
+  {"ref": "US-4012", "name": "Elkhorn Crossing State Park", "lat": 41.3608, "lon": -96.3021},
+  {"ref": "US-4013", "name": "Prairie View State Recreation Area", "lat": 41.3737, "lon": -96.1973}
+], "report": "P-3 county job: Douglas County NE, 3 open parks with no PAD-US record at the pin AND no polygon hit in chat 9's P-2 pass against the right NGPC layers (a genuine no-layer, not a layer-skip gap). Found the statewide parcel layer myself (StatewideParcelsExternal) and confirmed its fields: no OWNER name field, but it has Ownership_Type, Property_Parcel_Type, Classification_Code and Parcel_URL (likely a link to the county assessor's own page, which may carry the owner name). Could not get my own query to return a feature through this session's tools -- please query the layer at these 3 points yourselves and give me Ownership_Type + Parcel_URL (and owner name from the linked assessor page if it's quick) for each."}
