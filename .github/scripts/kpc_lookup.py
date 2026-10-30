@@ -121,7 +121,7 @@ def read_page(u, shot_path=None, pages=1, steps=None, read=None):
             try: pg.wait_for_load_state('networkidle', timeout=20000)
             except Exception: pass  # noqa: BLE001
             r['status'] = resp.status if resp else 'no response'
-            if steps and M.host(u).endswith('kentuckyportableclub.github.io'): r['steps'] = do_steps(pg, steps)
+            if steps: r['steps'] = do_steps(pg, steps if M.host(u).endswith('kentuckyportableclub.github.io') else [x for x in steps if set(x) == {'wait'}])   # other sites: waits only (a map viewer drawing)
             if read:
                 try: r['read_text'] = '\n'.join(' '.join(l.split()) for l in pg.inner_text(read, timeout=5000).split('\n') if l.strip())[:4000]
                 except Exception as e: r['read_text'] = f'not found ({type(e).__name__})'  # noqa: BLE001
