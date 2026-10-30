@@ -23,7 +23,8 @@ Manners: the harvester's (robots.txt, ArcGIS REST exempt, 2 s per host, a day's 
 import copy, glob, json, os, pathlib, re, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_world_harvest as H   # noqa: E402  (the harvester's finders, manners and lead format)
-import kpc_gis_hunter as G      # noqa: E402  (step A: multipoint pins on a layer, point in polygon, name words)
+import kpc_gis_hunter as G
+import kpc_tiers as T  # noqa: E402      # noqa: E402  (step A: multipoint pins on a layer, point in polygon, name words)
 
 W9 = os.environ.get('W9') == '1'; W2 = os.environ.get('W2') == '1'   # Brandon 10:09 PM: stage 2 / 3 only after stage 1 everywhere
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
@@ -80,16 +81,25 @@ def country_cfg(cc, cfg, table):
 
 
 def key_candidates(cc, open_, K, P):
+    """The world key's pin-inside rows ('c'), tiered (Oct 30): SURE / LIKELY = a question, UNLIKELY = evidence. A record under 3+ open parks = container."""
+    under = {}
+    for r in open_:
+        for x in ((K.get(r) or {}).get('c') or []):
+            if isinstance(x, list) and len(x) >= 3: k = (str(x[0]), x[2]); under[k] = under.get(k, 0) + 1
     out = {}
     for r in open_:
         rows = [x for x in ((K.get(r) or {}).get('c') or []) if isinstance(x, list) and len(x) >= 3]
         if not rows: continue
         pn = (K.get(r) or {}).get('n') or (P.get(r) or (0, 0, ''))[2]
-        if len(rows) > 1 and not any(G.words(x[1]) & G.words(pn) for x in rows):
-            out[r] = {'verdict': 'inside-other (several records under the pin: R-G7 step 4)', 'rows': rows[:4]}; continue
-        best = next((x for x in rows if G.words(x[1]) & G.words(pn)), rows[0])
-        out[r] = {'verdict': 'candidate: name match' if G.words(best[1]) & G.words(pn) else 'candidate: name mismatch',
-                  'record': best[0], 'record_name': str(best[1])[:120], 'layer': best[2], 'why': best[3] if len(best) > 3 else ''}
+        best, bt, bw = None, 'UNLIKELY', ''
+        for x in rows:
+            t, why = T.tier(pn, x[1], None, None, under[(str(x[0]), x[2])])
+            if re.search(r'sssi|\bsac\b|\bspa\b|ramsar', str(x[2]), re.I): t, why = 'UNLIKELY', 'a land-class layer (SSSI / SAC / SPA): never the park'
+            if t == 'LIKELY' and G.LEARNED.demoted(x[2], cc): t, why = 'UNLIKELY', why + '; layer under 10% YES so far (demoted)'
+            if (t == 'SURE') or (t == 'LIKELY' and bt != 'SURE') or best is None: best, bt, bw = x, t, why
+            if t == 'SURE': break
+        if bt == 'UNLIKELY': out[r] = {'verdict': f'inside-other ({bw}; R-G7 step 4)', 'rows': rows[:4]}; continue
+        out[r] = {'verdict': f'candidate: {bt}', 'tier': bt, 'why': bw, 'record': best[0], 'record_name': str(best[1])[:120], 'layer': best[2]}
     return out
 
 
@@ -98,7 +108,9 @@ def layer_urls(cc):
     out = []
     for v in L.values():
         if v.get('band') not in ('A', 'B') or str(v.get('publisher', '')).startswith('European Environment Agency') and not W2: continue
+        if re.search(r'aerial|photo|imagery|coverage|index|grid|cadastr|parcel|census|tile', str(v.get('title', '')) + ' ' + str(v.get('url', '')), re.I): continue   # Oct 30: never a park layer
         for ly in v.get('layers') or []:
+            if re.search(r'aerial|photo|imagery|coverage|index|grid|cadastr|parcel|census|tile', str(ly.get('name', '')), re.I): continue
             if 'olygon' in str(ly.get('geom', '')) and ly.get('id') is not None and str(v.get('url', '')).rstrip('/').endswith(('FeatureServer', 'MapServer')):
                 out.append((v['url'].rstrip('/') + f"/{ly['id']}", 'park', (v.get('publisher') or v.get('title') or '')[:60], None))
     return out[:15]
@@ -110,7 +122,7 @@ def run_country(cc, open_, K, P, cfg, table, hstate, Q):
     kc = key_candidates(cc, open_, K, P)
     for r, v in kc.items():
         if v['verdict'].startswith('candidate'):
-            Q.append({'area': cc, 'ref': r, 'park': (K.get(r) or {}).get('n') or P.get(r, (0, 0, ''))[2], 'kind': v['verdict'].split(': ')[1], 'record': v['record'],
+            Q.append({'area': cc, 'ref': r, 'park': (K.get(r) or {}).get('n') or P.get(r, (0, 0, ''))[2], 'tier': v['tier'], 'kind': v['verdict'].split(': ')[1], 'record': v['record'],
                       'record_name': v['record_name'], 'layer': v['layer'], 'source': 'world key (pin inside)', 'why': v['why']})
     rec['key_candidates'] = sum(1 for v in kc.values() if v['verdict'].startswith('candidate'))
     todo = [r for r in open_ if r not in kc]
@@ -126,14 +138,13 @@ def run_country(cc, open_, K, P, cfg, table, hstate, Q):
     lays = layer_urls(cc)
     rec['layers_tried'] = [u for u, *_ in lays]
     if todo and lays:
-        R = {r: {'park': P[r][2], 'hits': [], 'leads': [], 'tried': []} for r in todo if r in P}
+        R = {r: {'park': P[r][2], 'area': cc, 'hits': [], 'leads': [], 'tried': []} for r in todo if r in P}
         G.layers = lambda area, _l=lays: _l
         G.step_a(cc, list(R), {r: P[r] for r in R}, R)
         for r, x in R.items():
-            v = [h['verdict'] for h in x['hits']]
-            h = next((h for h in x['hits'] if h['verdict'] == 'name match'), None) or (x['hits'][0] if v.count('name mismatch') == 1 and len(v) == 1 else None)
+            h = next((h for h in x['hits'] if h.get('tier') == 'SURE'), None) or next((h for h in x['hits'] if h.get('tier') == 'LIKELY'), None)
             if h:
-                Q.append({'area': cc, 'ref': r, 'park': x['park'], 'kind': h['verdict'], 'record': h['record'], 'record_name': h['record_name'],
+                Q.append({'area': cc, 'ref': r, 'park': x['park'], 'tier': h['tier'], 'why': h['why'], 'kind': h['verdict'], 'record': h['record'], 'record_name': h['record_name'],
                           'acres_approx': h['acres_approx'], 'layer': h['layer'], 'source': 'world finder (pin on a found layer)'})
                 rec['layer_candidates'] += 1
             elif not x['hits']:
@@ -155,6 +166,7 @@ def run_country(cc, open_, K, P, cfg, table, hstate, Q):
 def write_questions(Q, areas_run):
     old = {(q['ref'], str(q['record']), q['layer']): q for q in (load(QF, {}) or {}).get('questions') or []}
     keep = [q for q in old.values() if q['area'] not in areas_run]
+    Q = [q for q in Q if not G.LEARNED.said_no(q['ref'], q['record'], q['layer']) or old.get((q['ref'], str(q['record']), q['layer']))]   # a NO is never re-asked
     for q in Q:
         prev = old.get((q['ref'], str(q['record']), q['layer']))
         q.update({'question': "Is this official record that park (the agency's own boundary for it)? YES / NO", 'answer': None, 'checked_by': None, 'how': None,
@@ -165,9 +177,9 @@ def write_questions(Q, areas_run):
     json.dump({'about': "World finder v2 candidates (stage 1, Fable's plan): chat 11 answers YES / NO against the agency's own map; chat 2 rechecks. 'name mismatch' = the record's name differs from POTA's. Big countries: answer a random sample first and report the hit rate (HQ).",
                'built': TODAY, 'open': sum(1 for q in qs if not q['answer']), 'questions': qs}, open(QF, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     by = {}
-    for q in qs: by.setdefault(q['area'], [0, 0]); by[q['area']][0 if q['kind'] == 'name match' else 1] += 1
+    for q in qs: by.setdefault(q['area'], [0, 0]); by[q['area']][0 if q.get('tier', q['kind']) in ('SURE', 'name match') else 1] += 1
     L = ['# World finder v2: questions for chat 11 (stage 1)', '', f'{len(qs)} candidates. Answer in world-finder.json (answer YES / NO, checked_by, how).', '',
-         '| country | name match | name mismatch |', '|---|---|---|'] + [f'| {cc} | {a} | {b} |' for cc, (a, b) in sorted(by.items(), key=lambda x: -sum(x[1]))]
+         '| country | SURE (chat 2 rechecks, chat 11 samples 10%) | LIKELY (chat 11 grades) |', '|---|---|---|'] + [f'| {cc} | {a} | {b} |' for cc, (a, b) in sorted(by.items(), key=lambda x: -sum(x[1]))]
     QF.with_suffix('.md').write_text('\n'.join(L) + '\n', encoding='utf-8')
 
 

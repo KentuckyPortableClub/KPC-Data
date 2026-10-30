@@ -23,6 +23,7 @@ Manners: kpc_manners.py (robots.txt; ArcGIS REST exempt; 2 s per host; three str
 import json, math, os, pathlib, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kpc_manners import Manners  # noqa: E402
+import kpc_tiers as T  # noqa: E402  (Oct 30: SURE / LIKELY / UNLIKELY, learned answers)
 
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
 OUT = pathlib.Path('data/gis-hunter'); QDIR = pathlib.Path('data/waiting/questions')
@@ -164,6 +165,20 @@ def step_a(area, todo, P, R):
                         extra = {}
                     R[r]['hits'].append({'verdict': v, 'layer': url, 'agency': ag, 'record': oid, 'record_name': rn[:120], 'acres_approx': acres(rings), **extra})
                 R[r]['tried'].append(f"A {ag[:40]}: {'hit' if hit else 'no polygon at the pin'}")
+    tier_hits(R)
+
+
+def tier_hits(R):
+    """Oct 30 (Fable): every hit gets a tier (kpc_tiers): SURE / LIKELY = a question; UNLIKELY = evidence only (R-G7 step 4)."""
+    under = {}
+    for rec in R.values():
+        for h in rec['hits']: k = (h['layer'], str(h['record'])); under[k] = under.get(k, 0) + 1
+    for rec in R.values():
+        for h in rec['hits']:
+            t, why = T.tier(rec['park'], h['record_name'], h.get('acres_approx'), rec.get('acres'), under[(h['layer'], str(h['record']))])
+            if re.search(r'sssi|\bsac\b|\bspa\b|ramsar', str(h.get('agency', '')) + ' ' + str(h.get('layer', '')), re.I): t, why = 'UNLIKELY', 'a land-class layer (SSSI / SAC / SPA): never the park (chat 11 Rule I)'
+            if t == 'LIKELY' and LEARNED.demoted(h['layer'], rec.get('area')): t, why = 'UNLIKELY', why + '; this layer / this area\'s LIKELY rows under 10% YES so far (demoted)'
+            h['tier'], h['why'] = t, why
 
 
 # ------------------------------------------------------------------------------------------------ step B
@@ -212,12 +227,11 @@ def step_b(area, todo, P, R, queue):
 
 # ------------------------------------------------------------------------------------------------ outputs
 def verdict(rec):
-    v = [h['verdict'] for h in rec['hits']]
-    if 'name match' in v: return 'candidate: name match'
-    if v.count('name mismatch') == 1: return 'candidate: name mismatch'   # one park-type record under the pin; two or more = unclear, R-G7 step 4
-    if 'name mismatch' in v: return 'inside-other (several park records under the pin: R-G7 step 4)'
+    t = [h.get('tier') for h in rec['hits']]
+    if 'SURE' in t: return 'candidate: SURE (same proper name)'
+    if 'LIKELY' in t: return 'candidate: LIKELY (part of the name shared)'
     if rec['leads']: return 'lead: new layer queued for intake'
-    if 'inside-other' in v: return 'inside-other (bigger area with another name: R-G7 step 4 ownership)'
+    if rec['hits']: return 'inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)'
     return 'no layer found'
 
 
@@ -227,24 +241,26 @@ def write_area(area, R):
                'parks': R}, open(OUT / f'{area}.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     L = [f'## {area} — GIS hunter {TODAY} (paste into the Fable file WORK LOG)', '', '| ref | park | step | what was found | result | date | by |', '|---|---|---|---|---|---|---|']
     for r, rec in sorted(R.items()):
-        best = next((h for h in rec['hits'] if h['verdict'] in ('name match', 'name mismatch')), rec['hits'][0] if rec['hits'] else None)
+        best = next((h for h in rec['hits'] if h.get('tier') == 'SURE'), None) or next((h for h in rec['hits'] if h.get('tier') == 'LIKELY'), None) or (rec['hits'][0] if rec['hits'] else None)
         found = (f"{best['agency']}: '{best['record_name']}' (record {best['record']}, ~{best['acres_approx']:,} ac, pin inside)" if best
                  else '; '.join(f"lead {x['title']} ({x['url']})" for x in rec['leads'][:2]) or 'nothing')
-        L.append(f"| {r} | {rec['park']} | R-G7 step {'2' if best else '3'} | {found[:300]} | {rec['verdict']} | {TODAY} | gis-hunter |")
+        L.append(f"| {r} | {rec['park']} | R-G7 step {'2' if best else '3'} | {found[:300]}{(' · ' + best['why']) if best and best.get('why') else ''} | {rec['verdict']} | {TODAY} | gis-hunter |")
     (OUT / f'worklog-{area}.md').write_text('\n'.join(L) + '\n', encoding='utf-8')
 
 
 def write_questions(all_R):
     QDIR.mkdir(parents=True, exist_ok=True)
     old = {(q['ref'], str(q['record']), q['layer']): q for q in (load(QDIR / 'gis-hunter.json', {}) or {}).get('questions') or []}
-    keep = [q for q in old.values() if q['area'] not in all_R]   # areas not run this time keep their questions
-    qs = []
+    keep = [q for q in old.values() if q['area'] not in all_R or q.get('answer')]   # areas not run keep their questions; an ANSWER is never dropped
+    kept = {(q['ref'], str(q['record']), q['layer']) for q in keep}
+    qs, dropped = [], 0
     for area, R in all_R.items():
         for r, rec in R.items():
             for h in rec['hits']:
-                if h['verdict'] not in ('name match', 'name mismatch') or not rec['verdict'].startswith('candidate'): continue
-                if rec['verdict'] == 'candidate: name match' and h['verdict'] != 'name match': continue
-                q = {'area': area, 'ref': r, 'park': rec['park'], 'kind': h['verdict'], 'record': h['record'], 'record_name': h['record_name'],
+                if h.get('tier') not in ('SURE', 'LIKELY'): continue
+                if (r, str(h['record']), h['layer']) in kept: continue
+                if LEARNED.said_no(r, h['record'], h['layer']): dropped += 1; continue   # chat 11 already said NO: never asked again
+                q = {'area': area, 'ref': r, 'park': rec['park'], 'tier': h['tier'], 'why': h['why'], 'kind': h['verdict'], 'record': h['record'], 'record_name': h['record_name'],
                      'acres_approx': h['acres_approx'], 'layer': h['layer'], 'agency': h['agency'],
                      'record_link': f"{h['layer']}/query?objectIds={h['record']}&outFields=*&returnGeometry=false&f=html" if h['record'] is not None else h['layer'],
                      'pota_link': f'https://pota.app/#/park/{r}',
@@ -254,14 +270,18 @@ def write_questions(all_R):
                 if prev: q.update({k: prev.get(k) for k in ('answer', 'checked_by', 'how', 'rechecked_by_chat2')})
                 qs.append(q)
     qs = keep + qs
-    D = {'about': "GIS hunter candidates (Rule G R-G7 steps 2-3): chat 11 answers YES / NO + checked_by + how (the agency map looked at); chat 2 rechecks (G-4) and joins in the key. 'name mismatch' = the official record's name differs from POTA's.",
-         'built': TODAY, 'open': sum(1 for q in qs if not q['answer']), 'questions': qs}
+    D = {'about': "GIS hunter candidates (Rule G R-G7 steps 2-3; tiers T-1..T-6 in mapping.md). SURE = same proper name: chat 2 rechecks (G-4) and joins; chat 11 grades a 10% sample. LIKELY = part of the name shared: chat 11 answers YES / NO + checked_by + how. UNLIKELY rows are not asked (evidence in data/gis-hunter/<area>.json).",
+         'built': TODAY, 'open': sum(1 for q in qs if not q['answer']), 'sure_open': sum(1 for q in qs if not q['answer'] and q.get('tier') == 'SURE'),
+         'likely_open': sum(1 for q in qs if not q['answer'] and q.get('tier') == 'LIKELY'), 'never_reasked': dropped, 'questions': qs}
     json.dump(D, open(QDIR / 'gis-hunter.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
-    L = ['# GIS hunter questions for chat 11', '', f"{len(qs)} candidates, {D['open']} open. Answer in gis-hunter.json.", '',
-         '| area | park | kind | official record | ~acres | answer | links |', '|---|---|---|---|---|---|---|']
-    for q in qs:
-        L.append(f"| {q['area']} | {q['ref']} {q['park'][:40]} | {q['kind']} | {q['record_name'][:50]} ({q['agency'][:30]}) | {q['acres_approx']:,} | {q['answer'] or 'OPEN'} | [record]({q['record_link']}) · [POTA]({q['pota_link']}) |")
+    L = ['# GIS hunter questions (tiers, Oct 30)', '', f"{len(qs)} rows, {D['open']} open: SURE {D['sure_open']} (chat 2 rechecks, chat 11 samples 10%), LIKELY {D['likely_open']} (chat 11 grades). {dropped} old NOs never re-asked.", '',
+         '| area | tier | park | official record | ~acres | why | answer | links |', '|---|---|---|---|---|---|---|---|']
+    for q in sorted(qs, key=lambda q: (q.get('tier') != 'SURE', q['area'])):
+        L.append(f"| {q['area']} | {q.get('tier', '?')} | {q['ref']} {q['park'][:40]} | {q['record_name'][:50]} ({q['agency'][:30]}) | {q['acres_approx']:,} | {str(q.get('why', ''))[:70]} | {q['answer'] or 'OPEN'} | [record]({q['record_link']}) · [POTA]({q['pota_link']}) |")
     (QDIR / 'gis-hunter.md').write_text('\n'.join(L) + '\n', encoding='utf-8')
+
+
+LEARNED = T.Learned(QDIR / 'gis-hunter.json', QDIR / 'world-finder.json', QDIR / 'key-pieces.json')
 
 
 def main():
@@ -280,15 +300,15 @@ def main():
     for area in areas:
         if late(): break
         P = pins(area); todo = [r for r, _ in pool[area]]
-        R = {r: {'park': (P.get(r) or (0, 0, ''))[2], 'why_not': t, 'hits': [], 'leads': [], 'tried': []} for r, t in pool[area]}
+        R = {r: {'park': (P.get(r) or (0, 0, ''))[2], 'area': area, 'why_not': t, 'hits': [], 'leads': [], 'tried': []} for r, t in pool[area]}
         step_a(area, todo, P, R)
         step_b(area, todo, P, R, queue)
         for rec in R.values(): rec['verdict'] = verdict(rec)
         write_area(area, R); done_R[area] = R
         c = {}
         for rec in R.values(): c[rec['verdict'].split(':')[0].split(' (')[0]] = c.get(rec['verdict'].split(':')[0].split(' (')[0], 0) + 1
-        nm = sum(1 for x in R.values() if x['verdict'] == 'candidate: name match'); mm = sum(1 for x in R.values() if x['verdict'] == 'candidate: name mismatch')
-        notice(f"{area} COUNT: open {len(R)} / step A: name match {nm}, name mismatch {mm}, inside-other {sum(1 for x in R.values() if x['verdict'].startswith('inside'))} / step B leads {sum(1 for x in R.values() if x['verdict'].startswith('lead'))} / nothing {sum(1 for x in R.values() if x['verdict'] == 'no layer found')}")
+        nm = sum(1 for x in R.values() if x['verdict'].startswith('candidate: SURE')); mm = sum(1 for x in R.values() if x['verdict'].startswith('candidate: LIKELY'))
+        notice(f"{area} COUNT: open {len(R)} / step A: SURE {nm}, LIKELY {mm}, inside-other {sum(1 for x in R.values() if x['verdict'].startswith('inside'))} / step B leads {sum(1 for x in R.values() if x['verdict'].startswith('lead'))} / nothing {sum(1 for x in R.values() if x['verdict'] == 'no layer found')}")
         empty = [r for r, x in R.items() if x['verdict'] == 'no layer found' and not x['tried']]
         if empty: notice(f'{area} BUG: {len(empty)} parks say no layer with nothing tried, e.g. {empty[0]}')
         state[area] = {'run': TODAY, 'open': len(R), 'candidates': nm + mm, **({'pass': PASS} if PASS else {})}
