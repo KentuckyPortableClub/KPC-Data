@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-2199.json",
+ "id": "10-auto-US-2199",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-2199",
+  "name": "Smithgall Woods State Park",
+  "agency": "Georgia DNR",
+  "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/SmithgallWoods_TrailMap.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:36Z",
+ "results": [
+  {
+   "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/SmithgallWoods_TrailMap.pdf",
+   "map_url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/SmithgallWoods_TrailMap.pdf",
+   "saved": [
+    "maps/US-2199_smithgall-woods-state-park.jpg"
+   ],
+   "bytes": 456497,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
