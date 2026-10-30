@@ -1,0 +1,1569 @@
+{
+ "request": "requests/9-p2-ms.json",
+ "id": "9-p2-ms",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 MS: 51 parks, 3 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 MS: 51 parks, 3 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State MS: 51 parks. Refs in order of points: US-12208,US-12638,US-7097,US-7104,US-7105,US-7106,US-7111,US-7116,US-7130,US-7134,US-7630,US-7631,US-7633,US-7634,US-7635,US-11881,US-11882,US-12193,US-12194,US-12195,US-12196,US-12197,US-12198,US-12199,US-12200,US-12201,US-12202,US-12203,US-12205,US-12206,US-12207,US-7072,US-7098,US-7115,US-7120,US-7124,US-7125,US-7126,US-7128,US-7129,US-7131,US-7133,US-7629,US-8513,US-8514,US-8515,US-8516,US-8517,US-8518,US-8519,US-9849. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-12208",
+    "US-12638",
+    "US-7097",
+    "US-7104",
+    "US-7105",
+    "US-7106",
+    "US-7111",
+    "US-7116",
+    "US-7130",
+    "US-7134",
+    "US-7630",
+    "US-7631",
+    "US-7633",
+    "US-7634",
+    "US-7635",
+    "US-11881",
+    "US-11882",
+    "US-12193",
+    "US-12194",
+    "US-12195",
+    "US-12196",
+    "US-12197",
+    "US-12198",
+    "US-12199",
+    "US-12200",
+    "US-12201",
+    "US-12202",
+    "US-12203",
+    "US-12205",
+    "US-12206",
+    "US-12207",
+    "US-7072",
+    "US-7098",
+    "US-7115",
+    "US-7120",
+    "US-7124",
+    "US-7125",
+    "US-7126",
+    "US-7128",
+    "US-7129",
+    "US-7131",
+    "US-7133",
+    "US-7629",
+    "US-8513",
+    "US-8514",
+    "US-8515",
+    "US-8516",
+    "US-8517",
+    "US-8518",
+    "US-8519",
+    "US-9849"
+   ],
+   "pointq": [
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       31.1334,
+       -88.9045
+      ],
+      [
+       32.3894,
+       -90.0373
+      ],
+      [
+       33.9856,
+       -88.9355
+      ],
+      [
+       31.4999,
+       -88.8285
+      ],
+      [
+       31.3792,
+       -88.7033
+      ],
+      [
+       31.0013,
+       -88.8844
+      ],
+      [
+       30.6852,
+       -88.901
+      ],
+      [
+       32.3349,
+       -89.4376
+      ],
+      [
+       33.835,
+       -88.5272
+      ],
+      [
+       34.7292,
+       -88.3061
+      ],
+      [
+       34.7352,
+       -89.3384
+      ],
+      [
+       34.0559,
+       -88.9238
+      ],
+      [
+       31.339,
+       -88.7026
+      ],
+      [
+       31.0318,
+       -89.169
+      ],
+      [
+       30.6884,
+       -89.0608
+      ],
+      [
+       33.0097,
+       -88.7562
+      ],
+      [
+       31.5256,
+       -91.3807
+      ],
+      [
+       32.1009,
+       -89.0345
+      ],
+      [
+       34.391,
+       -88.6695
+      ],
+      [
+       34.303,
+       -88.6497
+      ],
+      [
+       34.7912,
+       -88.9572
+      ],
+      [
+       33.9465,
+       -88.5642
+      ],
+      [
+       32.7102,
+       -89.011
+      ],
+      [
+       32.4221,
+       -88.5278
+      ],
+      [
+       31.911,
+       -89.7914
+      ],
+      [
+       31.834,
+       -89.5918
+      ],
+      [
+       31.7024,
+       -89.0244
+      ],
+      [
+       31.5729,
+       -90.1555
+      ],
+      [
+       31.5717,
+       -89.6479
+      ],
+      [
+       31.5651,
+       -89.8443
+      ],
+      [
+       31.0654,
+       -90.1298
+      ],
+      [
+       33.8578,
+       -91.0549
+      ],
+      [
+       34.5236,
+       -89.4647
+      ],
+      [
+       32.2073,
+       -89.2819
+      ],
+      [
+       31.4335,
+       -90.8549
+      ],
+      [
+       34.7419,
+       -90.122
+      ],
+      [
+       34.139,
+       -89.8262
+      ],
+      [
+       33.8033,
+       -89.7511
+      ],
+      [
+       34.4302,
+       -89.7004
+      ],
+      [
+       33.5218,
+       -88.4834
+      ],
+      [
+       34.5328,
+       -88.3129
+      ],
+      [
+       34.007,
+       -88.4735
+      ],
+      [
+       34.0484,
+       -88.9349
+      ],
+      [
+       32.0301,
+       -88.704
+      ],
+      [
+       31.683,
+       -89.337
+      ],
+      [
+       31.752,
+       -89.726
+      ],
+      [
+       32.228,
+       -88.82
+      ],
+      [
+       30.871,
+       -89.121
+      ],
+      [
+       31.655,
+       -88.723
+      ],
+      [
+       32.401,
+       -89.153
+      ],
+      [
+       30.3845,
+       -88.8728
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       31.1334,
+       -88.9045
+      ],
+      [
+       32.3894,
+       -90.0373
+      ],
+      [
+       33.9856,
+       -88.9355
+      ],
+      [
+       31.4999,
+       -88.8285
+      ],
+      [
+       31.3792,
+       -88.7033
+      ],
+      [
+       31.0013,
+       -88.8844
+      ],
+      [
+       30.6852,
+       -88.901
+      ],
+      [
+       32.3349,
+       -89.4376
+      ],
+      [
+       33.835,
+       -88.5272
+      ],
+      [
+       34.7292,
+       -88.3061
+      ],
+      [
+       34.7352,
+       -89.3384
+      ],
+      [
+       34.0559,
+       -88.9238
+      ],
+      [
+       31.339,
+       -88.7026
+      ],
+      [
+       31.0318,
+       -89.169
+      ],
+      [
+       30.6884,
+       -89.0608
+      ],
+      [
+       33.0097,
+       -88.7562
+      ],
+      [
+       31.5256,
+       -91.3807
+      ],
+      [
+       32.1009,
+       -89.0345
+      ],
+      [
+       34.391,
+       -88.6695
+      ],
+      [
+       34.303,
+       -88.6497
+      ],
+      [
+       34.7912,
+       -88.9572
+      ],
+      [
+       33.9465,
+       -88.5642
+      ],
+      [
+       32.7102,
+       -89.011
+      ],
+      [
+       32.4221,
+       -88.5278
+      ],
+      [
+       31.911,
+       -89.7914
+      ],
+      [
+       31.834,
+       -89.5918
+      ],
+      [
+       31.7024,
+       -89.0244
+      ],
+      [
+       31.5729,
+       -90.1555
+      ],
+      [
+       31.5717,
+       -89.6479
+      ],
+      [
+       31.5651,
+       -89.8443
+      ],
+      [
+       31.0654,
+       -90.1298
+      ],
+      [
+       33.8578,
+       -91.0549
+      ],
+      [
+       34.5236,
+       -89.4647
+      ],
+      [
+       32.2073,
+       -89.2819
+      ],
+      [
+       31.4335,
+       -90.8549
+      ],
+      [
+       34.7419,
+       -90.122
+      ],
+      [
+       34.139,
+       -89.8262
+      ],
+      [
+       33.8033,
+       -89.7511
+      ],
+      [
+       34.4302,
+       -89.7004
+      ],
+      [
+       33.5218,
+       -88.4834
+      ],
+      [
+       34.5328,
+       -88.3129
+      ],
+      [
+       34.007,
+       -88.4735
+      ],
+      [
+       34.0484,
+       -88.9349
+      ],
+      [
+       32.0301,
+       -88.704
+      ],
+      [
+       31.683,
+       -89.337
+      ],
+      [
+       31.752,
+       -89.726
+      ],
+      [
+       32.228,
+       -88.82
+      ],
+      [
+       30.871,
+       -89.121
+      ],
+      [
+       31.655,
+       -88.723
+      ],
+      [
+       32.401,
+       -89.153
+      ],
+      [
+       30.3845,
+       -88.8728
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       31.1334,
+       -88.9045
+      ],
+      [
+       32.3894,
+       -90.0373
+      ],
+      [
+       33.9856,
+       -88.9355
+      ],
+      [
+       31.4999,
+       -88.8285
+      ],
+      [
+       31.3792,
+       -88.7033
+      ],
+      [
+       31.0013,
+       -88.8844
+      ],
+      [
+       30.6852,
+       -88.901
+      ],
+      [
+       32.3349,
+       -89.4376
+      ],
+      [
+       33.835,
+       -88.5272
+      ],
+      [
+       34.7292,
+       -88.3061
+      ],
+      [
+       34.7352,
+       -89.3384
+      ],
+      [
+       34.0559,
+       -88.9238
+      ],
+      [
+       31.339,
+       -88.7026
+      ],
+      [
+       31.0318,
+       -89.169
+      ],
+      [
+       30.6884,
+       -89.0608
+      ],
+      [
+       33.0097,
+       -88.7562
+      ],
+      [
+       31.5256,
+       -91.3807
+      ],
+      [
+       32.1009,
+       -89.0345
+      ],
+      [
+       34.391,
+       -88.6695
+      ],
+      [
+       34.303,
+       -88.6497
+      ],
+      [
+       34.7912,
+       -88.9572
+      ],
+      [
+       33.9465,
+       -88.5642
+      ],
+      [
+       32.7102,
+       -89.011
+      ],
+      [
+       32.4221,
+       -88.5278
+      ],
+      [
+       31.911,
+       -89.7914
+      ],
+      [
+       31.834,
+       -89.5918
+      ],
+      [
+       31.7024,
+       -89.0244
+      ],
+      [
+       31.5729,
+       -90.1555
+      ],
+      [
+       31.5717,
+       -89.6479
+      ],
+      [
+       31.5651,
+       -89.8443
+      ],
+      [
+       31.0654,
+       -90.1298
+      ],
+      [
+       33.8578,
+       -91.0549
+      ],
+      [
+       34.5236,
+       -89.4647
+      ],
+      [
+       32.2073,
+       -89.2819
+      ],
+      [
+       31.4335,
+       -90.8549
+      ],
+      [
+       34.7419,
+       -90.122
+      ],
+      [
+       34.139,
+       -89.8262
+      ],
+      [
+       33.8033,
+       -89.7511
+      ],
+      [
+       34.4302,
+       -89.7004
+      ],
+      [
+       33.5218,
+       -88.4834
+      ],
+      [
+       34.5328,
+       -88.3129
+      ],
+      [
+       34.007,
+       -88.4735
+      ],
+      [
+       34.0484,
+       -88.9349
+      ],
+      [
+       32.0301,
+       -88.704
+      ],
+      [
+       31.683,
+       -89.337
+      ],
+      [
+       31.752,
+       -89.726
+      ],
+      [
+       32.228,
+       -88.82
+      ],
+      [
+       30.871,
+       -89.121
+      ],
+      [
+       31.655,
+       -88.723
+      ],
+      [
+       32.401,
+       -89.153
+      ],
+      [
+       30.3845,
+       -88.8728
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 01:45Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State MS: 51 parks. Refs in order of points: US-12208,US-12638,US-7097,US-7104,US-7105,US-7106,US-7111,US-7116,US-7130,US-7134,US-7630,US-7631,US-7633,US-7634,US-7635,US-11881,US-11882,US-12193,US-12194,US-12195,US-12196,US-12197,US-12198,US-12199,US-12200,US-12201,US-12202,US-12203,US-12205,US-12206,US-12207,US-7072,US-7098,US-7115,US-7120,US-7124,US-7125,US-7126,US-7128,US-7129,US-7131,US-7133,US-7629,US-8513,US-8514,US-8515,US-8516,US-8517,US-8518,US-8519,US-9849. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.1334,
+       -88.9045
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.3894,
+       -90.0373
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.9856,
+       -88.9355
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.4999,
+       -88.8285
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.3792,
+       -88.7033
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.0013,
+       -88.8844
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       30.6852,
+       -88.901
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.3349,
+       -89.4376
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.835,
+       -88.5272
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.7292,
+       -88.3061
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.7352,
+       -89.3384
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.0559,
+       -88.9238
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.339,
+       -88.7026
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.0318,
+       -89.169
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       30.6884,
+       -89.0608
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.0097,
+       -88.7562
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.5256,
+       -91.3807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.1009,
+       -89.0345
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.391,
+       -88.6695
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.303,
+       -88.6497
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.7912,
+       -88.9572
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.9465,
+       -88.5642
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.7102,
+       -89.011
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.4221,
+       -88.5278
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.911,
+       -89.7914
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.834,
+       -89.5918
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.7024,
+       -89.0244
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.5729,
+       -90.1555
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.5717,
+       -89.6479
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.5651,
+       -89.8443
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.0654,
+       -90.1298
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.8578,
+       -91.0549
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.5236,
+       -89.4647
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.2073,
+       -89.2819
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.4335,
+       -90.8549
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.7419,
+       -90.122
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.139,
+       -89.8262
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.8033,
+       -89.7511
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.4302,
+       -89.7004
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.5218,
+       -88.4834
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.5328,
+       -88.3129
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.007,
+       -88.4735
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.0484,
+       -88.9349
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.0301,
+       -88.704
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.683,
+       -89.337
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.752,
+       -89.726
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.228,
+       -88.82
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       30.871,
+       -89.121
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.655,
+       -88.723
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.401,
+       -89.153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       30.3845,
+       -88.8728
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.1334,
+       -88.9045
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.3894,
+       -90.0373
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.9856,
+       -88.9355
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.4999,
+       -88.8285
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.3792,
+       -88.7033
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.0013,
+       -88.8844
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       30.6852,
+       -88.901
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.3349,
+       -89.4376
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.835,
+       -88.5272
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.7292,
+       -88.3061
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.7352,
+       -89.3384
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.0559,
+       -88.9238
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.339,
+       -88.7026
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.0318,
+       -89.169
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       30.6884,
+       -89.0608
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.0097,
+       -88.7562
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.5256,
+       -91.3807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.1009,
+       -89.0345
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.391,
+       -88.6695
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.303,
+       -88.6497
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.7912,
+       -88.9572
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.9465,
+       -88.5642
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.7102,
+       -89.011
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.4221,
+       -88.5278
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.911,
+       -89.7914
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.834,
+       -89.5918
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.7024,
+       -89.0244
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.5729,
+       -90.1555
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.5717,
+       -89.6479
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.5651,
+       -89.8443
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.0654,
+       -90.1298
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.8578,
+       -91.0549
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.5236,
+       -89.4647
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.2073,
+       -89.2819
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.4335,
+       -90.8549
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.7419,
+       -90.122
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.139,
+       -89.8262
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.8033,
+       -89.7511
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.4302,
+       -89.7004
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.5218,
+       -88.4834
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.5328,
+       -88.3129
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.007,
+       -88.4735
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.0484,
+       -88.9349
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.0301,
+       -88.704
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.683,
+       -89.337
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.752,
+       -89.726
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.228,
+       -88.82
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       30.871,
+       -89.121
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.655,
+       -88.723
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.401,
+       -89.153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       30.3845,
+       -88.8728
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 232,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
