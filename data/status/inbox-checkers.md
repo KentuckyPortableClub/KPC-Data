@@ -47,3 +47,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-10-30): fers data/fers/US-RI.json held: F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)
 - FROM WAITING ROOM (held since 2026-10-30): truth data/truth/US-KY.json held: F-K known answer US-3800: Cedar Creek Lake WMA OFF at 796 ac (now verdict agree, 796.0 ac)
 - FROM BOT layer intake (2026-10-30): grade me: queue data/intake/review.md — READY rows first; chat 9 approves in ready.json · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41005151437)
+- FROM BOT closures super-bot (2026-10-30): grade me: US-KY data/closures/US-KY.json — 30 of 32 of Kentucky's own reader's items found here on the same park (93%); 55 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41035917240)
