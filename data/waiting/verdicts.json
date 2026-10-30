@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-30T04:56Z",
+ "checked": "2026-10-30T05:30Z",
  "switched_on": false,
  "results": [
   {
@@ -19,11 +19,24 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-VA.json",
+   "path": "data/fers/US-IA.json",
    "kind": "fers",
-   "why": [],
+   "why": [
+    "F-2 only 1 of 3 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-MN.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 NOT SURE 9 -> 12 (over 30% change)",
+    "F-2 16 new candidate pairs since the live file (over 10% of 103): a person looks at them first, e.g. US-11151+US-6466, US-11152+US-4490, US-11152+US-4835",
+    "F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/hours/US-KY.json",
