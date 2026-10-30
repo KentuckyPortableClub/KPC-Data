@@ -1,0 +1,60 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "pa",
+ "states": [
+  "US-PA"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 00:32 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 60,
+  "DROPPED": 288,
+  "NEVER LOOKED AT": 2097
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 574,
+   "pairs whose boxes touch": 574
+  },
+  "pass2": {
+   "agree with the pass before": 569,
+   "date": "2026-10-30",
+   "pairs tested": 137
+  },
+  "pass3": {
+   "agree with the pass before": 220,
+   "date": "2026-10-30",
+   "pairs tested": 134
+  },
+  "pass5": {
+   "checked": 69,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-PA": "data/fers/US-PA.json"
+ },
+ "US-PA": {
+  "rows": 636,
+  "live": 73,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "this spot is 289 km from PA 086 State Game Land's POTA pin": 1,
+   "this spot is 118 km from PA 231 State Game Land's POTA pin": 1,
+   "this spot is 128 km from PA 326 State Game Land's POTA pin": 1
+  },
+  "dropped": 418,
+  "merged": 142
+ },
+ "states_ready": [
+  "US-PA"
+ ],
+ "states_held": []
+}
