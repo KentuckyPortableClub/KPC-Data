@@ -1,18 +1,110 @@
 {
  "gate": "PASS",
  "hosts": {
-  "prostor4.gov.si": 1793278595.936402
+  "enterprise-dev.gisdata.mn.gov": 1793424987.8499336,
+  "geoengine.utc.edu": 1793424734.3816242,
+  "prostor4.gov.si": 1793422320.6667879
  },
- "last_run": "2026-10-29",
+ "last_run": "2026-10-30",
  "manners": {
-  "arcgis_exempt": 913,
-  "errors": 0,
-  "requests": 913,
-  "rested": 1,
+  "arcgis_exempt": 2140,
+  "errors": 6,
+  "requests": 2147,
+  "rested": 0,
   "robots": 0,
-  "strikes": 0
+  "strikes": 9
  },
  "rows": {
+  "http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer|Canyon De Chelly National Monument, AZ (Data Basin Dataset)|||ArcGIS Online search for Canyon de Chelly National Monument (owner consbio)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://ags.auroragov.org/aurora/rest/services/OpenData/MapServer/26": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://ags.auroragov.org/aurora/rest/services/OpenData/MapServer/26|Buckley SFB Accident Potential Zone|||ArcGIS Online search for Buckley Creek State Recreation Area (owner wkeever)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_REC_OPPS_WTM_Ext/MapServer/3": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_REC_OPPS_WTM_Ext/MapServer/3|North Country Scenic Trail in Wisconsin|||ArcGIS Online search for North Country Trail National Scenic Trail (owner Wi_DNR_Data)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer|State Aquatic Management Area (AMA) Aquisitions|||ArcGIS Online search for Forest Lake AMA Aquatic Reserve (owner commons_etl_user)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer|State Aquatic Management Area (AMA) Aquisitions|||ArcGIS Online search for Forest Lake AMA Aquatic Reserve (owner commons_etl_user)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/34": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/34|Na Ala Hele Trails|||ArcGIS Online search for Na Ala Hele State Trail (owner HawaiiStateGIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://geoengine.utc.edu:6443/arcgis/rest/services/UTC/TVAwaterAccess/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://geoengine.utc.edu:6443/arcgis/rest/services/UTC/TVAwaterAccess/FeatureServer|Flint River Access|||ArcGIS Online search for TVA Flint Creek Access National Park (owner andrewmindermann)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/25": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/25|Ozark National Forest Service Management Area (Polygon)|||ArcGIS Online search for Ozark State Trail (owner matthew.delong)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://gis.blm.gov/utarcgis/rest/services/NLCS/BLM_UT_WSR/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://gis.blm.gov/utarcgis/rest/services/NLCS/BLM_UT_WSR/FeatureServer|BLM UT Designated Wild and Scenic Rivers|||ArcGIS Online search for John National Wild and Scenic River (owner blm_arcgis_hub_ut)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://gis.dgcoks.gov/server/rest/services/County_Boundary/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://gis.dgcoks.gov/server/rest/services/County_Boundary/FeatureServer|Douglas County, Kansas Boundary|||ArcGIS Online search for Douglas State Trail (owner gis_lawrenceks)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
   "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer": {
    "fails": 0,
    "probed": "2026-10-29",
@@ -74,9 +166,178 @@
     "ASK-THE-PUBLISHER"
    ]
   },
+  "https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_Historical_Imagery/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://gismap.co.juneau.wi.us/server/rest/services/JuneauCo_Historical_Imagery/MapServer|Juneau Co Historical Imagery|||ArcGIS Online search for Juneau State Trail (owner JuneauCounty)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://gisservices.oakgov.com/arcgisds/rest/services/Hosted/Centennial_Farm/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://gisservices.oakgov.com/arcgisds/rest/services/Hosted/Centennial_Farm/FeatureServer|OC Centennial Farm|||ArcGIS Online search for Centennial Trail State Trail (owner OCAGOAdmin)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://maps.bouldercounty.org/arcgis/rest/services/PLANNING/BCCP_PMJM/FeatureServer/0": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://maps.bouldercounty.org/arcgis/rest/services/PLANNING/BCCP_PMJM/FeatureServer/0|Prebles Meadow Jumping Mouse Habitat|||ArcGIS Online search for Mouse River State Forest (owner BoulderCountyAdmin)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://maps.disasters.nasa.gov/ags03/rest/services/brasil_flood_202405/blackmarble_hd/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://maps.disasters.nasa.gov/ags03/rest/services/brasil_flood_202405/blackmarble_hd/MapServer|Black Marble High Definition (BMHD) in Porto Alegre for the May 2024 Brasil Floods|||ArcGIS Online search for Black River State Park (owner gwlayne_NASA)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39|Local and Regional Greenspaces (bcgw_pub_whse_basemapping layer 39)|Province of British Columbia (B.C. Map Hub)||Canada hunt 9-cah: municipal + regional district parks for BC Park 66 / Regional 6 / Recreation 8 nothing-near parks|",
+   "verdicts": [
+    "READY"
+   ]
+  },
+  "https://mapsdep.nj.gov/arcgis/rest/services/Features/Land_CAFRA_coast/MapServer/0": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://mapsdep.nj.gov/arcgis/rest/services/Features/Land_CAFRA_coast/MapServer/0|Coastal Area Facilities Review Act Boundary for New Jersey (polygon)|||ArcGIS Online search for New Jersey Coastal State Trail (owner NJDEPBGIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://mapsdep.nj.gov/arcgis/rest/services/Features/Land_CAFRA_coast/MapServer/1": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://mapsdep.nj.gov/arcgis/rest/services/Features/Land_CAFRA_coast/MapServer/1|Coastal Area Facilities Review Act Boundary for New Jersey (linear)|||ArcGIS Online search for New Jersey Coastal State Trail (owner NJDEPBGIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_CultureHeritage/MapServer/1": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_CultureHeritage/MapServer/1|First Nation Heritage Routes|||ArcGIS Online search for First State Heritage State Park (owner Yukon.government)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_CultureHeritage/MapServer/15": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_CultureHeritage/MapServer/15|First Nation Heritage Sites|||ArcGIS Online search for First State Heritage State Park (owner Yukon.government)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://ndgishub.nd.gov/arcgis/rest/services/All_Elevation/MapServer/9": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://ndgishub.nd.gov/arcgis/rest/services/All_Elevation/MapServer/9|NDGISHUB Sheyenne River Contours 1ft 2002|||ArcGIS Online search for Sheyenne River State Forest (owner NDGISHub)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01070006_smooth/FeatureServer/10": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01070006_smooth/FeatureServer/10|Two Foot Topographic Contours - Little Cohas Brook-Merrimack River (0107000608) - smoothed|||ArcGIS Online search for Little River State Park (owner NHGRANIT)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01070006_smooth/FeatureServer/5": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01070006_smooth/FeatureServer/5|Two Foot Topographic Contours - Bow Bog Brook-Merrimack River (0107000603) - smoothed|||ArcGIS Online search for Bog Brook Wildlife Management Area (owner NHGRANIT)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01080101_smooth/FeatureServer/7": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01080101_smooth/FeatureServer/7|Two Foot Topographic Contours - Upper Ammonoosuc River (0108010107) - smoothed|||ArcGIS Online search for Ammonoosuc State Trail (owner NHGRANIT)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01080103_smooth/FeatureServer/5": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01080103_smooth/FeatureServer/5|Two Foot Topographic Contours - Upper Ammonoosuc River (0108010304) - smoothed|||ArcGIS Online search for Ammonoosuc State Trail (owner NHGRANIT)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01080103_smooth/FeatureServer/6": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01080103_smooth/FeatureServer/6|Two Foot Topographic Contours - Lower Ammonoosuc River (0108010305) - smoothed|||ArcGIS Online search for Ammonoosuc State Trail (owner NHGRANIT)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Rush_Springs_Study/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://owrb.csa.ou.edu/server/rest/services/Open_Data_Only/Rush_Springs_Study/MapServer|Rush Springs Hydrologic Study (Open Data)|||ArcGIS Online search for Rush Creek State Conservation Area (owner OWRBOnline)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://owrb.csa.ou.edu/server/rest/services/Special_Studies/Rush_Springs/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://owrb.csa.ou.edu/server/rest/services/Special_Studies/Rush_Springs/MapServer|Rush Springs Hydrologic Study|||ArcGIS Online search for Rush Creek State Conservation Area (owner OWRBOnline)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
   "https://prostor4.gov.si/ows2-ins/ps/wfs": {
-   "fails": 5,
-   "probed": "2026-10-29",
+   "fails": 6,
+   "probed": "2026-10-30",
    "retry": false,
    "sig": "https://prostor4.gov.si/ows2-ins/ps/wfs?service=wfs&version=2.0.0&request=GetCapabilities|Slovenia protected areas (ARSO, INSPIRE PS WFS)|Agencija RS za okolje (ARSO) / Slovenian Environment Agency|ATOM feed rights: 'No limitations'|WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.|READY (WFS) or did-not-open",
    "verdicts": [
@@ -206,6 +467,194 @@
     "RETRY"
    ]
   },
+  "https://services-ap1.arcgis.com/7jIYowrTWizM57Ga/arcgis/rest/services/Rencana_Infrastruktur_Pengelolaan_Air_Limbah_dan_Persampahan/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services-ap1.arcgis.com/7jIYowrTWizM57Ga/arcgis/rest/services/Rencana_Infrastruktur_Pengelolaan_Air_Limbah_dan_Persampahan/FeatureServer|Rencana_Infrastruktur_Pengelolaan_Air_Limbah_dan_Persampahan|||ArcGIS Online search for Dan River State Trail (owner DPUPRKendari)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services-ap1.arcgis.com/lnVW0dLI3fvST2hd/arcgis/rest/services/Pre_Clear_Vegetation_2021_view/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services-ap1.arcgis.com/lnVW0dLI3fvST2hd/arcgis/rest/services/Pre_Clear_Vegetation_2021_view/FeatureServer|Pre Clear Vegetation 2021 view|||ArcGIS Online search for Clear Creek BLM Recreation Management Area (owner CoGC_Admin)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services-eu1.arcgis.com/de9awAHJGTPtVVLW/arcgis/rest/services/Lieber/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services-eu1.arcgis.com/de9awAHJGTPtVVLW/arcgis/rest/services/Lieber/FeatureServer|Lieber|||ArcGIS Online search for Lieber State Recreation Area (owner g.foliot)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services-eu1.arcgis.com/fj8SedOMxfUDzrBI/arcgis/rest/services/ancient_long_established_woodland_Senan_Duffy/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services-eu1.arcgis.com/fj8SedOMxfUDzrBI/arcgis/rest/services/ancient_long_established_woodland_Senan_Duffy/FeatureServer|ancient_long_established_woodland Senan Duffy|||ArcGIS Online search for Duffy Creek BLM Recreation Management Area (owner senan.duffy2@mail.dcu.ie_DCU_Student)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/0H6bQdxd9223gQB5/arcgis/rest/services/CEDO_Collab/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/0H6bQdxd9223gQB5/arcgis/rest/services/CEDO_Collab/FeatureServer|Centennial Entertainment District Overlay (public view)|||ArcGIS Online search for Centennial Trail State Trail (owner comadmin_comgis)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_dominance/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_dominance/FeatureServer|PLANNINGCADASTRE_overlay_capitol_dominance|||ArcGIS Online search for Capitol State Park (owner CTM.Publisher)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_view_corridors/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/PLANNINGCADASTRE_overlay_capitol_view_corridors/FeatureServer|PLANNINGCADASTRE_overlay_capitol_view_corridors|||ArcGIS Online search for Capitol State Park (owner CTM.Publisher)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/Trees_Butler_Hike_and_Bike_Trail/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/Trees_Butler_Hike_and_Bike_Trail/FeatureServer|Trees_Butler_Hike_and_Bike_Trail|||ArcGIS Online search for Butler County State Wildlife Management Area (owner ACAR.Administrator)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer|Watershed of the Blanchard River|||ArcGIS Online search for Blanchard State Forest (owner brwp1237)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer|Empire State Trail|||ArcGIS Online search for Empire State Trail (owner Christina.Croll@parks.ny.gov_nysparks)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/36oR7fxwYZcqhQIh/arcgis/rest/services/Essex_Wildlife_Trust_Winter_Wetland_Bird_Surveys_2021_to_22/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/36oR7fxwYZcqhQIh/arcgis/rest/services/Essex_Wildlife_Trust_Winter_Wetland_Bird_Surveys_2021_to_22/FeatureServer|Essex Wildlife Trust Winter Wetland Bird Surveys 2021 to 22|||ArcGIS Online search for The Preserve Essex Land Trust State Park Preserve (owner CharlotteM_EWTConsTeam)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/Municipal_Boundary_33/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/Municipal_Boundary_33/FeatureServer|Palmetto Bay Municipal Boundary|||ArcGIS Online search for Palmetto State Trail (owner MDPublisher)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/MGS_Hand_Samples_and_Thin_Sections/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/MGS_Hand_Samples_and_Thin_Sections/FeatureServer|D-10, MGS Hand Samples and Thin Sections|||ArcGIS Online search for Hand State Recreation Site (owner mgsgis_UMN)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/Major_Empires/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/Major_Empires/FeatureServer|British Empire 2|||ArcGIS Online search for Empire State Trail (owner Georgeanne.Hribar.GaDOE)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/BWD3gDuaqc7SQmy7/arcgis/rest/services/Cornelius_Impervious_Tiers_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/BWD3gDuaqc7SQmy7/arcgis/rest/services/Cornelius_Impervious_Tiers_WFL1/FeatureServer|Cornelius Impervious Tiers_WFL1|||ArcGIS Online search for Cornelius Creek National Recreation Trail (owner Nir.Josipovich@mecklenburgcountync.gov_meckgov)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "REJECT",
+    "REJECT",
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/DCPX1PuggGH4Tici/arcgis/rest/services/Pomeroy_Trail_and_other_Trails_in_Newark/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/DCPX1PuggGH4Tici/arcgis/rest/services/Pomeroy_Trail_and_other_Trails_in_Newark/FeatureServer|Pomeroy_Trail_and_other_Trails_in_Newark|||ArcGIS Online search for Pomeroy and Newark National Recreation Trail (owner swingel_udel)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/DN2fPfpggEPlLhP6/arcgis/rest/services/Lakes/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/DN2fPfpggEPlLhP6/arcgis/rest/services/Lakes/FeatureServer|Central Hawke's Bay Lakes-CMP|||ArcGIS Online search for Central Lakes State Trail (owner cillian.adamson@stantec.com_stantec)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/URBAN_DESIGN_STANDARDS_AREA_3009/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/URBAN_DESIGN_STANDARDS_AREA_3009/FeatureServer|Urban Design Standards - North Highline|||ArcGIS Online search for Highline National Recreation Trail (owner KingCounty)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/URBAN_DESIGN_STANDARDS_STREETS_LINE_3008/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/URBAN_DESIGN_STANDARDS_STREETS_LINE_3008/FeatureServer|Urban Design Standards Designated Streets - North Highline|||ArcGIS Online search for Highline National Recreation Trail (owner KingCounty)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Na_Ala_Hele_Trails_2019/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Na_Ala_Hele_Trails_2019/FeatureServer|Na Ala Hele Trails 2019|||ArcGIS Online search for Na Ala Hele State Trail (owner dlnr_dmatsuwaki)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_Polygons/FeatureServer": {
    "probed": "2026-10-28",
    "retry": false,
@@ -230,10 +679,377 @@
     "READY"
    ]
   },
+  "https://services.arcgis.com/NuWFvHYDMVmmxMeM/arcgis/rest/services/Hellers_Blazing_Star_Potential_Habitat/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/NuWFvHYDMVmmxMeM/arcgis/rest/services/Hellers_Blazing_Star_Potential_Habitat/FeatureServer|NCDOT Hellers_Blazing_Star_Potential_Habitat|||ArcGIS Online search for Blazing Star State Trail (owner Atlas.NCDOT.GOV)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Earthquake_and_Volcano_Risk_Canada__(Dylan_Duffy)/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Earthquake_and_Volcano_Risk_Canada__(Dylan_Duffy)/FeatureServer|Earthquake_and_Volcano_Risk_Canada__(Dylan_Duffy)|||ArcGIS Online search for Duffy Creek BLM Recreation Management Area (owner 556122)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/San_Pablo_Bay_Rail_Call_Count_200m_Buffers/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/San_Pablo_Bay_Rail_Call_Count_200m_Buffers/FeatureServer|San Pablo Bay Ridgway's Rail Call Count 200m Buffers|||ArcGIS Online search for Pablo National Wildlife Refuge (owner madison_pitman@fws.gov_fws)|",
+   "verdicts": [
+    "WATER-ONLY"
+   ]
+  },
+  "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/San_Pablo_Bay_Rail_Call_Count_Stations/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/San_Pablo_Bay_Rail_Call_Count_Stations/FeatureServer|San Pablo Bay NWR Ridgway's Rail Call Count Stations|||ArcGIS Online search for Pablo National Wildlife Refuge (owner madison_pitman@fws.gov_fws)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Wild_Turkey_Program_in_Vermont_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Wild_Turkey_Program_in_Vermont_WFL1/FeatureServer|Wild Turkey Program in Vermont - Hunting Zones|||ArcGIS Online search for Wild Turkey Wildlife Management Area (owner elena_campbell@fws.gov_fws)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Wild_Turkey_Transfer_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Wild_Turkey_Transfer_WFL1/FeatureServer|Wild Turkey Transfer_WFL1|||ArcGIS Online search for Wild Turkey Wildlife Management Area (owner elena_campbell@fws.gov_fws)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/Qmnh5K1IrqlBQ9WP/arcgis/rest/services/Turtle_Mountain/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/Qmnh5K1IrqlBQ9WP/arcgis/rest/services/Turtle_Mountain/FeatureServer|Turtle Mountain|||ArcGIS Online search for Turtle Mountain State Forest (owner rmeyer@smumn.edu_SMUMN)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Sweet_Beverages_Adults/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Sweet_Beverages_Adults/FeatureServer|Adults with Daily Sugar-Sweetened Beverage Consumption|||ArcGIS Online search for Sugar River State Trail (owner VElmore@ph.lacounty.gov_lacounty)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Sweet_Beverages_Children/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Sweet_Beverages_Children/FeatureServer|Children with Daily Sugar-Sweetened Beverage Consumption|||ArcGIS Online search for Sugar River State Trail (owner VElmore@ph.lacounty.gov_lacounty)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/U5e5v7pUT7BNl3dr/arcgis/rest/services/service_0de3d9623ebb4d35b0c45c4d4e5b5a55/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/U5e5v7pUT7BNl3dr/arcgis/rest/services/service_0de3d9623ebb4d35b0c45c4d4e5b5a55/FeatureServer|Sheyenne Lead Service Public Survey|||ArcGIS Online search for Sheyenne River State Forest (owner Dan.Lissick@AE2S.com_AE2S)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/VfpeCk3ouKVuEwug/arcgis/rest/services/GMUG_Wild_and_Scenic_River_Evaluation/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/VfpeCk3ouKVuEwug/arcgis/rest/services/GMUG_Wild_and_Scenic_River_Evaluation/FeatureServer|GMUG Wild and Scenic River Evaluation|||ArcGIS Online search for Rio Grande National Wild and Scenic River (owner AlisonGallensky)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/VfpeCk3ouKVuEwug/arcgis/rest/services/Kremmling_Label_2/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/VfpeCk3ouKVuEwug/arcgis/rest/services/Kremmling_Label_2/FeatureServer|Kremmling_Label_2|||ArcGIS Online search for Kremmling BLM National Recreation Area (owner paigesinger)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Prebles_Meadow_Jumping_Mouse_Critical_Habitat/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Prebles_Meadow_Jumping_Mouse_Critical_Habitat/FeatureServer|Prebles Meadow Jumping Mouse Critical Habitat|||ArcGIS Online search for Mouse River State Forest (owner FEMA_Region8_GIS)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer|Walnut Woods Park JWT|||ArcGIS Online search for Walnut Woods State Conservation Area (owner BCrat82)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Great_Salt_Lake_Basin/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Great_Salt_Lake_Basin/FeatureServer|Great Salt Lake Basin|||ArcGIS Online search for Salt Creek State Recreation Area (owner dnrwres)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "WATER-ONLY",
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_Rocky_Mtn_Bighorn_Sheep_Habitat/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_Rocky_Mtn_Bighorn_Sheep_Habitat/FeatureServer|Utah Rocky Mountain Bighorn Sheep Habitat|||ArcGIS Online search for Sheep Creek State Recreation Area (owner dwrdata)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/aMv9lrl6jFsuGNu8/arcgis/rest/services/Pine_Grove_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/aMv9lrl6jFsuGNu8/arcgis/rest/services/Pine_Grove_WFL1/FeatureServer|Pine Grove_WFL1|||ArcGIS Online search for Pine Grove State Recreation Area (owner heschmidt_smithcollege)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/aScBVpZOvioggfOZ/arcgis/rest/services/Suitability_Map_for_Blazing_Star/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/aScBVpZOvioggfOZ/arcgis/rest/services/Suitability_Map_for_Blazing_Star/FeatureServer|Suitability Map for Blazing Star|||ArcGIS Online search for Blazing Star State Trail (owner LouisLee2026@u.northwestern.edu_Northwestern)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/Dan_Beebe_and_Brad_Freeman_Trail_Additions_gdb/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/Dan_Beebe_and_Brad_Freeman_Trail_Additions_gdb/FeatureServer|Dan Beebe and Brad Freeman Trail Additions_gdb|||ArcGIS Online search for Dan River State Trail (owner Asif.Ali@water.ca.gov_DWR)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
   "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0": {
    "probed": "2026-10-28",
    "retry": true,
    "sig": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0|SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account|Clemson University (hosting for South Carolina DNR)||test row (c): hosted on a university account, no credits; url to confirm (we read DEV_-_SCDNR_Public_Lands_Viewer/4 from the same org acgZYxoN5Oj8pDLa)|ASK-THE-PUBLISHER or already read",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/czCXlxn6hYtK4vdg/arcgis/rest/services/10PPM_Contours_Fort_Morgan_LDP/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/czCXlxn6hYtK4vdg/arcgis/rest/services/10PPM_Contours_Fort_Morgan_LDP/FeatureServer|10PPM_Contours_Fort_Morgan_LDP|||ArcGIS Online search for Fort Morgan National Historic Site (owner jstone@denverwater.org_DW)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/North_Country_Trail/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/North_Country_Trail/FeatureServer|North Country Trail|||ArcGIS Online search for North Country Trail National Scenic Trail (owner FTKaren)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/mMBpeYj0vPFotzbe/arcgis/rest/services/Mormon_Pioneer_Trail_view/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/mMBpeYj0vPFotzbe/arcgis/rest/services/Mormon_Pioneer_Trail_view/FeatureServer|Mormon Pioneer Trail (View Layer)|||ArcGIS Online search for Mormon Pioneer National Historic Trail (owner CameronScharrer)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Capital_Plans_Project_Status/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Capital_Plans_Project_Status/FeatureServer|Manitoba Capital Plans Project Status|||ArcGIS Online search for Capital City State Trail (owner Manitoba_Government)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Co_Packer_Services/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Co_Packer_Services/FeatureServer|Manitoba_Co_Packer_Services|||ArcGIS Online search for Packer Creek BLM Recreation Management Area (owner Manitoba_Government)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Black_History_Month_Tour/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Black_History_Month_Tour/FeatureServer|Maryland Highways to Black History|||ArcGIS Online search for Black River State Park (owner MDOTSHA.GIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Capt__John_Smith_Trail/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Capt__John_Smith_Trail/FeatureServer|Capt. John Smith Trail|||ArcGIS Online search for Captain John Smith Chesapeake National Historic Trail (owner StoryMaps)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/p5v98VHDX9Atv3l7/arcgis/rest/services/Washington_Rochambeau_Auto_Tour_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/p5v98VHDX9Atv3l7/arcgis/rest/services/Washington_Rochambeau_Auto_Tour_WFL1/FeatureServer|Washington Rochambeau Auto Tour_WFL1|||ArcGIS Online search for Washington-Rochambeau Revolutionary Route National Historic  (owner David.Alley@vdot.virginia.gov_VDOT)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/pDAi2YK0L0QxVJHj/arcgis/rest/services/Douglas_County_Boundary/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/pDAi2YK0L0QxVJHj/arcgis/rest/services/Douglas_County_Boundary/FeatureServer|Douglas County Boundary|||ArcGIS Online search for Douglas State Trail (owner Nataliya2)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/qWbGMYB49y8mLbRt/arcgis/rest/services/2025_2034_10_Year_Capital_Highway_Investment_Plan_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/qWbGMYB49y8mLbRt/arcgis/rest/services/2025_2034_10_Year_Capital_Highway_Investment_Plan_WFL1/FeatureServer|2025-2034 Capital Highway Investment Plan Feature_Layers|||ArcGIS Online search for Capital City State Trail (owner gwen.reoch_mndot)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/qWbGMYB49y8mLbRt/arcgis/rest/services/MetroRushHourZone_2021/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/qWbGMYB49y8mLbRt/arcgis/rest/services/MetroRushHourZone_2021/FeatureServer|Rush Hour / Night Restriction Zone|||ArcGIS Online search for Rush Creek State Conservation Area (owner lindsey.savage_mndot)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/r4A0V7UzH9fcLVvv/arcgis/rest/services/Juneau_Sidewalks_Winter_Maintenance_public_priority/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/r4A0V7UzH9fcLVvv/arcgis/rest/services/Juneau_Sidewalks_Winter_Maintenance_public_priority/FeatureServer|Juneau DOT&PF Sidewalks Winter Maintenance Priority|||ArcGIS Online search for Juneau State Trail (owner AKDOT_GIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/ST/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/ST/FeatureServer|Spencer's Tract Air Photo Collection|||ArcGIS Online search for Spencer County State Forest (owner jfulle32)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails/FeatureServer|Na Ala Hele Hiking Trails|||ArcGIS Online search for Na Ala Hele State Trail (owner holisgis)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/ue9rwulIoeLEI9bj/arcgis/rest/services/Ozark_Hellbender_locations/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/ue9rwulIoeLEI9bj/arcgis/rest/services/Ozark_Hellbender_locations/FeatureServer|Ozark Hellbender Locations|||ArcGIS Online search for Ozark State Trail (owner EsriTrainingSvc)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Fairfax_monitoring_sites/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Fairfax_monitoring_sites/FeatureServer|Fairfax County Water Resources Monitoring Network monitoring stations|||ArcGIS Online search for Fairfax State Recreation Area (owner ckandel@usgs.gov_USGS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Fairfax_monitoring_watersheds/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Fairfax_monitoring_watersheds/FeatureServer|Fairfax County Water Resources Monitoring Network monitoring watersheds|||ArcGIS Online search for Fairfax State Recreation Area (owner ckandel@usgs.gov_USGS)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Little_Pend_Oreille_Wildlife_refuge/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Little_Pend_Oreille_Wildlife_refuge/FeatureServer|Little Pend Oreille Wildlife refuge|||ArcGIS Online search for Little Pend Oreille State Forest (owner ammartinez@usgs.gov_USGS)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/xYjDUN35YwdCEcMm/arcgis/rest/services/Big_Horn_Study_Area/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services.arcgis.com/xYjDUN35YwdCEcMm/arcgis/rest/services/Big_Horn_Study_Area/FeatureServer|Big_Horn_Study_Area|||ArcGIS Online search for Big Horn State Fish and Wildlife Area (owner BGIS_ON_F21_Luigi_Ralph_Malinis)|",
    "verdicts": [
     "REJECT"
    ]
@@ -510,6 +1326,763 @@
     "RETRY"
    ]
   },
+  "https://services1.arcgis.com/0mhlGDIUKwQF6tnJ/arcgis/rest/services/202105_Capital_Projects/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/0mhlGDIUKwQF6tnJ/arcgis/rest/services/202105_Capital_Projects/FeatureServer|202108_Capital_Projects|||ArcGIS Online search for Capital City State Trail (owner cheungy)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "REJECT",
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/44C95LOqZjbh8Row/arcgis/rest/services/Camino_Real_de_Tierra_Adentro/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/44C95LOqZjbh8Row/arcgis/rest/services/Camino_Real_de_Tierra_Adentro/FeatureServer|Camino Real de Tierra Adentro|||ArcGIS Online search for El Camino Real de Tierra Adentro National Historic Trail (owner Keelan.Vargas@du.edu_dugis)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/Historical_County_Population_1969_2019/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/Historical_County_Population_1969_2019/FeatureServer|Historical County Population (1969 - 2019) by Race (White, Black, Other Race)|||ArcGIS Online search for Black River State Park (owner stevenaviles_UO)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/51R1xnARnjq5iyz9/arcgis/rest/services/GIS_ESRI/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/51R1xnARnjq5iyz9/arcgis/rest/services/GIS_ESRI/FeatureServer|Rock_Island_GIS_ESRI|||ArcGIS Online search for Katy Trail Rock Island Spur State Park (owner CACC2013)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/754BERmVIq3RqSf8/arcgis/rest/services/survey123_69bcc2270aae41babd6c3019ca8e1f53/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/754BERmVIq3RqSf8/arcgis/rest/services/survey123_69bcc2270aae41babd6c3019ca8e1f53/FeatureServer|Teanaway Cutthroat Slam|||ArcGIS Online search for Teanaway State Forest (owner mmayfield_tu)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/8DJsAMKuU5pXLFcd/arcgis/rest/services/Justin_Brumley__Ski_Run_69__WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/8DJsAMKuU5pXLFcd/arcgis/rest/services/Justin_Brumley__Ski_Run_69__WFL1/FeatureServer|Justin Brumley _Ski Run_69__WFL1|||ArcGIS Online search for Brumley Forest State Nature Preserve (owner jlbrumley_flc)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/BEFhRGD6ppzvv08z/arcgis/rest/services/service_e65232a5431142abbdb7bb7489b7804e/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/BEFhRGD6ppzvv08z/arcgis/rest/services/service_e65232a5431142abbdb7bb7489b7804e/FeatureServer|Wild Turkey Brood Survey|||ArcGIS Online search for Wild Turkey Wildlife Management Area (owner MDC_Resource_Science)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/DbPykcCwUUYq5zKg/arcgis/rest/services/ng_meynen_schmit/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/DbPykcCwUUYq5zKg/arcgis/rest/services/ng_meynen_schmit/FeatureServer|ng_meynen_schmit|||ArcGIS Online search for Schmit State Wildlife Area (owner Muellhalde)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/E5n4f1VY84i0xSjy/arcgis/rest/services/ACTGOV_Horse_Paddock_Assets/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/E5n4f1VY84i0xSjy/arcgis/rest/services/ACTGOV_Horse_Paddock_Assets/FeatureServer|ACTGOV Horse Paddock Assets|||ArcGIS Online search for Horse Creek State Conservation Area (owner cityoperationsactgov)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/ERdCHt0sNM6dENSD/arcgis/rest/services/NinePipe_Map5/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/ERdCHt0sNM6dENSD/arcgis/rest/services/NinePipe_Map5/FeatureServer|NinePipe_Map5|||ArcGIS Online search for Ninepipe National Wildlife Refuge (owner mr119648_umontana)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2021_UK_BGC_2022/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2021_UK_BGC_2022/FeatureServer|Local Authority Districts (May 2021) Boundaries UK BGC|||ArcGIS Online search for May Forest State Park (owner ONSGeography_data)|",
+   "verdicts": [
+    "WATER-ONLY"
+   ]
+  },
+  "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2022_UK_BFE_V3_2022/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2022_UK_BFE_V3_2022/FeatureServer|Local Authority Districts (May 2022) Boundaries UK BFE (V3)|||ArcGIS Online search for May Forest State Park (owner ONSGeography_data)|",
+   "verdicts": [
+    "WATER-ONLY"
+   ]
+  },
+  "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2024_Boundaries_UK_BFC/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2024_Boundaries_UK_BFC/FeatureServer|Local Authority Districts (May 2024) Boundaries UK BFC|||ArcGIS Online search for May Forest State Park (owner ONSGeography_data)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Bathymetric_Contours_in_Meters_for_long_Island_Sound/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Bathymetric_Contours_in_Meters_for_long_Island_Sound/FeatureServer|Bathymetric Contours in Meters for Long Island Sound|||ArcGIS Online search for Long Lake State Recreation Area (owner deepgis)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/CT_Cartop_Boat_Launches/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/CT_Cartop_Boat_Launches/FeatureServer|Cartop Boat Launches|||ArcGIS Online search for Cartop State Recreation Area (owner deepgis)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/DEEP_State_Cartop_Boat_Launches/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/DEEP_State_Cartop_Boat_Launches/FeatureServer|DEEP_State_Cartop_Boat_Launches (In Use)|||ArcGIS Online search for Cartop State Recreation Area (owner deepgis)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Long_Island_Sound_Quaternary_Geology_Set/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Long_Island_Sound_Quaternary_Geology_Set/FeatureServer|Long Island Sound Quaternary Geology Set|||ArcGIS Online search for Long Lake State Recreation Area (owner deepgis)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Salt_Water_Limit/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Salt_Water_Limit/FeatureServer|Salt Water Limit|||ArcGIS Online search for Salt Creek State Recreation Area (owner deepgis)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/Fxir0Ov4y8APKoU8/arcgis/rest/services/LSL_Basemap_view_e5a577fedbb6490a8904de07161b0321/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/Fxir0Ov4y8APKoU8/arcgis/rest/services/LSL_Basemap_view_e5a577fedbb6490a8904de07161b0321/FeatureServer|LSL_Basemap_View- Two Harbors|||ArcGIS Online search for Two Harbors Protected Area (owner BoltonMenk_TwoHarbors)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/HERT3Lrqxe0YUfxz/arcgis/rest/services/Lower_Delaware_Watershed/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/HERT3Lrqxe0YUfxz/arcgis/rest/services/Lower_Delaware_Watershed/FeatureServer|Lower Delaware Watershed|||ArcGIS Online search for Lower Delaware National Wild and Scenic River (owner karenreavy)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Wild_Horse_and_Burro_Heard_Mgmt_Area_Polygons/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Wild_Horse_and_Burro_Heard_Mgmt_Area_Polygons/FeatureServer|BLM Natl Wild Horse and Burro Herd Mgmt Area Polygons|||ArcGIS Online search for Horse Creek State Conservation Area (owner blm_arcgis_hub_natl)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_UT___Wild_and_Scenic_Rivers/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_UT___Wild_and_Scenic_Rivers/FeatureServer|BLM UT  Wild and Scenic Rivers|||ArcGIS Online search for John National Wild and Scenic River (owner rarnold@blm.gov_BLM_EGIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/L2Neyx2ylSeTBS0F/arcgis/rest/services/Palmetto_Benchmarks/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/L2Neyx2ylSeTBS0F/arcgis/rest/services/Palmetto_Benchmarks/FeatureServer|Benchmarks - City of Palmetto|||ArcGIS Online search for Palmetto State Trail (owner CityofPalmettoFl)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/LCWc46UbpFlCIbVN/arcgis/rest/services/Skookum_Archers/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/LCWc46UbpFlCIbVN/arcgis/rest/services/Skookum_Archers/FeatureServer|Skookum Archers|||ArcGIS Online search for Skookum Creek State Recreation Area (owner tbontempo_GRC_NATRS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/NlvHF2FHoAfPIDvG/arcgis/rest/services/Gitchi_Gami_State_Trail/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/NlvHF2FHoAfPIDvG/arcgis/rest/services/Gitchi_Gami_State_Trail/FeatureServer|Gitchi Gami State Trail|||ArcGIS Online search for Gitchi Gami State Trail (owner amy.lewis_lakecountymn)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/O1JpcwDW8sjYuddV/arcgis/rest/services/Florida_Scenic_Highways/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/O1JpcwDW8sjYuddV/arcgis/rest/services/Florida_Scenic_Highways/FeatureServer|Florida_Scenic_Highways|||ArcGIS Online search for Florida Trail National Scenic Trail (owner GeoMap_Publisher)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/OAphVRUvJVpBRovs/arcgis/rest/services/Greenbrier_Future_Land_Use_Framework/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/OAphVRUvJVpBRovs/arcgis/rest/services/Greenbrier_Future_Land_Use_Framework/FeatureServer|Greenbrier Future Land Use Framework|||ArcGIS Online search for Greenbrier River Trail State Trail (owner jvuturobrady@cityofchesapeake.net)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/PRoAPGnMSUqvTrzq/arcgis/rest/services/Lone_Star_College_School_Districts/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/PRoAPGnMSUqvTrzq/arcgis/rest/services/Lone_Star_College_School_Districts/FeatureServer|Lone Star College School District View|||ArcGIS Online search for Lone Star State Recreation Area (owner GIS.Data_MOCO)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/PwLrOgCfU0cYShcG/arcgis/rest/services/OVVI_BND_OVNHT_Corridor/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/PwLrOgCfU0cYShcG/arcgis/rest/services/OVVI_BND_OVNHT_Corridor/FeatureServer|Overmountain Victory Trail - Designated Corridor|||ArcGIS Online search for Overmountain Victory National Historic Trail (owner ijohnson_nemac)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/PwLrOgCfU0cYShcG/arcgis/rest/services/Overmountain_Victory_Trail_Historic_Route/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/PwLrOgCfU0cYShcG/arcgis/rest/services/Overmountain_Victory_Trail_Historic_Route/FeatureServer|Overmountain Victory Trail Historic Route|||ArcGIS Online search for Overmountain Victory National Historic Trail (owner ijohnson_nemac)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/Beaches_to_Bluegrass_2023_gdb/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/Beaches_to_Bluegrass_2023_gdb/FeatureServer|Beaches to Bluegrass_2023_gdb|||ArcGIS Online search for Beaches to Bluegrass State Trail (owner allison.tillett_vdcr)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/Beaches_to_Bluegrass_2023_gdb_view/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/Beaches_to_Bluegrass_2023_gdb_view/FeatureServer|Beaches to Bluegrass_2023_gdb view|||ArcGIS Online search for Beaches to Bluegrass State Trail (owner allison.tillett_vdcr)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/CAFRA_and_Coastal_Centers_2023_of_New_Jersey/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/CAFRA_and_Coastal_Centers_2023_of_New_Jersey/FeatureServer|CAFRA and Coastal Centers of New Jersey|||ArcGIS Online search for New Jersey Coastal State Trail (owner NJDEPBGIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/QjiQKkFtXufcXWpu/arcgis/rest/services/Government_Highline_Canal/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/QjiQKkFtXufcXWpu/arcgis/rest/services/Government_Highline_Canal/FeatureServer|Government_Highline_Canal|||ArcGIS Online search for Highline National Recreation Trail (owner KaseyDH)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/ROSiDsWkQXhsUAs0/arcgis/rest/services/Paul_Bunyan_Data/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/ROSiDsWkQXhsUAs0/arcgis/rest/services/Paul_Bunyan_Data/FeatureServer|Paul Bunyan Data|||ArcGIS Online search for Paul Bunyan State Trail (owner cstults_BSUMaps)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/RpVCghfSj7XHqAKQ/arcgis/rest/services/Saint_Bernard_Preparatory_School_Trail_Map/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/RpVCghfSj7XHqAKQ/arcgis/rest/services/Saint_Bernard_Preparatory_School_Trail_Map/FeatureServer|Saint Bernard Preparatory School Trail Map|||ArcGIS Online search for Saint Bernard State Park (owner sandecm0)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/VineY8LQ39gOVtTz/arcgis/rest/services/Flint_Hills_Trail/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/VineY8LQ39gOVtTz/arcgis/rest/services/Flint_Hills_Trail/FeatureServer|Flint Hills Trail|||ArcGIS Online search for Flint Hills Trail State Park (owner ModernEarthTech)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Chalco_Hills_Rec_Area_Features/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Chalco_Hills_Rec_Area_Features/FeatureServer|Chalco Hills Rec Area Features|||ArcGIS Online search for Chalco Hills State Recreation Area (owner jriebe0623)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Chalco_NatureTrails/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Chalco_NatureTrails/FeatureServer|Chalco Hills NatureTrails|||ArcGIS Online search for Chalco Hills State Recreation Area (owner jriebe0623)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Park_Benches/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/VthbbMDEQLq4F9GE/arcgis/rest/services/Park_Benches/FeatureServer|Chalco Hills Park Benches|||ArcGIS Online search for Chalco Hills State Recreation Area (owner jriebe0623)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/XcwN27e6wZ49zF8i/arcgis/rest/services/Gitchi_Gami_Shoulder_Widths_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/XcwN27e6wZ49zF8i/arcgis/rest/services/Gitchi_Gami_Shoulder_Widths_WFL1/FeatureServer|Gitchi Gami Shoulder Widths_WFL1|||ArcGIS Online search for Gitchi Gami State Trail (owner ARDCGIS)|",
+   "verdicts": [
+    "REJECT",
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/XcwN27e6wZ49zF8i/arcgis/rest/services/Two_Harbors_Bicycle_Destinations_and_Recommendations/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/XcwN27e6wZ49zF8i/arcgis/rest/services/Two_Harbors_Bicycle_Destinations_and_Recommendations/FeatureServer|Two_Harbors_Bicycle_Destinations_and_Recommendations|||ArcGIS Online search for Two Harbors Protected Area (owner rpintern)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/XcwN27e6wZ49zF8i/arcgis/rest/services/Two_Harbors_Zoning_With_NSMB_Boundary_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/XcwN27e6wZ49zF8i/arcgis/rest/services/Two_Harbors_Zoning_With_NSMB_Boundary_WFL1/FeatureServer|Two Harbors Zoning With NSMB Boundary_WFL1|||ArcGIS Online search for Two Harbors Protected Area (owner ARDCGIS)|",
+   "verdicts": [
+    "REJECT",
+    "ASK-THE-PUBLISHER",
+    "REJECT",
+    "ASK-THE-PUBLISHER",
+    "ASK-THE-PUBLISHER",
+    "ASK-THE-PUBLISHER",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/YWG34dhJxrbxQWdF/arcgis/rest/services/San_Felipe_de_Austin_Buildings_1824/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/YWG34dhJxrbxQWdF/arcgis/rest/services/San_Felipe_de_Austin_Buildings_1824/FeatureServer|San Felipe de Austin Buildings 1824|||ArcGIS Online search for San Felipe de Austin State Historic Site (owner lynnette.cen@glo.texas.gov)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/YWG34dhJxrbxQWdF/arcgis/rest/services/San_Felipe_de_Austin_Buildings_1830/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/YWG34dhJxrbxQWdF/arcgis/rest/services/San_Felipe_de_Austin_Buildings_1830/FeatureServer|San Felipe de Austin Buildings 1830|||ArcGIS Online search for San Felipe de Austin State Historic Site (owner lynnette.cen@glo.texas.gov)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/YWG34dhJxrbxQWdF/arcgis/rest/services/San_Felipe_de_Austin_Buildings_1835/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/YWG34dhJxrbxQWdF/arcgis/rest/services/San_Felipe_de_Austin_Buildings_1835/FeatureServer|San Felipe de Austin Buildings 1835|||ArcGIS Online search for San Felipe de Austin State Historic Site (owner lynnette.cen@glo.texas.gov)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/CAJO_Captain_John_Smith_Chesapeake_NHT_Centerline_ln/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/CAJO_Captain_John_Smith_Chesapeake_NHT_Centerline_ln/FeatureServer|CAJO Captain John Smith Chesapeake NHT Centerline ln|||ArcGIS Online search for Captain John Smith Chesapeake National Historic Trail (owner JEFARRELL@nps.gov_nps)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ELCA_NHT/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ELCA_NHT/FeatureServer|El Camino Real de Tierra Adentro NHT|||ArcGIS Online search for El Camino Real de Tierra Adentro National Historic Trail (owner MarkScottHenderson)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GWMP_Mount_Vernon_Trail_Polygon/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GWMP_Mount_Vernon_Trail_Polygon/FeatureServer|GWMP Mount Vernon Trail Polygon|||ArcGIS Online search for Mount Vernon National Historic Trail (owner CWanschura@nps.gov_nps)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/HPHS/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/HPHS/FeatureServer|LECL Lewis and Clark NHT High Potential Historic Sites|||ArcGIS Online search for Lewis and Clark National Historic Trail (owner rmcooper@nps.gov_nps)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Iditarod_National_Historic_Trail_BLM_Official_Temp/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Iditarod_National_Historic_Trail_BLM_Official_Temp/FeatureServer|Iditarod National Historic Trail BLM Official Temp|||ArcGIS Online search for Iditarod National Historic Trail (owner cor_nps)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Lewis_and_Clark_National_Historic_Trail_Congressionally_Designated_Route/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Lewis_and_Clark_National_Historic_Trail_Congressionally_Designated_Route/FeatureServer|LECL Lewis and Clark National Historic Trail Congressionally Designated Route|||ArcGIS Online search for Lewis and Clark National Historic Trail (owner rmcooper@nps.gov_nps)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Lewis_and_Clark_Trail_Visitor_Centers_and_Museums/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Lewis_and_Clark_Trail_Visitor_Centers_and_Museums/FeatureServer|LECL Lewis and Clark Trail Visitor Centers and Museums|||ArcGIS Online search for Lewis and Clark National Historic Trail (owner rmcooper@nps.gov_nps)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/MOPI_NHT/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/MOPI_NHT/FeatureServer|Mormon Pioneer Trail|||ArcGIS Online search for Mormon Pioneer National Historic Trail (owner mm.kcappelli)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NOCA_VegMap/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NOCA_VegMap/FeatureServer|Vegetation Map of North Cascades National Park Complex (polygons)|||ArcGIS Online search for Cascades National Recreation Trail (owner NAntonova@nps.gov_nps)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Overmountain_Victory_National_Historic_Trail_Official_Temp/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Overmountain_Victory_National_Historic_Trail_Official_Temp/FeatureServer|Overmountain Victory National Historic Trail Official Temp|||ArcGIS Online search for Overmountain Victory National Historic Trail (owner cor_nps)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Sta_Spangled_Banner_National_Historic_Trail_Official_Centerline/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Sta_Spangled_Banner_National_Historic_Trail_Official_Centerline/FeatureServer|Star-Spangled Banner National Historic Trail Official Centerline|||ArcGIS Online search for Star-Spangled Banner National Historic Trail (owner JEFARRELL@nps.gov_nps)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/fuy3eYDIPUqhqR2U/arcgis/rest/services/Stephen_Foster_SP/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/fuy3eYDIPUqhqR2U/arcgis/rest/services/Stephen_Foster_SP/FeatureServer|Stephen Foster SP|||ArcGIS Online search for Stephen Foster State Conservation Area (owner billparken)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/FEIS_Pacific_Crest_Trail_Alternative_B_and_B_Modified/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/FEIS_Pacific_Crest_Trail_Alternative_B_and_B_Modified/FeatureServer|FEIS Pacific Crest National Scenic Trail Management Area Alternatives B & B Modified|||ArcGIS Online search for Pacific Crest Trail National Scenic Trail (owner USFSRegion05)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/FEIS_Pacific_Crest_Trail_Management_Corridor_Alternatives_C_and_E/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/FEIS_Pacific_Crest_Trail_Management_Corridor_Alternatives_C_and_E/FeatureServer|FEIS Pacific Crest National Scenic Trail Management Area Alternatives C & E|||ArcGIS Online search for Pacific Crest Trail National Scenic Trail (owner USFSRegion05)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Iditarod_National_Historic_Trails_Story_Map_Public_Layer/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Iditarod_National_Historic_Trails_Story_Map_Public_Layer/FeatureServer|Iditarod National Historic Trails Story Map Public Layer|||ArcGIS Online search for Iditarod National Historic Trail (owner ChugachNF)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/PacificCrestTrailCorridor_INF_LMP2019_gdb/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/PacificCrestTrailCorridor_INF_LMP2019_gdb/FeatureServer|Pacific Crest Trail Corridor INF LMP 2019|||ArcGIS Online search for Pacific Crest Trail National Scenic Trail (owner USFSRegion05)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Fairfax_County_Boundary/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Fairfax_County_Boundary/FeatureServer|Fairfax County Boundary|||ArcGIS Online search for Fairfax State Recreation Area (owner FX.AuthData)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/George_Mason_University_Police_and_Safety_Disposal_Box_Locations/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/George_Mason_University_Police_and_Safety_Disposal_Box_Locations/FeatureServer|George Mason University Police and Safety Disposal Box Locations|||ArcGIS Online search for George Mason National Memorial (owner FairfaxCounty)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/Green_Circle_Trail_Sections/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/Green_Circle_Trail_Sections/FeatureServer|Green Circle Trail Sections|||ArcGIS Online search for Green Circle State Trail (owner jbuchhol@uwsp.edu_UWSP)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/Green_Circle_Trail_Spurs/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/Green_Circle_Trail_Spurs/FeatureServer|Green Circle Trail Spurs|||ArcGIS Online search for Green Circle State Trail (owner jbuchhol@uwsp.edu_UWSP)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/Green_Circle_Trail_Surfaces/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/kkX9mRo34fTGAX96/arcgis/rest/services/Green_Circle_Trail_Surfaces/FeatureServer|Green Circle Trail Surfaces|||ArcGIS Online search for Green Circle State Trail (owner jbuchhol@uwsp.edu_UWSP)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/lDFzr3JyGEn5Eymu/arcgis/rest/services/Audubon_Chapter_Boundaries_Public_View/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/lDFzr3JyGEn5Eymu/arcgis/rest/services/Audubon_Chapter_Boundaries_Public_View/FeatureServer|Audubon Chapter Boundaries Public View|||ArcGIS Online search for Audubon State Historic Site (owner Audubon_GIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/lDFzr3JyGEn5Eymu/arcgis/rest/services/Audubon_Pine_Island_Sanctuary/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/lDFzr3JyGEn5Eymu/arcgis/rest/services/Audubon_Pine_Island_Sanctuary/FeatureServer|Audubon Pine Island Sanctuary|||ArcGIS Online search for Pine Island State Park (owner joanna.grand@audubon.org_audubon)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/lDFzr3JyGEn5Eymu/arcgis/rest/services/Coast_Sites_GV/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/lDFzr3JyGEn5Eymu/arcgis/rest/services/Coast_Sites_GV/FeatureServer|Audubon Coast Sites|||ArcGIS Online search for Audubon State Historic Site (owner GIS_Help_audubon)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_Area/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_Area/FeatureServer|Pinelands Area|||ArcGIS Online search for Pinelands Nature National Recreation Trail (owner NJPinelands)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_ManagementAreas/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_ManagementAreas/FeatureServer|Pinelands Management Areas|||ArcGIS Online search for Pinelands Preserve National Conservation Area (owner NJPinelands)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_Wetlands/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_Wetlands/FeatureServer|Pinelands Wetlands|||ArcGIS Online search for Pinelands Preserve National Conservation Area (owner NJPinelands)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_Wetlands_Buffers_300_feet/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/nCm6SZaiGMuGX35l/arcgis/rest/services/Pinelands_Wetlands_Buffers_300_feet/FeatureServer|Pinelands Wetlands 300 foot Buffer|||ArcGIS Online search for Pinelands Preserve National Conservation Area (owner NJPinelands)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/FNST/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/FNST/FeatureServer|[2024 FWP] OGT – Florida National Scenic Trail|||ArcGIS Online search for Florida Trail National Scenic Trail (owner Stephen.Clapp@FloridaDEP.gov_FDEP)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/nWsjONL9B4B0DLnV/arcgis/rest/services/Virginia_Creeper_Trail_Alignment_082825/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/nWsjONL9B4B0DLnV/arcgis/rest/services/Virginia_Creeper_Trail_Alignment_082825/FeatureServer|Virginia Creeper Trail Alignment 082825|||ArcGIS Online search for Virginia Creeper National Recreation Trail (owner jtrainor.rkk)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/qTQ6qYkHpxlu0G82/arcgis/rest/services/Appalachian_National_Scenic_Trail_Centerline_copy/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/qTQ6qYkHpxlu0G82/arcgis/rest/services/Appalachian_National_Scenic_Trail_Centerline_copy/FeatureServer|Appalachian National Scenic Trail Centerline copy|||ArcGIS Online search for Appalachian Trail National Scenic Trail (owner dff416_UofMD)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/qTQ6qYkHpxlu0G82/arcgis/rest/services/Impact_Analysis_of_Natural_Gas_Infrastructure_on_Mount_Vernon_s_Viewshed_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/qTQ6qYkHpxlu0G82/arcgis/rest/services/Impact_Analysis_of_Natural_Gas_Infrastructure_on_Mount_Vernon_s_Viewshed_WFL1/FeatureServer|Impact Analysis of Natural Gas Infrastructure on Mount Vernon_s Viewshed_WFL1|||ArcGIS Online search for Mount Vernon National Historic Trail (owner pfobrien_UofMD)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/rCcfuAf877pT4w3i/arcgis/rest/services/Mount_St__Helens_National_Volcanic_Monument_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/rCcfuAf877pT4w3i/arcgis/rest/services/Mount_St__Helens_National_Volcanic_Monument_WFL1/FeatureServer|Mount St_ Helens National Volcanic Monument_WFL1|||ArcGIS Online search for Mt. St. Helens National Monument (owner jasmine.ortiz@wsu.edu_wsuniv)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer|Red Rocks Insta360 Oriented Imagery Video|||ArcGIS Online search for Red Rocks State Historic Site (owner bconnolly_IVT5)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
   "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0": {
    "probed": "2026-10-28",
    "retry": false,
@@ -518,10 +2091,999 @@
     "ASK-THE-PUBLISHER"
    ]
   },
+  "https://services1.arcgis.com/yZQ9rZaq1vRYxnvY/arcgis/rest/services/service_c5936e86e6b2456e990c28d085077821_form/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/yZQ9rZaq1vRYxnvY/arcgis/rest/services/service_c5936e86e6b2456e990c28d085077821_form/FeatureServer|Inscripción Plataforma Logística los Luceros - SAA_form|||ArcGIS Online search for Los Luceros Historic Site (owner deraa_sdde)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services1.arcgis.com/yzNawWwHQXYQkxUq/arcgis/rest/services/Wild_and_Scenic_Designated_Buffer/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services1.arcgis.com/yzNawWwHQXYQkxUq/arcgis/rest/services/Wild_and_Scenic_Designated_Buffer/FeatureServer|Wild and Scenic Designated Buffer|||ArcGIS Online search for Westfield National Wild and Scenic River (owner wrwa_staff1)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/8krRUWgifzA4cgL3/arcgis/rest/services/AdirondackParkBoundary/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/8krRUWgifzA4cgL3/arcgis/rest/services/AdirondackParkBoundary/FeatureServer|Adirondack Park Boundary|||ArcGIS Online search for Adirondack State Park (owner APA_Administrator)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/8krRUWgifzA4cgL3/arcgis/rest/services/BluelinePolygon/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/8krRUWgifzA4cgL3/arcgis/rest/services/BluelinePolygon/FeatureServer|Adirondack Park Boundary Polygon|||ArcGIS Online search for Adirondack State Park (owner APA_Administrator)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/8krRUWgifzA4cgL3/arcgis/rest/services/HistoricAdirondackRailroads/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/8krRUWgifzA4cgL3/arcgis/rest/services/HistoricAdirondackRailroads/FeatureServer|Historic Adirondack Railroads|||ArcGIS Online search for Adirondack State Park (owner jwbarge)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/8r0lsT7QHelkANsD/arcgis/rest/services/Zoning_City_Of_Lincoln_Burleigh_County_ND/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/8r0lsT7QHelkANsD/arcgis/rest/services/Zoning_City_Of_Lincoln_Burleigh_County_ND/FeatureServer|Zoning_City_Of_Lincoln_Burleigh_County_ND|||ArcGIS Online search for Lincoln State Historic Site (owner BurleighCounty)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/ChUbz2hk6xRj7wYw/arcgis/rest/services/Virginia_Creeper_Trail/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/ChUbz2hk6xRj7wYw/arcgis/rest/services/Virginia_Creeper_Trail/FeatureServer|Virginia Creeper Trail|||ArcGIS Online search for Virginia Creeper National Recreation Trail (owner alex_Equinox)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/HRY6x8qt5qjGnAA9/arcgis/rest/services/CSKT_Bison_Range/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/HRY6x8qt5qjGnAA9/arcgis/rest/services/CSKT_Bison_Range/FeatureServer|CSKT Bison Range|||ArcGIS Online search for CSKT Bison Range Protected Area (owner ShamonH_SI)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services2.arcgis.com/OIAIimblRxPs0xxc/arcgis/rest/services/East_Brainard_Elementary_School_Walkshed_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/OIAIimblRxPs0xxc/arcgis/rest/services/East_Brainard_Elementary_School_Walkshed_WFL1/FeatureServer|East Brainard Elementary School Walkshed_WFL1|||ArcGIS Online search for Brainard Lake Recreation Area National Forest (owner Kayla.Ferguson_CHATTGIS)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/RQcpPaCpMAXzUI5g/arcgis/rest/services/Shavano_Tabeguache_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/RQcpPaCpMAXzUI5g/arcgis/rest/services/Shavano_Tabeguache_WFL1/FeatureServer|Shavano_Tabeguache_WFL1|||ArcGIS Online search for Tabeguache BLM Historic Trail (owner rre4601@rit.edu_RITArcGIS)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_WoodPaw_WildScenic_Rivers_spf/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_WoodPaw_WildScenic_Rivers_spf/FeatureServer|Wood / Pawcatuck National Wild and Scenic Rivers System|||ArcGIS Online search for Beaver Creek BLM Wild and Scenic River (owner URIEDC_RIGIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1841_fpu/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1841_fpu/FeatureServer|Audubon's Cottontail Range - CWHR M047 [ds1841]|||ArcGIS Online search for Audubon State Historic Site (owner BIOS_Admin)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2660_fpu/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2660_fpu/FeatureServer|Peninsular Bighorn Sheep Habitat Vegetation Map [ds2660]|||ArcGIS Online search for Sheep Creek State Recreation Area (owner BIOS_Admin)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2901_fpu/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2901_fpu/FeatureServer|Elk Migration Corridors - West Goose Lake - 1999-2002, 2018-2020 [ds2901]|||ArcGIS Online search for Elk River Trail State Trail (owner BIOS_Admin)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2903_fpu/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2903_fpu/FeatureServer|Elk Migration Corridors - East Shasta Valley - 1999-2001, 2016-2020 [ds2903]|||ArcGIS Online search for Elk River Trail State Trail (owner BIOS_Admin)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2908_fpu/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2908_fpu/FeatureServer|Elk Migration Corridors - Egg Lake - 2001-2002, 2017-2020 [ds2908]|||ArcGIS Online search for Elk River Trail State Trail (owner BIOS_Admin)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2975_fpu/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2975_fpu/FeatureServer|Mule Deer Migration Corridors - Salt Springs - 2018-2020 [ds2975]|||ArcGIS Online search for Salt Creek State Recreation Area (owner BIOS_Admin)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3400_fpu/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3400_fpu/FeatureServer|Bighorn Sheep Herd Units - CDFW [ds3400]|||ArcGIS Online search for Sheep Creek State Recreation Area (owner BIOS_Admin)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - Mon@1730)/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - Mon@1730)/FeatureServer|Travel from Jessie's Office (45 Minutes - Mon@1730)|||ArcGIS Online search for Lake Jessie State Historic Site (owner paccetturo)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - no traffic)/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - no traffic)/FeatureServer|Travel from Jessie's Office (45 Minutes - no traffic)|||ArcGIS Online search for Lake Jessie State Historic Site (owner paccetturo)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services2.arcgis.com/VmLllxPKgIzlr2id/arcgis/rest/services/Teanaway_HUC10/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/VmLllxPKgIzlr2id/arcgis/rest/services/Teanaway_HUC10/FeatureServer|Teanaway_HUC10|||ArcGIS Online search for Teanaway State Forest (owner BlueWaterGIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/VmLllxPKgIzlr2id/arcgis/rest/services/Teanaway_Projects/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/VmLllxPKgIzlr2id/arcgis/rest/services/Teanaway_Projects/FeatureServer|Teanaway_Projects|||ArcGIS Online search for Teanaway State Forest (owner BlueWaterGIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/NJ_Long_Term_Care_Facilities/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/NJ_Long_Term_Care_Facilities/FeatureServer|Long Term Care Facilities of New Jersey|||ArcGIS Online search for Long Lake State Recreation Area (owner NJOGIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_Lake_contours___LiDAR_2018/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_Lake_contours___LiDAR_2018/FeatureServer|Hillsdale Lake contours _ LiDAR 2018|||ArcGIS Online search for Hillsdale Preserve Management Area (owner ks_biosurvey)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_conservation_pool___LiDAR_2018/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_conservation_pool___LiDAR_2018/FeatureServer|Hillsdale conservation pool _ LiDAR 2018|||ArcGIS Online search for Hillsdale Preserve Management Area (owner ks_biosurvey)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_flood_pool___LiDAR_2018/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Hillsdale_flood_pool___LiDAR_2018/FeatureServer|Hillsdale flood pool _ LiDAR 2018|||ArcGIS Online search for Hillsdale Preserve Management Area (owner ks_biosurvey)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Ozark_Aquifer/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Ozark_Aquifer/FeatureServer|Ozark Aquifer|||ArcGIS Online search for Ozark State Trail (owner KS_Geological_Survey)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/ZkOsbg84o8DsPPaP/arcgis/rest/services/Cornelius_Bike_Ped_Public_Comments/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/ZkOsbg84o8DsPPaP/arcgis/rest/services/Cornelius_Bike_Ped_Public_Comments/FeatureServer|Cornelius Bike Ped Public Comments|||ArcGIS Online search for Cornelius Creek National Recreation Trail (owner Davidsa_BMI)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/ZkOsbg84o8DsPPaP/arcgis/rest/services/Cornelius_Bike_Ped_Public_Comments_20260309/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/ZkOsbg84o8DsPPaP/arcgis/rest/services/Cornelius_Bike_Ped_Public_Comments_20260309/FeatureServer|Cornelius Bike Ped Public Comments 20260309|||ArcGIS Online search for Cornelius Creek National Recreation Trail (owner evan.saunderspearce_bmi)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/eEZvYWeDAf8dVYvQ/arcgis/rest/services/Lieber/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services2.arcgis.com/eEZvYWeDAf8dVYvQ/arcgis/rest/services/Lieber/FeatureServer|Lieber|||ArcGIS Online search for Lieber State Recreation Area (owner humanum)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services2.arcgis.com/gdgYLKfxoJmkNxos/arcgis/rest/services/Blanchard_School_Board_Wards/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/gdgYLKfxoJmkNxos/arcgis/rest/services/Blanchard_School_Board_Wards/FeatureServer|Blanchard School Board Wards|||ArcGIS Online search for Blanchard State Forest (owner OKHouse1)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/i7Ls2H4uQGTYzm5D/arcgis/rest/services/Fallen_Timbers_Battlefield/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/i7Ls2H4uQGTYzm5D/arcgis/rest/services/Fallen_Timbers_Battlefield/FeatureServer|Fallen Timbers Battlefield|||ArcGIS Online search for Fort Miamis Fallen Timbers Battlefield National Historic Sit (owner topographer)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "ASK-THE-PUBLISHER",
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services2.arcgis.com/i7Ls2H4uQGTYzm5D/arcgis/rest/services/Fallen_Timbers_Battlefield_Points_of_Interest/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/i7Ls2H4uQGTYzm5D/arcgis/rest/services/Fallen_Timbers_Battlefield_Points_of_Interest/FeatureServer|Fallen Timbers Battlefield Points of Interest|||ArcGIS Online search for Fort Miamis Fallen Timbers Battlefield National Historic Sit (owner topographer)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/j80Jz20at6Bi0thr/arcgis/rest/services/lincoln/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/j80Jz20at6Bi0thr/arcgis/rest/services/lincoln/FeatureServer|Lincoln City Boundaries|||ArcGIS Online search for Lincoln State Historic Site (owner Learn_ArcGIS)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services2.arcgis.com/sFeLdas1ukfB6i8T/arcgis/rest/services/Johnson_City_Adjusted_Urban_Area_2025_(Johnson_City_MTPO)/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/sFeLdas1ukfB6i8T/arcgis/rest/services/Johnson_City_Adjusted_Urban_Area_2025_(Johnson_City_MTPO)/FeatureServer|Johnson City Adjusted Urban Area 2025 (Johnson City MTPO)|||ArcGIS Online search for Johnson State Wildlife Area (owner jcgis_publisher)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services2.arcgis.com/sFeLdas1ukfB6i8T/arcgis/rest/services/Johnson_City_MTPO_2025_Metropolitan_Planning_Area_(Johnson_City_MTPO)/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/sFeLdas1ukfB6i8T/arcgis/rest/services/Johnson_City_MTPO_2025_Metropolitan_Planning_Area_(Johnson_City_MTPO)/FeatureServer|Johnson City MTPO 2025 Metropolitan Planning Area (Johnson City MTPO)|||ArcGIS Online search for Johnson State Wildlife Area (owner jcgis_publisher)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services2.arcgis.com/uxxyl33jRTSmjre5/arcgis/rest/services/Airport_Clear_Zones/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services2.arcgis.com/uxxyl33jRTSmjre5/arcgis/rest/services/Airport_Clear_Zones/FeatureServer|Hagerstown Regional Airport Clear Zones|||ArcGIS Online search for Clear Creek BLM Recreation Management Area (owner jrathvon@washco_md.net_washcomd)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Black_Canyon_City__Arizona_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Black_Canyon_City__Arizona_WFL1/FeatureServer|Black Canyon City_ Arizona_WFL1|||ArcGIS Online search for Black Canyon National Recreation Trail (owner estreber_asu)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Black_Canyon_City_and_Arizona_Water_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Black_Canyon_City_and_Arizona_Water_WFL1/FeatureServer|Black Canyon City and Arizona Water_WFL1|||ArcGIS Online search for Black Canyon National Recreation Trail (owner estreber_asu)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Health_Care_Clinics_Crispin_Nakoa_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Health_Care_Clinics_Crispin_Nakoa_WFL1/FeatureServer|Health_Care_Clinics_Crispin_Nakoa_WFL1|||ArcGIS Online search for Nakoa State Trail (owner jnakoa_asu)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/0g1gZyTiQ9uGlDEb/arcgis/rest/services/Sheltowee_Trace/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/0g1gZyTiQ9uGlDEb/arcgis/rest/services/Sheltowee_Trace/FeatureServer|Sheltowee Trace|||ArcGIS Online search for Sheltowee Trace National Recreation Trail (owner eonealKY)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/1V8429k2MaAcIZUa/arcgis/rest/services/HP_003_Buckley_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/1V8429k2MaAcIZUa/arcgis/rest/services/HP_003_Buckley_WFL1/FeatureServer|HP_003_Buckley_WFL1|||ArcGIS Online search for Buckley Creek State Recreation Area (owner louis_pino)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/1V8429k2MaAcIZUa/arcgis/rest/services/SP_003_Buckley_Renumbered/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/1V8429k2MaAcIZUa/arcgis/rest/services/SP_003_Buckley_Renumbered/FeatureServer|SP.003.Buckley|||ArcGIS Online search for Buckley Creek State Recreation Area (owner louis_pino)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/C58X9R7Tu8cPpRcB/arcgis/rest/services/Govan_Sold_Prices/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/C58X9R7Tu8cPpRcB/arcgis/rest/services/Govan_Sold_Prices/FeatureServer|Govan_Sold_Prices|||ArcGIS Online search for Govan BLM Recreation Management Area (owner 2806332S_Glasgow_Uni)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
   "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0": {
    "probed": "2026-10-28",
    "retry": false,
    "sig": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0|Montana FWP state parks|Montana Fish, Wildlife & Parks||test row (f): we already read this as sgmta|already read",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/IKBBLZOXy58PXgpl/arcgis/rest/services/Arizona_National_Scenic_Trail_Feature_Layers_view/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/IKBBLZOXy58PXgpl/arcgis/rest/services/Arizona_National_Scenic_Trail_Feature_Layers_view/FeatureServer|Arizona_National_Scenic_Trail_Feature_Layers_view|||ArcGIS Online search for Arizona Trail National Scenic Trail (owner AZTrail)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/IKBBLZOXy58PXgpl/arcgis/rest/services/Scenic_Resources_AGOL_view/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/IKBBLZOXy58PXgpl/arcgis/rest/services/Scenic_Resources_AGOL_view/FeatureServer|Arizona National Scenic Trail Scenic Resources view|||ArcGIS Online search for Arizona Trail National Scenic Trail (owner AZTrail)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/VDLfos9gESU44Yus/arcgis/rest/services/Pleasant_Valley_Siren_Coverage_Range_(Points)/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/VDLfos9gESU44Yus/arcgis/rest/services/Pleasant_Valley_Siren_Coverage_Range_(Points)/FeatureServer|Pleasant_Valley_Siren_Coverage_Range_(Points)|||ArcGIS Online search for Pleasant Valley State Fish and Wildlife Area (owner APoelzl_NFCA_USA)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services3.arcgis.com/arjIZiPnUOHQnhsl/arcgis/rest/services/Black_Canyon_Golf_Course_/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/arjIZiPnUOHQnhsl/arcgis/rest/services/Black_Canyon_Golf_Course_/FeatureServer|Black Canyon Golf Course_view|||ArcGIS Online search for Black Canyon National Recreation Trail (owner GISAdmin_Montrose)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/dZlu5nJgfmCUXRzB/arcgis/rest/services/WSOR_West_Bend_Sub_North_of_Junction_with_WSOR_Milwaukee_Sub/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/dZlu5nJgfmCUXRzB/arcgis/rest/services/WSOR_West_Bend_Sub_North_of_Junction_with_WSOR_Milwaukee_Sub/FeatureServer|WSOR West Bend Sub North of Junction with WSOR Milwaukee Sub|||ArcGIS Online search for North Bend Rail Trail State Trail (owner ejohnson_SEWRPC)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KDFWR_Horse_Trailheads_WM_gdb/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KDFWR_Horse_Trailheads_WM_gdb/FeatureServer|Horse Trailheads in Kentucky|||ArcGIS Online search for Horse Creek State Conservation Area (owner Kentucky_DGI)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/m5XxgtLpUcsjOiD1/arcgis/rest/services/New_Harmony_Water_Courses/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/m5XxgtLpUcsjOiD1/arcgis/rest/services/New_Harmony_Water_Courses/FeatureServer|New Harmony Water Courses|||ArcGIS Online search for Historic New Harmony State Historic Site (owner giswashco)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/nJbIFHiSnaX0z0hS/arcgis/rest/services/Greenbrier_Addressing_Service/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/nJbIFHiSnaX0z0hS/arcgis/rest/services/Greenbrier_Addressing_Service/FeatureServer|Greenbrier_Addressing_Service|||ArcGIS Online search for Greenbrier River Trail State Trail (owner tpenegar)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/nwUScSWGt2wNe9dC/arcgis/rest/services/OCRE_Mintlocations_Roman_Empire/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/nwUScSWGt2wNe9dC/arcgis/rest/services/OCRE_Mintlocations_Roman_Empire/FeatureServer|Mint locations of the Roman Empire|||ArcGIS Online search for Empire State Trail (owner GISGILDE.Admin)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/qVupYidwzMKkDQzr/arcgis/rest/services/Virginia_Creeper_Trail_Trestle_Status_EDITING_VIEW/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/qVupYidwzMKkDQzr/arcgis/rest/services/Virginia_Creeper_Trail_Trestle_Status_EDITING_VIEW/FeatureServer|Virginia Creeper Trail Trestle Status EDITING VIEW|||ArcGIS Online search for Virginia Creeper National Recreation Trail (owner gis.vdem)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/wid5AQd6BHjWWq1h/arcgis/rest/services/m216_pine_grove_land_rds/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/wid5AQd6BHjWWq1h/arcgis/rest/services/m216_pine_grove_land_rds/FeatureServer|m216_pine_grove_land_rds|||ArcGIS Online search for Pine Grove State Recreation Area (owner mfranz_cmrpc)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services4.arcgis.com/4O9OEYNKkrhmwigg/arcgis/rest/services/survey123_d43f5c819a2844fbab154440b7678f4f_form/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services4.arcgis.com/4O9OEYNKkrhmwigg/arcgis/rest/services/survey123_d43f5c819a2844fbab154440b7678f4f_form/FeatureServer|Fun Places by MIGIZI Interns_form|||ArcGIS Online search for Migizi National Recreation Trail (owner Tedi-MIGIZI)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services4.arcgis.com/Py6dhyuhygVOz2EZ/arcgis/rest/services/Massanutten_Mountain_CLuster_GW_VMT/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services4.arcgis.com/Py6dhyuhygVOz2EZ/arcgis/rest/services/Massanutten_Mountain_CLuster_GW_VMT/FeatureServer|Massanutten_Mountain_CLuster_GW_VMT|||ArcGIS Online search for Massanutten National Recreation Trail (owner Kasten7)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way/FeatureServer|Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way|||ArcGIS Online search for Bog Brook Wildlife Management Area (owner awilson_linwood)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way/FeatureServer|Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way|||ArcGIS Online search for Bog Brook Wildlife Management Area (owner awilson_linwood)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Federal_Civilian_Employment_of_George_Washington_PDC_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Federal_Civilian_Employment_of_George_Washington_PDC_WFL1/FeatureServer|Federal Civilian Employment of George Washington PDC|||ArcGIS Online search for George Washington Memorial State Forest (owner jkaneff_NVRC)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Northern_Virginia_Potomac_River_Corridor/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Northern_Virginia_Potomac_River_Corridor/FeatureServer|Potomac Heritage National Scenic Trail of Northern Virginia - August 2021 Version|||ArcGIS Online search for Potomac Heritage Trail National Scenic Trail (owner jkaneff_NVRC)|",
+   "verdicts": [
+    "WATER-ONLY"
+   ]
+  },
+  "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Potomac_Heritage_National_Scenic_Trail_of_Northern_Virginia__August_2021_Version/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Potomac_Heritage_National_Scenic_Trail_of_Northern_Virginia__August_2021_Version/FeatureServer|Potomac Heritage National Scenic Trail of Northern Virginia_ August 2021 Version|||ArcGIS Online search for Potomac Heritage Trail National Scenic Trail (owner jkaneff_NVRC)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Scenic_Locations/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/6MUPhDX27Ne3DNOw/arcgis/rest/services/Scenic_Locations/FeatureServer|Potomac Heritage National Scenic Trail - Viewshed Scenic Locations|||ArcGIS Online search for Potomac Heritage Trail National Scenic Trail (owner jkaneff_NVRC)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/7nsPwEMP38bSkCjy/arcgis/rest/services/Little_Tokyo_August_Geofence_Events/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/7nsPwEMP38bSkCjy/arcgis/rest/services/Little_Tokyo_August_Geofence_Events/FeatureServer|Little_Tokyo_August_Geofence_Events|||ArcGIS Online search for Little River State Park (owner Vlad_inthecity)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/2021_Hand_Crew_Roster/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/2021_Hand_Crew_Roster/FeatureServer|2021 Hand Crew Roster|||ArcGIS Online search for Hand State Recreation Site (owner emily.turner_tfsgis)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/KEZIbVsXEvL1ZLY5/arcgis/rest/services/Troop_Positions__C_Duffy_/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/KEZIbVsXEvL1ZLY5/arcgis/rest/services/Troop_Positions__C_Duffy_/FeatureServer|Troop Positions _C Duffy_|||ArcGIS Online search for Duffy Creek BLM Recreation Management Area (owner aocarchaeology)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/KS6joEEoa0G4EO56/arcgis/rest/services/Existing_Vegetation_at_the_Presidio/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/KS6joEEoa0G4EO56/arcgis/rest/services/Existing_Vegetation_at_the_Presidio/FeatureServer|Existing Vegetation at the Presidio|||ArcGIS Online search for Presidio of SF National Historic Site (owner petronilamandeno)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/KS6joEEoa0G4EO56/arcgis/rest/services/Presidio_Trust_Boundary/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/KS6joEEoa0G4EO56/arcgis/rest/services/Presidio_Trust_Boundary/FeatureServer|Presidio Trust Boundary|||ArcGIS Online search for Presidio of SF National Historic Site (owner petronilamandeno)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/LjEpKgpks2lYdrmt/arcgis/rest/services/Capital_District_Historic_Sites/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/LjEpKgpks2lYdrmt/arcgis/rest/services/Capital_District_Historic_Sites/FeatureServer|Capital District Historic Sites|||ArcGIS Online search for Hawaii Capital National Historic District (owner nyokoi_CSH)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/LjEpKgpks2lYdrmt/arcgis/rest/services/Hawaii_Capital_District_map_tour_route/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/LjEpKgpks2lYdrmt/arcgis/rest/services/Hawaii_Capital_District_map_tour_route/FeatureServer|Hawaii Capital Historic District map tour route|||ArcGIS Online search for Hawaii Capital National Historic District (owner nyokoi_CSH)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/LjEpKgpks2lYdrmt/arcgis/rest/services/Hawaii_Capital_Historic_District/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/LjEpKgpks2lYdrmt/arcgis/rest/services/Hawaii_Capital_Historic_District/FeatureServer|Hawaii Capital Historic District|||ArcGIS Online search for Hawaii Capital National Historic District (owner nyokoi_CSH)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services5.arcgis.com/Y41A3MtSGCNYWW3x/arcgis/rest/services/North_Bend_Rail_Trail_1_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/Y41A3MtSGCNYWW3x/arcgis/rest/services/North_Bend_Rail_Trail_1_WFL1/FeatureServer|North Bend Rail Trail 1_WFL1|||ArcGIS Online search for North Bend Rail Trail State Trail (owner DNRPEM)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/Y41A3MtSGCNYWW3x/arcgis/rest/services/North_Bend_Rail_Trail_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/Y41A3MtSGCNYWW3x/arcgis/rest/services/North_Bend_Rail_Trail_WFL1/FeatureServer|North Bend Rail Trail_WFL1|||ArcGIS Online search for North Bend Rail Trail State Trail (owner DNRPEM)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/kxeQ182ZV0PBfBVA/arcgis/rest/services/Pleasant_Valley_Maps/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/kxeQ182ZV0PBfBVA/arcgis/rest/services/Pleasant_Valley_Maps/FeatureServer|Pleasant Valley Maps|||ArcGIS Online search for Pleasant Valley State Fish and Wildlife Area (owner KTUA_Planner)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/lqtrRsdwvTbuk1xO/arcgis/rest/services/Mahoosuc_Ridge_to_The_River_Challenge_Race_Map/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/lqtrRsdwvTbuk1xO/arcgis/rest/services/Mahoosuc_Ridge_to_The_River_Challenge_Race_Map/FeatureServer|Mahoosuc_Ridge_to_The_River_Challenge_Race_Map|||ArcGIS Online search for Mahoosuc Ecological Reserve (owner kirksiegel)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/rqsYvPKZmvSrSWbw/arcgis/rest/services/Fort_Morgan_Encumbrances_TeagueRanch/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/rqsYvPKZmvSrSWbw/arcgis/rest/services/Fort_Morgan_Encumbrances_TeagueRanch/FeatureServer|Fort_Morgan_Encumbrances_TeagueRanch|||ArcGIS Online search for Fort Morgan National Historic Site (owner martinwi)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/uVUBD3VA9JxTzTy4/arcgis/rest/services/Saint_Bernard/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/uVUBD3VA9JxTzTy4/arcgis/rest/services/Saint_Bernard/FeatureServer|Saint Bernard|||ArcGIS Online search for Saint Bernard State Park (owner philhaas)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/vTj647Rtyurkop78/arcgis/rest/services/Chimney_Rock_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/vTj647Rtyurkop78/arcgis/rest/services/Chimney_Rock_WFL1/FeatureServer|Chimney Rock_WFL1|||ArcGIS Online search for Chimney Rock National Historic Site (owner jjbbrewer_WEIC)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services5.arcgis.com/vV1o91P0uxdOGCax/arcgis/rest/services/Chimney_Rock_Ranch_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services5.arcgis.com/vV1o91P0uxdOGCax/arcgis/rest/services/Chimney_Rock_Ranch_WFL1/FeatureServer|Chimney Rock Ranch_WFL1|||ArcGIS Online search for Chimney Rock National Historic Site (owner LISsystems)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services6.arcgis.com/2DGR1sZBUvcPcd8Z/arcgis/rest/services/147_Cape_Henry_VA_44099_/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/2DGR1sZBUvcPcd8Z/arcgis/rest/services/147_Cape_Henry_VA_44099_/FeatureServer|147 - Cape Henry, VA (44099)|||ArcGIS Online search for Cape Henry National Memorial (owner jerad.king)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/9tSn0MQDcjQ12ht2/arcgis/rest/services/Appalachian_National_Scenic_Trail/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/9tSn0MQDcjQ12ht2/arcgis/rest/services/Appalachian_National_Scenic_Trail/FeatureServer|Appalachian_National_Scenic_Trail|||ArcGIS Online search for Appalachian Trail National Scenic Trail (owner freemand)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/ALxeDxaeNjQo1Mf0/arcgis/rest/services/Active_Faults_and_Folds_Central_Otago_and_Queenstown_Lakes/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/ALxeDxaeNjQo1Mf0/arcgis/rest/services/Active_Faults_and_Folds_Central_Otago_and_Queenstown_Lakes/FeatureServer|Active Faults and Folds Central Otago and Queenstown Lakes|||ArcGIS Online search for Central Lakes State Trail (owner OTAGOREGIONALCOUNCIL_ORCNZ)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/arcgis/rest/services/Catskill_Park_Boundary/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/arcgis/rest/services/Catskill_Park_Boundary/FeatureServer|Catskill Park Boundary|||ArcGIS Online search for Catskill State Park (owner srvDECGISPub@srv_cld.ny.gov_nysdec)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Clear_Creek_County_CO_Buildings/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Clear_Creek_County_CO_Buildings/FeatureServer|Clear Creek County, CO Buildings|||ArcGIS Online search for Clear Creek BLM Recreation Management Area (owner dkensok_osm)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Douglas_County_NE_Buildings/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Douglas_County_NE_Buildings/FeatureServer|Douglas County, NE Buildings|||ArcGIS Online search for Douglas State Trail (owner dkensok_osm)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Johnson_County_IA_Buildings/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Johnson_County_IA_Buildings/FeatureServer|Johnson County, IA Buildings|||ArcGIS Online search for Johnson State Wildlife Area (owner dkensok_osm)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/EbVsqZ18sv1kVJ3k/arcgis/rest/services/Catskill_Park/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/EbVsqZ18sv1kVJ3k/arcgis/rest/services/Catskill_Park/FeatureServer|Catskill Park|||ArcGIS Online search for Catskill State Park (owner NYSGIS_GPO)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/LledJs8ADlUCS7Cz/arcgis/rest/services/Jessie_Family_Cemetery/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/LledJs8ADlUCS7Cz/arcgis/rest/services/Jessie_Family_Cemetery/FeatureServer|Jessie Family Cemetery|||ArcGIS Online search for Lake Jessie State Historic Site (owner BRADD_Admin)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services6.arcgis.com/PAUSLTOljlTRpN3n/arcgis/rest/services/CSKT_Bison_Range_SSURGO_Data/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/PAUSLTOljlTRpN3n/arcgis/rest/services/CSKT_Bison_Range_SSURGO_Data/FeatureServer|CSKT Bison Range SSURGO Data|||ArcGIS Online search for CSKT Bison Range Protected Area (owner Kyle.Bocinsky_DRIGIS4)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/UbKyMceXgEVeTOEF/arcgis/rest/services/Captain_John_Smith_Chesapeake_National_Historic_Trail/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services6.arcgis.com/UbKyMceXgEVeTOEF/arcgis/rest/services/Captain_John_Smith_Chesapeake_National_Historic_Trail/FeatureServer|Captain John Smith Chesapeake National Historic Trail|||ArcGIS Online search for Captain John Smith Chesapeake National Historic Trail (owner ccherava)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services6.arcgis.com/UyHjUN3YlQIsXJA1/arcgis/rest/services/Mount_Vernon_Police/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/UyHjUN3YlQIsXJA1/arcgis/rest/services/Mount_Vernon_Police/FeatureServer|Mount Vernon Police|||ArcGIS Online search for Mount Vernon National Historic Trail (owner abowler911)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/ZcuYjGGvzsyH5Zu7/arcgis/rest/services/HOA_Subdiv_SHerry/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/ZcuYjGGvzsyH5Zu7/arcgis/rest/services/HOA_Subdiv_SHerry/FeatureServer|HOA Subdiv SHerry|||ArcGIS Online search for Sherry Creek State Recreation Site (owner WashougalStorm)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services6.arcgis.com/avXuZG0wAqMng22B/arcgis/rest/services/David_Thompson/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/avXuZG0wAqMng22B/arcgis/rest/services/David_Thompson/FeatureServer|David_Thompson|||ArcGIS Online search for David Thompson State Historic Site (owner NU_HGIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/b4SgqAPC2VGq0h6n/arcgis/rest/services/Packer_Township/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/b4SgqAPC2VGq0h6n/arcgis/rest/services/Packer_Township/FeatureServer|Packer Township|||ArcGIS Online search for Packer Creek BLM Recreation Management Area (owner dbackenstoes_bia)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/iZ6GmQZ9zaRNfvWH/arcgis/rest/services/Fiber_Hand_Holes/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/iZ6GmQZ9zaRNfvWH/arcgis/rest/services/Fiber_Hand_Holes/FeatureServer|Fiber Hand Holes|||ArcGIS Online search for Hand State Recreation Site (owner QCGIS_LisaM)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/krSNOBBGf8rF7cNp/arcgis/rest/services/Appalachian_National_Scenic_Trail/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/krSNOBBGf8rF7cNp/arcgis/rest/services/Appalachian_National_Scenic_Trail/FeatureServer|Appalachian National Scenic Trail|||ArcGIS Online search for Appalachian Trail National Scenic Trail (owner jen.kern)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Cypremort_Point_State_Park/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Cypremort_Point_State_Park/FeatureServer|Cypremort_Point_State_Park|||ArcGIS Online search for Cypremort Point State Park (owner lastateparks)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Jimmie_Davis_State_Park/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Jimmie_Davis_State_Park/FeatureServer|Jimmie_Davis_State_Park|||ArcGIS Online search for Jimmie Davis State Park (owner lastateparks)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services6.arcgis.com/tuxY7TQIaDhLWARO/arcgis/rest/services/Vectorborne_Surveillance_Lone_Star_Ticks_2021/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/tuxY7TQIaDhLWARO/arcgis/rest/services/Vectorborne_Surveillance_Lone_Star_Ticks_2021/FeatureServer|Vectorborne Surveillance Lone Star Ticks (2021)|||ArcGIS Online search for Lone Star State Recreation Area (owner kxadmin)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/RecSitesReservesInterpForests_DetailsClosures_publicView/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/RecSitesReservesInterpForests_DetailsClosures_publicView/FeatureServer|Recreation Sites, Reserves and Interpretive Forests (details + closures)|Province of British Columbia (Recreation Sites and Trails BC)||Canada hunt 9-cah: BC recreation sites; may be points (probe says)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL/FeatureServer|Iceland Honeymoon 2024_WFL|||ArcGIS Online search for Honeymoon Historic Trail National Historic Trail (owner brokell)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer|Iceland Honeymoon 2024_WFL1|||ArcGIS Online search for Honeymoon Historic Trail National Historic Trail (owner brokell)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services6.arcgis.com/xCuDJnRShQmTqPGL/arcgis/rest/services/AB617_Richmond_San_Pablo_Community_Boundary/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/xCuDJnRShQmTqPGL/arcgis/rest/services/AB617_Richmond_San_Pablo_Community_Boundary/FeatureServer|AB617 Richmond-San Pablo Monitoring Boundary|||ArcGIS Online search for Pablo National Wildlife Refuge (owner llouie)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services6.arcgis.com/zX3RUXcV2Ha1zcWA/arcgis/rest/services/Mount_Laguna_and_Carrizo_Mountain/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services6.arcgis.com/zX3RUXcV2Ha1zcWA/arcgis/rest/services/Mount_Laguna_and_Carrizo_Mountain/FeatureServer|Mount Laguna and Carrizo Mountain|||ArcGIS Online search for Laguna Mountain Area BLM Recreation Management Area (owner GMF2020)|",
    "verdicts": [
     "REJECT"
    ]
@@ -534,12 +3096,337 @@
     "REJECT"
    ]
   },
+  "https://services7.arcgis.com/HIWDYyvTtvtoCVn0/arcgis/rest/services/Oak_Lawn_Churches/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/HIWDYyvTtvtoCVn0/arcgis/rest/services/Oak_Lawn_Churches/FeatureServer|Oak Lawn Churches|||ArcGIS Online search for Oak Lawn Church State Historic Site (owner OakLawnRitter)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services7.arcgis.com/OQmrTvuHcbVXxUp1/arcgis/rest/services/Honeymoon_Photos_20230609/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/OQmrTvuHcbVXxUp1/arcgis/rest/services/Honeymoon_Photos_20230609/FeatureServer|Honeymoon_Photos_20230609|||ArcGIS Online search for Honeymoon Historic Trail National Historic Trail (owner mstotts22)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services7.arcgis.com/S7DHOirgbYgdtrbR/arcgis/rest/services/Centennial_Industrial_Business_Activity/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/S7DHOirgbYgdtrbR/arcgis/rest/services/Centennial_Industrial_Business_Activity/FeatureServer|Centennial Industrial Business Activity|||ArcGIS Online search for Centennial Trail State Trail (owner TaupoDistrictCouncil)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer|Little Turtle_WFL1|||ArcGIS Online search for Little Turtle State Recreation Area (owner Steven.Wahweotten_Pokagon)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services7.arcgis.com/buuvDFFARQiOEbVZ/arcgis/rest/services/Storymap_Skookum_Muck/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/buuvDFFARQiOEbVZ/arcgis/rest/services/Storymap_Skookum_Muck/FeatureServer|Storymap_Skookum_Muck|||ArcGIS Online search for Skookum Creek State Recreation Area (owner SPSSEG_GIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer|Civil War Battlefields (time-enabled)|||ArcGIS Online search for African American Civil War National Memorial (owner mm.sappleton)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer|Civil War Battlefields|||ArcGIS Online search for African American Civil War National Memorial (owner mm.atlas)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services7.arcgis.com/jj1NqXxfLjbkZQH0/arcgis/rest/services/Practica2_perea_villar_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/jj1NqXxfLjbkZQH0/arcgis/rest/services/Practica2_perea_villar_WFL1/FeatureServer|Practica2_perea_villar_WFL1|||ArcGIS Online search for Perea Nature National Recreation Trail (owner GJN9731_unisevilla)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
   "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0": {
    "probed": "2026-10-28",
    "retry": false,
    "sig": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0|USACE reservoirs (Army Corps of Engineers)|U.S. Army Corps of Engineers|publicly available|test row (b): federal; 'publicly available'; reservoirs = water only (chat 9 Oct 28), never a park outline, for the 2-fer owner step. Area 'US' = whole country: no per-area missing list, so the closes test is skipped unless the row is given a state area|WATER-ONLY",
    "verdicts": [
     "WATER-ONLY"
+   ]
+  },
+  "https://services7.arcgis.com/p0Gk2nDbPs7KEqSZ/arcgis/rest/services/ELCA_TRANS_CULT_ElCaminoRealdeTierraAdentroNHT_1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/p0Gk2nDbPs7KEqSZ/arcgis/rest/services/ELCA_TRANS_CULT_ElCaminoRealdeTierraAdentroNHT_1/FeatureServer|El Camino Real de Tierra Adentro National Historic Trail|||ArcGIS Online search for El Camino Real de Tierra Adentro National Historic Trail (owner Jay.puckett_wsp5)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services7.arcgis.com/sbCtNPX9WTwhwh3s/arcgis/rest/services/DNREC_Trails_2021/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/sbCtNPX9WTwhwh3s/arcgis/rest/services/DNREC_Trails_2021/FeatureServer|Junction & Breakwater|||ArcGIS Online search for Junction and Breakwater National Recreation Trail (owner DelawareGreenwaysInc)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services7.arcgis.com/sbCtNPX9WTwhwh3s/arcgis/rest/services/FTND_Northern_Delaware_Greenway_Trail/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/sbCtNPX9WTwhwh3s/arcgis/rest/services/FTND_Northern_Delaware_Greenway_Trail/FeatureServer|Northern Delaware Greenway Trail|||ArcGIS Online search for Northern Delaware Greenway National Recreation Trail (owner DelawareGreenwaysInc)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services7.arcgis.com/sbCtNPX9WTwhwh3s/arcgis/rest/services/Northern_Delaware_Greenway/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/sbCtNPX9WTwhwh3s/arcgis/rest/services/Northern_Delaware_Greenway/FeatureServer|Northern_Delaware_Greenway|||ArcGIS Online search for Northern Delaware Greenway National Recreation Trail (owner DelawareGreenwaysInc)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services7.arcgis.com/uSdJCyZB78QSJIZf/arcgis/rest/services/Map_of_Potential_Locations_for_Housing_in_the_Town_of_Kremmling_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/uSdJCyZB78QSJIZf/arcgis/rest/services/Map_of_Potential_Locations_for_Housing_in_the_Town_of_Kremmling_WFL1/FeatureServer|Map of Potential Locations for Housing in the Town of Kremmling_WFL1|||ArcGIS Online search for Kremmling BLM National Recreation Area (owner CPSLLC)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services7.arcgis.com/xBaYvpTc0JtqK5u2/arcgis/rest/services/StarSpangledBannerTrail/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/xBaYvpTc0JtqK5u2/arcgis/rest/services/StarSpangledBannerTrail/FeatureServer|Star Spangled Banner Trail|||ArcGIS Online search for Star-Spangled Banner National Historic Trail (owner mauryt_havredegracemd)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services7.arcgis.com/xBaYvpTc0JtqK5u2/arcgis/rest/services/WARO_Trail/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/xBaYvpTc0JtqK5u2/arcgis/rest/services/WARO_Trail/FeatureServer|Washington-Rochambeau Trail|||ArcGIS Online search for Washington-Rochambeau Revolutionary Route National Historic  (owner mauryt_havredegracemd)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/0fu8WGujjdRBAiQR/arcgis/rest/services/NHPSITES_INTERIM/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/0fu8WGujjdRBAiQR/arcgis/rest/services/NHPSITES_INTERIM/FeatureServer|Manhattan Project National Historical Park Sites - INTERIM|||ArcGIS Online search for Manhattan Project National Historical Park (owner h5265664@rl.gov_hanfordsite)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Nashua_River_Wild_and_Scenic_Towns/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Nashua_River_Wild_and_Scenic_Towns/FeatureServer|Nashua River Wild and Scenic Towns|||ArcGIS Online search for Nashua, Squannacook, and Nissitissit National Wild and Sceni (owner khartlage)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Wild_and_Scenic_Aquatic_Core/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Wild_and_Scenic_Aquatic_Core/FeatureServer|Wild and Scenic Aquatic Core|||ArcGIS Online search for Nashua, Squannacook, and Nissitissit National Wild and Sceni (owner khartlage)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Wild_and_Scenic_Core_Habitat/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/481TDj9veSRE1m1c/arcgis/rest/services/Wild_and_Scenic_Core_Habitat/FeatureServer|Wild and Scenic Core Habitat|||ArcGIS Online search for Nashua, Squannacook, and Nissitissit National Wild and Sceni (owner khartlage)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/A76GjgcBUTTcwFGS/arcgis/rest/services/Mission_Dolores/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/A76GjgcBUTTcwFGS/arcgis/rest/services/Mission_Dolores/FeatureServer|Mission_Dolores|||ArcGIS Online search for Mission Dolores State Historic Site (owner 014653886_SJSUGIS)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/OcpsbB1t6G1k007e/arcgis/rest/services/Brumley/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/OcpsbB1t6G1k007e/arcgis/rest/services/Brumley/FeatureServer|Brumley|||ArcGIS Online search for Brumley Forest State Nature Preserve (owner MSI.forest)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/QMq4T6DXbKtwLZHa/arcgis/rest/services/Rec_Site_Mount_Rogers_NRA_Test/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/QMq4T6DXbKtwLZHa/arcgis/rest/services/Rec_Site_Mount_Rogers_NRA_Test/FeatureServer|Rec_Site_Mount_Rogers_NRA|||ArcGIS Online search for Mount Rogers National Recreation Trail (owner davidcohen@wildernessstewards.org)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/S9FfA3ZHtXhdx1pq/arcgis/rest/services/Fort_Clark_Road/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/S9FfA3ZHtXhdx1pq/arcgis/rest/services/Fort_Clark_Road/FeatureServer|Fort_Clark_Road|||ArcGIS Online search for Fort Clark State Historic Site (owner ALandSurveyor)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/WyuHwdftppQLa5KO/arcgis/rest/services/North_Country_NST_Shapefile/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/WyuHwdftppQLa5KO/arcgis/rest/services/North_Country_NST_Shapefile/FeatureServer|North Country NST Shapefile|||ArcGIS Online search for North Country Trail National Scenic Trail (owner Field_Programs_CDTC)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/ZybleXItoWGv9yUU/arcgis/rest/services/Spencer_Asset_Management_Dec2024/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/ZybleXItoWGv9yUU/arcgis/rest/services/Spencer_Asset_Management_Dec2024/FeatureServer|Spencer_Asset_Management_Dec2024|||ArcGIS Online search for Spencer County State Forest (owner mgeorge2382)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/cAtF2MSEHqBnNwgn/arcgis/rest/services/David_Thompson_1785_to_1812/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/cAtF2MSEHqBnNwgn/arcgis/rest/services/David_Thompson_1785_to_1812/FeatureServer|David Thompson 1785 to 1812|||ArcGIS Online search for David Thompson State Historic Site (owner Bear.Watchers.Eye)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/e8UG0RPWTF6kZDZd/arcgis/rest/services/CO_Kremmling_WFL1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/e8UG0RPWTF6kZDZd/arcgis/rest/services/CO_Kremmling_WFL1/FeatureServer|CO Kremmling_WFL1|||ArcGIS Online search for Kremmling BLM National Recreation Area (owner ViaVista)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/gHHsN1i8OISt9wMD/arcgis/rest/services/catskill_park_firetowers/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/gHHsN1i8OISt9wMD/arcgis/rest/services/catskill_park_firetowers/FeatureServer|catskill_park_firetowers|||ArcGIS Online search for Catskill State Park (owner Timothy.Ozmon_GISBSC)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/pX44G7gzoOvJ5JiJ/arcgis/rest/services/FRMP_Wysong_Add/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/pX44G7gzoOvJ5JiJ/arcgis/rest/services/FRMP_Wysong_Add/FeatureServer|FRMP_Wysong_Add|||ArcGIS Online search for Wysong Park State Conservation Area (owner orchideric)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services8.arcgis.com/tblHe99qQFMcNzpC/arcgis/rest/services/Aiea_Loop/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services8.arcgis.com/tblHe99qQFMcNzpC/arcgis/rest/services/Aiea_Loop/FeatureServer|Aiea Loop|||ArcGIS Online search for ʻAiea Loop State Trail (owner tommyphammy)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services9.arcgis.com/4ikJ2iF3itbByOVD/arcgis/rest/services/Lincoln_forestplan_alts_wilderness_AltE/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services9.arcgis.com/4ikJ2iF3itbByOVD/arcgis/rest/services/Lincoln_forestplan_alts_wilderness_AltE/FeatureServer|Lincoln_forestplan_alts_wilderness_AltE|||ArcGIS Online search for Lincoln State Historic Site (owner rob.lavie_EMPSI)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services9.arcgis.com/5VOhDgerxIw33LoH/arcgis/rest/services/AllBridges/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services9.arcgis.com/5VOhDgerxIw33LoH/arcgis/rest/services/AllBridges/FeatureServer|Butler County, PA Bridge Locations Feature Layer|||ArcGIS Online search for Butler County State Wildlife Management Area (owner AHumes)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services9.arcgis.com/5VOhDgerxIw33LoH/arcgis/rest/services/BridgeConditions/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services9.arcgis.com/5VOhDgerxIw33LoH/arcgis/rest/services/BridgeConditions/FeatureServer|Butler County, PA Bridge Conditions Feature Layer|||ArcGIS Online search for Butler County State Wildlife Management Area (owner AHumes)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Ramp_Sidewalk/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Ramp_Sidewalk/FeatureServer|Spencer_Ramp_Sidewalk|||ArcGIS Online search for Spencer County State Forest (owner WCundiff@SpencerMA.gov)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://services9.arcgis.com/CBx4dpJSQTY7NvOy/arcgis/rest/services/PalmSpringsPocketMouse_Model/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services9.arcgis.com/CBx4dpJSQTY7NvOy/arcgis/rest/services/PalmSpringsPocketMouse_Model/FeatureServer|Habitat Model: Palm Springs Pocket Mouse|||ArcGIS Online search for Mouse River State Forest (owner kwarack_CVAG)|",
+   "verdicts": [
+    "REJECT"
    ]
   },
   "https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer": {
@@ -557,28 +3444,309 @@
     "REJECT"
    ]
   },
+  "https://services9.arcgis.com/VatvCKAYJJVi8sva/arcgis/rest/services/Capitol_Campus_points/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services9.arcgis.com/VatvCKAYJJVi8sva/arcgis/rest/services/Capitol_Campus_points/FeatureServer|Capitol Campus points|||ArcGIS Online search for Capitol State Park (owner DES_GIS_Support)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://services9.arcgis.com/WGilu1i2IRlWIWQG/arcgis/rest/services/World_War_1/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services9.arcgis.com/WGilu1i2IRlWIWQG/arcgis/rest/services/World_War_1/FeatureServer|World War 1|||ArcGIS Online search for World War I Museum National Memorial (owner janet.owen.earth)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services9.arcgis.com/Wl3c8iIqFcIDE29g/arcgis/rest/services/smyth_multimodal_mount_rogers_nra_b8a8410/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services9.arcgis.com/Wl3c8iIqFcIDE29g/arcgis/rest/services/smyth_multimodal_mount_rogers_nra_b8a8410/FeatureServer|Smyth Multimodal - Mount Rogers National Recreation Area|||ArcGIS Online search for Mount Rogers National Recreation Trail (owner EPRGIS)|",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services9.arcgis.com/XRrSFvEwSsReIxuA/arcgis/rest/services/LittleLibrariesGeocoded/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://services9.arcgis.com/XRrSFvEwSsReIxuA/arcgis/rest/services/LittleLibrariesGeocoded/FeatureServer|Little Libraries - Millcreek Promise|||ArcGIS Online search for Little River State Park (owner GISMillcreek)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
   "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0": {
-   "fails": 7,
-   "probed": "2026-10-29",
+   "fails": 8,
+   "probed": "2026-10-30",
    "retry": false,
    "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot marks it RETRY (did not open) and after three runs sends the url to chat 9; a real hobby layer that opens is REJECT (not official)|REJECT or did-not-open",
    "verdicts": [
     "RETRY"
    ]
+  },
+  "https://services9.arcgis.com/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://services9.arcgis.com/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer|Florida National Scenic Trail Line|||ArcGIS Online search for Florida Trail National Scenic Trail (owner FloridaTrailAssociation)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/6fH0bIcGPz3YuOKY/arcgis/rest/services/PSF_Perea/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/6fH0bIcGPz3YuOKY/arcgis/rest/services/PSF_Perea/MapServer|PSF_Perea|||ArcGIS Online search for Perea Nature National Recreation Trail (owner CastDron)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/8df8p0NlLFEShl0r/arcgis/rest/services/itsp_i318_sugarmaple/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/8df8p0NlLFEShl0r/arcgis/rest/services/itsp_i318_sugarmaple/MapServer|Sugar Maple (Acer saccharum) Distribution in Minnesota|||ArcGIS Online search for Sugar River State Trail (owner jeli0026_UMN)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/9lVOGNODRgsFxu7n/arcgis/rest/services/Castillo_Berrio_1797/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/9lVOGNODRgsFxu7n/arcgis/rest/services/Castillo_Berrio_1797/MapServer|1797 Plano del Presidio de San Agustin|||ArcGIS Online search for Presidio of SF National Historic Site (owner bmittler_DHHC)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Map_3D4_WTL1/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Map_3D4_WTL1/MapServer|Chimney Rock Layer|||ArcGIS Online search for Chimney Rock National Historic Site (owner sydney.luce_noaa)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/skookum_ortho_wgs84_tif/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/skookum_ortho_wgs84_tif/MapServer|skookum_ortho_wgs84_tif|||ArcGIS Online search for Skookum Creek State Recreation Area (owner patrick.pope_noaa)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/HRY6x8qt5qjGnAA9/arcgis/rest/services/Massanutten_Reactive/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/HRY6x8qt5qjGnAA9/arcgis/rest/services/Massanutten_Reactive/MapServer|Massanutten Reactive|||ArcGIS Online search for Massanutten National Recreation Trail (owner FergusC_SI6)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/HRY6x8qt5qjGnAA9/arcgis/rest/services/Massanutten_Strategic/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/HRY6x8qt5qjGnAA9/arcgis/rest/services/Massanutten_Strategic/MapServer|Massanutten Strategic|||ArcGIS Online search for Massanutten National Recreation Trail (owner FergusC_SI6)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/ISqEHdhr3detVO9I/arcgis/rest/services/PGF2020_HSCLIP_Devils_Elbow/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/ISqEHdhr3detVO9I/arcgis/rest/services/PGF2020_HSCLIP_Devils_Elbow/MapServer|PGF2020_HSCLIP_Devils_Elbow|||ArcGIS Online search for Devils Elbow (BLM) Recreation Site (owner jro156_UCNZ)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/ISqEHdhr3detVO9I/arcgis/rest/services/UC2024_HSCLIP_Devils_Elbow/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/ISqEHdhr3detVO9I/arcgis/rest/services/UC2024_HSCLIP_Devils_Elbow/MapServer|UC2024_HSCLIP_Devils_Elbow|||ArcGIS Online search for Devils Elbow (BLM) Recreation Site (owner jro156_UCNZ)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/KbxwQRRfWyEYLgp4/arcgis/rest/services/Map_of_Big_Horn_Co_WY_1908ca__low0_jpg/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/KbxwQRRfWyEYLgp4/arcgis/rest/services/Map_of_Big_Horn_Co_WY_1908ca__low0_jpg/MapServer|Map of Big Horn Co WY 1908ca _low0_jpg|||ArcGIS Online search for Big Horn State Fish and Wildlife Area (owner BLM_WY_Public)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/McQ0OlIABe29rJJy/arcgis/rest/services/Brainard_Cemetery_Aerial_Image_2012/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/McQ0OlIABe29rJJy/arcgis/rest/services/Brainard_Cemetery_Aerial_Image_2012/MapServer|Brainard Cemetery Aerial Image 2012|||ArcGIS Online search for Brainard Lake Recreation Area National Forest (owner OregonMetro.ParksNature)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer|Little Turtle_WTL1|||ArcGIS Online search for Little Turtle State Recreation Area (owner Steven.Wahweotten_Pokagon)|",
+   "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/czCXlxn6hYtK4vdg/arcgis/rest/services/Fort_Morgan_LDP_Draft/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/czCXlxn6hYtK4vdg/arcgis/rest/services/Fort_Morgan_LDP_Draft/MapServer|Fort_Morgan_LDP_Draft|||ArcGIS Online search for Fort Morgan National Historic Site (owner jstone@denverwater.org_DW)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/NOCA_VegMap/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/fBc8EJBxQRMcHlei/arcgis/rest/services/NOCA_VegMap/MapServer|Vegetation Map of North Cascades National Park Service Complex|||ArcGIS Online search for Cascades National Recreation Trail (owner NAntonova@nps.gov_nps)|",
+   "verdicts": [
+    "REJECT",
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Hitchiti_NLCD/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Hitchiti_NLCD/MapServer|Hitchiti NLCD|||ArcGIS Online search for Hitchiti State Forest (owner USFS_SouthernResearchStation)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Hitchiti_aspects_2/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Hitchiti_aspects_2/MapServer|Hitchiti EF aspects|||ArcGIS Online search for Hitchiti State Forest (owner USFS_SouthernResearchStation)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Hitchiti_slopes_2/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Hitchiti_slopes_2/MapServer|Hitchiti slopes|||ArcGIS Online search for Hitchiti State Forest (owner USFS_SouthernResearchStation)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Stephen_F_Austin_NLCD/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Stephen_F_Austin_NLCD/MapServer|Stephen F Austin NLCD|||ArcGIS Online search for Stephen F. Austin Memorial Historic Site (owner USFS_SouthernResearchStation)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Stephen_F_Austin_aspects/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Stephen_F_Austin_aspects/MapServer|Stephen F Austin aspects|||ArcGIS Online search for Stephen F. Austin Memorial Historic Site (owner USFS_SouthernResearchStation)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Stephen_F_Austin_slopes/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/gGHDlz6USftL5Pau/arcgis/rest/services/Stephen_F_Austin_slopes/MapServer|Stephen F Austin slopes|||ArcGIS Online search for Stephen F. Austin Memorial Historic Site (owner USFS_SouthernResearchStation)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/jj1NqXxfLjbkZQH0/arcgis/rest/services/Practica2_perea_villar_WTL1/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/jj1NqXxfLjbkZQH0/arcgis/rest/services/Practica2_perea_villar_WTL1/MapServer|Practica2_perea_villar_WTL1|||ArcGIS Online search for Perea Nature National Recreation Trail (owner GJN9731_unisevilla)|",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/qboYD3ru0louQq4F/arcgis/rest/services/North_Cascades_NP_Vegetation/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/qboYD3ru0louQq4F/arcgis/rest/services/North_Cascades_NP_Vegetation/MapServer|North Cascades NP Vegetation|||ArcGIS Online search for Cascades National Recreation Trail (owner szegedk_wwu)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/rCcfuAf877pT4w3i/arcgis/rest/services/Mount_St__Helens_National_Volcanic_Monument_WTL3/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/rCcfuAf877pT4w3i/arcgis/rest/services/Mount_St__Helens_National_Volcanic_Monument_WTL3/MapServer|Mount St_ Helens National Volcanic Monument_WTL3|||ArcGIS Online search for Mt. St. Helens National Monument (owner jasmine.ortiz@wsu.edu_wsuniv)|",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://tiles.arcgis.com/tiles/zbiOJznElr9EGpUY/arcgis/rest/services/DominguezEscalante/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://tiles.arcgis.com/tiles/zbiOJznElr9EGpUY/arcgis/rest/services/DominguezEscalante/MapServer|OLSP Native Trails StoryMap Dominguez and Escalante Map Image|||ArcGIS Online search for Dominguez-Escalante Site National Historic Site (owner ntirres_nps)|",
+   "verdicts": [
+    "REJECT"
+   ]
   }
  },
  "stat": {
-  "ask": 6,
-  "did_not_open": 66,
+  "ask": 59,
+  "did_not_open": 26,
   "live_only": 0,
-  "probed": 104,
-  "ready": 0,
-  "reject": 30,
-  "retry": 66,
-  "rows": 335,
+  "probed": 504,
+  "ready": 1,
+  "reject": 413,
+  "retry": 26,
+  "rows": 898,
   "skipped_fresh": 29,
   "tests_miss": 0,
   "tests_ok": 2,
-  "water_only": 2
+  "water_only": 5
  }
 }
