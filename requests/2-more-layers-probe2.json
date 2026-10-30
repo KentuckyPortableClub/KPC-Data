@@ -1,0 +1,20 @@
+{
+ "chat": 2,
+ "kind": "layer-probe",
+ "layers": [
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+  "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer",
+  "https://gis.blm.gov/wyarcgis/rest/services/recreation/BLM_WY_Recreation_Areas_HUB/MapServer",
+  "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer",
+  "https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/MapServer",
+  "https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_CO_Recreation/MapServer",
+  "https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_Colorado_Recreation_for_HUB/MapServer",
+  "https://gis.blm.gov/nmarcgis/rest/services/Recreation/BLM_NM_Recreation_Guide/MapServer",
+  "https://gis.blm.gov/nmarcgis/rest/services/Recreation/BLM_NM_RGDN_Recreation/MapServer",
+  "https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/MapServer",
+  "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_DevelopedSite_01/MapServer/0",
+  "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer"
+ ],
+ "report": "Third step of the more-layers hunt (BLM SITE outlines for UT ID NV WY OR AZ NM CO, ~700 parks): which layers are POLYGONS, name field, record count. BLM Recs_poly/1, the state-office recreation services, BLM ACEC, Forest Service developed-site boundaries."
+}
