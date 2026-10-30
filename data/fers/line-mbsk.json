@@ -1,0 +1,77 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "mbsk",
+ "states": [
+  "CA-MB",
+  "CA-SK"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 14:36 UTC",
+ "verdict": "PART READY FOR CHAT 8",
+ "why": [
+  "water not checked: CA-MB: 1 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 0,
+  "DROPPED": 10,
+  "NEVER LOOKED AT": 0
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 116,
+   "pairs whose boxes touch": 116
+  },
+  "pass2": {
+   "agree with the pass before": 106,
+   "date": "2026-10-30",
+   "pairs tested": 49
+  },
+  "pass3": {
+   "agree with the pass before": 39,
+   "date": "2026-10-30",
+   "pairs tested": 47
+  },
+  "pass5": {
+   "checked": 15,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 1
+  }
+ },
+ "files": {
+  "CA-MB": "data/fers/CA-MB.json",
+  "CA-SK": "data/fers/CA-SK.json"
+ },
+ "CA-MB": {
+  "rows": 79,
+  "live": 4,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "this spot is 4480 km from Churchill Wildlife Management Area": 1,
+   "water not checked": 1
+  },
+  "dropped": 60,
+  "merged": 13
+ },
+ "water_weak": {
+  "CA-MB": 1
+ },
+ "CA-SK": {
+  "rows": 52,
+  "live": 33,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 11,
+  "merged": 8
+ },
+ "states_ready": [
+  "CA-SK"
+ ],
+ "states_held": [
+  "CA-MB"
+ ]
+}

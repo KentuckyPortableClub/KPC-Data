@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-30T13:58Z",
+ "checked": "2026-10-30T14:36Z",
  "switched_on": false,
  "results": [
   {
@@ -131,15 +131,18 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/CA-ON.json.gz",
+   "path": "data/fers/CA-MB.json",
    "kind": "fers",
-   "why": [
-    "F-S3 54 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-0154+CA-0304 102 km, CA-0444+CA-1699 118 km"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD"
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-SK.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-AZ.json",
