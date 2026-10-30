@@ -1,0 +1,896 @@
+{
+ "request": "requests/9-p2-tn.json",
+ "id": "9-p2-tn",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 TN: 8 parks, 9 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 TN: 8 parks, 9 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State TN: 8 parks. Refs in order of points: US-12775,US-13364,US-3941,US-6237,US-6247,US-11869,US-13514,US-6273. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-12775",
+    "US-13364",
+    "US-3941",
+    "US-6237",
+    "US-6247",
+    "US-11869",
+    "US-13514",
+    "US-6273"
+   ],
+   "pointq": [
+    {
+     "st": "TN",
+     "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Boundaries/FeatureServer/0",
+     "note": "TN Tennessee State Parks (TDEC)",
+     "points": [
+      [
+       35.828,
+       -88.9893
+      ],
+      [
+       35.407,
+       -85.006
+      ],
+      [
+       35.2525,
+       -85.7472
+      ],
+      [
+       35.0927,
+       -85.9223
+      ],
+      [
+       35.1773,
+       -85.9598
+      ],
+      [
+       35.8119,
+       -86.0287
+      ],
+      [
+       35.934,
+       -88.461
+      ],
+      [
+       36.0346,
+       -86.3535
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "TN",
+     "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Natural_Area_Boundaries_(Public_View)/FeatureServer/0",
+     "note": "TN Tennessee State Natural Areas (TDEC)",
+     "points": [
+      [
+       35.828,
+       -88.9893
+      ],
+      [
+       35.407,
+       -85.006
+      ],
+      [
+       35.2525,
+       -85.7472
+      ],
+      [
+       35.0927,
+       -85.9223
+      ],
+      [
+       35.1773,
+       -85.9598
+      ],
+      [
+       35.8119,
+       -86.0287
+      ],
+      [
+       35.934,
+       -88.461
+      ],
+      [
+       36.0346,
+       -86.3535
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "TN",
+     "url": "https://services3.arcgis.com/PWXNAH2YKmZY7lBq/arcgis/rest/services/Hunting_Allowed/FeatureServer/0",
+     "note": "TN Tennessee Wildlife Resources Agency",
+     "points": [
+      [
+       35.828,
+       -88.9893
+      ],
+      [
+       35.407,
+       -85.006
+      ],
+      [
+       35.2525,
+       -85.7472
+      ],
+      [
+       35.0927,
+       -85.9223
+      ],
+      [
+       35.1773,
+       -85.9598
+      ],
+      [
+       35.8119,
+       -86.0287
+      ],
+      [
+       35.934,
+       -88.461
+      ],
+      [
+       36.0346,
+       -86.3535
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "TN",
+     "url": "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Tennessee_State_Forest_Boundaries/FeatureServer/0",
+     "note": "TN Tennessee Department of Agriculture, Div",
+     "points": [
+      [
+       35.828,
+       -88.9893
+      ],
+      [
+       35.407,
+       -85.006
+      ],
+      [
+       35.2525,
+       -85.7472
+      ],
+      [
+       35.0927,
+       -85.9223
+      ],
+      [
+       35.1773,
+       -85.9598
+      ],
+      [
+       35.8119,
+       -86.0287
+      ],
+      [
+       35.934,
+       -88.461
+      ],
+      [
+       36.0346,
+       -86.3535
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "TN",
+     "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/Tennessee_State_and_Federal_Lands_WFL1/FeatureServer/49",
+     "note": "TN Tennessee Wildlife Resources Agency land",
+     "points": [
+      [
+       35.828,
+       -88.9893
+      ],
+      [
+       35.407,
+       -85.006
+      ],
+      [
+       35.2525,
+       -85.7472
+      ],
+      [
+       35.0927,
+       -85.9223
+      ],
+      [
+       35.1773,
+       -85.9598
+      ],
+      [
+       35.8119,
+       -86.0287
+      ],
+      [
+       35.934,
+       -88.461
+      ],
+      [
+       36.0346,
+       -86.3535
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "TN",
+     "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TDEC_Public_Lands/FeatureServer/0",
+     "note": "TN Tennessee Department of Environment and ",
+     "points": [
+      [
+       35.828,
+       -88.9893
+      ],
+      [
+       35.407,
+       -85.006
+      ],
+      [
+       35.2525,
+       -85.7472
+      ],
+      [
+       35.0927,
+       -85.9223
+      ],
+      [
+       35.1773,
+       -85.9598
+      ],
+      [
+       35.8119,
+       -86.0287
+      ],
+      [
+       35.934,
+       -88.461
+      ],
+      [
+       36.0346,
+       -86.3535
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       35.828,
+       -88.9893
+      ],
+      [
+       35.407,
+       -85.006
+      ],
+      [
+       35.2525,
+       -85.7472
+      ],
+      [
+       35.0927,
+       -85.9223
+      ],
+      [
+       35.1773,
+       -85.9598
+      ],
+      [
+       35.8119,
+       -86.0287
+      ],
+      [
+       35.934,
+       -88.461
+      ],
+      [
+       36.0346,
+       -86.3535
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       35.828,
+       -88.9893
+      ],
+      [
+       35.407,
+       -85.006
+      ],
+      [
+       35.2525,
+       -85.7472
+      ],
+      [
+       35.0927,
+       -85.9223
+      ],
+      [
+       35.1773,
+       -85.9598
+      ],
+      [
+       35.8119,
+       -86.0287
+      ],
+      [
+       35.934,
+       -88.461
+      ],
+      [
+       36.0346,
+       -86.3535
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       35.828,
+       -88.9893
+      ],
+      [
+       35.407,
+       -85.006
+      ],
+      [
+       35.2525,
+       -85.7472
+      ],
+      [
+       35.0927,
+       -85.9223
+      ],
+      [
+       35.1773,
+       -85.9598
+      ],
+      [
+       35.8119,
+       -86.0287
+      ],
+      [
+       35.934,
+       -88.461
+      ],
+      [
+       36.0346,
+       -86.3535
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 01:52Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State TN: 8 parks. Refs in order of points: US-12775,US-13364,US-3941,US-6237,US-6247,US-11869,US-13514,US-6273. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "TN",
+    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Boundaries/FeatureServer/0",
+    "note": "TN Tennessee State Parks (TDEC)",
+    "hits": [
+     {
+      "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Boundaries/FeatureServer/0",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   },
+   {
+    "st": "TN",
+    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Natural_Area_Boundaries_(Public_View)/FeatureServer/0",
+    "note": "TN Tennessee State Natural Areas (TDEC)",
+    "hits": [
+     {
+      "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Natural_Area_Boundaries_(Public_View)/FeatureServer/0",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   },
+   {
+    "st": "TN",
+    "url": "https://services3.arcgis.com/PWXNAH2YKmZY7lBq/arcgis/rest/services/Hunting_Allowed/FeatureServer/0",
+    "note": "TN Tennessee Wildlife Resources Agency",
+    "hits": [
+     {
+      "layer": "0 HuntingAllowed",
+      "point": [
+       35.828,
+       -88.9893
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 HuntingAllowed",
+      "point": [
+       35.407,
+       -85.006
+      ],
+      "attrs": {
+       "NAME": "Hiwassee Refuge",
+       "MANAGEMENT": "TWRA",
+       "ACRES": 6917.251046794165,
+       "REGION": 3,
+       "HUNT": "Y",
+       "Other": "Refuge",
+       "Name2": "Blythes Ferry",
+       "Label": "Hiwassee Refuge - Blythes Ferry",
+       "Lat": 35.39638603872199,
+       "Long": -84.967129053411,
+       "PageCode": "84",
+       "Category": "Hunting Allowed",
+       "WMALink": "cumberland-plateau-r3",
+       "RegionEReg": "iii",
+       "ERegLink": "hiwassee-refuge",
+       "WMALink2": "wildlife-management-areas"
+      }
+     },
+     {
+      "layer": "0 HuntingAllowed",
+      "point": [
+       35.2525,
+       -85.7472
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 HuntingAllowed",
+      "point": [
+       35.0927,
+       -85.9223
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 HuntingAllowed",
+      "point": [
+       35.1773,
+       -85.9598
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 HuntingAllowed",
+      "point": [
+       35.8119,
+       -86.0287
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 HuntingAllowed",
+      "point": [
+       35.934,
+       -88.461
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 HuntingAllowed",
+      "point": [
+       36.0346,
+       -86.3535
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "TN",
+    "url": "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Tennessee_State_Forest_Boundaries/FeatureServer/0",
+    "note": "TN Tennessee Department of Agriculture, Div",
+    "hits": [
+     {
+      "layer": "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Tennessee_State_Forest_Boundaries/FeatureServer/0",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   },
+   {
+    "st": "TN",
+    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/Tennessee_State_and_Federal_Lands_WFL1/FeatureServer/49",
+    "note": "TN Tennessee Wildlife Resources Agency land",
+    "hits": [
+     {
+      "layer": "49 TWRA",
+      "point": [
+       35.828,
+       -88.9893
+      ],
+      "attrs": {
+       "AREA": 0,
+       "PERIMETER": 0,
+       "NAME": "Humboldt Hatchery",
+       "MANAGEMENT": "TWRA",
+       "CONAME": "CROCKETT",
+       "ACRES": 235.336783802,
+       "REGION": 1,
+       "BUFF_DIST": 0.01,
+       "ORIG_FID": 262
+      }
+     },
+     {
+      "layer": "49 TWRA",
+      "point": [
+       35.407,
+       -85.006
+      ],
+      "attrs": {
+       "AREA": 350832000,
+       "PERIMETER": 243696,
+       "NAME": "Hiwassee Refuge",
+       "MANAGEMENT": "TWRA",
+       "CONAME": "MEIGS/RHEA",
+       "ACRES": 3147.55440328,
+       "REGION": 3,
+       "BUFF_DIST": 0.01,
+       "ORIG_FID": 168
+      }
+     },
+     {
+      "layer": "49 TWRA",
+      "point": [
+       35.2525,
+       -85.7472
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "49 TWRA",
+      "point": [
+       35.0927,
+       -85.9223
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "49 TWRA",
+      "point": [
+       35.1773,
+       -85.9598
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "49 TWRA",
+      "point": [
+       35.8119,
+       -86.0287
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "49 TWRA",
+      "point": [
+       35.934,
+       -88.461
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "49 TWRA",
+      "point": [
+       36.0346,
+       -86.3535
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "TN",
+    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TDEC_Public_Lands/FeatureServer/0",
+    "note": "TN Tennessee Department of Environment and ",
+    "hits": [
+     {
+      "layer": "0 TDEC Public Lands",
+      "point": [
+       35.828,
+       -88.9893
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 TDEC Public Lands",
+      "point": [
+       35.407,
+       -85.006
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 TDEC Public Lands",
+      "point": [
+       35.2525,
+       -85.7472
+      ],
+      "attrs": {
+       "TSP_UID": "TSP-0248",
+       "NAME_1": "South Cumberland State Park",
+       "NAME_2": "Grundy Forest State Natural Area",
+       "MANAGE_1": "Tennessee State Parks",
+       "USE_TYPE": "Conservation",
+       "DESIG_1": "State Park",
+       "DESIG_2": "Class I Scenic-Recreational State Natural Area",
+       "CALC_ACRES": 244,
+       "CreationDate": 1595511509728,
+       "Creator": "Rachel.Schultz",
+       "EditDate": 1595511509728,
+       "Editor": "Rachel.Schultz"
+      }
+     },
+     {
+      "layer": "0 TDEC Public Lands",
+      "point": [
+       35.0927,
+       -85.9223
+      ],
+      "attrs": {
+       "TSP_UID": "TSP-0253",
+       "NAME_1": "South Cumberland State Park",
+       "NAME_2": "Sherwood Forest State Natural Area",
+       "MANAGE_1": "Tennessee State Parks",
+       "USE_TYPE": "Recreation/Conservation",
+       "DESIG_1": "State Park",
+       "DESIG_2": "Class II Natural Scientific State Natural Area",
+       "CALC_ACRES": 3100,
+       "CreationDate": 1595511509728,
+       "Creator": "Rachel.Schultz",
+       "EditDate": 1595511509728,
+       "Editor": "Rachel.Schultz"
+      }
+     },
+     {
+      "layer": "0 TDEC Public Lands",
+      "point": [
+       35.1773,
+       -85.9598
+      ],
+      "attrs": {
+       "TSP_UID": "TSP-0251",
+       "NAME_1": "South Cumberland State Park",
+       "NAME_2": "Hawkins Cove State Natural Area",
+       "MANAGE_1": "Tennessee State Parks",
+       "USE_TYPE": "Conservation",
+       "DESIG_1": "State Park",
+       "DESIG_2": "Class II Natural Scientific State Natural Area",
+       "CALC_ACRES": 273,
+       "CreationDate": 1595511509728,
+       "Creator": "Rachel.Schultz",
+       "EditDate": 1595511509728,
+       "Editor": "Rachel.Schultz"
+      }
+     },
+     {
+      "layer": "0 TDEC Public Lands",
+      "point": [
+       35.8119,
+       -86.0287
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 TDEC Public Lands",
+      "point": [
+       35.934,
+       -88.461
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 TDEC Public Lands",
+      "point": [
+       36.0346,
+       -86.3535
+      ],
+      "attrs": {
+       "TSP_UID": "TSP-0044",
+       "NAME_1": "Cedars of Lebanon State Forest",
+       "NAME_2": "Vine Cedar Glade State Natural Area",
+       "MANAGE_1": "Tennessee Division of Forestry",
+       "USE_TYPE": "Conservation",
+       "DESIG_1": "Class II Natural Scientific State Natural Area",
+       "CALC_ACRES": 20,
+       "CreationDate": 1595511509728,
+       "Creator": "Rachel.Schultz",
+       "EditDate": 1595511509728,
+       "Editor": "Rachel.Schultz"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.828,
+       -88.9893
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.407,
+       -85.006
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.2525,
+       -85.7472
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.0927,
+       -85.9223
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.1773,
+       -85.9598
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.8119,
+       -86.0287
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.934,
+       -88.461
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       36.0346,
+       -86.3535
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.828,
+       -88.9893
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.407,
+       -85.006
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.2525,
+       -85.7472
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.0927,
+       -85.9223
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.1773,
+       -85.9598
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.8119,
+       -86.0287
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.934,
+       -88.461
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       36.0346,
+       -86.3535
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 133,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
