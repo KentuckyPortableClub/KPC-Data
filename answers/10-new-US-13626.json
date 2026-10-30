@@ -1,0 +1,37 @@
+{
+ "request": "requests/10-new-US-13626.json",
+ "id": "10-new-US-13626",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13626 Sugar River State Trail: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13626"
+  ],
+  "report": "new park US-13626 Sugar River State Trail: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-10-30 16:58Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13626",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13626",
+   "title": "",
+   "text": "{\"parkId\": 145641, \"reference\": \"US-13626\", \"name\": \"Sugar River\", \"latitude\": 43.3667, \"longitude\": -72.1791, \"grid4\": \"FN33\", \"grid6\": \"FN33vi\", \"parktypeId\": 109, \"active\": 1, \"parkComments\": \"New trail\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot,Other\", \"activationMethods\": \"Other,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.nhstateparks.org/find-parks-trails/recreational-rail-trails/sugar-river-recreational-rail-trail\", \"createdByAdmin\": \"Glen Sansoucie\", \"parktypeDesc\": \"State Trail\", \"locationDesc\": \"US-NH\", \"locationName\": \"New Hampshire\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N1PHR\", \"firstActivationDate\": \"2026-10-27\"}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}
