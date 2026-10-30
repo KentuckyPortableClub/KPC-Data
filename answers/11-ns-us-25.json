@@ -1,0 +1,258 @@
+{
+ "request": "requests/11-ns-us-25.json",
+ "id": "11-ns-us-25",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NOT SURE map check (us, US-WY): screenshots in order: 1=US-6184 (record); 2=US-6184 (map); 3=US-6185 (record); 4=US-6185 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "Chat 11 NOT SURE map check (us, US-WY): screenshots in order: 1=US-6184 (record); 2=US-6184 (map); 3=US-6185 (record); 4=US-6185 (map). The map shots are centred on the POTA pin (zoom 14).",
+  "items": [
+   {
+    "ref": "US-6184",
+    "park": "The Pinnacles Geologic Site BLM Recreation Management Area",
+    "record": "Pinnacles ACEC",
+    "area": "US-WY"
+   },
+   {
+    "ref": "US-6185",
+    "park": "South Pass Historic Landmark National Historic Site",
+    "record": "South Pass Historic Landscape ACEC",
+    "area": "US-WY"
+   }
+  ],
+  "urls": [
+   "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1600&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.7%2C42.06&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1592&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.886%2C42.3437&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   }
+  ]
+ },
+ "answered": "2026-10-30 18:01Z",
+ "results": [
+  {
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1600&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1600&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: ACEC Designated Polygons (ID: 0)",
+   "text": "ArcGIS REST Services Directory\nHome > services > lands > BLM_Natl_ACEC (MapServer) > ACEC Designated Polygons > query API Reference\nQuery: ACEC Designated Polygons (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 1600\nACEC_NAME: Pinnacles ACEC\nLUP_NAME: Rock Springs Resource Management Plan\nROD_DATE: 1734825600000\nGIS_ACRES: 1344.2068384\nADMIN_ST: WY\nGlobalID: {124FE869-19CD-4A6A-B888-8FDC3DEAADDE}\nOriginal_GlobalID: {8011473E-165C-4F3D-81B8-16AB7614464D}\nShape.STArea(): 5.917014925466772E-4\nShape.STLength(): 0.10243763465794871\nNEPA_NUM:\nACEC_RLVNCE_CUL: NO\nACEC_RLVNCE_FRSC: NO\nACEC_RLVNCE_HIS: NO\nACEC_RLVNCE_NHAZ: NO\nACEC_RLVNCE_NPRO: NO\nACEC_RLVNCE_NSYS: NO\nACEC_RLVNCE_SCE: YES\nACEC_RLVNCE_WRSC: YES\nACEC_IMPRTNCE_QLTS: NO\nACEC_IMPRTNCE_IMPRTNCE: YES\nACEC_IMPRTNCE_CNTRBTN: YES\nACEC_IMPRTNCE_THRT: NO\nSPCL_MGMT_ATTN_RX_PRTCT: NO\nSPCL_MGMT_ATTN_RX_PRVNT: NO",
+   "links": [
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands",
+     "text": "lands"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer",
+     "text": "BLM_Natl_ACEC (MapServer)"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "text": "ACEC Designated Polygons"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/help/en/rest/router.html?f=rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/1600",
+     "text": "1600"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-25-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.7%2C42.06&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.7%2C42.06&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | Bureau of Land Management, Headquarters (HQ)\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-25-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1592&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1592&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: ACEC Designated Polygons (ID: 0)",
+   "text": "ArcGIS REST Services Directory\nHome > services > lands > BLM_Natl_ACEC (MapServer) > ACEC Designated Polygons > query API Reference\nQuery: ACEC Designated Polygons (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 1592\nACEC_NAME: South Pass Historic Landscape ACEC\nLUP_NAME: Rock Springs Resource Management Plan\nROD_DATE: 1734825600000\nGIS_ACRES: 53773.37755489\nADMIN_ST: WY\nGlobalID: {6A080B35-6BD3-4BE8-91DA-2D2293B7E7A8}\nOriginal_GlobalID: {5B6ECC0A-9E2F-4588-B64B-FA8EED0DF1F6}\nShape.STArea(): 0.023771386815373986\nShape.STLength(): 3.227396913566408\nNEPA_NUM:\nACEC_RLVNCE_CUL: YES\nACEC_RLVNCE_FRSC: NO\nACEC_RLVNCE_HIS: YES\nACEC_RLVNCE_NHAZ: NO\nACEC_RLVNCE_NPRO: NO\nACEC_RLVNCE_NSYS: NO\nACEC_RLVNCE_SCE: YES\nACEC_RLVNCE_WRSC: YES\nACEC_IMPRTNCE_QLTS: NO\nACEC_IMPRTNCE_IMPRTNCE: YES\nACEC_IMPRTNCE_CNTRBTN: NO\nACEC_IMPRTNCE_THRT: NO\nSPCL_MGMT_ATTN_RX_PRTCT: NO\nSPCL_MGMT_ATTN_RX_PRVNT: NO",
+   "links": [
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands",
+     "text": "lands"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer",
+     "text": "BLM_Natl_ACEC (MapServer)"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "text": "ACEC Designated Polygons"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/help/en/rest/router.html?f=rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/1592",
+     "text": "1592"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-25-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.886%2C42.3437&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.886%2C42.3437&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | Bureau of Land Management, Headquarters (HQ)\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-25-4.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 35,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 2
+ },
+ "short": "4 result(s), 4 read OK, 4 screenshot(s)"
+}
