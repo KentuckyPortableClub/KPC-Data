@@ -60,6 +60,9 @@ jobs:
             release-approved) python3 .github/scripts/kpc_release_approved.py ;;   # Brandon 3:02 PM: one batch of what chat 11 (+ chat 2) approved, on the day chat 8 + 11 PASS the key   # RULE SHEET G step 2: held key pieces -> one question each for chat 11
             *) echo "::notice title=Waiting room::unknown mode $M" ;;
           esac
+      - name: The morning list for chat 11 (data/waiting/today.md; Brandon Oct 29 11:50 PM)
+        continue-on-error: true
+        run: cd kpcdata && python3 .github/scripts/kpc_waiting_today.py || true
       - name: Save (data/waiting + data/status, plus the live files an undo / release / promotion changed)
         continue-on-error: true
         run: |
