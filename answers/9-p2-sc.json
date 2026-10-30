@@ -1,0 +1,493 @@
+{
+ "request": "requests/9-p2-sc.json",
+ "id": "9-p2-sc",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 SC: 4 parks, 7 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 SC: 4 parks, 7 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State SC: 4 parks. Refs in order of points: US-9229,US-9759,US-13016,US-13198. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-9229",
+    "US-9759",
+    "US-13016",
+    "US-13198"
+   ],
+   "pointq": [
+    {
+     "st": "SC",
+     "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+     "note": "SC South Carolina DNR (WMAs, heritage prese",
+     "points": [
+      [
+       34.7111,
+       -81.5392
+      ],
+      [
+       32.7488,
+       -79.9048
+      ],
+      [
+       34.0685,
+       -81.2555
+      ],
+      [
+       33.5704,
+       -79.7953
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "SC",
+     "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+     "note": "SC South Carolina State Parks (PRT)",
+     "points": [
+      [
+       34.7111,
+       -81.5392
+      ],
+      [
+       32.7488,
+       -79.9048
+      ],
+      [
+       34.0685,
+       -81.2555
+      ],
+      [
+       33.5704,
+       -79.7953
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "SC",
+     "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0",
+     "note": "SC South Carolina DNR (heritage preserves)",
+     "points": [
+      [
+       34.7111,
+       -81.5392
+      ],
+      [
+       32.7488,
+       -79.9048
+      ],
+      [
+       34.0685,
+       -81.2555
+      ],
+      [
+       33.5704,
+       -79.7953
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "SC",
+     "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "note": "SC South Carolina Department of Natural Res",
+     "points": [
+      [
+       34.7111,
+       -81.5392
+      ],
+      [
+       32.7488,
+       -79.9048
+      ],
+      [
+       34.0685,
+       -81.2555
+      ],
+      [
+       33.5704,
+       -79.7953
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       34.7111,
+       -81.5392
+      ],
+      [
+       32.7488,
+       -79.9048
+      ],
+      [
+       34.0685,
+       -81.2555
+      ],
+      [
+       33.5704,
+       -79.7953
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       34.7111,
+       -81.5392
+      ],
+      [
+       32.7488,
+       -79.9048
+      ],
+      [
+       34.0685,
+       -81.2555
+      ],
+      [
+       33.5704,
+       -79.7953
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       34.7111,
+       -81.5392
+      ],
+      [
+       32.7488,
+       -79.9048
+      ],
+      [
+       34.0685,
+       -81.2555
+      ],
+      [
+       33.5704,
+       -79.7953
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 01:52Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State SC: 4 parks. Refs in order of points: US-9229,US-9759,US-13016,US-13198. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "SC",
+    "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
+    "note": "SC South Carolina DNR (WMAs, heritage prese",
+    "hits": [
+     {
+      "layer": "4 SCDNR Properties Public Dissolved",
+      "point": [
+       34.7111,
+       -81.5392
+      ],
+      "attrs": {
+       "ParentPropertyID": "997",
+       "app_icon_url": "https://dnr.sc.gov/GIS/Images/publiclands/icons/wma.png",
+       "prop_page_url": "https://public-lands-scdnr.hub.arcgis.com/pages/unnamed-gamezone2",
+       "PropertyID": "997",
+       "PropertyName": "Unnamed Game Zone 2",
+       "PropertyUse": "WMA",
+       "HeritagePreserve": "No",
+       "WildlifeManagementArea": "Other",
+       "PublicAccess": "Open",
+       "SCDNR_Region": "1",
+       "SCDNR_GameZone": "2",
+       "GIS_PropertyAcres": 18522.90949084,
+       "Biking": "No",
+       "Birding": "No",
+       "Camping": "No",
+       "Equestrian": "No",
+       "Fishing": "No",
+       "Hiking": "No",
+       "Hunting": "Yes",
+       "Paddling": "No",
+       "Youth": "No",
+       "WaterfowlCatII": "No",
+       "WaterfowlCatI": "No",
+       "Quail": "No",
+       "Dove": "No",
+       "BirdDog": "No",
+       "ArcheryOnly": "No",
+       "DoveBird": "No"
+      }
+     },
+     {
+      "layer": "4 SCDNR Properties Public Dissolved",
+      "point": [
+       32.7488,
+       -79.9048
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "4 SCDNR Properties Public Dissolved",
+      "point": [
+       34.0685,
+       -81.2555
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "4 SCDNR Properties Public Dissolved",
+      "point": [
+       33.5704,
+       -79.7953
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "SC",
+    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+    "note": "SC South Carolina State Parks (PRT)",
+    "hits": [
+     {
+      "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   },
+   {
+    "st": "SC",
+    "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0",
+    "note": "SC South Carolina DNR (heritage preserves)",
+    "hits": [
+     {
+      "layer": "0 Heritage_Preserve_Layer_CopyFeatures",
+      "point": [
+       34.7111,
+       -81.5392
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Heritage_Preserve_Layer_CopyFeatures",
+      "point": [
+       32.7488,
+       -79.9048
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Heritage_Preserve_Layer_CopyFeatures",
+      "point": [
+       34.0685,
+       -81.2555
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Heritage_Preserve_Layer_CopyFeatures",
+      "point": [
+       33.5704,
+       -79.7953
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "SC",
+    "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+    "note": "SC South Carolina Department of Natural Res",
+    "hits": [
+     {
+      "layer": "3 SCDNR Public Properties View",
+      "point": [
+       34.7111,
+       -81.5392
+      ],
+      "attrs": {
+       "PropertyID": "997",
+       "PropertyName": "No official SCDNR property name",
+       "PropertyTract": "Wild Turkey Management Demostration Area (SR4413)",
+       "PropertyUse": "WMA",
+       "PropertyType": "Leas",
+       "PropertyOwner": "JOHN HANCOCK LIFE INS COMP",
+       "PropertyManager": "South Carolina Department of Natural Resources",
+       "HeritagePreserve": "No",
+       "WMA_SpecialActivity": "None",
+       "PublicAccess": "Open",
+       "County": "Union",
+       "SCDNR_GameZone": "2",
+       "GIS_TractAcres": 478.93770213,
+       "GIS_PropertyAcres": 18522.90949084,
+       "Hiking": "No",
+       "Hunting": "Yes",
+       "Fishing": "No",
+       "Biking": "No",
+       "Equestrian": "No",
+       "ParentPropertyID": "997",
+       "Birding": "No",
+       "Camping": "No",
+       "Paddling": "No",
+       "WildlifeManagementArea": "Other",
+       "SCDNR_Region": "1",
+       "Youth": "No",
+       "WaterfowlCatI": "No",
+       "WaterfowlCatII": "No",
+       "Quail": "No",
+       "Dove": "No",
+       "BirdDog": "No",
+       "ArcheryOnly": "No",
+       "prop_page_url": "https://public-lands-scdnr.hub.arcgis.com/pages/unnamed-gamezone2"
+      }
+     },
+     {
+      "layer": "3 SCDNR Public Properties View",
+      "point": [
+       32.7488,
+       -79.9048
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 SCDNR Public Properties View",
+      "point": [
+       34.0685,
+       -81.2555
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 SCDNR Public Properties View",
+      "point": [
+       33.5704,
+       -79.7953
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.7111,
+       -81.5392
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.7488,
+       -79.9048
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.0685,
+       -81.2555
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.5704,
+       -79.7953
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.7111,
+       -81.5392
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.7488,
+       -79.9048
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.0685,
+       -81.2555
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.5704,
+       -79.7953
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 69,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
