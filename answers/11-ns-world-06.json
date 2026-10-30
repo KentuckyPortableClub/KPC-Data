@@ -1,0 +1,436 @@
+{
+ "request": "requests/11-ns-world-06.json",
+ "id": "11-ns-world-06",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NOT SURE map check (world, IE, IT, NO): screenshots in order: 1=IE-0277 (record); 2=IE-0277 (map); 3=IT-0247 (record); 4=IT-0324 (record); 5=IT-1215 (record); 6=NO-0363 (record); 7=NO-0563 (record). The map shots are centred on the POTA pin (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "Chat 11 NOT SURE map check (world, IE, IT, NO): screenshots in order: 1=IE-0277 (record); 2=IE-0277 (map); 3=IT-0247 (record); 4=IT-0324 (record); 5=IT-1215 (record); 6=NO-0363 (record); 7=NO-0563 (record). The map shots are centred on the POTA pin (zoom 14).",
+  "items": [
+   {
+    "ref": "IE-0277",
+    "park": "Corrvaddy Forest Reserve",
+    "record": "CORRAVADDY",
+    "area": "IE"
+   },
+   {
+    "ref": "IT-0247",
+    "park": "Riserva Naturale Provinciale Bosco della SS. Trinita Provincial Park",
+    "record": "Riserva naturale provinciale Bosco della SS. TrinitÃƒÂ",
+    "area": "IT"
+   },
+   {
+    "ref": "IT-0324",
+    "park": "Isola di Pantelleria National Park",
+    "record": "P N ISOLA DI PANTELLERIA",
+    "area": "IT"
+   },
+   {
+    "ref": "IT-1215",
+    "park": "Monumento Naturale Sasso di Guidino Provincial Park",
+    "record": "Monumento naturale regionale del Sasso di Guidino",
+    "area": "IT"
+   },
+   {
+    "ref": "NO-0363",
+    "park": "Ertsvikskjær Nature Reserve",
+    "record": "Ersvikskjær",
+    "area": "NO"
+   },
+   {
+    "ref": "NO-0563",
+    "park": "Gjørahaugen Nature Reserve",
+    "record": "Gjørashaugen",
+    "area": "NO"
+   }
+  ],
+  "urls": [
+   "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2/query?objectIds=1429&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices7.arcgis.com%2F6LSAdqgf43oKRpP6%2Farcgis%2Frest%2Fservices%2FCoillte_Boundaries_Consultation%2FFeatureServer%2F2&center=-7.76447%2C54.9013&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://eunis.eea.europa.eu/sites/137346",
+   "https://eunis.eea.europa.eu/sites/132833",
+   "https://eunis.eea.europa.eu/sites/134629",
+   "https://eunis.eea.europa.eu/sites/63571",
+   "https://eunis.eea.europa.eu/sites/53637"
+  ]
+ },
+ "answered": "2026-10-30 18:17Z",
+ "results": [
+  {
+   "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2/query?objectIds=1429&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2/query?objectIds=1429&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Properties (ID: 2)",
+   "text": "ArcGIS REST Services Directory\nHome > services > Coillte_Boundaries_Consultation (FeatureServer) > Properties > query | API Reference\nQuery: Properties (ID: 2)\nWhere:\nObject IDs:\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nDisjoint\nRelation\nResult Type:\nNone\nStandard\nTile\nDistance:\nUnits:\nMeters\nMiles\nFeet\nKilometers\nNautical Miles\nUS NauticalMiles\nOut Distance:\nRelation:\nReturn Geodetic: True False\nOut Fields:\nReturn Geometry: True False\nReturn Centroid: True False\nReturn Envelope: True False\nFeature Encoding:\nesriDefault\nesriCompressedShapeBuffer\nGeometry MultiPatch Option:\nNone\nxyFootprint\nstripMaterials\nembedMaterials\nexternalizeTextures\nextent\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nDefault Spatial Reference:\nDatum Transformation:\nApply VCS Projection: True False\nReturn IDs Only: True False\nReturn Unique IDs Only: True False\nReturn Count Only: True False\nReturn Extent Only: True False\nReturn Query Geometry: True False\nReturn Distinct Values: True False\nCache Hint True False\nCollation:\nOrder By Fields:\nGroup By Fields (For Statistics):\nReturn Aggregate Ids: True False\nOutput Statistics:\nHaving:\nResult Offset:\nResult Record Count:\nReturnZ: True False\nReturnM: True False\nReturn True Curves: True False\nReturn Exceeded Limit Features: True False\nReturn Exceeded Limit Geometries: True False\nQuantization Parameters:\nSQL Format:\nnone\nstandard\nnative\nFormat:\nHTML\nJSON\nGEOJSON\nPBF\n# results: 1\nFOREST_COD: DL10\nPROPERTY_N: CORRAVADDY\nGIS_AREA: 520.84\nLAST_REFRE: 26 March 2026\nFID: 1429\nShape__Area: 5208406.08807373\nShape__Length: 23266.479756892",
+   "links": [
+    {
+     "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/ArcGIS/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/ArcGIS/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/ArcGIS/rest/services/Coillte_Boundaries_Consultation/FeatureServer",
+     "text": "Coillte_Boundaries_Consultation (FeatureServer)"
+    },
+    {
+     "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/ArcGIS/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2",
+     "text": "Properties"
+    },
+    {
+     "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/ArcGIS/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2/query",
+     "text": "query"
+    },
+    {
+     "url": "http://resources.arcgis.com/en/help/arcgis-rest-api/",
+     "text": "API Reference"
+    }
+   ],
+   "screenshot": "answers/11-ns-world-06-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices7.arcgis.com%2F6LSAdqgf43oKRpP6%2Farcgis%2Frest%2Fservices%2FCoillte_Boundaries_Consultation%2FFeatureServer%2F2&center=-7.76447%2C54.9013&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices7.arcgis.com%2F6LSAdqgf43oKRpP6%2Farcgis%2Frest%2Fservices%2FCoillte_Boundaries_Consultation%2FFeatureServer%2F2&center=-7.76447%2C54.9013&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri UK | Esri | TomTom | Garmin | Intermap | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-world-06-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://eunis.eea.europa.eu/sites/137346",
+   "status": 200,
+   "final_url": "https://biodiversity.europa.eu/sites/national/137346",
+   "title": "Site cdda | Sites | Biodiversity Information System for Europe",
+   "text": "Skip to main content\nSkip to navigation\nSkip to footer\nAn official website of the European Union | How do you know?\nEnvironmental information systems\nAT A GLANCE\n© OpenStreetMap contributors, © Eurostat/GISCO\nThe designations employed and the presentation of material on this map do not imply the expression of any opinion whatsoever on the part of the European Union concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries.\nNational designation type\nCode Designation name (Original) Designation name (English) Category Date\nRelated links\nNatura 2000 Viewer\nNatura 2000 - Environment - European Commission\nThe Natura 2000 protected areas network - products from the European Environment Agency\nEuropean protected sites - simple map viewer\nDOPA Explorer\nProtected Planet\nSite cdda | Sites | Biodiversity Information System for Europe\nManaged by\nExplore our environmental information systems\nContact\nPrivacy\nSitemap\nCMS Login",
+   "links": [
+    {
+     "url": "https://biodiversity.europa.eu/natura2000/sites/site_cdda/#view",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/natura2000/sites/site_cdda/#navigation",
+     "text": "Skip to navigation"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/natura2000/sites/site_cdda/#footer",
+     "text": "Skip to footer"
+    },
+    {
+     "url": "https://europa.eu/european-union/contact/institutions-bodies_en",
+     "text": "See all EU institutions and bodies"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/natura2000/en",
+     "text": "Natura 2000"
+    },
+    {
+     "url": "https://www.eea.europa.eu/",
+     "text": "European Environment Agency website"
+    },
+    {
+     "url": "https://water.europa.eu/marine",
+     "text": "WISE marine - Marine information system for Europe"
+    },
+    {
+     "url": "https://water.europa.eu/freshwater",
+     "text": "WISE freshwater - Freshwater information system for Europe"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/",
+     "text": "BISE - Biodiversity information system for Europe"
+    },
+    {
+     "url": "https://forest.eea.europa.eu/",
+     "text": "FISE - Forest information system for Europe"
+    },
+    {
+     "url": "https://climate-adapt.eea.europa.eu/en/observatory",
+     "text": "European Climate and health observatory"
+    },
+    {
+     "url": "https://climate-adapt.eea.europa.eu/",
+     "text": "ClimateADAPT"
+    },
+    {
+     "url": "https://industry.eea.europa.eu/",
+     "text": "European Industrial Emissions Portal"
+    },
+    {
+     "url": "https://climate-energy.eea.europa.eu/",
+     "text": "Climate and energy in the EU"
+    },
+    {
+     "url": "https://land.copernicus.eu/en",
+     "text": "Copernicus Land Monitoring Service"
+    },
+    {
+     "url": "https://insitu.copernicus.eu/",
+     "text": "Copernicus InSitu"
+    },
+    {
+     "url": "https://www.eea.europa.eu/en/circularity",
+     "text": "Circularity Metrics Lab"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/",
+     "text": ""
+    },
+    {
+     "url": "https://biodiversity.europa.eu/natura2000/sites/site_cdda/#",
+     "text": "AT A GLANCE"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/",
+     "text": ""
+    },
+    {
+     "url": "https://biodiversity.europa.eu/natura2000",
+     "text": "Natura 2000"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/natura2000/sites",
+     "text": "Sites"
+    },
+    {
+     "url": "https://www.openstreetmap.org/copyright",
+     "text": "OpenStreetMap"
+    },
+    {
+     "url": "https://ec.europa.eu/eurostat/web/gisco",
+     "text": "Eurostat/GISCO"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/sites/national/137346#national-designation-type",
+     "text": ""
+    },
+    {
+     "url": "https://biodiversity.europa.eu/sites/national/137346#related-links",
+     "text": ""
+    },
+    {
+     "url": "https://www.eea.europa.eu/data-and-maps/explore-interactive-maps/european-protected-areas-1",
+     "text": ""
+    },
+    {
+     "url": "https://natura2000.eea.europa.eu/",
+     "text": "Natura 2000 Viewer"
+    },
+    {
+     "url": "https://ec.europa.eu/environment/nature/natura2000/index_en.htm",
+     "text": "Natura 2000 - Environment - European Commission"
+    },
+    {
+     "url": "https://www.eea.europa.eu/themes/biodiversity/natura-2000",
+     "text": "The Natura 2000 protected areas network - products from the European Environment Agency"
+    },
+    {
+     "url": "https://www.eea.europa.eu/data-and-maps/explore-interactive-maps/european-protected-areas-1",
+     "text": "European protected sites - simple map viewer"
+    },
+    {
+     "url": "https://dopa-explorer.jrc.ec.europa.eu/",
+     "text": "DOPA Explorer"
+    },
+    {
+     "url": "https://natura2000.eea.europa.eu/",
+     "text": ""
+    },
+    {
+     "url": "https://www.protectedplanet.net/en",
+     "text": ""
+    },
+    {
+     "url": "https://www.protectedplanet.net/en",
+     "text": "Protected Planet"
+    },
+    {
+     "url": "https://www.eea.europa.eu/",
+     "text": ""
+    },
+    {
+     "url": "https://commission.europa.eu/",
+     "text": ""
+    },
+    {
+     "url": "https://www.eea.europa.eu/en/information-systems#",
+     "text": "Explore our environmental information systems"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/legal-and-privacy-notice",
+     "text": "Privacy"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/sitemap",
+     "text": "Sitemap"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/login",
+     "text": "CMS Login"
+    }
+   ],
+   "screenshot": "answers/11-ns-world-06-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://eunis.eea.europa.eu/sites/132833",
+   "status": 404,
+   "final_url": "https://eunis.eea.europa.eu/sites/132833",
+   "title": "EUNIS - Application retired",
+   "text": "Dear EUNIS user,\nThe EUNIS web application is retired. The software behind it can no longer be maintained. The underpinning EUNIS database continues to be updated, and its content is integrated into the Biodiversity Information System for Europe, BISE. The European Environment Agency is still improving the visualisation and layout of the EUNIS content in BISE. In case you don’t find the information you used to access from the EUNIS web application, please contact us at bise@eea.europa.eu.\nSearch habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat\nSearch species in BISE\nhttps://biodiversity.europa.eu/resources/search-species\nSearch protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protected-areas\nEuropean Environment Agency — bise@eea.europa.eu",
+   "links": [
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-habitat",
+     "text": "Search habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-species",
+     "text": "Search species in BISE\nhttps://biodiversity.europa.eu/resources/search-species"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-protected-areas",
+     "text": "Search protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protect"
+    }
+   ],
+   "screenshot": "answers/11-ns-world-06-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://eunis.eea.europa.eu/sites/134629",
+   "status": 404,
+   "final_url": "https://eunis.eea.europa.eu/sites/134629",
+   "title": "EUNIS - Application retired",
+   "text": "Dear EUNIS user,\nThe EUNIS web application is retired. The software behind it can no longer be maintained. The underpinning EUNIS database continues to be updated, and its content is integrated into the Biodiversity Information System for Europe, BISE. The European Environment Agency is still improving the visualisation and layout of the EUNIS content in BISE. In case you don’t find the information you used to access from the EUNIS web application, please contact us at bise@eea.europa.eu.\nSearch habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat\nSearch species in BISE\nhttps://biodiversity.europa.eu/resources/search-species\nSearch protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protected-areas\nEuropean Environment Agency — bise@eea.europa.eu",
+   "links": [
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-habitat",
+     "text": "Search habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-species",
+     "text": "Search species in BISE\nhttps://biodiversity.europa.eu/resources/search-species"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-protected-areas",
+     "text": "Search protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protect"
+    }
+   ],
+   "screenshot": "answers/11-ns-world-06-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://eunis.eea.europa.eu/sites/63571",
+   "status": 404,
+   "final_url": "https://eunis.eea.europa.eu/sites/63571",
+   "title": "EUNIS - Application retired",
+   "text": "Dear EUNIS user,\nThe EUNIS web application is retired. The software behind it can no longer be maintained. The underpinning EUNIS database continues to be updated, and its content is integrated into the Biodiversity Information System for Europe, BISE. The European Environment Agency is still improving the visualisation and layout of the EUNIS content in BISE. In case you don’t find the information you used to access from the EUNIS web application, please contact us at bise@eea.europa.eu.\nSearch habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat\nSearch species in BISE\nhttps://biodiversity.europa.eu/resources/search-species\nSearch protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protected-areas\nEuropean Environment Agency — bise@eea.europa.eu",
+   "links": [
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-habitat",
+     "text": "Search habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-species",
+     "text": "Search species in BISE\nhttps://biodiversity.europa.eu/resources/search-species"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-protected-areas",
+     "text": "Search protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protect"
+    }
+   ],
+   "screenshot": "answers/11-ns-world-06-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://eunis.eea.europa.eu/sites/53637",
+   "status": 404,
+   "final_url": "https://eunis.eea.europa.eu/sites/53637",
+   "title": "EUNIS - Application retired",
+   "text": "Dear EUNIS user,\nThe EUNIS web application is retired. The software behind it can no longer be maintained. The underpinning EUNIS database continues to be updated, and its content is integrated into the Biodiversity Information System for Europe, BISE. The European Environment Agency is still improving the visualisation and layout of the EUNIS content in BISE. In case you don’t find the information you used to access from the EUNIS web application, please contact us at bise@eea.europa.eu.\nSearch habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat\nSearch species in BISE\nhttps://biodiversity.europa.eu/resources/search-species\nSearch protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protected-areas\nEuropean Environment Agency — bise@eea.europa.eu",
+   "links": [
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-habitat",
+     "text": "Search habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-species",
+     "text": "Search species in BISE\nhttps://biodiversity.europa.eu/resources/search-species"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-protected-areas",
+     "text": "Search protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protect"
+    }
+   ],
+   "screenshot": "answers/11-ns-world-06-7.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 34,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 1
+ },
+ "short": "7 result(s), 3 read OK, 7 screenshot(s)"
+}
