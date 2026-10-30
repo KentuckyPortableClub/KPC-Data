@@ -1,0 +1,276 @@
+{
+ "request": "requests/9-pt-UT.json",
+ "id": "9-pt-UT",
+ "chat": 9,
+ "kind": "probe",
+ "report": "HQ 8:20 AM pin test UT: 17 Fable-row parks vs chat 3's layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "HQ 8:20 AM pin test UT: 17 Fable-row parks vs chat 3's layers",
+  "probe": {
+   "about": "Pin-in-polygon at the POTA pin of every UT park in its Fable file vs chat 3's untested layers. Refs in order of points: US-10963,US-11095,US-11186,US-11207,US-11921,US-12069,US-12998,US-13590,US-13591,US-13596,US-5787,US-5844,US-5875,US-5957,US-5972,US-5998,US-6060",
+   "refs": [
+    "US-10963",
+    "US-11095",
+    "US-11186",
+    "US-11207",
+    "US-11921",
+    "US-12069",
+    "US-12998",
+    "US-13590",
+    "US-13591",
+    "US-13596",
+    "US-5787",
+    "US-5844",
+    "US-5875",
+    "US-5957",
+    "US-5972",
+    "US-5998",
+    "US-6060"
+   ],
+   "pointq": [
+    {
+     "st": "UT",
+     "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/UtahParksLocal/FeatureServer/0",
+     "note": "UT Parks Local",
+     "points": [
+      [
+       41.7365,
+       -111.87
+      ],
+      [
+       37.103,
+       -111.676
+      ],
+      [
+       40.1156,
+       -110.812
+      ],
+      [
+       39.2489,
+       -110.266
+      ],
+      [
+       38.0508,
+       -113.23
+      ],
+      [
+       37.6,
+       -113.449
+      ],
+      [
+       41.7556,
+       -111.909
+      ],
+      [
+       41.16,
+       -112.333
+      ],
+      [
+       41.1757,
+       -112.381
+      ],
+      [
+       38.1446,
+       -112.304
+      ],
+      [
+       38.5318,
+       -109.517
+      ],
+      [
+       41.4105,
+       -111.583
+      ],
+      [
+       39.0959,
+       -110.749
+      ],
+      [
+       39.1463,
+       -112.717
+      ],
+      [
+       40.6253,
+       -112.213
+      ],
+      [
+       40.6139,
+       -112.708
+      ],
+      [
+       39.2472,
+       -113.403
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 13:45Z",
+ "results": {
+  "about": "Pin-in-polygon at the POTA pin of every UT park in its Fable file vs chat 3's untested layers. Refs in order of points: US-10963,US-11095,US-11186,US-11207,US-11921,US-12069,US-12998,US-13590,US-13591,US-13596,US-5787,US-5844,US-5875,US-5957,US-5972,US-5998,US-6060",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "UT",
+    "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/UtahParksLocal/FeatureServer/0",
+    "note": "UT Parks Local",
+    "hits": [
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       41.7365,
+       -111.87
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       37.103,
+       -111.676
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       40.1156,
+       -110.812
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       39.2489,
+       -110.266
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       38.0508,
+       -113.23
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       37.6,
+       -113.449
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       41.7556,
+       -111.909
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       41.16,
+       -112.333
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       41.1757,
+       -112.381
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       38.1446,
+       -112.304
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       38.5318,
+       -109.517
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       41.4105,
+       -111.583
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       39.0959,
+       -110.749
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       39.1463,
+       -112.717
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       40.6253,
+       -112.213
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       40.6139,
+       -112.708
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ParksLocal",
+      "point": [
+       39.2472,
+       -113.403
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 39,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
