@@ -1,8 +1,8 @@
 {
  "about": "World harvester leads for Austria (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "AT",
- "date": "2026-10-29",
- "status": "nothing seeded: not searched (EEA lead only)",
+ "date": "2026-10-30",
+ "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
  "steps_done": [
   "known",
   "servers",
@@ -18,6 +18,42 @@
   "B": 1,
   "C": 0
  },
+ "failures": [
+  {
+   "catalog": "https://www.data.gv.at/katalog",
+   "keyword": "Nationalpark",
+   "error": "HTTP 404"
+  },
+  {
+   "catalog": "https://www.data.gv.at/katalog",
+   "keyword": "Naturschutzgebiet",
+   "error": "HTTP 404"
+  },
+  {
+   "catalog": "https://www.data.gv.at/katalog",
+   "keyword": "Naturpark",
+   "error": "HTTP 404"
+  },
+  {
+   "catalog": "https://www.data.gv.at/katalog",
+   "keyword": "Europaschutzgebiet",
+   "error": "HTTP 404"
+  }
+ ],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    3
+   ]
+  ],
+  [
+   [
+    "?",
+    3
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [],
  "known_log": [],
