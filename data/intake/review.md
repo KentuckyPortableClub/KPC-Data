@@ -7,9 +7,9 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | READY | 2 |
 | WATER-ONLY | 27 |
 | LIVE-ONLY | 1 |
-| ASK-THE-PUBLISHER | 152 |
-| RETRY | 265 |
-| REJECT | 1110 |
+| ASK-THE-PUBLISHER | 156 |
+| RETRY | 269 |
+| REJECT | 1128 |
 
 ## READY (2)
 
@@ -369,7 +369,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - CZ-0139 Ještěd Nature Park → polygon "Ještěd"
 - TEST: ok
 
-## ASK-THE-PUBLISHER (152)
+## ASK-THE-PUBLISHER (156)
 
 ### AerialPhotoViewer/Orthophoto_Coverage_Area  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0
@@ -1653,7 +1653,43 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field AREA_NAME · 41 records · sample Far South / Livingston Avenue Area / Southwest
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## RETRY (265)
+### Urban Tree Canopy Estimates (atlas crawler, US-DE)  ·    ·  from atlas crawler
+- url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/2
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "The State of Delaware makes no warranty or representation, expressed or implied, with respect to the quality, content, accuracy," · item https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 4036 records · sample Canby Park West / Cape Henlopen State Park / Capital Park
+- overlap: same service as sgdeb (another layer of it)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Urban Tree Canopy Estimates (atlas crawler, US-DE)  ·    ·  from atlas crawler
+- url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/2
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "The State of Delaware makes no warranty or representation, expressed or implied, with respect to the quality, content, accuracy," · item https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 4036 records · sample Canby Park West / Cape Henlopen State Park / Capital Park
+- overlap: same publisher as sgdea
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Zip Codes (atlas crawler, US-DE)  ·    ·  from atlas crawler
+- url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host enterprise.firstmap.delaware.gov)
+- terms: CREDIT · source item page · "The State of Delaware makes no warranty or representation, expressed or implied, with respect to the quality, content, accuracy," · item https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PO_NAME · 448 records · sample Millington / Glenolden / Norwood
+- overlap: same publisher as sgdea
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Zip Codes (atlas crawler, US-DE)  ·    ·  from atlas crawler
+- url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host enterprise.firstmap.delaware.gov)
+- terms: CREDIT · source item page · "The State of Delaware makes no warranty or representation, expressed or implied, with respect to the quality, content, accuracy," · item https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PO_NAME · 448 records · sample Millington / Glenolden / Norwood
+- overlap: same publisher as sgdea
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+## RETRY (269)
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
 - url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
@@ -3634,7 +3670,45 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source none
 - facts: status rest
 
-## REJECT (1110)
+### Alberta Park (LAYER line, CA-AB)  ·    ·  from chat 8 LAYER line
+- url: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → official (government host geospatial.alberta.ca)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: already read as Alberta Park
+- closes: not probed
+
+### Manitoba Par (LAYER line, CA-MB)  ·    ·  from chat 8 LAYER line
+- url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as Manitoba Par
+- closes: not probed
+
+### Manitoba wil (LAYER line, CA-MB)  ·    ·  from chat 8 LAYER line
+- url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (no publisher words at all)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: already read as Manitoba wil
+- closes: not probed
+
+### Manitoba wil~2 (LAYER line, CA-MB)  ·    ·  from chat 8 LAYER line
+- url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same service as Manitoba Par (another layer of it)
+- closes: not probed
+
+## REJECT (1128)
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
@@ -12782,6 +12856,168 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: ? → official (a federal / national agency named)
 - terms: CREDIT · source item page · "LAYER CITATION: Title: Yellow-Cedar Decline 1986 to 2024- Annual URL: https://services1.arcgis.com/gGHDl" · item https://www.arcgis.com/home/item.html?id=afbeaf993e654d60a01569fa5a16d200 · owner ForestHealthAlaskaRegion · org U.S. Forest Service
 - facts: arcgis-layer · esriGeometryPolygon · 22399 records · last edit 2026-07-13
+- closes: not probed
+
+### AB-PLUZ Gove (LAYER line, CA-AB)  ·    ·  from chat 8 LAYER line
+- url: https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11
+- WHY: already read as AB-PLUZ Gove: nothing new to take
+- publisher: ? → official (government host geospatial.alberta.ca)
+- terms: CREDIT · source service copyrightText · "Copyright Government of Alberta"
+- facts: arcgis-layer · esriGeometryPolygon · name field PLUZ_NAME · 61 records · sample Castle Special Management Area / Livingstone / Livingstone
+- overlap: already read as AB-PLUZ Gove
+- closes: not probed
+
+### cpcad (LAYER line, CA-AB)  ·    ·  from chat 8 LAYER line
+- url: https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0
+- WHY: already read as cpcad: nothing new to take
+- publisher: ? → official (government host maps-cartes.ec.gc.ca)
+- terms: OPEN · source item page · "Open Government Licence - Canada (http://open.canada.ca/en/open-government-licence-canada) CPCAD is compiled and" · item https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME_E · 22438 records · sample Sir Richard Squires Memorial Provincial Park / Butter Pot Provincial Park / J. T. Cheeseman Provincial Park
+- overlap: already read as cpcad
+- closes: not probed
+
+### NB-PP Govern (LAYER line, CA-NB)  ·    ·  from chat 8 LAYER line
+- url: https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0
+- WHY: already read as NB-PP Govern: nothing new to take
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "Department of Natural Resources/Ministère des Ressources naturelles" · item https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 24 records · sample Herring Cove / Castalia / Lepreau Falls
+- overlap: already read as NB-PP Govern
+- closes: not probed
+
+### New Brunswic~1 (LAYER line, CA-NB)  ·    ·  from chat 8 LAYER line
+- url: https://gis-erd-der.gnb.ca/server/rest/services/OpenData/Nature_Legacy_Protected_Areas/FeatureServer/0
+- WHY: already read as New Brunswic~1: nothing new to take
+- publisher: ? → official (government host gis-erd-der.gnb.ca)
+- terms: CREDIT · source item page · "New Brunswick Dept. of Natural Resources and Energy Development The data will be updated every few months by Brittany Harvey. Heather Loomer will also have edit" · item https://gis-erd-der.gnb.ca/server/rest/services/OpenData/Nature_Legacy_Protected_Areas/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 552 records · sample Kouchibouguacis River / Pollard Brook / Second Eel Lake
+- overlap: already read as New Brunswic~1
+- closes: not probed
+
+### New Brunswic~2 (LAYER line, CA-NB)  ·    ·  from chat 8 LAYER line
+- url: https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/0
+- WHY: already read as New Brunswic~2: nothing new to take
+- publisher: ? → official (government host gis-erd-der.gnb.ca)
+- terms: NOTHING STATED · source item page · item https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 21 records · sample Kings Landing Wildlife Management Area / West Collette Wildlife Management Area / Kedgwick Wildlife Management Area
+- overlap: already read as New Brunswic~2
+- closes: not probed
+
+### NS-NHS Nova (LAYER line, CA-NS)  ·    ·  from chat 8 LAYER line
+- url: https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29
+- WHY: already read as NS-NHS Nova : nothing new to take
+- publisher: ? → official (government host novarocmaps.novascotia.ca)
+- terms: NOTHING STATED · source item page · item https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME1 · 27 records · sample Fort Anne / Fort Edward / Fort McNab
+- overlap: already read as NS-NHS Nova 
+- closes: not probed
+
+### NS-PPA Nova (LAYER line, CA-NS)  ·    ·  from chat 8 LAYER line
+- url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/1
+- WHY: already read as NS-PPA Nova : nothing new to take
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "..." · item https://www.arcgis.com/home/item.html?id=327bf98bf91341e7ae5795ee75d0f236 · owner Chuck_Sangster · org Nova Scotia Environment and Climate Change
+- facts: arcgis-layer · esriGeometryPolygon · name field PROT_NAME · 1273 records · last edit 2026-10-30 · sample Bell Provincial Park / Ben Eoin Provincial Park / Boylston Provincial Park
+- overlap: already read as NS-PPA Nova 
+- closes: not probed
+
+### Nova Scotia (LAYER line, CA-NS)  ·    ·  from chat 8 LAYER line
+- url: https://nsgiwa.novascotia.ca/arcgis/rest/services/ENV/ENV_NS_Prot_Area_Sys_UT83/MapServer/0
+- WHY: already read as Nova Scotia : nothing new to take
+- publisher: ? → official (government host nsgiwa.novascotia.ca)
+- terms: CREDIT · source item page · "Province of Nova Scotia. The Nova Scotia Protected Areas System. Halifax, N.S., CAN: Nova Scotia Environment and Climate Change, Protected Areas & Ecosystems, J" · item https://nsgiwa.novascotia.ca/arcgis/rest/services/ENV/ENV_NS_Prot_Area_Sys_UT83/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Pro_Name · 1161 records · sample Atlantic Coastal Plain Flora Conservation Lands / Jim Campbells Barren Wilderness Area / Lake Rossignol Wilderness Area
+- overlap: already read as Nova Scotia 
+- closes: not probed
+
+### Nova Scotia ~2 (LAYER line, CA-NS)  ·    ·  from chat 8 LAYER line
+- url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1
+- WHY: already read as Nova Scotia ~2: nothing new to take
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "entation and is meant solely to be an informative resource. It is not intended for legal, surveying, or navigation purposes. Nova Scotia Environment and Climate Change assu" · item https://www.arcgis.com/home/item.html?id=c4561687c5f845f5a425d9426f7bc8ab · owner Chuck_Sangster · org Nova Scotia Environment and Climate Change
+- facts: arcgis-layer · esriGeometryPolygon · name field PROT_NAME · 1273 records · last edit 2026-10-30 · sample Bell Provincial Park / Ben Eoin Provincial Park / Boylston Provincial Park
+- overlap: already read as Nova Scotia ~2
+- closes: not probed
+
+### ON-GANA Gana (LAYER line, CA-ON)  ·    ·  from chat 8 LAYER line
+- url: https://maps2.grca.on.ca/server/rest/services/Hosted/LANDMGNT_CA_Lands/FeatureServer/0
+- WHY: already read as ON-GANA Gana: nothing new to take
+- publisher: ? → official (government host maps2.grca.on.ca)
+- terms: NOTHING STATED · source item page · item https://maps2.grca.on.ca/server/rest/services/Hosted/LANDMGNT_CA_Lands/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 24 records · last edit 2026-09-17 · sample Ganaraska Forest East / Ganaraska Forest East / Ganaraska Forest East
+- overlap: already read as ON-GANA Gana
+- closes: not probed
+
+### ON-GSCA Grey (LAYER line, CA-ON)  ·    ·  from chat 8 LAYER line
+- url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3
+- WHY: already read as ON-GSCA Grey: nothing new to take
+- publisher: ? → official (government words: County)
+- terms: CREDIT · source item page · "County of Grey, Township of Southgate, Township of Georgian Bluffs, Municipality of Grey Highlands, Municipality of West Grey, Grey Sauble Conservation Authorit" · item https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROP_NAME · 211 records · sample Ainslie Wood / Leith Spit / Albemarle Brook
+- overlap: already read as ON-GSCA Grey
+- closes: not probed
+
+### ON-ORCA Oton (LAYER line, CA-ON)  ·    ·  from chat 8 LAYER line
+- url: https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2
+- WHY: already read as ON-ORCA Oton: nothing new to take
+- publisher: ? → official (government host maps2.grca.on.ca)
+- terms: NOTHING STATED · source item page · item https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field CANAME · 99 records · sample Imagine the Marsh Conservation Area / White Lake East Forest Blocks / Warsaw Caves Conservation Area
+- overlap: already read as ON-ORCA Oton
+- closes: not probed
+
+### Québec Parc ~3 (LAYER line, CA-QC)  ·    ·  from chat 8 LAYER line
+- url: https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6
+- WHY: already read as Québec Parc ~3: nothing new to take
+- publisher: ? → official (government host servicescarto.mrnf.gouv.qc.ca)
+- terms: CREDIT · source item page · "Veuillez consulter la licence d'utilisation à l'adresse suivante : http://geoboutique.mern.gouv.qc.ca/PDF_ZIP/Licence.pdf Ministère de l'Énergie et des Ressourc" · item https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 16 records
+- overlap: already read as Québec Parc ~3
+- closes: not probed
+
+### SK-ALL Gover (LAYER line, CA-SK)  ·    ·  from chat 8 LAYER line
+- url: https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4
+- WHY: already read as SK-ALL Gover: nothing new to take
+- publisher: ? → official (government words: Ministry)
+- terms: CREDIT · source item page · "Saskatchewan Ministry of Parks, Culture and Sport Saskatchewan Ministry of Parks, Culture and Sport" · item https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARKNM · 172 records · sample Amisk Lake Recreation Site / Anderson Island Protected Area / Arm River Recreation Site
+- overlap: already read as SK-ALL Gover
+- closes: not probed
+
+### SK-PT Govern (LAYER line, CA-SK)  ·    ·  from chat 8 LAYER line
+- url: https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/0
+- WHY: already read as SK-PT Govern: nothing new to take
+- publisher: ? → not official (Corp in the publisher words)
+- terms: CREDIT · source item page · "The standard license for this data prohibits redistribution of the data in whole or in part. A commercial or end user license is available. There are some restr" · item https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARKNM · 6 records · sample BATOCHE NATIONAL HISTORIC PARK / MOTHERWELL HOMESTEAD NATIONAL HISTORIC PARK / FORT WALSH NATIONAL HISTORIC PARK
+- overlap: already read as SK-PT Govern
+- closes: not probed
+
+### Saskatchewan~1 (LAYER line, CA-SK)  ·    ·  from chat 8 LAYER line
+- url: https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/1
+- WHY: already read as Saskatchewan~1: nothing new to take
+- publisher: ? → official (government words: Ministry)
+- terms: CREDIT · source item page · "Saskatchewan Ministry of Parks, Culture and Sport Saskatchewan Ministry of Parks, Culture and Sport" · item https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARKNM · 104 records · sample Amisk Lake Recreation Site / Arm River Recreation Site / Armit River Recreation Site
+- overlap: already read as Saskatchewan~1
+- closes: not probed
+
+### USGS Quarter Quad Index (atlas crawler, US-DE)  ·    ·  from atlas crawler
+- url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/3
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: ? → official (government host enterprise.firstmap.delaware.gov)
+- terms: CREDIT · source item page · "The State of Delaware makes no warranty or representation, expressed or implied, with respect to the quality, content, accuracy," · item https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 419 records · sample GUNPOWDER NECK / HANESVILLE / BETTERTON
+- overlap: same publisher as sgdea
+- closes: not probed
+
+### USGS Quarter Quad Index (atlas crawler, US-DE)  ·    ·  from atlas crawler
+- url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/3
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: ? → official (government host enterprise.firstmap.delaware.gov)
+- terms: CREDIT · source item page · "The State of Delaware makes no warranty or representation, expressed or implied, with respect to the quality, content, accuracy," · item https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 419 records · sample GUNPOWDER NECK / HANESVILLE / BETTERTON
+- overlap: same publisher as sgdea
 - closes: not probed
 
 ## Known-answer test rows
