@@ -74,6 +74,8 @@ def _recheck(f, world):
     no_ref = {q.get('ref') for q in qs if str(q.get('answer') or '').upper().startswith('NO') and not q.get('auto')}   # a person already said NO on this park
     under = collections.Counter((str(q.get('record')), q.get('layer')) for q in qs)
     reads, used = key_reads(), outlines_in_key()
+    # Oct 30 12:05 PM (Brandon): a layer chat 11 said YES to 3+ times by hand = trusted (the key reads it once the first YES joins)
+    trusted = {l for l, c in collections.Counter(q.get('layer') for q in qs if str(q.get('answer') or '').upper().startswith('YES') and not q.get('auto')).items() if c >= 3 and l}
     if world:
         WL = load(LINKS / 'data' / 'world-key' / 'layers.json', {}) or {}
         reads |= {norm_url(u) for u in WL.values() if isinstance(u, str)} | {str(k).lower() for k in WL}   # world rows name the layer by its label
@@ -94,12 +96,13 @@ def _recheck(f, world):
         u = norm_url(q.get('layer'))
         if world and re.search(r'\beea\b|natura ?2000|cdda|discomap\.eea', str(q.get('layer') or ''), re.I):
             fails.append('an EU compilation layer (W-2 stays off: never an official outline)')
-        if not (u in reads or NATIONAL.search(u)): fails.append('a layer the ' + ('world ' if world else '') + 'key does not read yet')
+        if not (u in reads or NATIONAL.search(u) or (world and q.get('layer') in trusted)): fails.append('a layer the ' + ('world ' if world else '') + 'key does not read yet')
         if L.demoted(q.get('layer')): fails.append('a demoted layer (under 10% YES)')   # T-5: only the LAYER rule applies to SURE rows (an area's LIKELY rate never demotes SURE)
         if (str(q.get('record')), q.get('layer')) in no_any: fails.append('chat 11 said NO to this record before')
         if q['ref'] in no_ref: fails.append('chat 11 already said NO to another record for this park')
         kp, kr = T.kinds(q.get('park')), T.kinds(q.get('record_name'))
-        if kp - kr: fails.append(f"the park is a {' '.join(sorted(kp - kr))} kind the record does not name")
+        same_name = bool(T.proper(q.get('park'))) and T.proper(q.get('park')) == T.proper(q.get('record_name'))
+        if kp - kr and not (world and same_name): fails.append(f"the park is a {' '.join(sorted(kp - kr))} kind the record does not name")
         if fails:
             q['auto_recheck'] = 'NOT PASSED: ' + '; '.join(fails); held += 1; continue
         q.update({'answer': 'YES', 'checked_by': 'auto recheck (AUTO-1W)' if world else 'auto recheck (AUTO-1)', 'auto': True,
