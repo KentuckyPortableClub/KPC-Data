@@ -4,50 +4,55 @@
  "states": [
   "US-OH"
  ],
- "since": "2026-10-28",
- "date": "2026-10-28 13:13 UTC",
+ "since": "2026-10-30",
+ "date": "2026-10-30 00:11 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
- "known_answers": "18/18 on 2026-10-28",
+ "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 32,
-  "DROPPED": 110,
-  "NEVER LOOKED AT": 446
+  "FOUND": 34,
+  "DROPPED": 106,
+  "NEVER LOOKED AT": 490
  },
  "report": {
   "pass1": {
-   "date": "2026-10-28",
+   "date": "2026-10-30",
    "pairs tested": 127,
    "pairs whose boxes touch": 127
   },
   "pass2": {
    "agree with the pass before": 125,
-   "date": "2026-10-28",
+   "date": "2026-10-30",
    "pairs tested": 40
   },
   "pass3": {
    "agree with the pass before": 40,
-   "date": "2026-10-28",
+   "date": "2026-10-30",
    "pairs tested": 40
   },
   "pass5": {
-   "checked": 8,
-   "date": "2026-10-28",
+   "checked": 15,
+   "date": "2026-10-30",
    "pairs tested": 0,
    "still not checked": 0
   }
  },
+ "files": {
+  "US-OH": "data/fers/US-OH.json"
+ },
  "US-OH": {
-  "rows": 304,
-  "live": 29,
+  "rows": 296,
+  "live": 34,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the ownership map shows more than one owner across the spot": 4,
-   "no public owner on the ownership map": 1,
-   "owner not known for Burr Oak State Park": 1
+   "no public owner on the ownership map": 1
   },
-  "dropped": 130,
-  "merged": 139
- }
+  "dropped": 119,
+  "merged": 142
+ },
+ "states_ready": [
+  "US-OH"
+ ],
+ "states_held": []
 }

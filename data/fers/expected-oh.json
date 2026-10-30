@@ -1,20 +1,20 @@
 {
  "filter": {
   "rule": "pairs expected only from POTA history are kept when the outlines are within 1000 m (box to box), or a park has no outline, or one session logged both",
-  "left_out_far": 7460,
-  "kept_no_outline": 431,
+  "left_out_far": 7418,
+  "kept_no_outline": 103,
   "kept_same_session": 0,
-  "kept_not_measured": 0,
-  "outlines_measured": 273
+  "kept_not_measured": 370,
+  "outlines_measured": 272
  },
  "about": "MISSING CHECK (chat 2, Oct 27 2026; HQ 3:46 PM, Brandon: 'chat 8 can't verify what's missing'). For each area of a 2-fer run, every See kpc_fers_expected.py. Chat 8 reviews DROPPED + NEVER LOOKED AT.",
  "area": "US-OH",
- "date": "2026-10-28",
+ "date": "2026-10-30",
  "pass": true,
  "counts": {
-  "FOUND": 32,
-  "DROPPED": 110,
-  "NEVER LOOKED AT": 446
+  "FOUND": 34,
+  "DROPPED": 106,
+  "NEVER LOOKED AT": 490
  },
  "FOUND": [
   {
@@ -26,7 +26,7 @@
     "activated together by the same call on the same day (45x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "row": "US-0482+US-9479@area@41.689,-83.350"
+   "row": "US-0482+US-9479@area@41.686,-83.342"
   },
   {
    "refs": [
@@ -37,7 +37,18 @@
     "activated together by the same call on the same day (75x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "row": "US-0483+US-1944@area@41.619,-83.191"
+   "row": "US-0483+US-1944@area@41.611,-83.191"
+  },
+  {
+   "refs": [
+    "US-0483",
+    "US-9481"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (56x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-0483+US-9481@area@41.637,-83.237"
   },
   {
    "refs": [
@@ -49,17 +60,6 @@
     "outlines about 0 m apart"
    ],
    "row": "US-12057+US-9420@same land@40.569,-83.620"
-  },
-  {
-   "refs": [
-    "US-1935",
-    "US-5435"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (31x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "row": "US-1935+US-5435@same land@40.676,-80.528"
   },
   {
    "refs": [
@@ -115,6 +115,17 @@
     "outlines about 0 m apart"
    ],
    "row": "US-1946+US-9456@same land@40.399,-83.041"
+  },
+  {
+   "refs": [
+    "US-1947",
+    "US-9393"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (37x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-1947+US-9393@area@40.053,-82.224"
   },
   {
    "refs": [
@@ -239,17 +250,6 @@
   },
   {
    "refs": [
-    "US-1983",
-    "US-5446"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (24x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "row": "US-1983+US-5446@same land@39.083,-83.351"
-  },
-  {
-   "refs": [
     "US-1989",
     "US-9499"
    ],
@@ -327,6 +327,28 @@
   },
   {
    "refs": [
+    "US-4521",
+    "US-9506"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-4521+US-9506@area@38.721,-82.503"
+  },
+  {
+   "refs": [
+    "US-4521",
+    "US-9514"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (9x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-4521+US-9514@area@39.484,-82.166"
+  },
+  {
+   "refs": [
     "US-5442",
     "US-9400"
    ],
@@ -380,7 +402,7 @@
     "activated together by the same call on the same day (43x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -418,18 +440,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-0483",
-    "US-9481"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (56x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
-   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -548,7 +558,7 @@
     "activated together by the same call on the same day (9x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "not sure: no public owner on the ownership map (PAD-US fee records) at every part of the spot: could be private land under the designations",
+   "reason": "not sure: no public owner on the ownership map (PAD-US fee records) at any part of the spot: could be private land under the designations",
    "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
@@ -560,7 +570,7 @@
     "activated together by the same call on the same day (30x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -584,7 +594,7 @@
     "activated together by the same call on the same day (26x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -656,7 +666,7 @@
     "activated together by the same call on the same day (127x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -697,18 +707,6 @@
   },
   {
    "refs": [
-    "US-1947",
-    "US-9393"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (37x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not sure: the ownership map shows more than one owner across the spot: STATE, UNK",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
-  {
-   "refs": [
     "US-1950",
     "US-9515"
    ],
@@ -716,7 +714,7 @@
     "activated together by the same call on the same day (73x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -740,7 +738,7 @@
     "activated together by the same call on the same day (28x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -812,7 +810,7 @@
     "activated together by the same call on the same day (27x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -848,7 +846,7 @@
     "activated together by the same call on the same day (246x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -884,7 +882,7 @@
     "activated together by the same call on the same day (154x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -896,7 +894,7 @@
     "activated together by the same call on the same day (110x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -980,7 +978,7 @@
     "activated together by the same call on the same day (58x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -992,7 +990,7 @@
     "activated together by the same call on the same day (45x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1424,7 +1422,7 @@
     "activated together by the same call on the same day (5x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1466,18 +1464,6 @@
   {
    "refs": [
     "US-4521",
-    "US-9506"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped: side by side, not layered: Symmes Township State Wildlife Area is state land, the ground here is Forest Service",
-   "rule": "rule 14 (ownership: side by side, not layered)"
-  },
-  {
-   "refs": [
-    "US-4521",
     "US-9509"
    ],
    "why_expected": [
@@ -1486,18 +1472,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-4521",
-    "US-9514"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (9x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped in pass 2",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
    "refs": [
@@ -1520,7 +1494,7 @@
     "activated together by the same call on the same day (19x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1556,7 +1530,7 @@
     "activated together by the same call on the same day (59x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1568,7 +1542,7 @@
     "activated together by the same call on the same day (9x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1580,7 +1554,7 @@
     "activated together by the same call on the same day (27x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1592,7 +1566,7 @@
     "activated together by the same call on the same day (32x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1604,7 +1578,7 @@
     "activated together by the same call on the same day (18x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1616,7 +1590,7 @@
     "activated together by the same call on the same day (34x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1628,7 +1602,7 @@
     "activated together by the same call on the same day (111x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1688,7 +1662,7 @@
     "activated together by the same call on the same day (20x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   }
  ],
@@ -1711,7 +1685,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1721,7 +1695,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1752,7 +1726,7 @@
    "why_expected": [
     "activated together by the same call on the same day (9x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1762,7 +1736,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1804,7 +1778,7 @@
    "why_expected": [
     "activated together by the same call on the same day (15x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1814,7 +1788,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1835,7 +1809,7 @@
    "why_expected": [
     "activated together by the same call on the same day (64x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1845,7 +1819,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1855,7 +1829,7 @@
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1865,7 +1839,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1886,7 +1860,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1896,7 +1870,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1906,7 +1880,7 @@
    "why_expected": [
     "activated together by the same call on the same day (14x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1916,7 +1890,7 @@
    "why_expected": [
     "activated together by the same call on the same day (44x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1926,7 +1900,17 @@
    "why_expected": [
     "activated together by the same call on the same day (22x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10632",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -1936,7 +1920,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1946,7 +1930,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1956,7 +1940,7 @@
    "why_expected": [
     "activated together by the same call on the same day (48x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1976,7 +1960,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1986,7 +1970,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1996,7 +1980,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2006,7 +1990,17 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1932",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -2016,7 +2010,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2037,7 +2031,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2047,7 +2041,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2057,7 +2051,7 @@
    "why_expected": [
     "activated together by the same call on the same day (63x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2067,7 +2061,18 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1935",
+    "US-5435"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (31x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2077,7 +2082,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2087,7 +2092,7 @@
    "why_expected": [
     "activated together by the same call on the same day (57x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2097,7 +2102,17 @@
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1937",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -2107,7 +2122,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2117,7 +2132,7 @@
    "why_expected": [
     "activated together by the same call on the same day (28x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2127,7 +2142,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2137,7 +2152,7 @@
    "why_expected": [
     "activated together by the same call on the same day (54x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2147,7 +2162,17 @@
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1940",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -2167,7 +2192,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2177,7 +2202,17 @@
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1943",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -2197,7 +2232,7 @@
    "why_expected": [
     "activated together by the same call on the same day (16x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2207,7 +2242,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2217,7 +2252,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2227,7 +2262,17 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1945",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -2237,7 +2282,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2247,7 +2292,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2257,7 +2302,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2278,7 +2323,7 @@
    "why_expected": [
     "activated together by the same call on the same day (43x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2288,7 +2333,17 @@
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1948",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -2308,7 +2363,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2318,7 +2373,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2328,7 +2383,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2338,7 +2393,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2358,7 +2413,7 @@
    "why_expected": [
     "activated together by the same call on the same day (165x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2368,7 +2423,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2378,7 +2433,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2388,7 +2443,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2398,7 +2453,7 @@
    "why_expected": [
     "activated together by the same call on the same day (12x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2408,7 +2463,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2428,7 +2483,7 @@
    "why_expected": [
     "activated together by the same call on the same day (449x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2438,7 +2493,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2448,7 +2503,7 @@
    "why_expected": [
     "activated together by the same call on the same day (23x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2458,7 +2513,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2468,7 +2523,7 @@
    "why_expected": [
     "activated together by the same call on the same day (7x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2488,7 +2543,7 @@
    "why_expected": [
     "activated together by the same call on the same day (563x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2498,7 +2553,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2508,7 +2563,7 @@
    "why_expected": [
     "activated together by the same call on the same day (7x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2518,7 +2573,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2528,7 +2583,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2538,7 +2593,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2548,7 +2603,7 @@
    "why_expected": [
     "activated together by the same call on the same day (50x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2558,7 +2613,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2568,7 +2623,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2578,7 +2633,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2588,7 +2643,7 @@
    "why_expected": [
     "activated together by the same call on the same day (14x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2598,7 +2653,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2608,7 +2663,7 @@
    "why_expected": [
     "activated together by the same call on the same day (11x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2628,7 +2683,7 @@
    "why_expected": [
     "activated together by the same call on the same day (36x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2648,7 +2703,7 @@
    "why_expected": [
     "activated together by the same call on the same day (292x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2658,7 +2713,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2668,7 +2723,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2678,7 +2733,17 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1971",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -2688,7 +2753,7 @@
    "why_expected": [
     "activated together by the same call on the same day (243x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2698,7 +2763,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2708,7 +2773,7 @@
    "why_expected": [
     "activated together by the same call on the same day (11x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2718,7 +2783,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2728,7 +2793,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2748,7 +2813,7 @@
    "why_expected": [
     "activated together by the same call on the same day (119x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2758,7 +2823,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2778,7 +2843,7 @@
    "why_expected": [
     "activated together by the same call on the same day (18x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2788,7 +2853,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2798,7 +2863,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2808,7 +2873,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2828,7 +2893,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2838,7 +2903,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2848,7 +2913,17 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1982",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (20x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -2858,7 +2933,28 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1983",
+    "US-5446"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (24x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1983",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -2878,7 +2974,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2888,7 +2984,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2898,7 +2994,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2908,7 +3004,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2918,7 +3014,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2928,7 +3024,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2938,7 +3034,17 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1988",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (17x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -2959,7 +3065,7 @@
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2969,7 +3075,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2979,7 +3085,7 @@
    "why_expected": [
     "activated together by the same call on the same day (11x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2989,7 +3095,17 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1990",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -2999,7 +3115,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3009,7 +3125,7 @@
    "why_expected": [
     "activated together by the same call on the same day (18x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3019,7 +3135,7 @@
    "why_expected": [
     "activated together by the same call on the same day (7x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3029,7 +3145,17 @@
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-1993",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -3039,7 +3165,7 @@
    "why_expected": [
     "activated together by the same call on the same day (7x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3049,7 +3175,7 @@
    "why_expected": [
     "activated together by the same call on the same day (15x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3059,7 +3185,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3069,7 +3195,7 @@
    "why_expected": [
     "activated together by the same call on the same day (49x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3089,7 +3215,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3109,7 +3235,7 @@
    "why_expected": [
     "activated together by the same call on the same day (19x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3119,7 +3245,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3129,7 +3255,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3149,7 +3275,7 @@
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3159,7 +3285,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3189,7 +3315,7 @@
    "why_expected": [
     "activated together by the same call on the same day (29x, POTA history)"
    ],
-   "reason": "US-3514: no official boundary; US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "US-3514: no official boundary"
   },
   {
    "refs": [
@@ -3199,7 +3325,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-3514: no official boundary; US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "US-3514: no official boundary"
   },
   {
    "refs": [
@@ -3589,7 +3715,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3599,7 +3725,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3609,7 +3735,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3619,7 +3745,7 @@
    "why_expected": [
     "activated together by the same call on the same day (7x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3629,7 +3755,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3650,7 +3776,7 @@
    "why_expected": [
     "activated together by the same call on the same day (31x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3660,7 +3786,7 @@
    "why_expected": [
     "activated together by the same call on the same day (17x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin); US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3670,7 +3796,7 @@
    "why_expected": [
     "activated together by the same call on the same day (49x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3680,7 +3806,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3690,7 +3816,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3700,7 +3826,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3710,7 +3836,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3720,7 +3846,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3730,7 +3856,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3740,7 +3866,7 @@
    "why_expected": [
     "activated together by the same call on the same day (66x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3750,7 +3876,7 @@
    "why_expected": [
     "activated together by the same call on the same day (67x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3760,7 +3886,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3770,7 +3896,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3780,7 +3906,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3790,7 +3916,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3800,7 +3926,7 @@
    "why_expected": [
     "activated together by the same call on the same day (12x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3810,7 +3936,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3820,7 +3946,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3830,7 +3956,7 @@
    "why_expected": [
     "activated together by the same call on the same day (52x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3840,7 +3966,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3850,7 +3976,7 @@
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3860,7 +3986,7 @@
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3870,7 +3996,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3880,7 +4006,7 @@
    "why_expected": [
     "activated together by the same call on the same day (75x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3890,7 +4016,7 @@
    "why_expected": [
     "activated together by the same call on the same day (24x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3900,7 +4026,7 @@
    "why_expected": [
     "activated together by the same call on the same day (36x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3910,7 +4036,7 @@
    "why_expected": [
     "activated together by the same call on the same day (51x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3920,7 +4046,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3930,7 +4056,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3940,7 +4066,7 @@
    "why_expected": [
     "activated together by the same call on the same day (208x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3950,7 +4076,7 @@
    "why_expected": [
     "activated together by the same call on the same day (129x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3960,7 +4086,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3970,7 +4096,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3980,7 +4106,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3990,7 +4116,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4000,7 +4126,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4010,7 +4136,7 @@
    "why_expected": [
     "activated together by the same call on the same day (13x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4020,7 +4146,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4030,7 +4156,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4040,7 +4166,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4050,7 +4176,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4060,7 +4186,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4070,7 +4196,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4080,7 +4206,7 @@
    "why_expected": [
     "activated together by the same call on the same day (7x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4090,7 +4216,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4100,7 +4226,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4110,7 +4236,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4120,7 +4246,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4130,7 +4256,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4140,7 +4266,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4150,7 +4276,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4160,7 +4286,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4170,7 +4296,7 @@
    "why_expected": [
     "activated together by the same call on the same day (11x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4180,7 +4306,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4190,7 +4316,7 @@
    "why_expected": [
     "activated together by the same call on the same day (23x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4200,7 +4326,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4210,7 +4336,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4220,7 +4346,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4230,7 +4356,7 @@
    "why_expected": [
     "activated together by the same call on the same day (9x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4240,7 +4366,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4250,7 +4376,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4260,7 +4386,7 @@
    "why_expected": [
     "activated together by the same call on the same day (10x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4270,7 +4396,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4280,7 +4406,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4290,7 +4416,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4300,7 +4426,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4310,7 +4436,7 @@
    "why_expected": [
     "activated together by the same call on the same day (24x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4320,7 +4446,7 @@
    "why_expected": [
     "activated together by the same call on the same day (445x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4330,7 +4456,7 @@
    "why_expected": [
     "activated together by the same call on the same day (10x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4340,7 +4466,7 @@
    "why_expected": [
     "activated together by the same call on the same day (10x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4350,7 +4476,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4360,7 +4486,7 @@
    "why_expected": [
     "activated together by the same call on the same day (35x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4370,7 +4496,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4380,7 +4506,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4390,7 +4516,7 @@
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4400,7 +4526,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4410,7 +4536,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4420,7 +4546,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4430,7 +4556,7 @@
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4440,7 +4566,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4450,7 +4576,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4460,7 +4586,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4470,7 +4596,7 @@
    "why_expected": [
     "activated together by the same call on the same day (10x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4480,7 +4606,7 @@
    "why_expected": [
     "activated together by the same call on the same day (14x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4490,7 +4616,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4500,7 +4626,7 @@
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4510,7 +4636,7 @@
    "why_expected": [
     "activated together by the same call on the same day (25x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4520,7 +4646,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4530,7 +4656,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4540,7 +4666,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4550,7 +4676,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4560,7 +4686,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4570,7 +4696,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4580,7 +4706,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4590,7 +4716,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4600,7 +4726,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4610,7 +4736,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin); US-9442: approximate outline only (never confirms)"
+   "reason": "US-9442: approximate outline only (never confirms)"
   },
   {
    "refs": [
@@ -4620,7 +4746,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4630,7 +4756,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4640,7 +4766,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4650,7 +4776,7 @@
    "why_expected": [
     "activated together by the same call on the same day (39x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4660,7 +4786,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4670,7 +4796,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4680,7 +4806,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4690,7 +4816,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4700,7 +4826,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4710,7 +4836,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4720,7 +4846,7 @@
    "why_expected": [
     "activated together by the same call on the same day (153x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4730,7 +4856,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4740,7 +4866,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4750,7 +4876,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4760,7 +4886,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4770,7 +4896,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4780,7 +4906,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4790,7 +4916,7 @@
    "why_expected": [
     "activated together by the same call on the same day (62x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4800,7 +4926,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4810,7 +4936,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4820,7 +4946,7 @@
    "why_expected": [
     "activated together by the same call on the same day (24x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4830,7 +4956,7 @@
    "why_expected": [
     "activated together by the same call on the same day (10x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4840,7 +4966,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4850,7 +4976,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4860,7 +4986,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4870,7 +4996,7 @@
    "why_expected": [
     "activated together by the same call on the same day (7x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4880,7 +5006,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4890,7 +5016,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4900,7 +5026,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4910,7 +5036,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4920,7 +5046,7 @@
    "why_expected": [
     "activated together by the same call on the same day (13x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4930,7 +5056,7 @@
    "why_expected": [
     "activated together by the same call on the same day (159x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4940,7 +5066,7 @@
    "why_expected": [
     "activated together by the same call on the same day (14x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4950,7 +5076,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4960,7 +5086,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4970,7 +5096,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4980,7 +5106,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4990,7 +5116,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5000,7 +5126,7 @@
    "why_expected": [
     "activated together by the same call on the same day (140x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5010,7 +5136,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5020,7 +5146,7 @@
    "why_expected": [
     "activated together by the same call on the same day (416x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5030,7 +5156,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5040,7 +5166,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5050,7 +5176,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5060,7 +5186,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5070,7 +5196,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5080,7 +5206,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5090,7 +5216,7 @@
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5100,7 +5226,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5110,7 +5236,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5120,7 +5246,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5130,7 +5256,7 @@
    "why_expected": [
     "activated together by the same call on the same day (198x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5140,7 +5266,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5150,7 +5276,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5160,7 +5286,7 @@
    "why_expected": [
     "activated together by the same call on the same day (422x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5170,7 +5296,7 @@
    "why_expected": [
     "activated together by the same call on the same day (13x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5180,7 +5306,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5190,7 +5316,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5200,7 +5326,7 @@
    "why_expected": [
     "activated together by the same call on the same day (7x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5210,7 +5336,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5220,7 +5346,7 @@
    "why_expected": [
     "activated together by the same call on the same day (90x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5230,7 +5356,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5240,7 +5366,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5250,7 +5376,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5260,7 +5386,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5270,7 +5396,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5280,7 +5406,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5290,7 +5416,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5300,7 +5426,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5310,7 +5436,7 @@
    "why_expected": [
     "activated together by the same call on the same day (16x, POTA history)"
    ],
-   "reason": "US-4239: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5320,7 +5446,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5341,7 +5467,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5351,7 +5477,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5361,7 +5487,7 @@
    "why_expected": [
     "activated together by the same call on the same day (98x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5371,7 +5497,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5381,7 +5507,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5391,7 +5517,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5401,7 +5527,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5411,7 +5537,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5421,7 +5547,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5431,7 +5557,7 @@
    "why_expected": [
     "activated together by the same call on the same day (14x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5441,7 +5567,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5451,7 +5577,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5461,7 +5587,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5471,7 +5597,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5481,7 +5607,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5491,7 +5617,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5501,7 +5627,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5511,7 +5637,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5521,7 +5647,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5531,7 +5657,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5541,7 +5667,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5551,7 +5677,7 @@
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5561,7 +5687,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5571,7 +5697,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5581,7 +5707,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5591,7 +5717,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5601,7 +5727,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5611,7 +5737,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5621,7 +5747,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5631,7 +5757,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5641,7 +5767,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5651,7 +5777,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5661,7 +5787,7 @@
    "why_expected": [
     "activated together by the same call on the same day (7x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5671,7 +5797,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5681,7 +5807,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5691,7 +5817,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5701,7 +5827,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5711,7 +5837,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5721,7 +5847,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5731,7 +5857,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5741,7 +5867,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5751,7 +5877,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin); US-9442: approximate outline only (never confirms)"
+   "reason": "US-9442: approximate outline only (never confirms)"
   },
   {
    "refs": [
@@ -5761,7 +5887,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5771,7 +5897,7 @@
    "why_expected": [
     "activated together by the same call on the same day (156x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5781,7 +5907,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5791,7 +5917,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5801,7 +5927,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5811,7 +5937,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5821,7 +5947,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5831,7 +5957,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5841,7 +5967,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5851,7 +5977,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5861,7 +5987,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5871,7 +5997,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5881,7 +6007,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5891,7 +6017,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5901,7 +6027,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5911,7 +6037,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5921,7 +6047,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5931,7 +6057,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5941,7 +6067,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5951,7 +6077,7 @@
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5961,7 +6087,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5971,7 +6097,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5981,7 +6107,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -5991,7 +6117,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6001,7 +6127,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6011,7 +6137,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6021,7 +6147,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6031,7 +6157,7 @@
    "why_expected": [
     "activated together by the same call on the same day (19x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6041,7 +6167,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6051,7 +6177,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6061,7 +6187,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6071,7 +6197,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6081,7 +6207,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6091,7 +6217,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6101,7 +6227,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -6111,7 +6237,17 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: not in this run (another state, retired, or no POTA pin)"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-5437",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -6123,6 +6259,26 @@
     "outlines about 443 m apart"
    ],
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-5446",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-5448",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   },
   {
    "refs": [
@@ -6148,6 +6304,26 @@
   },
   {
    "refs": [
+    "US-7848",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-7850",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
     "US-8110",
     "US-8111"
    ],
@@ -6159,6 +6335,116 @@
   },
   {
    "refs": [
+    "US-8114",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-8630",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-8636",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (18x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-8637",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-8638",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9391",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9402",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9408",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9410",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9411",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9416",
+    "US-9423"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
     "US-9421",
     "US-9440"
    ],
@@ -6167,6 +6453,136 @@
     "outlines about 610 m apart"
    ],
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9429"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9433"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9441"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9451"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9457"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9460"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9461"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (17x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9462"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (18x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9467"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9471"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9478"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9489"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (13x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
+  },
+  {
+   "refs": [
+    "US-9423",
+    "US-9494"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-9423: no official boundary"
   }
  ]
 }
