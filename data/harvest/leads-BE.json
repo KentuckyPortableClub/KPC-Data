@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Belgium (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "BE",
- "date": "2026-10-28",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -14,15 +14,320 @@
   "eea"
  ],
  "bands": {
-  "A": 0,
+  "A": 1,
   "B": 0,
   "C": 1
  },
+ "failures": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    11
+   ]
+  ]
+ ],
  "known_good_found": [
   "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows?layers=am:am_patdat"
  ],
  "known_good_missed": [],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows: 300 feature types, 300 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows?layers=am:am_patdat",
+   "found": true
+  }
+ ],
  "leads": {
+  "https://services-eu1.arcgis.com/4d1gbrbe6xp1t4yg/arcgis/rest/services/nwp_overzichtskaart_zuidwestelijke_delta": {
+   "url": "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Overzichtskaart_Zuidwestelijke_Delta/FeatureServer",
+   "cc": "BE",
+   "title": "NWP_Overzichtskaart_Zuidwestelijke_Delta",
+   "publisher": "Rijkswaterstaat",
+   "catalog": "ArcGIS Online search",
+   "licence": "In de NWP-viewer staan de kaarten zoals ze zijn vastgesteld in maart 2022. Die kaarten zijn ‘bevroren’ en passen we niet aan tot 2027, ook al zijn er in de tussentijd wijzigingen of ontdekken we nog f",
+   "date": "2025-09-08",
+   "found": "2026-10-30",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 256,
+     "name": "Natura2000",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "gml_id",
+      "naam_n2k",
+      "GEBIED",
+      "vhn_new",
+      "nr",
+      "beschermin",
+      "status",
+      "staatscour",
+      "sitecode_v",
+      "sitecode_h",
+      "kadaster",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 33,
+     "sample": [
+      "Eemmeer & Gooimeer Zuidoever",
+      "Grensmaas",
+      "Grevelingen"
+     ],
+     "name_field": "naam_n2k"
+    },
+    {
+     "id": 259,
+     "name": "PAGW project",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "name",
+      "type",
+      "ptype",
+      "No"
+     ],
+     "records": 16,
+     "sample": [
+      "Pilot buitendijkse slibsedimentatie",
+      "Kustontwikkeling Eemszijlen",
+      "Lauwersmeer-Vierhuizergat"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 260,
+     "name": "MIRT project",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Project",
+      "ONDERWERP",
+      "FASE"
+     ],
+     "records": 7
+    },
+    {
+     "id": 261,
+     "name": "Vervanging en renovatie opgave (V&R)",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Categorie",
+      "Projectnm",
+      "NWP_label"
+     ],
+     "records": 8,
+     "sample": [
+      "Brug over de Goereesluis",
+      "Renovatie Krammersluizen",
+      "Vervangen besturing sluis Hansweert"
+     ],
+     "name_field": "NWP_label"
+    },
+    {
+     "id": 267,
+     "name": "Areaal primaire waterkering in beheer bij Rijkswaterstaat (incl. kunst",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Keringnaam",
+      "Traject",
+      "NWPTYPE",
+      "Type",
+      "Regio",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 53,
+     "sample": [
+      "Biesboschsluis",
+      "Hollandsche IJsselkering",
+      "Wilhelminasluis"
+     ],
+     "name_field": "Keringnaam"
+    },
+    {
+     "id": 262,
+     "name": "Stormvloedkering",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "SOORT",
+      "NAAM",
+      "X_coord",
+      "Y_coord"
+     ],
+     "records": 2,
+     "sample": [
+      "Oosterscheldekering",
+      "Haringvlietsluizen"
+     ],
+     "name_field": "NAAM"
+    },
+    {
+     "id": 268,
+     "name": "Primair waterkerend kunstwerk in beheer bij Rijkswaterstaat",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Keringnaam"
+     ],
+     "records": 7,
+     "sample": [
+      "Oostelijke Spuikanaaldijk",
+      "Hansweert",
+      "Terneuzen"
+     ],
+     "name_field": "Keringnaam"
+    },
+    {
+     "id": 263,
+     "name": "Overige sluizen en kunstwerken",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "CODEBPN",
+      "OBJECTNAAM",
+      "OBJECTTYPE",
+      "MUTATIE"
+     ],
+     "records": 11,
+     "sample": [
+      "Zuidersluis",
+      "Zuidersluis",
+      "Zuidersluis"
+     ],
+     "name_field": "OBJECTNAAM"
+    },
+    {
+     "id": 244,
+     "name": "Verkeer symbolen",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "SOORT",
+      "SYSTEEM",
+      "LAND",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 174
+    },
+    {
+     "id": 250,
+     "name": "Scheepvaartinfrastructuur",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "ENTITEIT_S",
+      "NAAM_SEPAR",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 70,
+     "sample": [
+      "Te vermijden gebied bij Maas Noord",
+      "Te vermijden gebied bij IJmuiden Noord Aanloop",
+      "Te vermijden gebied bij De Ruyter"
+     ],
+     "name_field": "NAAM_SEPAR"
+    },
+    {
+     "id": 251,
+     "name": "Ankergebied",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAAM_ANKER",
+      "ENTITEIT_V",
+      "SYSTEEM",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 30,
+     "sample": [
+      "1",
+      "2",
+      "3 East"
+     ],
+     "name_field": "NAAM_ANKER"
+    },
+    {
+     "id": 252,
+     "name": "Aanloopgebied",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "AANLOOPGEB",
+      "BEHEERDER",
+      "OPMERKING",
+      "GELDIG_VAN",
+      "MUTATIE_DD",
+      "KM2",
+      "GELDIG_TOT",
+      "AANMAAK_DD",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 8
+    }
+   ],
+   "note": "NWP_Overzichtskaart Zuidwestelijke Delta",
+   "grade": 5,
+   "band": "A"
+  },
   "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows": {
    "url": "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows",
    "cc": "BE",
@@ -41,85 +346,85 @@
      "name": "500m bufferzone bij Rubriek 53.3.3a (draineringen)",
      "type": "so:so_500m_bufferzone_rubriek_53_3_3_a_draineringen",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
      "name": "500m bufferzone bij Rubriek 53.3.4 (draineringen)",
      "type": "so:so_500m_bufferzone_rubriek_53_3_4_draineringen",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "Atlas van de woonreservegebieden",
-     "type": "lu:lu_wrg",
+     "name": "5G-technologie op sites met zendantennes - 2019",
+     "type": "us:us_zendant_site_5g_tech_2019_pnt",
      "geom": "unknown (WFS)",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field (geometry not read)"
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "Consultatiezones van Seveso-inrichtingen in Vlaanderen",
-     "type": "pf:pf_seveso_con",
-     "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
-    },
-    {
-     "name": "Geluidsbelastingkaart vliegverkeer, internationale luchthavens  – Lden",
-     "type": "hh:hh_geluid_vliegver_2024",
+     "name": "5G-technologie op sites met zendantennes - 2020",
+     "type": "us:us_zendant_site_5g_tech_2020_pnt",
      "geom": "unknown (WFS)",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field (geometry not read)"
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële elektrici",
-     "type": "er:er_heav_p2030_ele_bms",
+     "name": "5G-technologie op sites met zendantennes - 2021",
+     "type": "us:us_zendant_site_5g_tech_2021_pnt",
      "geom": "unknown (WFS)",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field (geometry not read)"
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële elektrici",
-     "type": "er:er_heav_techpot_ele_bms",
+     "name": "5G-technologie op sites met zendantennes - 2022",
+     "type": "us:us_zendant_site_5g_tech_2022_pnt",
      "geom": "unknown (WFS)",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field (geometry not read)"
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële energiepr",
-     "type": "er:er_heav_techpot_wrm_digeo",
+     "name": "5G-technologie op sites met zendantennes - 2023",
+     "type": "us:us_zendant_site_5g_tech_2023_pnt",
      "geom": "unknown (WFS)",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field (geometry not read)"
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële energiepr",
-     "type": "er:er_heav_p2030_ele_wt",
+     "name": "5G-technologie op sites met zendantennes - 2024",
+     "type": "us:us_zendant_site_5g_tech_2024_pnt",
      "geom": "unknown (WFS)",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field (geometry not read)"
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële energiepr",
-     "type": "er:er_heav_p2030_ele_wk",
+     "name": "5G-technologie op sites met zendantennes - 2025",
+     "type": "us:us_zendant_site_5g_tech_2025_pnt",
      "geom": "unknown (WFS)",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field (geometry not read)"
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële energiepr",
-     "type": "er:er_heav_techpot_ele_wk",
+     "name": "Aandeel tuinen per statistische sector buiten de kernen - 2016",
+     "type": "ni:ni_tuinen_statsec_buiten_kern_2016",
      "geom": "unknown (WFS)",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field (geometry not read)"
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële warmtepro",
-     "type": "er:er_heav_p2030_wrm_bms",
+     "name": "Aanduidingsobjecten",
+     "type": "ps:ps_aandobj",
      "geom": "unknown (WFS)",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field (geometry not read)"
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "Aantal paarden per km?, per postcode in Vlaanderen",
+     "type": "ni:ni_paard_km2_postc",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     }
    ],
    "note": "300 feature types listed",

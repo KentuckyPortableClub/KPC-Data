@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Argentina (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "AR",
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
  "steps_done": [
   "known",
@@ -22,22 +22,22 @@
   {
    "catalog": "https://datos.gob.ar",
    "keyword": "parque nacional",
-   "error": "robots.txt says no"
-  },
-  {
-   "catalog": "https://datos.gob.ar",
-   "keyword": "área protegida",
-   "error": "robots.txt says no"
+   "error": "HTTP 500 three times: left alone for a day"
   },
   {
    "catalog": "https://datos.gob.ar",
    "keyword": "reserva natural",
-   "error": "robots.txt says no"
+   "error": "server left alone (strikes)"
   },
   {
    "catalog": "https://datos.gob.ar",
-   "keyword": "parque provincial",
-   "error": "robots.txt says no"
+   "keyword": "monumento natural",
+   "error": "server left alone (strikes)"
+  },
+  {
+   "catalog": "https://datos.gob.ar",
+   "keyword": "área protegida",
+   "error": "server left alone (strikes)"
   }
  ],
  "rejected_orgs": [
@@ -49,14 +49,14 @@
   ],
   [
    [
-    "?",
-    16
+    "World Wide Fund for Nature",
+    1
    ]
   ],
   [
    [
-    "World Wide Fund for Nature",
-    1
+    "?",
+    16
    ]
   ]
  ],

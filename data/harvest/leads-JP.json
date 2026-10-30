@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Japan (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "JP",
- "date": "2026-10-28",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -14,13 +14,209 @@
   "eea"
  ],
  "bands": {
-  "A": 0,
-  "B": 1,
+  "A": 1,
+  "B": 2,
   "C": 0
  },
+ "failures": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    7
+   ],
+   [
+    "ESRIジャパン株式会社",
+    1
+   ],
+   [
+    "教育GISポータル | ESRIジャパン株式会社",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    13
+   ],
+   [
+    "ESRIジャパン株式会社",
+    3
+   ],
+   [
+    "教育GISポータル | ESRIジャパン株式会社",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    19
+   ],
+   [
+    "ESRIジャパン株式会社",
+    1
+   ],
+   [
+    "教育GISポータル | ESRIジャパン株式会社",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    13
+   ],
+   [
+    "ESRIジャパン株式会社",
+    1
+   ],
+   [
+    "教育GISポータル | ESRIジャパン株式会社",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    7
+   ],
+   [
+    "ESRIジャパン株式会社",
+    1
+   ],
+   [
+    "教育GISポータル | ESRIジャパン株式会社",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    26
+   ],
+   [
+    "教育GISポータル | ESRIジャパン株式会社",
+    2
+   ],
+   [
+    "ESRIジャパン株式会社",
+    1
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [],
+ "known_log": [],
  "leads": {
+  "https://biodiversitymap.env.go.jp/server/rest/services/hosted/f_03_01_12": {
+   "url": "https://biodiversitymap.env.go.jp/server/rest/services/Hosted/F_03_01_12/FeatureServer",
+   "cc": "JP",
+   "title": "Hosted/F_03_01_12",
+   "publisher": "biodiversitymap.env.go.jp",
+   "catalog": "ArcGIS Online search",
+   "licence": "生物多様性見える化システムの利用規約に準拠します。  見える化システム利用規約",
+   "date": "2026-03-07",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 3011200,
+     "name": "自然共生サイト（区域・メッシュ表示）",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "site_name",
+      "shin_name",
+      "shin_shuta",
+      "time",
+      "pref_code",
+      "pref",
+      "city_code",
+      "city",
+      "area_ha",
+      "tennen",
+      "satoyama",
+      "jinkorin",
+      "shizenso",
+      "nijiso",
+      "suiden",
+      "hatake",
+      "ryokuchi",
+      "kasen",
+      "k_shitsu"
+     ],
+     "records": 221,
+     "sample": [
+      "出光興産(株)　北海道製油所",
+      "渡邊野鳥保護区フレシマ",
+      "北海道大学雨龍研究林"
+     ],
+     "name_field": "site_name"
+    }
+   ],
+   "note": "自然共生サイト（区域表示）",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://biodiversitymap.env.go.jp/server/rest/services/hosted/f_03_01_11": {
+   "url": "https://biodiversitymap.env.go.jp/server/rest/services/Hosted/F_03_01_11/FeatureServer",
+   "cc": "JP",
+   "title": "Hosted/F_03_01_11",
+   "publisher": "biodiversitymap.env.go.jp",
+   "catalog": "ArcGIS Online search",
+   "licence": "生物多様性見える化システムの利用規約に準拠します。  見える化システム利用規約",
+   "date": "2026-03-07",
+   "found": "2026-10-30",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 3011100,
+     "name": "自然共生サイト（ポイント表示）",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "site_name",
+      "shin_name",
+      "shin_shuta",
+      "time",
+      "pref_code",
+      "pref",
+      "city_code",
+      "city",
+      "area_ha",
+      "tennen",
+      "satoyama",
+      "jinkorin",
+      "shizenso",
+      "nijiso",
+      "suiden",
+      "hatake",
+      "ryokuchi",
+      "kasen",
+      "k_shitsu"
+     ],
+     "records": 315,
+     "sample": [
+      "出光興産(株)　北海道製油所",
+      "渡邊野鳥保護区フレシマ",
+      "北海道大学雨龍研究林"
+     ],
+     "name_field": "site_name"
+    }
+   ],
+   "note": "自然共生サイト（ポイント表示）",
+   "grade": 4,
+   "band": "B"
+  },
   "dl:https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A10-v3_1.html": {
    "url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A10-v3_1.html",
    "cc": "JP",

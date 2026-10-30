@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Spain (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "ES",
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -20,26 +20,6 @@
  },
  "failures": [],
  "rejected_orgs": [
-  [
-   [
-    "?",
-    16
-   ],
-   [
-    "Contenidos Esri España",
-    1
-   ]
-  ],
-  [
-   [
-    "?",
-    21
-   ],
-   [
-    "Contenidos Esri España",
-    8
-   ]
-  ],
   [
    [
     "?",
@@ -93,62 +73,6 @@
    "step": "known",
    "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
    "found": false
-  },
-  {
-   "step": "known",
-   "what": "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
-   "found": true
-  },
-  {
-   "step": "known",
-   "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP: no answer three times: left alone for a day"
-  },
-  {
-   "step": "known",
-   "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
-   "found": false
-  },
-  {
-   "step": "known",
-   "what": "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
-   "found": true
-  },
-  {
-   "step": "known",
-   "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP: no answer three times: left alone for a day"
-  },
-  {
-   "step": "known",
-   "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
-   "found": false
-  },
-  {
-   "step": "known",
-   "what": "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
-   "found": true
-  },
-  {
-   "step": "known",
-   "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP: no answer three times: left alone for a day"
-  },
-  {
-   "step": "known",
-   "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
-   "found": false
-  },
-  {
-   "step": "known",
-   "what": "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
-   "found": true
-  },
-  {
-   "step": "known",
-   "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP: no answer three times: left alone for a day"
-  },
-  {
-   "step": "known",
-   "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
-   "found": false
   }
  ],
  "leads": {
@@ -166,6 +90,57 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Reservas de la Biosfera Información",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "editor",
+      "shape",
+      "nombre",
+      "url_info",
+      "fecha_edi",
+      "validado",
+      "id"
+     ],
+     "records": 54,
+     "sample": [
+      "Val d'Aran",
+      "Irati",
+      "La Siberia"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 1,
+     "name": "Reservas de la Biosfera",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "editor",
+      "shape",
+      "st_area(shape)",
+      "st_length(shape)",
+      "nombre",
+      "url_info",
+      "fecha_edi",
+      "validado",
+      "id",
+      "url_info2"
+     ],
+     "records": 55,
+     "sample": [
+      "El Hierro",
+      "Meseta Ibérica",
+      "Valles de Leza, Jubera, Cidacos y Alhama"
+     ],
+     "name_field": "nombre"
+    },
     {
      "id": 0,
      "name": "Reservas de la Biosfera Información",
@@ -292,6 +267,62 @@
       "Alto Tajo"
      ],
      "name_field": "nombre"
+    },
+    {
+     "id": 0,
+     "name": "Parques Naturales Información",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "id",
+      "nombre",
+      "nombre_en",
+      "url_info",
+      "url_info2",
+      "url_info2_en",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "shape"
+     ],
+     "records": 126,
+     "sample": [
+      "Lagunas de Ruidera",
+      "Los Calares del Mundo y de la Sima",
+      "Alto Tajo"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 1,
+     "name": "Parques Naturales",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "id",
+      "nombre",
+      "nombre_en",
+      "url_info",
+      "url_info2",
+      "url_in2_en",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "shape",
+      "st_length(shape)",
+      "st_area(shape)"
+     ],
+     "records": 126,
+     "sample": [
+      "Lagunas de Ruidera",
+      "Los Calares del Mundo y de la Sima",
+      "Alto Tajo"
+     ],
+     "name_field": "nombre"
     }
    ],
    "note": "",
@@ -312,6 +343,42 @@
     "trail line"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Camino de Santiago",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "sde.datos_nco.CST.objectid",
+      "sde.datos_nco.CST.id_camino",
+      "sde.datos_nco.CST.id_etapa",
+      "sde.datos_nco.CST.nombre",
+      "sde.datos_nco.CST.longitud",
+      "sde.datos_nco.CST.url_info",
+      "sde.datos_nco.CST.url_kml",
+      "sde.datos_nco.CST.url_gpx",
+      "sde.datos_nco.CST.editor",
+      "sde.datos_nco.CST.fecha_edi",
+      "sde.datos_nco.CST.validado",
+      "sde.datos_nco.CST.shape",
+      "sde.datos_nco.cst_camino.objectid",
+      "sde.datos_nco.cst_camino.id_camino",
+      "sde.datos_nco.cst_camino.nombre",
+      "sde.datos_nco.cst_camino.t_camino",
+      "sde.datos_nco.cst_camino.longitud",
+      "sde.datos_nco.cst_camino.url_info",
+      "sde.datos_nco.cst_camino.url_kml",
+      "sde.datos_nco.cst_camino.url_gpx"
+     ],
+     "records": 2121,
+     "sample": [
+      "Caldas de Reis-Padrón",
+      "Ribolhos-Lamego",
+      "Vinnytsia-Kamianets Podilskyi"
+     ],
+     "name_field": "sde.datos_nco.CST.nombre"
+    },
     {
      "id": 0,
      "name": "Camino de Santiago",
@@ -402,6 +469,42 @@
       "Variante-Mondéjar"
      ],
      "name_field": "sde.datos_nco.CST.nombre"
+    },
+    {
+     "id": 1,
+     "name": "Camino de Santiago",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "sde.datos_nco.CST.objectid",
+      "sde.datos_nco.CST.id_camino",
+      "sde.datos_nco.CST.id_etapa",
+      "sde.datos_nco.CST.nombre",
+      "sde.datos_nco.CST.longitud",
+      "sde.datos_nco.CST.url_info",
+      "sde.datos_nco.CST.url_kml",
+      "sde.datos_nco.CST.url_gpx",
+      "sde.datos_nco.CST.editor",
+      "sde.datos_nco.CST.fecha_edi",
+      "sde.datos_nco.CST.validado",
+      "sde.datos_nco.CST.shape",
+      "sde.datos_nco.cst_camino.objectid",
+      "sde.datos_nco.cst_camino.id_camino",
+      "sde.datos_nco.cst_camino.nombre",
+      "sde.datos_nco.cst_camino.t_camino",
+      "sde.datos_nco.cst_camino.longitud",
+      "sde.datos_nco.cst_camino.url_info",
+      "sde.datos_nco.cst_camino.url_kml",
+      "sde.datos_nco.cst_camino.url_gpx"
+     ],
+     "records": 983,
+     "sample": [
+      "Caldas de Reis-Padrón",
+      "Ribolhos-Lamego",
+      "Variante-Mondéjar"
+     ],
+     "name_field": "sde.datos_nco.CST.nombre"
     }
    ],
    "note": "",
@@ -422,6 +525,38 @@
     "trail line"
    ],
    "layers": [
+    {
+     "id": 1,
+     "name": "Caminos a Guadalupe",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id_camino",
+      "id_etapa",
+      "id_camino_id_etapa",
+      "nombre",
+      "longitud",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "nombre_camino",
+      "longitud_camino",
+      "url_info_camino",
+      "url_kml_camino",
+      "url_gpx_camino",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 124,
+     "sample": [
+      "Logrosán-Guadalupe",
+      "Madrigalejo- Logrosán",
+      "Rena-Madrigalejo"
+     ],
+     "name_field": "nombre"
+    },
     {
      "id": 1,
      "name": "Caminos a Guadalupe",
@@ -532,6 +667,65 @@
       "Etapa 28: Pina de Ebro - Velilla de Ebro"
      ],
      "name_field": "sde.datos_nco.CNT.nombre"
+    },
+    {
+     "id": 0,
+     "name": "Caminos Naturales Información",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "id_camino",
+      "nombre",
+      "url_info",
+      "longitud",
+      "shape",
+      "globalid"
+     ],
+     "records": 135,
+     "sample": [
+      "Ramal a Benifairó de la Valldigna. Senderista",
+      "Etapa 2: Pereda de Ancares - Burbia (itinerario se",
+      "Etapa 28: Pina de Ebro - Velilla de Ebro"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 1,
+     "name": "Caminos Naturales",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "sde.datos_nco.CNT.objectid",
+      "sde.datos_nco.CNT.objectid_1",
+      "sde.datos_nco.CNT.id",
+      "sde.datos_nco.CNT.id_camino",
+      "sde.datos_nco.CNT.longitud",
+      "sde.datos_nco.CNT.nombre",
+      "sde.datos_nco.CNT.url_info",
+      "sde.datos_nco.CNT.url_gpx",
+      "sde.datos_nco.CNT.url_kml",
+      "sde.datos_nco.CNT.editor",
+      "sde.datos_nco.CNT.fecha_edi",
+      "sde.datos_nco.CNT.validado",
+      "sde.datos_nco.CNT.shape_leng",
+      "sde.datos_nco.CNT.shape",
+      "sde.datos_nco.cnt_camino.objectid",
+      "sde.datos_nco.cnt_camino.editor",
+      "sde.datos_nco.cnt_camino.id_camino",
+      "sde.datos_nco.cnt_camino.nombre",
+      "sde.datos_nco.cnt_camino.t_camino",
+      "sde.datos_nco.cnt_camino.url_gpx"
+     ],
+     "records": 743,
+     "sample": [
+      "Ramal a Benifairó de la Valldigna. Senderista",
+      "Etapa 2: Pereda de Ancares - Burbia (itinerario se",
+      "Etapa 28: Pina de Ebro - Velilla de Ebro"
+     ],
+     "name_field": "sde.datos_nco.CNT.nombre"
     }
    ],
    "note": "",
@@ -553,6 +747,63 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Geoparques información",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "num_geoparque",
+      "nombre",
+      "superficie",
+      "ccaa",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "url_info",
+      "url_info2",
+      "orig_fid",
+      "shape"
+     ],
+     "records": 18,
+     "sample": [
+      "Granada",
+      "Cabo de Gata-Níjar",
+      "Cabo Ortegal"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 1,
+     "name": "Geoparques",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "num_geoparque",
+      "nombre",
+      "superficie",
+      "ccaa",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "url_info",
+      "url_info2",
+      "shape",
+      "shape_Length",
+      "shape_Area"
+     ],
+     "records": 18,
+     "sample": [
+      "Granada",
+      "Las Loras",
+      "Catalunya Central"
+     ],
+     "name_field": "nombre"
+    },
     {
      "id": 0,
      "name": "Geoparques información",
@@ -1049,6 +1300,35 @@
       "Caminos_pasion_lineal"
      ],
      "name_field": "nombre"
+    },
+    {
+     "id": 1,
+     "name": "Camino de la Pasión MOT",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id",
+      "nombre",
+      "longitud",
+      "url_info",
+      "url_kml",
+      "url_gpx",
+      "editor",
+      "fecha_edit",
+      "validado",
+      "shape",
+      "st_length(shape)",
+      "url_info_en",
+      "url_info2",
+      "url_info2_en"
+     ],
+     "records": 1,
+     "sample": [
+      "Caminos_pasion_lineal"
+     ],
+     "name_field": "nombre"
     }
    ],
    "note": "",
@@ -1069,6 +1349,29 @@
     "trail line"
    ],
    "layers": [
+    {
+     "id": 1,
+     "name": "Camino del Cid Senderismo",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id",
+      "n_ruta",
+      "n_etapa",
+      "longitud",
+      "url_info",
+      "url_kml",
+      "url_gpx",
+      "editor",
+      "fecha_edit",
+      "validado",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 70
+    },
     {
      "id": 1,
      "name": "Camino del Cid Senderismo",
@@ -1133,6 +1436,29 @@
       "st_length(shape)"
      ],
      "records": 28
+    },
+    {
+     "id": 1,
+     "name": "Camino del Cid BTT",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id",
+      "n_ruta",
+      "n_etapa",
+      "longitud",
+      "url_info",
+      "url_kml",
+      "url_gpx",
+      "editor",
+      "fecha_edit",
+      "validado",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 28
     }
    ],
    "note": "",
@@ -1175,6 +1501,29 @@
       "st_length(shape)"
      ],
      "records": 37
+    },
+    {
+     "id": 1,
+     "name": "Camino del Cid CIC",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id",
+      "n_ruta",
+      "n_etapa",
+      "longitud",
+      "url_info",
+      "url_kml",
+      "url_gpx",
+      "editor",
+      "fecha_edit",
+      "validado",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 37
     }
    ],
    "note": "",
@@ -1195,6 +1544,152 @@
     "trail line"
    ],
    "layers": [
+    {
+     "id": 1,
+     "name": "Camino de Santiago Patrimonio Mundial",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id_camino",
+      "nombre",
+      "url_info",
+      "url_shp",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 5,
+     "sample": [
+      "Camino de la Costa",
+      "Camino del Interior Vasco-Riojano",
+      "Camino Francés"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 2,
+     "name": "Camino Francés",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id_camino",
+      "nombre",
+      "url_info",
+      "url_shp",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 1,
+     "sample": [
+      "Camino Francés"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 3,
+     "name": "Camino Lebaniego",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id_camino",
+      "nombre",
+      "url_info",
+      "url_shp",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 1,
+     "sample": [
+      "Camino Lebaniego"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 4,
+     "name": "Camino Primitivo",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id_camino",
+      "nombre",
+      "url_info",
+      "url_shp",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 1,
+     "sample": [
+      "Camino Primitivo"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 5,
+     "name": "Camino de la Costa",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id_camino",
+      "nombre",
+      "url_info",
+      "url_shp",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 1,
+     "sample": [
+      "Camino de la Costa"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 6,
+     "name": "Camino del Interior Vasco-Riojano",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id_camino",
+      "nombre",
+      "url_info",
+      "url_shp",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 1,
+     "sample": [
+      "Camino del Interior Vasco-Riojano"
+     ],
+     "name_field": "nombre"
+    },
     {
      "id": 1,
      "name": "Camino de Santiago Patrimonio Mundial",
@@ -1395,6 +1890,42 @@
       "Camino Francés - Tramo Navarro"
      ],
      "name_field": "nombre_camino"
+    },
+    {
+     "id": 0,
+     "name": "Camino de Santiago Accesible",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id_camino",
+      "editor",
+      "fecha_edi",
+      "validado",
+      "globalid",
+      "nombre_camino",
+      "t_camino",
+      "longitud_camino",
+      "url_info_camino",
+      "url_kml_camino",
+      "url_gpx_camino",
+      "xx_orden",
+      "id_csu",
+      "id_agrupa",
+      "nombre_agrupa",
+      "id_pais",
+      "nombre_es_pais",
+      "nombre_en_pais",
+      "shape"
+     ],
+     "records": 3,
+     "sample": [
+      "Camino Francés - Tramo Aragonés",
+      "Camino Francés",
+      "Camino Francés - Tramo Navarro"
+     ],
+     "name_field": "nombre_camino"
     }
    ],
    "note": "",
@@ -1415,6 +1946,31 @@
     "trail line"
    ],
    "layers": [
+    {
+     "id": 1,
+     "name": "Camino de la Pasión BTT",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id",
+      "n_etapa",
+      "longitud",
+      "url_info",
+      "url_kml",
+      "url_gpx",
+      "editor",
+      "fecha_edit",
+      "validado",
+      "shape",
+      "st_length(shape)",
+      "url_info_en",
+      "url_info2",
+      "url_info2_en"
+     ],
+     "records": 11
+    },
     {
      "id": 1,
      "name": "Camino de la Pasión BTT",
@@ -1483,6 +2039,31 @@
       "st_length(shape)"
      ],
      "records": 1
+    },
+    {
+     "id": 1,
+     "name": "Camino de la Pasión GRA",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "longitud",
+      "url_info",
+      "url_info2",
+      "url_info_en",
+      "url_info2_en",
+      "url_kml",
+      "url_gpx",
+      "editor",
+      "fecha_edit",
+      "validado",
+      "n_etapa",
+      "id",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 1
     }
    ],
    "note": "",
@@ -1525,6 +2106,29 @@
       "st_length(shape)"
      ],
      "records": 11
+    },
+    {
+     "id": 1,
+     "name": "Camino del Cid MOT",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid",
+      "id",
+      "n_ruta",
+      "n_etapa",
+      "longitud",
+      "url_info",
+      "url_kml",
+      "url_gpx",
+      "editor",
+      "fecha_edit",
+      "validado",
+      "shape",
+      "st_length(shape)"
+     ],
+     "records": 11
     }
    ],
    "note": "",
@@ -1545,6 +2149,29 @@
     "trail line"
    ],
    "layers": [
+    {
+     "id": 1,
+     "name": "PMC_camino",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "objectid_1",
+      "objectid_2",
+      "objectid",
+      "capa",
+      "itinerario",
+      "inicio",
+      "fin",
+      "longitud",
+      "gis_id",
+      "shape_leng",
+      "url",
+      "shape",
+      "shape_Length"
+     ],
+     "records": 2
+    },
     {
      "id": 1,
      "name": "PMC_camino",

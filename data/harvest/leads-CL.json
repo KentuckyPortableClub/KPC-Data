@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Chile (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "CL",
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -36,103 +36,16 @@
   },
   {
    "catalog": "https://datos.gob.cl",
-   "keyword": "área silvestre protegida",
-   "error": "robots.txt says no"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
    "keyword": "monumento natural",
-   "error": "robots.txt says no"
-  },
-  {
-   "step": "known",
-   "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
-   "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
-   "keyword": "parque nacional",
-   "error": "robots.txt says no"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
-   "keyword": "reserva nacional",
    "error": "robots.txt says no"
   },
   {
    "catalog": "https://datos.gob.cl",
    "keyword": "área silvestre protegida",
-   "error": "robots.txt says no"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
-   "keyword": "monumento natural",
-   "error": "robots.txt says no"
-  },
-  {
-   "step": "known",
-   "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
-   "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
-   "keyword": "parque nacional",
-   "error": "robots.txt says no"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
-   "keyword": "reserva nacional",
-   "error": "robots.txt says no"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
-   "keyword": "área silvestre protegida",
-   "error": "robots.txt says no"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
-   "keyword": "monumento natural",
-   "error": "robots.txt says no"
-  },
-  {
-   "step": "known",
-   "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
-   "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
-   "keyword": "parque nacional",
-   "error": "robots.txt says no"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
-   "keyword": "reserva nacional",
-   "error": "robots.txt says no"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
-   "keyword": "área silvestre protegida",
-   "error": "robots.txt says no"
-  },
-  {
-   "catalog": "https://datos.gob.cl",
-   "keyword": "monumento natural",
    "error": "robots.txt says no"
   }
  ],
  "rejected_orgs": [
-  [
-   [
-    "?",
-    12
-   ]
-  ],
-  [
-   [
-    "?",
-    3
-   ]
-  ],
   [
    [
     "?",
@@ -148,13 +61,19 @@
   [
    [
     "?",
+    3
+   ]
+  ],
+  [
+   [
+    "?",
     12
    ]
   ],
   [
    [
     "?",
-    3
+    41
    ]
   ]
  ],
@@ -163,26 +82,6 @@
   "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer"
  ],
  "known_log": [
-  {
-   "step": "known",
-   "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
-   "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
-  },
-  {
-   "step": "known",
-   "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
-   "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
-  },
-  {
-   "step": "known",
-   "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
-   "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
-  },
-  {
-   "step": "known",
-   "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
-   "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
-  },
   {
    "step": "known",
    "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
@@ -203,6 +102,57 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Áreas Protegidas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "tipo",
+      "label",
+      "area_ha",
+      "x",
+      "y",
+      "disp_label",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 28,
+     "sample": [
+      "Santuario de la Naturaleza Humedal Río Maipo",
+      "Santuario de la Naturaleza Humedal de Tunquén",
+      "Santuario de la Naturaleza Cerro Poqui"
+     ],
+     "name_field": "label"
+    },
+    {
+     "id": 0,
+     "name": "Áreas Protegidas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "tipo",
+      "label",
+      "area_ha",
+      "x",
+      "y",
+      "disp_label",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 28,
+     "sample": [
+      "Santuario de la Naturaleza Humedal Río Maipo",
+      "Santuario de la Naturaleza Humedal de Tunquén",
+      "Santuario de la Naturaleza Cerro Poqui"
+     ],
+     "name_field": "label"
+    },
     {
      "id": 0,
      "name": "Áreas Protegidas",
@@ -308,6 +258,42 @@
       "Bucalemu"
      ],
      "name_field": "NOMBRE"
+    },
+    {
+     "id": 0,
+     "name": "Humedales Urbanos",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "COD_HUM_M",
+      "TIPO",
+      "NOMBRE",
+      "COMUNA",
+      "PROVINCIA",
+      "REGION",
+      "HECTAREAS",
+      "PROCESO",
+      "ES_DECLARADO",
+      "RESOLUCION",
+      "URL_RES_BCN",
+      "URL_SIMBIO",
+      "XLong",
+      "YLat",
+      "OBJECTID",
+      "COD_HUM",
+      "GlobalID",
+      "created_user",
+      "created_date",
+      "last_edited_user"
+     ],
+     "records": 305,
+     "sample": [
+      "Aguada La Chimba",
+      "Baños Morales",
+      "Bucalemu"
+     ],
+     "name_field": "NOMBRE"
     }
    ],
    "note": "",
@@ -328,6 +314,182 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Áreas Protegidas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "URL_SIMBIO",
+      "Shape",
+      "OBJECTID",
+      "Codrnap",
+      "NombreOriginal",
+      "IdDesignacion",
+      "designacion",
+      "TipoDesignacion",
+      "SuperficieDecreto",
+      "AnoInicioProteccion",
+      "IdStatusWDPA",
+      "StatusWDPA",
+      "SuperficieOficialIDE",
+      "Autoridad"
+     ],
+     "records": 246,
+     "sample": [
+      "La Portada",
+      "Cerro Ñielol",
+      "Cinco Hermanas"
+     ],
+     "name_field": "NombreOriginal"
+    },
+    {
+     "id": 3,
+     "name": "Conservación Privada",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "URL_SIMBIO",
+      "Shape",
+      "OBJECTID",
+      "Codrnap",
+      "NombreOriginal",
+      "IdDesignacion",
+      "designacion",
+      "TipoDesignacion",
+      "SuperficieDecreto",
+      "AnoInicioProteccion",
+      "IdStatusWDPA",
+      "StatusWDPA",
+      "SuperficieOficialIDE",
+      "Autoridad"
+     ],
+     "records": 233,
+     "sample": [
+      "Quebrada de Macul",
+      "San Carlos de Apoquindo",
+      "Puente Ñilhue"
+     ],
+     "name_field": "NombreOriginal"
+    },
+    {
+     "id": 0,
+     "name": "Áreas Protegidas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "URL_SIMBIO",
+      "OBJECTID",
+      "Codrnap",
+      "NombreOriginal",
+      "IdDesignacion",
+      "designacion",
+      "TipoDesignacion",
+      "SuperficieDecreto",
+      "AnoInicioProteccion",
+      "IdStatusWDPA",
+      "StatusWDPA",
+      "SuperficieOficialIDE",
+      "Autoridad"
+     ],
+     "records": 246,
+     "sample": [
+      "La Portada",
+      "Cerro Ñielol",
+      "Cinco Hermanas"
+     ],
+     "name_field": "NombreOriginal"
+    },
+    {
+     "id": 3,
+     "name": "Conservación Privada",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "URL_SIMBIO",
+      "OBJECTID",
+      "Codrnap",
+      "NombreOriginal",
+      "IdDesignacion",
+      "designacion",
+      "TipoDesignacion",
+      "SuperficieDecreto",
+      "AnoInicioProteccion",
+      "IdStatusWDPA",
+      "StatusWDPA",
+      "SuperficieOficialIDE",
+      "Autoridad"
+     ],
+     "records": 233,
+     "sample": [
+      "Quebrada de Macul",
+      "San Carlos de Apoquindo",
+      "Puente Ñilhue"
+     ],
+     "name_field": "NombreOriginal"
+    },
+    {
+     "id": 1,
+     "name": "Otras Designaciones",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "URL_SIMBIO",
+      "OBJECTID",
+      "Codrnap",
+      "NombreOriginal",
+      "IdDesignacion",
+      "designacion",
+      "TipoDesignacion",
+      "SuperficieDecreto",
+      "AnoInicioProteccion",
+      "IdStatusWDPA",
+      "StatusWDPA",
+      "SuperficieOficialIDE",
+      "Autoridad"
+     ],
+     "records": 85,
+     "sample": [
+      "Cerro Poconchile",
+      "Valle de Chaca",
+      "Alto Patache"
+     ],
+     "name_field": "NombreOriginal"
+    },
+    {
+     "id": 2,
+     "name": "Sitios Prioritarios",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "URL_SIMBIO",
+      "OBJECTID",
+      "Codrnap",
+      "NombreOriginal",
+      "IdDesignacion",
+      "designacion",
+      "TipoDesignacion",
+      "SuperficieDecreto",
+      "AnoInicioProteccion",
+      "IdStatusWDPA",
+      "StatusWDPA",
+      "SuperficieOficialIDE",
+      "Autoridad"
+     ],
+     "records": 350,
+     "sample": [
+      "Punta Patache",
+      "Bahía Chipana",
+      "Península de Mejillones"
+     ],
+     "name_field": "NombreOriginal"
+    },
     {
      "id": 0,
      "name": "Áreas Protegidas",
@@ -629,6 +791,113 @@
       "Shape__Length"
      ],
      "records": 219
+    },
+    {
+     "id": 0,
+     "name": "Ecorregiones Terrestres",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "XLong",
+      "YLat",
+      "OBJECTID",
+      "ECO_NAME",
+      "SUPHA_GEO",
+      "Sup",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Atacama desert",
+      "Central Andean dry puna",
+      "Central Andean puna"
+     ],
+     "name_field": "ECO_NAME"
+    },
+    {
+     "id": 1,
+     "name": "Ecorregiones Marinas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "XLong",
+      "YLat",
+      "OBJECTID",
+      "ECO_NAME",
+      "SUPHA_GEO",
+      "km2",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 8,
+     "sample": [
+      "Araucanian",
+      "Central Chile",
+      "Channels and Fjords of Southern Chile"
+     ],
+     "name_field": "ECO_NAME"
+    },
+    {
+     "id": 2,
+     "name": "Ecorregiones Terrestres 2020",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "ECO_NAME",
+      "REALM",
+      "BIOME",
+      "ECO_NUM",
+      "ECO_ID",
+      "ECO_SYM",
+      "GBL_STAT",
+      "G200_REGIO",
+      "G200_NUM",
+      "G200_BIOME",
+      "G200_STAT",
+      "area_km2",
+      "eco_code",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 517,
+     "sample": [
+      "Valdivian temperate forests",
+      "Valdivian temperate forests",
+      "Valdivian temperate forests"
+     ],
+     "name_field": "ECO_NAME"
+    },
+    {
+     "id": 3,
+     "name": "Ecorregiones Marinas 2020",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "ECOREGION",
+      "REALM",
+      "PROVINC",
+      "TYPE",
+      "BIOME",
+      "ORIG_FID",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 219
     }
    ],
    "note": "",
@@ -649,6 +918,93 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Inventario Nacional de Humedales",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "COD_HUMEDA",
+      "NOM_HUMDET",
+      "NOM_HUMMASTER",
+      "ORDEN_1",
+      "ORDEN_2",
+      "ORDEN_3",
+      "ORDEN_4",
+      "ORDEN_5",
+      "HECTAREAS",
+      "HLIMITEURBANO",
+      "Shape",
+      "URL_SIMBIO",
+      "COD_HUMMAS"
+     ],
+     "records": 117983,
+     "sample": [
+      "Callielfu",
+      "Equil",
+      "Rio Mapocoho, en comunas de Talagante y El Monte"
+     ],
+     "name_field": "NOM_HUMDET"
+    },
+    {
+     "id": 0,
+     "name": "Inventario Nacional de Humedales",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "COD_HUMEDA",
+      "NOM_HUMDET",
+      "NOM_HUMMASTER",
+      "ORDEN_1",
+      "ORDEN_2",
+      "ORDEN_3",
+      "ORDEN_4",
+      "ORDEN_5",
+      "HECTAREAS",
+      "HLIMITEURBANO",
+      "URL_SIMBIO",
+      "COD_HUMMAS"
+     ],
+     "records": 117983,
+     "sample": [
+      "Callielfu",
+      "Equil",
+      "Rio Mapocoho, en comunas de Talagante y El Monte"
+     ],
+     "name_field": "NOM_HUMDET"
+    },
+    {
+     "id": 1,
+     "name": "Humedales Urbanos Declarados",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "COD_HUM_M",
+      "NOMBRE",
+      "COMUNA",
+      "PROVINCIA",
+      "REGION",
+      "HECTAREAS",
+      "PROCESO",
+      "RESOLUCION",
+      "URL_RES_BCN",
+      "OBJECTID",
+      "URL_SIMBIO",
+      "GlobalID"
+     ],
+     "records": 137,
+     "sample": [
+      "Aguada La Chimba",
+      "Baños Morales",
+      "Bucalemu"
+     ],
+     "name_field": "NOMBRE"
+    },
     {
      "id": 0,
      "name": "Inventario Nacional de Humedales",
@@ -838,6 +1194,89 @@
       "Recuperación Santuario Bosque Petras Quintero"
      ],
      "name_field": "nombre"
+    },
+    {
+     "id": 1,
+     "name": "Paisajes Restauración",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CodPaisaje",
+      "NombrePaisaje",
+      "SuperfcieiHa",
+      "Descripcion",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 16,
+     "sample": [
+      "Rocuant Andalien",
+      "Queule",
+      "Mantagua"
+     ],
+     "name_field": "NombrePaisaje"
+    },
+    {
+     "id": 1,
+     "name": "Paisajes Restauración",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CodPaisaje",
+      "NombrePaisaje",
+      "SuperfcieiHa",
+      "Descripcion",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 16,
+     "sample": [
+      "Rocuant Andalien",
+      "Queule",
+      "Mantagua"
+     ],
+     "name_field": "NombrePaisaje"
+    },
+    {
+     "id": 0,
+     "name": "Iniciativas de Restauración Ecológica",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "globalid",
+      "nombre",
+      "nombre_completo",
+      "descripcion",
+      "ha",
+      "causales",
+      "Ambito",
+      "uso_suelo",
+      "actividad01",
+      "actividad02",
+      "actividad03",
+      "actividad04",
+      "actividad05",
+      "actividad06",
+      "actividad07",
+      "actividad08",
+      "actividad09",
+      "actividad10",
+      "actividad11"
+     ],
+     "records": 95,
+     "sample": [
+      "Proyecto Purapel Lote B",
+      "Restauración predio \"Sta. Adriana de Curapalihue\"",
+      "Recuperación Santuario Bosque Petras Quintero"
+     ],
+     "name_field": "nombre"
     }
    ],
    "note": "",
@@ -858,6 +1297,31 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Área de Estudio",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "region",
+      "provincia",
+      "comuna",
+      "desc_regio",
+      "desc_provi",
+      "desc_comun",
+      "shape_leng",
+      "zona_gef",
+      "desc_gef",
+      "area_km",
+      "disp_id",
+      "has",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 37
+    },
     {
      "id": 0,
      "name": "Área de Estudio",
@@ -917,6 +1381,22 @@
       "Shape__Length"
      ],
      "records": 29908
+    },
+    {
+     "id": 2,
+     "name": "Infraestructura Ecológica",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "ie",
+      "fuente",
+      "ha",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 29908
     }
    ],
    "note": "",
@@ -937,6 +1417,75 @@
     "area"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Limites Urbanos PRC",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "REGION",
+      "NOMBRE",
+      "INSTRUMENT",
+      "CONDICIO",
+      "ADMIN",
+      "COMUNA",
+      "Capa",
+      "DO",
+      "IPT",
+      "sup_ha",
+      "SUPERF",
+      "SUP",
+      "Shape_Leng",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 560,
+     "sample": [
+      "Límite urbano de Algarrobo",
+      "Límite urbano de Artificio",
+      "Límite urbano de Cartagena"
+     ],
+     "name_field": "NOMBRE"
+    },
+    {
+     "id": 1,
+     "name": "Limites Urbanos PRI-PRM",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "REGION",
+      "ZONA",
+      "UPERM",
+      "UPROH",
+      "ZONA_1",
+      "CUT_COM",
+      "NAME",
+      "GLOSA",
+      "Capa",
+      "DO",
+      "UPREF",
+      "URL",
+      "Sup_km2",
+      "DESCRIP",
+      "SUPERF",
+      "N_DOC",
+      "DOC",
+      "IPT",
+      "N__DOC"
+     ],
+     "records": 2171,
+     "sample": [
+      " ",
+      " ",
+      " "
+     ],
+     "name_field": "NAME"
+    },
     {
      "id": 0,
      "name": "Limites Urbanos PRC",
@@ -1061,6 +1610,42 @@
       "Interpretación de imagen satelital de represa de c"
      ],
      "name_field": "DatasetName"
+    },
+    {
+     "id": 0,
+     "name": "RegistrosActivos",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "Type",
+      "Modified",
+      "Language",
+      "License",
+      "RightsHolder",
+      "AccessRights",
+      "BibliographicCitation",
+      "References_",
+      "InstitutionID",
+      "CollectionID",
+      "DatasetID",
+      "InstitutionCode",
+      "CollectionCode",
+      "DatasetName",
+      "OwnerInstitutionCode",
+      "BasisOfRecord",
+      "InformationWithheld",
+      "DataGeneralizations",
+      "DynamicProperties",
+      "CatalogNumber"
+     ],
+     "records": 33673,
+     "sample": [
+      "Interpretación de imagen satelital de represa de c",
+      "Interpretación de imagen satelital de represa de c",
+      "Interpretación de imagen satelital de represa de c"
+     ],
+     "name_field": "DatasetName"
     }
    ],
    "note": "",
@@ -1081,6 +1666,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Catastro de Bosque Nativo",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "NIVEL_1",
+      "NIVEL_2",
+      "REGION",
+      "ANIO_FUENTE",
+      "ANIO_SINT",
+      "SINTESIS",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 426469
+    },
     {
      "id": 0,
      "name": "Catastro de Bosque Nativo",
@@ -1139,6 +1744,26 @@
       "CONTEO"
      ],
      "records": 29273
+    },
+    {
+     "id": 2,
+     "name": "OAZ Primera Prioridad Preservación",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "COD_PP",
+      "OAZ_PP",
+      "SUPERF_HA",
+      "TIPO_PP",
+      "PORCENT",
+      "Shape",
+      "Shape.STLength()",
+      "Shape.STArea()",
+      "CONTEO"
+     ],
+     "records": 29273
     }
    ],
    "note": "",
@@ -1170,6 +1795,18 @@
       "id"
      ],
      "records": 21
+    },
+    {
+     "id": 0,
+     "name": "Zonas de Conflicto",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "id"
+     ],
+     "records": 21
     }
    ],
    "note": "",
@@ -1190,6 +1827,35 @@
     "area"
    ],
    "layers": [
+    {
+     "id": 3,
+     "name": "Macrozonas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Clamped",
+      "Extruded",
+      "Snippet",
+      "PopupInfo",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 4,
+     "sample": [
+      "Da",
+      "pasivo",
+      "activoTdF"
+     ],
+     "name_field": "Name"
+    },
     {
      "id": 3,
      "name": "Macrozonas",
@@ -1262,6 +1928,30 @@
      "records": 0,
      "sample": [],
      "name_field": "Nombre"
+    },
+    {
+     "id": 0,
+     "name": "Conservación Ex Situ de Flora Nativa",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "Geometry",
+      "Id",
+      "Codigo",
+      "Nombre",
+      "Descripcion",
+      "Tipologia",
+      "Tipo_Conservacion",
+      "Url_Sitio_Web",
+      "Fecha_Creacion",
+      "Instrumento_Creacion",
+      "Superficie_ha",
+      "URL_SIMBIO"
+     ],
+     "records": 0,
+     "sample": [],
+     "name_field": "Nombre"
     }
    ],
    "note": "",
@@ -1282,6 +1972,23 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 2,
+     "name": "Planes Recoge",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "ID_Plan",
+      "Hectareas",
+      "RECOGE",
+      "Shape__Area",
+      "Shape__Length",
+      "URL_SIMBIO"
+     ],
+     "records": 18
+    },
     {
      "id": 2,
      "name": "Planes Recoge",

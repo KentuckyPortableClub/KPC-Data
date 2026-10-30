@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Brazil (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "BR",
- "date": "2026-10-28",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -15,10 +15,90 @@
  ],
  "bands": {
   "A": 0,
-  "B": 0,
+  "B": 1,
   "C": 0
  },
+ "failures": [
+  {
+   "catalog": "https://dados.gov.br/dados",
+   "keyword": "parque nacional",
+   "error": "HTTP 401"
+  },
+  {
+   "catalog": "https://dados.gov.br/dados",
+   "keyword": "unidade de conservação",
+   "error": "HTTP 401"
+  },
+  {
+   "catalog": "https://dados.gov.br/dados",
+   "keyword": "reserva biológica",
+   "error": "HTTP 401"
+  },
+  {
+   "catalog": "https://dados.gov.br/dados",
+   "keyword": "floresta nacional",
+   "error": "HTTP 401"
+  }
+ ],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    49
+   ]
+  ],
+  [
+   [
+    "?",
+    3
+   ]
+  ],
+  [
+   [
+    "?",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    27
+   ]
+  ],
+  [
+   [
+    "?",
+    2
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [],
- "leads": {}
+ "known_log": [],
+ "leads": {
+  "dl:https://portal-espacial.sibbr.gov.br/ws/layers/view/more/uc_federal_pi_4326_iso88591_dbf_fix": {
+   "url": "https://portal-espacial.sibbr.gov.br/ws/layers/view/more/uc_federal_pi_4326_iso88591_dbf_fix",
+   "cc": "BR",
+   "title": "chat 8 seed (B)",
+   "publisher": "",
+   "catalog": "survey (chat 8)",
+   "licence": "SiBBr is the Biodiversity Information System (ICMBio data); downloads, not a server",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "layers": [],
+   "grade": 3,
+   "band": "B",
+   "note": "an official file download, not a service: needs a loader (chat 8 decides)"
+  }
+ }
 }

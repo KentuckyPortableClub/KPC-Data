@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Colombia (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "CO",
- "date": "2026-10-28",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -14,12 +14,54 @@
   "eea"
  ],
  "bands": {
-  "A": 0,
-  "B": 1,
+  "A": 6,
+  "B": 7,
   "C": 0
  },
- "known_good_found": [],
+ "failures": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    23
+   ]
+  ],
+  [
+   [
+    "?",
+    48
+   ]
+  ],
+  [
+   [
+    "?",
+    11
+   ]
+  ],
+  [
+   [
+    "?",
+    44
+   ]
+  ],
+  [
+   [
+    "?",
+    36
+   ]
+  ]
+ ],
+ "known_good_found": [
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/FeatureServer"
+ ],
  "known_good_missed": [],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/FeatureServer",
+   "found": true
+  }
+ ],
  "leads": {
   "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap": {
    "url": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/MapServer/0",
@@ -62,11 +104,1661 @@
       "territorial",
       "sirap"
      ],
+     "records": 1947,
+     "sample": [
+      "Cueva de los Guácharos",
+      "Nukak",
+      "Dinaboy"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 0,
+     "name": "Registro Unico Nacional AP",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "objectid",
+      "ap_id",
+      "condicion",
+      "ap_nombre",
+      "ap_categoria",
+      "ap_shape_id",
+      "fecha_inscrita",
+      "fecha_registro",
+      "organizacion",
+      "nit",
+      "area_ha_total_resolucion",
+      "area_ha_maritimo_resolucion",
+      "area_ha_terrestre_resolucion",
+      "centroide_x",
+      "centroide_y",
+      "area_ha_total_geografica",
+      "area_ha_maritima_geografica",
+      "area_ha_terrestre_geografica",
+      "territorial",
+      "sirap"
+     ],
+     "records": 1947,
+     "sample": [
+      "Cueva de los Guácharos",
+      "Nukak",
+      "Dinaboy"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 0,
+     "name": "Registro Unico Nacional AP",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "objectid",
+      "ap_id",
+      "condicion",
+      "ap_nombre",
+      "ap_categoria",
+      "ap_shape_id",
+      "fecha_inscrita",
+      "fecha_registro",
+      "organizacion",
+      "nit",
+      "area_ha_total_resolucion",
+      "area_ha_maritimo_resolucion",
+      "area_ha_terrestre_resolucion",
+      "centroide_x",
+      "centroide_y",
+      "area_ha_total_geografica",
+      "area_ha_maritima_geografica",
+      "area_ha_terrestre_geografica",
+      "territorial",
+      "sirap"
+     ],
+     "records": 1947,
+     "sample": [
+      "Cueva de los Guácharos",
+      "Nukak",
+      "Dinaboy"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 0,
+     "name": "Registro Unico Nacional AP",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ap_id",
+      "condicion",
+      "ap_nombre",
+      "ap_categoria",
+      "ap_shape_id",
+      "fecha_inscrita",
+      "fecha_registro",
+      "organizacion",
+      "nit",
+      "area_ha_total_resolucion",
+      "area_ha_maritimo_resolucion",
+      "area_ha_terrestre_resolucion",
+      "centroide_x",
+      "centroide_y",
+      "area_ha_total_geografica",
+      "area_ha_maritima_geografica",
+      "area_ha_terrestre_geografica",
+      "territorial",
+      "sirap"
+     ],
      "count_err": "no answer three times: left alone for a day"
     }
    ],
    "note": "runap - Registro Unico Nacional AP_server",
+   "grade": 6,
+   "band": "A",
+   "known_good": true
+  },
+  "https://gis.upit.gov.co/wa_server/rest/services/ambiental/area_importancia_ambiental": {
+   "url": "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer",
+   "cc": "CO",
+   "title": "Ambiental/Area_Importancia_Ambiental",
+   "publisher": "gis.upit.gov.co",
+   "catalog": "ArcGIS Online search",
+   "licence": "",
+   "date": "2024-09-30",
+   "found": "2026-10-30",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 30,
+     "name": "Bosque_Degradado_2012",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid_1",
+      "objectid",
+      "shape_leng",
+      "Shape__Length",
+      "Shape__Area",
+      "apoyo",
+      "codigo",
+      "insumo",
+      "confiabili",
+      "cambio",
+      "area_has",
+      "cobertura"
+     ],
+     "records": 5767
+    },
+    {
+     "id": 32,
+     "name": "Nuevas_Areas_Parques_Naturales",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "hectareas",
+      "nombre",
+      "observacio",
+      "fecha_act",
+      "fecha_lm",
+      "estado",
+      "id_ap",
+      "codigo",
+      "tipo",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 9,
+     "sample": [
+      "Los Estoraques",
+      "Selvas Transicionales de Cumaribo",
+      "Sabanas y humedales de Arauca"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 34,
+     "name": "Parques_Nacionales_Naturales_de_Colombia",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid_1",
+      "objectid",
+      "id",
+      "nombre",
+      "no_res_vi",
+      "area_res",
+      "región",
+      "categoría",
+      "cos_adulto",
+      "cos_ninos",
+      "alojamie",
+      "camping",
+      "shape_leng",
+      "shapestare",
+      "shapestlen",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 58,
+     "sample": [
+      "EL COCUY",
+      "PISBA",
+      "PARAMILLO"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 35,
+     "name": "Humedales_RAMSAR_Agosto_2018",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "id",
+      "nombre",
+      "acto_admin",
+      "fecha_acto",
+      "escala",
+      "estado_pro",
+      "area_ha",
+      "fecha_ingr",
+      "fecha_reco",
+      "shape_leng",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 12,
+     "sample": [
+      "Sistema Lacustre de Chingaza",
+      "Sistema Delta Estuarino del Río Magdalena, Ciénaga",
+      "Laguna del Otún"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 26,
+     "name": "Zonificacion_Ley2",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "id",
+      "Shape__Length",
+      "Shape__Area",
+      "id_ley2",
+      "nom_ley2",
+      "tipo_zoni",
+      "soporte",
+      "departamen",
+      "area_ha",
+      "fecha_ingr",
+      "fecha_reco",
+      "st_area_sh",
+      "st_perimet"
+     ],
+     "records": 7273,
+     "sample": [
+      "Rio Magdalena",
+      "Rio Magdalena",
+      "Rio Magdalena"
+     ],
+     "name_field": "nom_ley2"
+    },
+    {
+     "id": 27,
+     "name": "Areas RUNAP",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid_1",
+      "objectid",
+      "url",
+      "wkid",
+      "app_id",
+      "record_id",
+      "centroid_x",
+      "centroid_y",
+      "globalid",
+      "sde_state_",
+      "Shape__Length",
+      "Shape__Area",
+      "nombre",
+      "id_pnn",
+      "categoria",
+      "territoria",
+      "resolucion",
+      "hectareas_",
+      "escala",
+      "organizaci"
+     ],
+     "records": 1393,
+     "sample": [
+      "La Esperanza",
+      "Serrania de Minas",
+      "Rayuela"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 37,
+     "name": "ENA_SA_2014",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "cod_sist_a",
+      "sistema_ac",
+      "area_calc",
+      "shape_leng",
+      "shape_le_1",
+      "ruleid",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 208
+    },
+    {
+     "id": 50,
+     "name": "Complejos de Paramos_Escala100K",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "id",
+      "nombre",
+      "escala",
+      "acto_admin",
+      "fecha_acto",
+      "no_poligon",
+      "fuente",
+      "area_ha",
+      "fecha_ingr",
+      "fecha_reco",
+      "shape_leng",
+      "shape_le_1",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 163,
+     "sample": [
+      "Guantiva - La Rusia",
+      "Guantiva - La Rusia",
+      "Guantiva - La Rusia"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 35,
+     "name": "Humedales_RAMSAR_Agosto_2018",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "id",
+      "nombre",
+      "acto_admin",
+      "fecha_acto",
+      "escala",
+      "estado_pro",
+      "area_ha",
+      "fecha_ingr",
+      "fecha_reco",
+      "shape_leng",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "count_err": "server error: {'code': 400, 'extendedCode': -21472"
+    },
+    {
+     "id": 30,
+     "name": "Bosque_Degradado_2012",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid_1",
+      "shape",
+      "objectid",
+      "shape_leng",
+      "st_perimeter(shape)",
+      "st_area(shape)",
+      "apoyo",
+      "codigo",
+      "insumo",
+      "confiabili",
+      "cambio",
+      "area_has",
+      "cobertura"
+     ],
+     "count_err": "server error: {'code': 400, 'extendedCode': -21472"
+    },
+    {
+     "id": 34,
+     "name": "Parques_Nacionales_Naturales_de_Colombia",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid_1",
+      "objectid",
+      "id",
+      "nombre",
+      "no_res_vi",
+      "area_res",
+      "región",
+      "categoría",
+      "cos_adulto",
+      "cos_ninos",
+      "alojamie",
+      "camping",
+      "shape_leng",
+      "shapestare",
+      "shapestlen",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "count_err": "server error: {'code': 400, 'extendedCode': -21472"
+    },
+    {
+     "id": 32,
+     "name": "Nuevas_Areas_Parques_Naturales",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "hectareas",
+      "nombre",
+      "observacio",
+      "fecha_act",
+      "fecha_lm",
+      "estado",
+      "id_ap",
+      "codigo",
+      "tipo",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "count_err": "server error: {'code': 400, 'extendedCode': -21472"
+    }
+   ],
+   "note": "Area_Importancia_Ambiental",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://mapasdnp.dnp.gov.co/server/rest/services/hosted/runap_registro_%c3%9anico_nacional_de_%c3%81reas_protegidas": {
+   "url": "https://mapasdnp.dnp.gov.co/server/rest/services/Hosted/RUNAP_Registro_%C3%9Anico_Nacional_de_%C3%81reas_Protegidas/FeatureServer",
+   "cc": "CO",
+   "title": "Hosted/RUNAP_Registro_%C3%9Anico_Nacional_de_%C3%81reas_Protegidas",
+   "publisher": "mapasdnp.dnp.gov.co",
+   "catalog": "ArcGIS Online search",
+   "licence": "",
+   "date": "2026-06-18",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "OSC RUNAP",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "fid",
+      "objectid",
+      "ap_id",
+      "condicion",
+      "ap_nombre",
+      "ap_categor",
+      "ap_shape_i",
+      "fecha_insc",
+      "fecha_regi",
+      "organizaci",
+      "nit",
+      "area_ha_to",
+      "area_ha_ma",
+      "area_ha_te",
+      "centroide_",
+      "centroid_1",
+      "area_ha__1",
+      "area_ha__2",
+      "area_ha__3",
+      "territoria"
+     ],
+     "records": 1756,
+     "sample": [
+      "Cueva de los Guácharos",
+      "Nukak",
+      "Dinaboy"
+     ],
+     "name_field": "ap_nombre"
+    }
+   ],
+   "note": "RUNAP",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/coberturas_antropicas_25k_oficial": {
+   "url": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Coberturas_Antropicas_25K_Oficial/FeatureServer",
+   "cc": "CO",
+   "title": "pnn/Coberturas_Antropicas_25K_Oficial",
+   "publisher": "mapas.parquesnacionales.gov.co",
+   "catalog": "agency server mapas.parquesnacionales.gov.co",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Coberturas 2019",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas25k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas25k_area_ha",
+      "coberturas25k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "indicador_naturalidad",
+      "indicador_detallado"
+     ],
+     "records": 54185,
+     "sample": [
+      "Los Estoraques",
+      "Los Estoraques",
+      "Los Estoraques"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 1,
+     "name": "Coberturas 2020",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas25k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas25k_area_ha",
+      "coberturas25k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "indicador_naturalidad",
+      "indicador_detallado"
+     ],
+     "records": 55050,
+     "sample": [
+      "Los Estoraques",
+      "Los Estoraques",
+      "Los Estoraques"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 2,
+     "name": "Coberturas 2021",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas25k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas25k_area_ha",
+      "coberturas25k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "indicador_naturalidad",
+      "indicador_detallado"
+     ],
+     "records": 56921,
+     "sample": [
+      "Los Estoraques",
+      "Los Estoraques",
+      "Los Estoraques"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 3,
+     "name": "Coberturas 2022",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas25k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas25k_area_ha",
+      "coberturas25k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "indicador_naturalidad",
+      "indicad_detallado"
+     ],
+     "records": 58675,
+     "sample": [
+      "Los Estoraques",
+      "Los Estoraques",
+      "Los Estoraques"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 4,
+     "name": "Coberturas 2023",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas25k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas25k_area_ha",
+      "coberturas25k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "indicador_naturalidad",
+      "indicad_detallado"
+     ],
+     "records": 64130,
+     "sample": [
+      "Los Estoraques",
+      "Los Estoraques",
+      "Los Estoraques"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 5,
+     "name": "Coberturas 2024",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas25k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas25k_area_ha",
+      "coberturas25k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "indicador_naturalidad",
+      "indicad_detallado"
+     ],
+     "records": 67244,
+     "sample": [
+      "Los Estoraques",
+      "Los Estoraques",
+      "Los Estoraques"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 6,
+     "name": "Coberturas 2025",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas25k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas25k_area_ha",
+      "coberturas25k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "indicador_naturalidad",
+      "indicad_detallado"
+     ],
+     "records": 69595,
+     "sample": [
+      "Sierra de la Macarena",
+      "Sierra de la Macarena",
+      "Sierra de la Macarena"
+     ],
+     "name_field": "ap_nombre"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/coberturas": {
+   "url": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/coberturas/FeatureServer",
+   "cc": "CO",
+   "title": "pnn/coberturas",
+   "publisher": "mapas.parquesnacionales.gov.co",
+   "catalog": "agency server mapas.parquesnacionales.gov.co",
+   "licence": "GGCI, GTIC",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Coberturas 2002",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas100k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas100k_area_ha",
+      "coberturas100k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "periodo"
+     ],
+     "records": 16249,
+     "sample": [
+      "Los Colorados",
+      "Los Colorados",
+      "Los Colorados"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 1,
+     "name": "Coberturas 2007",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas100k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas100k_area_ha",
+      "coberturas100k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "periodo"
+     ],
+     "records": 16899,
+     "sample": [
+      "Los Colorados",
+      "Los Colorados",
+      "Los Colorados"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 2,
+     "name": "Coberturas 2012",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas100k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas100k_area_ha",
+      "coberturas100k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "periodo"
+     ],
+     "records": 18875,
+     "sample": [
+      "Los Colorados",
+      "Los Colorados",
+      "Los Colorados"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 3,
+     "name": "Coberturas 2015",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas100k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas100k_area_ha",
+      "coberturas100k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "periodo"
+     ],
+     "records": 19855,
+     "sample": [
+      "Los Colorados",
+      "Los Colorados",
+      "Los Colorados"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 4,
+     "name": "Coberturas 2017",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas100k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas100k_area_ha",
+      "coberturas100k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "periodo"
+     ],
+     "records": 20552,
+     "sample": [
+      "Pisba",
+      "Pisba",
+      "Pisba"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 5,
+     "name": "Coberturas 2018",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas100k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas100k_area_ha",
+      "coberturas100k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "periodo"
+     ],
+     "records": 22174,
+     "sample": [
+      "Pisba",
+      "Pisba",
+      "Pisba"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 6,
+     "name": "Coberturas 2020",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas100k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas100k_area_ha",
+      "coberturas100k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "periodo"
+     ],
+     "records": 23529,
+     "sample": [
+      "Pisba",
+      "Pisba",
+      "Pisba"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 7,
+     "name": "Coberturas 2022",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas100k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas100k_area_ha",
+      "coberturas100k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "periodo"
+     ],
+     "records": 24817,
+     "sample": [
+      "Macuira",
+      "Macuira",
+      "Macuira"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 8,
+     "name": "Coberturas 2024",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "coberturas100k_codigo",
+      "ap_id",
+      "ap_sigla",
+      "ap_nombre",
+      "coberturas100k_area_ha",
+      "coberturas100k_escala",
+      "territorial",
+      "actualizacion_fecha",
+      "categoria",
+      "codigo_clc",
+      "insumo",
+      "apoyo",
+      "nivel1",
+      "nivel2",
+      "nivel3",
+      "leyenda",
+      "condicion",
+      "periodo"
+     ],
+     "records": 27539,
+     "sample": [
+      "Macuira",
+      "Macuira",
+      "Macuira"
+     ],
+     "name_field": "ap_nombre"
+    }
+   ],
+   "note": "",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/zonificacion": {
+   "url": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/zonificacion/FeatureServer",
+   "cc": "CO",
+   "title": "pnn/zonificacion",
+   "publisher": "mapas.parquesnacionales.gov.co",
+   "catalog": "agency server mapas.parquesnacionales.gov.co",
+   "licence": "Parques Nacionales Naturales de Colombia",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Zonificacion_PNN_PM_Oficial",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "zn_id",
+      "ap_id",
+      "zn_codigo",
+      "zn_nombre",
+      "zn_cod_otro",
+      "zn_nombre_otro",
+      "zn_sub_zona_codigo",
+      "zn_sub_zona_nombre",
+      "acto_tipo",
+      "acto_numero",
+      "acto_fecha",
+      "nom_gdb_fu",
+      "observacion",
+      "estado",
+      "fecha_act",
+      "ap_nombre",
+      "ap_categoria",
+      "ap_sigla",
+      "objeto_area_ha"
+     ],
+     "records": 2317,
+     "sample": [
+      "Zona intangible",
+      "Zona de recuperacion natural",
+      "Zona primitiva"
+     ],
+     "name_field": "zn_nombre"
+    },
+    {
+     "id": 1,
+     "name": "Archivo_Zonificacion_PNNC_PM_Oficial_13122023",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "codigo",
+      "id_ap",
+      "coddane_ap",
+      "cod_zopm",
+      "nom_zopm",
+      "cod_zoni_fu",
+      "nom_zoni_fu",
+      "legislacio",
+      "nom_gdb_fu",
+      "observacio",
+      "estado",
+      "fecha_actu",
+      "nombre_pnn",
+      "categoria_pnn",
+      "sigla_ap",
+      "hectareas"
+     ],
+     "records": 2843,
+     "sample": [
+      "Zona Intangible",
+      "Zona de Recuperación Natural",
+      "Zona Histórico Cultural"
+     ],
+     "name_field": "nom_zopm"
+    }
+   ],
+   "note": "",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/igac/nuevas_areas": {
+   "url": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/IGAC/nuevas_areas/MapServer",
+   "cc": "CO",
+   "title": "IGAC/nuevas_areas",
+   "publisher": "mapas.parquesnacionales.gov.co",
+   "catalog": "agency server mapas.parquesnacionales.gov.co",
+   "licence": "Parques Nacionales Naturales de Colombia",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Nuevas Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "nombre",
+      "codigo",
+      "shape",
+      "st_area(shape)",
+      "st_length(shape)",
+      "proceso_area_ha",
+      "observaciones",
+      "actualizacion_fecha",
+      "modificacion_fecha",
+      "avance_estado",
+      "proceso_tipo",
+      "ap_id"
+     ],
+     "records": 5,
+     "sample": [
+      "Selvas Transicionales de Cumaribo",
+      "Sabanas y humedales de Arauca",
+      "Ecosistemas Secos del Patía"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 1,
+     "name": "Prioridades de conservación nacional ",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "unidad_analisis",
+      "prioridad",
+      "ecosistema_primario",
+      "hectareas",
+      "shape",
+      "st_area(shape)",
+      "st_length(shape)"
+     ],
+     "records": 16437
+    },
+    {
+     "id": 0,
+     "name": "Nuevas Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "nombre",
+      "codigo",
+      "shape",
+      "st_area(shape)",
+      "st_length(shape)",
+      "proceso_area_ha",
+      "observaciones",
+      "actualizacion_fecha",
+      "modificacion_fecha",
+      "avance_estado",
+      "proceso_tipo",
+      "ap_id"
+     ],
+     "records": 5,
+     "sample": [
+      "Selvas Transicionales de Cumaribo",
+      "Sabanas y humedales de Arauca",
+      "Ecosistemas Secos del Patía"
+     ],
+     "name_field": "nombre"
+    }
+   ],
+   "note": "",
    "grade": 4,
+   "band": "B",
+   "licence_note": "licence unknown: chat 8 asks"
+  },
+  "https://mapas.igac.gov.co/server/rest/services/ambiente/reservasnaturalesdelasociedadcivil2016": {
+   "url": "https://mapas.igac.gov.co/server/rest/services/ambiente/reservasnaturalesdelasociedadcivil2016/MapServer",
+   "cc": "CO",
+   "title": "ambiente/reservasnaturalesdelasociedadcivil2016",
+   "publisher": "mapas.igac.gov.co",
+   "catalog": "ArcGIS Online search",
+   "licence": "Parques Nacionales Naturales - PNN",
+   "date": "2026-09-09",
+   "found": "2026-10-30",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "asociadasaresnaturyregistradasarunap2016",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "nombre",
+      "resolucion",
+      "hectareas",
+      "observacio"
+     ],
+     "records": 15,
+     "sample": [
+      "Sanguare",
+      "Guayacanes Del Llano Verde",
+      "Chicaque"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 1,
+     "name": "asociadasarenastur2016",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "NOMBRE"
+     ],
+     "records": 74
+    }
+   ],
+   "note": "reservasnaturalesdelasociedadcivil2016",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/limites_oficiales_poligono": {
+   "url": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Limites_oficiales_Poligono/FeatureServer",
+   "cc": "CO",
+   "title": "pnn/Limites_oficiales_Poligono",
+   "publisher": "mapas.parquesnacionales.gov.co",
+   "catalog": "agency server mapas.parquesnacionales.gov.co",
+   "licence": "Parques Nacionales Naturales - GGCI",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Limites_oficiales_Poligono",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "ap_nombre",
+      "ap_categoria",
+      "territorial",
+      "resolucion_vigente",
+      "area_resolucion_ha",
+      "area_calculada_ha",
+      "escala",
+      "globalid",
+      "ap_sigla",
+      "ap_id",
+      "actualizacion_fecha",
+      "ap_perimetro_km",
+      "shape",
+      "st_area(shape)",
+      "st_length(shape)"
+     ],
+     "records": 66,
+     "sample": [
+      "Tatama",
+      "Old Providence Mc Bean Lagoon",
+      "Alto Fragua Indi Wasi"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 0,
+     "name": "Limites_oficiales_Poligono",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ap_nombre",
+      "ap_categoria",
+      "territorial",
+      "resolucion_vigente",
+      "area_resolucion_ha",
+      "area_calculada_ha",
+      "escala",
+      "globalid",
+      "ap_sigla",
+      "ap_id",
+      "actualizacion_fecha",
+      "ap_perimetro_km"
+     ],
+     "records": 66,
+     "sample": [
+      "Tatama",
+      "Old Providence Mc Bean Lagoon",
+      "Alto Fragua Indi Wasi"
+     ],
+     "name_field": "ap_nombre"
+    }
+   ],
+   "note": "",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/potenciales_restauracion": {
+   "url": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/potenciales_restauracion/FeatureServer",
+   "cc": "CO",
+   "title": "pnn/potenciales_restauracion",
+   "publisher": "mapas.parquesnacionales.gov.co",
+   "catalog": "agency server mapas.parquesnacionales.gov.co",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Areas_Potenciales_Restauracion",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "ap_nombre",
+      "ap_sigla",
+      "ap_id",
+      "area_ha",
+      "observacion",
+      "restauracion_nombre",
+      "territorial",
+      "etapa",
+      "descripcion",
+      "shape",
+      "st_area(shape)",
+      "st_length(shape)"
+     ],
+     "records": 19552,
+     "sample": [
+      "Cordillera de los Picachos",
+      "Cordillera de los Picachos",
+      "Cordillera de los Picachos"
+     ],
+     "name_field": "ap_nombre"
+    },
+    {
+     "id": 0,
+     "name": "Areas_Potenciales_Restauracion",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ap_nombre",
+      "ap_sigla",
+      "ap_id",
+      "area_ha",
+      "observacion",
+      "restauracion_nombre",
+      "territorial",
+      "etapa",
+      "descripcion"
+     ],
+     "records": 19552,
+     "sample": [
+      "Cordillera de los Picachos",
+      "Cordillera de los Picachos",
+      "Cordillera de los Picachos"
+     ],
+     "name_field": "ap_nombre"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pruebas/fichas_uot": {
+   "url": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pruebas/fichas_uot/FeatureServer",
+   "cc": "CO",
+   "title": "pruebas/fichas_uot",
+   "publisher": "mapas.parquesnacionales.gov.co",
+   "catalog": "agency server mapas.parquesnacionales.gov.co",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "uot_poligono",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "uotid",
+      "creaciondate",
+      "status",
+      "capturadate",
+      "coddane_ap",
+      "nro_familias"
+     ],
+     "records": 6027
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pruebas/relacionamiento": {
+   "url": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pruebas/relacionamiento/MapServer",
+   "cc": "CO",
+   "title": "pruebas/relacionamiento",
+   "publisher": "mapas.parquesnacionales.gov.co",
+   "catalog": "agency server mapas.parquesnacionales.gov.co",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "sigparques.cartografia.Uso",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "ap_id",
+      "sigla_ap",
+      "sigparques.cartografia.Uso.area",
+      "unidad",
+      "anos",
+      "uso",
+      "global_id",
+      "uot_id",
+      "cobertura",
+      "subtipo_actividad",
+      "shape"
+     ],
+     "records": 137
+    },
+    {
+     "id": 2,
+     "name": "sigparques.cartografia.uot",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "creacion_date",
+      "captura_date",
+      "status",
+      "ap_id",
+      "ap_sigla",
+      "area_declarada",
+      "area_gis_ha",
+      "fecha_actu",
+      "ficha_uot",
+      "territorial",
+      "numero_familias",
+      "shape_id",
+      "uot_id",
+      "shape",
+      "st_area(shape)",
+      "st_length(shape)"
+     ],
+     "records": 6156
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/limites_oficiales_punto": {
+   "url": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Limites_oficiales_Punto/FeatureServer",
+   "cc": "CO",
+   "title": "pnn/Limites_oficiales_Punto",
+   "publisher": "mapas.parquesnacionales.gov.co",
+   "catalog": "agency server mapas.parquesnacionales.gov.co",
+   "licence": "Parques Nacionales Naturales - GGCI",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Limites_oficiales_Punto",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "senalizacion_id",
+      "clase",
+      "tipo",
+      "descripcion",
+      "latitud",
+      "longitud",
+      "anio",
+      "proyecto",
+      "estado",
+      "ap_id",
+      "actualizacion_fecha"
+     ],
+     "records": 2440
+    }
+   ],
+   "note": "",
+   "grade": 3,
    "band": "B"
   }
  }

@@ -1,0 +1,222 @@
+{
+ "cc": "CO",
+ "run": "2026-10-30",
+ "parks": 546,
+ "open": 546,
+ "key_candidates": 0,
+ "layer_candidates": 403,
+ "layers_tried": [
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/30",
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/32",
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/34",
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/35",
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/26",
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/27",
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/37",
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/50",
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/35",
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/30",
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/34",
+  "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer/32",
+  "https://mapasdnp.dnp.gov.co/server/rest/services/Hosted/RUNAP_Registro_%C3%9Anico_Nacional_de_%C3%81reas_Protegidas/FeatureServer/0",
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Coberturas_Antropicas_25K_Oficial/FeatureServer/0",
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Coberturas_Antropicas_25K_Oficial/FeatureServer/1"
+ ],
+ "no_layer_groups": {
+  "natural reserve": [
+   "CO-0454",
+   "CO-0446",
+   "CO-0432",
+   "CO-0452",
+   "CO-0455",
+   "CO-0437",
+   "CO-0438",
+   "CO-0427",
+   "CO-0410",
+   "CO-0430",
+   "CO-0424",
+   "CO-0439",
+   "CO-0451",
+   "CO-0444",
+   "CO-0453",
+   "CO-0412",
+   "CO-0414",
+   "CO-0422",
+   "CO-0445",
+   "CO-0443",
+   "CO-0416",
+   "CO-0417",
+   "CO-0420",
+   "CO-0431",
+   "CO-0449",
+   "CO-0447",
+   "CO-0448",
+   "CO-0426",
+   "CO-0441",
+   "CO-0450",
+   "CO-0411",
+   "CO-0235",
+   "CO-0419"
+  ],
+  "recreation park": [
+   "CO-0532",
+   "CO-0526",
+   "CO-0472",
+   "CO-0488",
+   "CO-0498",
+   "CO-0501",
+   "CO-0504",
+   "CO-0511",
+   "CO-0535"
+  ],
+  "recreation site": [
+   "CO-0466",
+   "CO-0497",
+   "CO-0495",
+   "CO-0485"
+  ],
+  "protected areas": [
+   "CO-0469",
+   "CO-0470"
+  ],
+  "protected area": [
+   "CO-0473",
+   "CO-0486"
+  ],
+  "miraflores park": [
+   "CO-0475"
+  ],
+  "ecological site": [
+   "CO-0482",
+   "CO-0474"
+  ],
+  "recreation reserve": [
+   "CO-0483"
+  ],
+  "ecological park": [
+   "CO-0484",
+   "CO-0533",
+   "CO-0508",
+   "CO-0479",
+   "CO-0529"
+  ],
+  "protection area": [
+   "CO-0502",
+   "CO-0505"
+  ],
+  "landscape reserve": [
+   "CO-0530",
+   "CO-0516",
+   "CO-0481"
+  ],
+  "botanical gardens": [
+   "CO-0476",
+   "CO-0460",
+   "CO-0490"
+  ],
+  "nature park": [
+   "CO-0509"
+  ],
+  "national park": [
+   "CO-0525",
+   "CO-0480",
+   "CO-0496",
+   "CO-0465",
+   "CO-0548"
+  ],
+  "historic site": [
+   "CO-0534",
+   "CO-0514",
+   "CO-0515",
+   "CO-0517",
+   "CO-0551",
+   "CO-0528",
+   "CO-0463",
+   "CO-0538",
+   "CO-0492",
+   "CO-0507",
+   "CO-0546",
+   "CO-0503"
+  ],
+  "conservation area": [
+   "CO-0459",
+   "CO-0518",
+   "CO-0500",
+   "CO-0097",
+   "CO-0499"
+  ],
+  "recreation area": [
+   "CO-0471",
+   "CO-0549"
+  ],
+  "landscape park": [
+   "CO-0513",
+   "CO-0494",
+   "CO-0520",
+   "CO-0521"
+  ],
+  "natural area": [
+   "CO-0001"
+  ],
+  "aquatic reserve": [
+   "CO-0543",
+   "CO-0506"
+  ],
+  "historical park": [
+   "CO-0544"
+  ],
+  "national monument": [
+   "CO-0545"
+  ],
+  "archeological reserve": [
+   "CO-0435",
+   "CO-0434",
+   "CO-0433",
+   "CO-0436"
+  ],
+  "coastal park": [
+   "CO-0477"
+  ],
+  "regional reserve": [
+   "CO-0478",
+   "CO-0519"
+  ],
+  "iguaque sanctuary": [
+   "CO-0402"
+  ],
+  "national forest": [
+   "CO-0248"
+  ],
+  "memorial parkway": [
+   "CO-0467"
+  ],
+  "historic trail": [
+   "CO-0527"
+  ],
+  "bird sanctuary": [
+   "CO-0547"
+  ],
+  "rosalia sanctuary": [
+   "CO-0531"
+  ],
+  "park reserve": [
+   "CO-0461"
+  ],
+  "ocarros park": [
+   "CO-0462"
+  ],
+  "regional park": [
+   "CO-0487"
+  ],
+  "g reserve": [
+   "CO-0522"
+  ],
+  "wilderness preserve": [
+   "CO-0536",
+   "CO-0537"
+  ]
+ },
+ "layers_found_new": 15,
+ "stage1": "done",
+ "seconds": 982
+}

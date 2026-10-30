@@ -18,98 +18,153 @@
   },
   "JP": {
    "status": "done",
-   "started": "2026-10-28",
-   "done": [],
+   "started": "2026-10-30",
+   "done": [
+    "https://biodiversitymap.env.go.jp/server/rest/services/Hosted/F_03_01_11/FeatureServer",
+    "https://biodiversitymap.env.go.jp/server/rest/services/Hosted/F_03_01_12/FeatureServer"
+   ],
    "log": [
     {
      "catalog": "https://data.e-gov.go.jp/data",
      "keyword": "国立公園",
-     "error": "HTTP 400"
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
     },
     {
      "catalog": "https://data.e-gov.go.jp/data",
      "keyword": "国定公園",
-     "error": "HTTP 400"
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
     },
     {
      "catalog": "https://data.e-gov.go.jp/data",
      "keyword": "自然公園",
-     "error": "HTTP 400"
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
     },
     {
      "catalog": "https://data.e-gov.go.jp/data",
-     "keyword": "保護区",
-     "error": "HTTP 400"
+     "keyword": "特別保護地区",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
     },
     {
      "agol": "国立公園",
      "hits": 9,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       7
+      ],
+      [
+       "ESRIジャパン株式会社",
+       1
+      ],
+      [
+       "教育GISポータル | ESRIジャパン株式会社",
+       1
+      ]
+     ]
     },
     {
      "agol": "国定公園",
      "hits": 17,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       13
+      ],
+      [
+       "ESRIジャパン株式会社",
+       3
+      ],
+      [
+       "教育GISポータル | ESRIジャパン株式会社",
+       1
+      ]
+     ]
     },
     {
      "agol": "自然公園",
      "hits": 21,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       19
+      ],
+      [
+       "ESRIジャパン株式会社",
+       1
+      ],
+      [
+       "教育GISポータル | ESRIジャパン株式会社",
+       1
+      ]
+     ]
+    },
+    {
+     "agol": "特別保護地区",
+     "hits": 15,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       13
+      ],
+      [
+       "ESRIジャパン株式会社",
+       1
+      ],
+      [
+       "教育GISポータル | ESRIジャパン株式会社",
+       1
+      ]
+     ]
+    },
+    {
+     "agol": "自然環境保全地域",
+     "hits": 11,
+     "read": 2,
+     "rejected_orgs": [
+      [
+       "?",
+       7
+      ],
+      [
+       "ESRIジャパン株式会社",
+       1
+      ],
+      [
+       "教育GISポータル | ESRIジャパン株式会社",
+       1
+      ]
+     ]
     },
     {
      "agol": "保護区",
      "hits": 29,
-     "read": 0
-    },
-    {
-     "agol": "national park",
-     "hits": 17,
-     "read": 0
-    },
-    {
-     "catalog": "https://data.e-gov.go.jp/data",
-     "keyword": "国立公園",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.e-gov.go.jp/data",
-     "keyword": "国定公園",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.e-gov.go.jp/data",
-     "keyword": "自然公園",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.e-gov.go.jp/data",
-     "keyword": "保護区",
-     "error": "HTTP 400"
-    },
-    {
-     "agol": "国立公園",
-     "hits": 9,
-     "read": 0
-    },
-    {
-     "agol": "国定公園",
-     "hits": 17,
-     "read": 0
-    },
-    {
-     "agol": "自然公園",
-     "hits": 21,
-     "read": 0
-    },
-    {
-     "agol": "保護区",
-     "hits": 29,
-     "read": 0
-    },
-    {
-     "agol": "national park",
-     "hits": 17,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       26
+      ],
+      [
+       "教育GISポータル | ESRIジャパン株式会社",
+       2
+      ],
+      [
+       "ESRIジャパン株式会社",
+       1
+      ]
+     ]
     }
    ],
    "steps": [
@@ -122,76 +177,15 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   },
   "DE": {
    "status": "done",
-   "started": "2026-10-28",
+   "started": "2026-10-30",
    "done": [
-    "https://geodienste.bfn.de/ogc/wfs/",
-    "https://geodienste.bfn.de/ogc/wfs/schutzgebiet",
-    "https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/FFH/FeatureServer",
-    "https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/Vogelschutzgebiete/FeatureServer"
+    "https://geodienste.bfn.de/ogc/wfs/schutzgebiet"
    ],
    "log": [
-    {
-     "step": "wfs",
-     "what": "https://geodienste.bfn.de/ogc/wfs/: HTTP 404"
-    },
-    {
-     "catalog": "https://www.govdata.de/ckan",
-     "keyword": "Nationalpark",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://www.govdata.de/ckan",
-     "keyword": "Naturschutzgebiet",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://www.govdata.de/ckan",
-     "keyword": "Naturpark",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://www.govdata.de/ckan",
-     "keyword": "Schutzgebiet",
-     "error": "robots.txt says no"
-    },
-    {
-     "agol": "Nationalpark",
-     "hits": 30,
-     "read": 2
-    },
-    {
-     "agol": "Naturschutzgebiet",
-     "hits": 11,
-     "read": 0
-    },
-    {
-     "agol": "Naturpark",
-     "hits": 6,
-     "read": 0
-    },
-    {
-     "agol": "Schutzgebiet",
-     "hits": 24,
-     "read": 0
-    },
-    {
-     "agol": "Biosphärenreservat",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "Landschaftsschutzgebiet",
-     "hits": 8,
-     "read": 0
-    },
-    {
-     "step": "eea",
-     "what": "https://bio.discomap.eea.europa.eu/arcgis/rest/services: HTTP 502 three times: left alone for a day"
-    },
     {
      "step": "known",
      "what": "https://geodienste.bfn.de/ogc/wfs/schutzgebiet: 9 feature types, 9 look like park layers"
@@ -202,34 +196,105 @@
      "found": true
     },
     {
-     "agol": "Nationalpark",
-     "hits": 30,
-     "read": 0
-    },
-    {
      "agol": "Naturschutzgebiet",
      "hits": 11,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "Esri Deutschland",
+       5
+      ],
+      [
+       "?",
+       4
+      ],
+      [
+       "World Wide Fund for Nature",
+       2
+      ]
+     ]
+    },
+    {
+     "agol": "Nationalpark",
+     "hits": 30,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       25
+      ],
+      [
+       "Esri Deutschland",
+       3
+      ],
+      [
+       "World Wide Fund for Nature",
+       2
+      ]
+     ]
     },
     {
      "agol": "Naturpark",
      "hits": 6,
-     "read": 0
-    },
-    {
-     "agol": "Schutzgebiet",
-     "hits": 24,
-     "read": 0
-    },
-    {
-     "agol": "Biosphärenreservat",
-     "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "Esri Deutschland",
+       3
+      ],
+      [
+       "World Wide Fund for Nature",
+       2
+      ],
+      [
+       "?",
+       1
+      ]
+     ]
     },
     {
      "agol": "Landschaftsschutzgebiet",
      "hits": 8,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "Esri Deutschland",
+       4
+      ],
+      [
+       "?",
+       2
+      ],
+      [
+       "World Wide Fund for Nature",
+       2
+      ]
+     ]
+    },
+    {
+     "agol": "Biosphärenreservat",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "Schutzgebiet",
+     "hits": 24,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       17
+      ],
+      [
+       "Esri Deutschland",
+       5
+      ],
+      [
+       "World Wide Fund for Nature",
+       2
+      ]
+     ]
     }
    ],
    "steps": [
@@ -242,7 +307,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   },
   "PL": {
    "status": "done",
@@ -620,7 +685,7 @@
   },
   "ES": {
    "status": "done",
-   "started": "2026-10-29",
+   "started": "2026-10-30",
    "done": [
     "https://nco.ign.es/server/rest/services/ccsseu/CaminoSantiagoEuropa/MapServer",
     "https://nco.ign.es/server/rest/services/ccsseu/CaminoSantiagoEuropa_Asociaciones/MapServer",
@@ -739,305 +804,7 @@
      "rejected_orgs": []
     },
     {
-     "agol": "red natura",
-     "hits": 29,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       21
-      ],
-      [
-       "Contenidos Esri España",
-       8
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP: no answer three times: left alone for a day"
-    },
-    {
-     "step": "known",
-     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://nco.ign.es/server/rest/services: 8 folders, 0 services read"
-    },
-    {
-     "agol": "parque nacional",
-     "hits": 10,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       10
-      ]
-     ]
-    },
-    {
-     "agol": "parque natural",
-     "hits": 1,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       1
-      ]
-     ]
-    },
-    {
-     "agol": "espacio natural protegido",
-     "hits": 17,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       16
-      ],
-      [
-       "Contenidos Esri España",
-       1
-      ]
-     ]
-    },
-    {
-     "agol": "reserva natural",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "red natura",
-     "hits": 29,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       21
-      ],
-      [
-       "Contenidos Esri España",
-       8
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP: no answer three times: left alone for a day"
-    },
-    {
-     "step": "known",
-     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://nco.ign.es/server/rest/services: 8 folders, 0 services read"
-    },
-    {
-     "agol": "parque nacional",
-     "hits": 10,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       10
-      ]
-     ]
-    },
-    {
-     "agol": "parque natural",
-     "hits": 1,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       1
-      ]
-     ]
-    },
-    {
-     "agol": "espacio natural protegido",
-     "hits": 17,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       16
-      ],
-      [
-       "Contenidos Esri España",
-       1
-      ]
-     ]
-    },
-    {
-     "agol": "reserva natural",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "red natura",
-     "hits": 29,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       21
-      ],
-      [
-       "Contenidos Esri España",
-       8
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP: no answer three times: left alone for a day"
-    },
-    {
-     "step": "known",
-     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://nco.ign.es/server/rest/services: 8 folders, 0 services read"
-    },
-    {
-     "agol": "parque nacional",
-     "hits": 10,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       10
-      ]
-     ]
-    },
-    {
-     "agol": "parque natural",
-     "hits": 1,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       1
-      ]
-     ]
-    },
-    {
-     "agol": "espacio natural protegido",
-     "hits": 17,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       16
-      ],
-      [
-       "Contenidos Esri España",
-       1
-      ]
-     ]
-    },
-    {
-     "agol": "reserva natural",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "red natura",
-     "hits": 29,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       21
-      ],
-      [
-       "Contenidos Esri España",
-       8
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
-     "found": true
-    },
-    {
-     "step": "known",
-     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP: no answer three times: left alone for a day"
-    },
-    {
-     "step": "known",
-     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://nco.ign.es/server/rest/services: 8 folders, 0 services read"
-    },
-    {
-     "agol": "parque nacional",
-     "hits": 10,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       10
-      ]
-     ]
-    },
-    {
-     "agol": "parque natural",
-     "hits": 1,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       1
-      ]
-     ]
-    },
-    {
-     "agol": "espacio natural protegido",
-     "hits": 17,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       16
-      ],
-      [
-       "Contenidos Esri España",
-       1
-      ]
-     ]
-    },
-    {
-     "agol": "reserva natural",
+     "agol": "monte de utilidad pública",
      "hits": 0,
      "read": 0,
      "rejected_orgs": []
@@ -1068,8 +835,7 @@
     "search",
     "eea"
    ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+   "finished": "2026-10-30"
   },
   "IT": {
    "status": "done",
@@ -1135,8 +901,8 @@
    "finished": "2026-10-28"
   },
   "NO": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "paused (out of time, will carry on)",
+   "started": "2026-10-30",
    "done": [
     "https://kart.miljodirektoratet.no/arcgis/rest/services/anadrome_laksefisk/FeatureServer",
     "https://kart.miljodirektoratet.no/arcgis/rest/services/anadrome_laksefisk/MapServer",
@@ -1145,40 +911,12 @@
     "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/MapServer",
     "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/mapserver",
     "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_vern/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/grunnforurensning2/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/FeatureServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/kulturlandskap_utvalgte/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/kulturlandskap_verdifulle/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_hb13/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_kuverdi/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_marine_hb19/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_nin/FeatureServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_nin/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_utvalgte2/FeatureServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/naturtyper_utvalgte2/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/nin_innsyn/nin_flat_struktur/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/nin_landskapstyper/nin_landskapstyper/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/ramsar/FeatureServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/ramsar/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/sensitive_artsdata/sensitive_artsdata_maskering/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/snoscooterloyper/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/FeatureServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_hovedtyper/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_hovedtyper/MapServer/6",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_naturomrader_nin/FeatureServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_naturomrader_nin/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_restriksjonsomrader/FeatureServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern_restriksjonsomrader/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/rest/services/villrein/MapServer",
-    "https://kart.miljodirektoratet.no/arcgis/services/vern/mapserver/WMSServer"
+    "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver"
    ],
    "log": [
     {
      "step": "known",
-     "what": "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/mapserver: 0 feature types, 0 look like park layers"
+     "what": "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/mapserver: 0 OGC API collections, 0 look like park layers"
     },
     {
      "step": "known",
@@ -1187,58 +925,21 @@
     },
     {
      "step": "known",
-     "what": "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver: 0 feature types, 0 look like park layers"
+     "what": "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver: 0 OGC API collections, 0 look like park layers"
     },
     {
      "step": "known",
      "what": "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver",
-     "found": false
+     "found": true
     },
     {
      "step": "server",
-     "what": "https://kart.miljodirektoratet.no/arcgis/rest/services: 5 folders, 32 services read"
-    },
-    {
-     "step": "wfs",
-     "what": "https://kart.miljodirektoratet.no/arcgis/services/vern/mapserver/WMSServer: 0 feature types, 0 look like park layers"
-    },
-    {
-     "agol": "nasjonalpark",
-     "hits": 1,
-     "read": 0
-    },
-    {
-     "agol": "naturreservat",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "verneområde",
-     "hits": 10,
-     "read": 1
-    },
-    {
-     "agol": "friluftsliv",
-     "hits": 3,
-     "read": 0
-    },
-    {
-     "agol": "statlig sikra",
-     "hits": 0,
-     "read": 0
+     "what": "https://kart.miljodirektoratet.no/arcgis/rest/services: 5 folders, 6 services read"
     }
    ],
    "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-28"
+    "known"
+   ]
   },
   "NL": {
    "status": "done",
@@ -1856,28 +1557,28 @@
   },
   "RO": {
    "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
-   "started": "2026-10-29",
+   "started": "2026-10-30",
    "done": [],
    "log": [
     {
      "catalog": "https://data.gov.ro",
      "keyword": "parc național",
-     "error": "robots.txt says no"
+     "error": "no answer three times: left alone for a day"
     },
     {
      "catalog": "https://data.gov.ro",
      "keyword": "parc natural",
-     "error": "robots.txt says no"
+     "error": "server left alone (strikes)"
     },
     {
      "catalog": "https://data.gov.ro",
-     "keyword": "arie protejată",
-     "error": "robots.txt says no"
+     "keyword": "rezervație naturală",
+     "error": "server left alone (strikes)"
     },
     {
      "catalog": "https://data.gov.ro",
-     "keyword": "rezervație",
-     "error": "robots.txt says no"
+     "keyword": "arie naturală protejată",
+     "error": "server left alone (strikes)"
     },
     {
      "agol": "parc național",
@@ -1892,13 +1593,25 @@
      "rejected_orgs": []
     },
     {
-     "agol": "arie protejată",
+     "agol": "rezervație naturală",
      "hits": 0,
      "read": 0,
      "rejected_orgs": []
     },
     {
-     "agol": "rezervație",
+     "agol": "arie naturală protejată",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "sit Natura 2000",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "arie protejată",
      "hits": 0,
      "read": 0,
      "rejected_orgs": []
@@ -1914,8 +1627,7 @@
     "search",
     "eea"
    ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+   "finished": "2026-10-30"
   },
   "AT": {
    "status": "nothing seeded: not searched (EEA lead only)",
@@ -2091,13 +1803,18 @@
    "finished": "2026-10-29"
   },
   "SI": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
+   "started": "2026-10-30",
    "done": [],
    "log": [
     {
      "catalog": "https://podatki.gov.si",
      "keyword": "narodni park",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://podatki.gov.si",
+     "keyword": "regijski park",
      "error": "robots.txt says no"
     },
     {
@@ -2111,29 +1828,45 @@
      "error": "robots.txt says no"
     },
     {
-     "catalog": "https://podatki.gov.si",
-     "keyword": "zavarovano območje",
-     "error": "robots.txt says no"
-    },
-    {
      "agol": "narodni park",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "regijski park",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "krajinski park",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "naravni rezervat",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "zavarovano območje",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "Natura 2000",
+     "hits": 8,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       8
+      ]
+     ]
     }
    ],
    "steps": [
@@ -2146,7 +1879,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   },
   "CZ": {
    "status": "done",
@@ -2208,15 +1941,16 @@
   },
   "BE": {
    "status": "done",
-   "started": "2026-10-28",
+   "started": "2026-10-30",
    "done": [
+    "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Overzichtskaart_Zuidwestelijke_Delta/FeatureServer",
     "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows",
     "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows?layers=am:am_patdat"
    ],
    "log": [
     {
      "step": "known",
-     "what": "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows: 300 feature types, 30 look like park layers"
+     "what": "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows: 300 feature types, 300 look like park layers"
     },
     {
      "step": "known",
@@ -2225,32 +1959,63 @@
     },
     {
      "step": "wfs",
-     "what": "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows: 300 feature types, 30 look like park layers"
+     "what": "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows: 300 feature types, 300 look like park layers"
     },
     {
      "agol": "natuurreservaat",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
-     "agol": "nationaal park",
+     "agol": "Vlaams natuurreservaat",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
-     "agol": "réserve naturelle",
+     "agol": "réserve naturelle domaniale",
      "hits": 2,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
     },
     {
      "agol": "parc naturel",
      "hits": 2,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
     },
     {
-     "agol": "natuurgebied",
-     "hits": 1,
-     "read": 0
+     "agol": "bos",
+     "hits": 2,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
+    },
+    {
+     "agol": "Natura 2000",
+     "hits": 12,
+     "read": 1,
+     "rejected_orgs": [
+      [
+       "?",
+       11
+      ]
+     ]
     }
    ],
    "steps": [
@@ -2263,7 +2028,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   },
   "DK": {
    "status": "done",
@@ -3941,16 +3706,11 @@
   },
   "BR": {
    "status": "done",
-   "started": "2026-10-28",
+   "started": "2026-10-30",
    "done": [
     "https://www.snirh.gov.br/arcgis/rest/services/DADOSABERTOS/Terra_Indígina/MapServer"
    ],
    "log": [
-    {
-     "catalog": "https://dados.gov.br/dados",
-     "keyword": "unidade de conservação",
-     "error": "HTTP 401"
-    },
     {
      "catalog": "https://dados.gov.br/dados",
      "keyword": "parque nacional",
@@ -3958,7 +3718,7 @@
     },
     {
      "catalog": "https://dados.gov.br/dados",
-     "keyword": "parque estadual",
+     "keyword": "unidade de conservação",
      "error": "HTTP 401"
     },
     {
@@ -3967,29 +3727,75 @@
      "error": "HTTP 401"
     },
     {
-     "agol": "unidade de conservação",
-     "hits": 50,
-     "read": 0
+     "catalog": "https://dados.gov.br/dados",
+     "keyword": "floresta nacional",
+     "error": "HTTP 401"
     },
     {
      "agol": "parque nacional",
      "hits": 2,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
     },
     {
-     "agol": "parque estadual",
-     "hits": 2,
-     "read": 0
+     "agol": "unidade de conservação",
+     "hits": 50,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       49
+      ]
+     ]
     },
     {
      "agol": "reserva biológica",
      "hits": 3,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       3
+      ]
+     ]
     },
     {
-     "agol": "área de proteção ambiental",
-     "hits": 4,
-     "read": 0
+     "agol": "floresta nacional",
+     "hits": 2,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
+    },
+    {
+     "agol": "APA",
+     "hits": 27,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       27
+      ]
+     ]
+    },
+    {
+     "agol": "parque estadual",
+     "hits": 2,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
     }
    ],
    "steps": [
@@ -4002,32 +3808,48 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   },
   "KR": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched",
+   "started": "2026-10-30",
    "done": [],
    "log": [
     {
      "agol": "국립공원",
      "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "보호지역",
-     "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "도립공원",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
-     "agol": "national park",
+     "agol": "군립공원",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "자연공원",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "생태경관보전지역",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "습지보호지역",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
     }
    ],
    "steps": [
@@ -4040,11 +3862,11 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   },
   "MX": {
    "status": "done · 4 catalog / search errors (see failures)",
-   "started": "2026-10-29",
+   "started": "2026-10-30",
    "done": [],
    "log": [
     {
@@ -4073,7 +3895,7 @@
     },
     {
      "catalog": "https://datos.gob.mx",
-     "keyword": "ANP",
+     "keyword": "área de protección",
      "error": "HTTP 403"
     },
     {
@@ -4110,6 +3932,17 @@
      ]
     },
     {
+     "agol": "área de protección",
+     "hits": 2,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
+    },
+    {
      "agol": "ANP",
      "hits": 38,
      "read": 0,
@@ -4131,12 +3964,11 @@
     "search",
     "eea"
    ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+   "finished": "2026-10-30"
   },
   "TH": {
    "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
-   "started": "2026-10-29",
+   "started": "2026-10-30",
    "done": [],
    "log": [
     {
@@ -4151,12 +3983,12 @@
     },
     {
      "catalog": "https://data.go.th",
-     "keyword": "national park",
+     "keyword": "วนอุทยาน",
      "error": "HTTP 403"
     },
     {
      "catalog": "https://data.go.th",
-     "keyword": "wildlife sanctuary",
+     "keyword": "ป่าสงวนแห่งชาติ",
      "error": "HTTP 403"
     },
     {
@@ -4172,6 +4004,24 @@
      "rejected_orgs": []
     },
     {
+     "agol": "วนอุทยาน",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "ป่าสงวนแห่งชาติ",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "เขตห้ามล่าสัตว์ป่า",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
      "agol": "national park",
      "hits": 30,
      "read": 0,
@@ -4179,17 +4029,6 @@
       [
        "?",
        30
-      ]
-     ]
-    },
-    {
-     "agol": "wildlife sanctuary",
-     "hits": 4,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       4
       ]
      ]
     }
@@ -4204,8 +4043,7 @@
     "search",
     "eea"
    ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+   "finished": "2026-10-30"
   },
   "ZA": {
    "status": "done",
@@ -4249,28 +4087,28 @@
   },
   "AR": {
    "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
-   "started": "2026-10-29",
+   "started": "2026-10-30",
    "done": [],
    "log": [
     {
      "catalog": "https://datos.gob.ar",
      "keyword": "parque nacional",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.ar",
-     "keyword": "área protegida",
-     "error": "robots.txt says no"
+     "error": "HTTP 500 three times: left alone for a day"
     },
     {
      "catalog": "https://datos.gob.ar",
      "keyword": "reserva natural",
-     "error": "robots.txt says no"
+     "error": "server left alone (strikes)"
     },
     {
      "catalog": "https://datos.gob.ar",
-     "keyword": "parque provincial",
-     "error": "robots.txt says no"
+     "keyword": "monumento natural",
+     "error": "server left alone (strikes)"
+    },
+    {
+     "catalog": "https://datos.gob.ar",
+     "keyword": "área protegida",
+     "error": "server left alone (strikes)"
     },
     {
      "agol": "parque nacional",
@@ -4284,17 +4122,6 @@
      ]
     },
     {
-     "agol": "área protegida",
-     "hits": 16,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       16
-      ]
-     ]
-    },
-    {
      "agol": "reserva natural",
      "hits": 1,
      "read": 0,
@@ -4302,6 +4129,23 @@
       [
        "World Wide Fund for Nature",
        1
+      ]
+     ]
+    },
+    {
+     "agol": "monumento natural",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "área protegida",
+     "hits": 16,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       16
       ]
      ]
     },
@@ -4322,12 +4166,11 @@
     "search",
     "eea"
    ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+   "finished": "2026-10-30"
   },
   "CL": {
    "status": "done",
-   "started": "2026-10-29",
+   "started": "2026-10-30",
    "done": [
     "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PER_MASCARAS/MapServer",
     "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PER_OAZ_PP/MapServer",
@@ -4400,12 +4243,12 @@
     },
     {
      "catalog": "https://datos.gob.cl",
-     "keyword": "área silvestre protegida",
+     "keyword": "monumento natural",
      "error": "robots.txt says no"
     },
     {
      "catalog": "https://datos.gob.cl",
-     "keyword": "monumento natural",
+     "keyword": "área silvestre protegida",
      "error": "robots.txt says no"
     },
     {
@@ -4431,17 +4274,6 @@
      ]
     },
     {
-     "agol": "área silvestre protegida",
-     "hits": 12,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       12
-      ]
-     ]
-    },
-    {
      "agol": "monumento natural",
      "hits": 3,
      "read": 0,
@@ -4449,57 +4281,6 @@
       [
        "?",
        3
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
-     "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
-    },
-    {
-     "step": "server",
-     "what": "https://arcgis.mma.gob.cl/server/rest/services: 10 folders, 0 services read"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "parque nacional",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "reserva nacional",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "área silvestre protegida",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "monumento natural",
-     "error": "robots.txt says no"
-    },
-    {
-     "agol": "parque nacional",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
-    },
-    {
-     "agol": "reserva nacional",
-     "hits": 13,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       13
       ]
      ]
     },
@@ -4515,232 +4296,13 @@
      ]
     },
     {
-     "agol": "monumento natural",
-     "hits": 3,
+     "agol": "SNASPE",
+     "hits": 41,
      "read": 0,
      "rejected_orgs": [
       [
        "?",
-       3
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
-     "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
-    },
-    {
-     "step": "server",
-     "what": "https://arcgis.mma.gob.cl/server/rest/services: 10 folders, 0 services read"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "parque nacional",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "reserva nacional",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "área silvestre protegida",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "monumento natural",
-     "error": "robots.txt says no"
-    },
-    {
-     "agol": "parque nacional",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
-    },
-    {
-     "agol": "reserva nacional",
-     "hits": 13,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       13
-      ]
-     ]
-    },
-    {
-     "agol": "área silvestre protegida",
-     "hits": 12,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       12
-      ]
-     ]
-    },
-    {
-     "agol": "monumento natural",
-     "hits": 3,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       3
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
-     "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
-    },
-    {
-     "step": "server",
-     "what": "https://arcgis.mma.gob.cl/server/rest/services: 10 folders, 0 services read"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "parque nacional",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "reserva nacional",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "área silvestre protegida",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "monumento natural",
-     "error": "robots.txt says no"
-    },
-    {
-     "agol": "parque nacional",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
-    },
-    {
-     "agol": "reserva nacional",
-     "hits": 13,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       13
-      ]
-     ]
-    },
-    {
-     "agol": "área silvestre protegida",
-     "hits": 12,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       12
-      ]
-     ]
-    },
-    {
-     "agol": "monumento natural",
-     "hits": 3,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       3
-      ]
-     ]
-    },
-    {
-     "step": "known",
-     "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
-     "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
-    },
-    {
-     "step": "server",
-     "what": "https://arcgis.mma.gob.cl/server/rest/services: 10 folders, 0 services read"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "parque nacional",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "reserva nacional",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "área silvestre protegida",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://datos.gob.cl",
-     "keyword": "monumento natural",
-     "error": "robots.txt says no"
-    },
-    {
-     "agol": "parque nacional",
-     "hits": 14,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       14
-      ]
-     ]
-    },
-    {
-     "agol": "reserva nacional",
-     "hits": 13,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       13
-      ]
-     ]
-    },
-    {
-     "agol": "área silvestre protegida",
-     "hits": 12,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       12
-      ]
-     ]
-    },
-    {
-     "agol": "monumento natural",
-     "hits": 3,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       3
+       41
       ]
      ]
     }
@@ -4755,42 +4317,116 @@
     "search",
     "eea"
    ],
-   "redo": "2026-10-29",
-   "finished": "2026-10-29"
+   "finished": "2026-10-30"
   },
   "CO": {
    "status": "done",
-   "started": "2026-10-28",
+   "started": "2026-10-30",
    "done": [
     "http://mapas.parquesnacionales.gov.co/arcgis/rest/services/PNN/AreasProtegidas/MapServer",
     "http://maps.cundinamarca.gov.co/agsprod/rest/services/IDER/Areas_Protegidas/MapServer/3",
     "https://geoservicios.upra.gov.co/arcgis/rest/services/ordenamiento_productivo/frontera_agricola_2019/MapServer/0",
+    "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/FeatureServer",
+    "https://gis.upit.gov.co/wa_server/rest/services/Ambiental/Area_Importancia_Ambiental/MapServer",
+    "https://mapas.igac.gov.co/server/rest/services/ambiente/reservasnaturalesdelasociedadcivil2016/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/IGAC/nuevas_areas/MapServer",
     "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/IGAC/nuevas_areas/MapServer/0",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/SampleWorldCities/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Coberturas_Antropicas_25K_Oficial/FeatureServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Coberturas_Antropicas_25K_Oficial/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Limites_oficiales_Linea/FeatureServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Limites_oficiales_Linea/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Limites_oficiales_Poligono/FeatureServer",
     "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Limites_oficiales_Poligono/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Limites_oficiales_Punto/FeatureServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Limites_oficiales_Punto/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Multitemporal_P1_P2_Coberturas_100K/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/coberturas/FeatureServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/coberturas/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/potenciales_restauracion/FeatureServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/potenciales_restauracion/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/FeatureServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/MapServer",
     "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/MapServer/0",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/zonificacion/FeatureServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/zonificacion/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pruebas/coberturas25k/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pruebas/fichas_uot/FeatureServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pruebas/fichas_uot/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pruebas/relacionamiento/MapServer",
     "https://mapasdnp.dnp.gov.co/server/rest/services/Hosted/RUNAP_Registro_%C3%9Anico_Nacional_de_%C3%81reas_Protegidas/FeatureServer",
     "https://maps.cundinamarca.gov.co/agsprod/rest/services/IDER/Medio_Biotico_Cundinamarca/MapServer/1"
    ],
    "log": [
     {
+     "step": "known",
+     "what": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/FeatureServer",
+     "found": true
+    },
+    {
+     "step": "server",
+     "what": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services: 8 folders, 22 services read"
+    },
+    {
      "agol": "parque nacional natural",
      "hits": 24,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       23
+      ]
+     ]
     },
     {
      "agol": "área protegida",
      "hits": 50,
-     "read": 1
+     "read": 1,
+     "rejected_orgs": [
+      [
+       "?",
+       48
+      ]
+     ]
     },
     {
      "agol": "reserva natural",
      "hits": 13,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       11
+      ]
+     ]
+    },
+    {
+     "agol": "santuario de flora y fauna",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "RUNAP",
+     "hits": 50,
+     "read": 3,
+     "rejected_orgs": [
+      [
+       "?",
+       44
+      ]
+     ]
     },
     {
      "agol": "SINAP",
      "hits": 40,
-     "read": 0
+     "read": 2,
+     "rejected_orgs": [
+      [
+       "?",
+       36
+      ]
+     ]
     }
    ],
    "steps": [
@@ -4803,7 +4439,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   },
   "PH": {
    "status": "done",
@@ -4844,29 +4480,49 @@
    "finished": "2026-10-28"
   },
   "TR": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched",
+   "started": "2026-10-30",
    "done": [],
    "log": [
     {
      "agol": "milli park",
      "hits": 3,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       3
+      ]
+     ]
     },
     {
      "agol": "tabiat parkı",
      "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "korunan alan",
-     "hits": 1,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "tabiatı koruma alanı",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "yaban hayatı geliştirme sahası",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "korunan alan",
+     "hits": 1,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       1
+      ]
+     ]
     }
    ],
    "steps": [
@@ -4879,7 +4535,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   },
   "RU": {
    "status": "nothing seeded: not searched",
@@ -4942,30 +4598,54 @@
   },
   "CN": {
    "status": "done",
-   "started": "2026-10-28",
-   "done": [
-    "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Global_Important_Plant_Areas/FeatureServer"
-   ],
+   "started": "2026-10-30",
+   "done": [],
    "log": [
     {
      "agol": "国家公园",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "自然保护区",
      "hits": 4,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       4
+      ]
+     ]
     },
     {
-     "agol": "自然公园",
+     "agol": "森林公园",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
-     "agol": "nature reserve",
-     "hits": 10,
-     "read": 1
+     "agol": "湿地公园",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "风景名胜区",
+     "hits": 2,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
+    },
+    {
+     "agol": "地质公园",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
     }
    ],
    "steps": [
@@ -4978,7 +4658,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "finished": "2026-10-30"
   }
  },
  "last_run": {

@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for China (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "CN",
- "date": "2026-10-28",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -18,8 +18,24 @@
   "B": 0,
   "C": 1
  },
+ "failures": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    4
+   ]
+  ],
+  [
+   [
+    "?",
+    2
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [],
+ "known_log": [],
  "leads": {
   "https://services8.arcgis.com/wjawg84s4eayflbd/arcgis/rest/services/global_important_plant_areas": {
    "url": "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Global_Important_Plant_Areas/FeatureServer",

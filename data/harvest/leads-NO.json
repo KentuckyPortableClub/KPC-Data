@@ -1,28 +1,42 @@
 {
  "about": "World harvester leads for Norway (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "NO",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-30",
+ "status": "paused (out of time, will carry on)",
  "steps_done": [
-  "known",
-  "servers",
-  "wfs",
-  "orgs",
-  "catalogs",
-  "downloads",
-  "search",
-  "eea"
+  "known"
  ],
  "bands": {
-  "A": 13,
+  "A": 14,
   "B": 1,
   "C": 0
  },
+ "failures": [],
+ "rejected_orgs": [],
  "known_good_found": [
+  "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/mapserver",
   "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver"
  ],
- "known_good_missed": [
-  "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/mapserver"
+ "known_good_missed": [],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/mapserver: 0 OGC API collections, 0 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/mapserver",
+   "found": false
+  },
+  {
+   "step": "known",
+   "what": "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver: 0 OGC API collections, 0 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver",
+   "found": true
+  }
  ],
  "leads": {
   "https://kart.miljodirektoratet.no/arcgis/rest/services/anadrome_laksefisk": {
@@ -272,11 +286,145 @@
       "Steinkjervassdraget"
      ],
      "name_field": "elvenavn"
+    },
+    {
+     "id": 0,
+     "name": "anadrome_vandringshinder_laks",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objtype",
+      "art",
+      "vitenskapeligNavnId",
+      "informasjon",
+      "hindertype",
+      "hinderaarsak",
+      "malemetode",
+      "noyaktighet",
+      "oppdateringsdato",
+      "OBJECTID",
+      "GlobalID"
+     ],
+     "records": 682,
+     "sample": [
+      "42662",
+      "42662",
+      "42662"
+     ],
+     "name_field": "vitenskapeligNavnId"
+    },
+    {
+     "id": 1,
+     "name": "anadrome_vandringshinder_sjoorret",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objtype",
+      "art",
+      "vitenskapeligNavnId",
+      "informasjon",
+      "hindertype",
+      "hinderaarsak",
+      "malemetode",
+      "noyaktighet",
+      "oppdateringsdato",
+      "OBJECTID",
+      "GlobalID"
+     ],
+     "records": 775,
+     "sample": [
+      "42663",
+      "42663",
+      "42663"
+     ],
+     "name_field": "vitenskapeligNavnId"
+    },
+    {
+     "id": 2,
+     "name": "anadrome_vandringshinder_sjoroye",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objtype",
+      "art",
+      "vitenskapeligNavnId",
+      "informasjon",
+      "hindertype",
+      "hinderaarsak",
+      "malemetode",
+      "noyaktighet",
+      "oppdateringsdato",
+      "OBJECTID",
+      "GlobalID"
+     ],
+     "records": 112,
+     "sample": [
+      "42665",
+      "42665",
+      "42665"
+     ],
+     "name_field": "vitenskapeligNavnId"
     }
    ],
    "note": "",
    "grade": 5,
    "band": "A"
+  },
+  "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra": {
+   "url": "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/MapServer",
+   "cc": "NO",
+   "title": "friluftsliv_statlig_sikra",
+   "publisher": "kart.miljodirektoratet.no",
+   "catalog": "agency server kart.miljodirektoratet.no",
+   "licence": "Miljødirektoratet",
+   "date": "",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "friluftsliv_statlig_sikra",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "brukergrupper",
+      "offentligKommunikasjon",
+      "omraadeNavn",
+      "omraadeVerdi",
+      "tilgjengelighetKartlagt",
+      "driftstilsynAnsvarlig",
+      "friluftId",
+      "maalemetode",
+      "noeyaktighet",
+      "datafangstDato",
+      "SHAPE",
+      "omraadeBeskrivelse",
+      "bruksfrekvens",
+      "faktaark",
+      "utvalgt",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 2351,
+     "sample": [
+      "Kystad",
+      "Kullsjøen",
+      "Reinshaugen (Reins kloster)"
+     ],
+     "name_field": "omraadeNavn"
+    }
+   ],
+   "note": "",
+   "grade": 5,
+   "band": "A",
+   "known_good": true
   },
   "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin": {
    "url": "https://kart.miljodirektoratet.no/arcgis/rest/services/kartleggingsenheter_nin/FeatureServer",
