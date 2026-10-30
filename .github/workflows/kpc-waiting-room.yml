@@ -61,14 +61,14 @@ jobs:
             *) echo "::notice title=Waiting room::unknown mode $M" ;;
           esac
       - name: The look-up branch (AUTO-3 files save-map requests there)
-        if: ${{ github.event_name == 'schedule' }}
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'release-approved' }}
         continue-on-error: true
         uses: actions/checkout@v5
         with:
           ref: lookup
           path: lk
       - name: Work the bots do themselves (AUTO-1 recheck of SURE rows, AUTO-2 strong layers, AUTO-3 picture maps; Brandon Oct 30 6:17 AM)
-        if: ${{ github.event_name == 'schedule' }}
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'release-approved' }}
         continue-on-error: true
         env:
           LINKS: ../links
