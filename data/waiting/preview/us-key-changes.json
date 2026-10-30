@@ -1,65 +1,65 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key'). Written by kpc_key_summary.py.",
- "made": "2026-10-30 06:47 UTC",
+ "made": "2026-10-30 10:04 UTC",
  "totals": {
-  "gained": 50,
-  "lost": 3,
-  "pieces_changed": 320,
-  "grade_changed": 28
+  "gained": 54,
+  "lost": 6,
+  "pieces_changed": 758,
+  "grade_changed": 29
  },
  "per_area": {
   "US-AK": {
    "gained": 1,
    "lost": 1,
-   "pieces_changed": 4,
+   "pieces_changed": 5,
    "grade_changed": 0
   },
   "US-AL": {
    "gained": 4,
-   "lost": 0,
-   "pieces_changed": 3,
+   "lost": 1,
+   "pieces_changed": 4,
    "grade_changed": 0
   },
   "US-AR": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 2,
+   "pieces_changed": 122,
    "grade_changed": 0
   },
   "US-AZ": {
    "gained": 3,
    "lost": 0,
-   "pieces_changed": 0,
+   "pieces_changed": 15,
    "grade_changed": 15
   },
   "US-CA": {
-   "gained": 4,
+   "gained": 5,
    "lost": 0,
-   "pieces_changed": 9,
+   "pieces_changed": 21,
    "grade_changed": 0
   },
   "US-CO": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 15,
-   "grade_changed": 0
+   "pieces_changed": 135,
+   "grade_changed": 1
   },
   "US-CT": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 0,
+   "pieces_changed": 1,
    "grade_changed": 0
   },
   "US-DE": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 24,
+   "pieces_changed": 1,
    "grade_changed": 0
   },
   "US-FL": {
-   "gained": 0,
-   "lost": 0,
-   "pieces_changed": 1,
+   "gained": 4,
+   "lost": 1,
+   "pieces_changed": 11,
    "grade_changed": 0
   },
   "US-GA": {
@@ -71,19 +71,19 @@
   "US-HI": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 1,
+   "pieces_changed": 2,
    "grade_changed": 0
   },
   "US-IA": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 1,
+   "pieces_changed": 172,
    "grade_changed": 0
   },
   "US-ID": {
    "gained": 4,
-   "lost": 0,
-   "pieces_changed": 11,
+   "lost": 1,
+   "pieces_changed": 20,
    "grade_changed": 1
   },
   "US-IL": {
@@ -195,7 +195,7 @@
    "grade_changed": 0
   },
   "US-OR": {
-   "gained": 8,
+   "gained": 7,
    "lost": 1,
    "pieces_changed": 66,
    "grade_changed": 1
@@ -504,6 +504,25 @@
    "pota": "https://pota.app/#/park/US-13334"
   },
   {
+   "area": "US-CA",
+   "ref": "US-4383",
+   "name": "Rogue River-Siskiyou National Forest",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "2919",
+     "Siskiyou National Forest",
+     31543,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4383"
+  },
+  {
    "area": "US-CT",
    "ref": "US-7547",
    "name": "Captain George Comer Memorial State Park",
@@ -523,6 +542,94 @@
    "pota": "https://pota.app/#/park/US-7547"
   },
   {
+   "area": "US-FL",
+   "ref": "US-3656",
+   "name": "Beker - South Fork State Park",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "fnl2768",
+     "South Fork State Park",
+     1129,
+     "words"
+    ],
+    [
+     "sgfla102",
+     "South Fork State Park",
+     1129,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3656"
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-8696",
+   "name": "Purvis Landing, Otter Springs, Shingle Lndg State Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgfld1326",
+     "OTTER SPRINGS",
+     511,
+     "alias name (pin inside): OTTER SPRINGS"
+    ],
+    [
+     "sgfld1458",
+     "OTTER SPRINGS",
+     0,
+     "alias name (pin inside): OTTER SPRINGS"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8696"
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-8701",
+   "name": "Shelly, Duck Pond, Hartsfield State Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgfld681",
+     "SHELLY",
+     596,
+     "alias name (pin inside): SHELLY"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8701"
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-8712",
+   "name": "White Springs, Little Shoals, Gar Pond State Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgfld370",
+     "WHITE SPRINGS",
+     55,
+     "alias name (pin inside): WHITE SPRINGS"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8712"
+  },
+  {
    "area": "US-IA",
    "ref": "US-9334",
    "name": "Teal Basins State Waterfowl Management Area",
@@ -532,12 +639,6 @@
     [
      "sgiaa34031",
      "TEAL BASINS WPA",
-     151,
-     "reviewed"
-    ],
-    [
-     "sgiac106299",
-     "Teal Basins WPA",
      151,
      "reviewed"
     ]
@@ -945,31 +1046,6 @@
   },
   {
    "area": "US-OR",
-   "ref": "US-10476",
-   "name": "Monument BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgord10426",
-     "Monument GS",
-     1,
-     "same name (POTA writes the kind into the name) + pin inside"
-    ],
-    [
-     "sgord10427",
-     "Monument GS",
-     1,
-     "same name (POTA writes the kind into the name) + pin inside"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-10476"
-  },
-  {
-   "area": "US-OR",
    "ref": "US-10486",
    "name": "Warner Wetland Reserve",
    "old_grade": "pin",
@@ -1315,6 +1391,65 @@
    "pota": "https://pota.app/#/park/US-11828"
   },
   {
+   "area": "US-AL",
+   "ref": "US-11027",
+   "name": "Big Canoe Creek Nature Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgalb181",
+     "Big Canoe Creek",
+     382,
+     "alias name (pin inside): Big Canoe Creek"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11027"
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-8711",
+   "name": "Owens Spring, Walker, Adams State Conservation Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgfld1117",
+     "ADAMS",
+     1,
+     "alias name (pin inside): ADAMS"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8711"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-7816",
+   "name": "Henrys Lake Airstrip State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "199732",
+     "Henrys Lake State Park",
+     607,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7816"
+  },
+  {
    "area": "US-NV",
    "ref": "US-13181",
    "name": "Pine Forest BLM Recreation Management Area",
@@ -1371,7 +1506,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "wbl445",
+     "wbl5150",
      "Dos Cabezas Mountains",
      0,
      "name"
@@ -1397,7 +1532,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "nca22332",
+     "nca463",
      "San Pedro Riparian",
      0,
      "name"
@@ -1423,7 +1558,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "wbl398",
+     "wbl5103",
      "Eagletail Mountains",
      0,
      "name"
@@ -1449,13 +1584,13 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "wbl403",
+     "wbl5108",
      "Trigo Mountain (South)",
      0,
      "name"
     ],
     [
-     "wbl433",
+     "wbl5138",
      "Trigo Mountain (North)",
      0,
      "name"
@@ -1487,7 +1622,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "wbl440",
+     "wbl5145",
      "New Water Mountains",
      0,
      "name"
@@ -1513,7 +1648,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "wbl399",
+     "wbl5104",
      "Wabayuma Peak",
      0,
      "name"
@@ -1539,7 +1674,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "nca22331",
+     "nca462",
      "Agua Fria",
      0,
      "name"
@@ -1565,7 +1700,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "nca22342",
+     "nca465",
      "Ironwood Forest",
      0,
      "name"
@@ -1591,7 +1726,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "nca22329",
+     "nca460",
      "Sonoran Desert",
      0,
      "name"
@@ -1617,7 +1752,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "nca22327",
+     "nca458",
      "Vermilion Cliffs",
      0,
      "name"
@@ -1643,37 +1778,37 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "wbl258",
+     "wbl4862",
      "Beaver Dam Mountains",
      0,
      "name"
     ],
     [
-     "wbl284",
+     "wbl4867",
      "Beaver Dam Mountains",
      0,
      "name"
     ],
     [
-     "wbl287",
+     "wbl4872",
      "Beaver Dam Mountains",
      0,
      "name"
     ],
     [
-     "wbl290",
+     "wbl4873",
      "Beaver Dam Mountains",
      0,
      "name"
     ],
     [
-     "wbl273",
+     "wbl4883",
      "Beaver Dam Mountains",
      0,
      "name"
     ],
     [
-     "wbl296",
+     "wbl4892",
      "Beaver Dam Mountains",
      0,
      "name"
@@ -1729,13 +1864,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "nca22338",
-     "Las Cienegas",
-     0,
-     "name"
-    ],
-    [
-     "nca22340",
+     "nca464",
      "Las Cienegas",
      0,
      "name"
@@ -1767,7 +1896,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "nca22330",
+     "nca461",
      "Grand Canyon-Parashant",
      0,
      "name"
@@ -1793,7 +1922,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "wbl401",
+     "wbl5106",
      "Muggins Mountain",
      0,
      "name"
@@ -1819,7 +1948,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "nca22328",
+     "nca459",
      "Gila Box Riparian",
      0,
      "name"
@@ -1836,6 +1965,44 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-8312"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-12189",
+   "name": "Buena Vista State Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "cow173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ],
+    [
+     "sgcoc173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "cow173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "name"
+    ],
+    [
+     "sgcoc173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12189"
   },
   {
    "area": "US-ID",
@@ -2974,31 +3141,6 @@
    "pota": "https://pota.app/#/park/US-6545"
   },
   {
-   "area": "US-IA",
-   "ref": "US-9334",
-   "name": "Teal Basins State Waterfowl Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgiaa34031",
-     "TEAL BASINS WPA",
-     151,
-     "reviewed"
-    ],
-    [
-     "sgiac106299",
-     "Teal Basins WPA",
-     151,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-9334"
-  },
-  {
    "area": "US-ID",
    "ref": "US-11310",
    "name": "Goodenough Creek Recreation Site BLM Recreation Management Area",
@@ -3099,31 +3241,6 @@
    "pota": "https://pota.app/#/park/US-11807"
   },
   {
-   "area": "US-OR",
-   "ref": "US-10476",
-   "name": "Monument BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgord10426",
-     "Monument GS",
-     1,
-     "same name (POTA writes the kind into the name) + pin inside"
-    ],
-    [
-     "sgord10427",
-     "Monument GS",
-     1,
-     "same name (POTA writes the kind into the name) + pin inside"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-10476"
-  },
-  {
    "area": "US-MN",
    "ref": "US-11698",
    "name": "Seminary Fen SNA State Sanctuary",
@@ -3156,6 +3273,44 @@
    "pota": "https://pota.app/#/park/US-11698"
   },
   {
+   "area": "US-AK",
+   "ref": "US-11244",
+   "name": "Knik River Public Use Area State Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgakb1814",
+     "KNIK RIVER",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-11244"
+  },
+  {
+   "area": "US-AL",
+   "ref": "US-13003",
+   "name": "TVA Little Bear Creek Dam Multiple Use Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1811",
+     "Little Bear Creek Reservoir Retained Land",
+     1138,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-13003"
+  },
+  {
    "area": "US-AZ",
    "ref": "US-6090",
    "name": "Beaver Dam Mountain Wilderness Area",
@@ -3163,37 +3318,37 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "wbl258",
+     "wbl4862",
      "Beaver Dam Mountains",
      0,
      "name"
     ],
     [
-     "wbl284",
+     "wbl4867",
      "Beaver Dam Mountains",
      0,
      "name"
     ],
     [
-     "wbl287",
+     "wbl4872",
      "Beaver Dam Mountains",
      0,
      "name"
     ],
     [
-     "wbl290",
+     "wbl4873",
      "Beaver Dam Mountains",
      0,
      "name"
     ],
     [
-     "wbl273",
+     "wbl4883",
      "Beaver Dam Mountains",
      0,
      "name"
     ],
     [
-     "wbl296",
+     "wbl4892",
      "Beaver Dam Mountains",
      0,
      "name"
@@ -3366,6 +3521,69 @@
    "pota": "https://pota.app/#/park/US-2846"
   },
   {
+   "area": "US-FL",
+   "ref": "US-3656",
+   "name": "Beker - South Fork State Park",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "fnl2768",
+     "South Fork State Park",
+     1129,
+     "words"
+    ],
+    [
+     "sgfla102",
+     "South Fork State Park",
+     1129,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3656"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-12189",
+   "name": "Buena Vista State Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "cow173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ],
+    [
+     "sgcoc173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "cow173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "name"
+    ],
+    [
+     "sgcoc173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12189"
+  },
+  {
    "area": "US-ID",
    "ref": "US-2244",
    "name": "Mary M. McCroskey State Park",
@@ -3480,6 +3698,25 @@
    "pota": "https://pota.app/#/park/US-11828"
   },
   {
+   "area": "US-AL",
+   "ref": "US-11027",
+   "name": "Big Canoe Creek Nature Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgalb181",
+     "Big Canoe Creek",
+     382,
+     "alias name (pin inside): Big Canoe Creek"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11027"
+  },
+  {
    "area": "US-NV",
    "ref": "US-13181",
    "name": "Pine Forest BLM Recreation Management Area",
@@ -3499,6 +3736,31 @@
    "pota": "https://pota.app/#/park/US-13181"
   },
   {
+   "area": "US-FL",
+   "ref": "US-8696",
+   "name": "Purvis Landing, Otter Springs, Shingle Lndg State Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgfld1326",
+     "OTTER SPRINGS",
+     511,
+     "alias name (pin inside): OTTER SPRINGS"
+    ],
+    [
+     "sgfld1458",
+     "OTTER SPRINGS",
+     0,
+     "alias name (pin inside): OTTER SPRINGS"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8696"
+  },
+  {
    "area": "US-AZ",
    "ref": "US-11047",
    "name": "Trigo Mountain Wilderness Area",
@@ -3506,13 +3768,13 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "wbl403",
+     "wbl5108",
      "Trigo Mountain (South)",
      0,
      "name"
     ],
     [
-     "wbl433",
+     "wbl5138",
      "Trigo Mountain (North)",
      0,
      "name"
@@ -3537,139 +3799,23 @@
    "pota": "https://pota.app/#/park/US-11047"
   },
   {
-   "area": "US-AZ",
-   "ref": "US-7381",
-   "name": "Las Cienegas National Conservation Area",
+   "area": "US-FL",
+   "ref": "US-8701",
+   "name": "Shelly, Duck Pond, Hartsfield State Conservation Area",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "nca22338",
-     "Las Cienegas",
-     0,
-     "name"
-    ],
-    [
-     "nca22340",
-     "Las Cienegas",
-     0,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "nca22338",
-     "Las Cienegas",
-     0,
-     "name"
-    ],
-    [
-     "nca22340",
-     "Las Cienegas",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-7381"
-  },
-  {
-   "area": "US-OR",
-   "ref": "US-13075",
-   "name": "Bear Gulch BLM Wilderness Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgakh1841",
-     "Bear Gulch",
-     350,
-     "name"
+     "sgfld681",
+     "SHELLY",
+     596,
+     "alias name (pin inside): SHELLY"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13075"
-  },
-  {
-   "area": "US-AZ",
-   "ref": "US-10510",
-   "name": "Dos Cabezas Mountains Wilderness Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "wbl445",
-     "Dos Cabezas Mountains",
-     0,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "wbl445",
-     "Dos Cabezas Mountains",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10510"
-  },
-  {
-   "area": "US-AZ",
-   "ref": "US-10514",
-   "name": "San Pedro Riparian BLM National Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "nca22332",
-     "San Pedro Riparian",
-     0,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "nca22332",
-     "San Pedro Riparian",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10514"
-  },
-  {
-   "area": "US-AZ",
-   "ref": "US-11046",
-   "name": "Eagletail Mountains Wilderness Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "wbl398",
-     "Eagletail Mountains",
-     0,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "wbl398",
-     "Eagletail Mountains",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11046"
+   "pota": "https://pota.app/#/park/US-8701"
   }
  ]
 }
