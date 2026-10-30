@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-3729.json",
+ "id": "10-auto-US-3729",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-3729",
+  "name": "Rocky Mountain State Recreation Area",
+  "agency": "Georgia DNR",
+  "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/pfa/RMPFA_campground%20map_FY22.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:36Z",
+ "results": [
+  {
+   "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/pfa/RMPFA_campground%20map_FY22.pdf",
+   "map_url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/pfa/RMPFA_campground%20map_FY22.pdf",
+   "saved": [
+    "maps/US-3729_rocky-mountain-state-recreation-.jpg"
+   ],
+   "bytes": 189595,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
