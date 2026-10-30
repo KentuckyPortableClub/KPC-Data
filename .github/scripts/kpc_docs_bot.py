@@ -52,6 +52,23 @@ QUEUE = ['US-KY',
          'US-CA', 'US-OR', 'US-WA', 'US-AK', 'US-HI', 'US-MI', 'US-OH', 'US-UT',                               # pacific + the three the regions leave out
          'CA-ON', 'CA-QC', 'CA-NB', 'CA-NS', 'CA-PE', 'CA-NL',                                                 # Canada east
          'CA-MB', 'CA-SK', 'CA-AB', 'CA-BC', 'CA-YT', 'CA-NT', 'CA-NU']                                        # Canada west
+# Oct 30 1:25 PM (Brandon: 'search USA then Canada and then down the list of top 15 then rest of world'): the world after Canada,
+# North America express lane first (Mexico, Central America, Caribbean, Greenland), then world-stages W1-W15, then the rest in the
+# notes' activity order; a country is 'W-<ISO>' and its park list is data/parkinfo/<ISO>.json (website = column 1, like Canada).
+def _world_order():
+    na = 'MX CR PA BZ HN GT SV NI DO PR VI BS JM HT CU TT BB LC VC GD AG KN DM AW CW SX TC VG AI MS BM GP MQ GL PM'.split()
+    w = []
+    try:
+        w = re.findall(r'^\| W\d+ \| [^|]*\(([A-Z]{2})\)', open(LINKS / '.claude' / 'notes' / 'world-stages.md', encoding='utf-8').read(), re.M)
+    except Exception: pass  # noqa: BLE001
+    w = w or 'GB AU JP DE PL FR ES IT NO NL CH PT RO AT SE'.split()
+    have = sorted(p.stem for p in pathlib.Path('data/parkinfo').glob('[A-Z][A-Z].json') if p.stem not in ('CA',))
+    out = []
+    for cc in na + w + have:
+        if cc in ('US', 'CA') or f'W-{cc}' in out: continue
+        if (pathlib.Path('data/parkinfo') / f'{cc}.json').exists() or (LINKS / 'data' / 'parkinfo' / f'{cc}.json').exists(): out.append(f'W-{cc}')
+    return out
+QUEUE += _world_order()
 # hosts chat 8 found hide their map links behind script or refuse a plain reader (OFFICIAL_MAPS SUMMARY 'NEEDS A BROWSER BOT')
 BROWSER_HOSTS = {'tn.gov', 'tnstateparks.com', 'floridastateparks.org', 'bcparks.ca', 'pgc.pa.gov', 'dep.nj.gov', 'nj.gov', 'state.nj.us', 'fs.usda.gov', 'blm.gov', 'alapark.com',
                  'arkansasstateparks.com', 'agfc.com', 'apps.agfc.com', 'azstateparks.com', 'azgfd.com', 'gastateparks.org', 'ksoutdoors.com',
@@ -59,7 +76,7 @@ BROWSER_HOSTS = {'tn.gov', 'tnstateparks.com', 'floridastateparks.org', 'bcparks
                  'vtstateparks.com', 'parks.wa.gov', 'iowadnr.gov', 'dnr.illinois.gov', 'parksandrecreation.idaho.gov', 'dlnr.hawaii.gov',
                  'stateparks.utah.gov', 'mass.gov', 'portal.ct.gov', 'destateparks.com', 'usace.army.mil', 'parks.canada.ca', 'ontarioparks.ca',
                  'albertaparks.ca', 'tpwd.texas.gov', 'stateparks.com'}
-MAPWORD = re.compile(r'\bmaps?\b|brochure|trail guide|geopdf|avenza|\bmapa\b|carte', re.I)
+MAPWORD = re.compile(r'\bmaps?\b|brochure|trail guide|geopdf|avenza|\bmapa\b|carte|karte|kartta|\bkart\b|kaart|mappa|地図|plattegrond', re.I)   # Oct 30: world words
 NOTMAP = re.compile(r'google\.|bing\.com|apple\.com/maps|mapquest|openstreetmap|waze|sitemap|site-map|\bmap of the site|roadmap|mapping tool|interactive map viewer|'
                     r'regulations|air-quality|water/gis|/gis/pages/default|gis\.myfwc\.com|recreationmap|public-?lands-?(map|viewer|finder)|statewide|/library$|laws-regulations', re.I)   # chat 8 F2, chat 11 fix 1
 VIEWER = re.compile(r'gis\.myfwc\.com|recreationmap|/apps/|webappviewer|experience\.arcgis|mapviewer|portal/apps|statewide', re.I)
@@ -759,6 +776,10 @@ def park_list(area):
         if not P and st == 'KY':   # Kentucky keeps its own hand-checked list (kpc-ky-data.json: c, n, t, web, off)
             P = {x['c']: [x.get('n', ''), x.get('web') or '', x.get('t', '')] for x in load(LINKS / 'kpc-ky-data.json', {}).get('parks', []) if x.get('c')}
         return P
+    if area.startswith('W-'):
+        st = area[2:]
+        d = load(f'data/parkinfo/{st}.json', {}) or load(LINKS / f'data/parkinfo/{st}.json', {})
+        return {r: v for r, v in (d.get('parks') or {}).items()}
     d = load('data/parkinfo/CA.json', {}) or load(LINKS / 'data/parkinfo/CA.json', {})
     return {r: v for r, v in (d.get('parks') or {}).items() if len(v) > 10 and v[10] == st}
 

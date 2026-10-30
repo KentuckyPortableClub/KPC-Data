@@ -151,7 +151,10 @@ def maps():
         off |= {r for r, v in ((load(f, {}) or {}).get('parks') or {}).items() if isinstance(v, dict) and v.get('g') == 'official'}
     n = 0
     # Oct 30 1:25 PM (Brandon 'can it be turned up?'): 150 a night (was 25), the main map AND the extra maps, US first then Canada
-    files = sorted(glob.glob('data/docs/US-*.json')) + sorted(glob.glob('data/docs/CA-*.json'))
+    for f in glob.glob(str(LINKS / 'data' / 'world-key' / '[A-Z][A-Z].json')):
+        off |= {r for r, v in ((load(f, {}) or {}).get('parks') or {}).items() if isinstance(v, dict) and v.get('g') == 'official'}
+    import kpc_order as O
+    files = sorted(glob.glob('data/docs/US-*.json')) + sorted(glob.glob('data/docs/CA-*.json')) + sorted(glob.glob('data/docs/W-*.json'), key=lambda f: (O.rank(pathlib.Path(f).stem), f))
     for f in files:
         if f.endswith('US-KY.json'): continue
         for r, v in ((load(f, {}) or {}).get('parks') or {}).items():
