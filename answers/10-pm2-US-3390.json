@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-pm2-US-3390.json",
+ "id": "10-pm2-US-3390",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "backfill retry with chat 8 replacement link (Oct 30 5:15 AM)",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-3390",
+  "name": "River Island State Park",
+  "agency": "Arizona State Parks",
+  "url": "https://arizona-content.usedirect.com/storage/Park%20Map-RIIS.pdf",
+  "pages": 1,
+  "report": "backfill retry with chat 8 replacement link (Oct 30 5:15 AM)"
+ },
+ "answered": "2026-10-30 09:43Z",
+ "results": [
+  {
+   "url": "https://arizona-content.usedirect.com/storage/Park%20Map-RIIS.pdf",
+   "map_url": "https://arizona-content.usedirect.com/storage/Park%20Map-RIIS.pdf",
+   "saved": [
+    "maps/US-3390_river-island-state-park.jpg"
+   ],
+   "bytes": 443712,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
