@@ -1,0 +1,2216 @@
+{
+ "request": "requests/9-p2-id.json",
+ "id": "9-p2-id",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 ID: 38 parks, 5 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 ID: 38 parks, 5 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State ID: 38 parks. Refs in order of points: US-10268,US-10427,US-11157,US-12226,US-4665,US-4666,US-5617,US-7805,US-7806,US-7807,US-7808,US-7809,US-7810,US-7811,US-7812,US-7814,US-7815,US-7817,US-7819,US-7820,US-7822,US-7823,US-7824,US-7826,US-7828,US-7833,US-7834,US-12230,US-13485,US-4584,US-7813,US-7818,US-7825,US-7827,US-7829,US-7830,US-7831,US-7832. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-10268",
+    "US-10427",
+    "US-11157",
+    "US-12226",
+    "US-4665",
+    "US-4666",
+    "US-5617",
+    "US-7805",
+    "US-7806",
+    "US-7807",
+    "US-7808",
+    "US-7809",
+    "US-7810",
+    "US-7811",
+    "US-7812",
+    "US-7814",
+    "US-7815",
+    "US-7817",
+    "US-7819",
+    "US-7820",
+    "US-7822",
+    "US-7823",
+    "US-7824",
+    "US-7826",
+    "US-7828",
+    "US-7833",
+    "US-7834",
+    "US-12230",
+    "US-13485",
+    "US-4584",
+    "US-7813",
+    "US-7818",
+    "US-7825",
+    "US-7827",
+    "US-7829",
+    "US-7830",
+    "US-7831",
+    "US-7832"
+   ],
+   "pointq": [
+    {
+     "st": "ID",
+     "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/0",
+     "note": "ID Idaho Fish & Game",
+     "points": [
+      [
+       45.0564,
+       -114.559
+      ],
+      [
+       44.722,
+       -115.007
+      ],
+      [
+       42.6193,
+       -112.006
+      ],
+      [
+       42.9131,
+       -115.871
+      ],
+      [
+       46.954,
+       -115.861
+      ],
+      [
+       48.565,
+       -116.761
+      ],
+      [
+       47.2623,
+       -116.551
+      ],
+      [
+       43.6771,
+       -113.603
+      ],
+      [
+       43.8135,
+       -115.135
+      ],
+      [
+       42.9753,
+       -113.351
+      ],
+      [
+       45.1332,
+       -115.322
+      ],
+      [
+       43.4326,
+       -113.055
+      ],
+      [
+       44.4155,
+       -115.317
+      ],
+      [
+       48.5187,
+       -116.822
+      ],
+      [
+       43.802,
+       -113.832
+      ],
+      [
+       44.0669,
+       -115.931
+      ],
+      [
+       42.3733,
+       -115.879
+      ],
+      [
+       43.3237,
+       -113.59
+      ],
+      [
+       43.037,
+       -113.734
+      ],
+      [
+       47.8416,
+       -116.252
+      ],
+      [
+       44.6103,
+       -113.895
+      ],
+      [
+       43.4536,
+       -112.807
+      ],
+      [
+       42.0236,
+       -115.335
+      ],
+      [
+       43.4663,
+       -115.31
+      ],
+      [
+       44.8917,
+       -115.713
+      ],
+      [
+       43.9437,
+       -114.11
+      ],
+      [
+       44.1422,
+       -115.314
+      ],
+      [
+       43.623,
+       -111.665
+      ],
+      [
+       44.9475,
+       -113.99
+      ],
+      [
+       43.8105,
+       -111.165
+      ],
+      [
+       43.2178,
+       -113.228
+      ],
+      [
+       44.9117,
+       -115.486
+      ],
+      [
+       44.978,
+       -116.284
+      ],
+      [
+       48.9905,
+       -116.502
+      ],
+      [
+       45.6718,
+       -116.306
+      ],
+      [
+       43.9121,
+       -114.796
+      ],
+      [
+       43.4984,
+       -115.547
+      ],
+      [
+       44.2086,
+       -114.935
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ID",
+     "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0",
+     "note": "ID Idaho Department of Fish and Game (Hydro",
+     "points": [
+      [
+       45.0564,
+       -114.559
+      ],
+      [
+       44.722,
+       -115.007
+      ],
+      [
+       42.6193,
+       -112.006
+      ],
+      [
+       42.9131,
+       -115.871
+      ],
+      [
+       46.954,
+       -115.861
+      ],
+      [
+       48.565,
+       -116.761
+      ],
+      [
+       47.2623,
+       -116.551
+      ],
+      [
+       43.6771,
+       -113.603
+      ],
+      [
+       43.8135,
+       -115.135
+      ],
+      [
+       42.9753,
+       -113.351
+      ],
+      [
+       45.1332,
+       -115.322
+      ],
+      [
+       43.4326,
+       -113.055
+      ],
+      [
+       44.4155,
+       -115.317
+      ],
+      [
+       48.5187,
+       -116.822
+      ],
+      [
+       43.802,
+       -113.832
+      ],
+      [
+       44.0669,
+       -115.931
+      ],
+      [
+       42.3733,
+       -115.879
+      ],
+      [
+       43.3237,
+       -113.59
+      ],
+      [
+       43.037,
+       -113.734
+      ],
+      [
+       47.8416,
+       -116.252
+      ],
+      [
+       44.6103,
+       -113.895
+      ],
+      [
+       43.4536,
+       -112.807
+      ],
+      [
+       42.0236,
+       -115.335
+      ],
+      [
+       43.4663,
+       -115.31
+      ],
+      [
+       44.8917,
+       -115.713
+      ],
+      [
+       43.9437,
+       -114.11
+      ],
+      [
+       44.1422,
+       -115.314
+      ],
+      [
+       43.623,
+       -111.665
+      ],
+      [
+       44.9475,
+       -113.99
+      ],
+      [
+       43.8105,
+       -111.165
+      ],
+      [
+       43.2178,
+       -113.228
+      ],
+      [
+       44.9117,
+       -115.486
+      ],
+      [
+       44.978,
+       -116.284
+      ],
+      [
+       48.9905,
+       -116.502
+      ],
+      [
+       45.6718,
+       -116.306
+      ],
+      [
+       43.9121,
+       -114.796
+      ],
+      [
+       43.4984,
+       -115.547
+      ],
+      [
+       44.2086,
+       -114.935
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       45.0564,
+       -114.559
+      ],
+      [
+       44.722,
+       -115.007
+      ],
+      [
+       42.6193,
+       -112.006
+      ],
+      [
+       42.9131,
+       -115.871
+      ],
+      [
+       46.954,
+       -115.861
+      ],
+      [
+       48.565,
+       -116.761
+      ],
+      [
+       47.2623,
+       -116.551
+      ],
+      [
+       43.6771,
+       -113.603
+      ],
+      [
+       43.8135,
+       -115.135
+      ],
+      [
+       42.9753,
+       -113.351
+      ],
+      [
+       45.1332,
+       -115.322
+      ],
+      [
+       43.4326,
+       -113.055
+      ],
+      [
+       44.4155,
+       -115.317
+      ],
+      [
+       48.5187,
+       -116.822
+      ],
+      [
+       43.802,
+       -113.832
+      ],
+      [
+       44.0669,
+       -115.931
+      ],
+      [
+       42.3733,
+       -115.879
+      ],
+      [
+       43.3237,
+       -113.59
+      ],
+      [
+       43.037,
+       -113.734
+      ],
+      [
+       47.8416,
+       -116.252
+      ],
+      [
+       44.6103,
+       -113.895
+      ],
+      [
+       43.4536,
+       -112.807
+      ],
+      [
+       42.0236,
+       -115.335
+      ],
+      [
+       43.4663,
+       -115.31
+      ],
+      [
+       44.8917,
+       -115.713
+      ],
+      [
+       43.9437,
+       -114.11
+      ],
+      [
+       44.1422,
+       -115.314
+      ],
+      [
+       43.623,
+       -111.665
+      ],
+      [
+       44.9475,
+       -113.99
+      ],
+      [
+       43.8105,
+       -111.165
+      ],
+      [
+       43.2178,
+       -113.228
+      ],
+      [
+       44.9117,
+       -115.486
+      ],
+      [
+       44.978,
+       -116.284
+      ],
+      [
+       48.9905,
+       -116.502
+      ],
+      [
+       45.6718,
+       -116.306
+      ],
+      [
+       43.9121,
+       -114.796
+      ],
+      [
+       43.4984,
+       -115.547
+      ],
+      [
+       44.2086,
+       -114.935
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       45.0564,
+       -114.559
+      ],
+      [
+       44.722,
+       -115.007
+      ],
+      [
+       42.6193,
+       -112.006
+      ],
+      [
+       42.9131,
+       -115.871
+      ],
+      [
+       46.954,
+       -115.861
+      ],
+      [
+       48.565,
+       -116.761
+      ],
+      [
+       47.2623,
+       -116.551
+      ],
+      [
+       43.6771,
+       -113.603
+      ],
+      [
+       43.8135,
+       -115.135
+      ],
+      [
+       42.9753,
+       -113.351
+      ],
+      [
+       45.1332,
+       -115.322
+      ],
+      [
+       43.4326,
+       -113.055
+      ],
+      [
+       44.4155,
+       -115.317
+      ],
+      [
+       48.5187,
+       -116.822
+      ],
+      [
+       43.802,
+       -113.832
+      ],
+      [
+       44.0669,
+       -115.931
+      ],
+      [
+       42.3733,
+       -115.879
+      ],
+      [
+       43.3237,
+       -113.59
+      ],
+      [
+       43.037,
+       -113.734
+      ],
+      [
+       47.8416,
+       -116.252
+      ],
+      [
+       44.6103,
+       -113.895
+      ],
+      [
+       43.4536,
+       -112.807
+      ],
+      [
+       42.0236,
+       -115.335
+      ],
+      [
+       43.4663,
+       -115.31
+      ],
+      [
+       44.8917,
+       -115.713
+      ],
+      [
+       43.9437,
+       -114.11
+      ],
+      [
+       44.1422,
+       -115.314
+      ],
+      [
+       43.623,
+       -111.665
+      ],
+      [
+       44.9475,
+       -113.99
+      ],
+      [
+       43.8105,
+       -111.165
+      ],
+      [
+       43.2178,
+       -113.228
+      ],
+      [
+       44.9117,
+       -115.486
+      ],
+      [
+       44.978,
+       -116.284
+      ],
+      [
+       48.9905,
+       -116.502
+      ],
+      [
+       45.6718,
+       -116.306
+      ],
+      [
+       43.9121,
+       -114.796
+      ],
+      [
+       43.4984,
+       -115.547
+      ],
+      [
+       44.2086,
+       -114.935
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       45.0564,
+       -114.559
+      ],
+      [
+       44.722,
+       -115.007
+      ],
+      [
+       42.6193,
+       -112.006
+      ],
+      [
+       42.9131,
+       -115.871
+      ],
+      [
+       46.954,
+       -115.861
+      ],
+      [
+       48.565,
+       -116.761
+      ],
+      [
+       47.2623,
+       -116.551
+      ],
+      [
+       43.6771,
+       -113.603
+      ],
+      [
+       43.8135,
+       -115.135
+      ],
+      [
+       42.9753,
+       -113.351
+      ],
+      [
+       45.1332,
+       -115.322
+      ],
+      [
+       43.4326,
+       -113.055
+      ],
+      [
+       44.4155,
+       -115.317
+      ],
+      [
+       48.5187,
+       -116.822
+      ],
+      [
+       43.802,
+       -113.832
+      ],
+      [
+       44.0669,
+       -115.931
+      ],
+      [
+       42.3733,
+       -115.879
+      ],
+      [
+       43.3237,
+       -113.59
+      ],
+      [
+       43.037,
+       -113.734
+      ],
+      [
+       47.8416,
+       -116.252
+      ],
+      [
+       44.6103,
+       -113.895
+      ],
+      [
+       43.4536,
+       -112.807
+      ],
+      [
+       42.0236,
+       -115.335
+      ],
+      [
+       43.4663,
+       -115.31
+      ],
+      [
+       44.8917,
+       -115.713
+      ],
+      [
+       43.9437,
+       -114.11
+      ],
+      [
+       44.1422,
+       -115.314
+      ],
+      [
+       43.623,
+       -111.665
+      ],
+      [
+       44.9475,
+       -113.99
+      ],
+      [
+       43.8105,
+       -111.165
+      ],
+      [
+       43.2178,
+       -113.228
+      ],
+      [
+       44.9117,
+       -115.486
+      ],
+      [
+       44.978,
+       -116.284
+      ],
+      [
+       48.9905,
+       -116.502
+      ],
+      [
+       45.6718,
+       -116.306
+      ],
+      [
+       43.9121,
+       -114.796
+      ],
+      [
+       43.4984,
+       -115.547
+      ],
+      [
+       44.2086,
+       -114.935
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 01:16Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State ID: 38 parks. Refs in order of points: US-10268,US-10427,US-11157,US-12226,US-4665,US-4666,US-5617,US-7805,US-7806,US-7807,US-7808,US-7809,US-7810,US-7811,US-7812,US-7814,US-7815,US-7817,US-7819,US-7820,US-7822,US-7823,US-7824,US-7826,US-7828,US-7833,US-7834,US-12230,US-13485,US-4584,US-7813,US-7818,US-7825,US-7827,US-7829,US-7830,US-7831,US-7832. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "ID",
+    "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/0",
+    "note": "ID Idaho Fish & Game",
+    "hits": [
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       45.0564,
+       -114.559
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       44.722,
+       -115.007
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       42.6193,
+       -112.006
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       42.9131,
+       -115.871
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       46.954,
+       -115.861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       48.565,
+       -116.761
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       47.2623,
+       -116.551
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.6771,
+       -113.603
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.8135,
+       -115.135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       42.9753,
+       -113.351
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       45.1332,
+       -115.322
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.4326,
+       -113.055
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       44.4155,
+       -115.317
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       48.5187,
+       -116.822
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.802,
+       -113.832
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       44.0669,
+       -115.931
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       42.3733,
+       -115.879
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.3237,
+       -113.59
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.037,
+       -113.734
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       47.8416,
+       -116.252
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       44.6103,
+       -113.895
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.4536,
+       -112.807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       42.0236,
+       -115.335
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.4663,
+       -115.31
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       44.8917,
+       -115.713
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.9437,
+       -114.11
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       44.1422,
+       -115.314
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.623,
+       -111.665
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       44.9475,
+       -113.99
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.8105,
+       -111.165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.2178,
+       -113.228
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       44.9117,
+       -115.486
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       44.978,
+       -116.284
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       48.9905,
+       -116.502
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       45.6718,
+       -116.306
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.9121,
+       -114.796
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       43.4984,
+       -115.547
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       44.2086,
+       -114.935
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ID",
+    "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0",
+    "note": "ID Idaho Department of Fish and Game (Hydro",
+    "hits": [
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       45.0564,
+       -114.559
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       44.722,
+       -115.007
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       42.6193,
+       -112.006
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       42.9131,
+       -115.871
+      ],
+      "attrs": {
+       "NAME": "C. J. Strike Reservoir",
+       "LLID": "1158134429738",
+       "CATALOG_NO": "0500000167.00",
+       "DRAINAGE_NAME": "Snake - C.J. Strike to Lake Walcott",
+       "DRAINAGE_ID": 23,
+       "COUNTY_NAME": "Owyhee",
+       "COUNTY_ID": 37,
+       "REGION_ID": 3,
+       "PERIMETER": 98793.47951779,
+       "PLLID": "1190296461886",
+       "PNAME": "Snake River",
+       "PMEASURE": 790894,
+       "Acres": 6758.97535479,
+       "LONG": -115.90738433,
+       "LAT": 42.98267567,
+       "ELEV_M": 809,
+       "ELEV_F": 2654,
+       "Hectares": 2735.26028234,
+       "MntLake": 0,
+       "HUC4": 17050101,
+       "HUC5": 1705010111,
+       "HUC6": 170501011107,
+       "DD_X": -115.88485414,
+       "DD_Y": 42.94804459,
+       "RFW": 1,
+       "BASIN_NAME": "Middle Snake-Succor",
+       "FFW": 0,
+       "Access": "NoRule-mix"
+      }
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       46.954,
+       -115.861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       48.565,
+       -116.761
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       47.2623,
+       -116.551
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.6771,
+       -113.603
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.8135,
+       -115.135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       42.9753,
+       -113.351
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       45.1332,
+       -115.322
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.4326,
+       -113.055
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       44.4155,
+       -115.317
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       48.5187,
+       -116.822
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.802,
+       -113.832
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       44.0669,
+       -115.931
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       42.3733,
+       -115.879
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.3237,
+       -113.59
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.037,
+       -113.734
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       47.8416,
+       -116.252
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       44.6103,
+       -113.895
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.4536,
+       -112.807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       42.0236,
+       -115.335
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.4663,
+       -115.31
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       44.8917,
+       -115.713
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.9437,
+       -114.11
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       44.1422,
+       -115.314
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.623,
+       -111.665
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       44.9475,
+       -113.99
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.8105,
+       -111.165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.2178,
+       -113.228
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       44.9117,
+       -115.486
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       44.978,
+       -116.284
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       48.9905,
+       -116.502
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       45.6718,
+       -116.306
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.9121,
+       -114.796
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       43.4984,
+       -115.547
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Lakes and Reservoirs - Public",
+      "point": [
+       44.2086,
+       -114.935
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.0564,
+       -114.559
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.722,
+       -115.007
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       42.6193,
+       -112.006
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       42.9131,
+       -115.871
+      ],
+      "attrs": {
+       "FET_TYPE": 4,
+       "FET_SUBTYPE": "SRMA",
+       "FET_NAME": "C J Strike",
+       "ADM_UNIT_CD": "IDB01100",
+       "ADMIN_ST": "ID",
+       "GIS_ACRES": 31736.55337259,
+       "UNIT_NAME": "Morley Nelson Snake Rivers Birds of Prey NCA",
+       "WEB_DISPLAY": "YES"
+      }
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       42.9131,
+       -115.871
+      ],
+      "attrs": {
+       "FET_TYPE": 4,
+       "FET_SUBTYPE": "SRMA",
+       "FET_NAME": "Oregon Trail",
+       "ADM_UNIT_CD": "IDB01100",
+       "ADMIN_ST": "ID",
+       "GIS_ACRES": 13155.00452456,
+       "UNIT_NAME": "Morley Nelson Snake Rivers Birds of Prey NCA",
+       "WEB_DISPLAY": "YES"
+      }
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       46.954,
+       -115.861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       48.565,
+       -116.761
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       47.2623,
+       -116.551
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.6771,
+       -113.603
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.8135,
+       -115.135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       42.9753,
+       -113.351
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.1332,
+       -115.322
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.4326,
+       -113.055
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.4155,
+       -115.317
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       48.5187,
+       -116.822
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.802,
+       -113.832
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.0669,
+       -115.931
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       42.3733,
+       -115.879
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.3237,
+       -113.59
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.037,
+       -113.734
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       47.8416,
+       -116.252
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.6103,
+       -113.895
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.4536,
+       -112.807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       42.0236,
+       -115.335
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.4663,
+       -115.31
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.8917,
+       -115.713
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.9437,
+       -114.11
+      ],
+      "attrs": {
+       "FET_TYPE": 4,
+       "FET_SUBTYPE": "SRMA",
+       "FET_NAME": "Upper Big Lost River",
+       "ADM_UNIT_CD": "IDI03000",
+       "ADMIN_ST": "ID",
+       "GIS_ACRES": 4603.40007,
+       "UNIT_NAME": "Challis Field Office",
+       "WEB_DISPLAY": "YES"
+      }
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.1422,
+       -115.314
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.623,
+       -111.665
+      ],
+      "attrs": {
+       "FET_TYPE": 4,
+       "FET_SUBTYPE": "SRMA",
+       "FET_NAME": "Snake River",
+       "ADM_UNIT_CD": "IDI01000",
+       "ADMIN_ST": "ID",
+       "GIS_ACRES": 128532.67702,
+       "UNIT_NAME": "Upper Snake Field Office",
+       "WEB_DISPLAY": "YES"
+      }
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.9475,
+       -113.99
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.8105,
+       -111.165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.2178,
+       -113.228
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.9117,
+       -115.486
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.978,
+       -116.284
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       48.9905,
+       -116.502
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.6718,
+       -116.306
+      ],
+      "attrs": {
+       "FET_TYPE": 4,
+       "FET_SUBTYPE": "SRMA",
+       "FET_NAME": "Lower Salmon Recreational",
+       "ADM_UNIT_CD": "IDC02000",
+       "ADMIN_ST": "ID",
+       "GIS_ACRES": 25700.7708,
+       "UNIT_NAME": "Cottonwood Field Office",
+       "WEB_DISPLAY": "YES"
+      }
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.9121,
+       -114.796
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.4984,
+       -115.547
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.2086,
+       -114.935
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.0564,
+       -114.559
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.722,
+       -115.007
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       42.6193,
+       -112.006
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       42.9131,
+       -115.871
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       46.954,
+       -115.861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       48.565,
+       -116.761
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       47.2623,
+       -116.551
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.6771,
+       -113.603
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.8135,
+       -115.135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       42.9753,
+       -113.351
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.1332,
+       -115.322
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.4326,
+       -113.055
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.4155,
+       -115.317
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       48.5187,
+       -116.822
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.802,
+       -113.832
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.0669,
+       -115.931
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       42.3733,
+       -115.879
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.3237,
+       -113.59
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.037,
+       -113.734
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       47.8416,
+       -116.252
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.6103,
+       -113.895
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.4536,
+       -112.807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       42.0236,
+       -115.335
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.4663,
+       -115.31
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.8917,
+       -115.713
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.9437,
+       -114.11
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.1422,
+       -115.314
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.623,
+       -111.665
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.9475,
+       -113.99
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.8105,
+       -111.165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.2178,
+       -113.228
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.9117,
+       -115.486
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.978,
+       -116.284
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       48.9905,
+       -116.502
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.6718,
+       -116.306
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.9121,
+       -114.796
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.4984,
+       -115.547
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.2086,
+       -114.935
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 339,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
