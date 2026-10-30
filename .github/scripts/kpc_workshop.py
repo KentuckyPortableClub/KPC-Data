@@ -38,6 +38,7 @@ def run_bot(bot, area, minutes, test):
     env = dict(os.environ, AREAS=area, MINUTES=str(minutes), LINKS=LINKS, TEST='1' if test else '0')
     if (os.environ.get('AREAS') or '').strip(): env['REFRESH_DAYS'] = '0'   # a NAMED area is a rerun: never skip parks as 'fresh'
     notice(f'{NAME[bot]}: {area} ({minutes:.0f} min)')
+    if os.environ.get('WAITING_HOLD') == '1': subprocess.run([sys.executable, '.github/scripts/kpc_waiting_room.py', 'resume', FOLDER[bot]], env=dict(os.environ, LINKS=LINKS))
     p = subprocess.run([sys.executable, SCRIPT[bot]], env=env, capture_output=True, text=True)
     out = (p.stdout or '') + (p.stderr or '')
     for line in out.splitlines():
@@ -59,7 +60,9 @@ def run_bot(bot, area, minutes, test):
         subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'grade-me', NAME[bot], area, (smp or f'{FOLDER[bot]}/{area}.json') + ' (+ review.md)', f'{st}; gate {t.get("result", "none") if t.get("when") == time.strftime("%Y-%m-%d") else "none"}; {json.dumps(counts)[:140]}'])
     subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'board', NAME[bot], 'green' if p.returncode == 0 else 'red', f'{area}: {st}; {json.dumps(counts)[:200]}', 'chat 8 grades the sample; Brandon GO before any card', f'left: {len(left_areas())}'])
     if PUSH:
-        subprocess.run(['bash', f'{LINKS}/.github/scripts/kpc_push_data.sh', '.', f'{NAME[bot]}: {area} ({st})', FOLDER[bot], 'data/status'])
+        if os.environ.get('WAITING_HOLD') == '1':   # Brandon Oct 29 7:55 PM: changed area files wait in data/waiting/in/ (checked, not live)
+            subprocess.run([sys.executable, '.github/scripts/kpc_waiting_room.py', 'divert', FOLDER[bot]], env=dict(os.environ, LINKS=LINKS))
+        subprocess.run(['bash', f'{LINKS}/.github/scripts/kpc_push_data.sh', '.', f'{NAME[bot]}: {area} ({st})', FOLDER[bot], 'data/status', 'data/waiting'])
     return res
 
 

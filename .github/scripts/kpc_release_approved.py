@@ -78,7 +78,7 @@ def main():
                 log.append({'item': rel, 'result': 'released (approved)'})
             else: log.append({'item': rel, 'result': 'nothing waiting there'})
     if not DRY and any(l.get('item') == 'keyed-parking' for l in log):
-        os.environ['WAITING_ON'] = '1'; W.mode_check(True)   # the keyed files pass the same checks as any bot file
+        os.environ['WAITING_ON'] = '1'; os.environ['PROMOTE_KINDS'] = 'access'; W.mode_check(True)   # the keyed files pass the same checks as any bot file
     with open(W.W / 'released.jsonl', 'a', encoding='utf-8') as fh:
         for l in log: fh.write(json.dumps({'date': time.strftime('%Y-%m-%dT%H:%MZ', time.gmtime()), 'dry': DRY, **l}, ensure_ascii=False) + '\n')
     print(f'::notice title=Release approved::{len(items)} approvals read, {len(log)} actions' + (' (DRY: nothing moved)' if DRY else ''))

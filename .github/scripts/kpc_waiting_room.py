@@ -675,6 +675,35 @@ def judge(path, new, live, twin=None, ctx=None):
 def look_line(r): return f"- FROM WAITING ROOM ({TODAY}): {r['kind']} {r['path']} held: {' · '.join(r['why'])[:600]}"
 
 
+def mode_divert(paths):
+    """Brandon Oct 29 7:55 PM ('fire them up if you trust them to run and put stuff in waiting room'): a bot's CHANGED files of a kind
+    the waiting room checks are moved into data/waiting/in/ and the live file is put back as it was (git HEAD), so nothing new goes
+    live; then every waiting file is judged (verdicts written, NOTHING promoted). State / review files stay with the bot."""
+    out = subprocess.run(['git', '-C', str(DATA), 'status', '--porcelain', '--', *paths], capture_output=True, text=True).stdout.splitlines()
+    moved = []
+    for ln in out:
+        rel = ln[3:].strip().strip('"')
+        if ' -> ' in rel: rel = rel.split(' -> ')[1]
+        if not re.search(r'\.json(\.gz)?$', rel) or kind_of(rel)[0] in (None, 'info'): continue
+        src = DATA / rel
+        if not src.exists(): continue
+        dst = W / 'in' / rel; dst.parent.mkdir(parents=True, exist_ok=True); shutil.copy2(src, dst)
+        if ln.startswith('??'): src.unlink()
+        else: subprocess.run(['git', '-C', str(DATA), 'checkout', '-q', 'HEAD', '--', rel])
+        moved.append(rel)
+    print(f'::notice title=Waiting room (hold)::{len(moved)} changed files held for checks, live files unchanged' + (f': {", ".join(moved[:8])}' if moved else ''))
+    if moved: mode_check(False)
+
+
+def mode_resume(paths):
+    """Before a held bot runs again: its waiting files become its working copy, so it continues from what it held (not from live)."""
+    n = 0
+    for pth in paths:
+        for f in (W / 'in' / pth).rglob('*') if (W / 'in' / pth).exists() else []:
+            if f.is_file(): rel = f.relative_to(W / 'in'); (DATA / rel).parent.mkdir(parents=True, exist_ok=True); shutil.copy2(f, DATA / rel); n += 1
+    print(f'::notice title=Waiting room (hold)::{n} held files taken as the working copy')
+
+
 def mode_check(promote):
     on = promote and os.environ.get('WAITING_ON') == '1'
     files = sorted(p for p in (W / 'in').rglob('*') if p.is_file() and re.search(r'\.json(\.gz)?$', p.name)) if (W / 'in').exists() else []   # Fable b: .json.gz too (never a silent stall)
@@ -683,7 +712,8 @@ def mode_check(promote):
     out = []
     for rel, new in batch.items():
         r = judge(rel, new, *live_of(rel), ctx=ctx); out.append(r)
-        if on and r['verdict'] in ('PASS', 'LIVE-FILTERED'):
+        allowed = [k for k in (os.environ.get('PROMOTE_KINDS') or '').split(',') if k]   # only the bots Brandon switched on promote; held bots wait for chat 11
+        if on and r['verdict'] in ('PASS', 'LIVE-FILTERED') and allowed and r['kind'] in allowed:
             promote_file(rel, r.get('out'), raw=(W / 'in' / rel))
             (W / 'in' / rel).unlink()
             tw = live_of(rel)[1]
@@ -893,6 +923,8 @@ if __name__ == '__main__':
         elif a[0] == 'undo': mode_undo(a[1])
         elif a[0] == 'undo-bot': mode_undo_bot(a[1], a[2] if len(a) > 2 else '')
         elif a[0] == 'release': mode_release(a[1])
+        elif a[0] == 'divert': mode_divert(a[1:])
+        elif a[0] == 'resume': mode_resume(a[1:])
         else: print(__doc__)
     except Exception as e:  # noqa: BLE001  (fail closed: nothing was promoted; one line for chat 11)
         print(f'::notice title=Waiting room::checker stopped ({type(e).__name__}: {str(e)[:200]}): nothing promoted, everything waits')

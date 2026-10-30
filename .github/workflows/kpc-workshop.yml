@@ -89,6 +89,7 @@ jobs:
           TEST: ${{ inputs.test == 'yes' && '1' || '0' }}
           BROWSER: ${{ (inputs.browser || 'yes') == 'yes' && '1' || '0' }}
           LINKS: ../links
+          WAITING_HOLD: '1'   # Brandon Oct 29 7:55 PM: changed area files wait in data/waiting/in/ (checked by the waiting room + chat 11, not live)
           NPS_API_KEY: ${{ inputs.keyed_once == 'yes' && secrets.NPS_API_KEY || '' }}     # Oct 29 (Brandon 9:34 AM): no recurring keyed calls here
           RIDB_API_KEY: ${{ inputs.keyed_once == 'yes' && secrets.RIDB_API_KEY || '' }}
           FCC_BDC_USERNAME: ${{ secrets.FCC_BDC_USERNAME }}
