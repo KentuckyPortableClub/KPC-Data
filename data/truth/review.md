@@ -1,10 +1,10 @@
 # Park truth checker: review (review lists only; nothing here changes a key or a card)
 
-Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + source agreement; weakest first in checklist-<area>.csv.
+Updated 2026-10-30. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + source agreement; weakest first in checklist-<area>.csv.
 
 | area | parks | with outline | agree | OFF (>15%) | unsure | no size | ours unknown | handover hints | retired | weak (≤4) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| US-KY | 193 | 189 | 110 | **5** | 9 | 65 | 0 | 5 | 0 | 26 |
+| US-KY | 193 | 189 | 111 | **5** | 8 | 65 | 0 | 5 | 0 | 26 |
 | US-TN | 277 | 254 | 2 | **7** | 4 | 237 | 2 | 3 | 0 | 10 |
 | US-NC | 253 | 219 | 38 | **10** | 24 | 146 | 0 | 18 | 0 | 8 |
 | US-VA | 184 | 156 | 65 | **16** | 35 | 40 | 0 | 16 | 0 | 4 |
@@ -20,7 +20,7 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 
 ## US-KY
 
-**Agree:** 110 parks: 106 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 4 agree (second agency).
+**Agree:** 111 parks: 106 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 5 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
@@ -39,7 +39,6 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 - US-3792 Land Between the Lakes National Recreation Area: ours 106,995 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 170,000 acres, no total words near it) · [landbetweenthelakes.us](https://landbetweenthelakes.us/)
 - US-3801 Clifty Wilderness Area: ours 12,484 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 708,000 acres, no total words near it) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone)
 - US-3832 Stone Mountain Wildlife Management Area: ours 2,024 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-4526 George Washington & Jefferson National Forest: ours 1,799,838 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.fs.usda.gov](https://www.fs.usda.gov/gwj)
 - US-7962 Little South Fork State Natural Area: ours 2,220 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 3145.42 acres, no total words near it) · [eec.ky.gov](https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx)
 
 **Handover / closure hints (a person decides; nothing applied):**
@@ -839,4 +838,4 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 
 ## Kentucky test gate
 
-- 2026-10-29: **PASS** · US-WV: 5 off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares
+- 2026-10-30: **FAIL** · US-1264 ok (Levi Jackson OFF (722 vs ~896) + a hint naming the City of London; verdict off, agency 896 acres) · US-8144 ok (Otter Creek: a hint naming Meade; verdict agree, agency 2,221 acres) · US-10105 ok (Green WSR: official page is not Mammoth Cave's (/maca/); verdict no size on page, agency None) · US-10104 ok (Red River WSR: official acres is not 879 (the "708, 879" parse); verdict unsure, agency 708,000 acres) · US-0295 ok (Clarks River NWR: official acres is not the 73,962 land grant; verdict no size on page, agency None) · US-0703+US-3790 ok (Fort Donelson and Fort Heiman do not share one official page; verdict off, agency 1007 acres) · US-10098 ok (Green River NWR is never the 2019 '10 acres donated' line (FWS took down the 9,500-ac page Oct 29: the old row cannot be checked); verdict unsure, agency None) · US-4689 ok (Kentucky Ridge SF OFF (15,251 vs 11,736 = 23%); verdict off, agency 15,251 acres) · US-3800 MISS (Cedar Creek Lake WMA OFF (ours 2,390 vs 796); verdict agree, agency 796 acres) · US-0050 ok (Mammoth Cave OFF with cause 'boundary vs owned'; verdict off, agency 52,830 acres)
