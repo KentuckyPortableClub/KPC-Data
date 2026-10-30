@@ -1,9 +1,9 @@
 {
  "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
- "pass1": "2026-10-28",
- "pass2": "2026-10-28",
- "pass3": "2026-10-29",
- "pass5": "2026-10-29",
+ "pass1": "2026-10-30",
+ "pass2": "2026-10-30",
+ "pass3": "2026-10-30",
+ "pass5": "2026-10-30",
  "spots": [
   {
    "acres": 3.0,
@@ -17,7 +17,7 @@
     43.68748,
     -102.729529
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0005+US-7487@area@43.688,-102.730",
    "kind": "area",
    "passes": [
@@ -39,7 +39,7 @@
      43.68748
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -55,7 +55,7 @@
     43.68748,
     -102.754175
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0005+US-7487@area@43.688,-102.754",
    "kind": "area",
    "passes": [
@@ -77,7 +77,7 @@
      43.68748
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -93,7 +93,7 @@
     43.748435,
     -101.899492
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0005+US-7487@area@43.748,-101.899",
    "kind": "area",
    "passes": [
@@ -115,11 +115,20 @@
      43.745089
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     43.748893,
+     -101.889896
+    ],
+    "from": "none",
+    "note": "no public road, parking or path within about 1.5 km: the pin is the middle of the spot"
+   },
    "acres": 1.2,
    "box": [
     -101.89002,
@@ -131,18 +140,119 @@
     43.748893,
     -101.889896
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service",
+    "Park Service"
+   ],
    "id": "US-0005+US-7487@area@43.754,-101.890",
    "kind": "area",
+   "lines": {
+    "US-0005": [
+     [
+      [
+       -101.890149,
+       43.77756
+      ],
+      [
+       -101.88979,
+       43.748762
+      ],
+      [
+       -101.899619,
+       43.748708
+      ]
+     ]
+    ],
+    "US-7487": [
+     [
+      [
+       -101.780156,
+       43.7488
+      ],
+      [
+       -101.890038,
+       43.748554
+      ],
+      [
+       -101.889051,
+       43.763017
+      ]
+     ],
+     [
+      [
+       -101.899602,
+       43.748523
+      ],
+      [
+       -101.890038,
+       43.748554
+      ],
+      [
+       -101.890027,
+       43.744937
+      ]
+     ],
+     [
+      [
+       -101.780156,
+       43.7488
+      ],
+      [
+       -101.890038,
+       43.748554
+      ],
+      [
+       -101.889051,
+       43.763017
+      ]
+     ],
+     [
+      [
+       -101.899602,
+       43.748523
+      ],
+      [
+       -101.890038,
+       43.748554
+      ],
+      [
+       -101.890027,
+       43.744937
+      ]
+     ]
+    ]
+   },
+   "lines_read": "2026-10-30",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-0005": "downloaded 2026-10-28",
-    "US-7487": "downloaded 2026-10-28"
+    "US-0005": "downloaded 2026-10-30",
+    "US-7487": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-0005",
+     "https://www.nps.gov/badl/planyourvisit/maps.htm"
+    ],
+    [
+     "US-7487",
+     "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30329"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:NPS",
+    "FED:USFS"
+   ],
+   "names": {
+    "US-0005": "Badlands National Park",
+    "US-7487": "Buffalo Gap National Grassland"
    },
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
-   "ownership": "side by side, not layered: Buffalo Gap National Grassland is Forest Service land, the ground here is Park Service",
+   "ownership": "public land (Forest Service + Park Service)",
    "passes": [
     1,
     1,
@@ -170,7 +280,7 @@
      43.748757
     ]
    ],
-   "status": "dropped: side by side, not layered: Buffalo Gap National Grassland is Forest Service land, the ground here is Park Service",
+   "status": "merged into one row: US-0005+US-7487@area@43.792,-101.905",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 25
   },
@@ -186,7 +296,7 @@
     43.770954,
     -102.437426
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0005+US-7487@area@43.771,-102.437",
    "kind": "area",
    "passes": [
@@ -224,7 +334,7 @@
      43.770954
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -240,7 +350,7 @@
     43.7847,
     -101.890032
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0005+US-7487@area@43.781,-101.890",
    "kind": "area",
    "passes": [
@@ -262,11 +372,22 @@
      43.776561
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     43.784765,
+     -101.939547
+    ],
+    "from": "road",
+    "name": "Ch 11",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 329
+   },
    "acres": 9.0,
    "box": [
     -101.93951,
@@ -278,18 +399,71 @@
     43.784706,
     -101.939386
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service",
+    "Park Service"
+   ],
    "id": "US-0005+US-7487@area@43.785,-101.939",
    "kind": "area",
+   "lines": {
+    "US-7487": [
+     [
+      [
+       -101.939575,
+       43.784649
+      ],
+      [
+       -101.939565,
+       43.791889
+      ]
+     ],
+     [
+      [
+       -101.919533,
+       43.791915
+      ],
+      [
+       -101.91956,
+       43.784672
+      ],
+      [
+       -101.939575,
+       43.784649
+      ]
+     ]
+    ]
+   },
+   "lines_read": "2026-10-30",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-0005": "downloaded 2026-10-28",
-    "US-7487": "downloaded 2026-10-28"
+    "US-0005": "downloaded 2026-10-30",
+    "US-7487": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-0005",
+     "https://www.nps.gov/badl/planyourvisit/maps.htm"
+    ],
+    [
+     "US-7487",
+     "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30329"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:NPS",
+    "FED:USFS"
+   ],
+   "names": {
+    "US-0005": "Badlands National Park",
+    "US-7487": "Buffalo Gap National Grassland"
    },
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
-   "ownership": "side by side, not layered: Buffalo Gap National Grassland is Forest Service land, the ground here is Park Service",
+   "ownership": "public land (Forest Service + Park Service)",
    "passes": [
     1,
     1,
@@ -321,7 +495,7 @@
      43.784796
     ]
    ],
-   "status": "dropped: side by side, not layered: Buffalo Gap National Grassland is Forest Service land, the ground here is Park Service",
+   "status": "merged into one row: US-0005+US-7487@area@43.792,-101.905",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 25
   },
@@ -337,7 +511,7 @@
     43.785243,
     -102.497019
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0005+US-7487@area@43.785,-102.497",
    "kind": "area",
    "passes": [
@@ -447,24 +621,38 @@
      43.785152
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     43.792031,
+     -101.899719
+    ],
+    "from": "none",
+    "note": "no public road, parking or path within about 1.5 km: the pin is the middle of the spot"
+   },
    "acres": 9.1,
+   "acres_all": 19.3,
    "box": [
-    -101.90494,
-    43.7919,
-    -101.89014,
+    -101.93951,
+    43.74876,
+    -101.88977,
     43.79217
    ],
    "center": [
     43.792031,
     -101.899719
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service",
+    "Park Service"
+   ],
    "id": "US-0005+US-7487@area@43.792,-101.905",
    "info": {
     "water_pct": 0
@@ -473,6 +661,14 @@
    "lines": {
     "US-0005": [
      [
+      [
+       -101.969636,
+       43.784777
+      ],
+      [
+       -101.909659,
+       43.784832
+      ],
       [
        -101.909659,
        43.792123
@@ -484,11 +680,35 @@
       [
        -101.890149,
        43.77756
+      ],
+      [
+       -101.88979,
+       43.748762
+      ],
+      [
+       -101.899619,
+       43.748708
+      ],
+      [
+       -101.899658,
+       43.741461
       ]
      ]
     ],
     "US-7487": [
      [
+      [
+       -101.780156,
+       43.7488
+      ],
+      [
+       -101.890038,
+       43.748554
+      ],
+      [
+       -101.889051,
+       43.763017
+      ],
       [
        -101.890071,
        43.777482
@@ -513,16 +733,148 @@
        -101.905626,
        43.794201
       ]
+     ],
+     [
+      [
+       -101.899612,
+       43.734057
+      ],
+      [
+       -101.899602,
+       43.748523
+      ],
+      [
+       -101.890038,
+       43.748554
+      ],
+      [
+       -101.890027,
+       43.744937
+      ]
+     ],
+     [
+      [
+       -101.939575,
+       43.784649
+      ],
+      [
+       -101.939565,
+       43.791889
+      ],
+      [
+       -101.919533,
+       43.791915
+      ],
+      [
+       -101.91956,
+       43.784672
+      ],
+      [
+       -101.939575,
+       43.784649
+      ]
+     ],
+     [
+      [
+       -101.780156,
+       43.7488
+      ],
+      [
+       -101.890038,
+       43.748554
+      ],
+      [
+       -101.889051,
+       43.763017
+      ],
+      [
+       -101.890071,
+       43.777482
+      ],
+      [
+       -101.889947,
+       43.791947
+      ],
+      [
+       -101.904872,
+       43.791914
+      ],
+      [
+       -101.905304,
+       43.792842
+      ],
+      [
+       -101.905492,
+       43.793459
+      ],
+      [
+       -101.905626,
+       43.794201
+      ]
+     ],
+     [
+      [
+       -101.899612,
+       43.734057
+      ],
+      [
+       -101.899602,
+       43.748523
+      ],
+      [
+       -101.890038,
+       43.748554
+      ],
+      [
+       -101.890027,
+       43.744937
+      ]
+     ],
+     [
+      [
+       -101.939575,
+       43.784649
+      ],
+      [
+       -101.939565,
+       43.791889
+      ],
+      [
+       -101.919533,
+       43.791915
+      ],
+      [
+       -101.91956,
+       43.784672
+      ],
+      [
+       -101.939575,
+       43.784649
+      ]
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-0005": "downloaded 2026-10-28",
-    "US-7487": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+    "US-0005": "downloaded 2026-10-30",
+    "US-7487": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-0005",
+     "https://www.nps.gov/badl/planyourvisit/maps.htm"
+    ],
+    [
+     "US-7487",
+     "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30329"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:NPS",
+    "FED:USFS"
+   ],
    "names": {
     "US-0005": "Badlands National Park",
     "US-7487": "Buffalo Gap National Grassland"
@@ -530,10 +882,24 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (Forest Service + Park Service)",
    "passes": [
     1,
     1,
     1
+   ],
+   "patches": 3,
+   "pins": [
+    {
+     "at": [
+      43.784765,
+      -101.939547
+     ],
+     "from": "road",
+     "name": "Ch 11",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 329
+    }
    ],
    "pins_inside": {
     "US-0005": true,
@@ -563,7 +929,7 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 35
   },
   {
@@ -578,7 +944,7 @@
     43.791754,
     -102.288434
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0005+US-7487@area@43.792,-102.288",
    "kind": "area",
    "passes": [
@@ -664,7 +1030,7 @@
      43.788137
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -680,7 +1046,7 @@
     43.81364,
     -102.198691
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0005+US-7487@area@43.814,-102.199",
    "kind": "area",
    "passes": [
@@ -702,7 +1068,7 @@
      43.81364
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -718,7 +1084,7 @@
     43.885809,
     -102.238646
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0005+US-7487@area@43.886,-102.239",
    "kind": "area",
    "passes": [
@@ -788,7 +1154,7 @@
      43.885809
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -804,7 +1170,7 @@
     43.91493,
     -102.318307
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0005+US-7487@area@43.915,-102.318",
    "kind": "area",
    "passes": [
@@ -866,7 +1232,7 @@
      43.911312
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -882,7 +1248,7 @@
     43.922255,
     -102.377555
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0005+US-7487@area@43.922,-102.378",
    "kind": "area",
    "passes": [
@@ -920,12 +1286,24 @@
      43.918638
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     43.637199,
+     -103.451373
+    ],
+    "from": "road",
+    "name": "Highland Ridge Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 47.2,
+   "acres_all": 94.4,
    "box": [
     -103.48059,
     43.6295,
@@ -936,8 +1314,11 @@
     43.636421,
     -103.449122
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Park Service"
+   ],
    "id": "US-0068+US-2917@area@43.629,-103.397",
    "info": {
     "water_pct": 0
@@ -1065,12 +1446,22 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0068": "downloaded 2026-10-28",
-    "US-2917": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+    "US-0068": "downloaded 2026-10-30",
+    "US-2917": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-0068",
+     "https://www.nps.gov/wica/planyourvisit/maps.htm"
+    ],
+    [
+     "US-2917",
+     "https://gfp.sd.gov/parks/detail/custer-state-park/"
+    ]
+   ],
    "names": {
     "US-0068": "Wind Cave National Park",
     "US-2917": "Custer State Park"
@@ -1078,16 +1469,39 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (Park Service)",
    "passes": [
     1,
     1,
     1
    ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      43.637199,
+      -103.451373
+     ],
+     "from": "road",
+     "name": "Highland Ridge Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      43.637199,
+      -103.451373
+     ],
+     "from": "road",
+     "name": "Highland Ridge Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
    "pins_inside": {
     "US-0068": true,
     "US-2917": true
    },
-   "places": 2,
    "refs": [
     "US-0068",
     "US-2917"
@@ -1139,10 +1553,21 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 115
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     43.637199,
+     -103.451373
+    ],
+    "from": "road",
+    "name": "Highland Ridge Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 47.2,
    "box": [
     -103.48059,
@@ -1154,9 +1579,15 @@
     43.636421,
     -103.449122
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Park Service"
+   ],
    "id": "US-0068+US-2917@area@43.637,-103.450",
+   "info": {
+    "water_pct": 0
+   },
    "kind": "area",
    "lines": {
     "US-0068": [
@@ -1280,11 +1711,22 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0068": "downloaded 2026-10-28",
-    "US-2917": "downloaded 2026-10-28"
+    "US-0068": "downloaded 2026-10-30",
+    "US-2917": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-0068",
+     "https://www.nps.gov/wica/planyourvisit/maps.htm"
+    ],
+    [
+     "US-2917",
+     "https://gfp.sd.gov/parks/detail/custer-state-park/"
+    ]
+   ],
    "names": {
     "US-0068": "Wind Cave National Park",
     "US-2917": "Custer State Park"
@@ -1292,6 +1734,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (Park Service)",
    "passes": [
     1,
     1,
@@ -1351,10 +1794,21 @@
      43.640491
     ]
    ],
-   "status": "merged into one row: US-0068+US-2917@area@43.629,-103.397 (the same not-sure pair, shown once)",
+   "status": "merged into one row: US-0068+US-2917@area@43.629,-103.397",
    "wide_m": 115
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.771184,
+     -97.006311
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 110.7,
    "box": [
     -97.01037,
@@ -1366,8 +1820,11 @@
     42.769594,
     -97.006756
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state"
+   ],
    "id": "US-0675+US-10341@area@42.770,-97.007",
    "info": {
     "water_pct": 1
@@ -1607,12 +2064,22 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0675": "downloaded 2026-10-28",
-    "US-10341": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+    "US-0675": "downloaded 2026-10-30",
+    "US-10341": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-0675",
+     "https://www.nps.gov/mnrr/planyourvisit/maps.htm"
+    ],
+    [
+     "US-10341",
+     "https://gfp.sd.gov/lakeside-use-areas/"
+    ]
+   ],
    "names": {
     "US-0675": "Missouri National Recreational River National Wild & Scenic River",
     "US-10341": "Clay County State Recreation Area"
@@ -1620,6 +2087,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state)",
    "passes": [
     1,
     1,
@@ -1684,10 +2152,21 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 595
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     43.065165,
+     -98.540924
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 61.5,
    "box": [
     -98.54538,
@@ -1699,8 +2178,11 @@
     43.055295,
     -98.541941
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state"
+   ],
    "id": "US-0675+US-10372@area@43.054,-98.541",
    "info": {
     "water_pct": 4
@@ -2206,12 +2688,22 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0675": "downloaded 2026-10-28",
-    "US-10372": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+    "US-0675": "downloaded 2026-10-30",
+    "US-10372": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-0675",
+     "https://www.nps.gov/mnrr/planyourvisit/maps.htm"
+    ],
+    [
+     "US-10372",
+     "https://gfp.sd.gov/lakeside-use-areas/"
+    ]
+   ],
    "names": {
     "US-0675": "Missouri National Recreational River National Wild & Scenic River",
     "US-10372": "Spillway (Ft. Randall) State Recreation Area"
@@ -2219,6 +2711,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state)",
    "passes": [
     1,
     1,
@@ -2439,10 +2932,21 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 273
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.88101,
+     -96.961705
+    ],
+    "from": "road",
+    "name": "462nd Ave",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 306.9,
    "box": [
     -96.96408,
@@ -2454,8 +2958,11 @@
     42.87747,
     -96.959361
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state"
+   ],
    "id": "US-0675+US-5645@area@42.877,-96.959",
    "info": {
     "water_pct": 0
@@ -2537,12 +3044,22 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0675": "downloaded 2026-10-28",
-    "US-5645": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+    "US-0675": "downloaded 2026-10-30",
+    "US-5645": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-0675",
+     "https://www.nps.gov/mnrr/planyourvisit/maps.htm"
+    ],
+    [
+     "US-5645",
+     "https://gfp.sd.gov/parks/detail/spirit-mound-historic-prairie/"
+    ]
+   ],
    "names": {
     "US-0675": "Missouri National Recreational River National Wild & Scenic River",
     "US-5645": "Spirit Mound Historic Prairie State Park"
@@ -2550,6 +3067,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state)",
    "passes": [
     1,
     1,
@@ -2582,7 +3100,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 775
   },
   {
@@ -2597,7 +3115,7 @@
     42.850008,
     -97.458598
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0675+US-8161+US-8174@area@42.850,-97.458",
    "kind": "area",
    "passes": [
@@ -2624,7 +3142,7 @@
      42.848652
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -2640,7 +3158,7 @@
     42.850008,
     -97.458598
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0675+US-8161+US-8174@area@42.850,-97.459",
    "kind": "area",
    "passes": [
@@ -2667,7 +3185,7 @@
      42.848652
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -2683,7 +3201,7 @@
     42.850075,
     -97.458592
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0675+US-8161@area@42.850,-97.458",
    "kind": "area",
    "passes": [
@@ -2713,12 +3231,24 @@
      42.8489
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.844368,
+     -98.172011
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 4521.3,
+   "acres_all": 4830.6,
    "box": [
     -98.21124,
     42.76218,
@@ -2729,8 +3259,12 @@
     42.772631,
     -98.025837
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state",
+    "unk"
+   ],
    "id": "US-0675+US-8174@area@42.772,-98.025",
    "info": {
     "water_pct": 58
@@ -12406,12 +12940,26 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0675": "downloaded 2026-10-28",
-    "US-8174": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+    "US-0675": "downloaded 2026-10-30",
+    "US-8174": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-0675",
+     "https://www.nps.gov/mnrr/planyourvisit/maps.htm"
+    ],
+    [
+     "US-8174",
+     "https://gfp.sd.gov/parks/detail/lewis-and-clark-recreation-area/"
+    ]
+   ],
+   "mixed_owners": [
+    "STATE",
+    "UNK"
+   ],
    "names": {
     "US-0675": "Missouri National Recreational River National Wild & Scenic River",
     "US-8174": "Lewis and Clark State Recreation Area"
@@ -12419,16 +12967,39 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state + unk)",
    "passes": [
     1,
     1,
     1
    ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      42.844368,
+      -98.172011
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      42.848835,
+      -97.456405
+     ],
+     "from": "road",
+     "name": "S Deer Blvd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
    "pins_inside": {
     "US-0675": true,
     "US-8174": true
    },
-   "places": 2,
    "refs": [
     "US-0675",
     "US-8174"
@@ -13364,10 +13935,21 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 2033
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.848835,
+     -97.456405
+    ],
+    "from": "road",
+    "name": "S Deer Blvd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 309.3,
    "box": [
     -97.45994,
@@ -13379,9 +13961,15 @@
     42.866098,
     -97.398523
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "unk"
+   ],
    "id": "US-0675+US-8174@area@42.869,-97.410",
+   "info": {
+    "water_pct": 89
+   },
    "kind": "area",
    "lines": {
     "US-0675": [
@@ -14023,11 +14611,22 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0675": "downloaded 2026-10-28",
-    "US-8174": "downloaded 2026-10-28"
+    "US-0675": "downloaded 2026-10-30",
+    "US-8174": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-0675",
+     "https://www.nps.gov/mnrr/planyourvisit/maps.htm"
+    ],
+    [
+     "US-8174",
+     "https://gfp.sd.gov/parks/detail/lewis-and-clark-recreation-area/"
+    ]
+   ],
    "names": {
     "US-0675": "Missouri National Recreational River National Wild & Scenic River",
     "US-8174": "Lewis and Clark State Recreation Area"
@@ -14035,6 +14634,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (unk)",
    "passes": [
     1,
     1,
@@ -14318,10 +14918,21 @@
      42.864244
     ]
    ],
-   "status": "merged into one row: US-0675+US-8174@area@42.772,-98.025 (the same not-sure pair, shown once)",
+   "status": "merged into one row: US-0675+US-8174@area@42.772,-98.025",
    "wide_m": 291
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     43.056795,
+     -98.555685
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 184.1,
    "box": [
     -98.55854,
@@ -14333,8 +14944,11 @@
     43.051084,
     -98.55258
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state"
+   ],
    "id": "US-0675+US-8187@area@43.051,-98.553",
    "info": {
     "water_pct": 2
@@ -15722,12 +16336,22 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-0675": "downloaded 2026-10-28",
-    "US-8187": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+    "US-0675": "downloaded 2026-10-30",
+    "US-8187": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-0675",
+     "https://www.nps.gov/mnrr/planyourvisit/maps.htm"
+    ],
+    [
+     "US-8187",
+     "https://gfp.sd.gov/parks/detail/randall-creek-recreation-area/"
+    ]
+   ],
    "names": {
     "US-0675": "Missouri National Recreational River National Wild & Scenic River",
     "US-8187": "Randall Creek State Recreation Area"
@@ -15735,6 +16359,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state)",
    "passes": [
     1,
     1,
@@ -15943,7 +16568,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 442
   },
   {
@@ -15958,193 +16583,7 @@
     43.846288,
     -101.901967
    ],
-   "found": "2026-10-28",
-   "id": "US-0850+US-7487@area@43.844,-101.895",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "US-0850",
-    "US-7487"
-   ],
-   "shape": [
-    [
-     -101.902091,
-     43.842761
-    ],
-    [
-     -101.901842,
-     43.846288
-    ],
-    [
-     -101.899848,
-     43.846288
-    ],
-    [
-     -101.899723,
-     43.845474
-    ],
-    [
-     -101.895111,
-     43.845474
-    ],
-    [
-     -101.899598,
-     43.845474
-    ],
-    [
-     -101.899723,
-     43.846378
-    ],
-    [
-     -101.902091,
-     43.846378
-    ]
-   ],
-   "status": "dropped in pass 3",
-   "tier": "very tight: could be map error: check both official maps on the ground",
-   "wide_m": 18
-  },
-  {
-   "acres": 5.5,
-   "box": [
-    -101.90209,
-    43.84267,
-    -101.89511,
-    43.84638
-   ],
-   "center": [
-    43.846288,
-    -101.901967
-   ],
-   "found": "2026-10-28",
-   "id": "US-0850+US-7487@area@43.845,-101.896",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "US-0850",
-    "US-7487"
-   ],
-   "shape": [
-    [
-     -101.902091,
-     43.842761
-    ],
-    [
-     -101.901842,
-     43.846288
-    ],
-    [
-     -101.899848,
-     43.846288
-    ],
-    [
-     -101.899723,
-     43.845474
-    ],
-    [
-     -101.895111,
-     43.845474
-    ],
-    [
-     -101.899598,
-     43.845474
-    ],
-    [
-     -101.899723,
-     43.846378
-    ],
-    [
-     -101.902091,
-     43.846378
-    ]
-   ],
-   "status": "dropped in pass 3",
-   "tier": "very tight: could be map error: check both official maps on the ground",
-   "wide_m": 18
-  },
-  {
-   "acres": 5.5,
-   "box": [
-    -101.90209,
-    43.84267,
-    -101.89511,
-    43.84638
-   ],
-   "center": [
-    43.846288,
-    -101.901967
-   ],
-   "found": "2026-10-28",
-   "id": "US-0850+US-7487@area@43.845,-101.897",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "US-0850",
-    "US-7487"
-   ],
-   "shape": [
-    [
-     -101.902091,
-     43.842761
-    ],
-    [
-     -101.901842,
-     43.846288
-    ],
-    [
-     -101.899848,
-     43.846288
-    ],
-    [
-     -101.899723,
-     43.845474
-    ],
-    [
-     -101.895111,
-     43.845474
-    ],
-    [
-     -101.899598,
-     43.845474
-    ],
-    [
-     -101.899723,
-     43.846378
-    ],
-    [
-     -101.902091,
-     43.846378
-    ]
-   ],
-   "status": "dropped in pass 3",
-   "tier": "very tight: could be map error: check both official maps on the ground",
-   "wide_m": 18
-  },
-  {
-   "acres": 5.5,
-   "box": [
-    -101.90209,
-    43.84267,
-    -101.89511,
-    43.84638
-   ],
-   "center": [
-    43.846288,
-    -101.901967
-   ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0850+US-7487@area@43.846,-101.902",
    "kind": "area",
    "passes": [
@@ -16190,7 +16629,7 @@
      43.846378
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -16206,7 +16645,7 @@
     43.930847,
     -102.160104
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-0850+US-7487@area@43.932,-102.160",
    "kind": "area",
    "passes": [
@@ -16236,7 +16675,7 @@
      43.930937
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -16252,7 +16691,7 @@
     45.731379,
     -102.235532
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-10329+US-7489+US-8192@area@45.731,-102.236",
    "kind": "area",
    "passes": [
@@ -16275,7 +16714,7 @@
      45.730022
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -16291,7 +16730,7 @@
     45.727647,
     -102.235616
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-10329+US-7489@area@45.728,-102.236",
    "kind": "area",
    "passes": [
@@ -16321,7 +16760,7 @@
      45.725929
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -16337,7 +16776,7 @@
     45.732169,
     -102.235616
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-10329+US-7489@area@45.732,-102.236",
    "kind": "area",
    "passes": [
@@ -16359,12 +16798,24 @@
      45.732078
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     45.739567,
+     -102.218111
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 0.8,
+   "acres_all": 2.4,
    "box": [
     -102.21917,
     45.74503,
@@ -16375,8 +16826,11 @@
     45.746118,
     -102.218463
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state"
+   ],
    "id": "US-10329+US-8192@area@45.725,-102.246",
    "info": {
     "water_pct": 43
@@ -16956,13 +17410,23 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-10329": "downloaded 2026-10-28",
-    "US-8192": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+    "US-10329": "downloaded 2026-10-30",
+    "US-8192": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-10329",
+     "https://gfp.sd.gov/lakeside-use-areas/"
+    ],
+    [
+     "US-8192",
+     "https://gfp.sd.gov/parks/detail/shadehill-recreation-area/"
+    ]
+   ],
    "names": {
     "US-10329": "Hugh Glass State Recreation Area",
     "US-8192": "Shadehill State Recreation Area"
@@ -16970,16 +17434,49 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state)",
    "passes": [
     1,
     1,
     1
    ],
+   "patches": 3,
+   "pins": [
+    {
+     "at": [
+      45.739567,
+      -102.218111
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      45.739567,
+      -102.218111
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      45.739567,
+      -102.218111
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
    "pins_inside": {
     "US-10329": true,
     "US-8192": true
    },
-   "places": 3,
    "refs": [
     "US-10329",
     "US-8192"
@@ -17056,10 +17553,21 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 31
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     45.739567,
+     -102.218111
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 0.8,
    "box": [
     -102.21917,
@@ -17071,9 +17579,15 @@
     45.746118,
     -102.218463
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state"
+   ],
    "id": "US-10329+US-8192@area@45.746,-102.218",
+   "info": {
+    "water_pct": 43
+   },
    "kind": "area",
    "lines": {
     "US-10329": [
@@ -17649,11 +18163,23 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-10329": "downloaded 2026-10-28",
-    "US-8192": "downloaded 2026-10-28"
+    "US-10329": "downloaded 2026-10-30",
+    "US-8192": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-10329",
+     "https://gfp.sd.gov/lakeside-use-areas/"
+    ],
+    [
+     "US-8192",
+     "https://gfp.sd.gov/parks/detail/shadehill-recreation-area/"
+    ]
+   ],
    "names": {
     "US-10329": "Hugh Glass State Recreation Area",
     "US-8192": "Shadehill State Recreation Area"
@@ -17661,6 +18187,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state)",
    "passes": [
     1,
     1,
@@ -17744,696 +18271,7 @@
      45.746434
     ]
    ],
-   "status": "merged into one row: US-10329+US-8192@area@45.725,-102.246 (the same not-sure pair, shown once)",
-   "tier": "very tight: could be map error: check both official maps on the ground",
-   "wide_m": 31
-  },
-  {
-   "acres": 0.8,
-   "box": [
-    -102.21917,
-    45.74503,
-    -102.21821,
-    45.74643
-   ],
-   "center": [
-    45.746118,
-    -102.218463
-   ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
-   "id": "US-10329+US-8192@area@45.747,-102.239",
-   "kind": "area",
-   "lines": {
-    "US-10329": [
-     [
-      [
-       -102.218396,
-       45.745696
-      ],
-      [
-       -102.218364,
-       45.745008
-      ],
-      [
-       -102.218749,
-       45.74523
-      ],
-      [
-       -102.218804,
-       45.745525
-      ],
-      [
-       -102.218893,
-       45.745625
-      ],
-      [
-       -102.219031,
-       45.745661
-      ],
-      [
-       -102.219163,
-       45.745811
-      ],
-      [
-       -102.219226,
-       45.74596
-      ],
-      [
-       -102.21905,
-       45.746216
-      ],
-      [
-       -102.218666,
-       45.746436
-      ],
-      [
-       -102.218524,
-       45.746452
-      ],
-      [
-       -102.218668,
-       45.746419
-      ],
-      [
-       -102.2187,
-       45.7461
-      ],
-      [
-       -102.218505,
-       45.745893
-      ],
-      [
-       -102.218396,
-       45.745696
-      ]
-     ],
-     [
-      [
-       -102.220222,
-       45.747802
-      ],
-      [
-       -102.220157,
-       45.747005
-      ],
-      [
-       -102.220087,
-       45.746564
-      ],
-      [
-       -102.220067,
-       45.745923
-      ],
-      [
-       -102.220022,
-       45.745775
-      ],
-      [
-       -102.219602,
-       45.745545
-      ],
-      [
-       -102.219267,
-       45.745446
-      ],
-      [
-       -102.21913,
-       45.745324
-      ],
-      [
-       -102.219045,
-       45.745193
-      ],
-      [
-       -102.219017,
-       45.745017
-      ],
-      [
-       -102.218487,
-       45.74488
-      ],
-      [
-       -102.218542,
-       45.744702
-      ],
-      [
-       -102.218527,
-       45.744539
-      ],
-      [
-       -102.218323,
-       45.744419
-      ],
-      [
-       -102.218133,
-       45.739369
-      ]
-     ],
-     [
-      [
-       -102.220222,
-       45.747802
-      ],
-      [
-       -102.220157,
-       45.747005
-      ],
-      [
-       -102.220087,
-       45.746564
-      ],
-      [
-       -102.220067,
-       45.745923
-      ],
-      [
-       -102.220022,
-       45.745775
-      ],
-      [
-       -102.219602,
-       45.745545
-      ],
-      [
-       -102.219267,
-       45.745446
-      ],
-      [
-       -102.21913,
-       45.745324
-      ],
-      [
-       -102.219045,
-       45.745193
-      ],
-      [
-       -102.219017,
-       45.745017
-      ],
-      [
-       -102.218487,
-       45.74488
-      ],
-      [
-       -102.218542,
-       45.744702
-      ],
-      [
-       -102.218527,
-       45.744539
-      ],
-      [
-       -102.218204,
-       45.744291
-      ],
-      [
-       -102.217948,
-       45.739451
-      ]
-     ],
-     [
-      [
-       -102.218301,
-       45.746359
-      ],
-      [
-       -102.218236,
-       45.744967
-      ],
-      [
-       -102.218364,
-       45.745008
-      ],
-      [
-       -102.218492,
-       45.745134
-      ],
-      [
-       -102.218582,
-       45.745155
-      ],
-      [
-       -102.218682,
-       45.74525
-      ],
-      [
-       -102.218732,
-       45.745413
-      ],
-      [
-       -102.218744,
-       45.745613
-      ],
-      [
-       -102.2188,
-       45.745702
-      ],
-      [
-       -102.218892,
-       45.745752
-      ],
-      [
-       -102.218944,
-       45.745893
-      ],
-      [
-       -102.21894,
-       45.746122
-      ],
-      [
-       -102.21879,
-       45.74624
-      ],
-      [
-       -102.218632,
-       45.746257
-      ],
-      [
-       -102.218374,
-       45.746388
-      ],
-      [
-       -102.218301,
-       45.746359
-      ]
-     ],
-     [
-      [
-       -102.220222,
-       45.747802
-      ],
-      [
-       -102.220157,
-       45.747005
-      ],
-      [
-       -102.220087,
-       45.746564
-      ],
-      [
-       -102.220067,
-       45.745923
-      ],
-      [
-       -102.220022,
-       45.745775
-      ],
-      [
-       -102.219602,
-       45.745545
-      ],
-      [
-       -102.219267,
-       45.745446
-      ],
-      [
-       -102.21913,
-       45.745324
-      ],
-      [
-       -102.219045,
-       45.745193
-      ],
-      [
-       -102.219017,
-       45.745017
-      ],
-      [
-       -102.218487,
-       45.74488
-      ],
-      [
-       -102.218542,
-       45.744702
-      ],
-      [
-       -102.218527,
-       45.744539
-      ],
-      [
-       -102.218204,
-       45.744291
-      ],
-      [
-       -102.217948,
-       45.739451
-      ]
-     ],
-     [
-      [
-       -102.218301,
-       45.746359
-      ],
-      [
-       -102.218236,
-       45.744967
-      ],
-      [
-       -102.218364,
-       45.745008
-      ],
-      [
-       -102.218492,
-       45.745134
-      ],
-      [
-       -102.218582,
-       45.745155
-      ],
-      [
-       -102.218682,
-       45.74525
-      ],
-      [
-       -102.218732,
-       45.745413
-      ],
-      [
-       -102.218744,
-       45.745613
-      ],
-      [
-       -102.2188,
-       45.745702
-      ],
-      [
-       -102.218892,
-       45.745752
-      ],
-      [
-       -102.218944,
-       45.745893
-      ],
-      [
-       -102.21894,
-       45.746122
-      ],
-      [
-       -102.21879,
-       45.74624
-      ],
-      [
-       -102.218632,
-       45.746257
-      ],
-      [
-       -102.218374,
-       45.746388
-      ],
-      [
-       -102.218301,
-       45.746359
-      ]
-     ]
-    ],
-    "US-8192": [
-     [
-      [
-       -102.218133,
-       45.739369
-      ],
-      [
-       -102.218323,
-       45.744419
-      ],
-      [
-       -102.218241,
-       45.744407
-      ],
-      [
-       -102.218045,
-       45.74427
-      ],
-      [
-       -102.217686,
-       45.744271
-      ],
-      [
-       -102.217883,
-       45.744932
-      ],
-      [
-       -102.217948,
-       45.744979
-      ],
-      [
-       -102.218047,
-       45.745184
-      ],
-      [
-       -102.218505,
-       45.745893
-      ],
-      [
-       -102.2187,
-       45.7461
-      ],
-      [
-       -102.218668,
-       45.746419
-      ],
-      [
-       -102.218277,
-       45.746508
-      ],
-      [
-       -102.217951,
-       45.746509
-      ],
-      [
-       -102.217428,
-       45.746281
-      ],
-      [
-       -102.216677,
-       45.745871
-      ],
-      [
-       -102.21573,
-       45.745578
-      ]
-     ],
-     [
-      [
-       -102.21573,
-       45.745578
-      ],
-      [
-       -102.216677,
-       45.745871
-      ],
-      [
-       -102.217428,
-       45.746281
-      ],
-      [
-       -102.217951,
-       45.746509
-      ],
-      [
-       -102.218277,
-       45.746508
-      ],
-      [
-       -102.218666,
-       45.746436
-      ],
-      [
-       -102.21905,
-       45.746216
-      ],
-      [
-       -102.219226,
-       45.74596
-      ],
-      [
-       -102.219163,
-       45.745811
-      ],
-      [
-       -102.219031,
-       45.745661
-      ],
-      [
-       -102.218893,
-       45.745625
-      ],
-      [
-       -102.218804,
-       45.745525
-      ],
-      [
-       -102.218749,
-       45.74523
-      ],
-      [
-       -102.218435,
-       45.745048
-      ],
-      [
-       -102.218367,
-       45.744906
-      ],
-      [
-       -102.218302,
-       45.744859
-      ],
-      [
-       -102.218148,
-       45.744342
-      ],
-      [
-       -102.218527,
-       45.744539
-      ],
-      [
-       -102.218542,
-       45.744702
-      ],
-      [
-       -102.218487,
-       45.74488
-      ],
-      [
-       -102.219017,
-       45.745017
-      ],
-      [
-       -102.219045,
-       45.745193
-      ],
-      [
-       -102.21913,
-       45.745324
-      ],
-      [
-       -102.219267,
-       45.745446
-      ],
-      [
-       -102.219602,
-       45.745545
-      ],
-      [
-       -102.220022,
-       45.745775
-      ],
-      [
-       -102.220067,
-       45.745923
-      ],
-      [
-       -102.220087,
-       45.746564
-      ],
-      [
-       -102.220157,
-       45.747005
-      ],
-      [
-       -102.220222,
-       45.747802
-      ]
-     ]
-    ]
-   },
-   "lines_read": "2026-10-29",
-   "map_dates": {
-    "US-10329": "downloaded 2026-10-28",
-    "US-8192": "downloaded 2026-10-28"
-   },
-   "names": {
-    "US-10329": "Hugh Glass State Recreation Area",
-    "US-8192": "Shadehill State Recreation Area"
-   },
-   "notes": [
-    "check the agency's closures and seasons before you go"
-   ],
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-10329": true,
-    "US-8192": true
-   },
-   "refs": [
-    "US-10329",
-    "US-8192"
-   ],
-   "shape": [
-    [
-     -102.218656,
-     45.746434
-    ],
-    [
-     -102.219042,
-     45.746208
-    ],
-    [
-     -102.219171,
-     45.745892
-    ],
-    [
-     -102.218785,
-     45.74553
-    ],
-    [
-     -102.218721,
-     45.745213
-    ],
-    [
-     -102.218399,
-     45.745033
-    ],
-    [
-     -102.218721,
-     45.745213
-    ],
-    [
-     -102.218785,
-     45.74553
-    ],
-    [
-     -102.219171,
-     45.745892
-    ],
-    [
-     -102.219042,
-     45.746208
-    ],
-    [
-     -102.218721,
-     45.746389
-    ],
-    [
-     -102.218656,
-     45.746073
-    ],
-    [
-     -102.218206,
-     45.74544
-    ],
-    [
-     -102.21827,
-     45.746344
-    ],
-    [
-     -102.218592,
-     45.746253
-    ],
-    [
-     -102.218656,
-     45.746344
-    ],
-    [
-     -102.218463,
-     45.746434
-    ]
-   ],
-   "status": "merged into one row: US-10329+US-8192@area@45.725,-102.246 (the same not-sure pair, shown once)",
+   "status": "merged into one row: US-10329+US-8192@area@45.725,-102.246",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 31
   },
@@ -18441,441 +18279,720 @@
    "access": null,
    "access_pin": {
     "at": [
-     43.284118,
-     -103.456711
+     45.739567,
+     -102.218111
     ],
     "from": "road",
-    "name": "Co Rd 6d",
+    "name": "public road",
     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
     "walk_m": 0
    },
+   "acres": 0.8,
    "box": [
-    -103.56157,
-    43.27069,
-    -103.36178,
-    43.35041
+    -102.21917,
+    45.74503,
+    -102.21821,
+    45.74643
    ],
    "center": [
-    43.303769,
-    -103.441254
+    45.746118,
+    -102.218463
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-28",
-   "id": "US-10331+US-8155@same land@43.304,-103.441",
-   "kind": "same land",
-   "label": "Same land, two park numbers",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state"
+   ],
+   "id": "US-10329+US-8192@area@45.747,-102.239",
+   "info": {
+    "water_pct": 43
+   },
+   "kind": "area",
+   "lines": {
+    "US-10329": [
+     [
+      [
+       -102.218396,
+       45.745696
+      ],
+      [
+       -102.218364,
+       45.745008
+      ],
+      [
+       -102.218749,
+       45.74523
+      ],
+      [
+       -102.218804,
+       45.745525
+      ],
+      [
+       -102.218893,
+       45.745625
+      ],
+      [
+       -102.219031,
+       45.745661
+      ],
+      [
+       -102.219163,
+       45.745811
+      ],
+      [
+       -102.219226,
+       45.74596
+      ],
+      [
+       -102.21905,
+       45.746216
+      ],
+      [
+       -102.218666,
+       45.746436
+      ],
+      [
+       -102.218524,
+       45.746452
+      ],
+      [
+       -102.218668,
+       45.746419
+      ],
+      [
+       -102.2187,
+       45.7461
+      ],
+      [
+       -102.218505,
+       45.745893
+      ],
+      [
+       -102.218396,
+       45.745696
+      ]
+     ],
+     [
+      [
+       -102.220222,
+       45.747802
+      ],
+      [
+       -102.220157,
+       45.747005
+      ],
+      [
+       -102.220087,
+       45.746564
+      ],
+      [
+       -102.220067,
+       45.745923
+      ],
+      [
+       -102.220022,
+       45.745775
+      ],
+      [
+       -102.219602,
+       45.745545
+      ],
+      [
+       -102.219267,
+       45.745446
+      ],
+      [
+       -102.21913,
+       45.745324
+      ],
+      [
+       -102.219045,
+       45.745193
+      ],
+      [
+       -102.219017,
+       45.745017
+      ],
+      [
+       -102.218487,
+       45.74488
+      ],
+      [
+       -102.218542,
+       45.744702
+      ],
+      [
+       -102.218527,
+       45.744539
+      ],
+      [
+       -102.218323,
+       45.744419
+      ],
+      [
+       -102.218133,
+       45.739369
+      ]
+     ],
+     [
+      [
+       -102.220222,
+       45.747802
+      ],
+      [
+       -102.220157,
+       45.747005
+      ],
+      [
+       -102.220087,
+       45.746564
+      ],
+      [
+       -102.220067,
+       45.745923
+      ],
+      [
+       -102.220022,
+       45.745775
+      ],
+      [
+       -102.219602,
+       45.745545
+      ],
+      [
+       -102.219267,
+       45.745446
+      ],
+      [
+       -102.21913,
+       45.745324
+      ],
+      [
+       -102.219045,
+       45.745193
+      ],
+      [
+       -102.219017,
+       45.745017
+      ],
+      [
+       -102.218487,
+       45.74488
+      ],
+      [
+       -102.218542,
+       45.744702
+      ],
+      [
+       -102.218527,
+       45.744539
+      ],
+      [
+       -102.218204,
+       45.744291
+      ],
+      [
+       -102.217948,
+       45.739451
+      ]
+     ],
+     [
+      [
+       -102.218301,
+       45.746359
+      ],
+      [
+       -102.218236,
+       45.744967
+      ],
+      [
+       -102.218364,
+       45.745008
+      ],
+      [
+       -102.218492,
+       45.745134
+      ],
+      [
+       -102.218582,
+       45.745155
+      ],
+      [
+       -102.218682,
+       45.74525
+      ],
+      [
+       -102.218732,
+       45.745413
+      ],
+      [
+       -102.218744,
+       45.745613
+      ],
+      [
+       -102.2188,
+       45.745702
+      ],
+      [
+       -102.218892,
+       45.745752
+      ],
+      [
+       -102.218944,
+       45.745893
+      ],
+      [
+       -102.21894,
+       45.746122
+      ],
+      [
+       -102.21879,
+       45.74624
+      ],
+      [
+       -102.218632,
+       45.746257
+      ],
+      [
+       -102.218374,
+       45.746388
+      ],
+      [
+       -102.218301,
+       45.746359
+      ]
+     ],
+     [
+      [
+       -102.220222,
+       45.747802
+      ],
+      [
+       -102.220157,
+       45.747005
+      ],
+      [
+       -102.220087,
+       45.746564
+      ],
+      [
+       -102.220067,
+       45.745923
+      ],
+      [
+       -102.220022,
+       45.745775
+      ],
+      [
+       -102.219602,
+       45.745545
+      ],
+      [
+       -102.219267,
+       45.745446
+      ],
+      [
+       -102.21913,
+       45.745324
+      ],
+      [
+       -102.219045,
+       45.745193
+      ],
+      [
+       -102.219017,
+       45.745017
+      ],
+      [
+       -102.218487,
+       45.74488
+      ],
+      [
+       -102.218542,
+       45.744702
+      ],
+      [
+       -102.218527,
+       45.744539
+      ],
+      [
+       -102.218204,
+       45.744291
+      ],
+      [
+       -102.217948,
+       45.739451
+      ]
+     ],
+     [
+      [
+       -102.218301,
+       45.746359
+      ],
+      [
+       -102.218236,
+       45.744967
+      ],
+      [
+       -102.218364,
+       45.745008
+      ],
+      [
+       -102.218492,
+       45.745134
+      ],
+      [
+       -102.218582,
+       45.745155
+      ],
+      [
+       -102.218682,
+       45.74525
+      ],
+      [
+       -102.218732,
+       45.745413
+      ],
+      [
+       -102.218744,
+       45.745613
+      ],
+      [
+       -102.2188,
+       45.745702
+      ],
+      [
+       -102.218892,
+       45.745752
+      ],
+      [
+       -102.218944,
+       45.745893
+      ],
+      [
+       -102.21894,
+       45.746122
+      ],
+      [
+       -102.21879,
+       45.74624
+      ],
+      [
+       -102.218632,
+       45.746257
+      ],
+      [
+       -102.218374,
+       45.746388
+      ],
+      [
+       -102.218301,
+       45.746359
+      ]
+     ]
+    ],
+    "US-8192": [
+     [
+      [
+       -102.218133,
+       45.739369
+      ],
+      [
+       -102.218323,
+       45.744419
+      ],
+      [
+       -102.218241,
+       45.744407
+      ],
+      [
+       -102.218045,
+       45.74427
+      ],
+      [
+       -102.217686,
+       45.744271
+      ],
+      [
+       -102.217883,
+       45.744932
+      ],
+      [
+       -102.217948,
+       45.744979
+      ],
+      [
+       -102.218047,
+       45.745184
+      ],
+      [
+       -102.218505,
+       45.745893
+      ],
+      [
+       -102.2187,
+       45.7461
+      ],
+      [
+       -102.218668,
+       45.746419
+      ],
+      [
+       -102.218277,
+       45.746508
+      ],
+      [
+       -102.217951,
+       45.746509
+      ],
+      [
+       -102.217428,
+       45.746281
+      ],
+      [
+       -102.216677,
+       45.745871
+      ],
+      [
+       -102.21573,
+       45.745578
+      ]
+     ],
+     [
+      [
+       -102.21573,
+       45.745578
+      ],
+      [
+       -102.216677,
+       45.745871
+      ],
+      [
+       -102.217428,
+       45.746281
+      ],
+      [
+       -102.217951,
+       45.746509
+      ],
+      [
+       -102.218277,
+       45.746508
+      ],
+      [
+       -102.218666,
+       45.746436
+      ],
+      [
+       -102.21905,
+       45.746216
+      ],
+      [
+       -102.219226,
+       45.74596
+      ],
+      [
+       -102.219163,
+       45.745811
+      ],
+      [
+       -102.219031,
+       45.745661
+      ],
+      [
+       -102.218893,
+       45.745625
+      ],
+      [
+       -102.218804,
+       45.745525
+      ],
+      [
+       -102.218749,
+       45.74523
+      ],
+      [
+       -102.218435,
+       45.745048
+      ],
+      [
+       -102.218367,
+       45.744906
+      ],
+      [
+       -102.218302,
+       45.744859
+      ],
+      [
+       -102.218148,
+       45.744342
+      ],
+      [
+       -102.218527,
+       45.744539
+      ],
+      [
+       -102.218542,
+       45.744702
+      ],
+      [
+       -102.218487,
+       45.74488
+      ],
+      [
+       -102.219017,
+       45.745017
+      ],
+      [
+       -102.219045,
+       45.745193
+      ],
+      [
+       -102.21913,
+       45.745324
+      ],
+      [
+       -102.219267,
+       45.745446
+      ],
+      [
+       -102.219602,
+       45.745545
+      ],
+      [
+       -102.220022,
+       45.745775
+      ],
+      [
+       -102.220067,
+       45.745923
+      ],
+      [
+       -102.220087,
+       45.746564
+      ],
+      [
+       -102.220157,
+       45.747005
+      ],
+      [
+       -102.220222,
+       45.747802
+      ]
+     ]
+    ]
+   },
+   "lines_read": "2026-10-30",
+   "list": "Very tight (members only)",
+   "map_dates": {
+    "US-10329": "downloaded 2026-10-30",
+    "US-8192": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
+   },
    "maps": [
     [
-     "US-10331",
+     "US-10329",
      "https://gfp.sd.gov/lakeside-use-areas/"
     ],
     [
-     "US-8155",
-     "https://gfp.sd.gov/parks/detail/angostura-recreation-area/"
+     "US-8192",
+     "https://gfp.sd.gov/parks/detail/shadehill-recreation-area/"
     ]
    ],
    "names": {
-    "US-10331": "Bailey State Recreation Area",
-    "US-8155": "Angostura State Recreation Area"
+    "US-10329": "Hugh Glass State Recreation Area",
+    "US-8192": "Shadehill State Recreation Area"
    },
-   "note": "both park numbers are joined to the same official outline (Bailey (s. Angostura) Recreation Area); POTA lists them separately: check POTA's current list",
-   "owner_here": "state land (from the outline both numbers are joined to)",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (state)",
    "passes": [
     1,
     1,
     1
    ],
+   "pins_inside": {
+    "US-10329": true,
+    "US-8192": true
+   },
    "refs": [
-    "US-10331",
-    "US-8155"
+    "US-10329",
+    "US-8192"
    ],
    "shape": [
     [
-     -103.368161,
-     43.28121
+     -102.218656,
+     45.746434
     ],
     [
-     -103.373543,
-     43.276968
+     -102.219042,
+     45.746208
     ],
     [
-     -103.37724,
-     43.281318
+     -102.219171,
+     45.745892
     ],
     [
-     -103.386943,
-     43.28523
+     -102.218785,
+     45.74553
     ],
     [
-     -103.384159,
-     43.286989
+     -102.218721,
+     45.745213
     ],
     [
-     -103.391572,
-     43.28967
+     -102.218399,
+     45.745033
     ],
     [
-     -103.400182,
-     43.295341
+     -102.218721,
+     45.745213
     ],
     [
-     -103.402879,
-     43.298741
+     -102.218785,
+     45.74553
     ],
     [
-     -103.407168,
-     43.301739
+     -102.219171,
+     45.745892
     ],
     [
-     -103.411458,
-     43.30627
+     -102.219042,
+     45.746208
     ],
     [
-     -103.415001,
-     43.301739
+     -102.218721,
+     45.746389
     ],
     [
-     -103.412902,
-     43.299089
+     -102.218656,
+     45.746073
     ],
     [
-     -103.422222,
-     43.289679
+     -102.218206,
+     45.74544
     ],
     [
-     -103.443009,
-     43.291181
+     -102.21827,
+     45.746344
     ],
     [
-     -103.441343,
-     43.285049
+     -102.218592,
+     45.746253
     ],
     [
-     -103.43764,
-     43.282381
+     -102.218656,
+     45.746344
     ],
     [
-     -103.436418,
-     43.28069
-    ],
-    [
-     -103.4378,
-     43.277479
-    ],
-    [
-     -103.435189,
-     43.272921
-    ],
-    [
-     -103.435541,
-     43.270692
-    ],
-    [
-     -103.43785,
-     43.272939
-    ],
-    [
-     -103.440053,
-     43.275381
-    ],
-    [
-     -103.44304,
-     43.277999
-    ],
-    [
-     -103.445898,
-     43.281309
-    ],
-    [
-     -103.457193,
-     43.284859
-    ],
-    [
-     -103.45473,
-     43.281572
-    ],
-    [
-     -103.455199,
-     43.281951
-    ],
-    [
-     -103.456773,
-     43.279899
-    ],
-    [
-     -103.4591,
-     43.285809
-    ],
-    [
-     -103.472172,
-     43.288128
-    ],
-    [
-     -103.475493,
-     43.287342
-    ],
-    [
-     -103.488121,
-     43.286912
-    ],
-    [
-     -103.503612,
-     43.281269
-    ],
-    [
-     -103.537688,
-     43.279899
-    ],
-    [
-     -103.540231,
-     43.280532
-    ],
-    [
-     -103.551372,
-     43.282842
-    ],
-    [
-     -103.561568,
-     43.285999
-    ],
-    [
-     -103.560803,
-     43.286252
-    ],
-    [
-     -103.538731,
-     43.285949
-    ],
-    [
-     -103.537812,
-     43.280658
-    ],
-    [
-     -103.506748,
-     43.28225
-    ],
-    [
-     -103.512081,
-     43.28083
-    ],
-    [
-     -103.504551,
-     43.284099
-    ],
-    [
-     -103.495953,
-     43.289471
-    ],
-    [
-     -103.491009,
-     43.290801
-    ],
-    [
-     -103.487942,
-     43.290199
-    ],
-    [
-     -103.467932,
-     43.290679
-    ],
-    [
-     -103.462809,
-     43.291072
-    ],
-    [
-     -103.459069,
-     43.29227
-    ],
-    [
-     -103.456711,
-     43.297362
-    ],
-    [
-     -103.445978,
-     43.297199
-    ],
-    [
-     -103.437769,
-     43.305072
-    ],
-    [
-     -103.438899,
-     43.30722
-    ],
-    [
-     -103.439948,
-     43.313071
-    ],
-    [
-     -103.440269,
-     43.320582
-    ],
-    [
-     -103.432998,
-     43.33029
-    ],
-    [
-     -103.436541,
-     43.331742
-    ],
-    [
-     -103.438319,
-     43.33058
-    ],
-    [
-     -103.443799,
-     43.328359
-    ],
-    [
-     -103.44391,
-     43.32457
-    ],
-    [
-     -103.444503,
-     43.326338
-    ],
-    [
-     -103.444688,
-     43.331181
-    ],
-    [
-     -103.448311,
-     43.336159
-    ],
-    [
-     -103.450021,
-     43.336259
-    ],
-    [
-     -103.447743,
-     43.337222
-    ],
-    [
-     -103.446472,
-     43.340491
-    ],
-    [
-     -103.446682,
-     43.341382
-    ],
-    [
-     -103.44633,
-     43.342391
-    ],
-    [
-     -103.443491,
-     43.34173
-    ],
-    [
-     -103.436368,
-     43.346922
-    ],
-    [
-     -103.431832,
-     43.350399
-    ],
-    [
-     -103.436868,
-     43.346388
-    ],
-    [
-     -103.43335,
-     43.34259
-    ],
-    [
-     -103.428209,
-     43.335961
-    ],
-    [
-     -103.42587,
-     43.337489
-    ],
-    [
-     -103.424043,
-     43.33937
-    ],
-    [
-     -103.423098,
-     43.341342
-    ],
-    [
-     -103.418173,
-     43.339999
-    ],
-    [
-     -103.415032,
-     43.337701
-    ],
-    [
-     -103.416093,
-     43.334482
-    ],
-    [
-     -103.415359,
-     43.332931
-    ],
-    [
-     -103.416673,
-     43.330959
-    ],
-    [
-     -103.415501,
-     43.327428
-    ],
-    [
-     -103.412748,
-     43.326171
-    ],
-    [
-     -103.41305,
-     43.31942
-    ],
-    [
-     -103.412291,
-     43.31521
-    ],
-    [
-     -103.409452,
-     43.311249
-    ],
-    [
-     -103.40299,
-     43.310222
-    ],
-    [
-     -103.4017,
-     43.301599
-    ],
-    [
-     -103.394429,
-     43.30069
-    ],
-    [
-     -103.393898,
-     43.296439
-    ],
-    [
-     -103.38398,
-     43.291289
-    ],
-    [
-     -103.380832,
-     43.289241
-    ],
-    [
-     -103.378857,
-     43.284221
-    ],
-    [
-     -103.371951,
-     43.278212
-    ],
-    [
-     -103.368352,
-     43.281852
+     -102.218463,
+     45.746434
     ]
    ],
-   "status": "candidate"
+   "status": "merged into one row: US-10329+US-8192@area@45.725,-102.246",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 31
   },
   {
    "acres": 0.3,
@@ -18889,7 +19006,7 @@
     42.864871,
     -97.868693
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-10349+US-8174+US-8197@area@42.865,-97.869",
    "kind": "area",
    "passes": [
@@ -18912,25 +19029,43 @@
      42.863876
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
   {
-   "acres": 44.8,
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.866742,
+     -97.863568
+    ],
+    "from": "road",
+    "name": "Dempsters Cove Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "acres": 45.0,
    "box": [
     -97.86876,
-    42.8639,
+    42.86389,
     -97.85031,
-    42.86951
+    42.86949
    ],
    "center": [
-    42.865847,
-    -97.867106
+    42.865875,
+    -97.867107
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state",
+    "unk"
+   ],
    "id": "US-10349+US-8174@area@42.866,-97.867",
+   "info": {
+    "water_pct": 8
+   },
    "kind": "area",
    "lines": {
     "US-10349": [
@@ -19174,11 +19309,26 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-10349": "downloaded 2026-10-28",
-    "US-8174": "downloaded 2026-10-28"
+    "US-10349": "downloaded 2026-10-30",
+    "US-8174": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-10349",
+     "https://gfp.sd.gov/lakeside-use-areas/"
+    ],
+    [
+     "US-8174",
+     "https://gfp.sd.gov/parks/detail/lewis-and-clark-recreation-area/"
+    ]
+   ],
+   "mixed_owners": [
+    "STATE",
+    "UNK"
+   ],
    "names": {
     "US-10349": "Sand Creek State Recreation Area",
     "US-8174": "Lewis and Clark State Recreation Area"
@@ -19186,6 +19336,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state + unk)",
    "passes": [
     1,
     1,
@@ -19201,127 +19352,143 @@
    ],
    "shape": [
     [
-     -97.850314,
-     42.86942
+     -97.850315,
+     42.869447
     ],
     [
      -97.85344,
-     42.86951
+     42.869493
     ],
     [
      -97.853501,
-     42.868606
+     42.868634
     ],
     [
-     -97.858526,
-     42.868606
+     -97.858527,
+     42.868588
     ],
     [
      -97.858588,
-     42.867701
+     42.867684
     ],
     [
      -97.862142,
-     42.867701
+     42.867684
     ],
     [
      -97.862204,
-     42.866752
+     42.86678
     ],
     [
      -97.868332,
-     42.866752
+     42.86678
     ],
     [
      -97.868394,
-     42.864943
+     42.864926
     ],
     [
      -97.868761,
-     42.864898
+     42.86488
     ],
     [
      -97.868761,
-     42.863903
+     42.863886
     ],
     [
-     -97.867903,
-     42.864265
+     -97.868026,
+     42.864202
     ],
     [
-     -97.867535,
-     42.864717
+     -97.867536,
+     42.864745
     ],
     [
-     -97.867168,
-     42.864943
+     -97.867045,
+     42.864971
     ],
     [
      -97.865942,
-     42.864988
+     42.864971
     ],
     [
-     -97.864165,
-     42.865486
+     -97.864471,
+     42.865378
     ],
     [
-     -97.862633,
-     42.866119
+     -97.862755,
+     42.866101
     ],
     [
      -97.86202,
-     42.866254
+     42.866237
     ],
     [
      -97.861162,
-     42.866752
+     42.866734
     ],
     [
-     -97.860181,
-     42.866797
+     -97.860365,
+     42.86678
     ],
     [
      -97.859078,
-     42.867204
+     42.867187
     ],
     [
-     -97.855707,
-     42.867792
+     -97.855708,
+     42.867774
     ],
     [
-     -97.854236,
-     42.868244
+     -97.854666,
+     42.868136
     ],
     [
-     -97.853562,
-     42.868289
+     -97.853624,
+     42.868272
     ],
     [
-     -97.851907,
-     42.868877
+     -97.851908,
+     42.86886
     ],
     [
      -97.850866,
-     42.868967
+     42.868995
     ]
    ],
-   "status": "merged into one row: US-10349+US-8174@area@42.874,-97.825 (the same not-sure pair, shown once)",
-   "wide_m": 197
+   "status": "merged into one row: US-10349+US-8174@area@42.874,-97.825",
+   "wide_m": 205
   },
   {
-   "acres": 109.1,
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.876055,
+     -97.827406
+    ],
+    "from": "road",
+    "name": "Sand Creek Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "acres": 73.0,
+   "acres_all": 118.0,
    "box": [
     -97.86876,
-    42.8639,
-    -97.80784,
-    42.87937
+    42.86389,
+    -97.81955,
+    42.87609
    ],
    "center": [
-    42.87462,
-    -97.825616
+    42.874602,
+    -97.825617
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state",
+    "unk"
+   ],
    "id": "US-10349+US-8174@area@42.874,-97.825",
    "info": {
     "water_pct": 6
@@ -19827,124 +19994,6 @@
       [
        -97.822914,
        42.874177
-      ]
-     ],
-     [
-      [
-       -97.807847,
-       42.878662
-      ],
-      [
-       -97.807847,
-       42.878502
-      ],
-      [
-       -97.808778,
-       42.8782
-      ],
-      [
-       -97.809198,
-       42.87809
-      ],
-      [
-       -97.810029,
-       42.877807
-      ],
-      [
-       -97.810563,
-       42.87767
-      ],
-      [
-       -97.811082,
-       42.877559
-      ],
-      [
-       -97.811608,
-       42.877506
-      ],
-      [
-       -97.812059,
-       42.877418
-      ],
-      [
-       -97.813134,
-       42.877052
-      ],
-      [
-       -97.815583,
-       42.876308
-      ],
-      [
-       -97.816507,
-       42.876003
-      ],
-      [
-       -97.817025,
-       42.875778
-      ],
-      [
-       -97.818536,
-       42.875446
-      ],
-      [
-       -97.819093,
-       42.875362
-      ],
-      [
-       -97.819577,
-       42.875227
-      ],
-      [
-       -97.819566,
-       42.875256
-      ],
-      [
-       -97.822322,
-       42.87524
-      ],
-      [
-       -97.822322,
-       42.875778
-      ],
-      [
-       -97.819055,
-       42.875751
-      ],
-      [
-       -97.819001,
-       42.876701
-      ],
-      [
-       -97.816499,
-       42.876697
-      ],
-      [
-       -97.816537,
-       42.877582
-      ],
-      [
-       -97.813897,
-       42.877582
-      ],
-      [
-       -97.813913,
-       42.878502
-      ],
-      [
-       -97.812669,
-       42.878502
-      ],
-      [
-       -97.812669,
-       42.879364
-      ],
-      [
-       -97.807847,
-       42.879417
-      ],
-      [
-       -97.807847,
-       42.878662
       ]
      ],
      [
@@ -20663,60 +20712,30 @@
       [
        -97.816182,
        42.876706
-      ],
-      [
-       -97.816174,
-       42.877594
-      ],
-      [
-       -97.813552,
-       42.877594
-      ],
-      [
-       -97.813577,
-       42.878498
-      ],
-      [
-       -97.81233,
-       42.87849
-      ],
-      [
-       -97.812353,
-       42.879413
-      ],
-      [
-       -97.80636,
-       42.879413
-      ],
-      [
-       -97.8064,
-       42.880063
-      ],
-      [
-       -97.806643,
-       42.879974
-      ],
-      [
-       -97.806638,
-       42.880578
-      ],
-      [
-       -97.807416,
-       42.880284
-      ],
-      [
-       -97.807524,
-       42.882939
       ]
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-10349": "downloaded 2026-10-28",
-    "US-8174": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+    "US-10349": "downloaded 2026-10-30",
+    "US-8174": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-10349",
+     "https://gfp.sd.gov/lakeside-use-areas/"
+    ],
+    [
+     "US-8174",
+     "https://gfp.sd.gov/parks/detail/lewis-and-clark-recreation-area/"
+    ]
+   ],
+   "mixed_owners": [
+    "STATE",
+    "UNK"
+   ],
    "names": {
     "US-10349": "Sand Creek State Recreation Area",
     "US-8174": "Lewis and Clark State Recreation Area"
@@ -20724,248 +20743,219 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state + unk)",
    "passes": [
     1,
     1,
     1
    ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      42.876055,
+      -97.827406
+     ],
+     "from": "road",
+     "name": "Sand Creek Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      42.866742,
+      -97.863568
+     ],
+     "from": "road",
+     "name": "Dempsters Cove Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
    "pins_inside": {
     "US-10349": true,
     "US-8174": true
    },
-   "places": 2,
    "refs": [
     "US-10349",
     "US-8174"
    ],
    "shape": [
     [
-     -97.807843,
-     42.879368
+     -97.81955,
+     42.875235
     ],
     [
-     -97.812316,
-     42.879322
+     -97.822246,
+     42.875235
     ],
     [
-     -97.812378,
-     42.878463
+     -97.822307,
+     42.875778
     ],
     [
-     -97.813542,
-     42.878463
+     -97.822736,
+     42.875869
     ],
     [
-     -97.813603,
-     42.877559
+     -97.825249,
+     42.875914
     ],
     [
-     -97.816116,
-     42.877559
+     -97.827517,
+     42.876095
     ],
     [
-     -97.816239,
-     42.8767
+     -97.827455,
+     42.874015
     ],
     [
-     -97.818568,
-     42.876654
+     -97.828681,
+     42.873969
     ],
     [
-     -97.818629,
-     42.875841
+     -97.828742,
+     42.873065
     ],
     [
-     -97.819058,
-     42.875705
+     -97.831255,
+     42.873065
     ],
     [
-     -97.822429,
-     42.87575
+     -97.831316,
+     42.872161
     ],
     [
-     -97.822551,
-     42.875841
+     -97.837445,
+     42.872161
     ],
     [
-     -97.827515,
-     42.876067
+     -97.837506,
+     42.871256
     ],
     [
-     -97.827454,
-     42.874032
+     -97.84247,
+     42.871347
     ],
     [
-     -97.82868,
-     42.873987
+     -97.842409,
+     42.870488
     ],
     [
-     -97.828741,
-     42.873082
+     -97.842715,
+     42.870442
     ],
     [
-     -97.831254,
-     42.873082
+     -97.842286,
+     42.870307
     ],
     [
-     -97.831315,
-     42.872178
+     -97.84198,
+     42.870442
     ],
     [
-     -97.837444,
-     42.872178
+     -97.837383,
+     42.870849
     ],
     [
-     -97.837505,
-     42.871273
+     -97.836219,
+     42.871166
     ],
     [
-     -97.842469,
-     42.871319
+     -97.835851,
+     42.871437
     ],
     [
-     -97.842408,
-     42.87046
+     -97.834687,
+     42.871301
     ],
     [
-     -97.842714,
-     42.870414
+     -97.832603,
+     42.871663
     ],
     [
-     -97.842285,
-     42.870279
+     -97.83199,
+     42.871663
     ],
     [
-     -97.841979,
-     42.870414
+     -97.830765,
+     42.87207
     ],
     [
-     -97.837076,
-     42.870912
+     -97.8296,
+     42.872206
     ],
     [
-     -97.836218,
-     42.871183
+     -97.828436,
+     42.872522
     ],
     [
-     -97.83585,
-     42.871454
+     -97.828007,
+     42.872432
     ],
     [
-     -97.835483,
-     42.871319
+     -97.827394,
+     42.872522
     ],
     [
-     -97.834686,
-     42.871319
+     -97.826965,
+     42.872387
     ],
     [
-     -97.832664,
-     42.871635
+     -97.827149,
+     42.872703
     ],
     [
-     -97.831989,
-     42.871635
+     -97.827394,
+     42.872748
     ],
     [
-     -97.830764,
-     42.872042
+     -97.82721,
+     42.872884
     ],
     [
-     -97.829599,
-     42.872178
+     -97.82672,
+     42.872929
     ],
     [
-     -97.828435,
-     42.87254
+     -97.826781,
+     42.872522
     ],
     [
-     -97.828006,
-     42.872449
+     -97.826597,
+     42.872522
     ],
     [
-     -97.827393,
-     42.87254
+     -97.826291,
+     42.872794
     ],
     [
-     -97.826964,
-     42.872404
+     -97.825617,
+     42.872703
     ],
     [
-     -97.827332,
-     42.872811
+     -97.824759,
+     42.873336
     ],
     [
-     -97.826903,
-     42.872992
+     -97.822491,
+     42.874286
     ],
     [
-     -97.826719,
-     42.872947
+     -97.821878,
+     42.874376
     ],
     [
-     -97.826719,
-     42.872494
+     -97.820775,
+     42.874874
     ],
     [
-     -97.82629,
-     42.872811
-    ],
-    [
-     -97.825983,
-     42.872675
-    ],
-    [
-     -97.825616,
-     42.87272
-    ],
-    [
-     -97.824758,
-     42.873354
-    ],
-    [
-     -97.823471,
-     42.873941
-    ],
-    [
-     -97.821877,
-     42.874394
-    ],
-    [
-     -97.82059,
-     42.874936
-    ],
-    [
-     -97.819671,
-     42.875117
-    ],
-    [
-     -97.819119,
-     42.875343
-    ],
-    [
-     -97.817097,
-     42.875705
-    ],
-    [
-     -97.815626,
-     42.876293
-    ],
-    [
-     -97.812071,
-     42.877378
-    ],
-    [
-     -97.810784,
-     42.877559
-    ],
-    [
-     -97.807843,
-     42.878463
+     -97.819672,
+     42.8751
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 305
   },
   {
@@ -20980,7 +20970,7 @@
     42.864938,
     -97.868796
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-10349+US-8197@area@42.865,-97.869",
    "kind": "area",
    "passes": [
@@ -21002,11 +20992,22 @@
      42.863853
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.86174,
+     -97.647803
+    ],
+    "from": "road",
+    "name": "Tabor Rec Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 64.9,
    "box": [
     -97.65716,
@@ -21018,8 +21019,12 @@
     42.860459,
     -97.652262
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state",
+    "unk"
+   ],
    "id": "US-10350+US-8174@area@42.860,-97.655",
    "info": {
     "water_pct": 6
@@ -21367,12 +21372,26 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-10350": "downloaded 2026-10-28",
-    "US-8174": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+    "US-10350": "downloaded 2026-10-30",
+    "US-8174": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-10350",
+     "https://gfp.sd.gov/lakeside-use-areas/"
+    ],
+    [
+     "US-8174",
+     "https://gfp.sd.gov/parks/detail/lewis-and-clark-recreation-area/"
+    ]
+   ],
+   "mixed_owners": [
+    "STATE",
+    "UNK"
+   ],
    "names": {
     "US-10350": "Tabor State Recreation Area",
     "US-8174": "Lewis and Clark State Recreation Area"
@@ -21380,6 +21399,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state + unk)",
    "passes": [
     1,
     1,
@@ -21476,11 +21496,23 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 275
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     45.722345,
+     -102.240832
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 15
+   },
    "acres": 149.5,
+   "acres_all": 165.6,
    "box": [
     -102.27186,
     45.71121,
@@ -21491,8 +21523,12 @@
     45.720302,
     -102.25873
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service",
+    "usbr"
+   ],
    "id": "US-7489+US-8192@area@45.717,-102.268",
    "info": {
     "water_pct": 84
@@ -22790,12 +22826,26 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-7489": "downloaded 2026-10-28",
-    "US-8192": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+    "US-7489": "downloaded 2026-10-30",
+    "US-8192": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-7489",
+     "https://www.fs.usda.gov/recarea/dpg/recarea/?recid=79472"
+    ],
+    [
+     "US-8192",
+     "https://gfp.sd.gov/parks/detail/shadehill-recreation-area/"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:USBR",
+    "FED:USFS"
+   ],
    "names": {
     "US-7489": "Grand River National Grassland",
     "US-8192": "Shadehill State Recreation Area"
@@ -22803,16 +22853,39 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (Forest Service + usbr)",
    "passes": [
     1,
     1,
     1
    ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      45.722345,
+      -102.240832
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 15
+    },
+    {
+     "at": [
+      45.722302,
+      -102.246864
+     ],
+     "from": "road",
+     "name": "S Cabin Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
    "pins_inside": {
     "US-7489": false,
     "US-8192": true
    },
-   "places": 2,
    "refs": [
     "US-7489",
     "US-8192"
@@ -23016,10 +23089,21 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 443
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     45.722302,
+     -102.246864
+    ],
+    "from": "road",
+    "name": "S Cabin Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 16.1,
    "box": [
     -102.24084,
@@ -23031,9 +23115,16 @@
     45.730296,
     -102.231517
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service",
+    "usbr"
+   ],
    "id": "US-7489+US-8192@area@45.720,-102.258",
+   "info": {
+    "water_pct": 37
+   },
    "kind": "area",
    "lines": {
     "US-7489": [
@@ -23309,11 +23400,26 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-7489": "downloaded 2026-10-28",
-    "US-8192": "downloaded 2026-10-28"
+    "US-7489": "downloaded 2026-10-30",
+    "US-8192": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-7489",
+     "https://www.fs.usda.gov/recarea/dpg/recarea/?recid=79472"
+    ],
+    [
+     "US-8192",
+     "https://gfp.sd.gov/parks/detail/shadehill-recreation-area/"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:USBR",
+    "FED:USFS"
+   ],
    "names": {
     "US-7489": "Grand River National Grassland",
     "US-8192": "Shadehill State Recreation Area"
@@ -23321,6 +23427,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (Forest Service + usbr)",
    "passes": [
     1,
     1,
@@ -23384,11 +23491,12 @@
      45.731878
     ]
    ],
-   "status": "merged into one row: US-7489+US-8192@area@45.717,-102.268 (the same not-sure pair, shown once)",
+   "status": "merged into one row: US-7489+US-8192@area@45.717,-102.268",
    "wide_m": 93
   },
   {
    "acres": 0.8,
+   "acres_all": 3.2,
    "box": [
     -103.4459,
     43.33975,
@@ -23399,9 +23507,12 @@
     43.34007,
     -103.445222
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "id": "US-8155+US-8193@area@43.316,-103.439",
+   "info": {
+    "water_pct": 60
+   },
    "kind": "area",
    "lines": {
     "US-8155": [
@@ -23937,16 +24048,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "list": "🚤 Water only: boat or kayak",
    "map_dates": {
-    "US-8155": "downloaded 2026-10-28",
-    "US-8193": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "names": {
-    "US-8155": "Angostura State Recreation Area",
-    "US-8193": "Sheps Canyon State Recreation Area"
+    "US-8155": "downloaded 2026-10-30",
+    "US-8193": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
    "notes": [
     "check the agency's closures and seasons before you go"
@@ -23956,11 +24063,12 @@
     1,
     1
    ],
+   "patches": 4,
+   "pins": [],
    "pins_inside": {
     "US-8155": true,
     "US-8193": true
    },
-   "places": 4,
    "refs": [
     "US-8155",
     "US-8193"
@@ -24013,7 +24121,6 @@
    ],
    "status": "water only: boat or kayak",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-28",
    "wide_m": 35
   },
   {
@@ -24028,9 +24135,12 @@
     43.34007,
     -103.445222
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "id": "US-8155+US-8193@area@43.320,-103.440",
+   "info": {
+    "water_pct": 60
+   },
    "kind": "area",
    "lines": {
     "US-8155": [
@@ -24566,14 +24676,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
+   "list": "🚤 Water only: boat or kayak",
    "map_dates": {
-    "US-8155": "downloaded 2026-10-28",
-    "US-8193": "downloaded 2026-10-28"
-   },
-   "names": {
-    "US-8155": "Angostura State Recreation Area",
-    "US-8193": "Sheps Canyon State Recreation Area"
+    "US-8155": "downloaded 2026-10-30",
+    "US-8193": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
    "notes": [
     "check the agency's closures and seasons before you go"
@@ -24637,11 +24745,22 @@
      43.341201
     ]
    ],
-   "status": "merged into one row: US-8155+US-8193@area@43.316,-103.439 (the same not-sure pair, shown once)",
+   "status": "merged into one row: US-8155+US-8193@area@43.316,-103.439",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 35
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     43.326826,
+     -103.444936
+    ],
+    "from": "road",
+    "name": "S Boat Ramp Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 69
+   },
    "acres": 1.9,
    "box": [
     -103.43855,
@@ -24653,18 +24772,427 @@
     43.330981,
     -103.437073
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "usbr"
+   ],
    "id": "US-8155+US-8193@area@43.330,-103.433",
    "kind": "area",
+   "lines": {
+    "US-8155": [
+     [
+      [
+       -103.43079,
+       43.32964
+      ],
+      [
+       -103.43193,
+       43.329939
+      ],
+      [
+       -103.432106,
+       43.330025
+      ],
+      [
+       -103.432343,
+       43.330036
+      ],
+      [
+       -103.432529,
+       43.330082
+      ],
+      [
+       -103.432999,
+       43.330291
+      ],
+      [
+       -103.433436,
+       43.330249
+      ],
+      [
+       -103.433546,
+       43.330278
+      ],
+      [
+       -103.433655,
+       43.330242
+      ],
+      [
+       -103.433775,
+       43.330067
+      ],
+      [
+       -103.433878,
+       43.330022
+      ],
+      [
+       -103.434018,
+       43.330023
+      ],
+      [
+       -103.434153,
+       43.329974
+      ],
+      [
+       -103.434671,
+       43.329902
+      ],
+      [
+       -103.434721,
+       43.329935
+      ],
+      [
+       -103.434713,
+       43.329996
+      ],
+      [
+       -103.434353,
+       43.330358
+      ],
+      [
+       -103.434344,
+       43.330465
+      ],
+      [
+       -103.434399,
+       43.330573
+      ],
+      [
+       -103.43478,
+       43.330876
+      ],
+      [
+       -103.434869,
+       43.330891
+      ],
+      [
+       -103.435036,
+       43.330833
+      ],
+      [
+       -103.435118,
+       43.330839
+      ],
+      [
+       -103.435146,
+       43.330997
+      ],
+      [
+       -103.43522,
+       43.331101
+      ],
+      [
+       -103.435501,
+       43.331337
+      ],
+      [
+       -103.436252,
+       43.331608
+      ],
+      [
+       -103.436542,
+       43.331742
+      ],
+      [
+       -103.436708,
+       43.331735
+      ],
+      [
+       -103.436844,
+       43.331639
+      ],
+      [
+       -103.437108,
+       43.331536
+      ],
+      [
+       -103.437135,
+       43.331476
+      ],
+      [
+       -103.437118,
+       43.331406
+      ],
+      [
+       -103.436938,
+       43.331199
+      ],
+      [
+       -103.436891,
+       43.331049
+      ],
+      [
+       -103.436887,
+       43.330723
+      ],
+      [
+       -103.436964,
+       43.33071
+      ],
+      [
+       -103.437207,
+       43.330895
+      ],
+      [
+       -103.437692,
+       43.331116
+      ],
+      [
+       -103.437958,
+       43.331217
+      ],
+      [
+       -103.438091,
+       43.331224
+      ],
+      [
+       -103.438219,
+       43.331193
+      ],
+      [
+       -103.438285,
+       43.331138
+      ],
+      [
+       -103.438282,
+       43.330975
+      ],
+      [
+       -103.438217,
+       43.330811
+      ],
+      [
+       -103.43826,
+       43.330603
+      ],
+      [
+       -103.438318,
+       43.330585
+      ],
+      [
+       -103.438522,
+       43.330825
+      ],
+      [
+       -103.43863,
+       43.330859
+      ],
+      [
+       -103.438744,
+       43.330865
+      ],
+      [
+       -103.438867,
+       43.330777
+      ],
+      [
+       -103.439139,
+       43.330722
+      ],
+      [
+       -103.439293,
+       43.330733
+      ],
+      [
+       -103.439756,
+       43.330902
+      ],
+      [
+       -103.440251,
+       43.330983
+      ],
+      [
+       -103.440627,
+       43.330984
+      ]
+     ]
+    ],
+    "US-8193": [
+     [
+      [
+       -103.435143,
+       43.33089
+      ],
+      [
+       -103.435118,
+       43.330839
+      ],
+      [
+       -103.435036,
+       43.330833
+      ],
+      [
+       -103.434869,
+       43.330891
+      ],
+      [
+       -103.43478,
+       43.330876
+      ],
+      [
+       -103.434399,
+       43.330573
+      ],
+      [
+       -103.434344,
+       43.330465
+      ],
+      [
+       -103.434353,
+       43.330358
+      ],
+      [
+       -103.434604,
+       43.330097
+      ],
+      [
+       -103.434459,
+       43.330086
+      ],
+      [
+       -103.432944,
+       43.330349
+      ],
+      [
+       -103.432477,
+       43.330091
+      ],
+      [
+       -103.432106,
+       43.330025
+      ],
+      [
+       -103.43193,
+       43.329939
+      ],
+      [
+       -103.431051,
+       43.329687
+      ]
+     ],
+     [
+      [
+       -103.438537,
+       43.325985
+      ],
+      [
+       -103.432375,
+       43.328918
+      ],
+      [
+       -103.441653,
+       43.329838
+      ]
+     ],
+     [
+      [
+       -103.441215,
+       43.330917
+      ],
+      [
+       -103.440401,
+       43.331009
+      ],
+      [
+       -103.440014,
+       43.330952
+      ],
+      [
+       -103.439455,
+       43.330751
+      ],
+      [
+       -103.439049,
+       43.330733
+      ],
+      [
+       -103.43857,
+       43.330842
+      ],
+      [
+       -103.438512,
+       43.331035
+      ],
+      [
+       -103.438333,
+       43.331148
+      ],
+      [
+       -103.438016,
+       43.331118
+      ],
+      [
+       -103.437405,
+       43.330878
+      ],
+      [
+       -103.43728,
+       43.330928
+      ],
+      [
+       -103.437183,
+       43.331274
+      ],
+      [
+       -103.437196,
+       43.331665
+      ],
+      [
+       -103.436631,
+       43.331748
+      ],
+      [
+       -103.436542,
+       43.331742
+      ],
+      [
+       -103.436252,
+       43.331608
+      ],
+      [
+       -103.435501,
+       43.331337
+      ],
+      [
+       -103.43522,
+       43.331101
+      ],
+      [
+       -103.435146,
+       43.330997
+      ],
+      [
+       -103.435143,
+       43.33089
+      ]
+     ]
+    ]
+   },
+   "lines_read": "2026-10-30",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-8155": "downloaded 2026-10-28",
-    "US-8193": "downloaded 2026-10-28"
+    "US-8155": "downloaded 2026-10-30",
+    "US-8193": "downloaded 2026-10-30"
+   },
+   "maps": [
+    [
+     "US-8155",
+     "https://gfp.sd.gov/parks/detail/angostura-recreation-area/"
+    ],
+    [
+     "US-8193",
+     "https://gfp.sd.gov/parks/detail/sheps-canyon-recreation-area/"
+    ]
+   ],
+   "names": {
+    "US-8155": "Angostura State Recreation Area",
+    "US-8193": "Sheps Canyon State Recreation Area"
    },
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
-   "ownership": "side by side, not layered: Sheps Canyon State Recreation Area is state land, the ground here is usbr",
+   "ownership": "public land (usbr)",
    "passes": [
     1,
     1,
@@ -24764,8 +25292,9 @@
      43.331705
     ]
    ],
-   "status": "dropped: side by side, not layered: Sheps Canyon State Recreation Area is state land, the ground here is usbr",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-30",
    "wide_m": 27
   },
   {
@@ -24780,9 +25309,12 @@
     43.34007,
     -103.445222
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "id": "US-8155+US-8193@area@43.332,-103.437",
+   "info": {
+    "water_pct": 60
+   },
    "kind": "area",
    "lines": {
     "US-8155": [
@@ -25318,14 +25850,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
+   "list": "🚤 Water only: boat or kayak",
    "map_dates": {
-    "US-8155": "downloaded 2026-10-28",
-    "US-8193": "downloaded 2026-10-28"
-   },
-   "names": {
-    "US-8155": "Angostura State Recreation Area",
-    "US-8193": "Sheps Canyon State Recreation Area"
+    "US-8155": "downloaded 2026-10-30",
+    "US-8193": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
    "notes": [
     "check the agency's closures and seasons before you go"
@@ -25389,7 +25919,7 @@
      43.341201
     ]
    ],
-   "status": "merged into one row: US-8155+US-8193@area@43.316,-103.439 (the same not-sure pair, shown once)",
+   "status": "merged into one row: US-8155+US-8193@area@43.316,-103.439",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 35
   },
@@ -25405,9 +25935,12 @@
     43.34007,
     -103.445222
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
    "id": "US-8155+US-8193@area@43.335,-103.449",
+   "info": {
+    "water_pct": 60
+   },
    "kind": "area",
    "lines": {
     "US-8155": [
@@ -25943,14 +26476,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
+   "list": "🚤 Water only: boat or kayak",
    "map_dates": {
-    "US-8155": "downloaded 2026-10-28",
-    "US-8193": "downloaded 2026-10-28"
-   },
-   "names": {
-    "US-8155": "Angostura State Recreation Area",
-    "US-8193": "Sheps Canyon State Recreation Area"
+    "US-8155": "downloaded 2026-10-30",
+    "US-8193": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
    "notes": [
     "check the agency's closures and seasons before you go"
@@ -26014,11 +26545,22 @@
      43.341201
     ]
    ],
-   "status": "merged into one row: US-8155+US-8193@area@43.316,-103.439 (the same not-sure pair, shown once)",
+   "status": "merged into one row: US-8155+US-8193@area@43.316,-103.439",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 35
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.863949,
+     -97.46991
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 210.0,
    "box": [
     -97.47081,
@@ -26030,8 +26572,15 @@
     42.856157,
     -97.460639
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "corps_land": [
+    "GAVINS POINT DAM  LEWIS AND CLARK LAKE NE AND SD"
+   ],
+   "found": "2026-10-30",
+   "ground": [
+    "state",
+    "unk"
+   ],
    "id": "US-8161+US-8174@area@42.856,-97.461",
    "info": {
     "water_pct": 8
@@ -26653,12 +27202,26 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-8161": "downloaded 2026-10-28",
-    "US-8174": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+    "US-8161": "downloaded 2026-10-30",
+    "US-8174": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-8161",
+     "https://gfp.sd.gov/parks/detail/chief-white-crane-recreation-area/"
+    ],
+    [
+     "US-8174",
+     "https://gfp.sd.gov/parks/detail/lewis-and-clark-recreation-area/"
+    ]
+   ],
+   "mixed_owners": [
+    "STATE",
+    "UNK"
+   ],
    "names": {
     "US-8161": "Chief White Crane State Recreation Area",
     "US-8174": "Lewis and Clark State Recreation Area"
@@ -26666,6 +27229,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state + unk): on Corps of Engineers land (GAVINS POINT DAM  LEWIS AND CLARK LAKE NE AND SD)",
    "passes": [
     1,
     1,
@@ -26794,7 +27358,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 685
   },
   {
@@ -26809,7 +27373,7 @@
     44.547754,
     -100.494027
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-8162+US-8196@area@44.548,-100.494",
    "kind": "area",
    "passes": [
@@ -26827,57 +27391,29 @@
      44.547754
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
   {
-   "access": null,
-   "access_pin": {
-    "at": [
-     45.522649,
-     -100.386586
-    ],
-    "from": "road",
-    "name": "288th Ave",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
+   "acres": 1.0,
    "box": [
-    -100.41348,
-    45.51797,
-    -100.39516,
-    45.52603
+    -100.39955,
+    45.52285,
+    -100.39699,
+    45.52312
    ],
    "center": [
-    45.522104,
-    -100.404687
+    45.522942,
+    -100.397371
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-28",
-   "id": "US-8165+US-8188@same land@45.522,-100.405",
-   "kind": "same land",
-   "label": "Same land, two park numbers",
-   "maps": [
-    [
-     "US-8165",
-     "https://gfp.sd.gov/parks/detail/indian-creek-recreation-area/"
-    ],
-    [
-     "US-8188",
-     "https://gfp.sd.gov/parks/detail/revheim-bay-recreation-area/"
-    ]
-   ],
-   "names": {
-    "US-8165": "Indian Creek State Recreation Area",
-    "US-8188": "Revheim Bay State Recreation Area"
-   },
-   "note": "both park numbers are joined to the same official outline (Indian Creek Recreation Area); POTA lists them separately: check POTA's current list",
-   "owner_here": "state land (from the outline both numbers are joined to)",
+   "found": "2026-10-30",
+   "id": "US-8165+US-8188@area@45.523,-100.399",
+   "kind": "area",
    "passes": [
     1,
     1,
-    1
+    0
    ],
    "refs": [
     "US-8165",
@@ -26885,105 +27421,34 @@
    ],
    "shape": [
     [
-     -100.41268,
-     45.52603
+     -100.39955,
+     45.523123
     ],
     [
-     -100.40747,
-     45.52464
+     -100.396986,
+     45.522851
     ],
     [
-     -100.40758,
-     45.52292
-    ],
-    [
-     -100.40485,
-     45.52289
-    ],
-    [
-     -100.40481,
-     45.52093
-    ],
-    [
-     -100.39966,
-     45.52092
-    ],
-    [
-     -100.39968,
-     45.52315
-    ],
-    [
-     -100.39703,
-     45.52291
-    ],
-    [
-     -100.39776,
-     45.52252
-    ],
-    [
-     -100.39679,
-     45.52212
-    ],
-    [
-     -100.39779,
-     45.52217
-    ],
-    [
-     -100.3978,
-     45.52144
-    ],
-    [
-     -100.39516,
-     45.5193
-    ],
-    [
-     -100.39743,
-     45.51798
-    ],
-    [
-     -100.40149,
-     45.51797
-    ],
-    [
-     -100.40585,
-     45.51855
-    ],
-    [
-     -100.40747,
-     45.5198
-    ],
-    [
-     -100.41197,
-     45.52005
-    ],
-    [
-     -100.41348,
-     45.52171
-    ],
-    [
-     -100.40825,
-     45.52417
-    ],
-    [
-     -100.41076,
-     45.5242
-    ],
-    [
-     -100.41158,
-     45.52504
-    ],
-    [
-     -100.41246,
-     45.52306
-    ],
-    [
-     -100.41268,
-     45.52603
+     -100.397242,
+     45.523032
     ]
    ],
-   "status": "candidate"
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 18
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.876004,
+     -97.479173
+    ],
+    "from": "road",
+    "name": "Marine Dr",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 69.1,
    "box": [
     -97.48829,
@@ -26995,8 +27460,15 @@
     42.873235,
     -97.483816
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "corps_land": [
+    "GAVINS POINT DAM  LEWIS AND CLARK LAKE NE AND SD"
+   ],
+   "found": "2026-10-30",
+   "ground": [
+    "state",
+    "unk"
+   ],
    "id": "US-8174+US-8185@area@42.873,-97.484",
    "info": {
     "water_pct": 1
@@ -27528,12 +28000,26 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-8174": "downloaded 2026-10-28",
-    "US-8185": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+    "US-8174": "downloaded 2026-10-30",
+    "US-8185": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-8174",
+     "https://gfp.sd.gov/parks/detail/lewis-and-clark-recreation-area/"
+    ],
+    [
+     "US-8185",
+     "https://gfp.sd.gov/parks/detail/pierson-ranch-recreation-area/"
+    ]
+   ],
+   "mixed_owners": [
+    "STATE",
+    "UNK"
+   ],
    "names": {
     "US-8174": "Lewis and Clark State Recreation Area",
     "US-8185": "Pierson Ranch State Recreation Area"
@@ -27541,6 +28027,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state + unk): on Corps of Engineers land (GAVINS POINT DAM  LEWIS AND CLARK LAKE NE AND SD)",
    "passes": [
     1,
     1,
@@ -27605,10 +28092,21 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 484
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.86497,
+     -97.877811
+    ],
+    "from": "road",
+    "name": "312th St",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 118.9,
    "box": [
     -97.88631,
@@ -27620,8 +28118,12 @@
     42.863151,
     -97.875404
    ],
-   "checked": "2026-10-28",
-   "found": "2026-10-28",
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state",
+    "unk"
+   ],
    "id": "US-8174+US-8197@area@42.863,-97.876",
    "info": {
     "water_pct": 5
@@ -28793,12 +29295,26 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-30",
    "map_dates": {
-    "US-8174": "downloaded 2026-10-28",
-    "US-8197": "downloaded 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+    "US-8174": "downloaded 2026-10-30",
+    "US-8197": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2018-05-03 (the same NHDPlus HR water, from USGS's download files)"
    },
+   "maps": [
+    [
+     "US-8174",
+     "https://gfp.sd.gov/parks/detail/lewis-and-clark-recreation-area/"
+    ],
+    [
+     "US-8197",
+     "https://gfp.sd.gov/parks/detail/springfield-recreation-area/"
+    ]
+   ],
+   "mixed_owners": [
+    "STATE",
+    "UNK"
+   ],
    "names": {
     "US-8174": "Lewis and Clark State Recreation Area",
     "US-8197": "Springfield State Recreation Area"
@@ -28806,6 +29322,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (state + unk)",
    "passes": [
     1,
     1,
@@ -29042,7 +29559,7 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-30",
    "wide_m": 388
   },
   {
@@ -29057,7 +29574,7 @@
     45.775543,
     -102.187085
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "id": "US-8176+US-8192@area@45.775,-102.187",
    "kind": "area",
    "passes": [
@@ -29075,7 +29592,7 @@
      45.775543
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   }
