@@ -1,144 +1,77 @@
 {
- "date": "2026-10-28",
+ "date": "2026-10-30",
  "leads": [
   {
    "gaps": [
-    "access",
     "outline"
    ],
    "st": "OH",
-   "title": "Roads_ParkingAreas",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/DOW_Services/Roads_ParkingAreas/FeatureServer"
-  },
-  {
-   "gaps": [
-    "trail line"
-   ],
-   "st": "OH",
-   "title": "Wildlife_Trails_Verify",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/DOW_Services/Wildlife_Trails_Verify/FeatureServer"
-  },
-  {
-   "gaps": [
-    "trail line"
-   ],
-   "st": "OH",
-   "title": "Parks_DNAP_Trails",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/DSP_Services/Parks_DNAP_Trails/FeatureServer"
+   "title": "DOW_ContractAreas_SalesForce",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/DOW_Services/DOW_ContractAreas_SalesForce/MapServer"
   },
   {
    "gaps": [
     "outline"
    ],
    "st": "OH",
-   "title": "Watercraft_ohioLakes",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/DWC_Services/Watercraft_ohioLakes/MapServer"
-  },
-  {
-   "gaps": [
-    "access",
-    "trail line"
-   ],
-   "st": "OH",
-   "title": "Watercraft_Paddling_Draw",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/DWC_Services/Watercraft_Paddling_Draw/MapServer"
-  },
-  {
-   "gaps": [
-    "trail line"
-   ],
-   "st": "OH",
-   "title": "Forestry_Trails_verify",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/FOR_Services/Forestry_Trails_verify/FeatureServer"
+   "title": "DOW_Contractareas_SalesForce_table",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/DOW_Services/DOW_Contractareas_SalesForce_table/MapServer"
   },
   {
    "gaps": [
     "outline"
    ],
    "st": "OH",
-   "title": "lakeerie_mapaddin",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OCM_Services/lakeerie_mapaddin/MapServer"
-  },
-  {
-   "gaps": [
-    "access",
-    "trail line"
-   ],
-   "st": "OH",
-   "title": "LakeErie_PublicAccess",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OCM_Services/LakeErie_PublicAccess/MapServer"
-  },
-  {
-   "gaps": [
-    "trail line"
-   ],
-   "st": "OH",
-   "title": "Dissolved_Trails_View",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/Dissolved_Trails_View/MapServer"
+   "title": "DOW_HuntingLands",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/DOW_Services/DOW_HuntingLands/MapServer"
   },
   {
    "gaps": [
     "outline"
    ],
    "st": "OH",
-   "title": "DNR_Fed_Lands_Nav_Base",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/DNR_Fed_Lands_Nav_Base/MapServer"
+   "title": "Waterfowl_Lottery",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/DOW_Services/Waterfowl_Lottery/MapServer"
   },
   {
    "gaps": [
     "outline"
    ],
    "st": "OH",
-   "title": "Federal_Lands",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/Federal_Lands/MapServer"
+   "title": "Licensing_LakesLands",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/Licensing_LakesLands/MapServer"
   },
   {
    "gaps": [
     "outline"
    ],
    "st": "OH",
-   "title": "odnr_landbase",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/odnr_landbase/MapServer"
+   "title": "odnr_landbase_New",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/odnr_landbase_New/MapServer"
   },
   {
    "gaps": [
     "outline"
    ],
    "st": "OH",
-   "title": "ODNR_LandBase_CNTY_TWP_OLS",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_LandBase_CNTY_TWP_OLS/FeatureServer"
+   "title": "odnr_landbase_noparcels",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/odnr_landbase_noparcels/MapServer"
   },
   {
    "gaps": [
     "outline"
    ],
    "st": "OH",
-   "title": "ODNR_LandBase_CNTY_TWP_OLS_PARC",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_LandBase_CNTY_TWP_OLS_PARC/MapServer"
+   "title": "odnr_landbase_v2_New",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/odnr_landbase_v2_New/MapServer"
   },
   {
    "gaps": [
     "outline"
    ],
    "st": "OH",
-   "title": "odnr_landbase_v2",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/odnr_landbase_v2/MapServer"
-  },
-  {
-   "gaps": [
-    "outline"
-   ],
-   "st": "OH",
-   "title": "ODNR_ODNR_Lands_External",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/FeatureServer"
-  },
-  {
-   "gaps": [
-    "outline"
-   ],
-   "st": "OH",
-   "title": "ODNR_ODNR_Lands_External3",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External3/FeatureServer"
+   "title": "odnr_landbase_v3_New",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/odnr_landbase_v3_New/MapServer"
   },
   {
    "gaps": [
@@ -146,8 +79,8 @@
     "trail line"
    ],
    "st": "OH",
-   "title": "ODNR_Trails",
-   "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Trails/MapServer"
+   "title": "Trails_WayPoints_POI",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/Trails_WayPoints_POI/MapServer"
   },
   {
    "gaps": [

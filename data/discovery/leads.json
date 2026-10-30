@@ -1,46 +1,16 @@
 {
  "about": "Discovery bot leads (never used by the live data; chat 8 reads leads.md).",
- "date": "2026-10-28",
+ "date": "2026-10-30",
  "found_by_keyword_this_run": {
-  "boat launch": [
-   "https://services5.arcgis.com/ajRlmtxbNBjZggOT/arcgis/rest/services/Facility_Guide_And_Stream_Access/FeatureServer"
-  ],
   "hydrography": [
    "https://scgis.summitoh.net/hosted/rest/services/Hydrography/MapServer"
   ],
-  "natural area": [
-   "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Lakes/MapServer"
-  ],
   "parking": [
-   "https://gis.greenecountyohio.gov/webgis2/rest/services/OpenData/OpenData/MapServer",
-   "https://gis.ohiodnr.gov/arcgis/rest/services/DWC_Services/Watercraft_Paddling_Draw/MapServer",
-   "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Lakes/MapServer"
-  ],
-  "scenic river": [
-   "https://gis.ohiodnr.gov/arcgis/rest/services/DWC_Services/Watercraft_Paddling_Draw/MapServer"
-  ],
-  "shoreline": [
-   "https://services5.arcgis.com/ajRlmtxbNBjZggOT/arcgis/rest/services/County_Extended/FeatureServer"
-  ],
-  "state park": [
-   "https://gis.ohiodnr.gov/arcgis/rest/services/DWC_Services/Watercraft_Paddling_Draw/MapServer",
-   "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Lakes/MapServer",
-   "https://services5.arcgis.com/ajRlmtxbNBjZggOT/arcgis/rest/services/Facility_Guide_And_Stream_Access/FeatureServer"
-  ],
-  "trailhead": [
-   "https://services5.arcgis.com/ajRlmtxbNBjZggOT/arcgis/rest/services/Trail_Heads_View/FeatureServer"
+   "https://gis.greenecountyohio.gov/webgis2/rest/services/OpenData/OpenData/MapServer"
   ],
   "trails": [
    "https://gis.greenecountyohio.gov/webgis2/rest/services/OpenData/OpenData/MapServer",
-   "https://gis.ohiodnr.gov/arcgis/rest/services/DWC_Services/Watercraft_Paddling_Draw/MapServer",
-   "https://gis.ohiodnr.gov/arcgis/rest/services/OCM_Services/LakeErie_PublicAccess/MapServer",
    "https://services8.arcgis.com/CJpiu5T88EYxY793/arcgis/rest/services/Fayette_Trails/FeatureServer"
-  ],
-  "water trail": [
-   "https://gis.ohiodnr.gov/arcgis/rest/services/DWC_Services/Watercraft_Paddling_Draw/MapServer"
-  ],
-  "waterbody": [
-   "https://services5.arcgis.com/ajRlmtxbNBjZggOT/arcgis/rest/services/Facility_Guide_And_Stream_Access/FeatureServer"
   ]
  },
  "known_good_missed": [],
@@ -51,7 +21,7 @@
    "fills_empty_gap": [
     "outline"
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "outline"
    ],
@@ -65,7 +35,7 @@
    ],
    "kind": "second witness",
    "licence": "DISCLAIMER: The information contained in this data is used to locate, identify and inventory parcels of land in Greene County for appraisal and taxing purposes only and is NOT to be construed or used",
-   "modified": "2026-10-27",
+   "modified": "2026-10-30",
    "parks_named": 0,
    "publisher": "Greene County GIS",
    "st": "OH",
@@ -184,7 +154,7 @@
       "id": 5,
       "name": "Addresses",
       "nameField": "UNITNUM",
-      "records": 83461
+      "records": 83462
      },
      {
       "fields": [
@@ -223,7 +193,7 @@
       "id": 6,
       "name": "Road Centerlines",
       "nameField": "ST_NAME",
-      "records": 11935
+      "records": 11950
      },
      {
       "fields": [
@@ -246,7 +216,7 @@
     ],
     "n_layers": 35
    },
-   "tested": "2026-10-28",
+   "tested": "2026-10-30",
    "title": "GCP&T Public Parks",
    "url": "https://gis.greenecountyohio.gov/webgis2/rest/services/OpenData/OpenData/MapServer"
   },
@@ -1038,6 +1008,187 @@
    "title": "MRCSP_Phase_II",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/DGS_Services/MRCSP_Phase_II/MapServer"
   },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/dog_services/emergencyoilgas_poi": {
+   "band": "B",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [],
+   "folder": "DOG_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "access"
+   ],
+   "grade": 4,
+   "is": [
+    "Airports: points named poi",
+    "Colleges: points named poi",
+    "Fire Departments: points named poi",
+    "Heliports: points named poi"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": "access",
+     "geom": "Multipoint",
+     "id": 0,
+     "is": "points named poi",
+     "name": "Airports"
+    },
+    {
+     "gap": "access",
+     "geom": "Multipoint",
+     "id": 1,
+     "is": "points named poi",
+     "name": "Colleges"
+    },
+    {
+     "gap": "access",
+     "geom": "Point",
+     "id": 2,
+     "is": "points named poi",
+     "name": "Fire Departments"
+    },
+    {
+     "gap": "access",
+     "geom": "Multipoint",
+     "id": 3,
+     "is": "points named poi",
+     "name": "Heliports"
+    },
+    {
+     "gap": "access",
+     "geom": "Multipoint",
+     "id": 4,
+     "is": "points named poi",
+     "name": "Highway Patrol"
+    },
+    {
+     "gap": "access",
+     "geom": "Multipoint",
+     "id": 5,
+     "is": "points named poi",
+     "name": "Hospitals"
+    },
+    {
+     "gap": null,
+     "geom": "Point",
+     "id": 6,
+     "is": "theme layer (School)",
+     "name": "Schools"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "OBJECTID",
+       "AIRPORT_NA",
+       "AIRPORT_ID",
+       "ELEVATION",
+       "AREA_CODE",
+       "TELEPHONE",
+       "CITY_NAME",
+       "ADDRESS",
+       "ZIP_CODE",
+       "LATITUDE",
+       "LONGITUDE"
+      ],
+      "geom": "Multipoint",
+      "id": 0,
+      "name": "Airports",
+      "nameField": "AIRPORT_NA",
+      "records": 163
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "COLLEGE_NA",
+       "AREA_CODE",
+       "TELEPHONE",
+       "CITY_NAME",
+       "ADDRESS",
+       "ZIP_CODE"
+      ],
+      "geom": "Multipoint",
+      "id": 1,
+      "name": "Colleges",
+      "nameField": "COLLEGE_NA",
+      "records": 126
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "FDID",
+       "FD_NAME",
+       "FD_PHONE",
+       "FD_ADDRESS",
+       "FD_CITY",
+       "FD_STATE",
+       "FD_ZIP"
+      ],
+      "geom": "Point",
+      "id": 2,
+      "name": "Fire Departments",
+      "nameField": "FD_NAME",
+      "records": 1212
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "HELIPORT_N",
+       "CITY_NAME",
+       "LATITUDE",
+       "LONGITUDE"
+      ],
+      "geom": "Multipoint",
+      "id": 3,
+      "name": "Heliports",
+      "nameField": "HELIPORT_N",
+      "records": 395
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "POST_NAME",
+       "AREA_CODE",
+       "TELEPHONE",
+       "ADDRESS",
+       "ZIP_CODE"
+      ],
+      "geom": "Multipoint",
+      "id": 4,
+      "name": "Highway Patrol",
+      "nameField": "POST_NAME",
+      "records": 61
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "HOSPITAL_N",
+       "CITY_NAME",
+       "ADDRESS",
+       "ZIP_CODE"
+      ],
+      "geom": "Multipoint",
+      "id": 5,
+      "name": "Hospitals",
+      "nameField": "HOSPITAL_N",
+      "records": 191
+     }
+    ],
+    "n_layers": 7
+   },
+   "tested": "2026-10-30",
+   "title": "emergencyoilgas_poi",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/DOG_Services/emergencyoilgas_poi/MapServer"
+  },
   "https://gis.ohiodnr.gov/arcgis/rest/services/dow_services/commercial_fishing_closed_zones_june_15_sept_15_sde_version/featureserver": {
    "band": "C",
    "catalog": "agency server walk",
@@ -1382,6 +1533,357 @@
    "tested": "2026-10-28",
    "title": "Commercial_Fishing_Permanently_Closed_Zone_SDE_Version",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/DOW_Services/Commercial_Fishing_Permanently_Closed_Zone_SDE_Version/MapServer"
+  },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/dow_services/dow_contractareas_salesforce": {
+   "band": "A",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [
+    "outline"
+   ],
+   "folder": "DOW_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "grade": 5,
+   "is": [
+    "ODNR Lands: park polygons with a name field",
+    "Uplands: park polygons with a name field"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 0,
+     "is": "park polygons with a name field",
+     "name": "ODNR Lands"
+    },
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 1,
+     "is": "park polygons with a name field",
+     "name": "Uplands"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 2,
+     "is": "water / roads: the US takes those from USGS NHD (rule 9), so not a gap here",
+     "name": "Wetlands"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "ALT_NAME",
+       "LANDS_NAME",
+       "Shape.STArea()",
+       "Shape.STLength()",
+       "OBJECTID",
+       "Shape",
+       "dow_district",
+       "dow_workunit_num"
+      ],
+      "geom": "Polygon",
+      "id": 0,
+      "name": "ODNR Lands",
+      "nameField": "ALT_NAME",
+      "names_missing": 0,
+      "parks": [],
+      "records": 585
+     },
+     {
+      "fields": [
+       "GlobalID",
+       "created_date",
+       "created_by",
+       "modified_date",
+       "modified_by",
+       "current_planned_activity",
+       "Acres",
+       "Shape.STArea()",
+       "Shape.STLength()",
+       "Name",
+       "Shape",
+       "FIELD_ID",
+       "contract_ID",
+       "current_year",
+       "Lands_Name",
+       "Alt_name",
+       "current_accomplished_activity",
+       "return_frequency",
+       "OBJECTID_1"
+      ],
+      "geom": "Polygon",
+      "id": 1,
+      "name": "Uplands",
+      "nameField": "Name",
+      "names_missing": 0,
+      "parks": [],
+      "records": 3667
+     },
+     {
+      "fields": [
+       "GlobalID",
+       "created_date",
+       "created_by",
+       "modified_date",
+       "modified_by",
+       "Acres",
+       "Shape.STArea()",
+       "Shape.STLength()",
+       "Name",
+       "Shape",
+       "FIELD_ID",
+       "contract_id",
+       "Lands_Name",
+       "Alt_name",
+       "current_year",
+       "current_planned_activity",
+       "current_accomplished_activity",
+       "drawdown_capabilities",
+       "water_source",
+       "water_level",
+       "OBJECTID_12"
+      ],
+      "geom": "Polygon",
+      "id": 2,
+      "name": "Wetlands",
+      "nameField": "Name",
+      "names_missing": 0,
+      "parks": [],
+      "records": 1769
+     }
+    ],
+    "n_layers": 3
+   },
+   "tested": "2026-10-30",
+   "title": "DOW_ContractAreas_SalesForce",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/DOW_Services/DOW_ContractAreas_SalesForce/MapServer"
+  },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/dow_services/dow_contractareas_salesforce_table": {
+   "band": "A",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [
+    "outline"
+   ],
+   "folder": "DOW_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "grade": 5,
+   "is": [
+    "Uplands: park polygons with a name field"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 0,
+     "is": "water / roads: the US takes those from USGS NHD (rule 9), so not a gap here",
+     "name": "Wetlands"
+    },
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 1,
+     "is": "park polygons with a name field",
+     "name": "Uplands"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 2,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Contract Areas"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "GlobalID",
+       "created_date",
+       "created_by",
+       "modified_date",
+       "modified_by",
+       "Acres",
+       "Shape.STArea()",
+       "Shape.STLength()",
+       "Name",
+       "Shape",
+       "FIELD_ID",
+       "contract_id",
+       "Lands_Name",
+       "Alt_name",
+       "current_year",
+       "current_planned_activity",
+       "current_accomplished_activity",
+       "drawdown_capabilities",
+       "water_source",
+       "water_level",
+       "OBJECTID_12"
+      ],
+      "geom": "Polygon",
+      "id": 0,
+      "name": "Wetlands",
+      "nameField": "Name",
+      "names_missing": 0,
+      "parks": [],
+      "records": 1769
+     },
+     {
+      "fields": [
+       "GlobalID",
+       "created_date",
+       "created_by",
+       "modified_date",
+       "modified_by",
+       "current_planned_activity",
+       "Acres",
+       "Shape.STArea()",
+       "Shape.STLength()",
+       "Name",
+       "Shape",
+       "FIELD_ID",
+       "contract_ID",
+       "current_year",
+       "Lands_Name",
+       "Alt_name",
+       "current_accomplished_activity",
+       "return_frequency",
+       "OBJECTID_1"
+      ],
+      "geom": "Polygon",
+      "id": 1,
+      "name": "Uplands",
+      "nameField": "Name",
+      "names_missing": 0,
+      "parks": [],
+      "records": 3667
+     },
+     {
+      "fields": [
+       "contract_id",
+       "label",
+       "symbol",
+       "land_objectid",
+       "Shape",
+       "created_by",
+       "created_Date",
+       "modified_by",
+       "modified_date",
+       "GlobalID",
+       "OBJECTID",
+       "Shape.STArea()",
+       "Shape.STLength()",
+       "Lands_name",
+       "Alt_name",
+       "Acres"
+      ],
+      "geom": "Polygon",
+      "id": 2,
+      "name": "Contract Areas",
+      "nameField": "label",
+      "names_missing": 0,
+      "parks": [],
+      "records": 209
+     }
+    ],
+    "n_layers": 3
+   },
+   "tested": "2026-10-30",
+   "title": "DOW_Contractareas_SalesForce_table",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/DOW_Services/DOW_Contractareas_SalesForce_table/MapServer"
+  },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/dow_services/dow_huntinglands": {
+   "band": "A",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [
+    "outline"
+   ],
+   "folder": "DOW_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "grade": 5,
+   "is": [
+    "DNR_LANDS_HUNTING: park polygons with a name field"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 0,
+     "is": "park polygons with a name field",
+     "name": "DNR_LANDS_HUNTING"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "ALT_NAME",
+       "DIV_CODE",
+       "LANDS_NAME",
+       "hunt_status",
+       "Shape",
+       "created_by",
+       "created_date",
+       "edit_by",
+       "edit_date",
+       "OBJECTID",
+       "GlobalID",
+       "Shape.STArea()",
+       "Shape.STLength()",
+       "WorkUnit",
+       "District"
+      ],
+      "geom": "Polygon",
+      "id": 0,
+      "name": "DNR_LANDS_HUNTING",
+      "nameField": "ALT_NAME",
+      "names_missing": 0,
+      "parks": [],
+      "records": 594
+     }
+    ],
+    "n_layers": 1
+   },
+   "tested": "2026-10-30",
+   "title": "DOW_HuntingLands",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/DOW_Services/DOW_HuntingLands/MapServer"
   },
   "https://gis.ohiodnr.gov/arcgis/rest/services/dow_services/dow_lakefishing/mapserver": {
    "band": "C",
@@ -2442,6 +2944,7 @@
     "outline"
    ],
    "grade": 5,
+   "hand_band": "B",
    "is": [
     "Roads: named like access (Parking)",
     "DNR_Lands_repl: park polygons with a name field",
@@ -2449,6 +2952,7 @@
    ],
    "keywords": [],
    "kind": "new",
+   "known_good": "chat 8 Oct 27",
    "layers_seen": [
     {
      "gap": "access",
@@ -2914,6 +3418,108 @@
    "title": "Roads_ParkingAreas",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/DOW_Services/Roads_ParkingAreas/MapServer"
   },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/dow_services/waterfowl_lottery": {
+   "band": "A",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [
+    "outline"
+   ],
+   "folder": "DOW_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "grade": 5,
+   "is": [
+    "DNR_Lands: park polygons with a name field"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": null,
+     "geom": "Point",
+     "id": 0,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Wildlife.WILDLIFE_CREATOR.Hunt_Points"
+    },
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 1,
+     "is": "park polygons with a name field",
+     "name": "DNR_Lands"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "UserID",
+       "DateCreated",
+       "DateUpdated",
+       "created_by",
+       "updated_by",
+       "GlobalID",
+       "OBJECTID",
+       "Type",
+       "Number",
+       "Name",
+       "Shape",
+       "PickOrder",
+       "HunterName",
+       "Available",
+       "lands_name",
+       "Hunt_Name_ID"
+      ],
+      "geom": "Point",
+      "id": 0,
+      "name": "Wildlife.WILDLIFE_CREATOR.Hunt_Points",
+      "nameField": "Name",
+      "names_missing": 0,
+      "parks": [],
+      "records": 354
+     },
+     {
+      "fields": [
+       "ALT_NAME",
+       "DIV_CODE",
+       "OWN_TYPE",
+       "SUM_CALC_ACRES",
+       "GlobalID",
+       "Shape.STArea()",
+       "Shape.STLength()",
+       "OBJECTID",
+       "PROP_TYPE",
+       "CNTY_FIPS",
+       "Name_Label",
+       "MANAGING_AGENCY",
+       "LANDS_NAME",
+       "SHOW",
+       "Shape"
+      ],
+      "geom": "Polygon",
+      "id": 1,
+      "name": "DNR_Lands",
+      "nameField": "ALT_NAME",
+      "names_missing": 0,
+      "parks": [],
+      "records": 865
+     }
+    ],
+    "n_layers": 2
+   },
+   "tested": "2026-10-30",
+   "title": "Waterfowl_Lottery",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/DOW_Services/Waterfowl_Lottery/MapServer"
+  },
   "https://gis.ohiodnr.gov/arcgis/rest/services/dow_services/wildlife_trails_verify": {
    "band": "A",
    "catalog": "agency server walk",
@@ -2926,11 +3532,13 @@
     "trail line"
    ],
    "grade": 5,
+   "hand_band": "B",
    "is": [
     "Wildlife_Trails: lines named Trails"
    ],
    "keywords": [],
    "kind": "new",
+   "known_good": "chat 8 Oct 27: B/A",
    "layers_seen": [
     {
      "gap": "trail line",
@@ -3168,11 +3776,13 @@
     "trail line"
    ],
    "grade": 5,
+   "hand_band": "A",
    "is": [
     "Parks_DNAP_Trails: lines named Trails"
    ],
    "keywords": [],
    "kind": "new",
+   "known_good": "chat 8 Oct 27: Ohio has no trail lines today",
    "layers_seen": [
     {
      "gap": "trail line",
@@ -5200,11 +5810,13 @@
     "access"
    ],
    "grade": 4,
+   "hand_band": "B",
    "is": [
     "Stream Access (All Fields): access points"
    ],
    "keywords": [],
    "kind": "new",
+   "known_good": "chat 8 Oct 27",
    "layers_seen": [
     {
      "gap": "access",
@@ -10155,6 +10767,327 @@
    "title": "LicenseAgents_Lodges_CampOffices",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/LicenseAgents_Lodges_CampOffices/MapServer"
   },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/licensing_lakeslands": {
+   "band": "A",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [
+    "outline"
+   ],
+   "folder": "OIT_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "grade": 5,
+   "is": [
+    "ODNR Lands: park polygons with a name field"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 0,
+     "is": "water / roads: the US takes those from USGS NHD (rule 9), so not a gap here",
+     "name": "Lakes (ODNR)"
+    },
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 1,
+     "is": "park polygons with a name field",
+     "name": "ODNR Lands"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "Shape",
+       "Name",
+       "Acres",
+       "Digitized",
+       "OBJECTID",
+       "Shape_Length",
+       "Shape_Area"
+      ],
+      "geom": "Polygon",
+      "id": 0,
+      "name": "Lakes (ODNR)",
+      "nameField": "Name",
+      "names_missing": 0,
+      "parks": [],
+      "records": 595
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "OWN_TYPE",
+       "DIV_CODE",
+       "PROP_TYPE",
+       "CNTY_FIPS",
+       "Shape",
+       "SUM_CALC_ACRES",
+       "Name_Label",
+       "Shape.STArea()",
+       "Shape.STLength()",
+       "ALT_NAME",
+       "LANDS_NAME",
+       "GlobalID"
+      ],
+      "geom": "Polygon",
+      "id": 1,
+      "name": "ODNR Lands",
+      "nameField": "Name_Label",
+      "names_missing": 0,
+      "parks": [],
+      "records": 865
+     }
+    ],
+    "n_layers": 2
+   },
+   "tested": "2026-10-30",
+   "title": "Licensing_LakesLands",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/Licensing_LakesLands/MapServer"
+  },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/odnr_basemap_streets_103_2": {
+   "band": "C",
+   "catalog": "agency server walk",
+   "folder": "OIT_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "grade": 0,
+   "is": [
+    "Ohio boundary: nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+    "ned_30m_hs: nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+    "International Line (All): nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 0,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Ohio boundary"
+    },
+    {
+     "gap": null,
+     "geom": "",
+     "id": 1,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "ned_30m_hs"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 2,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "International Line (All)"
+    },
+    {
+     "gap": null,
+     "geom": "Point",
+     "id": 3,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Cities Centroids (2,311,162)"
+    },
+    {
+     "gap": null,
+     "geom": "Polyline",
+     "id": 4,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Highways I (2,311,162)"
+    },
+    {
+     "gap": null,
+     "geom": "Polyline",
+     "id": 5,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Highways US (2,311,162)"
+    },
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 6,
+     "is": "park polygons with a name field",
+     "name": "ODNR Lands (2,311,162)"
+    },
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 7,
+     "is": "park polygons with a name field",
+     "name": "FederalLands (2,311,162)"
+    },
+    {
+     "gap": null,
+     "geom": "Polyline",
+     "id": 8,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Highways I (1,155,581)"
+    },
+    {
+     "gap": null,
+     "geom": "Polyline",
+     "id": 9,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Highways US (1,155,581)"
+    },
+    {
+     "gap": null,
+     "geom": "Polyline",
+     "id": 10,
+     "is": "water / roads: the US takes those from USGS NHD (rule 9), so not a gap here",
+     "name": "Rivers (1,155,581)"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 11,
+     "is": "theme layer (Counties)",
+     "name": "Counties (1,155,581)"
+    }
+   ],
+   "licence": "",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "Shape_Length",
+       "Shape_Area",
+       "OBJECTID",
+       "Shape",
+       "STATUS"
+      ],
+      "geom": "Polygon",
+      "id": 0,
+      "name": "Ohio boundary",
+      "nameField": "STATUS",
+      "names_missing": 0,
+      "parks": [],
+      "records": 2
+     },
+     {
+      "fields": [],
+      "geom": "",
+      "id": 1,
+      "name": "ned_30m_hs",
+      "nameField": ""
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "Shape",
+       "FIPS_ADMIN",
+       "GMI_ADMIN",
+       "ADMIN_NAME",
+       "FIPS_CNTRY",
+       "GMI_CNTRY",
+       "CNTRY_NAME",
+       "POP_ADMIN",
+       "TYPE_ENG",
+       "TYPE_LOC",
+       "SQKM",
+       "SQMI",
+       "COLORMAP",
+       "LABEL_FLAG",
+       "OID_1",
+       "Shape_Length",
+       "Shape_Area",
+       "Shape_Leng"
+      ],
+      "geom": "Polygon",
+      "id": 2,
+      "name": "International Line (All)",
+      "nameField": "CNTRY_NAME",
+      "names_missing": 0,
+      "parks": [],
+      "records": 1
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "Shape",
+       "CORPORATION",
+       "POPULATION",
+       "AREA_SQMI",
+       "ORIG_FID",
+       "Label"
+      ],
+      "geom": "Point",
+      "id": 3,
+      "name": "Cities Centroids (2,311,162)",
+      "nameField": "Label",
+      "names_missing": 0,
+      "parks": [],
+      "records": 27
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "MUNI_NAME",
+       "ST_NAME",
+       "ST_DIR_SFX",
+       "COUNTY",
+       "ST_PREFIX",
+       "ST_NME_SFX",
+       "ROUTE_LABEL",
+       "ROUTE_TYPE",
+       "Shape_Length"
+      ],
+      "geom": "Polyline",
+      "id": 4,
+      "name": "Highways I (2,311,162)",
+      "nameField": "MUNI_NAME",
+      "names_missing": 0,
+      "parks": [],
+      "records": 5000
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "MUNI_NAME",
+       "ST_NAME",
+       "ST_DIR_SFX",
+       "COUNTY",
+       "ST_PREFIX",
+       "ST_NME_SFX",
+       "ROUTE_LABEL",
+       "ROUTE_TYPE",
+       "Shape_Length"
+      ],
+      "geom": "Polyline",
+      "id": 5,
+      "name": "Highways US (2,311,162)",
+      "nameField": "MUNI_NAME",
+      "names_missing": 0,
+      "parks": [],
+      "records": 5000
+     }
+    ],
+    "n_layers": 40
+   },
+   "tested": "2026-10-30",
+   "title": "ODNR_Basemap_Streets_103_2",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Basemap_Streets_103_2/MapServer"
+  },
   "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/odnr_hr_jobinterest": {
    "band": "B",
    "catalog": "agency server walk",
@@ -12272,6 +13205,332 @@
    "title": "ODNR_LandBase_CNTY_TWP_OLS_PARC",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_LandBase_CNTY_TWP_OLS_PARC/MapServer"
   },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/odnr_landbase_new": {
+   "band": "A",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [
+    "outline"
+   ],
+   "folder": "OIT_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "grade": 5,
+   "is": [
+    "Land Subdivision: park polygons with a name field"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 0,
+     "is": "theme layer (Counties)",
+     "name": "Counties"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 1,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Historic Township"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 2,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Current Township"
+    },
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 3,
+     "is": "park polygons with a name field",
+     "name": "Land Subdivision"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "Shape",
+       "COUNTY",
+       "CNTY_CODE",
+       "NS_ZONE",
+       "Shape_Length",
+       "Shape_Area",
+       "OBJECTID_1",
+       "OBJECTID",
+       "STATUS",
+       "CNTY_NO"
+      ],
+      "geom": "Polygon",
+      "id": 0,
+      "name": "Counties",
+      "nameField": "COUNTY",
+      "names_missing": 0,
+      "parks": [],
+      "records": 164
+     },
+     {
+      "fields": [
+       "OBJECTID_1",
+       "Shape",
+       "OBJECTID",
+       "Shape_Leng",
+       "TOWNSHIP",
+       "COUNTY",
+       "TWP_NO",
+       "Shape_Length",
+       "Shape_Area",
+       "TWP_CO"
+      ],
+      "geom": "Polygon",
+      "id": 1,
+      "name": "Historic Township",
+      "nameField": "TOWNSHIP",
+      "names_missing": 0,
+      "parks": [],
+      "records": 1365
+     },
+     {
+      "fields": [
+       "Shape",
+       "Shape_Length",
+       "Shape_Area",
+       "OBJECTID",
+       "TOWNSHIP_N",
+       "FIPS_CODE",
+       "COUNTY_COD",
+       "POPULATION",
+       "POP_1990",
+       "AREA_SQMI"
+      ],
+      "geom": "Polygon",
+      "id": 2,
+      "name": "Current Township",
+      "nameField": "TOWNSHIP_N",
+      "names_missing": 0,
+      "parks": [],
+      "records": 1330
+     },
+     {
+      "fields": [
+       "OBJECTID_1",
+       "Shape",
+       "OBJECTID",
+       "VMSLOT",
+       "SUBDIV_NM",
+       "TWP_NUM",
+       "TWP_DIR",
+       "RNG_NUM",
+       "RNG_DIR",
+       "SECTION_",
+       "QTR_TWP",
+       "ALLOTMENT",
+       "TRACT",
+       "OTHER_SUB",
+       "LOT",
+       "DIVISION",
+       "FRACTION",
+       "LOTFRACDIR",
+       "COMMENTS",
+       "COUNTY",
+       "STATUS",
+       "TOWNSHIP",
+       "LABEL_FIEL",
+       "Shape_Length",
+       "Shape_Area",
+       "TOWNSHIP_CO"
+      ],
+      "geom": "Polygon",
+      "id": 3,
+      "name": "Land Subdivision",
+      "nameField": "SUBDIV_NM",
+      "names_missing": 0,
+      "parks": [],
+      "records": 5000
+     }
+    ],
+    "n_layers": 4
+   },
+   "tested": "2026-10-30",
+   "title": "odnr_landbase_New",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/odnr_landbase_New/MapServer"
+  },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/odnr_landbase_noparcels": {
+   "band": "A",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [
+    "outline"
+   ],
+   "folder": "OIT_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "grade": 5,
+   "is": [
+    "Land Subdivision: park polygons with a name field"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 0,
+     "is": "theme layer (Counties)",
+     "name": "Counties"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 1,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Historic Township"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 2,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Current Township"
+    },
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 3,
+     "is": "park polygons with a name field",
+     "name": "Land Subdivision"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "Shape",
+       "COUNTY",
+       "CNTY_CODE",
+       "NS_ZONE",
+       "Shape_Length",
+       "Shape_Area",
+       "OBJECTID_1",
+       "OBJECTID",
+       "STATUS",
+       "CNTY_NO"
+      ],
+      "geom": "Polygon",
+      "id": 0,
+      "name": "Counties",
+      "nameField": "COUNTY",
+      "names_missing": 0,
+      "parks": [],
+      "records": 164
+     },
+     {
+      "fields": [
+       "OBJECTID_1",
+       "Shape",
+       "OBJECTID",
+       "Shape_Leng",
+       "TOWNSHIP",
+       "COUNTY",
+       "TWP_NO",
+       "Shape_Length",
+       "Shape_Area",
+       "TWP_CO"
+      ],
+      "geom": "Polygon",
+      "id": 1,
+      "name": "Historic Township",
+      "nameField": "TOWNSHIP",
+      "names_missing": 0,
+      "parks": [],
+      "records": 1365
+     },
+     {
+      "fields": [
+       "Shape",
+       "Shape_Length",
+       "Shape_Area",
+       "OBJECTID",
+       "TOWNSHIP_N",
+       "FIPS_CODE",
+       "COUNTY_COD",
+       "POPULATION",
+       "POP_1990",
+       "AREA_SQMI"
+      ],
+      "geom": "Polygon",
+      "id": 2,
+      "name": "Current Township",
+      "nameField": "TOWNSHIP_N",
+      "names_missing": 0,
+      "parks": [],
+      "records": 1330
+     },
+     {
+      "fields": [
+       "OBJECTID_1",
+       "Shape",
+       "OBJECTID",
+       "VMSLOT",
+       "SUBDIV_NM",
+       "TWP_NUM",
+       "TWP_DIR",
+       "RNG_NUM",
+       "RNG_DIR",
+       "SECTION_",
+       "QTR_TWP",
+       "ALLOTMENT",
+       "TRACT",
+       "OTHER_SUB",
+       "LOT",
+       "DIVISION",
+       "FRACTION",
+       "LOTFRACDIR",
+       "COMMENTS",
+       "COUNTY",
+       "STATUS",
+       "TOWNSHIP",
+       "LABEL_FIEL",
+       "Shape_Length",
+       "Shape_Area",
+       "TOWNSHIP_CO"
+      ],
+      "geom": "Polygon",
+      "id": 3,
+      "name": "Land Subdivision",
+      "nameField": "SUBDIV_NM",
+      "names_missing": 0,
+      "parks": [],
+      "records": 5000
+     }
+    ],
+    "n_layers": 4
+   },
+   "tested": "2026-10-30",
+   "title": "odnr_landbase_noparcels",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/odnr_landbase_noparcels/MapServer"
+  },
   "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/odnr_landbase_v2": {
    "band": "A",
    "catalog": "agency server walk",
@@ -12655,6 +13914,332 @@
    "tested": "2026-10-28",
    "title": "odnr_landbase_v2",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/odnr_landbase_v2/MapServer"
+  },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/odnr_landbase_v2_new": {
+   "band": "A",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [
+    "outline"
+   ],
+   "folder": "OIT_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "grade": 5,
+   "is": [
+    "Land Subdivision: park polygons with a name field"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 0,
+     "is": "theme layer (Counties)",
+     "name": "Counties"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 1,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Historic Township"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 2,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Current Township"
+    },
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 3,
+     "is": "park polygons with a name field",
+     "name": "Land Subdivision"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "Shape_Length",
+       "Shape_Area",
+       "OBJECTID_1",
+       "Shape",
+       "OBJECTID",
+       "COUNTY",
+       "STATUS",
+       "CNTY_NO",
+       "CNTY_CODE",
+       "NS_ZONE"
+      ],
+      "geom": "Polygon",
+      "id": 0,
+      "name": "Counties",
+      "nameField": "COUNTY",
+      "names_missing": 0,
+      "parks": [],
+      "records": 164
+     },
+     {
+      "fields": [
+       "OBJECTID_1",
+       "Shape",
+       "OBJECTID",
+       "Shape_Leng",
+       "TOWNSHIP",
+       "COUNTY",
+       "TWP_NO",
+       "Shape_Length",
+       "Shape_Area",
+       "TWP_CO"
+      ],
+      "geom": "Polygon",
+      "id": 1,
+      "name": "Historic Township",
+      "nameField": "TOWNSHIP",
+      "names_missing": 0,
+      "parks": [],
+      "records": 1365
+     },
+     {
+      "fields": [
+       "Shape",
+       "Shape_Length",
+       "Shape_Area",
+       "OBJECTID",
+       "TOWNSHIP_N",
+       "FIPS_CODE",
+       "COUNTY_COD",
+       "POPULATION",
+       "POP_1990",
+       "AREA_SQMI"
+      ],
+      "geom": "Polygon",
+      "id": 2,
+      "name": "Current Township",
+      "nameField": "TOWNSHIP_N",
+      "names_missing": 0,
+      "parks": [],
+      "records": 1330
+     },
+     {
+      "fields": [
+       "OBJECTID_1",
+       "Shape",
+       "OBJECTID",
+       "VMSLOT",
+       "SUBDIV_NM",
+       "TWP_NUM",
+       "TWP_DIR",
+       "RNG_NUM",
+       "RNG_DIR",
+       "SECTION_",
+       "QTR_TWP",
+       "ALLOTMENT",
+       "TRACT",
+       "OTHER_SUB",
+       "LOT",
+       "DIVISION",
+       "FRACTION",
+       "LOTFRACDIR",
+       "COMMENTS",
+       "COUNTY",
+       "STATUS",
+       "TOWNSHIP",
+       "LABEL_FIEL",
+       "Shape_Length",
+       "Shape_Area",
+       "TOWNSHIP_CO"
+      ],
+      "geom": "Polygon",
+      "id": 3,
+      "name": "Land Subdivision",
+      "nameField": "SUBDIV_NM",
+      "names_missing": 0,
+      "parks": [],
+      "records": 5000
+     }
+    ],
+    "n_layers": 4
+   },
+   "tested": "2026-10-30",
+   "title": "odnr_landbase_v2_New",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/odnr_landbase_v2_New/MapServer"
+  },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/odnr_landbase_v3_new": {
+   "band": "A",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [
+    "outline"
+   ],
+   "folder": "OIT_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline"
+   ],
+   "grade": 5,
+   "is": [
+    "Land Subdivision: park polygons with a name field"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 0,
+     "is": "theme layer (Counties)",
+     "name": "Counties"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 1,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Historic Township"
+    },
+    {
+     "gap": null,
+     "geom": "Polygon",
+     "id": 2,
+     "is": "nothing a gap needs (no access / trail / park / closure / ownership in its name)",
+     "name": "Current Township"
+    },
+    {
+     "gap": "outline",
+     "geom": "Polygon",
+     "id": 3,
+     "is": "park polygons with a name field",
+     "name": "Land Subdivision"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "Shape_Length",
+       "Shape_Area",
+       "OBJECTID_1",
+       "Shape",
+       "OBJECTID",
+       "COUNTY",
+       "STATUS",
+       "CNTY_NO",
+       "CNTY_CODE",
+       "NS_ZONE"
+      ],
+      "geom": "Polygon",
+      "id": 0,
+      "name": "Counties",
+      "nameField": "COUNTY",
+      "names_missing": 0,
+      "parks": [],
+      "records": 164
+     },
+     {
+      "fields": [
+       "OBJECTID_1",
+       "Shape",
+       "OBJECTID",
+       "Shape_Leng",
+       "TOWNSHIP",
+       "COUNTY",
+       "TWP_NO",
+       "Shape_Length",
+       "Shape_Area",
+       "TWP_CO"
+      ],
+      "geom": "Polygon",
+      "id": 1,
+      "name": "Historic Township",
+      "nameField": "TOWNSHIP",
+      "names_missing": 0,
+      "parks": [],
+      "records": 1365
+     },
+     {
+      "fields": [
+       "Shape",
+       "Shape_Length",
+       "Shape_Area",
+       "OBJECTID",
+       "TOWNSHIP_N",
+       "FIPS_CODE",
+       "COUNTY_COD",
+       "POPULATION",
+       "POP_1990",
+       "AREA_SQMI"
+      ],
+      "geom": "Polygon",
+      "id": 2,
+      "name": "Current Township",
+      "nameField": "TOWNSHIP_N",
+      "names_missing": 0,
+      "parks": [],
+      "records": 1330
+     },
+     {
+      "fields": [
+       "OBJECTID_1",
+       "Shape",
+       "OBJECTID",
+       "VMSLOT",
+       "SUBDIV_NM",
+       "TWP_NUM",
+       "TWP_DIR",
+       "RNG_NUM",
+       "RNG_DIR",
+       "SECTION_",
+       "QTR_TWP",
+       "ALLOTMENT",
+       "TRACT",
+       "OTHER_SUB",
+       "LOT",
+       "DIVISION",
+       "FRACTION",
+       "LOTFRACDIR",
+       "COMMENTS",
+       "COUNTY",
+       "STATUS",
+       "TOWNSHIP",
+       "LABEL_FIEL",
+       "Shape_Length",
+       "Shape_Area",
+       "TOWNSHIP_CO"
+      ],
+      "geom": "Polygon",
+      "id": 3,
+      "name": "Land Subdivision",
+      "nameField": "SUBDIV_NM",
+      "names_missing": 0,
+      "parks": [],
+      "records": 5000
+     }
+    ],
+    "n_layers": 4
+   },
+   "tested": "2026-10-30",
+   "title": "odnr_landbase_v3_New",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/odnr_landbase_v3_New/MapServer"
   },
   "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/odnr_nationalhydrodataset/mapserver": {
    "band": "C",
@@ -13868,10 +15453,80 @@
    "title": "ODNR_POI",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_POI/MapServer"
   },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/odnr_poi_202104230929": {
+   "band": "B",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [],
+   "folder": "OIT_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "access"
+   ],
+   "grade": 4,
+   "is": [
+    "Points of Interest: points named Points of Interest"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": "access",
+     "geom": "Point",
+     "id": 0,
+     "is": "points named Points of Interest",
+     "name": "Points of Interest"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "OBJECTID",
+       "Type",
+       "POI_NAME",
+       "Sym_Rotate",
+       "PARK_NAME",
+       "TRAILMAP",
+       "RuleID",
+       "DateCreated",
+       "DateUpdated",
+       "LANDS_NAME",
+       "created_by",
+       "edited_by",
+       "comments",
+       "DIV",
+       "RuleID_1",
+       "RuleID_2",
+       "RuleID_3",
+       "RuleID_4",
+       "POI_Label",
+       "Category",
+       "Shape"
+      ],
+      "geom": "Point",
+      "id": 0,
+      "name": "Points of Interest",
+      "nameField": "POI_NAME",
+      "records": 8934
+     }
+    ],
+    "n_layers": 1
+   },
+   "tested": "2026-10-30",
+   "title": "ODNR_POI_202104230929",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_POI_202104230929/MapServer"
+  },
   "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/odnr_trail_heads_view/mapserver": {
    "band": "C",
    "catalog": "hand (chat 8)",
-   "fails": 1,
+   "fails": 2,
    "fills_empty_gap": [],
    "found": "2026-10-28",
    "gaps": [
@@ -13888,6 +15543,7 @@
    "missed_by_bot": true,
    "parks_named": 0,
    "publisher": "gis.ohiodnr.gov",
+   "sleeping_until": "2026-12-29",
    "st": "OH",
    "title": "ODNR Trail Heads View (official trailheads)",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Trail_Heads_View/MapServer"
@@ -14234,6 +15890,7 @@
     "access"
    ],
    "grade": 4,
+   "hand_band": "B",
    "is": [
     "POI_DPW_DNAP: points named POI",
     "POI_Wildlife: points named POI",
@@ -14242,6 +15899,7 @@
    ],
    "keywords": [],
    "kind": "new",
+   "known_good": "chat 8 Oct 27",
    "layers_seen": [
     {
      "gap": "access",
@@ -14818,10 +16476,136 @@
    "title": "POI_Verify",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/POI_Verify/MapServer"
   },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/trails_waypoints_poi": {
+   "band": "A",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [
+    "trail line"
+   ],
+   "folder": "OIT_Services",
+   "found": "2026-10-30",
+   "gaps": [
+    "access",
+    "trail line"
+   ],
+   "grade": 5,
+   "is": [
+    "Points_of_Interest: points named Points of Interest",
+    "Way Points: points named WayPoint",
+    "Trails: lines named Trails"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": "access",
+     "geom": "Point",
+     "id": 0,
+     "is": "points named Points of Interest",
+     "name": "Points_of_Interest"
+    },
+    {
+     "gap": "access",
+     "geom": "Point",
+     "id": 1,
+     "is": "points named WayPoint",
+     "name": "Way Points"
+    },
+    {
+     "gap": "trail line",
+     "geom": "Polyline",
+     "id": 2,
+     "is": "lines named Trails",
+     "name": "Trails"
+    }
+   ],
+   "licence": "Ohio Department of Natural Resources",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "OBJECTID",
+       "Type",
+       "POI_NAME",
+       "Sym_Rotate",
+       "PARK_NAME",
+       "TRAILMAP",
+       "RuleID",
+       "DateCreated",
+       "DateUpdated",
+       "LANDS_NAME",
+       "created_by",
+       "edited_by",
+       "comments",
+       "DIV",
+       "RuleID_1",
+       "RuleID_2",
+       "RuleID_3",
+       "RuleID_4",
+       "POI_Label",
+       "Category",
+       "Shape"
+      ],
+      "geom": "Point",
+      "id": 0,
+      "name": "Points_of_Interest",
+      "nameField": "POI_NAME"
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "Point_ID",
+       "TRAIL_NAME",
+       "SECOND_TRAIL",
+       "DIV_CODE",
+       "PARK_NAME",
+       "Shape",
+       "RuleID"
+      ],
+      "geom": "Point",
+      "id": 1,
+      "name": "Way Points",
+      "nameField": "TRAIL_NAME"
+     },
+     {
+      "fields": [
+       "OBJECTID",
+       "TRAIL_NAME",
+       "LENGTH",
+       "USE_CODE",
+       "STATUS",
+       "DIFF_LEVEL",
+       "ACCESS",
+       "SURF_TYPE",
+       "DIVISION",
+       "LANDS_NAME",
+       "Shape",
+       "RuleID_2",
+       "Shape.STLength()",
+       "Trails_jnFld",
+       "Total_Length"
+      ],
+      "geom": "Polyline",
+      "id": 2,
+      "name": "Trails",
+      "nameField": "TRAIL_NAME"
+     }
+    ],
+    "n_layers": 3
+   },
+   "tested": "2026-10-30",
+   "title": "Trails_WayPoints_POI",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/Trails_WayPoints_POI/MapServer"
+  },
   "https://gis.ohiodnr.gov/arcgis/rest/services/oit_services/trails_waypoints_poi/mapserver": {
    "band": "C",
    "catalog": "hand (chat 8)",
-   "fails": 1,
+   "fails": 2,
    "fills_empty_gap": [],
    "found": "2026-10-28",
    "gaps": [
@@ -14838,14 +16622,94 @@
    "missed_by_bot": true,
    "parks_named": 0,
    "publisher": "gis.ohiodnr.gov",
+   "sleeping_until": "2026-12-29",
    "st": "OH",
    "title": "Trails_WayPoints_POI (trail waypoints, trailheads, points of interest)",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/Trails_WayPoints_POI/MapServer"
   },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/testing/facilities_guide_with_stream_access": {
+   "band": "B",
+   "catalog": "agency server walk",
+   "fills_empty_gap": [],
+   "folder": "testing",
+   "found": "2026-10-30",
+   "gaps": [
+    "access"
+   ],
+   "grade": 4,
+   "is": [
+    "Facilities_3_With_StreamAccess: points named Facilit"
+   ],
+   "keywords": [],
+   "kind": "new",
+   "layers_seen": [
+    {
+     "gap": "access",
+     "geom": "Point",
+     "id": 0,
+     "is": "points named Facilit",
+     "name": "Facilities_3_With_StreamAccess"
+    }
+   ],
+   "licence": "",
+   "licence_note": "licence unknown",
+   "modified": "",
+   "parks_named": 0,
+   "publisher": "gis2.ohiodnr.gov",
+   "st": "OH",
+   "test": {
+    "answers": true,
+    "layers": [
+     {
+      "fields": [
+       "OBJECTID",
+       "GlobalID",
+       "SiteID",
+       "SiteName",
+       "Address",
+       "City",
+       "State",
+       "Zip",
+       "County",
+       "Phone",
+       "MagnName",
+       "MangAddress",
+       "MangCity",
+       "MangSt",
+       "MangZip",
+       "Website",
+       "Comments",
+       "ContactPerson",
+       "ContactNum",
+       "ContactTitle",
+       "OpHours",
+       "SeasonOpen",
+       "Public_",
+       "PublicAmenities",
+       "Reviewer",
+       "InspDate",
+       "UserFee",
+       "AdminType",
+       "HandLaunchOnly",
+       "MotorBoatLaunch"
+      ],
+      "geom": "Point",
+      "id": 0,
+      "name": "Facilities_3_With_StreamAccess",
+      "nameField": "SiteName",
+      "records": 2070
+     }
+    ],
+    "n_layers": 1
+   },
+   "tested": "2026-10-30",
+   "title": "Facilities_Guide_With_Stream_Access",
+   "url": "https://gis2.ohiodnr.gov/arcgis/rest/services/testing/Facilities_Guide_With_Stream_Access/FeatureServer"
+  },
   "https://scgis.summitoh.net/hosted/rest/services/hydrography": {
    "band": "C",
    "catalog": "ArcGIS Online",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "roads/water"
    ],
@@ -14899,7 +16763,7 @@
     ],
     "n_layers": 2
    },
-   "tested": "2026-10-28",
+   "tested": "2026-10-30",
    "title": "Lakes and Ponds",
    "url": "https://scgis.summitoh.net/hosted/rest/services/Hydrography/MapServer"
   },
@@ -15344,7 +17208,7 @@
    "fills_empty_gap": [
     "trail line"
    ],
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "trail line"
    ],
@@ -15382,14 +17246,14 @@
     ],
     "n_layers": 1
    },
-   "tested": "2026-10-28",
+   "tested": "2026-10-30",
    "title": "Fayette Trails",
    "url": "https://services8.arcgis.com/CJpiu5T88EYxY793/arcgis/rest/services/Fayette_Trails/FeatureServer"
   },
   "map-page:US-12057": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15412,7 +17276,7 @@
   "map-page:US-1944": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15435,7 +17299,7 @@
   "map-page:US-7849": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15458,7 +17322,7 @@
   "map-page:US-8106": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15481,7 +17345,7 @@
   "map-page:US-8107": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15504,7 +17368,7 @@
   "map-page:US-8108": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15527,7 +17391,7 @@
   "map-page:US-8109": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15550,7 +17414,7 @@
   "map-page:US-8110": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15573,7 +17437,7 @@
   "map-page:US-8111": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15596,7 +17460,7 @@
   "map-page:US-8112": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15619,7 +17483,7 @@
   "map-page:US-8114": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15642,7 +17506,7 @@
   "map-page:US-8269": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15665,7 +17529,7 @@
   "map-page:US-8270": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15688,7 +17552,7 @@
   "map-page:US-8271": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15711,7 +17575,7 @@
   "map-page:US-8630": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15734,7 +17598,7 @@
   "map-page:US-8631": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15757,7 +17621,7 @@
   "map-page:US-8633": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15780,7 +17644,7 @@
   "map-page:US-8634": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15803,7 +17667,7 @@
   "map-page:US-8636": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15826,7 +17690,7 @@
   "map-page:US-8637": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15849,7 +17713,7 @@
   "map-page:US-8638": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15872,7 +17736,7 @@
   "map-page:US-9442": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15895,7 +17759,7 @@
   "map-page:US-9443": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15918,7 +17782,7 @@
   "map-page:US-9445": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15941,7 +17805,7 @@
   "map-page:US-9446": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15964,7 +17828,7 @@
   "map-page:US-9448": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -15987,7 +17851,7 @@
   "map-page:US-9449": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16010,7 +17874,7 @@
   "map-page:US-9450": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16033,7 +17897,7 @@
   "map-page:US-9453": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16056,7 +17920,7 @@
   "map-page:US-9454": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16079,7 +17943,7 @@
   "map-page:US-9455": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16102,7 +17966,7 @@
   "map-page:US-9456": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16125,7 +17989,7 @@
   "map-page:US-9458": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16148,7 +18012,7 @@
   "map-page:US-9459": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16171,7 +18035,7 @@
   "map-page:US-9460": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16194,7 +18058,7 @@
   "map-page:US-9461": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16217,7 +18081,7 @@
   "map-page:US-9462": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16240,7 +18104,7 @@
   "map-page:US-9463": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16263,7 +18127,7 @@
   "map-page:US-9466": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16286,7 +18150,7 @@
   "map-page:US-9468": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16309,7 +18173,7 @@
   "map-page:US-9469": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16332,7 +18196,7 @@
   "map-page:US-9471": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16355,7 +18219,7 @@
   "map-page:US-9472": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16378,7 +18242,7 @@
   "map-page:US-9474": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16401,7 +18265,7 @@
   "map-page:US-9475": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16424,7 +18288,7 @@
   "map-page:US-9476": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16447,7 +18311,7 @@
   "map-page:US-9478": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16470,7 +18334,7 @@
   "map-page:US-9479": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16493,7 +18357,7 @@
   "map-page:US-9480": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16516,7 +18380,7 @@
   "map-page:US-9481": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16539,7 +18403,7 @@
   "map-page:US-9482": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16562,7 +18426,7 @@
   "map-page:US-9483": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16585,7 +18449,7 @@
   "map-page:US-9486": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16608,7 +18472,7 @@
   "map-page:US-9487": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16631,7 +18495,7 @@
   "map-page:US-9489": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16654,7 +18518,7 @@
   "map-page:US-9490": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16677,7 +18541,7 @@
   "map-page:US-9492": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16700,7 +18564,7 @@
   "map-page:US-9493": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16723,7 +18587,7 @@
   "map-page:US-9494": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16746,7 +18610,7 @@
   "map-page:US-9495": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16769,7 +18633,7 @@
   "map-page:US-9496": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16792,7 +18656,7 @@
   "map-page:US-9498": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16815,7 +18679,7 @@
   "map-page:US-9499": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16838,7 +18702,7 @@
   "map-page:US-9500": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16861,7 +18725,7 @@
   "map-page:US-9501": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16884,7 +18748,7 @@
   "map-page:US-9504": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16907,7 +18771,7 @@
   "map-page:US-9505": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16930,7 +18794,7 @@
   "map-page:US-9509": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16953,7 +18817,7 @@
   "map-page:US-9512": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16976,7 +18840,7 @@
   "map-page:US-9513": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -16999,7 +18863,7 @@
   "map-page:US-9515": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -17022,7 +18886,7 @@
   "map-page:US-9516": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -17045,7 +18909,7 @@
   "map-page:US-9517": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -17068,7 +18932,7 @@
   "map-page:US-9519": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -17091,7 +18955,7 @@
   "map-page:US-9520": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -17114,7 +18978,7 @@
   "map-page:US-9521": {
    "band": "A",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -17137,7 +19001,7 @@
   "map-page:US-9522": {
    "band": "B",
    "catalog": "agency PDF host",
-   "found": "2026-10-28",
+   "found": "2026-10-30",
    "gaps": [
     "map page"
    ],
@@ -17182,20 +19046,20 @@
   }
  ],
  "stats": {
-  "already_read": 14,
-  "errors": 8,
-  "hits": 2301,
+  "already_read": 21,
+  "errors": 9,
+  "hits": 2327,
   "known_good_found": 7,
   "known_good_missed": 0,
-  "new": 114,
-  "not_a_lead": 454,
-  "not_agency": 1911,
+  "new": 94,
+  "not_a_lead": 500,
+  "not_agency": 1912,
   "not_this_state": 55,
   "pages": 20,
   "pdf_found": 77,
   "pdf_tried": 102,
   "sleeping": 0,
-  "tested": 38
+  "tested": 17
  },
  "what_ran": [
   {
@@ -18302,7 +20166,7 @@
   },
   {
    "folders": 18,
-   "leads": 41,
+   "leads": 39,
    "server": "https://gis.ohiodnr.gov/arcgis/rest/services",
    "services": 164
   },
@@ -18984,6 +20848,443 @@
    "services": 74
   },
   {
+   "layers": [
+    "100 Year Flood Plain (FEMA)",
+    "Urban Areas (ODNR-DOGRM)"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOG_Services/NotificationAreas",
+   "skipped": "no layer a gap needs: theme layer (Flood); nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "Wells by Type (Symbol)",
+    "Wells by Status (Active)",
+    "Wells by Status (Inactive)",
+    "Horizontal Wells",
+    "Horizontal Well Head",
+    "Horizontal Bottom Hole"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOG_Services/Oilgas_Wells_10_JS_TEST",
+   "skipped": "no layer a gap needs: theme layer (Wells); theme layer (Well); nothing a gap needs (no access / trail / park / closure / ownership in its name"
+  },
+  {
+   "layers": [
+    "Unitizations",
+    "Horizontal Drilling Units"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOG_Services/Unitization_DrillingUnits",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "Wellbore_Points_3D",
+    "Wellbore_Lines_3D"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOG_Services/WELLBORE_3D_TEST",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "Wellbore_Points_3D",
+    "Wellbore_Lines_3D"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOG_Services/WELLBORE_3D_TEST",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "Well_PadEntryRoads",
+    "Well Pad Boundaries"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOG_Services/WellPads",
+   "skipped": "no layer a gap needs: theme layer (Well)"
+  },
+  {
+   "layers": [
+    "Wetlands"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOW_Services/AGOL_Wetlands",
+   "skipped": "no layer a gap needs: water / roads: the US takes those from USGS NHD (rule 9), so not a gap here"
+  },
+  {
+   "layers": [
+    "Habitats",
+    "Fish Attractors",
+    "Fish Hot Spots",
+    "Catfish",
+    "Crappie",
+    "Largemouth Bass"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOW_Services/DOW_LakeFishing",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name); theme layer (Bass); water / roads: the"
+  },
+  {
+   "layers": [
+    "Unlimited HP Lakes",
+    "Unlimited HP Lakes",
+    "Unlimited HP Lakes",
+    "400 HP Limit Lakes",
+    "400 HP Limit Lakes",
+    "400 HP Limit Lakes"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOW_Services/DOW_LakeHPRestrictions",
+   "skipped": "no layer a gap needs: block list (HP); a \"closed\" layer with nothing about parks in its name"
+  },
+  {
+   "layers": [
+    "Lake Bathymetry",
+    "Lakes"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOW_Services/DOW_Lakes_Bathymetry",
+   "skipped": "no layer a gap needs: block list (Bathymetr)"
+  },
+  {
+   "layers": [
+    "2019-2020 Hunting Regulations",
+    "Otter Trapping Regulations",
+    "Waterfowl Zones",
+    "Quail Regulations",
+    "Spring Turkey Regulations",
+    "Fall Turkey Regulation"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOW_Services/Hunting_Regulations",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name); theme layer (Counties); theme layer (D"
+  },
+  {
+   "layers": [
+    "Roads (Dams)",
+    "Inundated_Stuctures",
+    "Lakes Boundary",
+    "Inundation_Zones",
+    "Inundation_Zones"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOW_Services/InundationZones1_AGOL",
+   "skipped": "no layer a gap needs: block list (Dams); nothing a gap needs (no access / trail / park / closure / ownership in its name); water / roads: the "
+  },
+  {
+   "layers": [
+    "Roads (Dams)",
+    "Inundated_Stuctures",
+    "Lakes Boundary",
+    "Inundation_Zones",
+    "Inundation_Zones"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOW_Services/InundationZones_AGOL",
+   "skipped": "no layer a gap needs: block list (Dams); nothing a gap needs (no access / trail / park / closure / ownership in its name); water / roads: the "
+  },
+  {
+   "layers": [],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DOW_Services/PheasantRelease_Viewer",
+   "skipped": "no layer a gap needs"
+  },
+  {
+   "layers": [],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DSP_Services/ParksInteractivePhotos",
+   "skipped": "no layer a gap needs"
+  },
+  {
+   "layers": [
+    "High quality water - Streams",
+    "High quality water - Watersheds",
+    "Lake Erie watershed boundary"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DSW_Services/HighQualityWatershed",
+   "skipped": "no layer a gap needs: block list (Watershed); block list (watershed)"
+  },
+  {
+   "layers": [
+    "Water Wells"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DSW_Services/waterwells",
+   "skipped": "no layer a gap needs: theme layer (Wells)"
+  },
+  {
+   "layers": [
+    "Unlimited HP Lakes",
+    "Unlimited HP Lakes",
+    "Unlimited HP Lakes",
+    "400 HP Limit Lakes",
+    "400 HP Limit Lakes",
+    "400 HP Limit Lakes"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "DWC_Services/Watercraft_HPRestrictions_JS",
+   "skipped": "no layer a gap needs: block list (HP); a \"closed\" layer with nothing about parks in its name"
+  },
+  {
+   "layers": [],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "FOR_Services/OIFT_Stands_Sections",
+   "skipped": "no layer a gap needs"
+  },
+  {
+   "layers": [
+    "WildfireProtection_Areas",
+    "Counties",
+    "Historic Township",
+    "Wildfire_Protection_InOutAreas"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "FOR_Services/WildfireReporting_Query",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name); theme layer (Counties)"
+  },
+  {
+   "layers": [
+    "H2Ohio Projects"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/H2Ohio_Projects",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "1954 Photo Centers (Flight 497)",
+    "1956 Photo Centers (Flight 713)",
+    "1957 Photo Centers (Flight 850)",
+    "1968 Photo Centers (Flight 3881)",
+    "1973 Photo Centers (Flight 5196)",
+    "1980 Photo Centers"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_AerialPhotoCenter",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "Bathymetry Outline",
+    "Bathymetric Contours (in meters)",
+    "Lake Erie Bathymetry"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_Bathymetry",
+   "skipped": "no layer a gap needs: block list (Bathymetr)"
+  },
+  {
+   "layers": [
+    "Coastal Management Area Boundary"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_CMA",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "Reefs and Shoals",
+    "Reefs and Shoals Buffer",
+    "1-nautical mile buffer",
+    "Fish Habitat"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_FishHabitat",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "Lake Erie Gaging Stations",
+    "Wave Information Stations"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_GaugingStations",
+   "skipped": "no layer a gap needs: water / roads: the US takes those from USGS NHD (rule 9), so not a gap here; nothing a gap needs (no access / trail / pa"
+  },
+  {
+   "layers": [],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_Grants",
+   "skipped": "no layer a gap needs"
+  },
+  {
+   "layers": [
+    "Source - A. Merchant",
+    "1835 Cleveland",
+    "Source - Lake Survey",
+    "1872-1876-1877 Lake Survey"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_HistoricShoreline",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name); theme layer (Survey)"
+  },
+  {
+   "layers": [
+    "Lakebed Sediments"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_LakebedSediment",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "LESEMP Region Labels",
+    "LESEMP Reach Labels",
+    "LESEMP Region/Reach Extents",
+    "LESEMP Region Shore Extents"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_LESEMP_Regions",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name); water / roads: the US takes those from"
+  },
+  {
+   "layers": [
+    "Flood Level Reach Boundaries",
+    "Flood Level Lables",
+    "Flood Level Reaches"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_OpenFloodlvl",
+   "skipped": "no layer a gap needs: theme layer (Flood)"
+  },
+  {
+   "layers": [
+    "Sand Transport"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_SandTransport",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "NGS Horizontal Monuments",
+    "NGS Vertical Monuments"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OCM_Services/LakeErie_SurveyMonument",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "Counties"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/Counties_Outlines",
+   "skipped": "no layer a gap needs: theme layer (Counties)"
+  },
+  {
+   "layers": [],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/DNR_Fed_Lands_Nav_Base",
+   "skipped": "no layer a gap needs"
+  },
+  {
+   "layers": [
+    "Statewide Canals"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/ODNR_Canals",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "Lakes (ODNR)"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/ODNR_Lakes",
+   "skipped": "no layer a gap needs: water / roads: the US takes those from USGS NHD (rule 9), so not a gap here"
+  },
+  {
+   "layers": [],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/ODNR_Lands_Dissolved",
+   "skipped": "no layer a gap needs"
+  },
+  {
+   "layers": [
+    "National Hydrography Dataset",
+    "HydroPoints",
+    "NHDWaterbody 400K+",
+    "NHDWaterbody 200K - 400K",
+    "NHDWaterbody -200K",
+    "NHDArea"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/ODNR_NationalHydroDataset",
+   "skipped": "no layer a gap needs: water / roads: the US takes those from USGS NHD (rule 9), so not a gap here; nothing a gap needs (no access / trail / pa"
+  },
+  {
+   "layers": [],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/Ohio_POI",
+   "skipped": "no layer a gap needs"
+  },
+  {
+   "layers": [
+    "OIT Field Staff Service Regions"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/OIT_Staff_Regions",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [
+    "OIT Field Staff Service Regions"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/OIT_Staff_Regions",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/OriginalVegetation",
+   "skipped": "no layer a gap needs"
+  },
+  {
+   "layers": [
+    "Points"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/sandbox_SyncTest",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name)"
+  },
+  {
+   "layers": [],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/USGS_QuadrangleBoundaries",
+   "skipped": "no layer a gap needs"
+  },
+  {
+   "layers": [
+    "Licensing Agents",
+    "Counties"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "OIT_Services/WildlifeLicenseAgents",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name); theme layer (Counties)"
+  },
+  {
+   "layers": [
+    "Sealing Reports",
+    "Well Logs",
+    "Sealing Reports Related",
+    "Well Logs Related"
+   ],
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "service": "test/Ohio_Water_Wells",
+   "skipped": "no layer a gap needs: nothing a gap needs (no access / trail / park / closure / ownership in its name); theme layer (Well)"
+  },
+  {
+   "folders": 15,
+   "leads": 28,
+   "server": "https://gis2.ohiodnr.gov/arcgis/rest/services",
+   "services": 80
+  },
+  {
    "already_read": 0,
    "gap": "ownership",
    "hits": 0,
@@ -19098,7 +21399,7 @@
    "gap": "outline",
    "hits": 63,
    "keyword": "state park",
-   "new": 2,
+   "new": 0,
    "not_agency": 48,
    "not_this_state": 1,
    "theme": 9
@@ -19196,10 +21497,10 @@
   {
    "already_read": 0,
    "gap": "outline",
-   "hits": 53,
+   "hits": 54,
    "keyword": "scenic river",
    "new": 0,
-   "not_agency": 40,
+   "not_agency": 41,
    "not_this_state": 4,
    "theme": 6
   },
@@ -19218,7 +21519,7 @@
    "gap": "access",
    "hits": 31,
    "keyword": "trailhead",
-   "new": 1,
+   "new": 0,
    "not_agency": 27,
    "not_this_state": 2,
    "theme": 0
@@ -19318,7 +21619,7 @@
    "gap": "roads/water",
    "hits": 183,
    "keyword": "shoreline",
-   "new": 1,
+   "new": 0,
    "not_agency": 92,
    "not_this_state": 0,
    "theme": 89
@@ -19336,12 +21637,12 @@
   {
    "already_read": 0,
    "gap": "closures",
-   "hits": 27,
+   "hits": 26,
    "keyword": "alerts",
    "new": 0,
    "not_agency": 23,
    "not_this_state": 1,
-   "theme": 3
+   "theme": 2
   },
   {
    "already_read": 0,
