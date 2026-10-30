@@ -1550,6 +1550,2397 @@
    "stretches": 3
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     43.674573,
+     -72.839385
+    ],
+    "from": "road",
+    "name": "Old Coach Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 168
+   },
+   "box": [
+    -72.83932,
+    43.67478,
+    -72.83922,
+    43.67497
+   ],
+   "center": [
+    43.674865,
+    -72.839263
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4239+US-4556@trail@43.675,-72.839",
+   "kind": "trail",
+   "len_m": 23,
+   "line_source": {
+    "US-4239": {
+     "by": "North Country Trail Association (NPS partner)",
+     "date": "not recorded",
+     "line": "data/trails/US-4239.json"
+    },
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    }
+   },
+   "map_dates": {
+    "US-4239": "official line (trails bot)",
+    "US-4556": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4239",
+     "https://www.nps.gov/noco/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ]
+   ],
+   "names": {
+    "US-4239": "North Country Trail National Scenic Trail",
+    "US-4556": "Appalachian Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4239": true,
+    "US-4556": true
+   },
+   "refs": [
+    "US-4239",
+    "US-4556"
+   ],
+   "shape": [
+    [
+     -72.839317,
+     43.674971
+    ],
+    [
+     -72.839306,
+     43.67495
+    ],
+    [
+     -72.839296,
+     43.674929
+    ],
+    [
+     -72.839285,
+     43.674908
+    ],
+    [
+     -72.839274,
+     43.674886
+    ],
+    [
+     -72.839263,
+     43.674865
+    ],
+    [
+     -72.839252,
+     43.674844
+    ],
+    [
+     -72.839242,
+     43.674823
+    ],
+    [
+     -72.839231,
+     43.674801
+    ],
+    [
+     -72.83922,
+     43.67478
+    ]
+   ],
+   "status": "candidate"
+  },
+  {
+   "box": [
+    -72.24829,
+    42.72107,
+    -72.24777,
+    42.72108
+   ],
+   "center": [
+    42.721074,
+    -72.248045
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [],
+   "id": "US-4556+US-4561@trail@42.721,-72.248",
+   "kind": "trail",
+   "len_m": 42,
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-4561": "official line (trails bot)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-4561": true
+   },
+   "refs": [
+    "US-4556",
+    "US-4561"
+   ],
+   "shape": [
+    [
+     -72.24777,
+     42.721066
+    ],
+    [
+     -72.247801,
+     42.721067
+    ],
+    [
+     -72.247832,
+     42.721068
+    ],
+    [
+     -72.247862,
+     42.721069
+    ],
+    [
+     -72.247893,
+     42.72107
+    ],
+    [
+     -72.247923,
+     42.72107
+    ],
+    [
+     -72.247954,
+     42.721071
+    ],
+    [
+     -72.247984,
+     42.721072
+    ],
+    [
+     -72.248015,
+     42.721073
+    ],
+    [
+     -72.248045,
+     42.721074
+    ],
+    [
+     -72.248076,
+     42.721075
+    ],
+    [
+     -72.248106,
+     42.721076
+    ],
+    [
+     -72.248137,
+     42.721076
+    ],
+    [
+     -72.248168,
+     42.721077
+    ],
+    [
+     -72.248198,
+     42.721078
+    ],
+    [
+     -72.248229,
+     42.721079
+    ],
+    [
+     -72.248259,
+     42.72108
+    ],
+    [
+     -72.24829,
+     42.721081
+    ]
+   ],
+   "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "unknown_part": "no owner on the maps at 1 of 1 points of the patch: only that piece is not sure"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     39.324346,
+     -77.726078
+    ],
+    "from": "road",
+    "name": "Harpers Ferry Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -77.7269,
+    39.32401,
+    -77.7247,
+    39.3242
+   ],
+   "center": [
+    39.324108,
+    -77.72657
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Park Service"
+   ],
+   "id": "US-4556+US-4564@trail@39.324,-77.727",
+   "kind": "trail",
+   "len_m": 194,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-4564": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4564.json"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-4564": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-4564",
+     "https://www.nps.gov/pohe/planyourvisit/maps.htm"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-4564": "Potomac Heritage Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Park Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-4564": true
+   },
+   "refs": [
+    "US-4556",
+    "US-4564"
+   ],
+   "shape": [
+    [
+     -77.72627,
+     39.3242
+    ],
+    [
+     -77.726241,
+     39.324198
+    ],
+    [
+     -77.726212,
+     39.324196
+    ],
+    [
+     -77.726183,
+     39.324194
+    ],
+    [
+     -77.726154,
+     39.324191
+    ],
+    [
+     -77.726125,
+     39.324189
+    ],
+    [
+     -77.726096,
+     39.324187
+    ],
+    [
+     -77.726067,
+     39.324185
+    ],
+    [
+     -77.726038,
+     39.324183
+    ],
+    [
+     -77.726009,
+     39.324181
+    ],
+    [
+     -77.72598,
+     39.324179
+    ],
+    [
+     -77.725951,
+     39.324177
+    ],
+    [
+     -77.725922,
+     39.324174
+    ],
+    [
+     -77.725893,
+     39.324172
+    ],
+    [
+     -77.725864,
+     39.32417
+    ],
+    [
+     -77.725835,
+     39.324168
+    ],
+    [
+     -77.725806,
+     39.324166
+    ],
+    [
+     -77.725777,
+     39.324164
+    ],
+    [
+     -77.725748,
+     39.324162
+    ],
+    [
+     -77.725719,
+     39.324159
+    ],
+    [
+     -77.72569,
+     39.324157
+    ],
+    [
+     -77.725661,
+     39.324155
+    ],
+    [
+     -77.725632,
+     39.324153
+    ],
+    [
+     -77.725603,
+     39.324151
+    ],
+    [
+     -77.725574,
+     39.324149
+    ],
+    [
+     -77.725545,
+     39.324147
+    ],
+    [
+     -77.725516,
+     39.324144
+    ],
+    [
+     -77.725487,
+     39.324142
+    ],
+    [
+     -77.725458,
+     39.32414
+    ],
+    [
+     -77.725429,
+     39.324138
+    ],
+    [
+     -77.7254,
+     39.324136
+    ],
+    [
+     -77.725371,
+     39.324134
+    ],
+    [
+     -77.725342,
+     39.324132
+    ],
+    [
+     -77.725313,
+     39.32413
+    ],
+    [
+     -77.725284,
+     39.324127
+    ],
+    [
+     -77.725255,
+     39.324125
+    ],
+    [
+     -77.725226,
+     39.324123
+    ],
+    [
+     -77.725197,
+     39.324121
+    ],
+    [
+     -77.725168,
+     39.324119
+    ],
+    [
+     -77.725139,
+     39.324117
+    ],
+    [
+     -77.72511,
+     39.324115
+    ],
+    [
+     -77.725081,
+     39.324112
+    ],
+    [
+     -77.725052,
+     39.32411
+    ],
+    [
+     -77.725023,
+     39.324108
+    ],
+    [
+     -77.724994,
+     39.324106
+    ],
+    [
+     -77.724965,
+     39.324104
+    ],
+    [
+     -77.724936,
+     39.324102
+    ],
+    [
+     -77.724907,
+     39.3241
+    ],
+    [
+     -77.724877,
+     39.324098
+    ],
+    [
+     -77.724848,
+     39.324095
+    ],
+    [
+     -77.724819,
+     39.324093
+    ],
+    [
+     -77.72479,
+     39.324091
+    ],
+    [
+     -77.724761,
+     39.324089
+    ],
+    [
+     -77.724732,
+     39.324087
+    ],
+    [
+     -77.724703,
+     39.324085
+    ]
+   ],
+   "status": "merged into one row: US-4556+US-4564@trail@39.326,-77.708"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     39.324353,
+     -77.726114
+    ],
+    "from": "road",
+    "name": "Harpers Ferry Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -77.7269,
+    39.32379,
+    -77.69481,
+    39.3257
+   ],
+   "center": [
+    39.325459,
+    -77.708184
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Park Service"
+   ],
+   "id": "US-4556+US-4564@trail@39.326,-77.708",
+   "kind": "trail",
+   "len_m": 2627,
+   "len_main": 2433,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-4564": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4564.json"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-4564": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-4564",
+     "https://www.nps.gov/pohe/planyourvisit/maps.htm"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-4564": "Potomac Heritage Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Park Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [
+    {
+     "at": [
+      39.324353,
+      -77.726114
+     ],
+     "from": "road",
+     "name": "Harpers Ferry Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      39.324346,
+      -77.726078
+     ],
+     "from": "road",
+     "name": "Harpers Ferry Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-4564": true
+   },
+   "refs": [
+    "US-4556",
+    "US-4564"
+   ],
+   "shape": [
+    [
+     -77.720699,
+     39.323792
+    ],
+    [
+     -77.706381,
+     39.3257
+    ],
+    [
+     -77.695698,
+     39.32443
+    ]
+   ],
+   "status": "candidate",
+   "stretches": 2
+  },
+  {
+   "box": [
+    -77.69346,
+    39.32394,
+    -77.68144,
+    39.32965
+   ],
+   "center": [
+    39.326164,
+    -77.687314
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [],
+   "id": "US-4556+US-4564@trail@39.330,-77.681",
+   "kind": "trail",
+   "len_m": 1258,
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-4564": "official line (trails bot)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-4564": true
+   },
+   "refs": [
+    "US-4556",
+    "US-4564"
+   ],
+   "shape": [
+    [
+     -77.693456,
+     39.324163
+    ],
+    [
+     -77.691563,
+     39.323941
+    ],
+    [
+     -77.681523,
+     39.329196
+    ]
+   ],
+   "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "unknown_part": "no owner on the maps at 1 of 1 points of the patch: only that piece is not sure"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     37.600414,
+     -79.392632
+    ],
+    "from": "road",
+    "name": "State Rte 812",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 100
+   },
+   "box": [
+    -79.3924,
+    37.59802,
+    -79.38918,
+    37.60063
+   ],
+   "center": [
+    37.598334,
+    -79.389478
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4556+US-4567@trail@37.598,-79.390",
+   "kind": "trail",
+   "len_m": 437,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-4567": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4567.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-4567": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-4567",
+     "https://www.nps.gov/cajo/planyourvisit/upload/2024_993-082-DOI-NPS-CAJO-Unigrid-508-2.pdf"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "note": "approximate line: Captain John Smith Chesapeake National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-4567": true
+   },
+   "refs": [
+    "US-4556",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -79.390099,
+     37.598491
+    ],
+    [
+     -79.392401,
+     37.600451
+    ],
+    [
+     -79.392293,
+     37.600634
+    ]
+   ],
+   "status": "candidate"
+  },
+  {
+   "box": [
+    -79.40062,
+    37.60347,
+    -79.40019,
+    37.60362
+   ],
+   "center": [
+    37.60347,
+    -79.40019
+   ],
+   "found": "2026-10-30",
+   "id": "US-4556+US-4567@trail@37.603,-79.400",
+   "kind": "trail",
+   "len_m": 0,
+   "passes": [
+    1,
+    0,
+    0
+   ],
+   "refs": [
+    "US-4556",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -79.40019,
+     37.60347
+    ]
+   ],
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)"
+  },
+  {
+   "box": [
+    -77.00972,
+    40.39846,
+    -77.00938,
+    40.39935
+   ],
+   "center": [
+    40.398895,
+    -77.009547
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [],
+   "id": "US-4556+US-4567@trail@40.399,-77.010",
+   "kind": "trail",
+   "len_m": 103,
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-4567": "official line (trails bot)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-4567": true
+   },
+   "refs": [
+    "US-4556",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.009724,
+     40.399351
+    ],
+    [
+     -77.009715,
+     40.399329
+    ],
+    [
+     -77.009707,
+     40.399307
+    ],
+    [
+     -77.009699,
+     40.399285
+    ],
+    [
+     -77.00969,
+     40.399264
+    ],
+    [
+     -77.009682,
+     40.399242
+    ],
+    [
+     -77.009673,
+     40.39922
+    ],
+    [
+     -77.009665,
+     40.399199
+    ],
+    [
+     -77.009657,
+     40.399177
+    ],
+    [
+     -77.009648,
+     40.399155
+    ],
+    [
+     -77.00964,
+     40.399133
+    ],
+    [
+     -77.009631,
+     40.399112
+    ],
+    [
+     -77.009623,
+     40.39909
+    ],
+    [
+     -77.009615,
+     40.399068
+    ],
+    [
+     -77.009606,
+     40.399047
+    ],
+    [
+     -77.009598,
+     40.399025
+    ],
+    [
+     -77.009589,
+     40.399003
+    ],
+    [
+     -77.009581,
+     40.398981
+    ],
+    [
+     -77.009572,
+     40.39896
+    ],
+    [
+     -77.009564,
+     40.398938
+    ],
+    [
+     -77.009556,
+     40.398916
+    ],
+    [
+     -77.009547,
+     40.398895
+    ],
+    [
+     -77.009539,
+     40.398873
+    ],
+    [
+     -77.00953,
+     40.398851
+    ],
+    [
+     -77.009522,
+     40.398829
+    ],
+    [
+     -77.009514,
+     40.398808
+    ],
+    [
+     -77.009505,
+     40.398786
+    ],
+    [
+     -77.009497,
+     40.398764
+    ],
+    [
+     -77.009488,
+     40.398743
+    ],
+    [
+     -77.00948,
+     40.398721
+    ],
+    [
+     -77.009472,
+     40.398699
+    ],
+    [
+     -77.009463,
+     40.398678
+    ],
+    [
+     -77.009455,
+     40.398656
+    ],
+    [
+     -77.009446,
+     40.398634
+    ],
+    [
+     -77.009438,
+     40.398612
+    ],
+    [
+     -77.00943,
+     40.398591
+    ],
+    [
+     -77.009421,
+     40.398569
+    ],
+    [
+     -77.009413,
+     40.398547
+    ],
+    [
+     -77.009404,
+     40.398526
+    ],
+    [
+     -77.009396,
+     40.398504
+    ],
+    [
+     -77.009388,
+     40.398482
+    ],
+    [
+     -77.009379,
+     40.39846
+    ]
+   ],
+   "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "unknown_part": "no owner on the maps at 1 of 1 points of the patch: only that piece is not sure"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     36.125529,
+     -82.051043
+    ],
+    "from": "road",
+    "name": "1200",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 172
+   },
+   "box": [
+    -82.05153,
+    36.12575,
+    -82.05031,
+    36.12579
+   ],
+   "center": [
+    36.12577,
+    -82.050811
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4556+US-4577@trail@36.126,-82.051",
+   "kind": "trail",
+   "len_m": 111,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-4577": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4577.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-4577": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-4577",
+     "https://www.nps.gov/ovvi/planyourvisit/maps.htm"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-4577": "Overmountain Victory National Historic Trail"
+   },
+   "note": "approximate line: Overmountain Victory National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-4577": true
+   },
+   "refs": [
+    "US-4556",
+    "US-4577"
+   ],
+   "shape": [
+    [
+     -82.05134,
+     36.12579
+    ],
+    [
+     -82.051312,
+     36.125789
+    ],
+    [
+     -82.051284,
+     36.125788
+    ],
+    [
+     -82.051256,
+     36.125787
+    ],
+    [
+     -82.051229,
+     36.125786
+    ],
+    [
+     -82.051201,
+     36.125785
+    ],
+    [
+     -82.051173,
+     36.125784
+    ],
+    [
+     -82.051145,
+     36.125783
+    ],
+    [
+     -82.051117,
+     36.125781
+    ],
+    [
+     -82.051089,
+     36.12578
+    ],
+    [
+     -82.051061,
+     36.125779
+    ],
+    [
+     -82.051034,
+     36.125778
+    ],
+    [
+     -82.051006,
+     36.125777
+    ],
+    [
+     -82.050978,
+     36.125776
+    ],
+    [
+     -82.05095,
+     36.125775
+    ],
+    [
+     -82.050922,
+     36.125774
+    ],
+    [
+     -82.050894,
+     36.125773
+    ],
+    [
+     -82.050866,
+     36.125772
+    ],
+    [
+     -82.050839,
+     36.125771
+    ],
+    [
+     -82.050811,
+     36.12577
+    ],
+    [
+     -82.050783,
+     36.125769
+    ],
+    [
+     -82.050755,
+     36.125768
+    ],
+    [
+     -82.050727,
+     36.125766
+    ],
+    [
+     -82.050699,
+     36.125765
+    ],
+    [
+     -82.050671,
+     36.125764
+    ],
+    [
+     -82.050643,
+     36.125763
+    ],
+    [
+     -82.050616,
+     36.125762
+    ],
+    [
+     -82.050588,
+     36.125761
+    ],
+    [
+     -82.05056,
+     36.12576
+    ],
+    [
+     -82.050532,
+     36.125759
+    ],
+    [
+     -82.050504,
+     36.125758
+    ],
+    [
+     -82.050476,
+     36.125757
+    ],
+    [
+     -82.050448,
+     36.125756
+    ],
+    [
+     -82.050421,
+     36.125755
+    ],
+    [
+     -82.050393,
+     36.125754
+    ],
+    [
+     -82.050365,
+     36.125753
+    ],
+    [
+     -82.050337,
+     36.125751
+    ],
+    [
+     -82.050309,
+     36.12575
+    ]
+   ],
+   "status": "candidate"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     41.319766,
+     -73.988883
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -73.98976,
+    41.31459,
+    -73.98914,
+    41.31641
+   ],
+   "center": [
+    41.315728,
+    -73.989699
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state"
+   ],
+   "id": "US-4556+US-4582@trail@41.316,-73.990",
+   "kind": "trail",
+   "len_m": 254,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-4582": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4582.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-4582": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-4582",
+     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
+   },
+   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (state)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-4582": true
+   },
+   "refs": [
+    "US-4556",
+    "US-4582"
+   ],
+   "shape": [
+    [
+     -73.989758,
+     41.316408
+    ],
+    [
+     -73.989596,
+     41.31459
+    ],
+    [
+     -73.989142,
+     41.31634
+    ]
+   ],
+   "status": "merged into one row: US-4556+US-4582@trail@41.320,-73.980"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     41.319789,
+     -73.9889
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -73.98976,
+    41.31459,
+    -73.98131,
+    41.31996
+   ],
+   "center": [
+    41.319954,
+    -73.988266
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state"
+   ],
+   "id": "US-4556+US-4582@trail@41.320,-73.980",
+   "kind": "trail",
+   "len_m": 1650,
+   "len_main": 698,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-4582": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4582.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-4582": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-4582",
+     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
+   },
+   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (state)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [
+    {
+     "at": [
+      41.319789,
+      -73.9889
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      41.319789,
+      -73.9889
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      41.319766,
+      -73.988883
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-4582": true
+   },
+   "refs": [
+    "US-4556",
+    "US-4582"
+   ],
+   "shape": [
+    [
+     -73.981312,
+     41.319872
+    ],
+    [
+     -73.988172,
+     41.319962
+    ]
+   ],
+   "status": "candidate",
+   "stretches": 3
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     41.319789,
+     -73.9889
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -73.98918,
+    41.3192,
+    -73.98131,
+    41.31996
+   ],
+   "center": [
+    41.319954,
+    -73.988266
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state"
+   ],
+   "id": "US-4556+US-4582@trail@41.320,-73.988",
+   "kind": "trail",
+   "len_m": 698,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-4582": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4582.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-4582": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-4582",
+     "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail"
+   },
+   "note": "approximate line: Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (state)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-4582": true
+   },
+   "refs": [
+    "US-4556",
+    "US-4582"
+   ],
+   "shape": [
+    [
+     -73.981312,
+     41.319872
+    ],
+    [
+     -73.988172,
+     41.319962
+    ]
+   ],
+   "status": "merged into one row: US-4556+US-4582@trail@41.320,-73.980"
+  },
+  {
+   "box": [
+    -71.54339,
+    42.70238,
+    -71.54205,
+    42.70241
+   ],
+   "center": [
+    42.702398,
+    -71.54272
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [],
+   "id": "US-4556+US-8014@trail@42.702,-71.543",
+   "kind": "trail",
+   "len_m": 110,
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-8014": "official line (trails bot)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-8014": true
+   },
+   "refs": [
+    "US-4556",
+    "US-8014"
+   ],
+   "shape": [
+    [
+     -71.542048,
+     42.702384
+    ],
+    [
+     -71.542079,
+     42.702384
+    ],
+    [
+     -71.542109,
+     42.702385
+    ],
+    [
+     -71.54214,
+     42.702386
+    ],
+    [
+     -71.54217,
+     42.702386
+    ],
+    [
+     -71.542201,
+     42.702387
+    ],
+    [
+     -71.542231,
+     42.702388
+    ],
+    [
+     -71.542262,
+     42.702388
+    ],
+    [
+     -71.542292,
+     42.702389
+    ],
+    [
+     -71.542323,
+     42.70239
+    ],
+    [
+     -71.542353,
+     42.70239
+    ],
+    [
+     -71.542384,
+     42.702391
+    ],
+    [
+     -71.542415,
+     42.702392
+    ],
+    [
+     -71.542445,
+     42.702392
+    ],
+    [
+     -71.542476,
+     42.702393
+    ],
+    [
+     -71.542506,
+     42.702394
+    ],
+    [
+     -71.542537,
+     42.702394
+    ],
+    [
+     -71.542567,
+     42.702395
+    ],
+    [
+     -71.542598,
+     42.702396
+    ],
+    [
+     -71.542628,
+     42.702396
+    ],
+    [
+     -71.542659,
+     42.702397
+    ],
+    [
+     -71.542689,
+     42.702398
+    ],
+    [
+     -71.54272,
+     42.702398
+    ],
+    [
+     -71.542751,
+     42.702399
+    ],
+    [
+     -71.542781,
+     42.7024
+    ],
+    [
+     -71.542812,
+     42.7024
+    ],
+    [
+     -71.542842,
+     42.702401
+    ],
+    [
+     -71.542873,
+     42.702402
+    ],
+    [
+     -71.542903,
+     42.702402
+    ],
+    [
+     -71.542934,
+     42.702403
+    ],
+    [
+     -71.542964,
+     42.702404
+    ],
+    [
+     -71.542995,
+     42.702404
+    ],
+    [
+     -71.543025,
+     42.702405
+    ],
+    [
+     -71.543056,
+     42.702406
+    ],
+    [
+     -71.543086,
+     42.702406
+    ],
+    [
+     -71.543117,
+     42.702407
+    ],
+    [
+     -71.543148,
+     42.702408
+    ],
+    [
+     -71.543178,
+     42.702408
+    ],
+    [
+     -71.543209,
+     42.702409
+    ],
+    [
+     -71.543239,
+     42.70241
+    ],
+    [
+     -71.54327,
+     42.70241
+    ],
+    [
+     -71.5433,
+     42.702411
+    ],
+    [
+     -71.543331,
+     42.702411
+    ],
+    [
+     -71.543361,
+     42.702412
+    ],
+    [
+     -71.543392,
+     42.702413
+    ]
+   ],
+   "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "unknown_part": "no owner on the maps at 1 of 1 points of the patch: only that piece is not sure"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.704297,
+     -71.621801
+    ],
+    "from": "road",
+    "name": "Brookline Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 167
+   },
+   "box": [
+    -71.61545,
+    42.7039,
+    -71.61248,
+    42.70397
+   ],
+   "center": [
+    42.703937,
+    -71.61398
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "state"
+   ],
+   "id": "US-4556+US-8014@trail@42.704,-71.615",
+   "kind": "trail",
+   "len_m": 242,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-8014": {
+     "by": "NPS partnership river (official layer, picked by hand)",
+     "date": "2026-10-25",
+     "line": "data/trails/US-8014.json"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-8014": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-8014",
+     "https://www.nps.gov/articles/000/nashua-wild-and-scenic-river.htm"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-8014": "Nashua, Squannacook, and Nissitissit National Wild and Scenic River"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (state)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-8014": true
+   },
+   "refs": [
+    "US-4556",
+    "US-8014"
+   ],
+   "shape": [
+    [
+     -71.612485,
+     42.703904
+    ],
+    [
+     -71.615443,
+     42.703967
+    ]
+   ],
+   "status": "candidate"
+  },
+  {
+   "box": [
+    -71.62235,
+    42.7041,
+    -71.62171,
+    42.70412
+   ],
+   "center": [
+    42.704112,
+    -71.622043
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "private"
+   ],
+   "id": "US-4556+US-8014@trail@42.704,-71.622",
+   "kind": "trail",
+   "len_m": 52,
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-8014": "official line (trails bot)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "private land at the spot (ownership map): counts only for its own park number, never a 2-fer",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-8014": true
+   },
+   "private_part": "private land at 1 of 1 points of the patch (PAD-US): that piece is cut out and counts only for its own park",
+   "refs": [
+    "US-4556",
+    "US-8014"
+   ],
+   "shape": [
+    [
+     -71.621707,
+     42.704104
+    ],
+    [
+     -71.621738,
+     42.704105
+    ],
+    [
+     -71.621768,
+     42.704106
+    ],
+    [
+     -71.621799,
+     42.704106
+    ],
+    [
+     -71.621829,
+     42.704107
+    ],
+    [
+     -71.62186,
+     42.704108
+    ],
+    [
+     -71.621891,
+     42.704108
+    ],
+    [
+     -71.621921,
+     42.704109
+    ],
+    [
+     -71.621952,
+     42.70411
+    ],
+    [
+     -71.621982,
+     42.70411
+    ],
+    [
+     -71.622013,
+     42.704111
+    ],
+    [
+     -71.622043,
+     42.704112
+    ],
+    [
+     -71.622074,
+     42.704112
+    ],
+    [
+     -71.622104,
+     42.704113
+    ],
+    [
+     -71.622135,
+     42.704114
+    ],
+    [
+     -71.622165,
+     42.704114
+    ],
+    [
+     -71.622196,
+     42.704115
+    ],
+    [
+     -71.622227,
+     42.704116
+    ],
+    [
+     -71.622257,
+     42.704116
+    ],
+    [
+     -71.622288,
+     42.704117
+    ],
+    [
+     -71.622318,
+     42.704118
+    ],
+    [
+     -71.622349,
+     42.704118
+    ]
+   ],
+   "status": "dropped: private land at the spot (ownership map): counts only for its own park number, never a 2-fer"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     35.579591,
+     -83.478002
+    ],
+    "from": "road",
+    "name": "Clingmans Dome Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -83.50003,
+    35.56265,
+    -83.46914,
+    35.59084
+   ],
+   "center": [
+    35.590775,
+    -83.469405
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Park Service"
+   ],
+   "id": "US-4556+US-8313@trail@35.563,-83.500",
+   "kind": "trail",
+   "len_m": 9960,
+   "len_main": 4980,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-8313": {
+     "by": "NC Division of Parks and Recreation, DNCR | NCStateParks_NCDPR",
+     "date": "2026-10-26",
+     "line": "data/trails/US-8313.json"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-8313": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-8313",
+     "https://trails.nc.gov/maps/map-pdfs-mountains-sea-state-trail/open"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-8313": "Mountains to Sea State Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Park Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [
+    {
+     "at": [
+      35.579591,
+      -83.478002
+     ],
+     "from": "road",
+     "name": "Clingmans Dome Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      35.579591,
+      -83.478002
+     ],
+     "from": "road",
+     "name": "Clingmans Dome Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-8313": true
+   },
+   "refs": [
+    "US-4556",
+    "US-8313"
+   ],
+   "shape": [
+    [
+     -83.490406,
+     35.567468
+    ],
+    [
+     -83.49362,
+     35.566781
+    ],
+    [
+     -83.497728,
+     35.56289
+    ],
+    [
+     -83.498479,
+     35.563401
+    ]
+   ],
+   "status": "candidate",
+   "stretches": 2
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     35.579591,
+     -83.478002
+    ],
+    "from": "road",
+    "name": "Clingmans Dome Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -83.50003,
+    35.56265,
+    -83.46914,
+    35.59084
+   ],
+   "center": [
+    35.590775,
+    -83.469405
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Park Service"
+   ],
+   "id": "US-4556+US-8313@trail@35.591,-83.469",
+   "kind": "trail",
+   "len_m": 4980,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-8313": {
+     "by": "NC Division of Parks and Recreation, DNCR | NCStateParks_NCDPR",
+     "date": "2026-10-26",
+     "line": "data/trails/US-8313.json"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-8313": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-8313",
+     "https://trails.nc.gov/maps/map-pdfs-mountains-sea-state-trail/open"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-8313": "Mountains to Sea State Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Park Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-8313": true
+   },
+   "refs": [
+    "US-4556",
+    "US-8313"
+   ],
+   "shape": [
+    [
+     -83.490406,
+     35.567468
+    ],
+    [
+     -83.49362,
+     35.566781
+    ],
+    [
+     -83.497728,
+     35.56289
+    ],
+    [
+     -83.498479,
+     35.563401
+    ]
+   ],
+   "status": "merged into one row: US-4556+US-8313@trail@35.563,-83.500"
+  },
+  {
+   "box": [
+    -73.15746,
+    42.56185,
+    -73.15621,
+    42.56213
+   ],
+   "center": [
+    42.562044,
+    -73.157164
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [],
+   "id": "US-4556+US-8394@trail@42.562,-73.157",
+   "kind": "trail",
+   "len_m": 107,
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-8394": "official line (trails bot)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-8394": true
+   },
+   "refs": [
+    "US-4556",
+    "US-8394"
+   ],
+   "shape": [
+    [
+     -73.15687,
+     42.56196
+    ],
+    [
+     -73.15684,
+     42.561955
+    ],
+    [
+     -73.15681,
+     42.56195
+    ],
+    [
+     -73.15678,
+     42.561945
+    ],
+    [
+     -73.156751,
+     42.561939
+    ],
+    [
+     -73.156721,
+     42.561934
+    ],
+    [
+     -73.156691,
+     42.561929
+    ],
+    [
+     -73.156661,
+     42.561924
+    ],
+    [
+     -73.156631,
+     42.561919
+    ],
+    [
+     -73.156601,
+     42.561914
+    ],
+    [
+     -73.156571,
+     42.561909
+    ],
+    [
+     -73.156541,
+     42.561904
+    ],
+    [
+     -73.156512,
+     42.561898
+    ],
+    [
+     -73.156482,
+     42.561893
+    ],
+    [
+     -73.156452,
+     42.561888
+    ],
+    [
+     -73.156422,
+     42.561883
+    ],
+    [
+     -73.156392,
+     42.561878
+    ],
+    [
+     -73.156362,
+     42.561873
+    ],
+    [
+     -73.156332,
+     42.561868
+    ],
+    [
+     -73.156303,
+     42.561862
+    ],
+    [
+     -73.156273,
+     42.561857
+    ],
+    [
+     -73.156243,
+     42.561852
+    ],
+    [
+     -73.156213,
+     42.561847
+    ]
+   ],
+   "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "unknown_part": "no owner on the maps at 1 of 1 points of the patch: only that piece is not sure"
+  },
+  {
    "access": [
     45.11193,
     -70.32869,
@@ -1686,6 +4077,1333 @@
    "zone_acres": 5.98,
    "zone_read": "2026-10-30",
    "zone_wide_m": 73.9
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     37.509691,
+     -79.523337
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 215
+   },
+   "box": [
+    -79.52405,
+    37.50975,
+    -79.52266,
+    37.51045
+   ],
+   "center": [
+    37.509824,
+    -79.523457
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4556+US-9904@trail@37.510,-79.524",
+   "kind": "trail",
+   "len_m": 171,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-9904": {
+     "by": "US Forest Service",
+     "date": "2026-10-26",
+     "line": "data/trails/US-9904.json"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-9904": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-9904",
+     "https://www.fs.usda.gov/recarea/gwj/recreation/hiking/recarea/?recid=78542&actid=50"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-9904": "Apple Orchard Falls National Recreation Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-9904": true
+   },
+   "refs": [
+    "US-4556",
+    "US-9904"
+   ],
+   "shape": [
+    [
+     -79.52284,
+     37.5099
+    ],
+    [
+     -79.522868,
+     37.509897
+    ],
+    [
+     -79.522896,
+     37.509893
+    ],
+    [
+     -79.522924,
+     37.50989
+    ],
+    [
+     -79.522952,
+     37.509886
+    ],
+    [
+     -79.52298,
+     37.509883
+    ],
+    [
+     -79.523008,
+     37.509879
+    ],
+    [
+     -79.523036,
+     37.509876
+    ],
+    [
+     -79.523064,
+     37.509872
+    ],
+    [
+     -79.523092,
+     37.509869
+    ],
+    [
+     -79.52312,
+     37.509865
+    ],
+    [
+     -79.523148,
+     37.509862
+    ],
+    [
+     -79.523176,
+     37.509858
+    ],
+    [
+     -79.523204,
+     37.509855
+    ],
+    [
+     -79.523233,
+     37.509851
+    ],
+    [
+     -79.523261,
+     37.509848
+    ],
+    [
+     -79.523289,
+     37.509845
+    ],
+    [
+     -79.523317,
+     37.509841
+    ],
+    [
+     -79.523345,
+     37.509838
+    ],
+    [
+     -79.523373,
+     37.509834
+    ],
+    [
+     -79.523401,
+     37.509831
+    ],
+    [
+     -79.523429,
+     37.509827
+    ],
+    [
+     -79.523457,
+     37.509824
+    ],
+    [
+     -79.523485,
+     37.50982
+    ],
+    [
+     -79.523513,
+     37.509817
+    ],
+    [
+     -79.523541,
+     37.509813
+    ],
+    [
+     -79.523569,
+     37.50981
+    ],
+    [
+     -79.523597,
+     37.509806
+    ],
+    [
+     -79.523625,
+     37.509803
+    ],
+    [
+     -79.523653,
+     37.509799
+    ],
+    [
+     -79.523681,
+     37.509796
+    ],
+    [
+     -79.523709,
+     37.509793
+    ],
+    [
+     -79.523737,
+     37.509789
+    ],
+    [
+     -79.523765,
+     37.509786
+    ],
+    [
+     -79.523793,
+     37.509782
+    ],
+    [
+     -79.523821,
+     37.509779
+    ],
+    [
+     -79.523849,
+     37.509775
+    ],
+    [
+     -79.523877,
+     37.509772
+    ],
+    [
+     -79.523905,
+     37.509768
+    ],
+    [
+     -79.523933,
+     37.509765
+    ],
+    [
+     -79.523961,
+     37.509761
+    ],
+    [
+     -79.52399,
+     37.509758
+    ],
+    [
+     -79.524018,
+     37.509754
+    ],
+    [
+     -79.524046,
+     37.509751
+    ]
+   ],
+   "status": "candidate"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     37.506787,
+     -79.535904
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 1058
+   },
+   "box": [
+    -79.53639,
+    37.50645,
+    -79.53615,
+    37.50741
+   ],
+   "center": [
+    37.506918,
+    -79.536267
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4556+US-9906@trail@37.507,-79.536",
+   "kind": "trail",
+   "len_m": 108,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-9906": {
+     "by": "US Forest Service",
+     "date": "2026-10-26",
+     "line": "data/trails/US-9906.json"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-9906": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-9906",
+     "https://www.nrtapplication.org/trails/cornelius-creek"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-9906": "Cornelius Creek National Recreation Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-9906": true
+   },
+   "refs": [
+    "US-4556",
+    "US-9906"
+   ],
+   "shape": [
+    [
+     -79.536386,
+     37.507408
+    ],
+    [
+     -79.536381,
+     37.507385
+    ],
+    [
+     -79.536375,
+     37.507363
+    ],
+    [
+     -79.53637,
+     37.507341
+    ],
+    [
+     -79.536365,
+     37.507319
+    ],
+    [
+     -79.536359,
+     37.507296
+    ],
+    [
+     -79.536354,
+     37.507274
+    ],
+    [
+     -79.536348,
+     37.507252
+    ],
+    [
+     -79.536343,
+     37.50723
+    ],
+    [
+     -79.536337,
+     37.507207
+    ],
+    [
+     -79.536332,
+     37.507185
+    ],
+    [
+     -79.536327,
+     37.507163
+    ],
+    [
+     -79.536321,
+     37.507141
+    ],
+    [
+     -79.536316,
+     37.507118
+    ],
+    [
+     -79.53631,
+     37.507096
+    ],
+    [
+     -79.536305,
+     37.507074
+    ],
+    [
+     -79.536299,
+     37.507051
+    ],
+    [
+     -79.536294,
+     37.507029
+    ],
+    [
+     -79.536289,
+     37.507007
+    ],
+    [
+     -79.536283,
+     37.506985
+    ],
+    [
+     -79.536278,
+     37.506962
+    ],
+    [
+     -79.536272,
+     37.50694
+    ],
+    [
+     -79.536267,
+     37.506918
+    ],
+    [
+     -79.536262,
+     37.506896
+    ],
+    [
+     -79.536256,
+     37.506873
+    ],
+    [
+     -79.536251,
+     37.506851
+    ],
+    [
+     -79.536245,
+     37.506829
+    ],
+    [
+     -79.53624,
+     37.506807
+    ],
+    [
+     -79.536234,
+     37.506784
+    ],
+    [
+     -79.536229,
+     37.506762
+    ],
+    [
+     -79.536224,
+     37.50674
+    ],
+    [
+     -79.536218,
+     37.506718
+    ],
+    [
+     -79.536213,
+     37.506695
+    ],
+    [
+     -79.536207,
+     37.506673
+    ],
+    [
+     -79.536202,
+     37.506651
+    ],
+    [
+     -79.536196,
+     37.506628
+    ],
+    [
+     -79.536191,
+     37.506606
+    ],
+    [
+     -79.536186,
+     37.506584
+    ],
+    [
+     -79.53618,
+     37.506562
+    ],
+    [
+     -79.536175,
+     37.506539
+    ],
+    [
+     -79.536169,
+     37.506517
+    ],
+    [
+     -79.536164,
+     37.506495
+    ],
+    [
+     -79.536158,
+     37.506473
+    ],
+    [
+     -79.536153,
+     37.50645
+    ]
+   ],
+   "status": "candidate"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     36.657934,
+     -81.537695
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 930
+   },
+   "box": [
+    -81.55527,
+    36.65781,
+    -81.53721,
+    36.65952
+   ],
+   "center": [
+    36.658137,
+    -81.537687
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4556+US-9920@trail@36.658,-81.538",
+   "kind": "trail",
+   "len_m": 216,
+   "len_main": 108,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-9920": {
+     "by": "US Forest Service",
+     "date": "2026-10-26",
+     "line": "data/trails/US-9920.json"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-9920": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-9920",
+     "https://www.nrtapplication.org/trails/mount-rogers"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-9920": "Mount Rogers National Recreation Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [
+    {
+     "at": [
+      36.65953,
+      -81.554957
+     ],
+     "from": "road",
+     "name": "Elk Garden Trl",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 692
+    },
+    {
+     "at": [
+      36.657934,
+      -81.537695
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 930
+    }
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-9920": true
+   },
+   "refs": [
+    "US-4556",
+    "US-9920"
+   ],
+   "shape": [
+    [
+     -81.538118,
+     36.657806
+    ],
+    [
+     -81.538099,
+     36.657823
+    ],
+    [
+     -81.538079,
+     36.657839
+    ],
+    [
+     -81.53806,
+     36.657855
+    ],
+    [
+     -81.538041,
+     36.657872
+    ],
+    [
+     -81.538021,
+     36.657888
+    ],
+    [
+     -81.538002,
+     36.657904
+    ],
+    [
+     -81.537982,
+     36.657921
+    ],
+    [
+     -81.537963,
+     36.657937
+    ],
+    [
+     -81.537943,
+     36.657954
+    ],
+    [
+     -81.537924,
+     36.65797
+    ],
+    [
+     -81.537904,
+     36.657986
+    ],
+    [
+     -81.537885,
+     36.658003
+    ],
+    [
+     -81.537866,
+     36.658019
+    ],
+    [
+     -81.537846,
+     36.658035
+    ],
+    [
+     -81.537827,
+     36.658052
+    ],
+    [
+     -81.537807,
+     36.658068
+    ],
+    [
+     -81.537788,
+     36.658085
+    ],
+    [
+     -81.537768,
+     36.658101
+    ],
+    [
+     -81.537749,
+     36.658117
+    ],
+    [
+     -81.537729,
+     36.658134
+    ],
+    [
+     -81.53771,
+     36.65815
+    ],
+    [
+     -81.537687,
+     36.658137
+    ],
+    [
+     -81.537664,
+     36.658123
+    ],
+    [
+     -81.537641,
+     36.65811
+    ],
+    [
+     -81.537618,
+     36.658097
+    ],
+    [
+     -81.537596,
+     36.658083
+    ],
+    [
+     -81.537573,
+     36.65807
+    ],
+    [
+     -81.53755,
+     36.658057
+    ],
+    [
+     -81.537527,
+     36.658043
+    ],
+    [
+     -81.537504,
+     36.65803
+    ],
+    [
+     -81.537481,
+     36.658017
+    ],
+    [
+     -81.537458,
+     36.658003
+    ],
+    [
+     -81.537435,
+     36.65799
+    ],
+    [
+     -81.537413,
+     36.657977
+    ],
+    [
+     -81.53739,
+     36.657963
+    ],
+    [
+     -81.537367,
+     36.65795
+    ],
+    [
+     -81.537344,
+     36.657937
+    ],
+    [
+     -81.537321,
+     36.657923
+    ],
+    [
+     -81.537298,
+     36.65791
+    ],
+    [
+     -81.537275,
+     36.657897
+    ],
+    [
+     -81.537252,
+     36.657883
+    ],
+    [
+     -81.537229,
+     36.65787
+    ],
+    [
+     -81.537207,
+     36.657857
+    ]
+   ],
+   "status": "candidate",
+   "stretches": 2
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     36.65953,
+     -81.554957
+    ],
+    "from": "road",
+    "name": "Elk Garden Trl",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 692
+   },
+   "box": [
+    -81.55527,
+    36.65908,
+    -81.55462,
+    36.65952
+   ],
+   "center": [
+    36.65952,
+    -81.554648
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4556+US-9920@trail@36.660,-81.555",
+   "kind": "trail",
+   "len_m": 108,
+   "line_source": {
+    "US-4556": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4556.json"
+    },
+    "US-9920": {
+     "by": "US Forest Service",
+     "date": "2026-10-26",
+     "line": "data/trails/US-9920.json"
+    }
+   },
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-9920": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4556",
+     "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf"
+    ],
+    [
+     "US-9920",
+     "https://www.nrtapplication.org/trails/mount-rogers"
+    ]
+   ],
+   "names": {
+    "US-4556": "Appalachian Trail National Scenic Trail",
+    "US-9920": "Mount Rogers National Recreation Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-9920": true
+   },
+   "refs": [
+    "US-4556",
+    "US-9920"
+   ],
+   "shape": [
+    [
+     -81.555267,
+     36.659522
+    ],
+    [
+     -81.555239,
+     36.659522
+    ],
+    [
+     -81.55521,
+     36.659522
+    ],
+    [
+     -81.555182,
+     36.659522
+    ],
+    [
+     -81.555154,
+     36.659522
+    ],
+    [
+     -81.555126,
+     36.659522
+    ],
+    [
+     -81.555098,
+     36.659522
+    ],
+    [
+     -81.55507,
+     36.659522
+    ],
+    [
+     -81.555042,
+     36.659521
+    ],
+    [
+     -81.555014,
+     36.659521
+    ],
+    [
+     -81.554986,
+     36.659521
+    ],
+    [
+     -81.554957,
+     36.659521
+    ],
+    [
+     -81.554929,
+     36.659521
+    ],
+    [
+     -81.554901,
+     36.659521
+    ],
+    [
+     -81.554873,
+     36.659521
+    ],
+    [
+     -81.554845,
+     36.659521
+    ],
+    [
+     -81.554817,
+     36.659521
+    ],
+    [
+     -81.554789,
+     36.659521
+    ],
+    [
+     -81.554761,
+     36.65952
+    ],
+    [
+     -81.554732,
+     36.65952
+    ],
+    [
+     -81.554704,
+     36.65952
+    ],
+    [
+     -81.554676,
+     36.65952
+    ],
+    [
+     -81.554648,
+     36.65952
+    ],
+    [
+     -81.55462,
+     36.65952
+    ],
+    [
+     -81.554627,
+     36.659498
+    ],
+    [
+     -81.554634,
+     36.659476
+    ],
+    [
+     -81.554641,
+     36.659454
+    ],
+    [
+     -81.554648,
+     36.659432
+    ],
+    [
+     -81.554655,
+     36.65941
+    ],
+    [
+     -81.554662,
+     36.659388
+    ],
+    [
+     -81.554669,
+     36.659366
+    ],
+    [
+     -81.554677,
+     36.659343
+    ],
+    [
+     -81.554684,
+     36.659321
+    ],
+    [
+     -81.554691,
+     36.659299
+    ],
+    [
+     -81.554698,
+     36.659277
+    ],
+    [
+     -81.554705,
+     36.659255
+    ],
+    [
+     -81.554712,
+     36.659233
+    ],
+    [
+     -81.554719,
+     36.659211
+    ],
+    [
+     -81.554726,
+     36.659189
+    ],
+    [
+     -81.554733,
+     36.659167
+    ],
+    [
+     -81.55474,
+     36.659145
+    ],
+    [
+     -81.554747,
+     36.659123
+    ],
+    [
+     -81.554754,
+     36.659101
+    ],
+    [
+     -81.554761,
+     36.659079
+    ]
+   ],
+   "status": "merged into one row: US-4556+US-9920@trail@36.658,-81.538"
+  },
+  {
+   "box": [
+    -81.79196,
+    36.6283,
+    -81.77577,
+    36.63548
+   ],
+   "center": [
+    36.63078,
+    -81.783282
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [],
+   "id": "US-4556+US-9923@trail@36.631,-81.783",
+   "kind": "trail",
+   "len_m": 675,
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-9923": "official line (trails bot)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-9923": true
+   },
+   "places": 2,
+   "refs": [
+    "US-4556",
+    "US-9923"
+   ],
+   "shape": [
+    [
+     -81.783238,
+     36.63053
+    ],
+    [
+     -81.778996,
+     36.629176
+    ]
+   ],
+   "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "unknown_part": "no owner on the maps at 1 of 1 points of the patch: only that piece is not sure"
+  },
+  {
+   "box": [
+    -81.79196,
+    36.63449,
+    -81.79131,
+    36.63548
+   ],
+   "center": [
+    36.634984,
+    -81.79189
+   ],
+   "checked": "2026-10-30",
+   "found": "2026-10-30",
+   "ground": [],
+   "id": "US-4556+US-9923@trail@36.635,-81.792",
+   "kind": "trail",
+   "len_m": 168,
+   "map_dates": {
+    "US-4556": "official line (trails bot)",
+    "US-9923": "official line (trails bot)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4556": true,
+    "US-9923": true
+   },
+   "refs": [
+    "US-4556",
+    "US-9923"
+   ],
+   "shape": [
+    [
+     -81.79182,
+     36.634487
+    ],
+    [
+     -81.791823,
+     36.63451
+    ],
+    [
+     -81.791826,
+     36.634533
+    ],
+    [
+     -81.79183,
+     36.634555
+    ],
+    [
+     -81.791833,
+     36.634578
+    ],
+    [
+     -81.791836,
+     36.6346
+    ],
+    [
+     -81.791839,
+     36.634623
+    ],
+    [
+     -81.791842,
+     36.634645
+    ],
+    [
+     -81.791845,
+     36.634668
+    ],
+    [
+     -81.791849,
+     36.634691
+    ],
+    [
+     -81.791852,
+     36.634713
+    ],
+    [
+     -81.791855,
+     36.634736
+    ],
+    [
+     -81.791858,
+     36.634758
+    ],
+    [
+     -81.791861,
+     36.634781
+    ],
+    [
+     -81.791865,
+     36.634803
+    ],
+    [
+     -81.791868,
+     36.634826
+    ],
+    [
+     -81.791871,
+     36.634848
+    ],
+    [
+     -81.791874,
+     36.634871
+    ],
+    [
+     -81.791877,
+     36.634894
+    ],
+    [
+     -81.79188,
+     36.634916
+    ],
+    [
+     -81.791884,
+     36.634939
+    ],
+    [
+     -81.791887,
+     36.634961
+    ],
+    [
+     -81.79189,
+     36.634984
+    ],
+    [
+     -81.791893,
+     36.635006
+    ],
+    [
+     -81.791896,
+     36.635029
+    ],
+    [
+     -81.7919,
+     36.635051
+    ],
+    [
+     -81.791903,
+     36.635074
+    ],
+    [
+     -81.791906,
+     36.635097
+    ],
+    [
+     -81.791909,
+     36.635119
+    ],
+    [
+     -81.791912,
+     36.635142
+    ],
+    [
+     -81.791915,
+     36.635164
+    ],
+    [
+     -81.791919,
+     36.635187
+    ],
+    [
+     -81.791922,
+     36.635209
+    ],
+    [
+     -81.791925,
+     36.635232
+    ],
+    [
+     -81.791928,
+     36.635254
+    ],
+    [
+     -81.791931,
+     36.635277
+    ],
+    [
+     -81.791935,
+     36.6353
+    ],
+    [
+     -81.791938,
+     36.635322
+    ],
+    [
+     -81.791941,
+     36.635345
+    ],
+    [
+     -81.791944,
+     36.635367
+    ],
+    [
+     -81.791947,
+     36.63539
+    ],
+    [
+     -81.79195,
+     36.635412
+    ],
+    [
+     -81.791954,
+     36.635435
+    ],
+    [
+     -81.791957,
+     36.635457
+    ],
+    [
+     -81.79196,
+     36.63548
+    ]
+   ],
+   "status": "merged into one row: US-4556+US-9923@trail@36.631,-81.783 (the same not-sure pair, shown once)",
+   "unknown_part": "no owner on the maps at 1 of 1 points of the patch: only that piece is not sure"
   }
  ],
  "st": "US-ME"
