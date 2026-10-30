@@ -1,1 +1,774 @@
-{"note":"Official parking / entrance / gate / kiosk / boat ramp / trailhead points from the state agencies (data/access-layers.json), tied to POTA parks by the layer's area name or by sitting on the park's official land. Built by .github/scripts/kpc_us_access.py.","parks":{"US-11791":[[35.974839,-105.917102,"Boat ramp / launch (New Mexico Game and Fish)"]],"US-2688":[[32.560893,-104.387108,"Boat ramp / launch: West Boat Ramp (New Mexico Game and Fish)"],[32.557548,-104.391877,"Boat ramp / launch: East Boat Ramp (New Mexico Game and Fish)"]],"US-2689":[[32.911167,-107.306775,"Boat ramp / launch: Main Boat Ramp (New Mexico Game and Fish)"],[32.898768,-107.292311,"Boat ramp / launch: Apache Canyon (New Mexico Game and Fish)"]],"US-2691":[[36.537672,-105.223971,"Trailhead: Cimarron Canyon (1 park)"]],"US-2693":[[36.577748,-103.300685,"Boat ramp / launch (New Mexico Game and Fish)"]],"US-2694":[[35.381881,-104.194925,"Boat ramp / launch: US Army Corps Engineers Access Area (New Mexico Game and Fish)"],[35.422114,-104.192783,"Boat ramp / launch: Cove Recreational Area (New Mexico Game and Fish)"]],"US-2696":[[36.508438,-105.271932,"Parking: Six Mile (2 parks only)"],[36.536203,-105.264616,"Parking (2 parks only)"],[36.540254,-105.267884,"Parking (2 parks only)"],[36.544461,-105.24998,"Parking: Moreno (2 parks only)"],[36.487271,-105.267057,"Parking: Cieneguilla (2 parks only)"],[36.537051,-105.263687,"Boat ramp / launch: Eagle Nest Lake State Park (New Mexico Game and Fish)"],[36.552945,-105.268277,"Trailhead: Unknown (1 park)"],[36.541206,-105.268119,"Trailhead: Unknown (1 park)"],[36.532981,-105.265413,"Trailhead: Unknown (1 park)"]],"US-2697":[[33.149397,-107.183306,"Boat ramp / launch: Dam Site Marina (New Mexico Game and Fish)"],[33.296624,-107.176113,"Boat ramp / launch: South Monticello Ramp (New Mexico Game and Fish)"]],"US-2698":[[36.604521,-106.739836,"Boat ramp / launch (New Mexico Game and Fish)"]],"US-2699":[[35.88334,-106.726479,"Boat ramp / launch (New Mexico Game and Fish)"]],"US-2707":[[36.815648,-107.630309,"Parking: Texas Hole (2 parks only)"],[36.821647,-107.649003,"Parking: Lower Flats (2 parks only)"],[36.821041,-107.65734,"Parking: Simon Point (2 parks only)"],[36.818722,-107.614929,"Parking (2 parks only)"],[36.816953,-107.613974,"Parking (2 parks only)"],[36.812021,-107.667861,"Parking: Crusher Hole (2 parks only)"],[36.818049,-107.614162,"Boat ramp / launch: Pine Marina Access (New Mexico Game and Fish)"],[36.816464,-107.630612,"Trailhead (1 park)"],[36.806957,-107.621436,"Trailhead (1 park)"]],"US-2714":[[35.031486,-104.684173,"Boat ramp / launch: Santa Rosa Boat Ramp (New Mexico Game and Fish)"]],"US-2716":[[36.988797,-104.372502,"Boat ramp / launch (New Mexico Game and Fish)"]],"US-2717":[[34.616048,-104.389307,"Boat ramp / launch: Main Boat Ramp (New Mexico Game and Fish)"],[34.613099,-104.380321,"Boat ramp / launch: East Side (New Mexico Game and Fish)"]],"US-2718":[[35.342089,-103.493645,"Boat ramp / launch: Mine Canyon (New Mexico Game and Fish)"],[35.368419,-103.491703,"Boat ramp / launch: Logan Park (New Mexico Game and Fish)"],[35.339674,-103.446283,"Boat ramp / launch: South Side (New Mexico Game and Fish)"],[35.35565,-103.457241,"Boat ramp / launch: North Area (New Mexico Game and Fish)"]]},"st":"NM"}
+{
+ "note": "Official parking / entrance / gate / kiosk / boat ramp / trailhead points from the state agencies (data/access-layers.json), tied to POTA parks by the layer's area name or by sitting on the park's official land. Built by .github/scripts/kpc_us_access.py.",
+ "parks": {
+  "US-11791": [
+   [
+    35.974839,
+    -105.917102,
+    "Boat ramp / launch (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-2688": [
+   [
+    32.560893,
+    -104.387108,
+    "Boat ramp / launch: West Boat Ramp (New Mexico Game and Fish)"
+   ],
+   [
+    32.557548,
+    -104.391877,
+    "Boat ramp / launch: East Boat Ramp (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-2689": [
+   [
+    32.911167,
+    -107.306775,
+    "Boat ramp / launch: Main Boat Ramp (New Mexico Game and Fish)"
+   ],
+   [
+    32.898768,
+    -107.292311,
+    "Boat ramp / launch: Apache Canyon (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-2691": [
+   [
+    36.537672,
+    -105.223971,
+    "Trailhead: Cimarron Canyon (1 park)"
+   ]
+  ],
+  "US-2693": [
+   [
+    36.577748,
+    -103.300685,
+    "Boat ramp / launch (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-2694": [
+   [
+    35.381881,
+    -104.194925,
+    "Boat ramp / launch: US Army Corps Engineers Access Area (New Mexico Game and Fish)"
+   ],
+   [
+    35.422114,
+    -104.192783,
+    "Boat ramp / launch: Cove Recreational Area (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-2696": [
+   [
+    36.508438,
+    -105.271932,
+    "Parking: Six Mile (2 parks only)"
+   ],
+   [
+    36.536203,
+    -105.264616,
+    "Parking (2 parks only)"
+   ],
+   [
+    36.540254,
+    -105.267884,
+    "Parking (2 parks only)"
+   ],
+   [
+    36.544461,
+    -105.24998,
+    "Parking: Moreno (2 parks only)"
+   ],
+   [
+    36.487271,
+    -105.267057,
+    "Parking: Cieneguilla (2 parks only)"
+   ],
+   [
+    36.537051,
+    -105.263687,
+    "Boat ramp / launch: Eagle Nest Lake State Park (New Mexico Game and Fish)"
+   ],
+   [
+    36.552945,
+    -105.268277,
+    "Trailhead: Unknown (1 park)"
+   ],
+   [
+    36.541206,
+    -105.268119,
+    "Trailhead: Unknown (1 park)"
+   ],
+   [
+    36.532981,
+    -105.265413,
+    "Trailhead: Unknown (1 park)"
+   ]
+  ],
+  "US-2697": [
+   [
+    33.149397,
+    -107.183306,
+    "Boat ramp / launch: Dam Site Marina (New Mexico Game and Fish)"
+   ],
+   [
+    33.296624,
+    -107.176113,
+    "Boat ramp / launch: South Monticello Ramp (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-2698": [
+   [
+    36.604521,
+    -106.739836,
+    "Boat ramp / launch (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-2699": [
+   [
+    35.88334,
+    -106.726479,
+    "Boat ramp / launch (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-2707": [
+   [
+    36.815648,
+    -107.630309,
+    "Parking: Texas Hole (2 parks only)"
+   ],
+   [
+    36.821647,
+    -107.649003,
+    "Parking: Lower Flats (2 parks only)"
+   ],
+   [
+    36.821041,
+    -107.65734,
+    "Parking: Simon Point (2 parks only)"
+   ],
+   [
+    36.818722,
+    -107.614929,
+    "Parking (2 parks only)"
+   ],
+   [
+    36.816953,
+    -107.613974,
+    "Parking (2 parks only)"
+   ],
+   [
+    36.812021,
+    -107.667861,
+    "Parking: Crusher Hole (2 parks only)"
+   ],
+   [
+    36.818049,
+    -107.614162,
+    "Boat ramp / launch: Pine Marina Access (New Mexico Game and Fish)"
+   ],
+   [
+    36.816464,
+    -107.630612,
+    "Trailhead (1 park)"
+   ],
+   [
+    36.806957,
+    -107.621436,
+    "Trailhead (1 park)"
+   ]
+  ],
+  "US-2714": [
+   [
+    35.031486,
+    -104.684173,
+    "Boat ramp / launch: Santa Rosa Boat Ramp (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-2716": [
+   [
+    36.988797,
+    -104.372502,
+    "Boat ramp / launch (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-2717": [
+   [
+    34.616048,
+    -104.389307,
+    "Boat ramp / launch: Main Boat Ramp (New Mexico Game and Fish)"
+   ],
+   [
+    34.613099,
+    -104.380321,
+    "Boat ramp / launch: East Side (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-2718": [
+   [
+    35.342089,
+    -103.493645,
+    "Boat ramp / launch: Mine Canyon (New Mexico Game and Fish)"
+   ],
+   [
+    35.368419,
+    -103.491703,
+    "Boat ramp / launch: Logan Park (New Mexico Game and Fish)"
+   ],
+   [
+    35.339674,
+    -103.446283,
+    "Boat ramp / launch: South Side (New Mexico Game and Fish)"
+   ],
+   [
+    35.35565,
+    -103.457241,
+    "Boat ramp / launch: North Area (New Mexico Game and Fish)"
+   ]
+  ],
+  "US-11822": [
+   [
+    35.8149127,
+    -106.6063152,
+    "Facility: Jemez Falls Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.817979,
+    -106.606892,
+    "Facility: Jemez Falls Group Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.8163889,
+    -106.6063889,
+    "Campground: JEMEZ FALLS CAMPGROUND (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-4513": [
+   [
+    36.496,
+    -106.403,
+    "Facility: Canjilon RD (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    36.35,
+    -106.188,
+    "Facility: El Rito RD (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    36.6469,
+    -105.971,
+    "Facility: Tres Piedras RD (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    36.3602,
+    -106.5269,
+    "Facility: Echo Amphitheater Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    36.4017,
+    -106.2536,
+    "Facility: El Rito Creek Fishing (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    36.324883,
+    -106.504131,
+    "Facility: Rio Chama Fishing (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    36.618193,
+    -106.386889,
+    "Facility: Rio Nutritas Fishing (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    36.414777,
+    -106.058265,
+    "Facility: Rio Vallecitos Fishing (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    36.622345,
+    -106.381994,
+    "Facility: Hidden Lakes Fishing (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    36.5563,
+    -106.333,
+    "Facility: Canjilon Lakes Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-4514": [
+   [
+    35.29136127,
+    -106.4411103,
+    "Facility: Sandia Mountains (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-4515": [
+   [
+    33.19409561,
+    -108.033226,
+    "Facility: Middle Mesa #716 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.853958,
+    -108.275192,
+    "Facility: Little Walnut Individual Picnic Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.18415,
+    -108.0339584,
+    "Campground: Black Canyon Campground - Lower (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.8470726,
+    -108.2773361,
+    "Facility: Little Walnut-Gomez Peak Day Use Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.7947998,
+    -108.1839371,
+    "Facility: Dragonfly Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.852562,
+    -108.274475,
+    "Facility: Little Walnut East Group Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.02687454,
+    -108.1360931,
+    "Facility: Railroad Canyon #96 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.88699722,
+    -107.8581619,
+    "Facility: Lower Gallinas #795 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.03022385,
+    -107.8523254,
+    "Facility: McKnight #79 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.03028488,
+    -108.1552734,
+    "Facility: Lake Roberts Picnic Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.93109894,
+    -108.0128174,
+    "Facility: Allie Canyon #100 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.853119,
+    -108.275368,
+    "Facility: Little Walnut West Group Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.03076,
+    -108.154953,
+    "Facility: Lake Roberts (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.10103989,
+    -108.015152,
+    "Facility: Brannon Park #700 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.909735,
+    -107.803618,
+    "Campground: Iron Creek Campground (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.18364334,
+    -108.0365448,
+    "Facility: Lower Black Canyon #94 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.91004944,
+    -107.7664413,
+    "Facility: Emory Pass #79 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.849327,
+    -108.277382,
+    "Facility: Gomez Peak Large Group Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.7865181,
+    -108.1593628,
+    "Facility: Crosscountry Course #722 Trailhead (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.18528366,
+    -108.0306702,
+    "Campground: Black Canyon Campground - Upper (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.00442505,
+    -107.8562164,
+    "Facility: Board Gate Saddle #79 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.84790802,
+    -108.2767868,
+    "Facility: Gomez Peak Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.12045288,
+    -108.1897354,
+    "Facility: Military Trail Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.91887283,
+    -108.1645126,
+    "Facility: Black Peak CDNST #74 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.06660461,
+    -107.9854431,
+    "Facility: CDNST/Mimbres Access #741 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.918485,
+    -107.70117,
+    "Campground: Kingston Campground (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.92000961,
+    -107.7462845,
+    "Facility: Ladrone #127 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.84177399,
+    -108.1442719,
+    "Facility: Big Tree #755 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.99175262,
+    -107.8985977,
+    "Facility: East Canyon #93 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.0328331,
+    -108.1537399,
+    "Facility: Purgatory Chasm #779 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.02701569,
+    -108.1487885,
+    "Facility: Pictograph Nature Trail #800 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.00637436,
+    -108.115593,
+    "Facility: Sapillo Trailhead/CDNST (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.12213135,
+    -108.0069656,
+    "Facility: Rocky Point CDNST Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.02654266,
+    -107.849144,
+    "Facility: Pretty Canyon #121 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.97663498,
+    -108.307045,
+    "Facility: Sheep Corral #231 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.88747025,
+    -107.8596573,
+    "Facility: Rabb Park #747 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.93949509,
+    -108.1972198,
+    "Facility: Signal Peak #742 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.98117828,
+    -108.2715836,
+    "Facility: Snow Creek #233 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.86250687,
+    -108.2900467,
+    "Facility: Wagon Wheel - CDNST Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.80012894,
+    -108.1534882,
+    "Facility: Woodhaul Wagon Road #55 Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.11776352,
+    -108.1985321,
+    "Facility: Senator Clinton P. Anderson Overlook (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.90994263,
+    -107.763916,
+    "Facility: Emory Pass Observation Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.88258743,
+    -108.2242203,
+    "Facility: Arrastra Interpretive Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.03052139,
+    -108.1574402,
+    "Facility: Lake Roberts Boat Launch (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-4516": [
+   [
+    32.964386,
+    -105.748745,
+    "Facility: Trestle Vista Observation Site - south (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.931194,
+    -105.761564,
+    "Facility: Haynes Canyon Vista (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.8363,
+    -105.6627,
+    "Facility: Sacramento RD (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.9218,
+    -105.507835,
+    "Facility: Mayhill Lookout (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.993621,
+    -105.708289,
+    "Facility: Wofford Lookout (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.96497,
+    -105.60534,
+    "Facility: James Ridge Lookout (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.872417,
+    -105.812546,
+    "Facility: Alamo Lookout (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.746822,
+    -105.76082,
+    "Facility: Sacramento Lookout (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.806434,
+    -105.560146,
+    "Facility: Weed Lookout (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    32.946207,
+    -105.860217,
+    "Facility: Tunnel Vista Observation Site (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-4517": [
+   [
+    35.69062507,
+    -106.7354509,
+    "Facility: Las Casitas Fishing Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.84139024,
+    -106.63806,
+    "Facility: Rincon Fishing Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.864439,
+    -106.638071,
+    "Facility: La Cueva Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.73037278,
+    -106.7138047,
+    "Facility: Bluffs Fishing Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.81472045,
+    -106.52417,
+    "Facility: Las Conchas Day Use Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.82808488,
+    -106.6434227,
+    "Facility: Battleship Rock Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.82110896,
+    -106.5901806,
+    "Facility: East Fork Trailhead #137 (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.70757094,
+    -106.7278215,
+    "Facility: San Diego Fishing Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.84897688,
+    -106.6314127,
+    "Facility: Spence Hot Spring Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.93444001,
+    -106.6841701,
+    "Facility: Seven Springs Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.81601231,
+    -106.5326456,
+    "Facility: Las Conchas Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.67126872,
+    -106.7417232,
+    "Facility: La Junta Fishing Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.72504054,
+    -106.7153643,
+    "Facility: Spanish Queen Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.859711,
+    -106.627466,
+    "Facility: San Diego Canyon Overlook Overlook Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.85337615,
+    -106.6299304,
+    "Facility: Dark Canyon Fishing Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.82900599,
+    -106.6434739,
+    "Facility: Battleship Rock  Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.71371367,
+    -106.722561,
+    "Facility: River's Bend Fishing Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.9858333,
+    -106.8125,
+    "Campground: CLEAR CREEK CAMPGROUND (NM) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.9966667,
+    -106.8075,
+    "Campground: RIO DE LAS VACAS CAMPGROUND (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    36.04801235,
+    -106.7502618,
+    "Facility: Penas Negras #32 (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ]
+ },
+ "st": "NM",
+ "credits": [
+  "Recreation.gov / National Park Service data"
+ ]
+}

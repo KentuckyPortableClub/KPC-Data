@@ -1,1 +1,976 @@
-{"note":"Official parking / entrance / gate / kiosk / boat ramp / trailhead points from the state agencies (data/access-layers.json), tied to POTA parks by the layer's area name or by sitting on the park's official land. Built by .github/scripts/kpc_us_access.py.","parks":{"US-10512":[[34.75379,-112.005,"Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"]],"US-1056":[[34.35111,-114.17,"Boat ramp / launch: Cattail Cove Boat Ramp (Arizona Game and Fish)"]],"US-1057":[[34.75379,-112.005,"Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"]],"US-1059":[[31.836002,-110.349614,"Parking: Foothills Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[31.835523,-110.356549,"Parking: Guindani Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[31.835013,-110.349664,"Parking: Kartchner Picnic Area/Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"]],"US-1060":[[34.490819,-114.358176,"Parking: Mohave Sunset Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[34.491499,-114.357736,"Parking: Mohave Sunset Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[34.450292,-114.32549,"Parking: Lighthouse Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[34.4909,-114.361,"Boat ramp / launch: Windsor North Boat Ramp (Arizona Game and Fish)"],[34.4943,-114.362,"Boat ramp / launch: Windsor PWC Boat Ramp (Arizona Game and Fish)"],[34.48962,-114.36,"Boat ramp / launch: Windsor South Boat Ramp (Arizona Game and Fish)"],[34.44436,-114.319565,"Boat ramp / launch: Havasu Rivieria Marina (Arizona Game and Fish)"]],"US-1062":[[34.359877,-109.376631,"Parking: Lyman Lake Hookup Campground Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[34.358654,-109.376549,"Parking: Lyman Lake Hookup Campground Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[34.360367,-109.372885,"Parking: Peninsula Petroglyph Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[34.363328,-109.375868,"Parking: Lyman Lake Trail #2 Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[34.366395,-109.374885,"Parking: Lyman Lake Trail #2 Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[34.36451,-109.373,"Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"]],"US-1063":[[32.609791,-110.735106,"Parking: Bellota Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.609896,-110.739394,"Parking: Oak Woodland Area Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"]],"US-1064":[[31.487651,-110.865492,"Parking: Sonoita Creek State Natural Area Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[31.496918,-110.849551,"Parking: Patagonia Lake Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[31.493666,-110.855621,"Boat ramp / launch: Marina Boat Ramp (Arizona Game and Fish)"],[31.4959,-110.856,"Boat ramp / launch: North Boat Ramp (Arizona Game and Fish)"]],"US-1065":[[32.642642,-111.402457,"Parking: Barrett Loop Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.64739,-111.429241,"Parking: Sunset Vista Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.654485,-111.424067,"Parking: Quail Group Area Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.654524,-111.42113,"Parking: Campground Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.653748,-111.420673,"Parking: Campground Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.653355,-111.42213,"Parking: Roadrunner Group Area Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.651989,-111.417568,"Parking: Campground Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.65081,-111.416493,"Parking: Raven Group Area Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.645206,-111.405559,"Parking: Children's Cave Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.645161,-111.403549,"Parking: Children's Cave Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.644878,-111.402363,"Parking: Nature Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"],[32.645235,-111.400301,"Parking: Nature Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"]],"US-1067":[[32.75457,-109.701,"Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"]],"US-1068":[[34.94328,-111.753206,"Parking: Slide Rock State Park Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"]],"US-1069":[[34.320772,-111.45634,"Parking: Tonto Natural Bridge Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[34.320096,-111.456332,"Parking: Tonto Natural Bridge South Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[34.322546,-111.455383,"Parking: Viewpoint Path Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"],[34.323079,-111.454464,"Parking: Pine Creek Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"]],"US-11949":[[34.15714,-109.306,"Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"]],"US-11950":[[32.80557,-109.862,"Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"]],"US-11979":[[34.306482,-110.030512,"Trailhead: Pintail Lake Trailhead (AGFD)"]],"US-11981":[[31.52616,-111.254,"Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"]]},"st":"AZ"}
+{
+ "note": "Official parking / entrance / gate / kiosk / boat ramp / trailhead points from the state agencies (data/access-layers.json), tied to POTA parks by the layer's area name or by sitting on the park's official land. Built by .github/scripts/kpc_us_access.py.",
+ "parks": {
+  "US-10512": [
+   [
+    34.75379,
+    -112.005,
+    "Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"
+   ]
+  ],
+  "US-1056": [
+   [
+    34.35111,
+    -114.17,
+    "Boat ramp / launch: Cattail Cove Boat Ramp (Arizona Game and Fish)"
+   ]
+  ],
+  "US-1057": [
+   [
+    34.75379,
+    -112.005,
+    "Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"
+   ]
+  ],
+  "US-1059": [
+   [
+    31.836002,
+    -110.349614,
+    "Parking: Foothills Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    31.835523,
+    -110.356549,
+    "Parking: Guindani Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    31.835013,
+    -110.349664,
+    "Parking: Kartchner Picnic Area/Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ]
+  ],
+  "US-1060": [
+   [
+    34.490819,
+    -114.358176,
+    "Parking: Mohave Sunset Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    34.491499,
+    -114.357736,
+    "Parking: Mohave Sunset Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    34.450292,
+    -114.32549,
+    "Parking: Lighthouse Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    34.4909,
+    -114.361,
+    "Boat ramp / launch: Windsor North Boat Ramp (Arizona Game and Fish)"
+   ],
+   [
+    34.4943,
+    -114.362,
+    "Boat ramp / launch: Windsor PWC Boat Ramp (Arizona Game and Fish)"
+   ],
+   [
+    34.48962,
+    -114.36,
+    "Boat ramp / launch: Windsor South Boat Ramp (Arizona Game and Fish)"
+   ],
+   [
+    34.44436,
+    -114.319565,
+    "Boat ramp / launch: Havasu Rivieria Marina (Arizona Game and Fish)"
+   ]
+  ],
+  "US-1062": [
+   [
+    34.359877,
+    -109.376631,
+    "Parking: Lyman Lake Hookup Campground Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    34.358654,
+    -109.376549,
+    "Parking: Lyman Lake Hookup Campground Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    34.360367,
+    -109.372885,
+    "Parking: Peninsula Petroglyph Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    34.363328,
+    -109.375868,
+    "Parking: Lyman Lake Trail #2 Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    34.366395,
+    -109.374885,
+    "Parking: Lyman Lake Trail #2 Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    34.36451,
+    -109.373,
+    "Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"
+   ]
+  ],
+  "US-1063": [
+   [
+    32.609791,
+    -110.735106,
+    "Parking: Bellota Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.609896,
+    -110.739394,
+    "Parking: Oak Woodland Area Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ]
+  ],
+  "US-1064": [
+   [
+    31.487651,
+    -110.865492,
+    "Parking: Sonoita Creek State Natural Area Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    31.496918,
+    -110.849551,
+    "Parking: Patagonia Lake Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    31.493666,
+    -110.855621,
+    "Boat ramp / launch: Marina Boat Ramp (Arizona Game and Fish)"
+   ],
+   [
+    31.4959,
+    -110.856,
+    "Boat ramp / launch: North Boat Ramp (Arizona Game and Fish)"
+   ]
+  ],
+  "US-1065": [
+   [
+    32.642642,
+    -111.402457,
+    "Parking: Barrett Loop Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.64739,
+    -111.429241,
+    "Parking: Sunset Vista Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.654485,
+    -111.424067,
+    "Parking: Quail Group Area Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.654524,
+    -111.42113,
+    "Parking: Campground Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.653748,
+    -111.420673,
+    "Parking: Campground Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.653355,
+    -111.42213,
+    "Parking: Roadrunner Group Area Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.651989,
+    -111.417568,
+    "Parking: Campground Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.65081,
+    -111.416493,
+    "Parking: Raven Group Area Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.645206,
+    -111.405559,
+    "Parking: Children's Cave Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.645161,
+    -111.403549,
+    "Parking: Children's Cave Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.644878,
+    -111.402363,
+    "Parking: Nature Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    32.645235,
+    -111.400301,
+    "Parking: Nature Trail Access Point (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ]
+  ],
+  "US-1067": [
+   [
+    32.75457,
+    -109.701,
+    "Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"
+   ]
+  ],
+  "US-1068": [
+   [
+    34.94328,
+    -111.753206,
+    "Parking: Slide Rock State Park Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ]
+  ],
+  "US-1069": [
+   [
+    34.320772,
+    -111.45634,
+    "Parking: Tonto Natural Bridge Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    34.320096,
+    -111.456332,
+    "Parking: Tonto Natural Bridge South Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    34.322546,
+    -111.455383,
+    "Parking: Viewpoint Path Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ],
+   [
+    34.323079,
+    -111.454464,
+    "Parking: Pine Creek Trailhead (Arizona State Parks & Trails; mixed managers statewide; data)"
+   ]
+  ],
+  "US-11949": [
+   [
+    34.15714,
+    -109.306,
+    "Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"
+   ]
+  ],
+  "US-11950": [
+   [
+    32.80557,
+    -109.862,
+    "Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"
+   ]
+  ],
+  "US-11979": [
+   [
+    34.306482,
+    -110.030512,
+    "Trailhead: Pintail Lake Trailhead (AGFD)"
+   ]
+  ],
+  "US-11981": [
+   [
+    31.52616,
+    -111.254,
+    "Boat ramp / launch: Boat Ramp (Arizona Game and Fish)"
+   ]
+  ],
+  "US-0771": [
+   [
+    31.4338889,
+    -110.4527778,
+    "Campground: ROCK BLUFF GROUP SITE (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    31.4291667,
+    -110.2905556,
+    "Campground: REEF TOWNSITE GROUP AREA (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-0966": [
+   [
+    33.666696,
+    -111.087959,
+    "Campground: Windy Hill Campground (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    33.6668056,
+    -111.1285556,
+    "Campground: FRAZIER GROUP CAMPGROUND (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-1052": [
+   [
+    34.234382,
+    -113.553394,
+    "Facility: Alamo State Park (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-1066": [
+   [
+    34.8696,
+    -111.7639,
+    "Facility: Red Rock Ranger District (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.757264,
+    -111.764216,
+    "Facility: Red Rock Ranger District Visitor Center (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-11045": [
+   [
+    33.02437,
+    -113.04543,
+    "Campground: Painted Rock Petroglyph Site and Campground (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-11122": [
+   [
+    34.30428889,
+    -110.7439667,
+    "Facility: General Crook Road Interpretive Site (minor) (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-12142": [
+   [
+    36.69689,
+    -111.909058,
+    "Facility: Dominguez-Escalante Site (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-13593": [
+   [
+    33.844268,
+    -112.441669,
+    "Facility: Boulders OHV Staging Area (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-13594": [
+   [
+    34.052798,
+    -112.151918,
+    "Facility: Black Canyon City Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-3672": [
+   [
+    34.273609,
+    -110.070941,
+    "Facility: Fool Hollow East Launch Boating Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.27309167,
+    -110.0613278,
+    "Campground: Fool Hollow Lake Recreation Area Campground (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.266009,
+    -110.074522,
+    "Facility: Fool Hollow Day Use Area Group Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.270881,
+    -110.074393,
+    "Facility: Fool Hollow West Launch Boating Site (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-4427": [
+   [
+    34.34304882,
+    -110.9347663,
+    "Facility: Rim Lakes Vista Observation Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.29191667,
+    -110.8677056,
+    "Campground: Fr 171 Campground (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.32559444,
+    -110.8265722,
+    "Facility: Canyon Point Dump Station Dump Station (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.3233333,
+    -110.8266667,
+    "Campground: CANYON POINT (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.3319444,
+    -110.9363889,
+    "Campground: SPILLWAY (AZ) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.382867,
+    -110.493621,
+    "Facility: Black Mesa Ranger District (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.35358333,
+    -110.83685,
+    "Campground: Fr 237 Camping Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.33026667,
+    -110.8337333,
+    "Campground: Larson Ridge Camping Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.34728056,
+    -110.8309778,
+    "Facility: Canyon Dr Access Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.30646667,
+    -110.8847111,
+    "Facility: Willow Springs Lake Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.31138056,
+    -110.8805583,
+    "Facility: Willow Springs Picnic Ground Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.39731111,
+    -110.5615556,
+    "Facility: Tall Timbers Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.314483,
+    -110.722378,
+    "Facility: Hangman Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.303384,
+    -110.857823,
+    "Facility: Horse Trap Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.34674722,
+    -110.8310083,
+    "Facility: 237 B Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.592182,
+    -110.788362,
+    "Facility: Long Draw North Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.509178,
+    -110.8355,
+    "Facility: Long Draw South Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.596537,
+    -110.798599,
+    "Facility: Durfee Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.326031,
+    -110.702022,
+    "Facility: Three Oaks Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.39545,
+    -110.63315,
+    "Facility: Polimana Interpretive Site (minor) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.38144444,
+    -110.6352111,
+    "Facility: Rock Shelter Interpretive Site (minor) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.36349722,
+    -110.6460806,
+    "Facility: Wilford Townsite Interpretive Site (minor) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.32226111,
+    -110.6844167,
+    "Facility: Baca Ranch Interpretive Site (minor) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.301475,
+    -110.7128917,
+    "Facility: Gentry Interpretive Site (minor) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.30615,
+    -110.4202056,
+    "Facility: Deer Springs Interpretive Site (minor) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.29863,
+    -110.868185,
+    "Facility: Sardine Point Day Use Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.41892778,
+    -110.6574528,
+    "Campground: Camp Shadow Pines Organization Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.326172,
+    -110.82816,
+    "Facility: Canyon Point Amphitheather Interpretive Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.326006,
+    -110.702761,
+    "Facility: Black Canyon Lake Fishing and Boating Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.36431,
+    -110.339893,
+    "Facility: Cottonwood Wash Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.33035278,
+    -110.8343306,
+    "Facility: Larson Ridge Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.308775,
+    -110.9247944,
+    "Facility: Military Sinkhole Vista Observation Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.295965,
+    -110.895031,
+    "Facility: Al Fulton Picnic Ground Day Use Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.30545,
+    -110.8971111,
+    "Facility: Rim Top Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.301721,
+    -110.882819,
+    "Facility: Willow Springs Lake Fishing and Boating Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.39883056,
+    -110.5610333,
+    "Facility: Tall Timbers County Park Organization Site (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-4428": [
+   [
+    35.02803,
+    -111.73411,
+    "Facility: Oak Creek (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.064467,
+    -111.503601,
+    "Facility: Lake Mary Narrows Boat Launch and Picnic Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.0125,
+    -111.7380556,
+    "Campground: PINE FLAT CAMPGROUND WEST (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.8436111,
+    -111.7763889,
+    "Campground: CHAVEZ CROSSING (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.956146,
+    -111.485407,
+    "Campground: DAIRY SPRINGS (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.03,
+    -111.4633333,
+    "Campground: PINEGROVE (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.9963889,
+    -111.7391667,
+    "Campground: CAVE SPRING (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.8291667,
+    -111.8055556,
+    "Campground: Crescent Moon Ramada (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.9416667,
+    -111.7416667,
+    "Campground: MANZANITA. (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.172,
+    -111.662,
+    "Facility: Flagstaff Ranger District (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.02316,
+    -111.39841,
+    "Campground: Forked Pine Campground (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.111395,
+    -111.583791,
+    "Facility: Lower Lake Mary Picnic Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.963031,
+    -111.437517,
+    "Facility: Mormon Lake (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.791515,
+    -111.76185,
+    "Facility: Bell Rock Pathway / Vista (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.969652,
+    -111.750819,
+    "Facility: Bootlegger Picnic Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.990681,
+    -111.74242,
+    "Facility: Call of the Canyon Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.826592,
+    -111.807089,
+    "Facility: Crescent Moon Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.90958,
+    -111.728717,
+    "Facility: Oak Creek Visitor Center (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.783201,
+    -111.52205,
+    "Facility: Stoneman Lake (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.99056,
+    -111.743195,
+    "Facility: West Fork of Oak Creek No. 108 (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.089992,
+    -111.536951,
+    "Facility: Lake Mary Recreation Corridor (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.054259,
+    -111.726436,
+    "Campground: Pumphouse Wash (FR 237) Dispersed Camping Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.112398,
+    -111.538442,
+    "Facility: Marshall Lake (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-4430": [
+   [
+    35.9369444,
+    -112.1230556,
+    "Campground: Tusayan - Montane (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    35.988962,
+    -112.122077,
+    "Facility: Tusayan Ranger District (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-4431": [
+   [
+    34.59,
+    -112.5591667,
+    "Campground: ALTO PIT OHV CAMPGROUND (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.522398,
+    -112.387297,
+    "Facility: Lynx Lake - North Shore Picnic Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.5522222,
+    -112.5213889,
+    "Campground: THUMB BUTTE (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.4552778,
+    -112.4533333,
+    "Campground: UPPER WOLF CREEK GROUP (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.5102778,
+    -112.3872222,
+    "Campground: EAGLE RIDGE GROUP CAMPGROUND (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.4708333,
+    -112.4352778,
+    "Campground: GROOM CREEK SCHOOLHOUSE (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.465,
+    -112.4413889,
+    "Campground: GROOM CREEK HORSE CAMP (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.5175,
+    -112.3902778,
+    "Campground: LYNX CAMPGROUND (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.614208,
+    -112.548838,
+    "Facility: Granite Basin Recreation Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.75623,
+    -112.45347,
+    "Facility: Chino Valley Ranger District (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.53658,
+    -112.46902,
+    "Facility: Bradshaw Ranger District (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.45457872,
+    -112.4597463,
+    "Campground: Lower Wolf Creek Campground (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.54053515,
+    -112.396887,
+    "Facility: Ranch (62) Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.522,
+    -112.38816,
+    "Facility: Lynx Lake Marina & Store Boating Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.61627551,
+    -112.5474912,
+    "Facility: Granite Basin Boating Site (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.65761,
+    -112.51863,
+    "Facility: Williamson Valley Trailhead (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.519234,
+    -112.38518,
+    "Facility: Lynx Lake Recreation Area (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.6167,
+    -112.5235,
+    "Facility: Granite Mountain via Williamson Valley Road (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.5399,
+    -112.5361,
+    "Facility: Thumb Butte (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.5569,
+    -112.5331,
+    "Facility: Thumb Butte (Climbing) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.4448,
+    -112.3185,
+    "Facility: Poland Junction (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.4627,
+    -112.43996,
+    "Facility: Groom Creek (Bouldering) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.5275,
+    -112.3317,
+    "Facility: Prescott Valley, South (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.7631,
+    -112.752,
+    "Facility: Iron Springs/Jerome Canyon (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.589,
+    -112.5776,
+    "Facility: Iron Springs (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.6298,
+    -112.5436,
+    "Facility: Granite Mountain (Climbing) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.4951,
+    -112.4994,
+    "Facility: Prescott to Wickenberg via White Spar Road (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.4349,
+    -112.5848,
+    "Facility: Wilhoit (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.6024722,
+    -112.5386944,
+    "Campground: YAVAPAI CAMPGROUND (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.5061694,
+    -112.4776806,
+    "Campground: WHITE SPAR CAMPGROUND (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    34.5080167,
+    -112.3826083,
+    "Campground: Hilltop Campground (AZ) (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-5965": [
+   [
+    37.00125,
+    -112.035006,
+    "Campground: Stateline Campground (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-7887": [
+   [
+    36.326095,
+    -113.791619,
+    "Facility: Grand Gulch Mine (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-8312": [
+   [
+    32.88752,
+    -109.47995,
+    "Campground: Riverview Campground (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ]
+ },
+ "st": "AZ",
+ "credits": [
+  "Recreation.gov / National Park Service data"
+ ]
+}

@@ -1,1 +1,552 @@
-{"note":"Official parking / entrance / gate / kiosk / boat ramp / trailhead points from the state agencies (data/access-layers.json), tied to POTA parks by the layer's area name or by sitting on the park's official land. Built by .github/scripts/kpc_us_access.py.","parks":{"US-2341":[[39.06898,-95.753439,"Boat ramp / launch: Kansas River (Kansas KDWP)"]],"US-2345":[[39.266672,-97.012158,"Boat ramp / launch: Republican River (Kansas KDWP)"]],"US-2347":[[39.350516,-95.454739,"Boat ramp / launch: Delaware River (Kansas KDWP)"],[39.288077,-95.447069,"Boat ramp / launch: Deleware River (Kansas KDWP)"],[39.318562,-95.441706,"Boat ramp / launch: Deleware River (Kansas KDWP)"]],"US-2355":[[38.964732,-98.676734,"Boat ramp / launch: Saline River (Kansas KDWP)"]],"US-7933":[[37.003388,-96.921401,"Boat ramp / launch: Arkansas River (Kansas KDWP)"],[37.035044,-96.904832,"Boat ramp / launch: Grouse Creek (Kansas KDWP)"],[37.016575,-96.907165,"Boat ramp / launch: Grouse Creek (Kansas KDWP)"]],"US-7935":[[38.249034,-94.687077,"Boat ramp / launch: Marais Des Cygnes River (Kansas KDWP)"]],"US-9178":[[38.86382,-99.337083,"Boat ramp / launch: Big Creek (Kansas KDWP)"]]},"st":"KS"}
+{
+ "note": "Official parking / entrance / gate / kiosk / boat ramp / trailhead points from the state agencies (data/access-layers.json), tied to POTA parks by the layer's area name or by sitting on the park's official land. Built by .github/scripts/kpc_us_access.py.",
+ "parks": {
+  "US-2341": [
+   [
+    39.06898,
+    -95.753439,
+    "Boat ramp / launch: Kansas River (Kansas KDWP)"
+   ]
+  ],
+  "US-2345": [
+   [
+    39.266672,
+    -97.012158,
+    "Boat ramp / launch: Republican River (Kansas KDWP)"
+   ]
+  ],
+  "US-2347": [
+   [
+    39.350516,
+    -95.454739,
+    "Boat ramp / launch: Delaware River (Kansas KDWP)"
+   ],
+   [
+    39.288077,
+    -95.447069,
+    "Boat ramp / launch: Deleware River (Kansas KDWP)"
+   ],
+   [
+    39.318562,
+    -95.441706,
+    "Boat ramp / launch: Deleware River (Kansas KDWP)"
+   ]
+  ],
+  "US-2355": [
+   [
+    38.964732,
+    -98.676734,
+    "Boat ramp / launch: Saline River (Kansas KDWP)"
+   ]
+  ],
+  "US-7933": [
+   [
+    37.003388,
+    -96.921401,
+    "Boat ramp / launch: Arkansas River (Kansas KDWP)"
+   ],
+   [
+    37.035044,
+    -96.904832,
+    "Boat ramp / launch: Grouse Creek (Kansas KDWP)"
+   ],
+   [
+    37.016575,
+    -96.907165,
+    "Boat ramp / launch: Grouse Creek (Kansas KDWP)"
+   ]
+  ],
+  "US-7935": [
+   [
+    38.249034,
+    -94.687077,
+    "Boat ramp / launch: Marais Des Cygnes River (Kansas KDWP)"
+   ]
+  ],
+  "US-9178": [
+   [
+    38.86382,
+    -99.337083,
+    "Boat ramp / launch: Big Creek (Kansas KDWP)"
+   ]
+  ],
+  "US-2332": [
+   [
+    38.89132077,
+    -95.3764344,
+    "Facility: Rockhaven Park (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.929803,
+    -95.430937,
+    "Facility: Woodridge Park (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.93417346,
+    -95.37287243,
+    "Facility: Kdwp Clinton State Park (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.9233369,
+    -95.4005467,
+    "Facility: Bloomington West Park (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.8912556,
+    -95.3754917,
+    "Campground: Rockhaven Park Campground and Equestrian Area (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-2334": [
+   [
+    37.74599961,
+    -95.93767518,
+    "Facility: Cross Timbers State Park - Holiday Hill (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    37.77938367,
+    -95.94307178,
+    "Facility: Cross Timbers State Park-Toronto Point (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-2335": [
+   [
+    38.535747,
+    -95.746478,
+    "Facility: Eisenhower State Park (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-2336": [
+   [
+    37.86153936,
+    -96.76794522,
+    "Facility: Bluestem (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    37.839326,
+    -96.821761,
+    "Facility: Walnut River (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    37.88688366,
+    -96.80659036,
+    "Facility: Boulder Bluff (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    37.84324108,
+    -96.76807397,
+    "Facility: Shady Creek (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-2337": [
+   [
+    37.246291,
+    -95.772929,
+    "Facility: Squaw Creek (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-2338": [
+   [
+    37.6671667,
+    -96.0726833,
+    "Campground: WHITEHALL BAY (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    37.6449333,
+    -96.0692667,
+    "Campground: DAMSITE - FALL RIVER LAKE (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    37.65317689,
+    -96.09721906,
+    "Facility: Fredonia Bay State Park (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    37.65617956,
+    -96.05420715,
+    "Facility: Quarry Bay State Park (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-2340": [
+   [
+    38.6581481,
+    -94.8975681,
+    "Facility: Hillsdale Lake Visitor Center (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.671552,
+    -94.899198,
+    "Facility: Marysville (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-2342": [
+   [
+    38.6102639,
+    -97.9569944,
+    "Campground: RIVERSIDE (KS) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.6330556,
+    -97.9875,
+    "Campground: VENANGO PARK (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.657042,
+    -97.999719,
+    "Facility: East Shore State Park (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.604526,
+    -97.978647,
+    "Facility: South Shore State Park (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-2348": [
+   [
+    38.675,
+    -95.6791667,
+    "Campground: CARBOLYN PARK (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.6647222,
+    -95.5488889,
+    "Campground: MICHIGAN VALLEY (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.6458333,
+    -95.5597222,
+    "Campground: OUTLET (POMONA LAKE) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.6763889,
+    -95.5680556,
+    "Campground: WOLF CREEK (KS) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.65568751,
+    -95.5900635,
+    "Facility: Pomona State Park (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.66882766,
+    -95.57921128,
+    "Facility: 110-Mile Park (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.69423823,
+    -95.6099494,
+    "Facility: Cedar Park (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-2353": [
+   [
+    39.3051944,
+    -96.6533333,
+    "Campground: STOCKDALE (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.2771389,
+    -96.630875,
+    "Campground: TUTTLE CREEK COVE (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.2575566,
+    -96.5799137,
+    "Facility: River Pond State Park (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.44308272,
+    -96.73516515,
+    "Facility: Fancy Creek State Park (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.251195,
+    -96.596978,
+    "Facility: Randolph State Park (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.276904,
+    -96.591442,
+    "Facility: Cedar Ridge (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-7393": [
+   [
+    39.0750746,
+    -96.8978058,
+    "Facility: KDWP - Milford Nature Center & Fish Hatchery (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-7924": [
+   [
+    38.6924722,
+    -96.5373056,
+    "Campground: CANNING CREEK (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.7011944,
+    -96.4975556,
+    "Campground: RICHEY COVE (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.6818889,
+    -96.5248611,
+    "Campground: SANTA FE TRAIL (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.6824503,
+    -96.5216941,
+    "Facility: Council Grove Marina (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.69244553,
+    -96.49461709,
+    "Facility: Kit Carson Cove (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.6865278,
+    -96.49225,
+    "Campground: Kanza View (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-7926": [
+   [
+    37.255275,
+    -95.849651,
+    "Facility: Card Creek (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-7927": [
+   [
+    37.662549,
+    -96.111574,
+    "Facility: Rock Ridge Cove North (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-7936": [
+   [
+    38.3888889,
+    -97.0888889,
+    "Campground: COTTONWOOD POINT (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.3627778,
+    -97.0997222,
+    "Campground: HILLSBORO COVE (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.38638147,
+    -97.1500419,
+    "Facility: French Creek Cove (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.3820924,
+    -97.07702144,
+    "Facility: Marion Cove (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-7938": [
+   [
+    39.0927778,
+    -96.955,
+    "Campground: CURTIS CREEK (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.075,
+    -96.9233333,
+    "Campground: WEST ROLLING HILLS (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.1534306,
+    -96.8966611,
+    "Campground: FARNUM CREEK (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.10285,
+    -96.904806,
+    "Facility: State Park (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.21193276,
+    -97.0106354,
+    "Facility: Clay County Park (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.0693914,
+    -96.9185354,
+    "Facility: Thunderbird Marina (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.15637272,
+    -96.89865853,
+    "Facility: Acorns Resort (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.15144412,
+    -96.90371181,
+    "Facility: Farnum Creek (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.14628054,
+    -96.93658497,
+    "Facility: School Creek (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.21600593,
+    -96.97267677,
+    "Facility: Timber Creek (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.0938889,
+    -96.895,
+    "Campground: NORTH OVERLOOK PARK (KS) (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.0731667,
+    -96.8976167,
+    "Campground: OUTLET PARK (KS) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.07,
+    -96.8980556,
+    "Campground: EAST ROLLING HILLS PARK (KS) (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-7941": [
+   [
+    39.1847222,
+    -95.4444444,
+    "Campground: LONGVIEW (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.225,
+    -95.4375,
+    "Campground: OLD TOWN (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.1222222,
+    -95.4083333,
+    "Campground: PERRY (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.1208333,
+    -95.4541667,
+    "Campground: ROCK CREEK (KS) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.1347222,
+    -95.4305556,
+    "Campground: SLOUGH CREEK (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.148297,
+    -95.484888,
+    "Facility: KDWPT Perry State Park (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.1227576,
+    -95.4126758,
+    "Facility: Lake Perry Yacht & Marina (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    39.15064044,
+    -95.47686319,
+    "Facility: Rock Creek Marina & Resort (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ],
+  "US-7948": [
+   [
+    38.9555556,
+    -98.5194444,
+    "Campground: LUCAS PARK (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.9327778,
+    -98.575,
+    "Campground: MINOOKA PARK (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ],
+   [
+    38.9683333,
+    -98.4916667,
+    "Campground: SYLVAN PARK (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "place"
+   ]
+  ]
+ },
+ "st": "KS",
+ "credits": [
+  "Recreation.gov / National Park Service data"
+ ]
+}
