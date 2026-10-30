@@ -84,7 +84,22 @@ def pdf_answer(r, body, shot_path, pages=1):
     return r
 
 
-def read_page(u, shot_path=None, pages=1):
+def do_steps(pg, steps):
+    """Oct 30 (chat 11 card check): simple clicks on OUR OWN pages before the read: {fill: css, text}, {press: css, key},
+    {click: css}, {wait: ms}. A step that fails is noted and the rest go on."""
+    done = []
+    for st in (steps or [])[:12]:
+        try:
+            if 'fill' in st: pg.fill(st['fill'], str(st.get('text', '')))
+            elif 'press' in st: pg.press(st['press'], st.get('key', 'Enter'))
+            elif 'click' in st: pg.click(st['click'], timeout=15000)
+            if 'wait' in st: pg.wait_for_timeout(min(int(st['wait']), 15000))
+            done.append('ok')
+        except Exception as e: done.append(f'{type(e).__name__}: {str(e)[:80]}')  # noqa: BLE001
+    return done
+
+
+def read_page(u, shot_path=None, pages=1, steps=None, read=None):
     r = {'url': u}
     if not M: r['status'] = 'no manners module: not read'; return r
     h = M.host(u)
@@ -106,6 +121,10 @@ def read_page(u, shot_path=None, pages=1):
             try: pg.wait_for_load_state('networkidle', timeout=20000)
             except Exception: pass  # noqa: BLE001
             r['status'] = resp.status if resp else 'no response'
+            if steps and M.host(u).endswith('kentuckyportableclub.github.io'): r['steps'] = do_steps(pg, steps)
+            if read:
+                try: r['read_text'] = '\n'.join(' '.join(l.split()) for l in pg.inner_text(read, timeout=5000).split('\n') if l.strip())[:4000]
+                except Exception as e: r['read_text'] = f'not found ({type(e).__name__})'  # noqa: BLE001
             r['final_url'] = pg.url; r['title'] = (pg.title() or '')[:200]
             txt = pg.inner_text('body') if pg.query_selector('body') else ''
             r['text'] = '\n'.join(' '.join(l.split()) for l in txt.split('\n') if l.strip())[:TEXT_MAX]
@@ -169,7 +188,9 @@ def run(req):
         if kind in ('page', 'map-check'):
             for i, u in enumerate((q.get('urls') or [])[:URLS_MAX]):
                 shot = ANS / f'{rid}-{i + 1}.jpg' if (kind == 'map-check' or q.get('screenshot')) else None
-                out['results'].append(read_page(u, shot, int(q.get('pages') or 1)))
+                if isinstance(u, dict):   # {url, steps, read}: clicks before the read (our own pages only)
+                    out['results'].append(read_page(u.get('url', ''), shot, int(q.get('pages') or 1), u.get('steps'), u.get('read')))
+                else: out['results'].append(read_page(u, shot, int(q.get('pages') or 1)))
         elif kind == 'layer-probe':
             import kpc_adds_probe as P
             for x in (q.get('layers') or [])[:URLS_MAX]:
@@ -308,7 +329,7 @@ def map_cleanup():
 
 
 def cache_key(q, kind):
-    if kind in ('page', 'map-check'): return kind + '|' + '|'.join(sorted(q.get('urls') or [])) + f"|p{q.get('pages') or 1}|s{bool(q.get('screenshot'))}"
+    if kind in ('page', 'map-check'): return kind + '|' + '|'.join(sorted(json.dumps(x, sort_keys=True) if isinstance(x, dict) else x for x in q.get('urls') or [])) + f"|p{q.get('pages') or 1}|s{bool(q.get('screenshot'))}"
     if kind == 'layer-probe': return kind + '|' + '|'.join(sorted(str(x.get('url') if isinstance(x, dict) else x) for x in q.get('layers') or []))
     if kind == 'parcel': return kind + '|' + json.dumps({k: q.get(k) for k in ('layer', 'points')}, sort_keys=True)
     return ''   # probe / save-map: never reused (a save-map writes a file; a probe config changes)
