@@ -29,15 +29,24 @@ jobs:
           sparse-checkout: |
             .claude/build/research/fable
             .claude/build/research/agency-atlas
+            .claude/build/research/WORLD
             data/us-key
             data/ca-key
             data/world-key
             .github/scripts
+      - name: The two GIS finders (map viewers we keep, open-data portals we know; Brandon Oct 30 10:44 AM)
+        continue-on-error: true
+        env:
+          LINKS: ../links
+          MINUTES: '40'
+        run: |
+          cd kpcdata && python3 .github/scripts/kpc_gis_finders.py viewers portals || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "GIS finders: map-viewer + portal layers (leads)" data/intake/found-layers.json data/intake/finders-seen.json || true
       - name: New work? (fingerprint of the Fable + atlas files)
         id: fp
         continue-on-error: true
         run: |
-          F=$(cat links/.claude/build/research/fable/*.md links/.claude/build/research/agency-atlas/*.md 2>/dev/null | grep -E '^LAYER \||^  - .+: https?://\S+/(MapServer|FeatureServer)/[0-9]+ \(name field' | sha1sum | cut -c1-16)
+          F=$( (cat links/.claude/build/research/fable/*.md links/.claude/build/research/agency-atlas/*.md 2>/dev/null | grep -E '^LAYER \||^  - .+: https?://\S+/(MapServer|FeatureServer)/[0-9]+ \(name field'; cat kpcdata/data/intake/found-layers.json 2>/dev/null) | sha1sum | cut -c1-16)
           O=$(cat kpcdata/data/intake/collector-seen.txt 2>/dev/null || echo none)
           echo "fp=$F" >> "$GITHUB_OUTPUT"
           if [ "$F" = "$O" ] && [ "${{ github.event_name }}" = schedule ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Layer collector::nothing new"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi

@@ -155,7 +155,11 @@ def crawled_layers(want):
         for l in (m.group(1).split('\n') if m else []):
             a = ATLAS_LINE.match(l)
             if a: out.append((f.stem, a.group(1).strip(), a.group(2), a.group(3).strip()))
-    return out
+    for u, v in ((load('data/intake/found-layers.json', {}) or {}).items()):   # the two GIS finders (map viewers, open-data portals)
+        area = str(v.get('area') or '')
+        if '?' in area or not area or (want and area not in want): continue
+        out.append((area, f"{v.get('name', '')} ({v.get('from', '')})", u, '?'))
+    return list(dict.fromkeys(out))
 
 
 def test_crawled(want, log, qs, queue, seen, n):

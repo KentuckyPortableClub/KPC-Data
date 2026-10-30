@@ -61,15 +61,26 @@ def outlines_in_key():
 
 
 def recheck():
-    f = QDIR / 'gis-hunter.json'
+    _recheck(QDIR / 'gis-hunter.json', world=False)
+    _recheck(QDIR / 'world-finder.json', world=True)   # AUTO-1W (Brandon Oct 30 10:44 AM 'All 3'): world SURE rows too
+
+
+def _recheck(f, world):
     D = load(f, {}) or {}
     qs = D.get('questions') or []
-    if not qs: notice('recheck: no hunter questions'); return
+    if not qs: notice(f'recheck: no questions in {f.name}'); return
     L = T.Learned(QDIR / 'gis-hunter.json', QDIR / 'world-finder.json', QDIR / 'key-pieces.json')
     no_any = {(str(q.get('record')), q.get('layer')) for q in qs if str(q.get('answer') or '').upper().startswith('NO')}
     no_ref = {q.get('ref') for q in qs if str(q.get('answer') or '').upper().startswith('NO') and not q.get('auto')}   # a person already said NO on this park
     under = collections.Counter((str(q.get('record')), q.get('layer')) for q in qs)
     reads, used = key_reads(), outlines_in_key()
+    if world:
+        WL = load(LINKS / 'data' / 'world-key' / 'layers.json', {}) or {}
+        reads |= {norm_url(u) for u in WL.values() if isinstance(u, str)} | {str(k).lower() for k in WL}   # world rows name the layer by its label
+        for wf in glob.glob(str(LINKS / 'data' / 'world-key' / '*.json')):
+            for r, v in ((load(wf, {}) or {}).get('parks') or {}).items():
+                for m in (v or {}).get('m') or [] if isinstance(v, dict) else []:
+                    if isinstance(m, list) and len(m) >= 2: used[(' '.join(T.norm(m[1])), round(float(m[2] or 0), -1) if len(m) > 2 and isinstance(m[2], (int, float)) else None)].add(r)
     yes = held = 0
     for q in qs:
         if q.get('tier') != 'SURE' or q.get('answer'): continue
@@ -81,22 +92,24 @@ def recheck():
         if isinstance(ac, (int, float)) and ac > 50_000 and SMALL.search(q.get('park') or '') and not re.search(r'national park|national forest|provincial park|wilderness|state forest', q.get('park') or '', re.I):
             fails.append(f'{ac:,.0f} ac is too big for this kind of place')
         u = norm_url(q.get('layer'))
-        if not (u in reads or NATIONAL.search(u)): fails.append('a layer the key does not read yet')
-        if L.demoted(q.get('layer'), q.get('area')): fails.append('a demoted layer (under 10% YES)')
+        if world and re.search(r'\beea\b|natura ?2000|cdda|discomap\.eea', str(q.get('layer') or ''), re.I):
+            fails.append('an EU compilation layer (W-2 stays off: never an official outline)')
+        if not (u in reads or NATIONAL.search(u)): fails.append('a layer the ' + ('world ' if world else '') + 'key does not read yet')
+        if L.demoted(q.get('layer')): fails.append('a demoted layer (under 10% YES)')   # T-5: only the LAYER rule applies to SURE rows (an area's LIKELY rate never demotes SURE)
         if (str(q.get('record')), q.get('layer')) in no_any: fails.append('chat 11 said NO to this record before')
         if q['ref'] in no_ref: fails.append('chat 11 already said NO to another record for this park')
         kp, kr = T.kinds(q.get('park')), T.kinds(q.get('record_name'))
         if kp - kr: fails.append(f"the park is a {' '.join(sorted(kp - kr))} kind the record does not name")
         if fails:
             q['auto_recheck'] = 'NOT PASSED: ' + '; '.join(fails); held += 1; continue
-        q.update({'answer': 'YES', 'checked_by': 'auto recheck (AUTO-1)', 'auto': True,
+        q.update({'answer': 'YES', 'checked_by': 'auto recheck (AUTO-1W)' if world else 'auto recheck (AUTO-1)', 'auto': True,
                   'how': 'AUTO-1: pin inside the record; record under this park only and not another park\'s outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree',
                   'sample_for_chat11': int(hashlib.md5(f"{q['ref']}{q.get('record')}".encode()).hexdigest(), 16) % 10 == 0})
         yes += 1
     D['open'] = sum(1 for q in qs if not q.get('answer'))
     D['auto_yes'] = sum(1 for q in qs if q.get('auto'))
     json.dump(D, open(f, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
-    notice(f'AUTO-1 recheck: {yes} SURE rows passed (bot YES, BOT A joins them at the next key rebuild), {held} stay open for chat 11 (check named on the row)')
+    notice(f"AUTO-1{'W' if world else ''} recheck ({f.name}): {yes} SURE rows passed (bot YES; the key joins them at its next rebuild), {held} stay open (check named on the row)")
 
 
 # ------------------------------------------------------------------------------------------------ AUTO-2
