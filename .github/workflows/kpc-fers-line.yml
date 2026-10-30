@@ -245,7 +245,9 @@ jobs:
           # the missing check measures outline to outline (HQ Oct 27): the saved outlines of this run's states
           mkdir -p cache/us data/us-key
           for st in $STATES; do
-            cp kpcdata/data/us-key/$st.json data/us-key/ 2>/dev/null || true
+            # Oct 29 (chat 2): the KPC-Links checkout already holds the NEW Rule G key; KPC-Data's copy is the frozen old key (held
+            # out of the daily copy until the dump), so copy it only when the new one is missing
+            [ -s data/us-key/$st.json ] || cp kpcdata/data/us-key/$st.json data/us-key/ 2>/dev/null || true
             gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p "$st.json.gz" -D cache/us --clobber || true
           done
       - name: Check
