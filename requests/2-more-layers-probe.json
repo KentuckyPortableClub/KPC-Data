@@ -1,0 +1,20 @@
+{
+ "chat": 2,
+ "kind": "layer-probe",
+ "layers": [
+  "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/0",
+  "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0",
+  "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NHT_NST_Lines/MapServer/0",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/0",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/1",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/2",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/3",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/4",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/5",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/6",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/7",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/8"
+ ],
+ "report": "Candidate layers for the holes in why-not.json: NPS National Register points + polygons (state historic sites / 'National Historic Site' names that are not NPS units), USFS trails, BLM national historic/scenic trail lines, and every sub-layer of the BLM national recreation service (we only read /9; the site points/polygons may sit in 0-8). Want: answers, geometry, name field, count."
+}
