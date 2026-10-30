@@ -1,0 +1,82 @@
+{
+ "request": "requests/9-nmx-ri-1.json",
+ "id": "9-nmx-ri-1",
+ "chat": 9,
+ "kind": "page",
+ "report": "NMX RI: official page name check, 2 pages: page title, H1 / main heading, any official-name line, the agency, map / GIS / boundary links (text only)",
+ "asked": {
+  "chat": 9,
+  "kind": "page",
+  "report": "NMX RI: official page name check, 2 pages: page title, H1 / main heading, any official-name line, the agency, map / GIS / boundary links (text only)",
+  "urls": [
+   "https://ridemgis.maps.arcgis.com/apps/webappviewer/index.html?id=9afb39aab8c4430c86c6c6d2aef8e5d0",
+   "https://riparks.com/Locations/LocationJohnHChafee.html"
+  ],
+  "refs": [
+   [
+    "US-6980",
+    "Beach Pond Wildlife Management Area"
+   ],
+   [
+    "US-7723",
+    "John H. Chaffee Rome Point State Nature Preserve"
+   ]
+  ]
+ },
+ "answered": "2026-10-30 03:00Z",
+ "results": [
+  {
+   "url": "https://ridemgis.maps.arcgis.com/apps/webappviewer/index.html?id=9afb39aab8c4430c86c6c6d2aef8e5d0",
+   "status": 200,
+   "final_url": "https://ridemgis.maps.arcgis.com/apps/webappviewer/index.html?id=9afb39aab8c4430c86c6c6d2aef8e5d0",
+   "title": "RIDEM Outdoor Recreation",
+   "text": "Esri, NASA, NGA, USGS, FEMA | Esri Community Maps Contributors, MassGIS, © OpenStreetMap, Microsoft, Esri, TomTom, Garmin, SafeGraph, GeoTechnologies, Inc, METI/NASA, USGS, EPA, NPS, US Census Bureau, USDA, USFWS\n+\n–\nMove mouse to get coordinates\n0\n300\n600ft\nHeader\nRIDEM Outdoor Recreation\nSearch\nNew User?\nView a PDF with Instructions\nQuestions?\nemail us\nThis map was created for informational, planning, and guidance use only. It is a general reference, not a legally authoritative source for the location of natural or manmade features. Proper interpretation of this map may require the assistance of appropriate professional services. The cartographic representations depicted have not been verified by a RI Registered Professional Land Surveyor and are not intended to be used in place of a survey. The producer makes no warranty, express or implied, related to the accuracy, reliability, completeness, or currency of the map or data.\nOK\nSkip to Map",
+   "links": [
+    {
+     "url": "https://ridemgis.maps.arcgis.com/apps/webappviewer/index.html?id=9afb39aab8c4430c86c6c6d2aef8e5d0#",
+     "text": "About"
+    },
+    {
+     "url": "https://ridemgis.maps.arcgis.com/sharing/rest/content/items/d5b74576d6894f57b0ae1073d426d905/data",
+     "text": "View a PDF with Instructions"
+    },
+    {
+     "url": "https://www.google.com/chrome/",
+     "text": ""
+    },
+    {
+     "url": "https://www.mozilla.org/firefox/",
+     "text": ""
+    },
+    {
+     "url": "https://www.apple.com/safari/",
+     "text": ""
+    },
+    {
+     "url": "https://www.microsoft.com/edge",
+     "text": ""
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://riparks.com/Locations/LocationJohnHChafee.html",
+   "status": 404,
+   "final_url": "https://riparks.com/Locations/LocationJohnHChafee.html",
+   "title": "",
+   "text": "Not Found",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 6,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "2 result(s), 1 read OK, 0 screenshot(s)"
+}
