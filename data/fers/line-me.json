@@ -1,0 +1,56 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "me",
+ "states": [
+  "US-ME"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 04:50 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 2,
+  "DROPPED": 20,
+  "NEVER LOOKED AT": 91
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 217,
+   "pairs whose boxes touch": 217
+  },
+  "pass2": {
+   "agree with the pass before": 14,
+   "date": "2026-10-30",
+   "pairs tested": 6
+  },
+  "pass3": {
+   "agree with the pass before": 5,
+   "date": "2026-10-30",
+   "pairs tested": 4
+  },
+  "pass5": {
+   "checked": 0,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-ME": "data/fers/US-ME.json"
+ },
+ "US-ME": {
+  "rows": 19,
+  "live": 3,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 11,
+  "merged": 5
+ },
+ "states_ready": [
+  "US-ME"
+ ],
+ "states_held": []
+}
