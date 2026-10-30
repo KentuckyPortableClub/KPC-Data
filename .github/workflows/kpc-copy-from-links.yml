@@ -31,7 +31,9 @@ jobs:
         continue-on-error: true
         run: |
           # Oct 29 8:25 PM (Brandon 7:48 PM release GO, chat 11 RELEASE YES): the Rule G keys data/us-key + data/ca-key are back in
-          DIRS="data/us-key data/ca-key data/world-bounds data/pota data/canada-bounds data/world-key data/campfed data/campstate data/campstate-manual data/nwr"
+          # Oct 29 10:15 PM (chat 2): data/us-key HELD again until chat 11 passes the next rebuild's sample (the waiting-room hold for
+          # the key bot is not wired yet); chat 2 puts it back after chat 11's YES
+          DIRS="data/ca-key data/world-bounds data/pota data/canada-bounds data/world-key data/campfed data/campstate data/campstate-manual data/nwr"
           FILES="data/northam.json data/canada.json data/parkinfo-web.json data/boundary-score.json data/boundary-report.json data/state-gis-found.json data/access-layers.json data/state-gis.json"
           for d in $DIRS; do [ -d "links/$d" ] && mkdir -p "kpcdata/$d" && rsync -a --delete "links/$d/" "kpcdata/$d/"; done
           for f in $FILES; do [ -f "links/$f" ] && mkdir -p "kpcdata/$(dirname $f)" && cp "links/$f" "kpcdata/$f"; done
