@@ -1,0 +1,1191 @@
+{
+ "request": "requests/9-p2-tx.json",
+ "id": "9-p2-tx",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 TX: 11 parks, 7 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 TX: 11 parks, 7 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State TX: 11 parks. Refs in order of points: US-10274,US-10276,US-6538,US-10272,US-10273,US-10275,US-12109,US-6560,US-6582,US-6601,US-6602. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-10274",
+    "US-10276",
+    "US-6538",
+    "US-10272",
+    "US-10273",
+    "US-10275",
+    "US-12109",
+    "US-6560",
+    "US-6582",
+    "US-6601",
+    "US-6602"
+   ],
+   "pointq": [
+    {
+     "st": "TX",
+     "url": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+     "note": "TX Texas Parks & Wildlife Department (state",
+     "points": [
+      [
+       25.9593,
+       -97.3033
+      ],
+      [
+       30.3239,
+       -96.1537
+      ],
+      [
+       30.3214,
+       -96.1506
+      ],
+      [
+       31.9987,
+       -102.091
+      ],
+      [
+       35.0306,
+       -101.183
+      ],
+      [
+       28.6476,
+       -97.3827
+      ],
+      [
+       29.1556,
+       -95.6567
+      ],
+      [
+       30.2668,
+       -97.732
+      ],
+      [
+       31.5236,
+       -94.1151
+      ],
+      [
+       33.57,
+       -96.2075
+      ],
+      [
+       29.807,
+       -96.0977
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "TX",
+     "url": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+     "note": "TX Texas Parks & Wildlife Department (publi",
+     "points": [
+      [
+       25.9593,
+       -97.3033
+      ],
+      [
+       30.3239,
+       -96.1537
+      ],
+      [
+       30.3214,
+       -96.1506
+      ],
+      [
+       31.9987,
+       -102.091
+      ],
+      [
+       35.0306,
+       -101.183
+      ],
+      [
+       28.6476,
+       -97.3827
+      ],
+      [
+       29.1556,
+       -95.6567
+      ],
+      [
+       30.2668,
+       -97.732
+      ],
+      [
+       31.5236,
+       -94.1151
+      ],
+      [
+       33.57,
+       -96.2075
+      ],
+      [
+       29.807,
+       -96.0977
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "TX",
+     "url": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+     "note": "TX TPWD Wildlife Division (owner nancy.hege",
+     "points": [
+      [
+       25.9593,
+       -97.3033
+      ],
+      [
+       30.3239,
+       -96.1537
+      ],
+      [
+       30.3214,
+       -96.1506
+      ],
+      [
+       31.9987,
+       -102.091
+      ],
+      [
+       35.0306,
+       -101.183
+      ],
+      [
+       28.6476,
+       -97.3827
+      ],
+      [
+       29.1556,
+       -95.6567
+      ],
+      [
+       30.2668,
+       -97.732
+      ],
+      [
+       31.5236,
+       -94.1151
+      ],
+      [
+       33.57,
+       -96.2075
+      ],
+      [
+       29.807,
+       -96.0977
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "TX",
+     "url": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+     "note": "TX Texas Parks and Wildlife (public conserv",
+     "points": [
+      [
+       25.9593,
+       -97.3033
+      ],
+      [
+       30.3239,
+       -96.1537
+      ],
+      [
+       30.3214,
+       -96.1506
+      ],
+      [
+       31.9987,
+       -102.091
+      ],
+      [
+       35.0306,
+       -101.183
+      ],
+      [
+       28.6476,
+       -97.3827
+      ],
+      [
+       29.1556,
+       -95.6567
+      ],
+      [
+       30.2668,
+       -97.732
+      ],
+      [
+       31.5236,
+       -94.1151
+      ],
+      [
+       33.57,
+       -96.2075
+      ],
+      [
+       29.807,
+       -96.0977
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       25.9593,
+       -97.3033
+      ],
+      [
+       30.3239,
+       -96.1537
+      ],
+      [
+       30.3214,
+       -96.1506
+      ],
+      [
+       31.9987,
+       -102.091
+      ],
+      [
+       35.0306,
+       -101.183
+      ],
+      [
+       28.6476,
+       -97.3827
+      ],
+      [
+       29.1556,
+       -95.6567
+      ],
+      [
+       30.2668,
+       -97.732
+      ],
+      [
+       31.5236,
+       -94.1151
+      ],
+      [
+       33.57,
+       -96.2075
+      ],
+      [
+       29.807,
+       -96.0977
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       25.9593,
+       -97.3033
+      ],
+      [
+       30.3239,
+       -96.1537
+      ],
+      [
+       30.3214,
+       -96.1506
+      ],
+      [
+       31.9987,
+       -102.091
+      ],
+      [
+       35.0306,
+       -101.183
+      ],
+      [
+       28.6476,
+       -97.3827
+      ],
+      [
+       29.1556,
+       -95.6567
+      ],
+      [
+       30.2668,
+       -97.732
+      ],
+      [
+       31.5236,
+       -94.1151
+      ],
+      [
+       33.57,
+       -96.2075
+      ],
+      [
+       29.807,
+       -96.0977
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       25.9593,
+       -97.3033
+      ],
+      [
+       30.3239,
+       -96.1537
+      ],
+      [
+       30.3214,
+       -96.1506
+      ],
+      [
+       31.9987,
+       -102.091
+      ],
+      [
+       35.0306,
+       -101.183
+      ],
+      [
+       28.6476,
+       -97.3827
+      ],
+      [
+       29.1556,
+       -95.6567
+      ],
+      [
+       30.2668,
+       -97.732
+      ],
+      [
+       31.5236,
+       -94.1151
+      ],
+      [
+       33.57,
+       -96.2075
+      ],
+      [
+       29.807,
+       -96.0977
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 01:53Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State TX: 11 parks. Refs in order of points: US-10274,US-10276,US-6538,US-10272,US-10273,US-10275,US-12109,US-6560,US-6582,US-6601,US-6602. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "TX",
+    "url": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
+    "note": "TX Texas Parks & Wildlife Department (state",
+    "hits": [
+     {
+      "layer": "0 Park Boundary",
+      "point": [
+       25.9593,
+       -97.3033
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Park Boundary",
+      "point": [
+       30.3239,
+       -96.1537
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Park Boundary",
+      "point": [
+       30.3214,
+       -96.1506
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Park Boundary",
+      "point": [
+       31.9987,
+       -102.091
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Park Boundary",
+      "point": [
+       35.0306,
+       -101.183
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Park Boundary",
+      "point": [
+       28.6476,
+       -97.3827
+      ],
+      "attrs": {
+       "ParkName": "Goliad",
+       "PropType": "SP/SHS",
+       "County1": "Goliad",
+       "Creator": "TPWD_StateParks",
+       "CreatedDate": 1772840597759,
+       "LastEditor": "TPWD_StateParks",
+       "LastEditDate": 1772840597759
+      }
+     },
+     {
+      "layer": "0 Park Boundary",
+      "point": [
+       29.1556,
+       -95.6567
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Park Boundary",
+      "point": [
+       30.2668,
+       -97.732
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Park Boundary",
+      "point": [
+       31.5236,
+       -94.1151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Park Boundary",
+      "point": [
+       33.57,
+       -96.2075
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Park Boundary",
+      "point": [
+       29.807,
+       -96.0977
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "TX",
+    "url": "https://tpwd.texas.gov/arcgis/rest/services/Wildlife/TPWD_PublicHuntLocatorMap/MapServer/9",
+    "note": "TX Texas Parks & Wildlife Department (publi",
+    "hits": [
+     {
+      "layer": "9 Public Hunt Area Polygon Features",
+      "point": [
+       25.9593,
+       -97.3033
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 Public Hunt Area Polygon Features",
+      "point": [
+       30.3239,
+       -96.1537
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 Public Hunt Area Polygon Features",
+      "point": [
+       30.3214,
+       -96.1506
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 Public Hunt Area Polygon Features",
+      "point": [
+       31.9987,
+       -102.091
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 Public Hunt Area Polygon Features",
+      "point": [
+       35.0306,
+       -101.183
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 Public Hunt Area Polygon Features",
+      "point": [
+       28.6476,
+       -97.3827
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 Public Hunt Area Polygon Features",
+      "point": [
+       29.1556,
+       -95.6567
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 Public Hunt Area Polygon Features",
+      "point": [
+       30.2668,
+       -97.732
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 Public Hunt Area Polygon Features",
+      "point": [
+       31.5236,
+       -94.1151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 Public Hunt Area Polygon Features",
+      "point": [
+       33.57,
+       -96.2075
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 Public Hunt Area Polygon Features",
+      "point": [
+       29.807,
+       -96.0977
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "TX",
+    "url": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
+    "note": "TX TPWD Wildlife Division (owner nancy.hege",
+    "hits": [
+     {
+      "layer": "0 WMA_Boundaries_4PublicDistribution",
+      "point": [
+       25.9593,
+       -97.3033
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WMA_Boundaries_4PublicDistribution",
+      "point": [
+       30.3239,
+       -96.1537
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WMA_Boundaries_4PublicDistribution",
+      "point": [
+       30.3214,
+       -96.1506
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WMA_Boundaries_4PublicDistribution",
+      "point": [
+       31.9987,
+       -102.091
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WMA_Boundaries_4PublicDistribution",
+      "point": [
+       35.0306,
+       -101.183
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WMA_Boundaries_4PublicDistribution",
+      "point": [
+       28.6476,
+       -97.3827
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WMA_Boundaries_4PublicDistribution",
+      "point": [
+       29.1556,
+       -95.6567
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WMA_Boundaries_4PublicDistribution",
+      "point": [
+       30.2668,
+       -97.732
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WMA_Boundaries_4PublicDistribution",
+      "point": [
+       31.5236,
+       -94.1151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WMA_Boundaries_4PublicDistribution",
+      "point": [
+       33.57,
+       -96.2075
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WMA_Boundaries_4PublicDistribution",
+      "point": [
+       29.807,
+       -96.0977
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "TX",
+    "url": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
+    "note": "TX Texas Parks and Wildlife (public conserv",
+    "hits": [
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       25.9593,
+       -97.3033
+      ],
+      "attrs": {
+       "FID": 9250,
+       "Category": "Fee",
+       "Own_Type": "01",
+       "Own_Name": "0125",
+       "Loc_Own": "US Fish and Wildlife Service",
+       "P_Des_Tp": "103",
+       "P_Loc_Ds": "National Wildlife Refuge (FWS)",
+       "P_Des_Nm": "Lower Rio Grande Valley National Wildlife Refuge",
+       "P_Loc_Nm": "Lower Rio Grande Valley National Wildlife Refuge",
+       "Status": "Designated",
+       "State_Nm": "48",
+       "Agg_Src": "Texas Parks and Wildlife Department 2014",
+       "GIS_Src": "USFWS_FWSCadastral_201402.gdb/FWSBoundary/FWSInterest",
+       "Src_Date": "2014/02/00",
+       "GIS_Acres": 430,
+       "Source_UID": "225a",
+       "Source_PAI": "984",
+       "WDPA_Cd": 0,
+       "S_Loc_Nm": "SOUTH TEXAS REFUGES COMPLEX",
+       "Access": "RA",
+       "Access_Src": "GAP Default",
+       "GAP_Sts": "1",
+       "GAPCdSrc": "GAP Default",
+       "GAPCdDt": "2014",
+       "P_DES_TP_T": "National Wildlife Refuge"
+      }
+     },
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       25.9593,
+       -97.3033
+      ],
+      "attrs": {
+       "FID": 9322,
+       "Category": "Fee",
+       "Own_Type": "01",
+       "Own_Name": "0125",
+       "Loc_Own": "US Fish and Wildlife Service",
+       "P_Des_Tp": "103",
+       "P_Loc_Ds": "National Wildlife Refuge (FWS)",
+       "P_Des_Nm": "Lower Rio Grande Valley National Wildlife Refuge",
+       "P_Loc_Nm": "Lower Rio Grande Valley National Wildlife Refuge",
+       "Status": "Designated",
+       "State_Nm": "48",
+       "Agg_Src": "Texas Parks and Wildlife Department 2014",
+       "GIS_Src": "USFWS_FWSCadastral_201402.gdb/FWSBoundary/FWSInterest",
+       "Src_Date": "2014/02/00",
+       "GIS_Acres": 10017,
+       "Source_UID": "209",
+       "Source_PAI": "984",
+       "WDPA_Cd": 0,
+       "S_Loc_Nm": "SOUTH TEXAS REFUGES COMPLEX",
+       "Access": "RA",
+       "Access_Src": "GAP Default",
+       "GAP_Sts": "1",
+       "GAPCdSrc": "GAP Default",
+       "GAPCdDt": "2014",
+       "P_DES_TP_T": "National Wildlife Refuge"
+      }
+     },
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       30.3239,
+       -96.1537
+      ],
+      "attrs": {
+       "FID": 528,
+       "Category": "Fee",
+       "Own_Type": "03",
+       "Own_Name": "0310",
+       "Loc_Own": "Texas Parks and Wildlife Department",
+       "P_Des_Tp": "120",
+       "P_Loc_Ds": "State Historic Site",
+       "P_Des_Nm": "Washington-on-the-Brazos State Historic Site",
+       "P_Loc_Nm": "Washington on the Brazos SHS",
+       "Status": "Designated",
+       "State_Nm": "48",
+       "Agg_Src": "TexasParksandWildlifeDepartment2013",
+       "GIS_Src": "Texas Parks and Wildlife Department GIS Data 2012",
+       "Src_Date": "2009/12/21",
+       "GIS_Acres": 295,
+       "Source_UID": "P054",
+       "Source_PAI": "P054",
+       "WDPA_Cd": 0,
+       "Access": "RA",
+       "Access_Src": "GAP Default",
+       "GAP_Sts": "3",
+       "GAPCdSrc": "GAP",
+       "GAPCdDt": "2008",
+       "IUCN_Cat": "Unassigned",
+       "Date_Est": "1949",
+       "P_DES_TP_T": "Historic / Cultural Area"
+      }
+     },
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       30.3214,
+       -96.1506
+      ],
+      "attrs": {
+       "FID": 528,
+       "Category": "Fee",
+       "Own_Type": "03",
+       "Own_Name": "0310",
+       "Loc_Own": "Texas Parks and Wildlife Department",
+       "P_Des_Tp": "120",
+       "P_Loc_Ds": "State Historic Site",
+       "P_Des_Nm": "Washington-on-the-Brazos State Historic Site",
+       "P_Loc_Nm": "Washington on the Brazos SHS",
+       "Status": "Designated",
+       "State_Nm": "48",
+       "Agg_Src": "TexasParksandWildlifeDepartment2013",
+       "GIS_Src": "Texas Parks and Wildlife Department GIS Data 2012",
+       "Src_Date": "2009/12/21",
+       "GIS_Acres": 295,
+       "Source_UID": "P054",
+       "Source_PAI": "P054",
+       "WDPA_Cd": 0,
+       "Access": "RA",
+       "Access_Src": "GAP Default",
+       "GAP_Sts": "3",
+       "GAPCdSrc": "GAP",
+       "GAPCdDt": "2008",
+       "IUCN_Cat": "Unassigned",
+       "Date_Est": "1949",
+       "P_DES_TP_T": "Historic / Cultural Area"
+      }
+     },
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       31.9987,
+       -102.091
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       35.0306,
+       -101.183
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       28.6476,
+       -97.3827
+      ],
+      "attrs": {
+       "FID": 11599,
+       "Category": "Fee",
+       "Own_Type": "03",
+       "Own_Name": "0310",
+       "Loc_Own": "Texas Parks and Wildlife Department",
+       "P_Des_Tp": "120",
+       "P_Loc_Ds": "State Historic Site",
+       "P_Des_Nm": "Goliad State Historic Site",
+       "P_Loc_Nm": "Goliad SHS",
+       "Status": "Designated",
+       "State_Nm": "48",
+       "Agg_Src": "Texas Parks and Wildlife Department 2017",
+       "GIS_Src": "Land.gdb/BoundaryCurrentPy_2017",
+       "Src_Date": "2017/06/12",
+       "GIS_Acres": 275,
+       "Source_UID": "P063",
+       "Source_PAI": "P063",
+       "WDPA_Cd": 0,
+       "Access": "OA",
+       "Access_Src": "TPWD 2017",
+       "GAP_Sts": "3",
+       "GAPCdSrc": "GAP",
+       "Date_Est": "1949"
+      }
+     },
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       29.1556,
+       -95.6567
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       30.2668,
+       -97.732
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       31.5236,
+       -94.1151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       33.57,
+       -96.2075
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Public_ConservationLands",
+      "point": [
+       29.807,
+       -96.0977
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       25.9593,
+       -97.3033
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       30.3239,
+       -96.1537
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       30.3214,
+       -96.1506
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.9987,
+       -102.091
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.0306,
+       -101.183
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       28.6476,
+       -97.3827
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       29.1556,
+       -95.6567
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       30.2668,
+       -97.732
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       31.5236,
+       -94.1151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.57,
+       -96.2075
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       29.807,
+       -96.0977
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       25.9593,
+       -97.3033
+      ],
+      "attrs": {
+       "CostCenter": "FF02RTLG00",
+       "CMPXNAME": "SOUTH TEXAS REFUGES COMPLEX",
+       "ORGNAME": "LOWER RIO GRANDE VALLEY NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 21552,
+       "IFWS": "984",
+       "LIT": "RGV",
+       "GISACRES": 3008161.40555304,
+       "MAXACRES": 132500,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "2",
+       "LABELNAME": "Lower Rio Grande Valley NWR",
+       "CreatedDate": 1522267544000,
+       "ModifiedDate": 1758653676000,
+       "IntReg": "6"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       30.3239,
+       -96.1537
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       30.3214,
+       -96.1506
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.9987,
+       -102.091
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.0306,
+       -101.183
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       28.6476,
+       -97.3827
+      ],
+      "attrs": {
+       "CostCenter": "FF02RTAR00",
+       "CMPXNAME": "ARANSAS/MATAGORDA ISLAND NATIONAL WILDLIFE REFUGE COMPLEX",
+       "ORGNAME": "ARANSAS NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 21532,
+       "IFWS": "242",
+       "LIT": "ARN",
+       "GISACRES": 2306830.90896017,
+       "MAXACRES": 190000,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "2",
+       "LABELNAME": "Aransas NWR",
+       "CreatedDate": 1721682473000,
+       "ModifiedDate": 1758751464000,
+       "IntReg": "6"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       29.1556,
+       -95.6567
+      ],
+      "attrs": {
+       "CostCenter": "FF02RTBN00",
+       "CMPXNAME": "TEXAS MIDCOAST REFUGES COMPLEX",
+       "ORGNAME": "SAN BERNARD NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 21541,
+       "IFWS": "804",
+       "LIT": "SNB",
+       "GISACRES": 2056561.2353948,
+       "MAXACRES": 98000,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "2",
+       "LABELNAME": "San Bernard NWR",
+       "CreatedDate": 1407182373000,
+       "ModifiedDate": 1760133396000,
+       "IntReg": "6"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       30.2668,
+       -97.732
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       31.5236,
+       -94.1151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.57,
+       -96.2075
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       29.807,
+       -96.0977
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 162,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
