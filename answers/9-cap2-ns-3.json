@@ -1,0 +1,4190 @@
+{
+ "request": "requests/9-cap2-ns-3.json",
+ "id": "9-cap2-ns-3",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CAP2 NS 3: 40 parks, 8 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CAP2 NS 3: 40 parks, 8 layers",
+  "probe": {
+   "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (NS, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-5822,CA-5823,CA-5824,CA-5825,CA-5826,CA-5827,CA-5828,CA-5829,CA-5831,CA-5833,CA-5834,CA-5835,CA-5836,CA-5838,CA-5839,CA-5840,CA-5841,CA-5842,CA-5843,CA-5844,CA-5845,CA-5846,CA-5847,CA-5849,CA-5850,CA-6105,CA-6109,CA-6110,CA-6137,CA-6176,CA-6177,CA-6178,CA-6179,CA-6180,CA-6182,CA-6183,CA-6184,CA-6185,CA-6186,CA-6187. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+   "refs": [
+    "CA-5822",
+    "CA-5823",
+    "CA-5824",
+    "CA-5825",
+    "CA-5826",
+    "CA-5827",
+    "CA-5828",
+    "CA-5829",
+    "CA-5831",
+    "CA-5833",
+    "CA-5834",
+    "CA-5835",
+    "CA-5836",
+    "CA-5838",
+    "CA-5839",
+    "CA-5840",
+    "CA-5841",
+    "CA-5842",
+    "CA-5843",
+    "CA-5844",
+    "CA-5845",
+    "CA-5846",
+    "CA-5847",
+    "CA-5849",
+    "CA-5850",
+    "CA-6105",
+    "CA-6109",
+    "CA-6110",
+    "CA-6137",
+    "CA-6176",
+    "CA-6177",
+    "CA-6178",
+    "CA-6179",
+    "CA-6180",
+    "CA-6182",
+    "CA-6183",
+    "CA-6184",
+    "CA-6185",
+    "CA-6186",
+    "CA-6187"
+   ],
+   "pointq": [
+    {
+     "st": "NS",
+     "url": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/52",
+     "note": "NS-F111 Nova",
+     "points": [
+      [
+       44.6646,
+       -63.6031
+      ],
+      [
+       44.6573,
+       -63.5878
+      ],
+      [
+       44.983,
+       -64.1368
+      ],
+      [
+       44.3767,
+       -64.309
+      ],
+      [
+       45.0887,
+       -64.3665
+      ],
+      [
+       44.6558,
+       -63.5857
+      ],
+      [
+       44.0387,
+       -64.7153
+      ],
+      [
+       44.38,
+       -64.3139
+      ],
+      [
+       44.6302,
+       -63.5976
+      ],
+      [
+       43.5665,
+       -65.5797
+      ],
+      [
+       44.6437,
+       -63.5729
+      ],
+      [
+       45.6767,
+       -62.7151
+      ],
+      [
+       45.6761,
+       -62.7062
+      ],
+      [
+       46.2872,
+       -60.5403
+      ],
+      [
+       44.7446,
+       -65.5194
+      ],
+      [
+       45.1581,
+       -64.4259
+      ],
+      [
+       44.6535,
+       -63.583
+      ],
+      [
+       44.3781,
+       -64.3115
+      ],
+      [
+       44.6441,
+       -63.5733
+      ],
+      [
+       44.6474,
+       -63.5747
+      ],
+      [
+       46.2441,
+       -60.2115
+      ],
+      [
+       44.6201,
+       -65.7576
+      ],
+      [
+       45.3652,
+       -63.2806
+      ],
+      [
+       44.7638,
+       -65.4313
+      ],
+      [
+       44.7547,
+       -65.5136
+      ],
+      [
+       44.7411,
+       -65.5124
+      ],
+      [
+       45.3641,
+       -63.2787
+      ],
+      [
+       44.3753,
+       -64.3041
+      ],
+      [
+       46.2756,
+       -61.1393
+      ],
+      [
+       44.404,
+       -66.2153
+      ],
+      [
+       44.249,
+       -66.3927
+      ],
+      [
+       45.8744,
+       -61.9012
+      ],
+      [
+       44.0857,
+       -66.2107
+      ],
+      [
+       45.9623,
+       -63.8646
+      ],
+      [
+       46.0237,
+       -60.7776
+      ],
+      [
+       44.287,
+       -66.342
+      ],
+      [
+       45.165,
+       -61.655
+      ],
+      [
+       46.4391,
+       -61.1123
+      ],
+      [
+       46.4397,
+       -61.1126
+      ],
+      [
+       45.0487,
+       -65.0652
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NS",
+     "url": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29",
+     "note": "NS-NHS Nova",
+     "points": [
+      [
+       44.6646,
+       -63.6031
+      ],
+      [
+       44.6573,
+       -63.5878
+      ],
+      [
+       44.983,
+       -64.1368
+      ],
+      [
+       44.3767,
+       -64.309
+      ],
+      [
+       45.0887,
+       -64.3665
+      ],
+      [
+       44.6558,
+       -63.5857
+      ],
+      [
+       44.0387,
+       -64.7153
+      ],
+      [
+       44.38,
+       -64.3139
+      ],
+      [
+       44.6302,
+       -63.5976
+      ],
+      [
+       43.5665,
+       -65.5797
+      ],
+      [
+       44.6437,
+       -63.5729
+      ],
+      [
+       45.6767,
+       -62.7151
+      ],
+      [
+       45.6761,
+       -62.7062
+      ],
+      [
+       46.2872,
+       -60.5403
+      ],
+      [
+       44.7446,
+       -65.5194
+      ],
+      [
+       45.1581,
+       -64.4259
+      ],
+      [
+       44.6535,
+       -63.583
+      ],
+      [
+       44.3781,
+       -64.3115
+      ],
+      [
+       44.6441,
+       -63.5733
+      ],
+      [
+       44.6474,
+       -63.5747
+      ],
+      [
+       46.2441,
+       -60.2115
+      ],
+      [
+       44.6201,
+       -65.7576
+      ],
+      [
+       45.3652,
+       -63.2806
+      ],
+      [
+       44.7638,
+       -65.4313
+      ],
+      [
+       44.7547,
+       -65.5136
+      ],
+      [
+       44.7411,
+       -65.5124
+      ],
+      [
+       45.3641,
+       -63.2787
+      ],
+      [
+       44.3753,
+       -64.3041
+      ],
+      [
+       46.2756,
+       -61.1393
+      ],
+      [
+       44.404,
+       -66.2153
+      ],
+      [
+       44.249,
+       -66.3927
+      ],
+      [
+       45.8744,
+       -61.9012
+      ],
+      [
+       44.0857,
+       -66.2107
+      ],
+      [
+       45.9623,
+       -63.8646
+      ],
+      [
+       46.0237,
+       -60.7776
+      ],
+      [
+       44.287,
+       -66.342
+      ],
+      [
+       45.165,
+       -61.655
+      ],
+      [
+       46.4391,
+       -61.1123
+      ],
+      [
+       46.4397,
+       -61.1126
+      ],
+      [
+       45.0487,
+       -65.0652
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NS",
+     "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/1",
+     "note": "NS-PPA Nova",
+     "points": [
+      [
+       44.6646,
+       -63.6031
+      ],
+      [
+       44.6573,
+       -63.5878
+      ],
+      [
+       44.983,
+       -64.1368
+      ],
+      [
+       44.3767,
+       -64.309
+      ],
+      [
+       45.0887,
+       -64.3665
+      ],
+      [
+       44.6558,
+       -63.5857
+      ],
+      [
+       44.0387,
+       -64.7153
+      ],
+      [
+       44.38,
+       -64.3139
+      ],
+      [
+       44.6302,
+       -63.5976
+      ],
+      [
+       43.5665,
+       -65.5797
+      ],
+      [
+       44.6437,
+       -63.5729
+      ],
+      [
+       45.6767,
+       -62.7151
+      ],
+      [
+       45.6761,
+       -62.7062
+      ],
+      [
+       46.2872,
+       -60.5403
+      ],
+      [
+       44.7446,
+       -65.5194
+      ],
+      [
+       45.1581,
+       -64.4259
+      ],
+      [
+       44.6535,
+       -63.583
+      ],
+      [
+       44.3781,
+       -64.3115
+      ],
+      [
+       44.6441,
+       -63.5733
+      ],
+      [
+       44.6474,
+       -63.5747
+      ],
+      [
+       46.2441,
+       -60.2115
+      ],
+      [
+       44.6201,
+       -65.7576
+      ],
+      [
+       45.3652,
+       -63.2806
+      ],
+      [
+       44.7638,
+       -65.4313
+      ],
+      [
+       44.7547,
+       -65.5136
+      ],
+      [
+       44.7411,
+       -65.5124
+      ],
+      [
+       45.3641,
+       -63.2787
+      ],
+      [
+       44.3753,
+       -64.3041
+      ],
+      [
+       46.2756,
+       -61.1393
+      ],
+      [
+       44.404,
+       -66.2153
+      ],
+      [
+       44.249,
+       -66.3927
+      ],
+      [
+       45.8744,
+       -61.9012
+      ],
+      [
+       44.0857,
+       -66.2107
+      ],
+      [
+       45.9623,
+       -63.8646
+      ],
+      [
+       46.0237,
+       -60.7776
+      ],
+      [
+       44.287,
+       -66.342
+      ],
+      [
+       45.165,
+       -61.655
+      ],
+      [
+       46.4391,
+       -61.1123
+      ],
+      [
+       46.4397,
+       -61.1126
+      ],
+      [
+       45.0487,
+       -65.0652
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NS",
+     "url": "https://nsgiwa.novascotia.ca/arcgis/rest/services/ENV/ENV_NS_Prot_Area_Sys_UT83/MapServer/0",
+     "note": "Nova Scotia",
+     "points": [
+      [
+       44.6646,
+       -63.6031
+      ],
+      [
+       44.6573,
+       -63.5878
+      ],
+      [
+       44.983,
+       -64.1368
+      ],
+      [
+       44.3767,
+       -64.309
+      ],
+      [
+       45.0887,
+       -64.3665
+      ],
+      [
+       44.6558,
+       -63.5857
+      ],
+      [
+       44.0387,
+       -64.7153
+      ],
+      [
+       44.38,
+       -64.3139
+      ],
+      [
+       44.6302,
+       -63.5976
+      ],
+      [
+       43.5665,
+       -65.5797
+      ],
+      [
+       44.6437,
+       -63.5729
+      ],
+      [
+       45.6767,
+       -62.7151
+      ],
+      [
+       45.6761,
+       -62.7062
+      ],
+      [
+       46.2872,
+       -60.5403
+      ],
+      [
+       44.7446,
+       -65.5194
+      ],
+      [
+       45.1581,
+       -64.4259
+      ],
+      [
+       44.6535,
+       -63.583
+      ],
+      [
+       44.3781,
+       -64.3115
+      ],
+      [
+       44.6441,
+       -63.5733
+      ],
+      [
+       44.6474,
+       -63.5747
+      ],
+      [
+       46.2441,
+       -60.2115
+      ],
+      [
+       44.6201,
+       -65.7576
+      ],
+      [
+       45.3652,
+       -63.2806
+      ],
+      [
+       44.7638,
+       -65.4313
+      ],
+      [
+       44.7547,
+       -65.5136
+      ],
+      [
+       44.7411,
+       -65.5124
+      ],
+      [
+       45.3641,
+       -63.2787
+      ],
+      [
+       44.3753,
+       -64.3041
+      ],
+      [
+       46.2756,
+       -61.1393
+      ],
+      [
+       44.404,
+       -66.2153
+      ],
+      [
+       44.249,
+       -66.3927
+      ],
+      [
+       45.8744,
+       -61.9012
+      ],
+      [
+       44.0857,
+       -66.2107
+      ],
+      [
+       45.9623,
+       -63.8646
+      ],
+      [
+       46.0237,
+       -60.7776
+      ],
+      [
+       44.287,
+       -66.342
+      ],
+      [
+       45.165,
+       -61.655
+      ],
+      [
+       46.4391,
+       -61.1123
+      ],
+      [
+       46.4397,
+       -61.1126
+      ],
+      [
+       45.0487,
+       -65.0652
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NS",
+     "url": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0",
+     "note": "Nova Scotia ~1",
+     "points": [
+      [
+       44.6646,
+       -63.6031
+      ],
+      [
+       44.6573,
+       -63.5878
+      ],
+      [
+       44.983,
+       -64.1368
+      ],
+      [
+       44.3767,
+       -64.309
+      ],
+      [
+       45.0887,
+       -64.3665
+      ],
+      [
+       44.6558,
+       -63.5857
+      ],
+      [
+       44.0387,
+       -64.7153
+      ],
+      [
+       44.38,
+       -64.3139
+      ],
+      [
+       44.6302,
+       -63.5976
+      ],
+      [
+       43.5665,
+       -65.5797
+      ],
+      [
+       44.6437,
+       -63.5729
+      ],
+      [
+       45.6767,
+       -62.7151
+      ],
+      [
+       45.6761,
+       -62.7062
+      ],
+      [
+       46.2872,
+       -60.5403
+      ],
+      [
+       44.7446,
+       -65.5194
+      ],
+      [
+       45.1581,
+       -64.4259
+      ],
+      [
+       44.6535,
+       -63.583
+      ],
+      [
+       44.3781,
+       -64.3115
+      ],
+      [
+       44.6441,
+       -63.5733
+      ],
+      [
+       44.6474,
+       -63.5747
+      ],
+      [
+       46.2441,
+       -60.2115
+      ],
+      [
+       44.6201,
+       -65.7576
+      ],
+      [
+       45.3652,
+       -63.2806
+      ],
+      [
+       44.7638,
+       -65.4313
+      ],
+      [
+       44.7547,
+       -65.5136
+      ],
+      [
+       44.7411,
+       -65.5124
+      ],
+      [
+       45.3641,
+       -63.2787
+      ],
+      [
+       44.3753,
+       -64.3041
+      ],
+      [
+       46.2756,
+       -61.1393
+      ],
+      [
+       44.404,
+       -66.2153
+      ],
+      [
+       44.249,
+       -66.3927
+      ],
+      [
+       45.8744,
+       -61.9012
+      ],
+      [
+       44.0857,
+       -66.2107
+      ],
+      [
+       45.9623,
+       -63.8646
+      ],
+      [
+       46.0237,
+       -60.7776
+      ],
+      [
+       44.287,
+       -66.342
+      ],
+      [
+       45.165,
+       -61.655
+      ],
+      [
+       46.4391,
+       -61.1123
+      ],
+      [
+       46.4397,
+       -61.1126
+      ],
+      [
+       45.0487,
+       -65.0652
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NS",
+     "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1",
+     "note": "Nova Scotia ~2",
+     "points": [
+      [
+       44.6646,
+       -63.6031
+      ],
+      [
+       44.6573,
+       -63.5878
+      ],
+      [
+       44.983,
+       -64.1368
+      ],
+      [
+       44.3767,
+       -64.309
+      ],
+      [
+       45.0887,
+       -64.3665
+      ],
+      [
+       44.6558,
+       -63.5857
+      ],
+      [
+       44.0387,
+       -64.7153
+      ],
+      [
+       44.38,
+       -64.3139
+      ],
+      [
+       44.6302,
+       -63.5976
+      ],
+      [
+       43.5665,
+       -65.5797
+      ],
+      [
+       44.6437,
+       -63.5729
+      ],
+      [
+       45.6767,
+       -62.7151
+      ],
+      [
+       45.6761,
+       -62.7062
+      ],
+      [
+       46.2872,
+       -60.5403
+      ],
+      [
+       44.7446,
+       -65.5194
+      ],
+      [
+       45.1581,
+       -64.4259
+      ],
+      [
+       44.6535,
+       -63.583
+      ],
+      [
+       44.3781,
+       -64.3115
+      ],
+      [
+       44.6441,
+       -63.5733
+      ],
+      [
+       44.6474,
+       -63.5747
+      ],
+      [
+       46.2441,
+       -60.2115
+      ],
+      [
+       44.6201,
+       -65.7576
+      ],
+      [
+       45.3652,
+       -63.2806
+      ],
+      [
+       44.7638,
+       -65.4313
+      ],
+      [
+       44.7547,
+       -65.5136
+      ],
+      [
+       44.7411,
+       -65.5124
+      ],
+      [
+       45.3641,
+       -63.2787
+      ],
+      [
+       44.3753,
+       -64.3041
+      ],
+      [
+       46.2756,
+       -61.1393
+      ],
+      [
+       44.404,
+       -66.2153
+      ],
+      [
+       44.249,
+       -66.3927
+      ],
+      [
+       45.8744,
+       -61.9012
+      ],
+      [
+       44.0857,
+       -66.2107
+      ],
+      [
+       45.9623,
+       -63.8646
+      ],
+      [
+       46.0237,
+       -60.7776
+      ],
+      [
+       44.287,
+       -66.342
+      ],
+      [
+       45.165,
+       -61.655
+      ],
+      [
+       46.4391,
+       -61.1123
+      ],
+      [
+       46.4397,
+       -61.1126
+      ],
+      [
+       45.0487,
+       -65.0652
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NS",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       44.6646,
+       -63.6031
+      ],
+      [
+       44.6573,
+       -63.5878
+      ],
+      [
+       44.983,
+       -64.1368
+      ],
+      [
+       44.3767,
+       -64.309
+      ],
+      [
+       45.0887,
+       -64.3665
+      ],
+      [
+       44.6558,
+       -63.5857
+      ],
+      [
+       44.0387,
+       -64.7153
+      ],
+      [
+       44.38,
+       -64.3139
+      ],
+      [
+       44.6302,
+       -63.5976
+      ],
+      [
+       43.5665,
+       -65.5797
+      ],
+      [
+       44.6437,
+       -63.5729
+      ],
+      [
+       45.6767,
+       -62.7151
+      ],
+      [
+       45.6761,
+       -62.7062
+      ],
+      [
+       46.2872,
+       -60.5403
+      ],
+      [
+       44.7446,
+       -65.5194
+      ],
+      [
+       45.1581,
+       -64.4259
+      ],
+      [
+       44.6535,
+       -63.583
+      ],
+      [
+       44.3781,
+       -64.3115
+      ],
+      [
+       44.6441,
+       -63.5733
+      ],
+      [
+       44.6474,
+       -63.5747
+      ],
+      [
+       46.2441,
+       -60.2115
+      ],
+      [
+       44.6201,
+       -65.7576
+      ],
+      [
+       45.3652,
+       -63.2806
+      ],
+      [
+       44.7638,
+       -65.4313
+      ],
+      [
+       44.7547,
+       -65.5136
+      ],
+      [
+       44.7411,
+       -65.5124
+      ],
+      [
+       45.3641,
+       -63.2787
+      ],
+      [
+       44.3753,
+       -64.3041
+      ],
+      [
+       46.2756,
+       -61.1393
+      ],
+      [
+       44.404,
+       -66.2153
+      ],
+      [
+       44.249,
+       -66.3927
+      ],
+      [
+       45.8744,
+       -61.9012
+      ],
+      [
+       44.0857,
+       -66.2107
+      ],
+      [
+       45.9623,
+       -63.8646
+      ],
+      [
+       46.0237,
+       -60.7776
+      ],
+      [
+       44.287,
+       -66.342
+      ],
+      [
+       45.165,
+       -61.655
+      ],
+      [
+       46.4391,
+       -61.1123
+      ],
+      [
+       46.4397,
+       -61.1126
+      ],
+      [
+       45.0487,
+       -65.0652
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NS",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       44.6646,
+       -63.6031
+      ],
+      [
+       44.6573,
+       -63.5878
+      ],
+      [
+       44.983,
+       -64.1368
+      ],
+      [
+       44.3767,
+       -64.309
+      ],
+      [
+       45.0887,
+       -64.3665
+      ],
+      [
+       44.6558,
+       -63.5857
+      ],
+      [
+       44.0387,
+       -64.7153
+      ],
+      [
+       44.38,
+       -64.3139
+      ],
+      [
+       44.6302,
+       -63.5976
+      ],
+      [
+       43.5665,
+       -65.5797
+      ],
+      [
+       44.6437,
+       -63.5729
+      ],
+      [
+       45.6767,
+       -62.7151
+      ],
+      [
+       45.6761,
+       -62.7062
+      ],
+      [
+       46.2872,
+       -60.5403
+      ],
+      [
+       44.7446,
+       -65.5194
+      ],
+      [
+       45.1581,
+       -64.4259
+      ],
+      [
+       44.6535,
+       -63.583
+      ],
+      [
+       44.3781,
+       -64.3115
+      ],
+      [
+       44.6441,
+       -63.5733
+      ],
+      [
+       44.6474,
+       -63.5747
+      ],
+      [
+       46.2441,
+       -60.2115
+      ],
+      [
+       44.6201,
+       -65.7576
+      ],
+      [
+       45.3652,
+       -63.2806
+      ],
+      [
+       44.7638,
+       -65.4313
+      ],
+      [
+       44.7547,
+       -65.5136
+      ],
+      [
+       44.7411,
+       -65.5124
+      ],
+      [
+       45.3641,
+       -63.2787
+      ],
+      [
+       44.3753,
+       -64.3041
+      ],
+      [
+       46.2756,
+       -61.1393
+      ],
+      [
+       44.404,
+       -66.2153
+      ],
+      [
+       44.249,
+       -66.3927
+      ],
+      [
+       45.8744,
+       -61.9012
+      ],
+      [
+       44.0857,
+       -66.2107
+      ],
+      [
+       45.9623,
+       -63.8646
+      ],
+      [
+       46.0237,
+       -60.7776
+      ],
+      [
+       44.287,
+       -66.342
+      ],
+      [
+       45.165,
+       -61.655
+      ],
+      [
+       46.4391,
+       -61.1123
+      ],
+      [
+       46.4397,
+       -61.1126
+      ],
+      [
+       45.0487,
+       -65.0652
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:38Z",
+ "results": {
+  "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (NS, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-5822,CA-5823,CA-5824,CA-5825,CA-5826,CA-5827,CA-5828,CA-5829,CA-5831,CA-5833,CA-5834,CA-5835,CA-5836,CA-5838,CA-5839,CA-5840,CA-5841,CA-5842,CA-5843,CA-5844,CA-5845,CA-5846,CA-5847,CA-5849,CA-5850,CA-6105,CA-6109,CA-6110,CA-6137,CA-6176,CA-6177,CA-6178,CA-6179,CA-6180,CA-6182,CA-6183,CA-6184,CA-6185,CA-6186,CA-6187. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "NS",
+    "url": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/52",
+    "note": "NS-F111 Nova",
+    "hits": [
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.6646,
+       -63.6031
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.6573,
+       -63.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.983,
+       -64.1368
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.3767,
+       -64.309
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       45.0887,
+       -64.3665
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.6558,
+       -63.5857
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.0387,
+       -64.7153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.38,
+       -64.3139
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.6302,
+       -63.5976
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       43.5665,
+       -65.5797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.6437,
+       -63.5729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       45.6767,
+       -62.7151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       45.6761,
+       -62.7062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       46.2872,
+       -60.5403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.7446,
+       -65.5194
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       45.1581,
+       -64.4259
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.6535,
+       -63.583
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.3781,
+       -64.3115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.6441,
+       -63.5733
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.6474,
+       -63.5747
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       46.2441,
+       -60.2115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.6201,
+       -65.7576
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       45.3652,
+       -63.2806
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.7638,
+       -65.4313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.7547,
+       -65.5136
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.7411,
+       -65.5124
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       45.3641,
+       -63.2787
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.3753,
+       -64.3041
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       46.2756,
+       -61.1393
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.404,
+       -66.2153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.249,
+       -66.3927
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       45.8744,
+       -61.9012
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.0857,
+       -66.2107
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       45.9623,
+       -63.8646
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       46.0237,
+       -60.7776
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       44.287,
+       -66.342
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       45.165,
+       -61.655
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       46.4391,
+       -61.1123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       46.4397,
+       -61.1126
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "52 Flight 111 Act Lands",
+      "point": [
+       45.0487,
+       -65.0652
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NS",
+    "url": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29",
+    "note": "NS-NHS Nova",
+    "hits": [
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.6646,
+       -63.6031
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.6573,
+       -63.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.983,
+       -64.1368
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.3767,
+       -64.309
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       45.0887,
+       -64.3665
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.6558,
+       -63.5857
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.0387,
+       -64.7153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.38,
+       -64.3139
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.6302,
+       -63.5976
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       43.5665,
+       -65.5797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.6437,
+       -63.5729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       45.6767,
+       -62.7151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       45.6761,
+       -62.7062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       46.2872,
+       -60.5403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.7446,
+       -65.5194
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       45.1581,
+       -64.4259
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.6535,
+       -63.583
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.3781,
+       -64.3115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.6441,
+       -63.5733
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.6474,
+       -63.5747
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       46.2441,
+       -60.2115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.6201,
+       -65.7576
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       45.3652,
+       -63.2806
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.7638,
+       -65.4313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.7547,
+       -65.5136
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.7411,
+       -65.5124
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       45.3641,
+       -63.2787
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.3753,
+       -64.3041
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       46.2756,
+       -61.1393
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.404,
+       -66.2153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.249,
+       -66.3927
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       45.8744,
+       -61.9012
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.0857,
+       -66.2107
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       45.9623,
+       -63.8646
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       46.0237,
+       -60.7776
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       44.287,
+       -66.342
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       45.165,
+       -61.655
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       46.4391,
+       -61.1123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       46.4397,
+       -61.1126
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "29 National Historic Sites and Parks",
+      "point": [
+       45.0487,
+       -65.0652
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NS",
+    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/1",
+    "note": "NS-PPA Nova",
+    "hits": [
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6646,
+       -63.6031
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6573,
+       -63.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.983,
+       -64.1368
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.3767,
+       -64.309
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.0887,
+       -64.3665
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6558,
+       -63.5857
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.0387,
+       -64.7153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.38,
+       -64.3139
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6302,
+       -63.5976
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       43.5665,
+       -65.5797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6437,
+       -63.5729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.6767,
+       -62.7151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.6761,
+       -62.7062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.2872,
+       -60.5403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.7446,
+       -65.5194
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.1581,
+       -64.4259
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6535,
+       -63.583
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.3781,
+       -64.3115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6441,
+       -63.5733
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6474,
+       -63.5747
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.2441,
+       -60.2115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6201,
+       -65.7576
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.3652,
+       -63.2806
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.7638,
+       -65.4313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.7547,
+       -65.5136
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.7411,
+       -65.5124
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.3641,
+       -63.2787
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.3753,
+       -64.3041
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.2756,
+       -61.1393
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.404,
+       -66.2153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.249,
+       -66.3927
+      ],
+      "attrs": {
+       "PROT_NAME": "Brier Island Conservation Lands",
+       "PROT_TYPE": "Land Trust or Conservation Easement",
+       "PROT_STATUS": "Considered protected",
+       "LEGISLATION": "N/A",
+       "OWNER": "Nature Conservancy of Canada",
+       "MGMT_AUTHORITY": "Nature Conservancy of Canada",
+       "HA_OFFICIAL": 231.45035766496974,
+       "URL": "http://www.natureconservancy.ca/en/where-we-work/nova-scotia/",
+       "CreationDate": 1715625788665,
+       "Creator": "Chuck_Sangster",
+       "EditDate": 1779902649653,
+       "Editor": "Chuck_Sangster"
+      }
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.8744,
+       -61.9012
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.0857,
+       -66.2107
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.9623,
+       -63.8646
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.0237,
+       -60.7776
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.287,
+       -66.342
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.165,
+       -61.655
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.4391,
+       -61.1123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.4397,
+       -61.1126
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.0487,
+       -65.0652
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NS",
+    "url": "https://nsgiwa.novascotia.ca/arcgis/rest/services/ENV/ENV_NS_Prot_Area_Sys_UT83/MapServer/0",
+    "note": "Nova Scotia",
+    "hits": [
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.6646,
+       -63.6031
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.6573,
+       -63.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.983,
+       -64.1368
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.3767,
+       -64.309
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       45.0887,
+       -64.3665
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.6558,
+       -63.5857
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.0387,
+       -64.7153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.38,
+       -64.3139
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.6302,
+       -63.5976
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       43.5665,
+       -65.5797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.6437,
+       -63.5729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       45.6767,
+       -62.7151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       45.6761,
+       -62.7062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       46.2872,
+       -60.5403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.7446,
+       -65.5194
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       45.1581,
+       -64.4259
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.6535,
+       -63.583
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.3781,
+       -64.3115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.6441,
+       -63.5733
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.6474,
+       -63.5747
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       46.2441,
+       -60.2115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.6201,
+       -65.7576
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       45.3652,
+       -63.2806
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.7638,
+       -65.4313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.7547,
+       -65.5136
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.7411,
+       -65.5124
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       45.3641,
+       -63.2787
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.3753,
+       -64.3041
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       46.2756,
+       -61.1393
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.404,
+       -66.2153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.249,
+       -66.3927
+      ],
+      "attrs": {
+       "Pro_Name": "Brier Island Conservation Lands",
+       "Protect1": "Land Trust or Conservation Easement",
+       "Symbol": "Land Trust or Conservation Easement",
+       "Owner": "Nature Conservancy of Canada",
+       "Authority": "Nature Conservancy of Canada",
+       "Status": "Considered protected",
+       "Web_URL": "http://www.natureconservancy.ca/en/where-we-work/nova-scotia/",
+       "HA_GIS": 231.45035767
+      }
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       45.8744,
+       -61.9012
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.0857,
+       -66.2107
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       45.9623,
+       -63.8646
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       46.0237,
+       -60.7776
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       44.287,
+       -66.342
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       45.165,
+       -61.655
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       46.4391,
+       -61.1123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       46.4397,
+       -61.1126
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 ENV_NS_Prot_Area_Sys_UT83",
+      "point": [
+       45.0487,
+       -65.0652
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NS",
+    "url": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0",
+    "note": "Nova Scotia ~1",
+    "hits": [
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.6646,
+       -63.6031
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.6573,
+       -63.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.983,
+       -64.1368
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.3767,
+       -64.309
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       45.0887,
+       -64.3665
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.6558,
+       -63.5857
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.0387,
+       -64.7153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.38,
+       -64.3139
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.6302,
+       -63.5976
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       43.5665,
+       -65.5797
+      ],
+      "attrs": {
+       "PGPI": "16-25-00300",
+       "FCode": 151,
+       "Hectares": 2.9,
+       "Acres": 7.3
+      }
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.6437,
+       -63.5729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       45.6767,
+       -62.7151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       45.6761,
+       -62.7062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       46.2872,
+       -60.5403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.7446,
+       -65.5194
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       45.1581,
+       -64.4259
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.6535,
+       -63.583
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.3781,
+       -64.3115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.6441,
+       -63.5733
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.6474,
+       -63.5747
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       46.2441,
+       -60.2115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.6201,
+       -65.7576
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       45.3652,
+       -63.2806
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.7638,
+       -65.4313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.7547,
+       -65.5136
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.7411,
+       -65.5124
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       45.3641,
+       -63.2787
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.3753,
+       -64.3041
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       46.2756,
+       -61.1393
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.404,
+       -66.2153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.249,
+       -66.3927
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       45.8744,
+       -61.9012
+      ],
+      "attrs": {
+       "PGPI": "02-25-00331",
+       "FCode": 151,
+       "Hectares": 29,
+       "Acres": 71.6
+      }
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.0857,
+       -66.2107
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       45.9623,
+       -63.8646
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       46.0237,
+       -60.7776
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       44.287,
+       -66.342
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       45.165,
+       -61.655
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       46.4391,
+       -61.1123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       46.4397,
+       -61.1126
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Department of Natural Resources",
+      "point": [
+       45.0487,
+       -65.0652
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NS",
+    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1",
+    "note": "Nova Scotia ~2",
+    "hits": [
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6646,
+       -63.6031
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6573,
+       -63.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.983,
+       -64.1368
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.3767,
+       -64.309
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.0887,
+       -64.3665
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6558,
+       -63.5857
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.0387,
+       -64.7153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.38,
+       -64.3139
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6302,
+       -63.5976
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       43.5665,
+       -65.5797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6437,
+       -63.5729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.6767,
+       -62.7151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.6761,
+       -62.7062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.2872,
+       -60.5403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.7446,
+       -65.5194
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.1581,
+       -64.4259
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6535,
+       -63.583
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.3781,
+       -64.3115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6441,
+       -63.5733
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6474,
+       -63.5747
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.2441,
+       -60.2115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.6201,
+       -65.7576
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.3652,
+       -63.2806
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.7638,
+       -65.4313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.7547,
+       -65.5136
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.7411,
+       -65.5124
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.3641,
+       -63.2787
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.3753,
+       -64.3041
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.2756,
+       -61.1393
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.404,
+       -66.2153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.249,
+       -66.3927
+      ],
+      "attrs": {
+       "PROT_NAME": "Brier Island Conservation Lands",
+       "PROT_TYPE": "Land Trust or Conservation Easement",
+       "PROT_STATUS": "Considered protected",
+       "LEGISLATION": "N/A",
+       "OWNER": "Nature Conservancy of Canada",
+       "MGMT_AUTHORITY": "Nature Conservancy of Canada",
+       "HA_OFFICIAL": 231.45035766496974,
+       "URL": "http://www.natureconservancy.ca/en/where-we-work/nova-scotia/"
+      }
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.8744,
+       -61.9012
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.0857,
+       -66.2107
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.9623,
+       -63.8646
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.0237,
+       -60.7776
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       44.287,
+       -66.342
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.165,
+       -61.655
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.4391,
+       -61.1123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       46.4397,
+       -61.1126
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 NS_Parks_and_Protected_Areas",
+      "point": [
+       45.0487,
+       -65.0652
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NS",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.6646,
+       -63.6031
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.6573,
+       -63.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.983,
+       -64.1368
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.3767,
+       -64.309
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.0887,
+       -64.3665
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.6558,
+       -63.5857
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.0387,
+       -64.7153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.38,
+       -64.3139
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.6302,
+       -63.5976
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       43.5665,
+       -65.5797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.6437,
+       -63.5729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.6767,
+       -62.7151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.6761,
+       -62.7062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2872,
+       -60.5403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.7446,
+       -65.5194
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.1581,
+       -64.4259
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.6535,
+       -63.583
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.3781,
+       -64.3115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.6441,
+       -63.5733
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.6474,
+       -63.5747
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2441,
+       -60.2115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.6201,
+       -65.7576
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.3652,
+       -63.2806
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.7638,
+       -65.4313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.7547,
+       -65.5136
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.7411,
+       -65.5124
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.3641,
+       -63.2787
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.3753,
+       -64.3041
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2756,
+       -61.1393
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.404,
+       -66.2153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.249,
+       -66.3927
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.8744,
+       -61.9012
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.0857,
+       -66.2107
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.9623,
+       -63.8646
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.0237,
+       -60.7776
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       44.287,
+       -66.342
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.165,
+       -61.655
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.4391,
+       -61.1123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.4397,
+       -61.1126
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.0487,
+       -65.0652
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NS",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.6646,
+       -63.6031
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.6573,
+       -63.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.983,
+       -64.1368
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.3767,
+       -64.309
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.0887,
+       -64.3665
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.6558,
+       -63.5857
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.0387,
+       -64.7153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.38,
+       -64.3139
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.6302,
+       -63.5976
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       43.5665,
+       -65.5797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.6437,
+       -63.5729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.6767,
+       -62.7151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.6761,
+       -62.7062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2872,
+       -60.5403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.7446,
+       -65.5194
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.1581,
+       -64.4259
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.6535,
+       -63.583
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.3781,
+       -64.3115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.6441,
+       -63.5733
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.6474,
+       -63.5747
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2441,
+       -60.2115
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.6201,
+       -65.7576
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.3652,
+       -63.2806
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.7638,
+       -65.4313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.7547,
+       -65.5136
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.7411,
+       -65.5124
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.3641,
+       -63.2787
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.3753,
+       -64.3041
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2756,
+       -61.1393
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.404,
+       -66.2153
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.249,
+       -66.3927
+      ],
+      "attrs": {
+       "NAME_E": "Privately Protected Area (NCC 120092)",
+       "NAME_F": "Aires protégées à governance privée (CNC 120092)",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2023,
+       "ESTYEAR": 1988,
+       "BIOME": "T",
+       "LOC": 7,
+       "O_AREA_HA": 235.72044925132568,
+       "PARENT_ID": 158000200,
+       "ZONE_ID": 158000202,
+       "ZONEDESC_E": "Parcel 02",
+       "MECH_E": "Fee-Simple Ownership",
+       "TYPE_E": "Privately Protected Area",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Nature Conservancy of Canada",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Nature Conservancy of Canada",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 15,
+       "JUR_ID": "NCC Parcel ID 120165",
+       "MPLAN": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.8744,
+       -61.9012
+      ],
+      "attrs": {
+       "NAME_E": "Cape George Provincial Park",
+       "NAME_F": "Cape George Provincial Park",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 8,
+       "STATUS": 2,
+       "QUALYEAR": 2025,
+       "ESTYEAR": 2024,
+       "BIOME": "T",
+       "LOC": 7,
+       "O_AREA_HA": 55.029137986026264,
+       "PARENT_ID": 125000072,
+       "ZONE_ID": 125000072,
+       "MECH_E": "Provincial Parks Act (1989)",
+       "TYPE_E": "Provincial Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Nova Scotia Department of Natural Resources",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Nova Scotia Department of Natural Resources",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 12,
+       "MPLAN": 0,
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.0857,
+       -66.2107
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.9623,
+       -63.8646
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 22)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 22)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 2005,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 285278.38,
+       "PARENT_ID": 700340000,
+       "ZONE_ID": 700340000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.0237,
+       -60.7776
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       44.287,
+       -66.342
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.165,
+       -61.655
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.4391,
+       -61.1123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.4397,
+       -61.1126
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 24)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 24)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 1996,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 209495.52,
+       "PARENT_ID": 700350000,
+       "ZONE_ID": 700350000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.0487,
+       -65.0652
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 736,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
