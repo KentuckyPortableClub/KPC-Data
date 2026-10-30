@@ -1,0 +1,130 @@
+{
+ "area": "hi",
+ "date": "2026-10-30",
+ "states": [
+  "US-HI"
+ ],
+ "rows": [
+  {
+   "area": "hi",
+   "state": "US-HI",
+   "refs": [
+    "US-0117",
+    "US-7695"
+   ],
+   "names": {
+    "US-0117": "Hakalau Forest National Wildlife Refuge",
+    "US-7695": "Hilo Forest Reserve"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "297.4 ac",
+   "sort": 297.4,
+   "reason": "candidate \u00b7 ['FED', 'STAT']",
+   "id": "US-0117+US-7695@area@19.878,-155.250",
+   "sources": {
+    "US-0117": "downloaded 2026-10-30",
+    "US-7695": "downloaded 2026-10-30",
+    "USGS water": "USGS NHDPlus HR file 2020-10-23 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "hi",
+   "state": "US-HI",
+   "refs": [
+    "US-10905",
+    "US-10918"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "2374 yd of line",
+   "sort": 54.3,
+   "reason": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "US-10905+US-10918@trail@21.318,-157.790",
+   "sources": {
+    "US-10905": "downloaded 2026-10-30",
+    "US-10918": "official line (trails bot)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "hi",
+   "state": "",
+   "refs": [
+    "US-2216",
+    "US-6427"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-2216+US-6427@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "hi",
+   "state": "US-HI",
+   "refs": [
+    "US-10905",
+    "US-10912"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "442 yd of line",
+   "sort": 10.1,
+   "reason": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "US-10905+US-10912@trail@21.319,-157.819",
+   "sources": {
+    "US-10905": "downloaded 2026-10-30",
+    "US-10912": "official line (trails bot)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "hi",
+   "state": "",
+   "refs": [
+    "US-6406",
+    "US-7696"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "8 same-day activations",
+   "sort": 8.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-6406+US-7696@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "hi",
+   "state": "",
+   "refs": [
+    "US-2215",
+    "US-2223"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "5 same-day activations",
+   "sort": 5.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-2215+US-2223@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-10-30"
+  }
+ ]
+}

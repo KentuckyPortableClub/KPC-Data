@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "hi",
+ "states": [
+  "US-HI"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 04:43 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 15,
+  "DROPPED": 13,
+  "NEVER LOOKED AT": 143
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 66,
+   "pairs whose boxes touch": 66
+  },
+  "pass2": {
+   "agree with the pass before": 111,
+   "date": "2026-10-30",
+   "pairs tested": 44
+  },
+  "pass3": {
+   "agree with the pass before": 71,
+   "date": "2026-10-30",
+   "pairs tested": 44
+  },
+  "pass5": {
+   "checked": 5,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-HI": "data/fers/US-HI.json"
+ },
+ "US-HI": {
+  "rows": 118,
+  "live": 21,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 2
+  },
+  "dropped": 54,
+  "merged": 41
+ },
+ "states_ready": [
+  "US-HI"
+ ],
+ "states_held": []
+}
