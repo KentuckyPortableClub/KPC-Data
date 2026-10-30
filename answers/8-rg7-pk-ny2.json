@@ -1,0 +1,54 @@
+{
+ "request": "requests/8-rg7-pk-ny2.json",
+ "id": "8-rg7-pk-ny2",
+ "chat": 8,
+ "kind": "parcel",
+ "report": "NY WMA layer at the Iona Island + Cayuga Lake WMA pins (DEC Lands layer 2 returned nothing).",
+ "asked": {
+  "chat": 8,
+  "kind": "parcel",
+  "layer": "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2",
+  "points": [
+   [
+    41.3039,
+    -73.9786
+   ],
+   [
+    42.9395,
+    -76.7562
+   ]
+  ],
+  "refs": [
+   "US-2081",
+   "US-8103"
+  ],
+  "report": "NY WMA layer at the Iona Island + Cayuga Lake WMA pins (DEC Lands layer 2 returned nothing)."
+ },
+ "answered": "2026-10-29 21:05Z",
+ "results": [
+  {
+   "point": [
+    41.3039,
+    -73.9786
+   ],
+   "features": []
+  },
+  {
+   "point": [
+    42.9395,
+    -76.7562
+   ],
+   "features": []
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 2
+ },
+ "short": "2 result(s), 2 read OK"
+}

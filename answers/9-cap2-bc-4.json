@@ -1,0 +1,722 @@
+{
+ "request": "requests/9-cap2-bc-4.json",
+ "id": "9-cap2-bc-4",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CAP2 BC 4: 9 parks, 5 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CAP2 BC 4: 9 parks, 5 layers",
+  "probe": {
+   "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (BC, 9 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-5349,CA-5350,CA-5501,CA-5544,CA-5547,CA-5548,CA-5667,CA-6132,CA-6369. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+   "refs": [
+    "CA-5349",
+    "CA-5350",
+    "CA-5501",
+    "CA-5544",
+    "CA-5547",
+    "CA-5548",
+    "CA-5667",
+    "CA-6132",
+    "CA-6369"
+   ],
+   "pointq": [
+    {
+     "st": "BC",
+     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "note": "BC recreatio",
+     "points": [
+      [
+       49.1823,
+       -121.948
+      ],
+      [
+       55.1245,
+       -120.999
+      ],
+      [
+       49.3711,
+       -123.099
+      ],
+      [
+       48.7846,
+       -123.577
+      ],
+      [
+       50.4001,
+       -119.24
+      ],
+      [
+       49.059,
+       -122.882
+      ],
+      [
+       48.4568,
+       -123.326
+      ],
+      [
+       51.4282,
+       -122.213
+      ],
+      [
+       49.9986,
+       -125.196
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/46",
+     "note": "BC-HCA Gover",
+     "points": [
+      [
+       49.1823,
+       -121.948
+      ],
+      [
+       55.1245,
+       -120.999
+      ],
+      [
+       49.3711,
+       -123.099
+      ],
+      [
+       48.7846,
+       -123.577
+      ],
+      [
+       50.4001,
+       -119.24
+      ],
+      [
+       49.059,
+       -122.882
+      ],
+      [
+       48.4568,
+       -123.326
+      ],
+      [
+       51.4282,
+       -122.213
+      ],
+      [
+       49.9986,
+       -125.196
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+     "note": "BC-HP Govern",
+     "points": [
+      [
+       49.1823,
+       -121.948
+      ],
+      [
+       55.1245,
+       -120.999
+      ],
+      [
+       49.3711,
+       -123.099
+      ],
+      [
+       48.7846,
+       -123.577
+      ],
+      [
+       50.4001,
+       -119.24
+      ],
+      [
+       49.059,
+       -122.882
+      ],
+      [
+       48.4568,
+       -123.326
+      ],
+      [
+       51.4282,
+       -122.213
+      ],
+      [
+       49.9986,
+       -125.196
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       49.1823,
+       -121.948
+      ],
+      [
+       55.1245,
+       -120.999
+      ],
+      [
+       49.3711,
+       -123.099
+      ],
+      [
+       48.7846,
+       -123.577
+      ],
+      [
+       50.4001,
+       -119.24
+      ],
+      [
+       49.059,
+       -122.882
+      ],
+      [
+       48.4568,
+       -123.326
+      ],
+      [
+       51.4282,
+       -122.213
+      ],
+      [
+       49.9986,
+       -125.196
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       49.1823,
+       -121.948
+      ],
+      [
+       55.1245,
+       -120.999
+      ],
+      [
+       49.3711,
+       -123.099
+      ],
+      [
+       48.7846,
+       -123.577
+      ],
+      [
+       50.4001,
+       -119.24
+      ],
+      [
+       49.059,
+       -122.882
+      ],
+      [
+       48.4568,
+       -123.326
+      ],
+      [
+       51.4282,
+       -122.213
+      ],
+      [
+       49.9986,
+       -125.196
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:14Z",
+ "results": {
+  "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (BC, 9 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-5349,CA-5350,CA-5501,CA-5544,CA-5547,CA-5548,CA-5667,CA-6132,CA-6369. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "BC",
+    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+    "note": "BC recreatio",
+    "hits": [
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.1823,
+       -121.948
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       55.1245,
+       -120.999
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.3711,
+       -123.099
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       48.7846,
+       -123.577
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       50.4001,
+       -119.24
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.059,
+       -122.882
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       48.4568,
+       -123.326
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       51.4282,
+       -122.213
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.9986,
+       -125.196
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/46",
+    "note": "BC-HCA Gover",
+    "hits": [
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.1823,
+       -121.948
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       55.1245,
+       -120.999
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.3711,
+       -123.099
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       48.7846,
+       -123.577
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       50.4001,
+       -119.24
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.059,
+       -122.882
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       48.4568,
+       -123.326
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       51.4282,
+       -122.213
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.9986,
+       -125.196
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+    "note": "BC-HP Govern",
+    "hits": [
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       49.1823,
+       -121.948
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       55.1245,
+       -120.999
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       49.3711,
+       -123.099
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       48.7846,
+       -123.577
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       50.4001,
+       -119.24
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       49.059,
+       -122.882
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       48.4568,
+       -123.326
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       51.4282,
+       -122.213
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       49.9986,
+       -125.196
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.1823,
+       -121.948
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       55.1245,
+       -120.999
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.3711,
+       -123.099
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.7846,
+       -123.577
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.4001,
+       -119.24
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.059,
+       -122.882
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.4568,
+       -123.326
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.4282,
+       -122.213
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.9986,
+       -125.196
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.1823,
+       -121.948
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       55.1245,
+       -120.999
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.3711,
+       -123.099
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.7846,
+       -123.577
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.4001,
+       -119.24
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.059,
+       -122.882
+      ],
+      "attrs": {
+       "NAME_E": "BOUNDARY BAY WILDLIFE MANAGEMENT AREA",
+       "NAME_F": "BOUNDARY BAY WILDLIFE MANAGEMENT AREA",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 5,
+       "STATUS": 1,
+       "QUALYEAR": 1995,
+       "ESTYEAR": 1995,
+       "BIOME": "M",
+       "LOC": 2,
+       "O_AREA_HA": 11525,
+       "PARENT_ID": 590004572,
+       "ZONE_ID": 592004572,
+       "ZONEDESC_E": "Marine Zone",
+       "MECH_E": "Wildlife Act",
+       "TYPE_E": "Wildlife Management Area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of British Columbia",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Government of British Columbia",
+       "SUBSRIGHT": "B",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 59,
+       "JUR_ID": "4572",
+       "MPLAN": 0,
+       "PA_BIOME": "Marine protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.4568,
+       -123.326
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.4282,
+       -122.213
+      ],
+      "attrs": {
+       "NAME_E": "CHURN CREEK PROTECTED AREA",
+       "NAME_F": "CHURN CREEK PROTECTED AREA",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1996,
+       "ESTYEAR": 1996,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 24368,
+       "PARENT_ID": 590009590,
+       "ZONE_ID": 591009590,
+       "ZONEDESC_E": "Terrestrial Zone",
+       "MECH_E": "Environment and Land Use Act",
+       "TYPE_E": "Protected Area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of British Columbia",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Government of British Columbia",
+       "SUBSRIGHT": "B",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 59,
+       "JUR_ID": "9590",
+       "MPLAN": 1,
+       "MPLAN_REF": "https://bcparks.ca/planning/mgmtplns/",
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.9986,
+       -125.196
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 148,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

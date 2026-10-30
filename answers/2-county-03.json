@@ -1,0 +1,981 @@
+{
+ "request": "requests/2-county-03.json",
+ "id": "2-county-03",
+ "chat": 2,
+ "kind": "parcel",
+ "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+ "asked": {
+  "chat": 2,
+  "kind": "parcel",
+  "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+  "layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1",
+  "fields": "NAME,STATE,COUNTY,GEOID",
+  "points": [
+   [
+    47.009,
+    -91.6593
+   ],
+   [
+    39.2335,
+    -94.3826
+   ],
+   [
+    39.2498,
+    -94.3922
+   ],
+   [
+    33.0097,
+    -88.7562
+   ],
+   [
+    31.5256,
+    -91.3807
+   ],
+   [
+    32.1009,
+    -89.0345
+   ],
+   [
+    34.391,
+    -88.6695
+   ],
+   [
+    34.303,
+    -88.6497
+   ],
+   [
+    34.7912,
+    -88.9572
+   ],
+   [
+    33.9465,
+    -88.5642
+   ],
+   [
+    32.7102,
+    -89.011
+   ],
+   [
+    32.4221,
+    -88.5278
+   ],
+   [
+    31.911,
+    -89.7914
+   ],
+   [
+    31.834,
+    -89.5918
+   ],
+   [
+    31.7024,
+    -89.0244
+   ],
+   [
+    31.5729,
+    -90.1555
+   ],
+   [
+    31.5717,
+    -89.6479
+   ],
+   [
+    31.5651,
+    -89.8443
+   ],
+   [
+    31.0654,
+    -90.1298
+   ],
+   [
+    33.8578,
+    -91.0549
+   ],
+   [
+    34.5236,
+    -89.4647
+   ],
+   [
+    32.2073,
+    -89.2819
+   ],
+   [
+    31.4335,
+    -90.8549
+   ],
+   [
+    34.7419,
+    -90.122
+   ],
+   [
+    34.139,
+    -89.8262
+   ],
+   [
+    33.8033,
+    -89.7511
+   ],
+   [
+    34.4302,
+    -89.7004
+   ],
+   [
+    33.5218,
+    -88.4834
+   ],
+   [
+    34.5328,
+    -88.3129
+   ],
+   [
+    34.007,
+    -88.4735
+   ],
+   [
+    34.0484,
+    -88.9349
+   ],
+   [
+    32.0301,
+    -88.704
+   ],
+   [
+    31.683,
+    -89.337
+   ],
+   [
+    31.752,
+    -89.726
+   ],
+   [
+    32.228,
+    -88.82
+   ],
+   [
+    30.871,
+    -89.121
+   ],
+   [
+    31.655,
+    -88.723
+   ],
+   [
+    32.401,
+    -89.153
+   ],
+   [
+    30.3845,
+    -88.8728
+   ],
+   [
+    47.0021,
+    -109.344
+   ],
+   [
+    35.8428,
+    -80.131
+   ],
+   [
+    35.0205,
+    -83.7854
+   ],
+   [
+    36.0345,
+    -79.0489
+   ],
+   [
+    35.2604,
+    -77.5816
+   ],
+   [
+    35.6898,
+    -80.4301
+   ],
+   [
+    35.7806,
+    -78.6391
+   ],
+   [
+    36.4771,
+    -78.3785
+   ],
+   [
+    46.9933,
+    -97.7911
+   ],
+   [
+    47.212,
+    -98.0677
+   ],
+   [
+    47.1829,
+    -99.3719
+   ]
+  ],
+  "refs": [
+   "US-13547",
+   "US-10575",
+   "US-10576",
+   "US-11881",
+   "US-11882",
+   "US-12193",
+   "US-12194",
+   "US-12195",
+   "US-12196",
+   "US-12197",
+   "US-12198",
+   "US-12199",
+   "US-12200",
+   "US-12201",
+   "US-12202",
+   "US-12203",
+   "US-12205",
+   "US-12206",
+   "US-12207",
+   "US-7072",
+   "US-7098",
+   "US-7115",
+   "US-7120",
+   "US-7124",
+   "US-7125",
+   "US-7126",
+   "US-7128",
+   "US-7129",
+   "US-7131",
+   "US-7133",
+   "US-7629",
+   "US-8513",
+   "US-8514",
+   "US-8515",
+   "US-8516",
+   "US-8517",
+   "US-8518",
+   "US-8519",
+   "US-9849",
+   "US-11216",
+   "US-10259",
+   "US-10398",
+   "US-3851",
+   "US-6837",
+   "US-6847",
+   "US-6852",
+   "US-6963",
+   "US-12782",
+   "US-12783",
+   "US-12784"
+  ]
+ },
+ "answered": "2026-10-29 23:21Z",
+ "results": [
+  {
+   "point": [
+    47.009,
+    -91.6593
+   ],
+   "features": [
+    {
+     "NAME": "Lake County",
+     "STATE": "27",
+     "COUNTY": "075",
+     "GEOID": "27075"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.2335,
+    -94.3826
+   ],
+   "features": [
+    {
+     "NAME": "Clay County",
+     "STATE": "29",
+     "COUNTY": "047",
+     "GEOID": "29047"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.2498,
+    -94.3922
+   ],
+   "features": [
+    {
+     "NAME": "Clay County",
+     "STATE": "29",
+     "COUNTY": "047",
+     "GEOID": "29047"
+    }
+   ]
+  },
+  {
+   "point": [
+    33.0097,
+    -88.7562
+   ],
+   "features": [
+    {
+     "NAME": "Noxubee County",
+     "STATE": "28",
+     "COUNTY": "103",
+     "GEOID": "28103"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.5256,
+    -91.3807
+   ],
+   "features": [
+    {
+     "NAME": "Adams County",
+     "STATE": "28",
+     "COUNTY": "001",
+     "GEOID": "28001"
+    }
+   ]
+  },
+  {
+   "point": [
+    32.1009,
+    -89.0345
+   ],
+   "features": [
+    {
+     "NAME": "Jasper County",
+     "STATE": "28",
+     "COUNTY": "061",
+     "GEOID": "28061"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.391,
+    -88.6695
+   ],
+   "features": [
+    {
+     "NAME": "Lee County",
+     "STATE": "28",
+     "COUNTY": "081",
+     "GEOID": "28081"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.303,
+    -88.6497
+   ],
+   "features": [
+    {
+     "NAME": "Lee County",
+     "STATE": "28",
+     "COUNTY": "081",
+     "GEOID": "28081"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.7912,
+    -88.9572
+   ],
+   "features": [
+    {
+     "NAME": "Tippah County",
+     "STATE": "28",
+     "COUNTY": "139",
+     "GEOID": "28139"
+    }
+   ]
+  },
+  {
+   "point": [
+    33.9465,
+    -88.5642
+   ],
+   "features": [
+    {
+     "NAME": "Monroe County",
+     "STATE": "28",
+     "COUNTY": "095",
+     "GEOID": "28095"
+    }
+   ]
+  },
+  {
+   "point": [
+    32.7102,
+    -89.011
+   ],
+   "features": [
+    {
+     "NAME": "Neshoba County",
+     "STATE": "28",
+     "COUNTY": "099",
+     "GEOID": "28099"
+    }
+   ]
+  },
+  {
+   "point": [
+    32.4221,
+    -88.5278
+   ],
+   "features": [
+    {
+     "NAME": "Lauderdale County",
+     "STATE": "28",
+     "COUNTY": "075",
+     "GEOID": "28075"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.911,
+    -89.7914
+   ],
+   "features": [
+    {
+     "NAME": "Simpson County",
+     "STATE": "28",
+     "COUNTY": "127",
+     "GEOID": "28127"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.834,
+    -89.5918
+   ],
+   "features": [
+    {
+     "NAME": "Smith County",
+     "STATE": "28",
+     "COUNTY": "129",
+     "GEOID": "28129"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.7024,
+    -89.0244
+   ],
+   "features": [
+    {
+     "NAME": "Jones County",
+     "STATE": "28",
+     "COUNTY": "067",
+     "GEOID": "28067"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.5729,
+    -90.1555
+   ],
+   "features": [
+    {
+     "NAME": "Lawrence County",
+     "STATE": "28",
+     "COUNTY": "077",
+     "GEOID": "28077"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.5717,
+    -89.6479
+   ],
+   "features": [
+    {
+     "NAME": "Covington County",
+     "STATE": "28",
+     "COUNTY": "031",
+     "GEOID": "28031"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.5651,
+    -89.8443
+   ],
+   "features": [
+    {
+     "NAME": "Jefferson Davis County",
+     "STATE": "28",
+     "COUNTY": "065",
+     "GEOID": "28065"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.0654,
+    -90.1298
+   ],
+   "features": [
+    {
+     "NAME": "Walthall County",
+     "STATE": "28",
+     "COUNTY": "147",
+     "GEOID": "28147"
+    }
+   ]
+  },
+  {
+   "point": [
+    33.8578,
+    -91.0549
+   ],
+   "features": [
+    {
+     "NAME": "Bolivar County",
+     "STATE": "28",
+     "COUNTY": "011",
+     "GEOID": "28011"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.5236,
+    -89.4647
+   ],
+   "features": [
+    {
+     "NAME": "Lafayette County",
+     "STATE": "28",
+     "COUNTY": "071",
+     "GEOID": "28071"
+    }
+   ]
+  },
+  {
+   "point": [
+    32.2073,
+    -89.2819
+   ],
+   "features": [
+    {
+     "NAME": "Jasper County",
+     "STATE": "28",
+     "COUNTY": "061",
+     "GEOID": "28061"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.4335,
+    -90.8549
+   ],
+   "features": [
+    {
+     "NAME": "Franklin County",
+     "STATE": "28",
+     "COUNTY": "037",
+     "GEOID": "28037"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.7419,
+    -90.122
+   ],
+   "features": [
+    {
+     "NAME": "Tate County",
+     "STATE": "28",
+     "COUNTY": "137",
+     "GEOID": "28137"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.139,
+    -89.8262
+   ],
+   "features": [
+    {
+     "NAME": "Yalobusha County",
+     "STATE": "28",
+     "COUNTY": "161",
+     "GEOID": "28161"
+    }
+   ]
+  },
+  {
+   "point": [
+    33.8033,
+    -89.7511
+   ],
+   "features": [
+    {
+     "NAME": "Grenada County",
+     "STATE": "28",
+     "COUNTY": "043",
+     "GEOID": "28043"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.4302,
+    -89.7004
+   ],
+   "features": [
+    {
+     "NAME": "Lafayette County",
+     "STATE": "28",
+     "COUNTY": "071",
+     "GEOID": "28071"
+    }
+   ]
+  },
+  {
+   "point": [
+    33.5218,
+    -88.4834
+   ],
+   "features": [
+    {
+     "NAME": "Lowndes County",
+     "STATE": "28",
+     "COUNTY": "087",
+     "GEOID": "28087"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.5328,
+    -88.3129
+   ],
+   "features": [
+    {
+     "NAME": "Tishomingo County",
+     "STATE": "28",
+     "COUNTY": "141",
+     "GEOID": "28141"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.007,
+    -88.4735
+   ],
+   "features": [
+    {
+     "NAME": "Monroe County",
+     "STATE": "28",
+     "COUNTY": "095",
+     "GEOID": "28095"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.0484,
+    -88.9349
+   ],
+   "features": [
+    {
+     "NAME": "Chickasaw County",
+     "STATE": "28",
+     "COUNTY": "017",
+     "GEOID": "28017"
+    }
+   ]
+  },
+  {
+   "point": [
+    32.0301,
+    -88.704
+   ],
+   "features": [
+    {
+     "NAME": "Clarke County",
+     "STATE": "28",
+     "COUNTY": "023",
+     "GEOID": "28023"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.683,
+    -89.337
+   ],
+   "features": [
+    {
+     "NAME": "Jones County",
+     "STATE": "28",
+     "COUNTY": "067",
+     "GEOID": "28067"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.752,
+    -89.726
+   ],
+   "features": [
+    {
+     "NAME": "Covington County",
+     "STATE": "28",
+     "COUNTY": "031",
+     "GEOID": "28031"
+    }
+   ]
+  },
+  {
+   "point": [
+    32.228,
+    -88.82
+   ],
+   "features": [
+    {
+     "NAME": "Lauderdale County",
+     "STATE": "28",
+     "COUNTY": "075",
+     "GEOID": "28075"
+    }
+   ]
+  },
+  {
+   "point": [
+    30.871,
+    -89.121
+   ],
+   "features": [
+    {
+     "NAME": "Stone County",
+     "STATE": "28",
+     "COUNTY": "131",
+     "GEOID": "28131"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.655,
+    -88.723
+   ],
+   "features": [
+    {
+     "NAME": "Wayne County",
+     "STATE": "28",
+     "COUNTY": "153",
+     "GEOID": "28153"
+    }
+   ]
+  },
+  {
+   "point": [
+    32.401,
+    -89.153
+   ],
+   "features": [
+    {
+     "NAME": "Newton County",
+     "STATE": "28",
+     "COUNTY": "101",
+     "GEOID": "28101"
+    }
+   ]
+  },
+  {
+   "point": [
+    30.3845,
+    -88.8728
+   ],
+   "features": [
+    {
+     "NAME": "Harrison County",
+     "STATE": "28",
+     "COUNTY": "047",
+     "GEOID": "28047"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.0021,
+    -109.344
+   ],
+   "features": [
+    {
+     "NAME": "Fergus County",
+     "STATE": "30",
+     "COUNTY": "027",
+     "GEOID": "30027"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.8428,
+    -80.131
+   ],
+   "features": [
+    {
+     "NAME": "Davidson County",
+     "STATE": "37",
+     "COUNTY": "057",
+     "GEOID": "37057"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.0205,
+    -83.7854
+   ],
+   "features": [
+    {
+     "NAME": "Clay County",
+     "STATE": "37",
+     "COUNTY": "043",
+     "GEOID": "37043"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.0345,
+    -79.0489
+   ],
+   "features": [
+    {
+     "NAME": "Orange County",
+     "STATE": "37",
+     "COUNTY": "135",
+     "GEOID": "37135"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.2604,
+    -77.5816
+   ],
+   "features": [
+    {
+     "NAME": "Lenoir County",
+     "STATE": "37",
+     "COUNTY": "107",
+     "GEOID": "37107"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.6898,
+    -80.4301
+   ],
+   "features": [
+    {
+     "NAME": "Rowan County",
+     "STATE": "37",
+     "COUNTY": "159",
+     "GEOID": "37159"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.7806,
+    -78.6391
+   ],
+   "features": [
+    {
+     "NAME": "Wake County",
+     "STATE": "37",
+     "COUNTY": "183",
+     "GEOID": "37183"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.4771,
+    -78.3785
+   ],
+   "features": [
+    {
+     "NAME": "Vance County",
+     "STATE": "37",
+     "COUNTY": "181",
+     "GEOID": "37181"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.9933,
+    -97.7911
+   ],
+   "features": [
+    {
+     "NAME": "Barnes County",
+     "STATE": "38",
+     "COUNTY": "003",
+     "GEOID": "38003"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.212,
+    -98.0677
+   ],
+   "features": [
+    {
+     "NAME": "Barnes County",
+     "STATE": "38",
+     "COUNTY": "003",
+     "GEOID": "38003"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.1829,
+    -99.3719
+   ],
+   "features": [
+    {
+     "NAME": "Stutsman County",
+     "STATE": "38",
+     "COUNTY": "093",
+     "GEOID": "38093"
+    }
+   ]
+  }
+ ],
+ "seconds": 98,
+ "manners": {
+  "requests": 50,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 50
+ },
+ "short": "50 result(s), 50 read OK"
+}

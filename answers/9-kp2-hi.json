@@ -1,0 +1,431 @@
+{
+ "request": "requests/9-kp2-hi.json",
+ "id": "9-kp2-hi",
+ "chat": 9,
+ "kind": "probe",
+ "report": "kp2 HI: 2 parks, 7 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "kp2 HI: 2 parks, 7 layers",
+  "probe": {
+   "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State HI: 2 parks. Refs in order of points: US-6409,US-6423. Results to chat 11.",
+   "refs": [
+    "US-6409",
+    "US-6423"
+   ],
+   "pointq": [
+    {
+     "st": "HI",
+     "url": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+     "note": "HI Hawaii Division of State Parks (DLNR)",
+     "points": [
+      [
+       21.9548,
+       -159.67
+      ],
+      [
+       19.105,
+       -155.819
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "HI",
+     "url": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+     "note": "HI Hawaii DLNR reserves (DOFAW)",
+     "points": [
+      [
+       21.9548,
+       -159.67
+      ],
+      [
+       19.105,
+       -155.819
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "HI",
+     "url": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+     "note": "HI Hawaii State Parks (DLNR)",
+     "points": [
+      [
+       21.9548,
+       -159.67
+      ],
+      [
+       19.105,
+       -155.819
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "HI",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "HI National Park Service (legal boundary)",
+     "points": [
+      [
+       21.9548,
+       -159.67
+      ],
+      [
+       19.105,
+       -155.819
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       21.9548,
+       -159.67
+      ],
+      [
+       19.105,
+       -155.819
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       21.9548,
+       -159.67
+      ],
+      [
+       19.105,
+       -155.819
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       21.9548,
+       -159.67
+      ],
+      [
+       19.105,
+       -155.819
+      ]
+     ],
+     "dist": 3000
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-29 23:29Z",
+ "results": {
+  "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State HI: 2 parks. Refs in order of points: US-6409,US-6423. Results to chat 11.",
+  "date": "2026-10-29",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "HI",
+    "url": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+    "note": "HI Hawaii Division of State Parks (DLNR)",
+    "hits": [
+     {
+      "layer": "16 State Parks",
+      "point": [
+       21.9548,
+       -159.67
+      ],
+      "attrs": {
+       "name": "WAIMEA STATE RECREATION PIER",
+       "type": "srp",
+       "type_defin": "State Recreation Pier",
+       "managedby": "DOSP",
+       "island": "Kauai",
+       "gis_acre": 1.22919455
+      }
+     },
+     {
+      "layer": "16 State Parks",
+      "point": [
+       21.9548,
+       -159.67
+      ],
+      "attrs": {
+       "name": "RUSSIAN FORT ELIZABETH STATE HISTORICAL PARK",
+       "type": "shp",
+       "type_defin": "State Historical Park",
+       "managedby": "DOSP",
+       "island": "Kauai",
+       "gis_acre": 19.23504756
+      }
+     },
+     {
+      "layer": "16 State Parks",
+      "point": [
+       19.105,
+       -155.819
+      ],
+      "attrs": {
+       "name": "MANUKA STATE WAYSIDE",
+       "type": "sw",
+       "type_defin": "State Wayside",
+       "managedby": "DOSP",
+       "island": "Hawaii",
+       "gis_acre": 13.7027779
+      }
+     }
+    ]
+   },
+   {
+    "st": "HI",
+    "url": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
+    "note": "HI Hawaii DLNR reserves (DOFAW)",
+    "hits": [
+     {
+      "layer": "1 Reserves",
+      "point": [
+       21.9548,
+       -159.67
+      ],
+      "attrs": {
+       "type": "fr",
+       "type_defin": "Forest Reserve",
+       "name": "PUU KA PELE FOREST RESERVE",
+       "managedby": "DOFAW",
+       "island": "Kauai",
+       "gis_acre": 13972.8895139,
+       "linktowebp": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/puu-ka-pele/",
+       "linktoadmi": "https://dlnr.hawaii.gov/dofaw/files/2013/09/HARChapter13-104.pdf",
+       "xname": "Puu Ka Pele Forest Reserve",
+       "tlabel": "Pu‘u Ka Pele Forest Reserve"
+      }
+     },
+     {
+      "layer": "1 Reserves",
+      "point": [
+       21.9548,
+       -159.67
+      ],
+      "attrs": {
+       "type": "srp",
+       "type_defin": "State Recreation Pier",
+       "name": "WAIMEA STATE RECREATION PIER",
+       "managedby": "DOSP",
+       "island": "Kauai",
+       "gis_acre": 1.2283571,
+       "xname": "Waimea State Recreation Pier",
+       "tlabel": "Waimea State Recreation Pier"
+      }
+     },
+     {
+      "layer": "1 Reserves",
+      "point": [
+       21.9548,
+       -159.67
+      ],
+      "attrs": {
+       "type": "shs",
+       "type_defin": "State Historic Site",
+       "name": "PAULAULA STATE HISTORIC SITE",
+       "managedby": "DOSP",
+       "island": "Kauai",
+       "gis_acre": 19.22189392,
+       "xname": "Paulaula State Historic Site",
+       "tlabel": "Pā‘ula‘ula State Historic Site"
+      }
+     },
+     {
+      "layer": "1 Reserves",
+      "point": [
+       19.105,
+       -155.819
+      ],
+      "attrs": {
+       "type": "nar",
+       "type_defin": "Natural Area Reserve",
+       "name": "MANUKA NATURAL AREA RESERVE",
+       "managedby": "DOFAW",
+       "island": "Hawaii",
+       "gis_acre": 25713.6298394,
+       "linktowebp": "https://dlnr.hawaii.gov/ecosystems/nars/hawaii-island/manuka-2/",
+       "linktoadmi": "https://files.hawaii.gov/dlnr/dofaw/rules/Chap208.pdf",
+       "linktoad_1": "https://dlnr.hawaii.gov/dofaw/files/2013/09/HAR-13-209-Activities-within-Natural-Area-Reserves-amended-September-18-2017.pdf",
+       "linktoad_2": "https://files.hawaii.gov/dlnr/dofaw/rules/Chap210.pdf",
+       "xname": "Manuka Natural Area Reserve",
+       "tlabel": "Manukā Natural Area Reserve"
+      }
+     },
+     {
+      "layer": "1 Reserves",
+      "point": [
+       19.105,
+       -155.819
+      ],
+      "attrs": {
+       "type": "sw",
+       "type_defin": "State Wayside",
+       "name": "MANUKA STATE WAYSIDE",
+       "managedby": "DOSP",
+       "island": "Hawaii",
+       "gis_acre": 13.72967229,
+       "xname": "Manuka State Wayside",
+       "tlabel": "Manukā State Wayside"
+      }
+     }
+    ]
+   },
+   {
+    "st": "HI",
+    "url": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
+    "note": "HI Hawaii State Parks (DLNR)",
+    "hits": [
+     {
+      "layer": "0 State Park Boundaries",
+      "point": [
+       21.9548,
+       -159.67
+      ],
+      "attrs": {
+       "FID": 49,
+       "TYPE": "srp",
+       "NAME": "WAIMEA STATE RECREATION PIER",
+       "MANAGEDBY": "DOSP",
+       "Island": "Kauai",
+       "GIS_Acre": 1.2291945499,
+       "Type_Defin": "State Recreation Pier",
+       "AREA": 1.22836
+      }
+     },
+     {
+      "layer": "0 State Park Boundaries",
+      "point": [
+       21.9548,
+       -159.67
+      ],
+      "attrs": {
+       "FID": 50,
+       "TYPE": "shp",
+       "NAME": "RUSSIAN FORT ELIZABETH STATE HISTORICAL PARK",
+       "MANAGEDBY": "DOSP",
+       "Island": "Kauai",
+       "GIS_Acre": 19.2350475602,
+       "Type_Defin": "State Historical Park",
+       "AREA": 19.22189
+      }
+     },
+     {
+      "layer": "0 State Park Boundaries",
+      "point": [
+       19.105,
+       -155.819
+      ],
+      "attrs": {
+       "FID": 60,
+       "TYPE": "sw",
+       "NAME": "MANUKA STATE WAYSIDE",
+       "MANAGEDBY": "DOSP",
+       "Island": "Hawaii",
+       "GIS_Acre": 13.7027778967,
+       "Type_Defin": "State Wayside",
+       "AREA": 13.72967
+      }
+     }
+    ]
+   },
+   {
+    "st": "HI",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "HI National Park Service (legal boundary)",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       21.9548,
+       -159.67
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       19.105,
+       -155.819
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       21.9548,
+       -159.67
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       19.105,
+       -155.819
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 48,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,273 @@
+{
+ "request": "requests/9-kp2-ar.json",
+ "id": "9-kp2-ar",
+ "chat": 9,
+ "kind": "probe",
+ "report": "kp2 AR: 2 parks, 6 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "kp2 AR: 2 parks, 6 layers",
+  "probe": {
+   "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State AR: 2 parks. Refs in order of points: US-7277,US-7356. Results to chat 11.",
+   "refs": [
+    "US-7277",
+    "US-7356"
+   ],
+   "pointq": [
+    {
+     "st": "AR",
+     "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+     "note": "AR Arkansas Natural Heritage Commission",
+     "points": [
+      [
+       33.04,
+       -91.937
+      ],
+      [
+       34.724,
+       -90.724
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "AR",
+     "url": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+     "note": "AR Arkansas State Parks",
+     "points": [
+      [
+       33.04,
+       -91.937
+      ],
+      [
+       34.724,
+       -90.724
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "AR",
+     "url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11",
+     "note": "AR Arkansas Game and Fish Commission (AGOL ",
+     "points": [
+      [
+       33.04,
+       -91.937
+      ],
+      [
+       34.724,
+       -90.724
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       33.04,
+       -91.937
+      ],
+      [
+       34.724,
+       -90.724
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       33.04,
+       -91.937
+      ],
+      [
+       34.724,
+       -90.724
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       33.04,
+       -91.937
+      ],
+      [
+       34.724,
+       -90.724
+      ]
+     ],
+     "dist": 3000
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-29 23:26Z",
+ "results": {
+  "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State AR: 2 parks. Refs in order of points: US-7277,US-7356. Results to chat 11.",
+  "date": "2026-10-29",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "AR",
+    "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+    "note": "AR Arkansas Natural Heritage Commission",
+    "hits": [
+     {
+      "layer": "21 NHC_NATURAL_AREAS",
+      "point": [
+       33.04,
+       -91.937
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 NHC_NATURAL_AREAS",
+      "point": [
+       34.724,
+       -90.724
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "AR",
+    "url": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+    "note": "AR Arkansas State Parks",
+    "hits": [
+     {
+      "layer": "0 StateParks",
+      "point": [
+       33.04,
+       -91.937
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 StateParks",
+      "point": [
+       34.724,
+       -90.724
+      ],
+      "attrs": {
+       "fid": 49,
+       "boundary": "State Park",
+       "park_num": "PT69",
+       "name": "Mississippi River State Park",
+       "acres": 557.61401704
+      }
+     }
+    ]
+   },
+   {
+    "st": "AR",
+    "url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11",
+    "note": "AR Arkansas Game and Fish Commission (AGOL ",
+    "hits": [
+     {
+      "layer": "11 lakes",
+      "point": [
+       33.04,
+       -91.937
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 lakes",
+      "point": [
+       34.724,
+       -90.724
+      ],
+      "attrs": {
+       "fisheries_name": "Bear Creek Lake"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.04,
+       -91.937
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.724,
+       -90.724
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.04,
+       -91.937
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.724,
+       -90.724
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 40,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

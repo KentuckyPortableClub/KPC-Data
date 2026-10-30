@@ -1,0 +1,277 @@
+{
+ "request": "requests/8-parcel-wv.json",
+ "id": "8-parcel-wv",
+ "chat": 8,
+ "kind": "parcel",
+ "report": "P-3 WV: owner/parcel at each open park's pin; statewide parcel layer guess.",
+ "asked": {
+  "chat": 8,
+  "kind": "parcel",
+  "report": "P-3 WV: owner/parcel at each open park's pin; statewide parcel layer guess.",
+  "layer": "https://services.wvgis.wvu.edu/arcgis/rest/services/Planning_Cadastre/WV_Parcels/MapServer/0",
+  "fields": "*",
+  "refs": [
+   "US-12052",
+   "US-12053",
+   "US-12054",
+   "US-12055",
+   "US-9739",
+   "US-9915"
+  ],
+  "points": [
+   [
+    38.9097,
+    -79.7142
+   ],
+   [
+    38.2703,
+    -80.1056
+   ],
+   [
+    39.4636,
+    -78.3113
+   ],
+   [
+    38.9871,
+    -79.172
+   ],
+   [
+    38.2672,
+    -81.7948
+   ],
+   [
+    38.7952,
+    -81.6849
+   ]
+  ]
+ },
+ "answered": "2026-10-29 23:49Z",
+ "results": [
+  {
+   "point": [
+    38.9097,
+    -79.7142
+   ],
+   "owner": [
+    "STATE OF WEST VIRGINIA"
+   ],
+   "parcel_id": [
+    "0016"
+   ],
+   "features": [
+    {
+     "Map": "0107",
+     "Parcel": "0016",
+     "Suffix": "0000",
+     "Label": "107-16",
+     "CleanParcelID": "42020107001600000000",
+     "GISPID": "42-02-0107-0016-0000",
+     "ROOTID": "42-02- 107-0016-0000-0000",
+     "CODIST": "4202",
+     "Dist": "02",
+     "OBJECTID": 1133963,
+     "CountyID": "42",
+     "FullLegalDescription": "43.3 AC FISH HATCHERY",
+     "FullOwnerName": "STATE OF WEST VIRGINIA",
+     "FullOwnerAddress": "CHARLESTON, WV 25301",
+     "FullPhysicalAddress": "BOWDEN",
+     "IAS_LEGAL": "43.3 AC FISH HATCHERY                                         ",
+     "OWNER1": "STATE OF WEST VIRGINIA",
+     "OWNER2": null,
+     "COUNTY": "42",
+     "CALC_ACRE": 36.76129362
+    }
+   ]
+  },
+  {
+   "point": [
+    38.2703,
+    -80.1056
+   ],
+   "owner": [
+    "STATE OF WEST VIRGINIA DEPT OF NATURAL RESOURCES"
+   ],
+   "parcel_id": [
+    "0022"
+   ],
+   "features": [
+    {
+     "Map": "0051",
+     "Parcel": "0022",
+     "Suffix": "0000",
+     "Label": "51-22",
+     "CleanParcelID": "38030051002200000000",
+     "GISPID": "38-03-0051-0022-0000",
+     "ROOTID": "38-03-  51-0022-0000-0000",
+     "CODIST": "3803",
+     "Dist": "03",
+     "OBJECTID": 990231,
+     "CountyID": "38",
+     "FullLegalDescription": "STONEY CREEK 3 AC",
+     "FullOwnerName": "STATE OF WEST VIRGINIA DEPT OF NATURAL RESOURCES",
+     "FullOwnerAddress": "1900 KANAWHA BLVD E BLDG 3 RM, CHARLESTON, WV 25305",
+     "FullPhysicalAddress": "753 WOODROW RD",
+     "IAS_LEGAL": "STONEY CREEK 3 AC ",
+     "OWNER1": "STATE OF WEST VIRGINIA",
+     "OWNER2": null,
+     "COUNTY": "38",
+     "CALC_ACRE": 4.23998968
+    }
+   ]
+  },
+  {
+   "point": [
+    39.4636,
+    -78.3113
+   ],
+   "owner": [
+    "WEST VIRGINIA FISH HATCHERY"
+   ],
+   "parcel_id": [
+    "0014"
+   ],
+   "features": [
+    {
+     "Map": "0011",
+     "Parcel": "0014",
+     "Suffix": "0000",
+     "Label": "11-14",
+     "CleanParcelID": "33080011001400000000",
+     "GISPID": "33-08-0011-0014-0000",
+     "ROOTID": "33-08-  11-0014-0000-0000",
+     "CODIST": "3308",
+     "Dist": "08",
+     "OBJECTID": 918437,
+     "CountyID": "33",
+     "FullLegalDescription": "RIDGE 29.5 AC EXEMPT",
+     "FullOwnerName": "WEST VIRGINIA FISH HATCHERY",
+     "FullOwnerAddress": "RT 522, BERKELEY SPRINGS, WV 25411",
+     "FullPhysicalAddress": "12051 VALLEY RD",
+     "IAS_LEGAL": "RIDGE 29.5 AC EXEMPT ",
+     "OWNER1": "WEST VIRGINIA FISH HATCHERY",
+     "OWNER2": null,
+     "COUNTY": "33",
+     "CALC_ACRE": 30.96935716
+    }
+   ]
+  },
+  {
+   "point": [
+    38.9871,
+    -79.172
+   ],
+   "owner": [
+    "WV STATE DEPT OF NATURAL RESOURCES"
+   ],
+   "parcel_id": [
+    "0022"
+   ],
+   "features": [
+    {
+     "Map": "0448",
+     "Parcel": "0022",
+     "Suffix": "0003",
+     "Label": "448-22.3",
+     "CleanParcelID": "12030448002200030000",
+     "GISPID": "12-03-0448-0022-0003",
+     "ROOTID": "12-03- 448-0022-0003-0000",
+     "CODIST": "1203",
+     "Dist": "03",
+     "OBJECTID": 251861,
+     "CountyID": "12",
+     "FullLegalDescription": "9 AC SHOBE LAND",
+     "FullOwnerName": "WV STATE DEPT OF NATURAL RESOURCES",
+     "FullOwnerAddress": "1 DEPOT ST, ROMNEY, WV 26757",
+     "FullPhysicalAddress": "OFF JOHNSON RUN RD",
+     "IAS_LEGAL": "9 AC                           SHOBE LAND                     ",
+     "OWNER1": "WV STATE DEPT OF NATURAL",
+     "OWNER2": null,
+     "COUNTY": "12",
+     "CALC_ACRE": 9.35476411
+    }
+   ]
+  },
+  {
+   "point": [
+    38.2672,
+    -81.7948
+   ],
+   "owner": [
+    "WEST VIRGINIA DIVSISION OF NATURAL RESOURCES"
+   ],
+   "parcel_id": [
+    "0064"
+   ],
+   "features": [
+    {
+     "Map": "0015",
+     "Parcel": "0064",
+     "Suffix": "0001",
+     "Label": "15-64.1",
+     "CleanParcelID": "20280015006400010000",
+     "GISPID": "20-28-0015-0064-0001",
+     "ROOTID": "20-28-  15-0064-0001-0000",
+     "CODIST": "2028",
+     "Dist": "28",
+     "OBJECTID": 568375,
+     "CountyID": "20",
+     "FullLegalDescription": "25-22/100A TRACT 2 FORKS OF COAL RIVER",
+     "FullOwnerName": "WEST VIRGINIA DIVSISION OF NATURAL RESOURCES",
+     "FullOwnerAddress": "BUILDING 74, 324 FOURTH AVE BUILDING 74, SOUTH CHARLESTON, WV 25303",
+     "FullPhysicalAddress": "ALUM CRK",
+     "IAS_LEGAL": "25-22/100A TRACT 2 FORKS OF    COAL RIVER                     ",
+     "OWNER1": "WEST VIRGINIA DIVSISION",
+     "OWNER2": null,
+     "COUNTY": "20",
+     "CALC_ACRE": 23.41939672
+    }
+   ]
+  },
+  {
+   "point": [
+    38.7952,
+    -81.6849
+   ],
+   "owner": [
+    "F F A & F H A CAMP"
+   ],
+   "parcel_id": [
+    "0057"
+   ],
+   "features": [
+    {
+     "Map": "0018",
+     "Parcel": "0057",
+     "Suffix": "0000",
+     "Label": "18-57",
+     "CleanParcelID": "18040018005700000000",
+     "GISPID": "18-04-0018-0057-0000",
+     "ROOTID": "18-04-  18-0057-0000-0000",
+     "CODIST": "1804",
+     "Dist": "04",
+     "OBJECTID": 410444,
+     "CountyID": "18",
+     "FullLegalDescription": "237 3/8 AC M CREEK (NON-TAX) \"CEDAR LAKES\" COFERENCE CENTER DURST OIL & GAS INC",
+     "FullOwnerName": "F F A & F H A CAMP",
+     "FullOwnerAddress": "82 FFA DR, RIPLEY, WV 25271",
+     "FullPhysicalAddress": "82 FFA DR RIPLEY 25271",
+     "IAS_LEGAL": "237 3/8 AC M CREEK (NON-TAX) \"CEDAR LAKES\" COFERENCE CENTER DURST OIL & GAS INC",
+     "OWNER1": "F F A & F H A CAMP",
+     "OWNER2": null,
+     "COUNTY": "18",
+     "CALC_ACRE": 243.84037923
+    }
+   ]
+  }
+ ],
+ "seconds": 10,
+ "manners": {
+  "requests": 6,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 6
+ },
+ "short": "6 result(s), 6 read OK"
+}

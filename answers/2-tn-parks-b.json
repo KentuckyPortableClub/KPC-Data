@@ -1,0 +1,75 @@
+{
+ "request": "requests/2-tn-parks-b.json",
+ "id": "2-tn-parks-b",
+ "chat": 2,
+ "kind": "layer-probe",
+ "report": "Tennessee State Park Boundaries (Public View): layer 0 does not exist; list the service's layers (ids, names, geometry, fields incl. the park-name field, record counts).",
+ "asked": {
+  "chat": 2,
+  "kind": "layer-probe",
+  "report": "Tennessee State Park Boundaries (Public View): layer 0 does not exist; list the service's layers (ids, names, geometry, fields incl. the park-name field, record counts).",
+  "layers": [
+   "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/State_Park_Boundaries_Primary_March_2024_view2/FeatureServer"
+  ]
+ },
+ "answered": "2026-10-29 22:13Z",
+ "results": [
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/State_Park_Boundaries_Primary_March_2024_view2/FeatureServer",
+   "answers": true,
+   "service": "",
+   "licence": "",
+   "years_in_text": [],
+   "description": "",
+   "item_licence": "",
+   "item_modified": "2026-10-27",
+   "item_owner": "TDEC_Bureau_of_Conservation",
+   "item_org": "TN Dept of Environment and Conservation",
+   "item_title": "Tennessee State Park Boundaries (Public View)",
+   "item_credits": "",
+   "item_about": "Overview This feature service provides boundary polygons for Tennessee state parks. It supports display, reference, and analysis of park extents across the state of Tennessee. Feature Layers State Park Boundaries A polygon layer representing the primary named boundaries of Tennessee state parks. The layer includes a park identifier, the park name, and supporting geometry fields used for spatial analysis and cartographic display. Parks with more than one site are dissolved into one single multi-part polygon. Geographic Coverage The service covers Tennessee and supports statewide park boundary m",
+   "layers": [
+    {
+     "id": 331,
+     "name": "State Park Boundaries Primary",
+     "geom": "Polygon",
+     "nameField": "PRIMARY_NAME__LONG_",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "TSP_UID",
+      "PRIMARY_NAME__LONG_",
+      "GlobalID",
+      "Website_URL"
+     ],
+     "last_edit": "2026-10-29",
+     "layer_copyright": "Tennessee Department of Environment and Conservation",
+     "records": 70,
+     "sample": [
+      "Chickasaw State Park",
+      "Cordell Hull Birthplace State Park",
+      "Cove Lake State Park",
+      "David Crockett Birthplace State Park",
+      "David Crockett State Park",
+      "Dunbar Cave State Park",
+      "Edgar Evins State Park",
+      "Fort Loudoun State Historic Park"
+     ]
+    }
+   ]
+  }
+ ],
+ "seconds": 7,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

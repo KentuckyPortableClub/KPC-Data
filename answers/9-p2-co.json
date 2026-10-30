@@ -1,0 +1,364 @@
+{
+ "request": "requests/9-p2-co.json",
+ "id": "9-p2-co",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 CO: 2 parks, 8 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 CO: 2 parks, 8 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State CO: 2 parks. Refs in order of points: US-10540,US-9652. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-10540",
+    "US-9652"
+   ],
+   "pointq": [
+    {
+     "st": "CO",
+     "url": "https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/30",
+     "note": "CO Colorado Parks & Wildlife",
+     "points": [
+      [
+       40.6322,
+       -105.17
+      ],
+      [
+       38.0245,
+       -102.196
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "CO",
+     "url": "https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41",
+     "note": "CO Colorado Parks & Wildlife",
+     "points": [
+      [
+       40.6322,
+       -105.17
+      ],
+      [
+       38.0245,
+       -102.196
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "CO",
+     "url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5",
+     "note": "CO Colorado Parks & Wildlife (CPW AGOL org ",
+     "points": [
+      [
+       40.6322,
+       -105.17
+      ],
+      [
+       38.0245,
+       -102.196
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "CO",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "CO National Park Service (legal boundary)",
+     "points": [
+      [
+       40.6322,
+       -105.17
+      ],
+      [
+       38.0245,
+       -102.196
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "CO",
+     "url": "https://gisdnr.state.co.us/arcgis/rest/services/ECMC_Public/High_Priority_Habitat_2026/MapServer/9",
+     "note": "CO Colorado Parks and Wildlife (credit: CPW",
+     "points": [
+      [
+       40.6322,
+       -105.17
+      ],
+      [
+       38.0245,
+       -102.196
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       40.6322,
+       -105.17
+      ],
+      [
+       38.0245,
+       -102.196
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       40.6322,
+       -105.17
+      ],
+      [
+       38.0245,
+       -102.196
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       40.6322,
+       -105.17
+      ],
+      [
+       38.0245,
+       -102.196
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-29 23:58Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State CO: 2 parks. Refs in order of points: US-10540,US-9652. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-29",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "CO",
+    "url": "https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/30",
+    "note": "CO Colorado Parks & Wildlife",
+    "hits": [
+     {
+      "layer": "30 State Wildlife Areas",
+      "point": [
+       40.6322,
+       -105.17
+      ],
+      "attrs": {
+       "PropName": "Watson Lake SWA",
+       "PropType": "SWA",
+       "Acres": 153.42418571,
+       "LastUpdate": "Generated from CPWParcels on 02/06/2024"
+      }
+     },
+     {
+      "layer": "30 State Wildlife Areas",
+      "point": [
+       38.0245,
+       -102.196
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "CO",
+    "url": "https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/41",
+    "note": "CO Colorado Parks & Wildlife",
+    "hits": [
+     {
+      "layer": "41 State Parks",
+      "point": [
+       40.6322,
+       -105.17
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "41 State Parks",
+      "point": [
+       38.0245,
+       -102.196
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "CO",
+    "url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5",
+    "note": "CO Colorado Parks & Wildlife (CPW AGOL org ",
+    "hits": [
+     {
+      "layer": "5 CPW Managed Properties (public access only)",
+      "point": [
+       40.6322,
+       -105.17
+      ],
+      "attrs": {
+       "FID": 882,
+       "PropName": "Watson Lake SWA",
+       "PropType": "SWA",
+       "Acres": 148.63448562,
+       "LastUpdate": "Generated from CPWParcels on 08/27/2026",
+       "CPW_URL": "https://cpw.state.co.us/state-wildlife-areas/watson-lake-swa"
+      }
+     },
+     {
+      "layer": "5 CPW Managed Properties (public access only)",
+      "point": [
+       40.6322,
+       -105.17
+      ],
+      "attrs": {
+       "FID": 881,
+       "PropName": "Watson Lake SFU",
+       "PropType": "SFU",
+       "Acres": 11.66697326,
+       "LastUpdate": "Generated from CPWParcels on 08/27/2026",
+       "CPW_URL": "https://cpw.state.co.us/hatchery/bellvue-watson"
+      }
+     },
+     {
+      "layer": "5 CPW Managed Properties (public access only)",
+      "point": [
+       38.0245,
+       -102.196
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "CO",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "CO National Park Service (legal boundary)",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   },
+   {
+    "st": "CO",
+    "url": "https://gisdnr.state.co.us/arcgis/rest/services/ECMC_Public/High_Priority_Habitat_2026/MapServer/9",
+    "note": "CO Colorado Parks and Wildlife (credit: CPW",
+    "hits": [
+     {
+      "layer": "9 CPW State Wildlife Areas And State Parks - 2026",
+      "point": [
+       40.6322,
+       -105.17
+      ],
+      "attrs": {
+       "PropName": "Watson Lake SWA",
+       "PropType": "SWA",
+       "UpdateComments": "Captured on 12/10/2025",
+       "BufferDistance": "No buffer",
+       "Species_Activity": "CPW State Wildlife Areas and Parks"
+      }
+     },
+     {
+      "layer": "9 CPW State Wildlife Areas And State Parks - 2026",
+      "point": [
+       38.0245,
+       -102.196
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       40.6322,
+       -105.17
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       38.0245,
+       -102.196
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       40.6322,
+       -105.17
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       38.0245,
+       -102.196
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 71,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,163 @@
+{
+ "request": "requests/8-parcel-or.json",
+ "id": "8-parcel-or",
+ "chat": 8,
+ "kind": "parcel",
+ "report": "P-3 OR: owner/parcel at each open park's pin; statewide parcel layer guess.",
+ "asked": {
+  "chat": 8,
+  "kind": "parcel",
+  "report": "P-3 OR: owner/parcel at each open park's pin; statewide parcel layer guess.",
+  "layer": "https://services8.arcgis.com/8PAo5HGmvRMlF2eU/arcgis/rest/services/Oregon_Statewide_Tax_Lots/FeatureServer/0",
+  "fields": "*",
+  "refs": [
+   "US-12986",
+   "US-13096",
+   "US-13097",
+   "US-10610",
+   "US-10613",
+   "US-12977",
+   "US-12980",
+   "US-12990",
+   "US-12993",
+   "US-12994",
+   "US-13070"
+  ],
+  "points": [
+   [
+    44.4206,
+    -123.563
+   ],
+   [
+    44.2443,
+    -124.112
+   ],
+   [
+    44.2539,
+    -124.112
+   ],
+   [
+    44.4151,
+    -122.676
+   ],
+   [
+    42.6626,
+    -122.685
+   ],
+   [
+    45.0172,
+    -123.937
+   ],
+   [
+    45.4321,
+    -123.725
+   ],
+   [
+    43.3364,
+    -123.001
+   ],
+   [
+    42.7381,
+    -124.402
+   ],
+   [
+    46.0899,
+    -123.718
+   ],
+   [
+    43.4248,
+    -117.346
+   ]
+  ]
+ },
+ "answered": "2026-10-29 23:47Z",
+ "results": [
+  {
+   "point": [
+    44.4206,
+    -123.563
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    44.2443,
+    -124.112
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    44.2539,
+    -124.112
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    44.4151,
+    -122.676
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    42.6626,
+    -122.685
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    45.0172,
+    -123.937
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    45.4321,
+    -123.725
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    43.3364,
+    -123.001
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    42.7381,
+    -124.402
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    46.0899,
+    -123.718
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    43.4248,
+    -117.346
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  }
+ ],
+ "seconds": 20,
+ "manners": {
+  "requests": 11,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 11
+ },
+ "short": "11 result(s), 0 read OK"
+}

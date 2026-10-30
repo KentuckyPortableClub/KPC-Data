@@ -1,0 +1,1245 @@
+{
+ "request": "requests/9-kp2-wa.json",
+ "id": "9-kp2-wa",
+ "chat": 9,
+ "kind": "probe",
+ "report": "kp2 WA: 2 parks, 9 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "kp2 WA: 2 parks, 9 layers",
+  "probe": {
+   "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State WA: 2 parks. Refs in order of points: US-0694,US-12551. Results to chat 11.",
+   "refs": [
+    "US-0694",
+    "US-12551"
+   ],
+   "pointq": [
+    {
+     "st": "WA",
+     "url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkBoundaries/FeatureServer/2",
+     "note": "WA Washington State Parks",
+     "points": [
+      [
+       48.205,
+       -122.706
+      ],
+      [
+       48.5477,
+       -122.487
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "WA",
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+     "note": "WA Washington Department of Fish and Wildli",
+     "points": [
+      [
+       48.205,
+       -122.706
+      ],
+      [
+       48.5477,
+       -122.487
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "WA",
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+     "note": "WA Washington State Department of Natural R",
+     "points": [
+      [
+       48.205,
+       -122.706
+      ],
+      [
+       48.5477,
+       -122.487
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "WA",
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
+     "note": "WA Washington State Department of Natural R",
+     "points": [
+      [
+       48.205,
+       -122.706
+      ],
+      [
+       48.5477,
+       -122.487
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "WA",
+     "url": "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/NHD/FeatureServer/6",
+     "note": "WA Washington State Department of Ecology (",
+     "points": [
+      [
+       48.205,
+       -122.706
+      ],
+      [
+       48.5477,
+       -122.487
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "WA",
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/FeatureServer/0",
+     "note": "WA Washington Dept. of Fish and Wildlife (c",
+     "points": [
+      [
+       48.205,
+       -122.706
+      ],
+      [
+       48.5477,
+       -122.487
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       48.205,
+       -122.706
+      ],
+      [
+       48.5477,
+       -122.487
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       48.205,
+       -122.706
+      ],
+      [
+       48.5477,
+       -122.487
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       48.205,
+       -122.706
+      ],
+      [
+       48.5477,
+       -122.487
+      ]
+     ],
+     "dist": 3000
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-29 23:52Z",
+ "results": {
+  "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State WA: 2 parks. Refs in order of points: US-0694,US-12551. Results to chat 11.",
+  "date": "2026-10-29",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "WA",
+    "url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkBoundaries/FeatureServer/2",
+    "note": "WA Washington State Parks",
+    "hits": [
+     {
+      "layer": "2 WA State Park Park Boundaries",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "ParkName": "Fort Ebey",
+       "Category": "State Park",
+       "ParkCode": 53500,
+       "WebPage": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park",
+       "Description": "Fort Ebey State Park, a 651-acre camping park on Whidbey Island, was originally built as a coastal defense fort in World War II. ",
+       "Imagelink": "https://parks.wa.gov/sites/default/files/2023-05/Fort_Ebey-Beach-5-31-23.jpg",
+       "Lat_Entrance": 48.22462,
+       "Long_Entrance": -122.7584,
+       "PublicRoadAccess": "Yes",
+       "ParkMgmntArea": "Central Whidbey",
+       "ParkSubRegion": "Northwest North",
+       "ParkRegion": "Northwest",
+       "SubRegionManager": "Ciera Strickland",
+       "Abbrv": "FOEB",
+       "Acres": 712.4343110940808,
+       "LABEL_LOCAL": "Fort Ebey State Park"
+      }
+     },
+     {
+      "layer": "2 WA State Park Park Boundaries",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "ParkName": "Ebey's Landing",
+       "Category": "State Park Heritage Site",
+       "ParkCode": 53001,
+       "Lat_Entrance": 48.19225,
+       "Long_Entrance": -122.7082,
+       "PublicRoadAccess": "Yes",
+       "ParkMgmntArea": "Central Whidbey",
+       "ParkSubRegion": "Northwest North",
+       "ParkRegion": "Northwest",
+       "SubRegionManager": "Ciera Strickland",
+       "Abbrv": "EBLA",
+       "Acres": 45.52065957955791,
+       "LABEL_LOCAL": "Ebey's Landing State Park Heritage Site"
+      }
+     },
+     {
+      "layer": "2 WA State Park Park Boundaries",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "ParkName": "Fort Worden",
+       "Category": "Historical State Park",
+       "ParkCode": 39000,
+       "WebPage": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park",
+       "Description": "Fort Worden Historical State Park is a 432-acre multi-use park with over two miles of saltwater shoreline and a wide variety of services and facilities. The park rests on a high bluff overlooking Puget Sound.",
+       "Imagelink": "https://parks.wa.gov/sites/default/files/2023-10/IMG_9057.JPG",
+       "Lat_Entrance": 48.13243,
+       "Long_Entrance": -122.769,
+       "PublicRoadAccess": "Yes",
+       "ParkMgmntArea": "Olympic View",
+       "ParkSubRegion": "Southwest North",
+       "ParkRegion": "Southwest",
+       "SubRegionManager": "Darrel Hopkins",
+       "Abbrv": "FOWO",
+       "Acres": 432.0943578219289,
+       "LABEL_LOCAL": "Fort Worden Historical State Park"
+      }
+     },
+     {
+      "layer": "2 WA State Park Park Boundaries",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "ParkName": "Fort Casey",
+       "Category": "Historical State Park",
+       "ParkCode": 53000,
+       "WebPage": "https://parks.wa.gov/find-parks/state-parks/fort-casey-historical-state-park",
+       "Description": "Fort Casey Historical State Park is a 999-acre marine camping park with a lighthouse and sweeping views of Admiralty Inlet and the Strait of Juan de Fuca",
+       "Imagelink": "https://parks.wa.gov/sites/default/files/2023-03/Fort%20Casey_Gun%20Battery%20Back%20Side.PNG",
+       "Lat_Entrance": 48.16506,
+       "Long_Entrance": -122.6375,
+       "PublicRoadAccess": "Yes",
+       "ParkMgmntArea": "Central Whidbey",
+       "ParkSubRegion": "Northwest North",
+       "ParkRegion": "Northwest",
+       "SubRegionManager": "Ciera Strickland",
+       "Abbrv": "FOCA",
+       "Acres": 1000.3355874148602,
+       "LABEL_LOCAL": "Fort Casey Historical State Park"
+      }
+     },
+     {
+      "layer": "2 WA State Park Park Boundaries",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "ParkName": "Saddlebag Island",
+       "Category": "Marine State Park",
+       "ParkCode": 57011,
+       "WebPage": "https://parks.wa.gov/find-parks/state-parks/saddlebag-island-marine-state-park",
+       "Imagelink": "https://parks.wa.gov/sites/default/files/2023-05/Saddlebag%20Island%20boaters%20and%20people%20playing%20in%20water%2C%20onshore.jpg",
+       "Lat_Entrance": 48.53518,
+       "Long_Entrance": -122.5558,
+       "PublicRoadAccess": "No",
+       "ParkMgmntArea": "San Juan",
+       "ParkSubRegion": "Northwest North",
+       "ParkRegion": "Northwest",
+       "SubRegionManager": "Ciera Strickland",
+       "Abbrv": "SAIS",
+       "Acres": 25.49744670096628,
+       "LABEL_LOCAL": "Saddlebag Island Marine State Park"
+      }
+     },
+     {
+      "layer": "2 WA State Park Park Boundaries",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "ParkName": "Bay View",
+       "Category": "State Park",
+       "ParkCode": 54001,
+       "WebPage": "https://parks.wa.gov/find-parks/state-parks/bay-view-state-park",
+       "Description": "Bay View State Park is a 66-acre camping park with 1,285-feet of saltwater shoreline on Padilla Bay.",
+       "Imagelink": "https://parks.wa.gov/sites/default/files/2023-06/BayView_Kite.jpg",
+       "Lat_Entrance": 48.48759,
+       "Long_Entrance": -122.4802,
+       "PublicRoadAccess": "Yes",
+       "ParkMgmntArea": "Salish Foothills",
+       "ParkSubRegion": "Northwest South",
+       "ParkRegion": "Northwest",
+       "SubRegionManager": "Stephanie Simek",
+       "Abbrv": "BAVI",
+       "Acres": 66.25817064195782,
+       "LABEL_LOCAL": "Bay View State Park"
+      }
+     }
+    ]
+   },
+   {
+    "st": "WA",
+    "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+    "note": "WA Washington Department of Fish and Wildli",
+    "hits": [
+     {
+      "layer": "0 Boundaries",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "ManagedPlaceOID": 537,
+       "ManagedPlaceName": "Mueller Park",
+       "PlaceTypeID": 3,
+       "PlaceTypeName": "Access Area",
+       "Region": "Region 4 - North Puget Sound",
+       "ParkingLots": 1,
+       "Buildings": 0,
+       "HasOffice": "No",
+       "HasADAOffice": "N/A",
+       "HasRegionalHQ": "No",
+       "HasADARegionalHQ": "N/A",
+       "HasVisitorCenter": "No",
+       "HasADAVisitorCenter": "N/A",
+       "Restrooms": 0,
+       "ADARestrooms": 0,
+       "BoatRamps": 0,
+       "BoatRampSurfaceTypes": "N/A",
+       "HandLaunches": 0,
+       "HasBoatRampWithADALoadingPlatform": "N/A",
+       "HasBoatRampWithBoardingFloat": "N/A",
+       "HasBoatRampWithADABoardingFloat": "N/A",
+       "FishingPlatforms": 0,
+       "SignsOrKiosks": 0,
+       "HuntingBlinds": 0,
+       "ADAHuntingBlinds": 0,
+       "Campgrounds": 0,
+       "Trailheads": 0,
+       "Viewpoints": 0,
+       "ADAViewpoints": 0,
+       "ShootingRanges": 0,
+       "ADAShootingRanges": 0,
+       "WaterCrossings": 0,
+       "IsWaterAccessSite": "Yes"
+      }
+     },
+     {
+      "layer": "0 Boundaries",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "ManagedPlaceOID": 1426,
+       "ManagedPlaceName": "Samish",
+       "PlaceTypeID": 2,
+       "PlaceTypeName": "Wildlife Area Unit",
+       "Region": "Region 4 - North Puget Sound",
+       "MilesOfRoadsAndTrails": 3.22,
+       "ParkingLots": 1,
+       "ADAParkingStalls": 0,
+       "Buildings": 0,
+       "HasOffice": "No",
+       "HasADAOffice": "N/A",
+       "HasRegionalHQ": "No",
+       "HasADARegionalHQ": "N/A",
+       "HasVisitorCenter": "No",
+       "HasADAVisitorCenter": "N/A",
+       "Restrooms": 0,
+       "ADARestrooms": 0,
+       "BoatRamps": 0,
+       "BoatRampSurfaceTypes": "N/A",
+       "HandLaunches": 0,
+       "HasBoatRampWithADALoadingPlatform": "N/A",
+       "HasBoatRampWithBoardingFloat": "N/A",
+       "HasBoatRampWithADABoardingFloat": "N/A",
+       "FishingPlatforms": 0,
+       "SignsOrKiosks": 3,
+       "HuntingBlinds": 0,
+       "ADAHuntingBlinds": 0,
+       "Campgrounds": 0,
+       "Trailheads": 0,
+       "Viewpoints": 0,
+       "ADAViewpoints": 0,
+       "ShootingRanges": 0,
+       "ADAShootingRanges": 0,
+       "WaterCrossings": 0,
+       "IsWaterAccessSite": "No"
+      }
+     },
+     {
+      "layer": "0 Boundaries",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "ManagedPlaceOID": 1510,
+       "ManagedPlaceName": "Samish River",
+       "PlaceTypeID": 2,
+       "PlaceTypeName": "Wildlife Area Unit",
+       "Region": "Region 4 - North Puget Sound",
+       "MilesOfRoadsAndTrails": 0.83,
+       "ParkingLots": 1,
+       "ADAParkingStalls": 0,
+       "Buildings": 0,
+       "HasOffice": "No",
+       "HasADAOffice": "N/A",
+       "HasRegionalHQ": "No",
+       "HasADARegionalHQ": "N/A",
+       "HasVisitorCenter": "No",
+       "HasADAVisitorCenter": "N/A",
+       "Restrooms": 0,
+       "ADARestrooms": 0,
+       "BoatRamps": 0,
+       "BoatRampSurfaceTypes": "N/A",
+       "HandLaunches": 0,
+       "HasBoatRampWithADALoadingPlatform": "N/A",
+       "HasBoatRampWithBoardingFloat": "N/A",
+       "HasBoatRampWithADABoardingFloat": "N/A",
+       "FishingPlatforms": 0,
+       "SignsOrKiosks": 1,
+       "HuntingBlinds": 0,
+       "ADAHuntingBlinds": 0,
+       "Campgrounds": 0,
+       "Trailheads": 0,
+       "Viewpoints": 0,
+       "ADAViewpoints": 0,
+       "ShootingRanges": 0,
+       "ADAShootingRanges": 0,
+       "WaterCrossings": 0,
+       "IsWaterAccessSite": "No"
+      }
+     },
+     {
+      "layer": "0 Boundaries",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "ManagedPlaceOID": 183,
+       "ManagedPlaceName": "Skagit",
+       "PlaceTypeID": 1,
+       "PlaceTypeName": "Wildlife Area",
+       "Region": "Region 4 - North Puget Sound",
+       "MilesOfRoadsAndTrails": 23.63,
+       "ParkingLots": 15,
+       "ADAParkingStalls": 1,
+       "Buildings": 5,
+       "HasOffice": "Yes",
+       "HasADAOffice": "No",
+       "HasRegionalHQ": "No",
+       "HasADARegionalHQ": "N/A",
+       "HasVisitorCenter": "Yes",
+       "HasADAVisitorCenter": "No",
+       "Restrooms": 3,
+       "ADARestrooms": 1,
+       "BoatRamps": 2,
+       "BoatRampSurfaceTypes": "Concrete",
+       "HandLaunches": 3,
+       "HasBoatRampWithADALoadingPlatform": "No",
+       "HasBoatRampWithBoardingFloat": "No",
+       "HasBoatRampWithADABoardingFloat": "N/A",
+       "FishingPlatforms": 0,
+       "SignsOrKiosks": 17,
+       "HuntingBlinds": 0,
+       "ADAHuntingBlinds": 0,
+       "Campgrounds": 0,
+       "Trailheads": 0,
+       "Viewpoints": 0,
+       "ADAViewpoints": 0,
+       "ShootingRanges": 0,
+       "ADAShootingRanges": 0,
+       "WaterCrossings": 0,
+       "IsWaterAccessSite": "No"
+      }
+     }
+    ]
+   },
+   {
+    "st": "WA",
+    "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+    "note": "WA Washington State Department of Natural R",
+    "hits": [
+     {
+      "layer": "6 DNR Managed Land Parcels",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "PARCEL_SYST_ID": 1344,
+       "PARCEL_TYPE_CD": 1,
+       "REVERSION_RIGHTS_FLG": "N",
+       "OWN_RIGHT_DISPUTE_FLG": "N",
+       "SURFACE_RIGHTS_FLG": "N",
+       "MINERAL_RIGHTS_FLG": "Y",
+       "TIMBER_RIGHTS_FLG": "N",
+       "SURFACE_TRUST_CD": 0,
+       "MINERAL_TRUST_CD": 3,
+       "TIMBER_TRUST_CD": 0,
+       "OWNER_AGENT_SYST_ID": 58706,
+       "STEWARD_AGENT_SYST_ID": 63986,
+       "MANAGER_AGENT_SYST_ID": 63986,
+       "COUNTY_JURISDICT_DESG_CD": 15,
+       "REGION_JURISDICT_DESG_CD": 1900,
+       "HCP_DESG_CD": 2,
+       "HCP_WITHDRAWAL_DT": 854611200000,
+       "EDIT_DATE": 1433875760000,
+       "EDIT_STATUS": 1,
+       "EDIT_WHO": "JDUG490",
+       "PARCEL_ACQUIRE_AUTH_NO": "CLEAR LIST 1 INDEMNITY"
+      }
+     },
+     {
+      "layer": "6 DNR Managed Land Parcels",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "PARCEL_SYST_ID": 1343,
+       "PARCEL_TYPE_CD": 1,
+       "REVERSION_RIGHTS_FLG": "N",
+       "OWN_RIGHT_DISPUTE_FLG": "N",
+       "SURFACE_RIGHTS_FLG": "N",
+       "MINERAL_RIGHTS_FLG": "Y",
+       "TIMBER_RIGHTS_FLG": "N",
+       "SURFACE_TRUST_CD": 0,
+       "MINERAL_TRUST_CD": 7,
+       "TIMBER_TRUST_CD": 0,
+       "OWNER_AGENT_SYST_ID": 58706,
+       "STEWARD_AGENT_SYST_ID": 63986,
+       "MANAGER_AGENT_SYST_ID": 63986,
+       "COUNTY_JURISDICT_DESG_CD": 15,
+       "REGION_JURISDICT_DESG_CD": 1900,
+       "HCP_DESG_CD": 2,
+       "HCP_WITHDRAWAL_DT": 854611200000,
+       "EDIT_DATE": 1309330800000,
+       "EDIT_STATUS": 1,
+       "EDIT_WHO": "jdug490",
+       "PARCEL_ACQUIRE_AUTH_NO": "CLEAR LIST 1 INDEMNITY"
+      }
+     },
+     {
+      "layer": "6 DNR Managed Land Parcels",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "PARCEL_SYST_ID": 113166,
+       "PARCEL_TYPE_CD": 3,
+       "PARCEL_LABEL_NM": "Golden Paintbrush",
+       "PARCEL_NM": "Phase 1",
+       "REVERSION_RIGHTS_FLG": "N",
+       "OWN_RIGHT_DISPUTE_FLG": "N",
+       "SURFACE_RIGHTS_FLG": "N",
+       "MINERAL_RIGHTS_FLG": "N",
+       "TIMBER_RIGHTS_FLG": "N",
+       "OWNER_AGENT_SYST_ID": 58706,
+       "STEWARD_AGENT_SYST_ID": 63986,
+       "MANAGER_AGENT_SYST_ID": 63986,
+       "COUNTY_JURISDICT_DESG_CD": 15,
+       "REGION_JURISDICT_DESG_CD": 1900,
+       "HCP_DESG_CD": 2,
+       "EDIT_DATE": 1521073610000,
+       "EDIT_STATUS": 0,
+       "EDIT_WHO": "TSTE490",
+       "EASEMENT_TYPE_CD": 3,
+       "PARCEL_ACQUIRE_AUTH_NO": "58-078324"
+      }
+     },
+     {
+      "layer": "6 DNR Managed Land Parcels",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "PARCEL_SYST_ID": 1426,
+       "PARCEL_TYPE_CD": 1,
+       "REVERSION_RIGHTS_FLG": "N",
+       "OWN_RIGHT_DISPUTE_FLG": "N",
+       "SURFACE_RIGHTS_FLG": "N",
+       "MINERAL_RIGHTS_FLG": "Y",
+       "TIMBER_RIGHTS_FLG": "N",
+       "SURFACE_TRUST_CD": 0,
+       "MINERAL_TRUST_CD": 3,
+       "TIMBER_TRUST_CD": 0,
+       "OWNER_AGENT_SYST_ID": 58706,
+       "STEWARD_AGENT_SYST_ID": 63986,
+       "MANAGER_AGENT_SYST_ID": 63986,
+       "COUNTY_JURISDICT_DESG_CD": 29,
+       "REGION_JURISDICT_DESG_CD": 1900,
+       "HCP_DESG_CD": 2,
+       "HCP_WITHDRAWAL_DT": 854611200000,
+       "EDIT_DATE": 1309330800000,
+       "EDIT_STATUS": 0,
+       "EDIT_WHO": "jdug490",
+       "PARCEL_ACQUIRE_AUTH_NO": "US PATENT NO 46-70-0090"
+      }
+     }
+    ]
+   },
+   {
+    "st": "WA",
+    "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
+    "note": "WA Washington State Department of Natural R",
+    "hits": [
+     {
+      "layer": "1 Non-DNR Major Public Lands",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "NAME": "Saltwater Access Sites",
+       "OWNER": "State Government",
+       "MANAGER": "WA Dept of Fish and Wildlife",
+       "MANAGEMENT_TYPE": "Recreation"
+      }
+     },
+     {
+      "layer": "1 Non-DNR Major Public Lands",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "NAME": "Ebey's Landing State Park Heritage Site",
+       "OWNER": "State Government",
+       "MANAGER": "WA State Parks and Recreation Commission",
+       "MANAGEMENT_TYPE": "Park"
+      }
+     },
+     {
+      "layer": "1 Non-DNR Major Public Lands",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "NAME": "Ebey's Landing State Park Heritage Site",
+       "OWNER": "State Government",
+       "MANAGER": "WA State Parks and Recreation Commission",
+       "MANAGEMENT_TYPE": "Park"
+      }
+     },
+     {
+      "layer": "1 Non-DNR Major Public Lands",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "NAME": "Kettles Recreation Area",
+       "OWNER": "County Government",
+       "MANAGER": "County",
+       "MANAGEMENT_TYPE": "Park"
+      }
+     },
+     {
+      "layer": "1 Non-DNR Major Public Lands",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "NAME": "Fort Ebey State Park",
+       "OWNER": "State Government",
+       "MANAGER": "WA State Parks and Recreation Commission",
+       "MANAGEMENT_TYPE": "Park"
+      }
+     },
+     {
+      "layer": "1 Non-DNR Major Public Lands",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "NAME": "Skagit Wildlife Area",
+       "OWNER": "State Government",
+       "MANAGER": "WA Dept of Fish and Wildlife",
+       "MANAGEMENT_TYPE": "Wildlife"
+      }
+     },
+     {
+      "layer": "1 Non-DNR Major Public Lands",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "NAME": "Skagit Wildlife Area",
+       "OWNER": "State Government",
+       "MANAGER": "WA Dept of Fish and Wildlife",
+       "MANAGEMENT_TYPE": "Wildlife"
+      }
+     }
+    ]
+   },
+   {
+    "st": "WA",
+    "url": "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/NHD/FeatureServer/6",
+    "note": "WA Washington State Department of Ecology (",
+    "hits": [
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "Permanent_Identifier": "155195496",
+       "FDate": 1178757994000,
+       "Resolution": 2,
+       "AreaSqKm": 0.003,
+       "ReachCode": "17110019013817",
+       "FType": 390,
+       "FCode": 39004,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "Permanent_Identifier": "155195572",
+       "FDate": 1553029823000,
+       "Resolution": 2,
+       "AreaSqKm": 0.00027452,
+       "ReachCode": "17110019013845",
+       "FType": 390,
+       "FCode": 39001,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "Permanent_Identifier": "155195417",
+       "FDate": 1178757983000,
+       "Resolution": 2,
+       "AreaSqKm": 0.001,
+       "ReachCode": "17110019013781",
+       "FType": 390,
+       "FCode": 39004,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "Permanent_Identifier": "155195475",
+       "FDate": 1178757991000,
+       "Resolution": 2,
+       "AreaSqKm": 0.004,
+       "ReachCode": "17110019013807",
+       "FType": 390,
+       "FCode": 39001,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "Permanent_Identifier": "155199841",
+       "FDate": 1489363200000,
+       "Resolution": 2,
+       "GNIS_ID": "01505411",
+       "GNIS_Name": "Hastie Lake",
+       "AreaSqKm": 0.22145641,
+       "ReachCode": "17110019021633",
+       "FType": 466,
+       "FCode": 46600,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "Permanent_Identifier": "155195426",
+       "FDate": 1178757985000,
+       "Resolution": 2,
+       "AreaSqKm": 0.001,
+       "ReachCode": "17110019013786",
+       "FType": 390,
+       "FCode": 39004,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "Permanent_Identifier": "155195460",
+       "FDate": 1178757989000,
+       "Resolution": 2,
+       "AreaSqKm": 0.001,
+       "ReachCode": "17110019013800",
+       "FType": 390,
+       "FCode": 39001,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "Permanent_Identifier": "155199832",
+       "FDate": 1178753077000,
+       "Resolution": 2,
+       "AreaSqKm": 0.03,
+       "FType": 466,
+       "FCode": 46600,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "Permanent_Identifier": "155195489",
+       "FDate": 1178757993000,
+       "Resolution": 2,
+       "AreaSqKm": 0.001,
+       "ReachCode": "17110019013813",
+       "FType": 390,
+       "FCode": 39001,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "attrs": {
+       "Permanent_Identifier": "155195537",
+       "FDate": 1480982400000,
+       "Resolution": 2,
+       "AreaSqKm": 0.00863858,
+       "ReachCode": "17110019013833",
+       "FType": 466,
+       "FCode": 46600,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "Permanent_Identifier": "{68D07A26-D994-4BAF-8CBC-7BE83342B864}",
+       "FDate": 1537228800000,
+       "Resolution": 2,
+       "AreaSqKm": 0.00523596,
+       "ReachCode": "17110002007572",
+       "FType": 436,
+       "FCode": 43617,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "Permanent_Identifier": "152293199",
+       "FDate": 1537228800000,
+       "Resolution": 2,
+       "AreaSqKm": 0.00039298,
+       "ReachCode": "17110002002194",
+       "FType": 390,
+       "FCode": 39004,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "Permanent_Identifier": "152293222",
+       "FDate": 1537228800000,
+       "Resolution": 2,
+       "AreaSqKm": 0.0007421,
+       "ReachCode": "17110002002216",
+       "FType": 390,
+       "FCode": 39004,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "Permanent_Identifier": "152293351",
+       "FDate": 1537228800000,
+       "Resolution": 2,
+       "AreaSqKm": 0.00043286,
+       "ReachCode": "17110002002314",
+       "FType": 390,
+       "FCode": 39004,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "Permanent_Identifier": "152293280",
+       "FDate": 1537228800000,
+       "Resolution": 2,
+       "AreaSqKm": 0.00187773,
+       "ReachCode": "17110002002263",
+       "FType": 390,
+       "FCode": 39004,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "Permanent_Identifier": "152293347",
+       "FDate": 1537228800000,
+       "Resolution": 2,
+       "AreaSqKm": 0.00022435,
+       "ReachCode": "17110002002312",
+       "FType": 390,
+       "FCode": 39001,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "Permanent_Identifier": "152293337",
+       "FDate": 1537228800000,
+       "Resolution": 2,
+       "AreaSqKm": 0.00945154,
+       "ReachCode": "17110002001824",
+       "FType": 436,
+       "FCode": 43613,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "Permanent_Identifier": "{624e117e-60d8-443b-8ae8-2741804b4cfb}",
+       "FDate": 1537228800000,
+       "Resolution": 2,
+       "AreaSqKm": 0.00350108,
+       "FType": 466,
+       "FCode": 46601,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "Permanent_Identifier": "{1a5f33d4-6dc7-4386-affe-9f657ca05d4f}",
+       "FDate": 1537228800000,
+       "Resolution": 2,
+       "AreaSqKm": 0.01446566,
+       "FType": 466,
+       "FCode": 46600,
+       "VisibilityFilter": 5000000
+      }
+     },
+     {
+      "layer": "6 NHDWaterbody",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "Permanent_Identifier": "152293328",
+       "FDate": 1537228800000,
+       "Resolution": 2,
+       "AreaSqKm": 0.00068291,
+       "ReachCode": "17110002002296",
+       "FType": 390,
+       "FCode": 39004,
+       "VisibilityFilter": 5000000
+      }
+     }
+    ]
+   },
+   {
+    "st": "WA",
+    "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/FeatureServer/0",
+    "note": "WA Washington Dept. of Fish and Wildlife (c",
+    "hits": [
+     {
+      "layer": "0 UnitBoundaries",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 UnitBoundaries",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "ManagedPlaceOID": 1426,
+       "WildlifeAreaUnitName": "Samish",
+       "WildlifeAreaName": "Skagit",
+       "Region": "Region 4 - North Puget Sound",
+       "MilesOfRoadsAndTrails": 3.22,
+       "ParkingLots": 1,
+       "ADAParkingStalls": 0,
+       "HasAnOffice": "No",
+       "Restrooms": 0,
+       "ADARestrooms": 0,
+       "BoatRamps": 0,
+       "BoatRampSurfaceTypes": "N/A",
+       "HandLaunches": 0,
+       "FishingPlatforms": 0,
+       "SignsOrKiosks": 3,
+       "HuntingBlinds": 0,
+       "HasADAOffice": "N/A",
+       "HasRegionalHQ": "No",
+       "HasADARegionalHQ": "N/A",
+       "HasVisitorCenter": "No",
+       "HasADAVisitorCenter": "N/A",
+       "HasBoatRampWithADALoadingPlatform": "N/A",
+       "HasBoatRampWithBoardingFloat": "N/A",
+       "HasBoatRampWithADABoardingFloat": "N/A",
+       "ADAHuntingBlinds": 0,
+       "Campgrounds": 0,
+       "Trailheads": 0,
+       "Viewpoints": 0,
+       "ADAViewpoints": 0,
+       "ShootingRanges": 0,
+       "ADAShootingRanges": 0,
+       "WaterCrossings": 0
+      }
+     },
+     {
+      "layer": "0 UnitBoundaries",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "attrs": {
+       "ManagedPlaceOID": 1510,
+       "WildlifeAreaUnitName": "Samish River",
+       "WildlifeAreaName": "Skagit",
+       "Region": "Region 4 - North Puget Sound",
+       "MilesOfRoadsAndTrails": 0.83,
+       "ParkingLots": 1,
+       "ADAParkingStalls": 0,
+       "HasAnOffice": "No",
+       "Restrooms": 0,
+       "ADARestrooms": 0,
+       "BoatRamps": 0,
+       "BoatRampSurfaceTypes": "N/A",
+       "HandLaunches": 0,
+       "FishingPlatforms": 0,
+       "SignsOrKiosks": 1,
+       "HuntingBlinds": 0,
+       "HasADAOffice": "N/A",
+       "HasRegionalHQ": "No",
+       "HasADARegionalHQ": "N/A",
+       "HasVisitorCenter": "No",
+       "HasADAVisitorCenter": "N/A",
+       "HasBoatRampWithADALoadingPlatform": "N/A",
+       "HasBoatRampWithBoardingFloat": "N/A",
+       "HasBoatRampWithADABoardingFloat": "N/A",
+       "ADAHuntingBlinds": 0,
+       "Campgrounds": 0,
+       "Trailheads": 0,
+       "Viewpoints": 0,
+       "ADAViewpoints": 0,
+       "ShootingRanges": 0,
+       "ADAShootingRanges": 0,
+       "WaterCrossings": 0
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       48.205,
+       -122.706
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       48.5477,
+       -122.487
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 61,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

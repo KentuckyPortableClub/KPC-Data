@@ -1,0 +1,1452 @@
+{
+ "request": "requests/9-p2-ak.json",
+ "id": "9-p2-ak",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 AK: 9 parks, 9 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 AK: 9 parks, 9 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State AK: 9 parks. Refs in order of points: US-10464,US-11798,US-11834,US-11835,US-11846,US-12709,US-12710,US-12711,US-13462. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-10464",
+    "US-11798",
+    "US-11834",
+    "US-11835",
+    "US-11846",
+    "US-12709",
+    "US-12710",
+    "US-12711",
+    "US-13462"
+   ],
+   "pointq": [
+    {
+     "st": "AK",
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+     "note": "AK Alaska State Parks (DNR)",
+     "points": [
+      [
+       64.8389,
+       -147.807
+      ],
+      [
+       63.0425,
+       -146.149
+      ],
+      [
+       61.9132,
+       -150.098
+      ],
+      [
+       61.4372,
+       -150.173
+      ],
+      [
+       60.5165,
+       -150.701
+      ],
+      [
+       60.4924,
+       -150.863
+      ],
+      [
+       60.5354,
+       -150.755
+      ],
+      [
+       60.5002,
+       -150.866
+      ],
+      [
+       60.4869,
+       -150.003
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "AK",
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "note": "AK Alaska Department of Natural Resources",
+     "points": [
+      [
+       64.8389,
+       -147.807
+      ],
+      [
+       63.0425,
+       -146.149
+      ],
+      [
+       61.9132,
+       -150.098
+      ],
+      [
+       61.4372,
+       -150.173
+      ],
+      [
+       60.5165,
+       -150.701
+      ],
+      [
+       60.4924,
+       -150.863
+      ],
+      [
+       60.5354,
+       -150.755
+      ],
+      [
+       60.5002,
+       -150.866
+      ],
+      [
+       60.4869,
+       -150.003
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "AK",
+     "url": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+     "note": "AK Alaska DNR Division of Forestry (Alaska ",
+     "points": [
+      [
+       64.8389,
+       -147.807
+      ],
+      [
+       63.0425,
+       -146.149
+      ],
+      [
+       61.9132,
+       -150.098
+      ],
+      [
+       61.4372,
+       -150.173
+      ],
+      [
+       60.5165,
+       -150.701
+      ],
+      [
+       60.4924,
+       -150.863
+      ],
+      [
+       60.5354,
+       -150.755
+      ],
+      [
+       60.5002,
+       -150.866
+      ],
+      [
+       60.4869,
+       -150.003
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "AK",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "AK National Park Service (legal boundary)",
+     "points": [
+      [
+       64.8389,
+       -147.807
+      ],
+      [
+       63.0425,
+       -146.149
+      ],
+      [
+       61.9132,
+       -150.098
+      ],
+      [
+       61.4372,
+       -150.173
+      ],
+      [
+       60.5165,
+       -150.701
+      ],
+      [
+       60.4924,
+       -150.863
+      ],
+      [
+       60.5354,
+       -150.755
+      ],
+      [
+       60.5002,
+       -150.866
+      ],
+      [
+       60.4869,
+       -150.003
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "AK",
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+     "note": "AK Alaska DNR State Parks (park boundaries)",
+     "points": [
+      [
+       64.8389,
+       -147.807
+      ],
+      [
+       63.0425,
+       -146.149
+      ],
+      [
+       61.9132,
+       -150.098
+      ],
+      [
+       61.4372,
+       -150.173
+      ],
+      [
+       60.5165,
+       -150.701
+      ],
+      [
+       60.4924,
+       -150.863
+      ],
+      [
+       60.5354,
+       -150.755
+      ],
+      [
+       60.5002,
+       -150.866
+      ],
+      [
+       60.4869,
+       -150.003
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "AK",
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "note": "AK Alaska DNR, Division of Parks & Outdoor ",
+     "points": [
+      [
+       64.8389,
+       -147.807
+      ],
+      [
+       63.0425,
+       -146.149
+      ],
+      [
+       61.9132,
+       -150.098
+      ],
+      [
+       61.4372,
+       -150.173
+      ],
+      [
+       60.5165,
+       -150.701
+      ],
+      [
+       60.4924,
+       -150.863
+      ],
+      [
+       60.5354,
+       -150.755
+      ],
+      [
+       60.5002,
+       -150.866
+      ],
+      [
+       60.4869,
+       -150.003
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       64.8389,
+       -147.807
+      ],
+      [
+       63.0425,
+       -146.149
+      ],
+      [
+       61.9132,
+       -150.098
+      ],
+      [
+       61.4372,
+       -150.173
+      ],
+      [
+       60.5165,
+       -150.701
+      ],
+      [
+       60.4924,
+       -150.863
+      ],
+      [
+       60.5354,
+       -150.755
+      ],
+      [
+       60.5002,
+       -150.866
+      ],
+      [
+       60.4869,
+       -150.003
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       64.8389,
+       -147.807
+      ],
+      [
+       63.0425,
+       -146.149
+      ],
+      [
+       61.9132,
+       -150.098
+      ],
+      [
+       61.4372,
+       -150.173
+      ],
+      [
+       60.5165,
+       -150.701
+      ],
+      [
+       60.4924,
+       -150.863
+      ],
+      [
+       60.5354,
+       -150.755
+      ],
+      [
+       60.5002,
+       -150.866
+      ],
+      [
+       60.4869,
+       -150.003
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       64.8389,
+       -147.807
+      ],
+      [
+       63.0425,
+       -146.149
+      ],
+      [
+       61.9132,
+       -150.098
+      ],
+      [
+       61.4372,
+       -150.173
+      ],
+      [
+       60.5165,
+       -150.701
+      ],
+      [
+       60.4924,
+       -150.863
+      ],
+      [
+       60.5354,
+       -150.755
+      ],
+      [
+       60.5002,
+       -150.866
+      ],
+      [
+       60.4869,
+       -150.003
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-29 23:53Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State AK: 9 parks. Refs in order of points: US-10464,US-11798,US-11834,US-11835,US-11846,US-12709,US-12710,US-12711,US-13462. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-29",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "AK",
+    "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+    "note": "AK Alaska State Parks (DNR)",
+    "hits": [
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       64.8389,
+       -147.807
+      ],
+      "attrs": {
+       "PARKNAME": "Chena River State Recreation Area",
+       "REGION": "Northern",
+       "NAME": "Chena River",
+       "LWCF": "All",
+       "DEV_GRANTS": "PR",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SRA",
+       "PRMRYLASFL": "AS 41.21.470",
+       "DTPRKCRTD": -87955200000,
+       "MI_LABEL": "Chena River State Recreation Area",
+       "UID_": "1026",
+       "ACREAGE": 238709.53
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       64.8389,
+       -147.807
+      ],
+      "attrs": {
+       "PARKNAME": "Chena River State Recreation Site",
+       "REGION": "Northern",
+       "NAME": "Chena River",
+       "LWCF": "All",
+       "DEV_GRANTS": "No",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SRS",
+       "PRMRYLASFL": "ADL 39240",
+       "MI_LABEL": "Chena River State Recreation Site",
+       "UID_": "1027",
+       "ACREAGE": 27.4
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       63.0425,
+       -146.149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       61.9132,
+       -150.098
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       61.4372,
+       -150.173
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       60.5165,
+       -150.701
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       60.4924,
+       -150.863
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       60.5354,
+       -150.755
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       60.5002,
+       -150.866
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       60.4869,
+       -150.003
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     }
+    ]
+   },
+   {
+    "st": "AK",
+    "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+    "note": "AK Alaska Department of Natural Resources",
+    "hits": [
+     {
+      "layer": "0 Legislative Designated Area",
+      "point": [
+       64.8389,
+       -147.807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Legislative Designated Area",
+      "point": [
+       63.0425,
+       -146.149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Legislative Designated Area",
+      "point": [
+       61.9132,
+       -150.098
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Legislative Designated Area",
+      "point": [
+       61.4372,
+       -150.173
+      ],
+      "attrs": {
+       "CASE_ID": "AS 16.20.036",
+       "LDA_NAME_1": "Susitna Flats",
+       "LDA_NAME_2": "SGR",
+       "CSTYPDSCRP": "WILDLIFE LEGIS DESIG (207)",
+       "SPCLCDDSCR": "STATE GAME REFUGE (2701)",
+       "CSSTTSDSCR": "EFFCTVE/ACTVE/APPRVD (50)",
+       "FILE_TYPE": "AS",
+       "FILENUMBER": "16.20.036",
+       "CASE_TYPE": "207",
+       "SPCLCD": "2701",
+       "CASESTATUS": "50",
+       "CS_LABEL": "EFFECTIVE",
+       "MI_LABEL": "AS 16.20.036\nSusitna Flats SGR",
+       "DISPLAY": "Y",
+       "INFO_LINK": "https://dnr.alaska.gov/projects/las/#filetype/AS/filenumber/16.20.036/landflag/y/searchtype/casefile/reporttype/abstract",
+       "RFRSHDT": 1793246434000
+      }
+     },
+     {
+      "layer": "0 Legislative Designated Area",
+      "point": [
+       60.5165,
+       -150.701
+      ],
+      "attrs": {
+       "CASE_ID": "AS 41.21.500",
+       "LDA_NAME_1": "Kenai River",
+       "LDA_NAME_2": "SMA",
+       "CSTYPDSCRP": "PARKS LEGISLATIVE DESIG (206)",
+       "SPCLCDDSCR": "SPECIAL MNGT AREA (2605)",
+       "CSSTTSDSCR": "ACTIVE (50)",
+       "FILE_TYPE": "AS",
+       "FILENUMBER": "41.21.500",
+       "CASE_TYPE": "206",
+       "SPCLCD": "2605",
+       "CASESTATUS": "50",
+       "CS_LABEL": "EFFECTIVE",
+       "MI_LABEL": "AS 41.21.500\nKenai River SMA",
+       "DISPLAY": "Y",
+       "INFO_LINK": "https://dnr.alaska.gov/projects/las/#filetype/AS/filenumber/41.21.500/landflag/y/searchtype/casefile/reporttype/abstract",
+       "RFRSHDT": 1793246434000
+      }
+     },
+     {
+      "layer": "0 Legislative Designated Area",
+      "point": [
+       60.4924,
+       -150.863
+      ],
+      "attrs": {
+       "CASE_ID": "AS 41.21.500",
+       "LDA_NAME_1": "Kenai River",
+       "LDA_NAME_2": "SMA",
+       "CSTYPDSCRP": "PARKS LEGISLATIVE DESIG (206)",
+       "SPCLCDDSCR": "SPECIAL MNGT AREA (2605)",
+       "CSSTTSDSCR": "ACTIVE (50)",
+       "FILE_TYPE": "AS",
+       "FILENUMBER": "41.21.500",
+       "CASE_TYPE": "206",
+       "SPCLCD": "2605",
+       "CASESTATUS": "50",
+       "CS_LABEL": "EFFECTIVE",
+       "MI_LABEL": "AS 41.21.500\nKenai River SMA",
+       "DISPLAY": "Y",
+       "INFO_LINK": "https://dnr.alaska.gov/projects/las/#filetype/AS/filenumber/41.21.500/landflag/y/searchtype/casefile/reporttype/abstract",
+       "RFRSHDT": 1793246434000
+      }
+     },
+     {
+      "layer": "0 Legislative Designated Area",
+      "point": [
+       60.5354,
+       -150.755
+      ],
+      "attrs": {
+       "CASE_ID": "AS 41.21.500",
+       "LDA_NAME_1": "Kenai River",
+       "LDA_NAME_2": "SMA",
+       "CSTYPDSCRP": "PARKS LEGISLATIVE DESIG (206)",
+       "SPCLCDDSCR": "SPECIAL MNGT AREA (2605)",
+       "CSSTTSDSCR": "ACTIVE (50)",
+       "FILE_TYPE": "AS",
+       "FILENUMBER": "41.21.500",
+       "CASE_TYPE": "206",
+       "SPCLCD": "2605",
+       "CASESTATUS": "50",
+       "CS_LABEL": "EFFECTIVE",
+       "MI_LABEL": "AS 41.21.500\nKenai River SMA",
+       "DISPLAY": "Y",
+       "INFO_LINK": "https://dnr.alaska.gov/projects/las/#filetype/AS/filenumber/41.21.500/landflag/y/searchtype/casefile/reporttype/abstract",
+       "RFRSHDT": 1793246434000
+      }
+     },
+     {
+      "layer": "0 Legislative Designated Area",
+      "point": [
+       60.5002,
+       -150.866
+      ],
+      "attrs": {
+       "CASE_ID": "AS 41.21.500",
+       "LDA_NAME_1": "Kenai River",
+       "LDA_NAME_2": "SMA",
+       "CSTYPDSCRP": "PARKS LEGISLATIVE DESIG (206)",
+       "SPCLCDDSCR": "SPECIAL MNGT AREA (2605)",
+       "CSSTTSDSCR": "ACTIVE (50)",
+       "FILE_TYPE": "AS",
+       "FILENUMBER": "41.21.500",
+       "CASE_TYPE": "206",
+       "SPCLCD": "2605",
+       "CASESTATUS": "50",
+       "CS_LABEL": "EFFECTIVE",
+       "MI_LABEL": "AS 41.21.500\nKenai River SMA",
+       "DISPLAY": "Y",
+       "INFO_LINK": "https://dnr.alaska.gov/projects/las/#filetype/AS/filenumber/41.21.500/landflag/y/searchtype/casefile/reporttype/abstract",
+       "RFRSHDT": 1793246434000
+      }
+     },
+     {
+      "layer": "0 Legislative Designated Area",
+      "point": [
+       60.4869,
+       -150.003
+      ],
+      "attrs": {
+       "CASE_ID": "AS 41.21.500",
+       "LDA_NAME_1": "Kenai River",
+       "LDA_NAME_2": "SMA",
+       "CSTYPDSCRP": "PARKS LEGISLATIVE DESIG (206)",
+       "SPCLCDDSCR": "SPECIAL MNGT AREA (2605)",
+       "CSSTTSDSCR": "ACTIVE (50)",
+       "FILE_TYPE": "AS",
+       "FILENUMBER": "41.21.500",
+       "CASE_TYPE": "206",
+       "SPCLCD": "2605",
+       "CASESTATUS": "50",
+       "CS_LABEL": "EFFECTIVE",
+       "MI_LABEL": "AS 41.21.500\nKenai River SMA",
+       "DISPLAY": "Y",
+       "INFO_LINK": "https://dnr.alaska.gov/projects/las/#filetype/AS/filenumber/41.21.500/landflag/y/searchtype/casefile/reporttype/abstract",
+       "RFRSHDT": 1793246434000
+      }
+     },
+     {
+      "layer": "0 Legislative Designated Area",
+      "point": [
+       60.4869,
+       -150.003
+      ],
+      "attrs": {
+       "CASE_ID": "AS 16.20.030A08",
+       "LDA_NAME_1": "Kenai National",
+       "LDA_NAME_2": "Moose Range",
+       "CSTYPDSCRP": "WILDLIFE LEGIS DESIG (207)",
+       "SPCLCDDSCR": "STATE (NAT'L REFUGE) (2705)",
+       "CSSTTSDSCR": "EFFCTVE/ACTVE/APPRVD (50)",
+       "FILE_TYPE": "AS",
+       "FILENUMBER": "16.20.030A08",
+       "CASE_TYPE": "207",
+       "SPCLCD": "2705",
+       "CASESTATUS": "50",
+       "CS_LABEL": "EFFECTIVE",
+       "MI_LABEL": "AS 16.20.030A08\nKenai National Moose Range",
+       "DISPLAY": "Y",
+       "INFO_LINK": "https://dnr.alaska.gov/projects/las/#filetype/AS/filenumber/16.20.030A08/landflag/y/searchtype/casefile/reporttype/abstract",
+       "RFRSHDT": 1793246434000
+      }
+     }
+    ]
+   },
+   {
+    "st": "AK",
+    "url": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+    "note": "AK Alaska DNR Division of Forestry (Alaska ",
+    "hits": [
+     {
+      "layer": "0 State Forest Boundary",
+      "point": [
+       64.8389,
+       -147.807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 State Forest Boundary",
+      "point": [
+       63.0425,
+       -146.149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 State Forest Boundary",
+      "point": [
+       61.9132,
+       -150.098
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 State Forest Boundary",
+      "point": [
+       61.4372,
+       -150.173
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 State Forest Boundary",
+      "point": [
+       60.5165,
+       -150.701
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 State Forest Boundary",
+      "point": [
+       60.4924,
+       -150.863
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 State Forest Boundary",
+      "point": [
+       60.5354,
+       -150.755
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 State Forest Boundary",
+      "point": [
+       60.5002,
+       -150.866
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 State Forest Boundary",
+      "point": [
+       60.4869,
+       -150.003
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "AK",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "AK National Park Service (legal boundary)",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   },
+   {
+    "st": "AK",
+    "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+    "note": "AK Alaska DNR State Parks (park boundaries)",
+    "hits": [
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       64.8389,
+       -147.807
+      ],
+      "attrs": {
+       "PARKNAME": "Chena River State Recreation Area",
+       "REGION": "Northern",
+       "NAME": "Chena River",
+       "LWCF": "All",
+       "DEV_GRANTS": "PR",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SRA",
+       "PRMRYLASFL": "AS 41.21.470",
+       "DTPRKCRTD": -87955200000,
+       "MI_LABEL": "Chena River State Recreation Area",
+       "UID_": "1026",
+       "ACREAGE": 238709.53
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       64.8389,
+       -147.807
+      ],
+      "attrs": {
+       "PARKNAME": "Chena River State Recreation Site",
+       "REGION": "Northern",
+       "NAME": "Chena River",
+       "LWCF": "All",
+       "DEV_GRANTS": "No",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SRS",
+       "PRMRYLASFL": "ADL 39240",
+       "MI_LABEL": "Chena River State Recreation Site",
+       "UID_": "1027",
+       "ACREAGE": 27.4
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       63.0425,
+       -146.149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       61.9132,
+       -150.098
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       61.4372,
+       -150.173
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       60.5165,
+       -150.701
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       60.4924,
+       -150.863
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       60.5354,
+       -150.755
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       60.5002,
+       -150.866
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Park Boundary",
+      "point": [
+       60.4869,
+       -150.003
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     }
+    ]
+   },
+   {
+    "st": "AK",
+    "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+    "note": "AK Alaska DNR, Division of Parks & Outdoor ",
+    "hits": [
+     {
+      "layer": "2 ASP Boundary",
+      "point": [
+       64.8389,
+       -147.807
+      ],
+      "attrs": {
+       "PARKNAME": "Chena River State Recreation Area",
+       "REGION": "Northern",
+       "NAME": "Chena River",
+       "LWCF": "All",
+       "DEV_GRANTS": "PR",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SRA",
+       "PRMRYLASFL": "AS 41.21.470",
+       "DTPRKCRTD": -87955200000,
+       "MI_LABEL": "Chena River State Recreation Area",
+       "UID_": "1026",
+       "ACREAGE": 238709.53
+      }
+     },
+     {
+      "layer": "2 ASP Boundary",
+      "point": [
+       64.8389,
+       -147.807
+      ],
+      "attrs": {
+       "PARKNAME": "Chena River State Recreation Site",
+       "REGION": "Northern",
+       "NAME": "Chena River",
+       "LWCF": "All",
+       "DEV_GRANTS": "No",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SRS",
+       "PRMRYLASFL": "ADL 39240",
+       "MI_LABEL": "Chena River State Recreation Site",
+       "UID_": "1027",
+       "ACREAGE": 27.4
+      }
+     },
+     {
+      "layer": "2 ASP Boundary",
+      "point": [
+       63.0425,
+       -146.149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 ASP Boundary",
+      "point": [
+       61.9132,
+       -150.098
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 ASP Boundary",
+      "point": [
+       61.4372,
+       -150.173
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 ASP Boundary",
+      "point": [
+       60.5165,
+       -150.701
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Boundary",
+      "point": [
+       60.4924,
+       -150.863
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Boundary",
+      "point": [
+       60.5354,
+       -150.755
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Boundary",
+      "point": [
+       60.5002,
+       -150.866
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     },
+     {
+      "layer": "2 ASP Boundary",
+      "point": [
+       60.4869,
+       -150.003
+      ],
+      "attrs": {
+       "PARKNAME": "Kenai River Special Management Area",
+       "REGION": "Kenai/Prince William Sound",
+       "NAME": "Kenai River",
+       "LWCF": "Partial",
+       "DEV_GRANTS": "DJ",
+       "RFRSHDT": 1793246446000,
+       "PRKTYPABRV": "SMA",
+       "PRMRYLASFL": "AS 41.21.500",
+       "DTPRKCRTD": 454896000000,
+       "MI_LABEL": "Kenai River Special Management Area",
+       "UID_": "1083",
+       "ACREAGE": 50234.03
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       64.8389,
+       -147.807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       63.0425,
+       -146.149
+      ],
+      "attrs": {
+       "FET_TYPE": 4,
+       "FET_SUBTYPE": "SRMA",
+       "FET_NAME": "Denali Highway SRMA",
+       "ADM_UNIT_CD": "AKA02000",
+       "ADMIN_ST": "AK",
+       "GIS_ACRES": 557671.5227996,
+       "DESCRIPTION": "Denali Highway Corridor",
+       "UNIT_NAME": "Denali Highway SRMA",
+       "WEB_DISPLAY": "YES"
+      }
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       61.9132,
+       -150.098
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       61.4372,
+       -150.173
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       60.5165,
+       -150.701
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       60.4924,
+       -150.863
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       60.5354,
+       -150.755
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       60.5002,
+       -150.866
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       60.4869,
+       -150.003
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       64.8389,
+       -147.807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       63.0425,
+       -146.149
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       61.9132,
+       -150.098
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       61.4372,
+       -150.173
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       60.5165,
+       -150.701
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       60.4924,
+       -150.863
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       60.5354,
+       -150.755
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       60.5002,
+       -150.866
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       60.4869,
+       -150.003
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 190,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

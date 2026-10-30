@@ -1,0 +1,104 @@
+{
+ "request": "requests/9-wy1.json",
+ "id": "9-wy1",
+ "chat": 9,
+ "kind": "layer-probe",
+ "report": "WY BLM Recreation Areas HUB: which layers are polygons? 9-nn queried layer 0 and got 0 points (non-polygon layer skipped). List every layer with its geometry type, name field, record count.",
+ "asked": {
+  "chat": 9,
+  "kind": "layer-probe",
+  "report": "WY BLM Recreation Areas HUB: which layers are polygons? 9-nn queried layer 0 and got 0 points (non-polygon layer skipped). List every layer with its geometry type, name field, record count.",
+  "layers": [
+   "https://gis.blm.gov/wyarcgis/rest/services/recreation/BLM_WY_Recreation_Areas_HUB/MapServer"
+  ]
+ },
+ "answered": "2026-10-29 19:50Z",
+ "results": [
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://gis.blm.gov/wyarcgis/rest/services/recreation/BLM_WY_Recreation_Areas_HUB/MapServer",
+   "answers": true,
+   "service": "BLM_WY_Recreation_Areas_HUB",
+   "licence": "BLM Wyoming State Office",
+   "years_in_text": [],
+   "description": "This points layer represents generalized areas of recreation opportunities across the state of Wyoming managed by the BLM. It is meant as a guide for the public who may be looking for specific activities in a general location. The points are not intended for specific navigation, not to be an assets inventory.",
+   "item_err": "{'code': 400, 'messageCode': 'CONT_0001', 'message': 'Item does not exist or is ",
+   "layers": [
+    {
+     "id": 0,
+     "name": "BLM WY General Recreacreation Sites",
+     "geom": "Point",
+     "nameField": "Site_name",
+     "ownerField": "",
+     "typeField": "ADA_Accessible",
+     "fields": [
+      "OBJECTID",
+      "FieldOffice",
+      "Site_name",
+      "ADA_Accessible",
+      "Auto_Touring",
+      "Boat_Ramp",
+      "Camping",
+      "Cross_Country_Skiing",
+      "Enviromental_Education",
+      "Fishing",
+      "Fossil_Site",
+      "Hiking",
+      "Historic_Site",
+      "Horseback_Riding",
+      "Hunting",
+      "Interperative_Exhibit_or_Panel",
+      "Interperative_Trail",
+      "Motorized_Boating",
+      "Mountain_Biking",
+      "Non_Motorized_Boating",
+      "Off_Highway_Vehicle_Riding",
+      "Petroglyphs",
+      "Picnicking",
+      "Public_Restroom",
+      "Rock_Climbing",
+      "Rock_Hounding",
+      "Scenic_Geology",
+      "Scenic_Overlook",
+      "Snowmobiling",
+      "Visitor_Center",
+      "Wild_Horse_Viewing",
+      "Wildlife_Viewing",
+      "RV_Formal_Paking",
+      "RV_Informal_Parking",
+      "Warming_Hut",
+      "Single_Track_Motorized_Use",
+      "All_Amenities_List",
+      "GlobalID",
+      "Shape"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "BLM Wyoming State Office",
+     "records": 140,
+     "sample": [
+      "Clarks Fork of the Yellowstone ",
+      "Hogan and Luce Recreation Area Campgroun",
+      "Four Bear Trailhead",
+      "North Fork Shoshone River",
+      "Sheep Mountain Trailhead",
+      "Stagecoach River Access",
+      "Andy Martin Hill",
+      "Cody Canal Day Use Area"
+     ],
+     "type_valuesErr": "{'code': 400, 'message': 'Failed to execute query.', 'detail"
+    }
+   ]
+  }
+ ],
+ "seconds": 24,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

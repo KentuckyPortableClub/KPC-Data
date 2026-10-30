@@ -1,0 +1,80 @@
+name: KPC look-up bot (branch lookup)
+# Oct 29 2026 (chat 10; moved from KPC-Links: Brandon 7:22 PM 'protect size on both repos'). Lives ONLY on the orphan branch
+# `lookup` of KPC-Data: a chat pushes requests/<chat>-<id>.json here, each request is answered on its own job (6 at once), the answer
+# lands in answers/ (+ small JPEG pictures). A chat pushes an empty read/<id> when done: the next run deletes that answer.
+# Script: kpc_lookup.py on KPC-Data main (read-only). Never goes red (EMAIL rule). Weekly tidy + squash: main's kpc-lookup-tidy.yml.
+on:
+  push:
+    branches: [lookup]
+    paths: ['requests/**', 'read/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      reqs: ${{ steps.t.outputs.reqs }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: lookup
+          path: lk
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          path: code
+          sparse-checkout: .github/scripts
+          persist-credentials: false
+      - id: t
+        continue-on-error: true
+        run: |
+          cd lk
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          LOOKUP_ROOT=. python3 ../code/.github/scripts/kpc_lookup.py tidy || true
+          git add -A answers requests read 2>/dev/null || true
+          if ! git diff --cached --quiet; then git commit -qm 'look-up bot: tidy (read / over 7 days)'; for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && break; sleep $((i*5)); done; fi
+          echo "reqs=$(LOOKUP_ROOT=. python3 ../code/.github/scripts/kpc_lookup.py todo)" >> "$GITHUB_OUTPUT"
+  answer:
+    needs: list
+    if: ${{ needs.list.outputs.reqs != '' && needs.list.outputs.reqs != '[]' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        req: ${{ fromJSON(needs.list.outputs.reqs) }}
+    concurrency:
+      group: kpc-lookup-${{ matrix.req }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: lookup
+          path: lk
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          path: code
+          sparse-checkout: .github/scripts
+          persist-credentials: false
+      - name: Browser + PDF tools
+        continue-on-error: true
+        run: (sudo apt-get install -y -q poppler-utils >/dev/null 2>&1 || true); pip install -q playwright pypdf && python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || true
+      - name: Answer
+        continue-on-error: true
+        run: |
+          cd lk; git pull -q origin lookup || true
+          if [ -f "answers/$(basename '${{ matrix.req }}')" ]; then echo "::notice title=Look-up bot::already answered"; exit 0; fi
+          LOOKUP_ROOT=. python3 ../code/.github/scripts/kpc_lookup.py run "${{ matrix.req }}" || true
+      - name: Save the answer
+        continue-on-error: true
+        run: |
+          cd lk
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add answers/ 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "look-up bot: answered $(basename '${{ matrix.req }}')"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && exit 0; sleep $((i*7)); done
+          true

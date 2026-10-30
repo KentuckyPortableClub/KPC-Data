@@ -1,0 +1,3040 @@
+{
+ "request": "requests/9-cap2-ab-1.json",
+ "id": "9-cap2-ab-1",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CAP2 AB 1: 40 parks, 4 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CAP2 AB 1: 40 parks, 4 layers",
+  "probe": {
+   "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (AB, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-0663,CA-2938,CA-2991,CA-3018,CA-3076,CA-3157,CA-4771,CA-4775,CA-4776,CA-4778,CA-4781,CA-4783,CA-4784,CA-4785,CA-5377,CA-6073,CA-6101,CA-6116,CA-6117,CA-6126,CA-6588,CA-4772,CA-6134,CA-1194,CA-2969,CA-2982,CA-3073,CA-3089,CA-3111,CA-3113,CA-3136,CA-4773,CA-4774,CA-4777,CA-4779,CA-4780,CA-4782,CA-5082,CA-5145,CA-5376. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+   "refs": [
+    "CA-0663",
+    "CA-2938",
+    "CA-2991",
+    "CA-3018",
+    "CA-3076",
+    "CA-3157",
+    "CA-4771",
+    "CA-4775",
+    "CA-4776",
+    "CA-4778",
+    "CA-4781",
+    "CA-4783",
+    "CA-4784",
+    "CA-4785",
+    "CA-5377",
+    "CA-6073",
+    "CA-6101",
+    "CA-6116",
+    "CA-6117",
+    "CA-6126",
+    "CA-6588",
+    "CA-4772",
+    "CA-6134",
+    "CA-1194",
+    "CA-2969",
+    "CA-2982",
+    "CA-3073",
+    "CA-3089",
+    "CA-3111",
+    "CA-3113",
+    "CA-3136",
+    "CA-4773",
+    "CA-4774",
+    "CA-4777",
+    "CA-4779",
+    "CA-4780",
+    "CA-4782",
+    "CA-5082",
+    "CA-5145",
+    "CA-5376"
+   ],
+   "pointq": [
+    {
+     "st": "AB",
+     "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11",
+     "note": "AB-PLUZ Gove",
+     "points": [
+      [
+       58.6894,
+       -111.455
+      ],
+      [
+       50.724,
+       -114.86
+      ],
+      [
+       51.0529,
+       -114.91
+      ],
+      [
+       50.3938,
+       -114.599
+      ],
+      [
+       50.8866,
+       -114.672
+      ],
+      [
+       49.0833,
+       -113.917
+      ],
+      [
+       51.3641,
+       -116.29
+      ],
+      [
+       51.1699,
+       -115.589
+      ],
+      [
+       49.0716,
+       -113.987
+      ],
+      [
+       51.8004,
+       -116.756
+      ],
+      [
+       52.729,
+       -117.642
+      ],
+      [
+       51.5227,
+       -116.077
+      ],
+      [
+       51.147,
+       -115.579
+      ],
+      [
+       52.863,
+       -118.224
+      ],
+      [
+       52.4655,
+       -116.09
+      ],
+      [
+       49.0859,
+       -111.62
+      ],
+      [
+       49.0587,
+       -113.904
+      ],
+      [
+       52.292,
+       -117.741
+      ],
+      [
+       51.9705,
+       -116.72
+      ],
+      [
+       49.6933,
+       -114.477
+      ],
+      [
+       51.0312,
+       -115.037
+      ],
+      [
+       52.3802,
+       -118.186
+      ],
+      [
+       53.3877,
+       -117.687
+      ],
+      [
+       52.3128,
+       -114.091
+      ],
+      [
+       49.4453,
+       -114.322
+      ],
+      [
+       54.937,
+       -114.037
+      ],
+      [
+       53.4325,
+       -117.531
+      ],
+      [
+       51.1264,
+       -114.133
+      ],
+      [
+       50.4289,
+       -110.366
+      ],
+      [
+       52.285,
+       -113.795
+      ],
+      [
+       58.3961,
+       -116.003
+      ],
+      [
+       51.174,
+       -115.572
+      ],
+      [
+       50.4191,
+       -114.242
+      ],
+      [
+       53.831,
+       -110.359
+      ],
+      [
+       53.146,
+       -117.977
+      ],
+      [
+       52.8773,
+       -118.081
+      ],
+      [
+       52.3607,
+       -114.982
+      ],
+      [
+       46.861,
+       -52.9446
+      ],
+      [
+       52.2757,
+       -113.862
+      ],
+      [
+       53.4719,
+       -112.967
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "AB",
+     "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+     "note": "Alberta Park",
+     "points": [
+      [
+       58.6894,
+       -111.455
+      ],
+      [
+       50.724,
+       -114.86
+      ],
+      [
+       51.0529,
+       -114.91
+      ],
+      [
+       50.3938,
+       -114.599
+      ],
+      [
+       50.8866,
+       -114.672
+      ],
+      [
+       49.0833,
+       -113.917
+      ],
+      [
+       51.3641,
+       -116.29
+      ],
+      [
+       51.1699,
+       -115.589
+      ],
+      [
+       49.0716,
+       -113.987
+      ],
+      [
+       51.8004,
+       -116.756
+      ],
+      [
+       52.729,
+       -117.642
+      ],
+      [
+       51.5227,
+       -116.077
+      ],
+      [
+       51.147,
+       -115.579
+      ],
+      [
+       52.863,
+       -118.224
+      ],
+      [
+       52.4655,
+       -116.09
+      ],
+      [
+       49.0859,
+       -111.62
+      ],
+      [
+       49.0587,
+       -113.904
+      ],
+      [
+       52.292,
+       -117.741
+      ],
+      [
+       51.9705,
+       -116.72
+      ],
+      [
+       49.6933,
+       -114.477
+      ],
+      [
+       51.0312,
+       -115.037
+      ],
+      [
+       52.3802,
+       -118.186
+      ],
+      [
+       53.3877,
+       -117.687
+      ],
+      [
+       52.3128,
+       -114.091
+      ],
+      [
+       49.4453,
+       -114.322
+      ],
+      [
+       54.937,
+       -114.037
+      ],
+      [
+       53.4325,
+       -117.531
+      ],
+      [
+       51.1264,
+       -114.133
+      ],
+      [
+       50.4289,
+       -110.366
+      ],
+      [
+       52.285,
+       -113.795
+      ],
+      [
+       58.3961,
+       -116.003
+      ],
+      [
+       51.174,
+       -115.572
+      ],
+      [
+       50.4191,
+       -114.242
+      ],
+      [
+       53.831,
+       -110.359
+      ],
+      [
+       53.146,
+       -117.977
+      ],
+      [
+       52.8773,
+       -118.081
+      ],
+      [
+       52.3607,
+       -114.982
+      ],
+      [
+       46.861,
+       -52.9446
+      ],
+      [
+       52.2757,
+       -113.862
+      ],
+      [
+       53.4719,
+       -112.967
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "AB",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       58.6894,
+       -111.455
+      ],
+      [
+       50.724,
+       -114.86
+      ],
+      [
+       51.0529,
+       -114.91
+      ],
+      [
+       50.3938,
+       -114.599
+      ],
+      [
+       50.8866,
+       -114.672
+      ],
+      [
+       49.0833,
+       -113.917
+      ],
+      [
+       51.3641,
+       -116.29
+      ],
+      [
+       51.1699,
+       -115.589
+      ],
+      [
+       49.0716,
+       -113.987
+      ],
+      [
+       51.8004,
+       -116.756
+      ],
+      [
+       52.729,
+       -117.642
+      ],
+      [
+       51.5227,
+       -116.077
+      ],
+      [
+       51.147,
+       -115.579
+      ],
+      [
+       52.863,
+       -118.224
+      ],
+      [
+       52.4655,
+       -116.09
+      ],
+      [
+       49.0859,
+       -111.62
+      ],
+      [
+       49.0587,
+       -113.904
+      ],
+      [
+       52.292,
+       -117.741
+      ],
+      [
+       51.9705,
+       -116.72
+      ],
+      [
+       49.6933,
+       -114.477
+      ],
+      [
+       51.0312,
+       -115.037
+      ],
+      [
+       52.3802,
+       -118.186
+      ],
+      [
+       53.3877,
+       -117.687
+      ],
+      [
+       52.3128,
+       -114.091
+      ],
+      [
+       49.4453,
+       -114.322
+      ],
+      [
+       54.937,
+       -114.037
+      ],
+      [
+       53.4325,
+       -117.531
+      ],
+      [
+       51.1264,
+       -114.133
+      ],
+      [
+       50.4289,
+       -110.366
+      ],
+      [
+       52.285,
+       -113.795
+      ],
+      [
+       58.3961,
+       -116.003
+      ],
+      [
+       51.174,
+       -115.572
+      ],
+      [
+       50.4191,
+       -114.242
+      ],
+      [
+       53.831,
+       -110.359
+      ],
+      [
+       53.146,
+       -117.977
+      ],
+      [
+       52.8773,
+       -118.081
+      ],
+      [
+       52.3607,
+       -114.982
+      ],
+      [
+       46.861,
+       -52.9446
+      ],
+      [
+       52.2757,
+       -113.862
+      ],
+      [
+       53.4719,
+       -112.967
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "AB",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       58.6894,
+       -111.455
+      ],
+      [
+       50.724,
+       -114.86
+      ],
+      [
+       51.0529,
+       -114.91
+      ],
+      [
+       50.3938,
+       -114.599
+      ],
+      [
+       50.8866,
+       -114.672
+      ],
+      [
+       49.0833,
+       -113.917
+      ],
+      [
+       51.3641,
+       -116.29
+      ],
+      [
+       51.1699,
+       -115.589
+      ],
+      [
+       49.0716,
+       -113.987
+      ],
+      [
+       51.8004,
+       -116.756
+      ],
+      [
+       52.729,
+       -117.642
+      ],
+      [
+       51.5227,
+       -116.077
+      ],
+      [
+       51.147,
+       -115.579
+      ],
+      [
+       52.863,
+       -118.224
+      ],
+      [
+       52.4655,
+       -116.09
+      ],
+      [
+       49.0859,
+       -111.62
+      ],
+      [
+       49.0587,
+       -113.904
+      ],
+      [
+       52.292,
+       -117.741
+      ],
+      [
+       51.9705,
+       -116.72
+      ],
+      [
+       49.6933,
+       -114.477
+      ],
+      [
+       51.0312,
+       -115.037
+      ],
+      [
+       52.3802,
+       -118.186
+      ],
+      [
+       53.3877,
+       -117.687
+      ],
+      [
+       52.3128,
+       -114.091
+      ],
+      [
+       49.4453,
+       -114.322
+      ],
+      [
+       54.937,
+       -114.037
+      ],
+      [
+       53.4325,
+       -117.531
+      ],
+      [
+       51.1264,
+       -114.133
+      ],
+      [
+       50.4289,
+       -110.366
+      ],
+      [
+       52.285,
+       -113.795
+      ],
+      [
+       58.3961,
+       -116.003
+      ],
+      [
+       51.174,
+       -115.572
+      ],
+      [
+       50.4191,
+       -114.242
+      ],
+      [
+       53.831,
+       -110.359
+      ],
+      [
+       53.146,
+       -117.977
+      ],
+      [
+       52.8773,
+       -118.081
+      ],
+      [
+       52.3607,
+       -114.982
+      ],
+      [
+       46.861,
+       -52.9446
+      ],
+      [
+       52.2757,
+       -113.862
+      ],
+      [
+       53.4719,
+       -112.967
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:06Z",
+ "results": {
+  "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (AB, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-0663,CA-2938,CA-2991,CA-3018,CA-3076,CA-3157,CA-4771,CA-4775,CA-4776,CA-4778,CA-4781,CA-4783,CA-4784,CA-4785,CA-5377,CA-6073,CA-6101,CA-6116,CA-6117,CA-6126,CA-6588,CA-4772,CA-6134,CA-1194,CA-2969,CA-2982,CA-3073,CA-3089,CA-3111,CA-3113,CA-3136,CA-4773,CA-4774,CA-4777,CA-4779,CA-4780,CA-4782,CA-5082,CA-5145,CA-5376. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "AB",
+    "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11",
+    "note": "AB-PLUZ Gove",
+    "hits": [
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       58.6894,
+       -111.455
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       50.724,
+       -114.86
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       51.0529,
+       -114.91
+      ],
+      "attrs": {
+       "PLUZ_NAME": "Sibbald Snow Vehicle",
+       "PLUZ_CODE": "00003",
+       "TYPE": "PLUZ"
+      }
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       50.3938,
+       -114.599
+      ],
+      "attrs": {
+       "PLUZ_NAME": "The Kananaskis Country",
+       "PLUZ_CODE": "00001",
+       "TYPE": "PLUZ"
+      }
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       50.8866,
+       -114.672
+      ],
+      "attrs": {
+       "PLUZ_NAME": "McLean Creek Off-Highway Vehicle",
+       "PLUZ_CODE": "00002",
+       "TYPE": "PLUZ"
+      }
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       49.0833,
+       -113.917
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       51.3641,
+       -116.29
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       51.1699,
+       -115.589
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       49.0716,
+       -113.987
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       51.8004,
+       -116.756
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       52.729,
+       -117.642
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       51.5227,
+       -116.077
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       51.147,
+       -115.579
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       52.863,
+       -118.224
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       52.4655,
+       -116.09
+      ],
+      "attrs": {
+       "PLUZ_NAME": "Kiska/Willson",
+       "PLUZ_CODE": "00015",
+       "TYPE": "PLUZ"
+      }
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       49.0859,
+       -111.62
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       49.0587,
+       -113.904
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       52.292,
+       -117.741
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       51.9705,
+       -116.72
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       49.6933,
+       -114.477
+      ],
+      "attrs": {
+       "PLUZ_NAME": "Livingstone",
+       "PLUZ_CODE": "00020",
+       "TYPE": "PLUZ"
+      }
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       51.0312,
+       -115.037
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       52.3802,
+       -118.186
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       53.3877,
+       -117.687
+      ],
+      "attrs": {
+       "PLUZ_NAME": "Athabasca Ranch",
+       "PLUZ_CODE": "00013",
+       "TYPE": "PLUZ"
+      }
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       52.3128,
+       -114.091
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       49.4453,
+       -114.322
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       54.937,
+       -114.037
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       53.4325,
+       -117.531
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       51.1264,
+       -114.133
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       50.4289,
+       -110.366
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       52.285,
+       -113.795
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       58.3961,
+       -116.003
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       51.174,
+       -115.572
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       50.4191,
+       -114.242
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       53.831,
+       -110.359
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       53.146,
+       -117.977
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       52.8773,
+       -118.081
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       52.3607,
+       -114.982
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       46.861,
+       -52.9446
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       52.2757,
+       -113.862
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "11 Public Land Use Zone",
+      "point": [
+       53.4719,
+       -112.967
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "AB",
+    "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+    "note": "Alberta Park",
+    "hits": [
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       58.6894,
+       -111.455
+      ],
+      "attrs": {
+       "PASITES_ID": 5200.0,
+       "NAME": "Wood Buffalo",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 8938427.69074205,
+       "HECTARES": 3617253.35064374,
+       "DATE_EST": -1483293600000,
+       "OC_NAME": "Wood Buffalo National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       50.724,
+       -114.86
+      ],
+      "attrs": {
+       "PASITES_ID": 1114.0,
+       "NAME": "Don Getty Wildland",
+       "TYPE": "WPP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "IB",
+       "OC_NO": "OC 306/2001",
+       "ACRES": 154635.55201787,
+       "HECTARES": 62578.78768148,
+       "OC_DATE": 995954400000,
+       "DATE_EST": 995954400000,
+       "OC_NAME": "Don Getty Wildland Provincial Park"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       51.0529,
+       -114.91
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       50.3938,
+       -114.599
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       50.8866,
+       -114.672
+      ],
+      "attrs": {
+       "PASITES_ID": 10225.0,
+       "NAME": "McLean Creek",
+       "TYPE": "PRA",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "NR",
+       "OC_NO": "OC 389/97",
+       "ACRES": 604.89221779,
+       "HECTARES": 244.79119564,
+       "OC_DATE": 872661600000,
+       "DATE_EST": 385797600000,
+       "OC_NAME": "McLean Creek Provincial Recreation Area"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       49.0833,
+       -113.917
+      ],
+      "attrs": {
+       "PASITES_ID": 5189.0,
+       "NAME": "Waterton Lakes",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 123216.57513335,
+       "HECTARES": 49863.97884245,
+       "DATE_EST": -2335284000000,
+       "OC_NAME": "Waterton Lakes National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       51.3641,
+       -116.29
+      ],
+      "attrs": {
+       "PASITES_ID": 5012.0,
+       "NAME": "Banff",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 1692721.44138161,
+       "HECTARES": 685020.06363893,
+       "DATE_EST": -2650816800000,
+       "OC_NAME": "Banff National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       51.1699,
+       -115.589
+      ],
+      "attrs": {
+       "PASITES_ID": 5012.0,
+       "NAME": "Banff",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 1692721.44138161,
+       "HECTARES": 685020.06363893,
+       "DATE_EST": -2650816800000,
+       "OC_NAME": "Banff National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       49.0716,
+       -113.987
+      ],
+      "attrs": {
+       "PASITES_ID": 5189.0,
+       "NAME": "Waterton Lakes",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 123216.57513335,
+       "HECTARES": 49863.97884245,
+       "DATE_EST": -2335284000000,
+       "OC_NAME": "Waterton Lakes National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       51.8004,
+       -116.756
+      ],
+      "attrs": {
+       "PASITES_ID": 5012.0,
+       "NAME": "Banff",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 1692721.44138161,
+       "HECTARES": 685020.06363893,
+       "DATE_EST": -2650816800000,
+       "OC_NAME": "Banff National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       52.729,
+       -117.642
+      ],
+      "attrs": {
+       "PASITES_ID": 5256.0,
+       "NAME": "Jasper",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 2775661.31325855,
+       "HECTARES": 1123270.28119676,
+       "DATE_EST": -1956679200000,
+       "OC_NAME": "Jasper National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       51.5227,
+       -116.077
+      ],
+      "attrs": {
+       "PASITES_ID": 5012.0,
+       "NAME": "Banff",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 1692721.44138161,
+       "HECTARES": 685020.06363893,
+       "DATE_EST": -2650816800000,
+       "OC_NAME": "Banff National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       51.147,
+       -115.579
+      ],
+      "attrs": {
+       "PASITES_ID": 5012.0,
+       "NAME": "Banff",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 1692721.44138161,
+       "HECTARES": 685020.06363893,
+       "DATE_EST": -2650816800000,
+       "OC_NAME": "Banff National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       52.863,
+       -118.224
+      ],
+      "attrs": {
+       "PASITES_ID": 5256.0,
+       "NAME": "Jasper",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 2775661.31325855,
+       "HECTARES": 1123270.28119676,
+       "DATE_EST": -1956679200000,
+       "OC_NAME": "Jasper National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       52.4655,
+       -116.09
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       49.0859,
+       -111.62
+      ],
+      "attrs": {
+       "PASITES_ID": 1065.0,
+       "NAME": "Writing-on-Stone",
+       "TYPE": "PP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "OC_NO": "OC 408/2011",
+       "ACRES": 6647.96833515,
+       "HECTARES": 2690.3373353,
+       "OC_DATE": 1315548000000,
+       "DATE_EST": -409428000000,
+       "OC_NAME": "Writing-on-Stone Provincial Park"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       49.0587,
+       -113.904
+      ],
+      "attrs": {
+       "PASITES_ID": 5189.0,
+       "NAME": "Waterton Lakes",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 123216.57513335,
+       "HECTARES": 49863.97884245,
+       "DATE_EST": -2335284000000,
+       "OC_NAME": "Waterton Lakes National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       52.292,
+       -117.741
+      ],
+      "attrs": {
+       "PASITES_ID": 5256.0,
+       "NAME": "Jasper",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 2775661.31325855,
+       "HECTARES": 1123270.28119676,
+       "DATE_EST": -1956679200000,
+       "OC_NAME": "Jasper National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       51.9705,
+       -116.72
+      ],
+      "attrs": {
+       "PASITES_ID": 5012.0,
+       "NAME": "Banff",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 1692721.44138161,
+       "HECTARES": 685020.06363893,
+       "DATE_EST": -2650816800000,
+       "OC_NAME": "Banff National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       49.6933,
+       -114.477
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       51.0312,
+       -115.037
+      ],
+      "attrs": {
+       "PASITES_ID": 1005.0,
+       "NAME": "Bow Valley",
+       "TYPE": "PP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "OC_NO": "OC 424/2002",
+       "ACRES": 8020.46055141,
+       "HECTARES": 3245.76522931,
+       "OC_DATE": 1031119200000,
+       "DATE_EST": -329248800000,
+       "OC_NAME": "Bow Valley Provincial Park",
+       "NOTES": "Includes all or part of the following former Provincial Recreation Areas:  Bow River, Gap Lake, Grotto Mountain, Lac Des Arcs, Three Sisters, Old Camp, all first established 1982."
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       52.3802,
+       -118.186
+      ],
+      "attrs": {
+       "PASITES_ID": 5256.0,
+       "NAME": "Jasper",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 2775661.31325855,
+       "HECTARES": 1123270.28119676,
+       "DATE_EST": -1956679200000,
+       "OC_NAME": "Jasper National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       53.3877,
+       -117.687
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       52.3128,
+       -114.091
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       49.4453,
+       -114.322
+      ],
+      "attrs": {
+       "PASITES_ID": 1158.0,
+       "NAME": "Castle",
+       "TYPE": "PP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "OC_NO": "OC 22/2017",
+       "ACRES": 63013.61993255,
+       "HECTARES": 25500.70725227,
+       "OC_DATE": 1484892000000,
+       "DATE_EST": 1487224800000,
+       "OC_NAME": "Castle Provincial Park"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       54.937,
+       -114.037
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       53.4325,
+       -117.531
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       51.1264,
+       -114.133
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       50.4289,
+       -110.366
+      ],
+      "attrs": {
+       "PASITES_ID": 578.0,
+       "NAME": "Hargrave Coulees",
+       "TYPE": "NA",
+       "SUBTYPE": "Conservation",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "IV",
+       "OC_NO": "OC 374/2020",
+       "ACRES": 4481.03584828,
+       "HECTARES": 1813.41087016,
+       "OC_DATE": 1606888800000,
+       "DATE_EST": 854517600000,
+       "OC_NAME": "Hargrave Coulees Natural Area",
+       "NOTES": "Originally designated as \"Prairie Coulees Natural Area\".  Renamed \"Hargrave Coulees Natural Area\" by O.C. 374/2020."
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       52.285,
+       -113.795
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       58.3961,
+       -116.003
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       51.174,
+       -115.572
+      ],
+      "attrs": {
+       "PASITES_ID": 5012.0,
+       "NAME": "Banff",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 1692721.44138161,
+       "HECTARES": 685020.06363893,
+       "DATE_EST": -2650816800000,
+       "OC_NAME": "Banff National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       50.4191,
+       -114.242
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       53.831,
+       -110.359
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       53.146,
+       -117.977
+      ],
+      "attrs": {
+       "PASITES_ID": 5256.0,
+       "NAME": "Jasper",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 2775661.31325855,
+       "HECTARES": 1123270.28119676,
+       "DATE_EST": -1956679200000,
+       "OC_NAME": "Jasper National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       52.8773,
+       -118.081
+      ],
+      "attrs": {
+       "PASITES_ID": 5256.0,
+       "NAME": "Jasper",
+       "TYPE": "NP",
+       "STATUS": "OC",
+       "SOURCE": 41,
+       "IUCN": "II",
+       "ACRES": 2775661.31325855,
+       "HECTARES": 1123270.28119676,
+       "DATE_EST": -1956679200000,
+       "OC_NAME": "Jasper National Park of Canada"
+      }
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       52.3607,
+       -114.982
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       46.861,
+       -52.9446
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       52.2757,
+       -113.862
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Area Designations",
+      "point": [
+       53.4719,
+       -112.967
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "AB",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       58.6894,
+       -111.455
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.724,
+       -114.86
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.0529,
+       -114.91
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.3938,
+       -114.599
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.8866,
+       -114.672
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.0833,
+       -113.917
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.3641,
+       -116.29
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.1699,
+       -115.589
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.0716,
+       -113.987
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.8004,
+       -116.756
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.729,
+       -117.642
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.5227,
+       -116.077
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.147,
+       -115.579
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.863,
+       -118.224
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.4655,
+       -116.09
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.0859,
+       -111.62
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.0587,
+       -113.904
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.292,
+       -117.741
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.9705,
+       -116.72
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.6933,
+       -114.477
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.0312,
+       -115.037
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.3802,
+       -118.186
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       53.3877,
+       -117.687
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.3128,
+       -114.091
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.4453,
+       -114.322
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       54.937,
+       -114.037
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       53.4325,
+       -117.531
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.1264,
+       -114.133
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.4289,
+       -110.366
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.285,
+       -113.795
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       58.3961,
+       -116.003
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.174,
+       -115.572
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.4191,
+       -114.242
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       53.831,
+       -110.359
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       53.146,
+       -117.977
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.8773,
+       -118.081
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.3607,
+       -114.982
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.861,
+       -52.9446
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.2757,
+       -113.862
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       53.4719,
+       -112.967
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "AB",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       58.6894,
+       -111.455
+      ],
+      "attrs": {
+       "NAME_E": "Wood Buffalo National Park Of Canada",
+       "NAME_F": "Parc national du Canada Wood Buffalo",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1922,
+       "ESTYEAR": 1922,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 3564211,
+       "PARENT_ID": 719700000,
+       "ZONE_ID": 719700000,
+       "ZONEDESC_E": "Alberta",
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.724,
+       -114.86
+      ],
+      "attrs": {
+       "NAME_E": "Don Getty Wildland Provincial Park",
+       "NAME_F": "Don Getty Wildland Provincial Park",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 2,
+       "STATUS": 1,
+       "QUALYEAR": 2001,
+       "ESTYEAR": 2001,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 62678.445369228255,
+       "PARENT_ID": 480001114,
+       "ZONE_ID": 480111400,
+       "MECH_E": "Provincial Parks Act",
+       "TYPE_E": "Wildland Provincial Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Alberta",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Parks Division, Alberta Forestry and Parks",
+       "SUBSRIGHT": "B",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 48,
+       "JUR_ID": "1114",
+       "MPLAN": 0,
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.0529,
+       -114.91
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.3938,
+       -114.599
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.8866,
+       -114.672
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.0833,
+       -113.917
+      ],
+      "attrs": {
+       "NAME_E": "Waterton Lakes National Park Of Canada",
+       "NAME_F": "Parc national du Canada des Lacs-Waterton",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1895,
+       "ESTYEAR": 1895,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 50500,
+       "PARENT_ID": 719600000,
+       "ZONE_ID": 719600000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.3641,
+       -116.29
+      ],
+      "attrs": {
+       "NAME_E": "Banff National Park Of Canada",
+       "NAME_F": "Parc national du Canada Banff",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1885,
+       "ESTYEAR": 1885,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 664100,
+       "PARENT_ID": 710300000,
+       "ZONE_ID": 710300000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.3641,
+       -116.29
+      ],
+      "attrs": {
+       "NAME_E": "Yoho National Park Of Canada",
+       "NAME_F": "Parc national du Canada Yoho",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1886,
+       "ESTYEAR": 1886,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 131310,
+       "PARENT_ID": 719900000,
+       "ZONE_ID": 719900000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.1699,
+       -115.589
+      ],
+      "attrs": {
+       "NAME_E": "Banff National Park Of Canada",
+       "NAME_F": "Parc national du Canada Banff",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1885,
+       "ESTYEAR": 1885,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 664100,
+       "PARENT_ID": 710300000,
+       "ZONE_ID": 710300000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.0716,
+       -113.987
+      ],
+      "attrs": {
+       "NAME_E": "Waterton Lakes National Park Of Canada",
+       "NAME_F": "Parc national du Canada des Lacs-Waterton",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1895,
+       "ESTYEAR": 1895,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 50500,
+       "PARENT_ID": 719600000,
+       "ZONE_ID": 719600000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.8004,
+       -116.756
+      ],
+      "attrs": {
+       "NAME_E": "Banff National Park Of Canada",
+       "NAME_F": "Parc national du Canada Banff",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1885,
+       "ESTYEAR": 1885,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 664100,
+       "PARENT_ID": 710300000,
+       "ZONE_ID": 710300000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.729,
+       -117.642
+      ],
+      "attrs": {
+       "NAME_E": "Jasper National Park Of Canada",
+       "NAME_F": "Parc national du Canada Jasper",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1907,
+       "ESTYEAR": 1907,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 1087800,
+       "PARENT_ID": 714700000,
+       "ZONE_ID": 714700000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.5227,
+       -116.077
+      ],
+      "attrs": {
+       "NAME_E": "Banff National Park Of Canada",
+       "NAME_F": "Parc national du Canada Banff",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1885,
+       "ESTYEAR": 1885,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 664100,
+       "PARENT_ID": 710300000,
+       "ZONE_ID": 710300000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.147,
+       -115.579
+      ],
+      "attrs": {
+       "NAME_E": "Banff National Park Of Canada",
+       "NAME_F": "Parc national du Canada Banff",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1885,
+       "ESTYEAR": 1885,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 664100,
+       "PARENT_ID": 710300000,
+       "ZONE_ID": 710300000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.863,
+       -118.224
+      ],
+      "attrs": {
+       "NAME_E": "Jasper National Park Of Canada",
+       "NAME_F": "Parc national du Canada Jasper",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1907,
+       "ESTYEAR": 1907,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 1087800,
+       "PARENT_ID": 714700000,
+       "ZONE_ID": 714700000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.4655,
+       -116.09
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.0859,
+       -111.62
+      ],
+      "attrs": {
+       "NAME_E": "Writing-on-Stone Provincial Park",
+       "NAME_F": "Writing-on-Stone Provincial Park",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1957,
+       "ESTYEAR": 1957,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 2690.799019211359,
+       "PARENT_ID": 480001065,
+       "ZONE_ID": 480106500,
+       "MECH_E": "Provincial Parks Act",
+       "TYPE_E": "Provincial Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Alberta",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Parks Division, Alberta Forestry and Parks",
+       "SUBSRIGHT": "B",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 48,
+       "JUR_ID": "1065",
+       "MPLAN": 1,
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.0587,
+       -113.904
+      ],
+      "attrs": {
+       "NAME_E": "Waterton Lakes National Park Of Canada",
+       "NAME_F": "Parc national du Canada des Lacs-Waterton",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1895,
+       "ESTYEAR": 1895,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 50500,
+       "PARENT_ID": 719600000,
+       "ZONE_ID": 719600000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.292,
+       -117.741
+      ],
+      "attrs": {
+       "NAME_E": "Jasper National Park Of Canada",
+       "NAME_F": "Parc national du Canada Jasper",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1907,
+       "ESTYEAR": 1907,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 1087800,
+       "PARENT_ID": 714700000,
+       "ZONE_ID": 714700000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.9705,
+       -116.72
+      ],
+      "attrs": {
+       "NAME_E": "Banff National Park Of Canada",
+       "NAME_F": "Parc national du Canada Banff",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1885,
+       "ESTYEAR": 1885,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 664100,
+       "PARENT_ID": 710300000,
+       "ZONE_ID": 710300000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.6933,
+       -114.477
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.0312,
+       -115.037
+      ],
+      "attrs": {
+       "NAME_E": "Bow Valley Provincial Park",
+       "NAME_F": "Bow Valley Provincial Park",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1959,
+       "ESTYEAR": 1959,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 3250.962394329371,
+       "PARENT_ID": 480001005,
+       "ZONE_ID": 480100500,
+       "MECH_E": "Provincial Parks Act",
+       "TYPE_E": "Provincial Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Alberta",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Parks Division, Alberta Forestry and Parks",
+       "SUBSRIGHT": "B",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 48,
+       "JUR_ID": "1005",
+       "MPLAN": 1,
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.3802,
+       -118.186
+      ],
+      "attrs": {
+       "NAME_E": "Jasper National Park Of Canada",
+       "NAME_F": "Parc national du Canada Jasper",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1907,
+       "ESTYEAR": 1907,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 1087800,
+       "PARENT_ID": 714700000,
+       "ZONE_ID": 714700000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       53.3877,
+       -117.687
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.3128,
+       -114.091
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.4453,
+       -114.322
+      ],
+      "attrs": {
+       "NAME_E": "Castle Provincial Park",
+       "NAME_F": "Castle Provincial Park",
+       "PA_OECM_DF": 5,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "ESTYEAR": 2017,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 3162.9121413106745,
+       "PARENT_ID": 480001158,
+       "ZONE_ID": 480115899,
+       "ZONEDESC_E": "Surface access permitted to honoured subsurface rights",
+       "MECH_E": "Provincial Parks Act",
+       "TYPE_E": "Provincial Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Alberta",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Parks Division, Alberta Forestry and Parks",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 48,
+       "JUR_ID": "1158",
+       "MPLAN": 1,
+       "M_EFF": 0,
+       "PA_BIOME": "Not included in statistics"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       54.937,
+       -114.037
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       53.4325,
+       -117.531
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.1264,
+       -114.133
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.4289,
+       -110.366
+      ],
+      "attrs": {
+       "NAME_E": "Hargrave Coulees Natural Area",
+       "NAME_F": "Hargrave Coulees Natural Area",
+       "PA_OECM_DF": 5,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "ESTYEAR": 1997,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 1670.8327903285292,
+       "PARENT_ID": 480000578,
+       "ZONE_ID": 480057899,
+       "ZONEDESC_E": "Surface access permitted to honoured subsurface rights",
+       "MECH_E": "Wilderness Areas, Ecological Reserves, Natural Areas and Heritage Rangelands Act",
+       "TYPE_E": "Natural Area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Alberta",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Lands Operations Division, Alberta Forestry and Parks",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 48,
+       "JUR_ID": "578",
+       "MPLAN": 1,
+       "M_EFF": 0,
+       "PA_BIOME": "Not included in statistics"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.285,
+       -113.795
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       58.3961,
+       -116.003
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.174,
+       -115.572
+      ],
+      "attrs": {
+       "NAME_E": "Banff National Park Of Canada",
+       "NAME_F": "Parc national du Canada Banff",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1885,
+       "ESTYEAR": 1885,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 664100,
+       "PARENT_ID": 710300000,
+       "ZONE_ID": 710300000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.4191,
+       -114.242
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       53.831,
+       -110.359
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       53.146,
+       -117.977
+      ],
+      "attrs": {
+       "NAME_E": "Jasper National Park Of Canada",
+       "NAME_F": "Parc national du Canada Jasper",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1907,
+       "ESTYEAR": 1907,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 1087800,
+       "PARENT_ID": 714700000,
+       "ZONE_ID": 714700000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.8773,
+       -118.081
+      ],
+      "attrs": {
+       "NAME_E": "Jasper National Park Of Canada",
+       "NAME_F": "Parc national du Canada Jasper",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1907,
+       "ESTYEAR": 1907,
+       "BIOME": "T",
+       "LOC": 1,
+       "O_AREA_HA": 1087800,
+       "PARENT_ID": 714700000,
+       "ZONE_ID": 714700000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.3607,
+       -114.982
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.861,
+       -52.9446
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.2757,
+       -113.862
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       53.4719,
+       -112.967
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 400,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,73 @@
+{
+ "request": "requests/8-rg7-pk-me2.json",
+ "id": "8-rg7-pk-me2",
+ "chat": 8,
+ "kind": "parcel",
+ "report": "ME Conservation Lands at Mahoosuc + Capitol Park pins (first host answered 404 service not found).",
+ "asked": {
+  "chat": 8,
+  "kind": "parcel",
+  "layer": "https://gis.maine.gov/mapservices/rest/services/dep/Maine_DEP_Outstanding_National_Resource_Waters/MapServer/5",
+  "points": [
+   [
+    44.5273,
+    -70.95
+   ],
+   [
+    44.3065,
+    -69.7784
+   ]
+  ],
+  "refs": [
+   "US-9174",
+   "US-8287"
+  ],
+  "report": "ME Conservation Lands at Mahoosuc + Capitol Park pins (first host answered 404 service not found)."
+ },
+ "answered": "2026-10-29 21:05Z",
+ "results": [
+  {
+   "point": [
+    44.5273,
+    -70.95
+   ],
+   "features": [
+    {
+     "OBJECTID": 140,
+     "PROJECT": "Mahoosucs",
+     "PARCEL_NAME": "Frederick Owen Wight",
+     "DESIGNATION": "Public Land",
+     "CONS1_TYPE": "Fee",
+     "HOLD1_NAME": "Maine Bureau of Parks and Lands",
+     "HOLD1_TYPE": "State",
+     "CONS2_TYPE": null,
+     "HOLD2_NAME": null,
+     "HOLD2_TYPE": null,
+     "ECO_RESERVE": null,
+     "ACQ_YEAR": "2000",
+     "RPT_AC": 239,
+     "CALC_AC": 401.74897585,
+     "Shape_Length": 98589.8845829,
+     "Shape_Area": 126796858.53202477
+    }
+   ]
+  },
+  {
+   "point": [
+    44.3065,
+    -69.7784
+   ],
+   "features": []
+  }
+ ],
+ "seconds": 14,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 2
+ },
+ "short": "2 result(s), 2 read OK"
+}

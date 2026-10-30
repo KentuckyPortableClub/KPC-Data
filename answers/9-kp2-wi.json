@@ -1,0 +1,455 @@
+{
+ "request": "requests/9-kp2-wi.json",
+ "id": "9-kp2-wi",
+ "chat": 9,
+ "kind": "probe",
+ "report": "kp2 WI: 1 parks, 7 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "kp2 WI: 1 parks, 7 layers",
+  "probe": {
+   "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State WI: 1 parks. Refs in order of points: US-9831. Results to chat 11.",
+   "refs": [
+    "US-9831"
+   ],
+   "pointq": [
+    {
+     "st": "WI",
+     "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0",
+     "note": "WI Wisconsin DNR",
+     "points": [
+      [
+       43.3978,
+       -88.3406
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "WI",
+     "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_WSPS_Property_Info_WTM_Ext/MapServer/0",
+     "note": "WI Wisconsin State Parks (DNR)",
+     "points": [
+      [
+       43.3978,
+       -88.3406
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "WI",
+     "url": "https://dnrmaps.wi.gov/arcgis/rest/services/ER_Biotics/ER_Biotics_WGS84_Managed_Lands/MapServer/1",
+     "note": "WI Wisconsin DNR Natural Heritage Conservat",
+     "points": [
+      [
+       43.3978,
+       -88.3406
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "WI",
+     "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/1",
+     "note": "WI Wisconsin DNR Bureau of Facilities and L",
+     "points": [
+      [
+       43.3978,
+       -88.3406
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       43.3978,
+       -88.3406
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       43.3978,
+       -88.3406
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       43.3978,
+       -88.3406
+      ]
+     ],
+     "dist": 3000
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-29 23:52Z",
+ "results": {
+  "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State WI: 1 parks. Refs in order of points: US-9831. Results to chat 11.",
+  "date": "2026-10-29",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "WI",
+    "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0",
+    "note": "WI Wisconsin DNR",
+    "hits": [
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "PROP_NAME": "Allenton Wildlife Area",
+       "PROP_CODE": 7030,
+       "PROP_ACRES": 1159.44,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "WM"
+      }
+     },
+     {
+      "layer": "0 DNR Managed Land by Property",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "PROP_NAME": "Theresa Wildlife Area",
+       "PROP_CODE": 8650,
+       "PROP_ACRES": 5425.09,
+       "TRANS_TYPE": 1,
+       "PROGRAM": "WM"
+      }
+     }
+    ]
+   },
+   {
+    "st": "WI",
+    "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_WSPS_Property_Info_WTM_Ext/MapServer/0",
+    "note": "WI Wisconsin State Parks (DNR)",
+    "hits": [
+     {
+      "layer": "0 WSPS Properties",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "WI",
+    "url": "https://dnrmaps.wi.gov/arcgis/rest/services/ER_Biotics/ER_Biotics_WGS84_Managed_Lands/MapServer/1",
+    "note": "WI Wisconsin DNR Natural Heritage Conservat",
+    "hits": [
+     {
+      "layer": "1 SNAs",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "WI",
+    "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/1",
+    "note": "WI Wisconsin DNR Bureau of Facilities and L",
+    "hits": [
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 20180,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 7030,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 70300000,
+       "PROP_NAME": "Allenton Wildlife Area",
+       "PROP_NAME_LABEL": "Allenton Wildlife Area",
+       "GIS_ACRES": 40.19826269,
+       "DEED_ACRES": 40.0,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 20162,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 7030,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 70300000,
+       "PROP_NAME": "Allenton Wildlife Area",
+       "PROP_NAME_LABEL": "Allenton Wildlife Area",
+       "GIS_ACRES": 23.53383231,
+       "DEED_ACRES": 30.4,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 20170,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 7030,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 70300000,
+       "PROP_NAME": "Allenton Wildlife Area",
+       "PROP_NAME_LABEL": "Allenton Wildlife Area",
+       "GIS_ACRES": 40.21084503,
+       "DEED_ACRES": 30.0,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 20167,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 7030,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 70300000,
+       "PROP_NAME": "Allenton Wildlife Area",
+       "PROP_NAME_LABEL": "Allenton Wildlife Area",
+       "GIS_ACRES": 2.2832344,
+       "DEED_ACRES": 2.0,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 20166,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 7030,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 70300000,
+       "PROP_NAME": "Allenton Wildlife Area",
+       "PROP_NAME_LABEL": "Allenton Wildlife Area",
+       "GIS_ACRES": 28.08751238,
+       "DEED_ACRES": 28.0,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 69674,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 7030,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 70300000,
+       "PROP_NAME": "Allenton Wildlife Area",
+       "PROP_NAME_LABEL": "Allenton Wildlife Area",
+       "GIS_ACRES": 18.80354091,
+       "DEED_ACRES": 18.0,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 69672,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 7030,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 70300000,
+       "PROP_NAME": "Allenton Wildlife Area",
+       "PROP_NAME_LABEL": "Allenton Wildlife Area",
+       "GIS_ACRES": 0.1529277,
+       "DEED_ACRES": 0.4,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 20184,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 7030,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 70300000,
+       "PROP_NAME": "Allenton Wildlife Area",
+       "PROP_NAME_LABEL": "Allenton Wildlife Area",
+       "GIS_ACRES": 40.31999355,
+       "DEED_ACRES": 40.0,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 20190,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 7030,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 70300000,
+       "PROP_NAME": "Allenton Wildlife Area",
+       "PROP_NAME_LABEL": "Allenton Wildlife Area",
+       "GIS_ACRES": 14.23435736,
+       "DEED_ACRES": 11.5,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     },
+     {
+      "layer": "1 DNR Managed Lands by Parcel--No Property Names",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "TRANS_CONTROL_NO": 20174,
+       "TRANS_TYPE_CODE": 1,
+       "PROP_CODE": 7030,
+       "EASE_USE_CODE": 1111,
+       "PROP_NAME_CODE": 70300000,
+       "PROP_NAME": "Allenton Wildlife Area",
+       "PROP_NAME_LABEL": "Allenton Wildlife Area",
+       "GIS_ACRES": 0.39523027,
+       "DEED_ACRES": 0.5,
+       "FUNCTION_MGT_CODE": "WM",
+       "ADMIN_CODE": "WM"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.3978,
+       -88.3406
+      ],
+      "attrs": {
+       "CostCenter": "FF03RLPW00",
+       "CMPXNAME": "LEOPOLD WETLAND MANAGEMENT DISTRICT",
+       "ORGNAME": "ZZ",
+       "ORGCODE": 32525,
+       "IFWS": "9999",
+       "LIT": "ZZ",
+       "GISACRES": 8044947.15264301,
+       "MAXACRES": 9000,
+       "APPTYPE": 1,
+       "RSL_TYPE": "WMD",
+       "FWSREGION": "3",
+       "LABELNAME": "Leopold WMD",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1772144270000,
+       "IntReg": "3"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 40,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

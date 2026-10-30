@@ -1,0 +1,216 @@
+{
+ "request": "requests/9-kp2-nd.json",
+ "id": "9-kp2-nd",
+ "chat": 9,
+ "kind": "probe",
+ "report": "kp2 ND: 1 parks, 6 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "kp2 ND: 1 parks, 6 layers",
+  "probe": {
+   "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State ND: 1 parks. Refs in order of points: US-8607. Results to chat 11.",
+   "refs": [
+    "US-8607"
+   ],
+   "pointq": [
+    {
+     "st": "ND",
+     "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0",
+     "note": "ND North Dakota Game & Fish",
+     "points": [
+      [
+       46.8666,
+       -101.276
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ND",
+     "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_State_Parks/FeatureServer/0",
+     "note": "ND North Dakota Parks & Recreation",
+     "points": [
+      [
+       46.8666,
+       -101.276
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ND",
+     "url": "https://services3.arcgis.com/G9FKQ0xH9VagrUos/arcgis/rest/services/NDPRD_Boundaries/FeatureServer/0",
+     "note": "ND North Dakota Parks and Recreation Depart",
+     "points": [
+      [
+       46.8666,
+       -101.276
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       46.8666,
+       -101.276
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       46.8666,
+       -101.276
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       46.8666,
+       -101.276
+      ]
+     ],
+     "dist": 3000
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-29 23:35Z",
+ "results": {
+  "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State ND: 1 parks. Refs in order of points: US-8607. Results to chat 11.",
+  "date": "2026-10-29",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "ND",
+    "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0",
+    "note": "ND North Dakota Game & Fish",
+    "hits": [
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       46.8666,
+       -101.276
+      ],
+      "attrs": {
+       "Unit_Name": "Sweet Briar Lake",
+       "Acres": 34.79514244,
+       "COUNTY": "Morton"
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Areas",
+      "point": [
+       46.8666,
+       -101.276
+      ],
+      "attrs": {
+       "Unit_Name": "Sweet Briar Lake",
+       "Acres": 892.68257795,
+       "COUNTY": "Morton"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ND",
+    "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_State_Parks/FeatureServer/0",
+    "note": "ND North Dakota Parks & Recreation",
+    "hits": [
+     {
+      "layer": "0 State Parks",
+      "point": [
+       46.8666,
+       -101.276
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ND",
+    "url": "https://services3.arcgis.com/G9FKQ0xH9VagrUos/arcgis/rest/services/NDPRD_Boundaries/FeatureServer/0",
+    "note": "ND North Dakota Parks and Recreation Depart",
+    "hits": [
+     {
+      "layer": "0 NDPRD_Properties",
+      "point": [
+       46.8666,
+       -101.276
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       46.8666,
+       -101.276
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       46.8666,
+       -101.276
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 29,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,202 @@
+{
+ "request": "requests/8-rg7-lay2.json",
+ "id": "8-rg7-lay2",
+ "chat": 8,
+ "kind": "layer-probe",
+ "report": "R-G7 step 2: ME conservation lands (fields, owner/name, does it hold Mahoosuc), AK ASP Park Boundary (names: Chena, Bing's Landing, Funny River, Izaak Walton, Morgan's Landing), NY DEC Lands + WMA (Iona Island, Cayuga Lake; Adirondack/Catskill park boundary), CT DEEP Property dataset (download/service link, fields: Ferry Landing, Beckley, Satan's Kingdom, The Preserve).",
+ "asked": {
+  "chat": 8,
+  "kind": "layer-probe",
+  "layers": [
+   "https://gis.maine.gov/arcgis/rest/services/dep/Maine_DEP_Outstanding_National_Resource_Waters/MapServer/5",
+   "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+   "https://gisservices.dec.ny.gov/arcgis/rest/services/reference/MapServer/2",
+   "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2",
+   "https://catalog.data.gov/dataset/deep-property",
+   "https://nrcm.org/explore-maine-map/ecological-reserve"
+  ],
+  "report": "R-G7 step 2: ME conservation lands (fields, owner/name, does it hold Mahoosuc), AK ASP Park Boundary (names: Chena, Bing's Landing, Funny River, Izaak Walton, Morgan's Landing), NY DEC Lands + WMA (Iona Island, Cayuga Lake; Adirondack/Catskill park boundary), CT DEEP Property dataset (download/service link, fields: Ferry Landing, Beckley, Satan's Kingdom, The Preserve)."
+ },
+ "answered": "2026-10-29 20:53Z",
+ "results": [
+  {
+   "url": "https://gis.maine.gov/arcgis/rest/services/dep/Maine_DEP_Outstanding_National_Resource_Waters/MapServer/5",
+   "error": "{'code': 404, 'message': 'Service not found', 'details': []}"
+  },
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+   "answers": true,
+   "service": "ASP Park Boundary",
+   "licence": "Alaska Department of Natural Resources, Division of Parks and Outdoor Recreation",
+   "years_in_text": [],
+   "description": "Boundaries of Alaska State Parks, including all park units managed by the Division of Parks and Outdoor Recreation (DPOR). These boundaries were compiled from the statutes and management agreements which determine management by DPOR as well as state land ownership data. These boundaries include all land which is available for public recreation in each park, and which is managed by DPOR. These boun",
+   "item_err": "{'code': 400, 'messageCode': 'CONT_0001', 'message': 'Item does not exist or is ",
+   "layers": [
+    {
+     "id": null,
+     "name": "ASP Park Boundary",
+     "geom": "Polygon",
+     "nameField": "PARKNAME",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "PARKNAME",
+      "REGION",
+      "NAME",
+      "LWCF",
+      "DEV_GRANTS",
+      "RFRSHDT",
+      "GlobalID",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()",
+      "PRKTYPABRV",
+      "PRMRYLASFL",
+      "DTPRKCRTD",
+      "MI_LABEL",
+      "UID_",
+      "ACREAGE"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Alaska Department of Natural Resources, Division of Parks and Outdoor Recreation",
+     "records": 157,
+     "sample": [
+      "Mosquito Lake State Recreation Site",
+      "Centennial Lake Trail",
+      "Juneau Trail System",
+      "Rocky Lake State Recreation Site",
+      "Moon Lake State Recreation Site",
+      "Fort Rousseau Causeway State Historical ",
+      "Security Bay State Marine Park",
+      "Shotgun Cove State Recreation Site"
+     ]
+    }
+   ]
+  },
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://gisservices.dec.ny.gov/arcgis/rest/services/reference/MapServer/2",
+   "answers": true,
+   "service": "DEC Lands",
+   "licence": "",
+   "years_in_text": [],
+   "description": "Lands under the care, custody and control of DEC, including Wildlife Management areas, Unique Areas, State Forests, and Forest Preserve.",
+   "item_licence": "",
+   "item_credits": "",
+   "item_about": "General reference layers for ArcGIS Server applications. Created from rference.mxd (v 12/03/19) on 12/03/19 General reference layers for ArcGIS Server applications.",
+   "layers": [
+    {
+     "id": null,
+     "name": "DEC Lands",
+     "geom": "Polygon",
+     "nameField": "UNIT",
+     "ownerField": "MANAGE_BY",
+     "typeField": "CATEGORY",
+     "fields": [
+      "OBJECTID",
+      "CATEGORY",
+      "UNIT",
+      "FACILITY",
+      "CLASS",
+      "UMP",
+      "DESCRIPTIO",
+      "REGION",
+      "COUNTY",
+      "URL",
+      "SOURCE",
+      "FACILITY_N",
+      "OFFICE",
+      "ACRES",
+      "PUBLICUSE",
+      "LANDS_UID",
+      "GREENCERT",
+      "UPDATED",
+      "MANAGE_BY",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "",
+     "records": 3300,
+     "sample": [
+      "Lot-57",
+      "Lewis 21",
+      "Lewis 45",
+      "Lewis 45",
+      "Westchester 01",
+      "Putnam 03",
+      "AFP",
+      "CFP"
+     ],
+     "owner_valuesErr": "{'code': 400, 'message': 'Failed to execute query.', 'detail",
+     "type_valuesErr": "{'code': 400, 'message': 'Failed to execute query.', 'detail"
+    }
+   ]
+  },
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2",
+   "answers": true,
+   "service": "Wildlife Management Areas",
+   "licence": "",
+   "years_in_text": [],
+   "description": "To show the area of all types and ownerships of lands managed by the NYS DEC Bureau of Wildlife.",
+   "item_licence": "",
+   "item_credits": "",
+   "item_about": "DEC Info Locator - Land Activities Layer. Service updated02/05/20 with dil_land_activities.mxd : 06162020 GDC Updated with extra wmu layer DEC Info Locator - Land Activities Layer",
+   "layers": [
+    {
+     "id": null,
+     "name": "Wildlife Management Areas",
+     "geom": "Polygon",
+     "nameField": "",
+     "ownerField": "",
+     "typeField": "CATEGORY",
+     "fields": [
+      "OBJECTID",
+      "OBJECTID_1",
+      "WMA",
+      "REGION",
+      "COMMENTS",
+      "CATEGORY",
+      "URL",
+      "WMU",
+      "WILDAREA",
+      "SHAPE_LENG",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "",
+     "records": 132,
+     "type_valuesErr": "{'code': 400, 'message': 'Failed to execute query.', 'detail"
+    }
+   ]
+  },
+  {
+   "url": "https://catalog.data.gov/dataset/deep-property",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "url": "https://nrcm.org/explore-maine-map/ecological-reserve",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  }
+ ],
+ "seconds": 92,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "6 result(s), 3 read OK"
+}

@@ -1,0 +1,457 @@
+{
+ "request": "requests/9-ca-lp1.json",
+ "id": "9-ca-lp1",
+ "chat": 9,
+ "kind": "layer-probe",
+ "report": "CA-LP1: Fable CANADA MAP LAYERS TO START, the ones with a known URL (polygon? name fields EN+FR, licence, bbox)",
+ "asked": {
+  "chat": 9,
+  "kind": "layer-probe",
+  "report": "CA-LP1: Fable CANADA MAP LAYERS TO START, the ones with a known URL (polygon? name fields EN+FR, licence, bbox)",
+  "layers": [
+   "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+   "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Provincial_Forests___Version_6/FeatureServer",
+   "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services",
+   "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon",
+   "https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT",
+   "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer"
+  ]
+ },
+ "answered": "2026-10-30 00:06Z",
+ "results": [
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+   "answers": true,
+   "service": "Local and Regional Greenspaces",
+   "licence": "",
+   "years_in_text": [],
+   "description": "Feature class name is 'WHSE_BASEMAPPING.GBA_LOCAL_REG_GREENSPACES_SP'. See metadata: https://catalogue.data.gov.bc.ca/dataset/6a2fea1b-0cc4-4fc2-8017-eaf755d516da",
+   "item_licence": "access information?",
+   "item_credits": "© 2024 Government of British Columbia",
+   "item_about": "This service has been built for a specific purpose and may change at any time Map Service Courtesy of DataBC",
+   "layers": [
+    {
+     "id": null,
+     "name": "Local and Regional Greenspaces",
+     "geom": "Polygon",
+     "nameField": "PARK_NAME",
+     "ownerField": "",
+     "typeField": "PARK_TYPE",
+     "fields": [
+      "LOCAL_REG_GREENSPACE_ID",
+      "PARK_NAME",
+      "PARK_TYPE",
+      "PARK_PRIMARY_USE",
+      "REGIONAL_DISTRICT",
+      "MUNICIPALITY",
+      "CIVIC_NUMBER",
+      "CIVIC_NUMBER_SUFFIX",
+      "STREET_NAME",
+      "LATITUDE",
+      "LONGITUDE",
+      "WHEN_UPDATED",
+      "WEBSITE_URL",
+      "LICENCE_COMMENTS",
+      "FEATURE_AREA_SQM",
+      "FEATURE_LENGTH_M",
+      "SHAPE",
+      "OBJECTID",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "",
+     "records": 9682,
+     "sample": [
+      "5th Avenue Park",
+      "Terra Nova South Park",
+      "Thompson Park",
+      "Gibbons VLA Park",
+      "McCallan Neighbourhood Park",
+      "Garnet Tot Lot",
+      "Thompson/Burnett Community Park",
+      "Tiffany Park"
+     ],
+     "type_values": [
+      "Local"
+     ]
+    }
+   ]
+  },
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Provincial_Forests___Version_6/FeatureServer",
+   "answers": true,
+   "service": "",
+   "licence": "Manitoba Government, Gouvernement du Manitoba",
+   "years_in_text": [],
+   "description": "Manitoba's Provincial Forest Boundaries (version 6): There are currently 15 provincial forests totalling almost 22,000 km2. Attributes include the name of the provincial forest, the year it was established and its area. Detailed descriptions of Manitoba’s provincial forests are provided in the Provincial Forest Act Regulations. | Limites des forêts provinciales du Manitoba (version 6) : il existe ",
+   "item_licence": "Manitoba Open Data Licence      |      Licence relative au site Ouverture MB",
+   "item_modified": "2023-08-03",
+   "item_owner": "Manitoba_Government",
+   "item_org": "Manitoba Maps",
+   "item_title": "Manitoba Provincial Forests – Version 6",
+   "item_credits": "Manitoba Government",
+   "item_about": "Manitoba's Provincial Forest B oundaries ( V ersion 6 ). Manitoba's provincial forests reserve certain areas in the province for perpetual growth of timber, preserve the forest cover thereon and provide for a reasonable use of all the resources that the forest lands contain. All Crown lands within a provincial forest are withdrawn from disposition, sale, settlement or occupancy, except under authority of the Forest Act . Before the Province of Manitoba was established, European settlers were promised 160 acres of free land if they lived on it and cleared it for agriculture. As a result, farms ",
+   "layers": [
+    {
+     "id": 1,
+     "name": "Manitoba Provincial Forests - Version 6",
+     "geom": "Polygon",
+     "nameField": "PROV_FOREST_NAME",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "PROV_FOREST_ID",
+      "PROV_FOREST_NAME",
+      "NOM_FORET_PROV",
+      "ESTABLISHED",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "last_edit": "2023-08-02",
+     "layer_copyright": "Manitoba Government, Gouvernement du Manitoba",
+     "records": 57,
+     "sample": [
+      "Agassiz Provincial Forest",
+      "Belair Provincial Forest",
+      "Brightstone Sand Hills Provincial Forest",
+      "Cat Hills Provincial Forest",
+      "Cormorant Provincial Forest",
+      "Duck Mountain",
+      "Moose Creek Provincial Forest",
+      "Moose Creek Provincial Forest"
+     ]
+    }
+   ]
+  },
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services",
+   "answers": true,
+   "service": "",
+   "licence": "",
+   "years_in_text": [],
+   "description": "",
+   "layers": []
+  },
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon",
+   "answers": true,
+   "service": "",
+   "licence": "",
+   "years_in_text": [],
+   "description": "",
+   "layers": []
+  },
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT",
+   "answers": true,
+   "service": "",
+   "licence": "",
+   "years_in_text": [],
+   "description": "",
+   "item_licence": "",
+   "item_credits": "",
+   "item_about": "",
+   "layers": []
+  },
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer",
+   "answers": true,
+   "service": "Land Use Management",
+   "licence": "Copyright Government of Alberta",
+   "years_in_text": [],
+   "description": "This map service contains label and outline layers of the Land Use Management boundaries data layers - Alberta Sustainable Resource Development Land Use Operations Office, Alberta Sustainable Resource Development Rangeland Management District, Rocky Mountains Forest Reserve, Public Land Recreation Area, Public Land Use Zone, Eastern Slopes Land Use Zoning.",
+   "item_err": "{'code': 400, 'messageCode': 'CONT_0001', 'message': 'Item does not exist or is ",
+   "layers": [
+    {
+     "id": 1,
+     "name": "Alberta Sustainable Resource Development Land Use Operations",
+     "geom": "Polygon",
+     "nameField": "ASRDLUOO_NAME",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "GlobalID",
+      "ASRDLUOO_NAME",
+      "ASRDLUOO_CODE",
+      "Shape",
+      "OBJECTID",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Copyright Government of Alberta.",
+     "records": 37,
+     "sample": [
+      "Rainbow Lake",
+      "Fort McMurray",
+      "High Level",
+      "Fort Vermilion",
+      "Manning",
+      "Peace River",
+      "Wabasca",
+      "High Prairie"
+     ]
+    },
+    {
+     "id": 2,
+     "name": "Alberta Sustainable Resource Development Land Use Operations",
+     "geom": "Polygon",
+     "nameField": "ASRDLUOO_NAME",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "ASRDLUOO_NAME",
+      "ASRDLUOO_CODE",
+      "Shape",
+      "GlobalID"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Copyright Government of Alberta.",
+     "records": 37,
+     "sample": [
+      "Rainbow Lake",
+      "Fort McMurray",
+      "High Level",
+      "Fort Vermilion",
+      "Manning",
+      "Peace River",
+      "Wabasca",
+      "High Prairie"
+     ]
+    },
+    {
+     "id": 7,
+     "name": "Eastern Slopes Land Use Zoning Label",
+     "geom": "Polygon",
+     "nameField": "ESLUZ_NAME",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "ESLUZ_NAME",
+      "ESLUZ_CODE",
+      "SHAPE"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Copyright Government of Alberta",
+     "records": 1015,
+     "sample": [
+      "Multiple Use",
+      "General Recreation",
+      "Multiple Use",
+      "Critical Wildlife",
+      "Multiple Use",
+      "Industrial",
+      "Critical Wildlife",
+      "Critical Wildlife"
+     ]
+    },
+    {
+     "id": 8,
+     "name": "Eastern Slopes Land Use Zoning",
+     "geom": "Polygon",
+     "nameField": "ESLUZ_NAME",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "ESLUZ_NAME",
+      "ESLUZ_CODE",
+      "SHAPE"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Copyright Government of Alberta",
+     "records": 1015,
+     "sample": [
+      "Multiple Use",
+      "General Recreation",
+      "Multiple Use",
+      "Critical Wildlife",
+      "Multiple Use",
+      "Industrial",
+      "Critical Wildlife",
+      "Critical Wildlife"
+     ]
+    },
+    {
+     "id": 10,
+     "name": "Public Land Use Zone Label",
+     "geom": "Polygon",
+     "nameField": "PLUZ_NAME",
+     "ownerField": "",
+     "typeField": "TYPE",
+     "fields": [
+      "OBJECTID",
+      "PLUZ_NAME",
+      "PLUZ_CODE",
+      "TYPE",
+      "SHAPE",
+      "GlobalID"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Copyright Government of Alberta",
+     "records": 61,
+     "sample": [
+      "Castle Special Management Area",
+      "Livingstone",
+      "Livingstone",
+      "Livingstone",
+      "Livingstone",
+      "Livingstone",
+      "Livingstone",
+      "Livingstone"
+     ],
+     "type_valuesErr": "{'code': 400, 'message': 'Failed to execute query.', 'detail"
+    },
+    {
+     "id": 11,
+     "name": "Public Land Use Zone",
+     "geom": "Polygon",
+     "nameField": "PLUZ_NAME",
+     "ownerField": "",
+     "typeField": "TYPE",
+     "fields": [
+      "OBJECTID",
+      "PLUZ_NAME",
+      "PLUZ_CODE",
+      "TYPE",
+      "SHAPE",
+      "GlobalID"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Copyright Government of Alberta",
+     "records": 61,
+     "sample": [
+      "Castle Special Management Area",
+      "Livingstone",
+      "Livingstone",
+      "Livingstone",
+      "Livingstone",
+      "Livingstone",
+      "Livingstone",
+      "Livingstone"
+     ],
+     "type_valuesErr": "{'code': 400, 'message': 'Failed to execute query.', 'detail"
+    },
+    {
+     "id": 13,
+     "name": "Public Land Recreation Area Label",
+     "geom": "Polygon",
+     "nameField": "PLREC_NAME",
+     "ownerField": "",
+     "typeField": "TYPE",
+     "fields": [
+      "OBJECTID",
+      "PLREC_NAME",
+      "PLREC_CODE",
+      "TYPE",
+      "SHAPE",
+      "GlobalID",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Copyright Government of Alberta",
+     "records": 64,
+     "sample": [
+      "Meander River",
+      "Bustard Island Remote",
+      "Dore Lake",
+      "Semo Lake Remote",
+      "Richardson River Remote",
+      "Six Lakes Remote",
+      "Pearson Lake",
+      "Clausen's Landing Remote"
+     ],
+     "type_valuesErr": "{'code': 400, 'message': 'Failed to execute query.', 'detail"
+    },
+    {
+     "id": 14,
+     "name": "Public Land Recreation Area",
+     "geom": "Polygon",
+     "nameField": "PLREC_NAME",
+     "ownerField": "",
+     "typeField": "TYPE",
+     "fields": [
+      "OBJECTID",
+      "PLREC_NAME",
+      "PLREC_CODE",
+      "TYPE",
+      "SHAPE",
+      "GlobalID",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Copyright Government of Alberta",
+     "records": 64,
+     "sample": [
+      "Meander River",
+      "Bustard Island Remote",
+      "Dore Lake",
+      "Semo Lake Remote",
+      "Richardson River Remote",
+      "Six Lakes Remote",
+      "Pearson Lake",
+      "Clausen's Landing Remote"
+     ],
+     "type_valuesErr": "{'code': 400, 'message': 'Failed to execute query.', 'detail"
+    },
+    {
+     "id": 19,
+     "name": "Rocky Mountains Forest Reserve Label",
+     "geom": "Polygon",
+     "nameField": "ROCKYMTN_NAME",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "ROCKYMTN_NAME",
+      "ROCKYMTN_CODE",
+      "SHAPE",
+      "GlobalID"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Copyright Government of Alberta",
+     "records": 4,
+     "sample": [
+      "Rocky Mountain Forest Reserve",
+      "Rocky Mountain Forest Reserve",
+      "Rocky Mountain Forest Reserve",
+      "Rocky Mountain Forest Reserve"
+     ]
+    }
+   ]
+  }
+ ],
+ "seconds": 177,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "6 result(s), 6 read OK"
+}

@@ -1,0 +1,981 @@
+{
+ "request": "requests/2-county-02.json",
+ "id": "2-county-02",
+ "chat": 2,
+ "kind": "parcel",
+ "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+ "asked": {
+  "chat": 2,
+  "kind": "parcel",
+  "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+  "layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1",
+  "fields": "NAME,STATE,COUNTY,GEOID",
+  "points": [
+   [
+    27.3169,
+    -81.0216
+   ],
+   [
+    32.441,
+    -83.75
+   ],
+   [
+    34.9559,
+    -84.0845
+   ],
+   [
+    34.8847,
+    -84.2818
+   ],
+   [
+    33.0442,
+    -83.7577
+   ],
+   [
+    43.623,
+    -111.665
+   ],
+   [
+    44.9475,
+    -113.99
+   ],
+   [
+    43.8105,
+    -111.165
+   ],
+   [
+    43.2178,
+    -113.228
+   ],
+   [
+    44.9117,
+    -115.486
+   ],
+   [
+    44.978,
+    -116.284
+   ],
+   [
+    48.9905,
+    -116.502
+   ],
+   [
+    45.6718,
+    -116.306
+   ],
+   [
+    43.9121,
+    -114.796
+   ],
+   [
+    43.4984,
+    -115.547
+   ],
+   [
+    44.2086,
+    -114.935
+   ],
+   [
+    38.1137,
+    -86.8169
+   ],
+   [
+    38.1292,
+    -87.935
+   ],
+   [
+    38.7536,
+    -85.3859
+   ],
+   [
+    39.9562,
+    -84.9175
+   ],
+   [
+    38.5037,
+    -95.0115
+   ],
+   [
+    39.7607,
+    -94.8988
+   ],
+   [
+    38.1454,
+    -94.7239
+   ],
+   [
+    39.0454,
+    -95.3946
+   ],
+   [
+    39.0749,
+    -94.7599
+   ],
+   [
+    39.9015,
+    -96.8469
+   ],
+   [
+    38.6655,
+    -96.4936
+   ],
+   [
+    39.9079,
+    -97.8603
+   ],
+   [
+    38.4096,
+    -96.1754
+   ],
+   [
+    39.3547,
+    -100.173
+   ],
+   [
+    39.192,
+    -96.596
+   ],
+   [
+    39.864,
+    -95.2295
+   ],
+   [
+    38.2725,
+    -98.9826
+   ],
+   [
+    31.3206,
+    -92.448
+   ],
+   [
+    30.8001,
+    -91.3077
+   ],
+   [
+    29.8619,
+    -89.8998
+   ],
+   [
+    42.6102,
+    -72.5576
+   ],
+   [
+    38.9831,
+    -76.5053
+   ],
+   [
+    38.399,
+    -76.508
+   ],
+   [
+    44.7903,
+    -84.8364
+   ],
+   [
+    45.524,
+    -87.4008
+   ],
+   [
+    45.4495,
+    -84.7302
+   ],
+   [
+    45.413,
+    -87.352
+   ],
+   [
+    47.4722,
+    -87.9044
+   ],
+   [
+    45.5915,
+    -84.1643
+   ],
+   [
+    47.3782,
+    -88.0276
+   ],
+   [
+    43.2685,
+    -82.5278
+   ],
+   [
+    46.716,
+    -85.3601
+   ],
+   [
+    45.7784,
+    -84.7219
+   ],
+   [
+    46.7586,
+    -84.9666
+   ]
+  ],
+  "refs": [
+   "US-12125",
+   "US-12772",
+   "US-7459",
+   "US-7460",
+   "US-7858",
+   "US-12230",
+   "US-13485",
+   "US-4584",
+   "US-7813",
+   "US-7818",
+   "US-7825",
+   "US-7827",
+   "US-7829",
+   "US-7830",
+   "US-7831",
+   "US-7832",
+   "US-4667",
+   "US-6972",
+   "US-6973",
+   "US-6974",
+   "US-5718",
+   "US-7386",
+   "US-7866",
+   "US-9177",
+   "US-9179",
+   "US-9180",
+   "US-9181",
+   "US-9182",
+   "US-9183",
+   "US-9184",
+   "US-9186",
+   "US-9189",
+   "US-9191",
+   "US-10354",
+   "US-10447",
+   "US-2374",
+   "US-8388",
+   "US-6388",
+   "US-6389",
+   "US-4774",
+   "US-4776",
+   "US-4778",
+   "US-6808",
+   "US-6809",
+   "US-6813",
+   "US-6814",
+   "US-6815",
+   "US-6817",
+   "US-6821",
+   "US-6822"
+  ]
+ },
+ "answered": "2026-10-29 23:21Z",
+ "results": [
+  {
+   "point": [
+    27.3169,
+    -81.0216
+   ],
+   "features": [
+    {
+     "NAME": "Okeechobee County",
+     "STATE": "12",
+     "COUNTY": "093",
+     "GEOID": "12093"
+    }
+   ]
+  },
+  {
+   "point": [
+    32.441,
+    -83.75
+   ],
+   "features": [
+    {
+     "NAME": "Houston County",
+     "STATE": "13",
+     "COUNTY": "153",
+     "GEOID": "13153"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.9559,
+    -84.0845
+   ],
+   "features": [
+    {
+     "NAME": "Union County",
+     "STATE": "13",
+     "COUNTY": "291",
+     "GEOID": "13291"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.8847,
+    -84.2818
+   ],
+   "features": [
+    {
+     "NAME": "Fannin County",
+     "STATE": "13",
+     "COUNTY": "111",
+     "GEOID": "13111"
+    }
+   ]
+  },
+  {
+   "point": [
+    33.0442,
+    -83.7577
+   ],
+   "features": [
+    {
+     "NAME": "Monroe County",
+     "STATE": "13",
+     "COUNTY": "207",
+     "GEOID": "13207"
+    }
+   ]
+  },
+  {
+   "point": [
+    43.623,
+    -111.665
+   ],
+   "features": [
+    {
+     "NAME": "Bonneville County",
+     "STATE": "16",
+     "COUNTY": "019",
+     "GEOID": "16019"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.9475,
+    -113.99
+   ],
+   "features": [
+    {
+     "NAME": "Lemhi County",
+     "STATE": "16",
+     "COUNTY": "059",
+     "GEOID": "16059"
+    }
+   ]
+  },
+  {
+   "point": [
+    43.8105,
+    -111.165
+   ],
+   "features": [
+    {
+     "NAME": "Teton County",
+     "STATE": "16",
+     "COUNTY": "081",
+     "GEOID": "16081"
+    }
+   ]
+  },
+  {
+   "point": [
+    43.2178,
+    -113.228
+   ],
+   "features": [
+    {
+     "NAME": "Blaine County",
+     "STATE": "16",
+     "COUNTY": "013",
+     "GEOID": "16013"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.9117,
+    -115.486
+   ],
+   "features": [
+    {
+     "NAME": "Valley County",
+     "STATE": "16",
+     "COUNTY": "085",
+     "GEOID": "16085"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.978,
+    -116.284
+   ],
+   "features": [
+    {
+     "NAME": "Adams County",
+     "STATE": "16",
+     "COUNTY": "003",
+     "GEOID": "16003"
+    }
+   ]
+  },
+  {
+   "point": [
+    48.9905,
+    -116.502
+   ],
+   "features": [
+    {
+     "NAME": "Boundary County",
+     "STATE": "16",
+     "COUNTY": "021",
+     "GEOID": "16021"
+    }
+   ]
+  },
+  {
+   "point": [
+    45.6718,
+    -116.306
+   ],
+   "features": [
+    {
+     "NAME": "Idaho County",
+     "STATE": "16",
+     "COUNTY": "049",
+     "GEOID": "16049"
+    }
+   ]
+  },
+  {
+   "point": [
+    43.9121,
+    -114.796
+   ],
+   "features": [
+    {
+     "NAME": "Blaine County",
+     "STATE": "16",
+     "COUNTY": "013",
+     "GEOID": "16013"
+    }
+   ]
+  },
+  {
+   "point": [
+    43.4984,
+    -115.547
+   ],
+   "features": [
+    {
+     "NAME": "Elmore County",
+     "STATE": "16",
+     "COUNTY": "039",
+     "GEOID": "16039"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.2086,
+    -114.935
+   ],
+   "features": [
+    {
+     "NAME": "Custer County",
+     "STATE": "16",
+     "COUNTY": "037",
+     "GEOID": "16037"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.1137,
+    -86.8169
+   ],
+   "features": [
+    {
+     "NAME": "Spencer County",
+     "STATE": "18",
+     "COUNTY": "147",
+     "GEOID": "18147"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.1292,
+    -87.935
+   ],
+   "features": [
+    {
+     "NAME": "Posey County",
+     "STATE": "18",
+     "COUNTY": "129",
+     "GEOID": "18129"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.7536,
+    -85.3859
+   ],
+   "features": [
+    {
+     "NAME": "Jefferson County",
+     "STATE": "18",
+     "COUNTY": "077",
+     "GEOID": "18077"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.9562,
+    -84.9175
+   ],
+   "features": [
+    {
+     "NAME": "Wayne County",
+     "STATE": "18",
+     "COUNTY": "177",
+     "GEOID": "18177"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.5037,
+    -95.0115
+   ],
+   "features": [
+    {
+     "NAME": "Miami County",
+     "STATE": "20",
+     "COUNTY": "121",
+     "GEOID": "20121"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.7607,
+    -94.8988
+   ],
+   "features": [
+    {
+     "NAME": "Doniphan County",
+     "STATE": "20",
+     "COUNTY": "043",
+     "GEOID": "20043"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.1454,
+    -94.7239
+   ],
+   "features": [
+    {
+     "NAME": "Linn County",
+     "STATE": "20",
+     "COUNTY": "107",
+     "GEOID": "20107"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.0454,
+    -95.3946
+   ],
+   "features": [
+    {
+     "NAME": "Douglas County",
+     "STATE": "20",
+     "COUNTY": "045",
+     "GEOID": "20045"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.0749,
+    -94.7599
+   ],
+   "features": [
+    {
+     "NAME": "Wyandotte County",
+     "STATE": "20",
+     "COUNTY": "209",
+     "GEOID": "20209"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.9015,
+    -96.8469
+   ],
+   "features": [
+    {
+     "NAME": "Washington County",
+     "STATE": "20",
+     "COUNTY": "201",
+     "GEOID": "20201"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.6655,
+    -96.4936
+   ],
+   "features": [
+    {
+     "NAME": "Morris County",
+     "STATE": "20",
+     "COUNTY": "127",
+     "GEOID": "20127"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.9079,
+    -97.8603
+   ],
+   "features": [
+    {
+     "NAME": "Republic County",
+     "STATE": "20",
+     "COUNTY": "157",
+     "GEOID": "20157"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.4096,
+    -96.1754
+   ],
+   "features": [
+    {
+     "NAME": "Lyon County",
+     "STATE": "20",
+     "COUNTY": "111",
+     "GEOID": "20111"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.3547,
+    -100.173
+   ],
+   "features": [
+    {
+     "NAME": "Sheridan County",
+     "STATE": "20",
+     "COUNTY": "179",
+     "GEOID": "20179"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.192,
+    -96.596
+   ],
+   "features": [
+    {
+     "NAME": "Riley County",
+     "STATE": "20",
+     "COUNTY": "161",
+     "GEOID": "20161"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.864,
+    -95.2295
+   ],
+   "features": [
+    {
+     "NAME": "Doniphan County",
+     "STATE": "20",
+     "COUNTY": "043",
+     "GEOID": "20043"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.2725,
+    -98.9826
+   ],
+   "features": [
+    {
+     "NAME": "Barton County",
+     "STATE": "20",
+     "COUNTY": "009",
+     "GEOID": "20009"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.3206,
+    -92.448
+   ],
+   "features": [
+    {
+     "NAME": "Rapides Parish",
+     "STATE": "22",
+     "COUNTY": "079",
+     "GEOID": "22079"
+    }
+   ]
+  },
+  {
+   "point": [
+    30.8001,
+    -91.3077
+   ],
+   "features": [
+    {
+     "NAME": "West Feliciana Parish",
+     "STATE": "22",
+     "COUNTY": "125",
+     "GEOID": "22125"
+    }
+   ]
+  },
+  {
+   "point": [
+    29.8619,
+    -89.8998
+   ],
+   "features": [
+    {
+     "NAME": "St. Bernard Parish",
+     "STATE": "22",
+     "COUNTY": "087",
+     "GEOID": "22087"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.6102,
+    -72.5576
+   ],
+   "features": [
+    {
+     "NAME": "Franklin County",
+     "STATE": "25",
+     "COUNTY": "011",
+     "GEOID": "25011"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.9831,
+    -76.5053
+   ],
+   "features": [
+    {
+     "NAME": "Anne Arundel County",
+     "STATE": "24",
+     "COUNTY": "003",
+     "GEOID": "24003"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.399,
+    -76.508
+   ],
+   "features": [
+    {
+     "NAME": "Calvert County",
+     "STATE": "24",
+     "COUNTY": "009",
+     "GEOID": "24009"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.7903,
+    -84.8364
+   ],
+   "features": [
+    {
+     "NAME": "Crawford County",
+     "STATE": "26",
+     "COUNTY": "039",
+     "GEOID": "26039"
+    }
+   ]
+  },
+  {
+   "point": [
+    45.524,
+    -87.4008
+   ],
+   "features": [
+    {
+     "NAME": "Menominee County",
+     "STATE": "26",
+     "COUNTY": "109",
+     "GEOID": "26109"
+    }
+   ]
+  },
+  {
+   "point": [
+    45.4495,
+    -84.7302
+   ],
+   "features": [
+    {
+     "NAME": "Emmet County",
+     "STATE": "26",
+     "COUNTY": "047",
+     "GEOID": "26047"
+    }
+   ]
+  },
+  {
+   "point": [
+    45.413,
+    -87.352
+   ],
+   "features": [
+    {
+     "NAME": "Menominee County",
+     "STATE": "26",
+     "COUNTY": "109",
+     "GEOID": "26109"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.4722,
+    -87.9044
+   ],
+   "features": [
+    {
+     "NAME": "Keweenaw County",
+     "STATE": "26",
+     "COUNTY": "083",
+     "GEOID": "26083"
+    }
+   ]
+  },
+  {
+   "point": [
+    45.5915,
+    -84.1643
+   ],
+   "features": [
+    {
+     "NAME": "Presque Isle County",
+     "STATE": "26",
+     "COUNTY": "141",
+     "GEOID": "26141"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.3782,
+    -88.0276
+   ],
+   "features": [
+    {
+     "NAME": "Keweenaw County",
+     "STATE": "26",
+     "COUNTY": "083",
+     "GEOID": "26083"
+    }
+   ]
+  },
+  {
+   "point": [
+    43.2685,
+    -82.5278
+   ],
+   "features": [
+    {
+     "NAME": "Sanilac County",
+     "STATE": "26",
+     "COUNTY": "151",
+     "GEOID": "26151"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.716,
+    -85.3601
+   ],
+   "features": [
+    {
+     "NAME": "Luce County",
+     "STATE": "26",
+     "COUNTY": "095",
+     "GEOID": "26095"
+    }
+   ]
+  },
+  {
+   "point": [
+    45.7784,
+    -84.7219
+   ],
+   "features": [
+    {
+     "NAME": "Cheboygan County",
+     "STATE": "26",
+     "COUNTY": "031",
+     "GEOID": "26031"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.7586,
+    -84.9666
+   ],
+   "features": [
+    {
+     "NAME": "Chippewa County",
+     "STATE": "26",
+     "COUNTY": "033",
+     "GEOID": "26033"
+    }
+   ]
+  }
+ ],
+ "seconds": 98,
+ "manners": {
+  "requests": 50,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 50
+ },
+ "short": "50 result(s), 50 read OK"
+}

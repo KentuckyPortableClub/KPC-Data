@@ -1,0 +1,387 @@
+{
+ "request": "requests/2-padpin-12.json",
+ "id": "2-padpin-12",
+ "chat": 2,
+ "kind": "parcel",
+ "report": "HQ 4:25 PM step 1: every PAD-US feature AT the POTA pin of the open Fable-list parks (owner for R-G7 step 4b). refs in 'refs', same order as points.",
+ "asked": {
+  "chat": 2,
+  "kind": "parcel",
+  "report": "HQ 4:25 PM step 1: every PAD-US feature AT the POTA pin of the open Fable-list parks (owner for R-G7 step 4b). refs in 'refs', same order as points.",
+  "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+  "fields": "OBJECTID,Unit_Nm,Loc_Nm,Des_Tp,Own_Type,Own_Name,Mang_Type,Mang_Name,GIS_Acres,Category,State_Nm",
+  "points": [
+   [
+    44.5657,
+    -106.927
+   ],
+   [
+    42.7584,
+    -106.531
+   ],
+   [
+    43.5046,
+    -109.585
+   ],
+   [
+    44.9853,
+    -108.282
+   ],
+   [
+    44.7113,
+    -108.887
+   ],
+   [
+    38.0245,
+    -102.196
+   ],
+   [
+    43.2137,
+    -93.4424
+   ],
+   [
+    38.4987,
+    -94.96
+   ],
+   [
+    38.2818,
+    -94.6208
+   ],
+   [
+    44.3065,
+    -69.7784
+   ],
+   [
+    46.9525,
+    -113.612
+   ],
+   [
+    34.862,
+    -78.7296
+   ],
+   [
+    41.1709,
+    -96.1556
+   ],
+   [
+    39.5094,
+    -119.937
+   ],
+   [
+    35.4744,
+    -114.931
+   ],
+   [
+    36.7097,
+    -97.0651
+   ]
+  ],
+  "refs": [
+   "US-10817",
+   "US-10821",
+   "US-10823",
+   "US-10825",
+   "US-12720",
+   "US-9652",
+   "US-9334",
+   "US-9187",
+   "US-9190",
+   "US-8287",
+   "US-12925",
+   "US-10511",
+   "US-4011",
+   "US-13319",
+   "US-13370",
+   "US-8646"
+  ]
+ },
+ "answered": "2026-10-29 21:33Z",
+ "results": [
+  {
+   "point": [
+    44.5657,
+    -106.927
+   ],
+   "features": []
+  },
+  {
+   "point": [
+    42.7584,
+    -106.531
+   ],
+   "features": []
+  },
+  {
+   "point": [
+    43.5046,
+    -109.585
+   ],
+   "features": []
+  },
+  {
+   "point": [
+    44.9853,
+    -108.282
+   ],
+   "features": []
+  },
+  {
+   "point": [
+    44.7113,
+    -108.887
+   ],
+   "features": []
+  },
+  {
+   "point": [
+    38.0245,
+    -102.196
+   ],
+   "features": []
+  },
+  {
+   "point": [
+    43.2137,
+    -93.4424
+   ],
+   "features": [
+    {
+     "OBJECTID": 3710,
+     "Unit_Nm": "Cerro Gordo County Waterfowl Production Area",
+     "Loc_Nm": "CERRO GORDO COUNTY WATERFOWL PRODUCTION AREA",
+     "Des_Tp": "RMA",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "GIS_Acres": 2719,
+     "Category": "Fee",
+     "State_Nm": "IA"
+    },
+    {
+     "OBJECTID": 4644,
+     "Unit_Nm": "Cerro Gordo County Waterfowl Production Area",
+     "Loc_Nm": "Cerro Gordo County Waterfowl Production Area",
+     "Des_Tp": "RMA",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "GIS_Acres": 2719,
+     "Category": "Fee",
+     "State_Nm": "IA"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.4987,
+    -94.96
+   ],
+   "features": [
+    {
+     "OBJECTID": 117970,
+     "Unit_Nm": "John Brown Memorial Park",
+     "Loc_Nm": "John Brown Memorial Park",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "Own_Name": "CITY",
+     "Mang_Type": "LOC",
+     "Mang_Name": "CITY",
+     "GIS_Acres": 45,
+     "Category": "Fee",
+     "State_Nm": "KS"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.2818,
+    -94.6208
+   ],
+   "features": []
+  },
+  {
+   "point": [
+    44.3065,
+    -69.7784
+   ],
+   "features": [
+    {
+     "OBJECTID": 207532,
+     "Unit_Nm": "Capital Park",
+     "Loc_Nm": "CAPITAL PARK",
+     "Des_Tp": "LP",
+     "Own_Type": "UNK",
+     "Own_Name": "UNK",
+     "Mang_Type": "UNK",
+     "Mang_Name": "UNK",
+     "GIS_Acres": 22,
+     "Category": "Fee",
+     "State_Nm": "ME"
+    }
+   ]
+  },
+  {
+   "point": [
+    46.9525,
+    -113.612
+   ],
+   "features": [
+    {
+     "OBJECTID": 1971,
+     "Unit_Nm": "Missoula Field Office",
+     "Loc_Nm": "Bureau of Land Management",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "GIS_Acres": 175579,
+     "Category": "Fee",
+     "State_Nm": "MT"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.862,
+    -78.7296
+   ],
+   "features": [
+    {
+     "OBJECTID": 214781,
+     "Unit_Nm": "Suggs Mill Pond Game Land",
+     "Loc_Nm": "Suggs Mill Pond Game Land",
+     "Des_Tp": "SCA",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "UNK",
+     "Mang_Name": "UNK",
+     "GIS_Acres": 11001,
+     "Category": "Fee",
+     "State_Nm": "NC"
+    },
+    {
+     "OBJECTID": 215289,
+     "Unit_Nm": "NC Land and Water Fund Project",
+     "Loc_Nm": "NC Land and Water Fund Project",
+     "Des_Tp": "SOTH",
+     "Own_Type": "STAT",
+     "Own_Name": "OTHS",
+     "Mang_Type": "UNK",
+     "Mang_Name": "UNK",
+     "GIS_Acres": 46389,
+     "Category": "Other",
+     "State_Nm": "NC"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.1709,
+    -96.1556
+   ],
+   "features": [
+    {
+     "OBJECTID": 2590,
+     "Unit_Nm": "Wehrspann Recreation Area",
+     "Loc_Nm": "WEHRSPANN",
+     "Des_Tp": "REC",
+     "Own_Type": "UNK",
+     "Own_Name": "UNK",
+     "Mang_Type": "FED",
+     "Mang_Name": "USACE",
+     "GIS_Acres": 1196,
+     "Category": "Fee",
+     "State_Nm": "NE"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.5094,
+    -119.937
+   ],
+   "features": []
+  },
+  {
+   "point": [
+    35.4744,
+    -114.931
+   ],
+   "features": [
+    {
+     "OBJECTID": 2028,
+     "Unit_Nm": "Las Vegas Field Office",
+     "Loc_Nm": "Bureau of Land Management",
+     "Des_Tp": "PUB",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "GIS_Acres": 2378020,
+     "Category": "Fee",
+     "State_Nm": "NV"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.7097,
+    -97.0651
+   ],
+   "features": [
+    {
+     "OBJECTID": 1610,
+     "Unit_Nm": "Kaw/Ponca joint-use Oklahoma Tribal Statistical Area",
+     "Loc_Nm": "Kaw/Ponca joint-use OTSA",
+     "Des_Tp": "TRIBL",
+     "Own_Type": "DESG",
+     "Own_Name": "DESG",
+     "Mang_Type": "TRIB",
+     "Mang_Name": "TRIB",
+     "GIS_Acres": 70680,
+     "Category": "Proclamation",
+     "State_Nm": "OK"
+    },
+    {
+     "OBJECTID": 119743,
+     "Unit_Nm": "Pioneer Woman Monument",
+     "Loc_Nm": "Pioneer Woman Monument",
+     "Des_Tp": "LP",
+     "Own_Type": "LOC",
+     "Own_Name": "CITY",
+     "Mang_Type": "LOC",
+     "Mang_Name": "CITY",
+     "GIS_Acres": 11,
+     "Category": "Fee",
+     "State_Nm": "OK"
+    },
+    {
+     "OBJECTID": 237726,
+     "Unit_Nm": "CLO Lands",
+     "Loc_Nm": "CLO Lands",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "Own_Name": "SLB",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SLB",
+     "GIS_Acres": 3238968,
+     "Category": "Fee",
+     "State_Nm": "OK"
+    }
+   ]
+  }
+ ],
+ "seconds": 31,
+ "manners": {
+  "requests": 16,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 16
+ },
+ "short": "16 result(s), 16 read OK"
+}

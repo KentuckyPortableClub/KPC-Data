@@ -1,0 +1,1969 @@
+{
+ "request": "requests/9-p2-fl.json",
+ "id": "9-p2-fl",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 FL: 10 parks, 9 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 FL: 10 parks, 9 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State FL: 10 parks. Refs in order of points: US-12121,US-12123,US-12124,US-12130,US-12132,US-12134,US-3621,US-8329,US-8719,US-12125. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-12121",
+    "US-12123",
+    "US-12124",
+    "US-12130",
+    "US-12132",
+    "US-12134",
+    "US-3621",
+    "US-8329",
+    "US-8719",
+    "US-12125"
+   ],
+   "pointq": [
+    {
+     "st": "FL",
+     "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+     "note": "FL Florida State Parks (DEP)",
+     "points": [
+      [
+       28.0554,
+       -81.3661
+      ],
+      [
+       27.4476,
+       -81.1284
+      ],
+      [
+       26.3382,
+       -80.6283
+      ],
+      [
+       27.2007,
+       -80.7385
+      ],
+      [
+       27.3732,
+       -81.0448
+      ],
+      [
+       26.3985,
+       -80.5878
+      ],
+      [
+       28.1489,
+       -82.2198
+      ],
+      [
+       30.5584,
+       -85.9082
+      ],
+      [
+       28.1573,
+       -81.5654
+      ],
+      [
+       27.3169,
+       -81.0216
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "FL",
+     "url": "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_State_Forests/FeatureServer/0",
+     "note": "FL Florida Forest Service",
+     "points": [
+      [
+       28.0554,
+       -81.3661
+      ],
+      [
+       27.4476,
+       -81.1284
+      ],
+      [
+       26.3382,
+       -80.6283
+      ],
+      [
+       27.2007,
+       -80.7385
+      ],
+      [
+       27.3732,
+       -81.0448
+      ],
+      [
+       26.3985,
+       -80.5878
+      ],
+      [
+       28.1489,
+       -82.2198
+      ],
+      [
+       30.5584,
+       -85.9082
+      ],
+      [
+       28.1573,
+       -81.5654
+      ],
+      [
+       27.3169,
+       -81.0216
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "FL",
+     "url": "https://services1.arcgis.com/59dBAbzYnRk8johU/arcgis/rest/services/SRWMD_LM_Ownership/FeatureServer/0",
+     "note": "FL Suwannee River Water Management District",
+     "points": [
+      [
+       28.0554,
+       -81.3661
+      ],
+      [
+       27.4476,
+       -81.1284
+      ],
+      [
+       26.3382,
+       -80.6283
+      ],
+      [
+       27.2007,
+       -80.7385
+      ],
+      [
+       27.3732,
+       -81.0448
+      ],
+      [
+       26.3985,
+       -80.5878
+      ],
+      [
+       28.1489,
+       -82.2198
+      ],
+      [
+       30.5584,
+       -85.9082
+      ],
+      [
+       28.1573,
+       -81.5654
+      ],
+      [
+       27.3169,
+       -81.0216
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "FL",
+     "url": "https://services.arcgis.com/s8wtJX9suxFen6TA/arcgis/rest/services/SJRWMD_Management_Area_viewLayer/FeatureServer/0",
+     "note": "FL St. Johns River Water Management Distric",
+     "points": [
+      [
+       28.0554,
+       -81.3661
+      ],
+      [
+       27.4476,
+       -81.1284
+      ],
+      [
+       26.3382,
+       -80.6283
+      ],
+      [
+       27.2007,
+       -80.7385
+      ],
+      [
+       27.3732,
+       -81.0448
+      ],
+      [
+       26.3985,
+       -80.5878
+      ],
+      [
+       28.1489,
+       -82.2198
+      ],
+      [
+       30.5584,
+       -85.9082
+      ],
+      [
+       28.1573,
+       -81.5654
+      ],
+      [
+       27.3169,
+       -81.0216
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "FL",
+     "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/STATE_OWNED_LANDS/MapServer/0",
+     "note": "FL Florida DEP Division of State Lands",
+     "points": [
+      [
+       28.0554,
+       -81.3661
+      ],
+      [
+       27.4476,
+       -81.1284
+      ],
+      [
+       26.3382,
+       -80.6283
+      ],
+      [
+       27.2007,
+       -80.7385
+      ],
+      [
+       27.3732,
+       -81.0448
+      ],
+      [
+       26.3985,
+       -80.5878
+      ],
+      [
+       28.1489,
+       -82.2198
+      ],
+      [
+       30.5584,
+       -85.9082
+      ],
+      [
+       28.1573,
+       -81.5654
+      ],
+      [
+       27.3169,
+       -81.0216
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "FL",
+     "url": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1",
+     "note": "FL FWC",
+     "points": [
+      [
+       28.0554,
+       -81.3661
+      ],
+      [
+       27.4476,
+       -81.1284
+      ],
+      [
+       26.3382,
+       -80.6283
+      ],
+      [
+       27.2007,
+       -80.7385
+      ],
+      [
+       27.3732,
+       -81.0448
+      ],
+      [
+       26.3985,
+       -80.5878
+      ],
+      [
+       28.1489,
+       -82.2198
+      ],
+      [
+       30.5584,
+       -85.9082
+      ],
+      [
+       28.1573,
+       -81.5654
+      ],
+      [
+       27.3169,
+       -81.0216
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       28.0554,
+       -81.3661
+      ],
+      [
+       27.4476,
+       -81.1284
+      ],
+      [
+       26.3382,
+       -80.6283
+      ],
+      [
+       27.2007,
+       -80.7385
+      ],
+      [
+       27.3732,
+       -81.0448
+      ],
+      [
+       26.3985,
+       -80.5878
+      ],
+      [
+       28.1489,
+       -82.2198
+      ],
+      [
+       30.5584,
+       -85.9082
+      ],
+      [
+       28.1573,
+       -81.5654
+      ],
+      [
+       27.3169,
+       -81.0216
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       28.0554,
+       -81.3661
+      ],
+      [
+       27.4476,
+       -81.1284
+      ],
+      [
+       26.3382,
+       -80.6283
+      ],
+      [
+       27.2007,
+       -80.7385
+      ],
+      [
+       27.3732,
+       -81.0448
+      ],
+      [
+       26.3985,
+       -80.5878
+      ],
+      [
+       28.1489,
+       -82.2198
+      ],
+      [
+       30.5584,
+       -85.9082
+      ],
+      [
+       28.1573,
+       -81.5654
+      ],
+      [
+       27.3169,
+       -81.0216
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       28.0554,
+       -81.3661
+      ],
+      [
+       27.4476,
+       -81.1284
+      ],
+      [
+       26.3382,
+       -80.6283
+      ],
+      [
+       27.2007,
+       -80.7385
+      ],
+      [
+       27.3732,
+       -81.0448
+      ],
+      [
+       26.3985,
+       -80.5878
+      ],
+      [
+       28.1489,
+       -82.2198
+      ],
+      [
+       30.5584,
+       -85.9082
+      ],
+      [
+       28.1573,
+       -81.5654
+      ],
+      [
+       27.3169,
+       -81.0216
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:01Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State FL: 10 parks. Refs in order of points: US-12121,US-12123,US-12124,US-12130,US-12132,US-12134,US-3621,US-8329,US-8719,US-12125. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "FL",
+    "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+    "note": "FL Florida State Parks (DEP)",
+    "hits": [
+     {
+      "layer": "0 Florida State Park Boundaries",
+      "point": [
+       28.0554,
+       -81.3661
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Florida State Park Boundaries",
+      "point": [
+       27.4476,
+       -81.1284
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Florida State Park Boundaries",
+      "point": [
+       26.3382,
+       -80.6283
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Florida State Park Boundaries",
+      "point": [
+       27.2007,
+       -80.7385
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Florida State Park Boundaries",
+      "point": [
+       27.3732,
+       -81.0448
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Florida State Park Boundaries",
+      "point": [
+       26.3985,
+       -80.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Florida State Park Boundaries",
+      "point": [
+       28.1489,
+       -82.2198
+      ],
+      "attrs": {
+       "UNIT_ID": "S00037",
+       "SITE_NAME": "Hillsborough River State Park",
+       "DISTRICT": 4,
+       "UPLAND": 3286.66992188,
+       "SUBMERGED": 32.36999893,
+       "PUBLIC_ACC": "Open-Fee Required",
+       "ACREAGE": 3319.21,
+       "COUNTY": "Hillsborough",
+       "URL": "https://www.floridastateparks.org/parks-and-trails/hillsborough-river-state-park",
+       "ADDRESS": "15402 US 301 N, Thonotosassa, FL 33592",
+       "WEB_ALIAS": "Hillsborough-River",
+       "ABBREVIATION": "HR"
+      }
+     },
+     {
+      "layer": "0 Florida State Park Boundaries",
+      "point": [
+       30.5584,
+       -85.9082
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Florida State Park Boundaries",
+      "point": [
+       28.1573,
+       -81.5654
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Florida State Park Boundaries",
+      "point": [
+       27.3169,
+       -81.0216
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "FL",
+    "url": "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_State_Forests/FeatureServer/0",
+    "note": "FL Florida Forest Service",
+    "hits": [
+     {
+      "layer": "0 FFS_Boundaries_Dissolved",
+      "point": [
+       28.0554,
+       -81.3661
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FFS_Boundaries_Dissolved",
+      "point": [
+       27.4476,
+       -81.1284
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FFS_Boundaries_Dissolved",
+      "point": [
+       26.3382,
+       -80.6283
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FFS_Boundaries_Dissolved",
+      "point": [
+       27.2007,
+       -80.7385
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FFS_Boundaries_Dissolved",
+      "point": [
+       27.3732,
+       -81.0448
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FFS_Boundaries_Dissolved",
+      "point": [
+       26.3985,
+       -80.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FFS_Boundaries_Dissolved",
+      "point": [
+       28.1489,
+       -82.2198
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FFS_Boundaries_Dissolved",
+      "point": [
+       30.5584,
+       -85.9082
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FFS_Boundaries_Dissolved",
+      "point": [
+       28.1573,
+       -81.5654
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FFS_Boundaries_Dissolved",
+      "point": [
+       27.3169,
+       -81.0216
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "FL",
+    "url": "https://services1.arcgis.com/59dBAbzYnRk8johU/arcgis/rest/services/SRWMD_LM_Ownership/FeatureServer/0",
+    "note": "FL Suwannee River Water Management District",
+    "hits": [
+     {
+      "layer": "0 SRWMD_LM_Ownership",
+      "point": [
+       28.0554,
+       -81.3661
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SRWMD_LM_Ownership",
+      "point": [
+       27.4476,
+       -81.1284
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SRWMD_LM_Ownership",
+      "point": [
+       26.3382,
+       -80.6283
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SRWMD_LM_Ownership",
+      "point": [
+       27.2007,
+       -80.7385
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SRWMD_LM_Ownership",
+      "point": [
+       27.3732,
+       -81.0448
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SRWMD_LM_Ownership",
+      "point": [
+       26.3985,
+       -80.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SRWMD_LM_Ownership",
+      "point": [
+       28.1489,
+       -82.2198
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SRWMD_LM_Ownership",
+      "point": [
+       30.5584,
+       -85.9082
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SRWMD_LM_Ownership",
+      "point": [
+       28.1573,
+       -81.5654
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SRWMD_LM_Ownership",
+      "point": [
+       27.3169,
+       -81.0216
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "FL",
+    "url": "https://services.arcgis.com/s8wtJX9suxFen6TA/arcgis/rest/services/SJRWMD_Management_Area_viewLayer/FeatureServer/0",
+    "note": "FL St. Johns River Water Management Distric",
+    "hits": [
+     {
+      "layer": "0 SJRWMD Management Area by Lead Manager",
+      "point": [
+       28.0554,
+       -81.3661
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SJRWMD Management Area by Lead Manager",
+      "point": [
+       27.4476,
+       -81.1284
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SJRWMD Management Area by Lead Manager",
+      "point": [
+       26.3382,
+       -80.6283
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SJRWMD Management Area by Lead Manager",
+      "point": [
+       27.2007,
+       -80.7385
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SJRWMD Management Area by Lead Manager",
+      "point": [
+       27.3732,
+       -81.0448
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SJRWMD Management Area by Lead Manager",
+      "point": [
+       26.3985,
+       -80.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SJRWMD Management Area by Lead Manager",
+      "point": [
+       28.1489,
+       -82.2198
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SJRWMD Management Area by Lead Manager",
+      "point": [
+       30.5584,
+       -85.9082
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SJRWMD Management Area by Lead Manager",
+      "point": [
+       28.1573,
+       -81.5654
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 SJRWMD Management Area by Lead Manager",
+      "point": [
+       27.3169,
+       -81.0216
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "FL",
+    "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/STATE_OWNED_LANDS/MapServer/0",
+    "note": "FL Florida DEP Division of State Lands",
+    "hits": [
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.0554,
+       -81.3661
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 11639.0,
+       "LAND_INVENTORY_KEY": 33950.0,
+       "FL_SOLARIS_LAND_ID": "A32221",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "04TCT-02224",
+       "A_TOTAL": 559.54,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 42.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-South Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SFWMD",
+       "PROJECT_NAME": "Regulatory Mitigation Lands,Kissimmee Chain of Lakes",
+       "ACRES": "600",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "10-AUG-95",
+       "CLOSED_DATE_STRING": "10-AUG-95",
+       "CLOSED_PURCHASE_PRICE_AMT": "0",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "WMD-South Florida WMD",
+       "FUNDING_SOURCE_KEY": "9",
+       "FUNDING_SOURCE_NAME": "Agency Funded-District",
+       "FUND_SRC_CONTRIBUTION_AMT": "0",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-South Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "49;53",
+       "GIS_COUNTY_NAME": "Osceola; Polk",
+       "GIS_PARCEL_ID": 19348.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 559.5521,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.0554,
+       -81.3661
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 14739.0,
+       "LAND_INVENTORY_KEY": 60536.0,
+       "FL_SOLARIS_LAND_ID": "A48861",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "06TCT-00017",
+       "A_TOTAL": 9.34,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 42.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-South Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SFWMD",
+       "PROJECT_NAME": "Kissimmee Chain of Lakes",
+       "ACRES": "10",
+       "ACRE_TYPE_NAME": "Deed",
+       "CLOSED_DATE": "07-SEP-12",
+       "CLOSED_DATE_STRING": "07-SEP-12",
+       "CLOSED_PURCHASE_PRICE_AMT": "0",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "WMD-South Florida WMD",
+       "FUNDING_SOURCE_KEY": "5",
+       "FUNDING_SOURCE_NAME": "Exchange Value",
+       "FUND_SRC_CONTRIBUTION_AMT": "0",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-South Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "53",
+       "GIS_COUNTY_NAME": "Polk",
+       "GIS_PARCEL_ID": 19225.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 9.3432,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       27.4476,
+       -81.1284
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 24038.0,
+       "LAND_INVENTORY_KEY": 31921.0,
+       "FL_SOLARIS_LAND_ID": "A30192",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "10TCT-00267",
+       "A_TOTAL": 1336.57,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 42.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-South Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SFWMD",
+       "PROJECT_NAME": "Kissimmee River",
+       "ACRES": "1362.24",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "02-JAN-91",
+       "CLOSED_DATE_STRING": "02-JAN-91",
+       "CLOSED_PURCHASE_PRICE_AMT": "2145102.06",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "Department of Environmental Protection",
+       "FUNDING_SOURCE_KEY": "8",
+       "FUNDING_SOURCE_NAME": "Agency Funded-State",
+       "OTHER_FUNDING_SOURCE_NAME": "Water Management Lands Trust Fund",
+       "FUND_SRC_CONTRIBUTION_AMT": "2145102.06",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-South Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "28;47",
+       "GIS_COUNTY_NAME": "Highlands; Okeechobee",
+       "GIS_PARCEL_ID": 127458.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:13 AM",
+       "PARCEL_AC": 1336.722,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       27.4476,
+       -81.1284
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 32530.0,
+       "LAND_INVENTORY_KEY": 160106.0,
+       "FL_SOLARIS_LAND_ID": "A50354",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "21TCT-00083",
+       "A_TOTAL": 0.53,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 42.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-South Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SFWMD",
+       "PROJECT_NAME": "Kissimmee River Pool C",
+       "ACRES": ".53",
+       "ACRE_TYPE_NAME": "Deed",
+       "CLOSED_DATE": "22-JUN-22",
+       "CLOSED_DATE_STRING": "22-JUN-22",
+       "CLOSED_PURCHASE_PRICE_AMT": "29400",
+       "CONSERVATION_STATUS_IND": "U",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "Department of Environmental Protection",
+       "FUNDING_SOURCE_KEY": "9",
+       "FUNDING_SOURCE_NAME": "Agency Funded-District",
+       "OTHER_FUNDING_SOURCE_NAME": "Water Management Lands Trust Fund",
+       "FUND_SRC_CONTRIBUTION_AMT": "29400",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-South Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "47",
+       "GIS_COUNTY_NAME": "Okeechobee",
+       "GIS_PARCEL_ID": 127011.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:13 AM",
+       "PARCEL_AC": 0.5271,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       26.3382,
+       -80.6283
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 29985.0,
+       "LAND_INVENTORY_KEY": 37071.0,
+       "FL_SOLARIS_LAND_ID": "A35342",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "04TCT-17660",
+       "A_TOTAL": 1279.52,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 42.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-South Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SFWMD",
+       "PROJECT_NAME": "Everglades Agricultural Area Taxing District,Stormwater Treatment Areas",
+       "ACRES": "1282",
+       "ACRE_TYPE_NAME": "Deed",
+       "CLOSED_DATE": "01-JAN-98",
+       "CLOSED_DATE_STRING": "01-JAN-98",
+       "CLOSED_PURCHASE_PRICE_AMT": "12250000",
+       "CONSERVATION_STATUS_IND": "N",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "WMD-South Florida WMD",
+       "FUNDING_SOURCE_KEY": "8",
+       "FUNDING_SOURCE_NAME": "Agency Funded-State",
+       "FUND_SRC_CONTRIBUTION_AMT": "12250000",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-South Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "50;6",
+       "GIS_COUNTY_NAME": "Palm Beach; Broward",
+       "FL_SOLARIS_FACILITY_ID": "F15974;F17516;F16007;F16008;F15975",
+       "GIS_PARCEL_ID": 74105.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:13 AM",
+       "PARCEL_AC": 1279.6309,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       27.2007,
+       -80.7385
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 23889.0,
+       "LAND_INVENTORY_KEY": 31916.0,
+       "FL_SOLARIS_LAND_ID": "A30187",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "11TCT-00095",
+       "A_TOTAL": 1008.33,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 42.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-South Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SFWMD",
+       "PROJECT_NAME": "Lake Okeechobee Water Retention Phosphorus Removal Project",
+       "ACRES": "1008.7",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "01-MAY-01",
+       "CLOSED_DATE_STRING": "01-MAY-01",
+       "CLOSED_PURCHASE_PRICE_AMT": "2266953.84",
+       "CONSERVATION_STATUS_IND": "N",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "Department of Environmental Protection",
+       "FUNDING_SOURCE_KEY": "8",
+       "FUNDING_SOURCE_NAME": "Agency Funded-State",
+       "OTHER_FUNDING_SOURCE_NAME": "Water Management Lands Trust Fund",
+       "FUND_SRC_CONTRIBUTION_AMT": "2266953.84",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-South Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "47",
+       "GIS_COUNTY_NAME": "Okeechobee",
+       "FL_SOLARIS_FACILITY_ID": "F17406;F16720",
+       "GIS_PARCEL_ID": 127471.0,
+       "LAND_ACTION_NAME": "Candidate for Partial Disposition",
+       "LAND_ACTION_KEY": 3.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:13 AM",
+       "PARCEL_AC": 1008.4281,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       27.3732,
+       -81.0448
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 30932.0,
+       "LAND_INVENTORY_KEY": 36961.0,
+       "FL_SOLARIS_LAND_ID": "A35232",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "05TCT-00138",
+       "A_TOTAL": 1248.1,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 42.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-South Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SFWMD",
+       "PROJECT_NAME": "Kissimmee River",
+       "ACRES": "1249.17",
+       "ACRE_TYPE_NAME": "Deed",
+       "CLOSED_DATE": "10-JUN-05",
+       "CLOSED_DATE_STRING": "10-JUN-05",
+       "CLOSED_PURCHASE_PRICE_AMT": "18577403",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "Department of Environmental Protection",
+       "FUNDING_SOURCE_KEY": "1",
+       "FUNDING_SOURCE_NAME": "Florida Forever Trust Fund",
+       "FUND_SRC_CONTRIBUTION_AMT": "18577403",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-South Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "28;47",
+       "GIS_COUNTY_NAME": "Highlands; Okeechobee",
+       "GIS_PARCEL_ID": 74720.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:13 AM",
+       "MANAGING_AGENCY_NAME": "NSA-Private",
+       "PARCEL_AC": 1248.2477,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       27.3732,
+       -81.0448
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 30934.0,
+       "LAND_INVENTORY_KEY": 36963.0,
+       "FL_SOLARIS_LAND_ID": "A35234",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "05TCT-00154",
+       "A_TOTAL": 1368.69,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 42.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-South Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SFWMD",
+       "PROJECT_NAME": "Kissimmee River",
+       "ACRES": "1378.75",
+       "ACRE_TYPE_NAME": "Deed",
+       "CLOSED_DATE": "21-FEB-92",
+       "CLOSED_DATE_STRING": "21-FEB-92",
+       "CLOSED_PURCHASE_PRICE_AMT": "2451445",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "Department of Environmental Protection",
+       "FUNDING_SOURCE_KEY": "8",
+       "FUNDING_SOURCE_NAME": "Agency Funded-State",
+       "FUND_SRC_CONTRIBUTION_AMT": "2451445",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-South Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "28;47",
+       "GIS_COUNTY_NAME": "Highlands; Okeechobee",
+       "GIS_PARCEL_ID": 75419.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:13 AM",
+       "MANAGING_AGENCY_NAME": "NSA-Private",
+       "PARCEL_AC": 1368.8504,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       26.3985,
+       -80.5878
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 72565.0,
+       "LAND_INVENTORY_KEY": 36164.0,
+       "FL_SOLARIS_LAND_ID": "A34435",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "04TCT-18287",
+       "A_TOTAL": 9061.19,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 42.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-South Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SFWMD",
+       "PROJECT_NAME": "Everglades Agricultural Storage Reservoirs,Everglades Agricultural Area Taxing District,Stormwater T",
+       "ACRES": "8993.05",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "26-MAR-99",
+       "CLOSED_DATE_STRING": "26-MAR-99",
+       "CLOSED_PURCHASE_PRICE_AMT": "23077894",
+       "CONSERVATION_STATUS_IND": "N",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "Non-State Agency-Federal;WMD-South Florida WMD;Department of Environmental Protection",
+       "FUNDING_SOURCE_KEY": "7;4;9",
+       "FUNDING_SOURCE_NAME": "Preservation 2000 (P2000);Agency Funded-District;Agency Funded-Federal",
+       "FUND_SRC_CONTRIBUTION_AMT": "23077894",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-South Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "50",
+       "GIS_COUNTY_NAME": "Palm Beach",
+       "FL_SOLARIS_FACILITY_ID": "F432760;F432761;F432763;F434106",
+       "GIS_PARCEL_ID": 74749.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:13 AM",
+       "PARCEL_AC": 9061.9884,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.1489,
+       -82.2198
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 10490.0,
+       "LAND_INVENTORY_KEY": 55091.0,
+       "FL_SOLARIS_LAND_ID": "A43570",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "36957",
+       "A_TOTAL": 115.41,
+       "LAND_INPUT_STATUS_KEY": 4.0,
+       "LAND_INPUT_STATUS_NAME": "Completed-GIS Polygon Submitted",
+       "AUTHORIZED_AGENCY_KEY": 1.0,
+       "AUTHORIZED_AGENCY_NAME": "Department of Environmental Protection",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "DEP",
+       "PROJECT_NAME": "Non-Project Acquisition",
+       "ACRE_TYPE_NAME": "Closed Acres",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "Unknown Funding Agency",
+       "FUNDING_SOURCE_KEY": "52",
+       "FUNDING_SOURCE_NAME": "Agency Funded-Other",
+       "FUND_SRC_CONTRIBUTION_AMT": "0",
+       "SHARED_OWNER_AGENCY_NAME": "Board of Trustees (BOT)",
+       "PERCENT_OWNED": "100",
+       "DM_ID": "4404",
+       "EXTERNAL_AGENCY_IND": "I",
+       "GIS_COUNTY_ID": "29",
+       "GIS_COUNTY_NAME": "Hillsborough",
+       "FL_SOLARIS_FACILITY_ID": "F8351;F7728;F7729;F7724",
+       "GIS_PARCEL_ID": 27727.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "DOC_WEB_URL": "https://prodenv.dep.state.fl.us/common/BTLDS/DOCMGMT/4404/4404.pdf",
+       "PARCEL_AC": 115.4254,
+       "DOCUMENT_DATE": 299462400000,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       30.5584,
+       -85.9082
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 4010.0,
+       "LAND_INVENTORY_KEY": 31236.0,
+       "FL_SOLARIS_LAND_ID": "A29507",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "91010201",
+       "A_TOTAL": 15262.19,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 38.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-Northwest Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "NWFWMD",
+       "PROJECT_NAME": "MONY",
+       "ACRES": "15590.5",
+       "ACRE_TYPE_NAME": "Deed",
+       "CLOSED_DATE": "31-JUL-92",
+       "CLOSED_DATE_STRING": "31-JUL-92",
+       "CLOSED_PURCHASE_PRICE_AMT": "4730146.38",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "Y",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "WMD-Northwest Florida WMD",
+       "FUNDING_AGENCY_OTHER": "NWFWMD",
+       "FUNDING_SOURCE_KEY": "4",
+       "FUNDING_SOURCE_NAME": "Preservation 2000 (P2000)",
+       "FUND_SRC_CONTRIBUTION_AMT": "4730146.38",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-Northwest Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "3;7;30;32;66;67",
+       "GIS_COUNTY_NAME": "Bay; Calhoun; Holmes; Jackson; Walton; Washington",
+       "FL_SOLARIS_FACILITY_ID": "F438328;F438331;F436567;F436569;F436571;F436572;F438741;F437984;F437985;F437986;F437987;F437988;F438773;F437982;F15672;F14867;F14869;F14870;F438517",
+       "GIS_PARCEL_ID": 18139.0,
+       "LAND_ACTION_NAME": "Candidate for Partial Disposition",
+       "LAND_ACTION_KEY": 3.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:02 AM",
+       "PARCEL_AC": 37.6997,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.1573,
+       -81.5654
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 14752.0,
+       "LAND_INVENTORY_KEY": 42323.0,
+       "FL_SOLARIS_LAND_ID": "A40594",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "20-597-101",
+       "A_TOTAL": 132.49,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 41.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SWFWMD",
+       "PROJECT_NAME": "Lake Marion Creek Horseshoe Scrub Tract ",
+       "ACRES": "132.4939",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "07-FEB-97",
+       "CLOSED_DATE_STRING": "07-FEB-97",
+       "CLOSED_PURCHASE_PRICE_AMT": "187500",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "U",
+       "REVERTER_IND": "U",
+       "FUNDING_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "FUNDING_SOURCE_KEY": "8",
+       "FUNDING_SOURCE_NAME": "Agency Funded-State",
+       "OTHER_FUNDING_SOURCE_NAME": "SOR",
+       "FUND_SRC_CONTRIBUTION_AMT": "187500",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "53",
+       "GIS_COUNTY_NAME": "Polk",
+       "GIS_PARCEL_ID": 12906.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 132.5039,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       27.3169,
+       -81.0216
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 74310.0,
+       "LAND_INVENTORY_KEY": 33971.0,
+       "FL_SOLARIS_LAND_ID": "A32242",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "14TCT-00017",
+       "A_TOTAL": 678.48,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 42.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-South Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SFWMD",
+       "PROJECT_NAME": "Kissimmee River",
+       "ACRES": "613.16",
+       "ACRE_TYPE_NAME": "Other",
+       "CLOSED_DATE": "25-OCT-85",
+       "CLOSED_DATE_STRING": "25-OCT-85",
+       "CLOSED_PURCHASE_PRICE_AMT": "1052162.71",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "WMD-South Florida WMD",
+       "FUNDING_SOURCE_KEY": "8",
+       "FUNDING_SOURCE_NAME": "Agency Funded-State",
+       "OTHER_FUNDING_SOURCE_NAME": "Water Management Lands Trust Fund",
+       "FUND_SRC_CONTRIBUTION_AMT": "1052162.71",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-South Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "47",
+       "GIS_COUNTY_NAME": "Okeechobee",
+       "GIS_PARCEL_ID": 75237.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:13 AM",
+       "MANAGING_AGENCY_NAME": "NSA-Private",
+       "PARCEL_AC": 678.5643,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       27.3169,
+       -81.0216
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 73330.0,
+       "LAND_INVENTORY_KEY": 36346.0,
+       "FL_SOLARIS_LAND_ID": "A34617",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "04TCT-03096",
+       "A_TOTAL": 4.06,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 42.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-South Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SFWMD",
+       "PROJECT_NAME": "Kissimmee River",
+       "ACRES": "4.06",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "23-AUG-05",
+       "CLOSED_DATE_STRING": "23-AUG-05",
+       "CLOSED_PURCHASE_PRICE_AMT": "438100",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "Department of Environmental Protection",
+       "FUNDING_SOURCE_KEY": "1",
+       "FUNDING_SOURCE_NAME": "Florida Forever Trust Fund",
+       "FUND_SRC_CONTRIBUTION_AMT": "438100",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-South Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "47",
+       "GIS_COUNTY_NAME": "Okeechobee",
+       "GIS_PARCEL_ID": 77468.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:13 AM",
+       "PARCEL_AC": 4.0622,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     }
+    ]
+   },
+   {
+    "st": "FL",
+    "url": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1",
+    "note": "FL FWC",
+    "hits": [
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       28.0554,
+       -81.3661
+      ],
+      "attrs": {
+       "NAME": "Kissimmee Chain of Lakes Area Wildlife Management Area",
+       "NAME_SHORT": "Kissimmee Chain of Lakes Area WMA",
+       "TYPE": "Wildlife Management Area",
+       "TYPE_SHORT": "WMA",
+       "UNIT": "North Unit",
+       "FWC_REGION": "Northeast",
+       "MGT_TYPE": "Cooperative",
+       "AREA_SQMI": 30.41485553,
+       "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/cooperative/kcol/",
+       "YR_LAST_UP": 2009,
+       "MTH_LST_UP": 1,
+       "last_edited_date": 1790797152000
+      }
+     },
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       27.4476,
+       -81.1284
+      ],
+      "attrs": {
+       "NAME": "Kissimmee River Public Use Area",
+       "NAME_SHORT": "Kissimmee River PUA",
+       "TYPE": "Public Use Area",
+       "TYPE_SHORT": "PUA",
+       "UNIT": "Pool B",
+       "FWC_REGION": "Southwest",
+       "MGT_TYPE": "Cooperative",
+       "AREA_SQMI": 19.39187215,
+       "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/cooperative/kissimmee-river/",
+       "YR_LAST_UP": 2009,
+       "MTH_LST_UP": 1,
+       "last_edited_date": 1790797152000
+      }
+     },
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       26.3382,
+       -80.6283
+      ],
+      "attrs": {
+       "NAME": "Stormwater Treatment Area 3/4 Waterfowl Public Small Game Hunting Area",
+       "NAME_SHORT": "STA 3/4 PSGHA",
+       "TYPE": "Public Small Game Hunting Area",
+       "TYPE_SHORT": "PSGHA",
+       "FWC_REGION": "South",
+       "MGT_TYPE": "Cooperative",
+       "AREA_SQMI": 26.12328308,
+       "WEBSITE": "https://myfwc.com/hunting/waterfowl/standby-hunts/",
+       "YR_LAST_UP": 0,
+       "MTH_LST_UP": 0,
+       "last_edited_date": 1790797152000
+      }
+     },
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       27.2007,
+       -80.7385
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       27.3732,
+       -81.0448
+      ],
+      "attrs": {
+       "NAME": "Kissimmee River Public Use Area",
+       "NAME_SHORT": "Kissimmee River PUA",
+       "TYPE": "Public Use Area",
+       "TYPE_SHORT": "PUA",
+       "FWC_REGION": "Southwest",
+       "MGT_TYPE": "Cooperative",
+       "AREA_SQMI": 5.68401948,
+       "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/cooperative/kissimmee-river/",
+       "YR_LAST_UP": 2009,
+       "MTH_LST_UP": 1,
+       "last_edited_date": 1790797152000
+      }
+     },
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       27.3732,
+       -81.0448
+      ],
+      "attrs": {
+       "NAME": "Kissimmee River Public Use Area",
+       "NAME_SHORT": "Kissimmee River PUA",
+       "TYPE": "Public Use Area",
+       "TYPE_SHORT": "PUA",
+       "UNIT": "Pool B",
+       "FWC_REGION": "Southwest",
+       "MGT_TYPE": "Cooperative",
+       "AREA_SQMI": 19.39187215,
+       "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/cooperative/kissimmee-river/",
+       "YR_LAST_UP": 2009,
+       "MTH_LST_UP": 1,
+       "last_edited_date": 1790797152000
+      }
+     },
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       26.3985,
+       -80.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       28.1489,
+       -82.2198
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       30.5584,
+       -85.9082
+      ],
+      "attrs": {
+       "NAME": "Choctawhatchee River Wildlife Management Area",
+       "NAME_SHORT": "Choctawhatchee River WMA",
+       "TYPE": "Wildlife Management Area",
+       "TYPE_SHORT": "WMA",
+       "FWC_REGION": "Northwest",
+       "MGT_TYPE": "Cooperative",
+       "AREA_SQMI": 93.94202199,
+       "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/cooperative/choctawhatchee-river/",
+       "YR_LAST_UP": 2026,
+       "MTH_LST_UP": 9,
+       "last_edited_date": 1790797152000
+      }
+     },
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       28.1573,
+       -81.5654
+      ],
+      "attrs": {
+       "NAME": "Lake Marion Creek Wildlife Management Area",
+       "NAME_SHORT": "Lake Marion Creek WMA",
+       "TYPE": "Wildlife Management Area",
+       "TYPE_SHORT": "WMA",
+       "FWC_REGION": "Southwest",
+       "MGT_TYPE": "Cooperative",
+       "AREA_SQMI": 12.2362886,
+       "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/cooperative/lake-marion-creek/",
+       "YR_LAST_UP": 2009,
+       "MTH_LST_UP": 1,
+       "last_edited_date": 1790797152000
+      }
+     },
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       27.3169,
+       -81.0216
+      ],
+      "attrs": {
+       "NAME": "Kissimmee River Public Use Area",
+       "NAME_SHORT": "Kissimmee River PUA",
+       "TYPE": "Public Use Area",
+       "TYPE_SHORT": "PUA",
+       "UNIT": "Pool E",
+       "FWC_REGION": "Southwest",
+       "MGT_TYPE": "Cooperative",
+       "AREA_SQMI": 2.69485093,
+       "WEBSITE": "http://myfwc.com/viewing/recreation/wmas/cooperative/kissimmee-river/",
+       "YR_LAST_UP": 2009,
+       "MTH_LST_UP": 1,
+       "last_edited_date": 1790797152000
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       28.0554,
+       -81.3661
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       27.4476,
+       -81.1284
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       26.3382,
+       -80.6283
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       27.2007,
+       -80.7385
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       27.3732,
+       -81.0448
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       26.3985,
+       -80.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       28.1489,
+       -82.2198
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       30.5584,
+       -85.9082
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       28.1573,
+       -81.5654
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       27.3169,
+       -81.0216
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       28.0554,
+       -81.3661
+      ],
+      "attrs": {
+       "CostCenter": "FF04RFEV00",
+       "CMPXNAME": "Everglades Headwaters National Wildlife Refuge Complex",
+       "ORGNAME": "EVERGLADES HEADWATERS NATIONAL WILDLIFE REFUGE AND CONSERVATION AREA",
+       "ORGCODE": 41571,
+       "IFWS": "1332",
+       "LIT": "EHW",
+       "GISACRES": 1421074.62608719,
+       "MAXACRES": 100000,
+       "APPTYPE": 1,
+       "RSL_TYPE": "CA",
+       "FWSREGION": "4",
+       "LABELNAME": "Everglades Headwaters NWR and CA",
+       "CreatedDate": 1520606281000,
+       "ModifiedDate": 1742907986000,
+       "IntReg": "2"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       27.4476,
+       -81.1284
+      ],
+      "attrs": {
+       "CostCenter": "FF04RFEV00",
+       "CMPXNAME": "Everglades Headwaters National Wildlife Refuge Complex",
+       "ORGNAME": "EVERGLADES HEADWATERS NATIONAL WILDLIFE REFUGE AND CONSERVATION AREA",
+       "ORGCODE": 41571,
+       "IFWS": "1332",
+       "LIT": "EHW",
+       "GISACRES": 1421074.62608719,
+       "MAXACRES": 100000,
+       "APPTYPE": 1,
+       "RSL_TYPE": "CA",
+       "FWSREGION": "4",
+       "LABELNAME": "Everglades Headwaters NWR and CA",
+       "CreatedDate": 1520606281000,
+       "ModifiedDate": 1742907986000,
+       "IntReg": "2"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       26.3382,
+       -80.6283
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       27.2007,
+       -80.7385
+      ],
+      "attrs": {
+       "CostCenter": "FF04RFEG00",
+       "CMPXNAME": "Everglades Headwaters National Wildlife Refuge Complex",
+       "ORGNAME": "EVERGLADES TO GULF CONSERVATION AREA",
+       "ORGCODE": 41578,
+       "IFWS": "1405",
+       "LIT": "EVG",
+       "GISACRES": 4045268.03754597,
+       "MAXACRES": 404527,
+       "APPTYPE": 1,
+       "RSL_TYPE": "CA",
+       "FWSREGION": "4",
+       "LABELNAME": "Everglades to Gulf CA",
+       "CreatedDate": 1710878912000,
+       "ModifiedDate": 1781792685000,
+       "IntReg": "2"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       27.3732,
+       -81.0448
+      ],
+      "attrs": {
+       "CostCenter": "FF04RFEV00",
+       "CMPXNAME": "Everglades Headwaters National Wildlife Refuge Complex",
+       "ORGNAME": "EVERGLADES HEADWATERS NATIONAL WILDLIFE REFUGE AND CONSERVATION AREA",
+       "ORGCODE": 41571,
+       "IFWS": "1332",
+       "LIT": "EHW",
+       "GISACRES": 1421074.62608719,
+       "MAXACRES": 100000,
+       "APPTYPE": 1,
+       "RSL_TYPE": "CA",
+       "FWSREGION": "4",
+       "LABELNAME": "Everglades Headwaters NWR and CA",
+       "CreatedDate": 1520606281000,
+       "ModifiedDate": 1742907986000,
+       "IntReg": "2"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       26.3985,
+       -80.5878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       28.1489,
+       -82.2198
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       30.5584,
+       -85.9082
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       28.1573,
+       -81.5654
+      ],
+      "attrs": {
+       "CostCenter": "FF04RFLA00",
+       "CMPXNAME": "Everglades Headwaters National Wildlife Refuge Complex",
+       "ORGNAME": "LAKE WALES RIDGE NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 41577,
+       "IFWS": "1218",
+       "LIT": "LKW",
+       "GISACRES": 17518.61439072,
+       "APPTYPE": 0,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "4",
+       "LABELNAME": "Lake Wales Ridge NWR",
+       "CreatedDate": 1399054103000,
+       "ModifiedDate": 1779819068000,
+       "IntReg": "2"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       27.3169,
+       -81.0216
+      ],
+      "attrs": {
+       "CostCenter": "FF04RFEG00",
+       "CMPXNAME": "Everglades Headwaters National Wildlife Refuge Complex",
+       "ORGNAME": "EVERGLADES TO GULF CONSERVATION AREA",
+       "ORGCODE": 41578,
+       "IFWS": "1405",
+       "LIT": "EVG",
+       "GISACRES": 4045268.03754597,
+       "MAXACRES": 404527,
+       "APPTYPE": 1,
+       "RSL_TYPE": "CA",
+       "FWSREGION": "4",
+       "LABELNAME": "Everglades to Gulf CA",
+       "CreatedDate": 1710878912000,
+       "ModifiedDate": 1781792685000,
+       "IntReg": "2"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 209,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

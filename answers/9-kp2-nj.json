@@ -1,0 +1,718 @@
+{
+ "request": "requests/9-kp2-nj.json",
+ "id": "9-kp2-nj",
+ "chat": 9,
+ "kind": "probe",
+ "report": "kp2 NJ: 2 parks, 5 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "kp2 NJ: 2 parks, 5 layers",
+  "probe": {
+   "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State NJ: 2 parks. Refs in order of points: US-13150,US-8319. Results to chat 11.",
+   "refs": [
+    "US-13150",
+    "US-8319"
+   ],
+   "pointq": [
+    {
+     "st": "NJ",
+     "url": "https://mapsdep.nj.gov/arcgis/rest/services/Applications/DEP_NLT/MapServer/1",
+     "note": "NJ New Jersey DEP (Natural Lands Trust pres",
+     "points": [
+      [
+       40.8282,
+       -75.0822
+      ],
+      [
+       40.953,
+       -73.9207
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "NJ",
+     "url": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/ArcGIS/rest/services/Open_Space__State_Owned__Generalized_h/FeatureServer/67",
+     "note": "NJ New Jersey DEP (state-owned open space)",
+     "points": [
+      [
+       40.8282,
+       -75.0822
+      ],
+      [
+       40.953,
+       -73.9207
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       40.8282,
+       -75.0822
+      ],
+      [
+       40.953,
+       -73.9207
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       40.8282,
+       -75.0822
+      ],
+      [
+       40.953,
+       -73.9207
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       40.8282,
+       -75.0822
+      ],
+      [
+       40.953,
+       -73.9207
+      ]
+     ],
+     "dist": 3000
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-29 23:35Z",
+ "results": {
+  "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State NJ: 2 parks. Refs in order of points: US-13150,US-8319. Results to chat 11.",
+  "date": "2026-10-29",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "NJ",
+    "url": "https://mapsdep.nj.gov/arcgis/rest/services/Applications/DEP_NLT/MapServer/1",
+    "note": "NJ New Jersey DEP (Natural Lands Trust pres",
+    "hits": [
+     {
+      "layer": "1 Preserve Boundaries",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Preserve Boundaries",
+      "point": [
+       40.953,
+       -73.9207
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NJ",
+    "url": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/ArcGIS/rest/services/Open_Space__State_Owned__Generalized_h/FeatureServer/67",
+    "note": "NJ New Jersey DEP (state-owned open space)",
+    "hits": [
+     {
+      "layer": "67 Open Space (State Owned) Generalized",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "attrs": {
+       "FEATURE_NAME": "Warren Trail",
+       "FEATURE_CLASS": "Open Space",
+       "OWNERSHIP": "State",
+       "USE_DESIGNATION": "Trail",
+       "OWNERSHIP_USE": "State Trail",
+       "LAND_MANAGER": "Division of Parks and Forestry",
+       "LAND_MANAGER_AGENCY": "State Park Service",
+       "FACILITY_MANAGER": "State Park Service",
+       "FACILITY_USE": "State Trail",
+       "AGENCY_URL": "https://www.state.nj.us/dep/parksandforests/index.html",
+       "MAP_DISPLAY": "Yes",
+       "STATE": "NJ",
+       "MUNICIPALITY": "Multiple Municipalities",
+       "COUNTY": "Warren County",
+       "LAND_FACILITY_ID": 447,
+       "LAND_FACILITY_NAME": "WARREN TRAIL",
+       "X": 325390.27327967,
+       "Y": 703285.56314077,
+       "LON_DD": -75.1019422,
+       "LAT_DD": 40.76260912,
+       "LON_DMS": "75° 6' 6.992\" W",
+       "LAT_DMS": "40° 45' 45.393\" N",
+       "X_CENTROID": 325390.27327967,
+       "Y_CENTROID": 703285.56314076,
+       "ACRES": 1582.72891479,
+       "ACRES_TEXT": "1,583 Acres",
+       "FEE_SMPL_NAME": "Warren Trail",
+       "STATCODE": "22.0",
+       "FACILITY": "WARREN TRAIL",
+       "ASSIGNED_TO": "KITTATINNY VALLEY",
+       "MANAGED_BY": "Division of Parks and Forestry",
+       "NAME_LABEL": "Warren",
+       "USE_LABEL": "Trail",
+       "MAP_LABEL": "Warren Trail",
+       "FACILITY_LABEL": "Warren Trail",
+       "LAST_UPDATE": 1782913452840,
+       "LAST_EDITOR": "d.oliva"
+      }
+     },
+     {
+      "layer": "67 Open Space (State Owned) Generalized",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "attrs": {
+       "FEATURE_NAME": "Osmun Forest",
+       "FEATURE_CLASS": "Open Space",
+       "OWNERSHIP": "State",
+       "USE_DESIGNATION": "Park",
+       "OWNERSHIP_USE": "State Park",
+       "LAND_MANAGER": "Division of Parks and Forestry",
+       "LAND_MANAGER_AGENCY": "State Park Service",
+       "FACILITY_MANAGER": "State Park Service",
+       "FACILITY_USE": "State Park",
+       "AGENCY_URL": "https://www.state.nj.us/dep/parksandforests/index.html",
+       "FACILITY_URL": "<Null>",
+       "MAP_DISPLAY": "Yes",
+       "PUBLIC_ACCESS": "Yes",
+       "STATE": "NJ",
+       "MUNICIPALITY": "Knowlton Township",
+       "COUNTY": "Warren County",
+       "LAND_FACILITY_ID": 92,
+       "LAND_FACILITY_NAME": "OSMUN FOREST",
+       "X": 344486.91881334,
+       "Y": 756770.32657786,
+       "LON_DD": -75.03418007,
+       "LAT_DD": 40.90975586,
+       "LON_DMS": "75° 2' 3.048\" W",
+       "LAT_DMS": "40° 54' 35.121\" N",
+       "X_CENTROID": 344258.48062192,
+       "Y_CENTROID": 756529.61544509,
+       "ACRES": 9.40878262,
+       "ACRES_TEXT": "9 Acres",
+       "FEE_SMPL_NAME": "Osmun Forest",
+       "STATCODE": "22.0",
+       "FACILITY": "OSMUN FOREST",
+       "MANAGED_BY": "Division of Parks and Forestry",
+       "NAME_LABEL": "Osmun Forest",
+       "USE_LABEL": "State Park",
+       "MAP_LABEL": "Osmun Forest",
+       "FACILITY_LABEL": "Osmun Forest",
+       "LAST_UPDATE": 1782913452840,
+       "LAST_EDITOR": "d.oliva"
+      }
+     },
+     {
+      "layer": "67 Open Space (State Owned) Generalized",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "attrs": {
+       "FEATURE_NAME": "Hoff Vanneta House Historic Site",
+       "FEATURE_CLASS": "Open Space",
+       "OWNERSHIP": "State",
+       "USE_DESIGNATION": "Historic Site",
+       "OWNERSHIP_USE": "State Historic Site",
+       "LAND_MANAGER": "Division of Parks and Forestry",
+       "LAND_MANAGER_AGENCY": "Historic Preservation Office",
+       "FACILITY_MANAGER": "State Park Service",
+       "FACILITY_USE": "State Historic Site",
+       "AGENCY_URL": "https://www.state.nj.us/dep/parksandforests/historic/index.html",
+       "MAP_DISPLAY": "Yes",
+       "STATE": "NJ",
+       "MUNICIPALITY": "Harmony Township",
+       "COUNTY": "Warren County",
+       "X": 317669.46785517,
+       "Y": 702602.09600377,
+       "LON_DD": -75.12979642,
+       "LAT_DD": 40.76058437,
+       "LON_DMS": "75° 7' 47.267\" W",
+       "LAT_DMS": "40° 45' 38.104\" N",
+       "X_CENTROID": 317689.17549292,
+       "Y_CENTROID": 702603.91030459,
+       "ACRES": 6.99978196,
+       "ACRES_TEXT": "7 Acres",
+       "FEE_SMPL_NAME": "Hoff Vanneta House Historic Site",
+       "STATCODE": "22.0",
+       "FACILITY": "HOFF VANNETA HOUSE",
+       "ASSIGNED_TO": "KITTATINNY VALLEY",
+       "MANAGED_BY": "Division of Parks and Forestry",
+       "NAME_LABEL": "Hoff Vanneta House",
+       "USE_LABEL": "Historic Site",
+       "MAP_LABEL": "Hoff Vanneta House Historic Site",
+       "FACILITY_LABEL": "Hoff Vanneta House Historic Site",
+       "LAST_UPDATE": 1782913452840,
+       "LAST_EDITOR": "d.oliva"
+      }
+     },
+     {
+      "layer": "67 Open Space (State Owned) Generalized",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "attrs": {
+       "FEATURE_NAME": "Kittatinny Valley State Park",
+       "FEATURE_CLASS": "Open Space",
+       "OWNERSHIP": "State",
+       "USE_DESIGNATION": "Park",
+       "OWNERSHIP_USE": "State Park",
+       "LAND_MANAGER": "Division of Parks and Forestry",
+       "LAND_MANAGER_AGENCY": "State Park Service",
+       "FACILITY_MANAGER": "State Park Service",
+       "FACILITY_USE": "State Park",
+       "AGENCY_URL": "https://www.state.nj.us/dep/parksandforests/index.html",
+       "FACILITY_URL": "https://nj.gov/dep/parksandforests/parks/kittatinnyvalleystatepark.html",
+       "FACILITY_MAP_URL": "https://nj.gov/dep/parksandforests/maps/kittatinny-area.pdf",
+       "FACILITY_TRAILMAP_URL": "https://nj.gov/dep/parksandforests/maps/kittatinny-trails.pdf",
+       "MAP_DISPLAY": "SPS - Yes",
+       "PUBLIC_ACCESS": "Yes",
+       "PARKING": "Yes",
+       "HUNTING_PERMITTED": "Yes",
+       "HUNTING_URL": "https://nj.gov/dep/parksandforests/maps/kittatinnyvalley-huntingmap.pdf",
+       "NAME_CONTACT": "Kittatinny Valley State Park",
+       "ADDRESS": "P.O. Box 1100",
+       "CITY": "Andover",
+       "STATE": "NJ",
+       "ZIP": "07821",
+       "MUNICIPALITY": "Andover Township & Andover Boro",
+       "COUNTY": "Sussex County",
+       "TELEPHONE": "973-786-6445",
+       "LAND_FACILITY_ID": 773,
+       "LAND_FACILITY_NAME": "KITTATINNY VALLEY STATE PARK",
+       "IDN_BUILD_FACILITY": 429,
+       "NME_BUILD_FACILITY": "Kittatiny Valley State Park",
+       "X": 425937.46621376,
+       "Y": 793221.88753286,
+       "LON_DD": -74.73984382,
+       "LAT_DD": 41.01079981,
+       "LON_DMS": "74° 44' 23.438\" W",
+       "LAT_DMS": "41° 0' 38.879\" N",
+       "X_CENTROID": 478572.37144242,
+       "Y_CENTROID": 801937.81531093,
+       "ACRES": 3536.72637861,
+       "ACRES_TEXT": "3,537 Acres",
+       "FEE_SMPL_NAME": "Kittatinny Valley State Park",
+       "STATCODE": "22.0",
+       "FACILITY": "KITTATINNY VALLEY SP",
+       "ASSIGNED_TO": "KITTATINNY VALLEY",
+       "MANAGED_BY": "Division of Parks and Forestry",
+       "NAME_LABEL": "Kittatinny Valley",
+       "USE_LABEL": "State Park",
+       "MAP_LABEL": "Kittatinny Valley State Park",
+       "FACILITY_LABEL": "Kittatinny Valley State Park",
+       "LAST_UPDATE": 1782913452840,
+       "LAST_EDITOR": "d.oliva"
+      }
+     },
+     {
+      "layer": "67 Open Space (State Owned) Generalized",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "attrs": {
+       "FEATURE_NAME": "Bursh Sugar Maple Natural Area",
+       "FEATURE_CLASS": "Open Space",
+       "OWNERSHIP": "State",
+       "USE_DESIGNATION": "Natural Area",
+       "OWNERSHIP_USE": "State Natural Area",
+       "LAND_MANAGER": "Division of Parks and Forestry",
+       "LAND_MANAGER_AGENCY": "Office of Natural Lands Management",
+       "FACILITY_MANAGER": "Office of Natural Lands Management",
+       "FACILITY_USE": "State Natural Area",
+       "AGENCY_URL": "https://www.state.nj.us/dep/parksandforests/index.html",
+       "FACILITY_URL": "https://www.state.nj.us/dep/parksandforests/natural/natareas.html",
+       "MAP_DISPLAY": "Yes",
+       "STATE": "NJ",
+       "MUNICIPALITY": "Hope & Knowlton Townships",
+       "COUNTY": "Warren County",
+       "LAND_FACILITY_ID": 34,
+       "LAND_FACILITY_NAME": "BURSH SUGAR MAPLE NATURAL AREA",
+       "X": 346489.40398159,
+       "Y": 752554.34518044,
+       "LON_DD": -75.02684319,
+       "LAT_DD": 40.89821707,
+       "LON_DMS": "75° 1' 36.635\" W",
+       "LAT_DMS": "40° 53' 53.581\" N",
+       "X_CENTROID": 346489.40398159,
+       "Y_CENTROID": 752554.34518043,
+       "ACRES": 24.81640757,
+       "ACRES_TEXT": "25 Acres",
+       "FEE_SMPL_NAME": "Bursh Sugar Maple Natural Area",
+       "STATCODE": "22.0",
+       "FACILITY": "BURSH SUGAR MAPLE NATURAL AREA",
+       "MANAGED_BY": "Division of Parks and Forestry",
+       "NAME_LABEL": "Bursh Sugar Maple",
+       "USE_LABEL": "Natural Area",
+       "MAP_LABEL": "Bursh Sugar Maple Natural Area",
+       "FACILITY_LABEL": "Bursh Sugar Maple Natural Area",
+       "LAST_UPDATE": 1782913452840,
+       "LAST_EDITOR": "d.oliva"
+      }
+     },
+     {
+      "layer": "67 Open Space (State Owned) Generalized",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "attrs": {
+       "FEATURE_NAME": "Honey Run Wildlife Management Area",
+       "FEATURE_CLASS": "Open Space",
+       "OWNERSHIP": "State",
+       "USE_DESIGNATION": "Wildlife Management Area",
+       "OWNERSHIP_USE": "State Wildlife Management Area",
+       "LAND_MANAGER": "Division of Fish and Wildlife",
+       "LAND_MANAGER_AGENCY": "Division of Fish and Wildlife",
+       "FACILITY_MANAGER": "Division of Fish and Wildlife",
+       "FACILITY_USE": "State Wildlife Management Area",
+       "AGENCY_URL": "https://www.state.nj.us/dep/fgw/wmas.htm",
+       "FACILITY_URL": "https://www.state.nj.us/dep/fgw/wmaland.htm",
+       "FACILITY_MAP_URL": "https://www.state.nj.us/dep/fgw/pdf/wmamaps/honey_run.pdf",
+       "MAP_DISPLAY": "Yes",
+       "PUBLIC_ACCESS": "Yes",
+       "HUNTING_URL": "https://dep.nj.gov/njfw/hunting/",
+       "STATE": "NJ",
+       "MUNICIPALITY": "Hope Township",
+       "COUNTY": "Warren County",
+       "NHR_FAC_ID": "1022",
+       "LAND_FACILITY_ID": 449,
+       "LAND_FACILITY_NAME": "HONEY RUN WMA",
+       "X": 350629.21689618,
+       "Y": 749941.04069577,
+       "LON_DD": -75.01181253,
+       "LAT_DD": 40.89111142,
+       "LON_DMS": "75° 0' 42.525\" W",
+       "LAT_DMS": "40° 53' 28.001\" N",
+       "X_CENTROID": 350629.21689617,
+       "Y_CENTROID": 749941.04069576,
+       "ACRES": 134.08636004,
+       "ACRES_TEXT": "134 Acres",
+       "FEE_SMPL_NAME": "Honey Run Wildlife Management Area",
+       "STATCODE": "21.0",
+       "FACILITY": "HONEY RUN WMA",
+       "ASSIGNED_TO": "HONEY RUN",
+       "MANAGED_BY": "Division of Fish and Wildlife",
+       "NAME_LABEL": "Honey Run",
+       "USE_LABEL": "Wildlife Management Area",
+       "MAP_LABEL": "Honey Run Wildlife Management Area",
+       "FACILITY_LABEL": "Honey Run Wildlife Management Area",
+       "LAST_UPDATE": 1782913452840,
+       "LAST_EDITOR": "d.oliva"
+      }
+     },
+     {
+      "layer": "67 Open Space (State Owned) Generalized",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "attrs": {
+       "FEATURE_NAME": "Belvidere Fishing Access",
+       "FEATURE_CLASS": "Open Space",
+       "OWNERSHIP": "State",
+       "USE_DESIGNATION": "Fishing Access",
+       "OWNERSHIP_USE": "State Fishing Access",
+       "LAND_MANAGER": "Division of Fish and Wildlife",
+       "LAND_MANAGER_AGENCY": "Division of Fish and Wildlife",
+       "FACILITY_MANAGER": "Division of Fish and Wildlife",
+       "FACILITY_USE": "State Angler Access",
+       "AGENCY_URL": "https://www.state.nj.us/dep/fgw/wmas.htm",
+       "FACILITY_URL": "https://www.state.nj.us/dep/fgw/wmaland.htm",
+       "FACILITY_MAP_URL": "https://www.state.nj.us/dep/fgw/pdf/wmamaps/belvidere-ratzman_access.pdf",
+       "MAP_DISPLAY": "Yes",
+       "PUBLIC_ACCESS": "Yes",
+       "PARKING": "Yes",
+       "STATE": "NJ",
+       "MUNICIPALITY": "Belvidere Town",
+       "COUNTY": "Warren County",
+       "NHR_FAC_ID": "1007",
+       "LAND_FACILITY_ID": 1011,
+       "LAND_FACILITY_NAME": "BELIVIDERE ACCESS",
+       "X": 330957.7535,
+       "Y": 727319.4009,
+       "LON_DD": -75.08242,
+       "LAT_DD": 40.828680999999996,
+       "LON_DMS": "75° 4' 56.712\" W",
+       "LAT_DMS": "40° 49' 43.253\" N",
+       "X_CENTROID": 330957.7535,
+       "Y_CENTROID": 727319.4009,
+       "ACRES": 7.37294983,
+       "ACRES_TEXT": "7 Acres",
+       "FEE_SMPL_NAME": "Belvidere Fishing Access",
+       "STATCODE": "21.0",
+       "FACILITY": "BELVIDERE FISHING ACCESS",
+       "MANAGED_BY": "Division of Fish and Wildlife",
+       "NAME_LABEL": "Belvidere",
+       "USE_LABEL": "Fishing Access",
+       "MAP_LABEL": "Belvidere Fishing Access",
+       "FACILITY_LABEL": "Belvidere Fishing Access",
+       "LAST_UPDATE": 1782913452840,
+       "LAST_EDITOR": "d.oliva"
+      }
+     },
+     {
+      "layer": "67 Open Space (State Owned) Generalized",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "attrs": {
+       "FEATURE_NAME": "Harmony Fishing Access",
+       "FEATURE_CLASS": "Open Space",
+       "OWNERSHIP": "State",
+       "USE_DESIGNATION": "Fishing Access",
+       "OWNERSHIP_USE": "State Fishing Access",
+       "LAND_MANAGER": "Division of Fish and Wildlife",
+       "LAND_MANAGER_AGENCY": "Division of Fish and Wildlife",
+       "FACILITY_MANAGER": "Division of Fish and Wildlife",
+       "FACILITY_USE": "State Angler Access",
+       "AGENCY_URL": "https://www.state.nj.us/dep/fgw/wmas.htm",
+       "FACILITY_URL": "https://www.state.nj.us/dep/fgw/wmaland.htm",
+       "FACILITY_MAP_URL": "https://www.state.nj.us/dep/fgw/pdf/wmamaps/harmony_access.pdf",
+       "MAP_DISPLAY": "Yes",
+       "PUBLIC_ACCESS": "Yes",
+       "STATE": "NJ",
+       "MUNICIPALITY": "Harmony Township",
+       "COUNTY": "Warren County",
+       "NHR_FAC_ID": "1020",
+       "X": 299978.44286984,
+       "Y": 699037.96894569,
+       "LON_DD": -75.1935563,
+       "LAT_DD": 40.750435350000004,
+       "LON_DMS": "75° 11' 36.803\" W",
+       "LAT_DMS": "40° 45' 1.567\" N",
+       "X_CENTROID": 299978.44286984,
+       "Y_CENTROID": 699037.96894567,
+       "ACRES": 26.14187119,
+       "ACRES_TEXT": "26 Acres",
+       "FEE_SMPL_NAME": "Harmony Fishing Access",
+       "STATCODE": "21.0",
+       "FACILITY": "HARMONY FISHING ACCESS",
+       "ASSIGNED_TO": "HARMONY ACCESS",
+       "MANAGED_BY": "Division of Fish and Wildlife",
+       "NAME_LABEL": "Harmony",
+       "USE_LABEL": "Fishing Access",
+       "MAP_LABEL": "Harmony Fishing Access",
+       "FACILITY_LABEL": "Harmony Fishing Access",
+       "LAST_UPDATE": 1782913452840,
+       "LAST_EDITOR": "d.oliva"
+      }
+     },
+     {
+      "layer": "67 Open Space (State Owned) Generalized",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "attrs": {
+       "FEATURE_NAME": "Columbia Wildlife Management Area",
+       "FEATURE_CLASS": "Open Space",
+       "OWNERSHIP": "State",
+       "USE_DESIGNATION": "Wildlife Management Area",
+       "OWNERSHIP_USE": "State Wildlife Management Area",
+       "LAND_MANAGER": "Division of Fish and Wildlife",
+       "LAND_MANAGER_AGENCY": "Division of Fish and Wildlife",
+       "FACILITY_MANAGER": "Division of Fish and Wildlife",
+       "FACILITY_USE": "State Wildlife Management Area",
+       "AGENCY_URL": "https://www.state.nj.us/dep/fgw/wmas.htm",
+       "FACILITY_URL": "https://www.state.nj.us/dep/fgw/wmaland.htm",
+       "FACILITY_MAP_URL": "https://www.state.nj.us/dep/fgw/pdf/wmamaps/columbia.pdf",
+       "MAP_DISPLAY": "Yes",
+       "PUBLIC_ACCESS": "Yes",
+       "HUNTING_URL": "https://dep.nj.gov/njfw/hunting/",
+       "STATE": "NJ",
+       "MUNICIPALITY": "Knowlton Township",
+       "COUNTY": "Warren County",
+       "NHR_FAC_ID": "1014",
+       "LAND_FACILITY_ID": 394,
+       "LAND_FACILITY_NAME": "COLUMBIA LAKE WMA",
+       "X": 332303.69350793,
+       "Y": 762103.33559686,
+       "LON_DD": -75.0783866,
+       "LAT_DD": 40.92418126,
+       "LON_DMS": "75° 4' 42.192\" W",
+       "LAT_DMS": "40° 55' 27.053\" N",
+       "X_CENTROID": 332303.69350792,
+       "Y_CENTROID": 762103.33559684,
+       "ACRES": 1159.31666712,
+       "ACRES_TEXT": "1,159 Acres",
+       "FEE_SMPL_NAME": "Columbia Wildlife Management Area",
+       "STATCODE": "21.0",
+       "FACILITY": "COLUMBIA WMA",
+       "ASSIGNED_TO": "COLUMBIA",
+       "MANAGED_BY": "Division of Fish and Wildlife",
+       "NAME_LABEL": "Columbia",
+       "USE_LABEL": "Wildlife Management Area",
+       "MAP_LABEL": "Columbia Wildlife Management Area",
+       "FACILITY_LABEL": "Columbia Wildlife Management Area",
+       "LAST_UPDATE": 1782913452840,
+       "LAST_EDITOR": "d.oliva"
+      }
+     },
+     {
+      "layer": "67 Open Space (State Owned) Generalized",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "attrs": {
+       "FEATURE_NAME": "Mountain Lake Bog Preserve",
+       "FEATURE_CLASS": "Open Space",
+       "OWNERSHIP": "State",
+       "USE_DESIGNATION": "Preserve",
+       "OWNERSHIP_USE": "State Preserve",
+       "LAND_MANAGER": "Division of Parks and Forestry",
+       "LAND_MANAGER_AGENCY": "Natural Lands Trust",
+       "FACILITY_MANAGER": "Natural Lands Trust",
+       "FACILITY_USE": "Natural Lands Trust Preserve",
+       "AGENCY_URL": "https://dep.nj.gov/njnlt/",
+       "FACILITY_URL": "https://dep.nj.gov/njnlt/mountain-lake-bog-preserve/",
+       "FACILITY_MAP_URL": "https://dep.nj.gov/wp-content/uploads/njnlt/mountain_lake_bog.pdf",
+       "MAP_DISPLAY": "NLT - Yes",
+       "PUBLIC_ACCESS": "Yes",
+       "HUNTING_PERMITTED": "Yes",
+       "HUNTING_URL": "https://dep.nj.gov/njnlt/hunter-registration/",
+       "NAME_CONTACT": "New Jersey Natural Lands Trust",
+       "ADDRESS": "501 East State Street",
+       "ADDRESS2": "P.O. Box 420",
+       "CITY": "Trenton",
+       "STATE": "NJ",
+       "ZIP": "08625",
+       "MUNICIPALITY": "Liberty & White Townships",
+       "COUNTY": "Warren County",
+       "TELEPHONE": "609-984-1339",
+       "LAND_FACILITY_ID": 1006,
+       "LAND_FACILITY_NAME": "MOUNTAIN LAKE BOG PRESERVE",
+       "X": 358769.62942109,
+       "Y": 735749.54808144,
+       "LON_DD": -74.98208577,
+       "LAT_DD": 40.85228471,
+       "LON_DMS": "74° 58' 55.509\" W",
+       "LAT_DMS": "40° 51' 8.225\" N",
+       "X_CENTROID": 357362.95310059,
+       "Y_CENTROID": 734465.58116118,
+       "ACRES": 90.37335585,
+       "ACRES_TEXT": "90 Acres",
+       "FEE_SMPL_NAME": "Mountain Lake Bog Preserve",
+       "STATCODE": "23.0",
+       "FACILITY": "MOUNTAIN LAKE BOG PRESERVE",
+       "ASSIGNED_TO": "MOUNTAIN LAKE BOG",
+       "MANAGED_BY": "New Jersey Natural Lands Trust",
+       "NAME_LABEL": "Mountain Lake Bog",
+       "USE_LABEL": "Preserve",
+       "MAP_LABEL": "Mountain Lake Bog Preserve",
+       "FACILITY_LABEL": "Mountain Lake Bog Preserve",
+       "LAST_UPDATE": 1782913452840,
+       "LAST_EDITOR": "d.oliva"
+      }
+     },
+     {
+      "layer": "67 Open Space (State Owned) Generalized",
+      "point": [
+       40.953,
+       -73.9207
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       40.953,
+       -73.9207
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       40.8282,
+       -75.0822
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       40.953,
+       -73.9207
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 35,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

@@ -1,0 +1,797 @@
+{
+ "request": "requests/9-p2-ga.json",
+ "id": "9-p2-ga",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 GA: 9 parks, 6 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 GA: 9 parks, 6 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State GA: 9 parks. Refs in order of points: US-3724,US-4648,US-4649,US-7140,US-7861,US-12772,US-7459,US-7460,US-7858. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-3724",
+    "US-4648",
+    "US-4649",
+    "US-7140",
+    "US-7861",
+    "US-12772",
+    "US-7459",
+    "US-7460",
+    "US-7858"
+   ],
+   "pointq": [
+    {
+     "st": "GA",
+     "url": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+     "note": "GA Georgia DNR Wildlife Resources Division",
+     "points": [
+      [
+       32.8824,
+       -84.6857
+      ],
+      [
+       33.0,
+       -83.216
+      ],
+      [
+       33.05,
+       -83.7146
+      ],
+      [
+       33.4625,
+       -83.7367
+      ],
+      [
+       30.6968,
+       -82.5607
+      ],
+      [
+       32.441,
+       -83.75
+      ],
+      [
+       34.9559,
+       -84.0845
+      ],
+      [
+       34.8847,
+       -84.2818
+      ],
+      [
+       33.0442,
+       -83.7577
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "GA",
+     "url": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+     "note": "GA Georgia State Parks (DNR)",
+     "points": [
+      [
+       32.8824,
+       -84.6857
+      ],
+      [
+       33.0,
+       -83.216
+      ],
+      [
+       33.05,
+       -83.7146
+      ],
+      [
+       33.4625,
+       -83.7367
+      ],
+      [
+       30.6968,
+       -82.5607
+      ],
+      [
+       32.441,
+       -83.75
+      ],
+      [
+       34.9559,
+       -84.0845
+      ],
+      [
+       34.8847,
+       -84.2818
+      ],
+      [
+       33.0442,
+       -83.7577
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "GA",
+     "url": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+     "note": "GA Georgia DNR Wildlife Resources Division ",
+     "points": [
+      [
+       32.8824,
+       -84.6857
+      ],
+      [
+       33.0,
+       -83.216
+      ],
+      [
+       33.05,
+       -83.7146
+      ],
+      [
+       33.4625,
+       -83.7367
+      ],
+      [
+       30.6968,
+       -82.5607
+      ],
+      [
+       32.441,
+       -83.75
+      ],
+      [
+       34.9559,
+       -84.0845
+      ],
+      [
+       34.8847,
+       -84.2818
+      ],
+      [
+       33.0442,
+       -83.7577
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       32.8824,
+       -84.6857
+      ],
+      [
+       33.0,
+       -83.216
+      ],
+      [
+       33.05,
+       -83.7146
+      ],
+      [
+       33.4625,
+       -83.7367
+      ],
+      [
+       30.6968,
+       -82.5607
+      ],
+      [
+       32.441,
+       -83.75
+      ],
+      [
+       34.9559,
+       -84.0845
+      ],
+      [
+       34.8847,
+       -84.2818
+      ],
+      [
+       33.0442,
+       -83.7577
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       32.8824,
+       -84.6857
+      ],
+      [
+       33.0,
+       -83.216
+      ],
+      [
+       33.05,
+       -83.7146
+      ],
+      [
+       33.4625,
+       -83.7367
+      ],
+      [
+       30.6968,
+       -82.5607
+      ],
+      [
+       32.441,
+       -83.75
+      ],
+      [
+       34.9559,
+       -84.0845
+      ],
+      [
+       34.8847,
+       -84.2818
+      ],
+      [
+       33.0442,
+       -83.7577
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       32.8824,
+       -84.6857
+      ],
+      [
+       33.0,
+       -83.216
+      ],
+      [
+       33.05,
+       -83.7146
+      ],
+      [
+       33.4625,
+       -83.7367
+      ],
+      [
+       30.6968,
+       -82.5607
+      ],
+      [
+       32.441,
+       -83.75
+      ],
+      [
+       34.9559,
+       -84.0845
+      ],
+      [
+       34.8847,
+       -84.2818
+      ],
+      [
+       33.0442,
+       -83.7577
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:01Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State GA: 9 parks. Refs in order of points: US-3724,US-4648,US-4649,US-7140,US-7861,US-12772,US-7459,US-7460,US-7858. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "GA",
+    "url": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
+    "note": "GA Georgia DNR Wildlife Resources Division",
+    "hits": [
+     {
+      "layer": "9 WMA_boundaries",
+      "point": [
+       32.8824,
+       -84.6857
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 WMA_boundaries",
+      "point": [
+       33.0,
+       -83.216
+      ],
+      "attrs": {
+       "PropName": "BARTRAM FOREST WMA",
+       "Acres": 1346.228,
+       "Owner": "GFC",
+       "WRD_managed": "GM",
+       "GM_Region": "3",
+       "Website": "georgiawildlife.com/bartram-forest-wma"
+      }
+     },
+     {
+      "layer": "9 WMA_boundaries",
+      "point": [
+       33.05,
+       -83.7146
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 WMA_boundaries",
+      "point": [
+       33.4625,
+       -83.7367
+      ],
+      "attrs": {
+       "PropName": "CLYBEL WMA",
+       "Acres": 6274.533,
+       "Owner": "DNR",
+       "WRD_managed": "GM",
+       "Tract_Name": "MARBEN PFA",
+       "GM_Region": "3",
+       "Website": "georgiawildlife.com/clybel-wma"
+      }
+     },
+     {
+      "layer": "9 WMA_boundaries",
+      "point": [
+       30.6968,
+       -82.5607
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 WMA_boundaries",
+      "point": [
+       32.441,
+       -83.75
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 WMA_boundaries",
+      "point": [
+       34.9559,
+       -84.0845
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 WMA_boundaries",
+      "point": [
+       34.8847,
+       -84.2818
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "9 WMA_boundaries",
+      "point": [
+       33.0442,
+       -83.7577
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "GA",
+    "url": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
+    "note": "GA Georgia State Parks (DNR)",
+    "hits": [
+     {
+      "layer": "0 StateParks_GeneralBoundaries",
+      "point": [
+       32.8824,
+       -84.6857
+      ],
+      "attrs": {
+       "FID": 4,
+       "PropName": "F. D. Roosevelt State Park",
+       "sq_miles": 15.6081,
+       "Region": "5",
+       "Acres": 9989.183959960938,
+       "NR_Manager": "Tyler Gravely"
+      }
+     },
+     {
+      "layer": "0 StateParks_GeneralBoundaries",
+      "point": [
+       33.0,
+       -83.216
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 StateParks_GeneralBoundaries",
+      "point": [
+       33.05,
+       -83.7146
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 StateParks_GeneralBoundaries",
+      "point": [
+       33.4625,
+       -83.7367
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 StateParks_GeneralBoundaries",
+      "point": [
+       30.6968,
+       -82.5607
+      ],
+      "attrs": {
+       "FID": 32,
+       "PropName": "Stephen C. Foster State Park",
+       "sq_miles": 0.500583,
+       "Region": "6",
+       "Acres": 320.3731155395508,
+       "NR_Manager": "Tyler Gravely"
+      }
+     },
+     {
+      "layer": "0 StateParks_GeneralBoundaries",
+      "point": [
+       32.441,
+       -83.75
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 StateParks_GeneralBoundaries",
+      "point": [
+       34.9559,
+       -84.0845
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 StateParks_GeneralBoundaries",
+      "point": [
+       34.8847,
+       -84.2818
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 StateParks_GeneralBoundaries",
+      "point": [
+       33.0442,
+       -83.7577
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "GA",
+    "url": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
+    "note": "GA Georgia DNR Wildlife Resources Division ",
+    "hits": [
+     {
+      "layer": "14 Boundary",
+      "point": [
+       32.8824,
+       -84.6857
+      ],
+      "attrs": {
+       "PropName": "F. D. ROOSEVELT STATE PARK",
+       "Acres": 9989.169,
+       "Length": 45.74109,
+       "Owner": "DNR",
+       "WRD_managed": "SP",
+       "GM_Region": "5",
+       "Public_Map": "Yes"
+      }
+     },
+     {
+      "layer": "14 Boundary",
+      "point": [
+       33.0,
+       -83.216
+      ],
+      "attrs": {
+       "PropName": "BARTRAM FOREST WMA",
+       "Acres": 873.5325,
+       "Length": 7.108359,
+       "Owner": "GFC",
+       "WRD_managed": "GM",
+       "GM_Region": "3",
+       "Public_Map": "Yes"
+      }
+     },
+     {
+      "layer": "14 Boundary",
+      "point": [
+       33.05,
+       -83.7146
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "14 Boundary",
+      "point": [
+       33.4625,
+       -83.7367
+      ],
+      "attrs": {
+       "PropName": "CLYBEL WMA",
+       "Acres": 6580.818,
+       "Length": 19.65849,
+       "Owner": "DNR",
+       "WRD_managed": "GM",
+       "Tract_Name": "MARBEN PFA",
+       "GM_Region": "3",
+       "Public_Map": "Yes"
+      }
+     },
+     {
+      "layer": "14 Boundary",
+      "point": [
+       30.6968,
+       -82.5607
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "14 Boundary",
+      "point": [
+       32.441,
+       -83.75
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "14 Boundary",
+      "point": [
+       34.9559,
+       -84.0845
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "14 Boundary",
+      "point": [
+       34.8847,
+       -84.2818
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "14 Boundary",
+      "point": [
+       33.0442,
+       -83.7577
+      ],
+      "attrs": {
+       "PropName": "RUM CREEK WMA",
+       "Acres": 5046.033,
+       "Length": 73.33193,
+       "Owner": "Private",
+       "WRD_managed": "GM",
+       "GM_Region": "3",
+       "Public_Map": "Yes"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.8824,
+       -84.6857
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.0,
+       -83.216
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.05,
+       -83.7146
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.4625,
+       -83.7367
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       30.6968,
+       -82.5607
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       32.441,
+       -83.75
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.9559,
+       -84.0845
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.8847,
+       -84.2818
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       33.0442,
+       -83.7577
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.8824,
+       -84.6857
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.0,
+       -83.216
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.05,
+       -83.7146
+      ],
+      "attrs": {
+       "CostCenter": "FF04RGPM00",
+       "CMPXNAME": "Piedmont National Wildlife Refuge Complex",
+       "ORGNAME": "PIEDMONT NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 41680,
+       "IFWS": "269",
+       "LIT": "PDM",
+       "GISACRES": 42279.21078687,
+       "APPTYPE": 0,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "4",
+       "LABELNAME": "Piedmont NWR",
+       "CreatedDate": 1399054103000,
+       "ModifiedDate": 1763398125000,
+       "IntReg": "2"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.4625,
+       -83.7367
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       30.6968,
+       -82.5607
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       32.441,
+       -83.75
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.9559,
+       -84.0845
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.8847,
+       -84.2818
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       33.0442,
+       -83.7577
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 117,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

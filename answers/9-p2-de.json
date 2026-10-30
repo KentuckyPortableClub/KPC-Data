@@ -1,0 +1,813 @@
+{
+ "request": "requests/9-p2-de.json",
+ "id": "9-p2-de",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 DE: 4 parks, 8 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 DE: 4 parks, 8 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State DE: 4 parks. Refs in order of points: US-10687,US-9885,US-9886,US-4367. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-10687",
+    "US-9885",
+    "US-9886",
+    "US-4367"
+   ],
+   "pointq": [
+    {
+     "st": "DE",
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "note": "DE Delaware DNREC",
+     "points": [
+      [
+       38.5256,
+       -75.5104
+      ],
+      [
+       38.6338,
+       -75.0671
+      ],
+      [
+       38.9476,
+       -75.3151
+      ],
+      [
+       39.1584,
+       -75.5203
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "DE",
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0",
+     "note": "DE Delaware Forest Service",
+     "points": [
+      [
+       38.5256,
+       -75.5104
+      ],
+      [
+       38.6338,
+       -75.0671
+      ],
+      [
+       38.9476,
+       -75.3151
+      ],
+      [
+       39.1584,
+       -75.5203
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "DE",
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+     "note": "DE Delaware Fish & Wildlife (DNREC)",
+     "points": [
+      [
+       38.5256,
+       -75.5104
+      ],
+      [
+       38.6338,
+       -75.0671
+      ],
+      [
+       38.9476,
+       -75.3151
+      ],
+      [
+       39.1584,
+       -75.5203
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "DE",
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8",
+     "note": "DE Delaware nature preserves (DNREC)",
+     "points": [
+      [
+       38.5256,
+       -75.5104
+      ],
+      [
+       38.6338,
+       -75.0671
+      ],
+      [
+       38.9476,
+       -75.3151
+      ],
+      [
+       39.1584,
+       -75.5203
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "DE",
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
+     "note": "DE Delaware public protected lands (DNREC)",
+     "points": [
+      [
+       38.5256,
+       -75.5104
+      ],
+      [
+       38.6338,
+       -75.0671
+      ],
+      [
+       38.9476,
+       -75.3151
+      ],
+      [
+       39.1584,
+       -75.5203
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       38.5256,
+       -75.5104
+      ],
+      [
+       38.6338,
+       -75.0671
+      ],
+      [
+       38.9476,
+       -75.3151
+      ],
+      [
+       39.1584,
+       -75.5203
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       38.5256,
+       -75.5104
+      ],
+      [
+       38.6338,
+       -75.0671
+      ],
+      [
+       38.9476,
+       -75.3151
+      ],
+      [
+       39.1584,
+       -75.5203
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       38.5256,
+       -75.5104
+      ],
+      [
+       38.6338,
+       -75.0671
+      ],
+      [
+       38.9476,
+       -75.3151
+      ],
+      [
+       39.1584,
+       -75.5203
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:01Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State DE: 4 parks. Refs in order of points: US-10687,US-9885,US-9886,US-4367. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "DE",
+    "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+    "note": "DE Delaware DNREC",
+    "hits": [
+     {
+      "layer": "0 DNREC Managed Lands",
+      "point": [
+       38.5256,
+       -75.5104
+      ],
+      "attrs": {
+       "FACILITYID": 11,
+       "TRACT": "Trap Pond State Park",
+       "NAME": "Trap Pond State Park",
+       "MANAGEMENT_UNIT": "Trap Pond",
+       "OWNERSHIP": "State of Delaware",
+       "MANAGEMENT": "Delaware State Parks",
+       "MANAGING_AGENCY": "DPR",
+       "PROPERTY_INTEREST": "Fee Simple",
+       "PUBLIC_ACESS": "Yes",
+       "COUNTY": "Sussex",
+       "USE": "Natural Area",
+       "DESCRIP": "Trussum Pond Acquisition",
+       "ACRES": 75.2,
+       "PARCEL": "332-4.00-75.00",
+       "PUBLIC_DOMAIN": "Yes",
+       "GAP_STATUS": 3,
+       "WEBSITE": "Yes",
+       "PROTECTED": "Yes",
+       "WEB_ADDRESSES": "https://destateparks.com/LakesRivers/TrapPond",
+       "FSFASSETID": "000000004775"
+      }
+     },
+     {
+      "layer": "0 DNREC Managed Lands",
+      "point": [
+       38.5256,
+       -75.5104
+      ],
+      "attrs": {
+       "FACILITYID": 11,
+       "TRACT": "Hudson Tract",
+       "NAME": "Trap Pond State Park",
+       "MANAGEMENT_UNIT": "Trap Pond",
+       "OWNERSHIP": "State of Delaware",
+       "MANAGEMENT": "Delaware State Parks",
+       "MANAGING_AGENCY": "DPR",
+       "PROPERTY_INTEREST": "Fee Simple",
+       "PUBLIC_ACESS": "No",
+       "COUNTY": "Sussex",
+       "USE": "Open Space",
+       "DESCRIP": "Trussum Pond Acquisition Parcel ID TBD",
+       "ACRES": 1.7,
+       "PUBLIC_DOMAIN": "Yes",
+       "GAP_STATUS": 3,
+       "WEBSITE": "No",
+       "PROTECTED": "Yes",
+       "WEB_ADDRESSES": "https://destateparks.com/LakesRivers/TrapPond"
+      }
+     },
+     {
+      "layer": "0 DNREC Managed Lands",
+      "point": [
+       38.6338,
+       -75.0671
+      ],
+      "attrs": {
+       "FACILITYID": 1,
+       "TRACT": "Delaware Seashore",
+       "NAME": "Delaware Seashore State Park",
+       "MANAGEMENT_UNIT": "Delaware Seashore",
+       "OWNERSHIP": "State of Delaware",
+       "MANAGEMENT": "Delaware State Parks",
+       "MANAGING_AGENCY": "DPR",
+       "PROPERTY_INTEREST": "Fee Simple",
+       "PUBLIC_ACESS": "Yes",
+       "COUNTY": "Sussex",
+       "USE": "Park",
+       "ACRES": 1732.3,
+       "PARCEL": "334-25.00-11.00",
+       "PUBLIC_DOMAIN": "Yes",
+       "GAP_STATUS": 3,
+       "WEBSITE": "Yes",
+       "PROTECTED": "Yes",
+       "LWCF": "Yes",
+       "PROTECTION": "Federal Land and Water Conservation Fund.  The park is protected in perpetuity.",
+       "WEB_ADDRESSES": "https://destateparks.com/Beaches/DelawareSeashore",
+       "FSFASSETID": "N/A"
+      }
+     },
+     {
+      "layer": "0 DNREC Managed Lands",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "attrs": {
+       "TRACT": "None",
+       "NAME": "Mispillion Marine Reserve",
+       "OWNERSHIP": "State of Delaware",
+       "MANAGEMENT": "Division of Fish & Wildlife",
+       "MANAGING_AGENCY": "FW",
+       "PROPERTY_INTEREST": "Fee Simple",
+       "PUBLIC_ACESS": "Yes",
+       "COUNTY": "Sussex",
+       "USE": "Nature Preserve",
+       "ACRES": 155.7,
+       "PUBLIC_DOMAIN": "Yes",
+       "GAP_STATUS": 3,
+       "WEBSITE": "Yes",
+       "PROTECTED": "Yes",
+       "WEB_ADDRESSES": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/"
+      }
+     },
+     {
+      "layer": "0 DNREC Managed Lands",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "attrs": {
+       "TRACT": "None",
+       "NAME": "Mispillion Marine Reserve",
+       "OWNERSHIP": "State of Delaware",
+       "MANAGEMENT": "Division of Fish & Wildlife",
+       "MANAGING_AGENCY": "FW",
+       "PROPERTY_INTEREST": "Fee Simple",
+       "PUBLIC_ACESS": "Yes",
+       "COUNTY": "Sussex",
+       "USE": "Natural Area",
+       "ACRES": 1.7,
+       "PUBLIC_DOMAIN": "Yes",
+       "GAP_STATUS": 3,
+       "WEBSITE": "Yes",
+       "PROTECTED": "Yes",
+       "WEB_ADDRESSES": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/"
+      }
+     },
+     {
+      "layer": "0 DNREC Managed Lands",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "attrs": {
+       "TRACT": "None",
+       "NAME": "Mispillion Marine Reserve",
+       "OWNERSHIP": "State of Delaware",
+       "MANAGEMENT": "Division of Fish & Wildlife",
+       "MANAGING_AGENCY": "FW",
+       "PROPERTY_INTEREST": "Fee Simple",
+       "PUBLIC_ACESS": "Yes",
+       "COUNTY": "Sussex",
+       "USE": "Natural Area",
+       "ACRES": 3.6,
+       "PUBLIC_DOMAIN": "Yes",
+       "GAP_STATUS": 3,
+       "WEBSITE": "Yes",
+       "PROTECTED": "Yes",
+       "WEB_ADDRESSES": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/"
+      }
+     },
+     {
+      "layer": "0 DNREC Managed Lands",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "attrs": {
+       "TRACT": "None",
+       "NAME": "Mispillion Marine Reserve",
+       "OWNERSHIP": "State of Delaware",
+       "MANAGEMENT": "Division of Fish & Wildlife",
+       "MANAGING_AGENCY": "FW",
+       "PROPERTY_INTEREST": "Fee Simple",
+       "PUBLIC_ACESS": "Yes",
+       "COUNTY": "Sussex",
+       "USE": "Natural Area",
+       "ACRES": 11.2,
+       "PUBLIC_DOMAIN": "Yes",
+       "GAP_STATUS": 3,
+       "WEBSITE": "Yes",
+       "PROTECTED": "Yes",
+       "WEB_ADDRESSES": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/"
+      }
+     },
+     {
+      "layer": "0 DNREC Managed Lands",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "attrs": {
+       "TRACT": "None",
+       "NAME": "Mispillion Harbor Reserve",
+       "OWNERSHIP": "State of Delaware",
+       "MANAGEMENT": "Division of Fish & Wildlife",
+       "MANAGING_AGENCY": "FW",
+       "PROPERTY_INTEREST": "Fee Simple",
+       "PUBLIC_ACESS": "Yes",
+       "COUNTY": "Sussex",
+       "USE": "Parking Area",
+       "ACRES": 0.3,
+       "PUBLIC_DOMAIN": "Yes",
+       "GAP_STATUS": 3,
+       "WEBSITE": "Yes",
+       "PROTECTED": "Yes",
+       "WEB_ADDRESSES": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/"
+      }
+     },
+     {
+      "layer": "0 DNREC Managed Lands",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "attrs": {
+       "TRACT": "None",
+       "NAME": "Mispillion Marine Reserve",
+       "OWNERSHIP": "State of Delaware",
+       "MANAGEMENT": "Division of Fish & Wildlife",
+       "MANAGING_AGENCY": "FW",
+       "PROPERTY_INTEREST": "Fee Simple",
+       "PUBLIC_ACESS": "Yes",
+       "COUNTY": "Sussex",
+       "USE": "Natural Area",
+       "ACRES": 0.1,
+       "PUBLIC_DOMAIN": "Yes",
+       "GAP_STATUS": 3,
+       "WEBSITE": "Yes",
+       "PROTECTED": "Yes",
+       "WEB_ADDRESSES": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/"
+      }
+     },
+     {
+      "layer": "0 DNREC Managed Lands",
+      "point": [
+       39.1584,
+       -75.5203
+      ],
+      "attrs": {
+       "FACILITYID": 909,
+       "TRACT": "Legislative Green Park",
+       "NAME": "Legislative Green Park",
+       "OWNERSHIP": "State of Delaware",
+       "MANAGEMENT": "City of Dover",
+       "MANAGING_AGENCY": "Municipal",
+       "PROPERTY_INTEREST": "Fee Simple",
+       "PUBLIC_ACESS": "Yes",
+       "COUNTY": "Kent",
+       "USE": "Historical Site",
+       "ACRES": 3.2,
+       "PARCEL": "ED05-077.09-05-16.00",
+       "PUBLIC_DOMAIN": "Yes",
+       "GAP_STATUS": 3,
+       "WEBSITE": "Yes",
+       "PROTECTED": "Yes",
+       "WEB_ADDRESSES": "https://www.cityofdover.com/the-green",
+       "FSFASSETID": "000000005421"
+      }
+     }
+    ]
+   },
+   {
+    "st": "DE",
+    "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0",
+    "note": "DE Delaware Forest Service",
+    "hits": [
+     {
+      "layer": "0 State Forest",
+      "point": [
+       38.5256,
+       -75.5104
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 State Forest",
+      "point": [
+       38.6338,
+       -75.0671
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 State Forest",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 State Forest",
+      "point": [
+       39.1584,
+       -75.5203
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "DE",
+    "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+    "note": "DE Delaware Fish & Wildlife (DNREC)",
+    "hits": [
+     {
+      "layer": "17 Wildlife Area Boundaries",
+      "point": [
+       38.5256,
+       -75.5104
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "17 Wildlife Area Boundaries",
+      "point": [
+       38.6338,
+       -75.0671
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "17 Wildlife Area Boundaries",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "attrs": {
+       "AREA_NAME": "Mispillion Marine Reserve",
+       "TRACT_NAME": "Mispillion Marine Reserve",
+       "OWNER": "Division of Fish and Wildlife",
+       "GIS_ACRES": 281.4360851,
+       "PUB_ENTRY": "Yes",
+       "SUN_HUNT": "Sunday Firearm Hunting CLOSED",
+       "STORYSTOP": "0"
+      }
+     },
+     {
+      "layer": "17 Wildlife Area Boundaries",
+      "point": [
+       39.1584,
+       -75.5203
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "DE",
+    "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8",
+    "note": "DE Delaware nature preserves (DNREC)",
+    "hits": [
+     {
+      "layer": "8 Nature Preserves",
+      "point": [
+       38.5256,
+       -75.5104
+      ],
+      "attrs": {
+       "NAME": "James Branch Nature Preserve",
+       "TRACT": "Delaware Wildlands",
+       "OWNERSHIP": "DNREC (PR)",
+       "ACRES": 258.558208
+      }
+     },
+     {
+      "layer": "8 Nature Preserves",
+      "point": [
+       38.6338,
+       -75.0671
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 Nature Preserves",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "attrs": {
+       "NAME": "Milford Neck Nature Preserve",
+       "TRACT": "Mispillion Harbor Reserve",
+       "OWNERSHIP": "DNREC (F&W)",
+       "ACRES": 268.23147152
+      }
+     },
+     {
+      "layer": "8 Nature Preserves",
+      "point": [
+       39.1584,
+       -75.5203
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "DE",
+    "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
+    "note": "DE Delaware public protected lands (DNREC)",
+    "hits": [
+     {
+      "layer": "11 Public Protected Lands",
+      "point": [
+       38.5256,
+       -75.5104
+      ],
+      "attrs": {
+       "FACILITYID": 11,
+       "NAME": "Trap Pond State Park",
+       "USE": "Natural Area",
+       "WEB_ADDRESSES": "https://destateparks.com/LakesRivers/TrapPond",
+       "MANAGING_AGENCY": "DPR"
+      }
+     },
+     {
+      "layer": "11 Public Protected Lands",
+      "point": [
+       38.6338,
+       -75.0671
+      ],
+      "attrs": {
+       "FACILITYID": 1,
+       "NAME": "Delaware Seashore State Park",
+       "USE": "Park",
+       "WEB_ADDRESSES": "https://destateparks.com/Beaches/DelawareSeashore",
+       "MANAGING_AGENCY": "DPR"
+      }
+     },
+     {
+      "layer": "11 Public Protected Lands",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "attrs": {
+       "NAME": "Mispillion Harbor Reserve",
+       "USE": "Parking Area",
+       "WEB_ADDRESSES": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/",
+       "MANAGING_AGENCY": "FW"
+      }
+     },
+     {
+      "layer": "11 Public Protected Lands",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "attrs": {
+       "NAME": "Mispillion Marine Reserve",
+       "USE": "Natural Area",
+       "WEB_ADDRESSES": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/",
+       "MANAGING_AGENCY": "FW"
+      }
+     },
+     {
+      "layer": "11 Public Protected Lands",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "attrs": {
+       "NAME": "Mispillion Marine Reserve",
+       "USE": "Nature Preserve",
+       "WEB_ADDRESSES": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/",
+       "MANAGING_AGENCY": "FW"
+      }
+     },
+     {
+      "layer": "11 Public Protected Lands",
+      "point": [
+       39.1584,
+       -75.5203
+      ],
+      "attrs": {
+       "FACILITYID": 909,
+       "NAME": "Legislative Green Park",
+       "USE": "Historical Site",
+       "WEB_ADDRESSES": "https://www.cityofdover.com/the-green",
+       "MANAGING_AGENCY": "Municipal"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       38.5256,
+       -75.5104
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       38.6338,
+       -75.0671
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       39.1584,
+       -75.5203
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       38.5256,
+       -75.5104
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       38.6338,
+       -75.0671
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       38.9476,
+       -75.3151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       39.1584,
+       -75.5203
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 87,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

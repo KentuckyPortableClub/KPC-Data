@@ -1,0 +1,65 @@
+{
+ "chat": 2,
+ "kind": "map-check",
+ "report": "For each pair: open the official record page and the POTA park page. Is the record's land part of that POTA park on the agency's own map? Answer YES / NO / NOT SURE per pair with the reason.",
+ "urls": [
+  "",
+  "https://pota.app/#/park/US-12545",
+  "",
+  "https://pota.app/#/park/US-12545",
+  "",
+  "https://pota.app/#/park/US-12549",
+  "",
+  "https://pota.app/#/park/US-12549",
+  "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=272833&outFields=*&returnGeometry=false&f=html",
+  "https://pota.app/#/park/US-12068",
+  "",
+  "https://pota.app/#/park/US-10790",
+  "",
+  "https://pota.app/#/park/US-12728"
+ ],
+ "pairs": [
+  {
+   "ref": "US-12545",
+   "park": "Cottonwood Island Wildlife Area",
+   "record": "sgwab1371",
+   "record_name": "Island"
+  },
+  {
+   "ref": "US-12545",
+   "park": "Cottonwood Island Wildlife Area",
+   "record": "sgwaf1371",
+   "record_name": "Island"
+  },
+  {
+   "ref": "US-12549",
+   "park": "Leque Island State Wildlife Area",
+   "record": "sgwab1371",
+   "record_name": "Island"
+  },
+  {
+   "ref": "US-12549",
+   "park": "Leque Island State Wildlife Area",
+   "record": "sgwaf1371",
+   "record_name": "Island"
+  },
+  {
+   "ref": "US-12068",
+   "park": "Big Rib River State Fish and Wildlife Area",
+   "record": 272833,
+   "record_name": "Rib River Fishery Area"
+  },
+  {
+   "ref": "US-10790",
+   "park": "Laramie Peak State Wildlife Habitat Management Area",
+   "record": "sgwyc14160",
+   "record_name": "Laramie Peak"
+  },
+  {
+   "ref": "US-12728",
+   "park": "Fall Creek State Wildlife Habitat Management Area",
+   "record": "sgwyd10124",
+   "record_name": "Fall Creek"
+  }
+ ]
+}

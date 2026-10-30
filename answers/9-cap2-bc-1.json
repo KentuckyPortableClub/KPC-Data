@@ -1,0 +1,3006 @@
+{
+ "request": "requests/9-cap2-bc-1.json",
+ "id": "9-cap2-bc-1",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CAP2 BC 1: 40 parks, 5 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CAP2 BC 1: 40 parks, 5 layers",
+  "probe": {
+   "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (BC, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-3186,CA-3211,CA-3334,CA-3476,CA-3636,CA-4793,CA-4795,CA-4796,CA-5326,CA-5344,CA-5346,CA-5483,CA-6133,CA-3199,CA-3282,CA-3427,CA-3679,CA-3688,CA-3739,CA-3800,CA-3882,CA-3966,CA-4023,CA-5499,CA-5500,CA-5539,CA-5540,CA-6398,CA-0017,CA-0060,CA-3178,CA-3180,CA-3183,CA-3200,CA-3241,CA-3258,CA-3267,CA-3272,CA-3278,CA-3298. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+   "refs": [
+    "CA-3186",
+    "CA-3211",
+    "CA-3334",
+    "CA-3476",
+    "CA-3636",
+    "CA-4793",
+    "CA-4795",
+    "CA-4796",
+    "CA-5326",
+    "CA-5344",
+    "CA-5346",
+    "CA-5483",
+    "CA-6133",
+    "CA-3199",
+    "CA-3282",
+    "CA-3427",
+    "CA-3679",
+    "CA-3688",
+    "CA-3739",
+    "CA-3800",
+    "CA-3882",
+    "CA-3966",
+    "CA-4023",
+    "CA-5499",
+    "CA-5500",
+    "CA-5539",
+    "CA-5540",
+    "CA-6398",
+    "CA-0017",
+    "CA-0060",
+    "CA-3178",
+    "CA-3180",
+    "CA-3183",
+    "CA-3200",
+    "CA-3241",
+    "CA-3258",
+    "CA-3267",
+    "CA-3272",
+    "CA-3278",
+    "CA-3298"
+   ],
+   "pointq": [
+    {
+     "st": "BC",
+     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "note": "BC recreatio",
+     "points": [
+      [
+       55.1539,
+       -128.861
+      ],
+      [
+       51.975,
+       -122.251
+      ],
+      [
+       51.3389,
+       -120.169
+      ],
+      [
+       47.95,
+       -129.1
+      ],
+      [
+       49.2711,
+       -123.192
+      ],
+      [
+       51.4311,
+       -116.404
+      ],
+      [
+       52.0979,
+       -131.217
+      ],
+      [
+       51.3012,
+       -117.521
+      ],
+      [
+       48.4349,
+       -123.473
+      ],
+      [
+       48.6699,
+       -124.85
+      ],
+      [
+       49.0804,
+       -121.881
+      ],
+      [
+       52.095,
+       -131.22
+      ],
+      [
+       51.2376,
+       -116.584
+      ],
+      [
+       53.0691,
+       -121.515
+      ],
+      [
+       49.1449,
+       -122.931
+      ],
+      [
+       49.2526,
+       -123.123
+      ],
+      [
+       49.2369,
+       -121.962
+      ],
+      [
+       48.4909,
+       -123.338
+      ],
+      [
+       49.3317,
+       -123.264
+      ],
+      [
+       49.3297,
+       -123.165
+      ],
+      [
+       49.3275,
+       -123.168
+      ],
+      [
+       49.2102,
+       -122.68
+      ],
+      [
+       49.252,
+       -122.812
+      ],
+      [
+       49.388,
+       -123.355
+      ],
+      [
+       49.1273,
+       -123.051
+      ],
+      [
+       48.4391,
+       -123.298
+      ],
+      [
+       48.4124,
+       -123.365
+      ],
+      [
+       48.4517,
+       -123.424
+      ],
+      [
+       49.2833,
+       -126.0
+      ],
+      [
+       49.25,
+       -124.383
+      ],
+      [
+       49.1801,
+       -122.855
+      ],
+      [
+       49.2448,
+       -122.534
+      ],
+      [
+       49.3247,
+       -123.151
+      ],
+      [
+       49.2904,
+       -122.925
+      ],
+      [
+       49.1548,
+       -122.763
+      ],
+      [
+       48.7334,
+       -123.681
+      ],
+      [
+       49.2318,
+       -122.956
+      ],
+      [
+       49.3392,
+       -122.859
+      ],
+      [
+       49.2821,
+       -122.936
+      ],
+      [
+       51.4912,
+       -123.772
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/46",
+     "note": "BC-HCA Gover",
+     "points": [
+      [
+       55.1539,
+       -128.861
+      ],
+      [
+       51.975,
+       -122.251
+      ],
+      [
+       51.3389,
+       -120.169
+      ],
+      [
+       47.95,
+       -129.1
+      ],
+      [
+       49.2711,
+       -123.192
+      ],
+      [
+       51.4311,
+       -116.404
+      ],
+      [
+       52.0979,
+       -131.217
+      ],
+      [
+       51.3012,
+       -117.521
+      ],
+      [
+       48.4349,
+       -123.473
+      ],
+      [
+       48.6699,
+       -124.85
+      ],
+      [
+       49.0804,
+       -121.881
+      ],
+      [
+       52.095,
+       -131.22
+      ],
+      [
+       51.2376,
+       -116.584
+      ],
+      [
+       53.0691,
+       -121.515
+      ],
+      [
+       49.1449,
+       -122.931
+      ],
+      [
+       49.2526,
+       -123.123
+      ],
+      [
+       49.2369,
+       -121.962
+      ],
+      [
+       48.4909,
+       -123.338
+      ],
+      [
+       49.3317,
+       -123.264
+      ],
+      [
+       49.3297,
+       -123.165
+      ],
+      [
+       49.3275,
+       -123.168
+      ],
+      [
+       49.2102,
+       -122.68
+      ],
+      [
+       49.252,
+       -122.812
+      ],
+      [
+       49.388,
+       -123.355
+      ],
+      [
+       49.1273,
+       -123.051
+      ],
+      [
+       48.4391,
+       -123.298
+      ],
+      [
+       48.4124,
+       -123.365
+      ],
+      [
+       48.4517,
+       -123.424
+      ],
+      [
+       49.2833,
+       -126.0
+      ],
+      [
+       49.25,
+       -124.383
+      ],
+      [
+       49.1801,
+       -122.855
+      ],
+      [
+       49.2448,
+       -122.534
+      ],
+      [
+       49.3247,
+       -123.151
+      ],
+      [
+       49.2904,
+       -122.925
+      ],
+      [
+       49.1548,
+       -122.763
+      ],
+      [
+       48.7334,
+       -123.681
+      ],
+      [
+       49.2318,
+       -122.956
+      ],
+      [
+       49.3392,
+       -122.859
+      ],
+      [
+       49.2821,
+       -122.936
+      ],
+      [
+       51.4912,
+       -123.772
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+     "note": "BC-HP Govern",
+     "points": [
+      [
+       55.1539,
+       -128.861
+      ],
+      [
+       51.975,
+       -122.251
+      ],
+      [
+       51.3389,
+       -120.169
+      ],
+      [
+       47.95,
+       -129.1
+      ],
+      [
+       49.2711,
+       -123.192
+      ],
+      [
+       51.4311,
+       -116.404
+      ],
+      [
+       52.0979,
+       -131.217
+      ],
+      [
+       51.3012,
+       -117.521
+      ],
+      [
+       48.4349,
+       -123.473
+      ],
+      [
+       48.6699,
+       -124.85
+      ],
+      [
+       49.0804,
+       -121.881
+      ],
+      [
+       52.095,
+       -131.22
+      ],
+      [
+       51.2376,
+       -116.584
+      ],
+      [
+       53.0691,
+       -121.515
+      ],
+      [
+       49.1449,
+       -122.931
+      ],
+      [
+       49.2526,
+       -123.123
+      ],
+      [
+       49.2369,
+       -121.962
+      ],
+      [
+       48.4909,
+       -123.338
+      ],
+      [
+       49.3317,
+       -123.264
+      ],
+      [
+       49.3297,
+       -123.165
+      ],
+      [
+       49.3275,
+       -123.168
+      ],
+      [
+       49.2102,
+       -122.68
+      ],
+      [
+       49.252,
+       -122.812
+      ],
+      [
+       49.388,
+       -123.355
+      ],
+      [
+       49.1273,
+       -123.051
+      ],
+      [
+       48.4391,
+       -123.298
+      ],
+      [
+       48.4124,
+       -123.365
+      ],
+      [
+       48.4517,
+       -123.424
+      ],
+      [
+       49.2833,
+       -126.0
+      ],
+      [
+       49.25,
+       -124.383
+      ],
+      [
+       49.1801,
+       -122.855
+      ],
+      [
+       49.2448,
+       -122.534
+      ],
+      [
+       49.3247,
+       -123.151
+      ],
+      [
+       49.2904,
+       -122.925
+      ],
+      [
+       49.1548,
+       -122.763
+      ],
+      [
+       48.7334,
+       -123.681
+      ],
+      [
+       49.2318,
+       -122.956
+      ],
+      [
+       49.3392,
+       -122.859
+      ],
+      [
+       49.2821,
+       -122.936
+      ],
+      [
+       51.4912,
+       -123.772
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       55.1539,
+       -128.861
+      ],
+      [
+       51.975,
+       -122.251
+      ],
+      [
+       51.3389,
+       -120.169
+      ],
+      [
+       47.95,
+       -129.1
+      ],
+      [
+       49.2711,
+       -123.192
+      ],
+      [
+       51.4311,
+       -116.404
+      ],
+      [
+       52.0979,
+       -131.217
+      ],
+      [
+       51.3012,
+       -117.521
+      ],
+      [
+       48.4349,
+       -123.473
+      ],
+      [
+       48.6699,
+       -124.85
+      ],
+      [
+       49.0804,
+       -121.881
+      ],
+      [
+       52.095,
+       -131.22
+      ],
+      [
+       51.2376,
+       -116.584
+      ],
+      [
+       53.0691,
+       -121.515
+      ],
+      [
+       49.1449,
+       -122.931
+      ],
+      [
+       49.2526,
+       -123.123
+      ],
+      [
+       49.2369,
+       -121.962
+      ],
+      [
+       48.4909,
+       -123.338
+      ],
+      [
+       49.3317,
+       -123.264
+      ],
+      [
+       49.3297,
+       -123.165
+      ],
+      [
+       49.3275,
+       -123.168
+      ],
+      [
+       49.2102,
+       -122.68
+      ],
+      [
+       49.252,
+       -122.812
+      ],
+      [
+       49.388,
+       -123.355
+      ],
+      [
+       49.1273,
+       -123.051
+      ],
+      [
+       48.4391,
+       -123.298
+      ],
+      [
+       48.4124,
+       -123.365
+      ],
+      [
+       48.4517,
+       -123.424
+      ],
+      [
+       49.2833,
+       -126.0
+      ],
+      [
+       49.25,
+       -124.383
+      ],
+      [
+       49.1801,
+       -122.855
+      ],
+      [
+       49.2448,
+       -122.534
+      ],
+      [
+       49.3247,
+       -123.151
+      ],
+      [
+       49.2904,
+       -122.925
+      ],
+      [
+       49.1548,
+       -122.763
+      ],
+      [
+       48.7334,
+       -123.681
+      ],
+      [
+       49.2318,
+       -122.956
+      ],
+      [
+       49.3392,
+       -122.859
+      ],
+      [
+       49.2821,
+       -122.936
+      ],
+      [
+       51.4912,
+       -123.772
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       55.1539,
+       -128.861
+      ],
+      [
+       51.975,
+       -122.251
+      ],
+      [
+       51.3389,
+       -120.169
+      ],
+      [
+       47.95,
+       -129.1
+      ],
+      [
+       49.2711,
+       -123.192
+      ],
+      [
+       51.4311,
+       -116.404
+      ],
+      [
+       52.0979,
+       -131.217
+      ],
+      [
+       51.3012,
+       -117.521
+      ],
+      [
+       48.4349,
+       -123.473
+      ],
+      [
+       48.6699,
+       -124.85
+      ],
+      [
+       49.0804,
+       -121.881
+      ],
+      [
+       52.095,
+       -131.22
+      ],
+      [
+       51.2376,
+       -116.584
+      ],
+      [
+       53.0691,
+       -121.515
+      ],
+      [
+       49.1449,
+       -122.931
+      ],
+      [
+       49.2526,
+       -123.123
+      ],
+      [
+       49.2369,
+       -121.962
+      ],
+      [
+       48.4909,
+       -123.338
+      ],
+      [
+       49.3317,
+       -123.264
+      ],
+      [
+       49.3297,
+       -123.165
+      ],
+      [
+       49.3275,
+       -123.168
+      ],
+      [
+       49.2102,
+       -122.68
+      ],
+      [
+       49.252,
+       -122.812
+      ],
+      [
+       49.388,
+       -123.355
+      ],
+      [
+       49.1273,
+       -123.051
+      ],
+      [
+       48.4391,
+       -123.298
+      ],
+      [
+       48.4124,
+       -123.365
+      ],
+      [
+       48.4517,
+       -123.424
+      ],
+      [
+       49.2833,
+       -126.0
+      ],
+      [
+       49.25,
+       -124.383
+      ],
+      [
+       49.1801,
+       -122.855
+      ],
+      [
+       49.2448,
+       -122.534
+      ],
+      [
+       49.3247,
+       -123.151
+      ],
+      [
+       49.2904,
+       -122.925
+      ],
+      [
+       49.1548,
+       -122.763
+      ],
+      [
+       48.7334,
+       -123.681
+      ],
+      [
+       49.2318,
+       -122.956
+      ],
+      [
+       49.3392,
+       -122.859
+      ],
+      [
+       49.2821,
+       -122.936
+      ],
+      [
+       51.4912,
+       -123.772
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:07Z",
+ "results": {
+  "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (BC, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-3186,CA-3211,CA-3334,CA-3476,CA-3636,CA-4793,CA-4795,CA-4796,CA-5326,CA-5344,CA-5346,CA-5483,CA-6133,CA-3199,CA-3282,CA-3427,CA-3679,CA-3688,CA-3739,CA-3800,CA-3882,CA-3966,CA-4023,CA-5499,CA-5500,CA-5539,CA-5540,CA-6398,CA-0017,CA-0060,CA-3178,CA-3180,CA-3183,CA-3200,CA-3241,CA-3258,CA-3267,CA-3272,CA-3278,CA-3298. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "BC",
+    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+    "note": "BC recreatio",
+    "hits": [
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       55.1539,
+       -128.861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       51.975,
+       -122.251
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       51.3389,
+       -120.169
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       47.95,
+       -129.1
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.2711,
+       -123.192
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       51.4311,
+       -116.404
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       52.0979,
+       -131.217
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       51.3012,
+       -117.521
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       48.4349,
+       -123.473
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       48.6699,
+       -124.85
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.0804,
+       -121.881
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       52.095,
+       -131.22
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       51.2376,
+       -116.584
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       53.0691,
+       -121.515
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.1449,
+       -122.931
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.2526,
+       -123.123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.2369,
+       -121.962
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       48.4909,
+       -123.338
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.3317,
+       -123.264
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.3297,
+       -123.165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.3275,
+       -123.168
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.2102,
+       -122.68
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.252,
+       -122.812
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.388,
+       -123.355
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.1273,
+       -123.051
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       48.4391,
+       -123.298
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       48.4124,
+       -123.365
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       48.4517,
+       -123.424
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.2833,
+       -126.0
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.25,
+       -124.383
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.1801,
+       -122.855
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.2448,
+       -122.534
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.3247,
+       -123.151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.2904,
+       -122.925
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.1548,
+       -122.763
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       48.7334,
+       -123.681
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.2318,
+       -122.956
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.3392,
+       -122.859
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.2821,
+       -122.936
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       51.4912,
+       -123.772
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/46",
+    "note": "BC-HCA Gover",
+    "hits": [
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       55.1539,
+       -128.861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       51.975,
+       -122.251
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       51.3389,
+       -120.169
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       47.95,
+       -129.1
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.2711,
+       -123.192
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       51.4311,
+       -116.404
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       52.0979,
+       -131.217
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       51.3012,
+       -117.521
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       48.4349,
+       -123.473
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       48.6699,
+       -124.85
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.0804,
+       -121.881
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       52.095,
+       -131.22
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       51.2376,
+       -116.584
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       53.0691,
+       -121.515
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.1449,
+       -122.931
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.2526,
+       -123.123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.2369,
+       -121.962
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       48.4909,
+       -123.338
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.3317,
+       -123.264
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.3297,
+       -123.165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.3275,
+       -123.168
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.2102,
+       -122.68
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.252,
+       -122.812
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.388,
+       -123.355
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.1273,
+       -123.051
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       48.4391,
+       -123.298
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       48.4124,
+       -123.365
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       48.4517,
+       -123.424
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.2833,
+       -126.0
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.25,
+       -124.383
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.1801,
+       -122.855
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.2448,
+       -122.534
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.3247,
+       -123.151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.2904,
+       -122.925
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.1548,
+       -122.763
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       48.7334,
+       -123.681
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.2318,
+       -122.956
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.3392,
+       -122.859
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.2821,
+       -122.936
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       51.4912,
+       -123.772
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+    "note": "BC-HP Govern",
+    "hits": [
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       55.1539,
+       -128.861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       51.975,
+       -122.251
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       51.3389,
+       -120.169
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       47.95,
+       -129.1
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       49.2711,
+       -123.192
+      ],
+      "attrs": {
+       "HIST_HEF_SYSID": 2744,
+       "SITE_ID": "61934478-46bc-4e6b-a961-eae9d737273e",
+       "BORDENNUMBER": "DhRt-21",
+       "OFFICIALLY_RECOGNIZED_IND": "Y",
+       "REGISTRATION_STATUS": "Registered",
+       "COMMON_SITE_NAME": "Brock House",
+       "OTHER_SITE_NAMES": "Thorley Park",
+       "STREET_ADDRESS": "3875 Point Grey Rd",
+       "CITY": "Vancouver",
+       "PROVINCE": "British Columbia",
+       "LOCATION_DESCRIPTION": "3875 Point Grey Road, Vancouver",
+       "RECOGNITION_GOVERNMENT": "Vancouver",
+       "RECOGNITION_GOVERNMENT_LEVEL": "Municipal",
+       "RECOGNITION_TYPE": "Designation",
+       "RECOGNITION_START_DATE": 268963200000,
+       "REFERENCE_NUMBER": "bylaw 5189",
+       "LATITUDE": 49.271932,
+       "LONGITUDE": -123.190995,
+       "UTM_ZONE": 10,
+       "UTM_EASTING": 486106,
+       "UTM_NORTHING": 5457703,
+       "SITE_URL": "https://apps.nrs.gov.bc.ca/int/bcrhp/report/61934478-46bc-4e6b-a961-eae9d737273e",
+       "FEATURE_AREA_SQM": 19633.6668,
+       "FEATURE_LENGTH_M": 572.6884
+      }
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       51.4311,
+       -116.404
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       52.0979,
+       -131.217
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       51.3012,
+       -117.521
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       48.4349,
+       -123.473
+      ],
+      "attrs": {
+       "HIST_HEF_SYSID": 4499,
+       "SITE_ID": "a08b281a-e511-415f-9e06-f362ee8b649f",
+       "BORDENNUMBER": "DcRu-330",
+       "OFFICIALLY_RECOGNIZED_IND": "Y",
+       "REGISTRATION_STATUS": "Federal Jurisdiction",
+       "COMMON_SITE_NAME": "Royal Roads University",
+       "OTHER_SITE_NAMES": "Royal Roads Military College; Hatley Park; Former Royal Roads Military College NHS; Hatley Castle",
+       "PARCEL_DESCRIPTION": "001057596",
+       "STREET_ADDRESS": "2005 Sooke Rd",
+       "CITY": "Colwood",
+       "PROVINCE": "British Columbia",
+       "LOCATION_DESCRIPTION": "2005 Sooke Road, Colwood",
+       "RECOGNITION_GOVERNMENT": "Government of Canada",
+       "RECOGNITION_GOVERNMENT_LEVEL": "Federal",
+       "RECOGNITION_TYPE": "National Historic Site",
+       "RECOGNITION_START_DATE": 804988800000,
+       "REFERENCE_NUMBER": "HSMBC",
+       "CONSTRUCTION_YEAR": 1908,
+       "LATITUDE": 48.431453,
+       "LONGITUDE": -123.47804,
+       "UTM_ZONE": 10,
+       "UTM_EASTING": 464638,
+       "UTM_NORTHING": 5364366,
+       "SITE_URL": "https://apps.nrs.gov.bc.ca/int/bcrhp/report/a08b281a-e511-415f-9e06-f362ee8b649f",
+       "FEATURE_AREA_SQM": 2275426.276,
+       "FEATURE_LENGTH_M": 7104.8555
+      }
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       48.6699,
+       -124.85
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       49.0804,
+       -121.881
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       52.095,
+       -131.22
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       51.2376,
+       -116.584
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       53.0691,
+       -121.515
+      ],
+      "attrs": {
+       "HIST_HEF_SYSID": 4004,
+       "SITE_ID": "8f66e0f3-a791-476b-87a7-eabcc313fad9",
+       "BORDENNUMBER": "FgRj-1",
+       "OFFICIALLY_RECOGNIZED_IND": "Y",
+       "REGISTRATION_STATUS": "Registered",
+       "COMMON_SITE_NAME": "Barkerville",
+       "OTHER_SITE_NAMES": "Barkerville Townsite; Barkerville Historic Town",
+       "STREET_ADDRESS": "Hwy 26",
+       "CITY": "Barkerville",
+       "PROVINCE": "British Columbia",
+       "LOCATION_DESCRIPTION": "Barkerville is located on Highway 26 east of Quesnel.",
+       "RECOGNITION_GOVERNMENT": "Government of British Columbia",
+       "RECOGNITION_GOVERNMENT_LEVEL": "Provincial",
+       "RECOGNITION_TYPE": "Designated Property",
+       "RECOGNITION_START_DATE": 1342569600000,
+       "REFERENCE_NUMBER": "OIC 553-2012",
+       "CONSTRUCTION_YEAR": 1862,
+       "CONSTRUCTION_YEAR_QUALIFIER": "Circa",
+       "SIGNIFICANCE_GOVERNMENT_LEVEL": "Provincial",
+       "PHYSICAL_DESCRIPTION": "Barkerville - located in central British Columbia, ninety kilometers east of Quesnel at the edge of the Cariboo Mountains - is a heritage district that includes a historic town situated in a narrow valley along the west bank of Williams Creek, and a cemetery north of the townsite.  The district includes all surveyed lots, buildings, roads, and physical remnants of historic mining activity.",
+       "HERITAGE_VALUE": "The heritage values of Barkerville lie in its importance in the Cariboo Gold Rush of the 1860s and its impact on patterns of economic development and the resettlement of British Columbia, and in its role as the province's primary project for the 1958 British Columbia Centennial.\n\nOriginating in 1862 around English miner Billy Barker's strike, Barkerville is valued primarily as the most intact example of the types of communities and buildings that were constructed during the Cariboo Gold Rush. The British Columbia gold rushes, which started in 1858, are important to the history of BC because they brought gold seekers from around the world and directly led to the creation of the British colony which set the foundation for the future province (1871).\n\nOnce the Cariboo region's largest and most important town, it is significant that Barkerville survived and prospered in the extreme conditions of the natural environment high in a remote mountainous region of British Columbia's snowbelt. Although burnt to the ground in 1868, Barkerville was quickly rebuilt; this 'second town' - which included a large Chinatown - is a testament to the symbiotic nature of gravel, gold, water, and habitation in the Gold Rush boom town. It is significant that Barkerville's wooden architecture, layout of streets, historic cemetery, and authentic mining equipment remained largely intact to illustrate the evolution of the community and gold mining up to 1958, when the Province began acquiring lots in the townsite and developing Barkerville as a historic park.\n\nBarkerville's secondary heritage value resides in its importance as a British Columbia Centennial project, which has become the province's most noted museum town and one of its foremost heritage resources. Barkerville is an icon of the Cariboo Gold Rush and possesses significant social value as a place that effectively presents aspects of British Columbia's multi-cultural settlement, and its economic and developmental history.\n",
+       "DEFINING_ELEMENTS": "The character-defining elements of Barkerville include:\n\n<ul>\n\t- the containment of the place by the Williams Creek valley and the gentle rise of the valley from north to south\n\t- the meandering nature of Williams Creek and its close proximity to the townsite\n\t- the harsh climate and challenging physical environment of the historic place\n\t- the careful and appropriate screening of modern intrusions into the historic place\n\t- the unfinished nature of the earth and gravel main street, its rise from north to south along Williams Creek, and its slight bends\n\t- the historic natures of all resources (such as wooden boardwalks, flumes, and piping systems) and buildings dating from the period of 1860 to 1958, both restored and unrestored\n\t- a variety of building styles and construction types, such as balloon-framing, log construction, post-and-beam construction, and wood framing\n\t- historic exterior and interior features such as finishes, patinas, fixtures and fittings of all pre-1958 structures\n\t- the evidence of multiculturalism, seen in such physical elements of the town as the varied building designs, the large number of buildings in Chinatown in relation to the rest of the town, and the Chinese terraced gardens\n\t- the historic mining equipment, paraphernalia, and remains within the surrounding landscape, including slag heaps and monitor pits\n\t- the intactness and nature of the pre-1958 section of the Barkerville cemetery and the rustic nature of the headboards and grave cribs which symbolize the passing of time\n\n\n&nbsp;\n",
+       "DOCUMENT_LOCATION": "BC Heritage Branch properties files",
+       "CURRENT_FUNCTIONAL_CATEGORIES": "Historic or Interpretive Site; Town",
+       "HISTORIC_FUNCTIONAL_CATEGORIES": "Town; Natural Resource Extraction Facility or Site",
+       "LATITUDE": 53.078607,
+       "LONGITUDE": -121.514542,
+       "UTM_ZONE": 10,
+       "UTM_EASTING": 599505,
+       "UTM_NORTHING": 5882046,
+       "SITE_URL": "https://apps.nrs.gov.bc.ca/int/bcrhp/report/8f66e0f3-a791-476b-87a7-eabcc313fad9",
+       "FEATURE_AREA_SQM": 6435511.3451,
+       "FEATURE_LENGTH_M": 21882.8885
+      }
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       49.1449,
+       -122.931
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       49.2526,
+       -123.123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       49.2369,
+       -121.962
+      ],
+      "attrs": {
+       "HIST_HEF_SYSID": 6198,
+       "SITE_ID": "df353305-3d68-469d-8151-9eb7b91b4ba9",
+       "BORDENNUMBER": "DhRl-68",
+       "OFFICIALLY_RECOGNIZED_IND": "Y",
+       "REGISTRATION_STATUS": "Registered",
+       "COMMON_SITE_NAME": "Kilby General Store Museum",
+       "OTHER_SITE_NAMES": "Kilby Store; Kilby Store and Farm",
+       "PARCEL_DESCRIPTION": "007145721",
+       "STREET_ADDRESS": "215 Kilby Rd",
+       "CITY": "Harrison Mills",
+       "PROVINCE": "British Columbia",
+       "LOCATION_DESCRIPTION": "Kilby General Store Museum is located in Harrison Miils, on the north side of Kilby Road, just east of the railway bridge over the Harrison River, in Kent  municipality.",
+       "RECOGNITION_GOVERNMENT": "Government of British Columbia",
+       "RECOGNITION_GOVERNMENT_LEVEL": "Provincial",
+       "RECOGNITION_TYPE": "Designated Property",
+       "RECOGNITION_START_DATE": 586137600000,
+       "REFERENCE_NUMBER": "OIC 1946",
+       "CONSTRUCTION_YEAR": 1906,
+       "CONSTRUCTION_YEAR_QUALIFIER": "Circa",
+       "SIGNIFICANCE_GOVERNMENT_LEVEL": "Provincial",
+       "PHYSICAL_DESCRIPTION": "The Kilby General Store Museum, located at Harrison Mills at the confluence of the Harrison and Fraser Rivers, is comprised of a general store, a cottage, a tin shed, boardwalks, and an orchard.",
+       "HERITAGE_VALUE": "Kilby General Store Museum is valued as a historic reminder of the once-thriving community of Harrison Mills, in the District of Kent, British Columbia. The general store was established in 1906 by Thomas and Eliza Kilby. During its heyday (1925-1935), Kilby General Store supplied the Upper Fraser Valley and was the social and commercial nucleus of the community.\n\nThis site is a valuable representation of a business and homestead owned and operated by one multi-generational family for over seventy years. Evidence of the commercial diversification - which ranged from trade to agriculture - practised by the Kilbys in order to accommodate the needs of the community (and travelers on the nearby rail and rivers) can be seen in such elements of the site as the post office and hotel rooms in the general store building, the orchard which provided fruit for local consumption, and the 1930s tin shed that housed the equipment for the dairy farm, all of which supplemented the Kilbys' general store income.\n\nArchitecturally, the buildings at Kilby General Store Museum are significant in their forms and designs. The general store is a fine example of a three-storey, false front, wood-frame commercial building. It is significant that the entrance of the store is located on the second storey - it was constructed to be level with the rail bed, ensuring visibility for passengers stopping on the train. The raised height of the store and the Kilbys' cottage - and the raised boardwalks between them - provides a valuable reminder of the need to elevate these structures built on the flood plain. The tin shed at this site is a rare example of a typical metal shed of the 1930s.\n\nSource: BC Heritage Branch properties files\n",
+       "DEFINING_ELEMENTS": "The character-defining elements of the Kilby General Store Museum include:\n\n<ul>\n\t- the relationship of the site with the Harrison River, the Fraser River, and the CPR main line\n\t- the relationship of the site with the dykes that define and protect it in its proximity to the Harrison and Fraser Rivers\n\t- the three-storey, wood-frame General Store with its false front fa&ccedil;ade and second-storey entrance\n\t- historic interior furnishings and fittings within the store, including tongue-and-groove wall finishes, wooden floors, ceiling, product shelving and store counters\n\t- the general patina inside the buildings of the site, resulting from the years of use by the Kilby family and their patrons\n\t- ancillary buildings dating to the time of the Kilbys&#39; occupancy, such as the cottage, the oil shed and the tin shed\n\t- the relationship between the general store, the Kilbys&#39; cottage, and the oil shed, and the boardwalks which connect them\n\t- the orchard\n\n\n&nbsp;\n",
+       "DOCUMENT_LOCATION": "BC Heritage Branch properties files",
+       "CURRENT_FUNCTIONAL_CATEGORIES": "Historic or Interpretive Site",
+       "HISTORIC_FUNCTIONAL_CATEGORIES": "Post Office; Shop or Wholesale Establishment; Farm or Ranch; Hotel, Motel or Inn",
+       "LATITUDE": 49.237819,
+       "LONGITUDE": -121.959772,
+       "UTM_ZONE": 10,
+       "UTM_EASTING": 575721,
+       "UTM_NORTHING": 5454414,
+       "SITE_URL": "https://apps.nrs.gov.bc.ca/int/bcrhp/report/df353305-3d68-469d-8151-9eb7b91b4ba9",
+       "FEATURE_AREA_SQM": 85261.9919,
+       "FEATURE_LENGTH_M": 1680.9448
+      }
+     },
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       48.4909,
+       -123.338
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+      "error": "<urlopen error [Errno 111] Connection refused>"
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       55.1539,
+       -128.861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.975,
+       -122.251
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.3389,
+       -120.169
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.95,
+       -129.1
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.2711,
+       -123.192
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.4311,
+       -116.404
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.0979,
+       -131.217
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.3012,
+       -117.521
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.4349,
+       -123.473
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.6699,
+       -124.85
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.0804,
+       -121.881
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.095,
+       -131.22
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.2376,
+       -116.584
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       53.0691,
+       -121.515
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.1449,
+       -122.931
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.2526,
+       -123.123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.2369,
+       -121.962
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.4909,
+       -123.338
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.3317,
+       -123.264
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.3297,
+       -123.165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.3275,
+       -123.168
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.2102,
+       -122.68
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.252,
+       -122.812
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.388,
+       -123.355
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.1273,
+       -123.051
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.4391,
+       -123.298
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.4124,
+       -123.365
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.4517,
+       -123.424
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.2833,
+       -126.0
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.25,
+       -124.383
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.1801,
+       -122.855
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.2448,
+       -122.534
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.3247,
+       -123.151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.2904,
+       -122.925
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.1548,
+       -122.763
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.7334,
+       -123.681
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.2318,
+       -122.956
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.3392,
+       -122.859
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.2821,
+       -122.936
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.4912,
+       -123.772
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       55.1539,
+       -128.861
+      ],
+      "attrs": {
+       "NAME_E": "ANHLUUT'UKWSIM LAX̱MIHL ANGWINGA'ASANSKWHL NISG̱A'A PARK [A.K.A. NISG̱A'A MEMORIAL LAVA BED PARK]",
+       "NAME_F": "ANHLUUT'UKWSIM LAX̱MIHL ANGWINGA'ASANSKWHL NISG̱A'A PARK [A.K.A. NISG̱A'A MEMORIAL LAVA BED PARK]",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 4,
+       "STATUS": 1,
+       "QUALYEAR": 1992,
+       "ESTYEAR": 1992,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 17717,
+       "PARENT_ID": 590000386,
+       "ZONE_ID": 591000386,
+       "ZONEDESC_E": "Terrestrial Zone",
+       "MECH_E": "Protected Areas of British Columbia Act",
+       "TYPE_E": "A - Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of British Columbia",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Government of British Columbia",
+       "SUBSRIGHT": "B",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 59,
+       "JUR_ID": "0386",
+       "MPLAN": 1,
+       "MPLAN_REF": "https://bcparks.ca/planning/mgmtplns/",
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.975,
+       -122.251
+      ],
+      "attrs": {
+       "NAME_E": "Old Growth Management Areas (Mapped Legal)",
+       "NAME_F": "Old Growth Management Areas (Mapped Legal)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2019,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 1440900.031043,
+       "PARENT_ID": 592000002,
+       "ZONE_ID": 592000002,
+       "ZONEDESC_E": "Terrestrial Zone",
+       "MECH_E": "Forest and Range Practices Act",
+       "TYPE_E": "Old Growth Management Areas (Mapped Legal)",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of British Columbia",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Government of British Columbia",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 4,
+       "PROVIDER": 59,
+       "PA_BIOME": "Terrestrial other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.3389,
+       -120.169
+      ],
+      "attrs": {
+       "NAME_E": "CHU CHUA COTTONWOOD PARK",
+       "NAME_F": "CHU CHUA COTTONWOOD PARK",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1996,
+       "ESTYEAR": 1996,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 108,
+       "PARENT_ID": 590006860,
+       "ZONE_ID": 591006860,
+       "ZONEDESC_E": "Terrestrial Zone",
+       "MECH_E": "Protected Areas of British Columbia Act",
+       "TYPE_E": "A - Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of British Columbia",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Government of British Columbia",
+       "SUBSRIGHT": "B",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 59,
+       "JUR_ID": "6860",
+       "MPLAN": 1,
+       "MPLAN_REF": "https://bcparks.ca/planning/mgmtplns/",
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.95,
+       -129.1
+      ],
+      "attrs": {
+       "NAME_E": "Tang.ɢ̲wan — ḥačxʷiqak — Tsig̱is Marine Protected Area",
+       "NAME_F": "Zone de protection marine Tang.ɢ̲wan — ḥačxʷiqak — Tsig̱is",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 8,
+       "STATUS": 1,
+       "QUALYEAR": 2024,
+       "ESTYEAR": 2024,
+       "BIOME": "M",
+       "LOC": 19,
+       "O_AREA_HA": 12581679.82,
+       "PARENT_ID": 700790000,
+       "ZONE_ID": 700790100,
+       "ZONEDESC_E": "General Zone",
+       "MECH_E": "Oceans Act ( 1996, c. 31 )",
+       "TYPE_E": "Marine Protected Area",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.2711,
+       -123.192
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.4311,
+       -116.404
+      ],
+      "attrs": {
+       "NAME_E": "Yoho National Park Of Canada",
+       "NAME_F": "Parc national du Canada Yoho",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1886,
+       "ESTYEAR": 1886,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 131310,
+       "PARENT_ID": 719900000,
+       "ZONE_ID": 719900000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.0979,
+       -131.217
+      ],
+      "attrs": {
+       "NAME_E": "Gwaii Haanas National Marine Conservation Area Reserve & Haida Heritage Site",
+       "NAME_F": "Réserve d'aire marine nationale de conservation Gwaii Haanas et site du patrimoine Haïda Gwaii Haanas",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 6,
+       "STATUS": 1,
+       "QUALYEAR": 2010,
+       "ESTYEAR": 2010,
+       "BIOME": "M",
+       "LOC": 2,
+       "O_AREA_HA": 350000,
+       "PARENT_ID": 714400000,
+       "ZONE_ID": 714400000,
+       "ZONEDESC_E": "Marine",
+       "MECH_E": "Canada National Marine Conservation Areas Act",
+       "TYPE_E": "National Marine Conservation Area",
+       "OWNER_TYPE": 12,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 2,
+       "NO_TAKE_HA": 141900,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Marine protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.0979,
+       -131.217
+      ],
+      "attrs": {
+       "NAME_E": "Gwaii Haanas National Park Reserve Of Canada And Haida Heritage Site",
+       "NAME_F": "Réserve de parc national du Canada et site du patrimoine Haïda Gwaii Haanas",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1988,
+       "ESTYEAR": 1988,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 147440,
+       "PARENT_ID": 714500000,
+       "ZONE_ID": 714500000,
+       "ZONEDESC_E": "Terrestrial",
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 12,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.3012,
+       -117.521
+      ],
+      "attrs": {
+       "NAME_E": "Glacier National Park Of Canada",
+       "NAME_F": "Parc national du Canada des Glaciers",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1886,
+       "ESTYEAR": 1886,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 134900,
+       "PARENT_ID": 713700000,
+       "ZONE_ID": 713700000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.4349,
+       -123.473
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.6699,
+       -124.85
+      ],
+      "attrs": {
+       "NAME_E": "Pacific Rim National Park Reserve Of Canada",
+       "NAME_F": "Réserve de parc national du Canada Pacific Rim",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 7,
+       "STATUS": 1,
+       "QUALYEAR": 1970,
+       "ESTYEAR": 1970,
+       "BIOME": "M",
+       "LOC": 2,
+       "O_AREA_HA": 22500,
+       "PARENT_ID": 716500000,
+       "ZONE_ID": 716500100,
+       "ZONEDESC_E": "Marine",
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 3,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Marine protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.0804,
+       -121.881
+      ],
+      "attrs": {
+       "NAME_E": "CHILLIWACK RIVER PARK",
+       "NAME_F": "CHILLIWACK RIVER PARK",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1961,
+       "ESTYEAR": 1961,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 23.1,
+       "PARENT_ID": 590000124,
+       "ZONE_ID": 591000124,
+       "ZONEDESC_E": "Terrestrial Zone",
+       "MECH_E": "Protected Areas of British Columbia Act",
+       "TYPE_E": "A - Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of British Columbia",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Government of British Columbia",
+       "SUBSRIGHT": "B",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 59,
+       "JUR_ID": "0124",
+       "MPLAN": 1,
+       "MPLAN_REF": "https://bcparks.ca/planning/mgmtplns/",
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.095,
+       -131.22
+      ],
+      "attrs": {
+       "NAME_E": "Gwaii Haanas National Park Reserve Of Canada And Haida Heritage Site",
+       "NAME_F": "Réserve de parc national du Canada et site du patrimoine Haïda Gwaii Haanas",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1988,
+       "ESTYEAR": 1988,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 147440,
+       "PARENT_ID": 714500000,
+       "ZONE_ID": 714500000,
+       "ZONEDESC_E": "Terrestrial",
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 12,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.2376,
+       -116.584
+      ],
+      "attrs": {
+       "NAME_E": "Yoho National Park Of Canada",
+       "NAME_F": "Parc national du Canada Yoho",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1886,
+       "ESTYEAR": 1886,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 131310,
+       "PARENT_ID": 719900000,
+       "ZONE_ID": 719900000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       53.0691,
+       -121.515
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.1449,
+       -122.931
+      ],
+      "attrs": {
+       "NAME_E": "Burns Bog Ecological Conservancy Area",
+       "NAME_F": "Burns Bog Ecological Conservancy Area",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 1,
+       "QUALYEAR": 2024,
+       "ESTYEAR": 2020,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 2360.6123397084707,
+       "PARENT_ID": 550001150,
+       "ZONE_ID": 550001150,
+       "MECH_E": "Dedicated Parkland, Conservation Covenants",
+       "TYPE_E": "Protected Area",
+       "OWNER_TYPE": 10,
+       "OWNER_E": "Metro Vancouver Regional District; BC Provincial Government",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Metro Vancouver Regional District; BC Provincial Government; City of Delta",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 55,
+       "MPLAN": 1,
+       "MPLAN_REF": "https://metrovancouver.org/services/regional-parks/Documents/burns-bog-management-plan.pdf",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.2526,
+       -123.123
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.2369,
+       -121.962
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.4909,
+       -123.338
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.3317,
+       -123.264
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.3297,
+       -123.165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.3275,
+       -123.168
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.2102,
+       -122.68
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.252,
+       -122.812
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.388,
+       -123.355
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.1273,
+       -123.051
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.4391,
+       -123.298
+      ],
+      "attrs": {
+       "NAME_E": "Victoria Harbour Migratory Bird Sanctuary",
+       "NAME_F": "Refuge d’oiseaux migrateurs du havre de Victoria",
+       "PA_OECM_DF": 5,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 1923,
+       "ESTYEAR": 1923,
+       "BIOME": "M",
+       "LOC": 2,
+       "O_AREA_HA": 1860.23088043,
+       "PARENT_ID": 730170000,
+       "ZONE_ID": 730170020,
+       "ZONEDESC_E": "Victoria Harbour Migratory Bird Sanctuary - Marine Zone",
+       "MECH_E": "Migratory Birds Convention Act",
+       "TYPE_E": "Migratory Bird Sanctuary",
+       "OWNER_TYPE": 10,
+       "OWNER_E": "Government of Canada; Government of British Columbia; Private",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Canadian Wildlife Service, Pacific Region",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 73,
+       "MPLAN": 0,
+       "PA_BIOME": "Not included in statistics"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.4124,
+       -123.365
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.4517,
+       -123.424
+      ],
+      "attrs": {
+       "NAME_E": "Victoria Harbour Migratory Bird Sanctuary",
+       "NAME_F": "Refuge d’oiseaux migrateurs du havre de Victoria",
+       "PA_OECM_DF": 5,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 1923,
+       "ESTYEAR": 1923,
+       "BIOME": "M",
+       "LOC": 2,
+       "O_AREA_HA": 1860.23088043,
+       "PARENT_ID": 730170000,
+       "ZONE_ID": 730170020,
+       "ZONEDESC_E": "Victoria Harbour Migratory Bird Sanctuary - Marine Zone",
+       "MECH_E": "Migratory Birds Convention Act",
+       "TYPE_E": "Migratory Bird Sanctuary",
+       "OWNER_TYPE": 10,
+       "OWNER_E": "Government of Canada; Government of British Columbia; Private",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Canadian Wildlife Service, Pacific Region",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 73,
+       "MPLAN": 0,
+       "PA_BIOME": "Not included in statistics"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.2833,
+       -126.0
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.25,
+       -124.383
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.1801,
+       -122.855
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.2448,
+       -122.534
+      ],
+      "attrs": {
+       "NAME_E": "GOLDEN EARS PARK",
+       "NAME_F": "GOLDEN EARS PARK",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1967,
+       "ESTYEAR": 1967,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 62539,
+       "PARENT_ID": 590000008,
+       "ZONE_ID": 591000008,
+       "ZONEDESC_E": "Terrestrial Zone",
+       "MECH_E": "Protected Areas of British Columbia Act",
+       "TYPE_E": "A - Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of British Columbia",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Government of British Columbia",
+       "SUBSRIGHT": "B",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 59,
+       "JUR_ID": "0008",
+       "MPLAN": 1,
+       "MPLAN_REF": "https://bcparks.ca/planning/mgmtplns/",
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.3247,
+       -123.151
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.2904,
+       -122.925
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.1548,
+       -122.763
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.7334,
+       -123.681
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.2318,
+       -122.956
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.3392,
+       -122.859
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.2821,
+       -122.936
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.4912,
+       -123.772
+      ],
+      "attrs": {
+       "NAME_E": "TŜI ʔEẐƗSH ECOLOGICAL RESERVE",
+       "NAME_F": "TŜI ʔEẐƗSH ECOLOGICAL RESERVE",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 1,
+       "STATUS": 1,
+       "QUALYEAR": 1974,
+       "ESTYEAR": 1974,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 72,
+       "PARENT_ID": 590003055,
+       "ZONE_ID": 591003055,
+       "ZONEDESC_E": "Terrestrial Zone",
+       "MECH_E": "Protected Areas of British Columbia Act",
+       "TYPE_E": "Ecological Reserve",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of British Columbia",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Government of British Columbia",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 59,
+       "JUR_ID": "3055",
+       "MPLAN": 1,
+       "MPLAN_REF": "https://bcparks.ca/planning/mgmtplns/",
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 710,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

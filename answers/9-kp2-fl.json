@@ -1,0 +1,737 @@
+{
+ "request": "requests/9-kp2-fl.json",
+ "id": "9-kp2-fl",
+ "chat": 9,
+ "kind": "probe",
+ "report": "kp2 FL: 1 parks, 9 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "kp2 FL: 1 parks, 9 layers",
+  "probe": {
+   "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State FL: 1 parks. Refs in order of points: US-7389. Results to chat 11.",
+   "refs": [
+    "US-7389"
+   ],
+   "pointq": [
+    {
+     "st": "FL",
+     "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+     "note": "FL Florida State Parks (DEP)",
+     "points": [
+      [
+       28.2382,
+       -82.4305
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "FL",
+     "url": "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_State_Forests/FeatureServer/0",
+     "note": "FL Florida Forest Service",
+     "points": [
+      [
+       28.2382,
+       -82.4305
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "FL",
+     "url": "https://services1.arcgis.com/59dBAbzYnRk8johU/arcgis/rest/services/SRWMD_LM_Ownership/FeatureServer/0",
+     "note": "FL Suwannee River Water Management District",
+     "points": [
+      [
+       28.2382,
+       -82.4305
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "FL",
+     "url": "https://services.arcgis.com/s8wtJX9suxFen6TA/arcgis/rest/services/SJRWMD_Management_Area_viewLayer/FeatureServer/0",
+     "note": "FL St. Johns River Water Management Distric",
+     "points": [
+      [
+       28.2382,
+       -82.4305
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "FL",
+     "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/STATE_OWNED_LANDS/MapServer/0",
+     "note": "FL Florida DEP Division of State Lands",
+     "points": [
+      [
+       28.2382,
+       -82.4305
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "FL",
+     "url": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1",
+     "note": "FL FWC",
+     "points": [
+      [
+       28.2382,
+       -82.4305
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       28.2382,
+       -82.4305
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       28.2382,
+       -82.4305
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       28.2382,
+       -82.4305
+      ]
+     ],
+     "dist": 3000
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-29 23:28Z",
+ "results": {
+  "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State FL: 1 parks. Refs in order of points: US-7389. Results to chat 11.",
+  "date": "2026-10-29",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "FL",
+    "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+    "note": "FL Florida State Parks (DEP)",
+    "hits": [
+     {
+      "layer": "0 Florida State Park Boundaries",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "FL",
+    "url": "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_State_Forests/FeatureServer/0",
+    "note": "FL Florida Forest Service",
+    "hits": [
+     {
+      "layer": "0 FFS_Boundaries_Dissolved",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "FL",
+    "url": "https://services1.arcgis.com/59dBAbzYnRk8johU/arcgis/rest/services/SRWMD_LM_Ownership/FeatureServer/0",
+    "note": "FL Suwannee River Water Management District",
+    "hits": [
+     {
+      "layer": "0 SRWMD_LM_Ownership",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "FL",
+    "url": "https://services.arcgis.com/s8wtJX9suxFen6TA/arcgis/rest/services/SJRWMD_Management_Area_viewLayer/FeatureServer/0",
+    "note": "FL St. Johns River Water Management Distric",
+    "hits": [
+     {
+      "layer": "0 SJRWMD Management Area by Lead Manager",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "FL",
+    "url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/STATE_OWNED_LANDS/MapServer/0",
+    "note": "FL Florida DEP Division of State Lands",
+    "hits": [
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 9113.0,
+       "LAND_INVENTORY_KEY": 19587.0,
+       "FL_SOLARIS_LAND_ID": "A19587",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "21169",
+       "A_TOTAL": 12.01,
+       "LAND_INPUT_STATUS_KEY": 4.0,
+       "LAND_INPUT_STATUS_NAME": "Completed-GIS Polygon Submitted",
+       "AUTHORIZED_AGENCY_KEY": 1.0,
+       "AUTHORIZED_AGENCY_NAME": "Department of Environmental Protection",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "DEP",
+       "PROJECT_NAME": "Non-Project Acquisition",
+       "ACRES": "12",
+       "ACRE_TYPE_NAME": "Closed Acres",
+       "CLOSED_DATE": "25-OCT-00",
+       "CLOSED_DATE_STRING": "25-OCT-00",
+       "CLOSED_PURCHASE_PRICE_AMT": "0",
+       "CONSERVATION_STATUS_IND": "N",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "Donor",
+       "FUNDING_SOURCE_KEY": "6",
+       "FUNDING_SOURCE_NAME": "Donation Value",
+       "FUND_SRC_CONTRIBUTION_AMT": "4939507",
+       "SHARED_OWNER_AGENCY_NAME": "Board of Trustees (BOT)",
+       "PERCENT_OWNED": "100",
+       "DM_ID": "301640",
+       "EXTERNAL_AGENCY_IND": "I",
+       "GIS_COUNTY_ID": "51",
+       "GIS_COUNTY_NAME": "Pasco",
+       "FL_SOLARIS_FACILITY_ID": "F14543",
+       "GIS_PARCEL_ID": 21818.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "DOC_WEB_URL": "https://prodenv.dep.state.fl.us/common/BTLDS/DOCMGMT/301640/301640.pdf",
+       "MANAGING_AGENCY_NAME": "FDVA",
+       "PARCEL_AC": 12.0137,
+       "DOCUMENT_DATE": 972432000000,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 14900.0,
+       "LAND_INVENTORY_KEY": 159402.0,
+       "FL_SOLARIS_LAND_ID": "A50063",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "13-500-397",
+       "A_TOTAL": 1042.07,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 41.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SWFWMD",
+       "PROJECT_NAME": "Cypress Creek Preserve",
+       "ACRES": "1042.33",
+       "ACRE_TYPE_NAME": "Closed Acres",
+       "CLOSED_DATE": "12-AUG-20",
+       "CLOSED_DATE_STRING": "12-AUG-20",
+       "CLOSED_PURCHASE_PRICE_AMT": "0",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "N",
+       "REVERTER_IND": "N",
+       "FUNDING_AGENCY_NAME": "Non-State Agency-Private",
+       "FUNDING_AGENCY_OTHER": "Donation",
+       "FUNDING_SOURCE_KEY": "3",
+       "FUNDING_SOURCE_NAME": "Donation Value",
+       "FUND_SRC_CONTRIBUTION_AMT": "0",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "51",
+       "GIS_COUNTY_NAME": "Pasco",
+       "GIS_PARCEL_ID": 21774.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 1042.1441,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 14268.0,
+       "LAND_INVENTORY_KEY": 42620.0,
+       "FL_SOLARIS_LAND_ID": "A40891",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "13-500-349",
+       "A_TOTAL": 1432.1,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 41.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SWFWMD",
+       "PROJECT_NAME": "Cypress Creek Preserve",
+       "ACRES": "1432.0919",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "28-JAN-91",
+       "CLOSED_DATE_STRING": "28-JAN-91",
+       "CLOSED_PURCHASE_PRICE_AMT": "3430650",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "U",
+       "REVERTER_IND": "U",
+       "FUNDING_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "FUNDING_SOURCE_KEY": "8",
+       "FUNDING_SOURCE_NAME": "Agency Funded-State",
+       "OTHER_FUNDING_SOURCE_NAME": "SOR",
+       "FUND_SRC_CONTRIBUTION_AMT": "3430650",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "51",
+       "GIS_COUNTY_NAME": "Pasco",
+       "GIS_PARCEL_ID": 14084.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 1432.2045,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 13738.0,
+       "LAND_INVENTORY_KEY": 42712.0,
+       "FL_SOLARIS_LAND_ID": "A40983",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "13-500-357",
+       "A_TOTAL": 8.05,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 41.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SWFWMD",
+       "PROJECT_NAME": "Cypress Creek Preserve",
+       "ACRES": "8.0484",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "12-APR-91",
+       "CLOSED_DATE_STRING": "12-APR-91",
+       "CLOSED_PURCHASE_PRICE_AMT": "45000",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "U",
+       "REVERTER_IND": "U",
+       "FUNDING_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "FUNDING_SOURCE_KEY": "8",
+       "FUNDING_SOURCE_NAME": "Agency Funded-State",
+       "OTHER_FUNDING_SOURCE_NAME": "SOR",
+       "FUND_SRC_CONTRIBUTION_AMT": "45000",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "51",
+       "GIS_COUNTY_NAME": "Pasco",
+       "GIS_PARCEL_ID": 13472.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 8.049,
+       "DOCUMENT_DATE": 741398400000,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 13798.0,
+       "LAND_INVENTORY_KEY": 42719.0,
+       "FL_SOLARIS_LAND_ID": "A40990",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "13-500-389",
+       "A_TOTAL": 26.89,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 41.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SWFWMD",
+       "PROJECT_NAME": "Cypress Creek Preserve",
+       "ACRES": "26.8916",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "18-JUN-10",
+       "CLOSED_DATE_STRING": "18-JUN-10",
+       "CLOSED_PURCHASE_PRICE_AMT": "86093.19",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "U",
+       "REVERTER_IND": "U",
+       "FUNDING_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "FUNDING_SOURCE_KEY": "9",
+       "FUNDING_SOURCE_NAME": "Agency Funded-District",
+       "OTHER_FUNDING_SOURCE_NAME": "AD VALOREM",
+       "FUND_SRC_CONTRIBUTION_AMT": "86093.19",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "51",
+       "GIS_COUNTY_NAME": "Pasco",
+       "GIS_PARCEL_ID": 12640.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 26.8937,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 13735.0,
+       "LAND_INVENTORY_KEY": 42709.0,
+       "FL_SOLARIS_LAND_ID": "A40980",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "13-500-350",
+       "A_TOTAL": 244.87,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 41.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SWFWMD",
+       "PROJECT_NAME": "Cypress Creek Preserve",
+       "ACRES": "244.8685",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "27-DEC-89",
+       "CLOSED_DATE_STRING": "27-DEC-89",
+       "CLOSED_PURCHASE_PRICE_AMT": "240000",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "U",
+       "REVERTER_IND": "U",
+       "FUNDING_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "FUNDING_SOURCE_KEY": "8",
+       "FUNDING_SOURCE_NAME": "Agency Funded-State",
+       "OTHER_FUNDING_SOURCE_NAME": "SOR",
+       "FUND_SRC_CONTRIBUTION_AMT": "240000",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "51",
+       "GIS_COUNTY_NAME": "Pasco",
+       "GIS_PARCEL_ID": 12036.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 244.8878,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 14028.0,
+       "LAND_INVENTORY_KEY": 41559.0,
+       "FL_SOLARIS_LAND_ID": "A39830",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "13-500-168",
+       "A_TOTAL": 3233.71,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 41.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SWFWMD",
+       "PROJECT_NAME": "Cypress Creek Preserve",
+       "ACRES": "3233.6989",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "01-JAN-00",
+       "CLOSED_DATE_STRING": "01-JAN-00",
+       "CLOSED_PURCHASE_PRICE_AMT": ".01",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "U",
+       "REVERTER_IND": "U",
+       "FUNDING_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "FUNDING_SOURCE_KEY": "9",
+       "FUNDING_SOURCE_NAME": "Agency Funded-District",
+       "FUND_SRC_CONTRIBUTION_AMT": ".01",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "51",
+       "GIS_COUNTY_NAME": "Pasco",
+       "GIS_PARCEL_ID": 12693.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 3233.9646,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 13767.0,
+       "LAND_INVENTORY_KEY": 42714.0,
+       "FL_SOLARIS_LAND_ID": "A40985",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "13-500-364",
+       "A_TOTAL": 500.57,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 41.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SWFWMD",
+       "PROJECT_NAME": "Cypress Creek Preserve",
+       "ACRES": "500.5639",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "14-SEP-94",
+       "CLOSED_DATE_STRING": "14-SEP-94",
+       "CLOSED_PURCHASE_PRICE_AMT": "700000",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "U",
+       "REVERTER_IND": "U",
+       "FUNDING_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "FUNDING_SOURCE_KEY": "8",
+       "FUNDING_SOURCE_NAME": "Agency Funded-State",
+       "OTHER_FUNDING_SOURCE_NAME": "SOR",
+       "FUND_SRC_CONTRIBUTION_AMT": "700000",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "51",
+       "GIS_COUNTY_NAME": "Pasco",
+       "GIS_PARCEL_ID": 12353.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 500.6045,
+       "DOCUMENT_DATE": 741398400000,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 14027.0,
+       "LAND_INVENTORY_KEY": 41558.0,
+       "FL_SOLARIS_LAND_ID": "A39829",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "13-500-145",
+       "A_TOTAL": 199.41,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 41.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SWFWMD",
+       "PROJECT_NAME": "Cypress Creek Preserve",
+       "ACRES": "199.4104",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "01-JAN-00",
+       "CLOSED_DATE_STRING": "01-JAN-00",
+       "CLOSED_PURCHASE_PRICE_AMT": ".01",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "U",
+       "REVERTER_IND": "U",
+       "FUNDING_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "FUNDING_SOURCE_KEY": "9",
+       "FUNDING_SOURCE_NAME": "Agency Funded-District",
+       "FUND_SRC_CONTRIBUTION_AMT": ".01",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "51",
+       "GIS_COUNTY_NAME": "Pasco",
+       "GIS_PARCEL_ID": 12988.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 199.4265,
+       "DOCUMENT_DATE": 741398400000,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     },
+     {
+      "layer": "0 FL-SOLARIS/LITS State Owned Lands",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "attrs": {
+       "OWNED_LAND_KEY": 14032.0,
+       "LAND_INVENTORY_KEY": 41563.0,
+       "FL_SOLARIS_LAND_ID": "A39834",
+       "INVENTORY_STATUS_IND": "Y",
+       "INTERNAL_AGENCY_ID": "13-500-346",
+       "A_TOTAL": 54.37,
+       "LAND_INPUT_STATUS_KEY": 6.0,
+       "LAND_INPUT_STATUS_NAME": "Verification Required",
+       "AUTHORIZED_AGENCY_KEY": 41.0,
+       "AUTHORIZED_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "AUTHORIZED_AGENCY_SHORT_NAME": "SWFWMD",
+       "PROJECT_NAME": "Cypress Creek Preserve",
+       "ACRES": "54.3688",
+       "ACRE_TYPE_NAME": "GIS Calculated",
+       "CLOSED_DATE": "01-JAN-00",
+       "CLOSED_DATE_STRING": "01-JAN-00",
+       "CLOSED_PURCHASE_PRICE_AMT": ".01",
+       "CONSERVATION_STATUS_IND": "Y",
+       "RESERVATION_IND": "U",
+       "REVERTER_IND": "U",
+       "FUNDING_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "FUNDING_SOURCE_KEY": "9",
+       "FUNDING_SOURCE_NAME": "Agency Funded-District",
+       "FUND_SRC_CONTRIBUTION_AMT": ".01",
+       "SHARED_OWNER_AGENCY_NAME": "WMD-Southwest Florida WMD",
+       "PERCENT_OWNED": "100",
+       "EXTERNAL_AGENCY_IND": "E",
+       "GIS_COUNTY_ID": "51",
+       "GIS_COUNTY_NAME": "Pasco",
+       "GIS_PARCEL_ID": 13246.0,
+       "LAND_ACTION_NAME": "Inventory",
+       "LAND_ACTION_KEY": 1.0,
+       "EXTRACTED_DATE": "10/29/2026 04:00:58 AM",
+       "PARCEL_AC": 54.3732,
+       "GEOMETRY.AREA": 0,
+       "GEOMETRY.LEN": 0
+      }
+     }
+    ]
+   },
+   {
+    "st": "FL",
+    "url": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1",
+    "note": "FL FWC",
+    "hits": [
+     {
+      "layer": "1 Wildlife Management Areas Florida",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       28.2382,
+       -82.4305
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 42,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

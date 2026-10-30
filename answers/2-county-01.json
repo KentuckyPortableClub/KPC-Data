@@ -1,0 +1,981 @@
+{
+ "request": "requests/2-county-01.json",
+ "id": "2-county-01",
+ "chat": 2,
+ "kind": "parcel",
+ "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+ "asked": {
+  "chat": 2,
+  "kind": "parcel",
+  "report": "HQ 6:20 PM P-3: the COUNTY at each pin of the parks with no PAD-US record at the pin (for chat 8's county parcel look-ups). refs in 'refs', same order as points.",
+  "layer": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1",
+  "fields": "NAME,STATE,COUNTY,GEOID",
+  "points": [
+   [
+    64.8389,
+    -147.807
+   ],
+   [
+    34.2556,
+    -114.137
+   ],
+   [
+    41.3175,
+    -72.4324
+   ],
+   [
+    38.6338,
+    -75.0671
+   ],
+   [
+    42.9131,
+    -115.871
+   ],
+   [
+    37.375,
+    -88.4848
+   ],
+   [
+    39.0805,
+    -90.5104
+   ],
+   [
+    39.4869,
+    -86.8752
+   ],
+   [
+    42.7294,
+    -71.1839
+   ],
+   [
+    42.1675,
+    -71.1674
+   ],
+   [
+    42.2448,
+    -71.1265
+   ],
+   [
+    39.6548,
+    -79.0218
+   ],
+   [
+    37.3158,
+    -91.4074
+   ],
+   [
+    44.7423,
+    -71.1792
+   ],
+   [
+    42.8751,
+    -71.2393
+   ],
+   [
+    44.4206,
+    -123.563
+   ],
+   [
+    44.2443,
+    -124.112
+   ],
+   [
+    44.2539,
+    -124.112
+   ],
+   [
+    34.7111,
+    -81.5392
+   ],
+   [
+    35.2525,
+    -85.7472
+   ],
+   [
+    35.1773,
+    -85.9598
+   ],
+   [
+    44.3898,
+    -72.7673
+   ],
+   [
+    47.407,
+    -122.667
+   ],
+   [
+    42.5726,
+    -90.6521
+   ],
+   [
+    31.7427,
+    -86.8129
+   ],
+   [
+    32.7202,
+    -86.4735
+   ],
+   [
+    34.4415,
+    -86.9803
+   ],
+   [
+    32.3196,
+    -87.1045
+   ],
+   [
+    33.038,
+    -86.9519
+   ],
+   [
+    31.5559,
+    -88.0378
+   ],
+   [
+    34.8036,
+    -87.2253
+   ],
+   [
+    32.3138,
+    -88.2509
+   ],
+   [
+    31.8648,
+    -86.6586
+   ],
+   [
+    34.1224,
+    -93.0458
+   ],
+   [
+    34.5143,
+    -91.276
+   ],
+   [
+    36.0227,
+    -93.3622
+   ],
+   [
+    36.4377,
+    -90.9996
+   ],
+   [
+    33.8053,
+    -92.8971
+   ],
+   [
+    35.3022,
+    -94.3353
+   ],
+   [
+    35.4911,
+    -91.9857
+   ],
+   [
+    34.7697,
+    -91.9093
+   ],
+   [
+    34.4154,
+    -93.0597
+   ],
+   [
+    36.3501,
+    -94.292
+   ],
+   [
+    36.467,
+    -91.5292
+   ],
+   [
+    33.8776,
+    -93.3068
+   ],
+   [
+    34.9535,
+    -93.1541
+   ],
+   [
+    35.1299,
+    -92.7866
+   ],
+   [
+    39.8121,
+    -122.338
+   ],
+   [
+    37.4222,
+    -122.426
+   ],
+   [
+    39.1584,
+    -75.5203
+   ]
+  ],
+  "refs": [
+   "US-10464",
+   "US-3390",
+   "US-6875",
+   "US-9885",
+   "US-12226",
+   "US-12640",
+   "US-4118",
+   "US-5685",
+   "US-2436",
+   "US-8385",
+   "US-8387",
+   "US-13564",
+   "US-5715",
+   "US-2642",
+   "US-8024",
+   "US-12986",
+   "US-13096",
+   "US-13097",
+   "US-9229",
+   "US-3941",
+   "US-6247",
+   "US-3129",
+   "US-13516",
+   "US-4242",
+   "US-12311",
+   "US-12517",
+   "US-12962",
+   "US-13473",
+   "US-13533",
+   "US-13558",
+   "US-6457",
+   "US-6459",
+   "US-9918",
+   "US-11214",
+   "US-11355",
+   "US-11356",
+   "US-11394",
+   "US-11874",
+   "US-11960",
+   "US-12093",
+   "US-12753",
+   "US-12754",
+   "US-12762",
+   "US-12764",
+   "US-7437",
+   "US-7444",
+   "US-7522",
+   "US-12616",
+   "US-7375",
+   "US-4367"
+  ]
+ },
+ "answered": "2026-10-29 23:21Z",
+ "results": [
+  {
+   "point": [
+    64.8389,
+    -147.807
+   ],
+   "features": [
+    {
+     "NAME": "Fairbanks North Star Borough",
+     "STATE": "02",
+     "COUNTY": "090",
+     "GEOID": "02090"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.2556,
+    -114.137
+   ],
+   "features": [
+    {
+     "NAME": "La Paz County",
+     "STATE": "04",
+     "COUNTY": "012",
+     "GEOID": "04012"
+    }
+   ]
+  },
+  {
+   "point": [
+    41.3175,
+    -72.4324
+   ],
+   "features": [
+    {
+     "NAME": "Lower Connecticut River Valley Planning Region",
+     "STATE": "09",
+     "COUNTY": "130",
+     "GEOID": "09130"
+    }
+   ]
+  },
+  {
+   "point": [
+    38.6338,
+    -75.0671
+   ],
+   "features": [
+    {
+     "NAME": "Sussex County",
+     "STATE": "10",
+     "COUNTY": "005",
+     "GEOID": "10005"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.9131,
+    -115.871
+   ],
+   "features": [
+    {
+     "NAME": "Owyhee County",
+     "STATE": "16",
+     "COUNTY": "073",
+     "GEOID": "16073"
+    }
+   ]
+  },
+  {
+   "point": [
+    37.375,
+    -88.4848
+   ],
+   "features": [
+    {
+     "NAME": "Pope County",
+     "STATE": "17",
+     "COUNTY": "151",
+     "GEOID": "17151"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.0805,
+    -90.5104
+   ],
+   "features": [
+    {
+     "NAME": "Jersey County",
+     "STATE": "17",
+     "COUNTY": "083",
+     "GEOID": "17083"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.4869,
+    -86.8752
+   ],
+   "features": [
+    {
+     "NAME": "Putnam County",
+     "STATE": "18",
+     "COUNTY": "133",
+     "GEOID": "18133"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.7294,
+    -71.1839
+   ],
+   "features": [
+    {
+     "NAME": "Essex County",
+     "STATE": "25",
+     "COUNTY": "009",
+     "GEOID": "25009"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.1675,
+    -71.1674
+   ],
+   "features": [
+    {
+     "NAME": "Norfolk County",
+     "STATE": "25",
+     "COUNTY": "021",
+     "GEOID": "25021"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.2448,
+    -71.1265
+   ],
+   "features": [
+    {
+     "NAME": "Suffolk County",
+     "STATE": "25",
+     "COUNTY": "025",
+     "GEOID": "25025"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.6548,
+    -79.0218
+   ],
+   "features": [
+    {
+     "NAME": "Garrett County",
+     "STATE": "24",
+     "COUNTY": "023",
+     "GEOID": "24023"
+    }
+   ]
+  },
+  {
+   "point": [
+    37.3158,
+    -91.4074
+   ],
+   "features": [
+    {
+     "NAME": "Shannon County",
+     "STATE": "29",
+     "COUNTY": "203",
+     "GEOID": "29203"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.7423,
+    -71.1792
+   ],
+   "features": [
+    {
+     "NAME": "Coos County",
+     "STATE": "33",
+     "COUNTY": "007",
+     "GEOID": "33007"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.8751,
+    -71.2393
+   ],
+   "features": [
+    {
+     "NAME": "Rockingham County",
+     "STATE": "33",
+     "COUNTY": "015",
+     "GEOID": "33015"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.4206,
+    -123.563
+   ],
+   "features": [
+    {
+     "NAME": "Benton County",
+     "STATE": "41",
+     "COUNTY": "003",
+     "GEOID": "41003"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.2443,
+    -124.112
+   ],
+   "features": [
+    {
+     "NAME": "Lane County",
+     "STATE": "41",
+     "COUNTY": "039",
+     "GEOID": "41039"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.2539,
+    -124.112
+   ],
+   "features": [
+    {
+     "NAME": "Lane County",
+     "STATE": "41",
+     "COUNTY": "039",
+     "GEOID": "41039"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.7111,
+    -81.5392
+   ],
+   "features": [
+    {
+     "NAME": "Union County",
+     "STATE": "45",
+     "COUNTY": "087",
+     "GEOID": "45087"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.2525,
+    -85.7472
+   ],
+   "features": [
+    {
+     "NAME": "Grundy County",
+     "STATE": "47",
+     "COUNTY": "061",
+     "GEOID": "47061"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.1773,
+    -85.9598
+   ],
+   "features": [
+    {
+     "NAME": "Franklin County",
+     "STATE": "47",
+     "COUNTY": "051",
+     "GEOID": "47051"
+    }
+   ]
+  },
+  {
+   "point": [
+    44.3898,
+    -72.7673
+   ],
+   "features": [
+    {
+     "NAME": "Washington County",
+     "STATE": "50",
+     "COUNTY": "023",
+     "GEOID": "50023"
+    }
+   ]
+  },
+  {
+   "point": [
+    47.407,
+    -122.667
+   ],
+   "features": [
+    {
+     "NAME": "Kitsap County",
+     "STATE": "53",
+     "COUNTY": "035",
+     "GEOID": "53035"
+    }
+   ]
+  },
+  {
+   "point": [
+    42.5726,
+    -90.6521
+   ],
+   "features": [
+    {
+     "NAME": "Grant County",
+     "STATE": "55",
+     "COUNTY": "043",
+     "GEOID": "55043"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.7427,
+    -86.8129
+   ],
+   "features": [
+    {
+     "NAME": "Butler County",
+     "STATE": "01",
+     "COUNTY": "013",
+     "GEOID": "01013"
+    }
+   ]
+  },
+  {
+   "point": [
+    32.7202,
+    -86.4735
+   ],
+   "features": [
+    {
+     "NAME": "Chilton County",
+     "STATE": "01",
+     "COUNTY": "021",
+     "GEOID": "01021"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.4415,
+    -86.9803
+   ],
+   "features": [
+    {
+     "NAME": "Morgan County",
+     "STATE": "01",
+     "COUNTY": "103",
+     "GEOID": "01103"
+    }
+   ]
+  },
+  {
+   "point": [
+    32.3196,
+    -87.1045
+   ],
+   "features": [
+    {
+     "NAME": "Dallas County",
+     "STATE": "01",
+     "COUNTY": "047",
+     "GEOID": "01047"
+    }
+   ]
+  },
+  {
+   "point": [
+    33.038,
+    -86.9519
+   ],
+   "features": [
+    {
+     "NAME": "Bibb County",
+     "STATE": "01",
+     "COUNTY": "007",
+     "GEOID": "01007"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.5559,
+    -88.0378
+   ],
+   "features": [
+    {
+     "NAME": "Washington County",
+     "STATE": "01",
+     "COUNTY": "129",
+     "GEOID": "01129"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.8036,
+    -87.2253
+   ],
+   "features": [
+    {
+     "NAME": "Limestone County",
+     "STATE": "01",
+     "COUNTY": "083",
+     "GEOID": "01083"
+    }
+   ]
+  },
+  {
+   "point": [
+    32.3138,
+    -88.2509
+   ],
+   "features": [
+    {
+     "NAME": "Sumter County",
+     "STATE": "01",
+     "COUNTY": "119",
+     "GEOID": "01119"
+    }
+   ]
+  },
+  {
+   "point": [
+    31.8648,
+    -86.6586
+   ],
+   "features": [
+    {
+     "NAME": "Butler County",
+     "STATE": "01",
+     "COUNTY": "013",
+     "GEOID": "01013"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.1224,
+    -93.0458
+   ],
+   "features": [
+    {
+     "NAME": "Clark County",
+     "STATE": "05",
+     "COUNTY": "019",
+     "GEOID": "05019"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.5143,
+    -91.276
+   ],
+   "features": [
+    {
+     "NAME": "Arkansas County",
+     "STATE": "05",
+     "COUNTY": "001",
+     "GEOID": "05001"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.0227,
+    -93.3622
+   ],
+   "features": [
+    {
+     "NAME": "Newton County",
+     "STATE": "05",
+     "COUNTY": "101",
+     "GEOID": "05101"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.4377,
+    -90.9996
+   ],
+   "features": [
+    {
+     "NAME": "Randolph County",
+     "STATE": "05",
+     "COUNTY": "121",
+     "GEOID": "05121"
+    }
+   ]
+  },
+  {
+   "point": [
+    33.8053,
+    -92.8971
+   ],
+   "features": [
+    {
+     "NAME": "Ouachita County",
+     "STATE": "05",
+     "COUNTY": "103",
+     "GEOID": "05103"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.3022,
+    -94.3353
+   ],
+   "features": [
+    {
+     "NAME": "Sebastian County",
+     "STATE": "05",
+     "COUNTY": "131",
+     "GEOID": "05131"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.4911,
+    -91.9857
+   ],
+   "features": [
+    {
+     "NAME": "Cleburne County",
+     "STATE": "05",
+     "COUNTY": "023",
+     "GEOID": "05023"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.7697,
+    -91.9093
+   ],
+   "features": [
+    {
+     "NAME": "Lonoke County",
+     "STATE": "05",
+     "COUNTY": "085",
+     "GEOID": "05085"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.4154,
+    -93.0597
+   ],
+   "features": [
+    {
+     "NAME": "Garland County",
+     "STATE": "05",
+     "COUNTY": "051",
+     "GEOID": "05051"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.3501,
+    -94.292
+   ],
+   "features": [
+    {
+     "NAME": "Benton County",
+     "STATE": "05",
+     "COUNTY": "007",
+     "GEOID": "05007"
+    }
+   ]
+  },
+  {
+   "point": [
+    36.467,
+    -91.5292
+   ],
+   "features": [
+    {
+     "NAME": "Fulton County",
+     "STATE": "05",
+     "COUNTY": "049",
+     "GEOID": "05049"
+    }
+   ]
+  },
+  {
+   "point": [
+    33.8776,
+    -93.3068
+   ],
+   "features": [
+    {
+     "NAME": "Nevada County",
+     "STATE": "05",
+     "COUNTY": "099",
+     "GEOID": "05099"
+    }
+   ]
+  },
+  {
+   "point": [
+    34.9535,
+    -93.1541
+   ],
+   "features": [
+    {
+     "NAME": "Perry County",
+     "STATE": "05",
+     "COUNTY": "105",
+     "GEOID": "05105"
+    }
+   ]
+  },
+  {
+   "point": [
+    35.1299,
+    -92.7866
+   ],
+   "features": [
+    {
+     "NAME": "Conway County",
+     "STATE": "05",
+     "COUNTY": "029",
+     "GEOID": "05029"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.8121,
+    -122.338
+   ],
+   "features": [
+    {
+     "NAME": "Tehama County",
+     "STATE": "06",
+     "COUNTY": "103",
+     "GEOID": "06103"
+    }
+   ]
+  },
+  {
+   "point": [
+    37.4222,
+    -122.426
+   ],
+   "features": [
+    {
+     "NAME": "San Mateo County",
+     "STATE": "06",
+     "COUNTY": "081",
+     "GEOID": "06081"
+    }
+   ]
+  },
+  {
+   "point": [
+    39.1584,
+    -75.5203
+   ],
+   "features": [
+    {
+     "NAME": "Kent County",
+     "STATE": "10",
+     "COUNTY": "001",
+     "GEOID": "10001"
+    }
+   ]
+  }
+ ],
+ "seconds": 98,
+ "manners": {
+  "requests": 50,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 50
+ },
+ "short": "50 result(s), 50 read OK"
+}

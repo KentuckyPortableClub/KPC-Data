@@ -1,0 +1,220 @@
+{
+ "request": "requests/9-kp2-in.json",
+ "id": "9-kp2-in",
+ "chat": 9,
+ "kind": "probe",
+ "report": "kp2 IN: 1 parks, 5 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "kp2 IN: 1 parks, 5 layers",
+  "probe": {
+   "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State IN: 1 parks. Refs in order of points: US-10231. Results to chat 11.",
+   "refs": [
+    "US-10231"
+   ],
+   "pointq": [
+    {
+     "st": "IN",
+     "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+     "note": "IN Indiana DNR",
+     "points": [
+      [
+       40.5706,
+       -84.973
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "IN",
+     "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0",
+     "note": "IN Indiana DNR Nature Preserves (credit: IN",
+     "points": [
+      [
+       40.5706,
+       -84.973
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       40.5706,
+       -84.973
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       40.5706,
+       -84.973
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       40.5706,
+       -84.973
+      ]
+     ],
+     "dist": 3000
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-29 23:31Z",
+ "results": {
+  "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State IN: 1 parks. Refs in order of points: US-10231. Results to chat 11.",
+  "date": "2026-10-29",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "IN",
+    "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+    "note": "IN Indiana DNR",
+    "hits": [
+     {
+      "layer": "0 ManagedLandsAll_DNR_INHD_IN",
+      "point": [
+       40.5706,
+       -84.973
+      ],
+      "attrs": {
+       "owner": "S/DNR NP",
+       "dedicated_": "N",
+       "contact_ph": "317-232-4052",
+       "mgr_city": "Indianapolis",
+       "mgr_state": "IN",
+       "manager": "DNR NATURE PRESERVES",
+       "mgr_zip": "46204",
+       "subunit": "Limberlost Nature Preserve",
+       "access_": "OPEN PER REGULATIONS",
+       "unitname": "Limberlost Bird Sanctuary",
+       "acres": 12,
+       "mgr_addres": "402 W. Washington St., Rm W267"
+      }
+     }
+    ]
+   },
+   {
+    "st": "IN",
+    "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0",
+    "note": "IN Indiana DNR Nature Preserves (credit: IN",
+    "hits": [
+     {
+      "layer": "0 ManagedLandsAll_DNR_INHD_IN",
+      "point": [
+       40.5706,
+       -84.973
+      ],
+      "attrs": {
+       "owner": "S/DNR NP",
+       "dedicated_": "N",
+       "contact_ph": "317-232-4052",
+       "mgr_city": "Indianapolis",
+       "mgr_state": "IN",
+       "manager": "DNR NATURE PRESERVES",
+       "mgr_zip": "46204",
+       "subunit": "Limberlost Swamp Wetlands Preserve",
+       "access_": "RESTRICTED",
+       "unitname": "Limberlost Swamp Wetlands Preserve",
+       "acres": 883,
+       "mgr_addres": "402 W. Washington St., Rm W267"
+      }
+     },
+     {
+      "layer": "0 ManagedLandsAll_DNR_INHD_IN",
+      "point": [
+       40.5706,
+       -84.973
+      ],
+      "attrs": {
+       "owner": "S/DNR NP",
+       "dedicated_": "N",
+       "contact_ph": "317-232-4052",
+       "mgr_city": "Indianapolis",
+       "mgr_state": "IN",
+       "manager": "DNR NATURE PRESERVES",
+       "mgr_zip": "46204",
+       "subunit": "Limberlost Nature Preserve",
+       "access_": "OPEN PER REGULATIONS",
+       "unitname": "Limberlost Bird Sanctuary",
+       "acres": 12,
+       "mgr_addres": "402 W. Washington St., Rm W267"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       40.5706,
+       -84.973
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       40.5706,
+       -84.973
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 25,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

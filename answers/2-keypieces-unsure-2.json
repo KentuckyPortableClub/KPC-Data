@@ -1,0 +1,856 @@
+{
+ "request": "requests/2-keypieces-unsure-2.json",
+ "id": "2-keypieces-unsure-2",
+ "chat": 2,
+ "kind": "map-check",
+ "report": "For each pair: open the official record page and the POTA park page. Is the record's land part of that POTA park on the agency's own map? Answer YES / NO / NOT SURE per pair with the reason.",
+ "asked": {
+  "chat": 2,
+  "kind": "map-check",
+  "report": "For each pair: open the official record page and the POTA park page. Is the record's land part of that POTA park on the agency's own map? Answer YES / NO / NOT SURE per pair with the reason.",
+  "urls": [
+   "",
+   "https://pota.app/#/park/US-12545",
+   "",
+   "https://pota.app/#/park/US-12545",
+   "",
+   "https://pota.app/#/park/US-12549",
+   "",
+   "https://pota.app/#/park/US-12549",
+   "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=272833&outFields=*&returnGeometry=false&f=html",
+   "https://pota.app/#/park/US-12068",
+   "",
+   "https://pota.app/#/park/US-10790",
+   "",
+   "https://pota.app/#/park/US-12728"
+  ],
+  "pairs": [
+   {
+    "ref": "US-12545",
+    "park": "Cottonwood Island Wildlife Area",
+    "record": "sgwab1371",
+    "record_name": "Island"
+   },
+   {
+    "ref": "US-12545",
+    "park": "Cottonwood Island Wildlife Area",
+    "record": "sgwaf1371",
+    "record_name": "Island"
+   },
+   {
+    "ref": "US-12549",
+    "park": "Leque Island State Wildlife Area",
+    "record": "sgwab1371",
+    "record_name": "Island"
+   },
+   {
+    "ref": "US-12549",
+    "park": "Leque Island State Wildlife Area",
+    "record": "sgwaf1371",
+    "record_name": "Island"
+   },
+   {
+    "ref": "US-12068",
+    "park": "Big Rib River State Fish and Wildlife Area",
+    "record": 272833,
+    "record_name": "Rib River Fishery Area"
+   },
+   {
+    "ref": "US-10790",
+    "park": "Laramie Peak State Wildlife Habitat Management Area",
+    "record": "sgwyc14160",
+    "record_name": "Laramie Peak"
+   },
+   {
+    "ref": "US-12728",
+    "park": "Fall Creek State Wildlife Habitat Management Area",
+    "record": "sgwyd10124",
+    "record_name": "Fall Creek"
+   }
+  ]
+ },
+ "answered": "2026-10-29 18:36Z",
+ "results": [
+  {
+   "url": "",
+   "browser_error": "Error: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL\nCall log:\n  - navigating to \"\", waiting until ",
+   "status": "rest",
+   "final_url": "",
+   "read_by": "plain read"
+  },
+  {
+   "url": "https://pota.app/#/park/US-12545",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-12545",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nCottonwood Island Wildlife Area\nReference:\nUS-12545\nEntity:\nUnited States of America\nLocation(s):\nWashington (US-WA)\nLatitude / Longitude:\n48.3954, -122.365 (CN88tj)\nEarly Shift Achievement Times:\n10:00 UTC to 16:00 UTC\nLate Shift Achievement Times:\n2:00 UTC to 10:00 UTC\nWebsite:\nwdfw.wa.gov/places-to-go/wildlife-areas/cottonwood-island-wildlife-area-unit\nAccess Methods:\nAutomobile\nFoot\nActivation Methods:\nAutomobile\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nKC7WDL on 2025-07-25\nStats:\n30 activations / 32 attempts (740 QSOs)\nWDFW access area. Discover Pass required.\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nK7LVJ 5\nK7LVJ 212\nKI7QCF 6\n2.\nWI7M 3\nWI7M 96\nK4MW 5\n3.\nKA7GPP 2\nKA7GPP 51\nWA2SPL 5\n4.\nNI7L 2\nKJ7JXM 48\nW9GTA 5\n5.\nKM7CVW 1\nKG7ODB 42\nW6PUG 4\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-10-18\nW7DEL 0 0 16 16\n2026-09-07\nKG7MYX 0 17 0 17\n2026-08-16\nN7BBQ 31 0 0 31\n2026-07-08\nW7VAS 0 15 0 15\n2026-06-12\nKJ7VAD 0 6 11 17\n2026-05-31\nKJ7JXM 0 29 19 48\n2026-05-31\nKG7ODB 0 28 14 42\n2026-05-25\nAC7PB 18 0 0 18\n2026-04-30\nNI7L 0 9 1 10\n2026-04-19\nKJ7KVD 10 0 0 10\nItems per page:\n10\n1-10 of 32\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-12545#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://wdfw.wa.gov/places-to-go/wildlife-areas/cottonwood-island-wildlife-area-unit",
+     "text": "wdfw.wa.gov/places-to-go/wildlife-areas/cottonwood-island-wildlife-area-unit"
+    },
+    {
+     "url": "https://pota.app/map?lat=48.3954&lng=-122.365&zoom=9&name=Cottonwood+Island&reference=US-12545&locationDesc=US-WA&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-2-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "",
+   "status": "host left alone (strikes)"
+  },
+  {
+   "url": "https://pota.app/#/park/US-12545",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-12545",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nCottonwood Island Wildlife Area\nReference:\nUS-12545\nEntity:\nUnited States of America\nLocation(s):\nWashington (US-WA)\nLatitude / Longitude:\n48.3954, -122.365 (CN88tj)\nEarly Shift Achievement Times:\n10:00 UTC to 16:00 UTC\nLate Shift Achievement Times:\n2:00 UTC to 10:00 UTC\nWebsite:\nwdfw.wa.gov/places-to-go/wildlife-areas/cottonwood-island-wildlife-area-unit\nAccess Methods:\nAutomobile\nFoot\nActivation Methods:\nAutomobile\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nKC7WDL on 2025-07-25\nStats:\n30 activations / 32 attempts (740 QSOs)\nWDFW access area. Discover Pass required.\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nK7LVJ 5\nK7LVJ 212\nKI7QCF 6\n2.\nWI7M 3\nWI7M 96\nK4MW 5\n3.\nKA7GPP 2\nKA7GPP 51\nWA2SPL 5\n4.\nNI7L 2\nKJ7JXM 48\nW9GTA 5\n5.\nKM7CVW 1\nKG7ODB 42\nW6PUG 4\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-10-18\nW7DEL 0 0 16 16\n2026-09-07\nKG7MYX 0 17 0 17\n2026-08-16\nN7BBQ 31 0 0 31\n2026-07-08\nW7VAS 0 15 0 15\n2026-06-12\nKJ7VAD 0 6 11 17\n2026-05-31\nKJ7JXM 0 29 19 48\n2026-05-31\nKG7ODB 0 28 14 42\n2026-05-25\nAC7PB 18 0 0 18\n2026-04-30\nNI7L 0 9 1 10\n2026-04-19\nKJ7KVD 10 0 0 10\nItems per page:\n10\n1-10 of 32\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-12545#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://wdfw.wa.gov/places-to-go/wildlife-areas/cottonwood-island-wildlife-area-unit",
+     "text": "wdfw.wa.gov/places-to-go/wildlife-areas/cottonwood-island-wildlife-area-unit"
+    },
+    {
+     "url": "https://pota.app/map?lat=48.3954&lng=-122.365&zoom=9&name=Cottonwood+Island&reference=US-12545&locationDesc=US-WA&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-2-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "",
+   "status": "host left alone (strikes)"
+  },
+  {
+   "url": "https://pota.app/#/park/US-12549",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-12549",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nLeque Island State Wildlife Area\nReference:\nUS-12549\nEntity:\nUnited States of America\nLocation(s):\nWashington (US-WA)\nLatitude / Longitude:\n48.2396, -122.384 (CN88tf)\nEarly Shift Achievement Times:\n10:00 UTC to 16:00 UTC\nLate Shift Achievement Times:\n2:00 UTC to 10:00 UTC\nWebsite:\nwdfw.wa.gov/places-to-go/wildlife-areas/leque-island-wildlife-area-unit\nAccess Methods:\nAutomobile\nFoot\nActivation Methods:\nAutomobile\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nNU7J on 2025-07-22\nStats:\n30 activations / 32 attempts (812 QSOs)\nWDFW access area. Discover Pass required.\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nNI7L 5\nNI7L 133\nAA5HH 7\n2.\nKA7GPP 2\nNU7J 107\nNI7L 6\n3.\nNU7J 2\nW7VAS 65\nAL7KC 5\n4.\nN7AIE 2\nAC7PB 59\nN6LY 4\n5.\nNA7DO 1\nWN7JT 55\nW9AV 4\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-08-21\nN7BBQ 25 0 0 25\n2026-07-23\nKG7MYX 0 20 0 20\n2026-06-25\nN7AIE 0 0 10 10\n2026-06-19\nN7AIE 0 0 11 11\n2026-06-14\nNI7L 0 21 6 27\n2026-06-14\nKJ7JXM 0 26 18 44\n2026-06-14\nKJ7RAB 0 4 11 15\n2026-06-11\nNI7L 0 17 0 17\n2026-05-30\nNI7L 0 34 22 56\n2026-05-09\nKA7GPP 10 0 0 10\nItems per page:\n10\n1-10 of 32\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-12549#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://wdfw.wa.gov/places-to-go/wildlife-areas/leque-island-wildlife-area-unit",
+     "text": "wdfw.wa.gov/places-to-go/wildlife-areas/leque-island-wildlife-area-unit"
+    },
+    {
+     "url": "https://pota.app/map?lat=48.2396&lng=-122.384&zoom=9&name=Leque+Island&reference=US-12549&locationDesc=US-WA&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-2-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "",
+   "status": "host left alone (strikes)"
+  },
+  {
+   "url": "https://pota.app/#/park/US-12549",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-12549",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nLeque Island State Wildlife Area\nReference:\nUS-12549\nEntity:\nUnited States of America\nLocation(s):\nWashington (US-WA)\nLatitude / Longitude:\n48.2396, -122.384 (CN88tf)\nEarly Shift Achievement Times:\n10:00 UTC to 16:00 UTC\nLate Shift Achievement Times:\n2:00 UTC to 10:00 UTC\nWebsite:\nwdfw.wa.gov/places-to-go/wildlife-areas/leque-island-wildlife-area-unit\nAccess Methods:\nAutomobile\nFoot\nActivation Methods:\nAutomobile\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nNU7J on 2025-07-22\nStats:\n30 activations / 32 attempts (812 QSOs)\nWDFW access area. Discover Pass required.\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nNI7L 5\nNI7L 133\nAA5HH 7\n2.\nKA7GPP 2\nNU7J 107\nNI7L 6\n3.\nNU7J 2\nW7VAS 65\nAL7KC 5\n4.\nN7AIE 2\nAC7PB 59\nN6LY 4\n5.\nNA7DO 1\nWN7JT 55\nW9AV 4\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-08-21\nN7BBQ 25 0 0 25\n2026-07-23\nKG7MYX 0 20 0 20\n2026-06-25\nN7AIE 0 0 10 10\n2026-06-19\nN7AIE 0 0 11 11\n2026-06-14\nNI7L 0 21 6 27\n2026-06-14\nKJ7JXM 0 26 18 44\n2026-06-14\nKJ7RAB 0 4 11 15\n2026-06-11\nNI7L 0 17 0 17\n2026-05-30\nNI7L 0 34 22 56\n2026-05-09\nKA7GPP 10 0 0 10\nItems per page:\n10\n1-10 of 32\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-12549#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://wdfw.wa.gov/places-to-go/wildlife-areas/leque-island-wildlife-area-unit",
+     "text": "wdfw.wa.gov/places-to-go/wildlife-areas/leque-island-wildlife-area-unit"
+    },
+    {
+     "url": "https://pota.app/map?lat=48.2396&lng=-122.384&zoom=9&name=Leque+Island&reference=US-12549&locationDesc=US-WA&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-2-8.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=272833&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=272833&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 272833\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SDNR\nLoc_Own: SDNR\nMang_Type: STAT\nMang_Name: SDNR\nLoc_Mang: Wisconsin Department of Natural Resources\nDes_Tp: SREC\nLoc_Ds: State Fishing or Hunting Unit\nUnit_Nm: Rib River Fishery Area\nLoc_Nm: Rib River Fishery Area\nState_Nm: WI\nAgg_Src: WVDNR_PADUS4_0Fee_PublicLands_PAD-US_WV\nGIS_Src: WI_DNR_PADUS.gdb\nSrc_Date: 2022/01/01\nGIS_Acres: 224\nSource_PAID:\nWDPA_Cd: 0\nPub_Access: OA\nAccess_Src: GAP - Default\nAccess_Dt: 2024\nGAP_Sts: 2\nGAPCdSrc: WDNR\nGAPCdDt: 2022\nIUCN_Cat: V\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est: 1969\nComments: Contact WDNR for property information\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: SDNR\nTranspPct: null\nShape_Length: 9171.120246660304\nShape_Area: 1831468.579728436",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/272833",
+     "text": "272833"
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-2-9.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://pota.app/#/park/US-12068",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-12068",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nBig Rib River State Fish and Wildlife Area\nReference:\nUS-12068\nEntity:\nUnited States of America\nLocation(s):\nWisconsin (US-WI)\nLatitude / Longitude:\n45.12, -90.021 (EN45xc)\nEarly Shift Achievement Times:\n8:00 UTC to 14:00 UTC\nLate Shift Achievement Times:\n0:00 UTC to 8:00 UTC\nWebsite:\ndnr.wisconsin.gov/topic/Lands/FisheriesAreas/185bigribriver.html\nAccess Methods:\nAutomobile\nFoot\nActivation Methods:\nAutomobile\nOther\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nK0GLG on 2024-12-03\nStats:\n9 activations / 9 attempts (519 QSOs)\nBig Rib River Fishery Area is 952 acres with many portions containing trout. See website for additional details.\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nAD0AA 1\nKR9K 250\nKJ5DZV 3\n2.\nK0GLG 1\nWA9JBQ 65\nK4VBL 2\n3.\nK9CUF 1\nKD9KJC 64\nF5PYI 2\n4.\nKD9CJX 1\nKD9CJX 52\nK8NEE 2\n5.\nKD9KJC 1\nW0BTS 35\nAC5O 2\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-09-26\nWA9JBQ 0 0 65 65\n2026-09-06\nKR9K 0 0 250 250\n2026-08-13\nWA9TT 0 17 0 17\n2026-03-31\nW0BTS 35 0 0 35\n2026-03-08\nAD0AA 0 12 0 12\n2025-04-13\nK9CUF 0 11 0 11\n2025-03-16\nKD9CJX 0 0 52 52\n2024-12-28\nKD9KJC 0 0 64 64\n2024-12-03\nK0GLG 0 13 0 13\nItems per page:\n10\n1-9 of 9\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-12068#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://dnr.wisconsin.gov/topic/Lands/FisheriesAreas/185bigribriver.html",
+     "text": "dnr.wisconsin.gov/topic/Lands/FisheriesAreas/185bigribriver.html"
+    },
+    {
+     "url": "https://pota.app/map?lat=45.12&lng=-90.021&zoom=9&name=Big+Rib+River&reference=US-12068&locationDesc=US-WI&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-2-10.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "",
+   "status": "host left alone (strikes)"
+  },
+  {
+   "url": "https://pota.app/#/park/US-10790",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-10790",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nLaramie Peak State Wildlife Habitat Management Area\nReference:\nUS-10790\nEntity:\nUnited States of America\nLocation(s):\nWyoming (US-WY)\nLatitude / Longitude:\n41.963, -105.406 (DN71hx)\nEarly Shift Achievement Times:\n9:00 UTC to 15:00 UTC\nLate Shift Achievement Times:\n1:00 UTC to 9:00 UTC\nWebsite:\nwgfd.wyo.gov/Public-Access/WHMA/WHMA/Laramie-Peak\nAccess Methods:\nAutomobile\nFoot\nOther\nActivation Methods:\nAutomobile\nOther\nPedestrian\nIs Active?\nACTIVE\nFirst Activation:\nKF0INE on 2024-08-31\nStats:\n4 activations / 4 attempts (59 QSOs)\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nAB2SG 1\nN5TIT 21\nKD9UVK 2\n2.\nKB0PVB 1\nAB2SG 13\nKF0JOE 2\n3.\nKF0INE 1\nKF0INE 13\nKB8KNM 2\n4.\nN5TIT 1\nKB0PVB 12\nKF6OCE 2\n5.\nAE0KG 2\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2026-02-27\nN5TIT 0 21 0 21\n2025-07-12\nKB0PVB 0 12 0 12\n2024-08-31\nAB2SG 0 0 13 13\n2024-08-31\nKF0INE 0 0 13 13\nItems per page:\n10\n1-4 of 4\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-10790#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Laramie-Peak",
+     "text": "wgfd.wyo.gov/Public-Access/WHMA/WHMA/Laramie-Peak"
+    },
+    {
+     "url": "https://pota.app/map?lat=41.963&lng=-105.406&zoom=9&name=Laramie+Peak&reference=US-10790&locationDesc=US-WY&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-2-12.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "",
+   "status": "host left alone (strikes)"
+  },
+  {
+   "url": "https://pota.app/#/park/US-12728",
+   "status": 200,
+   "final_url": "https://pota.app/park/US-12728",
+   "title": "Park Information",
+   "text": "Skip to main content\nPark Information\nSearch Callsigns & Parks\nSIGN UP\nSIGN IN\nSpots\nActivations\nMap\nPark List\nTop Activators\nTop Hunters\nOfficial Events\nRules & Docs\nPrivacy Policy\nDark Mode\nParksOnTheAir.com\nBuild: 2026-10-28_17:28:21_564\nPark Information\nFall Creek State Wildlife Habitat Management Area\nReference:\nUS-12728\nEntity:\nUnited States of America\nLocation(s):\nWyoming (US-WY)\nLatitude / Longitude:\n42.8472, -109.692 (DN52du)\nEarly Shift Achievement Times:\n9:00 UTC to 15:00 UTC\nLate Shift Achievement Times:\n1:00 UTC to 9:00 UTC\nWebsite:\nwgfd.wyo.gov/Public-Access/WHMA/WHMA/Fall-Creek\nAccess Methods:\nAutomobile\nFoot\nActivation Methods:\nAutomobile\nIs Active?\nACTIVE\nFirst Activation:\nKE7WYG on 2025-11-09\nStats:\n1 activations / 1 attempts (73 QSOs)\nThis WHMA lies within bear country. It is six miles southeast of Pinedale, WY.\nPark Leaders\nActivations Activator QSOs Hunter QSOs\n1.\nKE7WYG 1\nKE7WYG 73\nKQ1S 2\n2.\nN3FMC 2\n3.\nKK4OMJ 2\n4.\nWF9N 2\n5.\nK9OL 2\nRecent Activations\nDate\nCallsign\nCW\nData\nPhone\nTotal QSOs\n2025-11-09\nKE7WYG 0 23 50 73\nItems per page:\n10\n1-1 of 1\nCopyright © 2018-2026 Parks on the Air®",
+   "links": [
+    {
+     "url": "https://pota.app/park/US-12728#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": " Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": " Activations"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": " Docs"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": ""
+    },
+    {
+     "url": "https://docs.pota.app/docs/donate.html",
+     "text": ""
+    },
+    {
+     "url": "https://pota.app/signup",
+     "text": "SIGN UP"
+    },
+    {
+     "url": "https://pota.app/",
+     "text": "Spots"
+    },
+    {
+     "url": "https://pota.app/activations",
+     "text": "Activations"
+    },
+    {
+     "url": "https://pota.app/map",
+     "text": "Map"
+    },
+    {
+     "url": "https://pota.app/parklist",
+     "text": "Park List"
+    },
+    {
+     "url": "https://pota.app/activators",
+     "text": "Top Activators"
+    },
+    {
+     "url": "https://pota.app/hunters",
+     "text": "Top Hunters"
+    },
+    {
+     "url": "https://pota.app/events",
+     "text": "Official Events"
+    },
+    {
+     "url": "https://docs.pota.app/",
+     "text": "Rules & Docs"
+    },
+    {
+     "url": "https://docs.pota.app/docs/privacy.html",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://parksontheair.com/",
+     "text": "ParksOnTheAir.com"
+    },
+    {
+     "url": "https://pota.app/changelog",
+     "text": "Build: 2026-10-28_17:28:21_564"
+    },
+    {
+     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Fall-Creek",
+     "text": "wgfd.wyo.gov/Public-Access/WHMA/WHMA/Fall-Creek"
+    },
+    {
+     "url": "https://pota.app/map?lat=42.8472&lng=-109.692&zoom=9&name=Fall+Creek&reference=US-12728&locationDesc=US-WY&entityName=United+States+of+America",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/2-keypieces-unsure-2-14.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 46,
+ "manners": {
+  "requests": 3,
+  "robots": 0,
+  "strikes": 3,
+  "errors": 3,
+  "rested": 0,
+  "arcgis_exempt": 1
+ },
+ "short": "14 result(s), 8 read OK, 8 screenshot(s)"
+}

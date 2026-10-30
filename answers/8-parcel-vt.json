@@ -1,0 +1,265 @@
+{
+ "request": "requests/8-parcel-vt.json",
+ "id": "8-parcel-vt",
+ "chat": 8,
+ "kind": "parcel",
+ "report": "P-3 VT: owner/parcel at each open park's pin; refs in 'refs', same order as points. Layer is a statewide parcel guess.",
+ "asked": {
+  "chat": 8,
+  "kind": "parcel",
+  "report": "P-3 VT: owner/parcel at each open park's pin; refs in 'refs', same order as points. Layer is a statewide parcel guess.",
+  "layer": "https://services1.arcgis.com/BkFxaEFNwHqX3tAw/arcgis/rest/services/FS_VCGI_OPENDATA_Cadastral_VTPARCELS_poly_standardized_parcels_SP_v1/FeatureServer/0",
+  "fields": "*",
+  "refs": [
+   "US-3129",
+   "US-4936",
+   "US-4980"
+  ],
+  "points": [
+   [
+    44.3898,
+    -72.7673
+   ],
+   [
+    44.7271,
+    -71.6901
+   ],
+   [
+    43.189,
+    -72.5595
+   ]
+  ]
+ },
+ "answered": "2026-10-29 23:28Z",
+ "results": [
+  {
+   "point": [
+    44.3898,
+    -72.7673
+   ],
+   "owner": [
+    "VERMONT STATE OF"
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "OBJECTID": 296259,
+     "SPAN": "696-221-11904",
+     "GLIST_SPAN": "696-221-11904",
+     "MAPID": "015-3444",
+     "PARCID": "015-3444.",
+     "PROPTYPE": "PARCEL",
+     "YEAR": 2024,
+     "GLYEAR": 2025,
+     "TOWN": "WATERBURY",
+     "TNAME": "Waterbury",
+     "SOURCENAME": null,
+     "SOURCETYPE": "UNKNOWN",
+     "SOURCEDATE": "UNKNOWN",
+     "EDITMETHOD": "UNKNOWN",
+     "EDITOR": "UNKNOWN",
+     "EDITDATE": "UNKNOWN",
+     "MATCHSTAT": "MATCH",
+     "EDITNOTE": null,
+     "OWNER1": "VERMONT STATE OF",
+     "OWNER2": "AGENCY OF NATURAL RESOURCES",
+     "ADDRGL1": "103 SO MAIN STREET",
+     "ADDRGL2": null,
+     "CITYGL": "WATERBURY",
+     "STGL": "VT",
+     "ZIPGL": "05676",
+     "DESCPROP": "12435 AC (MT MANSFIELD SF)",
+     "LOCAPROP": null,
+     "CAT": "M",
+     "RESCODE": "S",
+     "ACRESGL": 12435,
+     "REAL_FLV": 18819500,
+     "HSTED_FLV": 0,
+     "NRES_FLV": 18819500,
+     "LAND_LV": 18819500,
+     "IMPRV_LV": 0,
+     "EQUIPVAL": 0,
+     "EQUIPCODE": null,
+     "INVENVAL": 0,
+     "HSDECL": "N",
+     "HSITEVAL": 0,
+     "VETEXAMT": 0,
+     "EXPDESC": null,
+     "ENDDATE": null,
+     "STATUTE": null,
+     "EXAMT_HS": 0,
+     "EXAMT_NR": 0,
+     "UVREDUC_HS": 0,
+     "UVREDUC_NR": 0,
+     "GLVAL_HS": 0,
+     "GLVAL_NR": 0,
+     "CRHOUSPCT": 0,
+     "MUNGL1PCT": 0,
+     "AOEGL_HS": 0,
+     "AOEGL_NR": 0,
+     "E911ADDR": "3444 LITTLE RIVER RD",
+     "Shape__Area": 47891819.326416016,
+     "Shape__Length": 133644.5455971883
+    }
+   ]
+  },
+  {
+   "point": [
+    44.7271,
+    -71.6901
+   ],
+   "owner": [
+    "STATE OF VERMONT"
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "OBJECTID": 258770,
+     "SPAN": "105-033-10158",
+     "GLIST_SPAN": "105-033-10158",
+     "MAPID": "9-92-8",
+     "PARCID": "0910202.",
+     "PROPTYPE": "PARCEL",
+     "YEAR": 2024,
+     "GLYEAR": 2025,
+     "TOWN": "BRUNSWICK",
+     "TNAME": "Brunswick",
+     "SOURCENAME": null,
+     "SOURCETYPE": "UNKNOWN",
+     "SOURCEDATE": "UNKNOWN",
+     "EDITMETHOD": "UNKNOWN",
+     "EDITOR": "UNKNOWN",
+     "EDITDATE": "UNKNOWN",
+     "MATCHSTAT": "MATCH",
+     "EDITNOTE": "UNKNOWN",
+     "OWNER1": "STATE OF VERMONT",
+     "OWNER2": null,
+     "ADDRGL1": "27  STATE STREET",
+     "ADDRGL2": null,
+     "CITYGL": "MONTPELIER",
+     "STGL": "VT",
+     "ZIPGL": "05602",
+     "DESCPROP": "WOODLAND - 4518 AC",
+     "LOCAPROP": null,
+     "CAT": "W",
+     "RESCODE": "S",
+     "ACRESGL": 4518,
+     "REAL_FLV": 1910500,
+     "HSTED_FLV": 0,
+     "NRES_FLV": 1910500,
+     "LAND_LV": 1910500,
+     "IMPRV_LV": 0,
+     "EQUIPVAL": 0,
+     "EQUIPCODE": null,
+     "INVENVAL": 0,
+     "HSDECL": "N",
+     "HSITEVAL": 0,
+     "VETEXAMT": 0,
+     "EXPDESC": "Statutory",
+     "ENDDATE": null,
+     "STATUTE": null,
+     "EXAMT_HS": 0,
+     "EXAMT_NR": 0,
+     "UVREDUC_HS": 0,
+     "UVREDUC_NR": 0,
+     "GLVAL_HS": 0,
+     "GLVAL_NR": 0,
+     "CRHOUSPCT": 0,
+     "MUNGL1PCT": 0,
+     "AOEGL_HS": 0,
+     "AOEGL_NR": 0,
+     "E911ADDR": "VT ROUTE 102",
+     "Shape__Area": 18520929.006607056,
+     "Shape__Length": 43083.15938811491
+    }
+   ]
+  },
+  {
+   "point": [
+    43.189,
+    -72.5595
+   ],
+   "owner": [
+    "NARROW BROOK FARM LLC"
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "OBJECTID": 171585,
+     "SPAN": "249-079-10028",
+     "GLIST_SPAN": "249-079-10028",
+     "MAPID": "09-006.000",
+     "PARCID": "009006.",
+     "PROPTYPE": "PARCEL",
+     "YEAR": 2025,
+     "GLYEAR": 2025,
+     "TOWN": "GRAFTON",
+     "TNAME": "Grafton",
+     "SOURCENAME": "UNKNOWN",
+     "SOURCETYPE": "UNKNOWN",
+     "SOURCEDATE": "UNKNOWN",
+     "EDITMETHOD": "UNKNOWN",
+     "EDITOR": "Cartographic Technologies Inc",
+     "EDITDATE": "20251027",
+     "MATCHSTAT": "MATCH",
+     "EDITNOTE": null,
+     "OWNER1": "NARROW BROOK FARM LLC",
+     "OWNER2": "C/O BARBER III PERRY OSCAR",
+     "ADDRGL1": "201 E MAIN SUITE 1500",
+     "ADDRGL2": null,
+     "CITYGL": "EL PASO",
+     "STGL": "TX",
+     "ZIPGL": "79901",
+     "DESCPROP": "522 CAMBRIDGEPORT RD `NARROW BROOK FARM`",
+     "LOCAPROP": null,
+     "CAT": "F",
+     "RESCODE": "NS",
+     "ACRESGL": 186,
+     "REAL_FLV": 757300,
+     "HSTED_FLV": 0,
+     "NRES_FLV": 757300,
+     "LAND_LV": 360200,
+     "IMPRV_LV": 397100,
+     "EQUIPVAL": 0,
+     "EQUIPCODE": null,
+     "INVENVAL": 0,
+     "HSDECL": "N",
+     "HSITEVAL": 439600,
+     "VETEXAMT": 0,
+     "EXPDESC": null,
+     "ENDDATE": null,
+     "STATUTE": null,
+     "EXAMT_HS": 0,
+     "EXAMT_NR": 0,
+     "UVREDUC_HS": 0,
+     "UVREDUC_NR": 277300,
+     "GLVAL_HS": 0,
+     "GLVAL_NR": 4800,
+     "CRHOUSPCT": 0,
+     "MUNGL1PCT": 4800,
+     "AOEGL_HS": 0,
+     "AOEGL_NR": 4800,
+     "E911ADDR": "522 CAMBRIDGEPORT RD",
+     "Shape__Area": 739274.0935592651,
+     "Shape__Length": 5895.656859862805
+    }
+   ]
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 3,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 3
+ },
+ "short": "3 result(s), 3 read OK"
+}

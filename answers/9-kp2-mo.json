@@ -1,0 +1,421 @@
+{
+ "request": "requests/9-kp2-mo.json",
+ "id": "9-kp2-mo",
+ "chat": 9,
+ "kind": "probe",
+ "report": "kp2 MO: 2 parks, 8 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "kp2 MO: 2 parks, 8 layers",
+  "probe": {
+   "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State MO: 2 parks. Refs in order of points: US-11042,US-7873. Results to chat 11.",
+   "refs": [
+    "US-11042",
+    "US-7873"
+   ],
+   "pointq": [
+    {
+     "st": "MO",
+     "url": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
+     "note": "MO Missouri State Parks (DNR)",
+     "points": [
+      [
+       38.5786,
+       -93.1209
+      ],
+      [
+       39.6274,
+       -94.7332
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "MO",
+     "url": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/3",
+     "note": "MO Missouri Natural Areas (DNR)",
+     "points": [
+      [
+       38.5786,
+       -93.1209
+      ],
+      [
+       39.6274,
+       -94.7332
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "MO",
+     "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "note": "MO Missouri Department of Conservation (gis",
+     "points": [
+      [
+       38.5786,
+       -93.1209
+      ],
+      [
+       39.6274,
+       -94.7332
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "MO",
+     "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+     "note": "MO Missouri Department of Conservation (cre",
+     "points": [
+      [
+       38.5786,
+       -93.1209
+      ],
+      [
+       39.6274,
+       -94.7332
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "MO",
+     "url": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/2",
+     "note": "MO Missouri DNR, Division of State Parks (c",
+     "points": [
+      [
+       38.5786,
+       -93.1209
+      ],
+      [
+       39.6274,
+       -94.7332
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       38.5786,
+       -93.1209
+      ],
+      [
+       39.6274,
+       -94.7332
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       38.5786,
+       -93.1209
+      ],
+      [
+       39.6274,
+       -94.7332
+      ]
+     ],
+     "dist": 3000
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       38.5786,
+       -93.1209
+      ],
+      [
+       39.6274,
+       -94.7332
+      ]
+     ],
+     "dist": 3000
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-29 23:33Z",
+ "results": {
+  "about": "HQ 6:20 PM item 2: layer probe at each pin of the open key pieces (76 questions) within 3 km, state layers + national layers. State MO: 2 parks. Refs in order of points: US-11042,US-7873. Results to chat 11.",
+  "date": "2026-10-29",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "MO",
+    "url": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
+    "note": "MO Missouri State Parks (DNR)",
+    "hits": [
+     {
+      "layer": "0 Missouri Department of Natural Resources Lands",
+      "point": [
+       38.5786,
+       -93.1209
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Missouri Department of Natural Resources Lands",
+      "point": [
+       39.6274,
+       -94.7332
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MO",
+    "url": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/3",
+    "note": "MO Missouri Natural Areas (DNR)",
+    "hits": [
+     {
+      "layer": "3 Natural Areas",
+      "point": [
+       38.5786,
+       -93.1209
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Natural Areas",
+      "point": [
+       39.6274,
+       -94.7332
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MO",
+    "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+    "note": "MO Missouri Department of Conservation (gis",
+    "hits": [
+     {
+      "layer": "5 Conservation Area Boundaries",
+      "point": [
+       38.5786,
+       -93.1209
+      ],
+      "attrs": {
+       "Area_ID": 8111,
+       "Conservation_Area_Number": 198111,
+       "Area_Name": "Kahrs-Boger Park",
+       "OFF_Name": "Kahrs-Boger Park",
+       "Division_Admin": "Regional Resource Management",
+       "Region": "Kansas City",
+       "County": "Pettis",
+       "Acreage": 108.0,
+       "Acres_GIS": 106.13875878,
+       "Public_Site": "Y",
+       "Display": "Y",
+       "GIS_Display": "Y",
+       "Sum_Link": "https://mdc.mo.gov/conservation-area/a8111",
+       "Map_Link": "https://mdc.mo.gov/media/area/map/8111",
+       "Brochure_Link": "https://mdc.mo.gov/media/area/brochure/8111",
+       "Reg_Link": "https://mdc.mo.gov/discover-nature/places/area-regs/8111",
+       "Regional_Resc_Mng_District": "Lone Buffalo"
+      }
+     },
+     {
+      "layer": "5 Conservation Area Boundaries",
+      "point": [
+       39.6274,
+       -94.7332
+      ],
+      "attrs": {
+       "Area_ID": 9238,
+       "Conservation_Area_Number": 199238,
+       "Area_Name": "Agency CA",
+       "OFF_Name": "Agency Conservation Area",
+       "Division_Admin": "Regional Resource Management",
+       "Region": "Northwest",
+       "County": "Buchanan",
+       "Acreage": 94.01,
+       "Acres_GIS": 92.50540894,
+       "Public_Site": "Y",
+       "Display": "Y",
+       "GIS_Display": "Y",
+       "Sum_Link": "https://mdc.mo.gov/conservation-area/a9238",
+       "Map_Link": "https://mdc.mo.gov/media/area/map/9238",
+       "Brochure_Link": "https://mdc.mo.gov/media/area/brochure/9238",
+       "Reg_Link": "https://mdc.mo.gov/discover-nature/places/area-regs/9238",
+       "Regional_Resc_Mng_District": "Loess Hills"
+      }
+     },
+     {
+      "layer": "5 Conservation Area Boundaries",
+      "point": [
+       39.6274,
+       -94.7332
+      ],
+      "attrs": {
+       "Area_ID": 8909,
+       "Conservation_Area_Number": 198909,
+       "Area_Name": "Agency Access",
+       "OFF_Name": "Agency Access",
+       "Division_Admin": "Regional Resource Management",
+       "Region": "Northwest",
+       "County": "Buchanan",
+       "Acreage": 1.0,
+       "Acres_GIS": 1.6261737,
+       "Public_Site": "Y",
+       "Display": "Y",
+       "GIS_Display": "Y",
+       "Sum_Link": "https://mdc.mo.gov/conservation-area/a8909",
+       "Map_Link": "https://mdc.mo.gov/media/area/map/8909",
+       "Brochure_Link": "https://mdc.mo.gov/media/area/brochure/8909",
+       "Reg_Link": "https://mdc.mo.gov/discover-nature/places/area-regs/8909",
+       "Regional_Resc_Mng_District": "Loess Hills"
+      }
+     }
+    ]
+   },
+   {
+    "st": "MO",
+    "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+    "note": "MO Missouri Department of Conservation (cre",
+    "hits": [
+     {
+      "layer": "3 Natural Areas",
+      "point": [
+       38.5786,
+       -93.1209
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Natural Areas",
+      "point": [
+       39.6274,
+       -94.7332
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MO",
+    "url": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/2",
+    "note": "MO Missouri DNR, Division of State Parks (c",
+    "hits": [
+     {
+      "layer": "2 Wild Areas",
+      "point": [
+       38.5786,
+       -93.1209
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wild Areas",
+      "point": [
+       39.6274,
+       -94.7332
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       38.5786,
+       -93.1209
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       39.6274,
+       -94.7332
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       38.5786,
+       -93.1209
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       39.6274,
+       -94.7332
+      ],
+      "attrs": {
+       "CostCenter": "FF03R05000",
+       "CMPXNAME": "N/A",
+       "ORGNAME": "FARM SERVICE AGENCY INTEREST OF MO",
+       "ORGCODE": 9999,
+       "IFWS": "1097",
+       "LIT": "XMO",
+       "GISACRES": 8216.59942286,
+       "MAXACRES": 8216.59942286,
+       "APPTYPE": 0,
+       "RSL_TYPE": "FSA",
+       "FWSREGION": "3",
+       "LABELNAME": "FSA Interest of MO",
+       "CreatedDate": 1689617561000,
+       "ModifiedDate": 1785884050000,
+       "IntReg": "3"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 53,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

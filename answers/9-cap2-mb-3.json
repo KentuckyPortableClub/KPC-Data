@@ -1,0 +1,815 @@
+{
+ "request": "requests/9-cap2-mb-3.json",
+ "id": "9-cap2-mb-3",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CAP2 MB 3: 9 parks, 6 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CAP2 MB 3: 9 parks, 6 layers",
+  "probe": {
+   "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (MB, 9 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-6041,CA-6042,CA-6043,CA-6044,CA-6045,CA-6046,CA-6047,CA-6048,CA-6468. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+   "refs": [
+    "CA-6041",
+    "CA-6042",
+    "CA-6043",
+    "CA-6044",
+    "CA-6045",
+    "CA-6046",
+    "CA-6047",
+    "CA-6048",
+    "CA-6468"
+   ],
+   "pointq": [
+    {
+     "st": "MB",
+     "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0",
+     "note": "Manitoba Par",
+     "points": [
+      [
+       51.1421,
+       -100.062
+      ],
+      [
+       50.0038,
+       -96.7729
+      ],
+      [
+       49.9178,
+       -97.1486
+      ],
+      [
+       49.8889,
+       -97.1344
+      ],
+      [
+       49.8958,
+       -97.1438
+      ],
+      [
+       51.3069,
+       -100.451
+      ],
+      [
+       49.904,
+       -97.1318
+      ],
+      [
+       49.8867,
+       -97.1464
+      ],
+      [
+       49.7716,
+       -96.8168
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "MB",
+     "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0",
+     "note": "Manitoba wil",
+     "points": [
+      [
+       51.1421,
+       -100.062
+      ],
+      [
+       50.0038,
+       -96.7729
+      ],
+      [
+       49.9178,
+       -97.1486
+      ],
+      [
+       49.8889,
+       -97.1344
+      ],
+      [
+       49.8958,
+       -97.1438
+      ],
+      [
+       51.3069,
+       -100.451
+      ],
+      [
+       49.904,
+       -97.1318
+      ],
+      [
+       49.8867,
+       -97.1464
+      ],
+      [
+       49.7716,
+       -96.8168
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "MB",
+     "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/1",
+     "note": "Manitoba wil~1",
+     "points": [
+      [
+       51.1421,
+       -100.062
+      ],
+      [
+       50.0038,
+       -96.7729
+      ],
+      [
+       49.9178,
+       -97.1486
+      ],
+      [
+       49.8889,
+       -97.1344
+      ],
+      [
+       49.8958,
+       -97.1438
+      ],
+      [
+       51.3069,
+       -100.451
+      ],
+      [
+       49.904,
+       -97.1318
+      ],
+      [
+       49.8867,
+       -97.1464
+      ],
+      [
+       49.7716,
+       -96.8168
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "MB",
+     "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2",
+     "note": "Manitoba wil~2",
+     "points": [
+      [
+       51.1421,
+       -100.062
+      ],
+      [
+       50.0038,
+       -96.7729
+      ],
+      [
+       49.9178,
+       -97.1486
+      ],
+      [
+       49.8889,
+       -97.1344
+      ],
+      [
+       49.8958,
+       -97.1438
+      ],
+      [
+       51.3069,
+       -100.451
+      ],
+      [
+       49.904,
+       -97.1318
+      ],
+      [
+       49.8867,
+       -97.1464
+      ],
+      [
+       49.7716,
+       -96.8168
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "MB",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       51.1421,
+       -100.062
+      ],
+      [
+       50.0038,
+       -96.7729
+      ],
+      [
+       49.9178,
+       -97.1486
+      ],
+      [
+       49.8889,
+       -97.1344
+      ],
+      [
+       49.8958,
+       -97.1438
+      ],
+      [
+       51.3069,
+       -100.451
+      ],
+      [
+       49.904,
+       -97.1318
+      ],
+      [
+       49.8867,
+       -97.1464
+      ],
+      [
+       49.7716,
+       -96.8168
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "MB",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       51.1421,
+       -100.062
+      ],
+      [
+       50.0038,
+       -96.7729
+      ],
+      [
+       49.9178,
+       -97.1486
+      ],
+      [
+       49.8889,
+       -97.1344
+      ],
+      [
+       49.8958,
+       -97.1438
+      ],
+      [
+       51.3069,
+       -100.451
+      ],
+      [
+       49.904,
+       -97.1318
+      ],
+      [
+       49.8867,
+       -97.1464
+      ],
+      [
+       49.7716,
+       -96.8168
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:22Z",
+ "results": {
+  "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (MB, 9 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-6041,CA-6042,CA-6043,CA-6044,CA-6045,CA-6046,CA-6047,CA-6048,CA-6468. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "MB",
+    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0",
+    "note": "Manitoba Par",
+    "hits": [
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       51.1421,
+       -100.062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       50.0038,
+       -96.7729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.9178,
+       -97.1486
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8889,
+       -97.1344
+      ],
+      "attrs": {
+       "NAME_E": "Upper Fort Garry Heritage Provincial Park",
+       "NOM_F": "Parc provincial du patrimoine d'Upper Fort Garry",
+       "BIOME": "T",
+       "O_AREA": 1.303,
+       "LOC_E": "Manitoba",
+       "LOC_F": "Manitoba",
+       "TYPE_E": "Provincial Park",
+       "TYPE_F": "Parc provincial",
+       "MGMT_E": "Manitoba Sustainable Development",
+       "MGMT_F": "Développement durable Manitoba",
+       "LEGISL_E": "Provincial Parks Act (1993); Provincial Parks Designation Regulation (37/97)",
+       "LEGISL_F": "Loi sur les parcs provinciaux (1993); Règlement sur la désignation des parcs provinciaux (37/97)",
+       "STATUS_E": "Legally Designated - Permanent Protection",
+       "STATUS_F": "Désignation légale en place - Protection permanente",
+       "PROTDATE": 2014,
+       "YR_PP_DES": "2014",
+       "OWNER_E": "Government of Manitoba",
+       "OWNER_F": "Gouvernement du Manitoba",
+       "PRK_CLSS": "Heritage Park",
+       "PR_EXP": "N/A",
+       "D_OF_S": "20424",
+       "OIC_NM": "276/2014",
+       "MB_RG_NM": "N/A",
+       "MB_RG_D": "N/A",
+       "GAZDATE": "20140913",
+       "URL": "http://www.upperfortgarry.com/"
+      }
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8958,
+       -97.1438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       51.3069,
+       -100.451
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.904,
+       -97.1318
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.8867,
+       -97.1464
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Manitoba Parks",
+      "point": [
+       49.7716,
+       -96.8168
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MB",
+    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0",
+    "note": "Manitoba wil",
+    "hits": [
+     {
+      "layer": "0 Refuges",
+      "point": [
+       51.1421,
+       -100.062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       50.0038,
+       -96.7729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.9178,
+       -97.1486
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8889,
+       -97.1344
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8958,
+       -97.1438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       51.3069,
+       -100.451
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.904,
+       -97.1318
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.8867,
+       -97.1464
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Refuges",
+      "point": [
+       49.7716,
+       -96.8168
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MB",
+    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/1",
+    "note": "Manitoba wil~1",
+    "hits": [
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       51.1421,
+       -100.062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       50.0038,
+       -96.7729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.9178,
+       -97.1486
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8889,
+       -97.1344
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8958,
+       -97.1438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       51.3069,
+       -100.451
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.904,
+       -97.1318
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.8867,
+       -97.1464
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "1 Special_Conservation_Areas",
+      "point": [
+       49.7716,
+       -96.8168
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MB",
+    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2",
+    "note": "Manitoba wil~2",
+    "hits": [
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       51.1421,
+       -100.062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       50.0038,
+       -96.7729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.9178,
+       -97.1486
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8889,
+       -97.1344
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8958,
+       -97.1438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       51.3069,
+       -100.451
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.904,
+       -97.1318
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.8867,
+       -97.1464
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife_Management_Areas",
+      "point": [
+       49.7716,
+       -96.8168
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MB",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.1421,
+       -100.062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.0038,
+       -96.7729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.9178,
+       -97.1486
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8889,
+       -97.1344
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8958,
+       -97.1438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.3069,
+       -100.451
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.904,
+       -97.1318
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.8867,
+       -97.1464
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.7716,
+       -96.8168
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MB",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.1421,
+       -100.062
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.0038,
+       -96.7729
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.9178,
+       -97.1486
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8889,
+       -97.1344
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8958,
+       -97.1438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.3069,
+       -100.451
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.904,
+       -97.1318
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.8867,
+       -97.1464
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.7716,
+       -96.8168
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 131,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
