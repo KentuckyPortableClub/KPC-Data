@@ -1,0 +1,57 @@
+{
+ "request": "requests/8-parcel-nd-griggs.json",
+ "id": "8-parcel-nd-griggs",
+ "chat": 8,
+ "kind": "parcel",
+ "report": "P-3 county job: Griggs County ND, 5 open parks with no PAD-US record at the pin (all State Historical Society of North Dakota (SHSND) 'State Historic Site' units -- small sites, likely no outline regardless, this is an R-G7 step 4b / R-G10 ownership check). Could not find a layer URL myself: the statewide parcel dataset's own announcement page (gis.nd.gov/news/north-dakota-statewide-parcels) only links to 'north-dakota-state-parcel-program-ndgov.hub.arcgis.com', which this session's web allowlist blocks. Please open that hub page, find the actual parcel FeatureServer/MapServer layer it links to (or Griggs County's own if the statewide one excludes it), and query owner name + parcel id at each of the 5 points above. If the statewide layer has no owner field (as ND's parcel programs sometimes only carry APN/acres), note that back to me rather than guessing.",
+ "asked": {
+  "chat": 8,
+  "kind": "parcel",
+  "sites": [
+   {
+    "ref": "US-8526",
+    "name": "Camp Atchison State Historic Site",
+    "lat": 47.524,
+    "lon": -98.3293
+   },
+   {
+    "ref": "US-8546",
+    "name": "Lake Jessie State Historic Site",
+    "lat": 47.5409,
+    "lon": -98.2907
+   },
+   {
+    "ref": "US-8547",
+    "name": "Lake Johnson State Historic Site",
+    "lat": 47.3555,
+    "lon": -98.1358
+   },
+   {
+    "ref": "US-8552",
+    "name": "November 33 Launch Facility State Historic Site",
+    "lat": 47.4399,
+    "lon": -98.0664
+   },
+   {
+    "ref": "US-8555",
+    "name": "Oscar-Zero Missile Alert Facility State Historic Site",
+    "lat": 47.4976,
+    "lon": -98.1267
+   }
+  ],
+  "report": "P-3 county job: Griggs County ND, 5 open parks with no PAD-US record at the pin (all State Historical Society of North Dakota (SHSND) 'State Historic Site' units -- small sites, likely no outline regardless, this is an R-G7 step 4b / R-G10 ownership check). Could not find a layer URL myself: the statewide parcel dataset's own announcement page (gis.nd.gov/news/north-dakota-statewide-parcels) only links to 'north-dakota-state-parcel-program-ndgov.hub.arcgis.com', which this session's web allowlist blocks. Please open that hub page, find the actual parcel FeatureServer/MapServer layer it links to (or Griggs County's own if the statewide one excludes it), and query owner name + parcel id at each of the 5 points above. If the statewide layer has no owner field (as ND's parcel programs sometimes only carry APN/acres), note that back to me rather than guessing."
+ },
+ "answered": "2026-10-30 18:29Z",
+ "results": [],
+ "error": "KeyError: 'layer'",
+ "seconds": 0,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "KeyError: 'layer'"
+}
