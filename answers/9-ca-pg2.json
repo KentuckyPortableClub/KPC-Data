@@ -1,0 +1,2932 @@
+{
+ "request": "requests/9-ca-pg2.json",
+ "id": "9-ca-pg2",
+ "chat": 9,
+ "kind": "page",
+ "report": "CA-LP2 pages: find the REST/FeatureServer links (NL parks + natural areas, QC TFS + territoires recreatifs, HRM parks, ECCC NWA map, PEI)",
+ "asked": {
+  "chat": 9,
+  "kind": "page",
+  "urls": [
+   "https://www.gov.nl.ca/tcar/parks/gis-data/",
+   "https://www.gov.nl.ca/eccc/natural-areas/gis-data/",
+   "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures",
+   "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb",
+   "https://data-hrm.hub.arcgis.com/pages/open-data-catalogue",
+   "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html",
+   "https://ruk.ca/content/all-you-can-eat-pei-gis-data"
+  ],
+  "report": "CA-LP2 pages: find the REST/FeatureServer links (NL parks + natural areas, QC TFS + territoires recreatifs, HRM parks, ECCC NWA map, PEI)"
+ },
+ "answered": "2026-10-30 11:50Z",
+ "results": [
+  {
+   "url": "https://www.gov.nl.ca/tcar/parks/gis-data/",
+   "status": 200,
+   "final_url": "https://www.gov.nl.ca/tcar/home/parks/gis-data/",
+   "title": "GIS Data – Tourism, Culture, Arts and Recreation",
+   "text": "Skip to content\nTourism, Culture, Arts and Recreation\nMyGovNL and Online Services\nSearch for:\nSearch\nHome\nTourism\nRecreation and Sport\nProvincial Parks\nArts and Heritage\nArts and Culture Centres\nPremier’s Medal for Arts, Heritage, Sport and Recreation\nFunding Programs\nFor Visitors/Travellers\nTourism, Culture, Arts and Recreation > Provincial Parks > GIS Data\nGIS Data\nDISCLAIMER:\nBY ACCESSING, DOWNLOADING, PRINTING OR USING THE DATA BEING PROVIDED you acknowledge that the data are provided without warranty or guarantee as to the completeness, currency, or accuracy of the data, and you agree not to provide a digital reproduction of the original data to a third party. The Government of Newfoundland and Labrador retains the sole right to the original data and assumes no legal liability or responsibility for any alterations, changes, reproductions, or misrepresentations made by third parties with respect to the original data or derivative products. The Government of Newfoundland and Labrador retains the right to add, change, or remove data at any time. You accept the data on an ‘as-is, where is’ basis and agree to use at your own risk.\nThe Government of Newfoundland and Labrador accepts neither responsibility nor liability for errors, inaccuracies, and/or omissions. The Government of Newfoundland and Labrador shall be neither responsible nor liable for any loss, damage, personal injury or death arising from or in any way related to the use of or reliance on any of the data by any person.\nThe boundaries included in the data are graphical representations and are not meant to be used as a legal definition. The official record remains the order published in the Newfoundland Gazette. All users should consult legislative references when exact land descriptions are required.\nDescription\nThe protected areas of Newfoundland and Labrador under provincial jurisdiction can be divided into seven types. They are Wilderness Reserves, Ecological Reserves, Provincial Parks, Wildlife Reserves, Wildlife Parks, Special Management Areas, and Public Reserves. These areas fall under one of the following pieces of legislation: Provincial Parks Act, Wilderness and Ecological Reserves Act, Wildlife Act and Lands Act. The boundaries for these protected areas are available for download in an ESRI shapefile format below. This file is updated on an as-needed basis. Use of this file is subject to the disclaimer found above and also in the associated metadata. For more detailed information, please review the attribute and metadata information associated with the files, or contact the Parks Division at (709) 637-2040 or email parksinfo@gov.nl.ca.\nZip file – ESRI shapefile format – Provincial Protected Areas NL\nFile last updated on: September 9, 2016\nGoogle Earth version – The Government of Newfoundland and Labrador actively participates in the Conservation Areas Reporting and Tracking System (CARTS); a national initiative designed to track and report on the status of Canada’s protected areas in a consistent, standardized, and authoritative manner. CARTS is managed by the Canadian Council on Ecological Areas and Environment Canada. Environment Canada has created a Google Earth version of CARTS. To view the Google Earth version visit www.ccea.org and click on the Maps & Reports – CARTS link.\n^ Top of Page\nTourism, Culture, Arts and Recreation\nP.O. Box 8700\nSt. John’s, NL A1B 4J6\nEmail: tcar@gov.nl.ca\nTel: 709 729 7000\nDepartment Links\nAgencies\nPublications\nLegislation\nContact\nX | @TCAR_GovNL\nGovernment Links\nGovernment\nTopics\nHouse of Assembly\nNews Releases\nVisitors\nContact\nHonourable Mike Goosney\nMandate Letter\nMinister’s Office\nThis page and all contents are copyright, Government of Newfoundland and Labrador, all rights reserved.\nDisclaimer/Copyright/Privacy Statement.",
+   "links": [
+    {
+     "url": "https://www.gov.nl.ca/tcar/home/parks/gis-data/#content",
+     "text": "Skip to content"
+    },
+    {
+     "url": "https://www.gov.nl.ca/",
+     "text": ""
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/",
+     "text": "Tourism, Culture, Arts and Recreation"
+    },
+    {
+     "url": "https://www.gov.nl.ca/onlineservices",
+     "text": "MyGovNL and Online Services"
+    },
+    {
+     "url": "http://%20/",
+     "text": " "
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/",
+     "text": "Tourism"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/vision-2026/",
+     "text": "Vision 2026"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/category/uncategorized/",
+     "text": "Programs and Tools"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/programs-and-tools/",
+     "text": "Getting Started"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/programs-and-tools-marketing/",
+     "text": "Marketing"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-product-development/",
+     "text": "Tourism Product Development"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/registration/",
+     "text": "Accommodation Registration"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/research-assistance-services/",
+     "text": "Research Assistance"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/tourism-achievement-award/",
+     "text": "Tourism Achievement Award"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/visitor-and-market-insights/",
+     "text": "Visitor and Market Insights"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-product-development2/",
+     "text": "Tourism Product Development"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-product-development2/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-product-development2/major-event-attraction/",
+     "text": "Event Attraction"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/category/uncategorized/",
+     "text": "Marketing"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/marketing/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/marketing/brand-highlights/",
+     "text": "Brand Highlights"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/marketing/strategic-marketing-approach/",
+     "text": "Strategic Marketing Approach"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/marketing/tourism-marketing-strategy/",
+     "text": "Tourism Marketing Strategy"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/",
+     "text": "Recreation and Sport"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/",
+     "text": "Policy Documents"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/provincially-operated-pools/",
+     "text": "Provincially Operated Pools"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/recreation-and-sport-organizations/",
+     "text": "Recreation and Sport Organizations"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/film-television-and-recreation-branch/sport/",
+     "text": "Sport"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/sport/#msg",
+     "text": "Multi-Sport Games"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/canada-games/",
+     "text": "Canada Games"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/newfoundland-and-labrador-games/",
+     "text": "Newfoundland and Labrador Games"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/north-american-indigenous-games/",
+     "text": "North American Indigenous Games"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/concussion-in-sport/",
+     "text": "Concussion in Sport"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/sport/#sr",
+     "text": "Sport Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/provincially-operated-pools/newfoundland-and-labrador-sports-centre/",
+     "text": "Newfoundland and Labrador Sports Centre"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/recreation/",
+     "text": "Recreation"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/overview/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/recreation/programs-and-initiatives/",
+     "text": "Programs and Initiatives"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/physical-activity-overview/",
+     "text": "Physical Activity"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/physical-activity-overview/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/active-at-work-toolkit/",
+     "text": "Active At Work Toolkit"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/canadian-24-hour-movement-guidelines/",
+     "text": "Canadian 24-Hour Movement Guidelines"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/participaction-partnership/",
+     "text": "ParticipACTION Partnership"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/physical-literacy/",
+     "text": "Physical Literacy"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/health-care-provider-physical-activity-kit/",
+     "text": "Health Care Provider Physical Activity Kit"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/health-care-provider-physical-activity-kit/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/client-resources/",
+     "text": "Client Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/health-care-provider-resources/",
+     "text": "Health Care Provider Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/administrator-resources/",
+     "text": "Administrator Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/additional-resources/",
+     "text": "Additional Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/programs-and-initiatives/",
+     "text": "Programs and Initiatives"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/recreation-and-sport-organizations/",
+     "text": "Recreation and Sport Organizations"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/home/parks/",
+     "text": "Provincial Parks"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/category/uncategorized/",
+     "text": "Arts and Heritage"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/artsheritage/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/artsheritage/culture/",
+     "text": "Culture"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/artsheritage/culture/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/artsheritage/culture/funding-programs/",
+     "text": "Funding Programs – Culture"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/artsheritage/culture/arts-and-letters-program/",
+     "text": "The Arts and Letters Awards Program"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/category/uncategorized/",
+     "text": "Provincial Archaeology Office"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/archaeology/provincial-archaeology-office/",
+     "text": "Provincial Archaeology Office"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/archaeology/",
+     "text": "Archaeology"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/artsheritage/culture/provincial-historic-sites/",
+     "text": "Provincial Historic Sites"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/arts-and-culture-centres/",
+     "text": "Arts and Culture Centres"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/home/premiers-medal-for-arts-heritage-sports-and-recreation/",
+     "text": "Premier’s Medal for Arts, Heritage, Sport and Recreation"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/category/uncategorized/",
+     "text": "Funding Programs"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/funding-programs/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/funding-programs/active-living-and-wellness-fund-2026-27/",
+     "text": "Active Living and Wellness Fund"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/artsheritage/culture/funding-programs/arts-infrastructure-and-programming-fund/",
+     "text": "Arts Infrastructure and Programming Fund"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/financial-assistance/athletic-excellence-fund/",
+     "text": "Athletic Excellence Fund"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/financial-assistance/canada-games-grant/",
+     "text": "Canada Games Grant"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/funding-programs/cultural-events-fund/",
+     "text": "Cultural Events Fund"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/funding-programs/culture-economic-development-program-cedp/",
+     "text": "Cultural Economic Development Program (CEDP)"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/funding-programs/culture-economic-development-program-cedp/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/artsheritage/culture/funding-programs/arts-infrastructure-and-programming-fund/",
+     "text": "CEDP – Arts Infrastructure and Programming Fund"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/artsheritage/culture/funding-programs/cedp-arts/",
+     "text": "CEDP – Arts Component"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/artsheritage/culture/funding-programs/cedp-heritage/",
+     "text": "CEDP – Heritage Component"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/funding-programs/indigenous-culture-heritage-program/",
+     "text": "Indigenous Cultural Heritage Program"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/financial-assistance/kidsport/",
+     "text": "KidSport™"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/national-championship-travel-subsidy/",
+     "text": "National Championship Travel Subsidy"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/funding-programs/publishers-assistance-program/",
+     "text": "Publishers Assistance Program"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/financial-assistance/sport-championship-hosting-program/",
+     "text": "Sport Championship Hosting Program"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/funding-programs/tourism-market-readiness-subsidy-program/",
+     "text": "Tourism Market Readiness Subsidy Program"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/funding-programs/tourism-season-extension-program/",
+     "text": "Festivals and Events Partnership Program"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/financial-assistance/world-championship-travel-support-fund/",
+     "text": "World Championship Travel Support Fund"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/category/uncategorized/",
+     "text": "For Visitors/Travellers"
+    },
+    {
+     "url": "http://www.newfoundlandlabrador.com/",
+     "text": "Official Tourism Website"
+    },
+    {
+     "url": "http://parksnl.ca/",
+     "text": "Provincial Parks"
+    },
+    {
+     "url": "http://seethesites.ca/",
+     "text": "Provincial Historic Sites"
+    },
+    {
+     "url": "http://therooms.ca/",
+     "text": "The Rooms"
+    },
+    {
+     "url": "http://artsandculturecentre.com/",
+     "text": "Arts and Culture Centres"
+    },
+    {
+     "url": "http://pippypark.com/",
+     "text": "Pippy Park"
+    },
+    {
+     "url": "http://skimarble.com/",
+     "text": "Marble Mountain"
+    },
+    {
+     "url": "http://%20/",
+     "text": " "
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/",
+     "text": "Tourism"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/vision-2026/",
+     "text": "Vision 2026"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/category/uncategorized/",
+     "text": "Programs and Tools"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/programs-and-tools/",
+     "text": "Getting Started"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/programs-and-tools-marketing/",
+     "text": "Marketing"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-product-development/",
+     "text": "Tourism Product Development"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/registration/",
+     "text": "Accommodation Registration"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/research-assistance-services/",
+     "text": "Research Assistance"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/tourism-achievement-award/",
+     "text": "Tourism Achievement Award"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/visitor-and-market-insights/",
+     "text": "Visitor and Market Insights"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-product-development2/",
+     "text": "Tourism Product Development"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-product-development2/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-product-development2/major-event-attraction/",
+     "text": "Event Attraction"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/category/uncategorized/",
+     "text": "Marketing"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/marketing/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/marketing/brand-highlights/",
+     "text": "Brand Highlights"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/marketing/strategic-marketing-approach/",
+     "text": "Strategic Marketing Approach"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/tourism-division/marketing/tourism-marketing-strategy/",
+     "text": "Tourism Marketing Strategy"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/",
+     "text": "Recreation and Sport"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/",
+     "text": "Policy Documents"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/provincially-operated-pools/",
+     "text": "Provincially Operated Pools"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/recreation-and-sport-organizations/",
+     "text": "Recreation and Sport Organizations"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/film-television-and-recreation-branch/sport/",
+     "text": "Sport"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/sport/#msg",
+     "text": "Multi-Sport Games"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/canada-games/",
+     "text": "Canada Games"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/newfoundland-and-labrador-games/",
+     "text": "Newfoundland and Labrador Games"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/north-american-indigenous-games/",
+     "text": "North American Indigenous Games"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/concussion-in-sport/",
+     "text": "Concussion in Sport"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/sport/#sr",
+     "text": "Sport Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/provincially-operated-pools/newfoundland-and-labrador-sports-centre/",
+     "text": "Newfoundland and Labrador Sports Centre"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/recreation/",
+     "text": "Recreation"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/overview/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/recreation/programs-and-initiatives/",
+     "text": "Programs and Initiatives"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/physical-activity-overview/",
+     "text": "Physical Activity"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/physical-activity-overview/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/active-at-work-toolkit/",
+     "text": "Active At Work Toolkit"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/canadian-24-hour-movement-guidelines/",
+     "text": "Canadian 24-Hour Movement Guidelines"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/participaction-partnership/",
+     "text": "ParticipACTION Partnership"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/physical-literacy/",
+     "text": "Physical Literacy"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/health-care-provider-physical-activity-kit/",
+     "text": "Health Care Provider Physical Activity Kit"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/health-care-provider-physical-activity-kit/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/client-resources/",
+     "text": "Client Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/health-care-provider-resources/",
+     "text": "Health Care Provider Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/administrator-resources/",
+     "text": "Administrator Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/additional-resources/",
+     "text": "Additional Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/programs-and-initiatives/",
+     "text": "Programs and Initiatives"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/recreation-and-sport/recreation-and-sport-organizations/",
+     "text": "Recreation and Sport Organizations"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/home/parks/",
+     "text": "Provincial Parks"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/category/uncategorized/",
+     "text": "Arts and Heritage"
+    },
+    {
+     "url": "https://www.gov.nl.ca/tcar/artsheritage/",
+     "text": "Overview"
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.gov.nl.ca/eccc/natural-areas/gis-data/",
+   "status": 200,
+   "final_url": "https://www.gov.nl.ca/eccc/natural-areas/gis-data/",
+   "title": "GIS Data - Environment, Conservation and Climate Change",
+   "text": "Skip to content\nEnvironment, Conservation and Climate Change\nMyGovNL and Online Services\nSearch for:\nSearch\nHome\nEnvironment\nClimate Change\nPublications\nForms and Applications\nNews Releases\nAbout the Department\nContact\nEnvironment, Conservation and Climate Change > Natural Areas > GIS Data\nGIS Data\nGIS Data are available for download in an ESRI shapefile format and a Google Earth KMZ format. These files are updated on an as-needed basis. Use of these files is subject to the disclaimer. For more detailed information, please review the attribute and metadata information associated with the files, or contact the Policy, Planning and Natural Areas Division at naturalareas@gov.nl.ca.\nExisting Protected Areas\nProvincial Protected Areas – Government of Newfoundland and Labrador\nFederal, Municipal, and Private Protected Areas and OECMs\nNewfoundland and Labrador Canadian Heritage Rivers\nProposed Protected Areas\nTen Proposed Protected Area and Publicly Nominated Sites (2023)\nProposed Protected Areas Plan for the Island of Newfoundland Sites (2020)\nBackground data\nNatural Regions of Newfoundland\nNatural Regions of Labrador\nNewfoundland and Labrador Outline\nEXISTING PROTECTED AREAS\nTITLE: Provincial Protected Areas – Government of Newfoundland and Labrador\nDESCRIPTION: The protected areas of Newfoundland and Labrador under provincial jurisdiction can be divided into seven types. They are Wilderness Reserves, Ecological Reserves, Provincial Parks, Wildlife Reserves, Wildlife Parks, and Special Management Areas. These areas are reported in CPCAD and fall under one of the following pieces of legislation: Provincial Parks Act, Wilderness and Ecological Reserves Act, Wildlife Act and Lands Act.\nZip file – ESRI shapefile format – Provincial Protected Areas NL\nGoogle Earth KMZ format – Provincial Protected Areas NL\nLinks last updated on: October 02, 2026\n^ Top of Page\nTITLE: Federal, Municipal, and Private Protected Areas and OECMs\nDESCRIPTION: Federal, municipal and private protected areas and Other Effective Conservation Measures are recognized by the Government of Newfoundland and Labrador and reported to the Canadian Protected and Conserved Areas Database (CPCAD). To view shape files for these sites, please visit: https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/protected-conserved-areas-database.html.\nLinks last updated on: March 13, 2024\n^Top of Page\nTITLE: Newfoundland and Labrador Canadian Heritage Rivers\nDESCRIPTION: Newfoundland and Labrador has two Canadian Heritage Rivers: Bay du Nord Canadian Heritage River and Main River Canadian Heritage River. This designation does not provide legislative protection but does provide national recognition, supports protection under other legislation, and provides a framework for monitoring and reporting cultural, natural and recreational values.\nGoogle Earth KMZ format – Newfoundland and Labrador Canadian Heritage Rivers\nLinks last updated on: June 4, 2026\n^Top of Page\nPROPOSED PROTECTED AREAS\nTITLE: Ten Proposed Protected Areas Plan and Publicly Nominated Sites (2023)\nDESCRIPTION: In May 2023, the Department of Environment and Climate Change asked WERAC to move forward with public consultations on ten proposed sites. Priority is being placed on sites identified by the Wilderness and Ecological Reserve Advisory Council’s 2021 priority assessment. Sites include nine proposed protected areas described in the Home For Nature report (Ripple Pond; Halls Gullies; Cape Norman; Watts Point Extension; Facheaux Bay; Conne River North; Stony Lake; Rodney Pond; and Cape St. George) and a tenth site, Indian Arm Brook.\nZIP File – ESRI Shape File Format – Ten Proposed Sites 2023\nGoogle Earth KMZ File Format – Ten Proposed Sites 2023\nFiles last updated on: December 11, 2023\n^Top of Page\nTITLE: Proposed Protected Areas Plan for the Island of Newfoundland Sites (2020)\nDESCRIPTION: In 2020, WERAC released the draft Protected Areas Plan for the Island of Newfoundland for public review. The plan proposed the protection of 32 areas, including 24 new protected areas, the expansion of two protected areas and the creation of six transitional reserves. The boundaries for these proposed reserves are only preliminary and may shift as we engage with communities to understand their needs and aspirations for the area’s future. More information on the proposed Protected Areas Plan and supporting consultation documentation is available at: https://www.gov.nl.ca/eccc/homefornature/protected-areas-plan-island/.\nNASP_2020_official_data_publicly_released_ESRI_Shapefile_Format\nNASP_2020_official_data_publicly_released_Google_Earth_Format\nLinks last updated on: March 14, 2024\n^Top of Page\nBACKGROUND DATA\nTITLE: Natural Regions of Newfoundland\nDESCRIPTION: Ecoregions are areas that have distinctive, recurring patterns of vegetation and soil development, that are determined and controlled by local climate and geology. Also called “natural regions,” ecoregions differ from each other in their combinations of plant communities, landscapes, geology, and other features. Nine ecoregions have been identified on the island of Newfoundland, thanks to the founding work of Dr. A.W.H. Damman and then Susan J. Meades. In addition, several of the Island’s ecoregions can be further broken down into 21 subregions.\nGNL_Newfoundland_Ecoregions_ESRI_Shapefile_Format\nGNL_Newfoundland_Ecoregions_Google_Earth_Format\nFiles last updated on: March 13, 2024\n^Top of Page\nTITLE: Natural Regions of Labrador\nDESCRIPTION: Ecoregions are areas that have distinctive, recurring patterns of vegetation and soil development, that are determined and controlled by local climate and geology. Also called “natural regions,” ecoregions differ from each other in their combinations of plant communities, landscapes, geology, and other features. In Labrador, eleven ecoregions and 39 subregions have been identified through invaluable work of the Labrador Conservation Blueprint, as described in the Labrador Nature Atlas.\nGNL_Labrador_Ecoregions_ESRI_Shapefile_Format\nGNL_Labrador_Ecoregions_Google_Earth_Format\nLinks last updated on: March 13, 2024\n^Top of Page\nTITLE: NL Outline\nDESCRIPTION: The Government of Newfoundland and Labrador plans to make an updated provincial coastline outline available to the public. For more information, please contact naturalareas@gov.nl.ca.\nNL Outline (to be added)\nFiles last updated on: October 2, 2026\n^Top of Page\nOpens in new window\nOpens in new window\nOpens in new window\nOpens in new window\nOpens in new window\nContact\nEnvironment and Climate Change\nP.O. Box 8700\nSt. John’s, NL A1B 4J6\nEmail: ECCInfo@gov.nl.ca\nDepartment Links\nAbout the Department\nBranches and Divisions\nAgencies\nLegislation\nPublications\nContact\nX | @ECCC_GovNL\nGovernment Links\nGovernment\nTopics\nHouse of Assembly\nNews Releases\nVisitors\nContact\nHonourable Andrea Barbour\nMandate Letter\nMinister’s Office\nThis page and all contents are copyright, Government of Newfoundland and Labrador, all rights reserved.\nDisclaimer/Copyright/Privacy Statement.\n×\nGIS Disclaimer\nThe Data is licensed as is where is. The Government of Newfoundland and Labrador makes no representations nor gives any warranties or guarantees to the User concerning the accuracy of the information contained in the files. Users should independently verify all information intended to be relied upon.\nThe Government of Newfoundland and Labrador reserves the right to alter and/or modify the Data with no obligation to notify the User of such changes.\nThe Government of Newfoundland and Labrador shall not be liable in respect of any claim, demand, action or cause of action alleging any loss, injury, matter or damages whether direct or indirect, which may result from the User’s use of the Data or in any way relating to this Data. The Government of Newfoundland and Labrador shall not be liable for any loss of profits or contracts or any other consequential loss of any kind resulting from any defect in the Data.\nView GIS Data",
+   "links": [
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/gis-data/#content",
+     "text": "Skip to content"
+    },
+    {
+     "url": "https://www.gov.nl.ca/",
+     "text": ""
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/",
+     "text": "Environment, Conservation and Climate Change"
+    },
+    {
+     "url": "https://www.gov.nl.ca/onlineservices",
+     "text": "MyGovNL and Online Services"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/environment/",
+     "text": "Environment"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/environment/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/permits-licenses/permits/",
+     "text": "Permits, Approvals and Licences"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/",
+     "text": "Water Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/drinking-water-and-groundwater/",
+     "text": "Drinking Water and Groundwater"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/community-water-and-wastewater-and-operator-training/",
+     "text": "Community Water and Wastewater, and Operator Training"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/water-and-climate-monitoring/",
+     "text": "Water and Climate Monitoring"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/flooding/",
+     "text": "Flooding"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/permits-licenses-acts-and-guidelines/",
+     "text": "Permits, Licenses, Acts and Guidelines"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/waterrights/",
+     "text": "Water Rights, Availability, Investigations and Complaints"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/maps-gis/",
+     "text": "Maps / GIS"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/damsafety/",
+     "text": "Dam Safety"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/reports-publications-and-outreach/",
+     "text": "Reports, Publications and Outreach"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/environmental-permits/",
+     "text": "FAQ"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/whatsnew/",
+     "text": "News and Highlights"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/contact/wrmd/",
+     "text": "Contact"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-assessment/",
+     "text": "Environmental Assessment"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-assessment/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-assessment/projects-list/",
+     "text": "Projects"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-assessment/public-notices/",
+     "text": "Public Notices"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/",
+     "text": "Pollution Prevention"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/science/",
+     "text": "Environmental Science and Monitoring"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/ics/",
+     "text": "Industrial Compliance"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/impactedsites/",
+     "text": "Impacted Sites Management"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/pesticides/",
+     "text": "Pesticide Control Section"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/petroleum/",
+     "text": "Petroleum Storage and Management"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/waste/",
+     "text": "Waste Management"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/wastemanagement/",
+     "text": "Waste Management Infrastructure"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/fees/",
+     "text": "Fees"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-edu/",
+     "text": "Educational Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/",
+     "text": "Climate Change"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/",
+     "text": "Climate Change Division"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/issues/",
+     "text": "About the Issues"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/action-plans/",
+     "text": "Action Plans"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/climate-data/",
+     "text": "Climate Data"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/greenhouse-gas-data/",
+     "text": "Greenhouse Gas Information"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/programs/",
+     "text": "Programs and Tools"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/publications/",
+     "text": "Publications"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/links/",
+     "text": "Links "
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/office/",
+     "text": "About the Division"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/office/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/office/contact/",
+     "text": "Contact Information"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change.html",
+     "text": "Environment Canada – Climate ChangeOpens in new window"
+    },
+    {
+     "url": "https://www.ipcc.ch/",
+     "text": "Intergovernmental Panel on Climate ChangeOpens in new window"
+    },
+    {
+     "url": "http://www.unfccc.int/",
+     "text": "United Nations Framework Convention on Climate ChangeOpens in new window"
+    },
+    {
+     "url": "https://maps.gov.nl.ca/water/",
+     "text": "Water Resources Portal"
+    },
+    {
+     "url": "https://wci-inc.org//",
+     "text": "Western Climate InitiativeOpens in new window"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/maps/",
+     "text": "Maps and GIS Data"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/policy-planning/",
+     "text": "Policy & Strategic Planning"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/",
+     "text": "Natural Areas"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/",
+     "text": "Natural Areas Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/apa/",
+     "text": "Protected Areas in Newfoundland and Labrador"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/apa/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/apa/panl/",
+     "text": "Our Protected Areas"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/homefornature/",
+     "text": "A Home for Nature: Protected Areas Planning"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/homefornature/pas/",
+     "text": "Protected Area Strategy"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/apa/eco/",
+     "text": "Natural Regions"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/wer/",
+     "text": "Wilderness and Ecological Reserves"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/wer/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/wer/eres/",
+     "text": "Ecological Reserves"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/wer/wres/",
+     "text": "Wilderness Reserves"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/wer/find/",
+     "text": "Find a Reserve"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/wer/rules/",
+     "text": "Rules & Regulations"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/wer/permits/",
+     "text": "Permits"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/wer/sr/",
+     "text": "Science & Research"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/wer/act/",
+     "text": "The WER Act"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/wer/adc/",
+     "text": "Wilderness and Ecological Reserves Advisory Council (WERAC)"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/rivers/",
+     "text": "Heritage Rivers"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/rivers/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/rivers/baydunord/",
+     "text": "Bay du Nord Canadian Heritage River"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/rivers/mainriver/",
+     "text": "Main River Canadian Heritage River"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/natural-areas/publications/",
+     "text": "Publications"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/about/",
+     "text": "About Us"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/about/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/contact/naturalareas/",
+     "text": "Contact"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/about/partners/",
+     "text": "Our Partners"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/publications/",
+     "text": "Publications"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/publications/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/publications/annual-reports/",
+     "text": "Annual Reports"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/publications/activity-plans/",
+     "text": "Activity Plans"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/publications/strategic-plans/",
+     "text": "Strategic Plans"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/publications/pswms/",
+     "text": "Provincial Solid Waste Management Strategy"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/publications/env-protection/",
+     "text": "Environmental Protection"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/forms/",
+     "text": "Forms and Applications"
+    },
+    {
+     "url": "https://www.gov.nl.ca/releases/r/",
+     "text": "News Releases"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/",
+     "text": "About the Department"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/minister/",
+     "text": "Minister"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/branches/",
+     "text": "Branches and Divisions"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/branches/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/branches/executive/",
+     "text": "Executive"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/branches/communications/",
+     "text": "Communications"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/branches/environment/",
+     "text": "Environment"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/branches/environment/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/envassessment/",
+     "text": "Environmental Assessment Division"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/pollprevention/",
+     "text": "Pollution Prevention Division"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres-2/",
+     "text": "Water Resources Management Division"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/",
+     "text": "Climate Change"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/agencies/",
+     "text": "Agencies"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/legislation/",
+     "text": "Legislation"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/publications/",
+     "text": "Publications"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/contact/",
+     "text": "Contact Information"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/contact/",
+     "text": "Contact"
+    },
+    {
+     "url": "https://www.gov.nl.ca/",
+     "text": ""
+    },
+    {
+     "url": "https://www.gov.nl.ca/",
+     "text": ""
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/environment/",
+     "text": "Environment"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/environment/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/permits-licenses/permits/",
+     "text": "Permits, Approvals and Licences"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/",
+     "text": "Water Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/drinking-water-and-groundwater/",
+     "text": "Drinking Water and Groundwater"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/community-water-and-wastewater-and-operator-training/",
+     "text": "Community Water and Wastewater, and Operator Training"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/water-and-climate-monitoring/",
+     "text": "Water and Climate Monitoring"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/flooding/",
+     "text": "Flooding"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/permits-licenses-acts-and-guidelines/",
+     "text": "Permits, Licenses, Acts and Guidelines"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/waterrights/",
+     "text": "Water Rights, Availability, Investigations and Complaints"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/maps-gis/",
+     "text": "Maps / GIS"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/damsafety/",
+     "text": "Dam Safety"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/reports-publications-and-outreach/",
+     "text": "Reports, Publications and Outreach"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/environmental-permits/",
+     "text": "FAQ"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/waterres/whatsnew/",
+     "text": "News and Highlights"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/department/contact/wrmd/",
+     "text": "Contact"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-assessment/",
+     "text": "Environmental Assessment"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-assessment/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-assessment/projects-list/",
+     "text": "Projects"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-assessment/public-notices/",
+     "text": "Public Notices"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/",
+     "text": "Pollution Prevention"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/science/",
+     "text": "Environmental Science and Monitoring"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/ics/",
+     "text": "Industrial Compliance"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/impactedsites/",
+     "text": "Impacted Sites Management"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/pesticides/",
+     "text": "Pesticide Control Section"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/petroleum/",
+     "text": "Petroleum Storage and Management"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-protection/waste/",
+     "text": "Waste Management"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/wastemanagement/",
+     "text": "Waste Management Infrastructure"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/fees/",
+     "text": "Fees"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/env-edu/",
+     "text": "Educational Resources"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/",
+     "text": "Climate Change"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/",
+     "text": "Climate Change Division"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/issues/",
+     "text": "About the Issues"
+    },
+    {
+     "url": "https://www.gov.nl.ca/eccc/occ/action-plans/",
+     "text": "Action Plans"
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures",
+   "status": 202,
+   "final_url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures",
+   "title": "Territoires fauniques structurés (TFS) - Jeu de données - Données Québec",
+   "text": "Skip to main content\nPasser au contenu\nPartenariat Données Québec\nNous joindre\nJEUX DE DONNÉES\nORGANISATIONS\nAPPLICATIONS\nCARTE INTERACTIVE\nGUIDES ET INFORMATIONS\nAccueil\nOrganisations\nGouvernement du Québec\nMinistère de...\nTerritoires fauniques...\nOrganisation\nTous les jeux de données pour Gouvernement du Québec\nPartager\n(X- Twitter)\nFacebook\nLinkedin\nResponsabilité\nLes diffuseurs ne peuvent garantir l'exactitude, la précision ou l'intégralité des données mises à votre disposition sur ce site.\nJeu de données\nCatégories\nApplications\nTerritoires fauniques structurés (TFS)\nLe gouvernement désigne et encadre les territoires fauniques. Ces territoires sont établis afin de permettre une mise en valeur de la faune et d'assurer sa conservation. Des activités récréatives peuvent accessoirement y être pratiquées.\nChacun d’entre eux possède un cadre législatif et réglementaire qui lui est propre et qui détermine les conditions à respecter quant aux activités permises, aux conditions d’utilisation du territoire et aux mesures de conservation de la faune et des habitats à adopter. En contrepartie, les organismes gestionnaires s’assurent de respecter ces règles et donnent accès à la population à leur territoire.\nLes fichiers géométriques (polygones) des territoires faun…\nDonnées et ressources (6)\nDonnées\nTerritoires fauniques structurés (TFS) en SHP\nSHP\n(23 Mo)\nDernière modification : 2025-04-10\nLe gouvernement désigne et encadre les territoires fauniques. Ces territoires sont établis afin de permettre une mise...\nExplorer\nTerritoires fauniques structurés (TFS) en GDB\nFGDB\n(12 Mo)\nDernière modification : 2025-04-10\nLe gouvernement désigne et encadre les territoires fauniques. Ces territoires sont établis afin de permettre une mise...\nExplorer\nTerritoires fauniques structurés (TFS) en GeoJSON\nGeoJSON\n(127 Mo)\nDernière modification : 2025-04-10\nLe gouvernement désigne et encadre les territoires fauniques. Ces territoires sont établis afin de permettre une mise...\nExplorer\nTerritoires fauniques structurés (TFS) en GPKG\nGPKG\n(42 Mo)\nDernière modification : 2025-04-10\nLe gouvernement désigne et encadre les territoires fauniques. Ces territoires sont établis afin de permettre une mise...\nExplorer\nTerritoires fauniques structurés (TFS) en SQLite\nSQLite\n(47 Mo)\nDernière modification : 2025-04-10\nLe gouvernement désigne et encadre les territoires fauniques. Ces territoires sont établis afin de permettre une mise...\nExplorer\nDocumentation\nDictionnaire des métadonnées des territoires fauniques structurés (TFS)\nPDF\n(1 Mo)\nDernière modification : 2025-04-10\nDescription des champs des territoires fauniques structurés (TFS)\nExplorer\nFiche descriptive du jeu de données\nOrganisation Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Parcs\nCatégories Environnement, ressources naturelles et énergie\nÉtiquettes AFC\nAire faunique communautaire\nFaune\nPADE\nPLA\nPetit lac aménagé\nPourvoirie avec droits exclusifs\nRefuge faunique\nRéserve faunique\nSMAFP\nZEC\nZone exploitation contrôlée\nLicence Attribution, pas d’utilisation commerciale, pas d’oeuvre dérivée (CC-BY-NC-ND 4.0)\nCitation recommandée MINISTÈRE DE L’ENVIRONNEMENT, DE LA LUTTE CONTRE LES CHANGEMENTS CLIMATIQUES, DE LA FAUNE ET DES PARCS. Territoires fauniques structurés (TFS), [Jeu de données], dans Données Québec, 2024, mis à jour le 04 août 2025. [https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures], (consulté le 30 octobre 2026).\nResponsable Direction principale des territoires fauniques et des milieux humides (DPTFMH)\nCourriel renseignements.faune@environnement.gouv.qc.ca\nFréquence de mise à jour Irrégulier\nCouverture géographique Tout le Québec\nCouverture temporelle 2024\nInformations complémentaires\nLes différents fichiers contiennent les champs ci-dessous, pour lesquels sont colligées les informations suivantes :\nNO_TOR : Code du Territoire Officialisé au Registre\nDE_TSJP : Description du Territoire à Statut Juridique Particulier\nNM_TSJP : Nom Territoire à Statut Juridique Particulier\nVA_INFOR : Valeur Informative\nNM_ARP_GEO : Nom de l’arpenteur\nNO_MIN_ARP : Numéro de minute au greffe\nLes données (polygones) sont présentées selon le système de coordonnées projetées conique conforme de Lambert du Québec (EPSG : 32198)\nSite internet de l'organisation ou de référence https://www.quebec.ca/agriculture-environnement-et-ressources-naturelles/faune/territoires-fauniques\nRespect des lignes directrices 80.0%\nDernière modification (métadonnées ou ressources) 2025-08-04 14:42 EDT\nDiffusion initiale 2024-12-03 15:43 EST\nIdentifiant numérique d'objet (DOI)\nIdentifiant 07560061-6c58-481d-a79a-14fdf91289ed\nUtilisation des témoins de connexion\nNous utilisons des témoins de connexion (cookies) qui permettent d’assurer le bon fonctionnement de notre site Web, d’améliorer votre expérience de navigation et d’évaluer la performance de notre site. Pour plus d’information, vous pouvez consulter notre Politique de confidentialité.\nJe comprends\nEN SAVOIR PLUS\nLicence d'utilisation\nStatistiques\nInterface de programmation d'application (API)\nQuoi de neuf?\nFoire aux questions (FAQ)\nPARTENARIAT\nLignes directrices\nNormalisation des données\nDonnées ouvertes de référence\nPolitique-cadre municipale\nHackQC\nNOUS JOINDRE\nNOUS SUIVRE\nÀ propos Accessibilité Plan du site Consignes de sécurité Politique de confidentialité\n© Gouvernement du Québec, 2026\nSondage Données Québec\nVous utilisez des données? Vous avez des idées pour améliorer Données Québec? Prenez 5 minutes pour vous exprimer sur Consultation Québec.\nJ'y vais!\nNon, merci\nL'URL du service Web a été copié dans le presse-papier",
+   "links": [
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#field-giant-search",
+     "text": "Passer au contenu"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/",
+     "text": ""
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/",
+     "text": "JEUX DE DONNÉES"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/organization/",
+     "text": "ORGANISATIONS"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/showcase",
+     "text": "APPLICATIONS"
+    },
+    {
+     "url": "https://www.carte-igo.donneesquebec.ca/",
+     "text": "CARTE INTERACTIVE"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "GUIDES ET INFORMATIONS"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/explorer",
+     "text": "EXPLORER les données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/exploiter",
+     "text": "EXPLOITER les données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/diffusion",
+     "text": "DIFFUSER des données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/nous-joindre-renseignements-generaux",
+     "text": "Nous joindre"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset?sort=metadata_created+desc",
+     "text": "JEUX DE DONNÉES"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/organization",
+     "text": "ORGANISATIONS"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/applications/",
+     "text": "APPLICATIONS"
+    },
+    {
+     "url": "https://www.carte-igo.donneesquebec.ca/",
+     "text": "CARTE INTERACTIVE"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "GUIDES ET INFORMATIONS "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/explorer",
+     "text": "EXPLORER les données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/exploiter",
+     "text": "EXPLOITER les données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/diffusion",
+     "text": "DIFFUSER des données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/",
+     "text": "Accueil"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/organization/",
+     "text": "Organisations"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset?q=&extras_organisation_principale=gouvernement-du-quebec",
+     "text": "Gouvernement du Québec"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/organization/developpement-durable-environnement-et-lutte-contre-les-changements-climatiques",
+     "text": "Ministère de..."
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures",
+     "text": "Territoires fauniques..."
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/organization/developpement-durable-environnement-et-lutte-contre-les-changements-climatiques",
+     "text": ""
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset?q=&extras_organisation_principale=gouvernement-du-quebec",
+     "text": " Tous les jeux de données pour Gouvernement du Québec"
+    },
+    {
+     "url": "https://twitter.com/share?url=https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures",
+     "text": " (X- Twitter)"
+    },
+    {
+     "url": "https://www.facebook.com/sharer.php?u=https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures",
+     "text": " Facebook"
+    },
+    {
+     "url": "https://www.linkedin.com/shareArticle?mini=true&url=https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures&title=shared%20from%20Donn%C3%A9es%20Qu%C3%A9bec",
+     "text": " Linkedin"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/licence/#responsabilite",
+     "text": ""
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures",
+     "text": " Jeu de données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/groups/territoires-fauniques-structures",
+     "text": " Catégories"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/showcases/territoires-fauniques-structures",
+     "text": " Applications"
+    },
+    {
+     "url": "https://www.quebec.ca/agriculture-environnement-et-ressources-naturelles/faune/territoires-fauniques",
+     "text": "territoires fauniques"
+    },
+    {
+     "url": "https://www.pourvoiries.com/",
+     "text": "pourvoirie"
+    },
+    {
+     "url": "https://www.sepaq.com/rf/",
+     "text": "Société des établissements de plein air du Québec"
+    },
+    {
+     "url": "https://www.terfa.ca/fr/terfa/reserve-faunique-duchenier/",
+     "text": "Duchénier"
+    },
+    {
+     "url": "https://cgrmp.com/duniere/description.html",
+     "text": "Dunière"
+    },
+    {
+     "url": "https://www.decrochezcommejamais.com/fr/membres/corporation-nibiischii/294/pourvoiries/",
+     "text": "Lacs Albanel-Mistassini-et-Waconichi"
+    },
+    {
+     "url": "https://www.decrochezcommejamais.com/fr/membres/corporation-nibiischii/307/pourvoiries/",
+     "text": "Assinica"
+    },
+    {
+     "url": "https://reseauzec.com/",
+     "text": "zones d’exploitation contrôlée (zecs)"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#less",
+     "text": ""
+    },
+    {
+     "url": "https://www.quebec.ca/agriculture-environnement-et-ressources-naturelles/faune/territoires-fauniques",
+     "text": "territoires fauniques"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#more",
+     "text": ""
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/546e9c02-0175-42ff-af73-71c5f3564d2c",
+     "text": "Territoires fauniques structurés (TFS) en SHP\nSHP"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "Explorer"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/546e9c02-0175-42ff-af73-71c5f3564d2c",
+     "text": "\n      \n        \n        Plus d'information\n      \n    "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "\n          \t  \n          Télécharger\n        "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/5c601c90-fe15-4a1a-9d71-a8829f10bb99",
+     "text": "Territoires fauniques structurés (TFS) en GDB\nFGDB"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "Explorer"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/5c601c90-fe15-4a1a-9d71-a8829f10bb99",
+     "text": "\n      \n        \n        Plus d'information\n      \n    "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "\n          \t  \n          Télécharger\n        "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/cba9752b-edb4-4827-8d72-a8bce8d41f6e",
+     "text": "Territoires fauniques structurés (TFS) en GeoJSON\nGeoJSON"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "Explorer"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/cba9752b-edb4-4827-8d72-a8bce8d41f6e",
+     "text": "\n      \n        \n        Plus d'information\n      \n    "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "\n          \t  \n          Télécharger\n        "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/a63f2c35-7d24-4910-a32d-f3c74bb08d68",
+     "text": "Territoires fauniques structurés (TFS) en GPKG\nGPKG"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "Explorer"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/a63f2c35-7d24-4910-a32d-f3c74bb08d68",
+     "text": "\n      \n        \n        Plus d'information\n      \n    "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "\n          \t  \n          Télécharger\n        "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/138f772c-79e2-481b-bf3a-2c6c19d1ec04",
+     "text": "Territoires fauniques structurés (TFS) en SQLite\nSQLite"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "Explorer"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/138f772c-79e2-481b-bf3a-2c6c19d1ec04",
+     "text": "\n      \n        \n        Plus d'information\n      \n    "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "\n          \t  \n          Télécharger\n        "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/4e423be1-dbbd-44a4-8ccc-976ffc6f31de",
+     "text": "Dictionnaire des métadonnées des territoires fauniques structurés (TFS)\nPDF"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "Explorer"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures/resource/4e423be1-dbbd-44a4-8ccc-976ffc6f31de",
+     "text": "\n      \n        \n        Plus d'information\n      \n    "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "\n          \t  \n          Télécharger\n        "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?organization=developpement-durable-environnement-et-lutte-contre-les-changements-climatiques",
+     "text": "Ministère de l’Environnement, de la Lutte contre les changements climatiques, de la Faune et des Par"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/group/environnement-ressources-naturelles-energie",
+     "text": "Environnement, ressources naturelles et énergie"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=AFC",
+     "text": "AFC"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=Aire+faunique+communautaire",
+     "text": "Aire faunique communautaire"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=Faune",
+     "text": "Faune"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=PADE",
+     "text": "PADE"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=PLA",
+     "text": "PLA"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=Petit+lac+am%C3%A9nag%C3%A9",
+     "text": "Petit lac aménagé"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=Pourvoirie+avec+droits+exclusifs",
+     "text": "Pourvoirie avec droits exclusifs"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=Refuge+faunique",
+     "text": "Refuge faunique"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=R%C3%A9serve+faunique",
+     "text": "Réserve faunique"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=SMAFP",
+     "text": "SMAFP"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=ZEC",
+     "text": "ZEC"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/?tags=Zone+exploitation+contr%C3%B4l%C3%A9e",
+     "text": "Zone exploitation contrôlée"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/licence/#cc-by-nc-nd",
+     "text": " Attribution, pas d’utilisation commerciale, pas d’oeuvre dérivée (CC-BY-NC-ND 4.0)"
+    },
+    {
+     "url": "https://www.quebec.ca/agriculture-environnement-et-ressources-naturelles/faune/territoires-fauniques",
+     "text": "https://www.quebec.ca/agriculture-environnement-et-ressources-naturelles/faune/territoires-fauniques"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/lignes-directrices-sur-la-diffusion-de-donnees-ouvertes/",
+     "text": "Respect des lignes directrices"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/politique-de-confidentialite/",
+     "text": "Politique de confidentialité"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/territoires-fauniques-structures#",
+     "text": "Je comprends"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/licence/",
+     "text": "Licence d'utilisation"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/stats/",
+     "text": "Statistiques"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/page-api/",
+     "text": "Interface de programmation d'application (API)"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/actualites/",
+     "text": "Quoi de neuf?"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/foire-aux-questions/",
+     "text": "Foire aux questions (FAQ)"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/lignes-directrices-sur-la-diffusion-de-donnees-ouvertes/",
+     "text": "Lignes directrices"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/normalisation-des-donnees/",
+     "text": "Normalisation des données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/donnees-ouvertes-de-reference",
+     "text": "Données ouvertes de référence"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/politique-cadre/",
+     "text": "Politique-cadre municipale"
+    },
+    {
+     "url": "https://hackqc.donneesquebec.ca/",
+     "text": "HackQC"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/nous-joindre-renseignements-generaux/",
+     "text": ""
+    },
+    {
+     "url": "https://twitter.com/GouvOuvertQc",
+     "text": ""
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/feeds/dataset.atom",
+     "text": ""
+    },
+    {
+     "url": "https://www.linkedin.com/groups/12703445/",
+     "text": ""
+    },
+    {
+     "url": "https://www.youtube.com/channel/UC5IDqxFhKrBKDZXHID7cyEw",
+     "text": ""
+    },
+    {
+     "url": "https://www.donneesquebec.ca/a-propos/",
+     "text": "À propos"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/accessibilite/",
+     "text": "Accessibilité"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/plan-du-site/",
+     "text": "Plan du site"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/consignes-de-securite/",
+     "text": "Consignes de sécurité"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/politique-de-confidentialite/",
+     "text": "Politique de confidentialité"
+    },
+    {
+     "url": "https://quebec.ca/",
+     "text": ""
+    },
+    {
+     "url": "https://www.quebec.ca/droit-auteur",
+     "text": "© Gouvernement du Québec, 2026"
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb",
+   "status": 200,
+   "final_url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb",
+   "title": "Couche des territoires récréatifs du Québec - Service REST - Données Québec",
+   "text": "Skip to main content\nPasser au contenu\nPartenariat Données Québec\nNous joindre\nJEUX DE DONNÉES\nORGANISATIONS\nAPPLICATIONS\nCARTE INTERACTIVE\nGUIDES ET INFORMATIONS\nAccueil\nOrganisations\nGouvernement du Québec\nMinistère des Ressources...\nCouche des territoires...\nService REST\nRessources additionelles\nService REST\nLes données sur les territoires récréatifs du Québec sont compilées à partir des plans et des descriptions techniques officiels, et agrégées en un seul référentiel cartographique. La mise à jour des données est généralement effectuée une fois l'an.\nPrincipales composantes :\nAires fauniques communautaires (AFC);\nEntentes particulières avec les autochtones;\nPetits lacs aménagés (PLA);\nPourvoiries avec droits exclusifs;\nTerritoires exclusifs de chasse;\nRéserves fauniques;\nZones d’exploitation contrôlée (zecs);\nParcs nationaux du Québec; et du Canada;\nParcs régionaux;\nParcs marins;\nRéserves écologiques;\nRefuges fauniques;\nRefuges d’oiseaux migrateurs (ROM);\nRéserves nationales de faune;\nForêt …\nSource: Couche des territoires récréatifs du Québec\nCopier l'URL\nEsriREST\nLe contenu du fichier peut ne pas s'afficher si celui-ci est trop volumineux ou s'il comprend des problèmes de structure. Il est néanmoins disponible pour le téléchargement avec le bouton Télécharger.\nPour toutes questions sur ce jeu de données, veuillez communiquer avec le diffuseur à cette adresse : geoboutique@mrnf.gouv.qc.ca.\nFiche descriptive de la ressource\nDernière modification (fichier ou lien) 2026-08-25 08:00 EDT\nDiffusion initiale 2020-03-27 07:54 EDT\nType de ressource Service web\nTaille du Fichier\nSource (URL)\nhttps://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/\nRespect des lignes directrices Format : EsriREST\nLicence : Attribution (CC-BY 4.0)\nDescription des champs : Fournie en tant que ressource\nConsidérations fichiers : Conforme ou non-applicable\nConsidérations données : Conforme ou non-applicable\nIdentifiant 713632e4-240c-4299-a40e-dc0431cf6bbb\nUtilisation des témoins de connexion\nNous utilisons des témoins de connexion (cookies) qui permettent d’assurer le bon fonctionnement de notre site Web, d’améliorer votre expérience de navigation et d’évaluer la performance de notre site. Pour plus d’information, vous pouvez consulter notre Politique de confidentialité.\nJe comprends\nEN SAVOIR PLUS\nLicence d'utilisation\nStatistiques\nInterface de programmation d'application (API)\nQuoi de neuf?\nFoire aux questions (FAQ)\nPARTENARIAT\nLignes directrices\nNormalisation des données\nDonnées ouvertes de référence\nPolitique-cadre municipale\nHackQC\nNOUS JOINDRE\nNOUS SUIVRE\nÀ propos Accessibilité Plan du site Consignes de sécurité Politique de confidentialité\n© Gouvernement du Québec, 2026\nSondage Données Québec\nVous utilisez des données? Vous avez des idées pour améliorer Données Québec? Prenez 5 minutes pour vous exprimer sur Consultation Québec.\nJ'y vais!\nNon, merci\nL'URL du service Web a été copié dans le presse-papier",
+   "links": [
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb#content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb#field-giant-search",
+     "text": "Passer au contenu"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/",
+     "text": ""
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/",
+     "text": "JEUX DE DONNÉES"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/organization/",
+     "text": "ORGANISATIONS"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/showcase",
+     "text": "APPLICATIONS"
+    },
+    {
+     "url": "https://www.carte-igo.donneesquebec.ca/",
+     "text": "CARTE INTERACTIVE"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb#",
+     "text": "GUIDES ET INFORMATIONS"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/explorer",
+     "text": "EXPLORER les données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/exploiter",
+     "text": "EXPLOITER les données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/diffusion",
+     "text": "DIFFUSER des données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/nous-joindre-renseignements-generaux",
+     "text": "Nous joindre"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset?sort=metadata_created+desc",
+     "text": "JEUX DE DONNÉES"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/organization",
+     "text": "ORGANISATIONS"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/applications/",
+     "text": "APPLICATIONS"
+    },
+    {
+     "url": "https://www.carte-igo.donneesquebec.ca/",
+     "text": "CARTE INTERACTIVE"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb#",
+     "text": "GUIDES ET INFORMATIONS "
+    },
+    {
+     "url": "https://www.donneesquebec.ca/explorer",
+     "text": "EXPLORER les données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/exploiter",
+     "text": "EXPLOITER les données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/diffusion",
+     "text": "DIFFUSER des données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/",
+     "text": "Accueil"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/organization/",
+     "text": "Organisations"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset?q=&extras_organisation_principale=gouvernement-du-quebec",
+     "text": "Gouvernement du Québec"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/organization/mrn",
+     "text": "Ministère des Ressources..."
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec",
+     "text": "Couche des territoires..."
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb",
+     "text": "Service REST"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/73093d38-c975-4cb6-8faa-dacf1508b21c",
+     "text": "FGDB - Territoires récréatifs du Québec ..."
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/92eff1f3-c13b-41c4-ab18-7125bf9b2c33",
+     "text": "PDF - Historique des modifications"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/229322ef-eca2-4ae9-a511-ba599bc2745e",
+     "text": "PDF - Structure physique des données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/680ba598-ade3-4b2e-9442-6d74ecf52953",
+     "text": "WMS - Service WMS"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/5626ea86-f02a-468d-8dca-a1884748a561",
+     "text": "HTML - Carte interactive des territoires récréatifs"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb",
+     "text": "EsriREST - Service REST"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb#less",
+     "text": ""
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb#more",
+     "text": ""
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec",
+     "text": "Couche des territoires récréatifs du Québec"
+    },
+    {
+     "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/",
+     "text": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/lignes-directrices-sur-la-diffusion-de-donnees-ouvertes/",
+     "text": "Respect des lignes directrices"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/licence/#cc-by",
+     "text": " Attribution (CC-BY 4.0)"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/politique-de-confidentialite/",
+     "text": "Politique de confidentialité"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec/resource/713632e4-240c-4299-a40e-dc0431cf6bbb#",
+     "text": "Je comprends"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/licence/",
+     "text": "Licence d'utilisation"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/stats/",
+     "text": "Statistiques"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/page-api/",
+     "text": "Interface de programmation d'application (API)"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/actualites/",
+     "text": "Quoi de neuf?"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/foire-aux-questions/",
+     "text": "Foire aux questions (FAQ)"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/lignes-directrices-sur-la-diffusion-de-donnees-ouvertes/",
+     "text": "Lignes directrices"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/normalisation-des-donnees/",
+     "text": "Normalisation des données"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/donnees-ouvertes-de-reference",
+     "text": "Données ouvertes de référence"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/politique-cadre/",
+     "text": "Politique-cadre municipale"
+    },
+    {
+     "url": "https://hackqc.donneesquebec.ca/",
+     "text": "HackQC"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/nous-joindre-renseignements-generaux/",
+     "text": ""
+    },
+    {
+     "url": "https://twitter.com/GouvOuvertQc",
+     "text": ""
+    },
+    {
+     "url": "https://www.donneesquebec.ca/recherche/feeds/dataset.atom",
+     "text": ""
+    },
+    {
+     "url": "https://www.linkedin.com/groups/12703445/",
+     "text": ""
+    },
+    {
+     "url": "https://www.youtube.com/channel/UC5IDqxFhKrBKDZXHID7cyEw",
+     "text": ""
+    },
+    {
+     "url": "https://www.donneesquebec.ca/a-propos/",
+     "text": "À propos"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/accessibilite/",
+     "text": "Accessibilité"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/plan-du-site/",
+     "text": "Plan du site"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/consignes-de-securite/",
+     "text": "Consignes de sécurité"
+    },
+    {
+     "url": "https://www.donneesquebec.ca/politique-de-confidentialite/",
+     "text": "Politique de confidentialité"
+    },
+    {
+     "url": "https://quebec.ca/",
+     "text": ""
+    },
+    {
+     "url": "https://www.quebec.ca/droit-auteur",
+     "text": "© Gouvernement du Québec, 2026"
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://data-hrm.hub.arcgis.com/pages/open-data-catalogue",
+   "status": 200,
+   "final_url": "https://data-hrm.hub.arcgis.com/pages/open-data-catalogue",
+   "title": "Open Data Catalogue | Halifax Data Mapping and Analytics Hub",
+   "text": "Skip Navigation\nHALIFAX DATA, MAPPING & ANALYTICS HUB\nHome |\nOpen Data |\nMapping Applications |\nAnalytics |\nNotifications & Feedback |\nOPEN DATA\nAs part of Halifax Regional Municipality’s commitment to improving citizen engagement and enhancing transparency and accountability to its residents, the municipality is pleased to provide public access to its data. Open Data is a permanent service provided to citizens and businesses access to data for download, while still respecting privacy and sensitivity concerns.\nOpen Data Feedback\nAll Datasets\nBoundaries & Topo\nCommunity Protection\nCulture & Society\nEnvironment\nFinance & City Government\nInfrastructure & Asset Management\nParks & Recreation\nPlanning & Development\nTransportation & Transit\nOpen Data Statistics\nTerms of Use\nContact Us: opendata@halifax.ca\n© 2023 Halifax Regional Municipality\nCheck out these other sites for more data\nData Zone\nBuilt with\nArcGIS Hub\nExplore Feeds",
+   "links": [
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/open-data-catalogue#main-region",
+     "text": "Skip Navigation"
+    },
+    {
+     "url": "https://www.arcgis.com/sharing/rest/oauth2/authorize?client_id=arcgisonline&response_type=token&redirect_uri=https%3A%2F%2Fdata-hrm.hub.arcgis.com%2Fpages%2Fopen-data-catalogue",
+     "text": ""
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?collection=dataset",
+     "text": ""
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?collection=document",
+     "text": ""
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?collection=appAndMap",
+     "text": ""
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/",
+     "text": "Home |"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/open-data-catalogue",
+     "text": "Open Data"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/open-data-catalogue#",
+     "text": "| "
+    },
+    {
+     "url": "https://cdn.halifax.ca/sites/default/files/documents/city-hall/legislation-by-laws/AO-2014-006-ADM.pdf",
+     "text": "Administrative Order"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/open-data-common-questions",
+     "text": "Common Questions"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/open-data-downloads",
+     "text": "Open Data Downloads"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/open-data-licence",
+     "text": "Open Data Licence"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/mapping-application",
+     "text": "Mapping Applications"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/open-data-catalogue#",
+     "text": "| "
+    },
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=425cf408196648db994be8f53206f75c",
+     "text": "ExploreHRM"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/explorehrm-disclaimer",
+     "text": "ExploreHRM Disclaimer"
+    },
+    {
+     "url": "https://hrm.maps.arcgis.com/sharing/rest/content/items/7ede252c98894f3f8b7eeecc006b3469/data",
+     "text": "ExploreHRM User Guide"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/mapping-applications-common-questions",
+     "text": "Common Questions"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/analytics",
+     "text": "Analytics"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/open-data-catalogue#",
+     "text": "| "
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/notifications-feedback",
+     "text": "Notifications & Feedback"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/open-data-catalogue#",
+     "text": "| "
+    },
+    {
+     "url": "https://www.halifax.ca/form/open-data-feedback",
+     "text": "Open Data Feedback"
+    },
+    {
+     "url": "https://www.halifax.ca/form/mapping-applications-feedback-fo",
+     "text": "Mapping Feedback"
+    },
+    {
+     "url": "https://www.halifax.ca/form/analytic-dashboard-feedback-form",
+     "text": "Analytics Feedback"
+    },
+    {
+     "url": "https://www.halifax.ca/home/open-data/open-data-feedback-form",
+     "text": ""
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?groupIds=a0da902c6db24d9e81f99ff1d6df71be",
+     "text": "All Datasets"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?groupIds=d6019fb0eba24efcbf3a52eb58f456aa",
+     "text": "Boundaries & Topo"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?groupIds=96e02fa4b3694ac2ab6d2f2b4f41c8ab",
+     "text": "Community Protection"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?groupIds=28d8a46ea45b4345aa6b8686e1eb590c",
+     "text": "Culture & Society"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?groupIds=f849badc58a64793b62b997adcd57f0c",
+     "text": "Environment"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?groupIds=502cbe831bfa4b67b3566e8c322b84cf",
+     "text": "Finance & City Government"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?groupIds=8fe59d0cd9e94eabb65d46f74b382150",
+     "text": "Infrastructure & Asset Management"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?groupIds=f24edc7bb7a6473ea5373e1fa406e427",
+     "text": "Parks & Recreation"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?groupIds=3c8d7041ab9e4b0694199227498c2544",
+     "text": "Planning & Development"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/search?groupIds=3c283be652904d4b93f140e24077840d",
+     "text": "Transportation & Transit"
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/pages/open-data-licence",
+     "text": "Terms of Use"
+    },
+    {
+     "url": "https://www.halifax.ca/",
+     "text": ""
+    },
+    {
+     "url": "https://www.thedatazone.ca/",
+     "text": "Data Zone"
+    },
+    {
+     "url": "https://data.novascotia.ca/",
+     "text": ""
+    },
+    {
+     "url": "https://hub.arcgis.com/",
+     "text": "Built with\nArcGIS Hub"
+    },
+    {
+     "url": "https://www.esri.com/privacy",
+     "text": ""
+    },
+    {
+     "url": "https://www.esri.com/privacy",
+     "text": ""
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/api/feed/definition/#/RSS%202.0/get_api_feed_rss_2_0",
+     "text": ""
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/api/feed/definition/#/DCAT%20US%201.1/get_api_feed_dcat_us_1_1",
+     "text": ""
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/api/feed/definition/#/DCAT%20AP%202.1.1/get_api_feed_dcat_ap_2_1_1",
+     "text": ""
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/api/feed/definition/#/DCAT%20AP%203.0.0/get_api_feed_dcat_ap_3_0_0",
+     "text": ""
+    },
+    {
+     "url": "https://data-hrm.hub.arcgis.com/api/search/definition",
+     "text": ""
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html",
+   "status": 200,
+   "final_url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html",
+   "title": "Map: National Protected and Conserved Areas Network - Canada.ca",
+   "text": "Skip to main content\nSkip to \"About government\"\nSwitch to basic HTML version\nLanguage selection\nFrançais\n/ Gouvernement du Canada\nSearch\nSearch Canada.ca\nSearch\nMenu\nMAIN\nMENU\nYou are here:\nCanada.ca Environment and natural resources Wildlife, plants and species Wildlife and habitat conservation National wildlife areas\nMap: National Protected and Conserved Areas Network\nMap of National Protected and Conserved Areas Network\nLong description\nThis is a map of Canada showing the approximate location of National Wildlife Areas (NWA), Migratory Bird Sanctuaries (MBS), and Other Conserved Areas (OCA) by Environment and Climate Change Canada (ECCC), indicated by different colors. Smaller areas are represented by points, larger areas are represented by area boundaries.\nNWA list (purple dots)\nProvince NWA\nAlberta Blue Quills NWA\nCanadian Forces Base (CFB) Suffield NWA\nMeanook NWA\nSpiers Lake NWA\nBritish Columbia Alaksen NWA\nColumbia NWA\nQualicum NWA\nScott Island marine NWA\nVaseux-Bighorn NWA\nWidgeon Valley NWA\nManitoba Pope NWA\nRockwood NWA\nNew Brunswick Cape Jourimain NWA\nPortage Island NWA\nPortobello Creek NWA\nShepody NWA\nTintamarre NWA\nNorthwest Territories Edéhzhíe NWA and Dehcho Protected Area\nNova Scotia Big Glace Bay Lake NWA\nBoot Island NWA\nChignecto NWA\nCountry Island NWA\nIsle Haute NWA\nJohn Lusby Marsh NWA\nSand Pond NWA\nSea Wolf Island NWA\nSt. Paul Island NWA\nWallace Bay NWA\nNunavut Akpait NWA\nNinginganiq NWA\nNirjutiqarvik NWA\nNanuit Itillinga NWA\nQaqulluit NWA\nOntario Big Creek NWA\nEleanor Island NWA\nLong Point NWA\nMississippi Lake NWA\nMohawk Island NWA\nPrince Edward Point NWA\nScotch Bonnet Island NWA\nSt. Clair NWA\nWellers Bay NWA\nWye Marsh NWA\nQuebec Baie de L'Isle-Verte NWA\nCap Tourmente NWA\nÎles de Contrecoeur NWA\nÎles de la Paix NWA\nEstuary Islands NWA\nLake Saint-François NWA\nPointe-au-Père NWA\nPointe de l'Est NWA\nSaskatchewan Bradwell NWA\nGreat Sandhills NWA\nHarris Sandhills NWA\nLast Mountain Lake NWA\nLongspur NWA\nMoose Mountain Creek NWA\nRaven Island NWA\nSt. Denis NWA\nStalwart NWA\nThickwood Hills NWA\nTway NWA\nWebb NWA\nYukon Nisutlin River Delta NWA\nMBS list (green dots)\nProvince MBS\nAlberta Inglewood MBS\nRed Deer MBS\nRichardson Lake MBS\nSaskatoon Lake MBS\nBritish Columbia Christie Islet MBS\nVictoria Harbour MBS\nGeorge C. Reifel MBS\nNechako River MBS\nShoal Harbour MBS\nVaseux Lake MBS\nEsquimalt Lagoon MBS\nNew Brunswick Grand Manan MBS\nInkerman MBS\nMachias Seal Island MBS\nNewfoundland and Labrador Shepherd Island MBS\nÎle aux Canes MBS\nTerra Nova MBS\nNorthwest Territories Anderson River Delta MBS\nBanks Island No. 1 MBS\nBanks Island No. 2 MBS\nCape Parry MBS\nKendall Island MBS\nNova Scotia Amherst Point MBS\nBig Glace Bay Lake MBS\nPort Hebert MBS\nKentville MBS\nPort Joli MBS\nSable River MBS\nSable Island MBS\nHaley Lake MBS\nNunavut Ahiak MBS\nAkimiski Island MBS\nAkpaqarvik MBS\nBylot Island MBS\nIkkattuaq MBS\nIsulijarniq MBS\nKuugaarjuk MBS\nNaujavaat MBS\nQaqsauqtuuq MBS\nOntario Becketts Creek MBS\nChantry Island MBS\nEleanor Island MBS\nHannah Bay MBS\nMississippi Lake MBS\nMoose River MBS\nRideau River MBS\nSt. Joseph's Island MBS\nUpper Canada MBS\nPrince Edward Island Black Pond MBS\nQuebec Baie de Brador MBS\nBaie des Loups MBS\nBetchouane MBS\nBoatswain Bay MBS\nCap-Saint-Ignace MBS\nGros-Mécatina MBS\nÎle à la Brume MBS\nÎle aux Basques MBS\nÎle aux Hérons MBS\nBonaventure Island and Percé Rock MBS\nCarillon Island MBS\nÎles de la Couvée MBS\nÎle du Corossol MBS\nPhilipsburg MBS\nSainte-Marie Islands MBS\nL'Islet MBS\nL'Isle-Verte MBS\nMontmagny MBS\nMont Saint-Hilaire MBS\nNicolet MBS\nÎles de la Paix MBS\nRochers aux Oiseaux MBS\nSaint-Augustin MBS\nSaint-Omer MBS\nSaint-Vallier MBS\nSenneville MBS\nTrois-Saumons MBS\nWatshishou MBS\nSaskatchewan Basin and Middle Lakes MBS\nDuncairn Reservoir MBS\nIndian Head MBS\nLast Mountain Lake MBS\nLenore Lake MBS\nMurray Lake MBS\nNeely Lake MBS\nOld Wives Lake MBS\nOpuntia Lake MBS\nRedberry Lake MBS\nScent Grass Lake MBS\nSutherland MBS\nUpper Rousay Lake MBS\nVal Marie Reservoir MBS\nWascana Lake MBS\nOther Conserved Areas list (orange dots)\nProvince OCA\nSaskatchewan Prairie Pastures Conservation Area\nBig Beaver Conservation Area\nGreat Sandhills Conservation Area\nRelated links:\nCurrent National Wildlife Areas\nMigratory Bird Sanctuaries across Canada\nNational Wildlife Areas\nPage details\nGive feedback about this page\nDid you find what you were looking for?\nYes No\n2025-09-15\nAbout this site\nEnvironment and Climate Change Canada (ECCC)\nContact ECCC\nNews\nGovernment of Canada\nAll contacts\nDepartments and agencies\nAbout government\nThemes and topics\nJobs\nImmigration and citizenship\nTravel and tourism\nBusiness\nBenefits\nHealth\nTaxes\nEnvironment and natural resources\nNational security and defence\nCulture, history and sport\nPolicing, justice and emergencies\nTransport and infrastructure\nCanada and the world\nMoney and finances\nScience and innovation\nIndigenous Peoples\nVeterans and military\nYouth\nManage life events\nGovernment of Canada Corporate\nSocial media Mobile applications About Canada.ca Terms and conditions Privacy",
+   "links": [
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#wb-cont",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#wb-info",
+     "text": "Skip to \"About government\""
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html?wbdisable=true",
+     "text": "Switch to basic HTML version"
+    },
+    {
+     "url": "https://www.canada.ca/fr/environnement-changement-climatique/services/reserves-nationales-faune/carte.html",
+     "text": "Français"
+    },
+    {
+     "url": "https://www.canada.ca/en.html",
+     "text": "/ Gouvernement du Canada"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Jobs and the workplace"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/jobs.html",
+     "text": "Jobs: home"
+    },
+    {
+     "url": "https://www.jobbank.gc.ca/findajob",
+     "text": "Job Bank"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/jobs/opportunities/government.html",
+     "text": "Government of Canada jobs"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/jobs/youth.html",
+     "text": "Youth and student employment"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/defence/jobs.html",
+     "text": "Jobs in national security and defence"
+    },
+    {
+     "url": "https://www.canada.ca/en/employment-social-development/programs/labour-mobility.html",
+     "text": "Moving within Canada to work"
+    },
+    {
+     "url": "https://www.canada.ca/en/employment-social-development/services/funding/programs.html",
+     "text": "Funding for jobs and training"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/jobs/training.html",
+     "text": "Training"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business/hire.html",
+     "text": "Hiring and managing employees"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business/start.html",
+     "text": "Starting a business"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/ei.html",
+     "text": "Employment Insurance benefits and leave"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/jobs/workplace.html",
+     "text": "Workplace standards"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/finance/pensions.html",
+     "text": "Pensions and retirement"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Most requested"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada.html",
+     "text": "Work in Canada - work permits"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html",
+     "text": "Immigrate as a skilled worker"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/hire-temporary-foreign.html",
+     "text": "Hire a temporary foreign worker"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+     "text": "Federal Skilled Worker Program"
+    },
+    {
+     "url": "https://www.canada.ca/en/employment-social-development/services/my-account.html",
+     "text": "View your records of employment"
+    },
+    {
+     "url": "https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/ei-roe/access-roe.html",
+     "text": "Submit a record of employment - employers"
+    },
+    {
+     "url": "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html",
+     "text": "Federal Student Work Experience Program (FSWEP)"
+    },
+    {
+     "url": "https://www.canada.ca/en/employment-social-development/services/sin.html",
+     "text": "Apply for a Social Insurance Number (SIN)"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Immigration and citizenship"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/immigration-citizenship.html",
+     "text": "Immigration and citizenship: home"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application.html",
+     "text": "IRCC applications"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html",
+     "text": "Visit Canada"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada.html",
+     "text": "Live in Canada permanently"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada.html",
+     "text": "Work in Canada temporarily"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html",
+     "text": "Study in Canada"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees.html",
+     "text": "Refugees and asylum"
+    },
+    {
+     "url": "https://ircc.canada.ca/iec/index.asp",
+     "text": "International Experience Canada (IEC)"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports.html",
+     "text": "Passports and other travel documents"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship.html",
+     "text": "Citizenship"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/permanent-residents.html",
+     "text": "Permanent resident (PR) cards and status"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/settle-canada.html",
+     "text": "Settling in Canada as a newcomer"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadians/adopt-child-abroad.html",
+     "text": "International adoption"
+    },
+    {
+     "url": "https://ircc.canada.ca/explore-programs/index.asp",
+     "text": "Explore immigration programs"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/protect-fraud.html",
+     "text": "Immigration fraud and scams"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/immigration-citizenship/enforcement-violations.html",
+     "text": "Inadmissibility, enforcement and appeals"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Most requested"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/ircc-accounts.html",
+     "text": "Sign in to your IRCC account"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-status.html",
+     "text": "Check your application status"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
+     "text": "Current processing times"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides.html",
+     "text": "Find an application form"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/partners-service-providers.html",
+     "text": "Portals for representatives and partners"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Travel and tourism"
+    },
+    {
+     "url": "https://travel.gc.ca/",
+     "text": "Travel and tourism: home"
+    },
+    {
+     "url": "https://travel.gc.ca/travelling/advisories",
+     "text": "Travel advice and advisories"
+    },
+    {
+     "url": "https://travel.gc.ca/travelling",
+     "text": "Travel outside Canada"
+    },
+    {
+     "url": "https://travel.gc.ca/air",
+     "text": "Air travel"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports.html",
+     "text": "Canadian passports and travel documents"
+    },
+    {
+     "url": "https://travel.gc.ca/stay-connected",
+     "text": "Stay connected"
+    },
+    {
+     "url": "https://travel.gc.ca/assistance",
+     "text": "Assistance outside Canada"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html?outside",
+     "text": "Visit Canada"
+    },
+    {
+     "url": "https://travel.gc.ca/returning",
+     "text": "Return or travel to Canada"
+    },
+    {
+     "url": "https://travel.gc.ca/canadian-tourism",
+     "text": "Canadian attractions, events and experiences"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Most requested"
+    },
+    {
+     "url": "https://travel.gc.ca/assistance/emergency-assistance",
+     "text": "Emergency assistance abroad"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/check-visa-eta.html",
+     "text": "Find out if you need a visa to travel to Canada"
+    },
+    {
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta.html",
+     "text": "Apply for an eTA"
+    },
+    {
+     "url": "https://www.cbsa-asfc.gc.ca/services/travel-voyage/prog/nexus/menu-eng.html",
+     "text": "Apply for NEXUS"
+    },
+    {
+     "url": "https://travel.gc.ca/travelling/registration",
+     "text": "Register as a Canadian abroad"
+    },
+    {
+     "url": "https://travel.gc.ca/travelling/documents/travel-insurance",
+     "text": "Travel insurance"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Business and industry"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business.html",
+     "text": "Business and industry: home"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business/start.html",
+     "text": "Starting a business"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business/taxes.html",
+     "text": "Business taxes"
+    },
+    {
+     "url": "https://innovation.ised-isde.canada.ca/s/?language=en_CA",
+     "text": "Business financing and support"
+    },
+    {
+     "url": "https://ised-isde.canada.ca/site/corporations-canada/en",
+     "text": "Federal corporations"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business/maintaingrowimprovebusiness.html",
+     "text": "Maintaining your business"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business/permits.html",
+     "text": "Permits, licences and regulations"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business/hire.html",
+     "text": "Hiring and managing employees"
+    },
+    {
+     "url": "https://international.canada.ca/en/services/business/trade",
+     "text": "International trade and investment"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business/ip.html",
+     "text": "Intellectual property and copyright"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business/research.html",
+     "text": "Research and business intelligence"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business/doing-business.html",
+     "text": "Doing business with government"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/science/innovation.html",
+     "text": "R&D and innovation"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/business/protecting.html",
+     "text": "Protecting your business"
+    },
+    {
+     "url": "https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en/you-owe-money",
+     "text": "Insolvency for business"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Most requested"
+    },
+    {
+     "url": "https://www.canada.ca/en/department-finance/programs/international-trade-finance-policy/canadas-response-us-tariffs.html",
+     "text": "Canada's response to U.S. tariffs on Canadian goods"
+    },
+    {
+     "url": "https://ised-isde.canada.ca/cc/lgcy/fdrlCrpSrch.html?locale=en_CA",
+     "text": "Find a corporation"
+    },
+    {
+     "url": "https://ised-isde.canada.ca/site/corporations-canada/en/keep-your-corporation-good-shape/annual-return",
+     "text": "File Corporations Canada annual return"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account.html",
+     "text": "My Business Account (Canada Revenue Agency)"
+    },
+    {
+     "url": "https://ised-isde.canada.ca/site/canada-small-business-financing-program/en",
+     "text": "Helping small businesses get loans"
+    },
+    {
+     "url": "https://www.bdc.ca/en/financing/small-business-loan",
+     "text": "Loans to improve cash flow and increase sales"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Benefits"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits.html",
+     "text": "Benefits: home"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/ei.html",
+     "text": "Employment Insurance benefits and leave"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-groceries-essentials-benefit.html",
+     "text": "Canada Groceries and Essentials Benefit (CGEB)"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/dental/dental-care-plan.html",
+     "text": "Canadian Dental Care Plan (CDCP)"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/disability.html",
+     "text": "Disability benefits"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/family.html",
+     "text": "Family and caregiving benefits"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/publicpensions.html",
+     "text": "Public pensions"
+    },
+    {
+     "url": "https://www.canada.ca/en/employment-social-development/services/funding/programs.html",
+     "text": "Grants and funding opportunities"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/education.html",
+     "text": "Student aid and education planning"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/housing.html",
+     "text": "Housing benefits"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/benefits-financial-support.html",
+     "text": "Find benefits and financial support"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/audience.html",
+     "text": "Benefits by audience"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/life-events/death.html",
+     "text": "What to do when someone dies"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Most requested"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/ei/ei-regular-benefit.html",
+     "text": "Apply for Employment Insurance (EI)"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/calendar.html",
+     "text": "Benefit payment dates"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/child-family-benefits-calculator.html",
+     "text": "Child and family benefits calculators"
+    },
+    {
+     "url": "https://www.canada.ca/en/government/sign-in-online-account.html",
+     "text": "Sign in to an account"
+    },
+    {
+     "url": "https://www.canada.ca/en/public-services-procurement/services/payments-to-from-government/direct-deposit.html",
+     "text": "Set up or change direct deposit"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/ei/employment-insurance-reporting.html",
+     "text": "Submit your EI report"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/deductions-credits-expenses.html",
+     "text": "Personal income tax - claim deductions, credits and expenses"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Health"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/health.html",
+     "text": "Health: home"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/health/food-nutrition.html",
+     "text": "Food and nutrition"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/health/drug-health-products.html",
+     "text": "Drug and health products"
+    },
+    {
+     "url": "https://www.canada.ca/en/public-health/services/immunization-vaccines.html",
+     "text": "Vaccines and immunization"
+    },
+    {
+     "url": "https://www.canada.ca/en/public-health/services/diseases.html",
+     "text": "Diseases and conditions"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/health/health-system-services.html",
+     "text": "Health system and services"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/health/product-safety.html",
+     "text": "Product safety"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/health/healthy-living.html",
+     "text": "Healthy living"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/health/health-risks-safety.html",
+     "text": "Health risks and safety"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/health/science-research-data.html",
+     "text": "Health science, research and data"
+    },
+    {
+     "url": "https://www.sac-isc.gc.ca/eng/1569861171996/1569861324236",
+     "text": "Indigenous health"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Most requested"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/dental/dental-care-plan.html",
+     "text": "Canadian Dental Care Plan"
+    },
+    {
+     "url": "https://recalls-rappels.canada.ca/en",
+     "text": "Recalls and safety alerts"
+    },
+    {
+     "url": "https://food-guide.canada.ca/en/",
+     "text": "Canada's food guide"
+    },
+    {
+     "url": "https://www.canada.ca/en/public-health/services/diseases/autism-spectrum-disorder-asd.html",
+     "text": "Autism"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Taxes"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/taxes.html",
+     "text": "Taxes: home"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/taxes/income-tax.html",
+     "text": "Income tax"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/services/payments.html",
+     "text": "Payments"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/taxes/child-and-family-benefits.html",
+     "text": "Tax credits and benefits for individuals"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html",
+     "text": "GST/HST"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll.html",
+     "text": "Payroll"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/taxes/business-number.html",
+     "text": "Business number"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/taxes/charities.html",
+     "text": "Charities and giving"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/taxes/savings-and-pension-plans.html",
+     "text": "Savings and pension plans"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/taxes/excise-taxes-duties-and-levies.html",
+     "text": "Excise and specialty taxes"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud.html",
+     "text": "Scams and fraud"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/services/support-difficult-situations.html",
+     "text": "Support in difficult situations"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance.html",
+     "text": "Compliance and enforcement"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/services/make-a-service-complaint.html",
+     "text": "CRA Service feedback"
+    },
+    {
+     "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/map.html#",
+     "text": "Most requested"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/how-file.html#h_3",
+     "text": "Ready to file your GST/HST return"
+    },
+    {
+     "url": "https://www.canada.ca/en/services/benefits/calendar.html",
+     "text": "Find benefit payment dates"
+    },
+    {
+     "url": "https://www.canada.ca/en/revenue-agency/services/forms-publications.html",
+     "text": "Forms and publications"
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://ruk.ca/content/all-you-can-eat-pei-gis-data",
+   "status": 200,
+   "final_url": "https://ruk.ca/content/all-you-can-eat-pei-gis-data",
+   "title": "All You Can Eat PEI GIS Data | ruk.ca",
+   "text": "Skip to main content\nAll You Can Eat PEI GIS Data\nThe Province of Prince Edward Island has a large collection of “free” GIS data on its website (that’s “free” as in “you can use it if you agree to our crazy license terms” not free as in “go forth and live, fair data”).\nTo download any of the data files is a cumbersome process that requires agreeing to license terms and then entering your name, email address and occupation. All of which makes getting all of the data rather time-consuming.\nFortunately all the files are actually there, sitting unencumbered on a webserver waiting to be downloaded, so it’s relatively easy to scrape the free GIS data file lists (here and here), extrapolate the names of the data files, and then automatically download them.\nThat’s what this PHP code does for you: download it, configure, let it run and shortly you’ll have a few gigabytes of GIS data – everything from school board boundaries to walking trails to soils – sitting on your local machine ready for use (the script, by default, just grabs the ESRI Shapefiles).\nGiven the rather violent response to making public data, well, public, that the province has shown in past, I recommend you grab your data now, before this is made more difficult and cumbersome still.\nI recommend the free Quantum GIS application for manipulating the files once you have them: it reads Shapefiles natively and is quite feature-rich. Here’s a map of the parishes of Prince Edward Island inside Qgis, for example:\nWednesday, October 12, 2011 at 5:15 pm\nGIS\nPrince Edward Island\nPHP\nAdd new comment\nYour name\nEmail\nThe content of this field is kept private and will not be shown publicly.\nComment\nAbout This Blog\nI am Peter Rukavina and this is my blog. I am a writer, letterpress printer, and a curious person.\nTo learn more about me, read my /now, look at my bio, listen to audio I’ve posted, read presentations and speeches I’ve written, see things I’ve favourited elsewhere, or get in touch (peter@rukavina.net is the quickest way).\nI have been writing here since May 1999: you can explore the 25+ years of blog posts in the archive.\nYou can subscribe to an RSS feed of posts, an RSS feed of comments, an RSS feed of favourites elsewhere, or a podcast RSS feed that just contains audio posts. You can also receive a daily digests of posts by email. I also publish an OPML blogroll.\nInstagram • YouTube • Vimeo • ORCID • OpenStreetMap • Internet Archive • PEI.art • Drupal • Github.",
+   "links": [
+    {
+     "url": "https://ruk.ca/content/all-you-can-eat-pei-gis-data#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://ruk.ca/",
+     "text": ""
+    },
+    {
+     "url": "https://ruk.ca/",
+     "text": "Home"
+    },
+    {
+     "url": "http://www.gov.pe.ca/gis/index.php3?number=77543&lang=E",
+     "text": "a large collection of “free” GIS data on its website"
+    },
+    {
+     "url": "http://www.gov.pe.ca/gis/index.php3?number=77868&lang=E",
+     "text": "here"
+    },
+    {
+     "url": "http://www.gov.pe.ca/gis/index.php3?number=1012857&lang=E",
+     "text": "here"
+    },
+    {
+     "url": "https://github.com/reinvented/pei-gis-grabber",
+     "text": "this PHP code"
+    },
+    {
+     "url": "http://closedcorporations.org/",
+     "text": "rather violent response"
+    },
+    {
+     "url": "http://www.qgis.org/",
+     "text": "Quantum GIS"
+    },
+    {
+     "url": "https://ruk.ca/topics/gis",
+     "text": "GIS"
+    },
+    {
+     "url": "https://ruk.ca/topics/prince-edward-island",
+     "text": "Prince Edward Island"
+    },
+    {
+     "url": "https://ruk.ca/topics/technology/php",
+     "text": "PHP"
+    },
+    {
+     "url": "https://ruk.ca/filter/tips",
+     "text": "About text formats"
+    },
+    {
+     "url": "https://ruk.ca/",
+     "text": "Peter Rukavina and this is my blog"
+    },
+    {
+     "url": "https://ruk.ca/topics/letterpress",
+     "text": "letterpress printer"
+    },
+    {
+     "url": "https://ruk.ca/now",
+     "text": "/now"
+    },
+    {
+     "url": "https://ruk.ca/about-peter-rukavina",
+     "text": "look at my bio"
+    },
+    {
+     "url": "https://ruk.ca/sounds",
+     "text": "audio I’ve posted"
+    },
+    {
+     "url": "https://ruk.ca/speaking",
+     "text": "presentations and speeches I’ve written"
+    },
+    {
+     "url": "https://ruk.ca/favourites",
+     "text": "see things I’ve favourited elsewhere"
+    },
+    {
+     "url": "https://ruk.ca/contact-peter-rukavina",
+     "text": "get in touch"
+    },
+    {
+     "url": "https://ruk.ca/archive",
+     "text": "explore the 25+ years of blog posts in the archive"
+    },
+    {
+     "url": "https://ruk.ca/rss.xml",
+     "text": "RSS feed of posts"
+    },
+    {
+     "url": "https://ruk.ca/comments/rss",
+     "text": "RSS feed of comments"
+    },
+    {
+     "url": "https://ruk.ca/favourites/feed",
+     "text": "RSS feed of favourites elsewhere"
+    },
+    {
+     "url": "https://ruk.ca/rss/podcast.xml",
+     "text": "a podcast RSS feed"
+    },
+    {
+     "url": "https://buttondown.com/ruk?tag=ruk_footer",
+     "text": "receive a daily digests of posts by email"
+    },
+    {
+     "url": "https://ruk.ca/opml",
+     "text": "an OPML blogroll"
+    },
+    {
+     "url": "https://www.instagram.com/peter.rukavina/",
+     "text": "Instagram"
+    },
+    {
+     "url": "https://www.youtube.com/c/peterrukavina",
+     "text": "YouTube"
+    },
+    {
+     "url": "https://vimeo.com/ruk",
+     "text": "Vimeo"
+    },
+    {
+     "url": "https://orcid.org/0000-0002-7690-4909",
+     "text": "ORCID"
+    },
+    {
+     "url": "https://www.openstreetmap.org/user/Peter%20Rukavina",
+     "text": "OpenStreetMap"
+    },
+    {
+     "url": "https://archive.org/details/@peter_rukavina",
+     "text": "Internet Archive"
+    },
+    {
+     "url": "https://pei.art/peter-rukavina/",
+     "text": "PEI.art"
+    },
+    {
+     "url": "https://www.drupal.org/user/17600",
+     "text": "Drupal"
+    },
+    {
+     "url": "https://github.com/reinvented",
+     "text": "Github"
+    }
+   ],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 36,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "7 result(s), 7 read OK, 0 screenshot(s)"
+}
