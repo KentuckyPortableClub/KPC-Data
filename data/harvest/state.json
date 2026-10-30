@@ -2216,10 +2216,49 @@
    "done": [
     "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_Europe/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_bedrock_surface_B/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/EMODnet/EMODnet_3_Geology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/EMODnet/EMODnet_Geology/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/EST_1GE_surface/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera07112018/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera20210322/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera22/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera_NO_CAHE/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/GeophysicMaps/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fmd/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fmd_v4/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fodd_FDM_MASTER/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fodd_FDM_v5/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fods_lithology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/metallogenic_aeras/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/metallogenic_areas/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWMS/GTKWMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWMS/GTKWMS_test/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/GTK_Bedrock_and_Superficial_Geology/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/GTK_Bedrock_and_Superficial_Geology2/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasu1000/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasu250_02072018/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasukairaus02072018/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasumuutMustaliuske/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/maapera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/maaperaNew25092017/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Inspire/GTK_Bedrock_and_Superficial_Geology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Inspire/pangeo/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte_v11/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte_v12/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/geology_geophysics/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/LaosOneGeology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210429_KorkeusAineisto/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210603Maapera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maapeitepaksuus_1m/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/SampleWorldCities/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/inspire_ge_geology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/kallionpinnan_korkeustaso_1m/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/kalliopinnan_korkeustaso_1m/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/kunnat/MapServer",
     "https://paikkatieto.ymparisto.fi/geoserver/wfs"
    ],
    "log": [
@@ -2239,7 +2278,7 @@
     },
     {
      "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 5 services read"
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 44 services read"
     }
    ],
    "steps": [
@@ -2628,6 +2667,7 @@
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Drone_Zones/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/EEZ_OuterLimits/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Ecological_Districts/FeatureServer",
+    "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_FeralCat_2007_BDI_simplified_distribution/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Hedgehog_2007_BDI_simplified_distribution/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/FAUNA_Stoats_2014_BDI_simplified_distribution/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Fallow_Deer_Distribution_2007/FeatureServer",
@@ -2760,7 +2800,7 @@
     },
     {
      "step": "org",
-     "what": "org 3JjYDyG3oajxU6HO (Department of Conservation): 200 services read"
+     "what": "org 3JjYDyG3oajxU6HO (Department of Conservation): 201 services read"
     }
    ],
    "steps": [
