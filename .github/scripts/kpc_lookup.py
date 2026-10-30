@@ -123,8 +123,11 @@ def read_page(u, shot_path=None, pages=1, steps=None, read=None):
             r['status'] = resp.status if resp else 'no response'
             if steps: r['steps'] = do_steps(pg, steps if M.host(u).endswith('kentuckyportableclub.github.io') else [x for x in steps if set(x) == {'wait'}])   # other sites: waits only (a map viewer drawing)
             if read:
-                try: r['read_text'] = '\n'.join(' '.join(l.split()) for l in pg.inner_text(read, timeout=5000).split('\n') if l.strip())[:4000]
-                except Exception as e: r['read_text'] = f'not found ({type(e).__name__})'  # noqa: BLE001
+                parts = []
+                for sel in (read if isinstance(read, list) else [read])[:4]:   # one box or a few: each read on its own
+                    try: parts.append(f'[{sel}] ' + '\n'.join(' '.join(l.split()) for l in pg.inner_text(sel, timeout=5000).split('\n') if l.strip()))
+                    except Exception as e: parts.append(f'[{sel}] not found ({type(e).__name__})')  # noqa: BLE001
+                r['read_text'] = '\n'.join(parts)[:6000]
             r['final_url'] = pg.url; r['title'] = (pg.title() or '')[:200]
             txt = pg.inner_text('body') if pg.query_selector('body') else ''
             r['text'] = '\n'.join(' '.join(l.split()) for l in txt.split('\n') if l.strip())[:TEXT_MAX]
