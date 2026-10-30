@@ -1,0 +1,2348 @@
+{
+ "request": "requests/9-cap2-yt-1.json",
+ "id": "9-cap2-yt-1",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CAP2 YT 1: 40 parks, 4 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CAP2 YT 1: 40 parks, 4 layers",
+  "probe": {
+   "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (YT, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-4600,CA-4601,CA-4628,CA-4631,CA-6263,CA-6264,CA-6265,CA-6268,CA-6282,CA-0844,CA-0845,CA-4602,CA-4607,CA-4610,CA-4613,CA-4614,CA-4615,CA-4616,CA-4619,CA-4624,CA-4626,CA-4627,CA-4632,CA-4633,CA-4936,CA-4937,CA-4938,CA-4939,CA-4940,CA-5286,CA-5287,CA-5449,CA-5451,CA-5452,CA-5453,CA-5454,CA-5455,CA-5456,CA-5458,CA-5737. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+   "refs": [
+    "CA-4600",
+    "CA-4601",
+    "CA-4628",
+    "CA-4631",
+    "CA-6263",
+    "CA-6264",
+    "CA-6265",
+    "CA-6268",
+    "CA-6282",
+    "CA-0844",
+    "CA-0845",
+    "CA-4602",
+    "CA-4607",
+    "CA-4610",
+    "CA-4613",
+    "CA-4614",
+    "CA-4615",
+    "CA-4616",
+    "CA-4619",
+    "CA-4624",
+    "CA-4626",
+    "CA-4627",
+    "CA-4632",
+    "CA-4633",
+    "CA-4936",
+    "CA-4937",
+    "CA-4938",
+    "CA-4939",
+    "CA-4940",
+    "CA-5286",
+    "CA-5287",
+    "CA-5449",
+    "CA-5451",
+    "CA-5452",
+    "CA-5453",
+    "CA-5454",
+    "CA-5455",
+    "CA-5456",
+    "CA-5458",
+    "CA-5737"
+   ],
+   "pointq": [
+    {
+     "st": "YT",
+     "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
+     "note": "Yukon campgr",
+     "points": [
+      [
+       60.003,
+       -137.82
+      ],
+      [
+       64.885,
+       -133.351
+      ],
+      [
+       60.8408,
+       -137.769
+      ],
+      [
+       60.001,
+       -136.885
+      ],
+      [
+       60.074,
+       -133.809
+      ],
+      [
+       60.654,
+       -136.105
+      ],
+      [
+       60.316,
+       -134.27
+      ],
+      [
+       60.131,
+       -133.823
+      ],
+      [
+       60.583,
+       -137.209
+      ],
+      [
+       62.273,
+       -136.343
+      ],
+      [
+       63.6522,
+       -135.887
+      ],
+      [
+       60.069,
+       -134.571
+      ],
+      [
+       62.774,
+       -137.386
+      ],
+      [
+       60.5588,
+       -134.878
+      ],
+      [
+       60.019,
+       -128.58
+      ],
+      [
+       60.5613,
+       -134.451
+      ],
+      [
+       60.007,
+       -132.135
+      ],
+      [
+       60.9211,
+       -132.953
+      ],
+      [
+       61.2428,
+       -134.614
+      ],
+      [
+       61.0816,
+       -136.995
+      ],
+      [
+       67.417,
+       -140.997
+      ],
+      [
+       60.0801,
+       -130.82
+      ],
+      [
+       61.4143,
+       -135.21
+      ],
+      [
+       59.2816,
+       -129.817
+      ],
+      [
+       64.05,
+       -139.433
+      ],
+      [
+       63.9458,
+       -139.33
+      ],
+      [
+       64.0563,
+       -139.441
+      ],
+      [
+       64.0675,
+       -139.429
+      ],
+      [
+       60.7294,
+       -135.047
+      ],
+      [
+       64.0632,
+       -139.435
+      ],
+      [
+       64.0481,
+       -139.446
+      ],
+      [
+       61.1963,
+       -136.998
+      ],
+      [
+       67.3894,
+       -137.013
+      ],
+      [
+       60.6793,
+       -129.23
+      ],
+      [
+       60.2325,
+       -132.91
+      ],
+      [
+       63.9274,
+       -139.325
+      ],
+      [
+       64.0569,
+       -139.435
+      ],
+      [
+       64.0588,
+       -139.438
+      ],
+      [
+       64.0591,
+       -139.438
+      ],
+      [
+       60.159,
+       -129.706
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "YT",
+     "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+     "note": "Yukon parks",
+     "points": [
+      [
+       60.003,
+       -137.82
+      ],
+      [
+       64.885,
+       -133.351
+      ],
+      [
+       60.8408,
+       -137.769
+      ],
+      [
+       60.001,
+       -136.885
+      ],
+      [
+       60.074,
+       -133.809
+      ],
+      [
+       60.654,
+       -136.105
+      ],
+      [
+       60.316,
+       -134.27
+      ],
+      [
+       60.131,
+       -133.823
+      ],
+      [
+       60.583,
+       -137.209
+      ],
+      [
+       62.273,
+       -136.343
+      ],
+      [
+       63.6522,
+       -135.887
+      ],
+      [
+       60.069,
+       -134.571
+      ],
+      [
+       62.774,
+       -137.386
+      ],
+      [
+       60.5588,
+       -134.878
+      ],
+      [
+       60.019,
+       -128.58
+      ],
+      [
+       60.5613,
+       -134.451
+      ],
+      [
+       60.007,
+       -132.135
+      ],
+      [
+       60.9211,
+       -132.953
+      ],
+      [
+       61.2428,
+       -134.614
+      ],
+      [
+       61.0816,
+       -136.995
+      ],
+      [
+       67.417,
+       -140.997
+      ],
+      [
+       60.0801,
+       -130.82
+      ],
+      [
+       61.4143,
+       -135.21
+      ],
+      [
+       59.2816,
+       -129.817
+      ],
+      [
+       64.05,
+       -139.433
+      ],
+      [
+       63.9458,
+       -139.33
+      ],
+      [
+       64.0563,
+       -139.441
+      ],
+      [
+       64.0675,
+       -139.429
+      ],
+      [
+       60.7294,
+       -135.047
+      ],
+      [
+       64.0632,
+       -139.435
+      ],
+      [
+       64.0481,
+       -139.446
+      ],
+      [
+       61.1963,
+       -136.998
+      ],
+      [
+       67.3894,
+       -137.013
+      ],
+      [
+       60.6793,
+       -129.23
+      ],
+      [
+       60.2325,
+       -132.91
+      ],
+      [
+       63.9274,
+       -139.325
+      ],
+      [
+       64.0569,
+       -139.435
+      ],
+      [
+       64.0588,
+       -139.438
+      ],
+      [
+       64.0591,
+       -139.438
+      ],
+      [
+       60.159,
+       -129.706
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "YT",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       60.003,
+       -137.82
+      ],
+      [
+       64.885,
+       -133.351
+      ],
+      [
+       60.8408,
+       -137.769
+      ],
+      [
+       60.001,
+       -136.885
+      ],
+      [
+       60.074,
+       -133.809
+      ],
+      [
+       60.654,
+       -136.105
+      ],
+      [
+       60.316,
+       -134.27
+      ],
+      [
+       60.131,
+       -133.823
+      ],
+      [
+       60.583,
+       -137.209
+      ],
+      [
+       62.273,
+       -136.343
+      ],
+      [
+       63.6522,
+       -135.887
+      ],
+      [
+       60.069,
+       -134.571
+      ],
+      [
+       62.774,
+       -137.386
+      ],
+      [
+       60.5588,
+       -134.878
+      ],
+      [
+       60.019,
+       -128.58
+      ],
+      [
+       60.5613,
+       -134.451
+      ],
+      [
+       60.007,
+       -132.135
+      ],
+      [
+       60.9211,
+       -132.953
+      ],
+      [
+       61.2428,
+       -134.614
+      ],
+      [
+       61.0816,
+       -136.995
+      ],
+      [
+       67.417,
+       -140.997
+      ],
+      [
+       60.0801,
+       -130.82
+      ],
+      [
+       61.4143,
+       -135.21
+      ],
+      [
+       59.2816,
+       -129.817
+      ],
+      [
+       64.05,
+       -139.433
+      ],
+      [
+       63.9458,
+       -139.33
+      ],
+      [
+       64.0563,
+       -139.441
+      ],
+      [
+       64.0675,
+       -139.429
+      ],
+      [
+       60.7294,
+       -135.047
+      ],
+      [
+       64.0632,
+       -139.435
+      ],
+      [
+       64.0481,
+       -139.446
+      ],
+      [
+       61.1963,
+       -136.998
+      ],
+      [
+       67.3894,
+       -137.013
+      ],
+      [
+       60.6793,
+       -129.23
+      ],
+      [
+       60.2325,
+       -132.91
+      ],
+      [
+       63.9274,
+       -139.325
+      ],
+      [
+       64.0569,
+       -139.435
+      ],
+      [
+       64.0588,
+       -139.438
+      ],
+      [
+       64.0591,
+       -139.438
+      ],
+      [
+       60.159,
+       -129.706
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "YT",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       60.003,
+       -137.82
+      ],
+      [
+       64.885,
+       -133.351
+      ],
+      [
+       60.8408,
+       -137.769
+      ],
+      [
+       60.001,
+       -136.885
+      ],
+      [
+       60.074,
+       -133.809
+      ],
+      [
+       60.654,
+       -136.105
+      ],
+      [
+       60.316,
+       -134.27
+      ],
+      [
+       60.131,
+       -133.823
+      ],
+      [
+       60.583,
+       -137.209
+      ],
+      [
+       62.273,
+       -136.343
+      ],
+      [
+       63.6522,
+       -135.887
+      ],
+      [
+       60.069,
+       -134.571
+      ],
+      [
+       62.774,
+       -137.386
+      ],
+      [
+       60.5588,
+       -134.878
+      ],
+      [
+       60.019,
+       -128.58
+      ],
+      [
+       60.5613,
+       -134.451
+      ],
+      [
+       60.007,
+       -132.135
+      ],
+      [
+       60.9211,
+       -132.953
+      ],
+      [
+       61.2428,
+       -134.614
+      ],
+      [
+       61.0816,
+       -136.995
+      ],
+      [
+       67.417,
+       -140.997
+      ],
+      [
+       60.0801,
+       -130.82
+      ],
+      [
+       61.4143,
+       -135.21
+      ],
+      [
+       59.2816,
+       -129.817
+      ],
+      [
+       64.05,
+       -139.433
+      ],
+      [
+       63.9458,
+       -139.33
+      ],
+      [
+       64.0563,
+       -139.441
+      ],
+      [
+       64.0675,
+       -139.429
+      ],
+      [
+       60.7294,
+       -135.047
+      ],
+      [
+       64.0632,
+       -139.435
+      ],
+      [
+       64.0481,
+       -139.446
+      ],
+      [
+       61.1963,
+       -136.998
+      ],
+      [
+       67.3894,
+       -137.013
+      ],
+      [
+       60.6793,
+       -129.23
+      ],
+      [
+       60.2325,
+       -132.91
+      ],
+      [
+       63.9274,
+       -139.325
+      ],
+      [
+       64.0569,
+       -139.435
+      ],
+      [
+       64.0588,
+       -139.438
+      ],
+      [
+       64.0591,
+       -139.438
+      ],
+      [
+       60.159,
+       -129.706
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 01:14Z",
+ "results": {
+  "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (YT, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-4600,CA-4601,CA-4628,CA-4631,CA-6263,CA-6264,CA-6265,CA-6268,CA-6282,CA-0844,CA-0845,CA-4602,CA-4607,CA-4610,CA-4613,CA-4614,CA-4615,CA-4616,CA-4619,CA-4624,CA-4626,CA-4627,CA-4632,CA-4633,CA-4936,CA-4937,CA-4938,CA-4939,CA-4940,CA-5286,CA-5287,CA-5449,CA-5451,CA-5452,CA-5453,CA-5454,CA-5455,CA-5456,CA-5458,CA-5737. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "YT",
+    "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
+    "note": "Yukon campgr",
+    "hits": [
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.003,
+       -137.82
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 31,
+       "PARCEL_ID_NUMBER": 8004830,
+       "PARCEL_DESIGNATOR": "KLUANE NATIONAL PARK OF CANADA",
+       "CLSR_PLAN": "72179 CLSR YT",
+       "LTO_PLAN": "89-66 LTO YT",
+       "GEO_ADMIN_CODE": "KLUA",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "KLUANE NATIONAL PARK OF CANADA",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 3922867579.89791
+      }
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       64.885,
+       -133.351
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.8408,
+       -137.769
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.001,
+       -136.885
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.074,
+       -133.809
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.654,
+       -136.105
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 41,
+       "PARCEL_ID_NUMBER": 8055236,
+       "PARCEL_DESIGNATOR": "LOT 77 GROUP 803",
+       "CLSR_PLAN": "53660 CLSR YT",
+       "LTO_PLAN": "29758 LTO YT",
+       "GEO_ADMIN_CODE": "TPK",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "LOT 77 GROUP 803 (TAKHINI RIVER TERRITORIAL PARK CAMPGROUND)",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 18438.765931015
+      }
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.316,
+       -134.27
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 14,
+       "PARCEL_ID_NUMBER": 8016518,
+       "PARCEL_DESIGNATOR": "LOT 37 TAGISH",
+       "CLSR_PLAN": "57266 CLSR YT",
+       "LTO_PLAN": "35667 LTO YT",
+       "GEO_ADMIN_CODE": "TPK",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "LOT 37 TAGISH ( TAGISH BRIDGE TERRITORIAL PARK CAMPGROUND)",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 2472.297692
+      }
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.131,
+       -133.823
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.583,
+       -137.209
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       62.273,
+       -136.343
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       63.6522,
+       -135.887
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.069,
+       -134.571
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       62.774,
+       -137.386
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.5588,
+       -134.878
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 9,
+       "PARCEL_ID_NUMBER": 8013074,
+       "PARCEL_DESIGNATOR": "LOT 403 GROUP 804",
+       "CLSR_PLAN": "51509 CLSR YT",
+       "LTO_PLAN": "25955 LTO YT",
+       "GEO_ADMIN_CODE": "TPK",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "LOT 403 GROUP 804 (KOOKATSOON LAKE TERRITORIAL PARK CAMPGROUND)",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 54628.317661465
+      }
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.019,
+       -128.58
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 16,
+       "PARCEL_ID_NUMBER": 8027387,
+       "PARCEL_DESIGNATOR": "LOT 1056 QUAD 105A/02",
+       "CLSR_PLAN": "74789 CLSR YT",
+       "LTO_PLAN": "93-01 LTO YT",
+       "GEO_ADMIN_CODE": "TPK",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "LOT 1056 QUAD 105 A/2 (LIARD CANYON TERRITORIAL PARK CAMPGROUND)",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 662396.54458833
+      }
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.5613,
+       -134.451
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 13,
+       "PARCEL_ID_NUMBER": 8013480,
+       "PARCEL_DESIGNATOR": "LOT 2 BLOCK H ARMY BEACH SUBDIVISION",
+       "CLSR_PLAN": "50360 CLSR YT",
+       "LTO_PLAN": "24015 LTO YT",
+       "GEO_ADMIN_CODE": "TPK",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "LOT 2 BLOCK H ARMY BEACH SUBDIVISION (MARSH LAKE TERRITORIAL PARK CAMPGROUND)",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 6764.397773805001
+      }
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.5613,
+       -134.451
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 40,
+       "PARCEL_ID_NUMBER": 8013481,
+       "PARCEL_DESIGNATOR": "LOT 6 BLOCK J ARMY BEACH SUBDIVISION",
+       "CLSR_PLAN": "50360 CLSR YT",
+       "LTO_PLAN": "24015 LTO YT",
+       "GEO_ADMIN_CODE": "TPK",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "LOT 6 BLOCK J ARMY BEACH SUBDIVISION (MARSH LAKE TERRITORIAL PARK CAMPGROUND)",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 10510.59217241
+      }
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.007,
+       -132.135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.9211,
+       -132.953
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       61.2428,
+       -134.614
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       61.0816,
+       -136.995
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 20,
+       "PARCEL_ID_NUMBER": 8045764,
+       "PARCEL_DESIGNATOR": "LOT 1 GROUP 853",
+       "CLSR_PLAN": "53452 CLSR YT",
+       "LTO_PLAN": "29144 LTO YT",
+       "GEO_ADMIN_CODE": "TPK",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "LOT 1 REM GROUP 853 (OTTER FALLS TERRITORIAL PARK CAMPGROUND)",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 177741.72701153
+      }
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       67.417,
+       -140.997
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.0801,
+       -130.82
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       61.4143,
+       -135.21
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       59.2816,
+       -129.817
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       64.05,
+       -139.433
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       63.9458,
+       -139.33
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       64.0563,
+       -139.441
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       64.0675,
+       -139.429
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.7294,
+       -135.047
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       64.0632,
+       -139.435
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       64.0481,
+       -139.446
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       61.1963,
+       -136.998
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       67.3894,
+       -137.013
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.6793,
+       -129.23
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 37,
+       "PARCEL_ID_NUMBER": 8055481,
+       "PARCEL_DESIGNATOR": "LOT 1 GROUP 807",
+       "CLSR_PLAN": "54721 CLSR YT",
+       "LTO_PLAN": "30179 LTO YT",
+       "GEO_ADMIN_CODE": "TPK",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "LOT 1 GROUP 807 (SIMPSON LAKE TERRITORIAL PARK CAMPGROUND)",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 6105764.95868379
+      }
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.2325,
+       -132.91
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 47,
+       "PARCEL_ID_NUMBER": 8053021,
+       "PARCEL_DESIGNATOR": "LOT 1029 QUAD 105C/02",
+       "CLSR_PLAN": "76047 CLSR YT",
+       "LTO_PLAN": "94-39 LTO YT",
+       "GEO_ADMIN_CODE": "TPK",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "LOT 1029 QUAD 105C/2 (TESLIN LAKE TERRITORIAL PARK CAMPGROUND)",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 109960.26911241
+      }
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       63.9274,
+       -139.325
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       64.0569,
+       -139.435
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       64.0588,
+       -139.438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       64.0591,
+       -139.438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.159,
+       -129.706
+      ],
+      "attrs": {
+       "PARK_SURVEY_ID": 18,
+       "PARCEL_ID_NUMBER": 8053146,
+       "PARCEL_DESIGNATOR": "LOT 29 GROUP 757",
+       "CLSR_PLAN": "50489 CLSR YT",
+       "LTO_PLAN": "24162 LTO YT",
+       "GEO_ADMIN_CODE": "TPK",
+       "PARCEL_TYPE": "Inside Canada Lands",
+       "REMARKS": "LOT 29 GROUP 757 AT BIG CREEK (TERRITORIAL PARK CAMPGROUND)",
+       "PARCEL_STATE": "ACTIVE",
+       "GEOMETRY.AREA": 19382.613322165
+      }
+     }
+    ]
+   },
+   {
+    "st": "YT",
+    "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+    "note": "Yukon parks",
+    "hits": [
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.003,
+       -137.82
+      ],
+      "attrs": {
+       "PARK250_ID": 12,
+       "PARK_NAME": "Kluane",
+       "PARK_TYPE": "National Park and Reserve",
+       "PARK_LABEL": "Kluane National Park and Reserve"
+      }
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       64.885,
+       -133.351
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.8408,
+       -137.769
+      ],
+      "attrs": {
+       "PARK250_ID": 15,
+       "PARK_NAME": "Kluane",
+       "PARK_TYPE": "Wildlife Sanctuary",
+       "PARK_LABEL": "Kluane Wildlife Sanctuary"
+      }
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.001,
+       -136.885
+      ],
+      "attrs": {
+       "PARK250_ID": 15,
+       "PARK_NAME": "Kluane",
+       "PARK_TYPE": "Wildlife Sanctuary",
+       "PARK_LABEL": "Kluane Wildlife Sanctuary"
+      }
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.074,
+       -133.809
+      ],
+      "attrs": {
+       "PARK250_ID": 17,
+       "PARK_NAME": "Agay Mene",
+       "PARK_TYPE": "Natural Environment Park",
+       "PARK_LABEL": "Agay Mene Natural Environment Park"
+      }
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.654,
+       -136.105
+      ],
+      "attrs": {
+       "PARK250_ID": 22,
+       "PARK_NAME": "Kusawa",
+       "PARK_TYPE": "Natural Environment Park",
+       "PARK_LABEL": "Kusawa Natural Environment Park"
+      }
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.316,
+       -134.27
+      ],
+      "attrs": {
+       "PARK250_ID": 21,
+       "PARK_NAME": "Tagish Narrows",
+       "PARK_TYPE": "Habitat Protection Area",
+       "PARK_LABEL": "Tagish Narrows Habitat Protection Area"
+      }
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.131,
+       -133.823
+      ],
+      "attrs": {
+       "PARK250_ID": 17,
+       "PARK_NAME": "Agay Mene",
+       "PARK_TYPE": "Natural Environment Park",
+       "PARK_LABEL": "Agay Mene Natural Environment Park"
+      }
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.583,
+       -137.209
+      ],
+      "attrs": {
+       "PARK250_ID": 12,
+       "PARK_NAME": "Kluane",
+       "PARK_TYPE": "National Park and Reserve",
+       "PARK_LABEL": "Kluane National Park and Reserve"
+      }
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       62.273,
+       -136.343
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       63.6522,
+       -135.887
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.069,
+       -134.571
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       62.774,
+       -137.386
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.5588,
+       -134.878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.019,
+       -128.58
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.5613,
+       -134.451
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.007,
+       -132.135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.9211,
+       -132.953
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       61.2428,
+       -134.614
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       61.0816,
+       -136.995
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       67.417,
+       -140.997
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.0801,
+       -130.82
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       61.4143,
+       -135.21
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       59.2816,
+       -129.817
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       64.05,
+       -139.433
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       63.9458,
+       -139.33
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       64.0563,
+       -139.441
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       64.0675,
+       -139.429
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.7294,
+       -135.047
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       64.0632,
+       -139.435
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       64.0481,
+       -139.446
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       61.1963,
+       -136.998
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       67.3894,
+       -137.013
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.6793,
+       -129.23
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.2325,
+       -132.91
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       63.9274,
+       -139.325
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       64.0569,
+       -139.435
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       64.0588,
+       -139.438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       64.0591,
+       -139.438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.159,
+       -129.706
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "YT",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.003,
+       -137.82
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.885,
+       -133.351
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.8408,
+       -137.769
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.001,
+       -136.885
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.074,
+       -133.809
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.654,
+       -136.105
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.316,
+       -134.27
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.131,
+       -133.823
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.583,
+       -137.209
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       62.273,
+       -136.343
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       63.6522,
+       -135.887
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.069,
+       -134.571
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       62.774,
+       -137.386
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.5588,
+       -134.878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.019,
+       -128.58
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.5613,
+       -134.451
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.007,
+       -132.135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.9211,
+       -132.953
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       61.2428,
+       -134.614
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       61.0816,
+       -136.995
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       67.417,
+       -140.997
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.0801,
+       -130.82
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       61.4143,
+       -135.21
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       59.2816,
+       -129.817
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.05,
+       -139.433
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       63.9458,
+       -139.33
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.0563,
+       -139.441
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.0675,
+       -139.429
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.7294,
+       -135.047
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.0632,
+       -139.435
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.0481,
+       -139.446
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       61.1963,
+       -136.998
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       67.3894,
+       -137.013
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.6793,
+       -129.23
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.2325,
+       -132.91
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       63.9274,
+       -139.325
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.0569,
+       -139.435
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.0588,
+       -139.438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       64.0591,
+       -139.438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       60.159,
+       -129.706
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "YT",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.003,
+       -137.82
+      ],
+      "attrs": {
+       "NAME_E": "Kluane National Park Reserve Of Canada",
+       "NAME_F": "Réserve de parc national du Canada Kluane",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1972,
+       "ESTYEAR": 1972,
+       "BIOME": "T",
+       "LOC": 13,
+       "O_AREA_HA": 2206100,
+       "PARENT_ID": 715100000,
+       "ZONE_ID": 715100000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.885,
+       -133.351
+      ],
+      "attrs": {
+       "NAME_E": "Peel Watershed LMU 8",
+       "NAME_F": "Peel Watershed LMU 8",
+       "PA_OECM_DF": 3,
+       "IPCA": 0,
+       "IUCN_CAT": 8,
+       "STATUS": 3,
+       "QUALYEAR": 2021,
+       "BIOME": "T",
+       "LOC": 13,
+       "O_AREA_HA": 1911741,
+       "PARENT_ID": 600003200,
+       "ZONE_ID": 600003200,
+       "MECH_E": "To Be Determined",
+       "TYPE_E": "To Be Determined",
+       "OWNER_TYPE": 10,
+       "OWNER_E": "Government of Yukon; First Nation of Na-cho Nyäk Dun; Tetlit Gwich'in Council",
+       "GOV_TYPE": 5,
+       "MGMT_E": "Environment Yukon; First Nation of Na-cho Nyäk Dun; Tetlit Gwich'in Council",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 60,
+       "JUR_ID": "ESA_ID 32",
+       "MPLAN": 0,
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.8408,
+       -137.769
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.001,
+       -136.885
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.074,
+       -133.809
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.654,
+       -136.105
+      ],
+      "attrs": {
+       "NAME_E": "Kusawa",
+       "NAME_F": "Kusawa",
+       "NAME_IND": "Kusawa",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 2005,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 13,
+       "O_AREA_HA": 306890,
+       "PARENT_ID": 600001800,
+       "ZONE_ID": 600001800,
+       "MECH_E": "Yukon Parks and Land Certainty Act",
+       "TYPE_E": "Territorial Park",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Yukon",
+       "GOV_TYPE": 5,
+       "MGMT_E": "Environment Yukon; Champagne and Aishihik First Nations; Carcross/Tagish First Nation; Kwanlin Dün First Nation",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 60,
+       "JUR_ID": "ESA_ID 18",
+       "MPLAN": 0,
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.316,
+       -134.27
+      ],
+      "attrs": {
+       "NAME_E": "Tagish River",
+       "NAME_F": "Tagish River",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 1,
+       "QUALYEAR": 2005,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 13,
+       "O_AREA_HA": 450,
+       "PARENT_ID": 600000400,
+       "ZONE_ID": 600000400,
+       "MECH_E": "Carcross/Tagish First Nation Final Agreement; Yukon Wildlife Act",
+       "TYPE_E": "Habitat Protection Area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Government of Yukon",
+       "GOV_TYPE": 5,
+       "MGMT_E": "Environment Yukon; Carcross/Tagish First Nation",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 60,
+       "JUR_ID": "ESA_ID 4",
+       "MPLAN": 1,
+       "MPLAN_REF": "https://yukon.ca/en/parks-protected-areas",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.131,
+       -133.823
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.583,
+       -137.209
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       62.273,
+       -136.343
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       63.6522,
+       -135.887
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.069,
+       -134.571
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       62.774,
+       -137.386
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.5588,
+       -134.878
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.019,
+       -128.58
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.5613,
+       -134.451
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.007,
+       -132.135
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.9211,
+       -132.953
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       61.2428,
+       -134.614
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       61.0816,
+       -136.995
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       67.417,
+       -140.997
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.0801,
+       -130.82
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       61.4143,
+       -135.21
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       59.2816,
+       -129.817
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.05,
+       -139.433
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       63.9458,
+       -139.33
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.0563,
+       -139.441
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.0675,
+       -139.429
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.7294,
+       -135.047
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.0632,
+       -139.435
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.0481,
+       -139.446
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       61.1963,
+       -136.998
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       67.3894,
+       -137.013
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.6793,
+       -129.23
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.2325,
+       -132.91
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       63.9274,
+       -139.325
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.0569,
+       -139.435
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.0588,
+       -139.438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       64.0591,
+       -139.438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.159,
+       -129.706
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 355,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
