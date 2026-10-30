@@ -94,13 +94,14 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 
 | file | open | total |
 |---|---|---|
-| gis-hunter.json | 61 | 484 |
+| gis-hunter.json | 62 | 485 |
 | key-pieces.json | 76 | 307 |
 | not-sure-for-chat9.json | 146 | 146 |
 | world-finder.json | 61 | 2051 |
 
-## Approvals not used yet: 3
+## Approvals not used yet: 4
 
 - keyed-parking: chat 11 'PASS v3c (Oct 29, 5:25 PM): v3b fresh 30 = 27-28/30 and no wrong-park point; v3c re-counted whole file: 1,826 points / 439 parks, 0 longitude > 0, 0 shared facilities, 0 wilderness / office / hotel / road-number labels left; ski areas and visitor centers / lodges / campgrounds / lookouts stay per Brandon' by chat 11, chat 2 '-'
-- us-key: chat 11 'KEY YES 2026-10-30 30/30 (names/kinds/acres only, no maps seen). US-10476 is a pin; US-7896 back to 1,581 ac; US-5484 George Washington = YES (RI DEM George Washington Management Area, 3,202 ac; the 3 x 2,831 are copies of the same land). 6 outlines lost (Fortymile, Big Canoe Creek, Owens Spring, Henrys Lake Airstrip, Pine Forest, Fawn Creek) = safe pins. Zero-acre wilderness pieces (Beaver Dam, Trigo) could not be size-checked.' by chat 11, chat 2 '-'
-- ca-key: chat 11 'KEY NO 2026-10-30: CA-3300 Cariboo Park only. Its 10 'Cariboo Conservation Area' pieces are a different kind of place: NO. Keep only the 5-acre piece named 'Cariboo Park' (BC local and:3556850) or make it a pin. The other 29 of 30 sample parks are OK by name (Memorial, Lions, Hawthorne, Discovery Town, Sandilands fixed). Sizes of Canada pieces still only partly checked (138 are 0 acres). After CA-3300 is fixed it is KEY YES.' by chat 11, chat 2 '-'
+- us-key: chat 11 'KEY YES 2026-10-30 30/30 (names/kinds/acres only, no maps seen). US-10476 is a pin; US-7896 back to 1,581 ac; US-5484 George Washington = YES (RI DEM George Washington Management Area, 3,202 ac; the 3 x 2,831 are copies of the same land). 6 outlines lost (Fortymile, Big Canoe Creek, Owens Spring, Henrys Lake Airstrip, Pine Forest, Fawn Creek) = safe pins. Zero-acre wilderness pieces (Beaver Dam, Trigo) could not be size-checked.' by chat 11, chat 2 'rechecked 2026-10-30 6:45 AM (chat 2 G-4): summary us-key-changes.json read; chat 11 fixes applied and confirmed in the build (Monument, Chena, Fawn Creek, Pine Forest, Rogue River-Siskiyou pins; Standing Boy acres)'
+- ca-key: chat 11 'KEY YES 2026-10-30 30/30 (names/kinds/acres only, no maps seen). CA-3300 Cariboo Park now keeps only its own 5-ac piece. Memorial/Lions/Hawthorne/Discovery Town join at the pin only; Sandilands is a pin. 138 pieces show 0 acres so those sizes are unchecked.' by chat 11, chat 2 'rechecked 2026-10-30 6:45 AM (chat 2 G-4): greenspace pieces only at the pin, Sandilands pin, Cariboo only its own piece, acres from the outline; summary ca-key-changes.json read'
+- world-key: chat 11 'KEY YES 2026-10-30 30/30 (Australia; names/kinds only, no maps seen). All 268 are my world-finder YES (Victorian reserves after abbreviation expansion: SS.R., G.L.R., N.F.R., N.F.S.R.; Strzelecki State Forest blocks). Acres not shown in the sample, so sizes unchecked.' by chat 11, chat 2 'rechecked 2026-10-30 6:45 AM (chat 2 G-4): Australia only; +268 = exactly chat 11 world-finder YES, 0 lost; summary world-key-changes.json read'

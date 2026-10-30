@@ -7917,7 +7917,8 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "auto_recheck": "NOT PASSED: the park is a ecological kind the record does not name"
   },
   {
    "area": "US-CO",
@@ -8042,7 +8043,8 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park; the park is a natural kind the record does not name"
   },
   {
    "area": "US-MD",
@@ -8124,7 +8126,8 @@
    "checked_by": "chat 11 (Oct 29-30)",
    "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto_recheck": "NOT PASSED: the park is a historic kind the record does not name"
   },
   {
    "area": "US-GA",
@@ -8937,7 +8940,8 @@
    "checked_by": "chat 11 (Oct 30)",
    "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto_recheck": "NOT PASSED: already the outline of CA-2465; a demoted layer (under 10% YES)"
   },
   {
    "area": "CA-SK",
@@ -9152,5 +9156,6 @@
    "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   }
- ]
+ ],
+ "auto_yes": 0
 }
