@@ -1,0 +1,1101 @@
+{
+ "request": "requests/9-cap2-nl-1.json",
+ "id": "9-cap2-nl-1",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CAP2 NL 1: 40 parks, 2 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CAP2 NL 1: 40 parks, 2 layers",
+  "probe": {
+   "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (NL, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-4820,CA-4549,CA-4558,CA-4816,CA-4817,CA-4818,CA-4819,CA-4821,CA-4822,CA-4823,CA-4824,CA-4825,CA-4942,CA-5132,CA-5275,CA-5276,CA-5277,CA-5278,CA-5279,CA-5280,CA-5281,CA-5282,CA-5284,CA-5383,CA-5384,CA-5385,CA-5386,CA-5387,CA-5388,CA-5389,CA-5390,CA-5391,CA-5392,CA-5393,CA-5394,CA-5395,CA-5396,CA-5397,CA-5399,CA-5400. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+   "refs": [
+    "CA-4820",
+    "CA-4549",
+    "CA-4558",
+    "CA-4816",
+    "CA-4817",
+    "CA-4818",
+    "CA-4819",
+    "CA-4821",
+    "CA-4822",
+    "CA-4823",
+    "CA-4824",
+    "CA-4825",
+    "CA-4942",
+    "CA-5132",
+    "CA-5275",
+    "CA-5276",
+    "CA-5277",
+    "CA-5278",
+    "CA-5279",
+    "CA-5280",
+    "CA-5281",
+    "CA-5282",
+    "CA-5284",
+    "CA-5383",
+    "CA-5384",
+    "CA-5385",
+    "CA-5386",
+    "CA-5387",
+    "CA-5388",
+    "CA-5389",
+    "CA-5390",
+    "CA-5391",
+    "CA-5392",
+    "CA-5393",
+    "CA-5394",
+    "CA-5395",
+    "CA-5396",
+    "CA-5397",
+    "CA-5399",
+    "CA-5400"
+   ],
+   "pointq": [
+    {
+     "st": "NL",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       58.9766,
+       -63.1861
+      ],
+      [
+       47.8375,
+       -59.3389
+      ],
+      [
+       48.2486,
+       -55.2719
+      ],
+      [
+       47.5198,
+       -52.6236
+      ],
+      [
+       47.2509,
+       -53.9719
+      ],
+      [
+       47.5351,
+       -53.2101
+      ],
+      [
+       55.4587,
+       -60.2125
+      ],
+      [
+       51.5953,
+       -55.5331
+      ],
+      [
+       50.6974,
+       -57.3819
+      ],
+      [
+       51.7307,
+       -56.4285
+      ],
+      [
+       48.6477,
+       -53.1132
+      ],
+      [
+       47.57,
+       -52.6823
+      ],
+      [
+       48.9542,
+       -57.9628
+      ],
+      [
+       51.4613,
+       -56.8576
+      ],
+      [
+       48.501,
+       -53.1401
+      ],
+      [
+       50.1224,
+       -56.1316
+      ],
+      [
+       47.6956,
+       -53.2125
+      ],
+      [
+       48.7647,
+       -56.596
+      ],
+      [
+       47.5618,
+       -52.709
+      ],
+      [
+       57.5614,
+       -61.9706
+      ],
+      [
+       48.4984,
+       -53.0807
+      ],
+      [
+       47.5701,
+       -52.709
+      ],
+      [
+       47.5675,
+       -52.7106
+      ],
+      [
+       46.6171,
+       -53.5321
+      ],
+      [
+       47.0242,
+       -52.8849
+      ],
+      [
+       47.5667,
+       -52.7108
+      ],
+      [
+       47.5712,
+       -52.7055
+      ],
+      [
+       58.1991,
+       -62.6271
+      ],
+      [
+       47.5816,
+       -52.6785
+      ],
+      [
+       47.5653,
+       -52.708
+      ],
+      [
+       47.5645,
+       -52.7069
+      ],
+      [
+       47.5723,
+       -52.7023
+      ],
+      [
+       49.7,
+       -54.0667
+      ],
+      [
+       52.2741,
+       -55.5858
+      ],
+      [
+       49.4571,
+       -54.6361
+      ],
+      [
+       47.5963,
+       -53.2544
+      ],
+      [
+       46.6585,
+       -53.0736
+      ],
+      [
+       47.5827,
+       -52.6787
+      ],
+      [
+       47.5658,
+       -52.7065
+      ],
+      [
+       47.7375,
+       -53.2296
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NL",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       58.9766,
+       -63.1861
+      ],
+      [
+       47.8375,
+       -59.3389
+      ],
+      [
+       48.2486,
+       -55.2719
+      ],
+      [
+       47.5198,
+       -52.6236
+      ],
+      [
+       47.2509,
+       -53.9719
+      ],
+      [
+       47.5351,
+       -53.2101
+      ],
+      [
+       55.4587,
+       -60.2125
+      ],
+      [
+       51.5953,
+       -55.5331
+      ],
+      [
+       50.6974,
+       -57.3819
+      ],
+      [
+       51.7307,
+       -56.4285
+      ],
+      [
+       48.6477,
+       -53.1132
+      ],
+      [
+       47.57,
+       -52.6823
+      ],
+      [
+       48.9542,
+       -57.9628
+      ],
+      [
+       51.4613,
+       -56.8576
+      ],
+      [
+       48.501,
+       -53.1401
+      ],
+      [
+       50.1224,
+       -56.1316
+      ],
+      [
+       47.6956,
+       -53.2125
+      ],
+      [
+       48.7647,
+       -56.596
+      ],
+      [
+       47.5618,
+       -52.709
+      ],
+      [
+       57.5614,
+       -61.9706
+      ],
+      [
+       48.4984,
+       -53.0807
+      ],
+      [
+       47.5701,
+       -52.709
+      ],
+      [
+       47.5675,
+       -52.7106
+      ],
+      [
+       46.6171,
+       -53.5321
+      ],
+      [
+       47.0242,
+       -52.8849
+      ],
+      [
+       47.5667,
+       -52.7108
+      ],
+      [
+       47.5712,
+       -52.7055
+      ],
+      [
+       58.1991,
+       -62.6271
+      ],
+      [
+       47.5816,
+       -52.6785
+      ],
+      [
+       47.5653,
+       -52.708
+      ],
+      [
+       47.5645,
+       -52.7069
+      ],
+      [
+       47.5723,
+       -52.7023
+      ],
+      [
+       49.7,
+       -54.0667
+      ],
+      [
+       52.2741,
+       -55.5858
+      ],
+      [
+       49.4571,
+       -54.6361
+      ],
+      [
+       47.5963,
+       -53.2544
+      ],
+      [
+       46.6585,
+       -53.0736
+      ],
+      [
+       47.5827,
+       -52.6787
+      ],
+      [
+       47.5658,
+       -52.7065
+      ],
+      [
+       47.7375,
+       -53.2296
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:35Z",
+ "results": {
+  "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (NL, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-4820,CA-4549,CA-4558,CA-4816,CA-4817,CA-4818,CA-4819,CA-4821,CA-4822,CA-4823,CA-4824,CA-4825,CA-4942,CA-5132,CA-5275,CA-5276,CA-5277,CA-5278,CA-5279,CA-5280,CA-5281,CA-5282,CA-5284,CA-5383,CA-5384,CA-5385,CA-5386,CA-5387,CA-5388,CA-5389,CA-5390,CA-5391,CA-5392,CA-5393,CA-5394,CA-5395,CA-5396,CA-5397,CA-5399,CA-5400. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "NL",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       58.9766,
+       -63.1861
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.8375,
+       -59.3389
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.2486,
+       -55.2719
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5198,
+       -52.6236
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.2509,
+       -53.9719
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5351,
+       -53.2101
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       55.4587,
+       -60.2125
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.5953,
+       -55.5331
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.6974,
+       -57.3819
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.7307,
+       -56.4285
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.6477,
+       -53.1132
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.57,
+       -52.6823
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.9542,
+       -57.9628
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       51.4613,
+       -56.8576
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.501,
+       -53.1401
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       50.1224,
+       -56.1316
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.6956,
+       -53.2125
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.7647,
+       -56.596
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5618,
+       -52.709
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       57.5614,
+       -61.9706
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       48.4984,
+       -53.0807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5701,
+       -52.709
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5675,
+       -52.7106
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.6171,
+       -53.5321
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.0242,
+       -52.8849
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5667,
+       -52.7108
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5712,
+       -52.7055
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       58.1991,
+       -62.6271
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5816,
+       -52.6785
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5653,
+       -52.708
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5645,
+       -52.7069
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5723,
+       -52.7023
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.7,
+       -54.0667
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       52.2741,
+       -55.5858
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.4571,
+       -54.6361
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5963,
+       -53.2544
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.6585,
+       -53.0736
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5827,
+       -52.6787
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.5658,
+       -52.7065
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.7375,
+       -53.2296
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NL",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       58.9766,
+       -63.1861
+      ],
+      "attrs": {
+       "NAME_E": "Torngat Mountains National Park Of Canada",
+       "NAME_F": "Parc national du Canada Des Monts Torngat",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 2005,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 5,
+       "O_AREA_HA": 970000,
+       "PARENT_ID": 719000000,
+       "ZONE_ID": 719000000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.8375,
+       -59.3389
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.2486,
+       -55.2719
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5198,
+       -52.6236
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.2509,
+       -53.9719
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5351,
+       -53.2101
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       55.4587,
+       -60.2125
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.5953,
+       -55.5331
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.6974,
+       -57.3819
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.7307,
+       -56.4285
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.6477,
+       -53.1132
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.57,
+       -52.6823
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.9542,
+       -57.9628
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       51.4613,
+       -56.8576
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.501,
+       -53.1401
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       50.1224,
+       -56.1316
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.6956,
+       -53.2125
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.7647,
+       -56.596
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5618,
+       -52.709
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       57.5614,
+       -61.9706
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.4984,
+       -53.0807
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5701,
+       -52.709
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5675,
+       -52.7106
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.6171,
+       -53.5321
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.0242,
+       -52.8849
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5667,
+       -52.7108
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5712,
+       -52.7055
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       58.1991,
+       -62.6271
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5816,
+       -52.6785
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5653,
+       -52.708
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5645,
+       -52.7069
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5723,
+       -52.7023
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.7,
+       -54.0667
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       52.2741,
+       -55.5858
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.4571,
+       -54.6361
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5963,
+       -53.2544
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.6585,
+       -53.0736
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5827,
+       -52.6787
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.5658,
+       -52.7065
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.7375,
+       -53.2296
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 179,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
