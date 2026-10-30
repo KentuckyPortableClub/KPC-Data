@@ -5,16 +5,33 @@
    "status": "paused (out of time, will carry on)",
    "started": "2026-10-30",
    "done": [
-    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer"
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/0157_OtherData_WFL1/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Bunbury_OREI_Region_10km_Buff_Coast_GDA1994/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/UKSACswithMarineComponents/FeatureServer",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer"
    ],
    "log": [
     {
      "step": "known",
      "what": "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer/50",
      "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
+     "found": true
+    },
+    {
+     "step": "org",
+     "what": "org 0zuv5ZFEncBv7NQQ (GoBe Consultants): 3 services read"
     }
    ],
-   "steps": []
+   "steps": [
+    "known",
+    "servers",
+    "wfs"
+   ]
   },
   "JP": {
    "status": "done",

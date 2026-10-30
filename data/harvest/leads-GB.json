@@ -3,7 +3,11 @@
  "cc": "GB",
  "date": "2026-10-30",
  "status": "paused (out of time, will carry on)",
- "steps_done": [],
+ "steps_done": [
+  "known",
+  "servers",
+  "wfs"
+ ],
  "bands": {
   "A": 162,
   "B": 66,
@@ -20,6 +24,11 @@
   {
    "step": "known",
    "what": "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer/50",
+   "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
    "found": true
   }
  ],
@@ -7642,6 +7651,42 @@
       "Lochs Duich, Long and Alsh Reefs"
      ],
      "name_field": "SITE_NAME"
+    },
+    {
+     "id": 0,
+     "name": "UKSACswithMarineComponents",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "SITE_CODE",
+      "SITE_NAME",
+      "SITE_STATU",
+      "Country",
+      "CP2_REGION",
+      "AREA_HA",
+      "LONG_dd",
+      "LAT_dd",
+      "cSACDate",
+      "SCIDate",
+      "SACDate",
+      "Agency",
+      "WDPA_CODE",
+      "NonMarFeat",
+      "Ref_FC1",
+      "Ref_Fld1",
+      "Ref_Val1",
+      "Ref_Dist1",
+      "Ref_FC2"
+     ],
+     "records": 116,
+     "sample": [
+      "Sanday",
+      "Chesil and the Fleet",
+      "Lochs Duich, Long and Alsh Reefs"
+     ],
+     "name_field": "SITE_NAME"
     }
    ],
    "note": "UKSACswithMarineComponents",
@@ -8812,6 +8857,68 @@
      "records": 1
     },
     {
+     "id": 31,
+     "name": "North Devon Surfing Reserve",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Id",
+      "Name",
+      "Source",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3,
+     "sample": [
+      "Saunton Sands",
+      "Croyde",
+      "Woolacombe and Putsborough"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 1,
+     "name": "UK Airfields",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OID",
+      "Name",
+      "FolderPath",
+      "SymbolID",
+      "AltMode",
+      "Base",
+      "Snippet",
+      "PopupInfo",
+      "HasLabel",
+      "LabelID"
+     ],
+     "records": 913,
+     "sample": [
+      "Abbotsley",
+      "Aberdeen / Dyce (EGPD)",
+      "Aberporth (EGFA)"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 5,
+     "name": "Fisheries_Study_Area_WGS84_UTM30N",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Id",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1
+    },
+    {
      "id": 7,
      "name": "EEA_UK_Coast_20km_Buffer_WGS84_UTM30N",
      "geom": "Polygon",
@@ -8921,68 +9028,6 @@
       "Shape__Length"
      ],
      "records": 26,
-     "sample": [
-      " ",
-      " ",
-      " "
-     ],
-     "name_field": "Name"
-    },
-    {
-     "id": 14,
-     "name": "Beam Trawl",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "FID",
-      "OBJECTID",
-      "Name",
-      "Shape_Leng",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 4,
-     "sample": [
-      " ",
-      " ",
-      " "
-     ],
-     "name_field": "Name"
-    },
-    {
-     "id": 15,
-     "name": "Knock Out",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "FID",
-      "Name",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 1,
-     "sample": [
-      " "
-     ],
-     "name_field": "Name"
-    },
-    {
-     "id": 16,
-     "name": "Majorly Important",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "FID",
-      "OBJECTID",
-      "Name",
-      "Shape_Leng",
-      "Shape__Area",
-      "Shape__Length"
-     ],
-     "records": 20,
      "sample": [
       " ",
       " ",
@@ -12449,81 +12494,6 @@
    "grade": 4,
    "band": "B"
   },
-  "https://services.arcgis.com/jjzesw51tqey9uat/arcgis/rest/services/national_trails_england": {
-   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
-   "cc": "GB",
-   "title": "National_Trails_England",
-   "publisher": "services.arcgis.com",
-   "catalog": "known-good (chat 8)",
-   "licence": "© Natural England copyright. Contains Ordnance Survey data © Crown copyright and database right [year].",
-   "date": "",
-   "found": "2026-10-28",
-   "gaps": [
-    "trail line"
-   ],
-   "layers": [
-    {
-     "id": 0,
-     "name": "National Trails (England) © Natural England",
-     "geom": "Polyline",
-     "gap": "trail line",
-     "is": "trail / path lines",
-     "fields": [
-      "OBJECTID_1",
-      "OBJECTID",
-      "Name",
-      "Opened",
-      "Start",
-      "End_",
-      "Length_Km",
-      "Length_Mil",
-      "Updated",
-      "Last_VR",
-      "GlobalID",
-      "Shape__Length"
-     ],
-     "records": 14,
-     "sample": [
-      "Pennine Way",
-      "Offa's Dyke Path",
-      "South Downs Way"
-     ],
-     "name_field": "Name"
-    },
-    {
-     "id": 0,
-     "name": "National Trails (England) © Natural England",
-     "geom": "Polyline",
-     "gap": "trail line",
-     "is": "trail / path lines",
-     "fields": [
-      "OBJECTID_1",
-      "OBJECTID",
-      "Name",
-      "Opened",
-      "Start",
-      "End_",
-      "Length_Km",
-      "Length_Mil",
-      "Updated",
-      "Last_VR",
-      "GlobalID",
-      "Shape__Length"
-     ],
-     "records": 14,
-     "sample": [
-      "Pennine Way",
-      "Offa's Dyke Path",
-      "South Downs Way"
-     ],
-     "name_field": "Name"
-    }
-   ],
-   "note": "known-good service",
-   "grade": 4,
-   "band": "B",
-   "known_good": true
-  },
   "https://services.arcgis.com/jjzesw51tqey9uat/arcgis/rest/services/os_priority_ponds_with_survey_data_england": {
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/OS_Priority_Ponds_with_Survey_data_England/FeatureServer",
    "cc": "GB",
@@ -13582,6 +13552,40 @@
       "Proposed Area in the Indian Ocean off Bunbury Regi"
      ],
      "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "Bunbury_OREI_Region_10km_Buff_Coast_GDA1994",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "Status",
+      "Region",
+      "Consultati",
+      "Name",
+      "Disclaimer",
+      "CoordSys",
+      "DateDeclar",
+      "Area_km2",
+      "Declaratio",
+      "Shape__Are",
+      "Shape__Len",
+      "GlobalID",
+      "CreationDa",
+      "Creator",
+      "EditDate",
+      "Editor",
+      "BUFF_DIST",
+      "ORIG_FID",
+      "Shape__Area"
+     ],
+     "records": 1,
+     "sample": [
+      "Proposed Area in the Indian Ocean off Bunbury Regi"
+     ],
+     "name_field": "Name"
     }
    ],
    "note": "Bunbury_OREI_Region_10km_Buff_Coast_GDA1994",
@@ -14285,6 +14289,109 @@
    "grade": 3,
    "band": "C",
    "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services.arcgis.com/jjzesw51tqey9uat/arcgis/rest/services/national_trails_england": {
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
+   "cc": "GB",
+   "title": "National_Trails_England",
+   "publisher": "services.arcgis.com",
+   "catalog": "known-good (chat 8)",
+   "licence": "© Natural England copyright. Contains Ordnance Survey data © Crown copyright and database right [year].",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "trail line"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "National Trails (England) © Natural England",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "Name",
+      "Opened",
+      "Start",
+      "End_",
+      "Length_Km",
+      "Length_Mil",
+      "Updated",
+      "Last_VR",
+      "GlobalID",
+      "Shape__Length"
+     ],
+     "records": 14,
+     "sample": [
+      "Pennine Way",
+      "Offa's Dyke Path",
+      "South Downs Way"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "National Trails (England) © Natural England",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "Name",
+      "Opened",
+      "Start",
+      "End_",
+      "Length_Km",
+      "Length_Mil",
+      "Updated",
+      "Last_VR",
+      "GlobalID",
+      "Shape__Length"
+     ],
+     "records": 14,
+     "sample": [
+      "Pennine Way",
+      "Offa's Dyke Path",
+      "South Downs Way"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 0,
+     "name": "National Trails (England) © Natural England",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "Name",
+      "Opened",
+      "Start",
+      "End_",
+      "Length_Km",
+      "Length_Mil",
+      "Updated",
+      "Last_VR",
+      "GlobalID",
+      "Shape__Length"
+     ],
+     "records": 14,
+     "sample": [
+      "Pennine Way",
+      "Offa's Dyke Path",
+      "South Downs Way"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "known-good service",
+   "grade": 3,
+   "band": "B",
+   "known_good": true
   },
   "https://services-eu1.arcgis.com/0zuv5zfencbv7nqq/arcgis/rest/services/onshore_assessment_area": {
    "url": "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Onshore_Assessment_Area/FeatureServer",
