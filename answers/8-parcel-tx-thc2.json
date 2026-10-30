@@ -1,0 +1,162 @@
+{
+ "request": "requests/8-parcel-tx-thc2.json",
+ "id": "8-parcel-tx-thc2",
+ "chat": 8,
+ "kind": "parcel",
+ "report": "Refile of 8-parcel-tx-thc (that one used 'sites' objects with street addresses, the wrong shape for kind=parcel -- it needs 'points' as [lat,lon] pairs, got 0 results). 11 Texas Historical Commission state historic sites, all P-2 no-hit or a container-only hit, using POTA pin coordinates (refs and points are parallel arrays, same order). US-10276 Star of the Republic Museum and US-6538 Barrington Plantation both sit inside Washington-on-the-Brazos SHS (PAD-US 261746, 295 ac) -- that shape is a different, bigger record (R-G8); need each site's own smaller parcel, not that container. If StratMap has no coverage for a county, say so rather than guessing.",
+ "asked": {
+  "chat": 8,
+  "kind": "parcel",
+  "layer": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/2019_Texas_Parcels_StratMap/FeatureServer/0",
+  "refs": [
+   "US-10272",
+   "US-10273",
+   "US-10274",
+   "US-10275",
+   "US-10276",
+   "US-12109",
+   "US-6538",
+   "US-6560",
+   "US-6582",
+   "US-6601",
+   "US-6602"
+  ],
+  "points": [
+   [
+    31.9987,
+    -102.091
+   ],
+   [
+    35.0306,
+    -101.183
+   ],
+   [
+    25.9593,
+    -97.3033
+   ],
+   [
+    28.6476,
+    -97.3827
+   ],
+   [
+    30.3239,
+    -96.1537
+   ],
+   [
+    29.1556,
+    -95.6567
+   ],
+   [
+    30.3214,
+    -96.1506
+   ],
+   [
+    30.2668,
+    -97.732
+   ],
+   [
+    31.5236,
+    -94.1151
+   ],
+   [
+    33.57,
+    -96.2075
+   ],
+   [
+    29.807,
+    -96.0977
+   ]
+  ],
+  "report": "Refile of 8-parcel-tx-thc (that one used 'sites' objects with street addresses, the wrong shape for kind=parcel -- it needs 'points' as [lat,lon] pairs, got 0 results). 11 Texas Historical Commission state historic sites, all P-2 no-hit or a container-only hit, using POTA pin coordinates (refs and points are parallel arrays, same order). US-10276 Star of the Republic Museum and US-6538 Barrington Plantation both sit inside Washington-on-the-Brazos SHS (PAD-US 261746, 295 ac) -- that shape is a different, bigger record (R-G8); need each site's own smaller parcel, not that container. If StratMap has no coverage for a county, say so rather than guessing."
+ },
+ "answered": "2026-10-30 20:18Z",
+ "results": [
+  {
+   "point": [
+    31.9987,
+    -102.091
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    35.0306,
+    -101.183
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    25.9593,
+    -97.3033
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    28.6476,
+    -97.3827
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    30.3239,
+    -96.1537
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    29.1556,
+    -95.6567
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    30.3214,
+    -96.1506
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    30.2668,
+    -97.732
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    31.5236,
+    -94.1151
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    33.57,
+    -96.2075
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  },
+  {
+   "point": [
+    29.807,
+    -96.0977
+   ],
+   "error": "{'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  }
+ ],
+ "seconds": 20,
+ "manners": {
+  "requests": 11,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 11
+ },
+ "short": "11 result(s), 0 read OK"
+}
