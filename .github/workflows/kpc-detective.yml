@@ -22,7 +22,7 @@ on:
         default: '6'
       jobs:
         description: 'Which jobs, in order: questions gaps (any subset)'
-        default: 'questions gaps'
+        default: 'questions'
   schedule:
     - cron: '41 10 * * 1'
 permissions:
@@ -67,7 +67,7 @@ jobs:
         env:
           AREAS: ${{ inputs.areas }}
           MINUTES: '55'
-          JOBS: ${{ inputs.jobs || 'questions gaps' }}
+          JOBS: ${{ inputs.jobs || 'questions' }}   # Oct 30 (HQ audit 3): job A 'gaps' = the GIS hunter's work now; by hand only
         run: |
           cd kpcdata
           N="${{ inputs.chunks || 5 }}"; [ "$N" -gt 5 ] 2>/dev/null && N=5; [ "$N" -lt 1 ] 2>/dev/null && N=1

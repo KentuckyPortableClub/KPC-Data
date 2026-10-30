@@ -92,7 +92,11 @@ def approved_layers(area):
     return out
 
 
+HOLD = os.environ.get('HUNTER_ADDONS') != '1'   # Oct 30 6:47 AM HQ / Brandon 6:45 AM: Fable's tuned hunter runs UNCHANGED until Nov 6; AUTO-2 layers + AUTO-4 page reads stay off until then
+
+
 def layers(area):
+    if HOLD: return layers_known(area)
     return layers_known(area) + [l for l in approved_layers(area) if l[0] not in {k[0] for k in layers_known(area)}]
 
 
@@ -356,7 +360,7 @@ def main():
         R = {r: {'park': (P.get(r) or (0, 0, ''))[2], 'area': area, 'why_not': t, 'hits': [], 'leads': [], 'tried': []} for r, t in pool[area]}
         step_a(area, todo, P, R)
         step_b(area, todo, P, R, queue)
-        step_b3(area, todo, R, queue)
+        if not HOLD: step_b3(area, todo, R, queue)
         for rec in R.values(): rec['verdict'] = verdict(rec)
         write_area(area, R); done_R[area] = R
         c = {}

@@ -23,6 +23,7 @@ def main():
     try: rows = json.load(open('data/intake/ready.json')).get('rows') or []
     except (OSError, ValueError): rows = []
     appr = lambda pre: sorted(r.get('url', '') for r in rows if r.get('approved') is True and str(r.get('area') or '').startswith(pre))   # AUTO-2: a newly approved layer starts a pass
+    if os.environ.get('HUNTER_ADDONS') != '1': appr = lambda pre: []   # hold until Nov 6 (the hunter does not read approved layers yet)
     now = {'US': fp([str(L / 'data/us-key/why-not.json'), 'data/state-gis.json', str(L / 'data/state-gis.json')]) + hashlib.sha1(json.dumps(appr('US')).encode()).hexdigest()[:6],
            'CA': fp(glob.glob(str(L / 'data/ca-key/*.json')) + [str(L / '.claude/build/research/missing-after-key-canada.json')]) + hashlib.sha1(json.dumps(appr('CA')).encode()).hexdigest()[:6]}
     try: seen = json.load(open(SEEN))
