@@ -1,0 +1,71 @@
+name: KPC GIS hunter (Fable lists, hidden)
+# Oct 29 2026 (chat 10, Opus; Fable's design KPC-Links .claude/build/research/KPC_GisHunter_Design_Fable.md; Brandon 9:32 PM 'build
+# it run US 1st ... then run Canada'). Searches the US / Canada Fable lists for OFFICIAL GIS layers (Rule G R-G7 steps 2-3).
+# Decides nothing: candidates -> data/waiting/questions/gis-hunter.json (chat 11 YES / NO), new layers -> data/intake/queue.json,
+# rows -> data/gis-hunter/worklog-<area>.md. Hidden data only (freeze). Dispatch only; chains itself; never goes red.
+on:
+  workflow_dispatch:
+    inputs:
+      country:
+        description: 'US or CA (used when areas is blank)'
+        default: 'US'
+      areas:
+        description: 'Areas, e.g. "US-IA US-RI" or "CA-PE" (blank = every open area of the country, fewest open parks first)'
+        default: ''
+      chunks:
+        description: 'Chunks of 55 min in this job (max 5)'
+        default: '5'
+      chain:
+        description: 'How many MORE jobs may follow by themselves when areas remain (0 = none)'
+        default: '4'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-gis-hunter
+  cancel-in-progress: false
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: KPC-Links (the Fable pools + keys; read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            .claude/build/research
+            data/us-key
+            data/ca-key
+            data/parkinfo
+            kpc-ky-data.json
+            .github/scripts
+      - name: Hunt, one save per chunk
+        continue-on-error: true
+        env:
+          LINKS: ../links
+          AREAS: ${{ inputs.areas }}
+          COUNTRY: ${{ inputs.country }}
+        run: |
+          cd kpcdata
+          N=${{ inputs.chunks }}; [ "$N" -gt 5 ] && N=5
+          for i in $(seq 1 $N); do
+            MINUTES=55 python3 .github/scripts/kpc_gis_hunter.py | tee /tmp/h.log || true
+            python3 .github/scripts/kpc_status.py board "GIS hunter" green "chunk $i: data/gis-hunter + questions" "chat 11 answers data/waiting/questions/gis-hunter.json" || true
+            bash ../links/.github/scripts/kpc_push_data.sh . "GIS hunter: chunk $i (hidden)" data/gis-hunter data/intake/queue.json data/waiting/questions data/status || true
+            L=$(grep -o '^LEFT=[0-9]*' /tmp/h.log | tail -1 | cut -d= -f2); echo "LEFT=$L" >> "$GITHUB_ENV"
+            [ "${L:-0}" = 0 ] && break
+          done
+      - name: Areas remain, so the next job starts itself
+        if: ${{ env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.areas == '' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          C=$(( ${{ inputs.chain }} - 1 ))
+          gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ inputs.country }} -f areas= -f chunks=5 -f chain=$C || true
