@@ -5,16 +5,35 @@
    "status": "paused (out of time, will carry on)",
    "started": "2026-10-30",
    "done": [
-    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer"
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/0157_OtherData_WFL1/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Bunbury_OREI_Declared_Areas_/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/Bunbury_OREI_Region_10km_Buff_Coast_GDA1994/FeatureServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/UKSACswithMarineComponents/FeatureServer",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
+    "https://tiles-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/IHLS_Heatmap_2012to2025_Online/MapServer"
    ],
    "log": [
     {
      "step": "known",
      "what": "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer/50",
      "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
+     "found": true
+    },
+    {
+     "step": "org",
+     "what": "org 0zuv5ZFEncBv7NQQ (GoBe Consultants): 5 services read"
     }
    ],
-   "steps": []
+   "steps": [
+    "known",
+    "servers",
+    "wfs"
+   ]
   },
   "JP": {
    "status": "done",
@@ -311,12 +330,11 @@
   },
   "PL": {
    "status": "done",
-   "started": "2026-10-30",
+   "started": "2026-10-29",
    "done": [
     "http://mapy.geoportal.gov.pl/wss/service/ATOM/httpauth/atom/PS",
     "https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL_kat_wlasnosci/MapServer/WMSServer",
     "https://ogcapi.bdl.lasy.gov.pl",
-    "https://sdi.gdos.gov.pl/wfs",
     "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows"
    ],
    "log": [
@@ -351,8 +369,79 @@
      "what": "https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL_kat_wlasnosci/MapServer/WMSServer: 0 feature types, 0 look like park layers"
     },
     {
-     "step": "wfs",
-     "what": "https://sdi.gdos.gov.pl/wfs: HTTP 403"
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "park narodowy",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "park krajobrazowy",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "rezerwat przyrody",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "formy ochrony przyrody",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "agol": "park narodowy",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "park krajobrazowy",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "rezerwat przyrody",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "formy ochrony przyrody",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "obszar chroniony",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "step": "known",
+     "what": "https://ogcapi.bdl.lasy.gov.pl: 20 OGC API collections, 20 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://ogcapi.bdl.lasy.gov.pl",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows: 20 feature types, 20 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows",
+     "found": true
+    },
+    {
+     "step": "server",
+     "what": "https://powietrze.gios.gov.pl/arcgis/rest/services: HTTP 404"
     },
     {
      "catalog": "https://api.dane.gov.pl/1.4",
@@ -377,7 +466,7 @@
     },
     {
      "catalog": "https://api.dane.gov.pl/1.4",
-     "keyword": "obszar chronionego krajobrazu",
+     "keyword": "formy ochrony przyrody",
      "hits": 30,
      "services_read": 0,
      "downloads_listed": 0
@@ -385,48 +474,27 @@
     {
      "agol": "park narodowy",
      "hits": 2,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       2
-      ]
-     ]
+     "read": 0
     },
     {
      "agol": "park krajobrazowy",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "rezerwat przyrody",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "obszar chronionego krajobrazu",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "Natura 2000",
-     "hits": 7,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       7
-      ]
-     ]
+     "read": 0
     },
     {
      "agol": "formy ochrony przyrody",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
+    },
+    {
+     "agol": "obszar chroniony",
+     "hits": 0,
+     "read": 0
     }
    ],
    "steps": [
@@ -439,7 +507,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "AU": {
    "status": "paused (out of time, will carry on)",
@@ -789,98 +858,53 @@
   },
   "IT": {
    "status": "done",
-   "started": "2026-10-30",
-   "done": [
-    "http://servizigis.regione.emilia-romagna.it/wfs/carta_della_vegetazione?service=WFS&version=2.0.0&request=GetCapabilities",
-    "http://servizigis.regione.emilia-romagna.it/wfs/rete_escursionistica?service=WFS&version=2.0.0&request=GetCapabilities",
-    "https://dati.lazio.it/geoserver/areaumidamuraglioni/wms?service=WMS&version=1.1.0&request=GetCapabilities",
-    "https://dati.lazio.it/geoserver/fontanili/wms?service=WMS&version=1.1.0&request=GetCapabilities",
-    "https://dati.lazio.it/geoserver/lacioni/wms?service=WMS&version=1.1.0&request=GetCapabilities",
-    "https://dati.lazio.it/geoserver/limiteriservalamone/wms?service=WMS&version=1.1.0&request=GetCapabilities",
-    "https://geoservices1.civis.bz.it/geoserver/p_bz-TerritorialPlans/ows?service=WMS&version=1.3.0&request=GetCapabilities",
-    "https://geoservices1.civis.bz.it/geoserver/p_bz-TerritorialPlans/wms?",
-    "https://gn.mase.gov.it/portale/servizio-wfs",
-    "https://parcodellamaremma.ldpgis.it/services/confine_parco_r1/wfs",
-    "https://sit.comune.fe.it/geoserverckan/Ferrara/Aree_di_riequilibrio_ecologico_PUG_preview/wms?service=WMS&version=1.3.0&request=GetCapabilities"
-   ],
+   "started": "2026-10-28",
+   "done": [],
    "log": [
-    {
-     "step": "wfs",
-     "what": "https://gn.mase.gov.it/portale/servizio-wfs: HTTP 404"
-    },
     {
      "catalog": "https://www.dati.gov.it/opendata",
      "keyword": "parco nazionale",
-     "hits": 30,
-     "services_read": 3,
-     "downloads_listed": 5
+     "error": "HTTP 400"
     },
     {
      "catalog": "https://www.dati.gov.it/opendata",
      "keyword": "parco regionale",
-     "hits": 30,
-     "services_read": 1,
-     "downloads_listed": 0
+     "error": "HTTP 400"
     },
     {
      "catalog": "https://www.dati.gov.it/opendata",
      "keyword": "riserva naturale",
-     "hits": 30,
-     "services_read": 5,
-     "downloads_listed": 1
+     "error": "HTTP 400"
     },
     {
      "catalog": "https://www.dati.gov.it/opendata",
      "keyword": "area protetta",
-     "hits": 30,
-     "services_read": 1,
-     "downloads_listed": 1
+     "error": "HTTP 400"
     },
     {
      "agol": "parco nazionale",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "parco regionale",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "riserva naturale",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "area protetta",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "EUAP",
-     "hits": 3,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       3
-      ]
-     ]
+     "read": 0
     },
     {
      "agol": "aree protette",
      "hits": 5,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       5
-      ]
-     ]
+     "read": 0
     }
    ],
    "steps": [
@@ -893,7 +917,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "finished": "2026-10-28"
   },
   "NO": {
    "status": "paused (out of time, will carry on)",
@@ -938,25 +962,18 @@
   },
   "NL": {
    "status": "done",
-   "started": "2026-10-30",
+   "started": "2026-10-29",
    "done": [
     "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
     "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
     "https://geo.rijkswaterstaat.nl/arcgis/rest/services/GDR/nwp_natura2000/FeatureServer",
     "https://geo.rijkswaterstaat.nl/arcgis/rest/services/GDR/nwp_natura2000/MapServer",
-    "https://geo.rijkswaterstaat.nl/services/ogc/gdr/nnn_begrenzing_rijkswateren/ows?service=WMS&request=getcapabilities&version=1.3.0",
     "https://geo.rijkswaterstaat.nl/services/ogc/gdr/nwp_pnz_natuurgebieden_noordzee/ows?service=WMS&request=getcapabilities&version=1.3.0",
     "https://geo2.flevoland.nl/geoserver/Extern/wms?request=GetCapabilities",
     "https://geodata.nationaalgeoregister.nl/nationaleparken/ows?LAYERS=nationaleparken&TRANSPARENT=true&FORMAT=image%2Fpng&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A28992&BBOX=-280456,309568.96,586585.28,646966.72&WIDTH=2016&HEIGHT=784",
     "https://geodata.nationaalgeoregister.nl/natura2000/ows?LAYERS=natura2000&TRANSPARENT=true&FORMAT=image%2Fpng&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A28992&BBOX=-338301.76,121946.56,639700.16,888349.12&WIDTH=284&HEIGHT=223",
-    "https://geoportaal.fryslan.nl/arcgis/services/ProvinciaalGeoRegister/PGR2/MapServer/WFSServer",
-    "https://geoportaal.fryslan.nl/arcgis/services/ProvinciaalGeoRegister/PGR2/MapServer/WMSServer",
-    "https://geoserver.gelderland.nl/geoserver/ngr_verordening/wms?service=WMS&request=GetCapabilities",
-    "https://geoserver.gelderland.nl/geoserver/ngr_visie/wms?service=WMS&request=GetCapabilities",
     "https://geoservices.noord-holland.nl/ags/services/oi_dataservice_alg/MapServer/WFSServer",
     "https://geoservices.noord-holland.nl/ags/services/oi_dataservice_alg/MapServer/WMSServer",
-    "https://geoservices.noord-holland.nl/ags/services/oi_dataservice_povnh2020/MapServer/WFSServer",
-    "https://geoservices.noord-holland.nl/ags/services/oi_dataservice_povnh2020/MapServer/WMSServer",
     "https://geoservices.portaalnatuurenlandschap.nl/geoserver/IMNa_CAT1/wms?request=GetCapabilities",
     "https://geoservices.provinciegroningen.nl/server/services/BasisdataGroningen/Omgevingsvisie/MapServer/WFSServer",
     "https://geoservices.provinciegroningen.nl/server/services/BasisdataGroningen/Omgevingsvisie/MapServer/WMSServer",
@@ -967,6 +984,7 @@
     "https://geoservices.provinciegroningen.nl/server/services/LandelijkGebied/Landschap/MapServer/WFSServer",
     "https://geoservices.provinciegroningen.nl/server/services/LandelijkGebied/Landschap/MapServer/WmsServer",
     "https://geoservices.zuid-holland.nl/arcgis/rest/services/Energie/Energie_MER_Energietransitie_2022/MapServer",
+    "https://geoservices.zuid-holland.nl/arcgis/rest/services/Energie/Energie_ruimtevragers_energietransitie/MapServer",
     "https://geoservices.zuid-holland.nl/arcgis/rest/services/Grenzen/Grenzen/MapServer",
     "https://geoservices.zuid-holland.nl/arcgis/rest/services/Landelijk_gebied/Landelijk_gebied_algemeen/MapServer",
     "https://geoservices.zuid-holland.nl/arcgis/rest/services/Landelijk_gebied/Landelijk_gebied_stikstof/MapServer",
@@ -978,10 +996,12 @@
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_AOV18_K2C_K4_K5_NAT_PARKEN_V/MapServer/WMSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_IKN_NATIONALEPARKEN_V/MapServer/WFSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_IKN_NATIONALEPARKEN_V/MapServer/WMSServer",
-    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_IKN_NNN_2022_V/MapServer/WFSServer",
-    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_IKN_NNN_2022_V/MapServer/WMSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_LNDSCHP_NATPARK_DRAA_V/MapServer/WFSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_LNDSCHP_NATPARK_DRAA_V/MapServer/WMSServer",
+    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_BEREGENINGSPUT_V/MapServer/WFSServer",
+    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_BEREGENINGSPUT_V/MapServer/WMSServer",
+    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_DRAIN_PERC_V/MapServer/WFSServer",
+    "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_DRAIN_PERC_V/MapServer/WMSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_ONDERZOEKSZONE_V/MapServer/WFSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_N2K_ONDERZOEKSZONE_V/MapServer/WMSServer",
     "https://kaartportaal.drenthe.nl/server/services/GDB_actueel/GBI_NAT_RICHTLIJNSOORTEN_N2000_V/MapServer/WFSServer",
@@ -997,16 +1017,110 @@
     "https://opengeodata.zeeland.nl/geoserver/wbn/wms?request=GetCapabilities",
     "https://opengeodata.zeeland.nl/geoserver/wbn_geo/wms?service=WMS&version=1.1.0&request=GetCapabilities",
     "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer",
+    "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Natuurgebieden_Noordzee/FeatureServer",
     "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Overzichtskaart_Waterbeleid_uitvoering_WFL1/FeatureServer",
+    "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Structuurvisiekaart_Noordzee/FeatureServer",
+    "https://services-eu1.arcgis.com/YcscSJ1XstO6iVhP/arcgis/rest/services/Eigendom_Natuurmonumenten_d1ea7/FeatureServer",
     "https://services.geodata-utrecht.nl/geoserver/n01_2_2_natuur_beleid/wfs",
     "https://services.geodata-utrecht.nl/geoserver/n01_2_natuur_landschap/wfs",
     "https://services.geodata-utrecht.nl/geoserver/v01_1_1_1_Openbaar_vervoer/wfs",
     "https://services.geodataoverijssel.nl/geoserver/B03_projectgrenzen/wfs",
+    "https://services.geodataoverijssel.nl/geoserver/B34_beheer_grondwater/wfs",
     "https://services.geodataoverijssel.nl/geoserver/B46_natuur_en_landschap/wfs",
     "https://servicespub.risicokaart.nl/geoserver/ISOR_RK/wms",
     "https://servicespub.risicokaart.nl/geoserver/ISOR_RK/wms?service=WMS&request=GetCapabilities"
    ],
    "log": [
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 1 OGC API collections, 1 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 1 OGC API collections, 1 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
+     "found": true
+    },
+    {
+     "catalog": "https://data.overheid.nl/data",
+     "keyword": "nationaal park",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.overheid.nl/data",
+     "keyword": "natuurgebied",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.overheid.nl/data",
+     "keyword": "natura 2000",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.overheid.nl/data",
+     "keyword": "natuurmonument",
+     "error": "HTTP 400"
+    },
+    {
+     "agol": "nationaal park",
+     "hits": 5,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       5
+      ]
+     ]
+    },
+    {
+     "agol": "natuurgebied",
+     "hits": 19,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       17
+      ],
+      [
+       "Esri Nederland",
+       2
+      ]
+     ]
+    },
+    {
+     "agol": "natura 2000",
+     "hits": 50,
+     "read": 2,
+     "rejected_orgs": [
+      [
+       "?",
+       48
+      ]
+     ]
+    },
+    {
+     "agol": "natuurmonument",
+     "hits": 16,
+     "read": 2,
+     "rejected_orgs": [
+      [
+       "?",
+       11
+      ],
+      [
+       "Gemeente Hilversum",
+       1
+      ]
+     ]
+    },
     {
      "step": "known",
      "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 1 OGC API collections, 1 look like park layers"
@@ -1034,23 +1148,23 @@
     },
     {
      "catalog": "https://data.overheid.nl/data",
-     "keyword": "Natura 2000",
-     "hits": 30,
-     "services_read": 5,
-     "downloads_listed": 0
-    },
-    {
-     "catalog": "https://data.overheid.nl/data",
      "keyword": "natuurgebied",
      "hits": 30,
-     "services_read": 7,
+     "services_read": 9,
      "downloads_listed": 0
     },
     {
      "catalog": "https://data.overheid.nl/data",
-     "keyword": "natuurnetwerk",
+     "keyword": "natura 2000",
      "hits": 30,
      "services_read": 3,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://data.overheid.nl/data",
+     "keyword": "natuurmonument",
+     "hits": 22,
+     "services_read": 2,
      "downloads_listed": 0
     },
     {
@@ -1061,17 +1175,6 @@
       [
        "?",
        5
-      ]
-     ]
-    },
-    {
-     "agol": "Natura 2000",
-     "hits": 50,
-     "read": 2,
-     "rejected_orgs": [
-      [
-       "?",
-       48
       ]
      ]
     },
@@ -1091,28 +1194,6 @@
      ]
     },
     {
-     "agol": "natuurnetwerk",
-     "hits": 50,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       50
-      ]
-     ]
-    },
-    {
-     "agol": "Staatsbosbeheer",
-     "hits": 3,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       3
-      ]
-     ]
-    },
-    {
      "agol": "natura 2000",
      "hits": 50,
      "read": 0,
@@ -1120,6 +1201,17 @@
       [
        "?",
        48
+      ]
+     ]
+    },
+    {
+     "agol": "natuurmonument",
+     "hits": 16,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       11
       ]
      ]
     }
@@ -1134,35 +1226,75 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "CH": {
-   "status": "started",
-   "started": "2026-10-30",
-   "done": [
-    "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung"
-   ],
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
    "log": [
     {
-     "step": "known",
-     "what": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung: 0 feature types, 0 look like park layers"
+     "catalog": "https://opendata.swiss",
+     "keyword": "Nationalpark",
+     "error": "Expecting value: line 1 column 1 (char 0)"
     },
     {
-     "step": "known",
-     "what": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung",
-     "found": false
+     "catalog": "https://opendata.swiss",
+     "keyword": "Naturpark",
+     "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+     "catalog": "https://opendata.swiss",
+     "keyword": "Pärke",
+     "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+     "catalog": "https://opendata.swiss",
+     "keyword": "Schutzgebiet",
+     "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+     "agol": "Nationalpark",
+     "hits": 18,
+     "read": 0
+    },
+    {
+     "agol": "Naturpark",
+     "hits": 7,
+     "read": 0
+    },
+    {
+     "agol": "Pärke",
+     "hits": 10,
+     "read": 0
+    },
+    {
+     "agol": "Schutzgebiet",
+     "hits": 9,
+     "read": 0
+    },
+    {
+     "agol": "parc naturel",
+     "hits": 4,
+     "read": 0
     }
    ],
    "steps": [
     "known",
     "servers",
     "wfs",
-    "orgs"
-   ]
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
   },
   "PT": {
-   "status": "paused (out of time, will carry on)",
-   "started": "2026-10-30",
+   "status": "done",
+   "started": "2026-10-28",
    "done": [
     "https://sigservices.icnf.pt/server/rest/services/ApoiosICNF/Candidaturas__Aprovadas/FeatureServer",
     "https://sigservices.icnf.pt/server/rest/services/ApoiosICNF/Candidaturas__Aprovadas/MapServer",
@@ -1299,23 +1431,148 @@
     "https://sigservices.icnf.pt/server/rest/services/Geoprocessos/MapServer",
     "https://sigservices.icnf.pt/server/rest/services/Hosted/AP_Cogestao_24Set/FeatureServer",
     "https://sigservices.icnf.pt/server/rest/services/Hosted/ATN__Registo_interno_view/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Bacias_hidrograficas_SNIRH/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/CED_2024/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/CE_Junho24/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Calendario__Portal_PRN/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Dados_SOSvespa/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Entidades_do_Plano_Nacional_do_Restauro_da_Natureza/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Formulário_VNP_Publico/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Fotos_da_Galeria_do_Portal_do_Restauro_da_Natureza/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/GIP/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/IFN_regeneracao_natural/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Lei59_Kristin_dadosBase2/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNLN/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNPG/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNSAC/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNSAC_Alargamento/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNTI/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNVG/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Mapa_da_MN_Leiria/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/NUTSIII_DRCNF/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/NUTSII_NUTSIII/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo11/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo12/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo8/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo9/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Entidades_Rede_Conhecimento/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Plantometro_OpenData/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Parcelas_IFN/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Parcelas_IFN_invasoras/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Percursos_Sonoros_Lince/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/RNLS_AP/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/RNLS_AP_linha/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Saber_mais/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Tabela_restauro/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/pontos/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/rn2000_terrestres_dissolvidos/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_0a56743b0c454784a02a2954e9129d04/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_18929d81d79c40c78f3246ff0b932eab/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_3bacd6db3805452ab23e21267efc6918/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_3bacd6db3805452ab23e21267efc6918_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_3f5a5c520f82494094afd9fe065c3f7b/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_5da1d0a332c94d1eb0fb37451a1ff661/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_8782e1046b384c538de16460446a31f6_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_9658357a393c4ca98ea379e89ad7b100/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_be57bed00962464ea4ea0ac63a0cec69/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_c13c503d1a46470888e898a00842ffc1/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_c13c503d1a46470888e898a00842ffc1_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_d2ee307701984798b3abfda8ea8bf5ce/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_fcadbb9d970d435c916842bd4cae54d9/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_fcadbb9d970d435c916842bd4cae54d9_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/servicos/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_02317b1800b9459c8f314d24618974ca/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_02317b1800b9459c8f314d24618974ca_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_1af3a0f0afeb4a82867b7c62ebd0ea26_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_2c62450a45014a2ca62fcc6b64824b29/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_2c62450a45014a2ca62fcc6b64824b29_fieldworker/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_3a03a2f2052449d2b8bfd5ec9606f473/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_3a03a2f2052449d2b8bfd5ec9606f473_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_40f4f2fa3fbd43a0aba8a1328dd957c2/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_40f4f2fa3fbd43a0aba8a1328dd957c2_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_4afede19896a4e2889be75780e4142ac_results/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_881f5eb127fb4b668ff0f70bb14b1f39_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_bdc9b064aaab474cbd9f8bafb7c501df_fieldworker/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_d61db3a56afa4729899db4fb5dda7fef_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/trajetos_embarcacoes/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Área_ardida_2017_MN_Leiria/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Rubus_testes/Vespa_velutina_quadriculas/MapServer",
     "https://sigservices.icnf.pt/server/rest/services/Temas_Perímetro_Rega_Mira/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/locais_contagem_aquaticas/MapServer"
+    "https://sigservices.icnf.pt/server/rest/services/locais_contagem_aquaticas/MapServer",
+    "https://sigservices.icnf.pt/server/rest/services/matas_nacionais/MNLeiria/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/matas_nacionais/MNLeiria/MapServer"
    ],
    "log": [
     {
      "step": "known",
      "what": "https://sigservices.icnf.pt/server/rest/services/BDG/POAP/MapServer",
-     "found": true
+     "found": false
     },
     {
      "step": "server",
-     "what": "https://sigservices.icnf.pt/server/rest/services: 25 folders, 135 services read"
+     "what": "https://sigservices.icnf.pt/server/rest/services: 25 folders, 148 services read"
+    },
+    {
+     "step": "server",
+     "what": "https://sigservices.icnf.pt/server/rest/services: 25 folders, 53 services read"
+    },
+    {
+     "catalog": "https://dados.gov.pt/api",
+     "keyword": "parque natural",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://dados.gov.pt/api",
+     "keyword": "parque nacional",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://dados.gov.pt/api",
+     "keyword": "reserva natural",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://dados.gov.pt/api",
+     "keyword": "área protegida",
+     "error": "HTTP 404"
+    },
+    {
+     "agol": "parque natural",
+     "hits": 8,
+     "read": 0
+    },
+    {
+     "agol": "parque nacional",
+     "hits": 4,
+     "read": 0
+    },
+    {
+     "agol": "reserva natural",
+     "hits": 6,
+     "read": 0
+    },
+    {
+     "agol": "área protegida",
+     "hits": 16,
+     "read": 0
+    },
+    {
+     "agol": "áreas protegidas",
+     "hits": 16,
+     "read": 0
     }
    ],
    "steps": [
-    "known"
-   ]
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
   },
   "RO": {
    "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
@@ -1392,10 +1649,11 @@
    "finished": "2026-10-30"
   },
   "AT": {
-   "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
-   "started": "2026-10-30",
+   "status": "nothing seeded: not searched (EEA lead only)",
+   "started": "2026-10-29",
    "done": [
-    "https://gis.tirol.gv.at/arcgis/rest/services/Service_Public/ogd_natur/MapServer"
+    "https://gis.tirol.gv.at/arcgis/rest/services/Service_Public/ogd_natur/MapServer",
+    "https://gis.tirol.gv.at/arcgis/rest/services/Service_Public/ogd_umwelt/MapServer"
    ],
    "log": [
     {
@@ -1405,64 +1663,43 @@
     },
     {
      "catalog": "https://www.data.gv.at/katalog",
-     "keyword": "Naturschutzgebiet",
-     "error": "HTTP 404"
-    },
-    {
-     "catalog": "https://www.data.gv.at/katalog",
      "keyword": "Naturpark",
      "error": "HTTP 404"
     },
     {
      "catalog": "https://www.data.gv.at/katalog",
-     "keyword": "Europaschutzgebiet",
+     "keyword": "Naturschutzgebiet",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://www.data.gv.at/katalog",
+     "keyword": "Schutzgebiet",
      "error": "HTTP 404"
     },
     {
      "agol": "Nationalpark",
      "hits": 3,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       3
-      ]
-     ]
-    },
-    {
-     "agol": "Naturschutzgebiet",
-     "hits": 3,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       3
-      ]
-     ]
+     "read": 0
     },
     {
      "agol": "Naturpark",
      "hits": 1,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
+    },
+    {
+     "agol": "Naturschutzgebiet",
+     "hits": 3,
+     "read": 0
+    },
+    {
+     "agol": "Schutzgebiet",
+     "hits": 3,
+     "read": 0
     },
     {
      "agol": "Europaschutzgebiet",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "Landschaftsschutzgebiet",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "Naturdenkmal",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     }
    ],
    "steps": [
@@ -1475,11 +1712,12 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "SE": {
    "status": "done",
-   "started": "2026-10-30",
+   "started": "2026-10-29",
    "done": [
     "https://geodata.naturvardsverket.se/andra_skydd/wms",
     "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
@@ -1514,68 +1752,60 @@
     {
      "agol": "nationalpark",
      "hits": 50,
-     "read": 4,
-     "rejected_orgs": [
-      [
-       "?",
-       42
-      ]
-     ]
+     "read": 4
     },
     {
      "agol": "naturreservat",
      "hits": 50,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       42
-      ]
-     ]
-    },
-    {
-     "agol": "Natura 2000",
-     "hits": 50,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       42
-      ]
-     ]
-    },
-    {
-     "agol": "naturvårdsområde",
-     "hits": 43,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       35
-      ]
-     ]
-    },
-    {
-     "agol": "biotopskydd",
-     "hits": 2,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       2
-      ]
-     ]
+     "read": 0
     },
     {
      "agol": "skyddad natur",
      "hits": 2,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       2
-      ]
-     ]
+     "read": 0
+    },
+    {
+     "agol": "naturvårdsregistret",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/andra_skydd/wms: 0 feature types, 0 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/andra_skydd/wms",
+     "found": false
+    },
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs: 2 feature types, 2 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
+     "found": true
+    },
+    {
+     "agol": "nationalpark",
+     "hits": 50,
+     "read": 0
+    },
+    {
+     "agol": "naturreservat",
+     "hits": 50,
+     "read": 0
+    },
+    {
+     "agol": "skyddad natur",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "naturvårdsregistret",
+     "hits": 0,
+     "read": 0
     }
    ],
    "steps": [
@@ -1588,7 +1818,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "SI": {
    "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
@@ -1670,8 +1901,8 @@
    "finished": "2026-10-30"
   },
   "CZ": {
-   "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
-   "started": "2026-10-30",
+   "status": "done",
+   "started": "2026-10-28",
    "done": [],
    "log": [
     {
@@ -1691,44 +1922,28 @@
     },
     {
      "catalog": "https://data.gov.cz",
-     "keyword": "národní přírodní památka",
+     "keyword": "zvláště chráněné území",
      "error": "HTTP 404"
     },
     {
      "agol": "národní park",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "chráněná krajinná oblast",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "přírodní rezervace",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "národní přírodní památka",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "zvláště chráněné území",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "ZCHÚ",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     }
    ],
    "steps": [
@@ -1741,7 +1956,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "finished": "2026-10-28"
   },
   "BE": {
    "status": "done",
@@ -1835,8 +2050,8 @@
    "finished": "2026-10-30"
   },
   "DK": {
-   "status": "paused (out of time, will carry on)",
-   "started": "2026-10-30",
+   "status": "done",
+   "started": "2026-10-28",
    "done": [
     "https://kort.vd.dk/server/rest/services/Administrative_graenser/Enterpriseområder/MapServer",
     "https://kort.vd.dk/server/rest/services/Administrative_graenser/Jordmodtager/MapServer",
@@ -1906,11 +2121,124 @@
     "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje4_V2/FeatureServer",
     "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje4_V2/MapServer",
     "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje5_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje5_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje6_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje6_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje7_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje7_V2/MapServer",
     "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_linje2_V2/FeatureServer",
     "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_linje2_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/DMPData_20230706/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Data_fra_cykelfremmekortet_feature/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Data_fra_cykelfremmekortet_feature/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Extent_polygon/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje1_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje1_Baggrund_Merge_A/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje1_OversigtFoto/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje1_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje1_Traer/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje2_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje2_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje2_POIs_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje3_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje3_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje3_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje4_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje4_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje4_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje5_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje5_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje5_OversigtFoto/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje5_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje6_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje6_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje6_OversigtFoto/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje6_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje7_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje7_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje7_OversigtFoto/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje7_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_2_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_3_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_4_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_4_Modelleringsomraade_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_5_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_6_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_7_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_2_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_3_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_4_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_5_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_6_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_7_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_1/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_3/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_4/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_5/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_6/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_7/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Visionsplan_for_Supercykelstier/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/MKV/E80140_Widget_MKV_Arealbehov_Projektdata/MapServer",
+    "https://kort.vd.dk/server/rest/services/MKV/MKV_11100_Data/MapServer",
+    "https://kort.vd.dk/server/rest/services/MKV/MKV_E11930_Data/MapServer",
+    "https://kort.vd.dk/server/rest/services/MKV/MKV_E20620_Data/MapServer",
+    "https://kort.vd.dk/server/rest/services/MKV/MKV_E6470_Data/MapServer",
     "https://kort.vd.dk/server/rest/services/MKV_E1260_Data/MapServer",
+    "https://kort.vd.dk/server/rest/services/NyBassinapp/Vandspejl_Kronekant_Update_attributes/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/NyBassinapp/Vandspejl_Kronekant_Update_attributes/MapServer",
+    "https://kort.vd.dk/server/rest/services/Ortofoto/6470_24_04_2026_epsg25382_tif/MapServer",
+    "https://kort.vd.dk/server/rest/services/Projektoversigt/Ministerens_vejplan_2016/MapServer",
+    "https://kort.vd.dk/server/rest/services/Projektoversigt/Projektoversigt_over_alle_anlæg/MapServer",
+    "https://kort.vd.dk/server/rest/services/Projektoversigt/Vejinteressezone/MapServer",
+    "https://kort.vd.dk/server/rest/services/Projektoversigt/Vejinteressezoner___ekstern/MapServer",
+    "https://kort.vd.dk/server/rest/services/Stoej_luft/Luftkvalitet/MapServer",
+    "https://kort.vd.dk/server/rest/services/Stoej_luft/Støjkortlægning_af_statsveje_2012/MapServer",
+    "https://kort.vd.dk/server/rest/services/Stoej_luft/Støjkortlægning_af_statsveje_2012_korrekt/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Stoej_luft/Støjkortlægning_af_statsveje_2012_korrekt/MapServer",
+    "https://kort.vd.dk/server/rest/services/Stoej_luft/Støjkortlægning_af_statsveje_2017/MapServer",
+    "https://kort.vd.dk/server/rest/services/Stoej_luft/Støjkortlægning_af_statsveje_2022/MapServer",
+    "https://kort.vd.dk/server/rest/services/Test/LER_ler_2_0_foeringsroer_geoserver_z_test/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Test/LER_ler_2_0_foeringsroer_geoserver_z_test/MapServer",
+    "https://kort.vd.dk/server/rest/services/Test/Projektoversigt_POC/MapServer",
+    "https://kort.vd.dk/server/rest/services/Test/WMS_test_Widget/MapServer",
+    "https://kort.vd.dk/server/rest/services/Test/WMS_test_Widget_UseLayerNames/MapServer",
+    "https://kort.vd.dk/server/rest/services/Test/WMS_test_Widget_UseLayerNames_NoSpace/MapServer",
+    "https://kort.vd.dk/server/rest/services/VVM/VVM_Ekstern/MapServer",
+    "https://kort.vd.dk/server/rest/services/Vejkort/Danmarks_Miljø_Portal/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Vejkort/Danmarks_Miljø_Portal/MapServer",
+    "https://kort.vd.dk/server/rest/services/Vejprojekter/Vejprojekter_fase_3_besigt_ekstern/MapServer",
+    "https://kort.vd.dk/server/rest/services/Vejprojekter/Vejprojekter_fase_3_detail_ekstern/MapServer",
+    "https://kort.vd.dk/server/rest/services/Vejprojekter/Vejprojekter_fase_3_linjebesigt_ekstern/MapServer",
+    "https://kort.vd.dk/server/rest/services/Vejprojekter/Vejprojekter_fase_4_ekstern/MapServer",
+    "https://kort.vd.dk/server/rest/services/Vejprojekter/Vejprojekter_fase_5_ekstern/MapServer",
+    "https://kort.vd.dk/server/rest/services/Vejprojekter/Vejprojekter_fase_6_ekstern/MapServer",
     "https://kort.vd.dk/server/rest/services/afvanding_digitalisering_ler2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/afvanding_digitalisering_ler2/MapServer"
+    "https://kort.vd.dk/server/rest/services/afvanding_digitalisering_ler2/MapServer",
+    "https://kort.vd.dk/server/rest/services/iModel/Jupiter_Jordboringer/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/iModel/Jupiter_Jordboringer/MapServer",
+    "https://kort.vd.dk/server/rest/services/iModel/Matrikelkort_iModel/MapServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_afvandingsledning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_afvandingsledning/MapServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_elledning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_elledning/MapServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_foeringsroer/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_foeringsroer/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Artsrig_vejkant_aktuel_offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Besigtigelsesoverblik_linje_offentlig_visning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Besigtigelsesoverblik_linje_offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Dokumentation_polygon_offentlig_visning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Dokumentation_polygon_offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Dokumentation_punkt_offentlig_visning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Dokumentation_punkt_offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/MILJOE_vaerdifuldnatur_offentlig_test/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Miljø/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/VD_ejendomme_offentlig_visning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/VD_ejendomme_offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Vaerdifuld_natur/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Værdifuld_natur_Offentlig_visning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Værdifuld_natur_Offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Værdifuld_natur_offentlig_WFS_WMS/MapServer"
    ],
    "log": [
     {
@@ -1920,22 +2248,84 @@
     },
     {
      "step": "server",
-     "what": "https://kort.vd.dk/server/rest/services: 39 folders, 51 services read"
+     "what": "https://kort.vd.dk/server/rest/services: 39 folders, 129 services read"
+    },
+    {
+     "step": "server",
+     "what": "https://kort.vd.dk/server/rest/services: 39 folders, 23 services read"
+    },
+    {
+     "agol": "nationalpark",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "fredede områder",
+     "hits": 4,
+     "read": 0
+    },
+    {
+     "agol": "naturpark",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "naturreservat",
+     "hits": 1,
+     "read": 0
     }
    ],
    "steps": [
-    "known"
-   ]
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
   },
   "IE": {
-   "status": "paused (out of time, will carry on)",
-   "started": "2026-10-30",
+   "status": "done",
+   "started": "2026-10-28",
    "done": [
+    "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Potential_Special_Protection_Areas_England/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(August_2026)_for_the_United_Kingdom_(Hosted_Table)/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(May_2026)_for_the_United_Kingdom/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONSPD_AUG_2025_UK/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONSPD_NOV_2025_UK/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONS_Postcode_Directory_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Access_App_Forest_Entrances/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/COILLTE_FELLING_LICENCES/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_2021_BeeKeeper_Consultation/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Biodiversity_Area/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Biodiversity_Areas/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Forest_Road_Dataset/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Harvest_Units/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Life_and_Millennium_Sites/FeatureServer",
     "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer",
-    "https://utility.arcgis.com/usrsvcs/servers/1245ebc052694637bd02fe5048d81c70/rest/services/ITM/basemap_public/MapServer"
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Wind_Damage_Assessment/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Consultation_Clearfell_2019/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Consultation_Thinnings_2019/FeatureServer",
+    "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Mountain_Bike_Pole_Emergency_Locations/FeatureServer",
+    "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer",
+    "https://utility.arcgis.com/usrsvcs/servers/0016a8e9782b461e96523ba448f03353/rest/services/MapGenie25InchITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/0a4856ab7fe64aaf96ccc320d0dc891b/rest/services/MapGenieImagery1996to2000ITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/1245ebc052694637bd02fe5048d81c70/rest/services/ITM/basemap_public/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/1700ebb080834186a4c278aa2d26c6e8/rest/services/MapGenieImagery2006to2012ITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/46d11ec3f32f4b7c870c6fdecca4b077/rest/services/MapGenie6InchLastEditionBlackWhiteITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/4fe3ad7eda07411480dd23a0e3655cd4/rest/services/MapGenieDiscoveryHillshadeITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/5c779a7b5bd446bf802ca512d82aa335/rest/services/MapGenieImagery1995ITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/67013604919e4140bca952a7d3fa291a/rest/services/MapGenieDigitalGlobeImagery2011to2013ITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/a8b10e1feb7e4a90a7db85610c62b9ad/rest/services/MapGenie6InchFirstEditionColourITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/bb5f042a35f843498d1c12f07aae7b17/rest/services/MapGenieDiscoveryITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/dc0caa7a62cd4b1cac05469a0bd4516f/rest/services/MapGenieImagery2001to2005ITM/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/ec5779ea27b643a4bcbb69e83ddb483a/rest/services/MapGeniePremiumITM/MapServer"
    ],
    "log": [
     {
@@ -1945,18 +2335,64 @@
     },
     {
      "step": "org",
-     "what": "org 6LSAdqgf43oKRpP6 (): 3 services read"
+     "what": "org 6LSAdqgf43oKRpP6 (): 13 services read"
+    },
+    {
+     "catalog": "https://data.gov.ie",
+     "keyword": "national park",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://data.gov.ie",
+     "keyword": "nature reserve",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://data.gov.ie",
+     "keyword": "special area of conservation",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://data.gov.ie",
+     "keyword": "coillte",
+     "error": "robots.txt says no"
+    },
+    {
+     "agol": "national park",
+     "hits": 50,
+     "read": 6
+    },
+    {
+     "agol": "nature reserve",
+     "hits": 50,
+     "read": 1
+    },
+    {
+     "agol": "special area of conservation",
+     "hits": 50,
+     "read": 2
+    },
+    {
+     "agol": "coillte",
+     "hits": 7,
+     "read": 0
     }
    ],
    "steps": [
     "known",
     "servers",
-    "wfs"
-   ]
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
   },
   "SK": {
-   "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
-   "started": "2026-10-30",
+   "status": "done",
+   "started": "2026-10-28",
    "done": [],
    "log": [
     {
@@ -1982,37 +2418,22 @@
     {
      "agol": "národný park",
      "hits": 1,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       1
-      ]
-     ]
+     "read": 0
     },
     {
      "agol": "chránená krajinná oblasť",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "prírodná rezervácia",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "chránené územie",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "CHKO",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     }
    ],
    "steps": [
@@ -2025,11 +2446,11 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "finished": "2026-10-28"
   },
   "HR": {
-   "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
-   "started": "2026-10-30",
+   "status": "done",
+   "started": "2026-10-28",
    "done": [],
    "log": [
     {
@@ -2044,43 +2465,33 @@
     },
     {
      "catalog": "https://data.gov.hr",
-     "keyword": "strogi rezervat",
+     "keyword": "zaštićeno područje",
      "error": "Expecting value: line 1 column 1 (char 0)"
     },
     {
      "catalog": "https://data.gov.hr",
-     "keyword": "zaštićeno područje",
+     "keyword": "posebni rezervat",
      "error": "Expecting value: line 1 column 1 (char 0)"
     },
     {
      "agol": "nacionalni park",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "park prirode",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "strogi rezervat",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "zaštićeno područje",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "posebni rezervat",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     }
    ],
    "steps": [
@@ -2093,11 +2504,11 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "finished": "2026-10-28"
   },
   "FI": {
-   "status": "paused (out of time, will carry on)",
-   "started": "2026-10-30",
+   "status": "done",
+   "started": "2026-10-29",
    "done": [
     "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_Europe/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_bedrock_surface_B/MapServer",
@@ -2135,14 +2546,133 @@
     "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte_v12/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/geology_geophysics/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/LaosOneGeology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20201124_GeophysicsTest/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20220125_Mines_deposits/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20221018_Mines_deposits/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20221019_Mines_deposits/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20230601_Geophysics/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20240428_Mines_deposits/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20250205_Geophysics/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20250326_Mines_deposits/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20251009_Exploration/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20251202_Exploration/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/GeologicalMaps/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/Geophysics/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/KorkeusAineistoENG/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/KorkeusAineistoENG2018/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/MinesDepositsJS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/Mines_deposits/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/Mines_deposits_waste/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/NatureETC/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/Extras/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/MPM_DemoFiles/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/MPM_Tools/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/ToolsV3/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MPM/ToolsV6/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210429_KorkeusAineisto/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210603Maapera/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2022Kalliopera/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2022_Merenpohja/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2023Kalliopera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Ei_pohjakarttaa/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KalliokiviainesMaa_aines/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Kalliopera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KorkeusAineisto2018JP/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KorkeusAineisto2020JP/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maanpeitepaksuus/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maapera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maapera31102019/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Merenpohja/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/PohjavesiEP/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Syke17062019/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/geoenergia/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Maapeitepaksuus_1m/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/LithologyFennoscandia/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/LithologyGreenland2500k/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/MetallogenicAreasFennoscandia/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/Nodd/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/NordicMineralDepositAndMines281025/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/NordicMineralDepositAndMines_20260220/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/NordicMineralDepositsAndMines/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/Nordic_mineral_deposits_and_mines_2510/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Nodd/metallogenicAreasFennoscandiaAM/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20210319_PTR_CACHE/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20220207_GDB_Sulphide/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20220324_Sulphide/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20220621_Search_Sulphide/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/20260319_Sulphide/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/MuutTutkimuksetOracle/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_CACHE_esri/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_muut_pohjatutkimuspisteetOracle_20210517/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteet/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteetAK/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteetJS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/PTR_pohjatutkimuspisteet_virallinen/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/Sulphide/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/PTR/Sulphide_20211209/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/202403groundwaterRechargePotential/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/202403pohjavedenMuodostumispotentiaali/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/geoenergiaPohjavesi/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/kaivovesienlaatu/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/pohjaveden_haavoittuvuus/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/pohjaveden_isotoopit/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/poppa_v11/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Projects/projektimaat/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Bedrock_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Geofysiikka_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kaavoitus_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kaavoitus_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kalliopera_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kalliopera_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kiviainesvarannot_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kiviainesvarannot_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Maapera_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Maapera_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Pohjatutkimukset_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Pohjatutkimukset_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/KallioperaWMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/KallioperaWMS27032020/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/Korkeusmalli/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/Korkeusmalli2018/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/kokoavaWMS/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/SampleWorldCities/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20230802_Nayte/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20240111_Nayte/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20250926_kaivosymp/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/LaajatProvinssit/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte20220429EN/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte20240327EN/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte29042022/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/kaivosymp29122020/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/provinssirajat/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/tt_alueet_2017/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Bedrock/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Kunnat/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_101_Euref/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_101_KKJ/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_10_Euref/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_Euref/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Maapera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Pohjavesialueet/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/Kaivosrekisteri/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TUKES_LYR/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TUKES_UUSI/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TukesWMS/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_soiden_ja_turvemaiden_ravinteisuustaso/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_suotyypit_ja_turvekankaat/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_turvetuotantoalueiden_maanpeite/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/20241002_turvemaiden_alueellinen_hiilivarasto/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/20241106_potentiaaliset_rahkasammalen_korjuukohteet/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/HasuGrid18032016/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/Soiden_luonnontilaisuusluokitus/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/TurvevaratJS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/Valuma_alueet101SDE2/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/rahkasammalen_korjuukohteet/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeep/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline13122019/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline23032020/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/inspire_ge_geology/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/kallionpinnan_korkeustaso_1m/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/kalliopinnan_korkeustaso_1m/MapServer",
@@ -2166,16 +2696,299 @@
     },
     {
      "step": "server",
-     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 47 services read"
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 62 services read"
+    },
+    {
+     "step": "server",
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 48 services read"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "kansallispuisto",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "luonnonsuojelualue",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "luonnonpuisto",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "suojelualue",
+     "error": "HTTP 403"
+    },
+    {
+     "agol": "kansallispuisto",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "luonnonsuojelualue",
+     "hits": 11,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       11
+      ]
+     ]
+    },
+    {
+     "agol": "luonnonpuisto",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "suojelualue",
+     "hits": 14,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       14
+      ]
+     ]
+    },
+    {
+     "step": "known",
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
+    },
+    {
+     "step": "known",
+     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
+     "found": false
+    },
+    {
+     "step": "server",
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 53 services read"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "kansallispuisto",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "luonnonsuojelualue",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "luonnonpuisto",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "suojelualue",
+     "error": "HTTP 403"
+    },
+    {
+     "agol": "kansallispuisto",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "luonnonsuojelualue",
+     "hits": 11,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       11
+      ]
+     ]
+    },
+    {
+     "agol": "luonnonpuisto",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "suojelualue",
+     "hits": 14,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       14
+      ]
+     ]
+    },
+    {
+     "step": "known",
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
+    },
+    {
+     "step": "known",
+     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
+     "found": false
+    },
+    {
+     "step": "server",
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 0 services read"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "kansallispuisto",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "luonnonsuojelualue",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "luonnonpuisto",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "suojelualue",
+     "error": "HTTP 403"
+    },
+    {
+     "agol": "kansallispuisto",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "luonnonsuojelualue",
+     "hits": 11,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       11
+      ]
+     ]
+    },
+    {
+     "agol": "luonnonpuisto",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "suojelualue",
+     "hits": 14,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       14
+      ]
+     ]
+    },
+    {
+     "step": "known",
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
+    },
+    {
+     "step": "known",
+     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
+     "found": false
+    },
+    {
+     "step": "server",
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 0 services read"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "kansallispuisto",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "luonnonsuojelualue",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "luonnonpuisto",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "suojelualue",
+     "error": "HTTP 403"
+    },
+    {
+     "agol": "kansallispuisto",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "luonnonsuojelualue",
+     "hits": 11,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       11
+      ]
+     ]
+    },
+    {
+     "agol": "luonnonpuisto",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "suojelualue",
+     "hits": 14,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       14
+      ]
+     ]
     }
    ],
    "steps": [
-    "known"
-   ]
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "HU": {
    "status": "nothing seeded: not searched (EEA lead only)",
-   "started": "2026-10-30",
+   "started": "2026-10-29",
    "done": [],
    "log": [
     {
@@ -2197,18 +3010,6 @@
      "rejected_orgs": []
     },
     {
-     "agol": "védett természeti terület",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "Natura 2000",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
      "agol": "védett terület",
      "hits": 0,
      "read": 0,
@@ -2225,16 +3026,22 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "EE": {
    "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
-   "started": "2026-10-30",
+   "started": "2026-10-29",
    "done": [],
    "log": [
     {
      "catalog": "https://avaandmed.eesti.ee",
      "keyword": "rahvuspark",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://avaandmed.eesti.ee",
+     "keyword": "kaitseala",
      "error": "HTTP 404"
     },
     {
@@ -2248,24 +3055,7 @@
      "error": "HTTP 404"
     },
     {
-     "catalog": "https://avaandmed.eesti.ee",
-     "keyword": "kaitseala",
-     "error": "HTTP 404"
-    },
-    {
      "agol": "rahvuspark",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "looduskaitseala",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
-    },
-    {
-     "agol": "maastikukaitseala",
      "hits": 0,
      "read": 0,
      "rejected_orgs": []
@@ -2282,15 +3072,16 @@
      ]
     },
     {
-     "agol": "hoiuala",
-     "hits": 1,
+     "agol": "looduskaitseala",
+     "hits": 0,
      "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       1
-      ]
-     ]
+     "rejected_orgs": []
+    },
+    {
+     "agol": "maastikukaitseala",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
     }
    ],
    "steps": [
@@ -2303,80 +3094,53 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "LV": {
    "status": "done",
-   "started": "2026-10-30",
+   "started": "2026-10-28",
    "done": [],
    "log": [
     {
      "catalog": "https://data.gov.lv/dati",
      "keyword": "nacionālais parks",
-     "hits": 2,
-     "services_read": 0,
-     "downloads_listed": 0
+     "error": "HTTP 400"
     },
     {
      "catalog": "https://data.gov.lv/dati",
      "keyword": "dabas parks",
-     "hits": 3,
-     "services_read": 0,
-     "downloads_listed": 0
+     "error": "HTTP 400"
     },
     {
      "catalog": "https://data.gov.lv/dati",
      "keyword": "dabas liegums",
-     "hits": 0,
-     "services_read": 0,
-     "downloads_listed": 0
+     "error": "HTTP 400"
     },
     {
      "catalog": "https://data.gov.lv/dati",
      "keyword": "aizsargājamā teritorija",
-     "hits": 14,
-     "services_read": 0,
-     "downloads_listed": 1
+     "error": "HTTP 400"
     },
     {
      "agol": "nacionālais parks",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "dabas parks",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "dabas liegums",
      "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "aizsargājamā teritorija",
      "hits": 1,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       1
-      ]
-     ]
-    },
-    {
-     "agol": "ĪADT",
-     "hits": 7,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       7
-      ]
-     ]
+     "read": 0
     }
    ],
    "steps": [
@@ -2389,11 +3153,11 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "finished": "2026-10-28"
   },
   "LT": {
    "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
-   "started": "2026-10-30",
+   "started": "2026-10-29",
    "done": [],
    "log": [
     {
@@ -2408,12 +3172,12 @@
     },
     {
      "catalog": "https://data.gov.lt",
-     "keyword": "rezervatas",
+     "keyword": "draustinis",
      "error": "server left alone (strikes)"
     },
     {
      "catalog": "https://data.gov.lt",
-     "keyword": "draustinis",
+     "keyword": "saugoma teritorija",
      "error": "server left alone (strikes)"
     },
     {
@@ -2432,12 +3196,6 @@
        1
       ]
      ]
-    },
-    {
-     "agol": "rezervatas",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
     },
     {
      "agol": "draustinis",
@@ -2467,7 +3225,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "LU": {
    "status": "done",
@@ -2913,7 +3672,7 @@
   },
   "DO": {
    "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
+   "started": "2026-10-29",
    "done": [],
    "log": [
     {
@@ -2949,17 +3708,6 @@
      "hits": 0,
      "read": 0,
      "rejected_orgs": []
-    },
-    {
-     "agol": "SINAP",
-     "hits": 2,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       2
-      ]
-     ]
     }
    ],
    "steps": [
@@ -2972,7 +3720,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "BR": {
    "status": "done",
@@ -3316,25 +4065,44 @@
    "finished": "2026-10-30"
   },
   "ZA": {
-   "status": "paused (out of time, will carry on)",
-   "started": "2026-10-30",
+   "status": "done",
+   "started": "2026-10-28",
    "done": [
-    "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer",
-    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer"
+    "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD/MapServer"
    ],
    "log": [
     {
-     "step": "known",
-     "what": "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer",
-     "found": true
+     "agol": "national park",
+     "hits": 49,
+     "read": 1
     },
     {
-     "step": "known",
-     "what": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1",
-     "found": true
+     "agol": "nature reserve",
+     "hits": 19,
+     "read": 0
+    },
+    {
+     "agol": "protected areas",
+     "hits": 50,
+     "read": 0
+    },
+    {
+     "agol": "protected environment",
+     "hits": 2,
+     "read": 0
     }
    ],
-   "steps": []
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
   },
   "AR": {
    "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
@@ -3693,70 +4461,29 @@
    "finished": "2026-10-30"
   },
   "PH": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
+   "status": "done",
+   "started": "2026-10-28",
    "done": [],
    "log": [
     {
      "agol": "protected area",
      "hits": 29,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       29
-      ]
-     ]
-    },
-    {
-     "agol": "natural park",
-     "hits": 1,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       1
-      ]
-     ]
-    },
-    {
-     "agol": "protected landscape",
-     "hits": 3,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       3
-      ]
-     ]
-    },
-    {
-     "agol": "NIPAS",
-     "hits": 2,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       2
-      ]
-     ]
-    },
-    {
-     "agol": "wildlife sanctuary",
-     "hits": 0,
-     "read": 0,
-     "rejected_orgs": []
+     "read": 0
     },
     {
      "agol": "national park",
      "hits": 2,
-     "read": 0,
-     "rejected_orgs": [
-      [
-       "?",
-       2
-      ]
-     ]
+     "read": 0
+    },
+    {
+     "agol": "natural park",
+     "hits": 1,
+     "read": 0
+    },
+    {
+     "agol": "NIPAS",
+     "hits": 2,
+     "read": 0
     }
    ],
    "steps": [
@@ -3769,7 +4496,7 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-30"
+   "finished": "2026-10-28"
   },
   "TR": {
    "status": "nothing seeded: not searched",
@@ -3940,3270 +4667,6 @@
      "rejected_orgs": []
     }
    ],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GR": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CU": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "RS": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MD": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "IN": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BA": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CY": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "TT": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BY": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MY": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "IS": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MK": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "UA": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AE": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "ID": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "UY": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "IL": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "PR": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AQ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SA": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BZ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "NI": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "IR": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "TW": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "VE": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "PA": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "HN": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "NC": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "PE": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BD": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "VN": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "KY": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BS": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "LC": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "TL": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "FM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BB": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MT": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CR": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "PF": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "PY": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CV": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GE": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "VC": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GF": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "EC": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MW": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "KE": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GP": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "HK": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "TZ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "LK": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "PM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BN": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "LA": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "PK": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "KZ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "EG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "OM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AL": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MF": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SB": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "ZW": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BO": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "VU": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "UG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "TN": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MU": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "VG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SN": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "ZM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MA": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CI": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "RE": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SR": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "ET": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "KW": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AZ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GT": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CD": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "LI": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "DZ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SL": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "DM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GA": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "PW": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "QA": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CK": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GD": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "JM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "VI": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MZ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "JO": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SC": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MN": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SZ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GQ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CF": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AX": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BQ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MP": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MH": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GH": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MV": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GL": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SH": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "NP": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GW": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "WS": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "PG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "FJ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "LB": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "LY": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "NF": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "NG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MQ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "TD": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AO": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GY": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BL": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "FK": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "UM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "ML": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AI": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GN": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "TO": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "NE": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BH": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "IM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BF": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BT": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BW": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AF": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "LS": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "ME": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SO": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "TC": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BI": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GU": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "KH": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "KM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SS": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CW": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "LR": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "IQ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SV": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "ER": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "FO": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "KG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "TG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "RW": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "JE": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AG": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MO": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SD": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "NA": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BJ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AS": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "TK": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "ST": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "KN": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MC": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "YT": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SX": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "DJ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AD": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SJ": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SY": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CC": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "TF": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "NU": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GS": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "NR": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MS": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "EH": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "SM": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "AW": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "BV": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "MR": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "GI": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "CX": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
-   "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
-   ],
-   "finished": "2026-10-30"
-  },
-  "YE": {
-   "status": "nothing seeded: not searched",
-   "started": "2026-10-30",
-   "done": [],
-   "log": [],
    "steps": [
     "known",
     "servers",
