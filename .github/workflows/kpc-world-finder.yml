@@ -1,0 +1,69 @@
+name: KPC world finder v2 (stage 1, hidden)
+# Oct 29 2026 (chat 10, Opus; Fable's design KPC-Links .claude/build/research/KPC_WorldHarvester_Redesign_Fable.md; Brandon 10:12 PM
+# 'build v2 and test it, timed auto test to run for awhile and shut off ... dump the worlds list of parks with no boundaries in it and
+# let it eat'). STAGE 1 only (W9 / W2 off). Biggest gap first, France last; chains itself until the world list is done or the stop
+# time passes. Hidden data only (freeze): candidates for chat 11, leads for the intake. Never goes red.
+on:
+  workflow_dispatch:
+    inputs:
+      countries:
+        description: 'Countries, e.g. "GB NZ" (blank = the whole world list, biggest gap first)'
+        default: ''
+      chunks:
+        description: 'Chunks of 55 min in this job (max 5)'
+        default: '5'
+      chain:
+        description: 'How many MORE jobs may follow by themselves (0 = none)'
+        default: '3'
+      stop_at:
+        description: 'Stop chaining after this UTC time (e.g. 2026-10-30T15:00); blank = no time limit'
+        default: ''
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-world-finder
+  cancel-in-progress: false
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: KPC-Links (world key + chat 8's agency table; read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            data/world-key
+            .claude/build/research/WORLD
+            .github/scripts
+      - name: Find, one save per chunk
+        continue-on-error: true
+        env:
+          LINKS: ../links
+          COUNTRIES: ${{ inputs.countries }}
+        run: |
+          cd kpcdata
+          N=${{ inputs.chunks }}; [ "$N" -gt 5 ] && N=5
+          for i in $(seq 1 $N); do
+            if [ -n "${{ inputs.stop_at }}" ] && [ "$(date -u +%Y-%m-%dT%H:%M)" \> "${{ inputs.stop_at }}" ]; then echo "::notice title=World finder v2::stop time reached: shutting off"; echo "STOP=1" >> "$GITHUB_ENV"; break; fi
+            MINUTES=55 python3 .github/scripts/kpc_world_finder.py | tee /tmp/w.log || true
+            python3 .github/scripts/kpc_status.py board "world finder v2" green "chunk $i: data/world-finder + questions" "chat 11 answers data/waiting/questions/world-finder.json" || true
+            bash ../links/.github/scripts/kpc_push_data.sh . "world finder v2: chunk $i (hidden)" data/world-finder data/harvest data/waiting/questions data/status || true
+            L=$(grep -o '^LEFT=[0-9]*' /tmp/w.log | tail -1 | cut -d= -f2); echo "LEFT=$L" >> "$GITHUB_ENV"
+            [ "${L:-0}" = 0 ] && break
+          done
+      - name: Countries remain, so the next job starts itself (until the stop time)
+        if: ${{ env.STOP != '1' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.countries == '' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "${{ inputs.stop_at }}" ] && [ "$(date -u +%Y-%m-%dT%H:%M)" \> "${{ inputs.stop_at }}" ]; then echo "::notice title=World finder v2::stop time reached: not chaining"; exit 0; fi
+          C=$(( ${{ inputs.chain }} - 1 ))
+          gh workflow run kpc-world-finder.yml -R ${{ github.repository }} -f countries= -f chunks=5 -f chain=$C -f stop_at="${{ inputs.stop_at }}" || true
