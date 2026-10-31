@@ -1,0 +1,229 @@
+{
+ "request": "requests/9-mx-pg1.json",
+ "id": "9-mx-pg1",
+ "chat": 9,
+ "kind": "page",
+ "report": "MX: CONANP / CONAFOR / SNIEG pages: where CONANP publishes ANP polygons (REST/WFS/shapefile), field names, licence",
+ "asked": {
+  "chat": 9,
+  "kind": "page",
+  "urls": [
+   "https://idefor.cnf.gob.mx/layers/geonode%3Aanp_4326",
+   "https://idefor.cnf.gob.mx/layers/geonode%3A_225_anp_wgs84_08012024",
+   "https://www.snieg.mx/Documentos/IIN/Acuerdo_14_III_2022/inf_geoespacial_areas_naturales-protegidas.pdf",
+   "https://www.gob.mx/conanp/documentos/sistema-de-informacion-geografica",
+   "https://sig.conanp.gob.mx/",
+   "https://www.gob.mx/conanp/acciones-y-programas/informacion-geografica-sig"
+  ],
+  "report": "MX: CONANP / CONAFOR / SNIEG pages: where CONANP publishes ANP polygons (REST/WFS/shapefile), field names, licence"
+ },
+ "answered": "2026-10-31 02:49Z",
+ "results": [
+  {
+   "url": "https://idefor.cnf.gob.mx/layers/geonode%3Aanp_4326",
+   "browser_error": "TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://idefor.cnf.gob.mx/layers/geonode%3Aanp_4326\", ",
+   "status": "rest",
+   "final_url": "https://idefor.cnf.gob.mx/layers/geonode%3Aanp_4326",
+   "read_by": "plain read"
+  },
+  {
+   "url": "https://idefor.cnf.gob.mx/layers/geonode%3A_225_anp_wgs84_08012024",
+   "status": "host left alone (strikes)"
+  },
+  {
+   "url": "https://www.snieg.mx/Documentos/IIN/Acuerdo_14_III_2022/inf_geoespacial_areas_naturales-protegidas.pdf",
+   "status": 404,
+   "final_url": "https://www.snieg.mx/Documentos/IIN/Acuerdo_14_III_2022/inf_geoespacial_areas_naturales-protegidas.pdf",
+   "read_by": "headless browser",
+   "title": "404 - File or directory not found.",
+   "text": "Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+   "links": []
+  },
+  {
+   "url": "https://www.gob.mx/conanp/documentos/sistema-de-informacion-geografica",
+   "status": 200,
+   "final_url": "https://www.gob.mx/conanp/documentos/sistema-de-informacion-geografica",
+   "title": "Challenge Validation",
+   "text": "",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://sig.conanp.gob.mx/",
+   "status": 200,
+   "final_url": "https://sig.conanp.gob.mx/",
+   "title": "Sistema de Información Geográfica | gob.mx | CONANP",
+   "text": "Trámites\nGobierno\nBúsqueda\nCONANP\nBuscador de datos\nDescargas\nMapas\nNumeralia\nIIN\nBuscador de Datos por Área Natural Protegida\nSIG CONANP\nEncuentre información documental y cartográfica de las Areas Naturales Protegidas de carácter federal:\nFicha SIMEC\nDecreto de creación\nPrograma de Conservación y Manejo\nMapas\nShape\nKML\nRealizar consulta de información\nEnlaces\nDatos abiertos de la SABG\nMarco Jurídico\nPlataforma Nacional de Transparencia\nTransparencia para el pueblo\nAlerta\n¿Qué es gob.mx?\nEs el portal único de trámites, información y participación ciudadana. Leer más\nPortal de datos abiertos\nDeclaración de accesibilidad\nTérminos y Condiciones\nDenuncia contra servidores públicos\nSíguenos en",
+   "links": [
+    {
+     "url": "https://www.gob.mx/",
+     "text": ""
+    },
+    {
+     "url": "https://www.gob.mx/tramites",
+     "text": "Trámites"
+    },
+    {
+     "url": "https://www.gob.mx/gobierno",
+     "text": "Gobierno"
+    },
+    {
+     "url": "https://www.gob.mx/busqueda",
+     "text": "Búsqueda"
+    },
+    {
+     "url": "https://www.gob.mx/conanp",
+     "text": "CONANP"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/",
+     "text": "Buscador de datos"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/#",
+     "text": "Descargas"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/Shape",
+     "text": "Shapes"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/KML",
+     "text": "KML"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/#",
+     "text": "Mapas"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/Series",
+     "text": "Serie Cartográfica"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/Regionales_Interectivos",
+     "text": "Regionales interactivos"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/Generales_Interectivos",
+     "text": "Generales Interactivos"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/Individuales",
+     "text": "ANP Individuales"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/#",
+     "text": "Numeralia"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/General",
+     "text": "General"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/Listado_ANP",
+     "text": "Listado de ANP"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/Vegetacion_ANP",
+     "text": "Vegetación en ANP"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/IIN",
+     "text": "IIN"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/",
+     "text": "Buscador de Datos por Área Natural Protegida\n\nSIG CONANP"
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/",
+     "text": ""
+    },
+    {
+     "url": "https://sig.conanp.gob.mx/",
+     "text": ""
+    },
+    {
+     "url": "https://data.buengobierno.gob.mx/databuengobierno",
+     "text": "Datos abiertos de la SABG"
+    },
+    {
+     "url": "http://www.ordenjuridico.gob.mx/",
+     "text": "Marco Jurídico"
+    },
+    {
+     "url": "https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/faces/view/consultaPublica.xhtml#inicio",
+     "text": "Plataforma Nacional de Transparencia"
+    },
+    {
+     "url": "https://transparencia.gob.mx/",
+     "text": "Transparencia para el pueblo"
+    },
+    {
+     "url": "https://alertadores.buengobierno.gob.mx/",
+     "text": "Alerta"
+    },
+    {
+     "url": "https://www.gob.mx/que-es-gobmx",
+     "text": "Leer más"
+    },
+    {
+     "url": "https://datos.gob.mx/",
+     "text": "Portal de datos abiertos"
+    },
+    {
+     "url": "https://www.gob.mx/accesibilidad",
+     "text": "Declaración de accesibilidad"
+    },
+    {
+     "url": "https://www.gob.mx/terminos",
+     "text": "Términos y Condiciones"
+    },
+    {
+     "url": "https://sidec.buengobierno.gob.mx/#!/",
+     "text": "Denuncia contra servidores públicos"
+    },
+    {
+     "url": "https://www.facebook.com/gobmexico",
+     "text": ""
+    },
+    {
+     "url": "https://twitter.com/GobiernoMX",
+     "text": ""
+    },
+    {
+     "url": "https://www.instagram.com/gobmexico/",
+     "text": ""
+    },
+    {
+     "url": "https://www.youtube.com/@gobiernodemexico",
+     "text": ""
+    },
+    {
+     "url": "https://www.snd.gob.mx/",
+     "text": "Visitar SND"
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.gob.mx/conanp/acciones-y-programas/informacion-geografica-sig",
+   "status": 200,
+   "final_url": "https://www.gob.mx/conanp/acciones-y-programas/informacion-geografica-sig",
+   "title": "Challenge Validation",
+   "text": "",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 237,
+ "manners": {
+  "requests": 4,
+  "robots": 0,
+  "strikes": 3,
+  "errors": 3,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "6 result(s), 3 read OK, 0 screenshot(s)"
+}
