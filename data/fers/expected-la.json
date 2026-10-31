@@ -1,0 +1,3866 @@
+{
+ "filter": {
+  "rule": "pairs expected only from POTA history are kept when the outlines are within 1000 m (box to box), or a park has no outline, or one session logged both",
+  "left_out_far": 482,
+  "kept_no_outline": 79,
+  "kept_same_session": 209,
+  "kept_not_measured": 13,
+  "outlines_measured": 115
+ },
+ "about": "MISSING CHECK (chat 2, Oct 27 2026; HQ 3:46 PM, Brandon: 'chat 8 can't verify what's missing'). For each area of a 2-fer run, every See kpc_fers_expected.py. Chat 8 reviews DROPPED + NEVER LOOKED AT.",
+ "area": "US-LA",
+ "date": "2026-10-31",
+ "pass": true,
+ "counts": {
+  "FOUND": 6,
+  "DROPPED": 63,
+  "NEVER LOOKED AT": 283
+ },
+ "FOUND": [
+  {
+   "refs": [
+    "US-0296",
+    "US-4082"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (84x, POTA history)"
+   ],
+   "row": "US-0296+US-4082@area@30.483,-91.698"
+  },
+  {
+   "refs": [
+    "US-0302",
+    "US-4071"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (12x, POTA history)"
+   ],
+   "row": "US-0302+US-4071@area@30.431,-89.714"
+  },
+  {
+   "refs": [
+    "US-10456",
+    "US-4486"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-10456+US-4486@area@31.424,-92.335"
+  },
+  {
+   "refs": [
+    "US-10563",
+    "US-4486"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "row": "US-10563+US-4486@area@31.036,-93.235"
+  },
+  {
+   "refs": [
+    "US-2358",
+    "US-4047"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (16x, POTA history)"
+   ],
+   "row": "US-2358+US-4047@area@32.905,-91.834"
+  },
+  {
+   "refs": [
+    "US-4056",
+    "US-4065"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-4056+US-4065@area@31.468,-92.161"
+  }
+ ],
+ "DROPPED": [
+  {
+   "refs": [
+    "US-0040",
+    "US-0296"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-0299"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-0300"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-10134"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-10451"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-2356"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (9x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-2361"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-2362"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-2370"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-2372"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-4063"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-4067"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-4079"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-4080"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-4082"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-0306"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-0309"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-10413"
+   ],
+   "why_expected": [
+    "outlines come within 24 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-10456"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-4056"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-4057"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-4065"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-4074"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-4075"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-4084"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-4486"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-2362"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (43x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-4071"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (16x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-6445"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (77x, POTA history)"
+   ],
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-0301",
+    "US-4076"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0306",
+    "US-4056"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-0306",
+    "US-4065"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0308",
+    "US-4070"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-0309",
+    "US-0312"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0312",
+    "US-10413"
+   ],
+   "why_expected": [
+    "outlines come within 30 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0312",
+    "US-4057"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0312",
+    "US-4074"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0312",
+    "US-4084"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0315",
+    "US-0729"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0315",
+    "US-10449"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0315",
+    "US-10450"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0315",
+    "US-10452"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0315",
+    "US-10453"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0315",
+    "US-10454"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0315",
+    "US-2366"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (9x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0315",
+    "US-4046"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0315",
+    "US-4066"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0315",
+    "US-4078"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0318",
+    "US-4049"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-0729",
+    "US-4486"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10413",
+    "US-2359"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10413",
+    "US-4486"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-2362",
+    "US-6445"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (24x, POTA history)"
+   ],
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-4042",
+    "US-4486"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4052",
+    "US-4061"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines come within 50 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4057",
+    "US-4486"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4062",
+    "US-4069"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (20x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4072",
+    "US-4088"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4072",
+    "US-4486"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-4074",
+    "US-4075"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4079",
+    "US-4080"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4081",
+    "US-4085"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (10x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4088",
+    "US-4486"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  }
+ ],
+ "NEVER LOOKED AT": [
+  {
+   "refs": [
+    "US-0040",
+    "US-0298"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-2360"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0040",
+    "US-2374"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "US-2374: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0296",
+    "US-10354"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0296",
+    "US-4044"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0296",
+    "US-4086"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-0958"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0297",
+    "US-10354"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0298",
+    "US-0300"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (12x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0298",
+    "US-2357"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0298",
+    "US-2362"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (18x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0298",
+    "US-2374"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "US-2374: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0298",
+    "US-4064"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0298",
+    "US-4071"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0298",
+    "US-6445"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0299",
+    "US-10142"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0299",
+    "US-10451"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0299",
+    "US-2360"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0299",
+    "US-2370"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-0302"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-10447"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-10455"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-12489"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-2357"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-2361"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (24x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-2374"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-2374: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-4062"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-4064"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (13x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0300",
+    "US-4067"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0301",
+    "US-0307"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0301",
+    "US-0958"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0301",
+    "US-2369"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0301",
+    "US-2373"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0301",
+    "US-4047"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0301",
+    "US-4048"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0302",
+    "US-12489"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0302",
+    "US-2361"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0302",
+    "US-2362"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0302",
+    "US-4062"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0302",
+    "US-4067"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0302",
+    "US-4069"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0302",
+    "US-6445"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0304",
+    "US-0311"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (13x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0304",
+    "US-0316"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0304",
+    "US-2360"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0304",
+    "US-4089"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0305",
+    "US-0723"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-0723: not in this run (another state, retired, or no POTA pin)"
+  },
+  {
+   "refs": [
+    "US-0305",
+    "US-0958"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0305",
+    "US-10447"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0305",
+    "US-10448"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0305",
+    "US-10455"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0305",
+    "US-2373"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0305",
+    "US-4087"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0306",
+    "US-0309"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0306",
+    "US-0312"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0307",
+    "US-0958"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0307",
+    "US-2369"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (61x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0307",
+    "US-2373"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0307",
+    "US-4047"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0307",
+    "US-4048"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0307",
+    "US-4076"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0309",
+    "US-10354"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0309",
+    "US-4057"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0309",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0311",
+    "US-10134"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (11x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0311",
+    "US-2360"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0311",
+    "US-2372"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0311",
+    "US-2375"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0315",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0316",
+    "US-2360"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0316",
+    "US-4078"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0318",
+    "US-0723"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "US-0723: not in this run (another state, retired, or no POTA pin)"
+  },
+  {
+   "refs": [
+    "US-0318",
+    "US-0958"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0318",
+    "US-2365"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2365: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0318",
+    "US-2373"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0318",
+    "US-4045"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0319",
+    "US-2358"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0319",
+    "US-4045"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0723",
+    "US-0958"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "US-0723: not in this run (another state, retired, or no POTA pin); US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0723",
+    "US-10354"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-0723: not in this run (another state, retired, or no POTA pin); US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0723",
+    "US-2358"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-0723: not in this run (another state, retired, or no POTA pin)"
+  },
+  {
+   "refs": [
+    "US-0723",
+    "US-2373"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (19x, POTA history)"
+   ],
+   "reason": "US-0723: not in this run (another state, retired, or no POTA pin); US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0729",
+    "US-10450"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0729",
+    "US-4057"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0729",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0958",
+    "US-10352"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0958",
+    "US-2358"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0958",
+    "US-2367"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0958",
+    "US-2369"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0958",
+    "US-2373"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (9x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary; US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0958",
+    "US-4045"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0958",
+    "US-4048"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0958",
+    "US-4049"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0958",
+    "US-4053"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0958",
+    "US-4076"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-0958",
+    "US-9760"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-0958: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10119",
+    "US-10447"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10119",
+    "US-10455"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10119",
+    "US-10562"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10119",
+    "US-2375"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10134",
+    "US-10142"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10134",
+    "US-2372"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10352",
+    "US-2358"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10352",
+    "US-2373"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10352",
+    "US-4048"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10352",
+    "US-4076"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-10449"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-10450"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-10452"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-10454"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-10456"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-10563"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-2365"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary; US-2365: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-2376"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-4042"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-4056"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-4057"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-4074"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-4084"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-4088"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-4486"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10354",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10354: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10413",
+    "US-10563"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10413",
+    "US-2360"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-10448"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (9x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-10451"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-10455"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (13x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-10562"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (21x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-2361"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-2362"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-4060"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-4064"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-4071"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-4081"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-4085"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-4087"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10447",
+    "US-6445"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-10447: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10448",
+    "US-10451"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10448",
+    "US-10455"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10448",
+    "US-10562"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (17x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10448",
+    "US-4060"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10448",
+    "US-4071"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10449",
+    "US-4078"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (9x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10449",
+    "US-4568"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (11x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10450",
+    "US-10452"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10450",
+    "US-10454"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10450",
+    "US-4568"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (9x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10451",
+    "US-2360"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-10451",
+    "US-4082"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10451",
+    "US-4568"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10452",
+    "US-10563"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10452",
+    "US-4066"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10452",
+    "US-4568"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (18x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10453",
+    "US-4078"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10453",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10454",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10455",
+    "US-10562"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (15x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10455",
+    "US-2361"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10455",
+    "US-4087"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10456",
+    "US-4084"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10562",
+    "US-4060"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10562",
+    "US-4071"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-10563",
+    "US-4568"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-12489",
+    "US-2357"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (9x, POTA history)",
+    "outlines about 132 m apart"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-12489",
+    "US-2361"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-12489",
+    "US-4071"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-12489",
+    "US-6445"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-12490",
+    "US-4068"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2356",
+    "US-2362"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2356",
+    "US-2374"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (9x, POTA history)"
+   ],
+   "reason": "US-2374: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2356",
+    "US-4069"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2357",
+    "US-2362"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2357",
+    "US-4064"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2358",
+    "US-2373"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2358",
+    "US-4045"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2358",
+    "US-4048"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2359",
+    "US-2373"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2359",
+    "US-4086"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2359",
+    "US-4089"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2359",
+    "US-4486"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2360",
+    "US-2365"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary; US-2365: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2360",
+    "US-2370"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2360",
+    "US-2372"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2360",
+    "US-2375"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2360",
+    "US-4044"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2360",
+    "US-4046"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2360",
+    "US-4068"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2360",
+    "US-4086"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2360",
+    "US-4089"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2360: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2361",
+    "US-2362"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (41x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2361",
+    "US-2374"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-2374: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2361",
+    "US-2377"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2361",
+    "US-4062"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2361",
+    "US-4064"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (16x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2361",
+    "US-4067"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2361",
+    "US-4069"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2361",
+    "US-4071"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (13x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2361",
+    "US-4081"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2361",
+    "US-6445"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (15x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2362",
+    "US-2374"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-2374: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2362",
+    "US-4062"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2362",
+    "US-4064"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (9x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2362",
+    "US-4067"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2362",
+    "US-4069"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2362",
+    "US-4071"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (11x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2363",
+    "US-2372"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2363",
+    "US-9761"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (18x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2365",
+    "US-2367"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2365: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2365",
+    "US-2368"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2365: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2365",
+    "US-2369"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2365: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2365",
+    "US-4049"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2365: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2365",
+    "US-4053"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2365: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2365",
+    "US-4076"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-2365: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2365",
+    "US-4083"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2365: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2365",
+    "US-4486"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2365: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2366",
+    "US-2369"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2366",
+    "US-4066"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2366",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2367",
+    "US-4045"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2367",
+    "US-4053"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2368",
+    "US-2369"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2369",
+    "US-2373"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2369",
+    "US-4047"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2369",
+    "US-4048"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2369",
+    "US-4076"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2370",
+    "US-2371"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2371",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (12x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2372",
+    "US-2375"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2372",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2373",
+    "US-2377"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2373",
+    "US-4045"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2373",
+    "US-4047"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2373",
+    "US-4048"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2373",
+    "US-4076"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "US-2373: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2374",
+    "US-4071"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "US-2374: no official boundary"
+  },
+  {
+   "refs": [
+    "US-2376",
+    "US-4078"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2376",
+    "US-4486"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-2376",
+    "US-4568"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4042",
+    "US-4057"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4042",
+    "US-4071"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4042",
+    "US-4086"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4044",
+    "US-4067"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4045",
+    "US-4053"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4047",
+    "US-4048"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4047",
+    "US-4076"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4048",
+    "US-4076"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4052",
+    "US-4065"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4055",
+    "US-4088"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4055",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4057",
+    "US-4074"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4059",
+    "US-4074"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4059",
+    "US-4084"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4060",
+    "US-4062"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4060",
+    "US-4063"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4060",
+    "US-4071"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4062",
+    "US-4067"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (21x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4062",
+    "US-4081"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4062",
+    "US-6445"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4064",
+    "US-4071"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4064",
+    "US-4085"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4065",
+    "US-4075"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4066",
+    "US-4568"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4067",
+    "US-4069"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (17x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4067",
+    "US-4081"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4067",
+    "US-6445"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4068",
+    "US-4086"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4068",
+    "US-4089"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (9x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4069",
+    "US-4082"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4071",
+    "US-4086"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4071",
+    "US-6445"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4072",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4074",
+    "US-4084"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4075",
+    "US-4084"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4078",
+    "US-4486"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4078",
+    "US-4568"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (14x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4083",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4084",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4085",
+    "US-6445"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4086",
+    "US-4089"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4086",
+    "US-4486"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4088",
+    "US-4568"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4089",
+    "US-4486"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-4486",
+    "US-4568"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  }
+ ]
+}

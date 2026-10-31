@@ -1,0 +1,56 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "la",
+ "states": [
+  "US-LA"
+ ],
+ "since": "2026-10-31",
+ "date": "2026-10-31 11:05 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 6,
+  "DROPPED": 63,
+  "NEVER LOOKED AT": 283
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-31",
+   "pairs tested": 111,
+   "pairs whose boxes touch": 111
+  },
+  "pass2": {
+   "agree with the pass before": 29,
+   "date": "2026-10-31",
+   "pairs tested": 15
+  },
+  "pass3": {
+   "agree with the pass before": 13,
+   "date": "2026-10-31",
+   "pairs tested": 14
+  },
+  "pass5": {
+   "checked": 8,
+   "date": "2026-10-31",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-LA": "data/fers/US-LA.json"
+ },
+ "US-LA": {
+  "rows": 38,
+  "live": 9,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 25,
+  "merged": 4
+ },
+ "states_ready": [
+  "US-LA"
+ ],
+ "states_held": []
+}
