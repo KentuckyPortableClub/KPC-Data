@@ -12,7 +12,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 
 ## Questions (per file: tier + answer)
 
-- **gis-hunter** (534 rows): - NO 342, - YES 81, - open 16, LIKELY NO 28, LIKELY YES 11, LIKELY open 3, SURE NO 3, SURE YES 3, SURE open 47
+- **gis-hunter** (534 rows): - NO 342, - YES 81, - open 16, LIKELY NO 28, LIKELY YES 11, LIKELY open 3, SURE NO 3, SURE YES 3, SURE bot YES 42, SURE open 5
 - **key-pieces** (307 rows): - NO 80, - YES 193, - open 34
 - **layers** (838 rows): LIKELY NO 33, LIKELY YES 4, LIKELY open 242, SURE NO 2, SURE YES 4, SURE open 553
 - **not-sure-for-chat9** (146 rows): - open 146

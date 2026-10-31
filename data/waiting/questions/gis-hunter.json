@@ -1,7 +1,7 @@
 {
  "about": "GIS hunter candidates (Rule G R-G7 steps 2-3; tiers T-1..T-6 in mapping.md). SURE = same proper name: chat 2 rechecks (G-4) and joins; chat 11 grades a 10% sample. LIKELY = part of the name shared: chat 11 answers YES / NO + checked_by + how. UNLIKELY rows are not asked (evidence in data/gis-hunter/<area>.json).",
  "built": "2026-10-31",
- "open": 66,
+ "open": 24,
  "sure_open": 47,
  "likely_open": 3,
  "never_reasked": 0,
@@ -9042,10 +9042,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3554610&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3636",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9062,10 +9064,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3557835&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5346",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9082,10 +9086,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3557252&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3282",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9102,10 +9108,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3554574&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3427",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9125,7 +9133,8 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name"
   },
   {
    "area": "CA-BC",
@@ -9142,10 +9151,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3555706&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4023",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9162,10 +9173,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3557362&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5500",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9182,10 +9195,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3561250&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5540",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9202,10 +9217,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3555193&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3178",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9222,10 +9239,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3555759&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3180",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9242,10 +9261,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3556830&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3200",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9262,10 +9283,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3559653&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3258",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9282,10 +9305,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3556776&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3278",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": true
   },
   {
    "area": "CA-BC",
@@ -9305,7 +9330,8 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "auto_recheck": "NOT PASSED: the park is a conservation kind the record does not name"
   },
   {
    "area": "CA-BC",
@@ -9362,10 +9388,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3561503&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3376",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": true
   },
   {
    "area": "CA-BC",
@@ -9382,10 +9410,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3555639&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3394",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9402,10 +9432,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3556780&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3407",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9422,10 +9454,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3561497&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3453",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9445,7 +9479,8 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "auto_recheck": "NOT PASSED: the park is a protected kind the record does not name"
   },
   {
    "area": "CA-BC",
@@ -9462,10 +9497,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3556770&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3513",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9482,10 +9519,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3554892&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3532",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9502,10 +9541,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3561468&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3538",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9522,10 +9563,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3555495&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3591",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9562,10 +9605,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3554463&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3603",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9582,10 +9627,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3555090&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3606",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9602,10 +9649,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3561495&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3712",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9622,10 +9671,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3555316&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3774",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9642,10 +9693,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3555634&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3777",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": true
   },
   {
    "area": "CA-BC",
@@ -9662,10 +9715,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3554541&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3801",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9682,10 +9737,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3555670&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3859",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9702,10 +9759,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3554413&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3918",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9722,10 +9781,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3557372&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3968",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9742,10 +9803,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3561524&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4071",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9762,10 +9825,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3561523&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4106",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9782,10 +9847,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3554517&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4184",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9802,10 +9869,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3557507&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4230",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9822,10 +9891,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3556017&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4232",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9842,10 +9913,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3554559&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4251",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9862,10 +9935,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3554623&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4260",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9882,10 +9957,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3556034&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4268",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9902,10 +9979,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3555858&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5168",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9922,10 +10001,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3557655&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5323",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": true
   },
   {
    "area": "CA-BC",
@@ -9945,7 +10026,8 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name"
   },
   {
    "area": "CA-BC",
@@ -9962,10 +10044,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3556374&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5501",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -9982,10 +10066,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3559881&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5544",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-BC",
@@ -10005,7 +10091,8 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "auto_recheck": "NOT PASSED: the park is a recreation kind the record does not name"
   },
   {
    "area": "CA-BC",
@@ -10022,10 +10109,12 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?objectIds=3561020&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5667",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "CA-SK",
@@ -10135,5 +10224,6 @@
    "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   }
- ]
+ ],
+ "auto_yes": 42
 }
