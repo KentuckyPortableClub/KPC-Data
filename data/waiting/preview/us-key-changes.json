@@ -1,11 +1,11 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key'). Written by kpc_key_summary.py.",
- "made": "2026-10-31 08:47 UTC",
+ "made": "2026-10-31 10:40 UTC",
  "totals": {
-  "gained": 11,
-  "lost": 0,
-  "pieces_changed": 36,
-  "grade_changed": 0
+  "gained": 140,
+  "lost": 4,
+  "pieces_changed": 402,
+  "grade_changed": 1
  },
  "per_area": {
   "US-AK": {
@@ -15,15 +15,171 @@
    "grade_changed": 0
   },
   "US-AL": {
+   "gained": 3,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-AR": {
+   "gained": 4,
+   "lost": 0,
+   "pieces_changed": 120,
+   "grade_changed": 0
+  },
+  "US-AZ": {
+   "gained": 7,
+   "lost": 0,
+   "pieces_changed": 16,
+   "grade_changed": 0
+  },
+  "US-CA": {
+   "gained": 6,
+   "lost": 1,
+   "pieces_changed": 13,
+   "grade_changed": 0
+  },
+  "US-CO": {
+   "gained": 6,
+   "lost": 0,
+   "pieces_changed": 122,
+   "grade_changed": 1
+  },
+  "US-GA": {
    "gained": 2,
    "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   },
+  "US-HI": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 2,
+   "grade_changed": 0
+  },
+  "US-ID": {
+   "gained": 8,
+   "lost": 0,
+   "pieces_changed": 9,
+   "grade_changed": 0
+  },
+  "US-IL": {
+   "gained": 3,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
   "US-IN": {
-   "gained": 6,
+   "gained": 7,
    "lost": 0,
    "pieces_changed": 35,
+   "grade_changed": 0
+  },
+  "US-KS": {
+   "gained": 8,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-LA": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-MD": {
+   "gained": 5,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-ME": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-MI": {
+   "gained": 6,
+   "lost": 0,
+   "pieces_changed": 6,
+   "grade_changed": 0
+  },
+  "US-MN": {
+   "gained": 17,
+   "lost": 0,
+   "pieces_changed": 74,
+   "grade_changed": 0
+  },
+  "US-NC": {
+   "gained": 3,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-ND": {
+   "gained": 2,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-NE": {
+   "gained": 5,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-NM": {
+   "gained": 6,
+   "lost": 1,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-NV": {
+   "gained": 3,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-NY": {
+   "gained": 4,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-OR": {
+   "gained": 6,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-RI": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-UT": {
+   "gained": 10,
+   "lost": 1,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-WA": {
+   "gained": 3,
+   "lost": 1,
+   "pieces_changed": 3,
+   "grade_changed": 0
+  },
+  "US-WI": {
+   "gained": 3,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-WY": {
+   "gained": 6,
+   "lost": 0,
+   "pieces_changed": 0,
    "grade_changed": 0
   }
  },
@@ -87,6 +243,25 @@
   },
   {
    "area": "US-AL",
+   "ref": "US-11027",
+   "name": "Big Canoe Creek Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgalb181",
+     "Big Canoe Creek",
+     382,
+     "alias name (pin inside): Big Canoe Creek"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11027"
+  },
+  {
+   "area": "US-AL",
    "ref": "US-3791",
    "name": "Trail of Tears National Historic Trail",
    "old_grade": "pin",
@@ -122,6 +297,728 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-4560"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-10258",
+   "name": "Ouachita National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl10258",
+     "Ouachita National Recreation Trail",
+     0,
+     "official trail line (US Forest Service): the park is the lin"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10258"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3791",
+     "Trail of Tears National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3791"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-8321",
+   "name": "Talimena Scenic Byway State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl8321",
+     "Talimena Scenic Byway State Trail",
+     0,
+     "official trail line (Arkansas State Parks, Arkansas Natural "
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8321"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-9757",
+   "name": "Butterfield Overland National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9757",
+     "Butterfield Overland National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9757"
+  },
+  {
+   "area": "US-AZ",
+   "ref": "US-11122",
+   "name": "General Crook National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11122",
+     "General Crook National Recreation Trail",
+     0,
+     "official trail line (US Forest Service): the park is the lin"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11122"
+  },
+  {
+   "area": "US-AZ",
+   "ref": "US-11123",
+   "name": "Highline National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11123",
+     "Highline National Recreation Trail",
+     0,
+     "official trail line (US Forest Service): the park is the lin"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11123"
+  },
+  {
+   "area": "US-AZ",
+   "ref": "US-13594",
+   "name": "Black Canyon National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13594",
+     "Black Canyon National Recreation Trail",
+     0,
+     "official trail line (Original data was obtained from: 2001 C"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13594"
+  },
+  {
+   "area": "US-AZ",
+   "ref": "US-4557",
+   "name": "Arizona Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4557",
+     "Arizona National Scenic Trail",
+     0,
+     "official trail line (Arizona Trail Association (USFS partner"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4557"
+  },
+  {
+   "area": "US-AZ",
+   "ref": "US-4571",
+   "name": "Juan Bautista de Anza National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4571",
+     "Juan Bautista de Anza National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4571"
+  },
+  {
+   "area": "US-AZ",
+   "ref": "US-4575",
+   "name": "Old Spanish National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4575",
+     "Old Spanish National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4575"
+  },
+  {
+   "area": "US-AZ",
+   "ref": "US-9757",
+   "name": "Butterfield Overland National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9757",
+     "Butterfield Overland National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9757"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-4562",
+   "name": "Pacific Crest Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4562",
+     "Pacific Crest National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4562"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-4566",
+   "name": "California National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4566",
+     "California National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4566"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-4571",
+   "name": "Juan Bautista de Anza National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4571",
+     "Juan Bautista de Anza National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4571"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-4575",
+   "name": "Old Spanish National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4575",
+     "Old Spanish National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4575"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-4578",
+   "name": "Pony Express National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4578",
+     "Pony Express National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4578"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-9757",
+   "name": "Butterfield Overland National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9757",
+     "Butterfield Overland National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9757"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-12173",
+   "name": "Tabeguache BLM Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl12173",
+     "Tabeguache BLM Historic Trail",
+     0,
+     "official trail line (Colorado Parks and Wildlife (COTREX)): "
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12173"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-4558",
+   "name": "Continental Divide Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4558",
+     "Continental Divide National Scenic Trail",
+     0,
+     "official trail line (U.S. Forest Service): the park is the l"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4558"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-4566",
+   "name": "California National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4566",
+     "California National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4566"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-4575",
+   "name": "Old Spanish National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4575",
+     "Old Spanish National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4575"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-4578",
+   "name": "Pony Express National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4578",
+     "Pony Express National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4578"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-4579",
+   "name": "Santa Fe National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4579",
+     "Santa Fe National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4579"
+  },
+  {
+   "area": "US-GA",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3791",
+     "Trail of Tears National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3791"
+  },
+  {
+   "area": "US-GA",
+   "ref": "US-4556",
+   "name": "Appalachian Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4556",
+     "Appalachian National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4556"
+  },
+  {
+   "area": "US-HI",
+   "ref": "US-10912",
+   "name": "'Ualaka'a State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl10912",
+     "'Ualaka'a State Trail",
+     0,
+     "official trail line (official layer picked by KPC): the park"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10912"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-10006",
+   "name": "Idaho Centennial Trail State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl10006",
+     "Idaho Centennial Trail State Trail",
+     0,
+     "official trail line (Idaho Department of Parks and Recreatio"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10006"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-4558",
+   "name": "Continental Divide Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4558",
+     "Continental Divide National Scenic Trail",
+     0,
+     "official trail line (U.S. Forest Service): the park is the l"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4558"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-4566",
+   "name": "California National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4566",
+     "California National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4566"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4572",
+     "Lewis and Clark National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4572"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-4574",
+   "name": "Nez Perce National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4574",
+     "Nez Perce (Nee-Me-Poo) National Historic Trail",
+     0,
+     "official trail line (U.S. Forest Service): the park is the l"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4574"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-4576",
+   "name": "Oregon National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4576",
+     "Oregon National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4576"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-4584",
+   "name": "Ashton-Tetonia Trail State Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4584",
+     "Ashton-Tetonia Trail State Park",
+     0,
+     "official trail line (Idaho Department of Parks and Recreatio"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4584"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-7816",
+   "name": "Henrys Lake Airstrip State Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "199732",
+     "Henrys Lake State Park",
+     607,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7816"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3791",
+     "Trail of Tears National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3791"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4572",
+     "Lewis and Clark National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4572"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-4573",
+   "name": "Mormon Pioneer National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4573",
+     "Mormon Pioneer National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4573"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4572",
+     "Lewis and Clark National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4572"
   },
   {
    "area": "US-IN",
@@ -236,10 +1133,1838 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-7842"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-2350",
+   "name": "Prairie Spirit Trail State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl2350",
+     "Prairie Spirit Trail State Trail",
+     0,
+     "official trail line (Larry Ross, Sunflower Rails to Trails, "
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-2350"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-4566",
+   "name": "California National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4566",
+     "California National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4566"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4572",
+     "Lewis and Clark National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4572"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-4576",
+   "name": "Oregon National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4576",
+     "Oregon National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4576"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-4578",
+   "name": "Pony Express National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4578",
+     "Pony Express National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4578"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-4579",
+   "name": "Santa Fe National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4579",
+     "Santa Fe National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4579"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-5718",
+   "name": "Flint Hills Trail State Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5718",
+     "Flint Hills Trail State Park",
+     0,
+     "official trail line (Larry Ross, Sunflower Rails to Trails, "
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5718"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-7393",
+   "name": "Milford State Fish Hatchery",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgksb27",
+     "Milford Wildlife Area",
+     0,
+     "name + Recreation.gov point inside (G-1, id 270)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-7393"
+  },
+  {
+   "area": "US-LA",
+   "ref": "US-4568",
+   "name": "El Camino Real de los Tejas National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4568",
+     "El Camino Real de los Tejas National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4568"
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-4556",
+   "name": "Appalachian Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4556",
+     "Appalachian National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4556"
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-4564",
+   "name": "Potomac Heritage Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4564",
+     "Potomac Heritage National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4564"
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-4567",
+   "name": "Captain John Smith Chesapeake National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4567",
+     "Captain John Smith Chesapeake National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4567"
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-4581",
+   "name": "Star-Spangled Banner National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4581",
+     "Star-Spangled Banner National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4581"
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-4582",
+   "name": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4582",
+     "Washington-Rochambeau Revolutionary Route National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4582"
+  },
+  {
+   "area": "US-ME",
+   "ref": "US-4556",
+   "name": "Appalachian Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4556",
+     "Appalachian National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4556"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-13172",
+   "name": "North Central State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13172",
+     "North Central State Trail",
+     0,
+     "official trail line (Michigan Department of Natural Resource"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13172"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-13174",
+   "name": "North Eastern State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13174",
+     "North Eastern State Trail",
+     0,
+     "official trail line (Michigan Department of Natural Resource"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13174"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-13176",
+   "name": "North Western State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13176",
+     "North Western State Trail",
+     0,
+     "official trail line (Michigan Department of Natural Resource"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13176"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-13179",
+   "name": "Pere Marquette State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13179",
+     "Pere Marquette State Trail",
+     0,
+     "official trail line (Michigan Department of Natural Resource"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13179"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-13184",
+   "name": "Iron Belle State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13184",
+     "Iron Belle State Trail",
+     0,
+     "official trail line (Michigan Department of Natural Resource"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13184"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-4239",
+   "name": "North Country Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4239",
+     "North Country National Scenic Trail",
+     0,
+     "official trail line (North Country Trail Association (NPS pa"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4239"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-11014",
+   "name": "David Dill/Taconite and Taconite State Trails State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11014",
+     "David Dill/Taconite and Taconite State Trails State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11014"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-11150",
+   "name": "CJ Ramstad North Shore State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11150",
+     "CJ Ramstad North Shore State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11150"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-11153",
+   "name": "Matthew Lourey State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11153",
+     "Matthew Lourey State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11153"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-11154",
+   "name": "Taconite State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11154",
+     "Taconite State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11154"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-11904",
+   "name": "Migizi National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11904",
+     "Migizi National Recreation Trail",
+     0,
+     "official trail line (US Forest Service): the park is the lin"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11904"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-4239",
+   "name": "North Country Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4239",
+     "North Country National Scenic Trail",
+     0,
+     "official trail line (North Country Trail Association (NPS pa"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4239"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-7759",
+   "name": "David Dill Arrowhead State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl7759",
+     "David Dill Arrowhead State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7759"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-8095",
+   "name": "Gitchi Gami State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl8095",
+     "Gitchi Gami State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8095"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-9373",
+   "name": "Paul Bunyan State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9373",
+     "Paul Bunyan State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9373"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-9375",
+   "name": "Harmony-Preston State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9375",
+     "Harmony-Preston State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9375"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-9377",
+   "name": "Blazing Star State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9377",
+     "Blazing Star State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9377"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-9378",
+   "name": "Casey Jones State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9378",
+     "Casey Jones State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9378"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-9381",
+   "name": "Douglas State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9381",
+     "Douglas State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9381"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-9384",
+   "name": "Minnesota Valley State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9384",
+     "Minnesota Valley State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-9384"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-9385",
+   "name": "Gateway Overview State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9385",
+     "Gateway Overview State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9385"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-9389",
+   "name": "Central Lakes State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9389",
+     "Central Lakes State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9389"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-9390",
+   "name": "Williard Munger State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9390",
+     "Williard Munger State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9390"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3791",
+     "Trail of Tears National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3791"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-4556",
+   "name": "Appalachian Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4556",
+     "Appalachian National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4556"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-4577",
+   "name": "Overmountain Victory National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4577",
+     "Overmountain Victory National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4577"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-4239",
+   "name": "North Country Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4239",
+     "North Country National Scenic Trail",
+     0,
+     "official trail line (North Country Trail Association (NPS pa"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4239"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4572",
+     "Lewis and Clark National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4572"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-4566",
+   "name": "California National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4566",
+     "California National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4566"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4572",
+     "Lewis and Clark National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4572"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-4573",
+   "name": "Mormon Pioneer National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4573",
+     "Mormon Pioneer National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4573"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-4576",
+   "name": "Oregon National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4576",
+     "Oregon National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4576"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-4578",
+   "name": "Pony Express National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4578",
+     "Pony Express National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4578"
+  },
+  {
+   "area": "US-NM",
+   "ref": "US-4558",
+   "name": "Continental Divide Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4558",
+     "Continental Divide National Scenic Trail",
+     0,
+     "official trail line (U.S. Forest Service): the park is the l"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4558"
+  },
+  {
+   "area": "US-NM",
+   "ref": "US-4569",
+   "name": "El Camino Real de Tierra Adentro National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4569",
+     "El Camino Real de Tierra Adentro National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4569"
+  },
+  {
+   "area": "US-NM",
+   "ref": "US-4575",
+   "name": "Old Spanish National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4575",
+     "Old Spanish National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4575"
+  },
+  {
+   "area": "US-NM",
+   "ref": "US-4579",
+   "name": "Santa Fe National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4579",
+     "Santa Fe National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4579"
+  },
+  {
+   "area": "US-NM",
+   "ref": "US-8618",
+   "name": "White Ridge National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl8618",
+     "White Ridge National Recreation Trail",
+     0,
+     "official trail line (BLM Rio Puerco Field Office (official l"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8618"
+  },
+  {
+   "area": "US-NM",
+   "ref": "US-9757",
+   "name": "Butterfield Overland National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9757",
+     "Butterfield Overland National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9757"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-4566",
+   "name": "California National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4566",
+     "California National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4566"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-4575",
+   "name": "Old Spanish National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4575",
+     "Old Spanish National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4575"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-4578",
+   "name": "Pony Express National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4578",
+     "Pony Express National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4578"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-4239",
+   "name": "North Country Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4239",
+     "North Country National Scenic Trail",
+     0,
+     "official trail line (North Country Trail Association (NPS pa"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4239"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-4556",
+   "name": "Appalachian Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4556",
+     "Appalachian National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4556"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-4567",
+   "name": "Captain John Smith Chesapeake National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4567",
+     "Captain John Smith Chesapeake National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4567"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-4582",
+   "name": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4582",
+     "Washington-Rochambeau Revolutionary Route National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4582"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-4562",
+   "name": "Pacific Crest Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4562",
+     "Pacific Crest National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4562"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-4566",
+   "name": "California National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4566",
+     "California National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4566"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4572",
+     "Lewis and Clark National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4572"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-4574",
+   "name": "Nez Perce National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4574",
+     "Nez Perce (Nee-Me-Poo) National Historic Trail",
+     0,
+     "official trail line (U.S. Forest Service): the park is the l"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4574"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-4576",
+   "name": "Oregon National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4576",
+     "Oregon National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4576"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-9524",
+   "name": "Angel's Rest State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9524",
+     "Angel's Rest State Trail",
+     0,
+     "official trail line (This database and GIS data are made ava"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9524"
+  },
+  {
+   "area": "US-RI",
+   "ref": "US-4582",
+   "name": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4582",
+     "Washington-Rochambeau Revolutionary Route National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4582"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-10965",
+   "name": "Great Western Trail BLM Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl10965",
+     "Great Western Trail BLM Historic Trail",
+     0,
+     "official trail line (official layer picked by KPC): the park"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10965"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11001",
+   "name": "Gooseberry Mesa National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11001",
+     "Gooseberry Mesa National Recreation Trail",
+     0,
+     "official trail line (official layer picked by KPC): the park"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11001"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-4566",
+   "name": "California National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4566",
+     "California National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4566"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-4573",
+   "name": "Mormon Pioneer National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4573",
+     "Mormon Pioneer National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4573"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-4575",
+   "name": "Old Spanish National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4575",
+     "Old Spanish National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4575"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-4578",
+   "name": "Pony Express National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4578",
+     "Pony Express National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4578"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5809",
+   "name": "Little Red Mountain BLM Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5809",
+     "Little Red Mountain BLM Historic Trail",
+     0,
+     "official trail line (official layer picked by KPC): the park"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-5809"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5872",
+   "name": "Burr Trail BLM Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5872",
+     "Burr Trail BLM Historic Trail",
+     0,
+     "official trail line (official layer picked by KPC): the park"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5872"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5906",
+   "name": "Burr Trail Scenic Byway BLM Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5906",
+     "Burr Trail Scenic Byway BLM Historic Trail",
+     0,
+     "official trail line (official layer picked by KPC): the park"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5906"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5913",
+   "name": "Historic Union Pacific Rail Trail State Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5913",
+     "Historic Union Pacific Rail Trail State Park",
+     0,
+     "official trail line (official layer picked by KPC): the park"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5913"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-4562",
+   "name": "Pacific Crest Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4562",
+     "Pacific Crest National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4562"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4572",
+     "Lewis and Clark National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4572"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-4576",
+   "name": "Oregon National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4576",
+     "Oregon National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4576"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4239",
+   "name": "North Country Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4239",
+     "North Country National Scenic Trail",
+     0,
+     "official trail line (North Country Trail Association (NPS pa"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4239"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-9773",
+   "name": "Capital City State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9773",
+     "Capital City State Trail",
+     0,
+     "official trail line (Wisconsin DNR, Bureau of Parks & Recrea"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9773"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-9796",
+   "name": "Green Circle State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9796",
+     "Green Circle State Trail",
+     0,
+     "official trail line (Wisconsin DNR, Bureau of Parks & Recrea"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9796"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-4558",
+   "name": "Continental Divide Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4558",
+     "Continental Divide National Scenic Trail",
+     0,
+     "official trail line (U.S. Forest Service): the park is the l"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4558"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-4566",
+   "name": "California National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4566",
+     "California National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4566"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-4573",
+   "name": "Mormon Pioneer National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4573",
+     "Mormon Pioneer National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4573"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-4574",
+   "name": "Nez Perce National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4574",
+     "Nez Perce (Nee-Me-Poo) National Historic Trail",
+     0,
+     "official trail line (U.S. Forest Service): the park is the l"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4574"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-4576",
+   "name": "Oregon National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4576",
+     "Oregon National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4576"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-4578",
+   "name": "Pony Express National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4578",
+     "Pony Express National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4578"
   }
  ],
- "lost": [],
- "grade_changed": [],
+ "lost": [
+  {
+   "area": "US-CA",
+   "ref": "US-4383",
+   "name": "Rogue River-Siskiyou National Forest",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "2919",
+     "Siskiyou National Forest",
+     31543,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4383"
+  },
+  {
+   "area": "US-NM",
+   "ref": "US-11822",
+   "name": "Jemez Historic Site",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "fsod52",
+     "Jemez National Recreation Area",
+     57753,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11822"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-6084",
+   "name": "Santa Clara River Reserve BLM Recreation Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgakh1521",
+     "Santa Clara River / Land Hill",
+     1664,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-6084"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-13383",
+   "name": "Big Eddy Water Access State Recreation Site",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgwab617",
+     "Big Eddy",
+     0,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13383"
+  }
+ ],
+ "grade_changed": [
+  {
+   "area": "US-CO",
+   "ref": "US-12189",
+   "name": "Buena Vista State Wildlife Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "cow173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ],
+    [
+     "sgcoc173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "cow173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ],
+    [
+     "sgcoc173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12189"
+  }
+ ],
  "sample": [
   {
    "area": "US-AL",
@@ -259,6 +2984,255 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-3791"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-10258",
+   "name": "Ouachita National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl10258",
+     "Ouachita National Recreation Trail",
+     0,
+     "official trail line (US Forest Service): the park is the lin"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10258"
+  },
+  {
+   "area": "US-GA",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3791",
+     "Trail of Tears National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3791"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3791",
+     "Trail of Tears National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3791"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-7393",
+   "name": "Milford State Fish Hatchery",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgksb27",
+     "Milford Wildlife Area",
+     0,
+     "name + Recreation.gov point inside (G-1, id 270)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-7393"
+  },
+  {
+   "area": "US-LA",
+   "ref": "US-4568",
+   "name": "El Camino Real de los Tejas National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4568",
+     "El Camino Real de los Tejas National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4568"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-9384",
+   "name": "Minnesota Valley State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9384",
+     "Minnesota Valley State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-9384"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3791",
+     "Trail of Tears National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3791"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5809",
+   "name": "Little Red Mountain BLM Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5809",
+     "Little Red Mountain BLM Historic Trail",
+     0,
+     "official trail line (official layer picked by KPC): the park"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-5809"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-4383",
+   "name": "Rogue River-Siskiyou National Forest",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "2919",
+     "Siskiyou National Forest",
+     31543,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4383"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3791",
+     "Trail of Tears National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3791"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-6084",
+   "name": "Santa Clara River Reserve BLM Recreation Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgakh1521",
+     "Santa Clara River / Land Hill",
+     1664,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-6084"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-12189",
+   "name": "Buena Vista State Wildlife Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "cow173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ],
+    [
+     "sgcoc173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "cow173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ],
+    [
+     "sgcoc173",
+     "Buena Vista SWA (Fishing Easement)",
+     45,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12189"
   },
   {
    "area": "US-AK",
@@ -281,14 +3255,71 @@
   },
   {
    "area": "US-AL",
-   "ref": "US-4560",
-   "name": "Natchez Trace Trail National Scenic Trail",
+   "ref": "US-11027",
+   "name": "Big Canoe Creek Nature Reserve",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl4560",
-     "Natchez Trace National Scenic Trail",
+     "sgalb181",
+     "Big Canoe Creek",
+     382,
+     "alias name (pin inside): Big Canoe Creek"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11027"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-8321",
+   "name": "Talimena Scenic Byway State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl8321",
+     "Talimena Scenic Byway State Trail",
+     0,
+     "official trail line (Arkansas State Parks, Arkansas Natural "
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8321"
+  },
+  {
+   "area": "US-AZ",
+   "ref": "US-11122",
+   "name": "General Crook National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11122",
+     "General Crook National Recreation Trail",
+     0,
+     "official trail line (US Forest Service): the park is the lin"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11122"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-4562",
+   "name": "Pacific Crest Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4562",
+     "Pacific Crest National Scenic Trail",
      0,
      "official trail line (National Park Service): the park is the"
     ]
@@ -296,37 +3327,18 @@
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4560"
+   "pota": "https://pota.app/#/park/US-4562"
   },
   {
-   "area": "US-IN",
-   "ref": "US-5682",
-   "name": "Moores Creek State Recreation Area",
+   "area": "US-GA",
+   "ref": "US-4556",
+   "name": "Appalachian Trail National Scenic Trail",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "sginc4577",
-     "Monroe Lake",
-     155,
-     "name"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5682"
-  },
-  {
-   "area": "US-AK",
-   "ref": "US-4570",
-   "name": "Iditarod National Historic Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl4570",
-     "Iditarod National Historic Trail",
+     "trl4556",
+     "Appalachian National Scenic Trail",
      0,
      "official trail line (National Park Service): the park is the"
     ]
@@ -334,121 +3346,216 @@
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4570"
+   "pota": "https://pota.app/#/park/US-4556"
   },
   {
-   "area": "US-AK",
-   "ref": "US-7245",
-   "name": "Juneau State Trail",
+   "area": "US-HI",
+   "ref": "US-10912",
+   "name": "'Ualaka'a State Trail",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl7245",
-     "Juneau State Trail",
+     "trl10912",
+     "'Ualaka'a State Trail",
      0,
-     "official trail line (Alaska Department of Natural Resources "
+     "official trail line (official layer picked by KPC): the park"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-7245"
+   "pota": "https://pota.app/#/park/US-10912"
   },
   {
-   "area": "US-IN",
-   "ref": "US-5684",
-   "name": "Allens Creek State Recreation Area",
+   "area": "US-ID",
+   "ref": "US-10006",
+   "name": "Idaho Centennial Trail State Trail",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "sginc4573",
-     "Monroe Lake",
-     290,
-     "name"
+     "trl10006",
+     "Idaho Centennial Trail State Trail",
+     0,
+     "official trail line (Idaho Department of Parks and Recreatio"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5684"
+   "pota": "https://pota.app/#/park/US-10006"
   },
   {
-   "area": "US-IN",
-   "ref": "US-5685",
-   "name": "Lieber State Recreation Area",
+   "area": "US-IL",
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "sginc3226",
-     "Cagles Mill Lake",
-     718,
-     "name"
+     "trl4572",
+     "Lewis and Clark National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5685"
+   "pota": "https://pota.app/#/park/US-4572"
   },
   {
    "area": "US-IN",
-   "ref": "US-5686",
-   "name": "Fairfax State Recreation Area",
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "sginc4575",
-     "Monroe Lake",
-     741,
-     "name"
+     "trl4572",
+     "Lewis and Clark National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5686"
+   "pota": "https://pota.app/#/park/US-4572"
   },
   {
-   "area": "US-IN",
-   "ref": "US-5688",
-   "name": "Salt Creek State Recreation Area",
+   "area": "US-KS",
+   "ref": "US-2350",
+   "name": "Prairie Spirit Trail State Trail",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "sginc4580",
-     "Monroe Lake",
-     313,
-     "name"
+     "trl2350",
+     "Prairie Spirit Trail State Trail",
+     0,
+     "official trail line (Larry Ross, Sunflower Rails to Trails, "
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5688"
+   "pota": "https://pota.app/#/park/US-2350"
   },
   {
-   "area": "US-IN",
-   "ref": "US-7842",
-   "name": "Red Bridge State Recreation Area",
+   "area": "US-MD",
+   "ref": "US-4556",
+   "name": "Appalachian Trail National Scenic Trail",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "sginc4564",
-     "Mississinewa Lake",
-     203,
-     "name"
+     "trl4556",
+     "Appalachian National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-7842"
+   "pota": "https://pota.app/#/park/US-4556"
+  },
+  {
+   "area": "US-ME",
+   "ref": "US-4556",
+   "name": "Appalachian Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4556",
+     "Appalachian National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4556"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-13172",
+   "name": "North Central State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13172",
+     "North Central State Trail",
+     0,
+     "official trail line (Michigan Department of Natural Resource"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13172"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-11014",
+   "name": "David Dill/Taconite and Taconite State Trails State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11014",
+     "David Dill/Taconite and Taconite State Trails State Trail",
+     0,
+     "official trail line (Minnesota DNR (DNR GIS Data License Agr"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11014"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-4556",
+   "name": "Appalachian Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4556",
+     "Appalachian National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4556"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-4239",
+   "name": "North Country Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4239",
+     "North Country National Scenic Trail",
+     0,
+     "official trail line (North Country Trail Association (NPS pa"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4239"
   }
  ]
 }
