@@ -1,0 +1,31 @@
+{
+ "chat": 8,
+ "kind": "page",
+ "urls": [
+  "https://www.nps.gov/alka/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/appa/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/buov/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/cali/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/cajo/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/elca/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/elte/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/iafl/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/juba/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/lecl/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/mopi/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/natt/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/neen/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/noco/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/olsp/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/oreg/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/ovvi/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/poex/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/pohe/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/safe/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/semo/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/stsp/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/trte/planyourvisit/visitorcenters.htm",
+  "https://www.nps.gov/waro/planyourvisit/visitorcenters.htm"
+ ],
+ "report": "Checking visitor-center pages for the 24 NPS-matched national trail parks (ref order matches urls order: US-4565,US-4556,US-9757,US-4566,US-4567,US-4569,US-4568,US-4238,US-4571,US-4572,US-4573,US-4560,US-4561,US-4239,US-4575,US-4576,US-4577,US-4578,US-4564,US-4579,US-4580,US-4581,US-3791,US-4582). chat 2's NPS API pull of 'visitorcenters' for these 24 unit codes came back with ZERO centers for every one -- likely because linear trails rarely have a dedicated visitorcenters API entry even when their own website lists them. For each page: a 404/soft-404 means that trail has no dedicated visitorcenters.htm page (note it, I'll try planyourvisit/places-to-go.htm or placestogo.htm next for those); otherwise list every place named as a visitor center or interpretive center on the page (name, town/state, address if given)."
+}
