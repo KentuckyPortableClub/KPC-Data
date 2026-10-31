@@ -1,0 +1,3920 @@
+{
+ "area": "US-AK",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0877": {
+   "n": "Alatna National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/rivers/alatna.php",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fws.gov/rivers/map)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0878": {
+   "n": "Aniakchak National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.nps.gov/ania/index.htm https://www.rivers.gov/rivers/aniakchak.php",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.nps.gov/ania/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, wrong thing (the page says not found / sign in)"
+   ],
+   "ver": 7
+  },
+  "US-0879": {
+   "n": "Charley National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.nps.gov/yuch/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/yuch/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/yuch/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/yuch/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "May 13, 2024",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0880": {
+   "n": "Chilikadrotna National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/rivers/chilikadrotna.php https://www.nps.gov/lacl/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fws.gov/rivers/map)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0887": {
+   "n": "Mulchatna National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.nps.gov/lacl/planyourvisit/rafting.htm https://www.nps.gov/lacl/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.nps.gov/lacl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-0889": {
+   "n": "Noatak National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/rivers/noatak.php https://www.nps.gov/noat/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fws.gov/rivers/map)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0892": {
+   "n": "Tinayguk National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.nps.gov/gaar/tinaygukriver.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/gaar/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Park map of the Tinayguk River area')"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/gaar/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/gaar/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Park map of the Tinayguk River area')",
+     "posted": "January 29, 2024",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0893": {
+   "n": "Tlikakila National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/rivers/tlikakila.php https://www.nps.gov/lacl/planyourvisit/rafting.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fws.gov/rivers/map)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10464": {
+   "n": "Chena Wayside State Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://dnr.alaska.gov/parks/aspunits/northern/chenariversrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11798": {
+   "n": "Tangle Lakes Archeological Reserve",
+   "t": "Archeological Reserve",
+   "page": "https://www.blm.gov/programs/cultural-heritage-and-paleontology/archaeology/what-we-manage/alaska/tangle-lakes-archaeological-district",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11799": {
+   "n": "Tangle Lakes Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/tangle-lakes-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11800": {
+   "n": "Delta Wild and Scenic River Wayside Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/delta-wild-and-scenic-river-wayside",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11801": {
+   "n": "Clearwater Creek Wayside Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/clearwater-creek-wayside",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11802": {
+   "n": "Brushkana Creek Campground Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/brushkana-creek-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11803": {
+   "n": "Paxson Lake Campground Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/paxson-lake-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11804": {
+   "n": "Gulkana BLM Wild and Scenic River",
+   "t": "BLM Wild and Scenic River",
+   "page": "https://rivers.gov/apps/river/gulkana",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/rivers/map)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/rivers/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('System-wide Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fws.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11805": {
+   "n": "Sourdough Creek Campground Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/sourdough-creek-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11825": {
+   "n": "Eagle Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/eagle-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11826": {
+   "n": "Walker Fork Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/walker-fork-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11827": {
+   "n": "West Fork Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/west-fork-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11828": {
+   "n": "Fortymile BLM Wild and Scenic River",
+   "t": "BLM Wild and Scenic River",
+   "page": "https://www.blm.gov/programs/national-conservation-lands/alaska/fortymile-wsr",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/Maps_GeoPDF_Fortymile_Wild_Scenic_River_Taylor_Highway_20170324.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Nov 05, 2020",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11830": {
+   "n": "Five Mile Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/five-mile-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11831": {
+   "n": "Arctic Circle Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/arctic-circle-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11832": {
+   "n": "Marion Creek Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/marion-creek-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11833": {
+   "n": "Galbraith Lake Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/galbraith-lake-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11834": {
+   "n": "Susitna Landing (Kashwitna) State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://www.adfg.alaska.gov/index.cfm?adfg=fishingSportCampingAccess.main",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (adfg.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11835": {
+   "n": "Little Susitna Public Use Facility State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://www.adfg.alaska.gov/index.cfm?adfg=fishingSportCampingAccess.main",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (adfg.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11836": {
+   "n": "Fred Blixt Cabin BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/fred-blixt-cabin",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11839": {
+   "n": "Chena Pump Wayside State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://dnr.alaska.gov/parks/aspunits/northern/chenapumpsrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11846": {
+   "n": "Bing's Landing Campground and Day Use Area State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://dnr.alaska.gov/parks/aspunits/kenai/bingslandingcamp.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11850": {
+   "n": "Mount Prindle Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/mount-prindle-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11851": {
+   "n": "Ophir Creek Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/ophir-creek-campground-0",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11852": {
+   "n": "Beaver Creek BLM Wild and Scenic River",
+   "t": "BLM Wild and Scenic River",
+   "page": "https://www.blm.gov/programs/national-conservation-lands/alaska/beaver-creek-wsr",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11853": {
+   "n": "Cripple Creek Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/cripple-creek-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11854": {
+   "n": "Pinnell Mountain National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.blm.gov/visit/pinnell-mountain-trail",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12381": {
+   "n": "Delta BLM Wild and Scenic River",
+   "t": "BLM Wild and Scenic River",
+   "page": "https://rivers.gov/river/delta",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/rivers/map; opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/rivers/map?river=delta)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/rivers/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('System-wide Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fws.gov)"
+    },
+    {
+     "url": "https://www.fws.gov/rivers/map?river=delta",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View larger map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fws.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12678": {
+   "n": "Little Nelchina State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.alaska.org/detail/little-nelchina-state-rec-site",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.alaska.org/destinations/region/southcentral-interior; opened, a page that does not name this park (a generic agency page is not its map) https://www.alaska.org/destinations/region/inside-passage)",
+    "how": "a link on the park's page ('View All Southcentral Interior Towns on a Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.alaska.org/destinations/region/southcentral-interior",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View All Southcentral Interior Towns on a Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.alaska.org/destinations/region/inside-passage",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View All Southeast Towns On a Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12679": {
+   "n": "Fort Egbert BLM Historic Area",
+   "t": "BLM Historic Area",
+   "page": "https://www.blm.gov/visit/fort-egbert-national-historic-site",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12708": {
+   "n": "Kenai River State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://dnr.alaska.gov/parks/aspunits/kenai/krsma.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "https://dnr.alaska.gov/parks/units/krsmanewmotorfs.pdf",
+    "how": "a link on the park's page ('Motor Regulations Fact Sheet for Kenai River Special Management Area')",
+    "status": "ok"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [
+    "is managed by Alaska State Parks"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12709": {
+   "n": "Funny River Campground State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://dnr.alaska.gov/parks/aspunits/kenai/funnyriversrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12710": {
+   "n": "Izaak Walton Campground State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://dnr.alaska.gov/parks/aspunits/kenai/izaakwalsrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12711": {
+   "n": "Morgan’s Landing Campground State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://dnr.alaska.gov/parks/aspunits/kenai/morgldcamp.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-13462": {
+   "n": "Sportsman's Angler Access State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://www.adfg.alaska.gov/index.cfm%3Fadfg%3Dfishingsportangleraccesssouthcentral.sportsmanslodge",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (adfg.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-3382": {
+   "n": "John National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/rivers/john.php https://www.nps.gov/gaar/johnriver.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 5 parks was dropped: https://www.fws.gov/rivers/map)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4570": {
+   "n": "Iditarod National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.blm.gov/programs/national-conservation-lands/national-scenic-and-historic-trails/iditarod",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7208": {
+   "n": "Big Lake North State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/matsu/biglakenosrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7209": {
+   "n": "Big Lake South State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/matsu/biglakesosrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7238": {
+   "n": "Salcha River State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://dnr.alaska.gov/parks/aspunits/northern/salcharver.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7239": {
+   "n": "Tok River State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://dnr.alaska.gov/parks/aspunits/northern/tokrvsrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7245": {
+   "n": "Juneau State Trail",
+   "t": "State Trail",
+   "page": "http://dnr.alaska.gov/parks/aspunits/southeast/juneautrailsys.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7885": {
+   "n": "Inupiat National Heritage Site",
+   "t": "National Heritage Site",
+   "page": "https://www.nps.gov/inup/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/inup/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/inup/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/inup/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "March 11, 2016",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0002": {
+   "n": "Alagnak Wild River National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/alag/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/alag/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 20, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/alag/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0003": {
+   "n": "Aniakchak National Preserve",
+   "t": "National Preserve",
+   "page": "https://www.nps.gov/ania/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/ania/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 18, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/ania/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0022": {
+   "n": "Denali National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/dena/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/dena/planyourvisit/upload/trail-map-letter-size.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2022-04-04",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'print-friendly trail map' file",
+    "posted": "Apr 04, 2022",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "page": "https://www.nps.gov/dena/planyourvisit/maps.htm",
+    "via": "the agency site",
+    "date_label": "2022"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/dena/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0026": {
+   "n": "Gates of the Arctic National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/gaar/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/gaar/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "January 29, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/gaar/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0029": {
+   "n": "Glacier Bay National Preserve",
+   "t": "National Preserve",
+   "page": "https://www.nps.gov/glba/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/glba/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 22, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/glba/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0044": {
+   "n": "Katmai National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/katm/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/katm/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/katm/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0045": {
+   "n": "Kenai Fjords National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/kefj/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/kefj/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 11, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/kefj/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0047": {
+   "n": "Kobuk Valley National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/kova/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/kova/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "December 10, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/kova/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0048": {
+   "n": "Lake Clark National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/lacl/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/lacl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 23, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/lacl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [
+    "maintained by the Land Resources Division"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0069": {
+   "n": "Wrangell-St. Elias National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/wrst/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/wrst/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "July 22, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/wrst/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0142": {
+   "n": "Arctic National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/arctic/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/arctic/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/arctic/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/refuge/arctic/maps-extension-arctic-nwr",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('More Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0143": {
+   "n": "Alaska Maritime National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/alaska_maritime/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/alaska-maritime/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0144": {
+   "n": "Alaska Peninsula National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/alaska_peninsula/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/alaska-peninsula/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/alaska-peninsula/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0145": {
+   "n": "Becharof National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/becharof/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/becharof/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/becharof/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0146": {
+   "n": "Innoko National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/innoko/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/innoko/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/innoko/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0147": {
+   "n": "Izembek National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/izembek/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/izembek/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/izembek/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/media/visitor-photographs-map-izembek-refuge",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Image Details')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0148": {
+   "n": "Kanuti National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/kanuti/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/kanuti/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/kanuti/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0149": {
+   "n": "Kenai National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/kenai/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/kenai/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/kenai/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0150": {
+   "n": "Kodiak National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/kodiak",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/kodiak/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/kodiak/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0151": {
+   "n": "Koyukuk National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/koyukuk",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/koyukuk/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/koyukuk/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0152": {
+   "n": "Nowitna National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/nowitna",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/nowitna/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/nowitna/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0153": {
+   "n": "Selawik National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/selawik",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/selawik/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/selawik/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0154": {
+   "n": "Tetlin National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/tetlin",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/tetlin/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/tetlin/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0155": {
+   "n": "Togiak National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/togiak",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/togiak/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/togiak/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0156": {
+   "n": "Yukon Delta National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/yukon-delta",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/yukon-delta/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/yukon-delta/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0157": {
+   "n": "Yukon Flats National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/yukon-flats",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/yukon-flats/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/yukon-flats/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.doi.gov/sites/default/files/images/2026-04/unit_25d_remainder_moose_closure_adopted.jpg",
+     "status": "ok",
+     "kind": "image",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Map')",
+     "posted": "2026-04",
+     "posted_how": "posted: the upload folder in the address",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (doi.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0643": {
+   "n": "Noatak National Preserve",
+   "t": "National Preserve",
+   "page": "https://www.nps.gov/noat/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/noat/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": false,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/noat/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0644": {
+   "n": "Bering Land Bridge National Preserve",
+   "t": "National Preserve",
+   "page": "https://www.nps.gov/bela/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/bela/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "October 13, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/bela/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0741": {
+   "n": "Klondike Gold Rush National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/klgo/planyourvisit/basicinfo.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/klgo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "October 11, 2023",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/klgo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0758": {
+   "n": "Sitka National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/sitk/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/sitk/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "June 25, 2021",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/sitk/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0902": {
+   "n": "Aniakchak National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/ania/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/ania/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 18, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/ania/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0909": {
+   "n": "Cape Krusenstern National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/cakr/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/cakr/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 18, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/cakr/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10281": {
+   "n": "White Mountains National Recreation Area BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/white-mountains",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11244": {
+   "n": "Knik River Public Use Area State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dnr.alaska.gov/mlw/knik-river-pua/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.alaska.gov/mlw/knik-river-pua/maps/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps and Brochures')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11494": {
+   "n": "Campbell Tract Special Recreation Management Area BLM Special Recreation Management Area",
+   "t": "BLM Special Recreation Management Area",
+   "page": "https://www.blm.gov/visit/campbell-tract",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11829": {
+   "n": "Upper Chatanika River State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://dnr.alaska.gov/parks/aspunits/northern/upchatrvsrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11855": {
+   "n": "Steese National Conservation Area",
+   "t": "National Conservation Area",
+   "page": "https://www.blm.gov/programs/national-conservation-lands/alaska/steese",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11862": {
+   "n": "Juneau Channel Islands State Park",
+   "t": "State Park",
+   "page": "https://dnr.alaska.gov/parks/aspunits/southeast/juneauchannelsmp.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12607": {
+   "n": "Glacier Bay National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/glba/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/glba/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 22, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/glba/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12750": {
+   "n": "Shoup Bay State Marine Reserve",
+   "t": "State Marine Reserve",
+   "page": "https://dnr.alaska.gov/parks/aspunits/marinepark/shoupbaysmp.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm; opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/brochures.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.alaska.gov/parks/brochures.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12751": {
+   "n": "Mineral Creek State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://www.valdezalaska.org/discover/hiking-trails/homestead-trail/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1637": {
+   "n": "Chugach State Park",
+   "t": "State Park",
+   "page": "http://dnr.alaska.gov/parks/aspunits/chugach/chugachindex.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.alaska.gov/parks/units/chugach/chugachstateparkmap.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.alaska.gov/parks/units/chugach/eklutnalakegroupsitesABmap.)",
+    "how": "a link on the park's page ('Map of Chugach State Park')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/units/chugach/chugachstateparkmap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of Chugach State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.alaska.gov/parks/units/chugach/eklutnalakegroupsitesABmap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2015-02-09",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('View Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 1,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1638": {
+   "n": "Kachemak Bay State Park",
+   "t": "State Park",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/kachemakbaysp.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.alaska.gov/parks/maps/KachemakBaySPMap2016.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "2016",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1639": {
+   "n": "Afognak Island State Park",
+   "t": "State Park",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kodiak/afognakissp.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.alaska.gov/parks/aspunits/kodiak/maps/afognakislandspandsr; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.alaska.gov/parks/aspunits/kodiak/maps/afognakaccess.pdf)",
+    "how": "a link on the park's page ('Afognak Island State Park and Afognak Island State Recreation Area Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aspunits/kodiak/maps/afognakislandspandsra.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Afognak Island State Park and Afognak Island State Recreation Area Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.alaska.gov/parks/aspunits/kodiak/maps/afognakaccess.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Afognak Island State Park Access Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1640": {
+   "n": "Shuyak Island State Park",
+   "t": "State Park",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kodiak/shuyakissp.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1641": {
+   "n": "Denali State Park",
+   "t": "State Park",
+   "page": "http://dnr.alaska.gov/parks/aspunits/matsu/denalisp.htm http://dnr.alaska.gov/parks/brochures/denalisp.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-1642": {
+   "n": "Chilkat State Park",
+   "t": "State Park",
+   "page": "http://dnr.alaska.gov/parks/aspunits/southeast/chilkootlksrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1643": {
+   "n": "Point Bridget State Park",
+   "t": "State Park",
+   "page": "http://dnr.alaska.gov/parks/aspunits/southeast/ptbridgetsp.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1644": {
+   "n": "Wood-Tikchik State Park",
+   "t": "State Park",
+   "page": "http://dnr.alaska.gov/parks/aspunits/woodtik/wtcindex.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.alaska.gov/parks/units/wtc/images/wtcmap2.jpg",
+    "status": "ok",
+    "kind": "image",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Wood-Tikchik State Park Map')",
+    "posted": "Nov 16, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-3392": {
+   "n": "Kachemak Bay Wilderness State Park",
+   "t": "State Park",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/kachemakbayswp.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.alaska.gov/parks/maps/KachemakBaySPMap2016.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Trail Maps and Guides') -> the page's 'Kachemak Bay State Park Map' file",
+    "posted": "2016",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "page": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4447": {
+   "n": "Chugach National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/chugach/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r10/chugach",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4448": {
+   "n": "Tongass National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/tongass/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r10/tongass",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4537": {
+   "n": "Admiralty Island National Monument",
+   "t": "National Monument",
+   "page": "https://www.fs.usda.gov/r10/tongass/recreation/admiralty-island-national-monument-0",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r10/tongass",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4538": {
+   "n": "Misty Fjords National Monument",
+   "t": "National Monument",
+   "page": "https://www.fs.usda.gov/visit/destination/misty-fjords-national-monument",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4585": {
+   "n": "Walrus Islands State Game Land",
+   "t": "State Game Land",
+   "page": "https://www.adfg.alaska.gov/index.cfm?adfg=walrusislands.main",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (adfg.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4592": {
+   "n": "Haines State Forest",
+   "t": "State Forest",
+   "page": "http://forestry.alaska.gov/stateforests.htm#haines",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://forestry.alaska.gov/Assets/pdfs/stateforests/hainesmap.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2000-05-15",
+    "date_how": "file stamp 2000 (older than the posting 2018 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Map of the Haines State Forest Resource Management Area')",
+    "posted": "Jan 25, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": null,
+    "checked": "2026-10-31",
+    "covers": 4,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 4 units",
+    "date_label": "2000: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (forestry.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4593": {
+   "n": "Southeast State Forest",
+   "t": "State Forest",
+   "page": "http://forestry.alaska.gov/stateforests.htm#sesf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://forestry.alaska.gov/Assets/pdfs/stateforests/hainesmap.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2000-05-15",
+    "date_how": "file stamp 2000 (older than the posting 2018 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Map of the Haines State Forest Resource Management Area')",
+    "posted": "Jan 25, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": null,
+    "checked": "2026-10-31",
+    "covers": 4,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 4 units",
+    "date_label": "2000: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (forestry.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4594": {
+   "n": "Tanana Valley State Forest",
+   "t": "State Forest",
+   "page": "http://forestry.alaska.gov/stateforests.htm#tanana",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://forestry.alaska.gov/Assets/pdfs/stateforests/hainesmap.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2000-05-15",
+    "date_how": "file stamp 2000 (older than the posting 2018 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Map of the Haines State Forest Resource Management Area')",
+    "posted": "Jan 25, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": null,
+    "checked": "2026-10-31",
+    "covers": 4,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 4 units",
+    "date_label": "2000: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (forestry.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://forestry.alaska.gov/Assets/pdfs/stateforests/Tanana%20Valley%20State%20Forest%20map%20Dec%202021.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Map of the Tanana Valley State Forest')",
+     "posted": "2021",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": "file",
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-6332": {
+   "n": "Hatcher Pass State Natural Area",
+   "t": "State Natural Area",
+   "page": "http://dnr.alaska.gov/parks/aspunits/matsu/hatcherpassema.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7191": {
+   "n": "Anchor River State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/anchorpt.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7192": {
+   "n": "Blueberry Lake State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/blueberrylksrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7193": {
+   "n": "Caines Head State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/cainesheadsra.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7194": {
+   "n": "Captain Cook State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/captcook.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7195": {
+   "n": "Clam Gulch State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/clamgulchsra.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7196": {
+   "n": "Crooked Creek State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/crookedcreeksrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7197": {
+   "n": "Deep Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/deepcreeksra.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7198": {
+   "n": "Eveline State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/evelinesrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [
+    "owned by Alaska State Parks"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7199": {
+   "n": "Johnson Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/johnsonlksra.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7200": {
+   "n": "Kasilof River State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/kasilofrivsrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7201": {
+   "n": "Lowell Point State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/lowellptsrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7202": {
+   "n": "Ninilchik State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/ninilsragen.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7203": {
+   "n": "Starski State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/stariskisrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7204": {
+   "n": "Worthington Glacier State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kenai/worthglsrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7205": {
+   "n": "Buskin River State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kodiak/buskinriversrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7206": {
+   "n": "Fort Abercrombie State Historical Park",
+   "t": "State Historical Park",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kodiak/fortabercrombieshp.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [
+    "managed by the Division of Parks"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7207": {
+   "n": "Pasagshak State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/kodiak/pasagsrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7210": {
+   "n": "Dry Creek State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/matsu/drycreeksrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7211": {
+   "n": "Finger Lake State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "http://dnr.alaska.gov/parks/aspunits/matsu/fingerlksrs.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7212": {
+   "n": "Independence Mine State Historical Park",
+   "t": "State Historical Park",
+   "page": "http://dnr.alaska.gov/parks/aspunits/matsu/indepmineshp.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm)",
+    "how": "a link on the park's page ('Trail Maps and Guides')"
+   },
+   "rules": null,
+   "agency": "government agency (dnr.alaska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.alaska.gov/parks/aktrails/explore/trailmapguide.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 130,
+  "map ok": 41,
+  "map found by the bot": 23,
+  "date on the map": 4,
+  "posted date only": 19,
+  "date unknown": 18,
+  "no map": 89,
+  "rules ok": 40,
+  "needs browser": 30,
+  "handover hints": 0,
+  "runs hints": 5,
+  "host resting / robots": 0,
+  "map names the park": 36,
+  "region overview only": 0
+ }
+}

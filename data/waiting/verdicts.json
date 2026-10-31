@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T11:13Z",
+ "checked": "2026-10-31T11:17Z",
  "switched_on": false,
  "results": [
   {
@@ -105,6 +105,17 @@
     "no live copy: first time this file is published"
    ],
    "verdict": "PASS"
+  },
+  {
+   "path": "data/docs/US-AK.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-AR.json",
@@ -441,7 +452,7 @@
    "path": "data/fers/CA-BC.json",
    "kind": "fers",
    "why": [
-    "F-2 NOT SURE 13 -> 52 (over 30% change)"
+    "F-2 NOT SURE 13 -> 18 (over 30% change)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -544,16 +555,6 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/fers/US-DE.json",
-   "kind": "fers",
-   "why": [
-    "F-2 candidates 68 -> 27 (over 30% change)",
-    "F-2 only 27 of 68 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
    "path": "data/fers/US-IA.json",
    "kind": "fers",
    "why": [
@@ -561,13 +562,6 @@
    ],
    "notes": [],
    "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-LA.json",
-   "kind": "fers",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-ME.json",
@@ -614,13 +608,6 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/fers/US-VT.json",
-   "kind": "fers",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/hours/US-KY.json",
    "kind": "hours",
    "why": [],
@@ -658,34 +645,6 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/us-key/US-AZ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-CA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-CO.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-CT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/US-DC.json",
    "kind": "key",
    "why": [],
@@ -693,35 +652,7 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/us-key/US-DE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/US-GA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-HI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-IA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-ID.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -742,20 +673,6 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/us-key/US-KS.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-LA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/US-MA.json",
    "kind": "key",
    "why": [],
@@ -764,27 +681,6 @@
   },
   {
    "path": "data/us-key/US-MD.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-ME.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-MN.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -805,70 +701,7 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/us-key/US-MT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/US-NC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-ND.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NH.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NJ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NM.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NV.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-NY.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-OH.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -882,35 +715,7 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/us-key/US-OR.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/US-PA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-RI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-SC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-SD.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -931,49 +736,7 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/us-key/US-UT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/US-VA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-VT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-WA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-WI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-WV.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/US-WY.json",
    "kind": "key",
    "why": [],
    "notes": [],

@@ -1566,375 +1566,95 @@
 {"date": "2026-10-31T10:22Z", "kind": "key", "path": "data/us-key/overrides.json", "verdict": "PASS", "why": [], "notes": []}
 {"date": "2026-10-31T10:22Z", "kind": "key", "path": "data/us-key/refresh.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
 {"date": "2026-10-31T10:22Z", "kind": "key", "path": "data/us-key/why-not.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/ca-key/layers.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/ca-key/overrides.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/ca-key/why-not.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "campinfo", "path": "data/campinfo/US-CO.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "campinfo", "path": "data/campinfo/US-IA.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "campinfo", "path": "data/campinfo/US-KY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "campinfo", "path": "data/campinfo/US-MA.json", "verdict": "HOLD", "why": ["F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "campinfo", "path": "data/campinfo/US-MT.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "campinfo", "path": "data/campinfo/US-NV.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "campinfo", "path": "data/campinfo/US-SC.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "campinfo", "path": "data/campinfo/US-TN.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "campinfo", "path": "data/campinfo/US-WA.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-AR.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-AZ.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-CA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-CO.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-CT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-DC.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-DE.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-ID.json", "verdict": "HOLD", "why": ["F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf", "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-KS.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-LA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-MA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-MD.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-ME.json", "verdict": "HOLD", "why": ["F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml", "F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml", "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-MN.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-MT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-ND.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-NE.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-NH.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-NJ.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-NM.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-NV.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-NY.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-OH.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-OK.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-OR.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-PA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-RI.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-SC.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-SD.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-TX.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-VT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-WA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-WI.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "docs", "path": "data/docs/US-WY.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/CA-BC.json", "verdict": "HOLD", "why": ["F-2 NOT SURE 13 -> 18 (over 30% change)"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/CA-MB.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/CA-NB.json", "verdict": "HOLD", "why": ["F-S3 10 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-6540+CA-6549 125 km, CA-6542+CA-6545 114 km"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/CA-NL.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/CA-NS.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/CA-NT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/CA-NU.json", "verdict": "HOLD", "why": ["F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-4569+CA-4594 202 km"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/CA-ON.json.gz", "verdict": "HOLD", "why": ["F-S3 54 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-0154+CA-0304 102 km, CA-0444+CA-1699 118 km"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/CA-PE.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/CA-SK.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/CA-YT.json", "verdict": "HOLD", "why": ["F-2 only 4 of 6 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/US-AZ.json", "verdict": "HOLD", "why": ["F-2 NOT SURE 6 -> 4 (over 30% change)", "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-0771+US-1055 135 km"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/US-CO.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/US-IA.json", "verdict": "HOLD", "why": ["F-2 7 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-10953+US-2303, US-2277+US-4655, US-2294+US-4661"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/US-ME.json", "verdict": "HOLD", "why": ["F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/US-MN.json.gz", "verdict": "HOLD", "why": ["F-2 NOT SURE 9 -> 18 (over 30% change)", "F-2 33 new candidate pairs since the live file (over 10% of 103): a person looks at them first, e.g. US-0371+US-4239, US-11151+US-6466, US-11152+US-4490", "F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/US-NM.json", "verdict": "HOLD", "why": ["F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)", "F-2 18 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-0012+US-4516, US-0678+US-4517, US-0752+US-4579"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/US-OH.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "fers", "path": "data/fers/US-VA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "hours", "path": "data/hours/US-KY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "truth", "path": "data/truth/US-KY.json", "verdict": "HOLD", "why": ["F-K known answer US-3800: Cedar Creek Lake WMA OFF at 796 ac (now verdict agree, 796.0 ac)"], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-AK.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-AL.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-AR.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-AZ.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-CA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-CO.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-CT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-DC.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-DE.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-GA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-HI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-IA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-ID.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-IL.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-IN.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-KS.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-LA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-MA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-MD.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-ME.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-MI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-MN.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-MO.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-MS.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-MT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-NC.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-ND.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-NE.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-NH.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-NJ.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-NM.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-NV.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-NY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-OH.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-OK.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-OR.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-PA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-RI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-SC.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-SD.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-TN.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-TX.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-UT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-VA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-VT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-WA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-WI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-WV.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/US-WY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/answers-applied.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/changed-parks.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/index.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/layers.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/overrides.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/refresh.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T10:40Z", "kind": "key", "path": "data/us-key/why-not.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/ca-key/layers.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/ca-key/overrides.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/ca-key/why-not.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "campinfo", "path": "data/campinfo/US-CO.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "campinfo", "path": "data/campinfo/US-IA.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "campinfo", "path": "data/campinfo/US-KY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "campinfo", "path": "data/campinfo/US-MA.json", "verdict": "HOLD", "why": ["F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "campinfo", "path": "data/campinfo/US-MT.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "campinfo", "path": "data/campinfo/US-NV.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "campinfo", "path": "data/campinfo/US-SC.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "campinfo", "path": "data/campinfo/US-TN.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "campinfo", "path": "data/campinfo/US-WA.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-AR.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-AZ.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-CA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-CO.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-CT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-DC.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-DE.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-ID.json", "verdict": "HOLD", "why": ["F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf", "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-KS.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-LA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-MA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-MD.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-ME.json", "verdict": "HOLD", "why": ["F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml", "F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml", "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-MN.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-MT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-ND.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-NE.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-NH.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-NJ.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-NM.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-NV.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-NY.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-OH.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-OK.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-OR.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-PA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-RI.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-SC.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-SD.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-TX.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-VT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-WA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-WI.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "docs", "path": "data/docs/US-WY.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/CA-BC.json", "verdict": "HOLD", "why": ["F-2 NOT SURE 13 -> 18 (over 30% change)"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/CA-MB.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/CA-NB.json", "verdict": "HOLD", "why": ["F-S3 10 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-6540+CA-6549 125 km, CA-6542+CA-6545 114 km"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/CA-NL.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/CA-NS.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/CA-NT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/CA-NU.json", "verdict": "HOLD", "why": ["F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-4569+CA-4594 202 km"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/CA-ON.json.gz", "verdict": "HOLD", "why": ["F-S3 54 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-0154+CA-0304 102 km, CA-0444+CA-1699 118 km"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/CA-PE.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/CA-SK.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/CA-YT.json", "verdict": "HOLD", "why": ["F-2 only 4 of 6 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/US-AZ.json", "verdict": "HOLD", "why": ["F-2 NOT SURE 6 -> 4 (over 30% change)", "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-0771+US-1055 135 km"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/US-CO.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/US-IA.json", "verdict": "HOLD", "why": ["F-2 7 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-10953+US-2303, US-2277+US-4655, US-2294+US-4661"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/US-ME.json", "verdict": "HOLD", "why": ["F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/US-MN.json.gz", "verdict": "HOLD", "why": ["F-2 NOT SURE 9 -> 18 (over 30% change)", "F-2 33 new candidate pairs since the live file (over 10% of 103): a person looks at them first, e.g. US-0371+US-4239, US-11151+US-6466, US-11152+US-4490", "F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/US-NM.json", "verdict": "HOLD", "why": ["F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)", "F-2 18 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-0012+US-4516, US-0678+US-4517, US-0752+US-4579"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/US-OH.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "fers", "path": "data/fers/US-VA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "hours", "path": "data/hours/US-KY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "truth", "path": "data/truth/US-KY.json", "verdict": "HOLD", "why": ["F-K known answer US-3800: Cedar Creek Lake WMA OFF at 796 ac (now verdict agree, 796.0 ac)"], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-AK.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-AL.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-AR.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-AZ.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-CA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-CO.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-CT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-DC.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-DE.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-GA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-HI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-IA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-ID.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-IL.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-IN.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-KS.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-LA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-MA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-MD.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-ME.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-MI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-MN.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-MO.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-MS.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-MT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-NC.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-ND.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-NE.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-NH.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-NJ.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-NM.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-NV.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-NY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-OH.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-OK.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-OR.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-PA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-RI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-SC.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-SD.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-TN.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-TX.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-UT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-VA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-VT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-WA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-WI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-WV.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/US-WY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/answers-applied.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/changed-parks.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/index.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/layers.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/overrides.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/refresh.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:07Z", "kind": "key", "path": "data/us-key/why-not.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/ca-key/layers.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/ca-key/overrides.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/ca-key/why-not.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "campinfo", "path": "data/campinfo/US-CO.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "campinfo", "path": "data/campinfo/US-IA.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "campinfo", "path": "data/campinfo/US-KY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "campinfo", "path": "data/campinfo/US-MA.json", "verdict": "HOLD", "why": ["F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "campinfo", "path": "data/campinfo/US-MT.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "campinfo", "path": "data/campinfo/US-NV.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "campinfo", "path": "data/campinfo/US-SC.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "campinfo", "path": "data/campinfo/US-TN.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "campinfo", "path": "data/campinfo/US-WA.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-AR.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-AZ.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-CA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-CO.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-CT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-DC.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-DE.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-ID.json", "verdict": "HOLD", "why": ["F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf", "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-KS.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-LA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-MA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-MD.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-ME.json", "verdict": "HOLD", "why": ["F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml", "F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml", "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-MN.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-MT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-ND.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-NE.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-NH.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-NJ.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-NM.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-NV.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-NY.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-OH.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-OK.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-OR.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-PA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-RI.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-SC.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-SD.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-TX.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-VT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-WA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-WI.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "docs", "path": "data/docs/US-WY.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/CA-BC.json", "verdict": "HOLD", "why": ["F-2 NOT SURE 13 -> 52 (over 30% change)"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/CA-MB.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/CA-NB.json", "verdict": "HOLD", "why": ["F-S3 10 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-6540+CA-6549 125 km, CA-6542+CA-6545 114 km"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/CA-NL.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/CA-NS.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/CA-NT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/CA-NU.json", "verdict": "HOLD", "why": ["F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-4569+CA-4594 202 km"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/CA-ON.json.gz", "verdict": "HOLD", "why": ["F-S3 54 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-0154+CA-0304 102 km, CA-0444+CA-1699 118 km"], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/CA-PE.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/CA-SK.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/CA-YT.json", "verdict": "HOLD", "why": ["F-2 only 4 of 6 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/US-AZ.json", "verdict": "HOLD", "why": ["F-2 NOT SURE 6 -> 4 (over 30% change)", "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-0771+US-1055 135 km"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/US-CO.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/US-DE.json", "verdict": "HOLD", "why": ["F-2 candidates 68 -> 27 (over 30% change)", "F-2 only 27 of 68 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/US-IA.json", "verdict": "HOLD", "why": ["F-2 7 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-10953+US-2303, US-2277+US-4655, US-2294+US-4661"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/US-LA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/US-ME.json", "verdict": "HOLD", "why": ["F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/US-MN.json.gz", "verdict": "HOLD", "why": ["F-2 NOT SURE 9 -> 18 (over 30% change)", "F-2 33 new candidate pairs since the live file (over 10% of 103): a person looks at them first, e.g. US-0371+US-4239, US-11151+US-6466, US-11152+US-4490", "F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/US-NM.json", "verdict": "HOLD", "why": ["F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)", "F-2 18 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-0012+US-4516, US-0678+US-4517, US-0752+US-4579"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/US-OH.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/US-VA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "fers", "path": "data/fers/US-VT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "hours", "path": "data/hours/US-KY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "truth", "path": "data/truth/US-KY.json", "verdict": "HOLD", "why": ["F-K known answer US-3800: Cedar Creek Lake WMA OFF at 796 ac (now verdict agree, 796.0 ac)"], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-AK.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-AL.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-AR.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-AZ.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-CA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-CO.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-CT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-DC.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-DE.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-GA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-HI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-IA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-ID.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-IL.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-IN.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-KS.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-LA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-MA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-MD.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-ME.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-MI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-MN.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-MO.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-MS.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-MT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-NC.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-ND.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-NE.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-NH.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-NJ.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-NM.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-NV.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-NY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-OH.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-OK.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-OR.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-PA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-RI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-SC.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-SD.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-TN.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-TX.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-UT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-VA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-VT.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-WA.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-WI.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-WV.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/US-WY.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/answers-applied.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/changed-parks.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/index.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/layers.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/overrides.json", "verdict": "PASS", "why": [], "notes": []}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/refresh.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
-{"date": "2026-10-31T11:13Z", "kind": "key", "path": "data/us-key/why-not.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/ca-key/layers.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/ca-key/overrides.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/ca-key/why-not.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "campinfo", "path": "data/campinfo/US-CO.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "campinfo", "path": "data/campinfo/US-IA.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "campinfo", "path": "data/campinfo/US-KY.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "campinfo", "path": "data/campinfo/US-MA.json", "verdict": "HOLD", "why": ["F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "campinfo", "path": "data/campinfo/US-MT.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "campinfo", "path": "data/campinfo/US-NV.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "campinfo", "path": "data/campinfo/US-SC.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "campinfo", "path": "data/campinfo/US-TN.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "campinfo", "path": "data/campinfo/US-WA.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-AK.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-AR.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-AZ.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-CA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-CO.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-CT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-DC.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-DE.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-ID.json", "verdict": "HOLD", "why": ["F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf", "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-KS.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-LA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-MA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-MD.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-ME.json", "verdict": "HOLD", "why": ["F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml", "F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml", "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-MN.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-MT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-ND.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-NE.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-NH.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-NJ.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-NM.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-NV.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-NY.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-OH.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-OK.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-OR.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-PA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-RI.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-SC.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-SD.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-TX.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-VT.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-WA.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-WI.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "docs", "path": "data/docs/US-WY.json", "verdict": "HOLD", "why": ["F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/CA-BC.json", "verdict": "HOLD", "why": ["F-2 NOT SURE 13 -> 18 (over 30% change)"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/CA-MB.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/CA-NB.json", "verdict": "HOLD", "why": ["F-S3 10 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-6540+CA-6549 125 km, CA-6542+CA-6545 114 km"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/CA-NL.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/CA-NS.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/CA-NT.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/CA-NU.json", "verdict": "HOLD", "why": ["F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-4569+CA-4594 202 km"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/CA-ON.json.gz", "verdict": "HOLD", "why": ["F-S3 54 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-0154+CA-0304 102 km, CA-0444+CA-1699 118 km"], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/CA-PE.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/CA-SK.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/CA-YT.json", "verdict": "HOLD", "why": ["F-2 only 4 of 6 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/US-AZ.json", "verdict": "HOLD", "why": ["F-2 NOT SURE 6 -> 4 (over 30% change)", "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-0771+US-1055 135 km"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/US-CO.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/US-IA.json", "verdict": "HOLD", "why": ["F-2 7 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-10953+US-2303, US-2277+US-4655, US-2294+US-4661"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/US-ME.json", "verdict": "HOLD", "why": ["F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/US-MN.json.gz", "verdict": "HOLD", "why": ["F-2 NOT SURE 9 -> 18 (over 30% change)", "F-2 33 new candidate pairs since the live file (over 10% of 103): a person looks at them first, e.g. US-0371+US-4239, US-11151+US-6466, US-11152+US-4490", "F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/US-NM.json", "verdict": "HOLD", "why": ["F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)", "F-2 18 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-0012+US-4516, US-0678+US-4517, US-0752+US-4579"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/US-OH.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "fers", "path": "data/fers/US-VA.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "hours", "path": "data/hours/US-KY.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "truth", "path": "data/truth/US-KY.json", "verdict": "HOLD", "why": ["F-K known answer US-3800: Cedar Creek Lake WMA OFF at 796 ac (now verdict agree, 796.0 ac)"], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-AK.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-AL.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-AR.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-DC.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-GA.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-IL.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-IN.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-MA.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-MD.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-MO.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-MS.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-NC.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-OK.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-PA.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-TN.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-TX.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/US-VA.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/answers-applied.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/changed-parks.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/index.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/layers.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/overrides.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/refresh.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-10-31T11:17Z", "kind": "key", "path": "data/us-key/why-not.json", "verdict": "PASS", "why": [], "notes": []}
