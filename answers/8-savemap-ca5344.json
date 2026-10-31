@@ -1,0 +1,35 @@
+{
+ "request": "requests/8-savemap-ca5344.json",
+ "id": "8-savemap-ca5344",
+ "chat": 8,
+ "kind": "save-map",
+ "report": "",
+ "asked": {
+  "chat": 8,
+  "kind": "save-map",
+  "ref": "CA-5344",
+  "name": "West Coast Trail",
+  "agency": "Parks Canada",
+  "url": "https://parks.canada.ca/-/media/pn-np/bc/pacificrim/wet4/visit/pdf/wct_en_2023_web.pdf",
+  "pages": 3,
+  "hint": "west coast trail boundary"
+ },
+ "answered": "2026-10-31 07:48Z",
+ "results": [
+  {
+   "url": "https://parks.canada.ca/-/media/pn-np/bc/pacificrim/wet4/visit/pdf/wct_en_2023_web.pdf",
+   "map_url": "https://parks.canada.ca/-/media/pn-np/bc/pacificrim/wet4/visit/pdf/wct_en_2023_web.pdf",
+   "error": "could not render page(s) [3] under 3 MB"
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}
