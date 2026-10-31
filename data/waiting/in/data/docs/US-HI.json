@@ -1,0 +1,2620 @@
+{
+ "area": "US-HI",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0119": {
+   "n": "Hawaiian Islands National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/hawaiian-islands",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/hawaiian-islands/visit-us",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/hawaiian-islands/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/refuge/hawaiian-islands/map",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0971": {
+   "n": "World War II Valor in the Pacific National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/perl/learn/historyculture/upload/valr-foundation-document.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.nps.gov/perl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10912": {
+   "n": "'Ualaka'a State Trail",
+   "t": "State Trail",
+   "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/ualakaa-trail/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/)",
+    "how": "the page in a browser ('Brochures')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10913": {
+   "n": "Diamond Head Summit State Trail",
+   "t": "State Trail",
+   "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/diamond-head-summit-trail/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dlnr.hawaii.gov/dsp/files/2014/09/hsp_dh_brochure_2012.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Diamond Head State Monument')",
+    "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/diamond-head-summit-trail/",
+    "posted": "2014-09",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10914": {
+   "n": "Ka‘ena Point State Trail",
+   "t": "State Trail",
+   "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/kaena-point-trail/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10915": {
+   "n": "Nakoa State Trail",
+   "t": "State Trail",
+   "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/nakoa-trail/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dlnr.hawaii.gov/dsp/files/2022/12/Nakoa-Brochure-2011-1.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2012-02-22",
+    "date_how": "file stamp 2012 (older than the posting 2022 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('Nakoa Trail')",
+    "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/nakoa-trail/",
+    "posted": "2022-12",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10916": {
+   "n": "Kapaʻeleʻele State Trail",
+   "t": "State Trail",
+   "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/kapaeleele-trail/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/)",
+    "how": "the page in a browser ('Brochures')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10917": {
+   "n": "ʻAiea Loop State Trail",
+   "t": "State Trail",
+   "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/aiea-loop-trail/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dlnr.hawaii.gov/dsp/files/2022/12/Keaiwa-_Heiau_SRA.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Keaīwa Heiau Brochure')",
+    "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/aiea-loop-trail/",
+    "posted": "2022-12",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10918": {
+   "n": "Waʻahila Ridge State Trail",
+   "t": "State Trail",
+   "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/waahila-ridge-trail/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/)",
+    "how": "the page in a browser ('Brochures')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10919": {
+   "n": "Na Ala Hele State Trail",
+   "t": "State Trail",
+   "page": "https://hawaiitrails.ehawaii.gov/trails/#/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (hawaiitrails.ehawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page is built by script",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10921": {
+   "n": "Hawaii Capital National Historic District",
+   "t": "National Historic District",
+   "page": "https://npgallery.nps.gov/AssetDetail/NRIS/78001020",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10922": {
+   "n": "Marconi Wireless Telegraphy Station Kahuku National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://npgallery.nps.gov/AssetDetail/NRIS/13000352",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10923": {
+   "n": "Artillery District of Honolulu Historic Site",
+   "t": "Historic Site",
+   "page": "https://npgallery.nps.gov/AssetDetail/NRIS/64000142",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10925": {
+   "n": "HI State Game Reserve",
+   "t": "Game Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 10 parks was dropped: https://hawaiitrails.ehawaii.gov:443/trails/)",
+    "how": "the page in a browser ('Online Trail Map & Alerts')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+    "how": "a link on the page in a browser ('Administrative Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2213": {
+   "n": "Kaumahina Wayside State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/maui/kaumahina-state-wayside/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/)",
+    "how": "the page in a browser ('Brochures')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2218": {
+   "n": "Nu'uanu Pali Wayside State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/nuuanu-pali-state-wayside/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2221": {
+   "n": "Puaa Kaa Wayside State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/maui/puaa-kaa-state-wayside/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/)",
+    "how": "the page in a browser ('Brochures')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-6408": {
+   "n": "Ahukini State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/kauai/ahukini-state-recreational-pier/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/)",
+    "how": "the page in a browser ('Brochures')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-6409": {
+   "n": "Waimea State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/kauai/waimea-state-recreational-pier/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/)",
+    "how": "the page in a browser ('Brochures')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-6410": {
+   "n": "Iao Valley State Preserve",
+   "t": "State Preserve",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/maui/iao-valley-state-monument/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/)",
+    "how": "the page in a browser ('Brochures')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-6411": {
+   "n": "Polipoli State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/maui/polipoli-spring-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/)",
+    "how": "the page in a browser ('Brochures')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-0036": {
+   "n": "Haleakala National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/hale/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/hale/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/hale/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/hale/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "August 15, 2020",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0037": {
+   "n": "Hawai'i Volcanoes National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/havo/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/havo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 27, 2023",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/havo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0043": {
+   "n": "Kalaupapa National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/kala/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/kala/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "December 14, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/kala/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0117": {
+   "n": "Hakalau Forest National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/hakalau_forest/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/hakalau-forest/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/hakalau-forest/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0118": {
+   "n": "Hanalei National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/hanalei/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/hanalei/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/hanalei/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0123": {
+   "n": "Huleia National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/huleia/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/huleia/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0124": {
+   "n": "James Campbell National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/james_campbell/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/james-campbell/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/james-campbell/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0125": {
+   "n": "Kakahaia National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/kakahaia/map",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/kakahaia/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0126": {
+   "n": "Kealia Pond National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/kealia_pond/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/kealia-pond/map)",
+    "how": "a link on the park's page ('Map')"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/kealia-pond/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/refuge/kealia-pond/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0127": {
+   "n": "Kilauea Point National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/kilauea_point/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/kilauea-point/map)",
+    "how": "a link on the park's page ('Map')"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/kilauea-point/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/refuge/kilauea-point/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0128": {
+   "n": "O'ahu Forest National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/oahu_forest/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/oahu-forest/map)",
+    "how": "a link on the park's page ('Map')"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/refuge/oahu-forest/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0129": {
+   "n": "Pearl Harbor National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/pearl_harbor/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/pearl-harbor/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.nps.gov/perl/planyourvisit/maps.htm",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "June 30, 2021",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (nps.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0739": {
+   "n": "Kaloko-Honokohau National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/kaho/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/kaho/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/kaho/learn/management/superintendents-compendium.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/kaho/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "September 2, 2025",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0753": {
+   "n": "Pu'uhonua o Honaunau National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/puho/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/puho/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/puho/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/puho/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "October 24, 2024",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0855": {
+   "n": "Pu'ukohola Heiau National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/puhe/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/puhe/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/puhe/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/puhe/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "March 4, 2026",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10904": {
+   "n": "ʻEwa Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 10 parks was dropped: https://hawaiitrails.ehawaii.gov:443/trails/)",
+    "how": "the page in a browser ('Online Trail Map & Alerts')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+    "how": "a link on the page in a browser ('Administrative Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10905": {
+   "n": "Honolulu Watershed Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 10 parks was dropped: https://hawaiitrails.ehawaii.gov:443/trails/)",
+    "how": "the page in a browser ('Online Trail Map & Alerts')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+    "how": "a link on the page in a browser ('Administrative Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10906": {
+   "n": "Round Top Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 10 parks was dropped: https://hawaiitrails.ehawaii.gov:443/trails/)",
+    "how": "the page in a browser ('Online Trail Map & Alerts')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+    "how": "a link on the page in a browser ('Administrative Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10907": {
+   "n": "Mokuleia Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 10 parks was dropped: https://hawaiitrails.ehawaii.gov:443/trails/)",
+    "how": "the page in a browser ('Online Trail Map & Alerts')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+    "how": "a link on the page in a browser ('Administrative Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10908": {
+   "n": "Pupukea Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/pupukea-forest-reserve/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 10 parks was dropped: https://hawaiitrails.ehawaii.gov:443/trails/)",
+    "how": "the page in a browser ('Online Trail Map & Alerts')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+    "how": "a link on the page in a browser ('Administrative Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10909": {
+   "n": "Kuliʻouʻou Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 10 parks was dropped: https://hawaiitrails.ehawaii.gov:443/trails/)",
+    "how": "the page in a browser ('Online Trail Map & Alerts')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+    "how": "a link on the page in a browser ('Administrative Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10910": {
+   "n": "Waimanalo Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 10 parks was dropped: https://hawaiitrails.ehawaii.gov:443/trails/)",
+    "how": "the page in a browser ('Online Trail Map & Alerts')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+    "how": "a link on the page in a browser ('Administrative Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10911": {
+   "n": "Ke’ehi Lagoon Memorial State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/keehi-lagoon-memorial-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/)",
+    "how": "the page in a browser ('Brochures')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the page in a browser ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10920": {
+   "n": "Kawainui Marsh Wildlife Reserve",
+   "t": "Wildlife Reserve",
+   "page": "https://dlnr.hawaii.gov/wildlife/sanctuaries/kawainui/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 10 parks was dropped: https://hawaiitrails.ehawaii.gov:443/trails/)",
+    "how": "the page in a browser ('Online Trail Map & Alerts')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+    "how": "a link on the page in a browser ('Administrative Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10924": {
+   "n": "Kuaokala Game Reserve",
+   "t": "Game Reserve",
+   "page": "https://dlnr.hawaii.gov/recreation/hunting/gma/kuaokala/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dlnr.hawaii.gov/recreation/files/2016/07/UnitA_KuaokalaGMA.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Downloadable Map')",
+    "page": "https://dlnr.hawaii.gov/recreation/hunting/gma/kuaokala/",
+    "posted": "2016-07",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+    "how": "a link on the page in a browser ('Administrative Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12062": {
+   "n": "Old Kona Airport State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dar/marine-managed-areas/hawaii-marine-life-conservation-districts/hawaii-old-kona-airport/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dar/habitat/coral-reefs/coral-and-live-rock-laws-of-hawaii/",
+    "how": "a link on the page in a browser ('Coral and Live Rock Rules of Hawaii')",
+    "status": "ok"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12095": {
+   "n": "Halele'a Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/halelea",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 10 parks was dropped: https://hawaiitrails.ehawaii.gov:443/trails/)",
+    "how": "the page in a browser ('Online Trail Map & Alerts')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dofaw/rules/",
+    "how": "a link on the page in a browser ('Administrative Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2208": {
+   "n": "Akaka Falls State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/akaka-falls-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 11 parks was dropped: https://dlnr.hawaii.gov/dsp/brochures/)",
+    "how": "the page in a browser ('Brochures')"
+   },
+   "rules": {
+    "url": "https://dlnr.hawaii.gov/dsp/administrative-rules/",
+    "how": "a link on the park's page ('Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "Hawaii Department of Land and Natural Resources, Division of State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2209": {
+   "n": "Ahupua'a O Kahana State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/ahupuaa-o-kahana-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2210": {
+   "n": "Ha'ena State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/kauai/haena-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2211": {
+   "n": "Heeia State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/heeia-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2212": {
+   "n": "Ka'ena Point State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/kaena-point-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2214": {
+   "n": "Kekaha Kai State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kekaha-kai-kona-coast-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2215": {
+   "n": "Koke`e State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/kauai/kokee-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2216": {
+   "n": "Makapuʻu  Point Wayside State Trail",
+   "t": "State Trail",
+   "page": "https://dlnr.hawaii.gov/dsp/hiking/oahu/makapuu-point-lighthouse-trail/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2217": {
+   "n": "Makena State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/maui/makena-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2219": {
+   "n": "Palaau State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/molokai/palaau-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2220": {
+   "n": "Polihale State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/kauai/polihale-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2222": {
+   "n": "Pu'u 'Ualakaa State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/puu-ualakaa-state-wayside/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2223": {
+   "n": "Waimea Canyon State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/kauai/waimea-canyon-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2224": {
+   "n": "Waianapanapa State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/maui/waianapanapa-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2225": {
+   "n": "Wailuku River State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailuku-river-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2226": {
+   "n": "Wailua River State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/kauai/wailua-river-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2227": {
+   "n": "Wailua Valley Wayside State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/maui/wailua-valley-state-wayside/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3391": {
+   "n": "Na Pali Coast State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/kauai/napali-coast-state-wilderness-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4565": {
+   "n": "Ala Kahakai National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/alka/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/alka/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "January 12, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/alka/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-6401": {
+   "n": "Mauna Kea State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/mauna-kea-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://dlnr.hawaii.gov/dsp/parks/oahu/mauna-kea-state-recreation-area)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Hawaii Department of Land and Natural Resources, Division of State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/mauna-kea-state-recreation-area/",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-6402": {
+   "n": "Lava Tree State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lava-tree-state-monument/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6403": {
+   "n": "Hapuna Beach State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hapuna-beach-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6404": {
+   "n": "Kalopa State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kalopa-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6405": {
+   "n": "Kealakekua Bay State Historical Park",
+   "t": "State Historical Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kealakekua-bay-state-historical-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6406": {
+   "n": "Mackenzie State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/mackenzie-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6407": {
+   "n": "Wailoa River State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailoa-river-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6412": {
+   "n": "Aiea Bay State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/aiea-bay-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6413": {
+   "n": "Keawa Heiau State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/keaiwa-heiau-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6414": {
+   "n": "Malaekahana State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/malaekahana-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6415": {
+   "n": "Sand Island State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/sand-island-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6416": {
+   "n": "Wa'ahila Ridge State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/waahila-ridge-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6417": {
+   "n": "Wahiawa Freshwater State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/wahiawa-freshwater-state-recreation-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6419": {
+   "n": "Hulihe'e Palace State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hulihee-palace/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6420": {
+   "n": "Kiholo  Reserve State Reserve",
+   "t": "State Reserve",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park-reserve/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6421": {
+   "n": "Kohala Historical Sites State Preserve",
+   "t": "State Preserve",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kohala-historical-sites-state-monument/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6422": {
+   "n": "Lapakahi State Historical Park",
+   "t": "State Historical Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lapakahi-state-historical-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6423": {
+   "n": "Manuka State Preserve",
+   "t": "State Preserve",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/hawaii/manuka-state-wayside/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6424": {
+   "n": "Pāʻulaʻula State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/kauai/pa'ula'ula-state-historic-site",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6425": {
+   "n": "Diamond Head State Preserve",
+   "t": "State Preserve",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6426": {
+   "n": "Iolani Palace State Preserve",
+   "t": "State Preserve",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/iolani-palace-state-monument/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6427": {
+   "n": "Kaiwi State Scenic Site",
+   "t": "Scenic Site",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/kaiwi-state-scenic-shoreline/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6428": {
+   "n": "La'ie Point State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/laie-point-state-wayside/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6429": {
+   "n": "Pu'u O Mahuka Heiau State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/puu-o-mahuka-heiau-state-historic-site/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6430": {
+   "n": "Queen Emma Summer Palace State Park",
+   "t": "State Park",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/queen-emma-summer-palace/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6431": {
+   "n": "Royal Mausoleum State Preserve",
+   "t": "State Preserve",
+   "page": "https://dlnr.hawaii.gov/dsp/parks/oahu/royal-mausoleum-state-monument/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7690": {
+   "n": "Nounou Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/nounou-and-kalepa-forest-reserves/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7691": {
+   "n": "Kalepa Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/nounou-and-kalepa-forest-reserves/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7692": {
+   "n": "Kaneohe Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7693": {
+   "n": "Hanauma Bay Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "https://www.honolulu.gov/parks-hbay.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (honolulu.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-7694": {
+   "n": "Kohala Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/hawaii-island/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7695": {
+   "n": "Hilo Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://dlnr.hawaii.gov/forestry/frs/reserves/hawaii-island/hilo/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dlnr.hawaii.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7696": {
+   "n": "Malama-ki Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://mapcarta.com/24047090",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://stadiamaps.com)",
+    "how": "a link on the park's page ('Stadia Maps')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://stadiamaps.com",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Stadia Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (stadiamaps.com)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7915": {
+   "n": "Honouliuli National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/hono/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/hono/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 11, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/hono/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7916": {
+   "n": "Pearl Harbor National Memorial",
+   "t": "National Memorial",
+   "page": "https://www.nps.gov/perl/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/perl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "June 30, 2021",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/perl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 102,
+  "map ok": 14,
+  "map found by the bot": 8,
+  "date on the map": 1,
+  "posted date only": 8,
+  "date unknown": 5,
+  "no map": 88,
+  "rules ok": 44,
+  "needs browser": 50,
+  "handover hints": 0,
+  "runs hints": 4,
+  "host resting / robots": 0,
+  "map names the park": 10,
+  "region overview only": 0
+ }
+}

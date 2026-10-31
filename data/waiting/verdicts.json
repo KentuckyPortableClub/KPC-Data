@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T11:37Z",
+ "checked": "2026-10-31T12:13Z",
  "switched_on": false,
  "results": [
   {
@@ -107,6 +107,17 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/docs/US-AK.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/docs/US-AR.json",
    "kind": "docs",
    "why": [
@@ -176,6 +187,17 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/docs/US-HI.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/docs/US-ID.json",
    "kind": "docs",
    "why": [
@@ -232,6 +254,17 @@
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
    ],
    "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/docs/US-MI.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -398,6 +431,17 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/docs/US-UT.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/docs/US-VT.json",
    "kind": "docs",
    "why": [
@@ -441,7 +485,7 @@
    "path": "data/fers/CA-BC.json",
    "kind": "fers",
    "why": [
-    "F-2 NOT SURE 13 -> 18 (over 30% change)"
+    "F-2 NOT SURE 13 -> 52 (over 30% change)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -539,9 +583,16 @@
   {
    "path": "data/fers/US-CO.json",
    "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/US-DE.json",
+   "kind": "fers",
    "why": [
-    "F-2 candidates 17 -> 40 (over 30% change)",
-    "F-2 23 new candidate pairs since the live file (over 10% of 17): a person looks at them first, e.g. US-0192+US-11897, US-0223+US-9625, US-0652+US-12190"
+    "F-2 candidates 68 -> 27 (over 30% change)",
+    "F-2 only 27 of 68 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -554,6 +605,13 @@
    ],
    "notes": [],
    "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-LA.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-ME.json",
@@ -594,6 +652,13 @@
   },
   {
    "path": "data/fers/US-VA.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/US-VT.json",
    "kind": "fers",
    "why": [],
    "notes": [],

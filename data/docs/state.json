@@ -322,10 +322,38 @@
    "updated": "2026-10-31"
   },
   "US-AK": {
-   "status": "partial",
+   "status": "done",
    "parks": 179,
-   "checked": 130,
-   "left": 49,
+   "checked": 179,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-HI": {
+   "status": "done",
+   "parks": 102,
+   "checked": 102,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-MI": {
+   "status": "done",
+   "parks": 388,
+   "checked": 388,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-OH": {
+   "status": "done",
+   "parks": 276,
+   "checked": 276,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-UT": {
+   "status": "partial",
+   "parks": 692,
+   "checked": 640,
+   "left": 52,
    "updated": "2026-10-31"
   }
  },
@@ -354,32 +382,34 @@
   "carules.elaws.us": 1793521915.7272446,
   "parks.ca.gov": 1793523383.026051,
   "ohv.parks.ca.gov": 1793523879.4483232,
-  "www.fws.org": 1793528476.71733
+  "www.fws.org": 1793528476.71733,
+  "www.intermountainhistories.org": 1793534667.8100796,
+  "www.wildlife.utah.gov": 1793535065.415651
  },
  "last": {
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-WA",
    "US-AK",
    "US-HI",
    "US-MI",
    "US-OH",
    "US-UT",
-   "CA-ON"
+   "CA-ON",
+   "CA-QC"
   ],
   "stat": {
-   "requests": 1683,
-   "parks": 729,
-   "maps_ok": 366,
-   "maps_found": 337,
-   "dates": 11,
-   "rules": 453,
-   "browser": 298,
-   "robots": 1,
-   "strikes": 0,
-   "errors": 0,
-   "skipped_fresh": 118
+   "requests": 1426,
+   "parks": 1360,
+   "maps_ok": 249,
+   "maps_found": 208,
+   "dates": 2,
+   "rules": 283,
+   "browser": 200,
+   "robots": 7,
+   "strikes": 6,
+   "errors": 6,
+   "skipped_fresh": 406
   }
  }
 }
