@@ -168,16 +168,18 @@
    "updated": "2026-10-29"
   },
   "US-VT": {
-   "status": "failed",
+   "status": "done",
    "parks": 109,
-   "updated": "2026-10-31",
-   "why": "maps 72 -> 50"
+   "checked": 109,
+   "left": 0,
+   "updated": "2026-10-31"
   },
   "US-NH": {
-   "status": "failed",
+   "status": "done",
    "parks": 206,
-   "updated": "2026-10-31",
-   "why": "maps 23 -> 9"
+   "checked": 206,
+   "left": 0,
+   "updated": "2026-10-31"
   },
   "US-ME": {
    "status": "done",
@@ -191,7 +193,7 @@
    "parks": 186,
    "checked": 186,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-31"
   },
   "US-DE": {
    "status": "done",
@@ -260,26 +262,26 @@
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-NY",
-   "US-CT",
    "US-VT",
    "US-NH",
    "US-MD",
    "US-DC",
-   "US-AR"
+   "US-AR",
+   "US-OK",
+   "US-TX"
   ],
   "stat": {
-   "requests": 1925,
-   "parks": 838,
-   "maps_ok": 448,
-   "maps_found": 433,
-   "dates": 96,
-   "rules": 663,
-   "browser": 150,
-   "robots": 62,
-   "strikes": 3,
-   "errors": 3,
-   "skipped_fresh": 541
+   "requests": 1618,
+   "parks": 672,
+   "maps_ok": 369,
+   "maps_found": 333,
+   "dates": 19,
+   "rules": 384,
+   "browser": 303,
+   "robots": 4,
+   "strikes": 0,
+   "errors": 0,
+   "skipped_fresh": 0
   }
  }
 }

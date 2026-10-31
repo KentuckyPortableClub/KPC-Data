@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T01:51Z",
+ "checked": "2026-10-31T02:04Z",
  "switched_on": false,
  "results": [
   {
@@ -80,6 +80,15 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/docs/US-MD.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/docs/US-ME.json",
    "kind": "docs",
    "why": [
@@ -101,6 +110,15 @@
   },
   {
    "path": "data/docs/US-ND.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/docs/US-NH.json",
    "kind": "docs",
    "why": [
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
@@ -166,6 +184,15 @@
   },
   {
    "path": "data/docs/US-SD.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/docs/US-VT.json",
    "kind": "docs",
    "why": [
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
