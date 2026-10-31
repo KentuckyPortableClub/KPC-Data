@@ -108,7 +108,7 @@
   "US-IA": {
    "status": "failed",
    "parks": 181,
-   "updated": "2026-10-30",
+   "updated": "2026-10-31",
    "why": "maps 82 -> 64"
   },
   "US-ND": {
@@ -137,7 +137,7 @@
    "parks": 851,
    "checked": 851,
    "left": 0,
-   "updated": "2026-10-30"
+   "updated": "2026-10-31"
   },
   "US-NJ": {
    "status": "done",
@@ -151,7 +151,7 @@
    "parks": 157,
    "checked": 157,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-31"
   },
   "US-RI": {
    "status": "done",
@@ -168,18 +168,16 @@
    "updated": "2026-10-29"
   },
   "US-VT": {
-   "status": "done",
+   "status": "failed",
    "parks": 109,
-   "checked": 109,
-   "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-31",
+   "why": "maps 72 -> 50"
   },
   "US-NH": {
-   "status": "done",
+   "status": "failed",
    "parks": 206,
-   "checked": 206,
-   "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-31",
+   "why": "maps 23 -> 9"
   },
   "US-ME": {
    "status": "done",
@@ -253,35 +251,35 @@
   }
  },
  "hosts": {
-  "map.co.door.wi.us": 1793408717.0830843,
   "iowaculture.gov": 1793486206.7553685,
   "www.cgcounty.org": 1793486529.479077,
-  "www.lclt.org": 1793490459.2514486
+  "www.lclt.org": 1793490459.2514486,
+  "sojournertruthstatepark.info": 1793494272.6810167
  },
  "last": {
-  "when": "2026-10-30",
+  "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-SD",
    "US-NY",
    "US-CT",
    "US-VT",
    "US-NH",
    "US-MD",
-   "US-DC"
+   "US-DC",
+   "US-AR"
   ],
   "stat": {
-   "requests": 1911,
-   "parks": 732,
-   "maps_ok": 454,
-   "maps_found": 388,
-   "dates": 112,
-   "rules": 640,
-   "browser": 118,
-   "robots": 69,
+   "requests": 1925,
+   "parks": 838,
+   "maps_ok": 448,
+   "maps_found": 433,
+   "dates": 96,
+   "rules": 663,
+   "browser": 150,
+   "robots": 62,
    "strikes": 3,
    "errors": 3,
-   "skipped_fresh": 110
+   "skipped_fresh": 541
   }
  }
 }

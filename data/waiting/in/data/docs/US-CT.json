@@ -1,0 +1,4876 @@
+{
+ "area": "US-CT",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0228": {
+   "n": "Stewart B. Mckinney National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/stewart_b_mckinney/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/stewart-b-mckinney/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0329": {
+   "n": "Silvio O Conte National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/silvio-o-conte",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/silvio-o-conte/visit-us",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/refuge/silvio-o-conte/map",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0873": {
+   "n": "Weir Farm National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/wefa/planyourvisit/basicinfo.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/wefa/planyourvisit/upload/RV-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Review this map and directions' file",
+    "posted": "Dec 26, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "page": "https://www.nps.gov/wefa/planyourvisit/maps.htm",
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/wefa/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0881": {
+   "n": "Eightmile National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.nps.gov/articles/000/eightmile-wild-and-scenic-river.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0882": {
+   "n": "Farmington National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://uploads-ssl.webflow.com/60be5c593edf8d4bff66a3b3/619c00ea775fd35dd36e0877_FRCC_RecFull.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10073": {
+   "n": "Whittemore Glen State Park Scenic Reserve",
+   "t": "Scenic Reserve",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e138b1fd58c7a70fbeb&hash=9711462A6EE779293AAD61222B532601",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Bolton Notch State\nPark Map')",
+    "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+    "posted": "Jun 03, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [
+    "is maintained by Bolton Conservation Commission"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10075": {
+   "n": "Nepaug State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests#Nepaug",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e138b1fd58c7a70fbeb&hash=9711462A6EE779293AAD61222B532601",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Bolton Notch State\nPark Map')",
+    "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests#Nepaug",
+    "posted": "Jun 03, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [
+    "is maintained by Bolton Conservation Commission"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/nehantic-state-forest",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "the agency's list page, matched by name ('Nepaug State Forest')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10079": {
+   "n": "Pootatuck State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map389.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10086": {
+   "n": "Algonquin State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e138b1fd58c7a70fbeb&hash=9711462A6EE779293AAD61222B532601",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Bolton Notch State\nPark Map')",
+    "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+    "posted": "Jun 03, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [
+    "is maintained by Bolton Conservation Commission"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10092": {
+   "n": "Seaside State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e138b1fd58c7a70fbeb&hash=9711462A6EE779293AAD61222B532601",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Bolton Notch State\nPark Map')",
+    "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+    "posted": "Jun 03, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [
+    "is maintained by Bolton Conservation Commission"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10656": {
+   "n": "Barn Island Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/BarnIslandTrail2012pdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10952": {
+   "n": "Paugussett State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/PaugussettSouthGPSpdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10961": {
+   "n": "Mattatuck State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Mattatuck-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://portal.ct.gov/deep/state-parks/forests/mattatuck-state-forest/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Maps')",
+    "page": "https://portal.ct.gov/deep/state-parks/forests/mattatuck-state-forest",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-10962": {
+   "n": "Babcock Pond WMA Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/BabcockPondPheasantpdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11013": {
+   "n": "Bishop Swamp WMA Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map51.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11712": {
+   "n": "Cromwell Meadows WMA Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map110.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12092": {
+   "n": "Nipmuck State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/deep/state-parks/forests/nipmuck-state-forest-bigelow-hollow-state-park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/nipmuck-state-forest)",
+    "how": "the agency's list page, matched by name ('Nipmuck State Forest')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/nipmuck-state-forest",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Nipmuck State Forest')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12459": {
+   "n": "Housatonic River Southern Fields Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/housatonicwmapheasantspdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12460": {
+   "n": "Suffield Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map9157.pdf?rev=dc17cc1a159a47cab6f8954c612be46e&hash=53CE9D4D325155830B490A012A401CD0",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12604": {
+   "n": "Meshomasic State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/-/media/DEEP/forestry/Management_Plans/Meshomasic20112020pdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12620": {
+   "n": "Old New-Gate Prison & Copper Mine Historical Reserve",
+   "t": "Historical Reserve",
+   "page": "https://portal.ct.gov/decd/content/historic-preservation/04_state_museums/old-newgate-prison-and-copper-mine",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12628": {
+   "n": "Sessions Woods Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://portal.ct.gov/deep/wildlife/wildlife-mangement-areas/sessions-woods-wildlife-management-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12777": {
+   "n": "Paugnut State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Paugnut-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://portal.ct.gov/deep/state-parks/forests/paugnut-state-forest",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the agency's list page, matched by name ('Paugnut State Forest')",
+    "posted": "July 18, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-13483": {
+   "n": "Humaston Brook State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-13487": {
+   "n": "Seth Low Pierrepont State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/deep/state-parks/reserves/seth-low-pierrepont-state-park-reserve",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://portal.ct.gov/deep/state-parks/reserves/seth-low-pierrepont-state-park-reserve?archived=true",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the agency's list page, matched by name ('Seth Low Pierrepont State Park Reserve')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-1645": {
+   "n": "Above All State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1646": {
+   "n": "Beaver Brook State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1647": {
+   "n": "Bennett's Pond State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/BennettsPond.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/)",
+    "how": "the agency's list page, matched by name ('Bennett's Pond State Park')"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "the agency's list page, matched by name ('Bennett's Pond State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1648": {
+   "n": "Bigelow Hollow State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Bigelow-Hollow-State-Park-Nipmuck-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/bigelow-hollow-state-park)",
+    "how": "the agency's list page, matched by name ('Bigelow Hollow State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/bigelow-hollow-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Bigelow Hollow State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1649": {
+   "n": "Black Rock State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Black-Rock-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 http://www.nae.usace.army.mil/Portals/74/docs/Recreation/BRL/BRLRecMap)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/BRL/BRLRecMap.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (nae.usace.army.mil)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1650": {
+   "n": "Bluff Point State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Bluff-Point-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/bluff-point-state-park)",
+    "how": "the agency's list page, matched by name ('Bluff Point State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/bluff-point-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Bluff Point State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1651": {
+   "n": "Bolton Notch State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://portal.ct.gov/deep/state-parks/locate-park-forest/other-state-parks-and-forests",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the agency's list page, matched by name ('Bolton Notch State Park')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [
+    "is maintained by Bolton Conservation Commission"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-1652": {
+   "n": "Brainard Homestead State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1653": {
+   "n": "Burr Pond State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Burr-Pond-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/burr-pond-state-park)",
+    "how": "the agency's list page, matched by name ('Burr Pond State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/burr-pond-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Burr Pond State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1654": {
+   "n": "Camp Columbia State Park",
+   "t": "State Park",
+   "page": "https://ctparks.com/media/1320/download?inline",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1655": {
+   "n": "Campbell Falls State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Reserves/Campbell-Falls-State-Park-Reserve",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://portal.ct.gov/deep/state-parks/reserves/campbell-falls-state-park-reserve?archived=true",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the agency's list page, matched by name ('Campbell Falls State Park Reserve')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-1656": {
+   "n": "Chatfield Hollow State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Chatfield-Hollow-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/chatfield-hollow-state-park)",
+    "how": "the agency's list page, matched by name ('Chatfield Hollow State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/chatfield-hollow-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Chatfield Hollow State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1657": {
+   "n": "Collis P. Huntington State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Collis-P-Huntington-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/cp-huntington-state-park)",
+    "how": "the agency's list page, matched by name ('Collis P. Huntington State Park')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/cp-huntington-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Collis P. Huntington State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1658": {
+   "n": "Connecticut Valley Railroad State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Connecticut-Valley-Railroad-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1659": {
+   "n": "Dart Island State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1660": {
+   "n": "Day Pond State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Day-Pond-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/day-pond-state-park)",
+    "how": "the agency's list page, matched by name ('Day Pond State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/day-pond-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Day Pond State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1661": {
+   "n": "Dennis Hill State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Dennis-Hill-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/dennis-hill-state-park)",
+    "how": "the agency's list page, matched by name ('Dennis Hill State Park')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/dennis-hill-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Dennis Hill State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1662": {
+   "n": "Devil's Hopyard State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Devils-Hopyard-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/devils-hopyard-state-park)",
+    "how": "the agency's list page, matched by name ('Devil's Hopyard State Park and Campground')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/devils-hopyard-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Devil's Hopyard State Park and Campground')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1663": {
+   "n": "Dinosaur State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Dinosaur-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/dinosaur-state-park)",
+    "how": "the agency's list page, matched by name ('Dinosaur State Park')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/dinosaur-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Dinosaur State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1664": {
+   "n": "Eagle Landing State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Eagle-Landing-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/)",
+    "how": "the agency's list page, matched by name ('Eagle Landing State Park')"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "the agency's list page, matched by name ('Eagle Landing State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1665": {
+   "n": "Farm River State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Farm-River-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/)",
+    "how": "the agency's list page, matched by name ('Farm River State Park')"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "the agency's list page, matched by name ('Farm River State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1666": {
+   "n": "Fort Griswold Battlefield State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Fort-Griswold-Battlefield-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/fort-griswold-battlefield-state-park)",
+    "how": "the agency's list page, matched by name ('Fort Griswold Battlefield State Park')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/fort-griswold-battlefield-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Fort Griswold Battlefield State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1667": {
+   "n": "Fort Trumbull State Park",
+   "t": "State Park",
+   "page": "https://ctparks.com/parks/fort-trumbull-state-park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://ctparks.com/park-maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('State Park Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1668": {
+   "n": "Gardner Lake State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Gardner-Lake-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1669": {
+   "n": "Gay City State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Gay-City-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/gay-city-state-park)",
+    "how": "the agency's list page, matched by name ('Gay City State Park')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/swimming",
+    "how": "a link on the park's page ('Beach Regulations and Swimming Safety Information')",
+    "status": "ok"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/gay-city-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Gay City State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1670": {
+   "n": "George Dudley Seymour State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/GeorgeWSeymourpdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1671": {
+   "n": "George Waldo State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/GeorgeWaldopdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1672": {
+   "n": "Gillette Castle State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Gillette-Castle-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/gillette-castle-state-park)",
+    "how": "the agency's list page, matched by name ('Gillette Castle State Park')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/gillette-castle-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Gillette Castle State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1673": {
+   "n": "Haddam Island State Park",
+   "t": "State Park",
+   "page": "https://stateparks.com/haddam_island_state_park_in_connecticut.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-1674": {
+   "n": "Haddam Meadows State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Haddam-Meadows-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/haddam-meadows-state-park)",
+    "how": "the agency's list page, matched by name ('Haddam Meadows State Park')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/haddam-meadows-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Haddam Meadows State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1675": {
+   "n": "Haley Farm State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Haley-Farm-State-Park/Activities",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/)",
+    "how": "the agency's list page, matched by name ('Haley Farm State Park')"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "the agency's list page, matched by name ('Haley Farm State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1676": {
+   "n": "Hammonasset Beach State Beach",
+   "t": "State Beach",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Hammonasset-Beach-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1677": {
+   "n": "Harkness Memorial State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Harkness-Memorial-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/harkness-memorial-state-park)",
+    "how": "the agency's list page, matched by name ('Harkness Memorial State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/harkness-memorial-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Harkness Memorial State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1678": {
+   "n": "Haystack Mountain State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Haystack-Mountain-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/haystack-mountain-state-park)",
+    "how": "the agency's list page, matched by name ('Haystack Mountain State Park')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/haystack-mountain-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Haystack Mountain State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1679": {
+   "n": "Higganum Reservoir State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map215.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1680": {
+   "n": "Hopemead State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1681": {
+   "n": "Hopeville Pond State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Hopeville-Pond-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/hopeville-pond-state-park)",
+    "how": "the agency's list page, matched by name ('Hopeville Pond State Park and Campground')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/swimming",
+    "how": "a link on the park's page ('Beach Regulations and Swimming Safety Information')",
+    "status": "ok"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/hopeville-pond-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Hopeville Pond State Park and Campground')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1682": {
+   "n": "Housatonic Meadows State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Housatonic-Meadows-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/housatonic-meadows-state-park)",
+    "how": "the agency's list page, matched by name ('Housatonic Meadows State Park and Campground')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/housatonic-meadows-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Housatonic Meadows State Park and Campground')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1683": {
+   "n": "Hurd State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Hurd-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/hurd-state-park)",
+    "how": "the agency's list page, matched by name ('Hurd State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/hurd-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Hurd State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1684": {
+   "n": "Indian Well State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Indian-Well-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/indian-well-state-park)",
+    "how": "the agency's list page, matched by name ('Indian Well State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/indian-well-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Indian Well State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1685": {
+   "n": "John A. Minetto State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/John-A-Minetto-State-Park/Activities",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/)",
+    "how": "the agency's list page, matched by name ('John A. Minetto State Park')"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "the agency's list page, matched by name ('John A. Minetto State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1686": {
+   "n": "Kent Falls State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Kent-Falls-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/kent-falls-state-park)",
+    "how": "the agency's list page, matched by name ('Kent Falls State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/kent-falls-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Kent Falls State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1687": {
+   "n": "Kettletown State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Kettletown-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1688": {
+   "n": "Killingly Pond State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1689": {
+   "n": "Lake Waramaug State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Lake-Waramaug-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1690": {
+   "n": "Lamentation Mountain State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests#LamentationMountain",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1691": {
+   "n": "Lovers Leap State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Lovers-Leap-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/lovers-leap-state-park)",
+    "how": "the agency's list page, matched by name ('Lovers Leap State Park')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/lovers-leap-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Lovers Leap State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1692": {
+   "n": "Macedonia Brook State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Macedonia-Brook-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/macedonia-brook-state-park)",
+    "how": "the agency's list page, matched by name ('Macedonia Brook State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/macedonia-brook-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Macedonia Brook State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1693": {
+   "n": "Machimoodus State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Machimoodus-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/machimoodus-state-park)",
+    "how": "the agency's list page, matched by name ('Machimoodus State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/machimoodus-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Machimoodus State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1694": {
+   "n": "Mansfield Hollow State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/mansfieldhollowpdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 http://www.nae.usace.army.mil/Portals/74/docs/Recreation/MHLMap.pdf)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/MHLMap.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (nae.usace.army.mil)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1695": {
+   "n": "Mashamoquet Brook State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Mashamoquet-Brook-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/mashamoquet-brook-state-park)",
+    "how": "the agency's list page, matched by name ('Mashamoquet Brook State Park and Campground')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/mashamoquet-brook-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Mashamoquet Brook State Park and Campground')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1696": {
+   "n": "Mianus River State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1697": {
+   "n": "Millers Pond State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Millers-Pond-State-ParK",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/millers-pond-state-park)",
+    "how": "the agency's list page, matched by name ('Millers Pond State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/millers-pond-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Millers Pond State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1698": {
+   "n": "Minnie Island State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1699": {
+   "n": "Mohawk Mountain State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Mohawk-Mountain-State-Forest-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1700": {
+   "n": "Mooween State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/-/media/DEEP/stateparks/parks/MoweenStateParkMapRedCedarLakepdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1701": {
+   "n": "Mount Bushnell State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1702": {
+   "n": "Mount Riga State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1703": {
+   "n": "Mount Tom State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Mount-Tom-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/mount-tom-state-park)",
+    "how": "the agency's list page, matched by name ('Mount Tom State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/mount-tom-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Mount Tom State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1704": {
+   "n": "Old Furnace State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Old-Furnace-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1705": {
+   "n": "Osborndale State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Osbornedale-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1706": {
+   "n": "Penwood State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Penwood-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/penwood-state-park)",
+    "how": "the agency's list page, matched by name ('Penwood State Park')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/penwood-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Penwood State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1707": {
+   "n": "Putnam Memorial State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Putnam-Memorial-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/putnam-memorial-state-park)",
+    "how": "the agency's list page, matched by name ('Putnam Memorial State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/putnam-memorial-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Putnam Memorial State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1708": {
+   "n": "Quaddick State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Quaddick-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/)",
+    "how": "the agency's list page, matched by name ('Quaddick State Park')"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "the agency's list page, matched by name ('Quaddick State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1709": {
+   "n": "Quinnipiac River State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map408.pdf?rev=d12a8540dfcc4152bf7ced8d17a51970&hash=E61CD0DE7A2467E1E78232BA3D9B9A27",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1710": {
+   "n": "River Highlands State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/River-Highlands-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/)",
+    "how": "the agency's list page, matched by name ('River Highlands State Park')"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "the agency's list page, matched by name ('River Highlands State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1711": {
+   "n": "Rocky Neck State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Rocky-Neck-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/rocky-neck-state-park)",
+    "how": "the agency's list page, matched by name ('Rocky Neck State Park and Campground')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/rocky-neck-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Rocky Neck State Park and Campground')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1712": {
+   "n": "Ross Pond State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests#rosspond",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1713": {
+   "n": "Scantic River State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map440.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1714": {
+   "n": "Selden Neck State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Selden-Neck-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/selden-neck-state-park)",
+    "how": "the agency's list page, matched by name ('Selden Neck State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/selden-neck-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Selden Neck State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1715": {
+   "n": "Sherwood Island State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Sherwood-Island-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/sherwood-island-state-park)",
+    "how": "the agency's list page, matched by name ('Sherwood Island State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/sherwood-island-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Sherwood Island State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1716": {
+   "n": "Silver Sands State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Silver-Sands-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/silver-sands-state-park)",
+    "how": "the agency's list page, matched by name ('Silver Sands State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/silver-sands-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Silver Sands State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1717": {
+   "n": "Sleeping Giant State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Sleeping-Giant-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/sleeping-giant-state-park)",
+    "how": "the agency's list page, matched by name ('Sleeping Giant State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/sleeping-giant-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Sleeping Giant State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1718": {
+   "n": "Southford Falls State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Southford-Falls-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/southford-falls-state-park)",
+    "how": "the agency's list page, matched by name ('Southford Falls State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/southford-falls-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Southford Falls State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1719": {
+   "n": "Squantz Pond State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Squantz-Pond-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/squantz-pond-state-park)",
+    "how": "the agency's list page, matched by name ('Squantz Pond State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/squantz-pond-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Squantz Pond State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1720": {
+   "n": "Stillwater Pond State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1721": {
+   "n": "Stratton Brook State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Stratton-Brook-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/stratton-brook-state-park)",
+    "how": "the agency's list page, matched by name ('Stratton Brook State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/stratton-brook-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Stratton Brook State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1722": {
+   "n": "Sunny Brook State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/SunnyBrookStateParkpdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1723": {
+   "n": "Sunrise State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Sunrise-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://portal.ct.gov/-/media/deep/stateparks/maps/sunrisestatepark_20)",
+    "how": "the agency's list page, matched by name ('Sunrise State Park')"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://portal.ct.gov/-/media/deep/stateparks/maps/sunrisestatepark_2018r.pdf?rev=aa0aea04d55b49ada9d9d563e491eef1&amp;hash=84043EDECA8AF56DB5F8DC03EAED1622",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "the agency's list page, matched by name ('Sunrise State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1724": {
+   "n": "Talcott Mountain State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Talcott-Mountain-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/talcott-mountain-state-park)",
+    "how": "the agency's list page, matched by name ('Talcott Mountain State Park')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/talcott-mountain-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Talcott Mountain State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1725": {
+   "n": "Trimountain State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1726": {
+   "n": "Wadsworth Falls State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Wadsworth-Falls-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/wadsworth-falls-state-park)",
+    "how": "the agency's list page, matched by name ('Wadsworth Falls State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/wadsworth-falls-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Wadsworth Falls State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1727": {
+   "n": "West Rock Ridge State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/West-Rock-Ridge-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/west-rock-ridge-state-park)",
+    "how": "the agency's list page, matched by name ('West Rock Ridge State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/west-rock-ridge-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('West Rock Ridge State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1728": {
+   "n": "Wharton Brook State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Wharton-Brook-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://portal.ct.gov/-/media/DEEP/stateparks/maps/whartonbrookpdf.pdf)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/whartonbrookpdf.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1729": {
+   "n": "Windsor Meadows State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Windsor-Meadows-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/windsor-meadows-state-park)",
+    "how": "the agency's list page, matched by name ('Windsor Meadows State Park')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/windsor-meadows-state-park",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Windsor Meadows State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-4369": {
+   "n": "Shenipsit State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Shenipsit-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/shenipsit-state-forest)",
+    "how": "the agency's list page, matched by name ('Shenipsit State Forest')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/shenipsit-state-forest",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Shenipsit State Forest')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-4556": {
+   "n": "Appalachian Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.nps.gov/appa/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/appa/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "December 21, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/appa/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [
+    "is managed by the National Park Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4561": {
+   "n": "New England Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.nps.gov/neen/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/neen/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "November 8, 2023",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/neen/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service (NPS), in partnership with the New England Trail organization",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4582": {
+   "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/waro/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/waro/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Trail Map')",
+    "posted": "June 16, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/waro/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-6857": {
+   "n": "American Legion State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/American-Legion-and-Peoples-State-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/parks/fort-griswold-battlefield-state-park)",
+    "how": "the agency's list page, matched by name ('American Legion State Forest and Campground')"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/fort-griswold-battlefield-state-park",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "the agency's list page, matched by name ('American Legion State Forest and Campground')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-6858": {
+   "n": "Beckett Hill Park Reserve",
+   "t": "Park Reserve",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6859": {
+   "n": "Enders State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Enders-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6860": {
+   "n": "Ferry Landing State Park",
+   "t": "State Park",
+   "page": "https://www.meigspointnaturecenter.org/ferry-landing-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.depdata.ct.gov/maps/parksforests/parksmap.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Connecticut State Parks')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": false,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "government host (depdata.ct.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-6861": {
+   "n": "Great Pond / Massacoe State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Massacoe-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6862": {
+   "n": "Horse Guard State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/HorseGuardTrailMappdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6863": {
+   "n": "James L. Goodwin State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/James-L-Goodwin-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/james-l-goodwin-state-forest)",
+    "how": "the agency's list page, matched by name ('James L. Goodwin State Forest')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/james-l-goodwin-state-forest",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('James L. Goodwin State Forest')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-6864": {
+   "n": "Mono Pond State Park Preserve",
+   "t": "State Park Preserve",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6865": {
+   "n": "Nathan Hale State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/NathanHalePheasantpdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6866": {
+   "n": "Nehantic State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Nehantic-State-Forest/Maps",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/nehantic-state-forest)",
+    "how": "the agency's list page, matched by name ('Nehantic State Forest')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and Permits, Current Regulations, and More')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/nehantic-state-forest",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Nehantic State Forest')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-6867": {
+   "n": "Nye Holman State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map356.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6868": {
+   "n": "Pawcatuck River Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "http://dublinhikesamerica.blogspot.com/2011/10/pawcatuck-river-wildlife-management.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnvz1a4uuPIJLlLdSwSLV5_QP6rsY5tyASxnrQNsCezBbWW9PHCgTpgQzuI-FrOk3c74GEljrxH1nlAn5gTBkvM7Mnv-f1Yvr0b5MRW-sqMfVNyPi7HiQbfVdaT9uIYFZ0dIR_WWZRvhqF/s1600/Stanton+Weir+Map.jpg",
+    "status": "ok",
+    "kind": "image",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": false,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (blogger.googleusercontent.com)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-6869": {
+   "n": "Peoples State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/American-Legion-and-Peoples-State-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6870": {
+   "n": "Quinebaug Lake State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6871": {
+   "n": "Rocky Glen State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6872": {
+   "n": "Salt Rock State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Campgrounds/Salt-Rock-State-Campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/salt-rock-state-forest)",
+    "how": "the agency's list page, matched by name ('Salt Rock State Campground')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/salt-rock-state-forest",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Salt Rock State Campground')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-6873": {
+   "n": "Stoddard Hill State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/StoddardHillpdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6874": {
+   "n": "Tunxis State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map503.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-6875": {
+   "n": "The Preserve Essex Land Trust State Park Preserve",
+   "t": "State Park Preserve",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/The-Preserve",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7520": {
+   "n": "Mansfield Hollow Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/mansfieldhollowpdf.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 http://www.nae.usace.army.mil/Portals/74/docs/Recreation/MHLMap.pdf)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/MHLMap.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (nae.usace.army.mil)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7528": {
+   "n": "Air Line State Trail",
+   "t": "State Trail",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Air-Line-State-Park-Trail/Maps",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/air-line-state-park-trail)",
+    "how": "the agency's list page, matched by name ('Air Line State Park Trail')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/air-line-state-park-trail",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Air Line State Park Trail')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7529": {
+   "n": "Beckley Iron Furnace State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Beckley-Furnace-Industrial-Monument",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7530": {
+   "n": "Centennial Watershed State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Centennial-Watershed-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://portal.ct.gov/deep/state-parks/forests/centennial-watershed-state-forest",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the agency's list page, matched by name ('Centennial Watershed State Forest')",
+    "posted": "July 18, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-7531": {
+   "n": "Cockaponset State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Cockaponset-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/cockaponset-state-forest)",
+    "how": "the agency's list page, matched by name ('Cockaponset State Forest')"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/en/404error/?item=%2fdeep-beta%2fstate-parks%2frecreation-information%2fswimming---ct-state-parks-and-forests&user=extranet%5cAnonymous&site=website",
+    "how": "a link on the park's page ('Beach Regulations and Swimming Safety Information')",
+    "status": "ok"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/cockaponset-state-forest",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Cockaponset State Forest')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7532": {
+   "n": "Hop River State Trail",
+   "t": "State Trail",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Hop-River-State-Park-Trail/Maps",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/hop-river-state-park-trail)",
+    "how": "the agency's list page, matched by name ('Hop River State Park Trail')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/hop-river-state-park-trail",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Hop River State Park Trail')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7533": {
+   "n": "Larkin State Trail",
+   "t": "State Trail",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Larkin-State-Park-Trail",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/larkin-state-park-trail)",
+    "how": "the agency's list page, matched by name ('Larkin State Park Trail')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/larkin-state-park-trail",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Larkin State Park Trail')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7534": {
+   "n": "Mohegan State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map302.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7535": {
+   "n": "Moosup Valley State Trail",
+   "t": "State Trail",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Moosup-Valley-State-Park-Trail",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/)",
+    "how": "the agency's list page, matched by name ('Moosup Valley State Park Trail')"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "the agency's list page, matched by name ('Moosup Valley State Park Trail')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7536": {
+   "n": "Nassahegon State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/Forestry/Letterboxing/Letterboxing-Clues-for-Nassahegon-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7537": {
+   "n": "Natchaug State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Natchaug-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://portal.ct.gov/deep/state-parks/forests/natchaug-state-forest",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the agency's list page, matched by name ('Natchaug State Forest')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-7538": {
+   "n": "Naugatuck State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7539": {
+   "n": "Platt Hill State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7540": {
+   "n": "Pomeroy State Reserve",
+   "t": "State Reserve",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7541": {
+   "n": "Salmon River State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Salmon-River-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/salmon-river-state-forest)",
+    "how": "the agency's list page, matched by name ('Salmon River State Forest')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://portal.ct.gov/DEEP/Fishing/CT-Fishing)",
+    "how": "a link on the park's page ('Licenses and permits, current regulations, and more')"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/salmon-river-state-forest",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Salmon River State Forest')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7542": {
+   "n": "Satan's Kingdom State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests#SatansKingdom",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7544": {
+   "n": "Windsor Locks Canal State Trail",
+   "t": "State Trail",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Windsor-Locks-Canal-State-Park-Trail",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7545": {
+   "n": "Wooster Mountain State Park",
+   "t": "State Park",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7546": {
+   "n": "Wyantenock State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map536.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7547": {
+   "n": "Captain George Comer Memorial State Park",
+   "t": "State Park",
+   "page": "https://explorect.org/captain-george-comer/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://explorect.org/map)",
+    "how": "a link on the park's page ('🗺️ Trail Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://explorect.org/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('🗺️ Trail Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7548": {
+   "n": "Pachaug State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Pachaug-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-7652": {
+   "n": "Franklin Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://portal.ct.gov/DEEP/About/Contact-Us/Directions-to-DEEP-Facilities#FranklinWMA",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-9894": {
+   "n": "Topsmead State Forest",
+   "t": "State Forest",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Forests/Topsmead-State-Forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: ok https://ctparks.com/parks/topsmead-state-forest)",
+    "how": "the agency's list page, matched by name ('Topsmead State Forest')"
+   },
+   "rules": {
+    "url": "https://ctparks.com/park-policies",
+    "how": "a link on the park's page ('State Park Forest Policies')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://ctparks.com/parks/topsmead-state-forest",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "the agency's list page, matched by name ('Topsmead State Forest')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-9896": {
+   "n": "Auerfarm State Park Scenic Reserve",
+   "t": "Scenic Reserve",
+   "page": "https://portal.ct.gov/DEEP/State-Parks/Parks/Auerfarm-State-Park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (portal.ct.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 157,
+  "map ok": 20,
+  "map found by the bot": 17,
+  "date on the map": 0,
+  "posted date only": 10,
+  "date unknown": 10,
+  "no map": 137,
+  "rules ok": 115,
+  "needs browser": 138,
+  "handover hints": 0,
+  "runs hints": 6,
+  "host resting / robots": 0,
+  "map names the park": 13,
+  "region overview only": 0
+ }
+}

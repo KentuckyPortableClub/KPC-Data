@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T00:13Z",
+ "checked": "2026-10-31T01:08Z",
  "switched_on": false,
  "results": [
   {
@@ -41,6 +41,15 @@
    "notes": [
     "no live copy: first time this file is published"
    ],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/docs/US-CT.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {

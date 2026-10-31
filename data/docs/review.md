@@ -1,5 +1,5 @@
 # Official documents bot: review list (hidden; for chat 8)
-Updated 2026-10-30. One file per area in data/docs/<area>.json: per park the official MAP (link, kind, date + how the date was found), the RULES page (link + how), who runs it (hints from the page) and HANDOVER hints. Nothing here reaches a card until chat 8 grades a sample and Brandon says GO.
+Updated 2026-10-31. One file per area in data/docs/<area>.json: per park the official MAP (link, kind, date + how the date was found), the RULES page (link + how), who runs it (hints from the page) and HANDOVER hints. Nothing here reaches a card until chat 8 grades a sample and Brandon says GO.
 
 Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp, labelled weaker); **posted** = when the file was put online (upload folder, file name, server date): never called the map date; **date unknown** = neither (the card says 'date unknown, checked <day>'). A © year and version tails (sfvrsn) are never dates.
 
@@ -24,7 +24,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-ND | 155 | 33 | 28 | 29 | 1 | 8 | 24 | 122 | 32 | 0 | 0 |
 | US-SD | 120 | 63 | 57 | 56 | 15 | 41 | 7 | 57 | 31 | 0 | 0 |
 | US-PA | 494 | 173 | 141 | 171 | 1 | 26 | 146 | 321 | 29 | 0 | 0 |
-| US-NY | 851 | 589 | 528 | 555 | 197 | 378 | 14 | 262 | 70 | 0 | 0 |
+| US-NY | 851 | 591 | 529 | 517 | 198 | 379 | 14 | 260 | 68 | 0 | 0 |
 | US-NJ | 134 | 76 | 10 | 73 | 2 | 64 | 10 | 58 | 15 | 51 | 0 |
 | US-CT | 157 | 20 | 17 | 13 | 0 | 10 | 10 | 137 | 115 | 138 | 0 |
 | US-RI | 61 | 11 | 6 | 11 | 0 | 6 | 5 | 50 | 16 | 0 | 0 |
@@ -1726,18 +1726,18 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-8088 | Miller Field State Recreation Area | https://www.nps.gov/gate/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted September 2, 2020 | https://www.nps.gov/gate/learn/management/lawsandpolicies.htm ✓ |  |
 | US-5103 | Battle Hill State Forest | https://dec.ny.gov/sites/default/files/battlehillsf.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Sep 11, 2023 |  ✗ |  |
 | US-5154 | Cameron Mills State Forest | https://dec.ny.gov/sites/default/files/mapcameronmills.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Sep 11, 2023 |  ✗ |  |
-| US-9117 | Saratoga Sand Plains Wildlife Management | https://extapps.dec.ny.gov/docs/wildlife_pdf/sarasancampmap.pdf | pdf ✓name · combined map: covers 3 units · same government (extapps.dec.ny.gov) | date unknown (date unknown, checked 2026-10-29) · posted Jan 04, 2023 |  ✗ |  |
-| US-9134 | Vosburgh Swamp Wildlife Management Area | https://dec.ny.gov/sites/default/files/vosburghmap.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
+| US-9115 | Pauline Murdock Wildlife Management Area | https://dec.ny.gov/sites/default/files/paulinemap.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Sep 11, 2023 |  ✗ |  |
+| US-9132 | Stockport Wildlife Management Area | https://dec.ny.gov/sites/default/files/stockportmap.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2018: check it is still current (file stamp 2018 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
 | US-5268 | Raywood Unique Area | https://dec.ny.gov/sites/default/files/mapraywoodua.pdf | pdf ✓name · combined map: covers 3 units · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
 | US-5225 | Onjebonge State Forest | https://dec.ny.gov/sites/default/files/maponjebonge.pdf | pdf ✓name · combined map: covers 4 units · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Sep 11, 2023 |  ✗ |  |
-| US-9039 | Canadaway Creek Wildlife Management Area | https://dec.ny.gov/sites/default/files/canadaway.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
+| US-9037 | Allegheny Reservoir Wildlife Management  | https://dec.ny.gov/sites/default/files/arwmamap.pdf | pdf ✓name · combined map: covers 4 units · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Apr 30, 2026 |  ✗ |  |
 | US-5105 | Bear Creek State Forest | https://dec.ny.gov/sites/default/files/bearcreekweb.pdf | pdf ✓name · combined map: covers 4 units · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
 | US-5180 | Cold Creek State Forest | https://dec.ny.gov/sites/default/files/2024-05/coldcreekgeoref.pdf | pdf ✓name · combined map: covers 3 units · the agency site | date unknown (date unknown, checked 2026-10-30) · posted 2024-05 |  ✗ |  |
 | US-2051 | Evangola State Park | https://parks.ny.gov/sites/default/files/2026-09/Evangola_HuntingTabloid.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted 2026-09 |  ✗ | operated by State Parks and the State Dept |
 | US-5284 | St. Regis River State Forest | https://dec.ny.gov/sites/default/files/mapstregisriver.pdf | pdf ✓name · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
 | US-5256 | Pleasant Lake State Forest | https://dec.ny.gov/sites/default/files/sl39.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Sep 11, 2023 |  ✗ |  |
 
-### US-NY no map yet (262): the reason
+### US-NY no map yet (260): the reason
 - US-10033 Old Fort Niagara State Historic Site: no map link on file and none on the park page
 - US-10035 John Brown Farm State Historic Site: no map link on file and none on the park page
 - US-10036 John Burroughs Memorial State Historic Site: no map link on file and none on the park page
@@ -1858,26 +1858,26 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## US-CT sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| US-10075 | Nepaug State Forest | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
-| US-10086 | Algonquin State Forest | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
-| US-1655 | Campbell Falls State Park | https://portal.ct.gov/deep/state-parks/reserves/campbell-falls-state-park-reserve?archived | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-7530 | Centennial Watershed State Forest | https://portal.ct.gov/deep/state-parks/forests/centennial-watershed-state-forest | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 18, 2016 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-10092 | Seaside State Park | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
-| US-7537 | Natchaug State Forest | https://portal.ct.gov/deep/state-parks/forests/natchaug-state-forest | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-12777 | Paugnut State Forest | https://portal.ct.gov/deep/state-parks/forests/paugnut-state-forest | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 18, 2016 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-1651 | Bolton Notch State Park | https://portal.ct.gov/deep/state-parks/locate-park-forest/other-state-parks-and-forests | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
-| US-10961 | Mattatuck State Forest | https://portal.ct.gov/deep/state-parks/forests/mattatuck-state-forest/maps | page · the agency site | — (date unknown, checked 2026-10-29) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-10073 | Whittemore Glen State Park Scenic Reserv | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
-| US-6860 | Ferry Landing State Park | https://www.depdata.ct.gov/maps/parksforests/parksmap.htm | page · government host (depdata.ct.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-13487 | Seth Low Pierrepont State Park | https://portal.ct.gov/deep/state-parks/reserves/seth-low-pierrepont-state-park-reserve?arc | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-1667 | Fort Trumbull State Park | https://ctparks.com/park-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://ctparks.com/park-policies ✓ |  |
-| US-0228 | Stewart B. Mckinney National Wildlife Re | https://www.fws.gov/refuge/stewart-b-mckinney/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/policies ✓ |  |
-| US-0329 | Silvio O Conte National Wildlife Refuge | https://www.fws.gov/refuge/silvio-o-conte/visit-us | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies ✓ |  |
-| US-6868 | Pawcatuck River Wildlife Management Area | https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnvz1a4uuPIJLlLdSwSLV5_QP6rsY5t | image · linked from the agency page (blogger.goo | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-4556 | Appalachian Trail National Scenic Trail | https://www.nps.gov/appa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted December 21, 2022 | https://www.nps.gov/appa/learn/management/lawsandpolicies.htm ✓ | is managed by the National Park Service |
-| US-0873 | Weir Farm National Historic Site | https://www.nps.gov/wefa/planyourvisit/upload/RV-Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Dec 26, 2023 | https://www.nps.gov/wefa/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4582 | Washington-Rochambeau Revolutionary Rout | https://www.nps.gov/waro/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted June 16, 2026 | https://www.nps.gov/waro/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4561 | New England Trail National Scenic Trail | https://www.nps.gov/neen/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted November 8, 2023 | https://www.nps.gov/neen/learn/management/lawsandpolicies.htm ✗ |  |
+| US-10075 | Nepaug State Forest | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
+| US-10086 | Algonquin State Forest | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
+| US-1655 | Campbell Falls State Park | https://portal.ct.gov/deep/state-parks/reserves/campbell-falls-state-park-reserve?archived | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-7530 | Centennial Watershed State Forest | https://portal.ct.gov/deep/state-parks/forests/centennial-watershed-state-forest | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted July 18, 2016 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-10092 | Seaside State Park | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
+| US-7537 | Natchaug State Forest | https://portal.ct.gov/deep/state-parks/forests/natchaug-state-forest | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-12777 | Paugnut State Forest | https://portal.ct.gov/deep/state-parks/forests/paugnut-state-forest | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted July 18, 2016 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-1651 | Bolton Notch State Park | https://portal.ct.gov/deep/state-parks/locate-park-forest/other-state-parks-and-forests | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
+| US-10961 | Mattatuck State Forest | https://portal.ct.gov/deep/state-parks/forests/mattatuck-state-forest/maps | page · the agency site | — (date unknown, checked 2026-10-31) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-10073 | Whittemore Glen State Park Scenic Reserv | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
+| US-6860 | Ferry Landing State Park | https://www.depdata.ct.gov/maps/parksforests/parksmap.htm | page · government host (depdata.ct.gov) | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| US-13487 | Seth Low Pierrepont State Park | https://portal.ct.gov/deep/state-parks/reserves/seth-low-pierrepont-state-park-reserve?arc | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-1667 | Fort Trumbull State Park | https://ctparks.com/park-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://ctparks.com/park-policies ✓ |  |
+| US-0228 | Stewart B. Mckinney National Wildlife Re | https://www.fws.gov/refuge/stewart-b-mckinney/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/policies ✓ |  |
+| US-0329 | Silvio O Conte National Wildlife Refuge | https://www.fws.gov/refuge/silvio-o-conte/visit-us | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies ✓ |  |
+| US-6868 | Pawcatuck River Wildlife Management Area | https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnvz1a4uuPIJLlLdSwSLV5_QP6rsY5t | image · linked from the agency page (blogger.goo | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| US-4556 | Appalachian Trail National Scenic Trail | https://www.nps.gov/appa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted December 21, 2022 | https://www.nps.gov/appa/learn/management/lawsandpolicies.htm ✓ | is managed by the National Park Service |
+| US-0873 | Weir Farm National Historic Site | https://www.nps.gov/wefa/planyourvisit/upload/RV-Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Dec 26, 2023 | https://www.nps.gov/wefa/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4582 | Washington-Rochambeau Revolutionary Rout | https://www.nps.gov/waro/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted June 16, 2026 | https://www.nps.gov/waro/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4561 | New England Trail National Scenic Trail | https://www.nps.gov/neen/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted November 8, 2023 | https://www.nps.gov/neen/learn/management/lawsandpolicies.htm ✗ |  |
 
 ### US-CT no map yet (137): the reason
 - US-0881 Eightmile National Wild and Scenic River: no map link on file and none on the park page
@@ -2933,10 +2933,12 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-1968 Lake Hope State Park: no map link on file and none on the park page
 
 ## robots.txt said no (hosts we did not read)
-- dec.ny.gov: 69 addresses (User-agent: * | Allow: /core/*.css$ | Allow: /core/*.css? | Allow: /core/*.js$ | Allow: /core/*.js? )
+- dec.ny.gov: 60 addresses (User-agent: * | Allow: /core/*.css$ | Allow: /core/*.css? | Allow: /core/*.js$ | Allow: /core/*.js? )
+- trailsnh.com: 1 addresses (User-agent: Googlebot | User-agent: DuckDuckBot | Allow: /*.css | Allow: /*.js | Allow: /about/ | Al)
+- www.google.com: 1 addresses (User-agent: * | User-agent: Yandex | Disallow: /search | Allow: /search/about | Allow: /search/howse)
 
 ## hosts resting a day (three strikes)
 - iowaculture.gov
-- map.co.door.wi.us
+- sojournertruthstatepark.info
 - www.cgcounty.org
 - www.lclt.org
