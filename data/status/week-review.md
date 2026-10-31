@@ -12,15 +12,15 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 
 ## Questions (per file: tier + answer)
 
-- **gis-hunter** (534 rows): - NO 342, - YES 81, - open 16, LIKELY NO 28, LIKELY YES 11, LIKELY open 3, SURE NO 3, SURE YES 3, SURE bot YES 42, SURE open 5
+- **gis-hunter** (534 rows): - NO 342, - YES 81, - open 16, LIKELY NO 28, LIKELY YES 11, LIKELY open 3, SURE NO 3, SURE YES 3, SURE open 47
 - **key-pieces** (307 rows): - NO 80, - YES 193, - open 34
-- **layers** (838 rows): LIKELY NO 33, LIKELY YES 4, LIKELY open 242, SURE NO 2, SURE YES 4, SURE open 553
+- **layers** (857 rows): LIKELY NO 33, LIKELY YES 4, LIKELY open 257, SURE NO 2, SURE YES 4, SURE open 557
 - **not-sure-for-chat9** (146 rows): - open 146
 - **world-finder** (3717 rows): - NO 1650, - YES 9, - open 35, LIKELY NO 858, LIKELY YES 33, LIKELY open 31, SURE NO 125, SURE YES 967, SURE open 9
 
 ## Layers
 
-- intake: ASK-THE-PUBLISHER 157, LIVE-ONLY 1, READY 2, REJECT 1128, RETRY 269, WATER-ONLY 28, approved 2; queue 1562
+- intake: ASK-THE-PUBLISHER 157, LIVE-ONLY 1, READY 2, REJECT 1128, RETRY 269, WATER-ONLY 28, approved 2; queue 1569
 - layer collector: asked 45, evidence 9, failed 154, no match 54; GIS finders found 148 layers
 
 ## Coverage
