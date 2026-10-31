@@ -216,6 +216,136 @@ def test_crawled(want, log, qs, queue, seen, n):
     return done
 
 
+# ------------------------------------------------------------------------------------------------ outside research (HQ Oct 30 7:45 PM)
+EXT_F = pathlib.Path('data/intake/external-sources-oct30.json')
+EXT_OUT = pathlib.Path('data/intake/external-results.json')
+EXT_MIN = float(os.environ.get('EXT_MINUTES') or 55)
+NAMEF = re.compile(r'(^|_)(name|nom|unit_?nm|unit_?name|prop_?name|park_?name|site_?name|area_?name|loc_?nm|label|trail_?name|trl_?name|rec_?name)$', re.I)
+
+
+def ext_index():
+    """{ref: (la, lo, name, 'US-XX')} for every US park, built once (pin() reads every file per call)."""
+    out = {}
+    for f in pathlib.Path('data/parkinfo').glob('US-*.json'):
+        for r, v in ((load(f, {}) or {}).get('parks') or {}).items():
+            if v and len(v) > 6 and v[5] is not None: out[r] = (v[5], v[6], v[0], f.stem)
+    return out
+
+
+def known_layers():
+    k = set()
+    for pat in ('data/us-key/layers.json', 'data/ca-key/layers.json'):
+        d = load(LINKS / pat, {}) or {}
+        k |= {str(u).rstrip('/').lower() for u in (d.values() if isinstance(d, dict) else d) if isinstance(u, str)}
+        k |= {str(u).rstrip('/').lower() for u in (d.keys() if isinstance(d, dict) else []) if str(u).startswith('http')}
+    try: k |= {str(u).rstrip('/').lower() for u in re.findall(r'https?://[^"\s]+?/(?:MapServer|FeatureServer)/\d+', open(LINKS / 'data' / 'state-gis.json', encoding='utf-8').read())}
+    except Exception: pass  # noqa: BLE001
+    return k
+
+
+def external(log, qs, queue, seen, n):
+    """Brandon's outside research: each (park or trail, layer) the researcher assigned, tested like a LAYER line: polygon layers =
+    one multipoint query per 120 POTA pins (pin inside + name tier); line layers (trails) = the pin within 200 m of a named line.
+    SURE / LIKELY -> chat 11 (data/waiting/questions/layers.json); every layer it touched -> the intake queue (publisher + licence test)."""
+    D = load(EXT_F, {}) or {}
+    if not D: return None
+    P = ext_index(); KN = known_layers(); t0 = time.time()
+    R = load(EXT_OUT, {'about': "Outside research (Oct 30) tested by the layer collector: per park/trail and layer, what the pin test found. 'source assigned, exact feature not verified' until here.", 'pairs': {}, 'layers': {}}) or {}
+    R.setdefault('pairs', {}); R.setdefault('layers', {})
+    by = {}
+    for key, urls in D.items():
+        kind, ref = key.split('|', 1)
+        for u in urls or []: by.setdefault(u.rstrip('/'), []).append((ref, kind))
+    def order(u):   # Delaware first (HQ: one small state first), then US order by state
+        sts = sorted({(P.get(r) or (0, 0, '', 'US-ZZ'))[3] for r, _ in by[u]})
+        return (0 if 'US-DE' in sts else 1, sts[0] if sts else 'US-ZZ', u)
+    for u in sorted(by, key=order):
+        if time.time() - t0 > EXT_MIN * 60: break   # the rest next run (pairs already done are skipped)
+        todo = [(r, k) for r, k in by[u] if f'{r}|{u}' not in R['pairs']]
+        if not todo: continue
+        L = R['layers'].setdefault(u, {'new_to_us': u.lower() not in KN, 'host': urllib.parse.urlsplit(u).hostname})
+        try:
+            meta = get_json(u); gt = str(meta.get('geometryType', ''))
+            L['geometry'] = gt; L['title'] = meta.get('name', '')
+            names = [f_.get('name') for f_ in meta.get('fields') or [] if f_.get('name')]
+            fld = next((nm for nm in names if NAMEF.search(nm)), None)
+            if not fld: raise RuntimeError('no name field (' + ', '.join(names[:8]) + ')')
+            L['name_field'] = fld
+        except Exception as e:  # noqa: BLE001
+            L['error'] = f'{type(e).__name__}: {str(e)[:80]}'; L['tries'] = L.get('tries', 0) + 1
+            if L['tries'] < 3 and 'no name field' not in L['error']: continue   # a layer that did not open gets two more runs before its pairs fail
+            for r, k in todo: R['pairs'][f'{r}|{u}'] = {'ref': r, 'kind': k, 'result': 'failed', 'why': L['error']}
+            continue
+        pts = [(r, k, P[r]) for r, k in todo if r in P]
+        for r, k in todo:
+            if r not in P: R['pairs'][f'{r}|{u}'] = {'ref': r, 'kind': k, 'result': 'failed', 'why': 'no POTA pin on file'}
+        hits = 0
+        try:
+            if 'olygon' in gt:
+                for i in range(0, len(pts), 120):
+                    chunk = pts[i:i + 120]
+                    mp = {'points': [[round(v[1], 5), round(v[0], 5)] for _, _, v in chunk], 'spatialReference': {'wkid': 4326}}
+                    j = get_json(u + '/query', {'geometry': json.dumps(mp, separators=(',', ':')), 'geometryType': 'esriGeometryMultipoint', 'inSR': 4326,
+                                                'spatialRel': 'esriSpatialRelIntersects', 'outFields': '*', 'returnGeometry': 'true', 'outSR': 4326,
+                                                'maxAllowableOffset': 0.002, 'geometryPrecision': 5})
+                    feats = j.get('features') or []
+                    for r, k, (la, lo, pn, st) in chunk:
+                        best = None
+                        for f_ in feats:
+                            rings = (f_.get('geometry') or {}).get('rings') or []
+                            if not any(inside(lo, la, rg) for rg in rings): continue
+                            a_ = f_.get('attributes') or {}; rn = str(a_.get(fld) or ''); ac = acres(rings)
+                            under = sum(1 for _, _, (la2, lo2, _n, _s) in chunk if any(inside(lo2, la2, rg) for rg in rings))
+                            tr, why = T.tier(pn, rn, ac, None, under)
+                            cand = (('SURE', 'LIKELY', 'UNLIKELY').index(tr), tr, why, rn, ac, a_.get('OBJECTID') or a_.get('objectid') or a_.get('FID'))
+                            if best is None or cand < best: best = cand
+                        R['pairs'][f'{r}|{u}'] = ext_row(r, k, pn, st, u, fld, best, qs, L)
+                        hits += bool(best and best[1] != 'UNLIKELY')
+            elif 'olyline' in gt:
+                for r, k, (la, lo, pn, st) in pts:
+                    j = get_json(u + '/query', {'geometry': f'{lo},{la}', 'geometryType': 'esriGeometryPoint', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects',
+                                                'distance': 200, 'units': 'esriSRUnit_Meter', 'outFields': '*', 'returnGeometry': 'false'})
+                    best = None
+                    for f_ in j.get('features') or []:
+                        a_ = f_.get('attributes') or {}; rn = str(a_.get(fld) or '')
+                        tr, why = T.tier(pn, rn, None, None, 1)
+                        cand = (('SURE', 'LIKELY', 'UNLIKELY').index(tr), tr, why + ' (a line within 200 m of the pin)', rn, None, a_.get('OBJECTID') or a_.get('objectid') or a_.get('FID'))
+                        if best is None or cand < best: best = cand
+                    R['pairs'][f'{r}|{u}'] = ext_row(r, k, pn, st, u, fld, best, qs, L)
+                    hits += bool(best and best[1] != 'UNLIKELY')
+            else:
+                for r, k, _v in pts: R['pairs'][f'{r}|{u}'] = {'ref': r, 'kind': k, 'result': 'failed', 'why': f'not polygons or lines ({gt})'}
+        except Exception as e:  # noqa: BLE001
+            for r, k, _v in pts:
+                R['pairs'].setdefault(f'{r}|{u}', {'ref': r, 'kind': k, 'result': 'failed', 'why': f'query failed: {str(e)[:70]}'})
+        if u not in seen:
+            queue['rows'].append({'url': u, 'title': f"{str(L.get('title') or '')[:60]} (outside research Oct 30)", 'from': 'outside research Oct 30', 'added': TODAY,
+                                  'closes': sorted({r for r, _ in by[u]})[:50], 'note': f'{hits} SURE / LIKELY of {len(by[u])} assigned parks/trails'})
+            seen.add(u)
+        json.dump(R, open(EXT_OUT, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)   # saved as it goes (a timeout loses nothing)
+    c = {}
+    for v in R['pairs'].values(): c[(v['kind'], v['result'])] = c.get((v['kind'], v['result']), 0) + 1
+    R['summary'] = {f'{k} {r}': x for (k, r), x in sorted(c.items())}
+    R['summary']['pairs left'] = sum(1 for u in by for r, _ in by[u] if f'{r}|{u}' not in R['pairs'])
+    R['summary']['new layers'] = sum(1 for l in R['layers'].values() if l.get('new_to_us'))
+    R['built'] = TODAY
+    json.dump(R, open(EXT_OUT, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    print('::notice title=Outside research::' + '; '.join(f'{k} {v}' for k, v in R['summary'].items()))
+    return R['summary']['pairs left']
+
+
+def ext_row(r, k, pn, st, u, fld, best, qs, L):
+    if not best: return {'ref': r, 'kind': k, 'result': 'no hit', 'why': 'the pin is not inside (or within 200 m of) any record'}
+    _, tr, why, rn, ac, oid = best
+    if tr != 'UNLIKELY':
+        qs.append({'area': st, 'ref': r, 'park': pn, 'tier': tr, 'why': why, 'kind': 'trail' if k == 'Trail' else kind_of(str(L.get('title') or ''), '', pn), 'record': oid,
+                   'record_name': rn[:120], 'acres_approx': ac, 'layer': u, 'agency': str(L.get('title') or '')[:80],
+                   'record_link': f'{u}/query?objectIds={oid}&outFields=*&returnGeometry=false&f=html', 'pota_link': f'https://pota.app/#/park/{r}',
+                   'question': "Is this official record that park (the agency's own boundary for it)? YES / NO", 'answer': None, 'checked_by': None, 'how': None,
+                   'source': 'layer collector (outside research Oct 30)', 'st': st[3:], 'url': u, 'name_field': fld, 'licence': ''})
+    return {'ref': r, 'kind': k, 'result': tr, 'why': why[:120], 'record_name': rn[:80], 'acres': ac}
+
+
 def main():
     want = set(sys.argv[1:])
     log = load(LOG, {}) or {}
@@ -244,7 +374,8 @@ def main():
                 seen.add(url)
             log[k] = {'ref': ref, 'area': f.stem, 'url': url, 'field': field, 'status': status, 'why': why, 'date': TODAY}
             n[status] = n.get(status, 0) + 1
-    crawled = test_crawled(want, log, qs, queue, seen, n)   # Oct 30 (Brandon 10:41 AM): the atlas crawler's layers are tested too, by themselves
+    crawled = test_crawled(want, log, qs, queue, seen, n)
+    if not want: external(log, qs, queue, seen, n)   # HQ Oct 30 7:45 PM: Brandon's outside research   # Oct 30 (Brandon 10:41 AM): the atlas crawler's layers are tested too, by themselves
     LOG.parent.mkdir(parents=True, exist_ok=True)
     json.dump(log, open(LOG, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     json.dump(queue, open(QUEUE, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)

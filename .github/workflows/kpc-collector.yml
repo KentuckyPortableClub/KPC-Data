@@ -49,6 +49,9 @@ jobs:
           F=$( (cat links/.claude/build/research/fable/*.md links/.claude/build/research/agency-atlas/*.md 2>/dev/null | grep -E '^LAYER \||^  - .+: https?://\S+/(MapServer|FeatureServer)/[0-9]+ \(name field'; cat kpcdata/data/intake/found-layers.json kpcdata/data/intake/found-layers-stage2.json 2>/dev/null) | sha1sum | cut -c1-16)
           O=$(cat kpcdata/data/intake/collector-seen.txt 2>/dev/null || echo none)
           echo "fp=$F" >> "$GITHUB_OUTPUT"
+          # Oct 30 (HQ 7:45 PM): Brandon's outside-research pairs still untested = work (from Oct 31; tonight = the one hand run)
+          LEFT=$(python3 -c "import json;print(json.load(open('kpcdata/data/intake/external-results.json'))['summary']['pairs left'])" 2>/dev/null || echo 1)
+          if [ "$LEFT" != 0 ] && [ "$(date -u +%Y%m%d)" -ge 20261031 ] && [ -f kpcdata/data/intake/external-sources-oct30.json ]; then O=changed; fi
           if [ "$F" = "$O" ] && [ "${{ github.event_name }}" = schedule ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Layer collector::nothing new"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi
       - name: Collect + pin-test
         if: ${{ steps.fp.outputs.work == '1' }}
