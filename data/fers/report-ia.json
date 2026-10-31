@@ -10,17 +10,19 @@
    "no pin": 0,
    "pin well outside": 0
   },
-  "missing boundary": 1,
   "official parks": 182,
-  "pairs tested": 207,
-  "pairs whose boxes touch": 207,
-  "parks done by the box test": 43,
+  "pairs reused (nothing changed)": 206,
+  "pairs tested": 206,
+  "pairs whose boxes touch": 206,
+  "parks done by the box test": 44,
   "parks whose outline could not be read": 1,
   "pass": 1,
   "problems": [
    "W&S river corridors joined as area parks: 15",
    "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
    "8 line parks filed under another state but crossing this area kept: US-10093, US-9377, US-9375, US-9376, US-9762, US-9805, US-4566, US-4573",
+   "looked file: small batch: the whole-area look-list is kept as it was",
+   "missing list: small batch: the missing-boundary list is kept as it was",
    "166 spots outside this area left for their own area",
    "same land left out (pins far apart): US-12192+US-4659 32.4 km; US-12192+US-4659 32.4 km; US-12192+US-4659 32.4 km"
   ],
@@ -40,6 +42,7 @@
   },
   "new here only (not counted)": 3,
   "official parks": 182,
+  "pairs reused (nothing changed)": 25,
   "pairs tested": 25,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
@@ -64,6 +67,7 @@
   },
   "new here only (not counted)": 0,
   "official parks": 182,
+  "pairs reused (nothing changed)": 23,
   "pairs tested": 23,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
@@ -115,18 +119,6 @@
    "spots": 37,
    "very tight": 6,
    "water only": 1
-  },
-  "US-NV": {
-   "candidates": 0,
-   "candidates (saved outline only)": 0,
-   "lines": 7,
-   "n-fers": 0,
-   "not sure": 0,
-   "pass1": 7,
-   "pass2": 0,
-   "spots": 7,
-   "very tight": 0,
-   "water only": 0
   }
  }
 }
