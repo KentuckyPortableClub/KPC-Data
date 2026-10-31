@@ -22,6 +22,27 @@
    "status": "done",
    "updated": "2026-10-31"
   },
+  "US-IA": {
+   "camps": 126,
+   "checked": 125,
+   "counts": {
+    "camps": 125,
+    "needs_browser": 0,
+    "needs_key": 32,
+    "no_page": 93,
+    "not_official": 0,
+    "ok": 0,
+    "other": 0,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 0,
+    "with_elevation": 0,
+    "with_sites": 0
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-10-31"
+  },
   "US-KY": {
    "camps": 109,
    "checked": 100,
@@ -68,11 +89,21 @@
  },
  "cell_status": {
   "US-CO": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-IA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-KY": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-TN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
  },
  "fcc": {
   "US-CO": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+   },
+   "read": "2026-10-31"
+  },
+  "US-IA": {
    "cell": {
     "carriers": null,
     "files": [],
@@ -1057,29 +1088,29 @@
  },
  "last": {
   "areas": [
-   "US-CO"
+   "US-IA"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 112,
-   "rested": 794,
+   "requests": 2,
+   "rested": 126,
    "robots": 0,
-   "strikes": 6
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 626,
-   "elevations": 1,
+   "camps": 126,
+   "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 352,
-   "no_page": 0,
+   "needs_key": 32,
+   "no_page": 94,
    "not_official": 0,
-   "ok": 102,
-   "pages_read": 102,
-   "resting": 172,
+   "ok": 0,
+   "pages_read": 0,
+   "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0

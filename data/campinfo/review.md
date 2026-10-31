@@ -7,12 +7,13 @@ Updated 2026-10-31. Every fact in <area>.json carries its source url, read date 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | US-KY | 100 | 51 | 35 | 3 | 0 | 0 | 0 | 0 | 11 | 22 | 51 | 96 |
 | US-TN | 348 | 0 | 81 | 0 | 0 | 0 | 267 | 0 | 0 | 0 | 0 | 348 |
+| US-IA | 125 | 0 | 32 | 0 | 0 | 0 | 93 | 0 | 0 | 0 | 0 | 0 |
 | US-CO | 605 | 102 | 339 | 0 | 0 | 164 | 0 | 0 | 0 | 0 | 266 | 1 |
 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-KY FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built); US-TN FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-KY FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built); US-TN FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-IA FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
@@ -236,6 +237,9 @@ Updated 2026-10-31. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “ions to enhance facilities and visitor experiences. LEARN MORE ALERT: Currently the lower bathhouse at the Carter Caves Campgound is under r”
 
 ## US-TN: 12 random samples (records with facts; seed = the date)
+
+
+## US-IA: 12 random samples (records with facts; seed = the date)
 
 
 ## US-CO: 12 random samples (records with facts; seed = the date)
