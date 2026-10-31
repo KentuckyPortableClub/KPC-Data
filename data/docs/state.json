@@ -137,7 +137,7 @@
    "parks": 851,
    "checked": 851,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-30"
   },
   "US-NJ": {
    "status": "done",
@@ -255,32 +255,33 @@
  "hosts": {
   "map.co.door.wi.us": 1793408717.0830843,
   "iowaculture.gov": 1793486206.7553685,
-  "www.cgcounty.org": 1793486529.479077
+  "www.cgcounty.org": 1793486529.479077,
+  "www.lclt.org": 1793490459.2514486
  },
  "last": {
   "when": "2026-10-30",
   "areas": [
-   "US-MN",
    "US-IA",
-   "US-ND",
    "US-SD",
-   "US-PA",
    "US-NY",
-   "US-NJ",
-   "US-CT"
+   "US-CT",
+   "US-VT",
+   "US-NH",
+   "US-MD",
+   "US-DC"
   ],
   "stat": {
-   "requests": 1650,
-   "parks": 564,
-   "maps_ok": 215,
-   "maps_found": 194,
-   "dates": 12,
-   "rules": 441,
-   "browser": 119,
-   "robots": 63,
-   "strikes": 6,
-   "errors": 6,
-   "skipped_fresh": 180
+   "requests": 1911,
+   "parks": 732,
+   "maps_ok": 454,
+   "maps_found": 388,
+   "dates": 112,
+   "rules": 640,
+   "browser": 118,
+   "robots": 69,
+   "strikes": 3,
+   "errors": 3,
+   "skipped_fresh": 110
   }
  }
 }
