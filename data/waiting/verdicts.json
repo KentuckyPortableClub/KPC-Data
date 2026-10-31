@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T08:19Z",
+ "checked": "2026-10-31T08:20Z",
  "switched_on": false,
  "results": [
   {
@@ -72,6 +72,15 @@
   },
   {
    "path": "data/campinfo/US-NV.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-SC.json",
    "kind": "campinfo",
    "why": [],
    "notes": [
