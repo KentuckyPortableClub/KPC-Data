@@ -126792,11 +126792,11 @@
   },
   "https://gis.nature.cz/arcgis/services/Aplikace/Opendata/MapServer": {
    "error": "RuntimeError: answer robots",
-   "tries": 1
+   "tries": 2
   },
   "https://cbs1.tarimorman.gov.tr/server/rest/services/KorunanAlanlarWFS/MapServer": {
    "error": "RuntimeError: answer rest",
-   "tries": 1
+   "tries": 2
   },
   "https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/10": {
    "new_to_us": true,
@@ -127693,7 +127693,7 @@
   },
   "https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer": {
    "error": "RuntimeError: Service not found",
-   "tries": 1
+   "tries": 2
   },
   "https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/20": {
    "new_to_us": true,
@@ -128106,7 +128106,7 @@
    "new_to_us": true,
    "host": "gisserver.mepa.gov.ge",
    "error": "RuntimeError: answer rest",
-   "tries": 1
+   "tries": 2
   },
   "https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/0": {
    "new_to_us": true,
@@ -128323,7 +128323,7 @@
    "new_to_us": true,
    "host": "mapserver.doc.govt.nz",
    "error": "RuntimeError: answer rest",
-   "tries": 1
+   "tries": 2
   },
   "https://geoservicios.sernanp.gob.pe/arcgis/rest/services/servicios_ogc/peru_sernanp_0102/MapServer/0": {
    "new_to_us": true,
@@ -128357,7 +128357,7 @@
    "new_to_us": true,
    "host": "services7.arcgis.com",
    "error": "RuntimeError: Invalid URL",
-   "tries": 1
+   "tries": 2
   },
   "https://visor.infona.gov.py/server/rest/services/Areas_Silvestres_Protegidas/Areas_Silvestres_Protegidas/MapServer/0": {
    "new_to_us": true,
@@ -128391,7 +128391,7 @@
    "new_to_us": true,
    "host": "geohub.gov.si",
    "error": "RuntimeError: Service not found",
-   "tries": 1
+   "tries": 2
   },
   "https://gis1.ljubljana.si/arcgis/rest/services/MOLENP/MapServer/35": {
    "new_to_us": true,
