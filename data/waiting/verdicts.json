@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T08:32Z",
+ "checked": "2026-10-31T08:47Z",
  "switched_on": false,
  "results": [
   {
@@ -26,6 +26,24 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/campinfo/US-CO.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-IA.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/campinfo/US-KY.json",
    "kind": "campinfo",
    "why": [],
@@ -33,7 +51,54 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/campinfo/US-MA.json",
+   "kind": "campinfo",
+   "why": [
+    "F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/campinfo/US-MT.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-NV.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-SC.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/campinfo/US-TN.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-WA.json",
    "kind": "campinfo",
    "why": [],
    "notes": [
@@ -526,7 +591,42 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/us-key/US-AK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-AL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-AR.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/us-key/US-DC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-GA.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-IL.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -554,6 +654,13 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/us-key/US-MO.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/us-key/US-MS.json",
    "kind": "key",
    "why": [],
@@ -561,7 +668,28 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/us-key/US-NC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-OK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/us-key/US-PA.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-TN.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -614,6 +742,15 @@
    "kind": "key",
    "why": [],
    "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/refresh.json",
+   "kind": "key",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "PASS"
   },
   {

@@ -1,13 +1,25 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key'). Written by kpc_key_summary.py.",
- "made": "2026-10-31 03:47 UTC",
+ "made": "2026-10-31 08:47 UTC",
  "totals": {
-  "gained": 6,
+  "gained": 11,
   "lost": 0,
-  "pieces_changed": 35,
+  "pieces_changed": 36,
   "grade_changed": 0
  },
  "per_area": {
+  "US-AK": {
+   "gained": 3,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-AL": {
+   "gained": 2,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
   "US-IN": {
    "gained": 6,
    "lost": 0,
@@ -16,6 +28,101 @@
   }
  },
  "gained": [
+  {
+   "area": "US-AK",
+   "ref": "US-11854",
+   "name": "Pinnell Mountain National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11854",
+     "Pinnell Mountain National Recreation Trail",
+     0,
+     "official trail line (State of Alaska Division of Parks and O"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11854"
+  },
+  {
+   "area": "US-AK",
+   "ref": "US-4570",
+   "name": "Iditarod National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4570",
+     "Iditarod National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4570"
+  },
+  {
+   "area": "US-AK",
+   "ref": "US-7245",
+   "name": "Juneau State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl7245",
+     "Juneau State Trail",
+     0,
+     "official trail line (Alaska Department of Natural Resources "
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7245"
+  },
+  {
+   "area": "US-AL",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3791",
+     "Trail of Tears National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3791"
+  },
+  {
+   "area": "US-AL",
+   "ref": "US-4560",
+   "name": "Natchez Trace Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4560",
+     "Natchez Trace National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4560"
+  },
   {
    "area": "US-IN",
    "ref": "US-5682",
@@ -135,6 +242,63 @@
  "grade_changed": [],
  "sample": [
   {
+   "area": "US-AL",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3791",
+     "Trail of Tears National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3791"
+  },
+  {
+   "area": "US-AK",
+   "ref": "US-11854",
+   "name": "Pinnell Mountain National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11854",
+     "Pinnell Mountain National Recreation Trail",
+     0,
+     "official trail line (State of Alaska Division of Parks and O"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11854"
+  },
+  {
+   "area": "US-AL",
+   "ref": "US-4560",
+   "name": "Natchez Trace Trail National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4560",
+     "Natchez Trace National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4560"
+  },
+  {
    "area": "US-IN",
    "ref": "US-5682",
    "name": "Moores Creek State Recreation Area",
@@ -152,6 +316,44 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-5682"
+  },
+  {
+   "area": "US-AK",
+   "ref": "US-4570",
+   "name": "Iditarod National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4570",
+     "Iditarod National Historic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4570"
+  },
+  {
+   "area": "US-AK",
+   "ref": "US-7245",
+   "name": "Juneau State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl7245",
+     "Juneau State Trail",
+     0,
+     "official trail line (Alaska Department of Natural Resources "
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7245"
   },
   {
    "area": "US-IN",
