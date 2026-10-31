@@ -1,0 +1,859 @@
+{
+ "area": "US-NE",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0441": {
+   "n": "Boyer Chute National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/boyer_chute/",
+   "checked": "2026-10-29",
+   "map": {
+    "url": "https://www.fws.gov/refuge/boyer-chute/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-29",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/boyer-chute/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0442": {
+   "n": "Crescent Lake National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/crescent_lake/",
+   "checked": "2026-10-29",
+   "map": {
+    "url": "https://www.fws.gov/refuge/crescent-lake/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "a link on the park's page ('Interactive Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-29",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/locations/crescent-lake-national-wildlife-refuge/rules-and-policies",
+    "how": "a link on the park's page ('Rules and Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0443": {
+   "n": "Fort Niobrara National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/fort_niobrara/",
+   "checked": "2026-10-29",
+   "map": {
+    "url": "https://www.fws.gov/refuge/fort-niobrara/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "a link on the park's page ('Interactive Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-29",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/locations/fort-niobrara-national-wildlife-refuge/rules-and-policies",
+    "how": "a link on the park's page ('Rules and Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0445": {
+   "n": "North Platte National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/north_platte/",
+   "checked": "2026-10-29",
+   "map": {
+    "url": "https://www.fws.gov/refuge/north-platte/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "a link on the park's page ('Interactive Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-29",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/locations/north-platte-national-wildlife-refuge/rules-and-policies",
+    "how": "a link on the park's page ('Rules and Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "is managed by the Nebraska Game and Parks Commission"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0446": {
+   "n": "Funk WPA Wetland Management District",
+   "t": "Wetland Management District",
+   "page": "https://www.fws.gov/refuge/rainwater_basin_wmd/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/rainwater-basin-wetland-management-district)",
+    "how": "a link on the park's page ('Map')"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/rainwater-basin-wetland-management-district/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/refuge/rainwater-basin-wetland-management-district/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12337": {
+   "n": "Cub Creek (northern) State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/cub-creek-recreation-area-northern",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-2608": {
+   "n": "Ashfall Fossil Beds State Historical Park",
+   "t": "State Historical Park",
+   "page": "http://outdoornebraska.gov/ashfall/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-3373": {
+   "n": "Chimney Rock National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/nr/travel/scotts_bluff/chimney_rock.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-3374": {
+   "n": "Neligh Mill State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://history.nebraska.gov/visit/mill",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (history.nebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-3375": {
+   "n": "Stolley National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.giparks.com/departments/parks-and-recreation/parks-division/park-directory/stolley-park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-3377": {
+   "n": "Schilling Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://visitcasscounty.com/directory/schilling-wildlife-management-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-3483": {
+   "n": "Atlanta National Waterfowl Production Area",
+   "t": "National Waterfowl Production Area",
+   "page": "https://www.fws.gov/refuge/Rainwater_Basin_WMD/wildlife_and_habitat/Atlanta/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-3484": {
+   "n": "Peterson National Waterfowl Production Area",
+   "t": "National Waterfowl Production Area",
+   "page": "https://www.fws.gov/refuge/Rainwater_Basin_WMD/wildlife_and_habitat/WPA/Peterson/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-3485": {
+   "n": "Jensen Lagoon National Waterfowl Production Area",
+   "t": "National Waterfowl Production Area",
+   "page": "https://www.fws.gov/refuge/rainwater-basin-wetland-management-district/map",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/rainwater-basin-wetland-management-district/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-3486": {
+   "n": "Moger National Waterfowl Production Area",
+   "t": "National Waterfowl Production Area",
+   "page": "https://nebraskabirdingtrails.com/moger-waterfowl-production-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-3488": {
+   "n": "Alberding Lagoon National Wildlife Management Area",
+   "t": "National Wildlife Management Area",
+   "page": "https://nebraskabirdingtrails.com/moger-waterfowl-production-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-3489": {
+   "n": "Massie National Waterfowl Production Area",
+   "t": "National Waterfowl Production Area",
+   "page": "https://www.fws.gov/refuge/Rainwater_Basin_WMD/wildlife_and_habitat/WPA/Massie/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-3490": {
+   "n": "Smith Lagoon National Waterfowl Production Area",
+   "t": "National Waterfowl Production Area",
+   "page": "https://www.fws.gov/refuge/Rainwater_Basin_WMD/wildlife_and_habitat/WPA/Smith/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-3492": {
+   "n": "Willa Cather Memorial Prairie State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://www.willacather.org/learn/cather-prairie",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.willacather.org/collections/collections-policies",
+    "how": "a link on the park's page ('Collections Policies')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-3493": {
+   "n": "Nine Mile Prairie National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://grassland.unl.edu/nine-mile-prairie",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4010": {
+   "n": "Heron Haven State Park",
+   "t": "State Park",
+   "page": "https://www.papionrd.org/recreation-wildlife/parks-and-trails/heron-haven/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-4011": {
+   "n": "Chalco Hills State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.papionrd.org/recreation-wildlife/parks-and-trails/chalco-hills-at-wehrspann-lake/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 https://www.papionrd.org/wp-content/uploads/2025/06/pPNRD-0031_MAP_Cha)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "https://www.papionrd.org/wp-content/uploads/2025/06/pPNRD-0031_MAP_Chalco_09-12.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-4012": {
+   "n": "Elkhorn Crossing State Park",
+   "t": "State Park",
+   "page": "https://www.nrdnet.org/rec-area/elkhorn-crossing-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4013": {
+   "n": "Prairie View State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/prairie-view-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4015": {
+   "n": "Platte River Landing State Park",
+   "t": "State Park",
+   "page": "https://www.nrdnet.org/rec-area/platte-river-landing",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4017": {
+   "n": "Lincoln Saline Wetland State Park",
+   "t": "State Park",
+   "page": "https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Saline-Wetlands",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/saline-wetlands/conservationpartnershipbrochure.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2008-04-07",
+    "date_how": "file stamp 2008 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Saline Wetlands Conservation Partnership Brochure (PDF, 280KB)')",
+    "posted": "Feb 26, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2008: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (lincoln.ne.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4025": {
+   "n": "Buckley Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/buckley-creek",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4027": {
+   "n": "Lone Star State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/lone-star",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4036": {
+   "n": "Walnut Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://visitnebraska.com/papillion/walnut-creek-lake-and-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-4566": {
+   "n": "California National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/cali/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/cali/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/cali/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4572": {
+   "n": "Lewis and Clark National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/lecl/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/lecl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4573": {
+   "n": "Mormon Pioneer National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/mopi/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/mopi/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "August 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/mopi/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4576": {
+   "n": "Oregon National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/oreg/index.htm",
+   "checked": "2026-10-31",
+   "map": null,
+   "rules": null,
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 33,
+  "map ok": 8,
+  "map found by the bot": 6,
+  "date on the map": 1,
+  "posted date only": 3,
+  "date unknown": 4,
+  "no map": 25,
+  "rules ok": 10,
+  "needs browser": 5,
+  "handover hints": 0,
+  "runs hints": 2,
+  "host resting / robots": 0,
+  "map names the park": 8,
+  "region overview only": 0
+ }
+}

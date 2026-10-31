@@ -224,31 +224,32 @@
    "updated": "2026-10-29"
   },
   "US-OK": {
-   "status": "failed",
+   "status": "done",
    "parks": 205,
-   "updated": "2026-10-31",
-   "why": "maps 97 -> 80"
+   "checked": 205,
+   "left": 0,
+   "updated": "2026-10-31"
   },
   "US-TX": {
    "status": "done",
    "parks": 222,
    "checked": 222,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-31"
   },
   "US-KS": {
    "status": "done",
    "parks": 145,
    "checked": 145,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-31"
   },
   "US-NE": {
    "status": "partial",
    "parks": 198,
-   "checked": 5,
-   "left": 193,
-   "updated": "2026-10-29"
+   "checked": 33,
+   "left": 165,
+   "updated": "2026-10-31"
   }
  },
  "hosts": {
@@ -266,26 +267,26 @@
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-MD",
-   "US-DC",
-   "US-AR",
    "US-OK",
    "US-TX",
    "US-KS",
-   "US-NE"
+   "US-NE",
+   "US-CO",
+   "US-WY",
+   "US-ID"
   ],
   "stat": {
-   "requests": 1255,
-   "parks": 548,
-   "maps_ok": 348,
-   "maps_found": 295,
-   "dates": 6,
-   "rules": 261,
-   "browser": 301,
-   "robots": 3,
-   "strikes": 15,
-   "errors": 12,
-   "skipped_fresh": 176
+   "requests": 1664,
+   "parks": 782,
+   "maps_ok": 418,
+   "maps_found": 308,
+   "dates": 50,
+   "rules": 411,
+   "browser": 218,
+   "robots": 239,
+   "strikes": 0,
+   "errors": 0,
+   "skipped_fresh": 0
   }
  }
 }
