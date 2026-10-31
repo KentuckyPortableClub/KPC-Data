@@ -1,0 +1,530 @@
+{
+ "request": "requests/11-no2-04.json",
+ "id": "11-no2-04",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NO recheck: screenshots in order: 1=US-12220 record, 2=US-12220 map; 3=US-7405 record, 4=US-7405 map; 5=US-12938 record, 6=US-12938 map; 7=US-10464 record, 8=US-10464 map; Record pages are whole-page shots; map shots: the POTA pin is the marker in the middle (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "items": [
+   {
+    "ref": "US-12220",
+    "park": "The Forks Campground BLM Recreation Management Area",
+    "record": "Jarbidge Forks",
+    "area": "US-ID"
+   },
+   {
+    "ref": "US-7405",
+    "park": "Melvern River State Fishing Lake",
+    "record": "Melvern Recreation Area",
+    "area": "US-KS"
+   },
+   {
+    "ref": "US-12938",
+    "park": "Laurel Industrial Forest Land State Wildlife Area",
+    "record": "Industrial Forest Lands",
+    "area": "US-DE"
+   },
+   {
+    "ref": "US-10464",
+    "park": "Chena Wayside State Recreation Site",
+    "record": "Chena River State Recreation Site",
+    "area": "US-AK"
+   }
+  ],
+  "urls": [
+   {
+    "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=838&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Fidarcgis%2Frest%2Fservices%2Frecreation%2FBLM_ID_Recreation_Area_Poly%2FMapServer%2F0&center=-115.39%2C42.0491&level=14&marker=-115.39%2C42.0491%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2481&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-95.7036%2C38.5199&level=14&marker=-95.7036%2C38.5199%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/2/query?objectIds=309&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fenterprise.firstmap.delaware.gov%2Farcgis%2Frest%2Fservices%2FBiota%2FDE_Forestry%2FMapServer%2F2&center=-75.5079%2C38.4617&level=14&marker=-75.5079%2C38.4617%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2/query?objectIds=122&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Farcgis.dnr.alaska.gov%2Farcgis%2Frest%2Fservices%2FDPOR%2FPark_Boundary_Facility%2FMapServer%2F2&center=-147.807%2C64.8389&level=14&marker=-147.807%2C64.8389%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   }
+  ],
+  "report": "Chat 11 NO recheck: screenshots in order: 1=US-12220 record, 2=US-12220 map; 3=US-7405 record, 4=US-7405 map; 5=US-12938 record, 6=US-12938 map; 7=US-10464 record, 8=US-10464 map; Record pages are whole-page shots; map shots: the POTA pin is the marker in the middle (zoom 14)."
+ },
+ "answered": "2026-10-31 14:26Z",
+ "results": [
+  {
+   "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=838&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=838&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: BLM ID Recreation Area Poly (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > recreation > BLM_ID_Recreation_Area_Poly (MapServer) > BLM ID Recreation Area Poly > query API Reference\nQuery: BLM ID Recreation Area Poly (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 838\nFET_TYPE: 4\nFET_SUBTYPE: SRMA\nFET_NAME: Jarbidge Forks\nADM_UNIT_CD: IDT01000\nADMIN_ST: ID\nGIS_ACRES: 1981.69688857\nWEB_DISPLAY: Yes\nDESCRIPTION: null\nUNIT_NAME: Jarbridge Field Office\nWEB_LINK: null\nCOORD_SRC_TYPE:\nGlobalID: {2FB1A8FD-A0A4-4B1E-98AD-463924AD6A43}\nShape.STArea(): 8019642.78075887\nShape.STLength(): 21358.534040918592",
+   "links": [
+    {
+     "url": "https://gis.blm.gov/idarcgis/login/?returnUrl=https://gis.blm.gov/idarcgis/rest/services&app=rest",
+     "text": "Login"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services/recreation",
+     "text": "recreation"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer",
+     "text": "BLM_ID_Recreation_Area_Poly (MapServer)"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0",
+     "text": "BLM ID Recreation Area Poly"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/help/en/rest/router.html?f=rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/838",
+     "text": "838"
+    }
+   ],
+   "screenshot": "answers/11-no2-04-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Fidarcgis%2Frest%2Fservices%2Frecreation%2FBLM_ID_Recreation_Area_Poly%2FMapServer%2F0&center=-115.39%2C42.0491&level=14&marker=-115.39%2C42.0491%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Fidarcgis%2Frest%2Fservices%2Frecreation%2FBLM_ID_Recreation_Area_Poly%2FMapServer%2F0&center=-115.39%2C42.0491&level=14&marker=-115.39%2C42.0491%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | Bureau of Land Management (BLM), Idaho State Office\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-no2-04-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2481&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2481&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 2481\nFeatClass: Fee\nCategory: Fee\nOwn_Type: UNK\nOwn_Name: UNK\nLoc_Own: Unknown\nMang_Type: FED\nMang_Name: USACE\nLoc_Mang: Kansas City\nDes_Tp: REC\nLoc_Ds: Recreation Area\nUnit_Nm: Melvern Recreation Area\nLoc_Nm: MELVERN\nState_Nm: KS\nAgg_Src: USGS_PADUS1_4Fee_USACE_174_fee\nGIS_Src: USACE_174_fee.shp\nSrc_Date: 2015/03/23\nGIS_Acres: 23490\nSource_PAID: G510950\nWDPA_Cd: 0\nPub_Access: OA\nAccess_Src: GAP - Default\nAccess_Dt: 2024\nGAP_Sts: 4\nGAPCdSrc: GAP - Default\nGAPCdDt: 2024\nIUCN_Cat: Unassigned\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est:\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: USACE\nTranspPct: null\nShape_Length: 186361.2956535176\nShape_Area: 1.5546268327109137E8",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/2481",
+     "text": "2481"
+    }
+   ],
+   "screenshot": "answers/11-no2-04-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-95.7036%2C38.5199&level=14&marker=-95.7036%2C38.5199%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-95.7036%2C38.5199&level=14&marker=-95.7036%2C38.5199%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nMissouri Dept. of Conservation | Missouri DNR | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-no2-04-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/2/query?objectIds=309&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/2/query?objectIds=309&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Urban Tree Canopy Estimates (ID: 2)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > Biota > DE_Forestry (MapServer) > Urban Tree Canopy Estimates > query API Reference\nQuery: Urban Tree Canopy Estimates (ID: 2)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 309\nTOTALACRES: 2661.9\nCANOPYACRES: 2380.4\nCANOPYPERCENT: 89.4\nNAME: Industrial Forest Lands\nAREATYPE: 2\nSHAPE.AREA: 1.76625880020518E7\nSHAPE.LEN: 59473.3198791154",
+   "links": [
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota",
+     "text": "Biota"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer",
+     "text": "DE_Forestry (MapServer)"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/2",
+     "text": "Urban Tree Canopy Estimates"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/2/query",
+     "text": "query"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/help/en/rest/router.html?f=rest/services/Biota/DE_Forestry/MapServer/2/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/2/309",
+     "text": "309"
+    }
+   ],
+   "screenshot": "answers/11-no2-04-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fenterprise.firstmap.delaware.gov%2Farcgis%2Frest%2Fservices%2FBiota%2FDE_Forestry%2FMapServer%2F2&center=-75.5079%2C38.4617&level=14&marker=-75.5079%2C38.4617%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fenterprise.firstmap.delaware.gov%2Farcgis%2Frest%2Fservices%2FBiota%2FDE_Forestry%2FMapServer%2F2&center=-75.5079%2C38.4617&level=14&marker=-75.5079%2C38.4617%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nDelaware FirstMap | VGIN | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS | Analysis by J Kroon, Delaware Department of Agriculture Tree Canopy Cover data extracted from Delaware High-Resolution Land Cover dataset created by the University of Vermont Spatial Analysis Lab - 2016 - based on 2014 NASA LIDAR, 2013 USDA leaf-on orthoimagery, and 2012 State of Delaware leaf-off orthoimagery. The Land Cover dataset was funded by the William Penn Foundation in cooperation with Shippensburg University. http://letters-sal.blogspot.com/#!/2016/03/delaware-high-resolution-land-cover.html Delaware community and municipality boundaries from the Delaware Office of State Planning Coordination.\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-no2-04-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2/query?objectIds=122&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2/query?objectIds=122&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: ASP Boundary (ID: 2)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > DPOR > Park_Boundary_Facility (MapServer) > ASP Boundary > query API Reference\nQuery: ASP Boundary (ID: 2)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 122\nPARKNAME: Chena River State Recreation Site\nREGION: Northern\nNAME: Chena River\nLWCF: All\nDEV_GRANTS: No\nRFRSHDT: 1793419537000\nGlobalID: {F715180E-DACA-4515-8654-11D9DFC70E3C}\nShape.STArea(): 110874.005901315\nShape.STLength(): 1377.059142023834\nPRKTYPABRV: SRS\nPRMRYLASFL: ADL 39240\nDTPRKCRTD: null\nMI_LABEL: Chena River State Recreation Site\nUID_: 1027\nACREAGE: 27.4",
+   "links": [
+    {
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/login?returnUrl=https://arcgis.dnr.alaska.gov/arcgis/rest/services",
+     "text": "Login"
+    },
+    {
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR",
+     "text": "DPOR"
+    },
+    {
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer",
+     "text": "Park_Boundary_Facility (MapServer)"
+    },
+    {
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
+     "text": "ASP Boundary"
+    },
+    {
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2/query",
+     "text": "query"
+    },
+    {
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/help/en/rest/router.html?f=rest/services/DPOR/Park_Boundary_Facility/MapServer/2/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2/122",
+     "text": "122"
+    }
+   ],
+   "screenshot": "answers/11-no2-04-7.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Farcgis.dnr.alaska.gov%2Farcgis%2Frest%2Fservices%2FDPOR%2FPark_Boundary_Facility%2FMapServer%2F2&center=-147.807%2C64.8389&level=14&marker=-147.807%2C64.8389%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Farcgis.dnr.alaska.gov%2Farcgis%2Frest%2Fservices%2FDPOR%2FPark_Boundary_Facility%2FMapServer%2F2&center=-147.807%2C64.8389&level=14&marker=-147.807%2C64.8389%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | USGS | METI/NASA | EPA | NPS | US Census Bureau | USDA | USFWS | Alaska Department of Natural Resources\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-no2-04-8.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 132,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 4
+ },
+ "short": "8 result(s), 8 read OK, 8 screenshot(s)"
+}
