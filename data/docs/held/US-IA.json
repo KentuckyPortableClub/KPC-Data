@@ -2365,9 +2365,17 @@
    "page": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Walnut-Woods-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.iowadnr.gov/media/6638/download?inline",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Walnut Woods State Park map and flyer \n(791.84 KB)\n.pdf')",
+    "page": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Walnut-Woods-State-Park",
+    "posted": "Mar 25, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.iowadnr.gov/places-go/state-parks/parks-use-rules-guidelines",
@@ -2378,11 +2386,10 @@
    "agency": "government agency (iowadnr.gov)",
    "runs": [],
    "handover": [],
-   "notes": [
-    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
-   ],
+   "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-31"
   },
   "US-2327": {
    "n": "Wapsipinicon State Park",
@@ -4857,14 +4864,14 @@
  "read": "2026-10-31",
  "counts": {
   "parks": 181,
-  "map ok": 63,
-  "map found by the bot": 58,
+  "map ok": 64,
+  "map found by the bot": 59,
   "date on the map": 6,
-  "posted date only": 49,
+  "posted date only": 50,
   "date unknown": 8,
-  "no map": 118,
+  "no map": 117,
   "rules ok": 124,
-  "needs browser": 1,
+  "needs browser": 0,
   "handover hints": 0,
   "runs hints": 1,
   "host resting / robots": 0,

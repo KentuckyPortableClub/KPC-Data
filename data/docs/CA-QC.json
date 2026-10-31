@@ -1,0 +1,473 @@
+{
+ "area": "CA-QC",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "CA-0015": {
+   "n": "Charlevoix Biosphere Reserve",
+   "t": "Biosphere Reserve",
+   "page": "https://www.unesco.org/en/man-and-biosphere/charlevoix-biosphere-reserve-canada",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "CA-0049": {
+   "n": "Lac Saint-Pierre Biosphere Reserve",
+   "t": "Biosphere Reserve",
+   "page": "https://www.unesco.org/en/mab/lac-saint-pierre",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://biodiversity.unesco.org/explore/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('World map of biosphere reserves')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": false,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (biodiversity.unesco.org)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.unesco.org/en",
+    "how": "a link on the park's page ('Terms Policies')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-0054": {
+   "n": "Manicouagan-Uapishka (Monts Groulx) Biosphere Reserve",
+   "t": "Biosphere Reserve",
+   "page": "https://www.unesco.org/en/mab/manicouagan-uapishka",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://biodiversity.unesco.org/explore/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('World map of biosphere reserves')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": false,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (biodiversity.unesco.org)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.unesco.org/en",
+    "how": "a link on the park's page ('Terms Policies')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-0511": {
+   "n": "Mount Royal Regional Park",
+   "t": "Regional Park",
+   "page": "https://montreal.ca/en/places/parc-du-mont-royal",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (montreal.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-0514": {
+   "n": "Parc de l'Île-Charron Recreation Park",
+   "t": "Recreation Park",
+   "page": "https://www.longueuil.quebec/fr/services/parcs-et-espaces-verts/parc-de-lile-charron",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://geohub.longueuil.quebec/pages/cartes-interactives",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Cartes interactives Ouvre dans une nouvelle fenêtre')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": false,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (geohub.longueuil.quebec)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.longueuil.quebec/services/reglements-municipaux",
+    "how": "a link on the park's page ('Règlements municipaux Règlements municipaux')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (ok)",
+   "ver": 7
+  },
+  "CA-0515": {
+   "n": "Parc de la Chute-Montmorency Provincial Park",
+   "t": "Provincial Park",
+   "page": "https://www.sepaq.com/destinations/parc-chute-montmorency/planifier/index.dot?language_id=1",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Québec (Sépaq / government)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "CA-0956": {
+   "n": "Boisé de Marly Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://www.capitale.gouv.qc.ca/sites-de-la-capitale/parcs/boise-de-marly/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Québec (Sépaq / government)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "CA-0957": {
+   "n": "Boisé de Tequenonday Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://www.capitale.gouv.qc.ca/sites-de-la-capitale/parcs/boise-de-tequenonday/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a government data / policies page, not this park's map (chat 11 regrade 2) https://www.google.com/maps/place/Bois%C3%A9+Tequenonday/@46.759237,-7)",
+    "how": "a link on the park's page ('1691, rue impasse des Cageux, Québec')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Québec (Sépaq / government)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.google.com/maps/place/Bois%C3%A9+Tequenonday/@46.759237,-71.2703165,15z/data=!4m6!3m5!1s0x4cb8914f1f3dc9e1:0xd0990c65cdc11384!8m2!3d46.759237!4d-71.2703165!16s%2Fg%2F11f0gmx1dq?sa=X&ved=2ahUKEwje4PnB4Y-DAxW-L1kFHVLGB74Q_BJ6BAgKEAA&entry=tts",
+     "status": "opened, a government data / policies page, not this park's map (chat 11 regrade 2)",
+     "kind": "denied page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('1691, rue impasse des Cageux, Québec')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "CA-0958": {
+   "n": "Boisé des Compagnons-de-Cartier Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://www.parcsnaturelsquebec.org/quebec/sainte-foy-sillery-cap-rouge/secteur-du-boise-des-compagnons-de-cartier/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 http://www.capitale.gouv.qc.ca/ckeditor_assets/attachments/127/plan_co)",
+    "how": "a link on the park's page ('Carte')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "http://www.capitale.gouv.qc.ca/ckeditor_assets/attachments/127/plan_compagnonsdecartier.pdf",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Carte')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (capitale.gouv.qc.ca)"
+    }
+   ],
+   "ver": 7
+  },
+  "CA-0959": {
+   "n": "La Promenade Samuel-De Champlain Provincial Park",
+   "t": "Provincial Park",
+   "page": "http://www.capitale.gouv.qc.ca/sites-de-la-capitale/parcs/promenade-samuel-de-champlain/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Québec (Sépaq / government)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-0960": {
+   "n": "Morgan Arboretum Forest Reserve",
+   "t": "Forest Reserve",
+   "page": "https://www.mcgill.ca/morganarboretum/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (mcgill.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-0961": {
+   "n": "Parc André-J.-Côté Regional Park",
+   "t": "Regional Park",
+   "page": "https://candiac.ca/parc/parc-andre-j-cote",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://candiac.ca/parc/halloween; opened, a page that does not name this park (a generic agency page is not its map) https://candiac.ca/activites/carte-du-citoyen)",
+    "how": "a link on the park's page ('Halloween - carte interactive')"
+   },
+   "rules": {
+    "url": "https://candiac.ca/services/reglementation/vente-debarras-vente-de-garage",
+    "how": "a link on the park's page ('Vente-débarras')",
+    "status": "ok"
+   },
+   "agency": "government agency (candiac.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://candiac.ca/parc/halloween",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Halloween - carte interactive')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://candiac.ca/activites/carte-du-citoyen",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Carte du citoyen')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "CA-0962": {
+   "n": "Parc Angrignon Regional Park",
+   "t": "Regional Park",
+   "page": "https://montreal.ca/lieux/parc-angrignon",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "http://ville.montreal.qc.ca/pls/portal/docs/PAGE/M_CHANTIER_FR/MEDIA/DOCUMENTS/25015_PARC%20ANGRIGNON%2011X17_ETE%20(1).PDF",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2021-10-15",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Carte du parc Angrignon en été')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 3,
+    "via": "linked from the agency page (ville.montreal.qc.ca)",
+    "kind_note": "combined map: covers 3 units",
+    "date_label": "2021"
+   },
+   "rules": {
+    "url": "https://montreal.ca/services/recherche-de-reglements",
+    "how": "a link on the park's page ('Règlements')",
+    "status": "ok"
+   },
+   "agency": "government agency (montreal.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-0964": {
+   "n": "Parc Cartier-Roberval Archeological Reserve",
+   "t": "Archeological Reserve",
+   "page": "https://www.capitale.gouv.qc.ca/sites-de-la-capitale/sites/site-archeologique-cartier-roberval/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Québec (Sépaq / government)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-0965": {
+   "n": "Parc Centenaire William Cosgrove Recreation Park",
+   "t": "Recreation Park",
+   "page": "https://ville.ddo.qc.ca/jouer/sports-et-loisirs/parcs-et-terrains-de-jeux/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ville.ddo.qc.ca/wp-content/uploads/2023/05/Pancarte_Courts_ten; opened, a page that does not name this park (a generic agency page is not its map) https://ville.ddo.qc.ca/carte-interactive/)",
+    "how": "a link on the park's page ('Règlements terrains de tennis et pickleball')"
+   },
+   "rules": null,
+   "agency": "government agency (ville.ddo.qc.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://ville.ddo.qc.ca/wp-content/uploads/2023/05/Pancarte_Courts_tennis_pickleball_2021.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2023-05-09",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Règlements terrains de tennis et pickleball')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://ville.ddo.qc.ca/carte-interactive/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Carte interactive')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 15,
+  "map ok": 4,
+  "map found by the bot": 4,
+  "date on the map": 1,
+  "posted date only": 0,
+  "date unknown": 3,
+  "no map": 11,
+  "rules ok": 5,
+  "needs browser": 2,
+  "handover hints": 0,
+  "runs hints": 0,
+  "host resting / robots": 0,
+  "map names the park": 1,
+  "region overview only": 0
+ }
+}

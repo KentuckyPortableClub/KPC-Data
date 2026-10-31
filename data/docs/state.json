@@ -109,7 +109,7 @@
    "status": "failed",
    "parks": 181,
    "updated": "2026-10-31",
-   "why": "maps 82 -> 63"
+   "why": "maps 82 -> 64"
   },
   "US-ND": {
    "status": "done",
@@ -357,10 +357,17 @@
    "updated": "2026-10-31"
   },
   "CA-ON": {
-   "status": "partial",
+   "status": "done",
    "parks": 1180,
-   "checked": 656,
-   "left": 524,
+   "checked": 1180,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-QC": {
+   "status": "partial",
+   "parks": 838,
+   "checked": 15,
+   "left": 823,
    "updated": "2026-10-31"
   }
  },
@@ -392,7 +399,8 @@
   "www.fws.org": 1793528476.71733,
   "www.intermountainhistories.org": 1793534667.8100796,
   "www.wildlife.utah.gov": 1793535065.415651,
-  "www.chapel-hill-north-forest-trails.ca": 1793541853.2473147
+  "www.chapel-hill-north-forest-trails.ca": 1793541853.2473147,
+  "waterfalls.hamilton.ca": 1793542997.730953
  },
  "last": {
   "when": "2026-10-31",
@@ -407,17 +415,17 @@
    "CA-MB"
   ],
   "stat": {
-   "requests": 1954,
-   "parks": 813,
-   "maps_ok": 446,
-   "maps_found": 441,
-   "dates": 13,
-   "rules": 513,
-   "browser": 111,
-   "robots": 6,
-   "strikes": 3,
-   "errors": 3,
-   "skipped_fresh": 24
+   "requests": 1854,
+   "parks": 720,
+   "maps_ok": 303,
+   "maps_found": 298,
+   "dates": 17,
+   "rules": 554,
+   "browser": 230,
+   "robots": 13,
+   "strikes": 4,
+   "errors": 4,
+   "skipped_fresh": 656
   }
  }
 }
