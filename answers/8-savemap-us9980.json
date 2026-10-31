@@ -1,0 +1,35 @@
+{
+ "request": "requests/8-savemap-us9980.json",
+ "id": "8-savemap-us9980",
+ "chat": 8,
+ "kind": "save-map",
+ "report": "",
+ "asked": {
+  "chat": 8,
+  "kind": "save-map",
+  "ref": "US-9980",
+  "name": "Willamette River Greenway and Water State Trail",
+  "agency": "Oregon",
+  "url": "https://www.oregon.gov/oprd/PRP/Documents/02242026_ORRecTrailsPlan_FINAL.pdf",
+  "pages": 1,
+  "hint": "willamette"
+ },
+ "answered": "2026-10-31 07:50Z",
+ "results": [
+  {
+   "url": "https://www.oregon.gov/oprd/PRP/Documents/02242026_ORRecTrailsPlan_FINAL.pdf",
+   "map_url": "https://www.oregon.gov/oprd/PRP/Documents/02242026_ORRecTrailsPlan_FINAL.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}
