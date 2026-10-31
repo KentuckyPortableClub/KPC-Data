@@ -1,6 +1,6 @@
 {
  "area": "US-MO",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10575": {
@@ -130,7 +130,7 @@
   "US-5715": {
    "park": "Roger Pryor Pioneer Backcountry State Park",
    "area": "US-MO",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -182,7 +182,7 @@
     "A Missouri Department of Conservation (cre: no polygon at the pin",
     "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"cultural heritage watkins\": 0 lead(s)"
+    "B ArcGIS Online search \"heritage cultural watkins\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -223,7 +223,7 @@
     "A Missouri Department of Conservation (cre: no polygon at the pin",
     "A Missouri DNR, Division of State Parks (c: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"island katy rock\": 0 lead(s)"
+    "B ArcGIS Online search \"island spur rock\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   }

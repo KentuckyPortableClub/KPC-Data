@@ -1,6 +1,6 @@
 {
  "area": "US-OK",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0491": {
@@ -65,7 +65,7 @@
   "US-10658": {
    "park": "Lake Carl Blackwell Wildlife Management Area",
    "area": "US-OK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -95,7 +95,7 @@
   "US-10951": {
    "park": "Cherokee Strip Regional Heritage Center Historic Site",
    "area": "US-OK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -103,7 +103,7 @@
     "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
     "A ODWC (owner ODWC_GIS): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"heritage cherokee center\": 0 lead(s)"
+    "B ArcGIS Online search \"cherokee heritage center\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -243,7 +243,7 @@
   "US-11669": {
    "park": "Cedar Lake National Recreation Area",
    "area": "US-OK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -326,7 +326,7 @@
   "US-11670": {
    "park": "Spring Creek Recreation Site",
    "area": "US-OK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -778,7 +778,7 @@
   "US-12739": {
    "park": "Skipout Lake Recreation Site",
    "area": "US-OK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -886,7 +886,7 @@
   "US-13105": {
    "park": "Field Station State Fishing Lake",
    "area": "US-OK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -909,7 +909,7 @@
     "A Oklahoma Department of Wildlife Conserva: no polygon at the pin",
     "A ODWC (owner ODWC_GIS): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"fishing station field\": 0 lead(s)"
+    "B ArcGIS Online search \"station fishing field\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1207,7 +1207,7 @@
     "A Oklahoma Department of Wildlife Conserva: hit",
     "A ODWC (owner ODWC_GIS): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"fishing vincent lloyd\": 0 lead(s)"
+    "B ArcGIS Online search \"vincent fishing lloyd\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1512,7 +1512,7 @@
   "US-8646": {
    "park": "Pioneer Woman Museum State Historic Site",
    "area": "US-OK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

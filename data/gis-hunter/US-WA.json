@@ -1,6 +1,6 @@
 {
  "area": "US-WA",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0694": {
@@ -72,7 +72,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"heaven horse hills\": 0 lead(s)"
+    "B ArcGIS Online search \"heaven hills horse\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -116,7 +116,7 @@
   "US-11145": {
    "park": "Naneum Ridge State Forest",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -193,7 +193,7 @@
   "US-12254": {
    "park": "Crab Creek - Rocky Ford Area BLM Recreation Management Area",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -223,14 +223,14 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"rocky crab ford\": 0 lead(s)"
+    "B ArcGIS Online search \"rocky ford crab\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-12278": {
    "park": "Boundary Reservoir BLM Recreation Management Area",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -277,7 +277,7 @@
   "US-12279": {
    "park": "South Huckleberry Mountains BLM Recreation Management Area",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -371,7 +371,7 @@
      "verdict": "inside-other",
      "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
      "agency": "Washington State Department of Natural Resources",
-     "record": 3494498,
+     "record": 3518860,
      "record_name": "",
      "acres_approx": 469,
      "tier": "UNLIKELY",
@@ -415,16 +415,6 @@
    "why_not": "no-layer",
    "hits": [
     {
-     "verdict": "name mismatch",
-     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
-     "agency": "Washington State Department of Natural Resources",
-     "record": 3498440,
-     "record_name": "",
-     "acres_approx": 159,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
-    },
-    {
      "verdict": "inside-other",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "agency": "USGS PAD-US",
@@ -443,7 +433,7 @@
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
-    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
     "A Washington State Department of Natural R: no polygon at the pin",
     "A Washington State Department of Ecology (: no polygon at the pin",
     "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
@@ -451,7 +441,8 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
-    "A USGS PAD-US: hit"
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"dragoon\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -568,7 +559,7 @@
   "US-12563": {
    "park": "Douglas Creek BLM Recreation Management Area",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -693,7 +684,7 @@
   "US-12567": {
    "park": "Douglas Falls State Recreation Area",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -789,7 +780,7 @@
   "US-12829": {
    "park": "Duffy Creek BLM Recreation Management Area",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -927,7 +918,7 @@
   "US-13392": {
    "park": "Massey Bar State Recreation Site",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -949,7 +940,7 @@
   "US-13396": {
    "park": "Steel Bridge State Recreation Site",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -971,7 +962,7 @@
   "US-13399": {
    "park": "Hand State Recreation Site",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1040,7 +1031,7 @@
   "US-3171": {
    "park": "Spokane River Centennial State Trail",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -1099,7 +1090,7 @@
   "US-4555": {
    "park": "Hanford Reach National Monument",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -1145,7 +1136,7 @@
   "US-4562": {
    "park": "Pacific Crest Trail National Scenic Trail",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1201,18 +1192,8 @@
   "US-5565": {
    "park": "Ahtanum State Forest",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
-    {
-     "verdict": "name mismatch",
-     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
-     "agency": "Washington State Department of Natural Resources",
-     "record": 3503949,
-     "record_name": "",
-     "acres_approx": 645,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
-    },
     {
      "verdict": "inside-other",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
@@ -1232,7 +1213,7 @@
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
-    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
     "A Washington State Department of Natural R: no polygon at the pin",
     "A Washington State Department of Ecology (: no polygon at the pin",
     "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
@@ -1240,14 +1221,15 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
-    "A USGS PAD-US: hit"
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"ahtanum\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-5566": {
    "park": "Blanchard State Forest",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1284,52 +1266,15 @@
   "US-5567": {
    "park": "Capitol State Forest",
    "area": "US-WA",
-   "why_not": "name-mismatch",
-   "hits": [
-    {
-     "verdict": "inside-other",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "agency": "USGS PAD-US",
-     "record": 271374,
-     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
-     "acres_approx": 2540404,
-     "Mang_Name": "SDNR",
-     "Des_Tp": "SRMA",
-     "Own_Type": "STAT",
-     "GIS_Acres": 2562869,
-     "tier": "UNLIKELY",
-     "why": "container: one record under 15 parks"
-    }
-   ],
-   "leads": [],
-   "tried": [
-    "A Washington State Parks: no polygon at the pin",
-    "A Washington Department of Fish and Wildli: no polygon at the pin",
-    "A Washington State Department of Natural R: no polygon at the pin",
-    "A Washington State Department of Natural R: no polygon at the pin",
-    "A Washington State Department of Ecology (: no polygon at the pin",
-    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
-    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
-    "A BLM recreation SITE polygons (national, : no polygon at the pin",
-    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
-    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
-    "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"capitol\": 0 lead(s)"
-   ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
-  },
-  "US-5568": {
-   "park": "Elbe Hills-Tahoma State Forest",
-   "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
      "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
      "agency": "Washington State Department of Natural Resources",
-     "record": 3495681,
+     "record": 3530621,
      "record_name": "",
-     "acres_approx": 161,
+     "acres_approx": 293,
      "tier": "UNLIKELY",
      "why": "no proper name to compare"
     },
@@ -1364,16 +1309,53 @@
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
+  "US-5568": {
+   "park": "Elbe Hills-Tahoma State Forest",
+   "area": "US-WA",
+   "why_not": "no-layer",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 271374,
+     "record_name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+     "acres_approx": 2540404,
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Own_Type": "STAT",
+     "GIS_Acres": 2562869,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 15 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Washington State Parks: no polygon at the pin",
+    "A Washington Department of Fish and Wildli: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Natural R: no polygon at the pin",
+    "A Washington State Department of Ecology (: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
+    "A BLM recreation SITE polygons (national, : no polygon at the pin",
+    "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
+    "A BLM Oregon/Washington recreation managem: no polygon at the pin",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"tahoma hills elbe\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
   "US-5569": {
    "park": "Green Mountain-Tahuya State Forest",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
      "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
      "agency": "Washington State Department of Natural Resources",
-     "record": 3494432,
+     "record": 3518794,
      "record_name": "",
      "acres_approx": 612,
      "tier": "UNLIKELY",
@@ -1442,18 +1424,8 @@
   "US-5571": {
    "park": "Loomis-Loup Loup State Forest",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
-    {
-     "verdict": "name mismatch",
-     "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
-     "agency": "Washington State Department of Natural Resources",
-     "record": 3496589,
-     "record_name": "",
-     "acres_approx": 495,
-     "tier": "UNLIKELY",
-     "why": "no proper name to compare"
-    },
     {
      "verdict": "inside-other",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
@@ -1473,7 +1445,7 @@
    "tried": [
     "A Washington State Parks: no polygon at the pin",
     "A Washington Department of Fish and Wildli: no polygon at the pin",
-    "A Washington State Department of Natural R: hit",
+    "A Washington State Department of Natural R: no polygon at the pin",
     "A Washington State Department of Natural R: no polygon at the pin",
     "A Washington State Department of Ecology (: no polygon at the pin",
     "A Washington Dept. of Fish and Wildlife (c: no polygon at the pin",
@@ -1481,7 +1453,8 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
-    "A USGS PAD-US: hit"
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"loomis loup\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1524,7 +1497,7 @@
   "US-5573": {
    "park": "Teanaway State Forest",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -1546,13 +1519,13 @@
   "US-5576": {
    "park": "Yacolt Burn State Forest",
    "area": "US-WA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
      "layer": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
      "agency": "Washington State Department of Natural Resources",
-     "record": 3499999,
+     "record": 3524351,
      "record_name": "",
      "acres_approx": 630,
      "tier": "UNLIKELY",

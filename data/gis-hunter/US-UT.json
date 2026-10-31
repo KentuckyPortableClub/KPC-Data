@@ -1,6 +1,6 @@
 {
  "area": "US-UT",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10061": {
@@ -93,7 +93,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"parkway canyon scenic\": 0 lead(s)"
+    "B ArcGIS Online search \"parkway scenic canyon\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -126,14 +126,14 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"hatchery research aquatic\": 0 lead(s)"
+    "B ArcGIS Online search \"research hatchery aquatic\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10964": {
    "park": "Cathedral Valley Scenic Backway BLM Special Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -166,7 +166,7 @@
   "US-10965": {
    "park": "Great Western Trail BLM Historic Trail",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -267,7 +267,7 @@
   "US-10968": {
    "park": "Buckskin, White House, Wire Pass Day Use BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -300,7 +300,7 @@
   "US-10971": {
    "park": "Smith Creek BLM Wild and Scenic River",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -369,14 +369,14 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"scenic taylor middle\": 0 lead(s)"
+    "B ArcGIS Online search \"taylor scenic middle\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10975": {
    "park": "Oak Creek BLM Wild and Scenic River",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -419,7 +419,7 @@
   "US-10976": {
    "park": "Kolob Creek BLM Wild and Scenic River",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -498,14 +498,14 @@
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"backcountry byway bull\": 0 lead(s)"
+    "B ArcGIS Online search \"backcountry byway pass\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10979": {
    "park": "Portal Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -605,7 +605,7 @@
   "US-10984": {
    "park": "Hideout Canyon Camping Area BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -631,7 +631,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"camping hideout canyon\": 0 lead(s)"
+    "B ArcGIS Online search \"hideout camping canyon\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -680,7 +680,7 @@
   "US-10988": {
    "park": "Peek-A-Boo Staging Area BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -713,7 +713,7 @@
   "US-10992": {
    "park": "North Wash BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -779,7 +779,7 @@
   "US-10999": {
    "park": "Cottonwood Wash BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -822,7 +822,7 @@
   "US-11001": {
    "park": "Gooseberry Mesa National Recreation Trail",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -855,7 +855,7 @@
   "US-11002": {
    "park": "Otter Creek Reservoir BLM Special Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -914,14 +914,14 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"hurricane cliffs system\": 0 lead(s)"
+    "B ArcGIS Online search \"hurricane system cliffs\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11005": {
    "park": "Wire Mesa Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -947,7 +947,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"mesa wire\": 0 lead(s)"
+    "B ArcGIS Online search \"wire mesa\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1081,7 +1081,7 @@
   "US-11011": {
    "park": "Flying Monkey Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1369,7 +1369,7 @@
   "US-11113": {
    "park": "Baptist Draw BLM Special Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1405,7 +1405,7 @@
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"baptist special draw\": 0 lead(s)"
+    "B ArcGIS Online search \"special baptist draw\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1629,7 +1629,7 @@
   "US-11121": {
    "park": "Government Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1661,7 +1661,7 @@
   "US-11161": {
    "park": "North Oquirrh Management Area BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1693,7 +1693,7 @@
   "US-11166": {
    "park": "Lake Mountains BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1809,7 +1809,7 @@
   "US-11179": {
    "park": "Clover Spring BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2035,7 +2035,7 @@
   "US-11210": {
    "park": "Lower Range Creek BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2127,7 +2127,7 @@
   "US-11269": {
    "park": "Dandelion Flat BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2211,7 +2211,7 @@
   "US-11344": {
    "park": "Swasey's Beach BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2253,7 +2253,7 @@
   "US-11345": {
    "park": "Swaseys Boat Ramp BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2369,7 +2369,7 @@
   "US-11650": {
    "park": "Cisco Takeout BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2411,7 +2411,7 @@
   "US-11651": {
    "park": "Buckmaster BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2443,7 +2443,7 @@
   "US-11652": {
    "park": "Burbank Hills One Day Ride BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2475,7 +2475,7 @@
   "US-11653": {
    "park": "Three Fingers Canyon BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2527,7 +2527,7 @@
   "US-11654": {
    "park": "North Klondike BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2569,7 +2569,7 @@
   "US-11655": {
    "park": "Eardley Canyon BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2621,7 +2621,7 @@
   "US-11656": {
    "park": "Ernie Canyon Trailhead BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2663,7 +2663,7 @@
   "US-11658": {
    "park": "Sevenmile Rim BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2737,7 +2737,7 @@
   "US-11660": {
    "park": "Winkle Bob BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2769,7 +2769,7 @@
   "US-11661": {
    "park": "Bar M Trail System BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2895,7 +2895,7 @@
   "US-11664": {
    "park": "Chute Canyon Trailhead BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2947,7 +2947,7 @@
   "US-11665": {
    "park": "Horsethief BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2989,7 +2989,7 @@
   "US-11666": {
    "park": "Hell's Revenge BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3031,7 +3031,7 @@
   "US-11667": {
    "park": "Fivehole Arch BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3115,7 +3115,7 @@
   "US-11704": {
    "park": "William's Bottom BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3223,7 +3223,7 @@
   "US-11706": {
    "park": "Mineral Bottom BLM Special Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3265,7 +3265,7 @@
   "US-11707": {
    "park": "Amasa Back Trailhead BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3297,7 +3297,7 @@
   "US-11708": {
    "park": "Hunter Canyon BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3339,7 +3339,7 @@
   "US-11709": {
    "park": "The Ledge BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3381,7 +3381,7 @@
   "US-11720": {
    "park": "Hatch Point BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3423,7 +3423,7 @@
   "US-11721": {
    "park": "Angel Point East BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3465,7 +3465,7 @@
   "US-11723": {
    "park": "Fish Creek Cove BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3497,7 +3497,7 @@
   "US-11728": {
    "park": "Windwhistle Campground BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3539,7 +3539,7 @@
   "US-11729": {
    "park": "Creek Pasture BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3662,7 +3662,7 @@
   "US-11733": {
    "park": "McMillan Spring BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3704,7 +3704,7 @@
   "US-11736": {
    "park": "Deer Creek Campground BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3810,7 +3810,7 @@
   "US-11743": {
    "park": "Upper Valley Granary Wayside BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3955,7 +3955,7 @@
   "US-11751": {
    "park": "Fish & Owl Loop Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3987,7 +3987,7 @@
   "US-11752": {
    "park": "Collins Canyon BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -4065,7 +4065,7 @@
   "US-11756": {
    "park": "Dance Hall Rock BLM Historic Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -4143,7 +4143,7 @@
   "US-11758": {
    "park": "Guacamole Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -4175,7 +4175,7 @@
   "US-11762": {
    "park": "Clay Flat Kiosk BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -4249,7 +4249,7 @@
   "US-11764": {
    "park": "Welcome Spring BLM Special Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -5024,7 +5024,7 @@
   "US-5754": {
    "park": "Cliff Ridge Hang Gliding Area BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -5255,7 +5255,7 @@
   "US-5764": {
    "park": "Montezuma Canyon BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -5371,7 +5371,7 @@
   "US-5767": {
    "park": "Fisher Towers BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -5413,7 +5413,7 @@
   "US-5770": {
    "park": "Hittle Bottom BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -5455,7 +5455,7 @@
   "US-5772": {
    "park": "Castleton Tower BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -5497,7 +5497,7 @@
   "US-5773": {
    "park": "Wilson Arch BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -5539,7 +5539,7 @@
   "US-5776": {
    "park": "Looking Glass Rock BLM Interpretive Site",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -5623,7 +5623,7 @@
   "US-5781": {
    "park": "Big Bend BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -5813,7 +5813,7 @@
   "US-5795": {
    "park": "Kane Creek BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -5869,7 +5869,7 @@
   "US-5797": {
    "park": "Moab Rim Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -5921,7 +5921,7 @@
   "US-5799": {
    "park": "Moonflower Canyon BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6037,7 +6037,7 @@
   "US-5802": {
    "park": "Sand Island BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6111,7 +6111,7 @@
   "US-5804": {
    "park": "Corona Arch BLM National Recreation Trail",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6163,7 +6163,7 @@
   "US-5805": {
    "park": "Shash Jáa BLM Special Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6205,7 +6205,7 @@
   "US-5806": {
    "park": "Gold Bar BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6257,7 +6257,7 @@
   "US-5807": {
    "park": "Indian Creek Falls Group Site BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6289,7 +6289,7 @@
   "US-5808": {
    "park": "Butler Wash Interpretive Trail BLM Interpretive Site",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6509,7 +6509,7 @@
   "US-5813": {
    "park": "Mill Canyon Dinosaur Trailhead BLM Interpretive Site",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6625,7 +6625,7 @@
   "US-5816": {
    "park": "Copper Ridge Dinosaur Tracks BLM Interpretive Site",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6709,7 +6709,7 @@
   "US-5818": {
    "park": "Magnificent Seven (Mag 7) Trail System BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6821,7 +6821,7 @@
   "US-5820": {
    "park": "Big Mesa BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6937,7 +6937,7 @@
   "US-5826": {
    "park": "Book Cliffs BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -6969,7 +6969,7 @@
   "US-5827": {
    "park": "Sand Wash BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7025,7 +7025,7 @@
   "US-5829": {
    "park": "Dellenbaugh Tunnel Trailhead BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7067,7 +7067,7 @@
   "US-5830": {
    "park": "Salvation Knoll BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7141,7 +7141,7 @@
   "US-5834": {
    "park": "Nefertiti BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7215,7 +7215,7 @@
   "US-5839": {
    "park": "Daddy Canyon Trailhead BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7313,7 +7313,7 @@
   "US-5845": {
    "park": "Fossil Point Trailhead BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7449,7 +7449,7 @@
   "US-5853": {
    "park": "Burr Point Overlook BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7491,7 +7491,7 @@
   "US-5855": {
    "park": "Hog Springs BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7523,7 +7523,7 @@
   "US-5860": {
    "park": "Angel Point West Trailhead BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7565,7 +7565,7 @@
   "US-5863": {
    "park": "Poison Spring Canyon BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7597,7 +7597,7 @@
   "US-5865": {
    "park": "Exit 131 Dispersed Camping BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7721,7 +7721,7 @@
   "US-5870": {
    "park": "Buckhorn Panel BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7835,7 +7835,7 @@
   "US-5872": {
    "park": "Burr Trail BLM Historic Trail",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7867,7 +7867,7 @@
   "US-5873": {
    "park": "Buckhorn Dino Track BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -7981,7 +7981,7 @@
   "US-5876": {
    "park": "Head of Sinbad BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8043,7 +8043,7 @@
   "US-5878": {
    "park": "Sids Cabin BLM Historic Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8265,7 +8265,7 @@
   "US-5887": {
    "park": "Little Grand Canyon Trailhead BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8307,7 +8307,7 @@
   "US-5889": {
    "park": "Fullers Bottom Trailhead BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8363,7 +8363,7 @@
   "US-5892": {
    "park": "Behind the Reef Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8429,7 +8429,7 @@
   "US-5894": {
    "park": "Copper Globe Trailhead BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8611,7 +8611,7 @@
   "US-5900": {
    "park": "Link Flats BLM Wilderness Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8695,7 +8695,7 @@
   "US-5904": {
    "park": "North Caineville Mesa Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8737,7 +8737,7 @@
   "US-5905": {
    "park": "Sheets Gulch BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8796,7 +8796,7 @@
   "US-5907": {
    "park": "Five Mile Wash BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8838,7 +8838,7 @@
   "US-5908": {
    "park": "Burro Wash BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8880,7 +8880,7 @@
   "US-5910": {
    "park": "Joe's Valley Bouldering Area BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8944,7 +8944,7 @@
   "US-5913": {
    "park": "Historic Union Pacific Rail Trail State Park",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -8961,7 +8961,7 @@
   "US-5914": {
    "park": "Birch Creek Reservoir BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -8993,7 +8993,7 @@
   "US-5918": {
    "park": "Lower Calf Creek Falls Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9025,7 +9025,7 @@
   "US-5920": {
    "park": "Boynton Overlook Wayside BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9153,7 +9153,7 @@
   "US-5945": {
    "park": "Valley of the Gods BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -9195,7 +9195,7 @@
   "US-5950": {
    "park": "This Is The Place Heritage Park",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9227,7 +9227,7 @@
   "US-5951": {
    "park": "Grosvenor Arch BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9259,7 +9259,7 @@
   "US-5952": {
    "park": "Paria Contact Station BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9291,7 +9291,7 @@
   "US-5957": {
    "park": "Sunstone Knoll State Recreation Site",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9323,7 +9323,7 @@
   "US-5958": {
    "park": "Paria Movie Set BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9387,7 +9387,7 @@
   "US-5962": {
    "park": "Buckskin Gulch BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9461,7 +9461,7 @@
   "US-5966": {
    "park": "Paul Bunyon's Woodpile BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9525,7 +9525,7 @@
   "US-5970": {
    "park": "Fivemile Pass BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9567,7 +9567,7 @@
   "US-5972": {
    "park": "North Oquirrh BLM Wildlife Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9599,7 +9599,7 @@
   "US-5976": {
    "park": "Sand Mountain BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9673,7 +9673,7 @@
   "US-5979": {
    "park": "Hog Canyon East Kiosk BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9774,7 +9774,7 @@
   "US-5983": {
    "park": "Hog Canyon West Kiosk BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9833,7 +9833,7 @@
   "US-5985": {
    "park": "Hidden Lake BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9907,7 +9907,7 @@
   "US-5987": {
    "park": "Pahvant Valley Heritage Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -9949,7 +9949,7 @@
   "US-5988": {
    "park": "Bunting Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -9966,7 +9966,7 @@
   "US-5989": {
    "park": "Peek-A-Boo Slot Canyon BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10047,7 +10047,7 @@
   "US-5996": {
    "park": "The Barracks Kiosk BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10079,7 +10079,7 @@
   "US-5997": {
    "park": "Horseshoe Knolls BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10231,7 +10231,7 @@
   "US-6001": {
    "park": "Elephant Cove BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10309,7 +10309,7 @@
   "US-6003": {
    "park": "Rock Corral BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10373,7 +10373,7 @@
   "US-6008": {
    "park": "White Rocks BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10405,7 +10405,7 @@
   "US-6012": {
    "park": "Shunes Creek BLM Wild and Scenic River",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10457,7 +10457,7 @@
   "US-6013": {
    "park": "Short Creek Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10541,7 +10541,7 @@
   "US-6015": {
    "park": "Water Canyon Arch Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10593,7 +10593,7 @@
   "US-6016": {
    "park": "White Domes Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10694,7 +10694,7 @@
   "US-6022": {
    "park": "Greens Lake Trailhead BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10758,7 +10758,7 @@
   "US-6025": {
    "park": "Willis Creek BLM Wild and Scenic River",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -10854,7 +10854,7 @@
   "US-6029": {
    "park": "Dugway Geode Beds BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11013,7 +11013,7 @@
   "US-6041": {
    "park": "Sink Hole BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11059,7 +11059,7 @@
   "US-6044": {
    "park": "Amasa Basin BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11187,7 +11187,7 @@
   "US-6051": {
    "park": "Warner Valley Dinosaur Track Site BLM Interpretive Site",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11246,7 +11246,7 @@
   "US-6053": {
    "park": "Ibex Crags BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11278,7 +11278,7 @@
   "US-6054": {
    "park": "Red Reef East Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11310,7 +11310,7 @@
   "US-6055": {
    "park": "Cordura Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -11327,7 +11327,7 @@
   "US-6056": {
    "park": "McMullin Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11355,7 +11355,7 @@
   "US-6057": {
    "park": "Prospector Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11481,7 +11481,7 @@
   "US-6061": {
    "park": "Silver Reef Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11533,7 +11533,7 @@
   "US-6064": {
    "park": "House Range BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11565,7 +11565,7 @@
   "US-6068": {
    "park": "Red Reef Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -11607,7 +11607,7 @@
   "US-6078": {
    "park": "Fort Pearce BLM National Historic Site",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11723,7 +11723,7 @@
   "US-6081": {
    "park": "Baker Dam BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11755,7 +11755,7 @@
   "US-6082": {
    "park": "Lower Graveyard Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11797,7 +11797,7 @@
   "US-6083": {
    "park": "Rim Rock Trail BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11871,7 +11871,7 @@
   "US-6086": {
    "park": "Conger BLM Herd Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11935,7 +11935,7 @@
   "US-6094": {
    "park": "Old Highway 91 BLM Historic Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -11977,7 +11977,7 @@
   "US-6095": {
    "park": "Welcome Spring BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -12041,7 +12041,7 @@
   "US-6103": {
    "park": "Crystal Cave BLM Recreation Management Area",
    "area": "US-UT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

@@ -1,6 +1,6 @@
 {
  "area": "US-MS",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-11881": {
@@ -30,7 +30,7 @@
   "US-11883": {
    "park": "Emerald Mound National Historical Site",
    "area": "US-MS",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -86,7 +86,7 @@
    "leads": [],
    "tried": [
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"fishing presley elvis\": 0 lead(s)"
+    "B ArcGIS Online search \"presley fishing elvis\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -122,7 +122,7 @@
    "leads": [],
    "tried": [
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"fishing neshoba\": 0 lead(s)"
+    "B ArcGIS Online search \"neshoba fishing\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -146,7 +146,7 @@
    "leads": [],
    "tried": [
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"simpson fishing\": 0 lead(s)"
+    "B ArcGIS Online search \"fishing simpson\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -252,7 +252,7 @@
   "US-12638": {
    "park": "Bobby Cleveland Park State Recreation Site",
    "area": "US-MS",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -795,7 +795,7 @@
   "US-7635": {
    "park": "Airey Lake State Recreation Area",
    "area": "US-MS",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

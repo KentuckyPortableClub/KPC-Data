@@ -1,6 +1,6 @@
 {
  "area": "US-MI",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-12786": {
@@ -100,7 +100,7 @@
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"taquamenon scenic branch\": 0 lead(s)"
+    "B ArcGIS Online search \"taquamenon branch scenic\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -294,7 +294,7 @@
   "US-13170": {
    "park": "Bay De Noc/Grand Island National Recreation Trail",
    "area": "US-MI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -330,7 +330,7 @@
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"valley betsie\": 0 lead(s)"
+    "B ArcGIS Online search \"betsie valley\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -421,14 +421,14 @@
   "US-13566": {
    "park": "Houghton-Douglass Falls and Veterans Memorial Scenic Site",
    "area": "US-MI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"douglass veterans houghton\": 0 lead(s)"
+    "B ArcGIS Online search \"veterans douglass houghton\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -581,7 +581,7 @@
   "US-6666": {
    "park": "Edger Waterfowl National Wildlife Management Area",
    "area": "US-MI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -661,7 +661,7 @@
   "US-6726": {
    "park": "Malan Waterfowl National Wildlife Management Area",
    "area": "US-MI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -704,7 +704,7 @@
   "US-6780": {
    "park": "Schoonover Waterfowl National Wildlife Management Area",
    "area": "US-MI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -718,7 +718,7 @@
   "US-6796": {
    "park": "Tobico Marsh Wildlife Management Area",
    "area": "US-MI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -787,7 +787,7 @@
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"copper harbor\": 0 lead(s)"
+    "B ArcGIS Online search \"harbor copper\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -899,7 +899,7 @@
     "A Michigan DNR Parks & Recreation: no polygon at the pin",
     "A Michigan Department of Natural Resources: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"austin harbor port\": 0 lead(s)"
+    "B ArcGIS Online search \"harbor austin port\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },

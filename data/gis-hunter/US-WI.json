@@ -1,6 +1,6 @@
 {
  "area": "US-WI",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10184": {
@@ -63,6 +63,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: hit",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"johnson\": 0 lead(s)"
    ],
@@ -128,6 +129,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: hit",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"pleasant valley\": 0 lead(s)"
    ],
@@ -193,6 +195,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: hit",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"schmit\": 0 lead(s)"
    ],
@@ -258,6 +261,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: hit",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"sette\": 0 lead(s)"
    ],
@@ -295,6 +299,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: hit",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"swinging gate\": 0 lead(s)"
    ],
@@ -303,7 +308,7 @@
   "US-10644": {
    "park": "Love and Strutt Creeks State Fish and Wildlife Area",
    "area": "US-WI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -336,6 +341,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: no polygon at the pin",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "candidate: LIKELY (part of the name shared)"
@@ -343,7 +349,7 @@
   "US-11230": {
    "park": "Hallie Marsh State Wildlife Area",
    "area": "US-WI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -390,6 +396,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: no polygon at the pin",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"hallie marsh\": 0 lead(s)"
    ],
@@ -406,6 +413,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: no polygon at the pin",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"hatchery genoa\": 0 lead(s)"
    ],
@@ -414,7 +422,7 @@
   "US-4242": {
    "park": "Fenley State Recreation Area",
    "area": "US-WI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -443,6 +451,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: hit",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"fenley\": 0 lead(s)"
    ],
@@ -451,7 +460,7 @@
   "US-4260": {
    "park": "Long Lake State Recreation Area",
    "area": "US-WI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -501,6 +510,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: hit",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"long\": 1 lead(s)"
    ],
@@ -509,7 +519,7 @@
   "US-4261": {
    "park": "Mauthe Lake State Recreation Area",
    "area": "US-WI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -552,6 +562,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: hit",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"mauthe\": 0 lead(s)"
    ],
@@ -583,6 +594,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: no polygon at the pin",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"capital\": 0 lead(s)"
    ],
@@ -599,6 +611,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: no polygon at the pin",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"circle green\": 0 lead(s)"
    ],
@@ -615,6 +628,7 @@
     "A Wisconsin State Parks (DNR): no polygon at the pin",
     "A Wisconsin DNR Natural Heritage Conservat: no polygon at the pin",
     "A Wisconsin DNR Bureau of Facilities and L: no polygon at the pin",
+    "A Wisconsin DNR (county forests, from the : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"adell\": 0 lead(s)"
    ],

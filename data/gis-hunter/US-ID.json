@@ -1,6 +1,6 @@
 {
  "area": "US-ID",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0280": {
@@ -258,7 +258,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"heritage western parkway\": 0 lead(s)"
+    "B ArcGIS Online search \"heritage parkway western\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -341,7 +341,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"northwest parkway passage\": 0 lead(s)"
+    "B ArcGIS Online search \"northwest passage parkway\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -373,7 +373,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"parkway oreille scenic\": 0 lead(s)"
+    "B ArcGIS Online search \"oreille parkway scenic\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1033,7 +1033,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"special east fork\": 0 lead(s)"
+    "B ArcGIS Online search \"special fork east\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1658,12 +1658,6 @@
      "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_Cached_without_PriUnk/MapServer",
      "owner": "BLM_CO_Public",
      "type": "Map Service"
-    },
-    {
-     "title": "BLM CA Land Status Surface Management Agency",
-     "url": "https://gis.blm.gov/caarcgis/rest/services/lands/BLM_CA_LandStatus_SurfaceManagementAgency/FeatureServer",
-     "owner": "blm_arcgis_hub_ca",
-     "type": "Feature Service"
     }
    ],
    "tried": [
@@ -1673,7 +1667,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Idaho recreation area polygons (76): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"agency\": 3 lead(s)"
+    "B ArcGIS Online search \"agency\": 2 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
@@ -4397,7 +4391,7 @@
   "US-2230": {
    "park": "Castle Rocks State Park",
    "area": "US-ID",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -4676,7 +4670,7 @@
   "US-4666": {
    "park": "Priest Lake State Forest",
    "area": "US-ID",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

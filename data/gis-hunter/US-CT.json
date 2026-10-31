@@ -1,12 +1,12 @@
 {
  "area": "US-CT",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0881": {
    "park": "Eightmile National Wild and Scenic River",
    "area": "US-CT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -97,7 +97,7 @@
   "US-6860": {
    "park": "Ferry Landing State Park",
    "area": "US-CT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -195,7 +195,7 @@
     "A CT DEEP (deepgis account): hit",
     "A CT DEEP (credit: Department of Energy & : no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"beckley furnace iron\": 0 lead(s)"
+    "B ArcGIS Online search \"furnace beckley iron\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -257,7 +257,7 @@
   "US-7547": {
    "park": "Captain George Comer Memorial State Park",
    "area": "US-CT",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",

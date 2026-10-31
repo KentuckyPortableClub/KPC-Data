@@ -1,6 +1,6 @@
 {
  "area": "US-WY",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10776": {
@@ -64,7 +64,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"shoshone special cavern\": 0 lead(s)"
+    "B ArcGIS Online search \"shoshone special spirit\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -249,7 +249,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"hatchery tillett springs\": 0 lead(s)"
+    "B ArcGIS Online search \"hatchery springs tillett\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -288,7 +288,7 @@
   "US-10835": {
    "park": "Pacific Creek BLM Interpretive Site",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -339,7 +339,7 @@
   "US-10837": {
    "park": "Little Sandy Crossing BLM Historic Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -456,7 +456,7 @@
   "US-10842": {
    "park": "Boar's Tusk BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -502,14 +502,14 @@
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"tusk boar\": 0 lead(s)"
+    "B ArcGIS Online search \"boar tusk\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10848": {
    "park": "Castle Gardens Scenic Area BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -535,14 +535,14 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"gardens castle scenic\": 0 lead(s)"
+    "B ArcGIS Online search \"gardens scenic castle\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10850": {
    "park": "Cedar Canyon Petroglyphs BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -585,7 +585,7 @@
   "US-10854": {
    "park": "Corral Creek Campground BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -628,7 +628,7 @@
   "US-10855": {
    "park": "Deep Gulch BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -675,7 +675,7 @@
   "US-10856": {
    "park": "Dome Rock BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -718,7 +718,7 @@
   "US-10857": {
    "park": "Dugway Recreation Site BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -949,7 +949,7 @@
   "US-10876": {
    "park": "Lone Tree Trail BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -992,7 +992,7 @@
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"tree lone\": 1 lead(s)"
+    "B ArcGIS Online search \"lone tree\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
@@ -1060,7 +1060,7 @@
   "US-10882": {
    "park": "Prior Flat Campground BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1103,7 +1103,7 @@
   "US-10883": {
    "park": "Red Canyon Overlook BLM Interpretive Site",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -1178,7 +1178,7 @@
   "US-10885": {
    "park": "Rim Lake BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1234,7 +1234,7 @@
   "US-10886": {
    "park": "Salt Lick Trail BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1270,7 +1270,7 @@
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"lick salt\": 0 lead(s)"
+    "B ArcGIS Online search \"salt lick\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1313,14 +1313,14 @@
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"reservoir shirley special\": 0 lead(s)"
+    "B ArcGIS Online search \"reservoir special shirley\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10891": {
    "park": "Teton Reservoir BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1363,7 +1363,7 @@
   "US-10892": {
    "park": "The Redds Day Use Area BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1406,7 +1406,7 @@
   "US-10893": {
    "park": "Three Patches BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -1438,7 +1438,7 @@
   "US-10896": {
    "park": "Wild Horse Point BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1484,14 +1484,14 @@
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"horse point wild\": 0 lead(s)"
+    "B ArcGIS Online search \"point horse wild\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10898": {
    "park": "Lake Hattie BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1606,7 +1606,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"battlefield crazy woman\": 0 lead(s)"
+    "B ArcGIS Online search \"battlefield woman crazy\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1706,7 +1706,7 @@
   "US-12722": {
    "park": "Wheatland Reservoir #3 BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1748,7 +1748,7 @@
   "US-12723": {
    "park": "Whitetail Day Use BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1926,7 +1926,7 @@
   "US-6143": {
    "park": "Outlaw Cave Trail BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2049,7 +2049,7 @@
   "US-6162": {
    "park": "Red Gulch Dinosaur Tracksite BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -2091,7 +2091,7 @@
   "US-6164": {
    "park": "Duck Swamp Interpretive Area BLM Interpretive Site",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2133,7 +2133,7 @@
   "US-6169": {
    "park": "Lake Cameahwait State Recreation Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2179,7 +2179,7 @@
   "US-6177": {
    "park": "Johnny Behind the Rocks BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2325,7 +2325,7 @@
   "US-6184": {
    "park": "The Pinnacles Geologic Site BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2429,7 +2429,7 @@
   "US-6186": {
    "park": "Atlantic City/South Pass BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2609,7 +2609,7 @@
   "US-6193": {
    "park": "South Pass Overlook BLM Interpretive Site",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2661,7 +2661,7 @@
   "US-6194": {
    "park": "False Parting of the Ways BLM Interpretive Site",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2886,7 +2886,7 @@
   "US-6215": {
    "park": "Simpsons Hollow BLM Recreation Management Area",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2928,7 +2928,7 @@
   "US-6216": {
    "park": "Pilot Butte Overlook BLM Interpretive Site",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2970,7 +2970,7 @@
   "US-6219": {
    "park": "Lombard Ferry State Historic Site",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -3016,7 +3016,7 @@
   "US-6220": {
    "park": "NHT Auto Tour Route BLM Interpretive Site",
    "area": "US-WY",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

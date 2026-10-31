@@ -1,6 +1,6 @@
 {
  "area": "US-MD",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10751": {
@@ -78,7 +78,7 @@
   "US-13564": {
    "park": "Savage Highlands State Park",
    "area": "US-MD",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -133,7 +133,7 @@
     "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
     "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"patterson jefferson museum\": 0 lead(s)"
+    "B ArcGIS Online search \"jefferson patterson museum\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -168,7 +168,7 @@
   "US-7776": {
    "park": "Oxon Cove Park & Farm National Historical Park",
    "area": "US-MD",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -190,7 +190,7 @@
     "A Maryland DNR (state parks, WMAs, forests: no polygon at the pin",
     "A Maryland DNR (Maryland Natural Areas): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"historical cove oxon\": 0 lead(s)"
+    "B ArcGIS Online search \"historical oxon farm\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },

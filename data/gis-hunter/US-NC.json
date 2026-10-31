@@ -1,6 +1,6 @@
 {
  "area": "US-NC",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10259": {
@@ -20,7 +20,7 @@
   "US-10263": {
    "park": "Bonner House Historic Site",
    "area": "US-NC",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -58,14 +58,14 @@
   "US-10388": {
    "park": "Palmer Marsh House Historic Site",
    "area": "US-NC",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"palmer marsh house\": 0 lead(s)"
+    "B ArcGIS Online search \"palmer house marsh\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -183,7 +183,7 @@
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"jessups mill pond\": 0 lead(s)"
+    "B ArcGIS Online search \"jessups pond mill\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -228,7 +228,7 @@
   "US-12119": {
    "park": "Moses H. Cone National Park",
    "area": "US-NC",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -314,7 +314,7 @@
   "US-12371": {
    "park": "Julian Price National Park",
    "area": "US-NC",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -352,7 +352,7 @@
   "US-12414": {
    "park": "Doughton Recreation Park",
    "area": "US-NC",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -390,7 +390,7 @@
   "US-12662": {
    "park": "Harmon Den Wildlife Management Area",
    "area": "US-NC",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -438,7 +438,7 @@
   "US-13002": {
    "park": "Dan River State Trail",
    "area": "US-NC",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -658,7 +658,7 @@
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"interpretive center civil\": 0 lead(s)"
+    "B ArcGIS Online search \"interpretive center neuse\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -714,7 +714,7 @@
     "A NC Natural Heritage Program, NC Dept of : no polygon at the pin",
     "A NCWRC (owner ncwildlife.gov): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"fontana dam tva\": 0 lead(s)"
+    "B ArcGIS Online search \"fontana tva dam\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -769,7 +769,7 @@
   "US-8011": {
    "park": "Bobby N. Setzer State Fish Hatchery",
    "area": "US-NC",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",

@@ -1,6 +1,6 @@
 {
  "area": "US-KS",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-13456": {
@@ -37,9 +37,9 @@
      "verdict": "inside-other",
      "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
      "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
-     "record": 43,
-     "record_name": "Toronto State Park",
-     "acres_approx": 1228,
+     "record": 39,
+     "record_name": "Toronto Lake",
+     "acres_approx": 8640,
      "tier": "UNLIKELY",
      "why": "no shared proper word"
     },
@@ -47,9 +47,9 @@
      "verdict": "inside-other",
      "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
      "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
-     "record": 39,
-     "record_name": "Toronto Lake",
-     "acres_approx": 8640,
+     "record": 43,
+     "record_name": "Toronto State Park",
+     "acres_approx": 1228,
      "tier": "UNLIKELY",
      "why": "no shared proper word"
     },
@@ -103,7 +103,7 @@
     "A KDWPT (owner jjones_KDWPT): no polygon at the pin",
     "A KDWPT (owner jjones_KDWPT; KS Natural He: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"flint hills\": 0 lead(s)"
+    "B ArcGIS Online search \"hills flint\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -131,21 +131,21 @@
      "verdict": "name match",
      "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
      "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
-     "record": 78,
-     "record_name": "Milford Lake",
-     "acres_approx": 42318,
-     "tier": "LIKELY",
-     "why": "shared milford; extra: park - / record lake"
-    },
-    {
-     "verdict": "name match",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
-     "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
      "record": 18,
      "record_name": "Milford Outlet Park",
      "acres_approx": 892,
      "tier": "LIKELY",
      "why": "shared milford; extra: park - / record outlet"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
+     "agency": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation)",
+     "record": 78,
+     "record_name": "Milford Lake",
+     "acres_approx": 42318,
+     "tier": "LIKELY",
+     "why": "shared milford; extra: park - / record lake"
     },
     {
      "verdict": "name match",
@@ -356,7 +356,7 @@
     "A KDWPT (owner jjones_KDWPT): no polygon at the pin",
     "A KDWPT (owner jjones_KDWPT; KS Natural He: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"museum pawnee indian\": 0 lead(s)"
+    "B ArcGIS Online search \"indian museum pawnee\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -500,7 +500,7 @@
     "A KDWPT (owner jjones_KDWPT): no polygon at the pin",
     "A KDWPT (owner jjones_KDWPT; KS Natural He: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"massacre marais cygnes\": 0 lead(s)"
+    "B ArcGIS Online search \"massacre cygnes marais\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },

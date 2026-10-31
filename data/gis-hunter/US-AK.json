@@ -1,6 +1,6 @@
 {
  "area": "US-AK",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0877": {
@@ -485,7 +485,7 @@
   "US-11799": {
    "park": "Tangle Lakes Recreation Site",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -530,7 +530,7 @@
   "US-11800": {
    "park": "Delta Wild and Scenic River Wayside Recreation Site",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -574,7 +574,7 @@
   "US-11801": {
    "park": "Clearwater Creek Wayside Recreation Site",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -605,7 +605,7 @@
   "US-11802": {
    "park": "Brushkana Creek Campground Recreation Site",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -650,7 +650,7 @@
   "US-11803": {
    "park": "Paxson Lake Campground Recreation Site",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -705,7 +705,7 @@
   "US-11805": {
    "park": "Sourdough Creek Campground Recreation Site",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -740,7 +740,7 @@
   "US-11825": {
    "park": "Eagle Campground BLM Recreation Management Area",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -785,7 +785,7 @@
   "US-11826": {
    "park": "Walker Fork Campground BLM Recreation Management Area",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -830,7 +830,7 @@
   "US-11827": {
    "park": "West Fork Campground BLM Recreation Management Area",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -868,14 +868,14 @@
     "A BLM recreation SITE polygons (national, : hit",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"campground west fork\": 0 lead(s)"
+    "B ArcGIS Online search \"campground fork west\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11830": {
    "park": "Five Mile Campground BLM Recreation Management Area",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -943,7 +943,7 @@
   "US-11831": {
    "park": "Arctic Circle Campground BLM Recreation Management Area",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -1011,7 +1011,7 @@
   "US-11832": {
    "park": "Marion Creek Campground BLM Recreation Management Area",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -1147,7 +1147,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"kashwitna susitna landing\": 0 lead(s)"
+    "B ArcGIS Online search \"kashwitna landing susitna\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1212,7 +1212,7 @@
   "US-11836": {
    "park": "Fred Blixt Cabin BLM Recreation Management Area",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1349,7 +1349,7 @@
   "US-11850": {
    "park": "Mount Prindle Campground BLM Recreation Management Area",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1394,7 +1394,7 @@
   "US-11851": {
    "park": "Ophir Creek Campground BLM Recreation Management Area",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1459,7 +1459,7 @@
   "US-11853": {
    "park": "Cripple Creek Campground BLM Recreation Management Area",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1518,7 +1518,7 @@
   "US-11854": {
    "park": "Pinnell Mountain National Recreation Trail",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1567,7 +1567,7 @@
   "US-12679": {
    "park": "Fort Egbert BLM Historic Area",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1598,7 +1598,7 @@
   "US-12709": {
    "park": "Funny River Campground State Recreation Site",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1673,7 +1673,7 @@
   "US-12710": {
    "park": "Izaak Walton Campground State Recreation Site",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -1747,7 +1747,7 @@
   "US-12711": {
    "park": "Morgan’s Landing Campground State Recreation Site",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -1849,7 +1849,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"sportsman angler access\": 0 lead(s)"
+    "B ArcGIS Online search \"sportsman access angler\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1925,7 +1925,7 @@
   "US-7208": {
    "park": "Big Lake North State Recreation Site",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -1989,7 +1989,7 @@
   "US-7209": {
    "park": "Big Lake South State Recreation Site",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -2053,7 +2053,7 @@
   "US-7245": {
    "park": "Juneau State Trail",
    "area": "US-AK",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [

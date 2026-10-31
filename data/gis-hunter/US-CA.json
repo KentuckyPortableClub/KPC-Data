@@ -1,12 +1,12 @@
 {
  "area": "US-CA",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0198": {
    "park": "Kesterson National Wildlife Refuge",
    "area": "US-CA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -199,7 +199,7 @@
   "US-11336": {
    "park": "Rainbow Basin Natural Area",
    "area": "US-CA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -241,7 +241,7 @@
   "US-11580": {
    "park": "Red Hills BLM Recreation Management Area",
    "area": "US-CA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -316,7 +316,7 @@
   "US-11583": {
    "park": "Tumey Hills BLM Special Recreation Management Area",
    "area": "US-CA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -419,7 +419,7 @@
   "US-12957": {
    "park": "Stoddard Valley BLM Special Recreation Management Area",
    "area": "US-CA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -578,7 +578,7 @@
   "US-13581": {
    "park": "Clear Creek BLM Recreation Management Area",
    "area": "US-CA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -596,7 +596,7 @@
   "US-3578": {
    "park": "Tijuana Estuary Reserve State Conservation Area",
    "area": "US-CA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -662,7 +662,7 @@
   "US-6448": {
    "park": "William Randolph Hearst Memorial State Beach",
    "area": "US-CA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -722,7 +722,7 @@
   "US-7888": {
    "park": "Alcatraz Island National Historic Site",
    "area": "US-CA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -755,7 +755,7 @@
   "US-7889": {
    "park": "Presidio of SF National Historic Site",
    "area": "US-CA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

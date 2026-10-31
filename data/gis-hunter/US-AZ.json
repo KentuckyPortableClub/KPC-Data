@@ -1,6 +1,6 @@
 {
  "area": "US-AZ",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0908": {
@@ -33,7 +33,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"monument chelly canyon\": 0 lead(s)"
+    "B ArcGIS Online search \"monument canyon chelly\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -67,14 +67,14 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"sunshine dutchman mountain\": 0 lead(s)"
+    "B ArcGIS Online search \"sunshine mountain dutchman\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-11045": {
    "park": "Painted Rock Petroglyph Site National Historical Site",
    "area": "US-AZ",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -111,7 +111,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"historical petroglyph painted\": 0 lead(s)"
+    "B ArcGIS Online search \"petroglyph historical painted\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -186,7 +186,7 @@
   "US-11971": {
    "park": "Virgin River Canyon BLM Recreation Management Area",
    "area": "US-AZ",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -213,7 +213,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"virgin canyon\": 0 lead(s)"
+    "B ArcGIS Online search \"canyon virgin\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -287,7 +287,7 @@
   "US-12142": {
    "park": "Dominguez-Escalante Site National Historic Site",
    "area": "US-AZ",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -314,7 +314,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"dominguez escalante\": 0 lead(s)"
+    "B ArcGIS Online search \"escalante dominguez\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -432,7 +432,7 @@
   "US-13594": {
    "park": "Black Canyon National Recreation Trail",
    "area": "US-AZ",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -466,7 +466,7 @@
   "US-4557": {
    "park": "Arizona Trail National Scenic Trail",
    "area": "US-AZ",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -527,7 +527,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"bautista juan anza\": 0 lead(s)"
+    "B ArcGIS Online search \"bautista anza juan\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -602,7 +602,7 @@
   "US-6071": {
    "park": "Little Black Mountain Petroglyph Site State Historic Site",
    "area": "US-AZ",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",

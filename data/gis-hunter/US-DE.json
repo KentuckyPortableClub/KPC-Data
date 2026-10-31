@@ -1,6 +1,6 @@
 {
  "area": "US-DE",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10687": {
@@ -60,7 +60,7 @@
   "US-9877": {
    "park": "Junction and Breakwater National Recreation Trail",
    "area": "US-DE",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -88,7 +88,7 @@
   "US-9878": {
    "park": "Northern Delaware Greenway National Recreation Trail",
    "area": "US-DE",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -119,7 +119,7 @@
     "A Delaware nature preserves (DNREC): no polygon at the pin",
     "A Delaware public protected lands (DNREC): hit",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"northern greenway delaware\": 0 lead(s)"
+    "B ArcGIS Online search \"greenway northern delaware\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -275,14 +275,14 @@
     "A Delaware nature preserves (DNREC): no polygon at the pin",
     "A Delaware public protected lands (DNREC): hit",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"station saving indian\": 0 lead(s)"
+    "B ArcGIS Online search \"station indian saving\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9886": {
    "park": "Dupont Nature Center State Conservation Area",
    "area": "US-DE",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

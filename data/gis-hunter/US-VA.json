@@ -1,6 +1,6 @@
 {
  "area": "US-VA",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10507": {
@@ -61,7 +61,7 @@
   "US-8203": {
    "park": "Cape Henry National Memorial",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -96,7 +96,7 @@
   "US-8204": {
    "park": "Yorktown National Battlefield",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -126,7 +126,7 @@
   "US-9897": {
    "park": "Jamestowne National Historical Site",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -200,7 +200,7 @@
   "US-9900": {
    "park": "Fort Marcy National Historical Site",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -343,7 +343,7 @@
   "US-9906": {
    "park": "Cornelius Creek National Recreation Trail",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -388,7 +388,7 @@
   "US-9908": {
    "park": "Hoop Hole National Recreation Trail",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -436,14 +436,14 @@
     "A Virginia Department of Wildlife Resource: no polygon at the pin",
     "A Virginia Dept. of Historic Resources (cr: hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"hole hoop\": 0 lead(s)"
+    "B ArcGIS Online search \"hoop hole\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-9909": {
    "park": "Little Stony Creek National Recreation Trail",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -488,7 +488,7 @@
   "US-9910": {
    "park": "Massanutten National Recreation Trail",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -533,18 +533,8 @@
   "US-9920": {
    "park": "Mount Rogers National Recreation Trail",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
-    {
-     "verdict": "inside-other",
-     "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
-     "agency": "Virginia DCR (Virginia's conservation lands)",
-     "record": 490599,
-     "record_name": "George Washington and Jefferson National Forest",
-     "acres_approx": 136674,
-     "tier": "UNLIKELY",
-     "why": "no shared proper word"
-    },
     {
      "verdict": "inside-other",
      "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
@@ -552,6 +542,16 @@
      "record": 500352,
      "record_name": "Lewis Fork NF Wilderness Area",
      "acres_approx": 6212,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
+     "agency": "Virginia DCR (Virginia's conservation lands)",
+     "record": 490599,
+     "record_name": "George Washington and Jefferson National Forest",
+     "acres_approx": 136674,
      "tier": "UNLIKELY",
      "why": "no shared proper word"
     },
@@ -588,7 +588,7 @@
   "US-9922": {
    "park": "The Lion's Tale National Recreation Trail",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -653,7 +653,7 @@
   "US-9925": {
    "park": "Wild Oak National Recreation Trail",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -718,7 +718,7 @@
   "US-9933": {
    "park": "Beaches to Bluegrass State Trail",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -886,7 +886,7 @@
   "US-9961": {
    "park": "Dyke Marsh Wildlife Reserve",
    "area": "US-VA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

@@ -1,6 +1,6 @@
 {
  "area": "US-GA",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-12772": {
@@ -88,7 +88,7 @@
   "US-3724": {
    "park": "Roosevelts Little White House State Historic Site",
    "area": "US-GA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -166,7 +166,7 @@
   "US-4556": {
    "park": "Appalachian Trail National Scenic Trail",
    "area": "US-GA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -196,7 +196,7 @@
   "US-4648": {
    "park": "Bartram Educational State Forest",
    "area": "US-GA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -259,7 +259,7 @@
   "US-4649": {
    "park": "Hitchiti State Forest",
    "area": "US-GA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -304,7 +304,7 @@
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"heritage mountain arabia\": 0 lead(s)"
+    "B ArcGIS Online search \"mountain heritage arabia\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -506,14 +506,14 @@
     "A Georgia State Parks (DNR): no polygon at the pin",
     "A Georgia DNR Wildlife Resources Division : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"campground dames ferry\": 0 lead(s)"
+    "B ArcGIS Online search \"campground ferry dames\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-7861": {
    "park": "Suwannee River Eco-Lodge State Park",
    "area": "US-GA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

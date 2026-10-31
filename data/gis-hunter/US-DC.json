@@ -1,12 +1,12 @@
 {
  "area": "US-DC",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0655": {
    "park": "National Mall and Memorial Parks National Park",
    "area": "US-DC",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -32,7 +32,7 @@
   "US-0657": {
    "park": "President's Park (White House) Park",
    "area": "US-DC",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -52,14 +52,14 @@
    "leads": [],
    "tried": [
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"president white house\": 0 lead(s)"
+    "B ArcGIS Online search \"president house white\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-13597": {
    "park": "George Mason National Memorial",
    "area": "US-DC",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -106,7 +106,7 @@
    "leads": [],
    "tried": [
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"shield desert storm\": 0 lead(s)"
+    "B ArcGIS Online search \"desert shield storm\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },

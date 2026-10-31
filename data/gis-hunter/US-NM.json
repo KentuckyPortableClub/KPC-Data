@@ -1,12 +1,12 @@
 {
  "area": "US-NM",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-11783": {
    "park": "Fort Craig BLM Historic Area",
    "area": "US-NM",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -144,7 +144,7 @@
   "US-11815": {
    "park": "La Cueva Non-Motorized Trail System Recreation Site",
    "area": "US-NM",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -184,7 +184,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"redondo sumner bosque\": 0 lead(s)"
+    "B ArcGIS Online search \"redondo bosque sumner\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -253,7 +253,7 @@
   "US-12111": {
    "park": "Tortugas Mountain BLM Recreation Management Area",
    "area": "US-NM",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -284,7 +284,7 @@
   "US-12592": {
    "park": "Parks Ranch Cave BLM Recreation Management Area",
    "area": "US-NM",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -334,7 +334,7 @@
     "A BLM recreation SITE polygons (national, : no polygon at the pin",
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"casamero mexico pueblo\": 0 lead(s)"
+    "B ArcGIS Online search \"casamero pueblo mexico\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -435,7 +435,7 @@
   "US-7543": {
    "park": "Mescalero Sands Recreation Site",
    "area": "US-NM",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -516,7 +516,7 @@
   "US-8617": {
    "park": "Perea Nature National Recreation Trail",
    "area": "US-NM",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

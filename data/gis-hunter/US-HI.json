@@ -1,6 +1,6 @@
 {
  "area": "US-HI",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0119": {
@@ -128,7 +128,7 @@
   "US-10915": {
    "park": "Nakoa State Trail",
    "area": "US-HI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -189,7 +189,7 @@
   "US-10916": {
    "park": "Kapaʻeleʻele State Trail",
    "area": "US-HI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -250,7 +250,7 @@
   "US-10917": {
    "park": "ʻAiea Loop State Trail",
    "area": "US-HI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -304,14 +304,14 @@
     "A Hawaii State Parks (DLNR): hit",
     "A National Park Service (legal boundary): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"loop aiea\": 0 lead(s)"
+    "B ArcGIS Online search \"aiea loop\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10919": {
    "park": "Na Ala Hele State Trail",
    "area": "US-HI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -476,7 +476,7 @@
   "US-6431": {
    "park": "Royal Mausoleum State Preserve",
    "area": "US-HI",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",

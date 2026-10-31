@@ -1,6 +1,6 @@
 {
  "area": "US-IN",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10237": {
@@ -46,7 +46,7 @@
   "US-4208": {
    "park": "J. E. Roush Lake State Fish and Wildlife Area",
    "area": "US-IN",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -174,7 +174,7 @@
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
     "A Indiana DNR + INHD (all managed lands): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"turtle little\": 0 lead(s)"
+    "B ArcGIS Online search \"little turtle\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -231,7 +231,7 @@
   "US-5683": {
    "park": "Kil-So-Quah State Recreation Area",
    "area": "US-IN",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -335,7 +335,7 @@
   "US-5685": {
    "park": "Lieber State Recreation Area",
    "area": "US-IN",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

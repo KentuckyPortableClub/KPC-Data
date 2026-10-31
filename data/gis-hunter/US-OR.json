@@ -1,6 +1,6 @@
 {
  "area": "US-OR",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10007": {
@@ -70,7 +70,7 @@
   "US-10023": {
    "park": "Wood River BLM Recreation Management Area",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -416,7 +416,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"scenic salmon wild\": 0 lead(s)"
+    "B ArcGIS Online search \"salmon scenic wild\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -513,14 +513,14 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"foreman section maupin\": 0 lead(s)"
+    "B ArcGIS Online search \"section foreman maupin\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "US-10476": {
    "park": "Monument BLM Recreation Management Area",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -605,7 +605,7 @@
   "US-10486": {
    "park": "Warner Wetland Reserve",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -649,7 +649,7 @@
   "US-10488": {
    "park": "Sunstone Collection BLM Recreation Management Area",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -819,7 +819,7 @@
   "US-12179": {
    "park": "Echo Meadows BLM Interpretive Site",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -904,7 +904,7 @@
   "US-12462": {
    "park": "New River BLM Special Recreation Management Area",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1006,7 +1006,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"lone rock\": 0 lead(s)"
+    "B ArcGIS Online search \"rock lone\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1284,7 +1284,7 @@
   "US-12983": {
    "park": "Gnat Creek State Fish Hatchery",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1319,7 +1319,7 @@
   "US-12985": {
    "park": "Big Creek State Fish Hatchery",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1370,7 +1370,7 @@
   "US-12988": {
    "park": "North Nehalem State Fish Hatchery",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name match",
@@ -1420,7 +1420,7 @@
   "US-12993": {
    "park": "Elk River State Fish Hatchery",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -1460,7 +1460,7 @@
   "US-12995": {
    "park": "Leaburg State Fish Hatchery",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -1480,7 +1480,7 @@
   "US-13065": {
    "park": "Leslie Gulch BLM Recreation Management Area",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1599,7 +1599,7 @@
   "US-13078": {
    "park": "Cascade State Fish Hatchery",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -1822,7 +1822,7 @@
   "US-5459": {
    "park": "Santiam State Forest",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1867,7 +1867,7 @@
   "US-5460": {
    "park": "Sun Pass State Forest",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1912,7 +1912,7 @@
   "US-9156": {
    "park": "Crooked River National Wild and Scenic River",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -1977,7 +1977,7 @@
   "US-9157": {
    "park": "Donner und Blitzen National Wild and Scenic River",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -2044,7 +2044,7 @@
   "US-9524": {
    "park": "Angel's Rest State Trail",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -2063,7 +2063,7 @@
   "US-9980": {
    "park": "Willamette River Greenway and Water State Trail",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -2126,7 +2126,7 @@
   "US-9984": {
    "park": "Tualatin River Water National Scenic Trail",
    "area": "US-OR",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",

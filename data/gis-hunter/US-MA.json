@@ -1,12 +1,12 @@
 {
  "area": "US-MA",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0891": {
    "park": "Taunton National Wild and Scenic River",
    "area": "US-MA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -22,7 +22,7 @@
   "US-0897": {
    "park": "Westfield National Wild and Scenic River",
    "area": "US-MA",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -63,7 +63,7 @@
     "A National Park Service (legal boundary): no polygon at the pin",
     "A National Park Service (property boundari: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"squannacook nissitissit nashua\": 0 lead(s)"
+    "B ArcGIS Online search \"nissitissit squannacook scenic\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -95,7 +95,7 @@
     "A National Park Service (legal boundary): no polygon at the pin",
     "A National Park Service (property boundari: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"moynihan martini francis\": 0 lead(s)"
+    "B ArcGIS Online search \"moynihan francis martini\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -111,7 +111,7 @@
     "A National Park Service (legal boundary): no polygon at the pin",
     "A National Park Service (property boundari: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"discovery center falls\": 0 lead(s)"
+    "B ArcGIS Online search \"discovery center great\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -138,7 +138,7 @@
     "A National Park Service (legal boundary): no polygon at the pin",
     "A National Park Service (property boundari: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"pope john paul\": 0 lead(s)"
+    "B ArcGIS Online search \"john paul pope\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }

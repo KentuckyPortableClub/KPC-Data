@@ -1,6 +1,6 @@
 {
  "area": "US-NH",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-0885": {
@@ -51,7 +51,7 @@
   "US-13626": {
    "park": "Sugar River State Trail",
    "area": "US-NH",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -66,7 +66,7 @@
   "US-2642": {
    "park": "Androscoggin Wayside State Park",
    "area": "US-NH",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -92,7 +92,7 @@
   "US-2654": {
    "park": "Gardner Memorial Wayside State Park",
    "area": "US-NH",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -135,7 +135,7 @@
     "A New Hampshire Fish and Game Department (: no polygon at the pin",
     "A NH GRANIT (recreation inventory areas): hit",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"wayside gardner\": 0 lead(s)"
+    "B ArcGIS Online search \"gardner wayside\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },

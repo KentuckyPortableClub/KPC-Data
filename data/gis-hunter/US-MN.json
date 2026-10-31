@@ -1,6 +1,6 @@
 {
  "area": "US-MN",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-10720": {
@@ -64,7 +64,7 @@
   "US-11150": {
    "park": "CJ Ramstad North Shore State Trail",
    "area": "US-MN",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -74,7 +74,7 @@
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"ramstad north shore\": 0 lead(s)"
+    "B ArcGIS Online search \"ramstad shore north\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -123,7 +123,7 @@
   "US-11154": {
    "park": "Taconite State Trail",
    "area": "US-MN",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -359,7 +359,7 @@
   "US-8095": {
    "park": "Gitchi Gami State Trail",
    "area": "US-MN",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -429,7 +429,7 @@
   "US-9375": {
    "park": "Harmony-Preston State Trail",
    "area": "US-MN",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [],
    "tried": [
@@ -439,14 +439,14 @@
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"harmony preston\": 0 lead(s)"
+    "B ArcGIS Online search \"preston harmony\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-9377": {
    "park": "Blazing Star State Trail",
    "area": "US-MN",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "inside-other",
@@ -484,14 +484,14 @@
     "A Minnesota State Parks (DNR): no polygon at the pin",
     "A Minnesota DNR (state land admin: parks a: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"casey jones\": 0 lead(s)"
+    "B ArcGIS Online search \"jones casey\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "US-9381": {
    "park": "Douglas State Trail",
    "area": "US-MN",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [],
    "leads": [
     {

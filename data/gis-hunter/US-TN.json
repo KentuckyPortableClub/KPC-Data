@@ -1,6 +1,6 @@
 {
  "area": "US-TN",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "US-11181": {
@@ -124,7 +124,7 @@
     "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
     "A Tennessee Department of Environment and : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"fishing halford\": 0 lead(s)"
+    "B ArcGIS Online search \"halford fishing\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -212,7 +212,7 @@
   "US-6237": {
    "park": "Mr. and Mrs. Harry Lee Carter State Natural Area",
    "area": "US-TN",
-   "why_not": "name-mismatch",
+   "why_not": "no-layer",
    "hits": [
     {
      "verdict": "name mismatch",
@@ -335,7 +335,7 @@
     "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
     "A Tennessee Department of Environment and : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"falls ozone\": 0 lead(s)"
+    "B ArcGIS Online search \"ozone falls\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -379,7 +379,7 @@
     "A Tennessee Wildlife Resources Agency (cre: no polygon at the pin",
     "A Tennessee Department of Environment and : no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"cedar glade vine\": 0 lead(s)"
+    "B ArcGIS Online search \"glade cedar vine\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
