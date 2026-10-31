@@ -1,0 +1,3960 @@
+{
+ "request": "requests/8-pg-trail-vc2.json",
+ "id": "8-pg-trail-vc2",
+ "chat": 8,
+ "kind": "page",
+ "report": "Trail visitor centers follow-up (P-3-adjacent, for chat 2's data/access-leads/trail-visitor-centers.json). PART A (urls 1-4): find the real nps.gov page (if any exists) that names the Appalachian Trail Conservancy's Harpers Ferry/Damascus/Monson visitor centers or the Connecticut Forest & Park Association (New England NST) as a visitor center -- my own web search found no dedicated nps.gov/places page for these 4 (unlike 5 similar ones I already found and fixed: Zimmerman Center, Anza-Borrego, Gila Bend, Big Break, Griffith Park). If these 4 pages (or any other nps.gov page) do name them, give me the URL; if genuinely nothing exists, say so and I'll leave them as partner-only (the NPS API already lists them as this trail's visitor centers regardless, so this is just a link-preference polish, not a missing source). PART B (urls 5-11, one per trail, same order): the 7 trails with no NPS unit code (Arizona/Continental Divide/Florida/Iditarod/Nez Perce/Pacific Crest/Pacific Northwest -- USFS or BLM administered, not NPS, which is why the NPS API has no code for them) -- read each official page and list any place it calls a visitor center / interpretive center, with name + town/state + the exact URL.",
+ "asked": {
+  "chat": 8,
+  "kind": "page",
+  "urls": [
+   "https://www.nps.gov/appa/planyourvisit/visitorcenters.htm",
+   "https://home.nps.gov/appa/planyourvisit/places-to-go.htm",
+   "https://www.nps.gov/neen/planyourvisit/visitorcenters.htm",
+   "https://www.nps.gov/arze/planyourvisit/visitorcenters.htm",
+   "https://www.fs.usda.gov/detail/coconino/specialplaces/?cid=fsbdev7_016902",
+   "https://www.blm.gov/visit/continental-divide-national-scenic-trail",
+   "https://www.fs.usda.gov/florida-national-scenic-trail",
+   "https://www.blm.gov/visit/iditarod-national-historic-trail",
+   "https://www.fs.usda.gov/detail/nezperceclearwater/specialplaces/?cid=fsbdev3_063613",
+   "https://www.fs.usda.gov/pacificcrest",
+   "https://www.fs.usda.gov/detail/pnt/home/?cid=fsbdev3_054429"
+  ],
+  "report": "Trail visitor centers follow-up (P-3-adjacent, for chat 2's data/access-leads/trail-visitor-centers.json). PART A (urls 1-4): find the real nps.gov page (if any exists) that names the Appalachian Trail Conservancy's Harpers Ferry/Damascus/Monson visitor centers or the Connecticut Forest & Park Association (New England NST) as a visitor center -- my own web search found no dedicated nps.gov/places page for these 4 (unlike 5 similar ones I already found and fixed: Zimmerman Center, Anza-Borrego, Gila Bend, Big Break, Griffith Park). If these 4 pages (or any other nps.gov page) do name them, give me the URL; if genuinely nothing exists, say so and I'll leave them as partner-only (the NPS API already lists them as this trail's visitor centers regardless, so this is just a link-preference polish, not a missing source). PART B (urls 5-11, one per trail, same order): the 7 trails with no NPS unit code (Arizona/Continental Divide/Florida/Iditarod/Nez Perce/Pacific Crest/Pacific Northwest -- USFS or BLM administered, not NPS, which is why the NPS API has no code for them) -- read each official page and list any place it calls a visitor center / interpretive center, with name + town/state + the exact URL."
+ },
+ "answered": "2026-10-31 06:13Z",
+ "results": [
+  {
+   "url": "https://www.nps.gov/appa/planyourvisit/visitorcenters.htm",
+   "status": 404,
+   "final_url": "https://www.nps.gov/appa/planyourvisit/visitorcenters.htm",
+   "title": "Requested Page Not Found (404)",
+   "text": "Skip to global NPS navigation\nSkip to main content\nSkip to footer\nNational Park Service\nSearch\nOpen\nMenu\nPage not found\nWe're sorry, we can't find the page you're looking for. The site administrator may have removed it, changed its location, or made it otherwise unavailable.\nIf you typed the URL directly, check your spelling and capitalization. Our URLs look like this: <nps.gov/example-one/>.\nVisit homepage\nError code: 404\nExperience Your America.\nDownload the NPS app to navigate the parks on the go.\nNational Park Service\nU.S. Department of the Interior\nACCESSIBILITY\nPRIVACY POLICY\nFOIA\nNOTICES\nCONTACT THE NATIONAL PARK SERVICE\nNPS FAQ\nNO FEAR ACT\nDISCLAIMER\nVULNERABILITY DISCLOSURE POLICY\nUSA.GOV",
+   "links": [
+    {
+     "url": "https://www.nps.gov/appa/planyourvisit/visitorcenters.htm#GlobalNav-toggle",
+     "text": "Skip to global NPS navigation"
+    },
+    {
+     "url": "https://www.nps.gov/appa/planyourvisit/visitorcenters.htm#main",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.nps.gov/appa/planyourvisit/visitorcenters.htm#GlobalFooter",
+     "text": "Skip to footer"
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": " National Park Service"
+    },
+    {
+     "url": "https://www.nps.gov/appa/planyourvisit/visitorcenters.htm#GlobalFooterSearch",
+     "text": "\n\t\t\t\t\t\n\t\t\t\t\tSearch\n\t\t\t\t"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/index.htm",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nps.gov/findapark/index.htm",
+     "text": "Find a Park"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/event-search.htm",
+     "text": "Events"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/passes.htm",
+     "text": "Passes"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/trip-ideas.htm",
+     "text": "Trip Ideas"
+    },
+    {
+     "url": "https://www.nps.gov/learnandexplore/index.htm",
+     "text": "Learn & Explore"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/index.htm",
+     "text": "About Us"
+    },
+    {
+     "url": "https://www.nps.gov/history/index.htm",
+     "text": "Discover History"
+    },
+    {
+     "url": "https://www.nps.gov/nature/index.htm",
+     "text": "Explore Nature"
+    },
+    {
+     "url": "https://www.nps.gov/kids/index.htm",
+     "text": "Kids"
+    },
+    {
+     "url": "https://www.nps.gov/teachers/index.htm",
+     "text": "Educators"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/news/index.htm",
+     "text": "News"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/news/photosmultimedia.htm",
+     "text": "Photos & Multimedia"
+    },
+    {
+     "url": "https://www.nps.gov/learnandexplore/explore-by-topic.htm",
+     "text": "Explore by Topic"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/index.htm",
+     "text": "Get Involved"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/donate.htm",
+     "text": "Donate"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/partner.htm",
+     "text": "Partner"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/volunteer.htm",
+     "text": "Volunteer"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/workwithus.htm",
+     "text": "Work for Us"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/communities.htm",
+     "text": "Community Resources"
+    },
+    {
+     "url": "https://www.nps.gov/findapark/advanced-search.htm",
+     "text": "Search for parks by activity or topic"
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": "Visit homepage"
+    },
+    {
+     "url": "https://apps.apple.com/us/app/national-park-service/id1549226484",
+     "text": ""
+    },
+    {
+     "url": "https://play.google.com/store/apps/details?id=gov.nps.mobileapp",
+     "text": ""
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": "National Park Service"
+    },
+    {
+     "url": "https://www.doi.gov/",
+     "text": "U.S. Department of the Interior"
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/accessibility.htm",
+     "text": "ACCESSIBILITY"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/privacy.htm",
+     "text": "PRIVACY POLICY"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/foia/index.htm",
+     "text": "FOIA"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/notices.htm",
+     "text": "NOTICES"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/contactus.htm",
+     "text": "CONTACT THE NATIONAL PARK SERVICE"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/faqs.htm",
+     "text": "NPS FAQ"
+    },
+    {
+     "url": "https://www.doi.gov/pmb/eeo/no-fear-act",
+     "text": "NO FEAR ACT"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/disclaimer.htm",
+     "text": "DISCLAIMER"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/vulnerability-disclosure-policy.htm",
+     "text": "VULNERABILITY DISCLOSURE POLICY"
+    },
+    {
+     "url": "https://www.usa.gov/",
+     "text": "USA.GOV"
+    },
+    {
+     "url": "https://www.facebook.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.youtube.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.x.com/natlparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.instagram.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.flickr.com/nationalparkservice",
+     "text": ""
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://home.nps.gov/appa/planyourvisit/places-to-go.htm",
+   "status": 404,
+   "final_url": "https://home.nps.gov/appa/planyourvisit/places-to-go.htm",
+   "title": "Requested Page Not Found (404)",
+   "text": "Skip to global NPS navigation\nSkip to main content\nSkip to footer\nNational Park Service\nSearch\nOpen\nMenu\nPage not found\nWe're sorry, we can't find the page you're looking for. The site administrator may have removed it, changed its location, or made it otherwise unavailable.\nIf you typed the URL directly, check your spelling and capitalization. Our URLs look like this: <nps.gov/example-one/>.\nVisit homepage\nError code: 404\nExperience Your America.\nDownload the NPS app to navigate the parks on the go.\nNational Park Service\nU.S. Department of the Interior\nACCESSIBILITY\nPRIVACY POLICY\nFOIA\nNOTICES\nCONTACT THE NATIONAL PARK SERVICE\nNPS FAQ\nNO FEAR ACT\nDISCLAIMER\nVULNERABILITY DISCLOSURE POLICY\nUSA.GOV",
+   "links": [
+    {
+     "url": "https://home.nps.gov/appa/planyourvisit/places-to-go.htm#GlobalNav-toggle",
+     "text": "Skip to global NPS navigation"
+    },
+    {
+     "url": "https://home.nps.gov/appa/planyourvisit/places-to-go.htm#main",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://home.nps.gov/appa/planyourvisit/places-to-go.htm#GlobalFooter",
+     "text": "Skip to footer"
+    },
+    {
+     "url": "https://home.nps.gov/",
+     "text": " National Park Service"
+    },
+    {
+     "url": "https://home.nps.gov/appa/planyourvisit/places-to-go.htm#GlobalFooterSearch",
+     "text": "\n\t\t\t\t\t\n\t\t\t\t\tSearch\n\t\t\t\t"
+    },
+    {
+     "url": "https://home.nps.gov/planyourvisit/index.htm",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://home.nps.gov/findapark/index.htm",
+     "text": "Find a Park"
+    },
+    {
+     "url": "https://home.nps.gov/planyourvisit/event-search.htm",
+     "text": "Events"
+    },
+    {
+     "url": "https://home.nps.gov/planyourvisit/passes.htm",
+     "text": "Passes"
+    },
+    {
+     "url": "https://home.nps.gov/planyourvisit/trip-ideas.htm",
+     "text": "Trip Ideas"
+    },
+    {
+     "url": "https://home.nps.gov/learnandexplore/index.htm",
+     "text": "Learn & Explore"
+    },
+    {
+     "url": "https://home.nps.gov/aboutus/index.htm",
+     "text": "About Us"
+    },
+    {
+     "url": "https://home.nps.gov/history/index.htm",
+     "text": "Discover History"
+    },
+    {
+     "url": "https://home.nps.gov/nature/index.htm",
+     "text": "Explore Nature"
+    },
+    {
+     "url": "https://home.nps.gov/kids/index.htm",
+     "text": "Kids"
+    },
+    {
+     "url": "https://home.nps.gov/teachers/index.htm",
+     "text": "Educators"
+    },
+    {
+     "url": "https://home.nps.gov/aboutus/news/index.htm",
+     "text": "News"
+    },
+    {
+     "url": "https://home.nps.gov/aboutus/news/photosmultimedia.htm",
+     "text": "Photos & Multimedia"
+    },
+    {
+     "url": "https://home.nps.gov/learnandexplore/explore-by-topic.htm",
+     "text": "Explore by Topic"
+    },
+    {
+     "url": "https://home.nps.gov/getinvolved/index.htm",
+     "text": "Get Involved"
+    },
+    {
+     "url": "https://home.nps.gov/getinvolved/donate.htm",
+     "text": "Donate"
+    },
+    {
+     "url": "https://home.nps.gov/getinvolved/partner.htm",
+     "text": "Partner"
+    },
+    {
+     "url": "https://home.nps.gov/getinvolved/volunteer.htm",
+     "text": "Volunteer"
+    },
+    {
+     "url": "https://home.nps.gov/aboutus/workwithus.htm",
+     "text": "Work for Us"
+    },
+    {
+     "url": "https://home.nps.gov/getinvolved/communities.htm",
+     "text": "Community Resources"
+    },
+    {
+     "url": "https://home.nps.gov/findapark/advanced-search.htm",
+     "text": "Search for parks by activity or topic"
+    },
+    {
+     "url": "https://home.nps.gov/",
+     "text": "Visit homepage"
+    },
+    {
+     "url": "https://apps.apple.com/us/app/national-park-service/id1549226484",
+     "text": ""
+    },
+    {
+     "url": "https://play.google.com/store/apps/details?id=gov.nps.mobileapp",
+     "text": ""
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": "National Park Service"
+    },
+    {
+     "url": "https://www.doi.gov/",
+     "text": "U.S. Department of the Interior"
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/accessibility.htm",
+     "text": "ACCESSIBILITY"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/privacy.htm",
+     "text": "PRIVACY POLICY"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/foia/index.htm",
+     "text": "FOIA"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/notices.htm",
+     "text": "NOTICES"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/contactus.htm",
+     "text": "CONTACT THE NATIONAL PARK SERVICE"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/faqs.htm",
+     "text": "NPS FAQ"
+    },
+    {
+     "url": "https://www.doi.gov/pmb/eeo/no-fear-act",
+     "text": "NO FEAR ACT"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/disclaimer.htm",
+     "text": "DISCLAIMER"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/vulnerability-disclosure-policy.htm",
+     "text": "VULNERABILITY DISCLOSURE POLICY"
+    },
+    {
+     "url": "https://www.usa.gov/",
+     "text": "USA.GOV"
+    },
+    {
+     "url": "https://www.facebook.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.youtube.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.x.com/natlparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.instagram.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.flickr.com/nationalparkservice",
+     "text": ""
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.nps.gov/neen/planyourvisit/visitorcenters.htm",
+   "status": 404,
+   "final_url": "https://www.nps.gov/neen/planyourvisit/visitorcenters.htm",
+   "title": "Requested Page Not Found (404)",
+   "text": "Skip to global NPS navigation\nSkip to main content\nSkip to footer\nNational Park Service\nSearch\nOpen\nMenu\nPage not found\nWe're sorry, we can't find the page you're looking for. The site administrator may have removed it, changed its location, or made it otherwise unavailable.\nIf you typed the URL directly, check your spelling and capitalization. Our URLs look like this: <nps.gov/example-one/>.\nVisit homepage\nError code: 404\nExperience Your America.\nDownload the NPS app to navigate the parks on the go.\nNational Park Service\nU.S. Department of the Interior\nACCESSIBILITY\nPRIVACY POLICY\nFOIA\nNOTICES\nCONTACT THE NATIONAL PARK SERVICE\nNPS FAQ\nNO FEAR ACT\nDISCLAIMER\nVULNERABILITY DISCLOSURE POLICY\nUSA.GOV",
+   "links": [
+    {
+     "url": "https://www.nps.gov/neen/planyourvisit/visitorcenters.htm#GlobalNav-toggle",
+     "text": "Skip to global NPS navigation"
+    },
+    {
+     "url": "https://www.nps.gov/neen/planyourvisit/visitorcenters.htm#main",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.nps.gov/neen/planyourvisit/visitorcenters.htm#GlobalFooter",
+     "text": "Skip to footer"
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": " National Park Service"
+    },
+    {
+     "url": "https://www.nps.gov/neen/planyourvisit/visitorcenters.htm#GlobalFooterSearch",
+     "text": "\n\t\t\t\t\t\n\t\t\t\t\tSearch\n\t\t\t\t"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/index.htm",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nps.gov/findapark/index.htm",
+     "text": "Find a Park"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/event-search.htm",
+     "text": "Events"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/passes.htm",
+     "text": "Passes"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/trip-ideas.htm",
+     "text": "Trip Ideas"
+    },
+    {
+     "url": "https://www.nps.gov/learnandexplore/index.htm",
+     "text": "Learn & Explore"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/index.htm",
+     "text": "About Us"
+    },
+    {
+     "url": "https://www.nps.gov/history/index.htm",
+     "text": "Discover History"
+    },
+    {
+     "url": "https://www.nps.gov/nature/index.htm",
+     "text": "Explore Nature"
+    },
+    {
+     "url": "https://www.nps.gov/kids/index.htm",
+     "text": "Kids"
+    },
+    {
+     "url": "https://www.nps.gov/teachers/index.htm",
+     "text": "Educators"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/news/index.htm",
+     "text": "News"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/news/photosmultimedia.htm",
+     "text": "Photos & Multimedia"
+    },
+    {
+     "url": "https://www.nps.gov/learnandexplore/explore-by-topic.htm",
+     "text": "Explore by Topic"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/index.htm",
+     "text": "Get Involved"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/donate.htm",
+     "text": "Donate"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/partner.htm",
+     "text": "Partner"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/volunteer.htm",
+     "text": "Volunteer"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/workwithus.htm",
+     "text": "Work for Us"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/communities.htm",
+     "text": "Community Resources"
+    },
+    {
+     "url": "https://www.nps.gov/findapark/advanced-search.htm",
+     "text": "Search for parks by activity or topic"
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": "Visit homepage"
+    },
+    {
+     "url": "https://apps.apple.com/us/app/national-park-service/id1549226484",
+     "text": ""
+    },
+    {
+     "url": "https://play.google.com/store/apps/details?id=gov.nps.mobileapp",
+     "text": ""
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": "National Park Service"
+    },
+    {
+     "url": "https://www.doi.gov/",
+     "text": "U.S. Department of the Interior"
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/accessibility.htm",
+     "text": "ACCESSIBILITY"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/privacy.htm",
+     "text": "PRIVACY POLICY"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/foia/index.htm",
+     "text": "FOIA"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/notices.htm",
+     "text": "NOTICES"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/contactus.htm",
+     "text": "CONTACT THE NATIONAL PARK SERVICE"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/faqs.htm",
+     "text": "NPS FAQ"
+    },
+    {
+     "url": "https://www.doi.gov/pmb/eeo/no-fear-act",
+     "text": "NO FEAR ACT"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/disclaimer.htm",
+     "text": "DISCLAIMER"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/vulnerability-disclosure-policy.htm",
+     "text": "VULNERABILITY DISCLOSURE POLICY"
+    },
+    {
+     "url": "https://www.usa.gov/",
+     "text": "USA.GOV"
+    },
+    {
+     "url": "https://www.facebook.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.youtube.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.x.com/natlparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.instagram.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.flickr.com/nationalparkservice",
+     "text": ""
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.nps.gov/arze/planyourvisit/visitorcenters.htm",
+   "status": 404,
+   "final_url": "https://www.nps.gov/arze/planyourvisit/visitorcenters.htm",
+   "title": "Requested Page Not Found (404)",
+   "text": "Skip to global NPS navigation\nSkip to main content\nSkip to footer\nNational Park Service\nSearch\nOpen\nMenu\nPage not found\nWe're sorry, we can't find the page you're looking for. The site administrator may have removed it, changed its location, or made it otherwise unavailable.\nIf you typed the URL directly, check your spelling and capitalization. Our URLs look like this: <nps.gov/example-one/>.\nVisit homepage\nError code: 404\nExperience Your America.\nDownload the NPS app to navigate the parks on the go.\nNational Park Service\nU.S. Department of the Interior\nACCESSIBILITY\nPRIVACY POLICY\nFOIA\nNOTICES\nCONTACT THE NATIONAL PARK SERVICE\nNPS FAQ\nNO FEAR ACT\nDISCLAIMER\nVULNERABILITY DISCLOSURE POLICY\nUSA.GOV",
+   "links": [
+    {
+     "url": "https://www.nps.gov/arze/planyourvisit/visitorcenters.htm#GlobalNav-toggle",
+     "text": "Skip to global NPS navigation"
+    },
+    {
+     "url": "https://www.nps.gov/arze/planyourvisit/visitorcenters.htm#main",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.nps.gov/arze/planyourvisit/visitorcenters.htm#GlobalFooter",
+     "text": "Skip to footer"
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": " National Park Service"
+    },
+    {
+     "url": "https://www.nps.gov/arze/planyourvisit/visitorcenters.htm#GlobalFooterSearch",
+     "text": "\n\t\t\t\t\t\n\t\t\t\t\tSearch\n\t\t\t\t"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/index.htm",
+     "text": "Plan Your Visit"
+    },
+    {
+     "url": "https://www.nps.gov/findapark/index.htm",
+     "text": "Find a Park"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/event-search.htm",
+     "text": "Events"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/passes.htm",
+     "text": "Passes"
+    },
+    {
+     "url": "https://www.nps.gov/planyourvisit/trip-ideas.htm",
+     "text": "Trip Ideas"
+    },
+    {
+     "url": "https://www.nps.gov/learnandexplore/index.htm",
+     "text": "Learn & Explore"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/index.htm",
+     "text": "About Us"
+    },
+    {
+     "url": "https://www.nps.gov/history/index.htm",
+     "text": "Discover History"
+    },
+    {
+     "url": "https://www.nps.gov/nature/index.htm",
+     "text": "Explore Nature"
+    },
+    {
+     "url": "https://www.nps.gov/kids/index.htm",
+     "text": "Kids"
+    },
+    {
+     "url": "https://www.nps.gov/teachers/index.htm",
+     "text": "Educators"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/news/index.htm",
+     "text": "News"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/news/photosmultimedia.htm",
+     "text": "Photos & Multimedia"
+    },
+    {
+     "url": "https://www.nps.gov/learnandexplore/explore-by-topic.htm",
+     "text": "Explore by Topic"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/index.htm",
+     "text": "Get Involved"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/donate.htm",
+     "text": "Donate"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/partner.htm",
+     "text": "Partner"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/volunteer.htm",
+     "text": "Volunteer"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/workwithus.htm",
+     "text": "Work for Us"
+    },
+    {
+     "url": "https://www.nps.gov/getinvolved/communities.htm",
+     "text": "Community Resources"
+    },
+    {
+     "url": "https://www.nps.gov/findapark/advanced-search.htm",
+     "text": "Search for parks by activity or topic"
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": "Visit homepage"
+    },
+    {
+     "url": "https://apps.apple.com/us/app/national-park-service/id1549226484",
+     "text": ""
+    },
+    {
+     "url": "https://play.google.com/store/apps/details?id=gov.nps.mobileapp",
+     "text": ""
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": "National Park Service"
+    },
+    {
+     "url": "https://www.doi.gov/",
+     "text": "U.S. Department of the Interior"
+    },
+    {
+     "url": "https://www.nps.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/accessibility.htm",
+     "text": "ACCESSIBILITY"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/privacy.htm",
+     "text": "PRIVACY POLICY"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/foia/index.htm",
+     "text": "FOIA"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/notices.htm",
+     "text": "NOTICES"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/contactus.htm",
+     "text": "CONTACT THE NATIONAL PARK SERVICE"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/faqs.htm",
+     "text": "NPS FAQ"
+    },
+    {
+     "url": "https://www.doi.gov/pmb/eeo/no-fear-act",
+     "text": "NO FEAR ACT"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/disclaimer.htm",
+     "text": "DISCLAIMER"
+    },
+    {
+     "url": "https://www.nps.gov/aboutus/vulnerability-disclosure-policy.htm",
+     "text": "VULNERABILITY DISCLOSURE POLICY"
+    },
+    {
+     "url": "https://www.usa.gov/",
+     "text": "USA.GOV"
+    },
+    {
+     "url": "https://www.facebook.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.youtube.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.x.com/natlparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.instagram.com/nationalparkservice",
+     "text": ""
+    },
+    {
+     "url": "https://www.flickr.com/nationalparkservice",
+     "text": ""
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.fs.usda.gov/detail/coconino/specialplaces/?cid=fsbdev7_016902",
+   "status": 200,
+   "final_url": "https://www.fs.usda.gov/r03/coconino",
+   "title": "Home | Coconino National Forest | Forest Service",
+   "text": "Skip to main content\nAn official website of the United States government\nHere's how you know\nForest Service\nU.S. DEPARTMENT OF AGRICULTURE\nCoconino National Forest\nHome\nVisit\nTopics\nResources\nAbout\nSearch\nForest Service Home Inside the Forest Service About the Agency\nAlerts and Fire Danger Status\nYellow there!\nCheck out the best places to see the yellows, oranges, browns and reds across the forest...\nLeaf Peepers Unite!\nBreadcrumb\nForest Service Home Southwestern Region Coconino National Forest\nT\nT\nT\nWelcome to the Coconino National Forest\nThe Coconino National Forest is one of the most diverse forests in the country with changing landscapes and activities around every corner. Whether you're hiking the canyons and cliffs of the Mogollon Rim, skiing down Flagstaff's slopes, or mountain biking through the towering red rocks of Sedona, there's an opportunity for everyone.\nFire Hire: Apply Now!\nThe Coconino and forests across the Southwest are filling temporary/seasonal positions for the 2027 fire season. Apply by Nov. 12 to start as early as March 8, 2027. The regional fire hire page lists open positions and tips to successfully apply.\nFire Hire\nPlan Your Visit\nStay a While\nWhether you're booking in advance or planning a last-minute trip, we've got plenty of campsites to choose from.\nCamping & Cabins\nFind Your Way\nYou'll want to lose yourself in the adventure, but maps and brochures will help you find your way.\nMaps & Guides\nStatus of Forest Roads\nIs your destination within reach? Check the status of main forest roads to see if they are open or closed.\nRoad Status\nRecreation Passes\nMake sure you've got the right pass in hand for your adventure.\nPass & Fee Information\nPermits\nCollecting firewood, filming, getting married, holding an event, or offering a guided service on forest lands? See if your activity requires a permit.\nPermit Information\nEnjoy the Journey\nWith more than 1.8 million acres, Coconino NF offers a myriad of recreation opportunities.\nChoose Your Adventure\nFeatures\nFrom Camp Colton to Roving Ranger\nLife has a playful way to connect certain experiences and places to one another; an invisible string weaving together select memories that…\nView All Features\nRecent Press Releases\nWest Fork Trail closure extended due to hazardous conditions, debris\nRelease Date: October 27, 2026\nSeveral pile burns planned Monday on Coconino NF\nRelease Date: October 23, 2026\nMultiple pile burns planned this week around Coconino NF\nRelease Date: October 20, 2026\nView All Press Releases\nReturn to top\nCoconino National Forest Supervisor’s Office\n1824 S. Thompson St.\nFlagstaff, AZ 86001\n928-527-3600\nDistrict Offices\nFollow Us on Social Media\nX\nFacebook\nFlickr\nPrimary Footer Menu\nRecreation.gov\nAccessibility Statement\nVisit OIG\nOur Performance\nAnti-Harassment Policy\nCareers\nUSA.gov\nWhiteHouse.gov\nPrivacy Policy\nPlain Writing\nNo Fear Act Data\nFOIA\nReport Fraud on USDA Contracts\nPolicies and Links\neGov\nNon-Discrimination Statement\nOpen Government\nInformation Quality\nForest Service\nU.S. DEPARTMENT OF AGRICULTURE\nX\nFacebook\nYoutube\nFlickr\nInstagram",
+   "links": [
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/alerts",
+     "text": "\n                        Alerts\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/conditions",
+     "text": "\n                        Current Conditions\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/events",
+     "text": "\n                        Events\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/passes",
+     "text": "\n                        Passes\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/permits",
+     "text": "\n                        Permits\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/recreation",
+     "text": "\n                        Recreation\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/recreation/camping-cabins",
+     "text": "Camping and Cabins"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/recreation/opportunities",
+     "text": "Opportunities"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/recreation/epic-adventures",
+     "text": "Epic Adventures"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/recreation/discover-history",
+     "text": "Discover History"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/recreation/geologic-wonders",
+     "text": "Geologic Wonders"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/safety-ethics",
+     "text": "\n                        Safety and Outdoor Ethics\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/safety-ethics/brave-elements",
+     "text": "Brave the Elements"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/safety-ethics/respect-wildlife",
+     "text": "Respect Wildlife"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/maps-guides",
+     "text": "\n                        Visitor Maps and Guides\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/animals-plants",
+     "text": "\n                        Animals and Plants\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/animals-plants/animals",
+     "text": "Animals"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/animals-plants/exotic-invasives",
+     "text": "Exotic and Invasive Species"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/fire",
+     "text": "\n                        Fire\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/fire/info",
+     "text": "Information"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/fire/management",
+     "text": "Management"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/fire/prevention",
+     "text": "Prevention"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/fire/resources",
+     "text": "Resources"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/forest-products",
+     "text": "\n                        Forest Products\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/forest-products/timber-sales",
+     "text": "Timber Sales"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/natural-resources",
+     "text": "\n                        Natural Resources\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/natural-resources/arch-cultural",
+     "text": "Archaeology and Cultural Resources"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/natural-resources/range",
+     "text": "Rangeland and Grazing"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/natural-resources/water-air-soil",
+     "text": "Water, Air & Soil"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/planning",
+     "text": "\n                        Planning\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/projects",
+     "text": "\n                        Projects\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/wilderness",
+     "text": "\n                        Wilderness\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/publications",
+     "text": "\n                        Publications\n                    "
+    },
+    {
+     "url": "https://research.fs.usda.gov/treesearch",
+     "text": "Treesearch"
+    },
+    {
+     "url": "https://www.fs.usda.gov/library/",
+     "text": "National FS Library"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/publications",
+     "text": "HQ Publications"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/contact-us",
+     "text": "\n                        Contact Us\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/keep-in-touch",
+     "text": "\n                        Keep In Touch\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/about-area",
+     "text": "\n                        About the Area\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/about-area/faqs",
+     "text": "FAQs"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/newsroom",
+     "text": "\n                        Newsroom\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/newsroom/releases",
+     "text": "Press Releases"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/newsroom/stories",
+     "text": "Feature Stories"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/offices",
+     "text": "\n                        Offices\n                    "
+    },
+    {
+     "url": "https://research.fs.usda.gov/",
+     "text": "\n                        Research and Development\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/working-with-us",
+     "text": "\n                        Working with Us\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/working-with-us/careers",
+     "text": "Careers and Jobs"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/working-with-us/partnerships",
+     "text": "Partnerships"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/working-with-us/tribal-relations",
+     "text": "Tribal Relations"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/working-with-us/volunteers",
+     "text": "Volunteers"
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Forest Service Home"
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs",
+     "text": "Inside the Forest Service"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency",
+     "text": "About the Agency"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/alerts",
+     "text": "View All Alerts"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/alerts/west-fork-temporary-area-closure-extension-2-27-27",
+     "text": "West Fork Temporary Area Closure - Extension to 2/27/27"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/keep-in-touch",
+     "text": "Sign up for email updates from the Coconino"
+    },
+    {
+     "url": "https://inciweb.wildfire.gov/azcof-coconino-national-forest-prescribed-burn-projects",
+     "text": "View current and upcoming prescribed fire projects"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/recreation/epic-adventures/fall-colors",
+     "text": "Leaf Peepers Unite!"
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Forest Service Home"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03",
+     "text": "Southwestern Region"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/working-with-us/careers/fire-hire",
+     "text": "Fire Hire"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/recreation/camping-cabins",
+     "text": "Camping & Cabins"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/maps-guides",
+     "text": "Maps & Guides"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/conditions/forest-roads-status",
+     "text": "Road Status"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/passes",
+     "text": "Pass & Fee Information"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/permits",
+     "text": "Permit Information"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/recreation",
+     "text": "Choose Your Adventure"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/newsroom/stories/camp-colton-roving-ranger",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/newsroom/stories/camp-colton-roving-ranger",
+     "text": "From Camp Colton to Roving Ranger"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/newsroom/stories",
+     "text": "View All Features"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/newsroom/releases/west-fork-trail-closure-extended-due-hazardous-conditions-debris",
+     "text": "West Fork Trail closure extended due to hazardous conditions, debris"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/newsroom/releases/several-pile-burns-planned-monday-coconino-nf",
+     "text": "Several pile burns planned Monday on Coconino NF"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/newsroom/releases/multiple-pile-burns-planned-week-around-coconino-nf",
+     "text": "Multiple pile burns planned this week around Coconino NF"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/newsroom/releases",
+     "text": "View All Press Releases"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino#",
+     "text": "Return to top"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r03/coconino/offices",
+     "text": "District Offices"
+    },
+    {
+     "url": "https://www.x.com/CoconinoNF",
+     "text": "X"
+    },
+    {
+     "url": "https://www.facebook.com/CoconinoNF",
+     "text": "Facebook"
+    },
+    {
+     "url": "https://www.flickr.com/photos/coconinonationalforest",
+     "text": "Flickr"
+    },
+    {
+     "url": "https://recreation.gov/",
+     "text": "Recreation.gov"
+    },
+    {
+     "url": "https://www.usda.gov/accessibility-statement",
+     "text": "Accessibility Statement"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/",
+     "text": "Visit OIG"
+    },
+    {
+     "url": "https://www.usda.gov/our-agency/about-usda/performance",
+     "text": "Our Performance"
+    },
+    {
+     "url": "https://www.usda.gov/oascr/civil-rights-statements",
+     "text": "Anti-Harassment Policy"
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/careers",
+     "text": "Careers"
+    },
+    {
+     "url": "https://www.usa.gov/",
+     "text": "USA.gov"
+    },
+    {
+     "url": "https://www.whitehouse.gov/",
+     "text": "WhiteHouse.gov"
+    },
+    {
+     "url": "https://www.usda.gov/privacy-policy",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://www.usda.gov/plain-writing",
+     "text": "Plain Writing"
+    },
+    {
+     "url": "https://www.usda.gov/nofear",
+     "text": "No Fear Act Data"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/foia/",
+     "text": "FOIA"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/resources/contractor-fraud",
+     "text": "Report Fraud on USDA Contracts"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/",
+     "text": "Policies and Links"
+    },
+    {
+     "url": "https://www.usda.gov/federal-web-site-inventory",
+     "text": "eGov"
+    },
+    {
+     "url": "https://www.usda.gov/non-discrimination-statement",
+     "text": "Non-Discrimination Statement"
+    },
+    {
+     "url": "https://www.usda.gov/open",
+     "text": "Open Government"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/quality-of-information",
+     "text": "Information Quality"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://x.com/forestservice",
+     "text": "X"
+    },
+    {
+     "url": "https://www.facebook.com/USForestService",
+     "text": "Facebook"
+    },
+    {
+     "url": "https://www.youtube.com/user/usdaForestService",
+     "text": "Youtube"
+    },
+    {
+     "url": "https://www.flickr.com/photos/usforestservice/",
+     "text": "Flickr"
+    },
+    {
+     "url": "https://www.instagram.com/u.s.forestservice",
+     "text": "Instagram"
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.blm.gov/visit/continental-divide-national-scenic-trail",
+   "status": 200,
+   "final_url": "https://www.blm.gov/visit/continental-divide-national-scenic-trail",
+   "title": "Continental Divide National Scenic Trail - | Bureau of Land Management",
+   "text": "Skip to main navigation\nSkip to main content\nAn official website of the United States government\nHere’s how you know\nBureau of Land Management Home Page\nU.S. DEPARTMENT OF THE INTERIOR\nBUREAU OF LAND MANAGEMENT\nSearch\nHome\nVisit\nAbout\nLearn\nServices\nGet Involved\nPrograms\nInfo\nStates\nContact Us\nFire Restrictions\nHome\nVisit\nContinental Divide National Scenic Trail |\nThe Continental Divide National Scenic Trail provides for high quality, scenic, primitive hiking and horseback-riding recreational experiences, while conserving natural, historic, and cultural resources along the Continental Divide. Extending 3100 miles between Mexico and Canada, the trail traverses landscapes primarily on public lands within 50 miles of the geographic feature. This National Scenic Trail was established in 1978 through the authority of the National Trails System Act (P.L. 90-543) and is one of the outstanding resources of the National Landscape Conservation System.\nWhere the Trail crosses BLM lands in New Mexico the route does not ordinarily have a tread. Except where it follows ranch roads, the Trail is identified with line of sight signs or rock cairns. Equestrian facilities are intermittent and in various stages of development.\nFlickr Album\nContact Us\nThis site is managed by Las Cruces District Office; visit their page for office hours and directions.\nBLM_NM_LCDO_Mail@blm.gov\n575-525-4300\nActivities\nAddresses\nLas Cruces District Office\n1800 Marquess Street\nLas Cruces\nNew Mexico\n88005\nDirections\nBecause Trail location, use, and condition status across the state are managed by the unique agency office associated with that area, users are encouraged to contact every pertinent office for Trail updates, especially when crossing Wilderness or Wilderness Study Areas.\nAdditional Information\nBLM New Mexico Facebook Page\nBLM Wyoming Facebook Page\nBLM New Mexico Facebook Page\nBLM Wyoming Flickr\nBLM New Mexico Flickr\nContinental Divide National Scenic Trail\nBLM New Mexico Twitter\nBLM Wyoming Twitter\nBLM New Mexico Twitter\nBLM New Mexico YouTube Channel\nBLM Wyoming YouTube\nBLM New Mexico YouTube Channel\nWas this page helpful?\nYes\nNo\nPrivacy Notice\nAn official form of the United States government. Provided by Touchpoints\nBureau of Land Management Home Page\nU.S. DEPARTMENT OF THE INTERIOR\nBUREAU OF LAND MANAGEMENT\nFooter Utility\nAbout BLM\nCareers\nContact Us\nMaps\nInformation Center\nWebsite Disclaimers\nFeedback\nReport Misconduct\nOffice of Civil Rights\nblm.gov\nAn official website of the Department of the Interior\nAbout DOI.gov\nAccessibility statement\nFOIA requests\nNo FEAR Act data\nOffice of the Inspector General\nBudget & performance reports\nAgency financial reports\nDisclaimer\nPrivacy policy\nVulnerability disclosure policy\nCummings Act notices\nLooking for U.S. government information and services?\nVisit USA.gov",
+   "links": [
+    {
+     "url": "https://www.blm.gov/visit/continental-divide-national-scenic-trail#superfish-main",
+     "text": "Skip to main navigation"
+    },
+    {
+     "url": "https://www.blm.gov/visit/continental-divide-national-scenic-trail#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.blm.gov/",
+     "text": "Bureau of Land Management Home Page"
+    },
+    {
+     "url": "https://www.blm.gov/visit/continental-divide-national-scenic-trail#",
+     "text": "Open Search"
+    },
+    {
+     "url": "https://www.blm.gov/office/national-office",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://www.blm.gov/visit/continental-divide-national-scenic-trail#",
+     "text": " Mobile Menu"
+    },
+    {
+     "url": "https://x.com/blmnational",
+     "text": ""
+    },
+    {
+     "url": "http://www.youtube.com/BLMNational",
+     "text": ""
+    },
+    {
+     "url": "https://www.facebook.com/BLMNational",
+     "text": ""
+    },
+    {
+     "url": "http://instagram.com/mypubliclands",
+     "text": ""
+    },
+    {
+     "url": "https://www.flickr.com/photos/mypubliclands/",
+     "text": ""
+    },
+    {
+     "url": "https://www.linkedin.com/company/bureau-of-land-management",
+     "text": ""
+    },
+    {
+     "url": "https://www.blm.gov/office/national-office",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://www.blm.gov/",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.blm.gov/visit",
+     "text": "Visit"
+    },
+    {
+     "url": "https://www.blm.gov/visit",
+     "text": "\n                Find places to visit\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/passes",
+     "text": "\n                Passes\n          "
+    },
+    {
+     "url": "https://www.blm.gov/maps",
+     "text": "\n                Maps\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+     "text": "\n                Know before you go\n          "
+    },
+    {
+     "url": "https://www.blm.gov/learn/interpretive-centers",
+     "text": "\n                Visitor Centers\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/camping",
+     "text": "\n                Camping\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/climbing",
+     "text": "\n                Climbing\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/e-bikes",
+     "text": "\n                E-Bikes\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/hiking",
+     "text": "\n                Hiking\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/recreation-activities/hunting-fishing",
+     "text": "\n                Hunting and Fishing\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/mountainbike",
+     "text": "\n                Mountain Biking\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/OHV",
+     "text": "\n                Off-Highway Vehicles\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/recreation-activities/recreational-shooting",
+     "text": "\n                Recreational Shooting\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/rockhounding",
+     "text": "\n                Rockhounding\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about",
+     "text": "About"
+    },
+    {
+     "url": "https://www.blm.gov/about/our-mission",
+     "text": "\n                Our Mission\n          "
+    },
+    {
+     "url": "https://www.blm.gov/leadership",
+     "text": "\n                Leadership\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/organization-chart",
+     "text": "\n                Organization Chart\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/what-we-manage",
+     "text": "\n                What We Manage\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/how-we-manage",
+     "text": "\n                How We Manage\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/laws-and-regulations",
+     "text": "\n                Laws and Regulations\n          "
+    },
+    {
+     "url": "https://www.blm.gov/policy",
+     "text": "\n                Policy\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/history",
+     "text": "\n                History of the BLM\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/data/National-Datasets",
+     "text": "\n                Data\n          "
+    },
+    {
+     "url": "https://www.blm.gov/learn",
+     "text": "Learn"
+    },
+    {
+     "url": "https://www.blm.gov/kids",
+     "text": "\n                Kids\n          "
+    },
+    {
+     "url": "https://www.blm.gov/educators",
+     "text": "\n                Teachers\n          "
+    },
+    {
+     "url": "https://www.blm.gov/Learn/Can-I-Keep-This",
+     "text": "\n                Can I Keep This?\n          "
+    },
+    {
+     "url": "https://www.blm.gov/learn/interpretive-centers",
+     "text": "\n                Visitor Centers\n          "
+    },
+    {
+     "url": "https://www.blm.gov/learn/science-in-the-blm",
+     "text": "\n                Science in BLM\n          "
+    },
+    {
+     "url": "https://www.blm.gov/learn/blm-library",
+     "text": "\n                BLM Library\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services",
+     "text": "Services"
+    },
+    {
+     "url": "https://www.blm.gov/services/gov-to-gov-tribal-consultation",
+     "text": "\n                Government-to-Government Tribal Consultation\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/cadr",
+     "text": "\n                Collaborative Action and Dispute Resolution\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/acquisition/contracting",
+     "text": "\n                Contracting\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/financial-assistance-and-grants",
+     "text": "\n                Financial Assistance\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/foia",
+     "text": "\n                FOIA\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/electronic-forms",
+     "text": "\n                Forms\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/geospatial",
+     "text": "\n                Geospatial\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/land-records",
+     "text": "\n                Land Records\n          "
+    },
+    {
+     "url": "https://www.doi.gov/pmb/eeo",
+     "text": "\n                Office of Civil Rights\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved",
+     "text": "Get Involved"
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/all-americans-outside",
+     "text": "\n                All Americans Outside\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/blm-2026-anniversaries",
+     "text": "\n                Freedom 250 Events\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/resource-advisory-council",
+     "text": "\n                Resource Advisory Councils\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/partnerships",
+     "text": "\n                Partnerships\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/volunteers",
+     "text": "\n                Volunteers\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/artist-in-residence/air-sites",
+     "text": "\n                Artist-in-Residence\n          "
+    },
+    {
+     "url": "https://www.blm.gov/careers/students-and-grads/internship",
+     "text": "\n                Internships\n          "
+    },
+    {
+     "url": "https://www.blm.gov/careers",
+     "text": "\n                Careers\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/donations",
+     "text": "\n                Donations\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/donations/recreationgov",
+     "text": "\n                Donations via Recreation.gov\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs",
+     "text": "Programs"
+    },
+    {
+     "url": "https://www.blm.gov/programs/energy-and-minerals",
+     "text": "\n                Energy and Minerals\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/rangelands-and-grazing",
+     "text": "\n                Rangelands and Grazing\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/planning-and-nepa",
+     "text": "\n                Planning and NEPA\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/national-conservation-lands",
+     "text": "\n                National Conservation Lands\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation",
+     "text": "\n                Recreation and Visitor Services\n          "
+    },
+    {
+     "url": "https://www.blm.gov/whb",
+     "text": "\n                Wild Horse and Burro\n          "
+    },
+    {
+     "url": "https://www.blm.gov/lands-realty-cadastral-survey",
+     "text": "\n                Lands, Realty & Cadastral Survey\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/law-enforcement",
+     "text": "\n                Law Enforcement\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/fire",
+     "text": "\n                Fire\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/cultural-resources",
+     "text": "\n                Cultural Resources\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/paleontology",
+     "text": "\n                Paleontology\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/natural-resources/native-plant-communities",
+     "text": "\n                Plants and Seeds\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/air-resources",
+     "text": "\n                Air Resources\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/natural-resources/forests-and-woodlands",
+     "text": "\n                Forests & Woodlands\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/weeds-and-invasives",
+     "text": "\n                Weeds and Invasives\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/fish-and-wildlife",
+     "text": "\n                Wildlife Conservation\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/aquatics",
+     "text": "\n                Aquatic Resources\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/aml-environmental-cleanup/aml",
+     "text": "\n                Abandoned Mine Lands\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/aml-environmental-cleanup/hazardous-materials",
+     "text": "\n                Hazardous Material Management\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/natural-resources/subsistence",
+     "text": "\n                Subsistence\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/land-and-water-conservation-fund",
+     "text": "\n                Land and Water Conservation Fund\n          "
+    },
+    {
+     "url": "https://www.blm.gov/media",
+     "text": "Info"
+    },
+    {
+     "url": "https://www.blm.gov/alerts",
+     "text": "\n                Alerts\n          "
+    },
+    {
+     "url": "https://www.blm.gov/media/congressional-testimony",
+     "text": "\n                Congressional Testimony\n          "
+    },
+    {
+     "url": "https://www.blm.gov/events",
+     "text": "\n                Events & Meetings\n          "
+    },
+    {
+     "url": "https://www.blm.gov/media/federal-register",
+     "text": "\n                Federal Register\n          "
+    },
+    {
+     "url": "https://www.blm.gov/public-rooms",
+     "text": "\n                National Public Rooms\n          "
+    },
+    {
+     "url": "https://www.blm.gov/public-input-actions",
+     "text": "\n                Public Input & Actions\n          "
+    },
+    {
+     "url": "https://www.blm.gov/blog",
+     "text": "\n                Our Stories\n          "
+    },
+    {
+     "url": "https://www.blm.gov/press-release",
+     "text": "\n                Press Releases\n          "
+    },
+    {
+     "url": "https://www.blm.gov/media/social-media",
+     "text": "\n                Social Media\n          "
+    },
+    {
+     "url": "https://www.blm.gov/info/RSS-feeds",
+     "text": "\n                RSS Feeds\n          "
+    },
+    {
+     "url": "https://www.blm.gov/info/notices",
+     "text": "\n                Website Disclaimer\n          "
+    },
+    {
+     "url": "https://www.blm.gov/locations",
+     "text": "States"
+    },
+    {
+     "url": "https://www.blm.gov/alaska",
+     "text": "\n                Alaska\n          "
+    },
+    {
+     "url": "https://www.blm.gov/arizona",
+     "text": "\n                Arizona\n          "
+    },
+    {
+     "url": "https://www.blm.gov/california",
+     "text": "\n                California\n          "
+    },
+    {
+     "url": "https://www.blm.gov/colorado",
+     "text": "\n                Colorado\n          "
+    },
+    {
+     "url": "https://www.blm.gov/eastern-states",
+     "text": "\n                Eastern States\n          "
+    },
+    {
+     "url": "https://www.blm.gov/idaho",
+     "text": "\n                Idaho\n          "
+    },
+    {
+     "url": "https://www.blm.gov/montana-dakotas",
+     "text": "\n                Montana-Dakotas\n          "
+    },
+    {
+     "url": "https://www.blm.gov/nevada",
+     "text": "\n                Nevada\n          "
+    },
+    {
+     "url": "https://www.blm.gov/new-mexico",
+     "text": "\n                New Mexico\n          "
+    },
+    {
+     "url": "https://www.blm.gov/oregon-washington",
+     "text": "\n                Oregon-Washington\n          "
+    },
+    {
+     "url": "https://www.blm.gov/utah",
+     "text": "\n                Utah\n          "
+    },
+    {
+     "url": "https://www.blm.gov/wyoming",
+     "text": "\n                Wyoming\n          "
+    },
+    {
+     "url": "https://www.blm.gov/office/law-enforcement-headquarters",
+     "text": "\n                Law Enforcement Headquarters\n          "
+    },
+    {
+     "url": "https://www.nifc.gov/",
+     "text": "\n                National Interagency Fire Center\n          "
+    },
+    {
+     "url": "https://www.blm.gov/office/national-operations-center",
+     "text": "\n                National Operations Center\n          "
+    },
+    {
+     "url": "https://www.blm.gov/office/national-training-center",
+     "text": "\n                National Training Center\n          "
+    },
+    {
+     "url": "https://www.blm.gov/office/national-office",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://www.blm.gov/programs/fire/fire-restrictions",
+     "text": "Fire Restrictions"
+    },
+    {
+     "url": "https://www.blm.gov/visit",
+     "text": "Visit"
+    },
+    {
+     "url": "https://www.blm.gov/",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.blm.gov/visit",
+     "text": "Visit"
+    },
+    {
+     "url": "https://www.blm.gov/visit",
+     "text": "Find places to visit"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/passes",
+     "text": "Passes"
+    },
+    {
+     "url": "https://www.blm.gov/maps",
+     "text": "Maps"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+     "text": "Know before you go"
+    },
+    {
+     "url": "https://www.blm.gov/learn/interpretive-centers",
+     "text": "Visitor Centers"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/camping",
+     "text": "Camping"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/climbing",
+     "text": "Climbing"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/e-bikes",
+     "text": "E-Bikes"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/hiking",
+     "text": "Hiking"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/recreation-activities/hunting-fishing",
+     "text": "Hunting and Fishing"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/mountainbike",
+     "text": "Mountain Biking"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/OHV",
+     "text": "Off-Highway Vehicles"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/recreation-activities/recreational-shooting",
+     "text": "Recreational Shooting"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/rockhounding",
+     "text": "Rockhounding"
+    },
+    {
+     "url": "https://www.blm.gov/about",
+     "text": "About"
+    },
+    {
+     "url": "https://www.blm.gov/learn",
+     "text": "Learn"
+    },
+    {
+     "url": "https://www.blm.gov/services",
+     "text": "Services"
+    },
+    {
+     "url": "https://www.blm.gov/get-involved",
+     "text": "Get Involved"
+    },
+    {
+     "url": "https://www.blm.gov/programs",
+     "text": "Programs"
+    },
+    {
+     "url": "https://www.blm.gov/media",
+     "text": "Info"
+    },
+    {
+     "url": "https://www.blm.gov/locations",
+     "text": "States"
+    },
+    {
+     "url": "https://www.blm.gov/office/national-office",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://www.blm.gov/programs/fire/fire-restrictions",
+     "text": "Fire Restrictions"
+    },
+    {
+     "url": "https://x.com/blmnational",
+     "text": "\n        Twitter"
+    },
+    {
+     "url": "http://www.youtube.com/BLMNational",
+     "text": "\n        YouTube"
+    },
+    {
+     "url": "https://www.facebook.com/BLMNational",
+     "text": "\n        Facebook"
+    },
+    {
+     "url": "http://instagram.com/mypubliclands",
+     "text": "\n        Instagram"
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.fs.usda.gov/florida-national-scenic-trail",
+   "status": 404,
+   "final_url": "https://www.fs.usda.gov/florida-national-scenic-trail",
+   "title": "404 Not Found | US Forest Service",
+   "text": "Skip to feedback\nSkip to main content\nAn official website of the United States government\nHere's how you know\nForest Service\nU.S. DEPARTMENT OF AGRICULTURE\nVisit Us\nManaging the Land\nLearn\nScience and Technology\nWorking with Us\nAbout the Agency\nInside the FS\nReorganization\nFulltext search\nBreadcrumb\nHome\nAbout the Agency\n404 Not Found\nHero slider\nPage Not Found\nSorry, the content you are looking for is not found or has moved. Please use the back button or the search box to find the content you are looking for.\nFulltext search\nSelect a State\n-- All States --\nAlabama\nAlaska\nArizona\nArkansas\nCalifornia\nColorado\nFlorida\nGeorgia\nIdaho\nIllinois\nIndiana\nKansas\nKentucky\nLouisiana\nMaine\nMichigan\nMinnesota\nMississippi\nMissouri\nMontana\nNebraska\nNevada\nNew Hampshire\nNew Mexico\nNew York\nNorth Carolina\nNorth Dakota\nOhio\nOklahoma\nOregon\nPennsylvania\nPuerto Rico\nSouth Carolina\nSouth Dakota\nTennessee\nTexas\nUtah\nVermont\nVirginia\nWashington\nWest Virginia\nWisconsin\nWyoming\nSelect a Forest or Grassland\n-- Select One --\nAllegheny National Forest\nAngeles National Forest\nAngelina National Forest\nApache-Sitgreaves National Forests\nApalachicola National Forest\nArapaho and Roosevelt National Forests & Pawnee National Grassland\nAshley National Forest\nBaaj Nwaavjo I’tah Kukveni—Ancestral Footprints of the Grand Canyon National Monument\nBeaverhead-Deerlodge National Forest\nBienville National Forest\nBighorn National Forest\nBitterroot National Forest\nBlack Hills National Forest\nBlack Kettle National Grassland\nBoise National Forest\nBridger-Teton National Forest\nBuffalo Gap National Grassland\nButte Valley National Grassland\nCaddo National Grassland\nCaribou-Targhee National Forest\nCarson National Forest\nCedar River National Grassland\nChattahoochee-Oconee National Forests\nChequamegon-Nicolet National Forest\nCherokee National Forest\nChippewa National Forest\nChugach National Forest\nCibola National Forest\nCimarron National Grassland\nCleveland National Forest\nCoconino National Forest\nColumbia River Gorge National Scenic Area\nColville National Forest\nComanche National Grassland\nConecuh National Forest\nCoronado National Forest\nCroatan National Forest\nCrooked River National Grassland\nCurlew National Grassland\nCuster Gallatin National Forest\nDakota Prairie National Grasslands\nDaniel Boone National Forest\nDavy Crockett National Forest\nDe Soto National Forest\nDelta National Forest\nDeschutes National Forest\nDixie National Forest\nEl Yunque National Forest\nEldorado National Forest\nFishlake National Forest\nFlathead National Forest\nFort Pierre National Grassland\nFrancis Marion and Sumter National Forests\nFremont-Winema National Forest\nGeorge Washington and Jefferson National Forests\nGiant Sequoia National Monument\nGifford Pinchot National Forest\nGila National Forest\nGrand Mesa, Uncompahgre and Gunnison National Forests\nGrand River National Grassland\nGreen Mountain and Finger Lakes National Forests\nHelena-Lewis and Clark National Forest\nHells Canyon National Recreational Area\nHiawatha National Forest\nHolly Springs National Forest\nHomochitto National Forest\nHoosier National Forest\nHumboldt-Toiyabe National Forest\nHuron-Manistee National Forest\nIdaho Panhandle National Forests\nInyo National Forest\nKaibab National Forest\nKiowa National Grassland\nKisatchie National Forest\nKlamath National Forest\nKootenai National Forest\nLake Tahoe Basin Management Unit\nLand Between the Lakes National Recreational Area\nLassen National Forest\nLincoln National Forest\nLittle Missouri National Grassland\nLolo National Forest\nLos Padres National Forest\nLyndon B. Johnson National Grassland\nMalheur National Forest\nManti-La Sal National Forest\nMark Twain National Forest\nMcClellan Creek National Grassland\nMedicine Bow-Routt National Forests & Thunder Basin National Grassland\nMendocino National Forest\nMidewin National Tallgrass Prairie\nModoc National Forest\nMonongahela National Forest\nMount St. Helens National Volcanic Monument\nMt. Baker-Snoqualmie National Forest\nMt. Hood National Forest\nNantahala National Forest\nNational Forests and Grasslands in Texas\nNational Forests in Alabama\nNational Forests in Florida\nNational Forests in Mississippi\nNational Forests in North Carolina\nNebraska National Forest\nNez Perce-Clearwater National Forests\nOcala National Forest\nOchoco National Forest\nOglala National Grassland\nOkanogan-Wenatchee National Forest\nOlympic National Forest\nOsceola National Forest\nOttawa National Forest\nOuachita National Forest\nOzark-St. Francis National Forest\nPawnee National Grassland\nPayette National Forest\nPike-San Isabel National Forests\nPisgah National Forest\nPlumas National Forest\nPrescott National Forest\nRio Grande National Forest\nRita Blanca National Grassland\nRogue River-Siskiyou National Forest\nRoutt National Forest\nSabine National Forest\nSalmon-Challis National Forest\nSam Houston National Forest\nSamuel R. McKelvie National Forest\nSan Bernardino National Forest\nSan Isabel National Forest\nSan Juan National Forest\nSanta Fe National Forest\nSavannah River Site\nSawtooth National Forest\nSequoia National Forest\nShasta-Trinity National Forest\nShawnee National Forest\nSheyenne National Grassland\nShoshone National Forest\nSierra National Forest\nSiuslaw National Forest\nSix Rivers National Forest\nStanislaus National Forest\nSuperior National Forest\nTahoe National Forest\nTalladega National Forest\nThunder Basin National Grassland\nTombigbee National Forest\nTongass National Forest\nTonto National Forest\nTuskegee National Forest\nUinta-Wasatch-Cache National Forest\nUmatilla National Forest\nUmpqua National Forest\nUwharrie National Forest\nWallowa-Whitman National Forest\nWayne National Forest\nWhite Mountain National Forest\nWhite River National Forest\nWillamette National Forest\nWilliam B. Bankhead National Forest\nVisit Us\nManaging the Land\nLearn\nScience and Technology\nWorking with Us\nAbout the Agency\nInside the FS\nReorganization\nContact Us\nSitemap\nPolicies & Links\nOur Performance\nCareers\nFraud, Waste, and Abuse Hotline\nInspector General\nPlain Writing\nOpen\nFOIA\nAccessibility Statement\nPrivacy Policy\nNon-Discrimination Statement\nUSDA Anti-Harassment Policy\nForest Service Anti-Harassment Policy\nInformation Quality\nUSA.gov\nWhitehouse.gov\neGov\nNo FEAR Act Data\nWhistleblower Protection Coordinator\nForest Service\nU.S. DEPARTMENT OF AGRICULTURE\nTwitter\nFacebook\nLinkedIn\nInstagram\nFlickr\nYoutube\nHow can we improve this site?",
+   "links": [
+    {
+     "url": "https://www.fs.usda.gov/florida-national-scenic-trail#fba-button",
+     "text": "Skip to feedback"
+    },
+    {
+     "url": "https://www.fs.usda.gov/florida-national-scenic-trail#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Forest Service"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": "U.S. DEPARTMENT OF AGRICULTURE"
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit",
+     "text": "          Visit Us\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/forests-and-grasslands",
+     "text": "          Forests and Grasslands\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/national-forests-grasslands/accessibility",
+     "text": "          Accessibility\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/destinations",
+     "text": "          Destinations\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+     "text": "          Know Before You Go\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/maps",
+     "text": "          Maps\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/photos-videos",
+     "text": "          Photos and Videos\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/recreation",
+     "text": "          Recreation\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land",
+     "text": "          Managing the Land\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/disaster-recovery",
+     "text": "          Disaster Recovery\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/fire",
+     "text": "          Fire Management\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/national-forests-grasslands",
+     "text": "          Forests and Grasslands\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/international-cooperation",
+     "text": "          International Cooperation\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/invasive-species",
+     "text": "          Invasive Species\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/planning",
+     "text": "          Land Management Planning\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/lands-minerals-geology",
+     "text": "          Lands, Minerals and Geology\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/natural-resources",
+     "text": "          Natural Resources\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/private-land",
+     "text": "          Private Land\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/recreation",
+     "text": "          Recreation Management\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/urban-forests",
+     "text": "          Urban Forests\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn",
+     "text": "          Learn\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn/educators",
+     "text": "          Educators and Parents\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn/kids",
+     "text": "          For Kids\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn/natural-resources-professionals",
+     "text": "          Natural Resources Professionals\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn/our-history",
+     "text": "          Our History\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn/plants-animals",
+     "text": "          Plants and Animals\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology",
+     "text": "          Science and Technology\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/energy-forest-products",
+     "text": "          Energy and Forest Products\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/managing-fire",
+     "text": "          Fire Science\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/fish-wildlife-plants",
+     "text": "          Fish, Wildlife and Plants\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/forest-health",
+     "text": "          Forest Health\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/infrastructure",
+     "text": "          Infrastructure\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/people-forests",
+     "text": "          People and Forests\n        "
+    },
+    {
+     "url": "https://research.fs.usda.gov/",
+     "text": "          Research and Development\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/data-tools-products",
+     "text": "          Data, Tools & Products\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/water-air-soil",
+     "text": "          Water, Air and Soil\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us",
+     "text": "          Working with Us\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/careers",
+     "text": "          Careers\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/committees",
+     "text": "          Committees\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/contracts-commercial-permits",
+     "text": "          Contracts and Permits\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/donations",
+     "text": "          Donations\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/grants",
+     "text": "          Grants and Agreements\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/careers/onboarding",
+     "text": "          Onboarding\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/partnerships",
+     "text": "          Partnerships\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/billpay",
+     "text": "          Payments and Billing\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/shared-stewardship",
+     "text": "          Shared Stewardship\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/tribal-relations",
+     "text": "          Tribal Relations\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/volunteers",
+     "text": "          Volunteers\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency",
+     "text": "          About the Agency\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/contact-us",
+     "text": "          Contact Us\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/accomplishments",
+     "text": "          Agency Accomplishments\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/newsroom/leadership-biographies",
+     "text": "          Agency Leadership\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/priorities",
+     "text": "          Agency Priorities\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/budget-performance",
+     "text": "          Budget & Performance\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/features",
+     "text": "          Feature Stories\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/forestry-facts",
+     "text": "          Forest Service Facts\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/newsroom",
+     "text": "          Newsroom\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/publications",
+     "text": "          Publications\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/regulations-policies",
+     "text": "          Regulations and Directives\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/smokey-bear",
+     "text": "          Smokey Bear\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/keep-in-touch",
+     "text": "          Keep in Touch\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs",
+     "text": "          Inside the FS\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs/delivering-mission",
+     "text": "          Delivering the mission\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs/leadership",
+     "text": "          From the Chief's Desk\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs/delivering-mission/excel/employee-support-resources-available",
+     "text": "          Employee Support Resources\n        "
+    },
+    {
+     "url": "https://intranet.usda.gov/FS",
+     "text": "          OneUSDA Intranet\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/employee-services/care-recovery",
+     "text": "          Operation Care & Recovery\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/library/index.shtml",
+     "text": "          National Forest Service Library\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/employee-services",
+     "text": "          Employee Services\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/reorganization",
+     "text": "Reorganization"
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency",
+     "text": "About the Agency"
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit",
+     "text": "Visit Us"
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land",
+     "text": "Managing the Land"
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn",
+     "text": "Learn"
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology",
+     "text": "Science and Technology"
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us",
+     "text": "Working with Us"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency",
+     "text": "About the Agency"
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs",
+     "text": "Inside the FS"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/reorganization",
+     "text": "Reorganization"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/contact-us",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://www.fs.usda.gov/sitemap",
+     "text": "Sitemap"
+    },
+    {
+     "url": "https://www.usda.gov/policies-and-links",
+     "text": "Policies & Links"
+    },
+    {
+     "url": "https://www.usda.gov/our-agency/about-usda/performance",
+     "text": "Our Performance"
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/jobs",
+     "text": "Careers"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/resources/hotline-information",
+     "text": "Fraud, Waste, and Abuse Hotline"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/",
+     "text": "Inspector General"
+    },
+    {
+     "url": "https://www.usda.gov/plain-writing",
+     "text": "Plain Writing"
+    },
+    {
+     "url": "https://www.usda.gov/open",
+     "text": "Open"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/foia",
+     "text": "FOIA"
+    },
+    {
+     "url": "https://www.usda.gov/accessibility-statement",
+     "text": "Accessibility Statement"
+    },
+    {
+     "url": "https://www.usda.gov/privacy-policy",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://www.usda.gov/non-discrimination-statement",
+     "text": "Non-Discrimination Statement"
+    },
+    {
+     "url": "https://www.usda.gov/oascr/civil-rights-statements",
+     "text": "USDA Anti-Harassment Policy"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/anti-harassment",
+     "text": "Forest Service Anti-Harassment Policy"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/quality-of-information",
+     "text": "Information Quality"
+    },
+    {
+     "url": "https://www.usa.gov/",
+     "text": "USA.gov"
+    },
+    {
+     "url": "https://www.whitehouse.gov/",
+     "text": "Whitehouse.gov"
+    },
+    {
+     "url": "https://www.usda.gov/federal-web-site-inventory",
+     "text": "eGov"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/civil-rights#noFEARAct",
+     "text": "No FEAR Act Data"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/resources/whistleblower-protection-coordinator",
+     "text": "Whistleblower Protection Coordinator"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Forest Service"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": "U.S. DEPARTMENT OF AGRICULTURE"
+    },
+    {
+     "url": "https://twitter.com/forestservice",
+     "text": "Twitter"
+    },
+    {
+     "url": "https://www.facebook.com/USForestService",
+     "text": "Facebook"
+    },
+    {
+     "url": "https://www.linkedin.com/company/usda-forest-service",
+     "text": "LinkedIn"
+    },
+    {
+     "url": "https://www.instagram.com/u.s.forestservice/",
+     "text": "Instagram"
+    },
+    {
+     "url": "https://www.flickr.com/photos/usforestservice/",
+     "text": "Flickr"
+    },
+    {
+     "url": "https://www.youtube.com/user/usdaForestService",
+     "text": "Youtube"
+    },
+    {
+     "url": "https://www.gsa.gov/reference/gsa-privacy-program/privacy-act-statement-for-design-research",
+     "text": ""
+    },
+    {
+     "url": "https://touchpoints.digital.gov/",
+     "text": ""
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.blm.gov/visit/iditarod-national-historic-trail",
+   "status": 404,
+   "final_url": "https://www.blm.gov/visit/iditarod-national-historic-trail",
+   "title": "Page Not Found | Bureau of Land Management",
+   "text": "Skip to main navigation\nSkip to main content\nAn official website of the United States government\nHere’s how you know\nBureau of Land Management Home Page\nU.S. DEPARTMENT OF THE INTERIOR\nBUREAU OF LAND MANAGEMENT\nSearch\nHome\nVisit\nAbout\nLearn\nServices\nGet Involved\nPrograms\nInfo\nStates\nContact Us\nFire Restrictions\nHome\nVisit\nPage Not Found\nSorry, the content you are looking for is not found or has moved.\nPlease return to the home page at www.blm.gov or try the search box.\nWere you looking for any of these items?\nRecreation sites across the BLM - Search by State, recreation activity and keyword\nPress Releases - Searchable by State, year and keyword\nBLM Forms - search for forms needed to do business with the BLM\nBLM e-GIS Hub - Your one-stop shop for keyword and geospatial search of BLM data. In just minutes you can search our trove of maps and datasets which you can annotate, edit and save with ease.\nPublic Room- Find maps, brochures, reports, factsheets, guides, and more!\nLand Records - case files, survey plats and notes, master title plats, and more!\nBLM Policy- directives, manuals, handbooks\nNational Training Center\nContact Us - Find your local BLM office contact information\nVisit\nHome\nVisit\nFind places to visit\nPasses\nMaps\nKnow before you go\nVisitor Centers\nCamping\nClimbing\nE-Bikes\nHiking\nHunting and Fishing\nMountain Biking\nOff-Highway Vehicles\nRecreational Shooting\nRockhounding\nAbout\nLearn\nServices\nGet Involved\nPrograms\nInfo\nStates\nContact Us\nFire Restrictions\nWas this page helpful?\nYes\nNo\nPrivacy Notice\nAn official form of the United States government. Provided by Touchpoints\nBureau of Land Management Home Page\nU.S. DEPARTMENT OF THE INTERIOR\nBUREAU OF LAND MANAGEMENT\nFooter Utility\nAbout BLM\nCareers\nContact Us\nMaps\nInformation Center\nWebsite Disclaimers\nFeedback\nReport Misconduct\nOffice of Civil Rights\nblm.gov\nAn official website of the Department of the Interior\nAbout DOI.gov\nAccessibility statement\nFOIA requests\nNo FEAR Act data\nOffice of the Inspector General\nBudget & performance reports\nAgency financial reports\nDisclaimer\nPrivacy policy\nVulnerability disclosure policy\nCummings Act notices\nLooking for U.S. government information and services?\nVisit USA.gov",
+   "links": [
+    {
+     "url": "https://www.blm.gov/visit/iditarod-national-historic-trail#superfish-main",
+     "text": "Skip to main navigation"
+    },
+    {
+     "url": "https://www.blm.gov/visit/iditarod-national-historic-trail#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.blm.gov/",
+     "text": "Bureau of Land Management Home Page"
+    },
+    {
+     "url": "https://www.blm.gov/visit/iditarod-national-historic-trail#",
+     "text": "Open Search"
+    },
+    {
+     "url": "https://www.blm.gov/office/national-office",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://www.blm.gov/visit/iditarod-national-historic-trail#",
+     "text": " Mobile Menu"
+    },
+    {
+     "url": "https://x.com/blmnational",
+     "text": ""
+    },
+    {
+     "url": "http://www.youtube.com/BLMNational",
+     "text": ""
+    },
+    {
+     "url": "https://www.facebook.com/BLMNational",
+     "text": ""
+    },
+    {
+     "url": "http://instagram.com/mypubliclands",
+     "text": ""
+    },
+    {
+     "url": "https://www.flickr.com/photos/mypubliclands/",
+     "text": ""
+    },
+    {
+     "url": "https://www.linkedin.com/company/bureau-of-land-management",
+     "text": ""
+    },
+    {
+     "url": "https://www.blm.gov/office/national-office",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://www.blm.gov/",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.blm.gov/visit",
+     "text": "Visit"
+    },
+    {
+     "url": "https://www.blm.gov/visit",
+     "text": "\n                Find places to visit\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/passes",
+     "text": "\n                Passes\n          "
+    },
+    {
+     "url": "https://www.blm.gov/maps",
+     "text": "\n                Maps\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+     "text": "\n                Know before you go\n          "
+    },
+    {
+     "url": "https://www.blm.gov/learn/interpretive-centers",
+     "text": "\n                Visitor Centers\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/camping",
+     "text": "\n                Camping\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/climbing",
+     "text": "\n                Climbing\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/e-bikes",
+     "text": "\n                E-Bikes\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/hiking",
+     "text": "\n                Hiking\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/recreation-activities/hunting-fishing",
+     "text": "\n                Hunting and Fishing\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/mountainbike",
+     "text": "\n                Mountain Biking\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/OHV",
+     "text": "\n                Off-Highway Vehicles\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/recreation-activities/recreational-shooting",
+     "text": "\n                Recreational Shooting\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/rockhounding",
+     "text": "\n                Rockhounding\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about",
+     "text": "About"
+    },
+    {
+     "url": "https://www.blm.gov/about/our-mission",
+     "text": "\n                Our Mission\n          "
+    },
+    {
+     "url": "https://www.blm.gov/leadership",
+     "text": "\n                Leadership\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/organization-chart",
+     "text": "\n                Organization Chart\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/what-we-manage",
+     "text": "\n                What We Manage\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/how-we-manage",
+     "text": "\n                How We Manage\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/laws-and-regulations",
+     "text": "\n                Laws and Regulations\n          "
+    },
+    {
+     "url": "https://www.blm.gov/policy",
+     "text": "\n                Policy\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/history",
+     "text": "\n                History of the BLM\n          "
+    },
+    {
+     "url": "https://www.blm.gov/about/data/National-Datasets",
+     "text": "\n                Data\n          "
+    },
+    {
+     "url": "https://www.blm.gov/learn",
+     "text": "Learn"
+    },
+    {
+     "url": "https://www.blm.gov/kids",
+     "text": "\n                Kids\n          "
+    },
+    {
+     "url": "https://www.blm.gov/educators",
+     "text": "\n                Teachers\n          "
+    },
+    {
+     "url": "https://www.blm.gov/Learn/Can-I-Keep-This",
+     "text": "\n                Can I Keep This?\n          "
+    },
+    {
+     "url": "https://www.blm.gov/learn/interpretive-centers",
+     "text": "\n                Visitor Centers\n          "
+    },
+    {
+     "url": "https://www.blm.gov/learn/science-in-the-blm",
+     "text": "\n                Science in BLM\n          "
+    },
+    {
+     "url": "https://www.blm.gov/learn/blm-library",
+     "text": "\n                BLM Library\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services",
+     "text": "Services"
+    },
+    {
+     "url": "https://www.blm.gov/services/gov-to-gov-tribal-consultation",
+     "text": "\n                Government-to-Government Tribal Consultation\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/cadr",
+     "text": "\n                Collaborative Action and Dispute Resolution\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/acquisition/contracting",
+     "text": "\n                Contracting\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/financial-assistance-and-grants",
+     "text": "\n                Financial Assistance\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/foia",
+     "text": "\n                FOIA\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/electronic-forms",
+     "text": "\n                Forms\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/geospatial",
+     "text": "\n                Geospatial\n          "
+    },
+    {
+     "url": "https://www.blm.gov/services/land-records",
+     "text": "\n                Land Records\n          "
+    },
+    {
+     "url": "https://www.doi.gov/pmb/eeo",
+     "text": "\n                Office of Civil Rights\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved",
+     "text": "Get Involved"
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/all-americans-outside",
+     "text": "\n                All Americans Outside\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/blm-2026-anniversaries",
+     "text": "\n                Freedom 250 Events\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/resource-advisory-council",
+     "text": "\n                Resource Advisory Councils\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/partnerships",
+     "text": "\n                Partnerships\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/volunteers",
+     "text": "\n                Volunteers\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/artist-in-residence/air-sites",
+     "text": "\n                Artist-in-Residence\n          "
+    },
+    {
+     "url": "https://www.blm.gov/careers/students-and-grads/internship",
+     "text": "\n                Internships\n          "
+    },
+    {
+     "url": "https://www.blm.gov/careers",
+     "text": "\n                Careers\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/donations",
+     "text": "\n                Donations\n          "
+    },
+    {
+     "url": "https://www.blm.gov/get-involved/donations/recreationgov",
+     "text": "\n                Donations via Recreation.gov\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs",
+     "text": "Programs"
+    },
+    {
+     "url": "https://www.blm.gov/programs/energy-and-minerals",
+     "text": "\n                Energy and Minerals\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/rangelands-and-grazing",
+     "text": "\n                Rangelands and Grazing\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/planning-and-nepa",
+     "text": "\n                Planning and NEPA\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/national-conservation-lands",
+     "text": "\n                National Conservation Lands\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation",
+     "text": "\n                Recreation and Visitor Services\n          "
+    },
+    {
+     "url": "https://www.blm.gov/whb",
+     "text": "\n                Wild Horse and Burro\n          "
+    },
+    {
+     "url": "https://www.blm.gov/lands-realty-cadastral-survey",
+     "text": "\n                Lands, Realty & Cadastral Survey\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/law-enforcement",
+     "text": "\n                Law Enforcement\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/fire",
+     "text": "\n                Fire\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/cultural-resources",
+     "text": "\n                Cultural Resources\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/paleontology",
+     "text": "\n                Paleontology\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/natural-resources/native-plant-communities",
+     "text": "\n                Plants and Seeds\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/air-resources",
+     "text": "\n                Air Resources\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/natural-resources/forests-and-woodlands",
+     "text": "\n                Forests & Woodlands\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/weeds-and-invasives",
+     "text": "\n                Weeds and Invasives\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/fish-and-wildlife",
+     "text": "\n                Wildlife Conservation\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/aquatics",
+     "text": "\n                Aquatic Resources\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/aml-environmental-cleanup/aml",
+     "text": "\n                Abandoned Mine Lands\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/aml-environmental-cleanup/hazardous-materials",
+     "text": "\n                Hazardous Material Management\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/natural-resources/subsistence",
+     "text": "\n                Subsistence\n          "
+    },
+    {
+     "url": "https://www.blm.gov/programs/land-and-water-conservation-fund",
+     "text": "\n                Land and Water Conservation Fund\n          "
+    },
+    {
+     "url": "https://www.blm.gov/media",
+     "text": "Info"
+    },
+    {
+     "url": "https://www.blm.gov/alerts",
+     "text": "\n                Alerts\n          "
+    },
+    {
+     "url": "https://www.blm.gov/media/congressional-testimony",
+     "text": "\n                Congressional Testimony\n          "
+    },
+    {
+     "url": "https://www.blm.gov/events",
+     "text": "\n                Events & Meetings\n          "
+    },
+    {
+     "url": "https://www.blm.gov/media/federal-register",
+     "text": "\n                Federal Register\n          "
+    },
+    {
+     "url": "https://www.blm.gov/public-rooms",
+     "text": "\n                National Public Rooms\n          "
+    },
+    {
+     "url": "https://www.blm.gov/public-input-actions",
+     "text": "\n                Public Input & Actions\n          "
+    },
+    {
+     "url": "https://www.blm.gov/blog",
+     "text": "\n                Our Stories\n          "
+    },
+    {
+     "url": "https://www.blm.gov/press-release",
+     "text": "\n                Press Releases\n          "
+    },
+    {
+     "url": "https://www.blm.gov/media/social-media",
+     "text": "\n                Social Media\n          "
+    },
+    {
+     "url": "https://www.blm.gov/info/RSS-feeds",
+     "text": "\n                RSS Feeds\n          "
+    },
+    {
+     "url": "https://www.blm.gov/info/notices",
+     "text": "\n                Website Disclaimer\n          "
+    },
+    {
+     "url": "https://www.blm.gov/locations",
+     "text": "States"
+    },
+    {
+     "url": "https://www.blm.gov/alaska",
+     "text": "\n                Alaska\n          "
+    },
+    {
+     "url": "https://www.blm.gov/arizona",
+     "text": "\n                Arizona\n          "
+    },
+    {
+     "url": "https://www.blm.gov/california",
+     "text": "\n                California\n          "
+    },
+    {
+     "url": "https://www.blm.gov/colorado",
+     "text": "\n                Colorado\n          "
+    },
+    {
+     "url": "https://www.blm.gov/eastern-states",
+     "text": "\n                Eastern States\n          "
+    },
+    {
+     "url": "https://www.blm.gov/idaho",
+     "text": "\n                Idaho\n          "
+    },
+    {
+     "url": "https://www.blm.gov/montana-dakotas",
+     "text": "\n                Montana-Dakotas\n          "
+    },
+    {
+     "url": "https://www.blm.gov/nevada",
+     "text": "\n                Nevada\n          "
+    },
+    {
+     "url": "https://www.blm.gov/new-mexico",
+     "text": "\n                New Mexico\n          "
+    },
+    {
+     "url": "https://www.blm.gov/oregon-washington",
+     "text": "\n                Oregon-Washington\n          "
+    },
+    {
+     "url": "https://www.blm.gov/utah",
+     "text": "\n                Utah\n          "
+    },
+    {
+     "url": "https://www.blm.gov/wyoming",
+     "text": "\n                Wyoming\n          "
+    },
+    {
+     "url": "https://www.blm.gov/office/law-enforcement-headquarters",
+     "text": "\n                Law Enforcement Headquarters\n          "
+    },
+    {
+     "url": "https://www.nifc.gov/",
+     "text": "\n                National Interagency Fire Center\n          "
+    },
+    {
+     "url": "https://www.blm.gov/office/national-operations-center",
+     "text": "\n                National Operations Center\n          "
+    },
+    {
+     "url": "https://www.blm.gov/office/national-training-center",
+     "text": "\n                National Training Center\n          "
+    },
+    {
+     "url": "https://www.blm.gov/office/national-office",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://www.blm.gov/programs/fire/fire-restrictions",
+     "text": "Fire Restrictions"
+    },
+    {
+     "url": "https://www.blm.gov/visit",
+     "text": "Visit"
+    },
+    {
+     "url": "https://www.blm.gov/",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.blm.gov/visit",
+     "text": "Visit"
+    },
+    {
+     "url": "https://www.blm.gov/visit",
+     "text": "Find places to visit"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/passes",
+     "text": "Passes"
+    },
+    {
+     "url": "https://www.blm.gov/maps",
+     "text": "Maps"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+     "text": "Know before you go"
+    },
+    {
+     "url": "https://www.blm.gov/learn/interpretive-centers",
+     "text": "Visitor Centers"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/camping",
+     "text": "Camping"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/climbing",
+     "text": "Climbing"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/e-bikes",
+     "text": "E-Bikes"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/hiking",
+     "text": "Hiking"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/recreation-activities/hunting-fishing",
+     "text": "Hunting and Fishing"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/mountainbike",
+     "text": "Mountain Biking"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/OHV",
+     "text": "Off-Highway Vehicles"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/recreation-activities/recreational-shooting",
+     "text": "Recreational Shooting"
+    },
+    {
+     "url": "https://www.blm.gov/programs/recreation/rockhounding",
+     "text": "Rockhounding"
+    },
+    {
+     "url": "https://www.blm.gov/about",
+     "text": "About"
+    },
+    {
+     "url": "https://www.blm.gov/learn",
+     "text": "Learn"
+    },
+    {
+     "url": "https://www.blm.gov/services",
+     "text": "Services"
+    },
+    {
+     "url": "https://www.blm.gov/get-involved",
+     "text": "Get Involved"
+    },
+    {
+     "url": "https://www.blm.gov/programs",
+     "text": "Programs"
+    },
+    {
+     "url": "https://www.blm.gov/media",
+     "text": "Info"
+    },
+    {
+     "url": "https://www.blm.gov/locations",
+     "text": "States"
+    },
+    {
+     "url": "https://www.blm.gov/office/national-office",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://www.blm.gov/programs/fire/fire-restrictions",
+     "text": "Fire Restrictions"
+    },
+    {
+     "url": "https://x.com/blmnational",
+     "text": "\n        Twitter"
+    },
+    {
+     "url": "http://www.youtube.com/BLMNational",
+     "text": "\n        YouTube"
+    },
+    {
+     "url": "https://www.facebook.com/BLMNational",
+     "text": "\n        Facebook"
+    },
+    {
+     "url": "http://instagram.com/mypubliclands",
+     "text": "\n        Instagram"
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.fs.usda.gov/detail/nezperceclearwater/specialplaces/?cid=fsbdev3_063613",
+   "status": 200,
+   "final_url": "https://www.fs.usda.gov/r01/nezperce-clearwater",
+   "title": "Home | Nez Perce-Clearwater National Forests | Forest Service",
+   "text": "Skip to main content\nAn official website of the United States government\nHere's how you know\nForest Service\nU.S. DEPARTMENT OF AGRICULTURE\nNez Perce-Clearwater National Forests\nHome\nVisit\nTopics\nResources\nAbout\nSearch\nForest Service Home Inside the Forest Service About the Agency\nAlerts and Fire Danger Status\nWelcome!\nThe Nez Perce-Clearwater National Forests are 4 million acres of beautiful and diverse land located in north-central Idaho.\nBreadcrumb\nForest Service Home Northern Region Nez Perce-Clearwater National Forests\nT\nT\nT\nWelcome to Nez Perce-Clearwater National Forests\nFrom the dry, rugged canyons of the Salmon River to the moist cedar forests of the Selway drainage to the rolling uplands of the Palouse, the Nez Perce-Clearwater National Forests in Idaho offers something for everyone. This vast, diverse area is managed to provide a variety of goods and services including breathtaking scenery, wilderness, wildlife, fisheries, timber harvest, livestock grazing, mining, pristine water quality and a wide array of recreation opportunities.\n2026 U.S. Capitol Christmas Tree\nThe Nez Perce-Clearwater National Forests are providing the 2026 Capitol Christmas Tree. Learn more here!\nStep Into Christmas!\nFire Information\nWildfire Updates\nTrail Clearing Status\nCheck out our trail clearing status app for recent conditions\nLearn More About Our Tra\nForest maps\nGet a Map\nFirewood Permits\nGet your permit online!\nWood Permit\nForest Offices\nStay In Touch\nRecent Press Releases\n2026 U.S. Capitol Christmas Tree Tour Route Announced\nRelease Date: October 1, 2026\nNez Perce-Clearwater National Forests to Begin Fall Prescribed Fires September 21st\nRelease Date: September 18, 2026\nDivide Trail 505 Open to Motorized Use\nRelease Date: September 5, 2026\nView All Press Releases\nReturn to top\nNez Perce-Clearwater National Forests Supervisor’s Office\n1008 Highway 64\nKamiah, ID 83536\n208-935-2513\nDistrict Offices\nPrimary Footer Menu\nRecreation.gov\nAccessibility Statement\nVisit OIG\nOur Performance\nAnti-Harassment Policy\nCareers\nUSA.gov\nWhiteHouse.gov\nPrivacy Policy\nPlain Writing\nNo Fear Act Data\nFOIA\nReport Fraud on USDA Contracts\nPolicies and Links\neGov\nNon-Discrimination Statement\nOpen Government\nInformation Quality\nForest Service\nU.S. DEPARTMENT OF AGRICULTURE\nX\nFacebook\nYoutube\nFlickr\nInstagram",
+   "links": [
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/alerts",
+     "text": "\n                        Alerts\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/conditions",
+     "text": "\n                        Current Conditions\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/passes",
+     "text": "\n                        Passes\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/permits",
+     "text": "\n                        Permits\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/recreation",
+     "text": "\n                        Recreation\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/recreation/camping-cabins",
+     "text": "Camping and Cabins"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/recreation/opportunities",
+     "text": "Opportunities"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/recreation/epic-adventures",
+     "text": "Epic Adventures"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/recreation/discover-history",
+     "text": "Discover History"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/safety-ethics",
+     "text": "\n                        Safety and Outdoor Ethics\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/safety-ethics/brave-elements",
+     "text": "Brave the Elements"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/safety-ethics/respect-wildlife",
+     "text": "Respect Wildlife"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/maps-guides",
+     "text": "\n                        Visitor Maps and Guides\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/fire",
+     "text": "\n                        Fire\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/fire/info",
+     "text": "Information"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/forest-products",
+     "text": "\n                        Forest Products\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/forest-products/timber-sales",
+     "text": "Timber Sales"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/natural-resources",
+     "text": "\n                        Natural Resources\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/natural-resources/geology",
+     "text": "Geology"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/planning",
+     "text": "\n                        Planning\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/projects",
+     "text": "\n                        Projects\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/educational",
+     "text": "\n                        Educational Products\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/educational/educators",
+     "text": "Educators"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/educational/kids",
+     "text": "Just for Kids"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/contact-us",
+     "text": "\n                        Contact Us\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/newsroom",
+     "text": "\n                        Newsroom\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/newsroom/releases",
+     "text": "Press Releases"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/offices",
+     "text": "\n                        Offices\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/working-with-us",
+     "text": "\n                        Working with Us\n                    "
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/working-with-us/careers",
+     "text": "Careers and Jobs"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/working-with-us/committees",
+     "text": "Committees"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/working-with-us/contracting",
+     "text": "Contracting"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/working-with-us/partnerships",
+     "text": "Partnerships"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/working-with-us/tribal-relations",
+     "text": "Tribal Relations"
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Forest Service Home"
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs",
+     "text": "Inside the Forest Service"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency",
+     "text": "About the Agency"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/alerts",
+     "text": "View All Alerts"
+    },
+    {
+     "url": "https://inciweb.wildfire.gov/",
+     "text": "InciWeb"
+    },
+    {
+     "url": "https://gacc.nifc.gov/nrcc/dc/idgvc/",
+     "text": "Fire Danger Information: Grangeville Dispatch Home Page (nifc.gov)"
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Forest Service Home"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01",
+     "text": "Northern Region"
+    },
+    {
+     "url": "https://www.uscapitolchristmastree.com/",
+     "text": "2026 U.S. Capitol Christmas Tree"
+    },
+    {
+     "url": "https://www.uscapitolchristmastree.com/",
+     "text": "Step Into Christmas!"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/fire/info",
+     "text": "Wildfire Updates"
+    },
+    {
+     "url": "https://experience.arcgis.com/experience/fcc4757ca5cc4c3e969a8a8bb5833432",
+     "text": "Trail Clearing Status"
+    },
+    {
+     "url": "https://experience.arcgis.com/experience/fcc4757ca5cc4c3e969a8a8bb5833432",
+     "text": "Learn More About Our Tra"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/maps-guides",
+     "text": "Get a Map"
+    },
+    {
+     "url": "https://epermits.fs2c.usda.gov/forest/0117",
+     "text": "Firewood Permits"
+    },
+    {
+     "url": "https://epermits.fs2c.usda.gov/forest/0117",
+     "text": "Wood Permit"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/offices",
+     "text": "Stay In Touch"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/newsroom/releases/2026-us-capitol-christmas-tree-tour-route-announced",
+     "text": "2026 U.S. Capitol Christmas Tree Tour Route Announced"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/newsroom/releases/nez-perce-clearwater-national-forests-begin-fall",
+     "text": "Nez Perce-Clearwater National Forests to Begin Fall Prescribed Fires September 21st"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/newsroom/releases/divide-trail-505-open-motorized-use",
+     "text": "Divide Trail 505 Open to Motorized Use"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/newsroom/releases",
+     "text": "View All Press Releases"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater#",
+     "text": "Return to top"
+    },
+    {
+     "url": "https://www.fs.usda.gov/r01/nezperce-clearwater/offices",
+     "text": "District Offices"
+    },
+    {
+     "url": "https://recreation.gov/",
+     "text": "Recreation.gov"
+    },
+    {
+     "url": "https://www.usda.gov/accessibility-statement",
+     "text": "Accessibility Statement"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/",
+     "text": "Visit OIG"
+    },
+    {
+     "url": "https://www.usda.gov/our-agency/about-usda/performance",
+     "text": "Our Performance"
+    },
+    {
+     "url": "https://www.usda.gov/oascr/civil-rights-statements",
+     "text": "Anti-Harassment Policy"
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/careers",
+     "text": "Careers"
+    },
+    {
+     "url": "https://www.usa.gov/",
+     "text": "USA.gov"
+    },
+    {
+     "url": "https://www.whitehouse.gov/",
+     "text": "WhiteHouse.gov"
+    },
+    {
+     "url": "https://www.usda.gov/privacy-policy",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://www.usda.gov/plain-writing",
+     "text": "Plain Writing"
+    },
+    {
+     "url": "https://www.usda.gov/nofear",
+     "text": "No Fear Act Data"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/foia/",
+     "text": "FOIA"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/resources/contractor-fraud",
+     "text": "Report Fraud on USDA Contracts"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/",
+     "text": "Policies and Links"
+    },
+    {
+     "url": "https://www.usda.gov/federal-web-site-inventory",
+     "text": "eGov"
+    },
+    {
+     "url": "https://www.usda.gov/non-discrimination-statement",
+     "text": "Non-Discrimination Statement"
+    },
+    {
+     "url": "https://www.usda.gov/open",
+     "text": "Open Government"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/quality-of-information",
+     "text": "Information Quality"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://x.com/forestservice",
+     "text": "X"
+    },
+    {
+     "url": "https://www.facebook.com/USForestService",
+     "text": "Facebook"
+    },
+    {
+     "url": "https://www.youtube.com/user/usdaForestService",
+     "text": "Youtube"
+    },
+    {
+     "url": "https://www.flickr.com/photos/usforestservice/",
+     "text": "Flickr"
+    },
+    {
+     "url": "https://www.instagram.com/u.s.forestservice",
+     "text": "Instagram"
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.fs.usda.gov/pacificcrest",
+   "status": 404,
+   "final_url": "https://www.fs.usda.gov/pacificcrest",
+   "title": "404 Not Found | US Forest Service",
+   "text": "Skip to feedback\nSkip to main content\nAn official website of the United States government\nHere's how you know\nForest Service\nU.S. DEPARTMENT OF AGRICULTURE\nVisit Us\nManaging the Land\nLearn\nScience and Technology\nWorking with Us\nAbout the Agency\nInside the FS\nReorganization\nFulltext search\nBreadcrumb\nHome\nAbout the Agency\n404 Not Found\nHero slider\nPage Not Found\nSorry, the content you are looking for is not found or has moved. Please use the back button or the search box to find the content you are looking for.\nFulltext search\nSelect a State\n-- All States --\nAlabama\nAlaska\nArizona\nArkansas\nCalifornia\nColorado\nFlorida\nGeorgia\nIdaho\nIllinois\nIndiana\nKansas\nKentucky\nLouisiana\nMaine\nMichigan\nMinnesota\nMississippi\nMissouri\nMontana\nNebraska\nNevada\nNew Hampshire\nNew Mexico\nNew York\nNorth Carolina\nNorth Dakota\nOhio\nOklahoma\nOregon\nPennsylvania\nPuerto Rico\nSouth Carolina\nSouth Dakota\nTennessee\nTexas\nUtah\nVermont\nVirginia\nWashington\nWest Virginia\nWisconsin\nWyoming\nSelect a Forest or Grassland\n-- Select One --\nAllegheny National Forest\nAngeles National Forest\nAngelina National Forest\nApache-Sitgreaves National Forests\nApalachicola National Forest\nArapaho and Roosevelt National Forests & Pawnee National Grassland\nAshley National Forest\nBaaj Nwaavjo I’tah Kukveni—Ancestral Footprints of the Grand Canyon National Monument\nBeaverhead-Deerlodge National Forest\nBienville National Forest\nBighorn National Forest\nBitterroot National Forest\nBlack Hills National Forest\nBlack Kettle National Grassland\nBoise National Forest\nBridger-Teton National Forest\nBuffalo Gap National Grassland\nButte Valley National Grassland\nCaddo National Grassland\nCaribou-Targhee National Forest\nCarson National Forest\nCedar River National Grassland\nChattahoochee-Oconee National Forests\nChequamegon-Nicolet National Forest\nCherokee National Forest\nChippewa National Forest\nChugach National Forest\nCibola National Forest\nCimarron National Grassland\nCleveland National Forest\nCoconino National Forest\nColumbia River Gorge National Scenic Area\nColville National Forest\nComanche National Grassland\nConecuh National Forest\nCoronado National Forest\nCroatan National Forest\nCrooked River National Grassland\nCurlew National Grassland\nCuster Gallatin National Forest\nDakota Prairie National Grasslands\nDaniel Boone National Forest\nDavy Crockett National Forest\nDe Soto National Forest\nDelta National Forest\nDeschutes National Forest\nDixie National Forest\nEl Yunque National Forest\nEldorado National Forest\nFishlake National Forest\nFlathead National Forest\nFort Pierre National Grassland\nFrancis Marion and Sumter National Forests\nFremont-Winema National Forest\nGeorge Washington and Jefferson National Forests\nGiant Sequoia National Monument\nGifford Pinchot National Forest\nGila National Forest\nGrand Mesa, Uncompahgre and Gunnison National Forests\nGrand River National Grassland\nGreen Mountain and Finger Lakes National Forests\nHelena-Lewis and Clark National Forest\nHells Canyon National Recreational Area\nHiawatha National Forest\nHolly Springs National Forest\nHomochitto National Forest\nHoosier National Forest\nHumboldt-Toiyabe National Forest\nHuron-Manistee National Forest\nIdaho Panhandle National Forests\nInyo National Forest\nKaibab National Forest\nKiowa National Grassland\nKisatchie National Forest\nKlamath National Forest\nKootenai National Forest\nLake Tahoe Basin Management Unit\nLand Between the Lakes National Recreational Area\nLassen National Forest\nLincoln National Forest\nLittle Missouri National Grassland\nLolo National Forest\nLos Padres National Forest\nLyndon B. Johnson National Grassland\nMalheur National Forest\nManti-La Sal National Forest\nMark Twain National Forest\nMcClellan Creek National Grassland\nMedicine Bow-Routt National Forests & Thunder Basin National Grassland\nMendocino National Forest\nMidewin National Tallgrass Prairie\nModoc National Forest\nMonongahela National Forest\nMount St. Helens National Volcanic Monument\nMt. Baker-Snoqualmie National Forest\nMt. Hood National Forest\nNantahala National Forest\nNational Forests and Grasslands in Texas\nNational Forests in Alabama\nNational Forests in Florida\nNational Forests in Mississippi\nNational Forests in North Carolina\nNebraska National Forest\nNez Perce-Clearwater National Forests\nOcala National Forest\nOchoco National Forest\nOglala National Grassland\nOkanogan-Wenatchee National Forest\nOlympic National Forest\nOsceola National Forest\nOttawa National Forest\nOuachita National Forest\nOzark-St. Francis National Forest\nPawnee National Grassland\nPayette National Forest\nPike-San Isabel National Forests\nPisgah National Forest\nPlumas National Forest\nPrescott National Forest\nRio Grande National Forest\nRita Blanca National Grassland\nRogue River-Siskiyou National Forest\nRoutt National Forest\nSabine National Forest\nSalmon-Challis National Forest\nSam Houston National Forest\nSamuel R. McKelvie National Forest\nSan Bernardino National Forest\nSan Isabel National Forest\nSan Juan National Forest\nSanta Fe National Forest\nSavannah River Site\nSawtooth National Forest\nSequoia National Forest\nShasta-Trinity National Forest\nShawnee National Forest\nSheyenne National Grassland\nShoshone National Forest\nSierra National Forest\nSiuslaw National Forest\nSix Rivers National Forest\nStanislaus National Forest\nSuperior National Forest\nTahoe National Forest\nTalladega National Forest\nThunder Basin National Grassland\nTombigbee National Forest\nTongass National Forest\nTonto National Forest\nTuskegee National Forest\nUinta-Wasatch-Cache National Forest\nUmatilla National Forest\nUmpqua National Forest\nUwharrie National Forest\nWallowa-Whitman National Forest\nWayne National Forest\nWhite Mountain National Forest\nWhite River National Forest\nWillamette National Forest\nWilliam B. Bankhead National Forest\nVisit Us\nManaging the Land\nLearn\nScience and Technology\nWorking with Us\nAbout the Agency\nInside the FS\nReorganization\nContact Us\nSitemap\nPolicies & Links\nOur Performance\nCareers\nFraud, Waste, and Abuse Hotline\nInspector General\nPlain Writing\nOpen\nFOIA\nAccessibility Statement\nPrivacy Policy\nNon-Discrimination Statement\nUSDA Anti-Harassment Policy\nForest Service Anti-Harassment Policy\nInformation Quality\nUSA.gov\nWhitehouse.gov\neGov\nNo FEAR Act Data\nWhistleblower Protection Coordinator\nForest Service\nU.S. DEPARTMENT OF AGRICULTURE\nTwitter\nFacebook\nLinkedIn\nInstagram\nFlickr\nYoutube\nHow can we improve this site?",
+   "links": [
+    {
+     "url": "https://www.fs.usda.gov/pacificcrest#fba-button",
+     "text": "Skip to feedback"
+    },
+    {
+     "url": "https://www.fs.usda.gov/pacificcrest#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Forest Service"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": "U.S. DEPARTMENT OF AGRICULTURE"
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit",
+     "text": "          Visit Us\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/forests-and-grasslands",
+     "text": "          Forests and Grasslands\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/national-forests-grasslands/accessibility",
+     "text": "          Accessibility\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/destinations",
+     "text": "          Destinations\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+     "text": "          Know Before You Go\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/maps",
+     "text": "          Maps\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/photos-videos",
+     "text": "          Photos and Videos\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit/recreation",
+     "text": "          Recreation\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land",
+     "text": "          Managing the Land\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/disaster-recovery",
+     "text": "          Disaster Recovery\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/fire",
+     "text": "          Fire Management\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/national-forests-grasslands",
+     "text": "          Forests and Grasslands\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/international-cooperation",
+     "text": "          International Cooperation\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/invasive-species",
+     "text": "          Invasive Species\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/planning",
+     "text": "          Land Management Planning\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/lands-minerals-geology",
+     "text": "          Lands, Minerals and Geology\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/natural-resources",
+     "text": "          Natural Resources\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/private-land",
+     "text": "          Private Land\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/recreation",
+     "text": "          Recreation Management\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land/urban-forests",
+     "text": "          Urban Forests\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn",
+     "text": "          Learn\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn/educators",
+     "text": "          Educators and Parents\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn/kids",
+     "text": "          For Kids\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn/natural-resources-professionals",
+     "text": "          Natural Resources Professionals\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn/our-history",
+     "text": "          Our History\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn/plants-animals",
+     "text": "          Plants and Animals\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology",
+     "text": "          Science and Technology\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/energy-forest-products",
+     "text": "          Energy and Forest Products\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/managing-fire",
+     "text": "          Fire Science\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/fish-wildlife-plants",
+     "text": "          Fish, Wildlife and Plants\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/forest-health",
+     "text": "          Forest Health\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/infrastructure",
+     "text": "          Infrastructure\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/people-forests",
+     "text": "          People and Forests\n        "
+    },
+    {
+     "url": "https://research.fs.usda.gov/",
+     "text": "          Research and Development\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/data-tools-products",
+     "text": "          Data, Tools & Products\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology/water-air-soil",
+     "text": "          Water, Air and Soil\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us",
+     "text": "          Working with Us\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/careers",
+     "text": "          Careers\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/committees",
+     "text": "          Committees\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/contracts-commercial-permits",
+     "text": "          Contracts and Permits\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/donations",
+     "text": "          Donations\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/grants",
+     "text": "          Grants and Agreements\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/careers/onboarding",
+     "text": "          Onboarding\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/partnerships",
+     "text": "          Partnerships\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/billpay",
+     "text": "          Payments and Billing\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/shared-stewardship",
+     "text": "          Shared Stewardship\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/tribal-relations",
+     "text": "          Tribal Relations\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/volunteers",
+     "text": "          Volunteers\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency",
+     "text": "          About the Agency\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/contact-us",
+     "text": "          Contact Us\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/accomplishments",
+     "text": "          Agency Accomplishments\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/newsroom/leadership-biographies",
+     "text": "          Agency Leadership\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/priorities",
+     "text": "          Agency Priorities\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/budget-performance",
+     "text": "          Budget & Performance\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/features",
+     "text": "          Feature Stories\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/forestry-facts",
+     "text": "          Forest Service Facts\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/newsroom",
+     "text": "          Newsroom\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/publications",
+     "text": "          Publications\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/regulations-policies",
+     "text": "          Regulations and Directives\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/smokey-bear",
+     "text": "          Smokey Bear\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/keep-in-touch",
+     "text": "          Keep in Touch\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs",
+     "text": "          Inside the FS\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs/delivering-mission",
+     "text": "          Delivering the mission\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs/leadership",
+     "text": "          From the Chief's Desk\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs/delivering-mission/excel/employee-support-resources-available",
+     "text": "          Employee Support Resources\n        "
+    },
+    {
+     "url": "https://intranet.usda.gov/FS",
+     "text": "          OneUSDA Intranet\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/employee-services/care-recovery",
+     "text": "          Operation Care & Recovery\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/library/index.shtml",
+     "text": "          National Forest Service Library\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/employee-services",
+     "text": "          Employee Services\n        "
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/reorganization",
+     "text": "Reorganization"
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency",
+     "text": "About the Agency"
+    },
+    {
+     "url": "https://www.fs.usda.gov/visit",
+     "text": "Visit Us"
+    },
+    {
+     "url": "https://www.fs.usda.gov/managing-land",
+     "text": "Managing the Land"
+    },
+    {
+     "url": "https://www.fs.usda.gov/learn",
+     "text": "Learn"
+    },
+    {
+     "url": "https://www.fs.usda.gov/science-technology",
+     "text": "Science and Technology"
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us",
+     "text": "Working with Us"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency",
+     "text": "About the Agency"
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs",
+     "text": "Inside the FS"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/reorganization",
+     "text": "Reorganization"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/contact-us",
+     "text": "Contact Us"
+    },
+    {
+     "url": "https://www.fs.usda.gov/sitemap",
+     "text": "Sitemap"
+    },
+    {
+     "url": "https://www.usda.gov/policies-and-links",
+     "text": "Policies & Links"
+    },
+    {
+     "url": "https://www.usda.gov/our-agency/about-usda/performance",
+     "text": "Our Performance"
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/jobs",
+     "text": "Careers"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/resources/hotline-information",
+     "text": "Fraud, Waste, and Abuse Hotline"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/",
+     "text": "Inspector General"
+    },
+    {
+     "url": "https://www.usda.gov/plain-writing",
+     "text": "Plain Writing"
+    },
+    {
+     "url": "https://www.usda.gov/open",
+     "text": "Open"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/foia",
+     "text": "FOIA"
+    },
+    {
+     "url": "https://www.usda.gov/accessibility-statement",
+     "text": "Accessibility Statement"
+    },
+    {
+     "url": "https://www.usda.gov/privacy-policy",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://www.usda.gov/non-discrimination-statement",
+     "text": "Non-Discrimination Statement"
+    },
+    {
+     "url": "https://www.usda.gov/oascr/civil-rights-statements",
+     "text": "USDA Anti-Harassment Policy"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/anti-harassment",
+     "text": "Forest Service Anti-Harassment Policy"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/quality-of-information",
+     "text": "Information Quality"
+    },
+    {
+     "url": "https://www.usa.gov/",
+     "text": "USA.gov"
+    },
+    {
+     "url": "https://www.whitehouse.gov/",
+     "text": "Whitehouse.gov"
+    },
+    {
+     "url": "https://www.usda.gov/federal-web-site-inventory",
+     "text": "eGov"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/civil-rights#noFEARAct",
+     "text": "No FEAR Act Data"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/resources/whistleblower-protection-coordinator",
+     "text": "Whistleblower Protection Coordinator"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Forest Service"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": "U.S. DEPARTMENT OF AGRICULTURE"
+    },
+    {
+     "url": "https://twitter.com/forestservice",
+     "text": "Twitter"
+    },
+    {
+     "url": "https://www.facebook.com/USForestService",
+     "text": "Facebook"
+    },
+    {
+     "url": "https://www.linkedin.com/company/usda-forest-service",
+     "text": "LinkedIn"
+    },
+    {
+     "url": "https://www.instagram.com/u.s.forestservice/",
+     "text": "Instagram"
+    },
+    {
+     "url": "https://www.flickr.com/photos/usforestservice/",
+     "text": "Flickr"
+    },
+    {
+     "url": "https://www.youtube.com/user/usdaForestService",
+     "text": "Youtube"
+    },
+    {
+     "url": "https://www.gsa.gov/reference/gsa-privacy-program/privacy-act-statement-for-design-research",
+     "text": ""
+    },
+    {
+     "url": "https://touchpoints.digital.gov/",
+     "text": ""
+    }
+   ],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.fs.usda.gov/detail/pnt/home/?cid=fsbdev3_054429",
+   "status": 404,
+   "final_url": "https://www.fs.usda.gov/detail/pnt/home/?cid=fsbdev3_054429",
+   "title": "Page not found | Forest Service",
+   "text": "Skip to main content\nAn official website of the United States government\nHere's how you know\nForest Service\nU.S. DEPARTMENT OF AGRICULTURE\nHome\nSearch\nForest Service Home Inside the Forest Service About the Agency\n404 Page Not Found\nLooks like you hit the end of the trail.\nLet us help! Here are some options.\nGo to Forest Service Homepage\nOr, select a site:\nNorthern Region\nBeaverhead-Deerlodge National Forest\nBitterroot National Forest\nCuster Gallatin National Forest\nDakota Prairie Grasslands\nFlathead National Forest\nHelena-Lewis and Clark National Forest\nIdaho Panhandle National Forests\nKootenai National Forest\nLolo National Forest\nNez Perce-Clearwater National Forests\nRocky Mountain Region\nArapaho and Roosevelt National Forests & Pawnee National Grassland\nBighorn National Forest\nBlack Hills National Forest\nGrand Mesa, Uncompahgre and Gunnison National Forests\nMedicine Bow-Routt National Forests & Thunder Basin National Grassland\nNebraska National Forests and Grasslands\nPike-San Isabel National Forests & Cimarron and Comanche National Grasslands\nRio Grande National Forest\nSan Juan National Forest\nShoshone National Forest\nWhite River National Forest\nSouthwestern Region\nApache-Sitgreaves National Forests\nCarson National Forest\nCibola National Forest and National Grasslands\nCoconino National Forest\nCoronado National Forest\nGila National Forest\nKaibab National Forest\nLincoln National Forest\nPrescott National Forest\nSanta Fe National Forest\nTonto National Forest\nIntermountain Region\nAshley National Forest\nBoise National Forest\nBridger-Teton National Forest\nCaribou-Targhee National Forest\nDixie National Forest\nFishlake National Forest\nHumboldt-Toiyabe National Forest\nManti-La Sal National Forest\nPayette National Forest\nSalmon-Challis National Forest\nSawtooth National Forest\nUinta-Wasatch-Cache National Forest\nPacific Southwest Region\nAngeles National Forest\nCleveland National Forest\nEldorado National Forest\nInyo National Forest\nKlamath National Forest & Butte Valley National Grassland\nLake Tahoe Basin Management Unit\nLassen National Forest\nLos Padres National Forest\nMendocino National Forest\nModoc National Forest\nPlumas National Forest\nSan Bernardino National Forest\nSequoia National Forest\nShasta-Trinity National Forest\nSierra National Forest\nSix Rivers National Forest\nStanislaus National Forest\nTahoe National Forest\nPacific Northwest Region\nColumbia River Gorge National Scenic Area\nColville National Forest\nDeschutes National Forest\nFremont-Winema National Forest\nGifford Pinchot National Forest\nMalheur National Forest\nMount Baker-Snoqualmie National Forest\nMt. Hood National Forest\nOchoco National Forest & Crooked River National Grassland\nOkanogan-Wenatchee National Forest\nOlympic National Forest\nRogue River-Siskiyou National Forest\nSiuslaw National Forest\nUmatilla National Forest\nUmpqua National Forest\nWallowa-Whitman National Forest\nWillamette National Forest\nSouthern Region\nChattahoochee-Oconee National Forest\nCherokee National Forest\nDaniel Boone National Forest\nEl Yunque National Forest\nFrancis Marion and Sumter National Forests\nGeorge Washington and Jefferson National Forests\nKisatchie National Forest\nNational Forests in Alabama\nNational Forests in Florida\nNational Forests in Mississippi\nNational Forests in North Carolina\nNational Forests and Grasslands in Texas\nOuachita National Forest\nOzark-St. Francis National Forest\nSavannah River\nEastern Region\nAllegheny National Forest\nChequamegon-Nicolet National Forest\nChippewa National Forest\nGreen Mountain and Finger Lakes National Forests\nHiawatha National Forest\nHoosier National Forest\nHuron-Manistee National Forests\nMark Twain National Forest\nMidewin National Tallgrass Prairie\nMonongahela National Forest\nOttawa National Forest\nShawnee National Forest\nSuperior National Forest\nWayne National Forest\nWhite Mountain National Forest\nAlaska Region\nChugach National Forest\nTongass National Forest\nOther Sites\nAmerica's National Trails\nGrey Towers National Historic Site\nWhen autocomplete results are available use up and down arrows to review and enter to select. Touch device users, explore by touch or with swipe gestures.\nGo to site\nPrimary Footer Menu\nRecreation.gov\nAccessibility Statement\nVisit OIG\nOur Performance\nAnti-Harassment Policy\nCareers\nUSA.gov\nWhiteHouse.gov\nPrivacy Policy\nPlain Writing\nNo Fear Act Data\nFOIA\nReport Fraud on USDA Contracts\nPolicies and Links\neGov\nNon-Discrimination Statement\nOpen Government\nInformation Quality\nForest Service\nU.S. DEPARTMENT OF AGRICULTURE\nX\nFacebook\nYoutube\nFlickr\nInstagram",
+   "links": [
+    {
+     "url": "https://www.fs.usda.gov/detail/pnt/home/?cid=fsbdev3_054429#main-content",
+     "text": "Skip to main content"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Home"
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Forest Service Home"
+    },
+    {
+     "url": "https://www.fs.usda.gov/inside-fs",
+     "text": "Inside the Forest Service"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency",
+     "text": "About the Agency"
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": "Go to Forest Service Homepage"
+    },
+    {
+     "url": "https://recreation.gov/",
+     "text": "Recreation.gov"
+    },
+    {
+     "url": "https://www.usda.gov/accessibility-statement",
+     "text": "Accessibility Statement"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/",
+     "text": "Visit OIG"
+    },
+    {
+     "url": "https://www.usda.gov/our-agency/about-usda/performance",
+     "text": "Our Performance"
+    },
+    {
+     "url": "https://www.usda.gov/oascr/civil-rights-statements",
+     "text": "Anti-Harassment Policy"
+    },
+    {
+     "url": "https://www.fs.usda.gov/working-with-us/careers",
+     "text": "Careers"
+    },
+    {
+     "url": "https://www.usa.gov/",
+     "text": "USA.gov"
+    },
+    {
+     "url": "https://www.whitehouse.gov/",
+     "text": "WhiteHouse.gov"
+    },
+    {
+     "url": "https://www.usda.gov/privacy-policy",
+     "text": "Privacy Policy"
+    },
+    {
+     "url": "https://www.usda.gov/plain-writing",
+     "text": "Plain Writing"
+    },
+    {
+     "url": "https://www.usda.gov/nofear",
+     "text": "No Fear Act Data"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/foia/",
+     "text": "FOIA"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/resources/contractor-fraud",
+     "text": "Report Fraud on USDA Contracts"
+    },
+    {
+     "url": "https://usdaoig.oversight.gov/",
+     "text": "Policies and Links"
+    },
+    {
+     "url": "https://www.usda.gov/federal-web-site-inventory",
+     "text": "eGov"
+    },
+    {
+     "url": "https://www.usda.gov/non-discrimination-statement",
+     "text": "Non-Discrimination Statement"
+    },
+    {
+     "url": "https://www.usda.gov/open",
+     "text": "Open Government"
+    },
+    {
+     "url": "https://www.fs.usda.gov/about-agency/quality-of-information",
+     "text": "Information Quality"
+    },
+    {
+     "url": "https://www.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.fs.usda.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://x.com/forestservice",
+     "text": "X"
+    },
+    {
+     "url": "https://www.facebook.com/USForestService",
+     "text": "Facebook"
+    },
+    {
+     "url": "https://www.youtube.com/user/usdaForestService",
+     "text": "Youtube"
+    },
+    {
+     "url": "https://www.flickr.com/photos/usforestservice/",
+     "text": "Flickr"
+    },
+    {
+     "url": "https://www.instagram.com/u.s.forestservice",
+     "text": "Instagram"
+    }
+   ],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 27,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "11 result(s), 3 read OK, 0 screenshot(s)"
+}
