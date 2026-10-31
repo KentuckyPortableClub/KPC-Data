@@ -57,7 +57,8 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-OH | 276 | 17 | 5 | 16 | 0 | 14 | 3 | 259 | 274 | 0 | 0 |
 | US-UT | 692 | 32 | 10 | 27 | 2 | 20 | 10 | 660 | 58 | 424 | 0 |
 | CA-ON | 1180 | 448 | 448 | 353 | 29 | 93 | 326 | 732 | 119 | 256 | 0 |
-| CA-QC | 15 | 4 | 4 | 1 | 1 | 0 | 3 | 11 | 5 | 2 | 0 |
+| CA-QC | 838 | 70 | 61 | 49 | 4 | 22 | 44 | 768 | 116 | 44 | 0 |
+| CA-NB | 29 | 2 | 2 | 1 | 0 | 0 | 2 | 27 | 0 | 1 | 0 |
 
 ## US-KY sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -4367,15 +4368,80 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## CA-QC sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| CA-0514 | Parc de l'Île-Charron Recreation Park | https://geohub.longueuil.quebec/pages/cartes-interactives | page · linked from the agency page (geohub.long | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.longueuil.quebec/services/reglements-municipaux ✓ |  |
+| CA-0966 | Parc Centennial Hall / Memorial Recreati | https://www.beaconsfield.ca/en/interactive-map | page · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.beaconsfield.ca/en/services/environment-and-public-works/r ✓ |  |
+| CA-2016 | Parc Chante Bois Recreation Park | https://blainville.ca/carte-interactive | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://blainville.ca/ville/administration-municipale/reglements-et-pe ✓ |  |
+| CA-5920 | Parc Maurice-Tessier Recreation Park | https://blainville.ca/carte-interactive | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://blainville.ca/ville/administration-municipale/reglements-et-pe ✓ |  |
+| CA-1003 | Parc régional Bois de Belle-Rivière Regi | https://boisdebelleriviere.com/carte-des-sentiers/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://boisdebelleriviere.com/reglements/ ✓ |  |
+| CA-0012 | Cap Tourmente National Wildlife Area | https://www.canada.ca/content/dam/eccc/documents/pdf/ap-pa/pamphlet/map-hiking-trails-cap- | pdf ✓name · combined map: covers 2 units · the agency site | 2026 (the PDF file's own stamp (may be the print da) · posted Mar 27, 2026 |  ✗ |  |
+| CA-4911 | Lachine Canal National Historic Site | https://parks.canada.ca/lhn-nhs/qc/canallachine/visit/cartes-maps | page · the agency site | — (date unknown, checked 2026-10-31) · posted 2026-10-08 |  ✗ |  |
+| CA-4899 | Carillon Canal National Historic Site | https://parks.canada.ca/lhn-nhs/qc/canalcarillon/visit/cartes-maps/reseau-navigation-syste | page · the agency site | — (date unknown, checked 2026-10-31) · posted 2026-10-08 |  ✗ |  |
+| CA-4904 | Fort Chambly National Historic Site | https://parks.canada.ca/lhn-nhs/qc/fortchambly/visit | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2025-10-14 | https://parks.canada.ca/voyage-travel/regles-rules/drones ✓ |  |
+| CA-0004 | Baie de l'Isle-Verte National Wildlife A | https://www.canada.ca/content/dam/eccc/documents/pdf/ap-pa/carte-map/Baie-Isle-Verte-20190 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Apr 03, 2019 |  ✗ |  |
+| CA-4897 | Battle of the Restigouche National Histo | https://parks.canada.ca/lhn-nhs/qc/ristigouche/visit/cartes-maps#wb-cont | page · the agency site | — (date unknown, checked 2026-10-31) · posted 2024-05-08 |  ✗ |  |
+| CA-4922 | Saint-Ours Canal National Historic Site | https://parks.canada.ca/lhn-nhs/qc/saintours/visit/cartes-maps/technique-technical | page · the agency site | — (date unknown, checked 2026-10-31) · posted 2026-10-08 |  ✗ |  |
+| CA-5057 | Le site des Chutes et Marais Regional Pa | https://chutesetmarais.com/images/Upload/primo/carte_marais.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Sep 08, 2026 |  ✗ |  |
+| CA-4984 | Centre d'interpretation de la nature du  | https://cinlb.org/carte-des-sentiers/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://cinlb.org/le-centre/code-de-conduite-sur-les-sentiers-reglemen ✓ |  |
+| CA-5939 | Réserve naturelle du boisé-de-la-Marconi | https://www.drummondville.ca/wp-content/uploads/2025/07/Carte_boise_marconi.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2025-07 | https://www.drummondville.ca/citoyens/reglements-municipaux/ ✓ |  |
+| CA-5079 | Parc du Temps-qui-passe Regional Park | https://eastman.quebec/storage/app/media/loisirs-et-communaute/plein-air-et-attraits/parcs | image · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 04, 2025 | https://eastman.quebec/municipalite/administration-et-finances/regleme ✓ |  |
+| CA-0498 | Gatineau Conservation Park | https://ncc-ccn.gc.ca/places/gatineau-park-trails-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0968 | Parc de l'Île Melville Recreation Park | https://ilemelville.com/wp-content/uploads/2025/05/Parc_Ile_Melville_Shawinigan_Brochure-p | pdf ✓name · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted 2025-05 |  ✗ |  |
+| CA-0969 | Parc de l'Île Saint-Quentin Regional Par | https://ilesaintquentin.com/carte-de-lile/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://ilesaintquentin.com/reglements-du-parc-ile-saint-quentin/ ✓ |  |
+| CA-2271 | Parc de la biche Recreation Park | https://www.lacducerf.ca/wp-content/uploads/carte-sentier-LaCervoise-ski.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Jul 14, 2026 | https://www.lacducerf.ca/informations-municipales/reglements-et-politi ✓ |  |
+| CA-5055 | Les Sentiers de la Presqu'île Regional P | https://lessentiers.net/wp-content/uploads/2025/01/Sentiers-de-la-PresquIle-Hiver-2025-sca | image · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2025-01 |  ✗ |  |
+| CA-0514 | Parc de l'Île-Charron Recreation Park | https://geohub.longueuil.quebec/pages/cartes-interactives#main-region | page · the agency site | — (date unknown, checked 2026-10-31) · posted — | https://www.longueuil.quebec/services/reglements-municipaux ✓ |  |
+| CA-4960 | Parc Michel-Chartrand Regional Park | https://cms.longueuil.quebec/sites/default/files/medias/documents/2021-11/Rapport%20Table% | pdf ✓name · on file, checked by a person or the link | date unknown (date unknown, checked 2026-10-31) · posted 2021-11 | https://www.longueuil.quebec/services/reglements-municipaux ✓ |  |
+| CA-5012 | Marais de la Rivière-aux-Cerises Regiona | https://maraisauxcerises.com/wp-content/uploads/2025/10/LAMRAC-Carte-Sentiers_2025-scaled. | image · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2025-10 | https://maraisauxcerises.com/reglementation/ ✓ |  |
+| CA-1011 | Parc régional du Massif du Sud Regional  | https://massifdusud.com/carte-des-sentiers/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://massifdusud.com/reglements-code-ethique/droits-acces-residents ✓ |  |
+| CA-2020 | Gault de l'Universite McGill Nature Rese | https://gault.mcgill.ca/fr/carte-du-site/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-5005 | Parc des Rapides Regional Park | https://montreal.ca/en/places/parc-des-rapides | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-4988 | Parc de la Promenade-Bellerive Regional  | https://montreal.ca/en/places/parc-de-la-promenade-bellerive | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0990 | Parc Jarry Recreation Park | https://montreal.ca/lieux/parc-chiens-du-parc-jarry | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://montreal.ca/services/recherche-de-reglements ✓ |  |
+| CA-4957 | Parc des Chutes de Sainte-Ursule Regiona | https://municipalites-du-quebec.com/sainte-ursule/ou-sommes-nous.php | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://municipalites-du-quebec.com/sainte-ursule/f-reglements-1.php ✓ |  |
+| CA-1008 | Parc régional des Appalaches Regional Pa | https://www.parcappalaches.com/fr/cartes-et-circuits/cartes-des-sentiers/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.parcappalaches.com/fr/infos-pratiques/securite-et-reglemen ✓ |  |
+| CA-4976 | Parc de la Rivière Batiscan Regional Par | https://parcbatiscan.ca/wp-content/uploads/2022/05/Carte-localisation-2022-web.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2022-05 | https://parcbatiscan.ca/le-parc-a-propos-de-nous/reglements-du-parc/ ✓ |  |
+| CA-4951 | Parc de Gros-Cap Regional Park | https://www.parcdegroscap.ca/devenez-membre/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.parcdegroscap.ca/wp-content/uploads/2023/09/reglements_PGC ✓ |  |
+| CA-4956 | Parc des Chutes Regional Park | https://parcdeschutes.com/en/trails/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-2176 | Parc Jean-Drapeau Regional Park | https://www.parcjeandrapeau.com/files/publications/lune_noire_carte_plan_jardins_des_flora | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2026-10 | https://www.parcjeandrapeau.com/files/publications/reglement_activites ✓ |  |
+| CA-1006 | Parc régional Montagne du Diable Regiona | https://www.parcmontagnedudiable.com/cartes-des-sentiers/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.parcmontagnedudiable.com/reglements/ ✓ |  |
+| CA-4962 | Parc naturel regional de Portneuf Region | https://parcportneuf.com/cartes/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-1010 | Parc régional des Grèves Regional Park | https://parcregionaldesgreves.com/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://parcregionaldesgreves.com/infos/reglements-faq/ ✓ |  |
+| CA-0975 | Parc des Braves National Historic Site | https://www.plainsofabraham.ca/plains-abraham-map | page ✓name · linked from the agency page (plainsofabr | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-2189 | Piémont-du-Mont-Saint-Hilaire Nature Res | https://www.pleinairalacarte.com/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-1013 | Parc regional du Poisson Blanc Regional  | https://poissonblanc.ca/informations/cartes-du-parc/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://poissonblanc.ca/reglement/ ✓ |  |
+| CA-2124 | Marais-Léon-Provancher Nature Reserve | https://www.provancher.org/carte-des-sentiers/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-2034 | Parc Lineaire Le P'tit Train du Nord Rec | https://carte.ptittraindunord.com/ | page · linked from the agency page (carte.ptitt | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
 | CA-0962 | Parc Angrignon Regional Park | http://ville.montreal.qc.ca/pls/portal/docs/PAGE/M_CHANTIER_FR/MEDIA/DOCUMENTS/25015_PARC% | pdf ✓name · combined map: covers 3 units · linked from the agency page (ville.montr | 2021 (the PDF file's own stamp (may be the print da) · posted — | https://montreal.ca/services/recherche-de-reglements ✓ |  |
+| CA-2162 | Tourbière-de-Shannon Ecological Reserve | https://www.environnement.gouv.qc.ca/biodiversite/reserves/rescarte.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-2233 | Parc de la Maison-Valois Recreation Park | https://www.ville.vaudreuil-dorion.qc.ca/uploads/sections/Loisirs_culture/Installations_re | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Sep 08, 2025 | https://www.ville.vaudreuil-dorion.qc.ca/en/modernization-of-the-chart ✓ |  |
+| CA-2126 | Marcel-Léger Ecological Reserve | https://www.environnement.gouv.qc.ca/biodiversite/reserves/rescarte.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0967 | Parc de l’Île-Lebel Regional Park | https://parcilelebel.qc.ca/carte-du-site | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://parcilelebel.qc.ca/reglements ✓ |  |
+| CA-1937 | Battures-de-Saint-Fulgence Wildlife Refu | https://www.foretouverte.gouv.qc.ca/?context=_faune&amp;zoom=10&amp;center=-70.21307,48.65 | page · linked from the agency page (foretouvert | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.publicationsduquebec.gouv.qc.ca/fileadmin/gazette/pdf_encr ✓ |  |
+| CA-0972 | Parc de la Rivière-des-Mille-Îles Wildli | https://www.parc-mille-iles.qc.ca/wp-content/uploads/2023/11/Capture_Carte.png | image · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2023-11 |  ✗ |  |
+| CA-2251 | Lac Beattie Nature Park | https://www.cantondegore.qc.ca/fr/parc-du-lac-beattie/carte-des-sentiers | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.cantondegore.qc.ca/fr/publications/reglements ✓ |  |
+| CA-2021 | Refuge faunique de la Grande-Île Wildlif | https://www.foretouverte.gouv.qc.ca/?context=_faune&amp;zoom=10&amp;center=-70.21307,48.65 | page · linked from the agency page (foretouvert | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.publicationsduquebec.gouv.qc.ca/fileadmin/gazette/pdf_encr ✓ |  |
+| CA-5913 | Parc des Patriarches Recreation Park | https://www.ville.prevost.qc.ca/carte-interactive | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.ville.prevost.qc.ca/guichet-citoyen/informations/reglement ✓ |  |
+| CA-4975 | Parc regional de la Foret Drummond Regio | https://www.mrcdrummond.qc.ca/wp-content/uploads/2020/08/parc_regional_foret_drummond_cart | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2020-08 | https://www.mrcdrummond.qc.ca/gestion-du-territoire/reglement-de-contr ✓ |  |
+| CA-1020 | RécréoParc de Sainte-Catherine Regional  | https://recreoparc.org/carte-du-parc/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://recreoparc.org/reglements/ ✓ |  |
+| CA-4990 | Le Bois de l'équerre Regional Park | https://reseaucanopee.org/dist/uploads/2026/06/Carte_BDE_2026-scaled.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2026-06 |  ✗ |  |
+| CA-2346 | Zec Rivière-Blanche Nature Reserve | https://zecriviereblanche.reseauzec.com/cartes-du-territoire/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://zecriviereblanche.reseauzec.com/reglementations-2/ ✓ |  |
+| CA-2306 | Zec Forestville Nature Reserve | https://zecforestville.reseauzec.com/wp-content/uploads/gestionnaire/6/1896/1_documents_0. | pdf ✓name · the agency site | 2023 (the PDF file's own stamp (may be the print da) · posted May 25, 2023 |  ✗ |  |
+| CA-2298 | Zec Chapais Nature Reserve | https://zecchapais.reseauzec.com/la-carte-et-le-territoire/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-2305 | Zec Festubert Nature Reserve | https://zecfestubert.reseauzec.com/carte-et-navigation-2/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-2288 | ZEC du Bas-Saint-Laurent Nature Reserve | https://zecbasstlaurent.reseauzec.com/carte-et-navigation/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://zecbasstlaurent.reseauzec.com/reglementation-specifique-a-la-z ✓ |  |
+| CA-2299 | Zec Chapeau-de-Paille Nature Reserve | https://zecchapeaudepaille.reseauzec.com/guide-dinstallation-de-notre-carte-topographique- | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-2330 | Zec Mitchinamecus Nature Reserve | https://zecmitchinamecus.reseauzec.com/carte-du-territoire/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://zecmitchinamecus.reseauzec.com/politiques-et-reglements/ ✓ |  |
+| CA-0973 | Parc de la Rivière-du-Moulin Regional Pa | https://rivieredumoulin.com/cartes-et-conditions-des-sentiers | page ✓name · linked from the agency page (rivieredumo | date unknown (date unknown, checked 2026-10-31) · posted — | https://rivieredumoulin.com/reglements ✓ |  |
+| CA-5915 | Parc Ducharme Recreation Park | https://www.sainte-therese.ca/carte-interactive | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.sainte-therese.ca/ville/administration/reglements-municipa ✓ |  |
+| CA-0515 | Parc de la Chute-Montmorency Provincial  | https://www.sepaq.com/resources/docs/ct/pcm/pcm_carte_du_site.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Jul 16, 2026 |  ✗ |  |
+| CA-4954 | Parc de la Riviere de Terrebonne Regiona | https://terrebonne.ca/cartes-interactives/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://terrebonne.ca/permis-reglements-et-conseils?publics=17 ✓ |  |
 | CA-0049 | Lac Saint-Pierre Biosphere Reserve | https://biodiversity.unesco.org/explore/map | page · linked from the agency page (biodiversit | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.unesco.org/en ✓ |  |
 | CA-0054 | Manicouagan-Uapishka (Monts Groulx) Bios | https://biodiversity.unesco.org/explore/map | page · linked from the agency page (biodiversit | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.unesco.org/en ✓ |  |
+| CA-5036 | Parc familial des Berges Regional Park | https://villededonnacona.com/upload/contenu-images/carte_des_sentiersvf.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Oct 22, 2025 | https://villededonnacona.com/fr/centre-documentaire/c72/reglements-mun ✓ |  |
+| CA-2159 | Parc nature du Lac-Jerome Recreation Par | https://www.vsj.ca/wp-content/uploads/2023/02/Plan_LacJerome_Web.pdf | pdf ✓name · on file, checked by a person or the link | date unknown (date unknown, checked 2026-10-31) · posted 2023-02 |  ✗ |  |
 
-### CA-QC no map yet (11): the reason
+### CA-QC no map yet (768): the reason
 - CA-0015 Charlevoix Biosphere Reserve: no map link on file and none on the park page
 - CA-0511 Mount Royal Regional Park: no map link on file and none on the park page
-- CA-0515 Parc de la Chute-Montmorency Provincial Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - CA-0956 Boisé de Marly Forest Reserve: no map link on file and none on the park page
 - CA-0957 Boisé de Tequenonday Forest Reserve: no working map link (tried: opened, a government data / policies page, not this park's map (chat 11 regrade 2) https://www.google.com/maps/place/Bois%C3%A9+Tequenonday/@46.759237,-7)
 - CA-0958 Boisé des Compagnons-de-Cartier Forest Reserv: no working map link (tried: HTTP 404 http://www.capitale.gouv.qc.ca/ckeditor_assets/attachments/127/plan_co)
@@ -4384,9 +4450,71 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - CA-0961 Parc André-J.-Côté Regional Park: no working map link (tried: HTTP 404 https://candiac.ca/parc/halloween; opened, a page that does not name this park (a generic agency page is not its map) https://candiac.ca/activites/carte-du-citoyen)
 - CA-0964 Parc Cartier-Roberval Archeological Reserve: no map link on file and none on the park page
 - CA-0965 Parc Centenaire William Cosgrove Recreation P: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ville.ddo.qc.ca/wp-content/uploads/2023/05/Pancarte_Courts_ten; opened, a page that does not name this park (a generic agency page is not its map) https://ville.ddo.qc.ca/carte-interactive/)
+- CA-0970 Parc de la Plage-Jacques-Cartier Regional Par: no map link on file and none on the park page
+- CA-0971 Parc de la Pointe-aux-Pins Recreation Park: no map link on file and none on the park page
+- CA-0974 Parc de la Source Recreation Park: no working map link (tried: HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7B%20data.URL%20%7D%7D; HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7Bthis.permalink%7D%7D)
+- CA-0976 Parc des Eaux-Vives Recreation Park: no working map link (tried: HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7B%20data.URL%20%7D%7D; HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7Bthis.permalink%7D%7D)
+- CA-0977 Parc des Montagnards du Mont-Shefford Nature : no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.easterntownships.org/guides-and-maps)
+- CA-0978 Parc des Pionniers (Vercheres) Regional Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ville.vercheres.qc.ca/wp-content/uploads/2025/02/CARTE-ROUTIER; opened, a page that does not name this park (a generic agency page is not its map) https://ville.vercheres.qc.ca/histoire-et-tourisme/carte-routiere-et-c)
+- CA-0979 Parc du Bassin Recreation Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ville.saguenay.ca/activites-et-loisirs/carte-acces-saguenay; opened, a page that does not name this park (a generic agency page is not its map) https://ville.saguenay.ca/activites-et-loisirs/carte-acces-saguenay/qu)
+- CA-0980 Parc du Bois-de-Coulonge Regional Park: no map link on file and none on the park page
+- CA-0981 Parc du Domaine-Vert Regional Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.domainevert.com/_files/ugd/c586b4_aff0e27b978944bf93717381)
+- CA-0982 Parc du lac Claude Recreation Park: no working map link (tried: HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7B%20data.URL%20%7D%7D; HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7Bthis.permalink%7D%7D)
+- CA-0983 Parc du Mont-Fortin Recreation Park: no map link on file and none on the park page
+- CA-0984 Parc du Mont-Jacob Recreation Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ville.saguenay.ca/files/medias/activites_et_loisirs/Sports/boi; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ville.saguenay.ca/files/medias/activites_et_loisirs/Sports/car)
+- CA-0985 Parc écologique Jean-Paul-Forand du Mont-Shef: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cantonshefford.qc.ca/storage/app/media/services/environnement/; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cantonshefford.qc.ca/storage/app/media/services/environnement/)
+- CA-0986 Parc Frédéric-Back Regional Park: no map link on file and none on the park page
+- CA-0987 Parc Hermitage (Pointe-Claire) Recreation Par: no map link on file and none on the park page
+- CA-0988 Parc Historique de la Croix de Sainte-Anne Hi: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ville.saguenay.ca/activites-et-loisirs/carte-acces-saguenay; opened, a page that does not name this park (a generic agency page is not its map) https://ville.saguenay.ca/activites-et-loisirs/carte-acces-saguenay/qu)
+- CA-0989 Parc J.-C.-Wilson (secteur chutes Wilson) Rec: no working map link (tried: HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7B%20data.URL%20%7D%7D; HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7Bthis.permalink%7D%7D)
+- CA-0991 Parc Jean-Baptiste Rolland Regional Park: no working map link (tried: HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7B%20data.URL%20%7D%7D; HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7Bthis.permalink%7D%7D)
+- CA-0992 Parc La Fontaine Regional Park: no map link on file and none on the park page
+- CA-0993 Parc Lafontaine Recreation Park: no working map link (tried: HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7B%20data.URL%20%7D%7D; HTTP 404 https://www.vsj.ca/carte-interactive/%7B%7Bthis.permalink%7D%7D)
+- CA-0994 Parc Maisonneuve Regional Park: no map link on file and none on the park page
+- CA-0995 Parc-nature de l'Île-de-la-Visitation Nature : no map link on file and none on the park page
+- CA-1000 Parc-nature du Ruisseau-De Montigny Nature Pa: no map link on file and none on the park page
+- CA-1001 Parc naturel Terra-Cotta Nature Park: no map link on file and none on the park page
+- CA-1002 Parc Regard-sur-le-Fleuve Recreation Park: no map link on file and none on the park page
+- CA-1004 Parc régional de Beauharnois-Salaberry Region: no map link on file and none on the park page
+- CA-1007 Parc régional de la Rivière-du-Nord (Chutes W: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.parcrivieredunord.ca/informations/cartes-du-parc/)
+- CA-1009 Parc régional des Chutes Monte-à-Peine-et-des: no map link on file and none on the park page
+- CA-1015 Parc riverain de la Sainte-Anne Regional Park: no map link on file and none on the park page
+- CA-1016 Parc Rosaire-Gauthier Recreation Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ville.saguenay.ca/activites-et-loisirs/carte-acces-saguenay; opened, a page that does not name this park (a generic agency page is not its map) https://ville.saguenay.ca/activites-et-loisirs/carte-acces-saguenay/qu)
 
-## robots.txt said no (hosts we did not read)
-- forms.office.com: 13 addresses (﻿User-agent: Bingbot | Allow: / | User-agent: Googlebot | Allow: / | User-agent: Twitterbot | Allow:)
+## CA-NB sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| CA-1251 | Rockwood Park Nature Reserve | https://catalogue-saintjohn.opendata.arcgis.com/ | page · linked from the agency page (catalogue-s | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0448 | Roosevelt Campobello International Park | https://www.rooseveltcampobello.org/park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+
+### CA-NB no map yet (27): the reason
+- CA-0776 North Head Park Recreation Park: no map link on file and none on the park page
+- CA-0778 Ile-Aux-Foins (Hay Island) Recreation Park: no map link on file and none on the park page
+- CA-0782 Lakeside Recreation Park: no map link on file and none on the park page
+- CA-0783 MacNichol-Orser Conservation Easement Natural: no map link on file and none on the park page
+- CA-0785 Mary's Point Ramsar Site: no map link on file and none on the park page
+- CA-0787 Middle Island Historic Site: no map link on file and none on the park page
+- CA-0793 Saint Croix Island National Historic Site: no map link on file and none on the park page
+- CA-0794 Shea Lake Natural Area: no map link on file and none on the park page
+- CA-0797 Tetagouche Falls Recreation Park: no map link on file and none on the park page
+- CA-0800 Youghall Beach Recreation Park: no map link on file and none on the park page
+- CA-1231 Daly Point Nature Reserve: no map link on file and none on the park page
+- CA-1239 Grindstone Island Conservation Nature Reserve: no map link on file and none on the park page
+- CA-1240 Hyla Park Nature Reserve: no working map link (tried: ok https://static1.squarespace.com/static/5e848a775a3fc437adc257db/t/60c7)
+- CA-1242 James C. Yerxa Nature Reserve: no map link on file and none on the park page
+- CA-1248 Pagan Point Nature Reserve: no working map link (tried: ok https://static1.squarespace.com/static/5e848a775a3fc437adc257db/t/60c7)
+- CA-1255 Sugar Island Nature Reserve: no map link on file and none on the park page
+- CA-4355 Bantalor Protected Area: no map link on file and none on the park page
+- CA-4438 Martial Brook Protected Area: no map link on file and none on the park page
+- CA-4444 McCoy Brook Protected Area: no map link on file and none on the park page
+- CA-4463 Notre-Dame-de l'assompton Monument Historic S: no map link on file and none on the park page
+- CA-4493 Portage Lakes Protected Area: no map link on file and none on the park page
+- CA-4522 Stony Brook Protected Area: no map link on file and none on the park page
+- CA-4526 Tabusintac Lagoon and River Estuary Ramsar Si: no map link on file and none on the park page
+- CA-4530 Wilson's Point (Enclosure) Park Historic Site: no map link on file and none on the park page
+- CA-4809 Boishebert Refuge National Historic Site: no map link on file and none on the park page
+- CA-4810 Carleton Martello Tower National Historic Sit: no map link on file and none on the park page (needs browser: host on the browser list)
+- CA-4811 Fort Beausejour & Fort Cumberland National Hi: no map link on file and none on the park page
 
 ## hosts resting a day (three strikes)
 - carules.elaws.us
@@ -4396,10 +4524,12 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - idt.idaho.gov
 - idt.idao.gov
 - iowaculture.gov
+- levis.chaudiereappalaches.com
 - mip.agri.arkansas.gov
 - ohv.parks.ca.gov
 - parks.ca.gov
 - sojournertruthstatepark.info
+- tourismehautemauricie.com
 - waterfalls.hamilton.ca
 - wgfapps.wyo.gov
 - www.agfc
@@ -4413,8 +4543,14 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - www.idfg.idah.gov
 - www.idfg.idaho.goc
 - www.intermountainhistories.org
+- www.laurentides.com
 - www.lclt.org
+- www.mycountyparks.com
+- www.patrimoine-culturel.gouv.qc.ca
 - www.sangres.com
+- www.st-hyacinthe.ca
+- www.tourismeregionsoreltracy.com
 - www.usna.usda.gov
 - www.wildhorsesonline.blm.gov
 - www.wildlife.utah.gov
+- www2.csrdn.qc.ca

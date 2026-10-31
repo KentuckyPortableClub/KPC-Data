@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T15:25Z",
+ "checked": "2026-10-31T15:54Z",
  "switched_on": false,
  "results": [
   {
@@ -605,37 +605,6 @@
    "kind": "fers",
    "why": [
     "F-2 7 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-10953+US-2303, US-2277+US-4655, US-2294+US-4661"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-KY.json",
-   "kind": "fers",
-   "why": [
-    "F-2 candidates 72 -> 35 (over 30% change)",
-    "F-2 only 35 of 72 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-K known 2-fer missing: US-3791+US-3793+US-4572@river@37.14,-89.09",
-    "F-K known 2-fer missing: US-3791+US-3837+US-4572@river@37.18,-88.81",
-    "F-K known 2-fer missing: US-3791+US-3797+US-4572@river@37.01,-89.14",
-    "F-K known 2-fer missing: US-4572+US-8144@river@37.96,-86.03",
-    "F-K known 2-fer missing: US-3830+US-4572@river@37.78,-87.90",
-    "F-K known 2-fer missing: US-4572+US-7955@river@38.31,-85.67",
-    "F-K known 2-fer missing: US-1260+US-4572@river@37.90,-87.55",
-    "F-K known 2-fer missing: US-0608+US-4572@trail@38.68,-83.58",
-    "F-K known 2-fer missing: US-3791+US-3808@river@36.80,-89.11",
-    "F-K known 2-fer missing: US-1282+US-3791@river@36.79,-88.15",
-    "F-K known 2-fer missing: US-1283+US-3791@river@37.00,-88.28",
-    "F-K known 2-fer missing: US-3791+US-3823@river@37.37,-88.44",
-    "F-K known 2-fer missing: US-3791 + US-3837 + US-4572",
-    "F-K known 2-fer missing: US-4572 + US-7955",
-    "F-K known 2-fer missing: US-1260 + US-4572",
-    "F-K known 2-fer missing: US-0608 + US-4572",
-    "F-K known 2-fer missing: US-0703 + US-3790 + US-3791",
-    "F-K known 2-fer missing: US-3791 + US-3837 + US-4572",
-    "F-K known 2-fer missing: US-1282 + US-3791",
-    "F-K known 2-fer missing: US-1283 + US-3791",
-    "F-K known 2-fer missing: US-3791 + US-3823"
    ],
    "notes": [],
    "verdict": "HOLD"

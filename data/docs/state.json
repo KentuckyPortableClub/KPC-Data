@@ -364,10 +364,17 @@
    "updated": "2026-10-31"
   },
   "CA-QC": {
-   "status": "partial",
+   "status": "done",
    "parks": 838,
-   "checked": 15,
-   "left": 823,
+   "checked": 838,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-NB": {
+   "status": "partial",
+   "parks": 562,
+   "checked": 29,
+   "left": 533,
    "updated": "2026-10-31"
   }
  },
@@ -400,32 +407,40 @@
   "www.intermountainhistories.org": 1793534667.8100796,
   "www.wildlife.utah.gov": 1793535065.415651,
   "www.chapel-hill-north-forest-trails.ca": 1793541853.2473147,
-  "waterfalls.hamilton.ca": 1793542997.730953
+  "waterfalls.hamilton.ca": 1793542997.730953,
+  "www.mycountyparks.com": 1793545584.411454,
+  "www.tourismeregionsoreltracy.com": 1793546353.486606,
+  "www.st-hyacinthe.ca": 1793546817.7703633,
+  "levis.chaudiereappalaches.com": 1793547050.1341732,
+  "tourismehautemauricie.com": 1793547125.3046274,
+  "www2.csrdn.qc.ca": 1793547349.3448856,
+  "www.laurentides.com": 1793547790.3588324,
+  "www.patrimoine-culturel.gouv.qc.ca": 1793548196.3005166
  },
  "last": {
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "CA-ON",
    "CA-QC",
    "CA-NB",
    "CA-NS",
    "CA-PE",
    "CA-NL",
-   "CA-MB"
+   "CA-MB",
+   "CA-SK"
   ],
   "stat": {
-   "requests": 1854,
-   "parks": 720,
-   "maps_ok": 303,
-   "maps_found": 298,
-   "dates": 17,
-   "rules": 554,
-   "browser": 230,
-   "robots": 13,
-   "strikes": 4,
-   "errors": 4,
-   "skipped_fresh": 656
+   "requests": 1282,
+   "parks": 1033,
+   "maps_ok": 182,
+   "maps_found": 165,
+   "dates": 3,
+   "rules": 283,
+   "browser": 130,
+   "robots": 0,
+   "strikes": 24,
+   "errors": 21,
+   "skipped_fresh": 15
   }
  }
 }
