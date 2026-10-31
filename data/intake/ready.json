@@ -3286,10 +3286,9 @@
     "in_extent": 2603,
     "missing_in_area": 2603,
     "n": 0,
-    "note": "stopped early (time or request budget)",
     "parks": [],
     "pin_only": 0,
-    "tested": 51
+    "tested": 60
    },
    "from": "harvester",
    "overlap": "",
@@ -3377,7 +3376,7 @@
    "queue_licence": "WALIS",
    "queue_note": "",
    "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer",
-   "requests_used": 56,
+   "requests_used": 65,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer|Landgate_Public_Maps/Marine_Map_WA_3|public-services.slip.wa.gov.au|WALIS||",
    "terms": {
     "about": "Marine Map WA 3 Marine Map WA 3",
@@ -3487,7 +3486,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -3563,7 +3562,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -3573,7 +3572,7 @@
    "queue_note": "",
    "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer",
    "requests_used": 70,
-   "retry": false,
+   "retry": true,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer|Landgate_Public_Maps/Marine_Map_WA_3|public-services.slip.wa.gov.au|WALIS||",
    "terms": {
     "about": "Marine Map WA 3 Marine Map WA 3",
@@ -3590,7 +3589,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/5",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (budget): chat 9 checks the url"
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
   },
   {
    "approved": null,
@@ -3640,7 +3639,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -3650,7 +3649,7 @@
    "queue_note": "",
    "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer",
    "requests_used": 70,
-   "retry": false,
+   "retry": true,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer|Landgate_Public_Maps/Marine_Map_WA_3|public-services.slip.wa.gov.au|WALIS||",
    "terms": {
     "about": "Marine Map WA 3 Marine Map WA 3",
@@ -3667,7 +3666,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/6",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (budget): chat 9 checks the url"
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
   },
   {
    "approved": null,
@@ -3717,7 +3716,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -3727,7 +3726,7 @@
    "queue_note": "",
    "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer",
    "requests_used": 70,
-   "retry": false,
+   "retry": true,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer|Landgate_Public_Maps/Marine_Map_WA_3|public-services.slip.wa.gov.au|WALIS||",
    "terms": {
     "about": "Marine Map WA 3 Marine Map WA 3",
@@ -3744,7 +3743,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/10",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (budget): chat 9 checks the url"
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
   },
   {
    "approved": null,
@@ -3794,7 +3793,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -3804,7 +3803,7 @@
    "queue_note": "",
    "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer",
    "requests_used": 70,
-   "retry": false,
+   "retry": true,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer|Landgate_Public_Maps/Marine_Map_WA_3|public-services.slip.wa.gov.au|WALIS||",
    "terms": {
     "about": "Marine Map WA 3 Marine Map WA 3",
@@ -3821,7 +3820,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/11",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (budget): chat 9 checks the url"
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
   },
   {
    "approved": null,
@@ -3871,7 +3870,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -3881,7 +3880,7 @@
    "queue_note": "",
    "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer",
    "requests_used": 70,
-   "retry": false,
+   "retry": true,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer|Landgate_Public_Maps/Marine_Map_WA_3|public-services.slip.wa.gov.au|WALIS||",
    "terms": {
     "about": "Marine Map WA 3 Marine Map WA 3",
@@ -3898,7 +3897,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/12",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (budget): chat 9 checks the url"
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
   },
   {
    "approved": null,
@@ -3948,7 +3947,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -3958,7 +3957,7 @@
    "queue_note": "",
    "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer",
    "requests_used": 70,
-   "retry": false,
+   "retry": true,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer|Landgate_Public_Maps/Marine_Map_WA_3|public-services.slip.wa.gov.au|WALIS||",
    "terms": {
     "about": "Marine Map WA 3 Marine Map WA 3",
@@ -3975,7 +3974,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/14",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (budget): chat 9 checks the url"
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
   },
   {
    "approved": null,
@@ -10594,7 +10593,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -10733,7 +10732,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -10801,7 +10800,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -10870,7 +10869,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -10939,7 +10938,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -11008,7 +11007,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -11103,11 +11102,11 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
+     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -11124,7 +11123,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11343,11 +11342,11 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
+     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -11364,7 +11363,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11470,11 +11469,11 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
+     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -11491,7 +11490,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11546,11 +11545,11 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
+     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -11568,7 +11567,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11623,11 +11622,11 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
+     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -11645,7 +11644,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11700,11 +11699,11 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
+     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -11722,7 +11721,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11777,11 +11776,11 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
+     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -11799,7 +11798,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11854,11 +11853,11 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
+     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -11876,7 +11875,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -12453,7 +12452,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -12565,7 +12564,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -12691,7 +12690,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -12796,7 +12795,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -12905,7 +12904,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -13021,7 +13020,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -13138,7 +13137,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -13214,7 +13213,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -13341,7 +13340,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -13460,7 +13459,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -13536,7 +13535,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -13613,7 +13612,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -13690,7 +13689,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -13767,7 +13766,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -13844,7 +13843,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -13921,7 +13920,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -15320,7 +15319,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -15443,7 +15442,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -15519,7 +15518,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -15596,7 +15595,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -15673,7 +15672,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -15750,7 +15749,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -15827,7 +15826,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -15904,7 +15903,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -16016,7 +16015,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -16127,7 +16126,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -16203,7 +16202,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -16280,7 +16279,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -16357,7 +16356,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -16434,7 +16433,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -16511,7 +16510,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -16588,7 +16587,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "services.thelist.tas.gov.au",
    "publisher_test": [
     "official",
@@ -17009,7 +17008,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -17124,7 +17123,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -17200,7 +17199,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -17277,7 +17276,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -17354,7 +17353,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -17431,7 +17430,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -17508,7 +17507,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -17585,7 +17584,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18006,7 +18005,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18121,7 +18120,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18197,7 +18196,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18274,7 +18273,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18351,7 +18350,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18428,7 +18427,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18505,7 +18504,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18582,7 +18581,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18711,7 +18710,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18829,7 +18828,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18905,7 +18904,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -18982,7 +18981,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -19059,7 +19058,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -19136,7 +19135,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -19213,7 +19212,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -19290,7 +19289,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -19388,7 +19387,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -19485,7 +19484,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -19607,7 +19606,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -19724,7 +19723,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -19800,7 +19799,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -19877,7 +19876,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -19954,7 +19953,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -20031,7 +20030,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -20129,7 +20128,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -20226,7 +20225,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -20347,7 +20346,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -20463,7 +20462,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -20539,7 +20538,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -20616,7 +20615,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -20693,7 +20692,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -20770,7 +20769,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -20884,7 +20883,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -20984,7 +20983,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -21084,7 +21083,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -21184,7 +21183,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -21260,7 +21259,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -21337,7 +21336,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -21414,7 +21413,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -21491,7 +21490,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -31575,53 +31574,69 @@
   },
   {
    "approved": null,
-   "area": null,
+   "area": "",
    "closes": {},
    "from": "gis-hunter",
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?"
+    "status": "rest"
    },
    "probed": "2026-10-31",
+   "publisher": "",
    "publisher_test": [
     "unsure",
-    ""
+    "did not open"
    ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for African American Civil War National Memorial (owner mm.atlas)",
    "queue_url": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer",
    "retry": false,
    "sig": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer|Civil War Battlefields|||ArcGIS Online search for African American Civil War National Memorial (owner mm.atlas)|",
-   "terms": {},
+   "terms": {
+    "class": "NOTHING STATED",
+    "line": "",
+    "source": "none"
+   },
    "test": "",
    "title": "Civil War Battlefields",
    "url": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer",
+   "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?): chat 9 checks the url"
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
-   "area": null,
+   "area": "",
    "closes": {},
    "from": "gis-hunter",
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat"
+    "status": "rest"
    },
    "probed": "2026-10-31",
+   "publisher": "",
    "publisher_test": [
     "unsure",
-    ""
+    "did not open"
    ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for African American Civil War National Memorial (owner mm.sappleton)",
    "queue_url": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer",
    "retry": false,
    "sig": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer|Civil War Battlefields (time-enabled)|||ArcGIS Online search for African American Civil War National Memorial (owner mm.sappleton)|",
-   "terms": {},
+   "terms": {
+    "class": "NOTHING STATED",
+    "line": "",
+    "source": "none"
+   },
    "test": "",
    "title": "Civil War Battlefields (time-enabled)",
    "url": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer",
+   "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat): chat 9 checks the url"
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -32039,7 +32054,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "error Invalid URL"
+    "status": "rest"
    },
    "probed": "2026-10-31",
    "publisher": "",
@@ -32062,7 +32077,7 @@
    "url": "https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (error Invalid URL): chat 9 checks the url"
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -48434,7 +48449,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "error Token Required"
+    "status": "rest"
    },
    "probed": "2026-10-31",
    "publisher": "",
@@ -48457,7 +48472,7 @@
    "url": "https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (error Token Required): chat 9 checks the url"
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -65036,28 +65051,36 @@
   },
   {
    "approved": null,
-   "area": null,
+   "area": "",
    "closes": {},
    "from": "gis-hunter",
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe"
+    "status": "rest"
    },
    "probed": "2026-10-31",
+   "publisher": "",
    "publisher_test": [
     "unsure",
-    ""
+    "did not open"
    ],
+   "queue_licence": "",
+   "queue_note": "ArcGIS Online search for Blanchard State Forest (owner brwp1237)",
    "queue_url": "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer",
    "retry": false,
    "sig": "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer|Watershed of the Blanchard River|||ArcGIS Online search for Blanchard State Forest (owner brwp1237)|",
-   "terms": {},
+   "terms": {
+    "class": "NOTHING STATED",
+    "line": "",
+    "source": "none"
+   },
    "test": "",
    "title": "Watershed of the Blanchard River",
    "url": "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer",
+   "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe): chat 9 checks the url"
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -75459,7 +75482,7 @@
    "overlap": "",
    "probe": {
     "opened": false,
-    "status": "error Token Required"
+    "status": "rest"
    },
    "probed": "2026-10-31",
    "publisher": "",
@@ -75482,7 +75505,7 @@
    "url": "https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open 3 times (error Token Required): chat 9 checks the url"
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -96103,7 +96126,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -96205,7 +96228,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -96322,7 +96345,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -96398,7 +96421,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -96475,7 +96498,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -96552,7 +96575,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -96629,7 +96652,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -96706,7 +96729,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -96852,7 +96875,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -96968,7 +96991,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97044,7 +97067,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97121,7 +97144,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97198,7 +97221,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97275,7 +97298,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97352,7 +97375,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97429,7 +97452,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97575,7 +97598,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97691,7 +97714,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97767,7 +97790,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97844,7 +97867,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97921,7 +97944,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -97998,7 +98021,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -98075,7 +98098,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -98152,7 +98175,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -98186,8 +98209,8 @@
    "area": "AU",
    "closes": {
     "by_name": 0,
-    "in_extent": 2871,
-    "missing_in_area": 2871,
+    "in_extent": 2603,
+    "missing_in_area": 2603,
     "n": 0,
     "parks": [],
     "pin_only": 0,
@@ -98266,7 +98289,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -98299,8 +98322,8 @@
    "area": "AU",
    "closes": {
     "by_name": 0,
-    "in_extent": 2871,
-    "missing_in_area": 2871,
+    "in_extent": 2603,
+    "missing_in_area": 2603,
     "n": 0,
     "note": "stopped early (time or request budget)",
     "parks": [],
@@ -98384,7 +98407,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -98460,7 +98483,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -98487,7 +98510,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/28",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -98537,7 +98560,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -98564,7 +98587,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/29",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -98614,7 +98637,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -98641,7 +98664,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/30",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -98691,7 +98714,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -98718,7 +98741,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/34",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -98768,7 +98791,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -98795,7 +98818,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/35",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -98845,7 +98868,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -98872,15 +98895,15 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/31",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
    "area": "AU",
    "closes": {
     "by_name": 0,
-    "in_extent": 2871,
-    "missing_in_area": 2871,
+    "in_extent": 2603,
+    "missing_in_area": 2603,
     "n": 3,
     "parks": [
      [
@@ -98983,7 +99006,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99016,8 +99039,8 @@
    "area": "AU",
    "closes": {
     "by_name": 0,
-    "in_extent": 2871,
-    "missing_in_area": 2871,
+    "in_extent": 2603,
+    "missing_in_area": 2603,
     "n": 0,
     "note": "stopped early (time or request budget)",
     "parks": [],
@@ -99107,7 +99130,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99183,7 +99206,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99210,7 +99233,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/6",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -99260,7 +99283,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99287,7 +99310,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/7",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -99337,7 +99360,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99364,7 +99387,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/8",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -99414,7 +99437,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99441,7 +99464,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/9",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -99491,7 +99514,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99518,7 +99541,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/10",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -99568,7 +99591,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99595,15 +99618,15 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/11",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
    "area": "AU",
    "closes": {
     "by_name": 0,
-    "in_extent": 2871,
-    "missing_in_area": 2871,
+    "in_extent": 2603,
+    "missing_in_area": 2603,
     "n": 0,
     "parks": [],
     "pin_only": 0,
@@ -99686,7 +99709,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99719,8 +99742,8 @@
    "area": "AU",
    "closes": {
     "by_name": 0,
-    "in_extent": 2871,
-    "missing_in_area": 2871,
+    "in_extent": 2603,
+    "missing_in_area": 2603,
     "n": 0,
     "note": "stopped early (time or request budget)",
     "parks": [],
@@ -99801,7 +99824,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99877,7 +99900,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99904,7 +99927,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/15",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -99954,7 +99977,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -99981,7 +100004,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/16",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -100031,7 +100054,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -100058,7 +100081,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/5",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -100108,7 +100131,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -100135,7 +100158,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/6",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -100185,7 +100208,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -100212,7 +100235,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/7",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -100262,7 +100285,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -100289,7 +100312,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/8",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -100362,7 +100385,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -100461,7 +100484,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -100561,7 +100584,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -100666,7 +100689,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -100776,7 +100799,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -100809,8 +100832,8 @@
    "area": "AU",
    "closes": {
     "by_name": 0,
-    "in_extent": 2871,
-    "missing_in_area": 2871,
+    "in_extent": 2603,
+    "missing_in_area": 2603,
     "n": 1,
     "note": "stopped early (time or request budget)",
     "parks": [
@@ -100900,7 +100923,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -100976,7 +100999,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -101003,7 +101026,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/11",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -101053,7 +101076,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -101080,7 +101103,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/143",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -101153,7 +101176,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -101252,7 +101275,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -101352,7 +101375,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -101457,7 +101480,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -101567,7 +101590,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -101600,8 +101623,8 @@
    "area": "AU",
    "closes": {
     "by_name": 0,
-    "in_extent": 2871,
-    "missing_in_area": 2871,
+    "in_extent": 2603,
+    "missing_in_area": 2603,
     "n": 1,
     "note": "stopped early (time or request budget)",
     "parks": [
@@ -101691,7 +101714,7 @@
     },
     "service_item": ""
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -101767,7 +101790,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -101794,7 +101817,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/8",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -101844,7 +101867,7 @@
     },
     "status": "budget"
    },
-   "probed": "2026-10-30",
+   "probed": "2026-10-31",
    "publisher": "public-services.slip.wa.gov.au",
    "publisher_test": [
     "official",
@@ -101871,7 +101894,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/143",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -140877,7 +140900,7 @@
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0"
   },
   {
    "approved": null,
@@ -143521,7 +143544,7 @@
    "url": "https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2"
   },
   {
    "approved": null,
@@ -144767,7 +144790,7 @@
    "url": "https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3"
   },
   {
    "approved": null,
@@ -149750,7 +149773,7 @@
    "url": "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0"
   },
   {
    "approved": null,
@@ -151628,7 +151651,7 @@
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_State_Park_Management_Areas/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+   "why": "did not open (rest): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -153382,7 +153405,7 @@
    "url": "https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0"
   },
   {
    "approved": null,
@@ -154102,7 +154125,7 @@
    "url": "https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0"
   },
   {
    "approved": null,
@@ -154622,7 +154645,7 @@
    "url": "https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4"
   },
   {
    "approved": null,
@@ -155296,7 +155319,7 @@
    "url": "https://geospatial.alberta.ca/titan/rest/services/ags_apps/ags_apps_land_use_management/MapServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+   "why": "did not open (rest): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -157023,7 +157046,7 @@
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+   "why": "did not open (rest): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -157391,7 +157414,7 @@
    "url": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9"
   },
   {
    "approved": null,
@@ -158491,7 +158514,7 @@
    "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0"
   },
   {
    "approved": null,
@@ -159589,7 +159612,7 @@
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0"
   },
   {
    "approved": null,
@@ -159624,7 +159647,7 @@
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2"
   },
   {
    "approved": null,
@@ -160054,8 +160077,38 @@
    "from": "outside research Oct 30",
    "overlap": "",
    "probe": {
-    "opened": false,
-    "status": "404"
+    "copyright": "",
+    "count": null,
+    "description": "To show the area of all types and ownerships of lands managed by the NYS DEC Bureau of Wildlife.",
+    "extent": [
+     118338.1,
+     4518961.154,
+     706808.249,
+     4981487.49,
+     26918
+    ],
+    "fields": [
+     "OBJECTID",
+     "OBJECTID_1",
+     "WMA",
+     "REGION",
+     "COMMENTS",
+     "CATEGORY",
+     "URL",
+     "WMU",
+     "WILDAREA",
+     "SHAPE_LENG",
+     "SHAPE",
+     "SHAPE.AREA",
+     "SHAPE.LEN"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Wildlife Management Areas",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service_item": ""
    },
    "probed": "2026-10-31",
    "publisher": "",
@@ -160066,8 +160119,7 @@
    "queue_licence": "",
    "queue_note": "0 SURE / LIKELY of 3 assigned parks/trails",
    "queue_url": "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2",
-   "requests_used": 3,
-   "retry": true,
+   "requests_used": 5,
    "sig": "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2|Wildlife Management Areas (outside research Oct 30)|||0 SURE / LIKELY of 3 assigned parks/trails|",
    "terms": {
     "class": "NOTHING STATED",
@@ -160078,8 +160130,8 @@
    "title": "Wildlife Management Areas (outside research Oct 30)",
    "url": "https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2",
    "ver": 1,
-   "verdict": "RETRY",
-   "why": "did not open (404): probed again next run (failed 1 of 3)"
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
   },
   {
    "approved": null,
@@ -162812,7 +162864,7 @@
    "url": "https://services.arcgis.com/oEazpvC7G00gPDRM/arcgis/rest/services/Protected_Areas/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+   "why": "did not open (rest): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -167892,7 +167944,7 @@
    "url": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0"
   },
   {
    "approved": null,
@@ -168765,7 +168817,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+   "why": "did not open (rest): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -168800,7 +168852,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0"
   },
   {
    "approved": null,
@@ -168835,7 +168887,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0"
   },
   {
    "approved": null,
@@ -168869,7 +168921,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+   "why": "did not open (rest): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -168903,7 +168955,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+   "why": "did not open (rest): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -168937,7 +168989,7 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_England/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3)"
+   "why": "did not open (rest): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -172401,7 +172453,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1"
   },
   {
    "approved": null,
@@ -172436,7 +172488,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10"
   },
   {
    "approved": null,
@@ -172471,7 +172523,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11"
   },
   {
    "approved": null,
@@ -172506,7 +172558,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12"
   },
   {
    "approved": null,
@@ -172541,7 +172593,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2"
   },
   {
    "approved": null,
@@ -172576,7 +172628,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3"
   },
   {
    "approved": null,
@@ -172611,7 +172663,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4"
   },
   {
    "approved": null,
@@ -172646,7 +172698,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5"
   },
   {
    "approved": null,
@@ -172681,7 +172733,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6"
   },
   {
    "approved": null,
@@ -172716,7 +172768,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7"
   },
   {
    "approved": null,
@@ -172751,7 +172803,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8"
   },
   {
    "approved": null,
@@ -172786,7 +172838,7 @@
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9"
   },
   {
    "approved": null,
@@ -174529,7 +174581,7 @@
    "url": "https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1"
+   "why": "did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1"
   },
   {
    "approved": null,
@@ -177398,6 +177450,881 @@
    "ver": 1,
    "verdict": "ASK-THE-PUBLISHER",
    "why": "nothing stated about use on the item page or the service"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 16,
+    "description": "",
+    "extent": [
+     121.738,
+     -33.902,
+     121.94,
+     -33.816,
+     7844
+    ],
+    "fields": [
+     "st_area(shape)",
+     "st_perimeter(shape)",
+     "objectid",
+     "salinity_range",
+     "shape"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Seawater Interface Salinity Dist 10m Below Water Table: Esperance (DWER-135)",
+    "name_field": "",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 55,
+     "polygon_layers": [
+      [
+       60,
+       "Seawater Interface Salinity Dist 10m Below Water Table: Esperance (DWER-135)"
+      ],
+      [
+       19,
+       "FPM Bridges (DWER-016)"
+      ],
+      [
+       21,
+       "FPM Floodplain Area (DWER-020)"
+      ],
+      [
+       57,
+       "FPM Historical Floodplain Area (DWER-124)"
+      ],
+      [
+       54,
+       "FPM 1 in 100 (1%) AEP Floodplain Development Control Area (DWER-003)"
+      ],
+      [
+       23,
+       "FPM 1 in 100 (1%) AEP Floodway and Flood Fringe Area (DWER-014)"
+      ],
+      [
+       24,
+       "Public Drinking Water Source Areas (DWER-033)"
+      ],
+      [
+       25,
+       "Garden Bore Suitability (DWER-025)"
+      ]
+     ],
+     "service_name": "Service providing access to Water related data for public use. "
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-31",
+   "publisher": "public-services.slip.wa.gov.au",
+   "publisher_test": [
+    "official",
+    "government host public-services.slip.wa.gov.au"
+   ],
+   "queue_licence": "SLIP / LANDGATE",
+   "queue_note": "",
+   "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer",
+   "requests_used": 4,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer|SLIP_Public_Services/Water|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "terms": {
+    "about": "Service providing access to Water related data for public use. Service providing access to Water related data for public use.",
+    "class": "NON-COMMERCIAL",
+    "credit": "SLIP / LANDGATE",
+    "item_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo",
+    "licence_text": "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. This personal use licence provides that by opening, viewing or using this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or create derivative works of this data without the data custodians prior written permission.",
+    "line": "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat",
+    "source": "item page",
+    "title": "Water"
+   },
+   "test": "",
+   "title": "SLIP_Public_Services/Water",
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/60",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "no name field: an outline needs a name to match a park"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 2603,
+    "missing_in_area": 2603,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 60
+   },
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 1340,
+    "description": "",
+    "extent": [
+     113.64,
+     -35.009,
+     128.219,
+     -17.016,
+     7844
+    ],
+    "fields": [
+     "shape",
+     "name",
+     "brdg_type",
+     "status_5",
+     "status_10",
+     "status_20",
+     "status_25",
+     "status_50",
+     "status_100",
+     "status_dfe",
+     "status_200",
+     "status_500",
+     "status_1000",
+     "status_2000",
+     "status_5000",
+     "start_date",
+     "hyd_name",
+     "location",
+     "date_check",
+     "source",
+     "comments",
+     "ufi",
+     "crt_date",
+     "src_date",
+     "cap_meth",
+     "cap_scale",
+     "objectid",
+     "st_area(shape)",
+     "st_perimeter(shape)"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "FPM Bridges (DWER-016)",
+    "name_field": "name",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Bernard Street Road Bridge",
+     "McNeil Road Bridge",
+     "Lake Road Bridge"
+    ],
+    "service": {
+     "layers_listed": 55,
+     "polygon_layers": [
+      [
+       60,
+       "Seawater Interface Salinity Dist 10m Below Water Table: Esperance (DWER-135)"
+      ],
+      [
+       19,
+       "FPM Bridges (DWER-016)"
+      ],
+      [
+       21,
+       "FPM Floodplain Area (DWER-020)"
+      ],
+      [
+       57,
+       "FPM Historical Floodplain Area (DWER-124)"
+      ],
+      [
+       54,
+       "FPM 1 in 100 (1%) AEP Floodplain Development Control Area (DWER-003)"
+      ],
+      [
+       23,
+       "FPM 1 in 100 (1%) AEP Floodway and Flood Fringe Area (DWER-014)"
+      ],
+      [
+       24,
+       "Public Drinking Water Source Areas (DWER-033)"
+      ],
+      [
+       25,
+       "Garden Bore Suitability (DWER-025)"
+      ]
+     ],
+     "service_name": "Service providing access to Water related data for public use. "
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-31",
+   "publisher": "public-services.slip.wa.gov.au",
+   "publisher_test": [
+    "official",
+    "government host public-services.slip.wa.gov.au"
+   ],
+   "queue_licence": "SLIP / LANDGATE",
+   "queue_note": "",
+   "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer",
+   "requests_used": 67,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer|SLIP_Public_Services/Water|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "terms": {
+    "about": "Service providing access to Water related data for public use. Service providing access to Water related data for public use.",
+    "class": "NON-COMMERCIAL",
+    "credit": "SLIP / LANDGATE",
+    "item_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo",
+    "licence_text": "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. This personal use licence provides that by opening, viewing or using this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or create derivative works of this data without the data custodians prior written permission.",
+    "line": "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat",
+    "source": "item page",
+    "title": "Water"
+   },
+   "test": "",
+   "title": "SLIP_Public_Services/Water",
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/19",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "official and usable, but it closes none of the area's missing parks (nothing to gain yet)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 55,
+     "polygon_layers": [
+      [
+       60,
+       "Seawater Interface Salinity Dist 10m Below Water Table: Esperance (DWER-135)"
+      ],
+      [
+       19,
+       "FPM Bridges (DWER-016)"
+      ],
+      [
+       21,
+       "FPM Floodplain Area (DWER-020)"
+      ],
+      [
+       57,
+       "FPM Historical Floodplain Area (DWER-124)"
+      ],
+      [
+       54,
+       "FPM 1 in 100 (1%) AEP Floodplain Development Control Area (DWER-003)"
+      ],
+      [
+       23,
+       "FPM 1 in 100 (1%) AEP Floodway and Flood Fringe Area (DWER-014)"
+      ],
+      [
+       24,
+       "Public Drinking Water Source Areas (DWER-033)"
+      ],
+      [
+       25,
+       "Garden Bore Suitability (DWER-025)"
+      ]
+     ],
+     "service_name": "Service providing access to Water related data for public use. "
+    },
+    "status": "error Error handling service request :Service not started."
+   },
+   "probed": "2026-10-31",
+   "publisher": "public-services.slip.wa.gov.au",
+   "publisher_test": [
+    "official",
+    "government host public-services.slip.wa.gov.au"
+   ],
+   "queue_licence": "SLIP / LANDGATE",
+   "queue_note": "",
+   "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer",
+   "requests_used": 68,
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer|SLIP_Public_Services/Water|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "terms": {
+    "about": "Service providing access to Water related data for public use. Service providing access to Water related data for public use.",
+    "class": "NON-COMMERCIAL",
+    "credit": "SLIP / LANDGATE",
+    "item_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo",
+    "licence_text": "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. This personal use licence provides that by opening, viewing or using this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or create derivative works of this data without the data custodians prior written permission.",
+    "line": "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat",
+    "source": "item page",
+    "title": "Water"
+   },
+   "test": "",
+   "title": "SLIP_Public_Services/Water",
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/21",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (error Error handling service request :Service not started.): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 2603,
+    "missing_in_area": 2603,
+    "n": 0,
+    "note": "stopped early (time or request budget)",
+    "parks": [],
+    "pin_only": 0,
+    "tested": 0
+   },
+   "flag": "water only: for the 2-fer owner step only",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 32,
+    "description": "",
+    "extent": [
+     115.908,
+     -34.971,
+     128.235,
+     -16.711,
+     7844
+    ],
+    "fields": [
+     "objectid",
+     "shape",
+     "event_yr",
+     "event_mth_no",
+     "event_mth",
+     "hyd_name",
+     "location",
+     "vert_datum",
+     "date_check",
+     "source",
+     "comments",
+     "ufi",
+     "crt_date",
+     "src_date",
+     "cap_meth",
+     "cap_scale",
+     "st_area(shape)",
+     "st_perimeter(shape)"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "FPM Historical Floodplain Area (DWER-124)",
+    "name_field": "hyd_name",
+    "opened": true,
+    "polygons": true,
+    "service": {
+     "layers_listed": 55,
+     "polygon_layers": [
+      [
+       60,
+       "Seawater Interface Salinity Dist 10m Below Water Table: Esperance (DWER-135)"
+      ],
+      [
+       19,
+       "FPM Bridges (DWER-016)"
+      ],
+      [
+       21,
+       "FPM Floodplain Area (DWER-020)"
+      ],
+      [
+       57,
+       "FPM Historical Floodplain Area (DWER-124)"
+      ],
+      [
+       54,
+       "FPM 1 in 100 (1%) AEP Floodplain Development Control Area (DWER-003)"
+      ],
+      [
+       23,
+       "FPM 1 in 100 (1%) AEP Floodway and Flood Fringe Area (DWER-014)"
+      ],
+      [
+       24,
+       "Public Drinking Water Source Areas (DWER-033)"
+      ],
+      [
+       25,
+       "Garden Bore Suitability (DWER-025)"
+      ]
+     ],
+     "service_name": "Service providing access to Water related data for public use. "
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-31",
+   "publisher": "public-services.slip.wa.gov.au",
+   "publisher_test": [
+    "official",
+    "government host public-services.slip.wa.gov.au"
+   ],
+   "queue_licence": "SLIP / LANDGATE",
+   "queue_note": "",
+   "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer",
+   "requests_used": 70,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer|SLIP_Public_Services/Water|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "terms": {
+    "about": "Service providing access to Water related data for public use. Service providing access to Water related data for public use.",
+    "class": "NON-COMMERCIAL",
+    "credit": "SLIP / LANDGATE",
+    "item_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo",
+    "licence_text": "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. This personal use licence provides that by opening, viewing or using this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or create derivative works of this data without the data custodians prior written permission.",
+    "line": "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat",
+    "source": "item page",
+    "title": "Water"
+   },
+   "test": "",
+   "title": "SLIP_Public_Services/Water",
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/57",
+   "ver": 1,
+   "verdict": "WATER-ONLY",
+   "why": "water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 55,
+     "polygon_layers": [
+      [
+       60,
+       "Seawater Interface Salinity Dist 10m Below Water Table: Esperance (DWER-135)"
+      ],
+      [
+       19,
+       "FPM Bridges (DWER-016)"
+      ],
+      [
+       21,
+       "FPM Floodplain Area (DWER-020)"
+      ],
+      [
+       57,
+       "FPM Historical Floodplain Area (DWER-124)"
+      ],
+      [
+       54,
+       "FPM 1 in 100 (1%) AEP Floodplain Development Control Area (DWER-003)"
+      ],
+      [
+       23,
+       "FPM 1 in 100 (1%) AEP Floodway and Flood Fringe Area (DWER-014)"
+      ],
+      [
+       24,
+       "Public Drinking Water Source Areas (DWER-033)"
+      ],
+      [
+       25,
+       "Garden Bore Suitability (DWER-025)"
+      ]
+     ],
+     "service_name": "Service providing access to Water related data for public use. "
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-31",
+   "publisher": "public-services.slip.wa.gov.au",
+   "publisher_test": [
+    "official",
+    "government host public-services.slip.wa.gov.au"
+   ],
+   "queue_licence": "SLIP / LANDGATE",
+   "queue_note": "",
+   "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer|SLIP_Public_Services/Water|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "terms": {
+    "about": "Service providing access to Water related data for public use. Service providing access to Water related data for public use.",
+    "class": "NON-COMMERCIAL",
+    "credit": "SLIP / LANDGATE",
+    "item_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo",
+    "licence_text": "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. This personal use licence provides that by opening, viewing or using this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or create derivative works of this data without the data custodians prior written permission.",
+    "line": "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat",
+    "source": "item page",
+    "title": "Water"
+   },
+   "test": "",
+   "title": "SLIP_Public_Services/Water",
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/54",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 55,
+     "polygon_layers": [
+      [
+       60,
+       "Seawater Interface Salinity Dist 10m Below Water Table: Esperance (DWER-135)"
+      ],
+      [
+       19,
+       "FPM Bridges (DWER-016)"
+      ],
+      [
+       21,
+       "FPM Floodplain Area (DWER-020)"
+      ],
+      [
+       57,
+       "FPM Historical Floodplain Area (DWER-124)"
+      ],
+      [
+       54,
+       "FPM 1 in 100 (1%) AEP Floodplain Development Control Area (DWER-003)"
+      ],
+      [
+       23,
+       "FPM 1 in 100 (1%) AEP Floodway and Flood Fringe Area (DWER-014)"
+      ],
+      [
+       24,
+       "Public Drinking Water Source Areas (DWER-033)"
+      ],
+      [
+       25,
+       "Garden Bore Suitability (DWER-025)"
+      ]
+     ],
+     "service_name": "Service providing access to Water related data for public use. "
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-31",
+   "publisher": "public-services.slip.wa.gov.au",
+   "publisher_test": [
+    "official",
+    "government host public-services.slip.wa.gov.au"
+   ],
+   "queue_licence": "SLIP / LANDGATE",
+   "queue_note": "",
+   "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer|SLIP_Public_Services/Water|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "terms": {
+    "about": "Service providing access to Water related data for public use. Service providing access to Water related data for public use.",
+    "class": "NON-COMMERCIAL",
+    "credit": "SLIP / LANDGATE",
+    "item_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo",
+    "licence_text": "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. This personal use licence provides that by opening, viewing or using this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or create derivative works of this data without the data custodians prior written permission.",
+    "line": "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat",
+    "source": "item page",
+    "title": "Water"
+   },
+   "test": "",
+   "title": "SLIP_Public_Services/Water",
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/23",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 55,
+     "polygon_layers": [
+      [
+       60,
+       "Seawater Interface Salinity Dist 10m Below Water Table: Esperance (DWER-135)"
+      ],
+      [
+       19,
+       "FPM Bridges (DWER-016)"
+      ],
+      [
+       21,
+       "FPM Floodplain Area (DWER-020)"
+      ],
+      [
+       57,
+       "FPM Historical Floodplain Area (DWER-124)"
+      ],
+      [
+       54,
+       "FPM 1 in 100 (1%) AEP Floodplain Development Control Area (DWER-003)"
+      ],
+      [
+       23,
+       "FPM 1 in 100 (1%) AEP Floodway and Flood Fringe Area (DWER-014)"
+      ],
+      [
+       24,
+       "Public Drinking Water Source Areas (DWER-033)"
+      ],
+      [
+       25,
+       "Garden Bore Suitability (DWER-025)"
+      ]
+     ],
+     "service_name": "Service providing access to Water related data for public use. "
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-31",
+   "publisher": "public-services.slip.wa.gov.au",
+   "publisher_test": [
+    "official",
+    "government host public-services.slip.wa.gov.au"
+   ],
+   "queue_licence": "SLIP / LANDGATE",
+   "queue_note": "",
+   "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer|SLIP_Public_Services/Water|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "terms": {
+    "about": "Service providing access to Water related data for public use. Service providing access to Water related data for public use.",
+    "class": "NON-COMMERCIAL",
+    "credit": "SLIP / LANDGATE",
+    "item_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo",
+    "licence_text": "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. This personal use licence provides that by opening, viewing or using this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or create derivative works of this data without the data custodians prior written permission.",
+    "line": "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat",
+    "source": "item page",
+    "title": "Water"
+   },
+   "test": "",
+   "title": "SLIP_Public_Services/Water",
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/24",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 55,
+     "polygon_layers": [
+      [
+       60,
+       "Seawater Interface Salinity Dist 10m Below Water Table: Esperance (DWER-135)"
+      ],
+      [
+       19,
+       "FPM Bridges (DWER-016)"
+      ],
+      [
+       21,
+       "FPM Floodplain Area (DWER-020)"
+      ],
+      [
+       57,
+       "FPM Historical Floodplain Area (DWER-124)"
+      ],
+      [
+       54,
+       "FPM 1 in 100 (1%) AEP Floodplain Development Control Area (DWER-003)"
+      ],
+      [
+       23,
+       "FPM 1 in 100 (1%) AEP Floodway and Flood Fringe Area (DWER-014)"
+      ],
+      [
+       24,
+       "Public Drinking Water Source Areas (DWER-033)"
+      ],
+      [
+       25,
+       "Garden Bore Suitability (DWER-025)"
+      ]
+     ],
+     "service_name": "Service providing access to Water related data for public use. "
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-31",
+   "publisher": "public-services.slip.wa.gov.au",
+   "publisher_test": [
+    "official",
+    "government host public-services.slip.wa.gov.au"
+   ],
+   "queue_licence": "SLIP / LANDGATE",
+   "queue_note": "",
+   "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer|SLIP_Public_Services/Water|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "terms": {
+    "about": "Service providing access to Water related data for public use. Service providing access to Water related data for public use.",
+    "class": "NON-COMMERCIAL",
+    "credit": "SLIP / LANDGATE",
+    "item_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo",
+    "licence_text": "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. This personal use licence provides that by opening, viewing or using this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or create derivative works of this data without the data custodians prior written permission.",
+    "line": "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat",
+    "source": "item page",
+    "title": "Water"
+   },
+   "test": "",
+   "title": "SLIP_Public_Services/Water",
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/25",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 2603,
+    "missing_in_area": 2603,
+    "n": 0,
+    "note": "stopped early (time or request budget)",
+    "parks": [],
+    "pin_only": 0,
+    "tested": 43
+   },
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 1340,
+    "description": "",
+    "extent": [
+     113.64,
+     -35.009,
+     128.219,
+     -17.016,
+     7844
+    ],
+    "fields": [
+     "shape",
+     "name",
+     "brdg_type",
+     "status_5",
+     "status_10",
+     "status_20",
+     "status_25",
+     "status_50",
+     "status_100",
+     "status_dfe",
+     "status_200",
+     "status_500",
+     "status_1000",
+     "status_2000",
+     "status_5000",
+     "start_date",
+     "hyd_name",
+     "location",
+     "date_check",
+     "source",
+     "comments",
+     "ufi",
+     "crt_date",
+     "src_date",
+     "cap_meth",
+     "cap_scale",
+     "objectid",
+     "st_area(shape)",
+     "st_perimeter(shape)"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "FPM Bridges (DWER-016)",
+    "name_field": "name",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Bernard Street Road Bridge",
+     "McNeil Road Bridge",
+     "Lake Road Bridge"
+    ],
+    "service": {
+     "layers_listed": 55,
+     "polygon_layers": [
+      [
+       19,
+       "FPM Bridges (DWER-016)"
+      ],
+      [
+       20,
+       "FPM Floodplain Area (DWER-020)"
+      ],
+      [
+       21,
+       "FPM Historical Floodplain Area (DWER-124)"
+      ],
+      [
+       22,
+       "FPM 1 in 100 (1%) AEP Floodplain Development Control Area (DWER-003)"
+      ],
+      [
+       23,
+       "FPM 1 in 100 (1%) AEP Floodway and Flood Fringe Area (DWER-014)"
+      ],
+      [
+       24,
+       "Public Drinking Water Source Areas (DWER-033)"
+      ],
+      [
+       25,
+       "Garden Bore Suitability (DWER-025)"
+      ],
+      [
+       26,
+       "Iron Staining Risk (DWER-032)"
+      ]
+     ],
+     "service_name": "Service providing access to Water FS related data for public use. "
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-31",
+   "publisher": "public-services.slip.wa.gov.au",
+   "publisher_test": [
+    "official",
+    "government host public-services.slip.wa.gov.au"
+   ],
+   "queue_licence": "SLIP / LANDGATE",
+   "queue_note": "",
+   "queue_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer",
+   "requests_used": 48,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer|SLIP_Public_Services/Water_FS|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "terms": {
+    "about": "Service providing access to Water FS related data for public use. Service providing access to Water FS related data for public use.",
+    "class": "NON-COMMERCIAL",
+    "credit": "SLIP / LANDGATE",
+    "item_url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer/info/iteminfo",
+    "licence_text": "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. This personal use licence provides that by opening, viewing or using this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or create derivative works of this data without the data custodians prior written permission.",
+    "line": "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat",
+    "source": "item page",
+    "title": "Water_FS"
+   },
+   "test": "",
+   "title": "SLIP_Public_Services/Water_FS",
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer/19",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "official and usable, but it closes none of the area's missing parks (nothing to gain yet)"
   }
  ],
  "updated": "2026-10-31"

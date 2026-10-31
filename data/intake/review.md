@@ -5,11 +5,11 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | verdict | rows |
 |---|---|
 | READY | 2 |
-| WATER-ONLY | 34 |
+| WATER-ONLY | 35 |
 | LIVE-ONLY | 1 |
 | ASK-THE-PUBLISHER | 295 |
-| RETRY | 304 |
-| REJECT | 1383 |
+| RETRY | 308 |
+| REJECT | 1387 |
 
 ## READY (2)
 
@@ -81,7 +81,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - GB-0198 Thames Basin Heaths SPA - Yateley Heath Woods Site of Significant Scientific Interest → polygon "Castle Bottom to Yateley and Hawley Commons"
 - TEST: ok
 
-## WATER-ONLY (34)
+## WATER-ONLY (35)
 
 ### ogc_services/Ramsar_Wetlands  ·  AU  ·  from harvester
 - url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer/0
@@ -403,6 +403,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: OPEN · source item page · "nd Heritage. This copyright material is licensed for re-use under the Creative Commons Attribution 4.0 International licence. http://creativecommons.org/license Copyright Gover" · item https://www.arcgis.com/home/item.html?id=41c7209da92341e6b7014087c8229f46 · owner NPWS_Ireland · org NPWS
 - facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 1180 records · last edit 2026-04-01 · sample Dromore Lakes / Dromore Lakes / Bruse Hill
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### SLIP_Public_Services/Water  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/57
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- FLAG: water only: for the 2-fer owner step only
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field hyd_name · 32 records
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ## LIVE-ONLY (1)
 
@@ -2926,7 +2935,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field OLD_NAME · 11 records · sample   /   /  
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## RETRY (304)
+## RETRY (308)
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
 - url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
@@ -2948,7 +2957,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/5
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: status budget
@@ -2956,7 +2965,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/6
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: status budget
@@ -2964,7 +2973,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/10
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: status budget
@@ -2972,7 +2981,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/11
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: status budget
@@ -2980,7 +2989,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/12
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: status budget
@@ -2988,7 +2997,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/14
-- WHY: did not open 3 times (budget): chat 9 checks the url
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: status budget
@@ -3030,7 +3039,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/6
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -3038,7 +3047,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/7
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -3046,7 +3055,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/10
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -3054,7 +3063,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/12
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -3062,7 +3071,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/16
 - WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
@@ -3493,26 +3502,26 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 
 
-### Civil War Battlefields  ·  None  ·  from gis-hunter
+### Civil War Battlefields  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?
+- WHY: did not open 3 times (rest): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
 
-### Civil War Battlefields (time-enabled)  ·  None  ·  from gis-hunter
+### Civil War Battlefields (time-enabled)  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat
+- WHY: did not open 3 times (rest): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
 
 ### Walnut Woods Park JWT  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer
-- WHY: did not open 3 times (error Invalid URL): chat 9 checks the url
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Invalid URL
+- facts: status rest
 
 ### Canyon De Chelly National Monument, AZ (Data Basin Dataset)  ·    ·  from gis-hunter
 - url: http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer
@@ -3544,10 +3553,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Little Turtle_WFL1  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status rest
 
 ### Little Turtle_WTL1  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer
@@ -3619,12 +3628,12 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - 
 
-### Watershed of the Blanchard River  ·  None  ·  from gis-hunter
+### Watershed of the Blanchard River  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer
-- WHY: did not open 3 times (bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe): chat 9 checks the url
-- publisher: ? → unsure ()
-- terms: ? · source ?
-- facts: status bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe
+- WHY: did not open 3 times (rest): chat 9 checks the url
+- publisher: ? → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status rest
 
 ### Flint River  ·    ·  from gis-hunter
 - url: https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer
@@ -3656,10 +3665,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Trails_Connected_to_the_Razorback_Regional_Greenway  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer
-- WHY: did not open 3 times (error Token Required): chat 9 checks the url
+- WHY: did not open 3 times (rest): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status error Token Required
+- facts: status rest
 
 ### 2005 US Civil War Map (Web Mercator)  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/YpWVqIbOT80sKVHP/arcgis/rest/services/2005_US_Civil_War_Map_WM/MapServer
@@ -4113,7 +4122,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Infrastructure_and_Utilities_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/28
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -4121,7 +4130,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Infrastructure_and_Utilities_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/29
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -4129,7 +4138,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Infrastructure_and_Utilities_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/30
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -4137,7 +4146,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Infrastructure_and_Utilities_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/34
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -4145,7 +4154,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Infrastructure_and_Utilities_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/35
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -4153,7 +4162,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Infrastructure_and_Utilities_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/31
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -4161,7 +4170,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Marine_and_Estuaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/6
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/info/iteminfo
 - facts: status budget
@@ -4169,7 +4178,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Marine_and_Estuaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/7
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/info/iteminfo
 - facts: status budget
@@ -4177,7 +4186,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Marine_and_Estuaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/8
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/info/iteminfo
 - facts: status budget
@@ -4185,7 +4194,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Marine_and_Estuaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/9
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/info/iteminfo
 - facts: status budget
@@ -4193,7 +4202,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Marine_and_Estuaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/10
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/info/iteminfo
 - facts: status budget
@@ -4201,7 +4210,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Marine_and_Estuaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/11
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/info/iteminfo
 - facts: status budget
@@ -4209,7 +4218,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/People_and_Society  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/15
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/info/iteminfo
 - facts: status budget
@@ -4217,7 +4226,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/People_and_Society  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/16
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/info/iteminfo
 - facts: status budget
@@ -4225,7 +4234,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/People_and_Society  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/5
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/info/iteminfo
 - facts: status budget
@@ -4233,7 +4242,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/People_and_Society  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/6
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/info/iteminfo
 - facts: status budget
@@ -4241,7 +4250,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/People_and_Society  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/7
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/info/iteminfo
 - facts: status budget
@@ -4249,7 +4258,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/People_and_Society  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/8
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/info/iteminfo
 - facts: status budget
@@ -4257,7 +4266,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Plants_and_Animals  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/11
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/info/iteminfo
 - facts: status budget
@@ -4265,7 +4274,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Plants_and_Animals  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/143
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/info/iteminfo
 - facts: status budget
@@ -4273,7 +4282,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Plants_and_Animals_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/8
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -4281,7 +4290,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### SLIP_Public_Services/Plants_and_Animals_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/143
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/info/iteminfo
 - facts: status budget
@@ -4928,7 +4937,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Refuges (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -4948,7 +4957,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
 - terms: NOTHING STATED · source none
@@ -4957,7 +4966,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### TDEC_Public_Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
 - terms: NOTHING STATED · source none
@@ -4966,7 +4975,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### NYS_Park_Polygon (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -4976,7 +4985,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Utah State Park Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_State_Park_Management_Areas/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -4985,7 +4994,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Hiking Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -4994,7 +5003,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Historic Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -5003,7 +5012,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### StateParks (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
 - terms: NOTHING STATED · source none
@@ -5012,7 +5021,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public Land Use Zone (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://geospatial.alberta.ca/titan/rest/services/ags_apps/ags_apps_land_use_management/MapServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → official (government host geospatial.alberta.ca)
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -5021,7 +5030,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### FWSBoundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -5030,7 +5039,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### FL_Conservation_Lands_web (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9
 - terms: NOTHING STATED · source none
@@ -5040,7 +5049,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Wildlife Management Areas Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -5050,7 +5059,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Manitoba Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -5060,7 +5069,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Wildlife_Management_Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
 - terms: NOTHING STATED · source none
@@ -5068,17 +5077,9 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: same publisher as Manitoba Par
 - closes: not probed
 
-### Wildlife Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
-- url: https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2
-- WHY: did not open (404): probed again next run (failed 1 of 3)
-- publisher: ? → official (government host gisservices.dec.ny.gov)
-- terms: NOTHING STATED · source none
-- facts: status 404
-- closes: not probed
-
 ### Protected_Areas_Project (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/oEazpvC7G00gPDRM/arcgis/rest/services/Protected_Areas/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -5086,7 +5087,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Utah Scenic Byways (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -5095,7 +5096,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Local Nature Reserves (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -5103,7 +5104,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### National Parks (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -5112,7 +5113,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### National Trails (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0
 - terms: NOTHING STATED · source none
@@ -5121,7 +5122,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Areas of Outstanding Natural Beauty (England) © Natural Engl (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -5129,7 +5130,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Country Parks (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -5137,7 +5138,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Sites of Special Scientific Interest (England) © Natural Eng (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_England/FeatureServer/0
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
 - facts: status rest
@@ -5145,7 +5146,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### ESG_FFH_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
 - terms: NOTHING STATED · source none
@@ -5154,7 +5155,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### S_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
 - terms: NOTHING STATED · source none
@@ -5163,7 +5164,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### main.IUCN_Ia_AT_2025 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
 - terms: NOTHING STATED · source none
@@ -5172,7 +5173,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### main.IUCN_Ib_AT_2025 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
 - terms: NOTHING STATED · source none
@@ -5181,7 +5182,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### ESG_VSR_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
 - terms: NOTHING STATED · source none
@@ -5190,7 +5191,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### NP_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
 - terms: NOTHING STATED · source none
@@ -5199,7 +5200,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### ESG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
 - terms: NOTHING STATED · source none
@@ -5208,7 +5209,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### NSG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
 - terms: NOTHING STATED · source none
@@ -5217,7 +5218,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### BP_AT_2025 (exkl. St - Untere Mur) (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
 - terms: NOTHING STATED · source none
@@ -5226,7 +5227,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### LSG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
 - terms: NOTHING STATED · source none
@@ -5235,7 +5236,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### GLT_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
 - terms: NOTHING STATED · source none
@@ -5244,7 +5245,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### NAP_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
 - terms: NOTHING STATED · source none
@@ -5253,14 +5254,54 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Protected Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
-- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
+- WHY: did not open (rest): probed again next run (failed 2 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
 - terms: NOTHING STATED · source none
 - facts: status rest
 - closes: not probed
 
-## REJECT (1383)
+### SLIP_Public_Services/Water  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/21
+- WHY: did not open (error Error handling service request :Service not started.): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo
+- facts: status error Error handling service request :Service not started.
+- closes: not probed
+
+### SLIP_Public_Services/Water  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/54
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Water  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/23
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Water  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/24
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Water  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/25
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+## REJECT (1387)
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
@@ -5398,7 +5439,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/4
 - WHY: NOT A PARK LAYER (coverage): closes 24 but only 2 by name (READY needs 3+ name matches and 25%+ of the closes)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 138 records · sample Patriarch / Sellars Lagoon / Yarra
 - closes: 24 of 57 tested missing parks (by name 2, pin only 22; 57 of the area's 2603 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Tamar"
@@ -5456,7 +5497,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "Department of Transport (WA)" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field cell_name · 23 records · sample Bluff Point to Nunginjay Spring Coast N / Whale Boat Cove to Bluff Point / Glenfield to Whale Boat Cove
-- closes: 3 of 60 tested missing parks (by name 0, pin only 3; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 3 of 60 tested missing parks (by name 0, pin only 3; 2603 of the area's 2603 missing parks lie in the layer's extent)
   - AU-0040 Shoalwater Islands Marine Park → polygon "Cape Bouvard to Warnbro"
   - AU-0082 Marmion Marine Park → polygon "Pinnaroo Point to Yanchep"
   - AU-0106 Jurien Bay Marine Park → polygon "North Wedge to Middle Head"
@@ -5505,7 +5546,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/5
 - WHY: closes only 1 park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 192 records · sample Pats / Seal / Chew Tobacco Creek
 - closes: 1 of 3 tested missing parks (by name 1, pin only 0; 57 of the area's 2603 missing parks lie in the layer's extent)
   - AU-11291 Great Lake Water Management Area → polygon "Great Lake"
@@ -5534,7 +5575,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field rcs_name · 62 records · sample CHITTERING, SHIRE OF / CORRIGIN, SHIRE OF / VICTORIA PLAINS, SHIRE OF
-- closes: 1 of 55 tested missing parks (by name 0, pin only 1; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 1 of 55 tested missing parks (by name 0, pin only 1; 2603 of the area's 2603 missing parks lie in the layer's extent)
   - AU-0506 McCorkill State Forest → polygon "NANNUP, SHIRE OF"
 
 ### SLIP_Public_Services/Plants_and_Animals_WFS  ·  AU  ·  from harvester
@@ -5543,7 +5584,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field rcs_name · 62 records · sample CHITTERING, SHIRE OF / CORRIGIN, SHIRE OF / VICTORIA PLAINS, SHIRE OF
-- closes: 1 of 55 tested missing parks (by name 0, pin only 1; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 1 of 55 tested missing parks (by name 0, pin only 1; 2603 of the area's 2603 missing parks lie in the layer's extent)
   - AU-0506 McCorkill State Forest → polygon "NANNUP, SHIRE OF"
 
 ### Nevada State Parks boundaries (Division of State Parks, VS Boundary Map)  ·  US-NV  ·  from chat 9
@@ -5662,7 +5703,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 32 records · sample Albany / Barker Bay Albany / Batavia NHL
-- closes: 0 of 51 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/3
@@ -6100,7 +6141,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/1
 - WHY: no name field: an outline needs a name to match a park
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: CREDIT · source item page · "the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · 126488 records
 - closes: not probed
 
@@ -11730,7 +11771,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 3 records · sample Harvey / Collie River / Waroona
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Infrastructure_and_Utilities_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/11
@@ -11739,7 +11780,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 393 records · sample #1 PRIMARY POND WWTP ROEBOURNE / #1 SECONDARY POND WWTP ROEBOURNE / #2 SECONDARY POND WWTP ROEBOURNE
 
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Marine_and_Estuaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/5
@@ -11747,7 +11788,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "Department of Transport (WA)" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field cell_name · 73 records · sample Moore River to Ledge / Cliff Head to Leander Point / Fisherman Islands to South Illawong
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/People_and_Society  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/1
@@ -11755,7 +11796,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 32 records · sample Albany / Barker Bay Albany / Batavia NHL
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/People_and_Society  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/4
@@ -11763,7 +11804,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field land_name · 1186 records · sample WILSONS PATCH / KUNMUNYA / PORT HEDLAND
-- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Plants_and_Animals  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer/1
@@ -15671,6 +15712,14 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: already read as Saskatchewan~2
 - closes: not probed
 
+### Wildlife Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gisservices.dec.ny.gov)
+- terms: NOTHING STATED · source none
+- facts: arcgis-layer · esriGeometryPolygon
+- closes: not probed
+
 ### RFMC (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/14
 - WHY: no name field: an outline needs a name to match a park
@@ -16736,6 +16785,30 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source item page · item https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · 2 records
 - closes: not probed
+
+### SLIP_Public_Services/Water  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/60
+- WHY: no name field: an outline needs a name to match a park
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 16 records
+- closes: not probed
+
+### SLIP_Public_Services/Water  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/19
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 1340 records · sample Bernard Street Road Bridge / McNeil Road Bridge / Lake Road Bridge
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+
+### SLIP_Public_Services/Water_FS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer/19
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 1340 records · sample Bernard Street Road Bridge / McNeil Road Bridge / Lake Road Bridge
+- closes: 0 of 43 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ## Known-answer test rows
 
