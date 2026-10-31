@@ -2,9 +2,9 @@
  "about": "KPC bot status board: per bot the last run, green / red, what it made, what is waiting on whom. Written by kpc_status.py from each workflow; a members-only page reads it later.",
  "bots": {
   "campground info bot": {
-   "areas": "left: 59",
+   "areas": "left: 58",
    "last_run": "2026-10-31",
-   "made": "US-MA: done; {\"camps\": 30, \"needs_browser\": 0, \"needs_key\": 8, \"no_page\": 0, \"not_official\": 0, \"ok\": 20, \"other\": 2, \"resting\": 0, \"robots\": 0, \"with_booking\": 22, \"with_elevation\": 0, \"with_facts\": 21, \"with_sit",
+   "made": "US-MT: done; {\"camps\": 312, \"needs_browser\": 0, \"needs_key\": 312, \"no_page\": 0, \"not_official\": 0, \"ok\": 0, \"other\": 0, \"resting\": 0, \"robots\": 0, \"with_booking\": 0, \"with_elevation\": 0, \"with_sites\": 0}",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41183287458",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -67,7 +67,7 @@
   },
   "waiting room": {
    "last_run": "2026-10-31",
-   "made": "heartbeat 0 h old, 72 files waiting",
+   "made": "heartbeat 0 h old, 73 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
