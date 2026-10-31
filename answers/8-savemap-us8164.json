@@ -1,0 +1,38 @@
+{
+ "request": "requests/8-savemap-us8164.json",
+ "id": "8-savemap-us8164",
+ "chat": 8,
+ "kind": "save-map",
+ "report": "",
+ "asked": {
+  "chat": 8,
+  "kind": "save-map",
+  "ref": "US-8164",
+  "name": "George S. Mickelson State Trail",
+  "agency": "SD GFP",
+  "url": "https://gfp.sd.gov/userdocs/mickelson-trail-map.pdf",
+  "pages": 1
+ },
+ "answered": "2026-10-31 07:50Z",
+ "results": [
+  {
+   "url": "https://gfp.sd.gov/userdocs/mickelson-trail-map.pdf",
+   "map_url": "https://gfp.sd.gov/userdocs/mickelson-trail-map.pdf",
+   "saved": [
+    "maps/US-8164_george-s-mickelson-state-trail.jpg"
+   ],
+   "bytes": 261377,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
