@@ -1,5 +1,27 @@
 {
  "areas": {
+  "US-CO": {
+   "camps": 626,
+   "checked": 605,
+   "counts": {
+    "camps": 605,
+    "needs_browser": 0,
+    "needs_key": 339,
+    "no_page": 0,
+    "not_official": 0,
+    "ok": 102,
+    "other": 0,
+    "resting": 164,
+    "robots": 0,
+    "with_booking": 266,
+    "with_elevation": 1,
+    "with_facts": 102,
+    "with_sites": 0
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-10-31"
+  },
   "US-KY": {
    "camps": 109,
    "checked": 100,
@@ -45,10 +67,20 @@
   }
  },
  "cell_status": {
+  "US-CO": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-KY": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-TN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
  },
  "fcc": {
+  "US-CO": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+   },
+   "read": "2026-10-31"
+  },
   "US-KY": {
    "cell": {
     "carriers": null,
@@ -68,7 +100,10 @@
    "read": "2026-10-30"
   }
  },
- "hosts": {},
+ "hosts": {
+  "cpw.state.co.us": 1793520926.0704598,
+  "epqs.nationalmap.gov": 1793520686.008898
+ },
  "ky_check": {
   "agree": 111,
   "bot_blank": 186,
@@ -1022,34 +1057,34 @@
  },
  "last": {
   "areas": [
-   "US-TN"
+   "US-CO"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 351,
-   "rested": 0,
+   "requests": 112,
+   "rested": 794,
    "robots": 0,
-   "strikes": 1
+   "strikes": 6
   },
   "ridb_key": false,
   "stat": {
-   "camps": 348,
-   "elevations": 348,
+   "camps": 626,
+   "elevations": 1,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 81,
-   "no_page": 267,
+   "needs_key": 352,
+   "no_page": 0,
    "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
-   "resting": 0,
+   "ok": 102,
+   "pages_read": 102,
+   "resting": 172,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
   },
-  "when": "2026-10-30"
+  "when": "2026-10-31"
  },
  "test": {
   "result": "PASS",

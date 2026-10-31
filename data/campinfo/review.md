@@ -1,17 +1,22 @@
 # Campground info bot: review (facts only; nothing here decides anything)
 
-Updated 2026-10-30. Every fact in <area>.json carries its source url, read date and quoted line (facts_src). Unknown = null, never guessed.
+Updated 2026-10-31. Every fact in <area>.json carries its source url, read date and quoted line (facts_src). Unknown = null, never guessed.
 ℹ️ Maps and park info are a planning aid, not a guarantee. Always check the official agency map and rules before you go.
 
 | area | campgrounds | read ok | needs RIDB key | needs browser (403) | robots no | host resting | no page on file | not official host | other | with site count | with booking link | with elevation |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | US-KY | 100 | 51 | 35 | 3 | 0 | 0 | 0 | 0 | 11 | 22 | 51 | 96 |
 | US-TN | 348 | 0 | 81 | 0 | 0 | 0 | 267 | 0 | 0 | 0 | 0 | 348 |
+| US-CO | 605 | 102 | 339 | 0 | 0 | 164 | 0 | 0 | 0 | 0 | 266 | 1 |
 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-KY FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built); US-TN FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-KY FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built); US-TN FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+
+## Hosts that need a browser (403), say no in robots.txt, or are resting
+
+- cpw.state.co.us: 164 campgrounds · host resting
 
 ## Needs a browser pass (the page opened but its text holds no campground facts: filled by script, most likely)
 
@@ -120,36 +125,23 @@ Updated 2026-10-30. Every fact in <area>.json carries its source url, read date 
 
 ## US-KY: 12 random samples (records with facts; seed = the date)
 
-- **Big Bone Lick Campground** (big-bone-lick-campground, KY (hand-checked list), status ok (browser), 15 facts, 647 ft) · [parks.ky.gov](https://parks.ky.gov/union/parks/historic/big-bone-lick-state-historic-site)
-  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/big-b · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
-  - checkin = "2 p.m" · “grocery store on-site for your convenience, which is open mid-March through mid-November. Check-in time begins at 2 p.m., and check-out time”
-  - checkout = "1 p.m" · “nience, which is open mid-March through mid-November. Check-in time begins at 2 p.m., and check-out time is at 1 p.m. Gift Shop The park's g”
-  - hookups.electric = true · “n the park for year-round birding. Camping Spacious campground features 62 campsites with utility hookups, grills, a swimming pool, and play”
-  - hookups.water = true · “n the park for year-round birding. Camping Spacious campground features 62 campsites with utility hookups, grills, a swimming pool, and play”
+- **Bee Rock Campground** (bee-rock-campground, KY (hand-checked list), status ok (browser), 8 facts, 741 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/bee-rock-campground)
+  - drinking_water = true · “ilable at the campsites. Facility and Amenity Information Restrooms Vault toilet(s) Water Potable water is available at this site. Drinking ”
+  - features = "fire ring and lantern post with access to many shared picni · “travel only. The campground features sites for both small RVs and tents. Each site has a fire ring and lantern post with access to many shar”
+  - fees = "$15 per night | $20 per night" · “vember. Operational Hours Open 24 hours/day Fee Site and Info Overnight Use: Single Site: $15 per night Double Site: $20 per night A fee is ”
+  - map.date_how = "web page, no date in the link" · “link “Bee Rock Campground Map Guide””
+  - map.url = "https://usfs-public.box.com/s/yfegub8ltz7ye6uudxt0nxmss8tth · “link “Bee Rock Campground Map Guide” -> https://usfs-public.box.com/s/yfegub8ltz7ye6uudxt0nxmss8tthe7o”
+  - reservable = false · “Bee Rock Recreation Area along the banks of the Rockcastle River and features 25 wooded, first-come, first-served campsites with scenic view”
+  - restrooms = "vault" · “are available at this site. Picnic tables are available at each campsite. Other Amenities Vault toilets meet accessibility standards for per”
+  - season = "year-round" · “ee Rock Camping Prohibitions General Information Seasons of Use The Laurel County side is open year-round. The Pulaski County side is open f”
+- **Kentucky Dam Village Campground** (kentucky-dam-village-campground, KY (hand-checked list), status ok, no campground facts even in a browser, 7 facts, 350 ft) · [parks.ky.gov](https://parks.ky.gov/explore/kentucky-dam-village-state-resort-park-7793)
+  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/kentu · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
   - lodging_booking.how = "online: parks.ky.gov" · “link “Reservations Online””
   - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
   - map.date_how = "PDF, no date in the link" · “link “Park Map””
-  - map.url = "https://www.kentuckytourism.com/media/docs/default-source/l · “link “Park Map” -> https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map8929d877-a36c-45”
-  - phone_hint = "(859) 384-3522" · “o Do Events Golf Gatherings Park Finder Book Now ‹ Back Big Bone Lick State Historic Site 859-384-3522 greta.gay@ky.gov 3380 Beaver Road, Un”
-- **Grayson Lake Campground** (grayson-lake-campground, KY (hand-checked list), status ok (browser), 14 facts, 739 ft) · [parks.ky.gov](https://parks.ky.gov/explore/grayson-lake-state-park-7813)
-  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/grays · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
-  - dump_station = true · “ng Pick your spot under the stars in the spacious, 71-site campground. Utility hookups, a dump station, and two central service buildings wi”
-  - hookups.electric = true · “606-474-4513 Camping Pick your spot under the stars in the spacious, 71-site campground. Utility hookups, a dump station, and two central se”
-  - hookups.water = true · “606-474-4513 Camping Pick your spot under the stars in the spacious, 71-site campground. Utility hookups, a dump station, and two central se”
-  - lodging_booking.how = "online: parks.ky.gov" · “link “Reservations Online””
-  - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://www.kentuckytourism.com/media/docs/default-source/l · “link “Campground Map” -> https://www.kentuckytourism.com/media/docs/default-source/listing-documents/campground-mapd052fb15-5”
-  - phone = "(606) 474-4513" · “open year-round; fee for boat rentals. Marina phone number: 606-474-4513 Camping Pick your spot under the stars in the spacious, 71-”
-  - reservable = true · “606-474-9727 steven.kennedy@ky.gov 314 Grayson Lake State Park Rd., Olive Hill, KY 41164 Reserve A Campsite View All Photos Sheer sandstone ”
-- **Whittleton & Middle Fork Campgrounds** (whittleton-middle-fork-campgrounds, KY (hand-checked list), status ok (browser), 7 facts, 775 ft) · [parks.ky.gov](https://parks.ky.gov/explore/whittleton-campground-8107)
-  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/natur · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
-  - dump_station = true · “ide sites with utilities at Natural Bridge State Park. Tent campsites are also available. Dump stations and two central service buildings wi”
-  - hookups.electric = true · “te. Two campgrounds, Whittleton Campground and Middle Fork Campground, provide sites with utilities at Natural Bridge State Park. Tent camps”
-  - lodging_booking.how = "online: parks.ky.gov" · “link “Reservations Online””
-  - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
-  - restrooms = "yes (kind not stated)" · “. Tent campsites are also available. Dump stations and two central service buildings with restrooms and showers are furnished for your conve”
-  - showers = true · “es are also available. Dump stations and two central service buildings with restrooms and showers are furnished for your convenience.Â Reser”
+  - map.url = "https://www.kentuckytourism.com/media/docs/default-source/l · “link “Park Map” -> https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapa1d96cf9-4bbf-40”
+  - phone = "(270) 362-8386" · “open seasonally. Contact the marina directly for pricing at (270) 362-8386 or visit www.kydammarina.com. Eagle Watching Make your own”
+  - reservable = true · “t Park 270-362-4271 scot.ratzlaff@ky.gov 166 Upper Village Drive, Gilbertsville, KY 42044 Reserve A Campsite Reserve A Lodge / Cottage View ”
 - **Energy Lake Campground** (energy-lake-campground, KY (hand-checked list), status ok, 14 facts, 377 ft) · [www.landbetweenthelakes.us](https://www.landbetweenthelakes.us/visit/energy-lake-campground/)
   - booking.how = "online: lblweb.usedirect.com" · “link “Reservations””
   - booking.url = "https://lblweb.usedirect.com/camplbl/" · “link “Reservations” -> https://lblweb.usedirect.com/camplbl/”
@@ -161,80 +153,150 @@ Updated 2026-10-30. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "PDF, year 2025 in the link" · “link “Energy Lake Campground Map””
   - map.url = "https://www.landbetweenthelakes.us/wp-content/uploads/2025/ · “link “Energy Lake Campground Map” -> https://www.landbetweenthelakes.us/wp-content/uploads/2025/04/FINAL_PRINT_-EnergyLakeCampgroundMap_2”
   - phone_hint = "(800) 525-7077" · “ley. There is a courtesy dock there as well. Additional Information Reserve Online Phone: 1800-525-7077 The call center is open weekdays fro”
-- **Barren River Lake State Resort Park Campground** (barren-river-lake-state-resort-park-campground, KY (hand-checked list), status ok (browser), 8 facts, 731 ft) · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/barren-river-lake-campground-7834)
-  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/barre · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
-  - dump_station = true · “ll you to sleep in the campground. Utility hookups are available. For your convenience, a dump station and two central service buildings wit”
-  - hookups.electric = true · “eep closer to nature? Let the sounds of the outdoors lull you to sleep in the campground. Utility hookups are available. For your convenienc”
-  - hookups.water = true · “eep closer to nature? Let the sounds of the outdoors lull you to sleep in the campground. Utility hookups are available. For your convenienc”
-  - lodging_booking.how = "online: parks.ky.gov" · “link “Reservations Online””
-  - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
-  - rules.pets = "Pets are allowed if restrained" · “a dump station and two central service buildings with showers and rest rooms are offered. Pets are allowed if restrained. Laundry facilities”
-  - showers = true · “re available. For your convenience, a dump station and two central service buildings with showers and rest rooms are offered. Pets are allow”
-- **General Burnside Island Campground** (general-burnside-island-campground, KY (hand-checked list), status ok (browser), 15 facts, 837 ft) · [parks.ky.gov](https://parks.ky.gov/burnside/parks/recreation/general-burnside-island-state-park)
-  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/gener · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
-  - dump_station = true · “tes with utility hookups, two central service buildings with showers and restrooms, and a dump station. The campground is open mid-March to ”
-  - hookups.electric = true · “s make camping at General Burnside a great getaway. The campground features 94 sites with utility hookups, two central service buildings wit”
-  - hookups.water = true · “s make camping at General Burnside a great getaway. The campground features 94 sites with utility hookups, two central service buildings wit”
-  - lodging_booking.how = "online: parks.ky.gov" · “link “Reservations Online””
-  - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://www.kentuckytourism.com/media/docs/default-source/l · “link “Campground Map” -> https://www.kentuckytourism.com/media/docs/default-source/listing-documents/campground-map1332fc6b-2”
-  - phone = "(606) 561-3625" · “ion. The campground is open mid-March to mid-November. Call 606-561-3625 for more information. Golf An 18-hole regulation golf cours”
-  - phone_hint = "(606) 561-3625" · “and restrooms, and a dump station. The campground is open mid-March to mid-November. Call 606-561-3625 for more information. Golf An 18-hole”
-- **Higginson-Henry WMA designated campsites** (higginson-henry-wma-designated-campsites, KY (hand-checked list), status ok, no campground facts even in a browser, 3 facts, 457 ft) · [app.fw.ky.gov](https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132)
-  - map.date_how = "PDF, no date in the link" · “link “View Detailed Map””
-  - map.url = "https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf · “link “View Detailed Map” -> https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf”
-  - phone = "(270) 389-3580" · “A Overview Size: 5446 acres Location: Union Contact: Office (270) 389-3580 Elevation: minimum 396 feet, maximum 675 feet. Entrance GPS”
-- **Wilderness Road Campground** (wilderness-road-campground, KY (hand-checked list), status ok, 9 facts, 1376 ft) · [www.nps.gov](https://www.nps.gov/cuga/planyourvisit/wilderness-road-campground.htm)
-  - booking.url = "https://www.recreation.gov/camping/campgrounds/258617" · “booking link from our kpc-campgrounds.json row (official system www.recreation.gov)”
-  - dump_station = true · “ccommodates different lengths. No full hookups (no sewer or water at individual sites). A dump station available near the campground entranc”
-  - features = "fire ring, access to restrooms with flush toilets and showe · “a wooded area (no RV’s or camper trailers permitted). All sites include: A picnic table, fire ring, access to restrooms with flush toilets a”
-  - hookups.electric = "some" · “ayout & Features Loops A,D,E,and F: Non-electric sites set in a wooded area. Loops B & C: Electric sites available with asphalt pad set in a”
-  - hookups.sewer = false · “th flush toilets and showers. RV Camping Each campsite accommodates different lengths. No full hookups (no sewer or water at individual site”
-  - hookups.water = false · “th flush toilets and showers. RV Camping Each campsite accommodates different lengths. No full hookups (no sewer or water at individual site”
-  - reservable = true · “r families, scout troops, and other large groups. Maximum Group Size: 25 people per site. Reservations Required: Can be booked up to 12 mont”
-  - restrooms = "flush" · “ailers permitted). All sites include: A picnic table, fire ring, access to restrooms with flush toilets and showers. RV Camping Each campsit”
-  - showers = true · “All sites include: A picnic table, fire ring, access to restrooms with flush toilets and showers. RV Camping Each campsite accommodates diff”
-- **Barren Fork Horse Camp** (barren-fork-horse-camp, KY (hand-checked list), status ok, 7 facts, 1294 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/barren-fork-horse-camp)
-  - drinking_water = true · “ts accessibility standards for persons with disabilities. Restrooms Vault toilet(s) Water Potable water is available at this site. Drinking ”
-  - fees = "$15 per night" · “er 15th Operational Hours Open 24 hours/day Fee Site and Info Overnight Use: Single Site: $15 per night Pay at site using fee envelope with ”
-  - map.date_how = "web page, no date in the link" · “link “View Guide/Map””
-  - map.url = "https://usfs-public.box.com/s/jp0e6xw1cv8jjryh53x3k3ixmkyhw · “link “View Guide/Map” -> https://usfs-public.box.com/s/jp0e6xw1cv8jjryh53x3k3ixmkyhwggg”
-  - restrooms = "vault" · “rs must park in the overflow parking area. Facility and Amenity Information Accessibility Vault toilet meets accessibility standards for per”
-  - rv_max_ft = 35 · “al Company. Today, the campground offers 41 campsites that accommodate horse trailers and RVs up to 35 feet. A picnic shelter at the campgro”
-  - sites.total = 41 · “ng town operated by the Barren Fork Mining and Coal Company. Today, the campground offers 41 campsites that accommodate horse trailers and R”
-- **Carr Creek Campground** (carr-creek-campground, KY (hand-checked list), status ok (browser), 9 facts, 1067 ft) · [parks.ky.gov](https://parks.ky.gov/explore/carr-creek-campground-7869)
-  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/carr- · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
-  - checkin = "2 p.m" · “. Showers, restrooms, and laundry facilities are available at a central service building. Check-in time begins 2 p.m. and check-out time is ”
-  - checkout = "1 p.m" · “y facilities are available at a central service building. Check-in time begins 2 p.m. and check-out time is 1 p.m. Reservations Online Conta”
-  - hookups.electric = true · “ate Park, Sassafras, KY 41759 View All Photos Spacious campground features campsites with utility hookups, grills, a beach and playground. S”
-  - hookups.water = true · “ate Park, Sassafras, KY 41759 View All Photos Spacious campground features campsites with utility hookups, grills, a beach and playground. S”
-  - lodging_booking.how = "online: parks.ky.gov" · “link “Reservations Online””
-  - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
-  - restrooms = "yes (kind not stated)" · “pground features campsites with utility hookups, grills, a beach and playground. Showers, restrooms, and laundry facilities are available at”
-  - showers = true · “cious campground features campsites with utility hookups, grills, a beach and playground. Showers, restrooms, and laundry facilities are ava”
-- **Yatesville Lake Campground** (yatesville-lake-campground, KY (hand-checked list), status ok (browser), 11 facts, 727 ft) · [parks.ky.gov](https://parks.ky.gov/louisa/parks/recreation/yatesville-lake-state-park)
-  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/yates · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
-  - dump_station = true · “mpground also has a playground, nature trails, a laundry room, restrooms & showers, and a dump station. The campground was named among the b”
+- **Kincaid Lake Campground** (kincaid-lake-campground, KY (hand-checked list), status ok (browser), 15 facts, 695 ft) · [parks.ky.gov](https://parks.ky.gov/falmouth/parks/recreation/kincaid-lake-state-park)
+  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/kinca · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
+  - fees = "$3.00 charged each game" · “hole, miniature golf course near the camping area. Open daily from April through October. $3.00 charged each game. Picnicking Pristine groun”
+  - hookups.electric = true · “stars at Kincaid Lake! The campground features 84 RV sites nestled in open woodland, with electric and water hookups, a grocery, playground,”
+  - hookups.water = true · “stars at Kincaid Lake! The campground features 84 RV sites nestled in open woodland, with electric and water hookups, a grocery, playground,”
   - lodging_booking.how = "online: parks.ky.gov" · “link “Reservations Online””
   - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
   - map.date_how = "PDF, no date in the link" · “link “Park Map””
-  - map.url = "https://www.kentuckytourism.com/media/docs/default-source/l · “link “Park Map” -> https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map10d06200-bfed-4f”
-  - reservable = true · “e State Park 606-673-1492 missy.kennedy@ky.gov 2667 Pleasant Ridge Road, Louisa, KY 41230 Reserve A Campsite View All Photos Yatesville Lake”
-  - restrooms = "yes (kind not stated)" · “ed lakeside camping. The campground also has a playground, nature trails, a laundry room, restrooms & showers, and a dump station. The campg”
-  - season = "year-round" · “uipment. Golf packages and season passes are offered. Tee time reservations are accepted. Open year-round. For more info on this course CLIC”
-  - showers = true · “camping. The campground also has a playground, nature trails, a laundry room, restrooms & showers, and a dump station. The campground was na”
-- **Grove Drive-In Campground** (grove-drive-in-campground, KY (hand-checked list), status ok, 10 facts, 1198 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/grove-drive-campground)
-  - booking.how = "online: www.recreation.gov" · “link “Make Reservations Here””
-  - booking.url = "https://www.recreation.gov/camping/campgrounds/232258" · “link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/232258”
-  - drinking_water = true · “lot for walk-in campers. Facility and Amenity Information Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking ”
-  - features = "fire ring, picnic table and lantern pole" · “r and five have water only. All drive-in sites have a paved vehicle pad, gravel tent pad, fire ring, picnic table and lantern pole. The four”
-  - hookups.electric = "some" · “B is reservable, and Loop A is first come, first served. Thirty-five drive-in sites have electricity and water and five have water only. All”
-  - hookups.water = true · “B is reservable, and Loop A is first come, first served. Thirty-five drive-in sites have electricity and water and five have water only. All”
-  - map.date_how = "web page, no date in the link" · “link “Grove Drive-In Campground Map Guide””
-  - map.url = "https://usfs-public.box.com/s/wmwd44d3zi74a1whm9cf7o30v1vmg · “link “Grove Drive-In Campground Map Guide” -> https://usfs-public.box.com/s/wmwd44d3zi74a1whm9cf7o30v1vmgnys”
-  - reservable = "mixed" · “Grove Boat Ramp and Marina. Of the 40 drive-in sites, Loop B is reservable, and Loop A is first come, first served. Thirty-five drive-in sit”
-  - restrooms = "yes (kind not stated)" · “ic tables are available at this site. Picnic tables are at the campsites. Other Amenities Toilets meet accessibility standards for persons w”
+  - map.url = "https://www.kentuckytourism.com/media/docs/default-source/l · “link “Park Map” -> https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map711472d8-e0ef-4c”
+  - reservable = true · “State Park 859-654-3531 samantha.webster@ky.gov 749 Kincaid Park Rd., Falmouth, KY 41040 Reserve A Campsite View All Photos Have an adventur”
+  - restrooms = "yes (kind not stated)" · “electric and water hookups, a grocery, playground, and two central service buildings with restrooms and showers. We also feature 75 primitve”
+- **Maple Springs Group Campground** (maple-springs-group-campground, KY (hand-checked list), status ok (browser), 16 facts, 773 ft) · [home.nps.gov](https://home.nps.gov/maca/planyourvisit/maplespringscg.htm)
+  - booking.how = "online: www.recreation.gov" · “link “Recreation.gov””
+  - booking.url = "https://www.recreation.gov/camping/gateways/2818" · “link “Recreation.gov” -> https://www.recreation.gov/camping/gateways/2818”
+  - checkin = "1 pm" · “Check-in time is after 1 pm at the Mammoth Cave, Houchin Ferry and Maple Springs Campground. If you arrive at your re”
+  - drinking_water = true · “ddy campsites, catch your drain water in buckets and empty into toilets in the restrooms. Water hydrants are for collection of water to be u”
+  - hookups.electric = true · “luded sites ideal for larger groups of campers and their horse companions. All sites have electric and water hookups for RVs. This campgroun”
+  - hookups.water = true · “luded sites ideal for larger groups of campers and their horse companions. All sites have electric and water hookups for RVs. This campgroun”
+  - map.date_how = "web page, no date in the link" · “link “Mammoth Cave Map & Guide””
+  - map.url = "https://home.nps.gov/maca/planyourvisit/mammoth-cave-map-gu · “link “Mammoth Cave Map & Guide” -> https://home.nps.gov/maca/planyourvisit/mammoth-cave-map-guide.htm”
+  - phone = "(270) 758-2166" · “information, schedules, and trailer standards, please call (270) 758-2166 or visit Directions and Transportation. OPEN BASIC INFORMAT”
+  - phone_hint = "(270) 758-2424" · “in person only on the day of your trip. Contact campground office for hours of operation. (270) 758-2424. Leave No Trace Seven Principles (U”
+- **Lake Malone Campground** (lake-malone-campground, KY (hand-checked list), status ok (browser), 14 facts, 572 ft) · [parks.ky.gov](https://parks.ky.gov/explore/lake-malone-state-park-7818)
+  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/lake- · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
+  - hookups.electric = true · “4 primitive sites are available for tent camping. Twenty-five campsites are equipped with electric and water hookups to accommodate recreati”
+  - hookups.water = true · “4 primitive sites are available for tent camping. Twenty-five campsites are equipped with electric and water hookups to accommodate recreati”
+  - lodging_booking.how = "online: parks.ky.gov" · “link “Reservations Online””
+  - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
+  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
+  - map.url = "https://www.kentuckytourism.com/media/docs/default-source/l · “link “Campground Map” -> https://www.kentuckytourism.com/media/docs/default-source/listing-documents/campground-mapfa9aeaf8-1”
+  - phone = "(270) 657-2111" · “llowed if restrained. Call the park for more information at 270-657-2111. Fishing "An angler's delight" describes the 788-acre Lake”
+  - phone_hint = "(270) 657-2111" · “and picnic tables. Pets are allowed if restrained. Call the park for more information at 270-657-2111. Fishing "An angler's delight" describ”
+  - reservable = true · “alone State Park 270-657-2111 teresaj.wells@ky.gov 331 State Route 8001, Dunmor, KY 42339 Reserve A Campsite View All Photos There’s somethi”
+- **Whittleton & Middle Fork Campgrounds** (whittleton-middle-fork-campgrounds, KY (hand-checked list), status ok (browser), 7 facts, 775 ft) · [parks.ky.gov](https://parks.ky.gov/explore/whittleton-campground-8107)
+  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/natur · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
+  - dump_station = true · “ide sites with utilities at Natural Bridge State Park. Tent campsites are also available. Dump stations and two central service buildings wi”
+  - hookups.electric = true · “te. Two campgrounds, Whittleton Campground and Middle Fork Campground, provide sites with utilities at Natural Bridge State Park. Tent camps”
+  - lodging_booking.how = "online: parks.ky.gov" · “link “Reservations Online””
+  - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
+  - restrooms = "yes (kind not stated)" · “. Tent campsites are also available. Dump stations and two central service buildings with restrooms and showers are furnished for your conve”
+  - showers = true · “es are also available. Dump stations and two central service buildings with restrooms and showers are furnished for your convenience.Â Reser”
+- **Self-service lakeside campgrounds (10)** (self-service-lakeside-campgrounds-10, KY (hand-checked list), status ok, 6 facts) · [www.landbetweenthelakes.us](https://www.landbetweenthelakes.us/facility/self-service-camping/)
+  - fees = "$12 per night | $26 per night | $10 per night" · “rash pickup, lake access, and boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per n”
+  - hookups.amps = [30] · “ss, and boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per night Turkey Bay Off-Hi”
+  - hookups.electric = true · “boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per night Turkey Bay Off-Highway Ve”
+  - restrooms = "vault" · “er basic amenities including designated campsite pads, picnic tables, grills, fire rings, vault toilets, trash pickup, lake access, and boat”
+  - rules.fires = "firewood at home – do not transport it to campgrounds" · “$10 per night Boswell Landing – $10 per night Gatlin Point – $10 per night Firewood Leave firewood at home – do not transport it to campgrou”
+  - season = "year-round" · “atives to the more developed campgrounds. We have 11 self-service campgrounds which offer year-round lakeside camping. Although these areas ”
+- **Rolling Fork WMA designated camping area** (rolling-fork-wma-designated-camping-area, KY (hand-checked list), status ok, no campground facts even in a browser, 4 facts, 587 ft) · [app.fw.ky.gov](https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9219)
+  - map.date_how = "PDF, no date in the link" · “link “View Detailed Map””
+  - map.url = "https://fw.ky.gov/More/Documents/RollingForkWMA_all.pdf" · “link “View Detailed Map” -> https://fw.ky.gov/More/Documents/RollingForkWMA_all.pdf”
+  - phone = "(502) 477-9024" · “Overview Size: 2896 acres Location: Nelson, Larue Contact: (502) 477-9024 Elevation: minimum 520 feet, maximum 980 feet. Entrance GPS”
+  - rules.stay_limit = "14 days" · “Camping is allowed in designated area only and only during Turkey and Deer Seasons with a 14-day limit. No ATV’s, camping, horseback riding,”
+- **White Sulphur Horse Camp** (white-sulphur-horse-camp, KY (hand-checked list), status ok, 5 facts, 856 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/white-sulphur-horse-camp)
+  - drinking_water = false · “rs up to 50ft in length. Facility and Amenity Information Restrooms Vault toilet(s) Water Potable water is not available at this site. Picni”
+  - fees = "$20 per night Peak Season (March 20 - October 26) | $15 per · “r-round Operational Hours Open 24 hours/day Fee Site and Info Overnight Use: Single Site: $20 per night Peak Season (March 20 - October 26) ”
+  - hookups.electric = false · “White Sulphur Horse Camp, located near Cave Run Lake, is a primitive campground (without electricity) designed for horseback riders. The cam”
+  - rv_max_ft = 50 · “d continue for 2.5 miles. Parking The parking area can accommodate up to 30 vehicles with trailers up to 50ft in length. Facility and Amenit”
+  - season = "year-round" · “nitoring, Oct 2026-Sept 2027 General Lake Prohibitions General Information Seasons of Use Open year-round Operational Hours Open 24 hours/da”
+- **Blue Heron Campground (KY)** (blue-heron-campground-ky, KY (hand-checked list), status ok (browser), 15 facts, 1276 ft) · [home.nps.gov](https://home.nps.gov/biso/planyourvisit/blueheroncampground.htm)
+  - booking.how = "online: www.recreation.gov" · “link “Start Your Reservation””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/232505" · “link “Start Your Reservation” -> https://www.recreation.gov/camping/campgrounds/232505”
+  - checkin = "12:00 pm" · “ly from April through mid-to-late December each year. Important Information Check-out and check-in time is 12:00 pm (ET) for all campsites i”
+  - checkout = "12:00 pm" · “NRRA with the exception of Bandy Creek Group Camp where check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). Notice: Sites wit”
+  - dump_station = true · “r and electric hook-ups, picnic tables, fire-rings, access to restrooms and showers and a dump station. A map of the Blue Heron Campground m”
+  - hookups.amps = [50] · “ere check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). Notice: Sites with 50-amp electric service are shaded in gray. . Camp”
+  - hookups.electric = true · “of Stearns off Highway 742. The campground offers a total of 45 sites all with water and electric hook-ups, picnic tables, fire-rings, acces”
+  - hookups.water = true · “miles west of Stearns off Highway 742. The campground offers a total of 45 sites all with water and electric hook-ups, picnic tables, fire-r”
+  - map.date_how = "PDF, year 2024 in the link" · “link “map of the Blue Heron Campground””
+  - map.url = "https://home.nps.gov/biso/planyourvisit/upload/Blue-Heron-C · “link “map of the Blue Heron Campground” -> https://home.nps.gov/biso/planyourvisit/upload/Blue-Heron-Campground-Map-and-Regs-2024.pdf”
+- **Carter Caves Campground** (carter-caves-campground, KY (hand-checked list), status ok (browser), 12 facts, 1035 ft) · [parks.ky.gov](https://parks.ky.gov/olive-hill/parks/resort/carter-caves-state-resort-park)
+  - booking.how = "online: kentuckystateparks.reserveamerica.com" · “link “CLICK HERE””
+  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/carte · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
+  - fees = "$5, Children | $4, Mondays | $3 for all | $6 for Adults" · “campground registration building and the Lodge front desk. Open seasonally. Fees: Adults $5, Children $4, Mondays $3 for all. Campers pay $4”
+  - lodging_booking.how = "online: parks.ky.gov" · “link “Reservations Online””
+  - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
+  - map.date_how = "PDF, no date in the link" · “link “Park Map””
+  - map.url = "https://www.kentuckytourism.com/media/docs/default-source/l · “link “Park Map” -> https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map3d3eab0a-2c5a-42”
+  - phone_hint = "(606) 286-7009" · “am, meals, and lodging into one reasonable price. Contact park interpreter Coy Ainsley at 1-606-286-7009 for information or email cartercave”
+  - reservable = true · “e Resort Park (606) 286-4411 paul.tierney@ky.gov 344 Caveland Drive, Olive Hill, KY 41164 Reserve A Campsite Reserve A Lodge / Cottage View ”
+  - restrooms = "yes (kind not stated)" · “ions to enhance facilities and visitor experiences. LEARN MORE ALERT: Currently the lower bathhouse at the Carter Caves Campgound is under r”
 
 ## US-TN: 12 random samples (records with facts; seed = the date)
 
+
+## US-CO: 12 random samples (records with facts; seed = the date)
+
+- **Campsite(s) 233** (US-1243:64, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+- **Campsite(s) 205** (US-1243:40, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+- **Campsite(s) 431** (US-1243:29, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+- **Cherokee** (US-1213:3, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+- **Campsite(s) 402** (US-1243:22, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+- **Bald Eagle Point** (US-1241:6, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+- **Bookcliff** (US-1221:1, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+- **Cabin #2** (US-1219:15, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+- **Campsites** (US-1219:18, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+- **Arapahoe** (US-1213:2, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+- **215 T** (US-1243:75, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
+- **Campsite(s) 210** (US-1243:46, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
+  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
