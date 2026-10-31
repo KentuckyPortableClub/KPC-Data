@@ -1748,5 +1748,26 @@
   "status": "asked",
   "why": "34 open parks tested, 5 SURE / LIKELY hit(s)",
   "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/ckVVIY508LuZIZC5/arcgis/rest/services/DRC_Protected_Areas/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/ckVVIY508LuZIZC5/arcgis/rest/services/DRC_Protected_Areas/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryMultipoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/ckVVIY508LuZIZC5/arcgis/rest/services/DRC_Protected_Areas/FeatureServer/1": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/ckVVIY508LuZIZC5/arcgis/rest/services/DRC_Protected_Areas/FeatureServer/1",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services9.arcgis.com/wwVnNW92ZHUIr0V0/arcgis/rest/services/Marine_Protected_Areas/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services9.arcgis.com/wwVnNW92ZHUIr0V0/arcgis/rest/services/Marine_Protected_Areas/FeatureServer/0",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
  }
 }
