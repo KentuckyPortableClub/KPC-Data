@@ -1,0 +1,3685 @@
+{
+ "area": "US-NM",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0961": {
+   "n": "Salinas Pueblo Missions, Gran Quivira Unit, National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/sapu/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/sapu/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/sapu/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/sapu/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "March 24, 2025",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11783": {
+   "n": "Fort Craig BLM Historic Area",
+   "t": "BLM Historic Area",
+   "page": "https://www.blm.gov/visit/fort-craig-historic-site",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2022-11/map-fort-craig-socorro-2022.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Fort Craig Trail Map')",
+    "page": "https://www.blm.gov/visit/fort-craig-historic-site",
+    "posted": "2022-11",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11795": {
+   "n": "Lake Valley Townsite BLM Historic Preservation Site",
+   "t": "BLM Historic Preservation Site",
+   "page": "https://www.blm.gov/visit/lake-valley-historic-townsite",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2023-02/brochure-lake-valley-self-guided-hike-lcdo-508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Lake Valley Historic Townsite Self-Guided Walking Tour')",
+    "page": "https://www.blm.gov/visit/lake-valley-historic-townsite",
+    "posted": "2023-02",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Las Cruces District Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11797": {
+   "n": "Los Luceros Historic Site",
+   "t": "Historic Site",
+   "page": "https://nmhistoricsites.org/los-luceros",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11815": {
+   "n": "La Cueva Non-Motorized Trail System Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/la-cueva-non-motorized-trail-system",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Carlsbad Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11821": {
+   "n": "Bosque Redondo Memorial/Fort Sumner Historic Site",
+   "t": "Historic Site",
+   "page": "https://nmhistoricsites.org/bosque-redondo",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11823": {
+   "n": "Coronado Historic Site",
+   "t": "Historic Site",
+   "page": "https://nmhistoricsites.org/coronado",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11840": {
+   "n": "San Lorenzo Canyon BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/san-lorenzo-canyon",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2022-05/map-san-lorenzo-canyon-trail-socorro-2022.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('San Lorenzo Canyon Trail Map')",
+    "page": "https://www.blm.gov/visit/san-lorenzo-canyon",
+    "posted": "2022-05",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Socorro Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11859": {
+   "n": "Lincoln State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://nmhistoricsites.org/lincoln",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12111": {
+   "n": "Tortugas Mountain BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/tortugas-mountain-recreation-area?fbclid=IwY2xjawIGMXpleHRuA2FlbQIxMAABHfnWQ2_qEFs6F9_b8eryWp7zBPM7w0_pccAardwB6AxbmuUrcUq7fliEaQ_aem_MrtYUzfuEF4dnhFEbIR88Q",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Las Cruces District Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12592": {
+   "n": "Parks Ranch Cave BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/parks-ranch-cave",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2023-06/Parks_Ranch_Cave_System.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Map of Parks Ranch Cave System')",
+    "page": "https://www.blm.gov/visit/parks-ranch-cave",
+    "posted": "2023-06",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Carlsbad Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12737": {
+   "n": "Casamero Pueblo | New Mexico BLM Historic Area",
+   "t": "BLM Historic Area",
+   "page": "https://www.blm.gov/visit/casamero-pueblo",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13001": {
+   "n": "Kilbourne Hole Volcanic Crater BLM National Conservation Area",
+   "t": "BLM National Conservation Area",
+   "page": "https://www.blm.gov/visit/kilbourne-hole-volcanic-crater",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13185": {
+   "n": "Dow Canyon Tract BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/programs/recreation/recreation-activities/new-mexico/dow-canyon-tract",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13186": {
+   "n": "Lincoln Tract BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/programs-recreation-recreation-activities-new-mexico-lincoln-tract",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2719": {
+   "n": "Angel Fire Vietnam Veterans Memorial Park",
+   "t": "Park",
+   "page": "https://www.vietnamveteransmemorial.org/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.vietnamveteransmemorial.org/contact/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Contact Us / Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4376": {
+   "n": "Manhattan Project National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/mapr/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/mapr/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "April 17, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/mapr/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4514": {
+   "n": "Cibola National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/cibola",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/cibola/Manzanita%20Mountains%20Trail%20Map%202021.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Sandia RD Manzanita Mt Trail Map (2021)')",
+    "page": "https://www.fs.usda.gov/r03/cibola/maps-guides",
+    "posted": "2021",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r03/cibola",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-4553": {
+   "n": "Rio Grande del Norte National Monument",
+   "t": "National Monument",
+   "page": "https://www.blm.gov/visit/rgdnnm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2023-03/map-wild-rivers-trails-tfo-2022.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Rio Grande del Norte National Monument Wild Rivers Trail Map')",
+    "page": "https://www.blm.gov/visit/rgdnnm",
+    "posted": "2023-03",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-4558": {
+   "n": "Continental Divide Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.fs.usda.gov/managing-land/trails/cdt",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/trails/continental-divide-nst/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/trails/continental-divide-nst",
+    "posted": "September 9, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/trails/continental-divide-nst/plan-visit/know-before-go",
+    "how": "a link on the park's page ('Know Before You Go')",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-4569": {
+   "n": "El Camino Real de Tierra Adentro National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/elca/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/elca/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "August 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/elca/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4575": {
+   "n": "Old Spanish National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/olsp/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-Map-508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Mar 22, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/olsp/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4579": {
+   "n": "Santa Fe National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/safe/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/safe/planyourvisit/upload/National-Park-Service-Santa-Fe-Trail-Map-508-2.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Side 2 - Map' file",
+    "posted": "Mar 22, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "page": "https://www.nps.gov/safe/planyourvisit/trail-brochures.htm",
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/safe/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7543": {
+   "n": "Mescalero Sands Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.recreation.gov/activitypass/87a1b0ea-c5dd-11ea-b136-d2ef8c4f00fd",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.recreation.gov/rules-reservation-policies",
+    "how": "a link on the park's page ('Rules Reservation Policies')",
+    "status": "ok"
+   },
+   "agency": "government agency (recreation.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7563": {
+   "n": "Black River Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/black-river-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-8617": {
+   "n": "Perea Nature National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.blm.gov/visit/perea-nature-trail",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/blm.gov/files/Brochure%20Perea%20Nature%20Trail_2020_508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Perea Nature Trail Brochure')",
+    "page": "https://www.blm.gov/visit/perea-nature-trail",
+    "posted": "2020",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-8618": {
+   "n": "White Ridge National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.blm.gov/visit/white-ridge-bike-trails",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Rio Puerco Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9757": {
+   "n": "Butterfield Overland National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/buov/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/buov/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/buov/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0012": {
+   "n": "Carlsbad Caverns National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/cave/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/cave/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 6, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/cave/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0013": {
+   "n": "Chaco Culture National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/chcu/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/chcu/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "December 30, 2023",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/chcu/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0457": {
+   "n": "Bitter Lake National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/bitter-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/bitter-lake/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Interactive Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0458": {
+   "n": "Bosque Del Apache National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/bosque-del-apache/about-us",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/bosque-del-apache/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/bosque-del-apache/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0459": {
+   "n": "Las Vegas National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/las-vegas/about-us",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/las-vegas/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-0460": {
+   "n": "Maxwell National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/maxwell/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/maxwell/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Interactive Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/locations/maxwell-national-wildlife-refuge/rules-and-policies",
+    "how": "a link on the park's page ('Rules and Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "owned by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0462": {
+   "n": "Sevilleta National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/sevilleta/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/sevilleta/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/sevilleta/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0547": {
+   "n": "Grulla National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/Grulla/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/grulla/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/grulla/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0678": {
+   "n": "Valles Caldera Preserve National Conservation Area",
+   "t": "National Conservation Area",
+   "page": "https://www.nps.gov/vall/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/vall/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "January 29, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/vall/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0752": {
+   "n": "Pecos National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/peco/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/peco/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "July 17, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/peco/learn/management/superintendent-s-compendium.htm",
+    "how": "a link on the park's page ('Superintendent's Compendium Park-specific rules')",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0903": {
+   "n": "Aztec Ruins National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/azru/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://farmingtonnm.org/uploads/documents/FCVB_Four_Corners_Cultural_Attraction_Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2009-04-08",
+    "date_how": "file stamp 2009 (older than the posting 2023 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Regional Map' file",
+    "posted": "Jun 20, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 2,
+    "page": "https://www.nps.gov/azru/planyourvisit/maps.htm",
+    "via": "linked from the agency page (farmingtonnm.org)",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2009: check it is still current"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/azru/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0904": {
+   "n": "Bandelier National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/band/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/band/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 28, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/band/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0910": {
+   "n": "Capulin Volcano National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/cavo/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/cavo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 24, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/cavo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0923": {
+   "n": "El Malpais National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/elma/planyourvisit/visitorcenters.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/elma/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 6, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/elma/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0924": {
+   "n": "El Morro National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/elmo/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/elmo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 6, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/elmo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0933": {
+   "n": "Fort Union National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/foun/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/foun/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 1, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/foun/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0937": {
+   "n": "Gila Cliff Dwellings National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/gicl/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/gicl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 24, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/gicl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0955": {
+   "n": "Petroglyph National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/petr/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/petr/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "November 3, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/petr/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0970": {
+   "n": "White Sands National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/whsa/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/whsa/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 29, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/whsa/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11779": {
+   "n": "Bisti-De-Na-Zin Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.blm.gov/visit/bisti-de-na-zin-wilderness",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Farmington Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11780": {
+   "n": "Datil Well Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/datil-well-recreation-area-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2022-05/map-datil-well-trail-socorro-2022.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Datil Well Trail Map')",
+    "page": "https://www.blm.gov/visit/datil-well-recreation-area-campground",
+    "posted": "2022-05",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Socorro Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11782": {
+   "n": "Dunes BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/dunes-ohv-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Farmington Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11785": {
+   "n": "Fort Stanton Historic Site",
+   "t": "Historic Site",
+   "page": "https://nmhistoricsites.org/fort-stanton",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11789": {
+   "n": "Fort Selden Historic Site",
+   "t": "Historic Site",
+   "page": "https://nmhistoricsites.org/fort-selden",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11791": {
+   "n": "Santa Cruz Lake BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/santa-cruz-lake-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/blm.gov/files/NM_SantaCruzLake_IR.v2.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Map of Santa Cruz Recreation Area')",
+    "page": "https://www.blm.gov/visit/santa-cruz-lake-recreation-area",
+    "posted": "Aug 12, 2021",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Taos Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://eplanning.blm.gov/public_projects/?doc=lup%2F68121%2F86178%2F103335%2FMap_08_SRMAs_%20_ERMAs.pdf",
+     "status": "opened, wrong thing (a .pdf address that is not a PDF: a soft 404 or a login page)",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "same government (eplanning.blm.gov)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11796": {
+   "n": "Socorro Natural Area",
+   "t": "Natural Area",
+   "page": "https://www.blm.gov/visit/socorro-nature-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2022-11/map-socorro-nature-area-2022.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Socorro Nature Area')",
+    "page": "https://www.blm.gov/visit/socorro-nature-area",
+    "posted": "2022-11",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Socorro Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11806": {
+   "n": "Johnson (Gordy's) Hill BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/johnson-gordys-hill-ohv-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2022-11/map-johnson-gordys-hill-socorro-2022.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Johnson (Gordy's) Hill')",
+    "page": "https://www.blm.gov/visit/johnson-gordys-hill-ohv-area",
+    "posted": "2022-11",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11807": {
+   "n": "Simon Canyon ACEC BLM Special Recreation Management Area",
+   "t": "BLM Special Recreation Management Area",
+   "page": "https://www.blm.gov/visit/simon-canyon-acec",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Farmington Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11813": {
+   "n": "Salinas Pueblo Missions, Abo Unit National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/sapu/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/sapu/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "March 24, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/sapu/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11814": {
+   "n": "Salinas Pueblo Missions, Quarai unit, National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/sapu/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/sapu/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "March 24, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/sapu/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11816": {
+   "n": "Hackberry Lake OHV Use Area BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/hackberry-lake-ohv-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Carlsbad Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11817": {
+   "n": "Haystack Mountain OHV Area BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/haystack-mountain-ohv-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Roswell Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11822": {
+   "n": "Jemez Historic Site",
+   "t": "Historic Site",
+   "page": "https://nmhistoricsites.org/jemez",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11838": {
+   "n": "The Box BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/box-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2022-05/map-blue-canyon-trail-socorro-2022.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Blue Canyon Trail')",
+    "page": "https://www.blm.gov/visit/box-recreation-area",
+    "posted": "2022-05",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11866": {
+   "n": "Rio Bonito Acquired Lands: Salazar Tract, BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/programs-recreation-recreation-activities-new-mexico-salazar-tract",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12169": {
+   "n": "El Malpais BLM National Conservation Area",
+   "t": "BLM National Conservation Area",
+   "page": "https://www.blm.gov/visit/el-malpais-nca",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/blm.gov/files/NM_Brochure_Dittert_Site_508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2018-01-05",
+    "date_how": "file stamp 2018 (older than the posting 2020 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('Dittert Site')",
+    "page": "https://www.blm.gov/visit/el-malpais-nca",
+    "posted": "Nov 05, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12590": {
+   "n": "Alien Run Mountain Bike Trail BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/alien-run-mountain-bike-trail",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12591": {
+   "n": "Sunset Reef Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/sunset-reef-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2021-12/Black_River_Recreation_Area_%26_Nearby_Rec._Sites.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Map of Nearby Recreation Locations')",
+    "page": "https://www.blm.gov/visit/sunset-reef-campground",
+    "posted": "2021-12",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Carlsbad Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12593": {
+   "n": "Glade Run Recreation Area BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/glade-run",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12746": {
+   "n": "Aden Hills Off-Highway Vehicle Area BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/aden-hills-ohv",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Las Cruces District Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12785": {
+   "n": "Rio Mora National Wildlife Refuge",
+   "t": "Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/rio-mora/visit-us",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/rio-mora/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-12804": {
+   "n": "Valle de Oro National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/carp/refuge/valle-de-oro/visit-us",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/valle-de-oro/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13159": {
+   "n": "Quebradas Backcountry Byway BLM Wilderness Area",
+   "t": "BLM Wilderness Area",
+   "page": "https://www.blm.gov/visit/quebradas-backcountry-byway",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2022-11/map-quebradas-back-country-byway-2022.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Quebradas Backcountry Byway')",
+    "page": "https://www.blm.gov/visit/quebradas-backcountry-byway",
+    "posted": "2022-11",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13498": {
+   "n": "Chosa Campground BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/chosa-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2021-12/Black_River_Recreation_Area_%26_Nearby_Rec._Sites.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Map of Nearby Recreation Locations')",
+    "page": "https://www.blm.gov/visit/chosa-campground",
+    "posted": "2021-12",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Carlsbad Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2686": {
+   "n": "Bluewater State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/bluewater-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Bluewater-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2687": {
+   "n": "Bottomless Lakes State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/bottomless-lakes-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Bottomless-Lakes_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2688": {
+   "n": "Brantley Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/brantley-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Brantley-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2689": {
+   "n": "Caballo Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/caballo-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Caballo-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2690": {
+   "n": "Cerrillos Hills State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/cerrillos-hills-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/2022orientationmap.jpg",
+    "status": "ok",
+    "kind": "image",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "Jan 11, 2022",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2691": {
+   "n": "Cimarron Canyon State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/cimarron-canyon-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Cimarron-Canyon_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2692": {
+   "n": "City of Rocks State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/city-of-rocks-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/City-of-Rocks_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2693": {
+   "n": "Clayton Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/clayton-lake-state-park-and-dinosaur-trackways/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Clayton-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2694": {
+   "n": "Conchas Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/conchas-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Conchas-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2695": {
+   "n": "Coyote Creek State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/coyote-creek-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Coyote-Creek_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2696": {
+   "n": "Eagle Nest Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/eagle-nest-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Eagle-Nest-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2697": {
+   "n": "Elephant Butte Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/elephant-butte-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Elephant-Butte-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2698": {
+   "n": "El Vado Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/el-vado-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/El-Vado-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2699": {
+   "n": "Fenton Lake State Park",
+   "t": "State Park",
+   "page": "https://www.recreation.gov/camping/gateways/16752",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.recreation.gov/rules-reservation-policies",
+    "how": "a link on the park's page ('Rules Reservation Policies')",
+    "status": "ok"
+   },
+   "agency": "government agency (recreation.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2700": {
+   "n": "Heron Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/heron-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Heron-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2701": {
+   "n": "Hyde Memorial State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/hyde-memorial-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/Hyde-Park-Map-; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/HydeTrailsGuid)",
+    "how": "a link on the park's page ('Park Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/Hyde-Park-Map-Updated.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Park Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/HydeTrailsGuide2pg_updatedURL.01.08.25.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guide Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-2702": {
+   "n": "Leasburg Dam State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/leasburg-dam-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Leasburg-Dam_PARKMAP_10.10.23.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "Dec 06, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2703": {
+   "n": "Living Desert State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/living-desert-zoo-and-gardens-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/LivingDesert_Map_V02_20240410.jpg",
+    "status": "ok",
+    "kind": "image",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "Apr 15, 2024",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2704": {
+   "n": "Manzano Mountains State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/manzano-mountains-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Mazano-Mountains_M; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Manzano-Nature-Tra)",
+    "how": "a link on the park's page ('Park Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Mazano-Mountains_Map_Park_2023.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Park Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Manzano-Nature-Trail-Guide.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2024-06-03",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Trail Guide')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-2705": {
+   "n": "Mesilla Valley Bosque State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/mesilla-valley-bosque-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Mesilla-Valley-Bosque_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Trail Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2706": {
+   "n": "Morphy Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/morphy-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Morphy-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-06",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2707": {
+   "n": "Navajo Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/navajo-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Navajo-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2708": {
+   "n": "Oasis State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/oasis-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Oasis_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-07",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2709": {
+   "n": "Oliver Lee Memorial State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/oliver-lee-memorial-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Oliver-Lee_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2710": {
+   "n": "Pancho Villa State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/pancho-villa-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/PV_PARKMAP_20231010.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "Oct 10, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2711": {
+   "n": "Percha Dam State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/percha-dam-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Percha-Dam_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2712": {
+   "n": "Rio Grande Nature Center State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/rio-grande-nature-center-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/RGNC-Trifold-w)",
+    "how": "a link on the park's page ('Park Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/RGNC-Trifold-with-Map-1.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2026-08-02",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Park Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-2713": {
+   "n": "Rock Hound State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/rockhound-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Rockhound_Map_Trai; opened, a page that does not name this park (a generic agency page is not its map) https://www.emnrd.nm.gov/sfd/forest-industry-map-and-biomass-utilizati)",
+    "how": "a link on the park's page ('Park Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Rockhound_Map_Trail_2023.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Park Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.emnrd.nm.gov/sfd/forest-industry-map-and-biomass-utilization-information/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Forest Industry Map and Biomass/Utilization Information')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-2714": {
+   "n": "Santa Rosa Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/santa-rosa-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Santa-Rosa-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-07",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2715": {
+   "n": "Storrie Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/storrie-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/StorrieLakePARKMAP.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "Jun 07, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2716": {
+   "n": "Sugarite Canyon State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/sugarite-canyon-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Sugarite-Canyon_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-07",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2717": {
+   "n": "Sumner Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/sumner-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Sumner-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-07",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2718": {
+   "n": "Ute Lake State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/ute-lake-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Ute-Lake_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-07",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "2023"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2720": {
+   "n": "Villanueva State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/villanueva-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/Villanueva_Park_Map_2025.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2025",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4513": {
+   "n": "Carson National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/carson",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r03/carson/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Find Your Way')",
+    "page": "https://www.fs.usda.gov/carson",
+    "posted": "June 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-31",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r03/carson",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-4515": {
+   "n": "Gila National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/gila",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r03/gila/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Get a Map')",
+    "page": "https://www.fs.usda.gov/gila",
+    "posted": "May 18, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-31",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r03/gila",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-4516": {
+   "n": "Lincoln National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/lincoln",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/sites/default/files/GuideMap-2020.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Nationwide Map')",
+    "page": "https://www.fs.usda.gov/r03/lincoln/maps-guides",
+    "posted": "2020",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r03/lincoln",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-4517": {
+   "n": "Santa Fe National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/santafe/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r03/santafe/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/santafe/",
+    "posted": "April 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-31",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r03/santafe",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-4551": {
+   "n": "Organ Mountains-Desert Peaks National Monument",
+   "t": "National Monument",
+   "page": "https://www.blm.gov/programs/national-conservation-lands/new-mexico/organ-mountains-desert-peaks-national-monument",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-4552": {
+   "n": "Prehistoric Trackways National Monument",
+   "t": "National Monument",
+   "page": "https://www.blm.gov/visit/ptnm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Las Cruces District Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-7479": {
+   "n": "Kiowa National Grassland",
+   "t": "National Grassland",
+   "page": "https://www.fs.usda.gov/detail/cibola/home/?cid=fsbdev3_065702",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r03/cibola/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/detail/cibola/home/?cid=fsbdev3_065702",
+    "posted": "May 18, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-31",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r03/cibola",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-7876": {
+   "n": "Three Rivers Petroglyphs National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.blm.gov/visit/three-rivers-petroglyph-site",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/default/files/docs/2023-02/brochure-three-rivers-petroglyph-walking-tour-lcdo-508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Three Rivers Petroglyph Site Self-Guided Walking Tour')",
+    "page": "https://www.blm.gov/visit/three-rivers-petroglyph-site",
+    "posted": "2023-02",
+    "posted_how": "posted: the upload folder in the address",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Las Cruces District Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-7877": {
+   "n": "Valley of Fires National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.blm.gov/visit/valley-of-fires",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-7878": {
+   "n": "Red Sands National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.blm.gov/visit/red-sands-ohv-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Las Cruces District Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-8227": {
+   "n": "Jemez National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.fs.usda.gov/recarea/santafe/recarea/?recid=75444",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r03/santafe/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/santafe/recarea/?recid=75444",
+    "posted": "April 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-31",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r03/santafe",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-8228": {
+   "n": "Fort Stanton Snowy River National Conservation Area",
+   "t": "National Conservation Area",
+   "page": "https://www.blm.gov/visit/fort-stanton-snowy-river-cave-nca",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/NM_FortStantonSnowyRiverCave_NCA_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2016-11-18",
+    "date_how": "file stamp 2016 (older than the posting 2020 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "the page in a browser ('Printable Map')",
+    "page": "https://www.blm.gov/visit/fort-stanton-snowy-river-cave-nca",
+    "posted": "Nov 05, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Roswell Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-8273": {
+   "n": "Angel Peak Scenic National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.blm.gov/visit/angel-peak-scenic-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Farmington Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-8619": {
+   "n": "San Ysidro Trials Area BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/san-ysidro-trials-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-8620": {
+   "n": "Ojito Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.blm.gov/visit/ojito-wilderness-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://umontana.maps.arcgis.com/apps/webappviewer/index.html?id=a415bca07f0a4bee9f0e894b0db5c3b6&extent=-11907524.4377,4228103.5394,-11896392.4886,4241780.8293,102113",
+    "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+    "kind": "viewer (statewide)",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('Ojito Wilderness Map')",
+    "page": "https://www.blm.gov/visit/ojito-wilderness-area",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "off the government, not linked by the agency"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Rio Puerco Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-8621": {
+   "n": "Cabezon Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.blm.gov/visit/cabezon-wsa",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 23 parks was dropped: https://www.blm.gov/maps)",
+    "how": "the page in a browser ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 41 parks was dropped: https://www.blm.gov/programs/recreation/know-before-you-go)",
+    "how": "a link on the page in a browser ('Know before you go')"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Rio Puerco Field Office"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9679": {
+   "n": "Pecos Canyon State Park",
+   "t": "State Park",
+   "page": "https://www.emnrd.nm.gov/spd/find-a-park/pecos-canyon-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.emnrd.nm.gov/wp-content/uploads/sites/7/Pecos-Canyon_Map_Park_2023.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "2023",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 34 parks was dropped: https://www.emnrd.nm.gov/ocd/occ-info/og-rules-and-forms/)",
+    "how": "a link on the park's page ('OCD Rules')"
+   },
+   "agency": "government agency (emnrd.nm.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 123,
+  "map ok": 81,
+  "map found by the bot": 66,
+  "date on the map": 22,
+  "posted date only": 53,
+  "date unknown": 6,
+  "no map": 42,
+  "rules ok": 31,
+  "needs browser": 1,
+  "handover hints": 0,
+  "runs hints": 28,
+  "host resting / robots": 0,
+  "map names the park": 54,
+  "region overview only": 0
+ }
+}

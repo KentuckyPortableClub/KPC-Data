@@ -287,10 +287,24 @@
    "updated": "2026-10-31"
   },
   "US-AZ": {
-   "status": "partial",
+   "status": "done",
    "parks": 123,
-   "checked": 29,
-   "left": 94,
+   "checked": 123,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-NM": {
+   "status": "done",
+   "parks": 123,
+   "checked": 123,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-CA": {
+   "status": "partial",
+   "parks": 410,
+   "checked": 112,
+   "left": 298,
    "updated": "2026-10-31"
   }
  },
@@ -314,32 +328,34 @@
   "www.dfg.idaho.gov": 1793513234.0375862,
   "www.idfg.idaho.goc": 1793513355.179098,
   "www.idfg.idah.gov": 1793513445.116335,
-  "www.sangres.com": 1793517776.629486
+  "www.sangres.com": 1793517776.629486,
+  "www.emnrd.state.nm.us": 1793520736.2128708,
+  "carules.elaws.us": 1793521915.7272446
  },
  "last": {
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-MT",
-   "US-NV",
    "US-AZ",
    "US-NM",
    "US-CA",
    "US-OR",
-   "US-WA"
+   "US-WA",
+   "US-AK",
+   "US-HI"
   ],
   "stat": {
-   "requests": 1226,
-   "parks": 656,
-   "maps_ok": 278,
-   "maps_found": 255,
-   "dates": 1,
-   "rules": 347,
-   "browser": 237,
-   "robots": 12,
-   "strikes": 3,
+   "requests": 1426,
+   "parks": 510,
+   "maps_ok": 370,
+   "maps_found": 282,
+   "dates": 35,
+   "rules": 382,
+   "browser": 247,
+   "robots": 3,
+   "strikes": 6,
    "errors": 3,
-   "skipped_fresh": 175
+   "skipped_fresh": 29
   }
  }
 }

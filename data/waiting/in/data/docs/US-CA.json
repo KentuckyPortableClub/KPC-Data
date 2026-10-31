@@ -1,0 +1,3714 @@
+{
+ "area": "US-CA",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0198": {
+   "n": "Kesterson National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/san-luis/visit-us/locations/kesterson-unit-open-to-foot-use-only-february-15-through-september-15",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/san-luis/map)",
+    "how": "a link on the park's page ('Map')"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/san-luis/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/refuge/san-luis/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0754": {
+   "n": "Rosie the Riveter WWII Home Front National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/rori/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/rori/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "December 19, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/rori/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0884": {
+   "n": "Kings River National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/rivers/kings.php",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/rivers/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('System-wide Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (fws.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0915": {
+   "n": "Cesar E. Chavez National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/cech/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/cech/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/cech/learn/management/superintendents-compendium.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/cech/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "March 28, 2025",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10402": {
+   "n": "Cow Mountain BLM Special Recreation Management Area",
+   "t": "BLM Special Recreation Management Area",
+   "page": "https://www.blm.gov/sites/default/files/documents/files/media-center-public-room-california-cow-mountain-recreation-area-map-and-guide.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11582": {
+   "n": "Griswold Hills BLM Special Recreation Management Area",
+   "t": "BLM Special Recreation Management Area",
+   "page": "",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11583": {
+   "n": "Tumey Hills BLM Special Recreation Management Area",
+   "t": "BLM Special Recreation Management Area",
+   "page": "https://www.blm.gov/visit/tumey-hills",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11584": {
+   "n": "Panoche Hills BLM Special Recreation Management Area",
+   "t": "BLM Special Recreation Management Area",
+   "page": "https://www.blm.gov/visit/panoche-hills",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12616": {
+   "n": "Black Butte Lake Park",
+   "t": "Park",
+   "page": "https://www.spk.usace.army.mil/Black-Butte-Lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 http://www.spk.usace.army.mil/Portals/12/documents/parks_lakes/BlackBu)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "https://unblock.federalregister.gov/",
+    "how": "Corps lakes: 36 CFR Part 327 (one national rule book) + the lake page",
+    "status": "ok"
+   },
+   "agency": "U.S. Army Corps of Engineers",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.spk.usace.army.mil/Portals/12/documents/parks_lakes/BlackButte/BBL_Trail_Map.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12957": {
+   "n": "Stoddard Valley BLM Special Recreation Management Area",
+   "t": "BLM Special Recreation Management Area",
+   "page": "https://www.blm.gov/visit/stoddard-valley-ohv-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-13499": {
+   "n": "Swasey Mule Mountain BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/swasey-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-13513": {
+   "n": "Laguna Mountain Area BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/laguna-mountain",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-13581": {
+   "n": "Clear Creek BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/programs/recreation/permits-and-passes/lotteries-and-permit-systems/california/clear-creek-management-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-2638": {
+   "n": "Van Sickle Bi State Park",
+   "t": "State Park",
+   "page": "http://parks.nv.gov/parks/lake-tahoe-nevada-state-park-3",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://parks.nv.gov/uploads/documents/Van_Sickle_Bi-State_Park_Construction_Area_Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Trails / Map')",
+    "posted": "Jul 23, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://parks.nv.gov/van-sickle-bi-state-park-park-rules",
+    "how": "a link on the park's page ('Park Rules page')",
+    "status": "ok"
+   },
+   "agency": "government agency (parks.nv.gov)",
+   "runs": [
+    "is managed by the Nevada Division of State Parks"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-3415": {
+   "n": "California State Railroad Museum State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=668",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.parks.ca.gov/pages/668/files/CAStateRRMuseumFinalWebLayout; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.parks.ca.gov/pages/668/files/Sactown%20Brochure%20FINAL%20)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.parks.ca.gov/pages/668/files/CAStateRRMuseumFinalWebLayout2018.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2019-05-02",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 3,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.parks.ca.gov/pages/668/files/Sactown%20Brochure%20FINAL%20Accessible.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Translations of Our Lives Are Made of Railroad Stories (PDF)')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-3441": {
+   "n": "Hearst San Simeon State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://www.parks.ca.gov/?page_id=591",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/591/files/HearstSanSimeonWebSpanish2015.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2015-07-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Brochure - Spanish (PDF)')",
+    "posted": "2015",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2015: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California Department of Parks and Recreation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.parks.ca.gov/?page_id=591",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-3578": {
+   "n": "Tijuana Estuary Reserve State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://www.parks.ca.gov/?page_id=669",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.parks.ca.gov/pages/669/files/SanDiegoCoastWebLayout041509.; opened, a page that does not name this park (a generic agency page is not its map) https://www.parks.ca.gov/?page_id=862)",
+    "how": "a link on the park's page ('Park Brochure (PDF)')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.parks.ca.gov/pages/669/files/SanDiegoCoastWebLayout041509.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2009-05-21",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Park Brochure (PDF)')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.parks.ca.gov/?page_id=862",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-3586": {
+   "n": "Verdugo Mountains State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=635",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.parks.ca.gov/?page_id=862)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.parks.ca.gov/?page_id=862",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-4383": {
+   "n": "Rogue River-Siskiyou National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/rogue-siskiyou",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r06/rogue-siskiyou",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4562": {
+   "n": "Pacific Crest Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.fs.usda.gov/trails/pacific-crest-nst",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/trails/pacific-crest-nst",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/trails/alerts-notices",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "U.S. Department of Agriculture, Forest Service (overall trail administration)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-4566": {
+   "n": "California National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/cali/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/cali/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/cali/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4571": {
+   "n": "Juan Bautista de Anza National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/juba/planyourvisit/maps.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/juba/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 24, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/juba/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4575": {
+   "n": "Old Spanish National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/olsp/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-Map-508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Mar 22, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/olsp/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4578": {
+   "n": "Pony Express National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/poex/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Mar 22, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/poex/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-6448": {
+   "n": "William Randolph Hearst Memorial State Beach",
+   "t": "State Beach",
+   "page": "https://www.parks.ca.gov/?page_id=589",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.parks.ca.gov/?page_id=862)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.parks.ca.gov/?page_id=862",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7375": {
+   "n": "Cowell Ranch State Beach",
+   "t": "State Beach",
+   "page": "https://www.coastsidestateparks.org/cowell-ranch-state-beach",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.coastsidestateparks.org/map/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Interactive Parks Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7888": {
+   "n": "Alcatraz Island National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/alca/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/goga/planyourvisit/upload/Alcatraz-map-Access-508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Open the PDF of the Island map by clicking here.' file",
+    "posted": "Sep 10, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 2,
+    "page": "https://www.nps.gov/alca/planyourvisit/maps.htm",
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/alca/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-7889": {
+   "n": "Presidio of SF National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/prsf/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/prsf/planyourvisit/upload/2018-Presidio-Map-for-Web.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Color Park Map' file",
+    "posted": "2018",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "page": "https://www.nps.gov/prsf/planyourvisit/maps.htm",
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/prsf/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [
+    "is managed by the Presidio Trust"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-9757": {
+   "n": "Butterfield Overland National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/buov/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/buov/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/buov/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0014": {
+   "n": "Channel Islands National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/chis/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/chis/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 20, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/chis/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0021": {
+   "n": "Death Valley National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/deva/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/deva/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 10, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/deva/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service (NPS)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0041": {
+   "n": "Joshua Tree National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/jotr/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/jotr/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 11, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/jotr/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0046": {
+   "n": "Kings Canyon National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/seki/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/seki/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "September 23, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/seki/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0049": {
+   "n": "Lassen Volcanic National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/lavo/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/lavo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 17, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/lavo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0058": {
+   "n": "Redwood National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/redw/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/redw/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "January 28, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/redw/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0063": {
+   "n": "Sequoia National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/seki/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/seki/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "September 23, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/seki/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0071": {
+   "n": "Yosemite National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/yose/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/yose/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 28, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/yose/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0175": {
+   "n": "Cibola National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/cibola",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/cibola/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/cibola/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/library/collections/cibola-national-wildlife-refuge-visitor-brochures",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0181": {
+   "n": "Bitter Creek National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/bitter-creek",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/bitter-creek/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/bitter-creek/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0187": {
+   "n": "Colusa National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/colusa",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/sites/default/files/documents/Colusa_NWR_Directions_508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Click here for a map with directions')",
+    "posted": "Dec 07, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0189": {
+   "n": "Don Edwards San Francisco Bay National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/don-edwards-san-francisco-bay",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/don-edwards-san-francisco-bay/visit-us",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/don-edwards-san-francisco-bay/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/refuge/don-edwards-san-francisco-bay/map",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.fws.gov/media/trail-closure-song-sparrow-spur-trail-pond-a2w",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Read more and view maps.')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0193": {
+   "n": "Guadalupe-Nipomo Dunes National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/guadalupe-nipomo-dunes",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/guadalupe-nipomo-dunes/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/guadalupe-nipomo-dunes/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0194": {
+   "n": "Havasu National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/havasu/about-us",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/havasu/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/havasu/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0196": {
+   "n": "Humboldt Bay National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/humboldt-bay",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/humboldt-bay/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/humboldt-bay/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0197": {
+   "n": "Kern National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/rivers/kern.php",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/rivers/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('System-wide Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (fws.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0199": {
+   "n": "Lower Klamath National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/lower-klamath",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/lower-klamath/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/lower-klamath/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/story/2023-10/maps-brochures",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Maps Brochures')",
+     "posted": "2023-10",
+     "posted_how": "posted: the upload folder in the address",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0201": {
+   "n": "Merced National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.blm.gov/programs/national-conservation-lands/california/merced-wsr#:~:text=From%20Yosemite%20National%20Park%2C%20the,this%20Wild%20and%20Scenic%20River.",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-0202": {
+   "n": "Modoc National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/modoc",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/modoc/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/modoc/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/media/modoc-nwrs-ada-hunt-blind-locations-map",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Modoc NWR s ADA Hunt Blind Locations Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0203": {
+   "n": "North Central Valley Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.fws.gov/refuge/steve-thompson-north-central-valley-wildlife-management-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/sites/default/files/documents/Steve_Thompson_NCV_WMA_Llano_Seco_Unit_Directions_508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2016-11-14",
+    "date_how": "file stamp 2016 (older than the posting 2021 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Click here for a map with directions')",
+    "posted": "Dec 07, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 4,
+    "copyright": "2014",
+    "via": "the agency site",
+    "kind_note": "combined map: covers 4 units",
+    "date_label": "2016: check it is still current"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0204": {
+   "n": "Pixley National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/pixley",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/pixley/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/pixley/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0205": {
+   "n": "Sacramento National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/sacramento",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/sites/default/files/documents/Sacramento_NWR_Directions_508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Click here for a map with directions')",
+    "posted": "Dec 07, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0206": {
+   "n": "Sacramento River National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/sacramento-river",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/sites/default/files/documents/Sacramento_River_NWR_Leaflet_BLUE_508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('River Units') -> the page's 'Overview Map/Brochure of Sacramento River NWR' file",
+    "posted": "Dec 07, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "page": "https://www.fws.gov/locations/sacramento-river-national-wildlife-refuge/sacramento-river-nwr-maps-and-recreation",
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/refuge/sacramento-river/map",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Interactive Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0207": {
+   "n": "Salinas River National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/salinas-river",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/salinas-river/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/salinas-river/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0208": {
+   "n": "San Diego National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/san-diego",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/san-diego/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/san-diego/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0209": {
+   "n": "San Diego Bay National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/san-diego-bay",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/san-diego-bay/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/san-diego-bay/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0210": {
+   "n": "San Joaquin River National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/san-joaquin-river",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/san-joaquin-river/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/san-joaquin-river/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/media/san-luis-nwr-complex-general-brochure",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0211": {
+   "n": "San Luis National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/san-luis",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/sites/default/files/documents/San%20Luis%20NWR%20General%20Brochure_508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('') -> the page's '' file",
+    "posted": "Nov 03, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "page": "https://www.fws.gov/media/san-luis-nwr-complex-general-brochure",
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/san-luis/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/refuge/san-luis/map",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0212": {
+   "n": "San Pablo Bay National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/san-pablo-bay",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/san-pablo-bay/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/san-pablo-bay/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0214": {
+   "n": "Sonny Bono Salton Sea National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/sonny-bono-salton-sea",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/sonny-bono-salton-sea/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/sonny-bono-salton-sea/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0215": {
+   "n": "Stone Lakes National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/stone-lakes",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/stone-lakes/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Interactive Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/locations/stone-lakes-national-wildlife-refuge/rules-and-policies",
+    "how": "a link on the park's page ('Rules and Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0217": {
+   "n": "Tijuana Slough National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/tijuana-slough",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/tijuana-slough/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/tijuana-slough/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0218": {
+   "n": "Tule Lake National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/tule-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/tule-lake/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/tule-lake/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/story/2023-10/maps-brochures",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Maps Brochures')",
+     "posted": "2023-10",
+     "posted_how": "posted: the upload folder in the address",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.nps.gov/tule/planyourvisit/maps.htm",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "January 5, 2024",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (nps.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0639": {
+   "n": "Los Padres National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/lpnf/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r05/lospadres",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-0640": {
+   "n": "Pinnacles National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/articles/airprofiles-pinn.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/pinn/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "January 30, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/pinn/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0647": {
+   "n": "Golden Gate National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.nps.gov/goga/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/goga/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "October 29, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/goga/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0648": {
+   "n": "Santa Monica Mountains National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.nps.gov/samo/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/samo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 10, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/samo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0649": {
+   "n": "Whiskeytown-Shasta-Trinity National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.nps.gov/whis/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/whis/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/whis/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/whis/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "October 4, 2024",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0650": {
+   "n": "Mojave Preserve National Conservation Area",
+   "t": "National Conservation Area",
+   "page": "https://www.nps.gov/moja/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/moja/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "May 28, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/moja/learn/management/loader.cfm?CSRF_Token=A079F5D263F0960F11DD513891F6068353064C4A&csModule=error&vFile=master.cfm&indialog=0&msgOnly=0&applyErrorClass=1&UseHTMLDecode=0",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0651": {
+   "n": "Point Reyes National Seashore",
+   "t": "National Seashore",
+   "page": "https://www.nps.gov/pore/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/pore/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 17, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/pore/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0757": {
+   "n": "San Francisco Maritime National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/safr/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/safr/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 20, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/safr/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0812": {
+   "n": "Eugene O'Neill National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/euon/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/euon/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 2, 2023",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/euon/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0819": {
+   "n": "Fort Point National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/fopo/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/fopo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 26, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/fopo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0839": {
+   "n": "John Muir National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/jomu/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/jomu/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 14, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/jomu/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0845": {
+   "n": "Manzanar National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/manz/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/manz/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 10, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/manz/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0894": {
+   "n": "Tuolumne National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.fs.usda.gov/recarea/stanislaus/recarea/?recid=83130",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r05/stanislaus",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-0907": {
+   "n": "Cabrillo National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/cabr/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/cabr/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "July 5, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/cabr/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0919": {
+   "n": "Devils Postpile National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/depo/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/depo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "October 14, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/depo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0946": {
+   "n": "Lava Beds National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/labe/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/labe/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "January 28, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/labe/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0949": {
+   "n": "Muir Woods National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/muwo/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/goga/planyourvisit/upload/map-muwo-trail-2019-small.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2019-09-04",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Download a Muir Woods Trail Map' file",
+    "posted": "2019",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 4,
+    "page": "https://www.nps.gov/muwo/planyourvisit/maps.htm",
+    "via": "the agency site",
+    "kind_note": "combined map: covers 4 units",
+    "date_label": "2019: check it is still current"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/muwo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0976": {
+   "n": "Castle Mountains National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/camo/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/camo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "July 26, 2021",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/camo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10400": {
+   "n": "Trona Pinnacles National Geologic Trail",
+   "t": "National Geologic Trail",
+   "page": "https://www.blm.gov/visit/trona-pinnacles",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10401": {
+   "n": "Merced National Wildlife Area",
+   "t": "National Wildlife Area",
+   "page": "https://www.fws.gov/refuge/merced",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/merced/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/merced/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/media/san-luis-nwr-complex-general-brochure",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10403": {
+   "n": "Lake Sonoma State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://wildlife.ca.gov/Lands/Places-to-Visit/Lake-Sonoma-WA",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=87899&amp;inline",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Wetland Discovery Trail Map (PDF)')",
+    "posted": "Feb 17, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": null,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (nrm.dfg.ca.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=203137&amp;inline",
+    "how": "a link on the park's page ('Waterfowl, Upland Game, and Public Use Regulations (PDF)')",
+    "status": "ok"
+   },
+   "agency": "California Department of Fish and Wildlife",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-10416": {
+   "n": "Grizzly Island State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=87859&inline",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (nrm.dfg.ca.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10417": {
+   "n": "Gray Lodge State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://wildlife.ca.gov/Lands/Places-to-Visit/Gray-Lodge-WA",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=87899&amp;inline",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Wetland Discovery Trail Map (PDF)')",
+    "posted": "Feb 17, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": null,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (nrm.dfg.ca.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=203137&amp;inline",
+    "how": "a link on the park's page ('Waterfowl, Upland Game, and Public Use Regulations (PDF)')",
+    "status": "ok"
+   },
+   "agency": "California Department of Fish and Wildlife",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10633": {
+   "n": "Carnegie State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://ohv.parks.ca.gov/?page_id=1172",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://ohv.parks.ca.gov/pages/1170/files/Resource%20Management%20Areas%20in%20Carnegie%20SVRA.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Mar 23, 2022",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://ohv.parks.ca.gov/?page_id=23747",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10635": {
+   "n": "Eastern Kern County Onyx Ranch State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://ohv.parks.ca.gov/?page_id=28617",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://ohv.parks.ca.gov/?page_id=23747",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10719": {
+   "n": "Jug Handle State Natural Reserve",
+   "t": "State Natural Reserve",
+   "page": "https://www.parks.ca.gov/pages/441/files/JugHandleSNRFinalWebLayout2017.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10832": {
+   "n": "Baldwin Lake Ecological Reserve",
+   "t": "Ecological Reserve",
+   "page": "https://wildlife.ca.gov/Lands/Places-to-Visit/Baldwin-Lake-ER",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=87899&amp;inline",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Wetland Discovery Trail Map (PDF)')",
+    "posted": "Feb 17, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": null,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (nrm.dfg.ca.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=203137&amp;inline",
+    "how": "a link on the park's page ('Waterfowl, Upland Game, and Public Use Regulations (PDF)')",
+    "status": "ok"
+   },
+   "agency": "California Department of Fish and Wildlife",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10875": {
+   "n": "Kern National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/kern",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/kern/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/kern/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11017": {
+   "n": "Little Picacho Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.recreation.gov/camping/gateways/13421",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://www.blm.gov/visit-us/search-details/13421/2)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "https://www.recreation.gov/rules-reservation-policies",
+    "how": "a link on the park's page ('Rules Reservation Policies')",
+    "status": "ok"
+   },
+   "agency": "government agency (recreation.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.blm.gov/visit-us/search-details/13421/2",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (blm.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11125": {
+   "n": "North Table Mountain Ecological Reserve",
+   "t": "Ecological Reserve",
+   "page": "https://wildlife.ca.gov/Lands/Places-to-Visit/North-Table-Mountain-ER",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://wildlife.ca.gov/Site-Content; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=85045&amp;inline)",
+    "how": "a link on the park's page ('Site Map')"
+   },
+   "rules": {
+    "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=203137&amp;inline",
+    "how": "a link on the park's page ('Waterfowl, Upland Game, and Public Use Regulations (PDF)')",
+    "status": "ok"
+   },
+   "agency": "California Department of Fish and Wildlife",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://wildlife.ca.gov/Site-Content",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Site Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=85045&amp;inline",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map (PDF) Printable Map (PDF) (opens in new tab)')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (nrm.dfg.ca.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11143": {
+   "n": "Battle Creek Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://wildlife.ca.gov/Lands/Places-to-Visit/Battle-Creek-WA",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=87739&inline",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "February 2025",
+    "date_how": "a month + year printed on the map",
+    "how": "a link on the park's page ('Printable Map (PDF)')",
+    "posted": "Feb 04, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 5,
+    "via": "linked from the agency page (nrm.dfg.ca.gov)",
+    "kind_note": "combined map: covers 5 units",
+    "date_label": "2025"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "California Department of Fish and Wildlife",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1121": {
+   "n": "Ahjumawi Lava Springs State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=464",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/464/files/AhjumawiLavaSpringsWeb2016.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2016-06-15",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "2016",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2016: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1122": {
+   "n": "Andrew Molera State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=582",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/582/files/Andrew_Molera_Trail_Camp_Map_FINAL_(JS_12.19.22).pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Jan 03, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1123": {
+   "n": "Angel Island State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=468",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/468/files/AngelIslandSPSpanishWebLayout2016.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2016-09-14",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "2016",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2016: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11237": {
+   "n": "Tule Lake National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/tule/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/tule/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "January 5, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/tule/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1124": {
+   "n": "Trione-Annadel State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=480",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/480/files/Trione-AnnadelSPFinalWebLayout2018.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2019-01-25",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Park Brochure (PDF)')",
+    "posted": "2018",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2019: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1125": {
+   "n": "Año Nuevo State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=523",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/523/files/Ano%20Nuevo%20Final%20Web%20Layout031122_remediated.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Mar 22, 2022",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1126": {
+   "n": "Anza Borrego Desert State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=638",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/638/files/abdsp_Park_Map201704.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2017-04-26",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "2017-04",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2017: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1127": {
+   "n": "Arthur B. Ripley Desert Woodland State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=634",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.parks.ca.gov/pages/634/files/Rare%20Juniper%20Trail%20Broc; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.parks.ca.gov/pages/634/files/Ripley%20Brochure%2016.pdf)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.parks.ca.gov/pages/634/files/Rare%20Juniper%20Trail%20Brochure%2016%202.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2016-03-18",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 1,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.parks.ca.gov/pages/634/files/Ripley%20Brochure%2016.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('here')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 1,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1128": {
+   "n": "Bidwell-Sacramento River State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=463",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/463/files/BidwellSacRiverSPWebLayout2013.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "2013",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1129": {
+   "n": "Big Basin Redwoods State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=540",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/540/files/BigBasinRedwoodsSP_Infosheet_101526.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('park map')",
+    "posted": "Oct 15, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1130": {
+   "n": "Border Field State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=664",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.parks.ca.gov/pages/664/files/SanDiegoCoastWebLayout041509.; opened, a page that does not name this park (a generic agency page is not its map) https://www.parks.ca.gov/?page_id=862)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.parks.ca.gov/pages/664/files/SanDiegoCoastWebLayout041509.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.parks.ca.gov/?page_id=862",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1131": {
+   "n": "Bothe-Napa Valley State Park",
+   "t": "State Park",
+   "page": "https://napaoutdoors.org/parks/bothe-napa-valley-state-park/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://napaoutdoors.org/wp-content/uploads/2023/08/Map-NOSD-Parks-lin)",
+    "how": "a link on the park's page ('Interactive Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://napaoutdoors.org/wp-content/uploads/2023/08/Map-NOSD-Parks-links.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2023-08-29",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Interactive Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-1132": {
+   "n": "Burton Creek State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=512",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/512/files/BurtonCreekWebMap2008.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "2008",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "http://carules.elaws.us/code/t.14_d.3",
+    "how": "a link on the park's page ('CA STATE PARK REGULATIONS')",
+    "status": "rules page not read (the site is resting: next run)"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1133": {
+   "n": "Butano State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=536",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/536/files/ButanoSPCampgroundMap102516.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2016-10-25",
+    "date_how": "file stamp 2016 (older than the posting 2019 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Nov 14, 2019",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 3,
+    "copyright": "2014",
+    "via": "the agency site",
+    "kind_note": "combined map: covers 3 units",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "2016: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-11336": {
+   "n": "Rainbow Basin Natural Area",
+   "t": "Natural Area",
+   "page": "https://www.blm.gov/visit/rainbow-basin-natural-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-1134": {
+   "n": "Calaveras Big Trees State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=551",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/551/files/CalaverasBigTreesSP_CampMap022315.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2015-02-23",
+    "date_how": "file stamp 2015 (older than the posting 2019 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Nov 14, 2019",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 4,
+    "copyright": "2003",
+    "via": "the agency site",
+    "kind_note": "combined map: covers 4 units",
+    "date_label": "2015: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1135": {
+   "n": "Castle Crags State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=454",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/454/files/CastleCragsCampgroundMap2014.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2014-07-08",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "2014",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 6,
+    "copyright": "2002",
+    "via": "the agency site",
+    "kind_note": "combined map: covers 6 units",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "2014: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-1136": {
+   "n": "Castle Rock State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=538",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/538/files/CastleRockSPFinalWebLayout082117.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2017-08-21",
+    "date_how": "file stamp 2017 (older than the posting 2019 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Nov 14, 2019",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2017: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-1137": {
+   "n": "Caswell Memorial State Park",
+   "t": "State Park",
+   "page": "https://www.parks.ca.gov/?page_id=557",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.parks.ca.gov/pages/557/files/CaswellMemorialSP_CampMap021015.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2015-02-10",
+    "date_how": "file stamp 2015 (older than the posting 2019 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Nov 14, 2019",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 5,
+    "copyright": "2006",
+    "via": "the agency site",
+    "kind_note": "combined map: covers 5 units",
+    "date_label": "2015: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 20 parks was dropped: https://www.parks.ca.gov/?page_id=21300)",
+    "how": "a link on the park's page ('Rules and Regulations')"
+   },
+   "agency": "California State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 112,
+  "map ok": 82,
+  "map found by the bot": 38,
+  "date on the map": 13,
+  "posted date only": 45,
+  "date unknown": 24,
+  "no map": 30,
+  "rules ok": 71,
+  "needs browser": 16,
+  "handover hints": 0,
+  "runs hints": 6,
+  "host resting / robots": 0,
+  "map names the park": 79,
+  "region overview only": 0
+ }
+}

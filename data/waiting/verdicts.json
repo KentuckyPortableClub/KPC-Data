@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T08:20Z",
+ "checked": "2026-10-31T08:32Z",
  "switched_on": false,
  "results": [
   {
@@ -26,24 +26,6 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/campinfo/US-CO.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/campinfo/US-IA.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/campinfo/US-KY.json",
    "kind": "campinfo",
    "why": [],
@@ -51,54 +33,7 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/campinfo/US-MA.json",
-   "kind": "campinfo",
-   "why": [
-    "F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/campinfo/US-MT.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/campinfo/US-NV.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/campinfo/US-SC.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/campinfo/US-TN.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/campinfo/US-WA.json",
    "kind": "campinfo",
    "why": [],
    "notes": [
@@ -117,6 +52,17 @@
   },
   {
    "path": "data/docs/US-AZ.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/docs/US-CA.json",
    "kind": "docs",
    "why": [
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
@@ -277,6 +223,17 @@
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
    ],
    "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/docs/US-NM.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "HOLD"
   },
   {
