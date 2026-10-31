@@ -1,0 +1,37 @@
+{
+ "request": "requests/10-new-US-13628.json",
+ "id": "10-new-US-13628",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13628 Two Rivers Wildlife Management Area: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13628"
+  ],
+  "report": "new park US-13628 Two Rivers Wildlife Management Area: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-10-31 15:18Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13628",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13628",
+   "title": "",
+   "text": "{\"parkId\": 147922, \"reference\": \"US-13628\", \"name\": \"Two Rivers\", \"latitude\": 41.2125, \"longitude\": -96.349, \"grid4\": \"EN11\", \"grid6\": \"EN11tf\", \"parktypeId\": 123, \"active\": 1, \"parkComments\": \"This is not a 2'fer with the Two Rivers SRA.\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot,Other\", \"activationMethods\": \"Automobile,Other,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/\", \"createdByAdmin\": \"Brian Schmidt\", \"parktypeDesc\": \"Wildlife Management Area\", \"locationDesc\": \"US-NE\", \"locationName\": \"Nebraska\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}
