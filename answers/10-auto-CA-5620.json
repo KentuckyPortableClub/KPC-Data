@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-5620.json",
+ "id": "10-auto-CA-5620",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-5620",
+  "name": "Yarmouth Natural Heritage Area Conservation Area",
+  "agency": "government agency (catfishcreek.ca)",
+  "url": "https://www.catfishcreek.ca/wp-content/uploads/2016/10/Yarmouth-Natural-Heritage-Area-Trail-Map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 15:17Z",
+ "results": [
+  {
+   "url": "https://www.catfishcreek.ca/wp-content/uploads/2016/10/Yarmouth-Natural-Heritage-Area-Trail-Map.pdf",
+   "map_url": "https://www.catfishcreek.ca/wp-content/uploads/2016/10/Yarmouth-Natural-Heritage-Area-Trail-Map.pdf",
+   "saved": [
+    "maps/CA-5620_yarmouth-natural-heritage-area-c.jpg"
+   ],
+   "bytes": 435446,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
