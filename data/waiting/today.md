@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 130 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 122 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -66,16 +66,8 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campinfo/US-SC.json | PASS |  |
 | ? | ? | data/campinfo/US-TN.json | PASS |  |
 | ? | ? | data/campinfo/US-WA.json | PASS |  |
-| ? | ? | data/fers/CA-MB.json | PASS |  |
-| ? | ? | data/fers/CA-NL.json | PASS |  |
-| ? | ? | data/fers/CA-NS.json | PASS |  |
-| ? | ? | data/fers/CA-NT.json | PASS |  |
-| ? | ? | data/fers/CA-PE.json | PASS |  |
-| ? | ? | data/fers/CA-SK.json | PASS |  |
-| ? | ? | data/fers/US-LA.json | PASS |  |
 | ? | ? | data/fers/US-OH.json | PASS |  |
 | ? | ? | data/fers/US-VA.json | PASS |  |
-| ? | ? | data/fers/US-VT.json | PASS |  |
 | ? | ? | data/hours/US-KY.json | PASS |  |
 | ? | ? | data/us-key/US-AK.json | PASS |  |
 | ? | ? | data/us-key/US-AL.json | PASS |  |
@@ -143,13 +135,16 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 |---|---|---|
 | gis-hunter.json | 24 | 534 |
 | key-pieces.json | 34 | 307 |
-| layers.json | 1340 | 1383 |
+| layers.json | 0 | 1383 |
 | not-sure-for-chat9.json | 146 | 146 |
 | world-finder.json | 72 | 3717 |
 
-## Approvals not used yet: 4
+## Approvals not used yet: 7
 
 - keyed-parking: chat 11 'PASS v3c (Oct 29, 5:25 PM): v3b fresh 30 = 27-28/30 and no wrong-park point; v3c re-counted whole file: 1,826 points / 439 parks, 0 longitude > 0, 0 shared facilities, 0 wilderness / office / hotel / road-number labels left; ski areas and visitor centers / lodges / campgrounds / lookouts stay per Brandon' by chat 11, chat 2 '-'
 - us-key: chat 11 'KEY NO 2026-10-30 (Indiana build, 6/6 sample): the six IN State Recreation Areas (Moores Creek US-5682, Allens Creek US-5684, Lieber US-5685, Fairfax US-5686, Salt Creek US-5688, Red Bridge US-7842) are joined to records named 'Monroe Lake', 'Cagles Mill Lake' and 'Mississinewa Lake' (reason only 'name'). The record is the lake property, not the recreation area; mapping.md says Indiana lake SRAs need their own layer, not a join. Chat 2: if the polygon's own unitname/subunit says the SRA name, tell me and it is a YES. Names and acres only, no maps seen.' by chat 11, chat 2 '-'
-- fers-US-MN: chat 11 '' by chat 2, chat 2 'rechecked 2026-10-30 9:30 PM (chat 2 G-4): 144 pairs (+33, mostly trail pairs now that cross-state trails are read), 0 duplicate rows. The 3 'lost' are rule-correct NOT SURE: Riverlands x Gichigami Ziibi (no public owner on the ownership map), Beaver Creek WMA x Lake Shetek (the key's Beaver Creek pieces include a different Beaver Creek WMA 269 km away: key fix pending), Gores Pool #3 x Dorer forest (far-pin hold B13). 2 far rows held by the line itself.'
+- fers-US-MN: chat 11 'YES 2026-10-31 sample of 10 + the 43 new pairs by kind: 38 are trail pairs (Taconite / North Country / Superior NF etc.), 5 areas; all name pairs are real neighbours (Fort Snelling x Minnesota Valley NWR, Zippel Bay x Lake of the Woods SF). Chippewa x Bowstring (147k ac) is unchanged from the live file. 'not sure: no public owner' rows stay out. Names, kind, acres only; no agency map seen.' by chat 2, chat 2 'rechecked 2026-10-30 9:30 PM (chat 2 G-4): 144 pairs (+33, mostly trail pairs now that cross-state trails are read), 0 duplicate rows. The 3 'lost' are rule-correct NOT SURE: Riverlands x Gichigami Ziibi (no public owner on the ownership map), Beaver Creek WMA x Lake Shetek (the key's Beaver Creek pieces include a different Beaver Creek WMA 269 km away: key fix pending), Gores Pool #3 x Dorer forest (far-pin hold B13). 2 far rows held by the line itself.'
 - us-key: chat 11 'KEY YES 2026-10-31 6/6 (Indiana build of 03:47 UTC; the preview lists only these 6 changes: 6 gained, 0 lost). Moores Creek US-5682 155 ac, Allens Creek US-5684 290 ac, Lieber US-5685 718 ac, Fairfax US-5686 741 ac, Salt Creek US-5688 313 ac, Red Bridge US-7842 203 ac: each now has its OWN-size piece (not the whole lake, e.g. Monroe Lake), so the earlier KEY NO problem is gone. Judged by name, kind and acres only; no agency map seen. Piece labels still show the lake name; chat 2 says the SRA name is in the subunit field.' by chat 11, chat 2 '-'
+- us-key: chat 11 'KEY NO 2026-10-31 (build of 11:13 UTC, 29 of 30 sample parks fine). One bad join: Milford State Fish Hatchery US-7393 (KS) is joined to 'Milford Wildlife Area' (sgksb27, size 0, reason 'name + Recreation.gov point inside'). A fish hatchery is not a wildlife area; I already said NO to the Milford Lake / Outlet Park / Recreation Area records for it. Drop it back to a pin and I will say KEY YES. Everything else in the sample is OK by name, kind and size (no agency map seen): the many trail lines (size 0 = line, e.g. Appalachian Trail, Trail of Tears, Pacific Crest), Pinnell Mountain, General Crook, Big Canoe Creek 382 ac, Buena Vista SWA 90 ac, and the 4 lost outlines (Rogue River-Siskiyou, Jemez Historic Site, Santa Clara River Reserve, Big Eddy) back to safe pins.' by chat 11, chat 2 '-'
+- fers-US-IA: chat 11 'YES 2026-10-31 all 18 live rows read: 12 areas / 'same land' (Backbone SP x Backbone SF, Lacey-Keosauqua x Shimek SF 15.6 ac, Marble Beach x Templar SRA 40 ac, McCoy WMA x Ledges SP 95 ac) and 6 Mormon Pioneer NHT trail pairs; 'very tight' and 'water only' rows carry their notes; 'no public owner' row stays out. Names, kind, acres only; no agency map seen.' by chat 2, chat 2 'rechecked 2026-10-31 9:30 AM (chat 2 G-4): 16 pairs: the 3 live ones back + 13 new (Mormon Pioneer NHT x Lacey-Keosauqua / Lake Manawa / Shimek / Lake Sugema / Three Mile Lake, Backbone SP x Backbone SF same land, Loess Hills SF / WA x Preparation Canyon, Shimek SF x Lacey-Keosauqua / Lake Sugema …); 6 'very tight' kept as such; the re-numbered Iowa records found by name.'
+- fers-US-ME: chat 11 'YES 2026-10-31 all 3 live rows read: Baxter SP x Appalachian Trail, Bigelow Preserve x Appalachian Trail, Cobscook Bay SP x Cobscook Bay WMA (same land). Real neighbours by name and kind (no agency map seen). Chat 2's recheck (G-4) is still needed.' by chat 11, chat 2 '-'

@@ -1,9 +1,9 @@
 {
  "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
- "pass1": "2026-10-29",
- "pass2": "2026-10-29",
- "pass3": "2026-10-29",
- "pass5": "2026-10-29",
+ "pass1": "2026-10-31",
+ "pass2": "2026-10-31",
+ "pass3": "2026-10-31",
+ "pass5": "2026-10-31",
  "spots": [
   {
    "acres": 2.4,
@@ -17,7 +17,7 @@
     43.904379,
     -73.064486
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-3103+US-4527@area@43.910,-73.063",
    "kind": "area",
    "passes": [
@@ -67,7 +67,7 @@
      43.90465
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 30
   },
@@ -83,7 +83,7 @@
     44.215703,
     -72.941127
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-3107+US-5553@area@44.218,-72.945",
    "kind": "area",
    "passes": [
@@ -229,7 +229,7 @@
      44.218326
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -262,8 +262,8 @@
     43.273025,
     -72.998011
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "state"
@@ -511,12 +511,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-31",
    "list": "Very tight (members only)",
    "map_dates": {
-    "US-3113": "downloaded 2026-10-29",
-    "US-4527": "downloaded 2026-10-29",
-    "USGS water": "USGS NHDPlus HR file 2023-07-13 (the same NHDPlus HR water, from USGS's download files)"
+    "US-3113": "read from the agency 2026-10-31",
+    "US-4527": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
     [
@@ -577,7 +577,7 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-31",
    "wide_m": 31
   },
   {
@@ -592,7 +592,7 @@
     43.676783,
     -72.817969
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-3115+US-4527@area@43.677,-72.813",
    "kind": "area",
    "passes": [
@@ -638,7 +638,7 @@
      43.675698
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -670,8 +670,8 @@
     43.674375,
     -72.809305
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "state"
    ],
@@ -686,7 +686,7 @@
     }
    },
    "map_dates": {
-    "US-3115": "downloaded 2026-10-29",
+    "US-3115": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -932,7 +932,7 @@
     ]
    ],
    "zone_acres": 2.34,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 65.9
   },
   {
@@ -963,8 +963,8 @@
     43.673839,
     -72.815535
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "state"
    ],
@@ -980,7 +980,7 @@
     }
    },
    "map_dates": {
-    "US-3115": "downloaded 2026-10-29",
+    "US-3115": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -1104,7 +1104,7 @@
     ]
    ],
    "zone_acres": 5.74,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
@@ -1135,8 +1135,8 @@
     43.673839,
     -72.815535
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "state"
    ],
@@ -1151,7 +1151,7 @@
     }
    },
    "map_dates": {
-    "US-3115": "downloaded 2026-10-29",
+    "US-3115": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -1241,7 +1241,7 @@
     ]
    ],
    "zone_acres": 5.74,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
@@ -1256,7 +1256,7 @@
     44.846698,
     -72.521214
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-3119+US-5560@area@44.847,-72.521",
    "kind": "area",
    "passes": [
@@ -1278,7 +1278,7 @@
      44.846698
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -1294,7 +1294,7 @@
     44.846698,
     -72.521214
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-3119+US-5560@area@44.847,-72.526",
    "kind": "area",
    "passes": [
@@ -1316,7 +1316,7 @@
      44.846698
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -1331,14 +1331,14 @@
     43.387935,
     -72.407961
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [],
    "id": "US-3151+US-4556@trail@43.389,-72.406",
    "kind": "trail",
    "len_m": 465,
    "map_dates": {
-    "US-3151": "downloaded 2026-10-29",
+    "US-3151": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "notes": [
@@ -1391,7 +1391,7 @@
     ]
    ],
    "zone_acres": 2.64,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 36.0
   },
   {
@@ -1406,7 +1406,7 @@
     42.888806,
     -73.033282
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-3152+US-4527@area@42.889,-73.033",
    "kind": "area",
    "passes": [
@@ -1428,7 +1428,7 @@
      42.882747
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -1444,7 +1444,7 @@
     42.896358,
     -73.032607
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-3152+US-4527@area@42.896,-73.033",
    "kind": "area",
    "passes": [
@@ -1462,12 +1462,18 @@
      42.896358
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    46892
+   ],
    "access_pin": {
     "at": [
      43.674567,
@@ -1488,8 +1494,8 @@
     43.68481,
     -72.847351
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -1505,7 +1511,7 @@
    },
    "map_dates": {
     "US-4239": "official line (trails bot)",
-    "US-4527": "downloaded 2026-10-29"
+    "US-4527": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -1678,11 +1684,17 @@
     ]
    ],
    "zone_acres": 43.55,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 73.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    53415
+   ],
    "access_pin": {
     "at": [
      43.723039,
@@ -1703,8 +1715,8 @@
     43.745773,
     -72.88857
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -1720,7 +1732,7 @@
    },
    "map_dates": {
     "US-4239": "official line (trails bot)",
-    "US-4527": "downloaded 2026-10-29"
+    "US-4527": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -2353,11 +2365,17 @@
     ]
    ],
    "zone_acres": 123.48,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 93.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    60886
+   ],
    "access_pin": {
     "at": [
      43.83195,
@@ -2378,8 +2396,8 @@
     43.812908,
     -72.940721
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -2396,7 +2414,7 @@
    },
    "map_dates": {
     "US-4239": "official line (trails bot)",
-    "US-4527": "downloaded 2026-10-29"
+    "US-4527": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -3095,11 +3113,17 @@
     ]
    ],
    "zone_acres": 163.51,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 85.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    60886
+   ],
    "access_pin": {
     "at": [
      43.83195,
@@ -3120,8 +3144,8 @@
     43.812908,
     -72.940721
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -3137,7 +3161,7 @@
    },
    "map_dates": {
     "US-4239": "official line (trails bot)",
-    "US-4527": "downloaded 2026-10-29"
+    "US-4527": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -3814,11 +3838,17 @@
     ]
    ],
    "zone_acres": 162.13,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 83.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    79493
+   ],
    "access_pin": {
     "at": [
      43.97121,
@@ -3839,8 +3869,8 @@
     43.971262,
     -73.074728
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -3856,7 +3886,7 @@
    },
    "map_dates": {
     "US-4239": "official line (trails bot)",
-    "US-4527": "downloaded 2026-10-29"
+    "US-4527": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -3993,11 +4023,17 @@
     ]
    ],
    "zone_acres": 14.16,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 65.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    79493
+   ],
    "access_pin": {
     "at": [
      43.97121,
@@ -4018,8 +4054,8 @@
     43.971262,
     -73.074728
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -4035,7 +4071,7 @@
    },
    "map_dates": {
     "US-4239": "official line (trails bot)",
-    "US-4527": "downloaded 2026-10-29"
+    "US-4527": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -4089,7 +4125,13 @@
    "status": "dropped: the same stretch twice (copy of US-4239+US-4527@trail@43.920,-73.022)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    79493
+   ],
    "access_pin": {
     "at": [
      43.97121,
@@ -4110,8 +4152,8 @@
     43.971262,
     -73.074728
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -4127,7 +4169,7 @@
    },
    "map_dates": {
     "US-4239": "official line (trails bot)",
-    "US-4527": "downloaded 2026-10-29"
+    "US-4527": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -4202,8 +4244,8 @@
     43.674865,
     -72.839263
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -4321,8 +4363,8 @@
     43.769544,
     -72.920956
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "state"
    ],
@@ -4338,7 +4380,7 @@
    },
    "map_dates": {
     "US-4239": "official line (trails bot)",
-    "US-5543": "downloaded 2026-10-29"
+    "US-5543": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -4484,11 +4526,17 @@
     ]
    ],
    "zone_acres": 24.77,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 73.9
   },
   {
-   "access": null,
+   "access": [
+    42.875898,
+    -73.08115,
+    "Facility: Prospect (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "US-4527",
+    14638
+   ],
    "access_pin": {
     "at": [
      42.769004,
@@ -4509,8 +4557,8 @@
     42.751418,
     -73.142094
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -4525,7 +4573,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -4667,11 +4715,17 @@
     ]
    ],
    "zone_acres": 40.35,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
-   "access": null,
+   "access": [
+    42.875898,
+    -73.08115,
+    "Facility: Prospect (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "US-4527",
+    11999
+   ],
    "access_pin": {
     "at": [
      42.768999,
@@ -4692,8 +4746,8 @@
     42.774361,
     -73.132953
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -4708,7 +4762,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -4786,11 +4840,17 @@
     ]
    ],
    "zone_acres": 5.4,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 65.9
   },
   {
-   "access": null,
+   "access": [
+    42.875898,
+    -73.08115,
+    "Facility: Prospect (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "US-4527",
+    10848
+   ],
    "access_pin": {
     "at": [
      42.847534,
@@ -4811,8 +4871,8 @@
     42.783192,
     -73.12459
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -4827,7 +4887,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -4945,11 +5005,17 @@
     ]
    ],
    "zone_acres": 20.25,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
-   "access": null,
+   "access": [
+    42.875898,
+    -73.08115,
+    "Facility: Prospect (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "US-4527",
+    10848
+   ],
    "access_pin": {
     "at": [
      42.847534,
@@ -4970,8 +5036,8 @@
     42.783192,
     -73.12459
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -4986,7 +5052,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -5041,7 +5107,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@42.783,-73.125)"
   },
   {
-   "access": null,
+   "access": [
+    42.875898,
+    -73.08115,
+    "Facility: Prospect (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "US-4527",
+    10848
+   ],
    "access_pin": {
     "at": [
      42.847534,
@@ -5062,8 +5134,8 @@
     42.783192,
     -73.12459
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -5078,7 +5150,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -5133,7 +5205,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@42.783,-73.125)"
   },
   {
-   "access": null,
+   "access": [
+    42.96628,
+    -72.89459,
+    "Facility: Mt. Snow (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "US-4527",
+    12094
+   ],
    "access_pin": {
     "at": [
      43.100001,
@@ -5154,8 +5232,8 @@
     43.061235,
     -72.968385
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -5170,7 +5248,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -5540,11 +5618,17 @@
     ]
    ],
    "zone_acres": 79.28,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 75.9
   },
   {
-   "access": null,
+   "access": [
+    42.96628,
+    -72.89459,
+    "Facility: Mt. Snow (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "US-4527",
+    12094
+   ],
    "access_pin": {
     "at": [
      43.100001,
@@ -5565,8 +5649,8 @@
     43.061235,
     -72.968385
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -5581,7 +5665,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -5720,7 +5804,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@42.998,-73.066)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    14330
+   ],
    "access_pin": {
     "at": [
      43.09982,
@@ -5741,8 +5831,8 @@
     43.150188,
     -72.99285
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -5757,7 +5847,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -5859,11 +5949,17 @@
     ]
    ],
    "zone_acres": 21.21,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    14330
+   ],
    "access_pin": {
     "at": [
      43.09982,
@@ -5884,8 +5980,8 @@
     43.150188,
     -72.99285
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -5900,7 +5996,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -5951,7 +6047,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.098,-72.941)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    8422
+   ],
    "access_pin": {
     "at": [
      43.200995,
@@ -5972,8 +6074,8 @@
     43.204045,
     -72.971624
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -5988,7 +6090,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -6094,11 +6196,17 @@
     ]
    ],
    "zone_acres": 14.48,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 65.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    8422
+   ],
    "access_pin": {
     "at": [
      43.200995,
@@ -6119,8 +6227,8 @@
     43.204045,
     -72.971624
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -6135,7 +6243,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -6186,7 +6294,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.183,-72.994)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    8422
+   ],
    "access_pin": {
     "at": [
      43.200995,
@@ -6207,8 +6321,8 @@
     43.204045,
     -72.971624
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -6223,7 +6337,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -6274,7 +6388,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.183,-72.994)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    8257
+   ],
    "access_pin": {
     "at": [
      43.372782,
@@ -6295,8 +6415,8 @@
     43.323493,
     -72.965172
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -6312,7 +6432,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -6520,11 +6640,17 @@
     ]
    ],
    "zone_acres": 39.05,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 79.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    8257
+   ],
    "access_pin": {
     "at": [
      43.372782,
@@ -6545,8 +6671,8 @@
     43.323493,
     -72.965172
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -6561,7 +6687,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -6735,11 +6861,17 @@
     ]
    ],
    "zone_acres": 39.01,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 82.0
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    8257
+   ],
    "access_pin": {
     "at": [
      43.372782,
@@ -6760,8 +6892,8 @@
     43.323493,
     -72.965172
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -6776,7 +6908,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -6851,7 +6983,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.242,-72.936)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    8257
+   ],
    "access_pin": {
     "at": [
      43.372782,
@@ -6872,8 +7010,8 @@
     43.323493,
     -72.965172
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -6888,7 +7026,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -6963,7 +7101,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.242,-72.936)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    24894
+   ],
    "access_pin": {
     "at": [
      43.521237,
@@ -6984,8 +7128,8 @@
     43.487531,
     -72.925334
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -7001,7 +7145,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -7269,11 +7413,17 @@
     ]
    ],
    "zone_acres": 56.07,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    24894
+   ],
    "access_pin": {
     "at": [
      43.521237,
@@ -7294,8 +7444,8 @@
     43.487531,
     -72.925334
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -7311,7 +7461,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -7410,7 +7560,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.452,-72.937)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    30493
+   ],
    "access_pin": {
     "at": [
      43.56678,
@@ -7431,8 +7587,8 @@
     43.53751,
     -72.871675
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -7448,7 +7604,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -7582,11 +7738,17 @@
     ]
    ],
    "zone_acres": 17.95,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    30493
+   ],
    "access_pin": {
     "at": [
      43.56678,
@@ -7607,8 +7769,8 @@
     43.53751,
     -72.871675
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -7624,7 +7786,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -7687,7 +7849,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.525,-72.921)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    30493
+   ],
    "access_pin": {
     "at": [
      43.56678,
@@ -7708,8 +7876,8 @@
     43.53751,
     -72.871675
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -7725,7 +7893,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -7788,7 +7956,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.525,-72.921)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    30493
+   ],
    "access_pin": {
     "at": [
      43.56678,
@@ -7809,8 +7983,8 @@
     43.53751,
     -72.871675
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -7826,7 +8000,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -7889,7 +8063,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.525,-72.921)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    30493
+   ],
    "access_pin": {
     "at": [
      43.56678,
@@ -7910,8 +8090,8 @@
     43.53751,
     -72.871675
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -7927,7 +8107,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -7990,7 +8170,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.525,-72.921)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    30493
+   ],
    "access_pin": {
     "at": [
      43.56678,
@@ -8011,8 +8197,8 @@
     43.53751,
     -72.871675
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -8028,7 +8214,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -8091,7 +8277,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.525,-72.921)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    39104
+   ],
    "access_pin": {
     "at": [
      43.610881,
@@ -8112,8 +8304,8 @@
     43.611138,
     -72.821477
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -8129,7 +8321,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -8435,11 +8627,17 @@
     ]
    ],
    "zone_acres": 1.42,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    42709
+   ],
    "access_pin": {
     "at": [
      43.64425,
@@ -8460,8 +8658,8 @@
     43.647273,
     -72.854099
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -8477,7 +8675,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -8695,11 +8893,17 @@
     ]
    ],
    "zone_acres": 60.26,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    43149
+   ],
    "access_pin": {
     "at": [
      43.666321,
@@ -8720,8 +8924,8 @@
     43.651262,
     -72.853953
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -8736,7 +8940,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -8966,11 +9170,17 @@
     ]
    ],
    "zone_acres": 0.7,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 28.0
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    49408
+   ],
    "access_pin": {
     "at": [
      43.671857,
@@ -8991,8 +9201,8 @@
     43.664742,
     -72.637484
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -9008,7 +9218,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -9286,11 +9496,17 @@
     ]
    ],
    "zone_acres": 46.03,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 85.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    44796
+   ],
    "access_pin": {
     "at": [
      43.673895,
@@ -9311,8 +9527,8 @@
     43.665989,
     -72.850509
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -9328,7 +9544,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -9622,11 +9838,17 @@
     ]
    ],
    "zone_acres": 1.82,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 65.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    45540
+   ],
    "access_pin": {
     "at": [
      43.673932,
@@ -9647,8 +9869,8 @@
     43.66999,
     -72.820271
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service"
    ],
@@ -9663,7 +9885,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -9829,11 +10051,17 @@
     ]
    ],
    "zone_acres": 33.17,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 75.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    46402
+   ],
    "access_pin": {
     "at": [
      43.68054,
@@ -9854,8 +10082,8 @@
     43.673833,
     -72.789125
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -9871,7 +10099,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -10021,11 +10249,17 @@
     ]
    ],
    "zone_acres": 24.62,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 75.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    49408
+   ],
    "access_pin": {
     "at": [
      43.671857,
@@ -10046,8 +10280,8 @@
     43.664742,
     -72.637484
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -10063,7 +10297,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -10162,7 +10396,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.665,-72.637)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    49408
+   ],
    "access_pin": {
     "at": [
      43.671857,
@@ -10183,8 +10423,8 @@
     43.664742,
     -72.637484
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -10200,7 +10440,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -10299,7 +10539,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.665,-72.637)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    49191
+   ],
    "access_pin": {
     "at": [
      43.680683,
@@ -10320,8 +10566,8 @@
     43.694001,
     -72.75504
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -10337,7 +10583,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -10463,11 +10709,17 @@
     ]
    ],
    "zone_acres": 28.5,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 71.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    56238
+   ],
    "access_pin": {
     "at": [
      43.680373,
@@ -10488,8 +10740,8 @@
     43.683844,
     -72.51367
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -10505,7 +10757,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -10699,11 +10951,17 @@
     ]
    ],
    "zone_acres": 19.29,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 82.0
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    56238
+   ],
    "access_pin": {
     "at": [
      43.680373,
@@ -10724,8 +10982,8 @@
     43.683844,
     -72.51367
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -10741,7 +10999,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -10816,7 +11074,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.684,-72.514)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    62787
+   ],
    "access_pin": {
     "at": [
      43.705601,
@@ -10837,8 +11101,8 @@
     43.71041,
     -72.42545
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -10854,7 +11118,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -11044,11 +11308,17 @@
     ]
    ],
    "zone_acres": 31.66,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 75.9
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    50368
+   ],
    "access_pin": {
     "at": [
      43.689718,
@@ -11069,8 +11339,8 @@
     43.689857,
     -72.687743
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "state"
    ],
@@ -11085,7 +11355,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -11267,11 +11537,17 @@
     ]
    ],
    "zone_acres": 0.44,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 22.0
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    49408
+   ],
    "access_pin": {
     "at": [
      43.671857,
@@ -11292,8 +11568,8 @@
     43.664742,
     -72.637484
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -11309,7 +11585,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -11408,7 +11684,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.665,-72.637)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    49191
+   ],
    "access_pin": {
     "at": [
      43.680683,
@@ -11429,8 +11711,8 @@
     43.694001,
     -72.75504
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -11446,7 +11728,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -11509,7 +11791,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.681,-72.782)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    49488
+   ],
    "access_pin": {
     "at": [
      43.692982,
@@ -11530,8 +11818,8 @@
     43.693025,
     -72.73596
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -11547,7 +11835,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -11661,11 +11949,17 @@
     ]
    ],
    "zone_acres": 16.95,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    62787
+   ],
    "access_pin": {
     "at": [
      43.705601,
@@ -11686,8 +11980,8 @@
     43.71041,
     -72.42545
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -11703,7 +11997,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -11782,7 +12076,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.688,-72.484)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    62787
+   ],
    "access_pin": {
     "at": [
      43.705601,
@@ -11803,8 +12103,8 @@
     43.71041,
     -72.42545
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -11820,7 +12120,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -11899,7 +12199,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.688,-72.484)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    67123
+   ],
    "access_pin": {
     "at": [
      43.727236,
@@ -11920,8 +12226,8 @@
     43.714879,
     -72.348828
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -11937,7 +12243,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -12051,11 +12357,17 @@
     ]
    ],
    "zone_acres": 12.05,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    67123
+   ],
    "access_pin": {
     "at": [
      43.727236,
@@ -12076,8 +12388,8 @@
     43.714879,
     -72.348828
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -12093,7 +12405,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -12152,7 +12464,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.711,-72.323)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    67123
+   ],
    "access_pin": {
     "at": [
      43.727236,
@@ -12173,8 +12491,8 @@
     43.714879,
     -72.348828
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -12190,7 +12508,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -12249,7 +12567,13 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.711,-72.323)"
   },
   {
-   "access": null,
+   "access": [
+    43.262859,
+    -72.905669,
+    "Facility: Wild Wings (Recreation.gov / National Park Service data)",
+    "US-4527",
+    67123
+   ],
    "access_pin": {
     "at": [
      43.727236,
@@ -12270,8 +12594,8 @@
     43.714879,
     -72.348828
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "Park Service"
@@ -12287,7 +12611,7 @@
     }
    },
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
+    "US-4527": "read from the agency 2026-10-31",
     "US-4556": "official line (trails bot)"
    },
    "maps": [
@@ -12346,82 +12670,6 @@
    "status": "dropped: the same stretch twice (copy of US-4527+US-4556@trail@43.711,-72.323)"
   },
   {
-   "acres": 0.7,
-   "box": [
-    -73.15047,
-    42.74361,
-    -73.14692,
-    42.74361
-   ],
-   "center": [
-    42.743607,
-    -73.15047
-   ],
-   "found": "2026-10-29",
-   "id": "US-4527+US-4760@area@42.743,-73.147",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "US-4527",
-    "US-4760"
-   ],
-   "shape": [
-    [
-     -73.15047,
-     42.743607
-    ],
-    [
-     -73.146923,
-     42.743607
-    ]
-   ],
-   "status": "dropped in pass 3",
-   "tier": "very tight: could be map error: check both official maps on the ground",
-   "wide_m": 10
-  },
-  {
-   "acres": 0.4,
-   "box": [
-    -73.15353,
-    42.7437,
-    -73.15169,
-    42.7437
-   ],
-   "center": [
-    42.743697,
-    -73.153528
-   ],
-   "found": "2026-10-29",
-   "id": "US-4527+US-4760@area@42.744,-73.154",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "US-4527",
-    "US-4760"
-   ],
-   "shape": [
-    [
-     -73.153528,
-     42.743697
-    ],
-    [
-     -73.151693,
-     42.743697
-    ]
-   ],
-   "status": "dropped in pass 3",
-   "tier": "very tight: could be map error: check both official maps on the ground",
-   "wide_m": 10
-  },
-  {
    "acres": 4.7,
    "box": [
     -73.20937,
@@ -12433,7 +12681,7 @@
     43.033503,
     -73.209251
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-4527+US-5527@area@43.037,-73.209",
    "kind": "area",
    "passes": [
@@ -12479,7 +12727,7 @@
      43.036488
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -12495,7 +12743,7 @@
     43.230118,
     -72.940098
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-4527+US-5532@area@43.230,-72.940",
    "kind": "area",
    "passes": [
@@ -12533,7 +12781,7 @@
      43.229937
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -12549,7 +12797,7 @@
     43.37456,
     -72.787783
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-4527+US-5536@area@43.375,-72.788",
    "kind": "area",
    "passes": [
@@ -12567,7 +12815,7 @@
      43.37456
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -12583,7 +12831,7 @@
     43.587233,
     -72.825441
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-4527+US-5541@area@43.566,-72.853",
    "kind": "area",
    "passes": [
@@ -12645,7 +12893,7 @@
      43.577375
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -12661,7 +12909,7 @@
     43.772029,
     -72.925725
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-4527+US-5543@area@43.772,-72.926",
    "kind": "area",
    "passes": [
@@ -12699,7 +12947,7 @@
      43.771938
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -12715,7 +12963,7 @@
     43.778088,
     -72.917639
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-4527+US-5543@area@43.778,-72.918",
    "kind": "area",
    "passes": [
@@ -12745,7 +12993,7 @@
      43.778088
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -12761,7 +13009,7 @@
     43.997776,
     -72.852353
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-4527+US-5547@area@43.996,-72.852",
    "kind": "area",
    "passes": [
@@ -12779,7 +13027,7 @@
      43.997776
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -12795,7 +13043,7 @@
     44.062348,
     -72.855601
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-4527+US-5547@area@44.009,-72.851",
    "kind": "area",
    "passes": [
@@ -13065,7 +13313,7 @@
      44.057464
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -13081,7 +13329,7 @@
     44.062348,
     -72.855601
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-4527+US-5547@area@44.023,-72.852",
    "kind": "area",
    "passes": [
@@ -13351,7 +13599,7 @@
      44.057464
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -13367,7 +13615,7 @@
     44.062348,
     -72.855601
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-4527+US-5547@area@44.059,-72.845",
    "kind": "area",
    "passes": [
@@ -13637,7 +13885,7 @@
      44.057464
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -13670,8 +13918,8 @@
     44.071739,
     -72.807027
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "Forest Service",
     "state"
@@ -13721,6 +13969,24 @@
      ]
     ],
     "US-5549": [
+     [
+      [
+       -72.809647,
+       44.065499
+      ],
+      [
+       -72.807311,
+       44.069236
+      ],
+      [
+       -72.807415,
+       44.069532
+      ],
+      [
+       -72.793719,
+       44.090462
+      ]
+     ],
      [
       [
        -72.803038,
@@ -13810,32 +14076,14 @@
        -72.801221,
        44.081687
       ]
-     ],
-     [
-      [
-       -72.809647,
-       44.065499
-      ],
-      [
-       -72.807311,
-       44.069236
-      ],
-      [
-       -72.807415,
-       44.069532
-      ],
-      [
-       -72.793719,
-       44.090462
-      ]
      ]
     ]
    },
-   "lines_read": "2026-10-29",
+   "lines_read": "2026-10-31",
    "map_dates": {
-    "US-4527": "downloaded 2026-10-29",
-    "US-5549": "downloaded 2026-10-29",
-    "USGS water": "USGS NHDPlus HR file 2023-07-13 (the same NHDPlus HR water, from USGS's download files)"
+    "US-4527": "read from the agency 2026-10-31",
+    "US-5549": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "maps": [
     [
@@ -13907,11 +14155,17 @@
     ]
    ],
    "status": "candidate",
-   "water_checked": "2026-10-29",
+   "water_checked": "2026-10-31",
    "wide_m": 159
   },
   {
-   "access": null,
+   "access": [
+    43.2533333,
+    -72.8922222,
+    "Campground: HAPGOOD POND (nearby, outside the park line) (Recreation.gov / National Park Service data)",
+    "US-5532",
+    4686
+   ],
    "access_pin": {
     "at": [
      43.227702,
@@ -13932,8 +14186,8 @@
     43.228829,
     -72.939361
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "state"
    ],
@@ -13949,7 +14203,7 @@
    },
    "map_dates": {
     "US-4556": "official line (trails bot)",
-    "US-5532": "downloaded 2026-10-29"
+    "US-5532": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -14035,7 +14289,7 @@
     ]
    ],
    "zone_acres": 4.98,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 70.0
   },
   {
@@ -14066,8 +14320,8 @@
     43.577921,
     -72.834231
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "state"
    ],
@@ -14083,7 +14337,7 @@
    },
    "map_dates": {
     "US-4556": "official line (trails bot)",
-    "US-5541": "downloaded 2026-10-29"
+    "US-5541": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -14460,7 +14714,7 @@
     ]
    ],
    "zone_acres": 1.06,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 32.0
   },
   {
@@ -14491,8 +14745,8 @@
     43.618763,
     -72.82084
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "state"
    ],
@@ -14509,7 +14763,7 @@
    },
    "map_dates": {
     "US-4556": "official line (trails bot)",
-    "US-5541": "downloaded 2026-10-29"
+    "US-5541": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -14610,7 +14864,7 @@
     ]
    ],
    "zone_acres": 3.22,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 52.0
   },
   {
@@ -14639,8 +14893,8 @@
     43.621215,
     -72.821902
    ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
+   "checked": "2026-10-31",
+   "found": "2026-10-31",
    "ground": [
     "state"
    ],
@@ -14656,7 +14910,7 @@
    },
    "map_dates": {
     "US-4556": "official line (trails bot)",
-    "US-5541": "downloaded 2026-10-29"
+    "US-5541": "read from the agency 2026-10-31"
    },
    "maps": [
     [
@@ -14889,7 +15143,7 @@
     ]
    ],
    "zone_acres": 0.67,
-   "zone_read": "2026-10-29",
+   "zone_read": "2026-10-31",
    "zone_wide_m": 36.0
   },
   {
@@ -14904,7 +15158,7 @@
     43.589008,
     -72.906875
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-5539+US-5540@area@43.589,-72.907",
    "kind": "area",
    "passes": [
@@ -14934,7 +15188,7 @@
      43.587199
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -14950,7 +15204,7 @@
     43.576075,
     -72.867789
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-5539+US-5541@area@43.576,-72.868",
    "kind": "area",
    "passes": [
@@ -14972,7 +15226,7 @@
      43.576075
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -14988,7 +15242,7 @@
     43.584486,
     -72.879445
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-5539+US-5541@area@43.584,-72.880",
    "kind": "area",
    "passes": [
@@ -15018,7 +15272,7 @@
      43.575714
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -15034,7 +15288,7 @@
     44.231995,
     -72.358917
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-5551+US-5552@area@44.232,-72.359",
    "kind": "area",
    "passes": [
@@ -15056,7 +15310,7 @@
      44.229553
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -15072,7 +15326,7 @@
     44.555612,
     -71.900709
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-5557+US-8305@area@44.556,-71.901",
    "kind": "area",
    "passes": [
@@ -15102,7 +15356,7 @@
      44.547925
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -15118,7 +15372,7 @@
     44.575418,
     -71.880156
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-5557+US-8305@area@44.575,-71.880",
    "kind": "area",
    "passes": [
@@ -15140,7 +15394,7 @@
      44.574604
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -15156,7 +15410,7 @@
     44.577588,
     -71.87776
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-5557+US-8305@area@44.583,-71.872",
    "kind": "area",
    "passes": [
@@ -15178,7 +15432,7 @@
      44.577408
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 18
   },
@@ -15194,7 +15448,7 @@
     44.91659,
     -72.500601
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-5560+US-5562@area@44.917,-72.501",
    "kind": "area",
    "passes": [
@@ -15212,7 +15466,7 @@
      44.91659
     ]
    ],
-   "status": "dropped in pass 2",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -15228,7 +15482,7 @@
     44.925498,
     -72.493308
    ],
-   "found": "2026-10-29",
+   "found": "2026-10-31",
    "id": "US-5560+US-5562@area@44.925,-72.493",
    "kind": "area",
    "passes": [
@@ -15274,7 +15528,7 @@
      44.921157
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   }
