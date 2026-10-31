@@ -5,35 +5,33 @@
   "US-IA"
  ],
  "since": "2026-10-31",
- "date": "2026-10-31 01:47 UTC",
- "verdict": "STOPPED",
- "why": [
-  "US-IA: only 0 rows from 177 outlined parks (near-empty: check the run)"
- ],
+ "date": "2026-10-31 03:55 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
  "known_answers": "19/19 on 2026-10-30",
  "missing_check": {
-  "FOUND": 0,
-  "DROPPED": 0,
-  "NEVER LOOKED AT": 698
+  "FOUND": 16,
+  "DROPPED": 50,
+  "NEVER LOOKED AT": 587
  },
  "report": {
   "pass1": {
    "date": "2026-10-31",
-   "pairs tested": 1,
-   "pairs whose boxes touch": 1
+   "pairs tested": 207,
+   "pairs whose boxes touch": 207
   },
   "pass2": {
-   "agree with the pass before": 0,
+   "agree with the pass before": 33,
    "date": "2026-10-31",
-   "pairs tested": 0
+   "pairs tested": 25
   },
   "pass3": {
-   "agree with the pass before": 0,
+   "agree with the pass before": 20,
    "date": "2026-10-31",
-   "pairs tested": 0
+   "pairs tested": 23
   },
   "pass5": {
-   "checked": 0,
+   "checked": 10,
    "date": "2026-10-31",
    "pairs tested": 0,
    "still not checked": 0
@@ -43,16 +41,18 @@
   "US-IA": "data/fers/US-IA.json"
  },
  "US-IA": {
-  "rows": 0,
-  "live": 0,
+  "rows": 37,
+  "live": 17,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
-  "dropped": 0,
-  "merged": 0
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 16,
+  "merged": 3
  },
- "states_ready": [],
- "states_held": [
+ "states_ready": [
   "US-IA"
- ]
+ ],
+ "states_held": []
 }
