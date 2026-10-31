@@ -7,6 +7,7 @@ name: KPC waiting room (by hand; nightly release-approved)
 # Never goes red (EMAIL rule): every step continues on error; the only save is data/waiting + data/status.
 on:
   schedule:
+    - cron: '43 */2 * * *'   # Oct 31 1:15 AM (HQ, Brandon 'no rest for the bots'): release-approved every 2 hours too, so chat 11's YES goes live the same night
     - cron: '13 11 * * *'   # Oct 29 11:25 PM (chat 2 BOT D, Brandon 11:18 PM 'build it!'): nightly release-approved, after the 10:41 UTC daily copy
   workflow_dispatch:
     inputs:
