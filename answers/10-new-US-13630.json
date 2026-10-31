@@ -1,0 +1,37 @@
+{
+ "request": "requests/10-new-US-13630.json",
+ "id": "10-new-US-13630",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13630 Flatsedge Wildlife Management Area: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13630"
+  ],
+  "report": "new park US-13630 Flatsedge Wildlife Management Area: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-10-31 15:18Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13630",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13630",
+   "title": "",
+   "text": "{\"parkId\": 147939, \"reference\": \"US-13630\", \"name\": \"Flatsedge\", \"latitude\": 41.2247, \"longitude\": -97.4832, \"grid4\": \"EN11\", \"grid6\": \"EN11gf\", \"parktypeId\": 123, \"active\": 1, \"parkComments\": \"\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot,Other\", \"activationMethods\": \"Automobile,Other,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/\", \"createdByAdmin\": \"Brian Schmidt\", \"parktypeDesc\": \"Wildlife Management Area\", \"locationDesc\": \"US-NE\", \"locationName\": \"Nebraska\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}
