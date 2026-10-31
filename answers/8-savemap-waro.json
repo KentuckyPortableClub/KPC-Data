@@ -1,0 +1,39 @@
+{
+ "request": "requests/8-savemap-waro.json",
+ "id": "8-savemap-waro",
+ "chat": 8,
+ "kind": "save-map",
+ "report": "",
+ "asked": {
+  "chat": 8,
+  "kind": "save-map",
+  "ref": "US-4582",
+  "name": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+  "agency": "NPS",
+  "url": "https://home.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Front.pdf",
+  "pages": 1,
+  "hint": "waro-brochure-front"
+ },
+ "answered": "2026-10-31 02:52Z",
+ "results": [
+  {
+   "url": "https://home.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Front.pdf",
+   "map_url": "https://home.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Front.pdf",
+   "saved": [
+    "maps/US-4582_washington-rochambeau-revolution.jpg"
+   ],
+   "bytes": 565210,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
