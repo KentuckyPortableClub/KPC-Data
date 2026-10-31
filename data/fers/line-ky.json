@@ -4,35 +4,37 @@
  "states": [
   "US-KY"
  ],
- "since": "2026-10-30",
- "date": "2026-10-30 00:12 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
- "known_answers": "19/19 on 2026-10-30",
+ "since": "2026-10-31",
+ "date": "2026-10-31 15:25 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "Kentucky known-answers test not passing (11/19 on 2026-10-31)"
+ ],
+ "known_answers": "11/19 on 2026-10-31",
  "missing_check": {
-  "FOUND": 94,
-  "DROPPED": 221,
-  "NEVER LOOKED AT": 116
+  "FOUND": 69,
+  "DROPPED": 245,
+  "NEVER LOOKED AT": 117
  },
  "report": {
   "pass1": {
-   "date": "2026-10-30",
+   "date": "2026-10-31",
    "pairs tested": 555,
    "pairs whose boxes touch": 555
   },
   "pass2": {
-   "agree with the pass before": 375,
-   "date": "2026-10-30",
-   "pairs tested": 106
+   "agree with the pass before": 188,
+   "date": "2026-10-31",
+   "pairs tested": 104
   },
   "pass3": {
-   "agree with the pass before": 294,
-   "date": "2026-10-30",
-   "pairs tested": 105
+   "agree with the pass before": 108,
+   "date": "2026-10-31",
+   "pairs tested": 62
   },
   "pass5": {
    "checked": 37,
-   "date": "2026-10-30",
+   "date": "2026-10-31",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -41,19 +43,21 @@
   "US-KY": "data/fers/US-KY.json"
  },
  "US-KY": {
-  "rows": 425,
-  "live": 87,
+  "rows": 408,
+  "live": 49,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 2,
-   "no public owner on PAD-US at the spot, and KDFWR's own page": 1
+   "the official outline of Lewis and Clark National Historic Tr": 16,
+   "the official outline of Sheltowee Trace National Recreation": 10,
+   "the official outline of Trail of Tears National Historic Tra": 19,
+   "no public owner on the ownership map": 1
   },
-  "dropped": 196,
-  "merged": 139
+  "dropped": 155,
+  "merged": 158
  },
- "states_ready": [
+ "states_ready": [],
+ "states_held": [
   "US-KY"
- ],
- "states_held": []
+ ]
 }

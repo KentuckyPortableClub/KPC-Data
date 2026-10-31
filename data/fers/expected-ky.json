@@ -9,12 +9,12 @@
  },
  "about": "MISSING CHECK (chat 2, Oct 27 2026; HQ 3:46 PM, Brandon: 'chat 8 can't verify what's missing'). For each area of a 2-fer run, every See kpc_fers_expected.py. Chat 8 reviews DROPPED + NEVER LOOKED AT.",
  "area": "ky",
- "date": "2026-10-30",
+ "date": "2026-10-31",
  "pass": true,
  "counts": {
-  "FOUND": 94,
-  "DROPPED": 221,
-  "NEVER LOOKED AT": 116
+  "FOUND": 69,
+  "DROPPED": 245,
+  "NEVER LOOKED AT": 117
  },
  "FOUND": [
   {
@@ -38,18 +38,6 @@
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
    "row": "US-0050+US-10105@area@37.171,-86.155"
-  },
-  {
-   "refs": [
-    "US-0608",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (12x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-0608+US-4572@trail@38.684,-83.577"
   },
   {
    "refs": [
@@ -95,28 +83,6 @@
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
    "row": "US-0703+US-3790@same land@36.503,-88.061"
-  },
-  {
-   "refs": [
-    "US-0703",
-    "US-3790",
-    "US-3791"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)"
-   ],
-   "row": "each pair has a row"
-  },
-  {
-   "refs": [
-    "US-0703",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (7x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-0703+US-3791@river@36.501,-88.068"
   },
   {
    "refs": [
@@ -292,29 +258,7 @@
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "row": "US-10107+US-11181@trail@36.658,-84.536"
-  },
-  {
-   "refs": [
-    "US-10111",
-    "US-11181"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-10111+US-11181@trail@36.644,-84.712"
-  },
-  {
-   "refs": [
-    "US-10111",
-    "US-11181",
-    "US-4484"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)"
-   ],
-   "row": "each pair has a row"
+   "row": "US-10107+US-11181@trail@36.664,-84.545"
   },
   {
    "refs": [
@@ -426,28 +370,6 @@
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
    "row": "US-10140+US-3791@river@36.548,-88.062"
-  },
-  {
-   "refs": [
-    "US-10146",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (12x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-10146+US-11181@trail@37.416,-84.061"
-  },
-  {
-   "refs": [
-    "US-10146",
-    "US-11181",
-    "US-4484"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)"
-   ],
-   "row": "each pair has a row"
   },
   {
    "refs": [
@@ -573,28 +495,6 @@
   {
    "refs": [
     "US-11181",
-    "US-3801"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (9x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-11181+US-3801@trail@37.863,-83.599"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-3801",
-    "US-4484"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)"
-   ],
-   "row": "each pair has a row"
-  },
-  {
-   "refs": [
-    "US-11181",
     "US-4484"
    ],
    "why_expected": [
@@ -615,30 +515,6 @@
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
    "row": "US-11181+US-7970@trail@37.103,-84.241"
-  },
-  {
-   "refs": [
-    "US-1252",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (48x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-1252+US-3791@river@36.769,-89.112"
-  },
-  {
-   "refs": [
-    "US-1260",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (20x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-1260+US-4572@river@37.898,-87.553"
   },
   {
    "refs": [
@@ -675,16 +551,6 @@
   },
   {
    "refs": [
-    "US-1279",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "row": "US-1279+US-4572@river@38.660,-85.145"
-  },
-  {
-   "refs": [
     "US-1281",
     "US-4687"
    ],
@@ -696,41 +562,6 @@
   },
   {
    "refs": [
-    "US-1282",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (29x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-1282+US-3791@river@36.788,-88.147"
-  },
-  {
-   "refs": [
-    "US-1283",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (23x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-1283+US-3791@river@37.000,-88.284"
-  },
-  {
-   "refs": [
-    "US-3790",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (8x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-3790+US-3791@river@36.501,-88.066"
-  },
-  {
-   "refs": [
     "US-3791",
     "US-3792"
    ],
@@ -739,7 +570,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3792@river@36.982,-88.199"
+   "row": "US-3791+US-3792@river@36.705,-87.961"
   },
   {
    "refs": [
@@ -750,7 +581,7 @@
     "activated together by the same call on the same day (6x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3793+US-4572@river@37.145,-89.087"
+   "row": "US-3791+US-3793+US-4572@river@37.167,-89.073"
   },
   {
    "refs": [
@@ -761,7 +592,7 @@
    "why_expected": [
     "hand list (ky-trail-parks.json)"
    ],
-   "row": "US-3791+US-3793+US-4572@river@37.145,-89.087"
+   "row": "US-3791+US-3793+US-4572@river@37.167,-89.073"
   },
   {
    "refs": [
@@ -772,7 +603,7 @@
     "activated together by the same call on the same day (14x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3797+US-4572@river@37.013,-89.145"
+   "row": "US-3791+US-3797+US-4572@river@37.075,-89.151"
   },
   {
    "refs": [
@@ -783,7 +614,7 @@
    "why_expected": [
     "hand list (ky-trail-parks.json)"
    ],
-   "row": "US-3791+US-3797+US-4572@river@37.013,-89.145"
+   "row": "US-3791+US-3797+US-4572@river@37.075,-89.151"
   },
   {
    "refs": [
@@ -795,19 +626,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3808@river@36.797,-89.113"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3823"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-3791+US-3823@river@37.368,-88.444"
+   "row": "US-3791+US-3808@river@36.821,-89.134"
   },
   {
    "refs": [
@@ -817,39 +636,7 @@
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "row": "US-3791+US-3827@river@36.590,-89.143"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3837"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (9x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-3791+US-3837+US-4572@river@37.176,-88.808"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3837",
-    "US-4572"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)"
-   ],
-   "row": "US-3791+US-3837+US-4572@river@37.176,-88.808"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3838"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (10x, POTA history)"
-   ],
-   "row": "US-3791+US-3838@river@36.935,-89.062"
+   "row": "US-3791+US-3827@river@36.601,-89.169"
   },
   {
    "refs": [
@@ -860,17 +647,7 @@
     "activated together by the same call on the same day (197x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3793+US-4572@river@37.145,-89.087"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-7953"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (16x, POTA history)"
-   ],
-   "row": "US-3791+US-4572+US-7953@river@37.151,-88.770"
+   "row": "US-3791+US-3793+US-4572@river@37.167,-89.073"
   },
   {
    "refs": [
@@ -881,7 +658,7 @@
     "activated together by the same call on the same day (6x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3793+US-4572@river@37.145,-89.087"
+   "row": "US-3791+US-3793+US-4572@river@37.167,-89.073"
   },
   {
    "refs": [
@@ -915,7 +692,7 @@
     "activated together by the same call on the same day (13x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3797+US-4572@river@37.013,-89.145"
+   "row": "US-3791+US-3797+US-4572@river@37.075,-89.151"
   },
   {
    "refs": [
@@ -938,28 +715,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3830+US-4572@river@37.782,-87.904"
-  },
-  {
-   "refs": [
-    "US-3831",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "row": "US-3831+US-4572@river@38.738,-82.942"
-  },
-  {
-   "refs": [
-    "US-3837",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (11x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-3791+US-3837+US-4572@river@37.176,-88.808"
+   "row": "US-3830+US-4572@river@37.804,-87.902"
   },
   {
    "refs": [
@@ -1019,38 +775,6 @@
   {
    "refs": [
     "US-4572",
-    "US-7953"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (16x, POTA history)"
-   ],
-   "row": "US-3791+US-4572+US-7953@river@37.151,-88.770"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-7955"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (11x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-4572+US-7955@river@38.310,-85.665"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-7961"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "row": "US-4572+US-7961@river@38.557,-82.854"
-  },
-  {
-   "refs": [
-    "US-4572",
     "US-8144"
    ],
    "why_expected": [
@@ -1058,7 +782,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-4572+US-8144@river@37.958,-86.028"
+   "row": "US-4572+US-8144@river@37.959,-86.054"
   }
  ],
  "DROPPED": [
@@ -1155,6 +879,19 @@
   },
   {
    "refs": [
+    "US-0608",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (12x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Lewis and Clark National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
     "US-0686",
     "US-10111"
    ],
@@ -1188,6 +925,18 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0703",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Trail of Tears National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -1292,7 +1041,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "reason": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "reason": "not sure: the official outline of Sheltowee Trace National Recreation Trail could not be read in pass 2 (the next run tries again)",
    "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
@@ -1413,6 +1162,30 @@
   {
    "refs": [
     "US-10111",
+    "US-11181"
+   ],
+   "why_expected": [
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Sheltowee Trace National Recreation Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
+    "US-10111",
+    "US-11181",
+    "US-4484"
+   ],
+   "why_expected": [
+    "hand list (ky-trail-parks.json)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10111",
     "US-7962"
    ],
    "why_expected": [
@@ -1453,7 +1226,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "not sure: no public owner on PAD-US at the spot, and KDFWR's own page names no owner for Ferguson Creek Wildlife Management Area (a person adds it to data/ky-wma-owners.json)",
+   "reason": "not sure: the official outline of Lewis and Clark National Historic Trail could not be read in pass 2 (the next run tries again)",
    "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
@@ -1604,6 +1377,30 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10146",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (12x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Sheltowee Trace National Recreation Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
+    "US-10146",
+    "US-11181",
+    "US-4484"
+   ],
+   "why_expected": [
+    "hand list (ky-trail-parks.json)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1928,6 +1725,30 @@
   {
    "refs": [
     "US-11181",
+    "US-3801"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (9x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Sheltowee Trace National Recreation Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-3801",
+    "US-4484"
+   ],
+   "why_expected": [
+    "hand list (ky-trail-parks.json)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
     "US-3825"
    ],
    "why_expected": [
@@ -1980,6 +1801,19 @@
    ],
    "reason": "dropped: University of the Cumberlands WMA is private (ruling Oct 27)",
    "rule": "Kentucky ruling (Brandon / HQ Oct 27)"
+  },
+  {
+   "refs": [
+    "US-1252",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (48x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Trail of Tears National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -2116,6 +1950,19 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1260",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (20x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Lewis and Clark National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -2369,6 +2216,17 @@
   },
   {
    "refs": [
+    "US-1279",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "not sure: the official outline of Lewis and Clark National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
     "US-1280",
     "US-4572"
    ],
@@ -2392,6 +2250,19 @@
   {
    "refs": [
     "US-1282",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (29x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Trail of Tears National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
+    "US-1282",
     "US-3792"
    ],
    "why_expected": [
@@ -2400,6 +2271,19 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1283",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (23x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Trail of Tears National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -2771,6 +2655,18 @@
   },
   {
    "refs": [
+    "US-3790",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (8x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Trail of Tears National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
     "US-3791",
     "US-3795"
    ],
@@ -2872,6 +2768,19 @@
   {
    "refs": [
     "US-3791",
+    "US-3823"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Trail of Tears National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
+    "US-3791",
     "US-3828"
    ],
    "why_expected": [
@@ -2916,6 +2825,41 @@
   {
    "refs": [
     "US-3791",
+    "US-3837"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (9x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Trail of Tears National Historic Trail, Lewis and Clark National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3837",
+    "US-4572"
+   ],
+   "why_expected": [
+    "hand list (ky-trail-parks.json)"
+   ],
+   "reason": "not sure: the official outline of Trail of Tears National Historic Trail, Lewis and Clark National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3838"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "reason": "not sure: the official outline of Trail of Tears National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
+    "US-3791",
     "US-4690"
    ],
    "why_expected": [
@@ -2953,6 +2897,17 @@
    ],
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-7953"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (16x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -3325,6 +3280,17 @@
   },
   {
    "refs": [
+    "US-3831",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not sure: the official outline of Lewis and Clark National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
     "US-3833",
     "US-4484"
    ],
@@ -3380,6 +3346,18 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3837",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (11x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Trail of Tears National Historic Trail, Lewis and Clark National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -3533,6 +3511,17 @@
   {
    "refs": [
     "US-4572",
+    "US-7953"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (16x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
     "US-7954"
    ],
    "why_expected": [
@@ -3540,6 +3529,19 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-7955"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (11x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the official outline of Lewis and Clark National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -3562,6 +3564,17 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-7961"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "not sure: the official outline of Lewis and Clark National Historic Trail could not be read in pass 2 (the next run tries again)",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -3635,6 +3648,17 @@
    ],
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
+  },
+  {
+   "refs": [
+    "US-0703",
+    "US-3790",
+    "US-3791"
+   ],
+   "why_expected": [
+    "hand list (ky-trail-parks.json)"
    ],
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
