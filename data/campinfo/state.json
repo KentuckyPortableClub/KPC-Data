@@ -65,6 +65,28 @@
    "status": "done",
    "updated": "2026-10-30"
   },
+  "US-MA": {
+   "camps": 30,
+   "checked": 30,
+   "counts": {
+    "camps": 30,
+    "needs_browser": 0,
+    "needs_key": 8,
+    "no_page": 0,
+    "not_official": 0,
+    "ok": 20,
+    "other": 2,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 22,
+    "with_elevation": 0,
+    "with_facts": 21,
+    "with_sites": 18
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-10-31"
+  },
   "US-TN": {
    "camps": 348,
    "checked": 348,
@@ -91,6 +113,7 @@
   "US-CO": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-IA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-KY": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-MA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-TN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
  },
  "fcc": {
@@ -120,6 +143,15 @@
     "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
    "read": "2026-10-30"
+  },
+  "US-MA": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+   },
+   "read": "2026-10-31"
   },
   "US-TN": {
    "cell": {
@@ -1088,28 +1120,29 @@
  },
  "last": {
   "areas": [
-   "US-IA"
+   "US-MA"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 2,
-   "rested": 126,
+   "requests": 34,
+   "rested": 30,
    "robots": 0,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 126,
+   "browser": 2,
+   "camps": 30,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 32,
-   "no_page": 94,
+   "needs_browser": 2,
+   "needs_key": 8,
+   "no_page": 0,
    "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
+   "ok": 22,
+   "pages_read": 30,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,

@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T08:15Z",
+ "checked": "2026-10-31T08:16Z",
  "switched_on": false,
  "results": [
   {
@@ -49,6 +49,17 @@
    "why": [],
    "notes": [],
    "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-MA.json",
+   "kind": "campinfo",
+   "why": [
+    "F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
   },
   {
    "path": "data/campinfo/US-TN.json",
