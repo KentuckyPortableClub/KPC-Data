@@ -1,0 +1,91 @@
+[
+ {
+  "source_type": "unofficial",
+  "source_url": "https://example-friends.org/map.pdf",
+  "page": 1,
+  "source_org": "Friends of Synthetic Park (TEST)",
+  "notes": "TEST: no agency GIS layer, no county parcel, no agency PDF (looked at agency site + county GIS)",
+  "ref": "US-90001",
+  "name": "synthetic US-90001"
+ },
+ {
+  "ref": "US-90003",
+  "name": "synthetic US-90003",
+  "agency": "TEST agency",
+  "source_url": "file://synthetic",
+  "page": 1
+ },
+ {
+  "source_type": "unofficial",
+  "source_url": "https://example-friends.org/map.pdf",
+  "page": 1,
+  "source_org": "Synthetic Land Trust (TEST)",
+  "notes": "TEST: no agency GIS layer, no county parcel, no agency PDF (looked at agency site + county GIS)",
+  "ref": "US-90003",
+  "name": "synthetic US-90003"
+ },
+ {
+  "source_type": "unofficial",
+  "source_url": "https://example-friends.org/map.pdf",
+  "page": 1,
+  "source_org": "Friends of Synthetic Park (TEST)",
+  "notes": "TEST: no agency GIS layer, no county parcel, no agency PDF (looked at agency site + county GIS)",
+  "ref": "US-90002",
+  "name": "synthetic US-90002"
+ },
+ {
+  "source_type": "unofficial",
+  "source_url": "https://example-friends.org/map.pdf",
+  "page": 1,
+  "source_org": "Friends of Synthetic Park (TEST)",
+  "notes": "",
+  "ref": "US-90004",
+  "name": "missing notes"
+ },
+ {
+  "source_type": "unofficial",
+  "source_url": "https://www.alltrails.com/trail/x",
+  "page": 1,
+  "source_org": "Friends of Synthetic Park (TEST)",
+  "notes": "TEST: no agency GIS layer, no county parcel, no agency PDF (looked at agency site + county GIS)",
+  "ref": "US-90005",
+  "name": "alltrails url"
+ },
+ {
+  "source_type": "official",
+  "source_url": "https://www.google.com/maps/d/viewer?mid=1",
+  "page": 1,
+  "source_org": "Friends of Synthetic Park (TEST)",
+  "notes": "TEST: no agency GIS layer, no county parcel, no agency PDF (looked at agency site + county GIS)",
+  "ref": "US-90006",
+  "name": "google official",
+  "agency": "X"
+ },
+ {
+  "source_type": "unofficial",
+  "source_url": "https://example-friends.org/map.pdf",
+  "page": 1,
+  "source_org": "AllTrails",
+  "notes": "TEST: no agency GIS layer, no county parcel, no agency PDF (looked at agency site + county GIS)",
+  "ref": "US-90007",
+  "name": "banned org"
+ },
+ {
+  "source_type": "semi-official",
+  "source_url": "https://example-friends.org/map.pdf",
+  "page": 1,
+  "source_org": "Friends of Synthetic Park (TEST)",
+  "notes": "TEST: no agency GIS layer, no county parcel, no agency PDF (looked at agency site + county GIS)",
+  "ref": "US-90008",
+  "name": "bad type"
+ },
+ {
+  "source_type": "unofficial",
+  "source_url": "https://example-friends.org/map.pdf",
+  "page": 1,
+  "source_org": "",
+  "notes": "TEST: no agency GIS layer, no county parcel, no agency PDF (looked at agency site + county GIS)",
+  "ref": "US-90009",
+  "name": "no org"
+ }
+]

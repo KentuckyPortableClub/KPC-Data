@@ -1,0 +1,1 @@
+Test assets for the outside tracer draft (Brandon Oct 31): source PDFs + test maps (test/maps, src_pdfs), test output + debug PNGs (test/traced), synthetic tests (dev/). Code: main branch .github/scripts/draft/. Delete this branch once Fable's tracer is wired.
