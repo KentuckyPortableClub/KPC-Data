@@ -92,12 +92,13 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-WA.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): docs data/docs/US-WI.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-WY.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
-- FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/CA-BC.json held: F-2 NOT SURE 13 -> 18 (over 30% change)
+- FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/CA-BC.json held: F-2 NOT SURE 13 -> 52 (over 30% change)
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/CA-NB.json held: F-S3 10 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-6540+CA-6549 125 km, CA-6542+CA-6545 114 km
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/CA-NU.json held: F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-4569+CA-4594 202 km
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/CA-ON.json.gz held: F-S3 54 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-0154+CA-0304 102 km, CA-0444+CA-1699 118 km
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/CA-YT.json held: F-2 only 4 of 6 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/US-AZ.json held: F-2 NOT SURE 6 -> 4 (over 30% change) · F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-0771+US-1055 135 km
+- FROM WAITING ROOM (held since 2026-10-31): fers data/fers/US-DE.json held: F-2 candidates 68 -> 27 (over 30% change) · F-2 only 27 of 68 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/US-IA.json held: F-2 7 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-10953+US-2303, US-2277+US-4655, US-2294+US-4661
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/US-ME.json held: F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/US-MN.json.gz held: F-2 NOT SURE 9 -> 18 (over 30% change) · F-2 33 new candidate pairs since the live file (over 10% of 103): a person looks at them first, e.g. US-0371+US-4239, US-11151+US-6466, US-11152+US-4490 · F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km

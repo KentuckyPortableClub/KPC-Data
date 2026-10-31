@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T11:07Z",
+ "checked": "2026-10-31T11:13Z",
  "switched_on": false,
  "results": [
   {
@@ -441,7 +441,7 @@
    "path": "data/fers/CA-BC.json",
    "kind": "fers",
    "why": [
-    "F-2 NOT SURE 13 -> 18 (over 30% change)"
+    "F-2 NOT SURE 13 -> 52 (over 30% change)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -544,6 +544,16 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/fers/US-DE.json",
+   "kind": "fers",
+   "why": [
+    "F-2 candidates 68 -> 27 (over 30% change)",
+    "F-2 only 27 of 68 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/fers/US-IA.json",
    "kind": "fers",
    "why": [
@@ -551,6 +561,13 @@
    ],
    "notes": [],
    "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-LA.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-ME.json",
@@ -591,6 +608,13 @@
   },
   {
    "path": "data/fers/US-VA.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/US-VT.json",
    "kind": "fers",
    "why": [],
    "notes": [],
