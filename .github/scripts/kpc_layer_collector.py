@@ -260,6 +260,9 @@ def external(log, qs, queue, seen, n):
     P = ext_index(); KN = known_layers(); t0 = time.time()
     R = load(EXT_OUT, {'about': "Outside research (Oct 30) tested by the layer collector: per park/trail and layer, what the pin test found. 'source assigned, exact feature not verified' until here.", 'pairs': {}, 'layers': {}}) or {}
     R.setdefault('pairs', {}); R.setdefault('layers', {})
+    if not R.get('retried_404'):   # Oct 31: 1,172 world pairs failed on a too-long multipoint (404): once, test them again point by point
+        for k_ in [k_ for k_, v in R['pairs'].items() if v.get('result') == 'failed' and 'answer 404' in str(v.get('why'))]: del R['pairs'][k_]
+        R['retried_404'] = TODAY
     HINT = {}
     for f in sorted(EXT_F.parent.glob('world-sources-*.json')):   # HQ Oct 31 1:05 AM: world outside research ('rest' = REST layers; 'other' = leads for chat 9)
         for ref, v in ((load(f, {}) or {}).get('rest') or {}).items():
@@ -317,8 +320,8 @@ def external(log, qs, queue, seen, n):
         hits = 0
         try:
             if 'olygon' in gt:
-                for i in range(0, len(pts), 120):
-                    chunk = pts[i:i + 120]
+                for i in range(0, len(pts), 60):
+                    chunk = pts[i:i + 60]
                     mp = {'points': [[round(v[1], 5), round(v[0], 5)] for _, _, v in chunk], 'spatialReference': {'wkid': 4326}}
                     try:
                         j = get_json(u + '/query', {'geometry': json.dumps(mp, separators=(',', ':')), 'geometryType': 'esriGeometryMultipoint', 'inSR': 4326,
@@ -326,7 +329,7 @@ def external(log, qs, queue, seen, n):
                                                     'maxAllowableOffset': 0.002, 'geometryPrecision': 5})
                         feats = j.get('features') or []
                     except RuntimeError as e:   # some servers refuse a multipoint: one point at a time
-                        if 'nvalid' not in str(e) and 'rror' not in str(e): raise
+                        if not re.search(r'nvalid|rror|404|414|too long|not supported', str(e)): raise   # Oct 31: a long multipoint GET answered 404 on some servers
                         feats = []
                         for _r, _k, (la1, lo1, _p, _s) in chunk:
                             feats += (get_json(u + '/query', {'geometry': f'{lo1},{la1}', 'geometryType': 'esriGeometryPoint', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects',
