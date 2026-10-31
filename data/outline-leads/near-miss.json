@@ -1,10 +1,10 @@
 {
  "about": "NEAR MISSES (kpc_near_miss.py, nightly): parks with NO outline, and official areas from layers we already read that contain the POTA pin (or lie within 1 km) and share a main name word or are the same kind of place. NOT joined. Chat 8 reviews; an approved one goes into data/us-key/overrides.json (or data/ca-key) as {'join': [id], 'why': 'reviewed: near miss'}.",
  "counts": {
-  "AK": 10,
-  "AL": 5,
-  "AR": 18,
-  "AZ": 6,
+  "AK": 9,
+  "AL": 4,
+  "AR": 17,
+  "AZ": 5,
   "CA": 9,
   "CA-AB": 13,
   "CA-BC": 20,
@@ -23,22 +23,22 @@
   "CA-YT": 4,
   "CO": 3,
   "CT": 3,
-  "DC": 4,
+  "DC": 3,
   "DE": 0,
   "FL": 6,
   "GA": 8,
-  "HI": 3,
+  "HI": 2,
   "IA": 0,
-  "ID": 33,
+  "ID": 32,
   "IL": 6,
-  "IN": 13,
-  "KS": 4,
-  "LA": 3,
-  "MA": 5,
+  "IN": 8,
+  "KS": 3,
+  "LA": 2,
+  "MA": 4,
   "MD": 6,
   "ME": 2,
   "MI": 9,
-  "MN": 10,
+  "MN": 2,
   "MO": 3,
   "MS": 1,
   "MT": 7,
@@ -47,7 +47,7 @@
   "NE": 1,
   "NH": 3,
   "NJ": 1,
-  "NM": 4,
+  "NM": 3,
   "NV": 20,
   "NY": 9,
   "OH": 0,
@@ -59,7 +59,7 @@
   "SD": 0,
   "TN": 2,
   "TX": 3,
-  "UT": 39,
+  "UT": 37,
   "VA": 2,
   "VT": 3,
   "WA": 5,
@@ -67,7 +67,7 @@
   "WV": 0,
   "WY": 11
  },
- "made": "2026-10-30",
+ "made": "2026-10-31",
  "parks": {
   "CA-0049": {
    "acts": 19,
@@ -5861,22 +5861,6 @@
    "site": false,
    "st": "OR"
   },
-  "US-10258": {
-   "acts": 167,
-   "leads": [
-    {
-     "acres": 1430575.0,
-     "id": "3000",
-     "km": 0.0,
-     "layer": "Forest Service Region 08 Southern",
-     "name": "Ouachita National Forest",
-     "why": "shares ouachita"
-    }
-   ],
-   "n": "Ouachita National Recreation Trail",
-   "site": false,
-   "st": "AR"
-  },
   "US-10263": {
    "acts": 29,
    "leads": [
@@ -6469,38 +6453,6 @@
    "site": true,
    "st": "WY"
   },
-  "US-10912": {
-   "acts": 24,
-   "leads": [
-    {
-     "acres": 82.15743251,
-     "id": "sghib271",
-     "km": 0.21,
-     "layer": "Hawaii DLNR reserves (DOFAW) (wild, state GIS table)",
-     "name": "PUU UALAKAA STATE WAYSIDE",
-     "why": "shares ualakaa"
-    },
-    {
-     "acres": 82.9512908478,
-     "id": "sghic14",
-     "km": 0.21,
-     "layer": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "name": "PUU UALAKAA STATE WAYSIDE",
-     "why": "shares ualakaa"
-    },
-    {
-     "acres": 82.95129085,
-     "id": "sghia14",
-     "km": 0.21,
-     "layer": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
-     "name": "PUU UALAKAA STATE WAYSIDE",
-     "why": "shares ualakaa"
-    }
-   ],
-   "n": "'Ualaka'a State Trail",
-   "site": false,
-   "st": "HI"
-  },
   "US-10971": {
    "acts": 0,
    "leads": [
@@ -6570,30 +6522,6 @@
     }
    ],
    "n": "Uchee Creek Conservation Area",
-   "site": false,
-   "st": "AL"
-  },
-  "US-11027": {
-   "acts": 290,
-   "leads": [
-    {
-     "acres": 382.0,
-     "id": "sgalb181",
-     "km": 0.05,
-     "layer": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
-     "name": "Big Canoe Creek",
-     "why": "shares canoe"
-    },
-    {
-     "acres": 40.0,
-     "id": "sgalb182",
-     "km": 0.47,
-     "layer": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
-     "name": "Big Canoe Creek - Epps Addition",
-     "why": "shares canoe"
-    }
-   ],
-   "n": "Big Canoe Creek Nature Reserve",
    "site": false,
    "st": "AL"
   },
@@ -6740,62 +6668,6 @@
    "n": "Trin-Alcove/Three Canyon BLM Wilderness Area",
    "site": false,
    "st": "UT"
-  },
-  "US-11150": {
-   "acts": 55,
-   "leads": [
-    {
-     "acres": 4.02,
-     "id": "sgmne10712",
-     "km": 0.0,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "NORTH SHORE",
-     "why": "shares shore"
-    },
-    {
-     "acres": 0.61,
-     "id": "sgmne12595",
-     "km": 0.06,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "NORTH SHORE",
-     "why": "shares shore"
-    },
-    {
-     "acres": 0.61,
-     "id": "sgmne12596",
-     "km": 0.45,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "NORTH SHORE",
-     "why": "shares shore"
-    },
-    {
-     "acres": 0.63,
-     "id": "sgmne12372",
-     "km": 0.45,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "NORTH SHORE",
-     "why": "shares shore"
-    }
-   ],
-   "n": "CJ Ramstad North Shore State Trail",
-   "site": false,
-   "st": "MN"
-  },
-  "US-11154": {
-   "acts": 16,
-   "leads": [
-    {
-     "acres": 0.79,
-     "id": "sgmne12430",
-     "km": 0.05,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "TACONITE",
-     "why": "shares taconite"
-    }
-   ],
-   "n": "Taconite State Trail",
-   "site": false,
-   "st": "MN"
   },
   "US-11155": {
    "acts": 15,
@@ -7420,7 +7292,7 @@
      "acres": 43744.06052179,
      "id": "rst11370",
      "km": 0.0,
-     "layer": "BLM recreation sites",
+     "layer": "BLM recreation management areas · official (BLM planning area)",
      "name": "Delta River SRMA",
      "why": "shares delta"
     },
@@ -7444,7 +7316,7 @@
      "acres": 94512.78201959,
      "id": "rst11429",
      "km": 0.0,
-     "layer": "BLM recreation sites",
+     "layer": "BLM recreation management areas · official (BLM planning area)",
      "name": "Gulkana River SRMA",
      "why": "shares gulkana"
     },
@@ -7468,7 +7340,7 @@
      "acres": 247229.96380495,
      "id": "rst10850",
      "km": 0.0,
-     "layer": "BLM recreation sites",
+     "layer": "BLM recreation management areas · official (BLM planning area)",
      "name": "Fortymile SRMA",
      "why": "shares fortymile"
     },
@@ -9989,6 +9861,22 @@
    "site": false,
    "st": "WI"
   },
+  "US-4383": {
+   "acts": 164,
+   "leads": [
+    {
+     "acres": 977951.0,
+     "id": "2873",
+     "km": 0.0,
+     "layer": "Forest Service Region 05 Pacific Southwest",
+     "name": "Six Rivers National Forest",
+     "why": "same kind of place (nf)"
+    }
+   ],
+   "n": "Rogue River-Siskiyou National Forest",
+   "site": false,
+   "st": "CA"
+  },
   "US-4438": {
    "acts": 53,
    "leads": [
@@ -10020,86 +9908,6 @@
    "n": "Hanford Reach National Monument",
    "site": false,
    "st": "WA"
-  },
-  "US-4556": {
-   "acts": 5913,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "sgmac131",
-     "km": 0.0,
-     "layer": "National Park Service (property boundaries) (park, state GIS table)",
-     "name": "Appalachian National Scenic Trail",
-     "why": "shares appalachian, scenic"
-    }
-   ],
-   "n": "Appalachian Trail National Scenic Trail",
-   "site": false,
-   "st": "MA"
-  },
-  "US-4557": {
-   "acts": 398,
-   "leads": [
-    {
-     "acres": 415.301,
-     "id": "fsod82",
-     "km": 0.95,
-     "layer": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
-     "name": "Arizona National Scenic Trail",
-     "why": "shares arizona, scenic"
-    }
-   ],
-   "n": "Arizona Trail National Scenic Trail",
-   "site": false,
-   "st": "AZ"
-  },
-  "US-4562": {
-   "acts": 423,
-   "leads": [
-    {
-     "acres": 3017.72,
-     "id": "fsod84",
-     "km": 0.08,
-     "layer": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
-     "name": "Pacific Crest National Scenic Trail",
-     "why": "shares crest, pacific, scenic"
-    }
-   ],
-   "n": "Pacific Crest Trail National Scenic Trail",
-   "site": false,
-   "st": "CA"
-  },
-  "US-4567": {
-   "acts": 6878,
-   "leads": [
-    {
-     "acres": 323.0,
-     "id": "3192",
-     "km": 0.04,
-     "layer": "NPS",
-     "name": "Chesapeake and Ohio Canal National Historical Park",
-     "why": "shares chesapeake"
-    }
-   ],
-   "n": "Captain John Smith Chesapeake National Historic Trail",
-   "site": true,
-   "st": "DC"
-  },
-  "US-4568": {
-   "acts": 1574,
-   "leads": [
-    {
-     "acres": 15.0,
-     "id": "203098",
-     "km": 0.0,
-     "layer": "Unknown",
-     "name": "Los Adaes State Historic Site",
-     "why": "shares los"
-    }
-   ],
-   "n": "El Camino Real de los Tejas National Historic Trail",
-   "site": true,
-   "st": "LA"
   },
   "US-4648": {
    "acts": 75,
@@ -10269,22 +10077,6 @@
    "site": false,
    "st": "IN"
   },
-  "US-5682": {
-   "acts": 55,
-   "leads": [
-    {
-     "acres": 25720.0,
-     "id": "2527",
-     "km": 0.0,
-     "layer": "Louisville",
-     "name": "Monroe Recreation Area",
-     "why": "same kind of place (sp)"
-    }
-   ],
-   "n": "Moores Creek State Recreation Area",
-   "site": false,
-   "st": "IN"
-  },
   "US-5683": {
    "acts": 809,
    "leads": [
@@ -10298,54 +10090,6 @@
     }
    ],
    "n": "Kil-So-Quah State Recreation Area",
-   "site": false,
-   "st": "IN"
-  },
-  "US-5684": {
-   "acts": 60,
-   "leads": [
-    {
-     "acres": 25720.0,
-     "id": "2527",
-     "km": 0.0,
-     "layer": "Louisville",
-     "name": "Monroe Recreation Area",
-     "why": "same kind of place (sp)"
-    }
-   ],
-   "n": "Allens Creek State Recreation Area",
-   "site": false,
-   "st": "IN"
-  },
-  "US-5686": {
-   "acts": 86,
-   "leads": [
-    {
-     "acres": 25720.0,
-     "id": "2527",
-     "km": 0.0,
-     "layer": "Louisville",
-     "name": "Monroe Recreation Area",
-     "why": "same kind of place (sp)"
-    }
-   ],
-   "n": "Fairfax State Recreation Area",
-   "site": false,
-   "st": "IN"
-  },
-  "US-5688": {
-   "acts": 97,
-   "leads": [
-    {
-     "acres": 25720.0,
-     "id": "2527",
-     "km": 0.0,
-     "layer": "Louisville",
-     "name": "Monroe Recreation Area",
-     "why": "same kind of place (sp)"
-    }
-   ],
-   "n": "Salt Creek State Recreation Area",
    "site": false,
    "st": "IN"
   },
@@ -10597,22 +10341,6 @@
    "site": true,
    "st": "UT"
   },
-  "US-5809": {
-   "acts": 12,
-   "leads": [
-    {
-     "acres": 24258.66119121,
-     "id": "rst10818",
-     "km": 0.0,
-     "layer": "BLM recreation sites",
-     "name": "Red Mountain / Dry Fork",
-     "why": "shares red"
-    }
-   ],
-   "n": "Little Red Mountain BLM Historic Trail",
-   "site": true,
-   "st": "UT"
-  },
   "US-5814": {
    "acts": 6,
    "leads": [
@@ -10795,30 +10523,6 @@
    ],
    "n": "Price Canyon BLM Recreation Management Area",
    "site": true,
-   "st": "UT"
-  },
-  "US-5913": {
-   "acts": 45,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "sguta161",
-     "km": 0.0,
-     "layer": "Utah State Parks (park, state GIS table)",
-     "name": "Rail Trail",
-     "why": "shares rail"
-    },
-    {
-     "acres": 0.0,
-     "id": "sguta162",
-     "km": 0.0,
-     "layer": "Utah State Parks (park, state GIS table)",
-     "name": "Rail Trail",
-     "why": "shares rail"
-    }
-   ],
-   "n": "Historic Union Pacific Rail Trail State Park",
-   "site": false,
    "st": "UT"
   },
   "US-5950": {
@@ -11517,46 +11221,6 @@
    "site": false,
    "st": "GA"
   },
-  "US-7245": {
-   "acts": 3,
-   "leads": [
-    {
-     "acres": 0.65919089,
-     "id": "fws431",
-     "km": 0.33,
-     "layer": "U.S. Fish & Wildlife Service (own map)",
-     "name": "Juneau Dock Administrative Site",
-     "why": "shares juneau"
-    },
-    {
-     "acres": 66.71,
-     "id": "sgaka3",
-     "km": 0.97,
-     "layer": "Alaska State Parks (DNR) (park, state GIS table)",
-     "name": "Juneau Trail System",
-     "why": "shares juneau"
-    },
-    {
-     "acres": 66.71,
-     "id": "sgake3",
-     "km": 0.97,
-     "layer": "Alaska DNR State Parks (park boundaries) (park, state GIS table)",
-     "name": "Juneau Trail System",
-     "why": "shares juneau"
-    },
-    {
-     "acres": 66.71,
-     "id": "sgakf3",
-     "km": 0.97,
-     "layer": "Alaska DNR, Division of Parks & Outdoor Recreation (credit: Alaska Department of Natural Resources) (park, state GIS table)",
-     "name": "Juneau Trail System",
-     "why": "shares juneau"
-    }
-   ],
-   "n": "Juneau State Trail",
-   "site": false,
-   "st": "AK"
-  },
   "US-7375": {
    "acts": 36,
    "leads": [
@@ -11588,38 +11252,6 @@
    "n": "Cowell Ranch State Beach",
    "site": false,
    "st": "CA"
-  },
-  "US-7393": {
-   "acts": 28,
-   "leads": [
-    {
-     "acres": 45289.0,
-     "id": "2482",
-     "km": 0.0,
-     "layer": "Kansas City",
-     "name": "Milford Recreation Area",
-     "why": "shares milford"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgksb27",
-     "km": 0.02,
-     "layer": "KDWPT (owner jjones_KDWPT) (wild, state GIS table)",
-     "name": "Milford Wildlife Area",
-     "why": "shares milford"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgksc17",
-     "km": 0.83,
-     "layer": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation) (land, state GIS table)",
-     "name": "Milford-Pleasant View State Park",
-     "why": "shares milford"
-    }
-   ],
-   "n": "Milford State Fish Hatchery",
-   "site": true,
-   "st": "KS"
   },
   "US-7405": {
    "acts": 45,
@@ -11877,22 +11509,6 @@
    "site": false,
    "st": "MD"
   },
-  "US-7816": {
-   "acts": 32,
-   "leads": [
-    {
-     "acres": 35870.36098927,
-     "id": "sgakh1203",
-     "km": 0.0,
-     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
-     "name": "Henrys Lake",
-     "why": "shares henrys"
-    }
-   ],
-   "n": "Henrys Lake Airstrip State Recreation Area",
-   "site": true,
-   "st": "ID"
-  },
   "US-7821": {
    "acts": 18,
    "leads": [
@@ -11932,22 +11548,6 @@
    "n": "Magic Reservoir Airstrip State Recreation Area",
    "site": true,
    "st": "ID"
-  },
-  "US-7842": {
-   "acts": 107,
-   "leads": [
-    {
-     "acres": 15067.0,
-     "id": "2526",
-     "km": 0.0,
-     "layer": "Louisville",
-     "name": "Mississinewa Recreation Area",
-     "why": "same kind of place (sp)"
-    }
-   ],
-   "n": "Red Bridge State Recreation Area",
-   "site": false,
-   "st": "IN"
   },
   "US-7843": {
    "acts": 94,
@@ -12301,22 +11901,6 @@
    "site": false,
    "st": "ND"
   },
-  "US-8618": {
-   "acts": 87,
-   "leads": [
-    {
-     "acres": 2834.44036487,
-     "id": "rst14078",
-     "km": 0.0,
-     "layer": "BLM recreation sites",
-     "name": "White Ridge Bike Trails",
-     "why": "shares white"
-    }
-   ],
-   "n": "White Ridge National Recreation Trail",
-   "site": false,
-   "st": "NM"
-  },
   "US-8689": {
    "acts": 19,
    "leads": [
@@ -12477,198 +12061,6 @@
    "site": false,
    "st": "AR"
   },
-  "US-9375": {
-   "acts": 21,
-   "leads": [
-    {
-     "acres": 2.03,
-     "id": "sgmne7476",
-     "km": 0.0,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "HARMONY-PRESTON VALLEY",
-     "why": "shares harmony, preston"
-    },
-    {
-     "acres": 4.78,
-     "id": "sgmne7805",
-     "km": 0.0,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "HARMONY-PRESTON VALLEY",
-     "why": "shares harmony, preston"
-    },
-    {
-     "acres": 1.8,
-     "id": "sgmne7475",
-     "km": 0.32,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "HARMONY-PRESTON VALLEY",
-     "why": "shares harmony, preston"
-    },
-    {
-     "acres": 2.23,
-     "id": "sgmne7804",
-     "km": 0.32,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "HARMONY-PRESTON VALLEY",
-     "why": "shares harmony, preston"
-    }
-   ],
-   "n": "Harmony-Preston State Trail",
-   "site": false,
-   "st": "MN"
-  },
-  "US-9377": {
-   "acts": 71,
-   "leads": [
-    {
-     "acres": 0.07,
-     "id": "sgmne6273",
-     "km": 0.58,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "BLAZING STAR",
-     "why": "shares blazing, star"
-    },
-    {
-     "acres": 1.51,
-     "id": "sgmne6283",
-     "km": 0.59,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "BLAZING STAR",
-     "why": "shares blazing, star"
-    },
-    {
-     "acres": 1.52,
-     "id": "sgmne6274",
-     "km": 0.78,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "BLAZING STAR",
-     "why": "shares blazing, star"
-    }
-   ],
-   "n": "Blazing Star State Trail",
-   "site": false,
-   "st": "MN"
-  },
-  "US-9381": {
-   "acts": 95,
-   "leads": [
-    {
-     "acres": 0.5,
-     "id": "sgmne9005",
-     "km": 0.0,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "DOUGLAS",
-     "why": "shares douglas"
-    },
-    {
-     "acres": 1.6,
-     "id": "sgmne9004",
-     "km": 0.0,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "DOUGLAS",
-     "why": "shares douglas"
-    },
-    {
-     "acres": 0.5,
-     "id": "sgmne9007",
-     "km": 0.01,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "DOUGLAS",
-     "why": "shares douglas"
-    },
-    {
-     "acres": 0.6,
-     "id": "sgmne9006",
-     "km": 0.01,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "DOUGLAS",
-     "why": "shares douglas"
-    }
-   ],
-   "n": "Douglas State Trail",
-   "site": false,
-   "st": "MN"
-  },
-  "US-9384": {
-   "acts": 1215,
-   "leads": [
-    {
-     "acres": 15.0,
-     "id": "sgmne15",
-     "km": 0.0,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "MINNESOTA VALLEY",
-     "why": "shares minnesota"
-    },
-    {
-     "acres": 66.3,
-     "id": "sgmne11006",
-     "km": 0.0,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "MINNESOTA VALLEY",
-     "why": "shares minnesota"
-    },
-    {
-     "acres": 4306.46882878,
-     "id": "sgmnd2",
-     "km": 0.0,
-     "layer": "Minnesota State Parks (DNR) (park, state GIS table)",
-     "name": "Minnesota Valley",
-     "why": "shares minnesota"
-    },
-    {
-     "acres": 13.37,
-     "id": "sgmne11003",
-     "km": 0.07,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "MINNESOTA VALLEY",
-     "why": "shares minnesota"
-    }
-   ],
-   "n": "Minnesota Valley State Trail",
-   "site": false,
-   "st": "MN"
-  },
-  "US-9385": {
-   "acts": 251,
-   "leads": [
-    {
-     "acres": 4.76,
-     "id": "sgmne11352",
-     "km": 0.0,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "GATEWAY",
-     "why": "shares gateway"
-    },
-    {
-     "acres": 4.45,
-     "id": "sgmne13135",
-     "km": 0.07,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "GATEWAY",
-     "why": "shares gateway"
-    },
-    {
-     "acres": 0.05,
-     "id": "sgmne11350",
-     "km": 0.33,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "GATEWAY",
-     "why": "shares gateway"
-    },
-    {
-     "acres": 5.06,
-     "id": "sgmne11351",
-     "km": 0.33,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "GATEWAY",
-     "why": "shares gateway"
-    }
-   ],
-   "n": "Gateway Overview State Trail",
-   "site": false,
-   "st": "MN"
-  },
   "US-9386": {
    "acts": 272,
    "leads": [
@@ -12706,46 +12098,6 @@
     }
    ],
    "n": "Browns Creek State Trail",
-   "site": false,
-   "st": "MN"
-  },
-  "US-9390": {
-   "acts": 95,
-   "leads": [
-    {
-     "acres": 5.8,
-     "id": "sgmne9915",
-     "km": 0.0,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "WILLARD MUNGER",
-     "why": "shares munger"
-    },
-    {
-     "acres": 1.7,
-     "id": "sgmne9914",
-     "km": 0.02,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "WILLARD MUNGER",
-     "why": "shares munger"
-    },
-    {
-     "acres": 2.32,
-     "id": "sgmne12720",
-     "km": 0.02,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "WILLARD MUNGER",
-     "why": "shares munger"
-    },
-    {
-     "acres": 0.14,
-     "id": "sgmne12719",
-     "km": 0.42,
-     "layer": "Minnesota DNR (state land admin: parks and trails) (park, state GIS table)",
-     "name": "WILLARD MUNGER",
-     "why": "shares munger"
-    }
-   ],
-   "n": "Williard Munger State Trail",
    "site": false,
    "st": "MN"
   },
@@ -12937,8 +12289,8 @@
  "skipped": [],
  "totals": {
   "canada": 238,
-  "name_word": 419,
-  "parks": 569,
-  "us": 334
+  "name_word": 397,
+  "parks": 543,
+  "us": 308
  }
 }
