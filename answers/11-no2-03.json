@@ -1,0 +1,752 @@
+{
+ "request": "requests/11-no2-03.json",
+ "id": "11-no2-03",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NO recheck: screenshots in order: 1=US-9881 record, 2=US-9881 map; 3=US-6084 record, 4=US-6084 map; 5=US-4154 record, 6=US-4154 map; 7=US-6193 record, 8=US-6193 map; 9=US-3578 record, 10=US-3578 map; 11=US-13295 record, 12=US-13295 map; Record pages are whole-page shots; map shots: the POTA pin is the marker in the middle (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "items": [
+   {
+    "ref": "US-9881",
+    "park": "Pomeroy and Newark National Recreation Trail",
+    "record": "Newark",
+    "area": "US-DE"
+   },
+   {
+    "ref": "US-6084",
+    "park": "Santa Clara River Reserve BLM Recreation Management Area",
+    "record": "Santa Clara River / Land Hill",
+    "area": "US-UT"
+   },
+   {
+    "ref": "US-4154",
+    "park": "West Okaw unit of Shelbyville State Fish and Wildlife Area",
+    "record": "Shelbyville State Fish and Wildlife Area",
+    "area": "US-IL"
+   },
+   {
+    "ref": "US-6193",
+    "park": "South Pass Overlook BLM Interpretive Site",
+    "record": "South Pass Historic Landscape ACEC",
+    "area": "US-WY"
+   },
+   {
+    "ref": "US-3578",
+    "park": "Tijuana Estuary Reserve State Conservation Area",
+    "record": "Tijuana Slough National Wildlife Refuge",
+    "area": "US-CA"
+   },
+   {
+    "ref": "US-13295",
+    "park": "Henrys Fork Snake Rive Access BLM Recreation Management Area",
+    "record": "Snake River",
+    "area": "US-ID"
+   }
+  ],
+  "urls": [
+   {
+    "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2/query?objectIds=360&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fenterprise.firstmap.delaware.gov%2Farcgis%2Frest%2Fservices%2FBoundaries%2FDE_Index%2FMapServer%2F2&center=-75.7602%2C39.7151&level=14&marker=-75.7602%2C39.7151%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1521&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-113.688%2C37.142&level=14&marker=-113.688%2C37.142%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query?objectIds=1080&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices.arcgis.com%2Fb9DHj1BjfdLLFv11%2Farcgis%2Frest%2Fservices%2FIllinoisProtectedLandsDH_1_22%2FFeatureServer%2F0&center=-88.715%2C39.6209&level=14&marker=-88.715%2C39.6209%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1592&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.974%2C42.3308&level=14&marker=-108.974%2C42.3308%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4397&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-117.122%2C32.555&level=14&marker=-117.122%2C32.555%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=877&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Fidarcgis%2Frest%2Fservices%2Frecreation%2FBLM_ID_Recreation_Area_Poly%2FMapServer%2F0&center=-111.681%2C43.9654&level=14&marker=-111.681%2C43.9654%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   }
+  ],
+  "report": "Chat 11 NO recheck: screenshots in order: 1=US-9881 record, 2=US-9881 map; 3=US-6084 record, 4=US-6084 map; 5=US-4154 record, 6=US-4154 map; 7=US-6193 record, 8=US-6193 map; 9=US-3578 record, 10=US-3578 map; 11=US-13295 record, 12=US-13295 map; Record pages are whole-page shots; map shots: the POTA pin is the marker in the middle (zoom 14)."
+ },
+ "answered": "2026-10-31 14:26Z",
+ "results": [
+  {
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2/query?objectIds=360&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2/query?objectIds=360&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Zip Codes (ID: 2)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > Boundaries > DE_Index (MapServer) > Zip Codes > query API Reference\nQuery: Zip Codes (ID: 2)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 360\nZIP_CODE: 19711\nPO_NAME: Newark\nSTATE: DE",
+   "links": [
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries",
+     "text": "Boundaries"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer",
+     "text": "DE_Index (MapServer)"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2",
+     "text": "Zip Codes"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2/query",
+     "text": "query"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/help/en/rest/router.html?f=rest/services/Boundaries/DE_Index/MapServer/2/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2/360",
+     "text": "360"
+    }
+   ],
+   "screenshot": "answers/11-no2-03-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fenterprise.firstmap.delaware.gov%2Farcgis%2Frest%2Fservices%2FBoundaries%2FDE_Index%2FMapServer%2F2&center=-75.7602%2C39.7151&level=14&marker=-75.7602%2C39.7151%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fenterprise.firstmap.delaware.gov%2Farcgis%2Frest%2Fservices%2FBoundaries%2FDE_Index%2FMapServer%2F2&center=-75.7602%2C39.7151&level=14&marker=-75.7602%2C39.7151%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nDelaware FirstMap | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-no2-03-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1521&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1521&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: ACEC Designated Polygons (ID: 0)",
+   "text": "ArcGIS REST Services Directory\nHome > services > lands > BLM_Natl_ACEC (MapServer) > ACEC Designated Polygons > query API Reference\nQuery: ACEC Designated Polygons (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 1521\nACEC_NAME: Santa Clara River / Land Hill\nLUP_NAME: St George Field Office RMP\nROD_DATE: 920246400000\nGIS_ACRES: 1663.955225\nADMIN_ST: UT\nGlobalID: {FA8D91DC-E320-4FE1-A4BB-4C7EF96DB0FB}\nOriginal_GlobalID: {D34D8E65-3E8D-4323-8B42-773467D8CF7D}\nShape.STArea(): 6.825307723576507E-4\nShape.STLength(): 0.1926551906402101\nNEPA_NUM:\nACEC_RLVNCE_CUL: NO\nACEC_RLVNCE_FRSC: NO\nACEC_RLVNCE_HIS: NO\nACEC_RLVNCE_NHAZ: NO\nACEC_RLVNCE_NPRO: NO\nACEC_RLVNCE_NSYS: NO\nACEC_RLVNCE_SCE: NO\nACEC_RLVNCE_WRSC: NO\nACEC_IMPRTNCE_QLTS: NO\nACEC_IMPRTNCE_IMPRTNCE: NO\nACEC_IMPRTNCE_CNTRBTN: NO\nACEC_IMPRTNCE_THRT: NO\nSPCL_MGMT_ATTN_RX_PRTCT: NO\nSPCL_MGMT_ATTN_RX_PRVNT: NO",
+   "links": [
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands",
+     "text": "lands"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer",
+     "text": "BLM_Natl_ACEC (MapServer)"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "text": "ACEC Designated Polygons"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/help/en/rest/router.html?f=rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/1521",
+     "text": "1521"
+    }
+   ],
+   "screenshot": "answers/11-no2-03-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-113.688%2C37.142&level=14&marker=-113.688%2C37.142%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-113.688%2C37.142&level=14&marker=-113.688%2C37.142%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nUtah Geospatial Resource Center | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | Bureau of Land Management, Headquarters (HQ)\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-no2-03-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query?objectIds=1080&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query?objectIds=1080&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Public Sector (ID: 0)",
+   "text": "ArcGIS REST Services Directory\nHome > services > IllinoisProtectedLandsDH_1_22 (FeatureServer) > Public Sector > query | API Reference\nQuery: Public Sector (ID: 0)\nWhere:\nObject IDs:\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nDisjoint\nRelation\nResult Type:\nNone\nStandard\nTile\nDistance:\nUnits:\nMeters\nMiles\nFeet\nKilometers\nNautical Miles\nUS NauticalMiles\nOut Distance:\nRelation:\nReturn Geodetic: True False\nOut Fields:\nReturn Geometry: True False\nReturn Centroid: True False\nReturn Envelope: True False\nFeature Encoding:\nesriDefault\nesriCompressedShapeBuffer\nGeometry MultiPatch Option:\nNone\nxyFootprint\nstripMaterials\nembedMaterials\nexternalizeTextures\nextent\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nDefault Spatial Reference:\nDatum Transformation:\nApply VCS Projection: True False\nReturn IDs Only: True False\nReturn Unique IDs Only: True False\nReturn Count Only: True False\nReturn Extent Only: True False\nReturn Query Geometry: True False\nReturn Distinct Values: True False\nCache Hint True False\nCollation:\nOrder By Fields:\nGroup By Fields (For Statistics):\nReturn Aggregate Ids: True False\nOutput Statistics:\nHaving:\nResult Offset:\nResult Record Count:\nReturnZ: True False\nReturnM: True False\nReturn True Curves: True False\nReturn Exceeded Limit Features: True False\nReturn Exceeded Limit Geometries: True False\nQuantization Parameters:\nSQL Format:\nnone\nstandard\nnative\nFormat:\nHTML\nJSON\nGEOJSON\nPBF\n# results: 1\nOBJECTID: 1080\nOrg: Illinois Department of Natural Resources\nOrg_Type: State\nSite_Name: Shelbyville State Fish and Wildlife Area\nOwner_Type: Leased\nDate:\nAcreage: 6289\nDocument:\nCounty: Moultrie\nComments: Owner: Private owners\nSource: Illinois Department of Natural Resources\nShape__Area: 273948814.381836\nShape__Length: 254570.966449137",
+   "links": [
+    {
+     "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/ArcGIS/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/ArcGIS/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/ArcGIS/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer",
+     "text": "IllinoisProtectedLandsDH_1_22 (FeatureServer)"
+    },
+    {
+     "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/ArcGIS/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0",
+     "text": "Public Sector"
+    },
+    {
+     "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/ArcGIS/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "http://resources.arcgis.com/en/help/arcgis-rest-api/",
+     "text": "API Reference"
+    }
+   ],
+   "screenshot": "answers/11-no2-03-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices.arcgis.com%2Fb9DHj1BjfdLLFv11%2Farcgis%2Frest%2Fservices%2FIllinoisProtectedLandsDH_1_22%2FFeatureServer%2F0&center=-88.715%2C39.6209&level=14&marker=-88.715%2C39.6209%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices.arcgis.com%2Fb9DHj1BjfdLLFv11%2Farcgis%2Frest%2Fservices%2FIllinoisProtectedLandsDH_1_22%2FFeatureServer%2F0&center=-88.715%2C39.6209&level=14&marker=-88.715%2C39.6209%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-no2-03-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1592&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1592&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: ACEC Designated Polygons (ID: 0)",
+   "text": "ArcGIS REST Services Directory\nHome > services > lands > BLM_Natl_ACEC (MapServer) > ACEC Designated Polygons > query API Reference\nQuery: ACEC Designated Polygons (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 1592\nACEC_NAME: South Pass Historic Landscape ACEC\nLUP_NAME: Rock Springs Resource Management Plan\nROD_DATE: 1734825600000\nGIS_ACRES: 53773.37755489\nADMIN_ST: WY\nGlobalID: {6A080B35-6BD3-4BE8-91DA-2D2293B7E7A8}\nOriginal_GlobalID: {5B6ECC0A-9E2F-4588-B64B-FA8EED0DF1F6}\nShape.STArea(): 0.023771386815373986\nShape.STLength(): 3.227396913566408\nNEPA_NUM:\nACEC_RLVNCE_CUL: YES\nACEC_RLVNCE_FRSC: NO\nACEC_RLVNCE_HIS: YES\nACEC_RLVNCE_NHAZ: NO\nACEC_RLVNCE_NPRO: NO\nACEC_RLVNCE_NSYS: NO\nACEC_RLVNCE_SCE: YES\nACEC_RLVNCE_WRSC: YES\nACEC_IMPRTNCE_QLTS: NO\nACEC_IMPRTNCE_IMPRTNCE: YES\nACEC_IMPRTNCE_CNTRBTN: NO\nACEC_IMPRTNCE_THRT: NO\nSPCL_MGMT_ATTN_RX_PRTCT: NO\nSPCL_MGMT_ATTN_RX_PRVNT: NO",
+   "links": [
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands",
+     "text": "lands"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer",
+     "text": "BLM_Natl_ACEC (MapServer)"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "text": "ACEC Designated Polygons"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/help/en/rest/router.html?f=rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/1592",
+     "text": "1592"
+    }
+   ],
+   "screenshot": "answers/11-no2-03-7.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.974%2C42.3308&level=14&marker=-108.974%2C42.3308%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.974%2C42.3308&level=14&marker=-108.974%2C42.3308%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | Bureau of Land Management, Headquarters (HQ)\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-no2-03-8.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4397&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4397&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 4397\nFeatClass: Fee\nCategory: Fee\nOwn_Type: FED\nOwn_Name: FWS\nLoc_Own: Fee\nMang_Type: FED\nMang_Name: FWS\nLoc_Mang: TIJUANA SLOUGH NATIONAL WILDLIFE REFUGE\nDes_Tp: NWR\nLoc_Ds: NWR\nUnit_Nm: Tijuana Slough National Wildlife Refuge\nLoc_Nm: TIJUANA SLOUGH NATIONAL WILDLIFE REFUGE\nState_Nm: CA\nAgg_Src: FWS_PADUS3_0Fee_FWSInterest_Simplified\nGIS_Src: FWSInterest_Simplified.shp\nSrc_Date: 2021/01/28\nGIS_Acres: 1059\nSource_PAID: TJS\nWDPA_Cd: 555656172\nPub_Access: RA\nAccess_Src: FWS - GAP\nAccess_Dt: 2021\nGAP_Sts: 2\nGAPCdSrc: TNC\nGAPCdDt: 2010\nIUCN_Cat: IV\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est: 1980\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: FWS\nTranspPct: null\nShape_Length: 27622.06307808484\nShape_Area: 6047666.566224776",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/4397",
+     "text": "4397"
+    }
+   ],
+   "screenshot": "answers/11-no2-03-9.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-117.122%2C32.555&level=14&marker=-117.122%2C32.555%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-117.122%2C32.555&level=14&marker=-117.122%2C32.555%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nSanGIS | California State Parks | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-no2-03-10.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=877&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=877&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: BLM ID Recreation Area Poly (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > recreation > BLM_ID_Recreation_Area_Poly (MapServer) > BLM ID Recreation Area Poly > query API Reference\nQuery: BLM ID Recreation Area Poly (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 877\nFET_TYPE: 4\nFET_SUBTYPE: SRMA\nFET_NAME: Snake River\nADM_UNIT_CD: IDI01000\nADMIN_ST: ID\nGIS_ACRES: 128532.67702\nWEB_DISPLAY: Yes\nDESCRIPTION: null\nUNIT_NAME: Upper Snake Field Office\nWEB_LINK: null\nCOORD_SRC_TYPE:\nGlobalID: {6DC47BFB-1C90-44BB-B736-3642FAC34FA6}\nShape.STArea(): 5.881082018002827E8\nShape.STLength(): 317505.3151816286",
+   "links": [
+    {
+     "url": "https://gis.blm.gov/idarcgis/login/?returnUrl=https://gis.blm.gov/idarcgis/rest/services&app=rest",
+     "text": "Login"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services/recreation",
+     "text": "recreation"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer",
+     "text": "BLM_ID_Recreation_Area_Poly (MapServer)"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0",
+     "text": "BLM ID Recreation Area Poly"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/help/en/rest/router.html?f=rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/877",
+     "text": "877"
+    }
+   ],
+   "screenshot": "answers/11-no2-03-11.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Fidarcgis%2Frest%2Fservices%2Frecreation%2FBLM_ID_Recreation_Area_Poly%2FMapServer%2F0&center=-111.681%2C43.9654&level=14&marker=-111.681%2C43.9654%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Fidarcgis%2Frest%2Fservices%2Frecreation%2FBLM_ID_Recreation_Area_Poly%2FMapServer%2F0&center=-111.681%2C43.9654&level=14&marker=-111.681%2C43.9654%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nCounty of Jefferson, ID | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | Bureau of Land Management (BLM), Idaho State Office\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-no2-03-12.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 193,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 6
+ },
+ "short": "12 result(s), 12 read OK, 12 screenshot(s)"
+}
