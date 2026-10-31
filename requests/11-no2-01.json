@@ -1,0 +1,118 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "items": [
+  {
+   "ref": "US-9881",
+   "park": "Pomeroy and Newark National Recreation Trail",
+   "record": "Newark",
+   "area": "US-DE"
+  },
+  {
+   "ref": "US-11117",
+   "park": "Trin-Alcove/Three Canyon BLM Wilderness Area",
+   "record": "Labyrinth Canyon",
+   "area": "US-UT"
+  },
+  {
+   "ref": "US-7393",
+   "park": "Milford State Fish Hatchery",
+   "record": "Milford Lake",
+   "area": "US-KS"
+  },
+  {
+   "ref": "US-12320",
+   "park": "Yadkin River State Trail",
+   "record": "Yadkin River Game Land (Leased)",
+   "area": "US-NC"
+  },
+  {
+   "ref": "US-9334",
+   "park": "Teal Basins State Waterfowl Management Area",
+   "record": "Cerro Gordo County Waterfowl Production Area",
+   "area": "US-IA"
+  },
+  {
+   "ref": "US-10476",
+   "park": "Monument BLM Recreation Management Area",
+   "record": "Monument Park",
+   "area": "US-OR"
+  }
+ ],
+ "urls": [
+  {
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2/query?objectIds=360&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fenterprise.firstmap.delaware.gov%2Farcgis%2Frest%2Fservices%2FBoundaries%2FDE_Index%2FMapServer%2F2&center=-75.7602%2C39.7151&level=14&marker=-75.7602%2C39.7151%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10819&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Frecreation%2FBLM_Natl_Recs_poly%2FMapServer%2F1&center=-110.126%2C38.7103&level=14&marker=-110.126%2C38.7103%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=78&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices1.arcgis.com%2Fq2CglofYX6ACNEeu%2Farcgis%2Frest%2Fservices%2Fprotected_areas%2FFeatureServer%2F0&center=-96.8887%2C39.0865&level=14&marker=-96.8887%2C39.0865%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=13377&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fncnhde.natureserve.org%2Farcgis%2Frest%2Fservices%2FNC_Public%2FManaged_Areas%2FMapServer%2F0&center=-80.3909%2C35.724&level=14&marker=-80.3909%2C35.724%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4644&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.4424%2C43.2137&level=14&marker=-93.4424%2C43.2137%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?objectIds=5132&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fmaps.prd.state.or.us%2Farcgis%2Frest%2Fservices%2FLand_ownership%2FOregon_Parklands%2FFeatureServer%2F0&center=-119.424%2C44.8152&level=14&marker=-119.424%2C44.8152%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  }
+ ],
+ "report": "Chat 11 NO recheck: screenshots in order: 1=US-9881 record, 2=US-9881 map; 3=US-11117 record, 4=US-11117 map; 5=US-7393 record, 6=US-7393 map; 7=US-12320 record, 8=US-12320 map; 9=US-9334 record, 10=US-9334 map; 11=US-10476 record, 12=US-10476 map; Record pages are whole-page shots; map shots: the POTA pin is the marker in the middle (zoom 14)."
+}

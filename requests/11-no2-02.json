@@ -1,0 +1,118 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "items": [
+  {
+   "ref": "US-13285",
+   "park": "Tonopah Nevada State Historical Monument",
+   "record": "Tonopah Field Office",
+   "area": "US-NV"
+  },
+  {
+   "ref": "US-13577",
+   "park": "Jarbidge River Recreation Site BLM Recreation Management Area",
+   "record": "Jarbidge Field Office",
+   "area": "US-ID"
+  },
+  {
+   "ref": "US-5895",
+   "park": "Price Canyon BLM Recreation Management Area",
+   "record": "Price Field Office",
+   "area": "US-UT"
+  },
+  {
+   "ref": "US-3791",
+   "park": "Trail of Tears National Historic Trail",
+   "record": "Trail Of Tears Park",
+   "area": "US-GA"
+  },
+  {
+   "ref": "US-10025",
+   "park": "Lost Forest/Dunes/Fossil BLM Special Recreation Management Area",
+   "record": "Christmas Valley Sand Dunes",
+   "area": "US-OR"
+  },
+  {
+   "ref": "US-12150",
+   "park": "Dry Fork Camping Area BLM Recreation Management Area",
+   "record": "Red Mountain / Dry Fork",
+   "area": "US-UT"
+  }
+ ],
+ "urls": [
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2042&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-117.229%2C38.067&level=14&marker=-117.229%2C38.067%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1935&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-115.39%2C42.0498&level=14&marker=-115.39%2C42.0498%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2107&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-110.917%2C39.7602&level=14&marker=-110.917%2C39.7602%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201861&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-87.4701%2C36.8532&level=14&marker=-87.4701%2C36.8532%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10853&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Frecreation%2FBLM_Natl_Recs_poly%2FMapServer%2F1&center=-120.396%2C43.3339&level=14&marker=-120.396%2C43.3339%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10818&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Frecreation%2FBLM_Natl_Recs_poly%2FMapServer%2F1&center=-109.715%2C40.5827&level=14&marker=-109.715%2C40.5827%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  }
+ ],
+ "report": "Chat 11 NO recheck: screenshots in order: 1=US-13285 record, 2=US-13285 map; 3=US-13577 record, 4=US-13577 map; 5=US-5895 record, 6=US-5895 map; 7=US-3791 record, 8=US-3791 map; 9=US-10025 record, 10=US-10025 map; 11=US-12150 record, 12=US-12150 map; Record pages are whole-page shots; map shots: the POTA pin is the marker in the middle (zoom 14)."
+}

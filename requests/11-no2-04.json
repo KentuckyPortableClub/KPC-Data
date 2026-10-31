@@ -1,0 +1,82 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "items": [
+  {
+   "ref": "US-12220",
+   "park": "The Forks Campground BLM Recreation Management Area",
+   "record": "Jarbidge Forks",
+   "area": "US-ID"
+  },
+  {
+   "ref": "US-7405",
+   "park": "Melvern River State Fishing Lake",
+   "record": "Melvern Recreation Area",
+   "area": "US-KS"
+  },
+  {
+   "ref": "US-12938",
+   "park": "Laurel Industrial Forest Land State Wildlife Area",
+   "record": "Industrial Forest Lands",
+   "area": "US-DE"
+  },
+  {
+   "ref": "US-10464",
+   "park": "Chena Wayside State Recreation Site",
+   "record": "Chena River State Recreation Site",
+   "area": "US-AK"
+  }
+ ],
+ "urls": [
+  {
+   "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=838&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Fidarcgis%2Frest%2Fservices%2Frecreation%2FBLM_ID_Recreation_Area_Poly%2FMapServer%2F0&center=-115.39%2C42.0491&level=14&marker=-115.39%2C42.0491%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2481&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-95.7036%2C38.5199&level=14&marker=-95.7036%2C38.5199%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/2/query?objectIds=309&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fenterprise.firstmap.delaware.gov%2Farcgis%2Frest%2Fservices%2FBiota%2FDE_Forestry%2FMapServer%2F2&center=-75.5079%2C38.4617&level=14&marker=-75.5079%2C38.4617%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2/query?objectIds=122&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Farcgis.dnr.alaska.gov%2Farcgis%2Frest%2Fservices%2FDPOR%2FPark_Boundary_Facility%2FMapServer%2F2&center=-147.807%2C64.8389&level=14&marker=-147.807%2C64.8389%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  }
+ ],
+ "report": "Chat 11 NO recheck: screenshots in order: 1=US-12220 record, 2=US-12220 map; 3=US-7405 record, 4=US-7405 map; 5=US-12938 record, 6=US-12938 map; 7=US-10464 record, 8=US-10464 map; Record pages are whole-page shots; map shots: the POTA pin is the marker in the middle (zoom 14)."
+}

@@ -1,0 +1,118 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "items": [
+  {
+   "ref": "US-9881",
+   "park": "Pomeroy and Newark National Recreation Trail",
+   "record": "Newark",
+   "area": "US-DE"
+  },
+  {
+   "ref": "US-6084",
+   "park": "Santa Clara River Reserve BLM Recreation Management Area",
+   "record": "Santa Clara River / Land Hill",
+   "area": "US-UT"
+  },
+  {
+   "ref": "US-4154",
+   "park": "West Okaw unit of Shelbyville State Fish and Wildlife Area",
+   "record": "Shelbyville State Fish and Wildlife Area",
+   "area": "US-IL"
+  },
+  {
+   "ref": "US-6193",
+   "park": "South Pass Overlook BLM Interpretive Site",
+   "record": "South Pass Historic Landscape ACEC",
+   "area": "US-WY"
+  },
+  {
+   "ref": "US-3578",
+   "park": "Tijuana Estuary Reserve State Conservation Area",
+   "record": "Tijuana Slough National Wildlife Refuge",
+   "area": "US-CA"
+  },
+  {
+   "ref": "US-13295",
+   "park": "Henrys Fork Snake Rive Access BLM Recreation Management Area",
+   "record": "Snake River",
+   "area": "US-ID"
+  }
+ ],
+ "urls": [
+  {
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2/query?objectIds=360&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fenterprise.firstmap.delaware.gov%2Farcgis%2Frest%2Fservices%2FBoundaries%2FDE_Index%2FMapServer%2F2&center=-75.7602%2C39.7151&level=14&marker=-75.7602%2C39.7151%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1521&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-113.688%2C37.142&level=14&marker=-113.688%2C37.142%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query?objectIds=1080&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices.arcgis.com%2Fb9DHj1BjfdLLFv11%2Farcgis%2Frest%2Fservices%2FIllinoisProtectedLandsDH_1_22%2FFeatureServer%2F0&center=-88.715%2C39.6209&level=14&marker=-88.715%2C39.6209%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1592&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-108.974%2C42.3308&level=14&marker=-108.974%2C42.3308%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4397&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-117.122%2C32.555&level=14&marker=-117.122%2C32.555%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=877&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Fidarcgis%2Frest%2Fservices%2Frecreation%2FBLM_ID_Recreation_Area_Poly%2FMapServer%2F0&center=-111.681%2C43.9654&level=14&marker=-111.681%2C43.9654%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  }
+ ],
+ "report": "Chat 11 NO recheck: screenshots in order: 1=US-9881 record, 2=US-9881 map; 3=US-6084 record, 4=US-6084 map; 5=US-4154 record, 6=US-4154 map; 7=US-6193 record, 8=US-6193 map; 9=US-3578 record, 10=US-3578 map; 11=US-13295 record, 12=US-13295 map; Record pages are whole-page shots; map shots: the POTA pin is the marker in the middle (zoom 14)."
+}
