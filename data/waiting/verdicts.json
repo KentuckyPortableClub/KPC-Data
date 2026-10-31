@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T04:50Z",
+ "checked": "2026-10-31T05:46Z",
  "switched_on": false,
  "results": [
   {
@@ -86,6 +86,17 @@
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
    ],
    "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/docs/US-ID.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -402,8 +413,7 @@
    "path": "data/fers/US-IA.json",
    "kind": "fers",
    "why": [
-    "F-2 only 0 of 3 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 every row gone (live had 4)"
+    "F-2 7 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-10953+US-2303, US-2277+US-4655, US-2294+US-4661"
    ],
    "notes": [],
    "verdict": "HOLD"

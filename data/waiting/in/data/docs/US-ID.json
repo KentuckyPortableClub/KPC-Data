@@ -1,0 +1,519 @@
+{
+ "area": "US-ID",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0054": {
+   "n": "Nez Perce National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/nepe/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/nepe/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 27, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/nepe/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0280": {
+   "n": "Oxford Slough Wetland Management District",
+   "t": "Wetland Management District",
+   "page": "https://fws.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0849": {
+   "n": "Minidoka National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/miin/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/miin/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 30, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/miin/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0890": {
+   "n": "Salmon National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/rivers/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('System-wide Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (fws.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10006": {
+   "n": "Idaho Centennial Trail State Trail",
+   "t": "State Trail",
+   "page": "https://parksandrecreation.idaho.gov/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parksandrecreation.idaho.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10070": {
+   "n": "Menan Buttes (BLM) Natural Monument",
+   "t": "Natural Monument",
+   "page": "https://www.blm.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10072": {
+   "n": "Big Southern Butte (BLM) Natural Monument",
+   "t": "Natural Monument",
+   "page": "https://www.blm.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10268": {
+   "n": "Hoodoo Meadows Airstrip State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://itd.idaho.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://itd.idaho.gov/travel/; opened, a page that does not name this park (a generic agency page is not its map) https://itd.idaho.gov/gis-maps/)",
+    "how": "a link on the park's page ('Travel maps, Road info, Rest Areas')"
+   },
+   "rules": {
+    "url": "https://itd.idaho.gov/travel/winter-driving/name-a-snowplow/",
+    "how": "a link on the park's page ('See contest rules')",
+    "status": "ok"
+   },
+   "agency": "government agency (itd.idaho.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://itd.idaho.gov/travel/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Travel maps, Road info, Rest Areas')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://itd.idaho.gov/gis-maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('GIS Maps Data')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10304": {
+   "n": "Experimental Breeder Reactor-1 (DOE) National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://inl.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (inl.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-10418": {
+   "n": "Western Heritage National Scenic Byway National Parkway",
+   "t": "National Parkway",
+   "page": "https://www.fhwa.dot.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (fhwa.dot.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-10419": {
+   "n": "Payette River National Scenic Byway National Parkway",
+   "t": "National Parkway",
+   "page": "https://www.fhwa.dot.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (fhwa.dot.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-10420": {
+   "n": "Pioneer Historic National Scenic Byway National Parkway",
+   "t": "National Parkway",
+   "page": "https://www.fhwa.dot.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (fhwa.dot.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-10421": {
+   "n": "International Selkirk Loop National Scenic Byway National Parkway",
+   "t": "National Parkway",
+   "page": "https://fhwaapps.fhwa.dot.gov/bywaysp/byway/2486",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (fhwaapps.fhwa.dot.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: rest"
+   ],
+   "ver": 7
+  },
+  "US-10422": {
+   "n": "Northwest Passage National Scenic Byway National Parkway",
+   "t": "National Parkway",
+   "page": "https://www.fhwa.dot.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (fhwa.dot.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-10423": {
+   "n": "Pend Oreille National Scenic Byway National Parkway",
+   "t": "National Parkway",
+   "page": "https://www.fhwa.dot.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (fhwa.dot.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-10427": {
+   "n": "Thomas Creek Airstrip State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.itd.idaho.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (itd.idaho.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-10429": {
+   "n": "Middle Fork Clearwater River National Wild & Scenic River",
+   "t": "National Wild & Scenic River",
+   "page": "https://www.rivers.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/rivers/map)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/rivers/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('System-wide Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fws.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10430": {
+   "n": "St Joe River National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/rivers/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('System-wide Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (fws.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10431": {
+   "n": "Cabinet Gorge State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://idfg.idaho.gov/visit/hatchery",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": null,
+   "agency": "government agency (idfg.idaho.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: rest"
+   ],
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 19,
+  "map ok": 4,
+  "map found by the bot": 2,
+  "date on the map": 0,
+  "posted date only": 2,
+  "date unknown": 2,
+  "no map": 15,
+  "rules ok": 4,
+  "needs browser": 9,
+  "handover hints": 0,
+  "runs hints": 0,
+  "host resting / robots": 0,
+  "map names the park": 4,
+  "region overview only": 0
+ }
+}

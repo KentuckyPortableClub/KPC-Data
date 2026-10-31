@@ -109,7 +109,7 @@
    "status": "failed",
    "parks": 181,
    "updated": "2026-10-31",
-   "why": "maps 82 -> 63"
+   "why": "maps 82 -> 64"
   },
   "US-ND": {
    "status": "done",
@@ -259,10 +259,17 @@
    "updated": "2026-10-31"
   },
   "US-WY": {
-   "status": "partial",
+   "status": "done",
    "parks": 294,
-   "checked": 64,
-   "left": 230,
+   "checked": 294,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-ID": {
+   "status": "partial",
+   "parks": 362,
+   "checked": 19,
+   "left": 343,
    "updated": "2026-10-31"
   }
  },
@@ -277,31 +284,32 @@
   "www.agfc": 1793500611.0041478,
   "mip.agri.arkansas.gov": 1793500699.890685,
   "cpw.state.co.us": 1793507938.9465082,
-  "wgfapps.wyo.gov": 1793508618.257194
+  "wgfapps.wyo.gov": 1793508618.257194,
+  "idfg.idaho.gov": 1793511965.8520963
  },
  "last": {
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-NE",
-   "US-CO",
    "US-WY",
    "US-ID",
    "US-MT",
    "US-NV",
-   "US-AZ"
+   "US-AZ",
+   "US-NM",
+   "US-CA"
   ],
   "stat": {
-   "requests": 1296,
-   "parks": 655,
-   "maps_ok": 266,
-   "maps_found": 238,
+   "requests": 1019,
+   "parks": 430,
+   "maps_ok": 242,
+   "maps_found": 224,
    "dates": 0,
-   "rules": 207,
-   "browser": 282,
-   "robots": 7,
-   "strikes": 6,
-   "errors": 3,
+   "rules": 318,
+   "browser": 228,
+   "robots": 0,
+   "strikes": 3,
+   "errors": 0,
    "skipped_fresh": 64
   }
  }
