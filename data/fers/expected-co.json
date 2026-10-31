@@ -9,12 +9,12 @@
  },
  "about": "MISSING CHECK (chat 2, Oct 27 2026; HQ 3:46 PM, Brandon: 'chat 8 can't verify what's missing'). For each area of a 2-fer run, every See kpc_fers_expected.py. Chat 8 reviews DROPPED + NEVER LOOKED AT.",
  "area": "US-CO",
- "date": "2026-10-30",
+ "date": "2026-10-31",
  "pass": true,
  "counts": {
-  "FOUND": 18,
-  "DROPPED": 109,
-  "NEVER LOOKED AT": 1676
+  "FOUND": 49,
+  "DROPPED": 132,
+  "NEVER LOOKED AT": 1622
  },
  "FOUND": [
   {
@@ -74,6 +74,72 @@
   },
   {
    "refs": [
+    "US-0192",
+    "US-11897"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "row": "US-0192+US-11897@area@38.610,-105.036"
+  },
+  {
+   "refs": [
+    "US-0222",
+    "US-1239"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (11x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-0222+US-1239@area@37.721,-105.777"
+  },
+  {
+   "refs": [
+    "US-0223",
+    "US-9625"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-0223+US-9625@same land@40.880,-109.032"
+  },
+  {
+   "refs": [
+    "US-0652",
+    "US-12190"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "row": "US-0652+US-12190@area@38.489,-107.096"
+  },
+  {
+   "refs": [
+    "US-0652",
+    "US-12682"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "row": "US-0652+US-12682@area@38.496,-107.030"
+  },
+  {
+   "refs": [
+    "US-0652",
+    "US-12683"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "row": "US-0652+US-12683@area@38.496,-107.030"
+  },
+  {
+   "refs": [
     "US-0652",
     "US-4402"
    ],
@@ -82,6 +148,17 @@
     "outlines about 0 m apart"
    ],
    "row": "US-0652+US-4402@area@38.493,-107.567"
+  },
+  {
+   "refs": [
+    "US-10535",
+    "US-1237"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (13x, POTA history)"
+   ],
+   "row": "US-10535+US-1237@area@39.631,-107.736"
   },
   {
    "refs": [
@@ -96,6 +173,28 @@
   },
   {
    "refs": [
+    "US-11890",
+    "US-1223"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "row": "US-11890+US-1223@area@39.058,-108.482"
+  },
+  {
+   "refs": [
+    "US-11895",
+    "US-4404"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (11x, POTA history)"
+   ],
+   "row": "US-11895+US-4404@area@39.227,-105.612"
+  },
+  {
+   "refs": [
     "US-11902",
     "US-4410"
    ],
@@ -104,6 +203,28 @@
     "activated together by the same call on the same day (17x, POTA history)"
    ],
    "row": "US-11902+US-4410@area@39.447,-106.126"
+  },
+  {
+   "refs": [
+    "US-11938",
+    "US-4406"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (15x, POTA history)"
+   ],
+   "row": "US-11938+US-4406@area@40.784,-105.553"
+  },
+  {
+   "refs": [
+    "US-11939",
+    "US-4406"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (8x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-11939+US-4406@area@40.694,-105.680"
   },
   {
    "refs": [
@@ -129,6 +250,17 @@
   },
   {
    "refs": [
+    "US-12171",
+    "US-12172"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "row": "US-12171+US-12172@area@39.161,-105.860"
+  },
+  {
+   "refs": [
     "US-12173",
     "US-4409"
    ],
@@ -140,6 +272,17 @@
   },
   {
    "refs": [
+    "US-12354",
+    "US-12355"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (21x, POTA history)"
+   ],
+   "row": "US-12354+US-12355@area@40.922,-102.657"
+  },
+  {
+   "refs": [
     "US-1247",
     "US-4410"
    ],
@@ -148,6 +291,38 @@
     "activated together by the same call on the same day (8x, POTA history)"
    ],
    "row": "US-1247+US-4410@area@39.478,-106.728"
+  },
+  {
+   "refs": [
+    "US-13569",
+    "US-4408"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-13569+US-4408@area@37.335,-107.933"
+  },
+  {
+   "refs": [
+    "US-13573",
+    "US-13574"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "row": "US-13573+US-13574@area@37.582,-106.101"
+  },
+  {
+   "refs": [
+    "US-13574",
+    "US-13575"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-13574+US-13575@area@37.578,-106.088"
   },
   {
    "refs": [
@@ -173,6 +348,50 @@
   },
   {
    "refs": [
+    "US-4404",
+    "US-9605"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "row": "US-4404+US-9605@area@39.347,-106.065"
+  },
+  {
+   "refs": [
+    "US-4405",
+    "US-9604"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "row": "US-4405+US-9604@area@37.468,-106.766"
+  },
+  {
+   "refs": [
+    "US-4405",
+    "US-9610"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "row": "US-4405+US-9610@area@37.594,-106.666"
+  },
+  {
+   "refs": [
+    "US-4405",
+    "US-9634"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (15x, POTA history)"
+   ],
+   "row": "US-4405+US-9634@area@37.707,-106.696"
+  },
+  {
+   "refs": [
     "US-4406",
     "US-9591"
    ],
@@ -181,6 +400,39 @@
     "activated together by the same call on the same day (5x, POTA history)"
    ],
    "row": "US-0059+US-4406+US-9591@area@40.162,-105.623"
+  },
+  {
+   "refs": [
+    "US-4406",
+    "US-9612"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (20x, POTA history)"
+   ],
+   "row": "US-4406+US-9612@area@40.772,-105.618"
+  },
+  {
+   "refs": [
+    "US-4406",
+    "US-9629"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (14x, POTA history)"
+   ],
+   "row": "US-4406+US-9629@area@40.768,-105.403"
+  },
+  {
+   "refs": [
+    "US-4406",
+    "US-9644"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (19x, POTA history)"
+   ],
+   "row": "US-4406+US-9644@area@40.797,-105.560"
   },
   {
    "refs": [
@@ -214,6 +466,93 @@
     "activated together by the same call on the same day (5x, POTA history)"
    ],
    "row": "US-4408+US-4413@area@37.183,-107.311"
+  },
+  {
+   "refs": [
+    "US-4408",
+    "US-9660"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "row": "US-4408+US-9660@area@37.422,-108.316"
+  },
+  {
+   "refs": [
+    "US-4410",
+    "US-9609"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "row": "US-4410+US-9609@area@39.376,-106.972"
+  },
+  {
+   "refs": [
+    "US-4410",
+    "US-9619"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (22x, POTA history)"
+   ],
+   "row": "US-4410+US-9619@area@39.832,-106.220"
+  },
+  {
+   "refs": [
+    "US-4575",
+    "US-9620"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "row": "US-4575+US-9620@trail@37.221,-107.881"
+  },
+  {
+   "refs": [
+    "US-4575",
+    "US-9631"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "row": "US-4575+US-9631@trail@37.799,-108.999"
+  },
+  {
+   "refs": [
+    "US-4575",
+    "US-9648"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "row": "US-4575+US-9648@trail@38.752,-108.157"
+  },
+  {
+   "refs": [
+    "US-4579",
+    "US-9639"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (13x, POTA history)"
+   ],
+   "row": "US-4579+US-9639@trail@38.083,-102.261"
+  },
+  {
+   "refs": [
+    "US-9593",
+    "US-9648"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-9593+US-9648@area@38.602,-108.289"
   }
  ],
  "DROPPED": [
@@ -260,6 +599,18 @@
    ],
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-0033",
+    "US-1239"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (11x, POTA history)",
     "outlines about 0 m apart"
    ],
    "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
@@ -543,6 +894,17 @@
   },
   {
    "refs": [
+    "US-11890",
+    "US-11894"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
     "US-11897",
     "US-4407"
    ],
@@ -627,6 +989,18 @@
   {
    "refs": [
     "US-11914",
+    "US-13108"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-11914",
     "US-4410"
    ],
    "why_expected": [
@@ -662,6 +1036,42 @@
   },
   {
    "refs": [
+    "US-11919",
+    "US-4400"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (9x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-11920",
+    "US-4400"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-11923",
+    "US-1238"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (46x, POTA history)"
+   ],
+   "reason": "dropped: only inside an area closed to the public (no entry)",
+   "rule": "rule 10 (closed to the public)"
+  },
+  {
+   "refs": [
     "US-1212",
     "US-4404"
    ],
@@ -686,6 +1096,18 @@
   },
   {
    "refs": [
+    "US-12138",
+    "US-12140"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (17x, POTA history)"
+   ],
+   "reason": "dropped: private land at the spot (ownership map): counts only for its own park number, never a 2-fer",
+   "rule": "rule 2 + B-G2 (private land counts only for its own number)"
+  },
+  {
+   "refs": [
     "US-1214",
     "US-4407"
    ],
@@ -695,6 +1117,18 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-12140",
+    "US-1217"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (15x, POTA history)"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
    "refs": [
@@ -795,6 +1229,18 @@
   {
    "refs": [
     "US-1219",
+    "US-13084"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (13x, POTA history)"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-1219",
     "US-4400"
    ],
    "why_expected": [
@@ -827,6 +1273,18 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1222",
+    "US-12587"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (15x, POTA history)"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
    "refs": [
@@ -1034,6 +1492,18 @@
   },
   {
    "refs": [
+    "US-1239",
+    "US-8295"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
     "US-1240",
     "US-4404"
    ],
@@ -1118,6 +1588,18 @@
   },
   {
    "refs": [
+    "US-12757",
+    "US-4405"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
     "US-13106",
     "US-4405"
    ],
@@ -1163,6 +1645,18 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4400",
+    "US-9658"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
    "refs": [
@@ -1286,6 +1780,18 @@
   },
   {
    "refs": [
+    "US-4402",
+    "US-9643"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (11x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
     "US-4404",
     "US-4407"
    ],
@@ -1319,6 +1825,18 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4404",
+    "US-9666"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
    "refs": [
@@ -1358,6 +1876,18 @@
   },
   {
    "refs": [
+    "US-4405",
+    "US-9624"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
     "US-4406",
     "US-4410"
    ],
@@ -1379,6 +1909,18 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4406",
+    "US-9618"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (12x, POTA history)"
+   ],
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
    "refs": [
@@ -1454,6 +1996,30 @@
   },
   {
    "refs": [
+    "US-4408",
+    "US-9641"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-4408",
+    "US-9677"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
     "US-4409",
     "US-9593"
    ],
@@ -1475,6 +2041,18 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4409",
+    "US-9638"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
    "refs": [
@@ -1515,6 +2093,30 @@
   {
    "refs": [
     "US-4410",
+    "US-9611"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-4410",
+    "US-9633"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-4410",
     "US-9678"
    ],
    "why_expected": [
@@ -1523,6 +2125,17 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-9632",
+    "US-9643"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (16x, POTA history)"
+   ],
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   }
  ],
  "NEVER LOOKED AT": [
@@ -1577,17 +2190,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-9606 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-0033",
-    "US-1239"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (11x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-1239 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -2508,17 +3110,6 @@
   {
    "refs": [
     "US-0192",
-    "US-11897"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-0192 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-0192",
     "US-1214"
    ],
    "why_expected": [
@@ -2867,17 +3458,6 @@
   {
    "refs": [
     "US-0222",
-    "US-1239"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (11x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-1239 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-0222",
     "US-4575"
    ],
    "why_expected": [
@@ -2916,17 +3496,6 @@
     "outlines about 0 m apart"
    ],
    "reason": "US-0921: not in this run (another state, retired, or no POTA pin)"
-  },
-  {
-   "refs": [
-    "US-0223",
-    "US-9625"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-9625 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -3408,39 +3977,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-12177 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-0652",
-    "US-12190"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
-  },
-  {
-   "refs": [
-    "US-0652",
-    "US-12682"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-12682 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-0652",
-    "US-12683"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4690,17 +5226,6 @@
   {
    "refs": [
     "US-10535",
-    "US-1237"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (13x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-10535 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-10535",
     "US-4410"
    ],
    "why_expected": [
@@ -5687,16 +6212,6 @@
   {
    "refs": [
     "US-11890",
-    "US-11894"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-11890, US-11894 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-11890",
     "US-12185"
    ],
    "why_expected": [
@@ -5704,17 +6219,6 @@
     "outlines about 0 m apart"
    ],
    "reason": "not tested: the official outline of US-11890, US-12185 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-11890",
-    "US-1223"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-11890 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -5845,17 +6349,6 @@
    "why_expected": [
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-11895 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-11895",
-    "US-4404"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (11x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-11895 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
@@ -6311,17 +6804,6 @@
   {
    "refs": [
     "US-11914",
-    "US-13108"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-13108 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-11914",
     "US-5749"
    ],
    "why_expected": [
@@ -6472,17 +6954,6 @@
   {
    "refs": [
     "US-11919",
-    "US-4400"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (9x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-11919 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-11919",
     "US-4558"
    ],
    "why_expected": [
@@ -6509,17 +6980,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-11919, US-9613 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-11920",
-    "US-4400"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-11920 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -6572,17 +7032,6 @@
    "why_expected": [
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (16x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-11923 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-11923",
-    "US-1238"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (46x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-11923 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
@@ -7260,17 +7709,6 @@
   {
    "refs": [
     "US-11938",
-    "US-4406"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (15x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-11938 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-11938",
     "US-9618"
    ],
    "why_expected": [
@@ -7320,17 +7758,6 @@
    "why_expected": [
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-11939 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-11939",
-    "US-4406"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (8x, POTA history)",
-    "outlines about 0 m apart"
    ],
    "reason": "not tested: the official outline of US-11939 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
@@ -8801,17 +9228,6 @@
   {
    "refs": [
     "US-12138",
-    "US-12140"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (17x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-12138, US-12140 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-12138",
     "US-1217"
    ],
    "why_expected": [
@@ -9351,17 +9767,6 @@
   {
    "refs": [
     "US-12140",
-    "US-1217"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (15x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-12140 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-12140",
     "US-12170"
    ],
    "why_expected": [
@@ -9811,17 +10216,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-12170, US-9667 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-12171",
-    "US-12172"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-12171, US-12172 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -11172,17 +11566,6 @@
   {
    "refs": [
     "US-1219",
-    "US-13084"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (13x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-13084 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-1219",
     "US-4558"
    ],
    "why_expected": [
@@ -11422,17 +11805,6 @@
     "activated together by the same call on the same day (3x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-12586 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-1222",
-    "US-12587"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (15x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-12587 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -12344,17 +12716,6 @@
   {
    "refs": [
     "US-12354",
-    "US-12355"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (21x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-12354, US-12355 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-12354",
     "US-12585"
    ],
    "why_expected": [
@@ -12727,17 +13088,6 @@
    ],
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-1239 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-1239",
-    "US-8295"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)",
-    "outlines about 0 m apart"
    ],
    "reason": "not tested: the official outline of US-1239 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
@@ -13979,17 +14329,6 @@
   },
   {
    "refs": [
-    "US-12757",
-    "US-4405"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-12757 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
     "US-12758",
     "US-12759"
    ],
@@ -14250,27 +14589,6 @@
   },
   {
    "refs": [
-    "US-13569",
-    "US-4408"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-13569 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-13573",
-    "US-13574"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-13573, US-13574 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
     "US-13573",
     "US-13575"
    ],
@@ -14308,17 +14626,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-13573, US-9667 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-13574",
-    "US-13575"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-13574, US-13575 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -14490,17 +14797,6 @@
   },
   {
    "refs": [
-    "US-4400",
-    "US-9658"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9658 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
     "US-4401",
     "US-4575"
    ],
@@ -14604,17 +14900,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-9642 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4402",
-    "US-9643"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (11x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-9643 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -14791,17 +15076,6 @@
   {
    "refs": [
     "US-4404",
-    "US-9605"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (10x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9605 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4404",
     "US-9613"
    ],
    "why_expected": [
@@ -14894,17 +15168,6 @@
   {
    "refs": [
     "US-4404",
-    "US-9666"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (10x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9666 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4404",
     "US-9667"
    ],
    "why_expected": [
@@ -14946,28 +15209,6 @@
   {
    "refs": [
     "US-4405",
-    "US-9604"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9604 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4405",
-    "US-9610"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (10x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9610 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4405",
     "US-9614"
    ],
    "why_expected": [
@@ -14979,17 +15220,6 @@
   {
    "refs": [
     "US-4405",
-    "US-9624"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-9624 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4405",
     "US-9632"
    ],
    "why_expected": [
@@ -14997,17 +15227,6 @@
     "activated together by the same call on the same day (13x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-9632 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4405",
-    "US-9634"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (15x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9634 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -15089,17 +15308,6 @@
   {
    "refs": [
     "US-4406",
-    "US-9612"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (20x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9612 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4406",
     "US-9615"
    ],
    "why_expected": [
@@ -15107,17 +15315,6 @@
     "activated together by the same call on the same day (6x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-9615 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4406",
-    "US-9618"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (12x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9618 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -15144,17 +15341,6 @@
   {
    "refs": [
     "US-4406",
-    "US-9629"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (14x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9629 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4406",
     "US-9637"
    ],
    "why_expected": [
@@ -15162,17 +15348,6 @@
     "activated together by the same call on the same day (3x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-9637 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4406",
-    "US-9644"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (19x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9644 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -15423,17 +15598,6 @@
   {
    "refs": [
     "US-4408",
-    "US-9641"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9641 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4408",
     "US-9647"
    ],
    "why_expected": [
@@ -15456,34 +15620,12 @@
   {
    "refs": [
     "US-4408",
-    "US-9660"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (10x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9660 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4408",
     "US-9674"
    ],
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-9674 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4408",
-    "US-9677"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9677 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -15538,17 +15680,6 @@
     "outlines about 0 m apart"
    ],
    "reason": "not tested: the official outline of US-9616 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4409",
-    "US-9638"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-9638 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -15646,56 +15777,12 @@
   {
    "refs": [
     "US-4410",
-    "US-9609"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (10x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9609 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4410",
-    "US-9611"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
-  },
-  {
-   "refs": [
-    "US-4410",
-    "US-9619"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (22x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9619 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4410",
     "US-9630"
    ],
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-9630 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4410",
-    "US-9633"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-9633 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -16366,27 +16453,6 @@
   {
    "refs": [
     "US-4575",
-    "US-9620"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9620 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4575",
-    "US-9631"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
-  },
-  {
-   "refs": [
-    "US-4575",
     "US-9632"
    ],
    "why_expected": [
@@ -16433,17 +16499,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-9645 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4575",
-    "US-9648"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9648 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -16813,17 +16868,6 @@
     "activated together by the same call on the same day (2x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-9627 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-4579",
-    "US-9639"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (13x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9639 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -17320,17 +17364,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-9632 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-9593",
-    "US-9648"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not tested: the official outline of US-9648 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [
@@ -18441,16 +18474,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the official outline of US-9674 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
-  },
-  {
-   "refs": [
-    "US-9632",
-    "US-9643"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (16x, POTA history)"
-   ],
-   "reason": "not tested: the official outline of US-9632, US-9643 could not be read in pass 1 (one of its map records did not answer; the next run tries again)"
   },
   {
    "refs": [

@@ -4,35 +4,35 @@
  "states": [
   "US-CO"
  ],
- "since": "2026-10-30",
- "date": "2026-10-30 05:38 UTC",
+ "since": "2026-10-31",
+ "date": "2026-10-31 11:37 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
  "known_answers": "19/19 on 2026-10-30",
  "missing_check": {
-  "FOUND": 18,
-  "DROPPED": 109,
-  "NEVER LOOKED AT": 1676
+  "FOUND": 49,
+  "DROPPED": 132,
+  "NEVER LOOKED AT": 1622
  },
  "report": {
   "pass1": {
-   "date": "2026-10-30",
-   "pairs tested": 161,
-   "pairs whose boxes touch": 161
+   "date": "2026-10-31",
+   "pairs tested": 911,
+   "pairs whose boxes touch": 911
   },
   "pass2": {
-   "agree with the pass before": 576,
-   "date": "2026-10-30",
-   "pairs tested": 56
+   "agree with the pass before": 174,
+   "date": "2026-10-31",
+   "pairs tested": 73
   },
   "pass3": {
-   "agree with the pass before": 151,
-   "date": "2026-10-30",
-   "pairs tested": 56
+   "agree with the pass before": 65,
+   "date": "2026-10-31",
+   "pairs tested": 71
   },
   "pass5": {
-   "checked": 19,
-   "date": "2026-10-30",
+   "checked": 39,
+   "date": "2026-10-31",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -41,15 +41,15 @@
   "US-CO": "data/fers/US-CO.json"
  },
  "US-CO": {
-  "rows": 601,
-  "live": 20,
+  "rows": 757,
+  "live": 54,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the agency ownership map did not answer": 3
   },
-  "dropped": 463,
-  "merged": 115
+  "dropped": 567,
+  "merged": 133
  },
  "states_ready": [
   "US-CO"

@@ -1,6 +1,6 @@
 {
  "area": "co",
- "date": "2026-10-30",
+ "date": "2026-10-31",
  "states": [
   "US-CO"
  ],
@@ -39,15 +39,15 @@
    "names": {},
    "what": "not sure",
    "kind": "area",
-   "size": "13372.5 ac",
-   "sort": 13372.5,
+   "size": "13395.9 ac",
+   "sort": 13395.9,
    "reason": "the agency ownership map did not answer",
    "id": "US-11916+US-11952@area@38.287,-108.881",
    "sources": {
-    "US-11916": "downloaded 2026-10-30",
-    "US-11952": "downloaded 2026-10-30"
+    "US-11916": "read from the agency 2026-10-31",
+    "US-11952": "read from the agency 2026-10-30"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -90,7 +90,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (1452x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -109,7 +109,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (941x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -152,7 +152,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (200x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -183,6 +183,30 @@
   },
   {
    "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-4406",
+    "US-9644"
+   ],
+   "names": {
+    "US-4406": "Roosevelt National Forest",
+    "US-9644": "Dowdy Lake State Wildlife Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "117.0 ac",
+   "sort": 117.0,
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4406+US-9644@area@40.797,-105.560",
+   "sources": {
+    "US-4406": "read from the agency 2026-10-31",
+    "US-9644": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-08-30 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
    "state": "",
    "refs": [
     "US-1244",
@@ -198,7 +222,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (84x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -217,7 +241,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (83x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -236,7 +260,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (75x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -255,7 +279,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (64x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -274,7 +298,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (62x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -293,7 +317,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (61x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -312,7 +336,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (57x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -331,7 +355,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (48x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -383,6 +407,25 @@
   },
   {
    "area": "co",
+   "state": "",
+   "refs": [
+    "US-11923",
+    "US-1238"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "46 same-day activations",
+   "sort": 46.0,
+   "reason": "dropped: only inside an area closed to the public (no entry)",
+   "id": "US-11923+US-1238@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (46x, POTA history)"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
    "state": "US-CO",
    "refs": [
     "US-1247",
@@ -407,6 +450,27 @@
   },
   {
    "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-4405",
+    "US-9604"
+   ],
+   "names": {},
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "39.6 ac",
+   "sort": 39.6,
+   "reason": "water only: boat or kayak",
+   "id": "US-4405+US-9604@area@37.468,-106.766",
+   "sources": {
+    "US-4405": "read from the agency 2026-10-31",
+    "US-9604": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-08-30 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
    "state": "",
    "refs": [
     "US-1210",
@@ -422,7 +486,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (38x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -441,7 +505,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (35x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -460,7 +524,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (35x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -479,7 +543,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (35x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -496,10 +560,10 @@
    "reason": "the agency ownership map did not answer",
    "id": "US-11884+US-11952@area@38.687,-108.986",
    "sources": {
-    "US-11884": "downloaded 2026-10-30",
-    "US-11952": "downloaded 2026-10-30"
+    "US-11884": "downloaded 2026-10-31",
+    "US-11952": "read from the agency 2026-10-30"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -518,7 +582,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -537,7 +601,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -556,7 +620,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -575,7 +639,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (32x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -594,7 +658,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (32x, POTA history) / outlines come within 70 m of each other"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -613,7 +677,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (32x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -632,7 +696,31 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (32x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-4410",
+    "US-9609"
+   ],
+   "names": {
+    "US-4410": "White River National Forest",
+    "US-9609": "Basalt State Wildlife Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "31.2 ac",
+   "sort": 31.2,
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4410+US-9609@area@39.376,-106.972",
+   "sources": {
+    "US-4410": "read from the agency 2026-10-31",
+    "US-9609": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-08-30 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -651,7 +739,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -670,7 +758,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (30x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -689,7 +777,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (30x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -708,7 +796,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -727,7 +815,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -746,7 +834,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (24x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -813,7 +901,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (23x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -830,10 +918,10 @@
    "reason": "the agency ownership map did not answer",
    "id": "US-4405+US-9600@area@37.644,-105.541",
    "sources": {
-    "US-4405": "downloaded 2026-10-30",
-    "US-9600": "downloaded 2026-10-30"
+    "US-4405": "read from the agency 2026-10-31",
+    "US-9600": "read from the agency 2026-10-30"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -852,7 +940,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -871,7 +959,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -890,7 +978,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -936,7 +1024,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -955,7 +1043,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -974,7 +1062,31 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-4405",
+    "US-9634"
+   ],
+   "names": {
+    "US-4405": "Rio Grande National Forest",
+    "US-9634": "Coller State Wildlife Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "18.7 ac",
+   "sort": 18.7,
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4405+US-9634@area@37.743,-106.739",
+   "sources": {
+    "US-4405": "read from the agency 2026-10-31",
+    "US-9634": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-08-30 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -993,7 +1105,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1012,7 +1124,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1031,7 +1143,26 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-12138",
+    "US-12140"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "17 same-day activations",
+   "sort": 17.0,
+   "reason": "dropped: private land at the spot (ownership map): counts only for its own park number, never a 2-fer",
+   "id": "US-12138+US-12140@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1050,7 +1181,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1069,7 +1200,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1088,7 +1219,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1107,7 +1238,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1126,7 +1257,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1145,7 +1276,64 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-9632",
+    "US-9643"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "16 same-day activations",
+   "sort": 16.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-9632+US-9643@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (16x, POTA history)"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-12140",
+    "US-1217"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-12140+US-1217@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-1222",
+    "US-12587"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-1222+US-12587@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1164,7 +1352,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1183,7 +1371,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1202,7 +1390,26 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-1219",
+    "US-13084"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-1219+US-13084@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1221,7 +1428,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1240,7 +1447,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1259,7 +1466,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1278,7 +1485,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1297,7 +1504,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1316,7 +1523,26 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-4406",
+    "US-9618"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-4406+US-9618@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1335,7 +1561,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1354,7 +1580,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1373,7 +1599,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1392,7 +1618,28 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-4406",
+    "US-9612"
+   ],
+   "names": {},
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "11.5 ac",
+   "sort": 11.5,
+   "reason": "water only: boat or kayak",
+   "id": "US-4406+US-9612@area@40.772,-105.618",
+   "sources": {
+    "US-4406": "read from the agency 2026-10-31",
+    "US-9612": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-08-30 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1411,7 +1658,26 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-0033",
+    "US-1239"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-0033+US-1239@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (11x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1430,7 +1696,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1449,7 +1715,26 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (11x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-4402",
+    "US-9643"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-4402+US-9643@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (11x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1468,7 +1753,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1487,7 +1772,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1506,7 +1791,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1525,7 +1810,31 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-0222",
+    "US-1239"
+   ],
+   "names": {
+    "US-0222": "Baca National Wildlife Refuge",
+    "US-1239": "San Luis Lakes State Wildlife Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "10.1 ac",
+   "sort": 10.1,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
+   "id": "US-0222+US-1239@area@37.721,-105.777",
+   "sources": {
+    "US-0222": "read from the agency 2026-10-31",
+    "US-1239": "read from the agency 2026-10-31",
+    "USGS water": "saved copy of the USGS map, read 2026-10-30"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1544,7 +1853,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1563,7 +1872,26 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (10x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-4404",
+    "US-9666"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-4404+US-9666@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1582,7 +1910,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1601,7 +1929,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1620,7 +1948,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1639,7 +1967,26 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-11919",
+    "US-4400"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "9 same-day activations",
+   "sort": 9.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-11919+US-4400@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1658,7 +2005,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1677,7 +2024,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1696,7 +2043,31 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-4410",
+    "US-9619"
+   ],
+   "names": {
+    "US-4410": "White River National Forest",
+    "US-9619": "Blue River State Wildlife Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "8.7 ac",
+   "sort": 8.7,
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4410+US-9619@area@39.833,-106.226",
+   "sources": {
+    "US-4410": "read from the agency 2026-10-31",
+    "US-9619": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-08-30 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1715,7 +2086,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1734,7 +2105,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1753,7 +2124,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1772,7 +2143,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1791,7 +2162,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1810,7 +2181,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1829,7 +2200,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1848,7 +2219,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1867,7 +2238,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1886,7 +2257,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (7x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1905,7 +2276,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1924,7 +2295,28 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-4408",
+    "US-9660"
+   ],
+   "names": {},
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "6.2 ac",
+   "sort": 6.2,
+   "reason": "water only: boat or kayak",
+   "id": "US-4408+US-9660@area@37.422,-108.316",
+   "sources": {
+    "US-4408": "read from the agency 2026-10-31",
+    "US-9660": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-08-30 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1943,7 +2335,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1962,7 +2354,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -1981,7 +2373,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2000,7 +2392,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (6x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2019,7 +2411,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (6x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2038,7 +2430,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2057,7 +2449,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (6x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2076,7 +2468,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (6x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2095,7 +2487,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2114,7 +2506,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2133,7 +2525,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2152,7 +2544,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2171,7 +2563,7 @@
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (5x, POTA history)"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2190,7 +2582,83 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-4400",
+    "US-9658"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "5 same-day activations",
+   "sort": 5.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-4400+US-9658@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (5x, POTA history)"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-4405",
+    "US-9624"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "5 same-day activations",
+   "sort": 5.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-4405+US-9624@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-4408",
+    "US-9641"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "5 same-day activations",
+   "sort": 5.0,
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-4408+US-9641@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (5x, POTA history)"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "",
+   "refs": [
+    "US-4408",
+    "US-9677"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "5 same-day activations",
+   "sort": 5.0,
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "id": "US-4408+US-9677@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (5x, POTA history)"
+   },
+   "checked": "2026-10-31"
   },
   {
    "area": "co",
@@ -2209,7 +2677,119 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-4406",
+    "US-9629"
+   ],
+   "names": {
+    "US-4406": "Roosevelt National Forest",
+    "US-9629": "Cherokee State Wildlife Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "4.6 ac",
+   "sort": 4.6,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4406+US-9629@area@40.768,-105.403",
+   "sources": {
+    "US-4406": "read from the agency 2026-10-31",
+    "US-9629": "read from the agency 2026-10-31"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-4410",
+    "US-9619"
+   ],
+   "names": {},
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "4.3 ac",
+   "sort": 4.3,
+   "reason": "water only: boat or kayak",
+   "id": "US-4410+US-9619@area@39.832,-106.220",
+   "sources": {
+    "US-4410": "read from the agency 2026-10-31",
+    "US-9619": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-08-30 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-4404",
+    "US-9605"
+   ],
+   "names": {
+    "US-4404": "Pike National Forest",
+    "US-9605": "Alma State Wildlife Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "2.0 ac",
+   "sort": 2.0,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4404+US-9605@area@39.347,-106.065",
+   "sources": {
+    "US-4404": "read from the agency 2026-10-31",
+    "US-9605": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-08-30 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-11939",
+    "US-4406"
+   ],
+   "names": {},
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "1.7 ac",
+   "sort": 1.7,
+   "reason": "water only: boat or kayak",
+   "id": "US-11939+US-4406@area@40.694,-105.680",
+   "sources": {
+    "US-11939": "read from the agency 2026-10-31",
+    "US-4406": "read from the agency 2026-10-31",
+    "USGS water": "USGS NHDPlus HR file 2022-08-30 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-31"
+  },
+  {
+   "area": "co",
+   "state": "US-CO",
+   "refs": [
+    "US-11938",
+    "US-4406"
+   ],
+   "names": {
+    "US-11938": "Parvin Lake State Wildlife Area",
+    "US-4406": "Roosevelt National Forest"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "1.0 ac",
+   "sort": 1.0,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-11938+US-4406@area@40.784,-105.553",
+   "sources": {
+    "US-11938": "read from the agency 2026-10-31",
+    "US-4406": "read from the agency 2026-10-31"
+   },
+   "checked": "2026-10-31"
   }
  ]
 }
