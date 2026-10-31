@@ -1,5 +1,5 @@
 {
- "made": "2026-10-31 13:29 UTC",
+ "made": "2026-10-31 14:45 UTC",
  "snap": {
   "date": "2026-10-31",
   "outlines": {
@@ -39,13 +39,11 @@
     "- open": 34
    },
    "layers": {
-    "LIKELY YES": 4,
+    "LIKELY YES": 237,
     "rows": 1383,
-    "LIKELY NO": 33,
-    "SURE NO": 2,
-    "SURE YES": 4,
-    "LIKELY open": 485,
-    "SURE open": 855
+    "LIKELY NO": 285,
+    "SURE NO": 14,
+    "SURE YES": 847
    },
    "not-sure-for-chat9": {
     "- open": 146,
@@ -79,7 +77,7 @@
    "collector": {
     "asked": 45,
     "evidence": 9,
-    "failed": 155,
+    "failed": 157,
     "no match": 54
    },
    "finders found": 148
@@ -178,6 +176,14 @@
   }
  },
  "board": {
+  "GIS hunter": {
+   "areas": "",
+   "last_run": "2026-10-31",
+   "made": "chunk 1: data/gis-hunter + questions",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41211239612",
+   "waiting_on": "chat 11 answers data/waiting/questions/gis-hunter.json"
+  },
   "campground info bot": {
    "areas": "left: 51",
    "last_run": "2026-10-30",
@@ -213,7 +219,7 @@
   "official documents bot": {
    "areas": "",
    "last_run": "2026-10-31",
-   "made": "chunk 1 saved",
+   "made": "chunk 2 saved",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41200118341",
    "waiting_on": "chat 8 grades review.md samples"
