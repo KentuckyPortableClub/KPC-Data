@@ -1,7 +1,7 @@
 {
  "about": "World finder v2 candidates (stage 1, Fable's plan): chat 11 answers YES / NO against the agency's own map; chat 2 rechecks. 'name mismatch' = the record's name differs from POTA's. Big countries: answer a random sample first and report the hit rate (HQ).",
  "built": "2026-10-30",
- "open": 75,
+ "open": 72,
  "questions": [
   {
    "area": "LU",
@@ -23203,11 +23203,13 @@
    "layer": "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD/MapServer/2",
    "source": "world finder (pin on a found layer)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/ZA-0071",
-   "auto_recheck": "NOT PASSED: a layer the world key does not read yet"
+   "auto_recheck": "NOT PASSED: a layer the world key does not read yet",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "ZA",
@@ -23222,11 +23224,13 @@
    "layer": "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD/MapServer/2",
    "source": "world finder (pin on a found layer)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/ZA-0124",
-   "auto_recheck": "NOT PASSED: a layer the world key does not read yet"
+   "auto_recheck": "NOT PASSED: a layer the world key does not read yet",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "ZA",
@@ -23241,11 +23245,13 @@
    "layer": "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD/MapServer/2",
    "source": "world finder (pin on a found layer)",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1W)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
    "pota_link": "https://pota.app/#/park/ZA-0120",
-   "auto_recheck": "NOT PASSED: a layer the world key does not read yet"
+   "auto_recheck": "NOT PASSED: a layer the world key does not read yet",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "ZA",
@@ -23264,7 +23270,7 @@
    "checked_by": null,
    "how": null,
    "pota_link": "https://pota.app/#/park/ZA-0142",
-   "auto_recheck": "NOT PASSED: a layer the world key does not read yet; chat 11 already said NO to another record for this park"
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park"
   },
   {
    "area": "ZA",
@@ -64480,5 +64486,5 @@
    "pota_link": "https://pota.app/#/park/FI-0241"
   }
  ],
- "auto_yes": 0
+ "auto_yes": 3
 }

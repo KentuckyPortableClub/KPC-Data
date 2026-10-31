@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 89 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 126 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -10,7 +10,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-10-30 | 1 | data/docs/US-ND.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-10-30 | 1 | data/docs/US-SD.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-10-30 | 1 | data/docs/US-WI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| 2026-10-30 | 1 | data/fers/CA-BC.json | HOLD | F-2 NOT SURE 13 -> 18 (over 30% change) |
+| 2026-10-30 | 1 | data/fers/CA-BC.json | HOLD | F-2 NOT SURE 13 -> 52 (over 30% change) |
 | 2026-10-30 | 1 | data/fers/CA-NB.json | HOLD | F-S3 10 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-6540+CA-6549 125 km, CA-6542+CA-6545 114 km |
 | 2026-10-30 | 1 | data/fers/CA-NU.json | HOLD | F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-4569+CA-4594 202 km |
 | 2026-10-30 | 1 | data/fers/CA-ON.json.gz | HOLD | F-S3 54 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-0154+CA-0304 102 km, CA-0444+CA-1699 118 km |
@@ -44,12 +44,15 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-10-31 | 0 | data/docs/US-NY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-10-31 | 0 | data/docs/US-OH.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-10-31 | 0 | data/docs/US-OK.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-10-31 | 0 | data/docs/US-OR.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-10-31 | 0 | data/docs/US-PA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-10-31 | 0 | data/docs/US-RI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-10-31 | 0 | data/docs/US-SC.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-10-31 | 0 | data/docs/US-TX.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-10-31 | 0 | data/docs/US-VT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-10-31 | 0 | data/docs/US-WA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-10-31 | 0 | data/docs/US-WY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-10-31 | 0 | data/fers/US-DE.json | HOLD | F-2 candidates 68 -> 27 (over 30% change); F-2 only 27 of 68 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand) |
 | ? | ? | data/campinfo/US-CO.json | PASS |  |
 | ? | ? | data/campinfo/US-IA.json | PASS |  |
 | ? | ? | data/campinfo/US-KY.json | PASS |  |
@@ -65,26 +68,60 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/fers/CA-PE.json | PASS |  |
 | ? | ? | data/fers/CA-SK.json | PASS |  |
 | ? | ? | data/fers/US-CO.json | PASS |  |
+| ? | ? | data/fers/US-LA.json | PASS |  |
 | ? | ? | data/fers/US-OH.json | PASS |  |
 | ? | ? | data/fers/US-VA.json | PASS |  |
+| ? | ? | data/fers/US-VT.json | PASS |  |
 | ? | ? | data/hours/US-KY.json | PASS |  |
 | ? | ? | data/us-key/US-AK.json | PASS |  |
 | ? | ? | data/us-key/US-AL.json | PASS |  |
 | ? | ? | data/us-key/US-AR.json | PASS |  |
+| ? | ? | data/us-key/US-AZ.json | PASS |  |
+| ? | ? | data/us-key/US-CA.json | PASS |  |
+| ? | ? | data/us-key/US-CO.json | PASS |  |
+| ? | ? | data/us-key/US-CT.json | PASS |  |
 | ? | ? | data/us-key/US-DC.json | PASS |  |
+| ? | ? | data/us-key/US-DE.json | PASS |  |
 | ? | ? | data/us-key/US-GA.json | PASS |  |
+| ? | ? | data/us-key/US-HI.json | PASS |  |
+| ? | ? | data/us-key/US-IA.json | PASS |  |
+| ? | ? | data/us-key/US-ID.json | PASS |  |
 | ? | ? | data/us-key/US-IL.json | PASS |  |
 | ? | ? | data/us-key/US-IN.json | PASS |  |
+| ? | ? | data/us-key/US-KS.json | PASS |  |
+| ? | ? | data/us-key/US-LA.json | PASS |  |
 | ? | ? | data/us-key/US-MA.json | PASS |  |
 | ? | ? | data/us-key/US-MD.json | PASS |  |
+| ? | ? | data/us-key/US-ME.json | PASS |  |
+| ? | ? | data/us-key/US-MI.json | PASS |  |
+| ? | ? | data/us-key/US-MN.json | PASS |  |
 | ? | ? | data/us-key/US-MO.json | PASS |  |
 | ? | ? | data/us-key/US-MS.json | PASS |  |
+| ? | ? | data/us-key/US-MT.json | PASS |  |
 | ? | ? | data/us-key/US-NC.json | PASS |  |
+| ? | ? | data/us-key/US-ND.json | PASS |  |
+| ? | ? | data/us-key/US-NE.json | PASS |  |
+| ? | ? | data/us-key/US-NH.json | PASS |  |
+| ? | ? | data/us-key/US-NJ.json | PASS |  |
+| ? | ? | data/us-key/US-NM.json | PASS |  |
+| ? | ? | data/us-key/US-NV.json | PASS |  |
+| ? | ? | data/us-key/US-NY.json | PASS |  |
+| ? | ? | data/us-key/US-OH.json | PASS |  |
 | ? | ? | data/us-key/US-OK.json | PASS |  |
+| ? | ? | data/us-key/US-OR.json | PASS |  |
 | ? | ? | data/us-key/US-PA.json | PASS |  |
+| ? | ? | data/us-key/US-RI.json | PASS |  |
+| ? | ? | data/us-key/US-SC.json | PASS |  |
+| ? | ? | data/us-key/US-SD.json | PASS |  |
 | ? | ? | data/us-key/US-TN.json | PASS |  |
 | ? | ? | data/us-key/US-TX.json | PASS |  |
+| ? | ? | data/us-key/US-UT.json | PASS |  |
 | ? | ? | data/us-key/US-VA.json | PASS |  |
+| ? | ? | data/us-key/US-VT.json | PASS |  |
+| ? | ? | data/us-key/US-WA.json | PASS |  |
+| ? | ? | data/us-key/US-WI.json | PASS |  |
+| ? | ? | data/us-key/US-WV.json | PASS |  |
+| ? | ? | data/us-key/US-WY.json | PASS |  |
 | ? | ? | data/ca-key/layers.json | PASS |  |
 | ? | ? | data/ca-key/overrides.json | PASS |  |
 | ? | ? | data/ca-key/why-not.json | PASS |  |
@@ -104,7 +141,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | key-pieces.json | 34 | 307 |
 | layers.json | 1340 | 1383 |
 | not-sure-for-chat9.json | 146 | 146 |
-| world-finder.json | 75 | 3717 |
+| world-finder.json | 72 | 3717 |
 
 ## Approvals not used yet: 4
 

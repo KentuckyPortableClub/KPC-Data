@@ -1,12 +1,12 @@
 {
- "made": "2026-10-31 09:21 UTC",
+ "made": "2026-10-31 11:14 UTC",
  "snap": {
   "date": "2026-10-31",
   "outlines": {
    "US": {
-    "official": 10973,
+    "official": 11099,
     "approximate": 391,
-    "pin": 1719
+    "pin": 1593
    },
    "Canada": {
     "pin": 1608,
@@ -59,19 +59,20 @@
     "SURE NO": 125,
     "LIKELY open": 31,
     "LIKELY YES": 33,
-    "SURE open": 9,
+    "SURE bot YES": 3,
+    "SURE open": 6,
     "- open": 35,
     "- YES": 9
    }
   },
   "layers": {
    "intake": {
-    "REJECT": 1128,
-    "WATER-ONLY": 28,
-    "ASK-THE-PUBLISHER": 157,
+    "REJECT": 1387,
+    "WATER-ONLY": 35,
+    "ASK-THE-PUBLISHER": 295,
     "LIVE-ONLY": 1,
     "READY": 2,
-    "RETRY": 269,
+    "RETRY": 308,
     "approved": 2
    },
    "queue rows": 1669,
@@ -177,14 +178,6 @@
   }
  },
  "board": {
-  "Layer collector": {
-   "areas": "",
-   "last_run": "2026-10-31",
-   "made": "LAYER lines + crawler layers pin-tested",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41187153227",
-   "waiting_on": "chat 11 answers data/waiting/questions/layers.json"
-  },
   "campground info bot": {
    "areas": "left: 51",
    "last_run": "2026-10-30",
@@ -210,11 +203,11 @@
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "layer intake": {
-   "areas": "1 rows left",
-   "last_run": "2026-10-28",
+   "areas": "339 rows left",
+   "last_run": "2026-10-31",
    "made": "data/intake/ready.json + review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40702061747",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41188038768",
    "waiting_on": "chat 9 (approve READY rows)"
   },
   "official documents bot": {
@@ -222,7 +215,7 @@
    "last_run": "2026-10-31",
    "made": "chunk 3 saved",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41162369401",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41181282483",
    "waiting_on": "chat 8 grades review.md samples"
   },
   "park detective": {
@@ -243,7 +236,7 @@
   },
   "waiting room": {
    "last_run": "2026-10-31",
-   "made": "heartbeat 0 h old, 89 files waiting",
+   "made": "heartbeat 0 h old, 126 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },

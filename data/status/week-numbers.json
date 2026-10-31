@@ -90,9 +90,9 @@
    "date": "2026-10-31",
    "outlines": {
     "US": {
-     "official": 10973,
+     "official": 11099,
      "approximate": 391,
-     "pin": 1719
+     "pin": 1593
     },
     "Canada": {
      "pin": 1608,
@@ -145,19 +145,20 @@
      "SURE NO": 125,
      "LIKELY open": 31,
      "LIKELY YES": 33,
-     "SURE open": 9,
+     "SURE bot YES": 3,
+     "SURE open": 6,
      "- open": 35,
      "- YES": 9
     }
    },
    "layers": {
     "intake": {
-     "REJECT": 1128,
-     "WATER-ONLY": 28,
-     "ASK-THE-PUBLISHER": 157,
+     "REJECT": 1387,
+     "WATER-ONLY": 35,
+     "ASK-THE-PUBLISHER": 295,
      "LIVE-ONLY": 1,
      "READY": 2,
-     "RETRY": 269,
+     "RETRY": 308,
      "approved": 2
     },
     "queue rows": 1669,
