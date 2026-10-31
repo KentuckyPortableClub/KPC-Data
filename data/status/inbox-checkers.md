@@ -56,6 +56,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT official documents bot (2026-10-31): grade me: US-IA US-AZ US-NM US-CA US-OR US-WA US-AK US-HI data/docs/<area>.json + review.md — chunk 1 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41181282483)
 - FROM BOT official documents bot (2026-10-31): grade me: US-IA US-CA US-OR US-WA US-AK US-HI US-MI US-OH data/docs/<area>.json + review.md — chunk 2 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41181282483)
 - FROM BOT official documents bot (2026-10-31): grade me: US-IA US-OR US-WA US-AK US-HI US-MI US-OH US-UT data/docs/<area>.json + review.md — chunk 3 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41181282483)
+- FROM BOT 2-fer line (chat 2; 2026-10-31): grade me: US-VT (vt) — READY · known 19/19 on 2026-10-30 · US-VT: live 9, not sure 1, water only 0 · files data/fers/<state>.json + line-vt.json + missing-vt.json · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41194654250)
 - FROM WAITING ROOM (held since 2026-10-31): campinfo data/campinfo/US-MA.json held: F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-AR.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-AZ.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits

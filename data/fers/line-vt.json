@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "vt",
+ "states": [
+  "US-VT"
+ ],
+ "since": "2026-10-31",
+ "date": "2026-10-31 11:03 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 7,
+  "DROPPED": 74,
+  "NEVER LOOKED AT": 159
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-31",
+   "pairs tested": 241,
+   "pairs whose boxes touch": 241
+  },
+  "pass2": {
+   "agree with the pass before": 89,
+   "date": "2026-10-31",
+   "pairs tested": 26
+  },
+  "pass3": {
+   "agree with the pass before": 66,
+   "date": "2026-10-31",
+   "pairs tested": 25
+  },
+  "pass5": {
+   "checked": 2,
+   "date": "2026-10-31",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-VT": "data/fers/US-VT.json"
+ },
+ "US-VT": {
+  "rows": 92,
+  "live": 9,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 52,
+  "merged": 30
+ },
+ "states_ready": [
+  "US-VT"
+ ],
+ "states_held": []
+}
