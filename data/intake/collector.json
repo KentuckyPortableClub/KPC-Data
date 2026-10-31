@@ -1769,5 +1769,23 @@
   "status": "no match",
   "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
   "date": "2026-10-31"
+ },
+ "CA-2912|https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/6": {
+  "ref": "CA-2912",
+  "area": "CA-SK",
+  "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/6",
+  "field": "PARK_NAME",
+  "status": "evidence",
+  "why": "pin inside 'Jean Louis Legare Regional Park' (277 ac) but no shared proper word: kept as evidence, not asked",
+  "date": "2026-10-31"
+ },
+ "CA-1156|https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/6": {
+  "ref": "CA-1156",
+  "area": "CA-SK",
+  "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/6",
+  "field": "PARK_NAME",
+  "status": "evidence",
+  "why": "pin inside 'Thomson Lake Regional Park' (480 ac) but one shared word (lake) only: kept as evidence, not asked",
+  "date": "2026-10-31"
  }
 }
