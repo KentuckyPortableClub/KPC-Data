@@ -1,0 +1,76 @@
+{
+ "request": "requests/9-waro-lp.json",
+ "id": "9-waro-lp",
+ "chat": 9,
+ "kind": "layer-probe",
+ "report": "US-4582 WARO centerline: fields, count, sample names",
+ "asked": {
+  "chat": 9,
+  "kind": "layer-probe",
+  "layers": [
+   "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/20200622_2016_URI_WARO_NST_trail_centerline_states_combined_web_mercator/FeatureServer/0"
+  ],
+  "report": "US-4582 WARO centerline: fields, count, sample names"
+ },
+ "answered": "2026-10-31 03:36Z",
+ "results": [
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/20200622_2016_URI_WARO_NST_trail_centerline_states_combined_web_mercator/FeatureServer/0",
+   "answers": true,
+   "service": "20200622_2016_URI_WARO_NST_trail_centerline_states_combined_web_mercat",
+   "licence": "",
+   "years_in_text": [],
+   "description": "",
+   "item_licence": "Data Distribution Liability Statement     The National Park Service shall not be held liable for improper or incorrect use of the data described and/or contained herein. These data and related graphics are not legal documents and are not intended to be used as such.     The information contained in ",
+   "item_modified": "2026-04-22",
+   "item_owner": "JEFARRELL@nps.gov_nps",
+   "item_org": "National Park Service",
+   "item_title": "WARO_driving_route_Centerline_URI_2016_ln",
+   "item_credits": "URI, IR1 (NER) GIS",
+   "item_about": "2016_URI_WARO_driving_route_centerline Farrell J. 2016. Washington-Rochambeau Revolutionary Route National Historic Trail (WARO) Driving Route Centerline and Related Sites. National Park Service. 680-mile-long trail follows the paths taken by George Washington's Continental Army and Jean-Baptiste de Rochambeau's Expédition Particulière during their 1781 march from Newport, Rhode Island, to Yorktown. https://irma.nps.gov/DataStore/Reference/Profile/2317939 2016_URI_WARO_driving_route_centerline",
+   "layers": [
+    {
+     "id": null,
+     "name": "20200622_2016_URI_WARO_NST_trail_centerline_states_combined_",
+     "geom": "Polyline",
+     "nameField": "Name",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "FID",
+      "OBJECTID",
+      "Name",
+      "Descr",
+      "Shape_Leng",
+      "Shape__Length"
+     ],
+     "last_edit": "2025-05-30",
+     "layer_copyright": "",
+     "records": 11,
+     "sample": [
+      "CT",
+      "DC",
+      "DE",
+      "MA",
+      "MD",
+      "NJ: Rochambeau",
+      "NJ: Washington",
+      "NY"
+     ]
+    }
+   ]
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
