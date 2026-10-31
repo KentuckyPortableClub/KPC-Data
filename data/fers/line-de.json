@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "de",
+ "states": [
+  "US-DE"
+ ],
+ "since": "2026-10-31",
+ "date": "2026-10-31 11:06 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 33,
+  "DROPPED": 151,
+  "NEVER LOOKED AT": 542
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-31",
+   "pairs tested": 239,
+   "pairs whose boxes touch": 239
+  },
+  "pass2": {
+   "agree with the pass before": 117,
+   "date": "2026-10-31",
+   "pairs tested": 47
+  },
+  "pass3": {
+   "agree with the pass before": 98,
+   "date": "2026-10-31",
+   "pairs tested": 43
+  },
+  "pass5": {
+   "checked": 16,
+   "date": "2026-10-31",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-DE": "data/fers/US-DE.json"
+ },
+ "US-DE": {
+  "rows": 132,
+  "live": 33,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 4
+  },
+  "dropped": 42,
+  "merged": 53
+ },
+ "states_ready": [
+  "US-DE"
+ ],
+ "states_held": []
+}
