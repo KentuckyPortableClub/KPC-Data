@@ -1,0 +1,4366 @@
+{
+ "area": "US-MT",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0054": {
+   "n": "Nez Perce National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/nepe/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/nepe/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 27, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/nepe/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0400": {
+   "n": "Halfbreed Lake National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuges/profiles/recEdMore.cfm?ID=61522",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0405": {
+   "n": "CSKT Bison Range Protected Area",
+   "t": "Protected Area",
+   "page": "https://www.fws.gov/refuge/National_Bison_Range/Contact.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-10521": {
+   "n": "Garnet Ghost Town BLM Historic Preservation Site",
+   "t": "BLM Historic Preservation Site",
+   "page": "https://www.blm.gov/visit/garnet-ghost-town",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10524": {
+   "n": "Acton (BLM) Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/acton",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10525": {
+   "n": "Coal Banks Landing (BLM) Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/coal-banks-landing",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10526": {
+   "n": "Devils Elbow (BLM) Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/devils-elbow-campground",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10527": {
+   "n": "Judith Landing (BLM) Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/judith-landing",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.blm.gov/visit/judith-landing",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.blm.gov/programs/recreation/know-before-you-go",
+    "how": "a link on the park's page ('Know before you go')",
+    "status": "ok"
+   },
+   "agency": "Bureau of Land Management, Lewistown Field Office",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-10528": {
+   "n": "Shepherd Ah Nei BLM Special Recreation Management Area",
+   "t": "BLM Special Recreation Management Area",
+   "page": "https://www.blm.gov/visit/shepherd-ah-nei-srma",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10529": {
+   "n": "Sundance Lodge (BLM) Recreation Site",
+   "t": "Recreation Site",
+   "page": "https://www.blm.gov/visit/sundance-lodge-rec-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11215": {
+   "n": "Bear Paw Battlefield National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/nepe/planyourvisit/visit-bear-paw-battlefield.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nps.gov/nepe/planyourvisit/upload/Bear-Paw-unigrid-Brochur; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nps.gov/biho/learn/management/upload/BEPA_1st_Amendment_Ar)",
+    "how": "a link on the park's page ('brochure/trail map')"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/nepe/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/nepe/planyourvisit/upload/Bear-Paw-unigrid-Brochure_compressed-for-web.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('brochure/trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.nps.gov/biho/learn/management/upload/BEPA_1st_Amendment_Areas.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map Indicating Bear Paw First Amendment Activities Area')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11216": {
+   "n": "Big Springs Trout State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753636",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/htc/39753636.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11217": {
+   "n": "Bluewater Springs Trout State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753798",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/htc/39753798.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11218": {
+   "n": "Fort Peck State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753884",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/htc/39753884.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11219": {
+   "n": "Jacko River Trout State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753949",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/htc/39753949.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11221": {
+   "n": "Washoe Park Trout State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754097",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/htc/39754097.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12630": {
+   "n": "Upper Missouri River BLM Wild and Scenic River",
+   "t": "BLM Wild and Scenic River",
+   "page": "https://www.blm.gov/sites/blm.gov/files/documents/files/Boaters%20Guide%202017%20508%20COMPL.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12822": {
+   "n": "Big Horn State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753822",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12827": {
+   "n": "Brownes Lake State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753504",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12925": {
+   "n": "Thoreau State Beach",
+   "t": "State Beach",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753904",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "https://fwp.mt.gov/conservation/wildlife-management-areas/public-use-rules",
+    "how": "a link on the park's page ('Public Use Rules')",
+    "status": "ok"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39753904.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-3424": {
+   "n": "Ice Age Floods National Geologic Trail",
+   "t": "National Geologic Trail",
+   "page": "https://www.nps.gov/iafl/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/iafl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 11, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/iafl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4475": {
+   "n": "Caribou-Targhee National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/ctnf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r04/caribou-targhee",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4477": {
+   "n": "Idaho Panhandle National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/r01/idahopanhandle",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r01/idahopanhandle",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r01/idahopanhandle/safety-ethics",
+    "how": "a link on the park's page ('Know Before You Go')",
+    "status": "ok"
+   },
+   "agency": "U.S. Department of Agriculture, Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-4501": {
+   "n": "Custer Gallatin National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/main/custergallatin/home",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r01/custergallatin",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-4558": {
+   "n": "Continental Divide Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.fs.usda.gov/managing-land/trails/cdt",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/trails/continental-divide-nst",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/trails/continental-divide-nst/plan-visit/know-before-go",
+    "how": "a link on the park's page ('Know Before You Go')",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-4563": {
+   "n": "Pacific Northwest National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.fs.usda.gov/trails/pacific-northwest-nst",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/trails/pacific-northwest-nst",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/trails/alerts-notices",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "U.S. Department of Agriculture, Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-4572": {
+   "n": "Lewis and Clark National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/lecl/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/lecl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4574": {
+   "n": "Nez Perce National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.fs.usda.gov/npnht/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/trails/nez-perce-nht",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-8001": {
+   "n": "Lamesteer National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8002": {
+   "n": "Ninepipe National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/ninepipe/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/ninepipe/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/ninepipe/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8003": {
+   "n": "Pablo National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/pablo/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/pablo/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/pablo/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "is managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0028": {
+   "n": "Glacier National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/glac/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/glac/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 7, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/glac/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0070": {
+   "n": "Yellowstone National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/yell/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/yell/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "July 22, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/yell/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service (NPS)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0396": {
+   "n": "Benton Lake National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/benton_lake/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/benton-lake/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/benton-lake/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "administered by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0398": {
+   "n": "Bowdoin National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/bowdoin/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/bowdoin/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/bowdoin/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0399": {
+   "n": "Charles M. Russell National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/charles_m_russell/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/charles-m-russell/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Interactive Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/locations/charles-m-russell-national-wildlife-refuge/rules-and-policies",
+    "how": "a link on the park's page ('Rules and Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0401": {
+   "n": "Lake Mason National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/lake_mason/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/lake-mason/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/lake-mason/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0402": {
+   "n": "Lee Metcalf National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/lee_metcalf/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/lee-metcalf/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/lee-metcalf/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0403": {
+   "n": "Lost Trail National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/lost_trail/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/lost-trail/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/lost-trail/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0404": {
+   "n": "Medicine Lake National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/medicine_lake/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/medicine-lake/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0407": {
+   "n": "Red Rock Lakes National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/red_rock_lakes/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/red-rock-lakes/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/red-rock-lakes/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0408": {
+   "n": "UL Bend National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/ul_bend/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/ul-bend/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Interactive Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0409": {
+   "n": "War Horse National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/war_horse/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/war-horse/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/war-horse/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0674": {
+   "n": "Bighorn Canyon National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.nps.gov/bica/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/bica/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "June 17, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/bica/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0701": {
+   "n": "Big Hole National Battlefield",
+   "t": "National Battlefield",
+   "page": "https://www.nps.gov/biho/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/biho/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "June 25, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/biho/learn/management/laws-policies.htm",
+    "how": "a link on the park's page ('Rules and Regulations')",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0823": {
+   "n": "Fort Union Trading Post National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/fous/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/fous/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 25, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/fous/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0829": {
+   "n": "Grant-Kohrs Ranch National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/grko/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/grko/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 1, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/grko/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0883": {
+   "n": "Flathead National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.fs.usda.gov/r01/flathead/recreation/wild-scenic-rivers",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r01/flathead",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-0947": {
+   "n": "Little Bighorn Battlefield National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/libi/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/libi/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 16, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/libi/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10175": {
+   "n": "Milltown State Park",
+   "t": "State Park",
+   "page": "https://fwp.mt.gov/stateparks/milltown",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (fwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10176": {
+   "n": "Granite Ghost Town State Park",
+   "t": "State Park",
+   "page": "https://fwp.mt.gov/stateparks/granite-ghost-town/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (fwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10696": {
+   "n": "Beartooth Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753622",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/wma/39753622.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11146": {
+   "n": "Somers Beach State Park",
+   "t": "State Park",
+   "page": "https://fwp.mt.gov/stateparks/somers-beach",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (fwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-11242": {
+   "n": "Scratchgravel Hills BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/maps/georeferenced-PDFs/montana-dakotas",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12333": {
+   "n": "Kootenai Falls Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753943",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/wma/39753943.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12334": {
+   "n": "Mount Silcox Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753927",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/wma/39753927.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12631": {
+   "n": "Terry Badlands BLM Wilderness Area",
+   "t": "BLM Wilderness Area",
+   "page": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/terry-badlands-wsa",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12632": {
+   "n": "Sleeping Giant BLM Wilderness Area",
+   "t": "BLM Wilderness Area",
+   "page": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12633": {
+   "n": "Sheep Creek BLM Wilderness Area",
+   "t": "BLM Wilderness Area",
+   "page": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12634": {
+   "n": "Axolotl Lakes BLM Wilderness Area",
+   "t": "BLM Wilderness Area",
+   "page": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/axolotl-lakes-wsa",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12635": {
+   "n": "Humbug Spires BLM Wilderness Area",
+   "t": "BLM Wilderness Area",
+   "page": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/humbug-spires-wsa",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12646": {
+   "n": "Seven Sisters Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754345",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/wma/39754345.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12647": {
+   "n": "Elk Island Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754347",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/wma/39754347.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12648": {
+   "n": "Canyon Ferry Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753388",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/wma/39753388.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12649": {
+   "n": "Fresno Reservoir Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754295",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/wma/39754295.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12650": {
+   "n": "Warm Springs Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754067",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/wma/39754067.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12651": {
+   "n": "Nevada Lake Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754071",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/wma/39754071.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12652": {
+   "n": "Kootenai West Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753945",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/wma/39753945.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12653": {
+   "n": "Aunt Molly Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754191",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12654": {
+   "n": "Blackfoot-Clearwater Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754079",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12655": {
+   "n": "Marshall Creek Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754674",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12656": {
+   "n": "Kootenai Woods Ranch Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753947",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12657": {
+   "n": "Sun River Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753612",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12658": {
+   "n": "Blackleaf Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753632",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12695": {
+   "n": "Bull River Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754601",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12696": {
+   "n": "Bighorn Viewing Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754700",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12697": {
+   "n": "Mount Jumbo Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754077",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12698": {
+   "n": "Calf Creek Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754089",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12699": {
+   "n": "North Swan Valley Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754628",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12700": {
+   "n": "Roundhorn Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753941",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12701": {
+   "n": "Threemile Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754073",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12702": {
+   "n": "MT Fish Creek Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754676",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12712": {
+   "n": "Canyon Creek Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753370",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12818": {
+   "n": "Arod Lake State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753642",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "https://fwp.mt.gov/conservation/wildlife-management-areas/public-use-rules",
+    "how": "a link on the park's page ('Public Use Rules')",
+    "status": "ok"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39753642.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12819": {
+   "n": "Bearpaw Lake State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754321",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12820": {
+   "n": "Big Pine State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754101",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12821": {
+   "n": "Big Rock State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753804",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "https://fwp.mt.gov/conservation/wildlife-management-areas/public-use-rules",
+    "how": "a link on the park's page ('Public Use Rules')",
+    "status": "ok"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39753804.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12823": {
+   "n": "Bonfield State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754401",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "https://fwp.mt.gov/conservation/wildlife-management-areas/public-use-rules",
+    "how": "a link on the park's page ('Public Use Rules')",
+    "status": "ok"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39754401.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12824": {
+   "n": "Boulder Forks State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753826",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "https://fwp.mt.gov/conservation/wildlife-management-areas/public-use-rules",
+    "how": "a link on the park's page ('Public Use Rules')",
+    "status": "ok"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39753826.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12825": {
+   "n": "Bratten State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753810",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12826": {
+   "n": "Brown's Lake State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754193",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "https://fwp.mt.gov/conservation/wildlife-management-areas/public-use-rules",
+    "how": "a link on the park's page ('Public Use Rules')",
+    "status": "ok"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39754193.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12847": {
+   "n": "Buffalo Jump State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753828",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/)",
+    "how": "a link on the park's page ('Location Map')"
+   },
+   "rules": {
+    "url": "https://fwp.mt.gov/conservation/wildlife-management-areas/public-use-rules",
+    "how": "a link on the park's page ('Public Use Rules')",
+    "status": "ok"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39753828.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Location Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fwp.mt.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12849": {
+   "n": "Bynum Reservoir State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753684",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12850": {
+   "n": "Captain Clark State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753836",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12851": {
+   "n": "Castle Rock State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753838",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12852": {
+   "n": "Chief Looking Glass State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754131",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12853": {
+   "n": "Clearwater Crossing State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754449",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12854": {
+   "n": "Cliff Swallow State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753840",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12855": {
+   "n": "Cole Ponds State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754309",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12856": {
+   "n": "Corrick’s River Bend State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754247",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12857": {
+   "n": "Craig State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753704",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12860": {
+   "n": "Dailey Lake State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753414",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12861": {
+   "n": "Dan Bailey State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753422",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12862": {
+   "n": "Deadman's Basin State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754263",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12863": {
+   "n": "Dearborn State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753706",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12864": {
+   "n": "Ennis State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753534",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12865": {
+   "n": "Eureka Reservoir State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753674",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12866": {
+   "n": "Fallon Bridge State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754383",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12867": {
+   "n": "Far West State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754407",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12868": {
+   "n": "Fishtrap Creek State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753538",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12869": {
+   "n": "Forest Grove State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754155",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12871": {
+   "n": "Forks State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754159",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12872": {
+   "n": "General Custer State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753842",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12873": {
+   "n": "Glasgow Base Pond State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754325",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12874": {
+   "n": "Glen State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753546",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12875": {
+   "n": "Grant Marsh State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754577",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12876": {
+   "n": "Grey Bear State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753844",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12877": {
+   "n": "Grey Cliff State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753468",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12878": {
+   "n": "Hannon Memorial State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754135",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12879": {
+   "n": "Harper Lake State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754115",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12880": {
+   "n": "Harrison Lake State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753406",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12882": {
+   "n": "Harry Morgan State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754161",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12883": {
+   "n": "Horsethief Station State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753848",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12884": {
+   "n": "Indian Fort State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753850",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12885": {
+   "n": "Intake Dam State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754381",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12886": {
+   "n": "Island Lake State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754499",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12887": {
+   "n": "Lichen Cliff State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753710",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12888": {
+   "n": "Loch Leven State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753564",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12889": {
+   "n": "Maidenrock State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753424",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12890": {
+   "n": "Mallard's Landing State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753860",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12891": {
+   "n": "Mallard's Rest State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753566",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12892": {
+   "n": "Manuel Lisa State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753862",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12893": {
+   "n": "Martinsdale Reservoir State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753678",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12894": {
+   "n": "Meadow Lake State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754181",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12895": {
+   "n": "Mid Canon State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753694",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12896": {
+   "n": "Monture Creek State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754181",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12897": {
+   "n": "Moraine State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753864",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12898": {
+   "n": "Mountain Palace State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753712",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12899": {
+   "n": "Myers Bridge State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754391",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12900": {
+   "n": "Newlan Creek Reservoir State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754461",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12901": {
+   "n": "Nilan Reservoir State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753690",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12903": {
+   "n": "Ninemile Prairie State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754245",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12904": {
+   "n": "Otter Creek State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753854",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12905": {
+   "n": "Pelican State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753866",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12906": {
+   "n": "Pelican Point State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753672",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12907": {
+   "n": "Pishkin Reservoir State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753624",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12908": {
+   "n": "Prewitt Creek State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753750",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12909": {
+   "n": "Prickly Pear State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753714",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12910": {
+   "n": "Raynold's Pass State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753440",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12911": {
+   "n": "River Junction State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754125",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12912": {
+   "n": "Rock Creek State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754327",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12913": {
+   "n": "Rosebud East State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754423",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12914": {
+   "n": "Rosebud Isle State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753872",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12915": {
+   "n": "Russell Gates Memorial State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754195",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12916": {
+   "n": "Salmon Fly State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753438",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12917": {
+   "n": "Selkirk State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753808",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12918": {
+   "n": "Seven Sisters State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754581",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12919": {
+   "n": "Snowden Bridge State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754621",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12920": {
+   "n": "South Sandstone State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754405",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12921": {
+   "n": "Spite Hill State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753720",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12922": {
+   "n": "Stickney Creek State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753722",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12923": {
+   "n": "Stuart Mill Bay State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754543",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12924": {
+   "n": "Swinging Bridge State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753874",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12926": {
+   "n": "Tony Schonen State Beach",
+   "t": "State Beach",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753572",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12927": {
+   "n": "Twelve Mile Dam State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754387",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12928": {
+   "n": "Two Leggins State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753876",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12929": {
+   "n": "Upsata Lake State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39754103",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12930": {
+   "n": "Valley Garden State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753456",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12931": {
+   "n": "Varney Bridge State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753404",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12932": {
+   "n": "Voyagers Rest State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753858",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12933": {
+   "n": "Water Birch State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753878",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12934": {
+   "n": "Whitebird State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753880",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12935": {
+   "n": "Willow Creek Reservoir State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753628",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12936": {
+   "n": "Wolf Creek Bridge State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753728",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12937": {
+   "n": "York's Islands State Fish and Wildlife Area",
+   "t": "State Fish and Wildlife Area",
+   "page": "https://myfwp.mt.gov/fishMT/fas/39753472",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": null,
+   "agency": "government agency (myfwp.mt.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 175,
+  "map ok": 26,
+  "map found by the bot": 12,
+  "date on the map": 0,
+  "posted date only": 10,
+  "date unknown": 16,
+  "no map": 149,
+  "rules ok": 37,
+  "needs browser": 24,
+  "handover hints": 0,
+  "runs hints": 2,
+  "host resting / robots": 0,
+  "map names the park": 26,
+  "region overview only": 0
+ }
+}

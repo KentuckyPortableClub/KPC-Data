@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T05:46Z",
+ "checked": "2026-10-31T06:41Z",
  "switched_on": false,
  "results": [
   {
@@ -92,6 +92,7 @@
    "path": "data/docs/US-ID.json",
    "kind": "docs",
    "why": [
+    "F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf",
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
    ],
    "notes": [
@@ -153,6 +154,17 @@
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
    ],
    "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/docs/US-MT.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "HOLD"
   },
   {

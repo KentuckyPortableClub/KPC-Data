@@ -109,7 +109,7 @@
    "status": "failed",
    "parks": 181,
    "updated": "2026-10-31",
-   "why": "maps 82 -> 64"
+   "why": "maps 82 -> 63"
   },
   "US-ND": {
    "status": "done",
@@ -266,10 +266,17 @@
    "updated": "2026-10-31"
   },
   "US-ID": {
-   "status": "partial",
+   "status": "done",
    "parks": 362,
-   "checked": 19,
-   "left": 343,
+   "checked": 362,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-MT": {
+   "status": "partial",
+   "parks": 254,
+   "checked": 175,
+   "left": 79,
    "updated": "2026-10-31"
   }
  },
@@ -285,32 +292,39 @@
   "mip.agri.arkansas.gov": 1793500699.890685,
   "cpw.state.co.us": 1793507938.9465082,
   "wgfapps.wyo.gov": 1793508618.257194,
-  "idfg.idaho.gov": 1793511965.8520963
+  "idfg.idaho.gov": 1793511965.8520963,
+  "www.idfg.id.gov": 1793512974.3306756,
+  "idt.idaho.gov": 1793513072.328934,
+  "idt.idao.gov": 1793513124.41703,
+  "www.wildhorsesonline.blm.gov": 1793513189.776288,
+  "www.dfg.idaho.gov": 1793513234.0375862,
+  "www.idfg.idaho.goc": 1793513355.179098,
+  "www.idfg.idah.gov": 1793513445.116335
  },
  "last": {
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-WY",
    "US-ID",
    "US-MT",
    "US-NV",
    "US-AZ",
    "US-NM",
-   "US-CA"
+   "US-CA",
+   "US-OR"
   ],
   "stat": {
-   "requests": 1019,
-   "parks": 430,
-   "maps_ok": 242,
-   "maps_found": 224,
+   "requests": 1375,
+   "parks": 699,
+   "maps_ok": 307,
+   "maps_found": 270,
    "dates": 0,
-   "rules": 318,
-   "browser": 228,
-   "robots": 0,
-   "strikes": 3,
-   "errors": 0,
-   "skipped_fresh": 64
+   "rules": 343,
+   "browser": 279,
+   "robots": 4,
+   "strikes": 21,
+   "errors": 21,
+   "skipped_fresh": 19
   }
  }
 }
