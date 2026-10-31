@@ -1,6 +1,6 @@
 {
  "area": "CA-BC",
- "run": "2026-10-30",
+ "run": "2026-10-31",
  "about": "GIS hunter (Fable design, Opus build): per park, hits on the official layers at the POTA pin, leads, what was tried. Candidates go to data/waiting/questions/gis-hunter.json for chat 11.",
  "parks": {
   "CA-3186": {
@@ -10,6 +10,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -26,6 +27,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -42,6 +44,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -58,6 +61,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -71,17 +75,28 @@
    "park": "Jericho Beach Park",
    "area": "CA-BC",
    "why_not": "pin inside",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3554610,
+     "record_name": "Jericho Beach Park",
+     "acres_approx": 116,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"jericho beach\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4793": {
    "park": "Kicking Horse Pass National Historic Site",
@@ -90,6 +105,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -106,6 +122,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -122,6 +139,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -140,7 +158,7 @@
      "verdict": "name mismatch",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
      "agency": "BC-HP Govern",
-     "record": 6121423,
+     "record": 6130250,
      "record_name": "a08b281a-e511-415f-9e06-f362ee8b649f",
      "acres_approx": 537,
      "tier": "UNLIKELY",
@@ -149,6 +167,7 @@
    ],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: hit",
@@ -164,6 +183,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -177,17 +197,28 @@
    "park": "Thompson Regional Park",
    "area": "CA-BC",
    "why_not": "pin inside",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3557835,
+     "record_name": "Thompson Regional Park",
+     "acres_approx": 5,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"thompson\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-5483": {
    "park": "SGang Gwaay National Heritage Site",
@@ -196,12 +227,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"heritage sgang gwaay\": 0 lead(s)"
+    "B ArcGIS Online search \"heritage gwaay sgang\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -212,6 +244,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -230,7 +263,7 @@
      "verdict": "name mismatch",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
      "agency": "BC-HP Govern",
-     "record": 6120928,
+     "record": 6129755,
      "record_name": "8f66e0f3-a791-476b-87a7-eabcc313fad9",
      "acres_approx": 1590,
      "tier": "UNLIKELY",
@@ -239,6 +272,7 @@
    ],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: hit",
@@ -251,33 +285,65 @@
    "park": "Delta Nature Reserve",
    "area": "CA-BC",
    "why_not": "check",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3557358,
+     "record_name": "Burns Bog Ecological Conservancy Area",
+     "acres_approx": 5786,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3557252,
+     "record_name": "Delta Nature Reserve",
+     "acres_approx": 174,
+     "tier": "SURE",
+     "why": "same proper name (nature)"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"delta\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3427": {
    "park": "Douglas Park",
    "area": "CA-BC",
    "why_not": "check",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3554574,
+     "record_name": "Douglas Park",
+     "acres_approx": 7,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"douglas\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3679": {
    "park": "Kilby Provincial Park",
@@ -286,6 +352,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -302,6 +369,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -318,9 +386,19 @@
    "hits": [
     {
      "verdict": "name mismatch",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3556696,
+     "record_name": "Trails Park",
+     "acres_approx": 160,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
+    },
+    {
+     "verdict": "name mismatch",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
      "agency": "BC-HP Govern",
-     "record": 6117457,
+     "record": 6126284,
      "record_name": "14387c09-1022-4a68-befc-c358f4b36010",
      "acres_approx": 2,
      "tier": "UNLIKELY",
@@ -329,6 +407,7 @@
    ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: hit",
@@ -344,6 +423,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -359,12 +439,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"navvy point jack\": 0 lead(s)"
+    "B ArcGIS Online search \"point navvy jack\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -372,33 +453,55 @@
    "park": "Pitt Meadows Athletic Park Recreation Site",
    "area": "CA-BC",
    "why_not": "check",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3557202,
+     "record_name": "Pitt Meadows Athletic Park",
+     "acres_approx": 37,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"athletic meadows pitt\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4023": {
    "park": "Riverview Forest Park",
    "area": "CA-BC",
    "why_not": "check",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555706,
+     "record_name": "Riverview Forest",
+     "acres_approx": 45,
+     "tier": "SURE",
+     "why": "same proper name (forest)"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"riverview\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-5499": {
    "park": "Crippen Regional Park",
@@ -407,6 +510,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -420,17 +524,28 @@
    "park": "Deas Island Regional Park",
    "area": "CA-BC",
    "why_not": "check",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3557362,
+     "record_name": "Deas Island Regional Park",
+     "acres_approx": 124,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"island deas\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-5539": {
    "park": "Uplands Park Natural Area",
@@ -446,6 +561,7 @@
     }
    ],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -459,24 +575,28 @@
    "park": "Beacon Hill Park",
    "area": "CA-BC",
    "why_not": "check",
-   "hits": [],
-   "leads": [
+   "hits": [
     {
-     "title": "Beacon Hill Home Zone Boundary Line",
-     "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/BeaconHillHZ_Boundary/FeatureServer",
-     "owner": "Transportation_SeattleCityGIS",
-     "type": "Feature Service"
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3561250,
+     "record_name": "Beacon Hill Park",
+     "acres_approx": 194,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
+   "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"beacon hill\": 1 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-6398": {
    "park": "Craigflower Manor House National Historic Site",
@@ -485,12 +605,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"craigflower house manor\": 0 lead(s)"
+    "B ArcGIS Online search \"craigflower manor house\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -501,12 +622,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"biosphere clayoquot sound\": 0 lead(s)"
+    "B ArcGIS Online search \"clayoquot biosphere sound\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -517,6 +639,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -530,33 +653,55 @@
    "park": "A.H.P. Matthew Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555193,
+     "record_name": "A.H.P. Matthew Park",
+     "acres_approx": 2,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"matthew\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3180": {
    "park": "Allco Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555759,
+     "record_name": "Allco Park",
+     "acres_approx": 21,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"allco\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3183": {
    "park": "Ambleside Park",
@@ -565,6 +710,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -578,17 +724,28 @@
    "park": "Barnet Marine Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3556830,
+     "record_name": "Barnet Marine Park",
+     "acres_approx": 17,
+     "tier": "SURE",
+     "why": "same proper name (marine)"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"marine barnet\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3241": {
    "park": "Bonnie Schrenk Park",
@@ -597,6 +754,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -610,17 +768,28 @@
    "park": "Bright Angel Regional Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3559653,
+     "record_name": "Bright Angel Park",
+     "acres_approx": 54,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"bright angel\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3267": {
    "park": "Buckingham Park Protected Area",
@@ -629,6 +798,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -645,6 +815,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -658,17 +829,28 @@
    "park": "Burnaby Mountain Conservation Area",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3556776,
+     "record_name": "Burnaby Mountain Conservation Area",
+     "acres_approx": 1444,
+     "tier": "SURE",
+     "why": "same proper name (conservation)"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"mountain burnaby\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3298": {
    "park": "Cardiff Mountain Ecological Reserve",
@@ -677,6 +859,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -706,6 +889,7 @@
     }
    ],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -722,6 +906,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -735,46 +920,55 @@
    "park": "Cedar Creek Park Conservation Area",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
-   "leads": [
+   "hits": [
     {
-     "title": "Yellow-Cedar Decline 1986 to 2024 - Cumulative",
-     "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/CDL_1980sto2024_Union_FM/FeatureServer",
-     "owner": "ForestHealthAlaskaRegion",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Yellow-Cedar Decline 1986 to 2024 - Annual",
-     "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Cumulative_Yellow_Cedar_Decline_Append_1980s_to_2024/FeatureServer",
-     "owner": "ForestHealthAlaskaRegion",
-     "type": "Feature Service"
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3561956,
+     "record_name": "Cedar Creek Park",
+     "acres_approx": 18,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
+   "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"cedar\": 2 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3310": {
    "park": "Cates Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3556271,
+     "record_name": "Cates Park/ Whey-Ah-Wichen",
+     "acres_approx": 55,
+     "tier": "LIKELY",
+     "why": "shared cate; extra: park - / record whey, wichen"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"cates\": 0 lead(s)"
+    "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-3313": {
    "park": "Cedar Greens Park",
@@ -783,11 +977,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"greens cedar\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -798,11 +994,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"citadel heights\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -810,76 +1008,136 @@
    "park": "Colony Farm Community Gardens at ƛ̓éxətəm Regional Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3557360,
+     "record_name": "Colony Farm Regional Park",
+     "acres_approx": 629,
+     "tier": "LIKELY",
+     "why": "shared colony, farm; extra: park community, extm, garden / record -"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-3359": {
    "park": "ƛ̓éxətəm Regional Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3557360,
+     "record_name": "Colony Farm Regional Park",
+     "acres_approx": 629,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-3376": {
    "park": "Coutts Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3561503,
+     "record_name": "Coutts Park",
+     "acres_approx": 0,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3394": {
    "park": "Dacre Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555639,
+     "record_name": "Dacre Park",
+     "acres_approx": 1,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3407": {
    "park": "Deer Lake Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3556780,
+     "record_name": "Deer Lake Park",
+     "acres_approx": 479,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3415": {
    "park": "Devonian Harbour Park",
@@ -888,11 +1146,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"devonian harbour\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -903,11 +1163,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"discovery town\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -915,31 +1177,55 @@
    "park": "Eastern Drive Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3561497,
+     "record_name": "Eastern Drive Park",
+     "acres_approx": 1,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3469": {
    "park": "Elks Park Protected Area",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3561499,
+     "record_name": "Elks Park",
+     "acres_approx": 1,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3493": {
    "park": "Evans Lake Ecological Reserve",
@@ -948,11 +1234,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"evans\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -963,11 +1251,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"fleetwood meadows\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -975,16 +1265,28 @@
    "park": "Burnaby Fraser Foreshore Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3556770,
+     "record_name": "Burnaby Fraser Foreshore Park",
+     "acres_approx": 43,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3514": {
    "park": "Forest Hills Park",
@@ -993,11 +1295,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"hills\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1008,11 +1312,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"forsyth\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1023,11 +1329,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"fortress\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1035,16 +1343,28 @@
    "park": "Frost Road Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3554892,
+     "record_name": "Frost Road Park",
+     "acres_approx": 2,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3537": {
    "park": "Garibaldi Park Recreation Park",
@@ -1053,11 +1373,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"garibaldi\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1065,76 +1387,136 @@
    "park": "Gates Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3561468,
+     "record_name": "Gates Park",
+     "acres_approx": 108,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3591": {
    "park": "Hawthorne Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555495,
+     "record_name": "Hawthorne Park",
+     "acres_approx": 46,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3601": {
    "park": "Hickey Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555705,
+     "record_name": "Hickey Street Reservoir Park",
+     "acres_approx": 8,
+     "tier": "LIKELY",
+     "why": "shared hickey; extra: park - / record reservoir, street"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-3603": {
    "park": "Hillcrest Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3554463,
+     "record_name": "Hillcrest Park",
+     "acres_approx": 10,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3606": {
    "park": "Holland Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555090,
+     "record_name": "Holland Park",
+     "acres_approx": 22,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3617": {
    "park": "Hugo Ray Park",
@@ -1143,11 +1525,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"hugo ray\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1158,11 +1542,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"hume\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1173,11 +1559,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"kennedy james\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1188,11 +1576,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"lawson john\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1200,16 +1590,28 @@
    "park": "Kroeker Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3561495,
+     "record_name": "Kroeker Park",
+     "acres_approx": 1,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3741": {
    "park": "Lions Park",
@@ -1218,11 +1620,13 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)"
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"lions\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1230,16 +1634,28 @@
    "park": "Little Cates Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3556271,
+     "record_name": "Cates Park/ Whey-Ah-Wichen",
+     "acres_approx": 55,
+     "tier": "UNLIKELY",
+     "why": "one shared word (cate) only"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-3746": {
    "park": "Locarno Beach Park",
@@ -1248,6 +1664,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1263,6 +1680,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1275,16 +1693,28 @@
    "park": "Maple Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555316,
+     "record_name": "Maple Park",
+     "acres_approx": 6,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3775": {
    "park": "Maple Ridge Park",
@@ -1293,6 +1723,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1305,16 +1736,28 @@
    "park": "Maquabeak Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555634,
+     "record_name": "Maquabeak Park",
+     "acres_approx": 3,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3778": {
    "park": "Maquinna Marine Provincial Park",
@@ -1323,6 +1766,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1338,6 +1782,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1353,6 +1798,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1365,16 +1811,28 @@
    "park": "Memorial South Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3554541,
+     "record_name": "Memorial South Park",
+     "acres_approx": 35,
+     "tier": "SURE",
+     "why": "same proper name (memorial)"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3826": {
    "park": "Morningside Park",
@@ -1383,6 +1841,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1395,16 +1854,28 @@
    "park": "Mundy Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555670,
+     "record_name": "Mundy Park",
+     "acres_approx": 389,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3860": {
    "park": "Murdo Frazer Park",
@@ -1413,6 +1884,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1428,6 +1900,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1443,6 +1916,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1455,16 +1929,28 @@
    "park": "Oak Meadows Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3554413,
+     "record_name": "Oak Meadows Park",
+     "acres_approx": 6,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-3943": {
    "park": "Parkgate Recreation Park",
@@ -1473,6 +1959,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1488,6 +1975,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1500,16 +1988,28 @@
    "park": "Pitt River Regional Greenway Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3557372,
+     "record_name": "Pitt River Greenway",
+     "acres_approx": 151,
+     "tier": "SURE",
+     "why": "same proper name (greenway)"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4022": {
    "park": "Riley Park",
@@ -1518,6 +2018,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1530,16 +2031,28 @@
    "park": "Robert Burnaby Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3556901,
+     "record_name": "Cariboo Conservation Area",
+     "acres_approx": 92,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4031": {
    "park": "Roche Point Park",
@@ -1548,6 +2061,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1563,6 +2077,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1578,6 +2093,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1590,61 +2106,109 @@
    "park": "Settlers Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3561524,
+     "record_name": "Settlers Park",
+     "acres_approx": 6,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4106": {
    "park": "Skyline Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3561523,
+     "record_name": "Skyline Park",
+     "acres_approx": 4,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4128": {
    "park": "Spanish Banks Beach Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name mismatch",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3554659,
+     "record_name": "Locarno Park",
+     "acres_approx": 8,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4184": {
    "park": "Tatlow Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3554517,
+     "record_name": "Tatlow Park",
+     "acres_approx": 3,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4187": {
    "park": "Taylor Landing Provincial Park",
@@ -1653,6 +2217,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1668,6 +2233,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1680,76 +2246,136 @@
    "park": "Douglas Taylor Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3557507,
+     "record_name": "Douglas Taylor Park",
+     "acres_approx": 7,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4232": {
    "park": "Jackman Wetlands Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3556017,
+     "record_name": "Jackman Wetlands Park",
+     "acres_approx": 109,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4251": {
    "park": "VanDusen Botanical Gardens",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3554559,
+     "record_name": "Vandusen Botanical Gardens Park",
+     "acres_approx": 57,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4260": {
    "park": "Volunteer Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3554623,
+     "record_name": "Volunteer Park",
+     "acres_approx": 1,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4268": {
    "park": "Walnut Grove Community Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3556034,
+     "record_name": "Walnut Grove Community Park",
+     "acres_approx": 7,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4280": {
    "park": "West Langley Park",
@@ -1758,6 +2384,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1773,6 +2400,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1788,6 +2416,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1800,31 +2429,55 @@
    "park": "Hudson Bay Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555858,
+     "record_name": "Hudson Bay Park",
+     "acres_approx": 3,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-5323": {
    "park": "Central Community Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3557655,
+     "record_name": "Central Community Park",
+     "acres_approx": 1,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-5324": {
    "park": "Fairfield Recreation Park",
@@ -1833,6 +2486,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1848,6 +2502,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1863,6 +2518,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1878,6 +2534,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1890,16 +2547,28 @@
    "park": "Rotary Beach Recreation Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3562059,
+     "record_name": "Rotary Beach Park",
+     "acres_approx": 3,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-5343": {
    "park": "Skaha Lake Recreation Park",
@@ -1908,6 +2577,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1923,6 +2593,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1938,6 +2609,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1950,31 +2622,55 @@
    "park": "Grouse Mountain Regional Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3556374,
+     "record_name": "Grouse Mountain Regional Park",
+     "acres_approx": 3319,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-5544": {
    "park": "Stoney Hill Regional Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3559881,
+     "record_name": "Stoney Hill Forest Reserve",
+     "acres_approx": 750,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-5547": {
    "park": "Thomas Hayes Ecological Reserve",
@@ -1983,6 +2679,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -1995,31 +2692,55 @@
    "park": "Blackie Spit Recreation Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3555263,
+     "record_name": "Blackie Spit",
+     "acres_approx": 71,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-5667": {
    "park": "Mount Tolmie Park",
    "area": "CA-BC",
    "why_not": "nothing near",
-   "hits": [],
+   "hits": [
+    {
+     "verdict": "name match",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "agency": "BC local and",
+     "record": 3561020,
+     "record_name": "Mount Tolmie Park",
+     "acres_approx": 42,
+     "tier": "SURE",
+     "why": "same proper name"
+    }
+   ],
    "leads": [],
    "tried": [
+    "A BC local and: hit",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "no layer found"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-6132": {
    "park": "Fraser River National Heritage Area",
@@ -2028,6 +2749,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
@@ -2043,6 +2765,7 @@
    "hits": [],
    "leads": [],
    "tried": [
+    "A BC local and: no polygon at the pin",
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
