@@ -1,0 +1,70 @@
+name: KPC temp - trail visitor centers (one NPS API pull)
+# Oct 30 2026 11:15 PM (chat 2; Brandon 11:06 PM 'see what visitor's centers are for the trails...copy link to nps listing it as a
+# visitor's center', 11:07 PM 'Use my key if need be'). ONE pull from developer.nps.gov/api (parks list + visitor centers for the
+# national trails), saved to data/access-leads/trail-visitor-centers.json; credit 'National Park Service data'. Never fails; the file
+# removes itself in the same commit (temp workflow rule).
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Pull
+        env:
+          NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
+        run: |
+          python3 - <<'PY' || true
+          import json, os, re, time, urllib.request, urllib.parse
+          K = os.environ.get('NPS_API_KEY') or ''
+          def get(path, **q):
+              q['api_key'] = K
+              u = 'https://developer.nps.gov/api/v1/' + path + '?' + urllib.parse.urlencode(q)
+              with urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': 'KPC (kentuckyportableclub.github.io)'}), timeout=60) as r: return json.loads(r.read())
+          idx = json.load(open('data/trails/index.json'))
+          low = lambda s: re.sub(r'[^a-z ]', '', s.lower().replace('national historic trail', '').replace('national scenic trail', '').replace('&', 'and')).split()
+          parks = get('parks', limit=500, fields='fullName,parkCode,designation')['data']; time.sleep(1)
+          trails = [p for p in parks if 'trail' in (p.get('designation') or '').lower() or 'trail' in p.get('fullName', '').lower()]
+          code = {}
+          for x in idx:
+              w = set(low(x['name'])) - {'the'}
+              best = max(trails, key=lambda p: len(w & set(low(p['fullName']))), default=None)
+              if best and len(w & set(low(best['fullName']))) >= max(1, len(w) - 1): code[x['ref']] = (best['parkCode'], best['fullName'])
+          out, miss = [], [x['ref'] for x in idx if x['ref'] not in code]
+          codes = sorted({c for c, _ in code.values()})
+          vcs, diag = [], []
+          for c in codes:   # Oct 30 11:25 PM: the one-call version came back EMPTY; ask per trail and also read NPS 'places' that say visitor/interpretive center
+              try:
+                  j = get('visitorcenters', parkCode=c, limit=50); vcs += j.get('data') or []; n1 = j.get('total')
+              except Exception as e: n1 = 'err ' + str(e)[:40]
+              time.sleep(.5)
+              try:
+                  j2 = get('places', parkCode=c, limit=100)
+                  pl = [x for x in (j2.get('data') or []) if re.search(r'visitor|interpretive center|welcome center', (x.get('title') or '') + ' ' + ' '.join(x.get('tags') or []), re.I)]
+                  for x in pl: vcs.append({'parkCode': c, 'name': x.get('title'), 'latitude': x.get('latitude'), 'longitude': x.get('longitude'), 'url': x.get('url'), 'directionsInfo': (x.get('listingDescription') or '')[:300], '_from': 'places'})
+                  n2 = len(pl)
+              except Exception as e: n2 = 'err ' + str(e)[:40]
+              diag.append(f'{c}:{n1}/{n2}'); time.sleep(.5)
+          print('::notice title=NPS per trail (visitorcenters total / places that are centers)::' + ' '.join(diag))
+          for v in vcs:
+              for ref, (c, fn) in code.items():
+                  if (v.get('parkCode') or '').lower() == c:
+                      out.append({'ref': ref, 'trail': fn, 'parkCode': c, 'name': v.get('name'), 'kind': 'visitor center',
+                                  'la': float(v['latitude']) if v.get('latitude') else None, 'lo': float(v['longitude']) if v.get('longitude') else None,
+                                  'nps_url': v.get('url') or f'https://www.nps.gov/{c}/planyourvisit/visitorcenters.htm', 'directions': (v.get('directionsInfo') or '')[:300],
+                                  'source': 'developer.nps.gov/api/v1/' + ('places' if v.get('_from') == 'places' else 'visitorcenters'), 'read': time.strftime('%Y-%m-%d')})
+          os.makedirs('data/access-leads', exist_ok=True)
+          json.dump({'about': "Visitor centers the National Park Service lists for each national trail park (one NPS API pull, Oct 30 2026, Brandon's key + GO 11:07 PM). Credit: National Park Service data. A lead file: chat 8 checks, chat 3 shows them as access points.",
+                     'credit': 'National Park Service data', 'trails_matched': {r: c for r, (c, _) in code.items()}, 'trails_not_matched': miss, 'centers': out},
+                    open('data/access-leads/trail-visitor-centers.json', 'w'), indent=1, ensure_ascii=False)
+          print(f"::notice title=Trail visitor centers::{len(out)} centers for {len({o['ref'] for o in out})} of {len(idx)} trails; not matched: {' '.join(miss)}")
+          PY
+      - name: Save (and remove this temp workflow)
+        run: |
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm -q .github/workflows/kpc-temp-trail-vc.yml || true
+          git add data/access-leads/trail-visitor-centers.json 2>/dev/null || true
+          git commit -qm 'Trail visitor centers (one NPS API pull); temp workflow removed' || true
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 8; done || true
