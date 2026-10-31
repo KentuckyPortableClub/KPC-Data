@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-5356.json",
+ "id": "10-auto-CA-5356",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-5356",
+  "name": "Confederation Beach Park Conservation Area",
+  "agency": "government agency (conservationhamilton.ca)",
+  "url": "https://conservationhamilton.ca/wp-content/uploads/2023/04/Confed-Park-Map-2023.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 15:16Z",
+ "results": [
+  {
+   "url": "https://conservationhamilton.ca/wp-content/uploads/2023/04/Confed-Park-Map-2023.pdf",
+   "map_url": "https://conservationhamilton.ca/wp-content/uploads/2023/04/Confed-Park-Map-2023.pdf",
+   "saved": [
+    "maps/CA-5356_confederation-beach-park-conserv.jpg"
+   ],
+   "bytes": 121930,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
