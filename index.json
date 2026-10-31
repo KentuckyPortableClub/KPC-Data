@@ -1,7 +1,7 @@
 {
  "about": "Official PICTURE maps (no coordinates) for parks with no GIS outline; boundary page only, small JPEG. Deleted when the park gets an OFFICIAL outline. Never traced (G-ID3; R-G9 decides later).",
  "built": "2026-10-31 07:49Z",
- "count": 42,
+ "count": 43,
  "maps": [
   {
    "ref": "US-10172",
@@ -132,6 +132,22 @@
    "request": "10-auto-US-11352"
   },
   {
+   "ref": "US-11905",
+   "name": "Centennial Trail State Trail",
+   "agency": "SD GFP",
+   "source_url": "https://gfp.sd.gov/userdocs/centennial-trail-brochure.pdf",
+   "asked_url": "https://gfp.sd.gov/userdocs/centennial-trail-brochure.pdf",
+   "page": [
+    1
+   ],
+   "files": [
+    "maps/US-11905_centennial-trail-state-trail.jpg"
+   ],
+   "date": "2026-10-31",
+   "chat": 8,
+   "request": "8-savemap-us11905"
+  },
+  {
    "ref": "US-12320",
    "name": "Yadkin River State Trail",
    "agency": "government agency (trails.nc.gov)",
@@ -166,7 +182,7 @@
   {
    "ref": "US-13002",
    "name": "Dan River State Trail",
-   "agency": "NC DNCR",
+   "agency": "government agency (trails.nc.gov)",
    "source_url": "https://trails.nc.gov/maps/map-pdfs-dan-river-state-trail/open",
    "asked_url": "https://trails.nc.gov/maps/map-pdfs-dan-river-state-trail/open",
    "page": [
@@ -175,9 +191,9 @@
    "files": [
     "maps/US-13002_dan-river-state-trail.jpg"
    ],
-   "date": "2026-10-31",
-   "chat": 8,
-   "request": "8-savemap-us13002"
+   "date": "2026-10-30",
+   "chat": 10,
+   "request": "10-auto-US-13002"
   },
   {
    "ref": "US-2001",
