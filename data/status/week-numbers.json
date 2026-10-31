@@ -85,6 +85,94 @@
     "hunter areas": 63,
     "hunter last pass": "tiers-2026-10-30"
    }
+  },
+  {
+   "date": "2026-10-31",
+   "outlines": {
+    "US": {
+     "official": 10968,
+     "approximate": 391,
+     "pin": 1724
+    },
+    "Canada": {
+     "pin": 1608,
+     "official": 4252,
+     "approximate": 39
+    },
+    "World": {
+     "official": 40017,
+     "pin": 15859
+    }
+   },
+   "questions": {
+    "gis-hunter": {
+     "- YES": 81,
+     "rows": 484,
+     "- NO": 342,
+     "SURE YES": 3,
+     "SURE NO": 3,
+     "LIKELY NO": 28,
+     "LIKELY YES": 11,
+     "- open": 16
+    },
+    "key-pieces": {
+     "- NO": 68,
+     "rows": 307,
+     "- YES": 193,
+     "- open": 46
+    },
+    "layers": {
+     "LIKELY YES": 4,
+     "rows": 198,
+     "LIKELY NO": 33,
+     "SURE NO": 2,
+     "SURE YES": 4,
+     "LIKELY open": 65,
+     "SURE open": 90
+    },
+    "not-sure-for-chat9": {
+     "- open": 146,
+     "rows": 146
+    },
+    "world-finder": {
+     "- NO": 1650,
+     "rows": 3717,
+     "LIKELY NO": 858,
+     "SURE YES": 967,
+     "SURE NO": 125,
+     "LIKELY open": 31,
+     "LIKELY YES": 33,
+     "SURE open": 9,
+     "- open": 35,
+     "- YES": 9
+    }
+   },
+   "layers": {
+    "intake": {
+     "REJECT": 1128,
+     "WATER-ONLY": 28,
+     "ASK-THE-PUBLISHER": 157,
+     "LIVE-ONLY": 1,
+     "READY": 2,
+     "RETRY": 269,
+     "approved": 2
+    },
+    "queue rows": 1356,
+    "collector": {
+     "asked": 44,
+     "evidence": 7,
+     "failed": 107,
+     "no match": 32
+    },
+    "finders found": 148
+   },
+   "coverage": {
+    "world countries done": 224,
+    "world countries started": 233,
+    "world candidates": 1632,
+    "hunter areas": 63,
+    "hunter last pass": "auto-202610301651"
+   }
   }
  ]
 }

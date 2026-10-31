@@ -1,4 +1,4 @@
-# The week in numbers (2026-10-30 -> 2026-10-30)
+# The week in numbers (2026-10-30 -> 2026-10-31)
 
 For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snapshots in week-numbers.json.
 
@@ -12,21 +12,21 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 
 ## Questions (per file: tier + answer)
 
-- **gis-hunter** (485 rows): - NO 341, - YES 80, - open 18, LIKELY NO 40, SURE NO 4, SURE YES 2
-- **key-pieces** (307 rows): - NO 47, - YES 184, - open 76
-- **layers** (43 rows): LIKELY NO 31, LIKELY YES 4, LIKELY open 2, SURE NO 2, SURE YES 4
+- **gis-hunter** (484 rows): - NO 342, - YES 81, - open 16, LIKELY NO 28, LIKELY YES 11, SURE NO 3, SURE YES 3
+- **key-pieces** (307 rows): - NO 68, - YES 193, - open 46
+- **layers** (198 rows): LIKELY NO 33, LIKELY YES 4, LIKELY open 65, SURE NO 2, SURE YES 4, SURE open 90
 - **not-sure-for-chat9** (146 rows): - open 146
-- **world-finder** (3706 rows): - NO 1650, - YES 9, - open 35, LIKELY NO 855, LIKELY open 29, SURE NO 75, SURE YES 333, SURE open 720
+- **world-finder** (3717 rows): - NO 1650, - YES 9, - open 35, LIKELY NO 858, LIKELY YES 33, LIKELY open 31, SURE NO 125, SURE YES 967, SURE open 9
 
 ## Layers
 
-- intake: ASK-THE-PUBLISHER 156, LIVE-ONLY 1, READY 2, REJECT 1128, RETRY 269, WATER-ONLY 27, approved 2; queue 1231
-- layer collector: asked 41, evidence 7, failed 83, no match 19; GIS finders found 148 layers
+- intake: ASK-THE-PUBLISHER 157, LIVE-ONLY 1, READY 2, REJECT 1128, RETRY 269, WATER-ONLY 28, approved 2; queue 1356
+- layer collector: asked 44, evidence 7, failed 107, no match 32; GIS finders found 148 layers
 
 ## Coverage
 
-- world countries done: 223
+- world countries done: 224
 - world countries started: 233
-- world candidates: 1757
+- world candidates: 1632
 - hunter areas: 63
-- hunter last pass: tiers-2026-10-30
+- hunter last pass: auto-202610301651

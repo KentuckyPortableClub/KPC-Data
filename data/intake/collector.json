@@ -1188,5 +1188,285 @@
   "status": "failed",
   "why": "RuntimeError: not polygons (esriGeometryPolyline)",
   "date": "2026-10-30"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Atlas_Web_Application/FeatureServer/1": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Atlas_Web_Application/FeatureServer/1",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-31"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Atlas_Web_Application/FeatureServer/2": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Atlas_Web_Application/FeatureServer/2",
+  "status": "asked",
+  "why": "5 open parks tested, 1 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Atlas_Web_Application/FeatureServer/3": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Atlas_Web_Application/FeatureServer/3",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-31"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/CountyBoundary/FeatureServer/0": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/CountyBoundary/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-31"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Drop_Box/FeatureServer/0": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Drop_Box/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/PLSSSections/FeatureServer/0": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/PLSSSections/FeatureServer/0",
+  "status": "no match",
+  "why": "5 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Public_Facility_Infrastructure_Atlas/FeatureServer/0": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Public_Facility_Infrastructure_Atlas/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Public_Facility_Infrastructure_Atlas/FeatureServer/1": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Public_Facility_Infrastructure_Atlas/FeatureServer/1",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Public_Facility_Infrastructure_Atlas/FeatureServer/4": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Public_Facility_Infrastructure_Atlas/FeatureServer/4",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Public_Facility_Infrastructure_Atlas/FeatureServer/7": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Public_Facility_Infrastructure_Atlas/FeatureServer/7",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPolyline)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Aerial_Basemap/MapServer/3": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Aerial_Basemap/MapServer/3",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Aerial_Basemap/MapServer/6": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Aerial_Basemap/MapServer/6",
+  "status": "asked",
+  "why": "13 open parks tested, 1 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Basemap_Color/MapServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Basemap_Color/MapServer/0",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Basemap_Color/MapServer/13": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Basemap_Color/MapServer/13",
+  "status": "asked",
+  "why": "13 open parks tested, 1 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/1",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/2": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/2",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/3": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/3",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/5": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/5",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPolyline)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/6": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/6",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/7": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/7",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-31"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/9": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Hydrology/DE_Public_Ponds/FeatureServer/9",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://gis.thecolonytx.gov/arcgis/rest/services/Citymap/ParksAndRec/MapServer/2": {
+  "area": "US-FL",
+  "url": "https://gis.thecolonytx.gov/arcgis/rest/services/Citymap/ParksAndRec/MapServer/2",
+  "status": "failed",
+  "why": "RuntimeError: Service Citymap/ParksAndRec/MapServer not found ",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services.arcgis.com/2snQ88YUjP9CNEbe/arcgis/rest/services/City_of_Toledo_Parks/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services.arcgis.com/2snQ88YUjP9CNEbe/arcgis/rest/services/City_of_Toledo_Parks/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services9.arcgis.com/xLuiwIVVBKkNT0vQ/arcgis/rest/services/Parks/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services9.arcgis.com/xLuiwIVVBKkNT0vQ/arcgis/rest/services/Parks/FeatureServer/0",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/jwbgoAzqzCbiJmg4/arcgis/rest/services/Park_Amenities/FeatureServer/5": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/jwbgoAzqzCbiJmg4/arcgis/rest/services/Park_Amenities/FeatureServer/5",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services6.arcgis.com/PZH7SMMue6M4l4UQ/arcgis/rest/services/Parks/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services6.arcgis.com/PZH7SMMue6M4l4UQ/arcgis/rest/services/Parks/FeatureServer/0",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services.arcgis.com/KYQI4l6C3kTBM5OU/arcgis/rest/services/Parks/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services.arcgis.com/KYQI4l6C3kTBM5OU/arcgis/rest/services/Parks/FeatureServer/0",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services6.arcgis.com/hM5ymMLbxIyWTjn2/arcgis/rest/services/City_Parks/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services6.arcgis.com/hM5ymMLbxIyWTjn2/arcgis/rest/services/City_Parks/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://mapping.gw.govt.nz/arcgis/rest/services/GW/Parks_P/MapServer/2": {
+  "area": "US-FL",
+  "url": "https://mapping.gw.govt.nz/arcgis/rest/services/GW/Parks_P/MapServer/2",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services7.arcgis.com/KuLOZPy3lKDA07LB/arcgis/rest/services/Parks_labelpt/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services7.arcgis.com/KuLOZPy3lKDA07LB/arcgis/rest/services/Parks_labelpt/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://gis.cityofames.org/arcgis/rest/services/ames_basemap_ALL_read_only_V2/MapServer/27": {
+  "area": "US-FL",
+  "url": "https://gis.cityofames.org/arcgis/rest/services/ames_basemap_ALL_read_only_V2/MapServer/27",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services8.arcgis.com/exgR4BNI38IIwXOt/arcgis/rest/services/Parks/FeatureServer/6": {
+  "area": "US-FL",
+  "url": "https://services8.arcgis.com/exgR4BNI38IIwXOt/arcgis/rest/services/Parks/FeatureServer/6",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Park_Boundaries/FeatureServer/2": {
+  "area": "US-FL",
+  "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/Park_Boundaries/FeatureServer/2",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services7.arcgis.com/KuLOZPy3lKDA07LB/arcgis/rest/services/Parks/FeatureServer/1": {
+  "area": "US-FL",
+  "url": "https://services7.arcgis.com/KuLOZPy3lKDA07LB/arcgis/rest/services/Parks/FeatureServer/1",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Parks_Wifi_Points/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Parks_Wifi_Points/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/fdWXd5OobWR1E3er/arcgis/rest/services/Parks/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/fdWXd5OobWR1E3er/arcgis/rest/services/Parks/FeatureServer/0",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/Mnt8FoJcogKtoVBs/arcgis/rest/services/ParksOpenData/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/Mnt8FoJcogKtoVBs/arcgis/rest/services/ParksOpenData/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services2.arcgis.com/WkBUojyNPhsWOk1W/arcgis/rest/services/Parks/FeatureServer/39": {
+  "area": "US-FL",
+  "url": "https://services2.arcgis.com/WkBUojyNPhsWOk1W/arcgis/rest/services/Parks/FeatureServer/39",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
+ },
+ "crawl|US-FL|https://services2.arcgis.com/safmkHh6IfIYbpgO/arcgis/rest/services/Parks/FeatureServer/5": {
+  "area": "US-FL",
+  "url": "https://services2.arcgis.com/safmkHh6IfIYbpgO/arcgis/rest/services/Parks/FeatureServer/5",
+  "status": "no match",
+  "why": "34 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-31"
  }
 }
