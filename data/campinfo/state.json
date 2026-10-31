@@ -172,6 +172,27 @@
    "left": 0,
    "status": "done",
    "updated": "2026-10-30"
+  },
+  "US-WA": {
+   "camps": 280,
+   "checked": 280,
+   "counts": {
+    "camps": 280,
+    "needs_browser": 0,
+    "needs_key": 214,
+    "no_page": 66,
+    "not_official": 0,
+    "ok": 0,
+    "other": 0,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 0,
+    "with_elevation": 0,
+    "with_sites": 0
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-10-31"
   }
  },
  "cell_status": {
@@ -182,7 +203,8 @@
   "US-MT": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NV": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-SC": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
-  "US-TN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+  "US-TN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-WA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
  },
  "fcc": {
   "US-CO": {
@@ -256,6 +278,15 @@
     "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
    "read": "2026-10-30"
+  },
+  "US-WA": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+   },
+   "read": "2026-10-31"
   }
  },
  "hosts": {
@@ -1215,29 +1246,28 @@
  },
  "last": {
   "areas": [
-   "US-SC"
+   "US-WA"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 40,
-   "rested": 63,
+   "requests": 2,
+   "rested": 280,
    "robots": 0,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 1,
-   "camps": 63,
+   "camps": 280,
    "elevations": 0,
-   "errors": 1,
-   "needs_browser": 17,
-   "needs_key": 26,
-   "no_page": 0,
+   "errors": 0,
+   "needs_browser": 0,
+   "needs_key": 214,
+   "no_page": 66,
    "not_official": 0,
-   "ok": 37,
-   "pages_read": 37,
+   "ok": 0,
+   "pages_read": 0,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
