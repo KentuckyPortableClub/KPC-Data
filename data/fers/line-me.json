@@ -5,7 +5,7 @@
   "US-ME"
  ],
  "since": "2026-10-31",
- "date": "2026-10-31 01:51 UTC",
+ "date": "2026-10-31 03:37 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
  "known_answers": "19/19 on 2026-10-30",
@@ -17,18 +17,18 @@
  "report": {
   "pass1": {
    "date": "2026-10-31",
-   "pairs tested": 369,
-   "pairs whose boxes touch": 369
+   "pairs tested": 218,
+   "pairs whose boxes touch": 218
   },
   "pass2": {
-   "agree with the pass before": 37,
+   "agree with the pass before": 14,
    "date": "2026-10-31",
-   "pairs tested": 19
+   "pairs tested": 6
   },
   "pass3": {
-   "agree with the pass before": 28,
+   "agree with the pass before": 5,
    "date": "2026-10-31",
-   "pairs tested": 17
+   "pairs tested": 4
   },
   "pass5": {
    "checked": 0,
@@ -41,15 +41,13 @@
   "US-ME": "data/fers/US-ME.json"
  },
  "US-ME": {
-  "rows": 41,
-  "live": 13,
+  "rows": 17,
+  "live": 3,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "no public owner on the ownership map": 6
-  },
-  "dropped": 13,
-  "merged": 9
+  "not_sure": {},
+  "dropped": 11,
+  "merged": 3
  },
  "states_ready": [
   "US-ME"

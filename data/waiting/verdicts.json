@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T02:59Z",
+ "checked": "2026-10-31T03:37Z",
  "switched_on": false,
  "results": [
   {
@@ -14,6 +14,15 @@
    "kind": "key",
    "why": [],
    "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/why-not.json",
+   "kind": "key",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "PASS"
   },
   {
@@ -356,7 +365,7 @@
    "path": "data/fers/US-ME.json",
    "kind": "fers",
    "why": [
-    "F-2 9 new candidate pairs since the live file (over 10% of 4): a person looks at them first, e.g. US-4239+US-4556, US-4556+US-4564, US-4556+US-4567"
+    "F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -507,6 +516,13 @@
   },
   {
    "path": "data/us-key/overrides.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/why-not.json",
    "kind": "key",
    "why": [],
    "notes": [],
