@@ -108,6 +108,28 @@
    "status": "done",
    "updated": "2026-10-31"
   },
+  "US-NV": {
+   "camps": 64,
+   "checked": 63,
+   "counts": {
+    "camps": 63,
+    "needs_browser": 0,
+    "needs_key": 34,
+    "no_page": 0,
+    "not_official": 0,
+    "ok": 15,
+    "other": 14,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 29,
+    "with_elevation": 0,
+    "with_facts": 15,
+    "with_sites": 7
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-10-31"
+  },
   "US-TN": {
    "camps": 348,
    "checked": 348,
@@ -136,6 +158,7 @@
   "US-KY": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MT": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-NV": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-TN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
  },
  "fcc": {
@@ -176,6 +199,15 @@
    "read": "2026-10-31"
   },
   "US-MT": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+   },
+   "read": "2026-10-31"
+  },
+  "US-NV": {
    "cell": {
     "carriers": null,
     "files": [],
@@ -1151,28 +1183,29 @@
  },
  "last": {
   "areas": [
-   "US-MT"
+   "US-NV"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 2,
-   "rested": 313,
+   "requests": 49,
+   "rested": 64,
    "robots": 0,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 313,
+   "browser": 17,
+   "camps": 64,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 313,
+   "needs_browser": 14,
+   "needs_key": 35,
    "no_page": 0,
    "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
+   "ok": 32,
+   "pages_read": 30,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
