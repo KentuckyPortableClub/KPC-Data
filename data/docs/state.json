@@ -301,10 +301,17 @@
    "updated": "2026-10-31"
   },
   "US-CA": {
-   "status": "partial",
+   "status": "done",
    "parks": 410,
-   "checked": 112,
-   "left": 298,
+   "checked": 410,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-OR": {
+   "status": "partial",
+   "parks": 440,
+   "checked": 27,
+   "left": 413,
    "updated": "2026-10-31"
   }
  },
@@ -330,32 +337,35 @@
   "www.idfg.idah.gov": 1793513445.116335,
   "www.sangres.com": 1793517776.629486,
   "www.emnrd.state.nm.us": 1793520736.2128708,
-  "carules.elaws.us": 1793521915.7272446
+  "carules.elaws.us": 1793521915.7272446,
+  "parks.ca.gov": 1793523383.026051,
+  "ohv.parks.ca.gov": 1793523879.4483232
  },
  "last": {
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-AZ",
-   "US-NM",
    "US-CA",
    "US-OR",
    "US-WA",
    "US-AK",
-   "US-HI"
+   "US-HI",
+   "US-MI",
+   "US-OH"
   ],
   "stat": {
-   "requests": 1426,
-   "parks": 510,
-   "maps_ok": 370,
-   "maps_found": 282,
-   "dates": 35,
-   "rules": 382,
-   "browser": 247,
+   "requests": 1379,
+   "parks": 506,
+   "maps_ok": 314,
+   "maps_found": 161,
+   "dates": 106,
+   "rules": 401,
+   "browser": 147,
    "robots": 3,
    "strikes": 6,
-   "errors": 3,
-   "skipped_fresh": 29
+   "errors": 6,
+   "skipped_fresh": 112,
+   "handovers": 1
   }
  }
 }
