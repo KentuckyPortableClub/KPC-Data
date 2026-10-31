@@ -2,7 +2,7 @@
  "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
  "pass1": {
   "cell_m": 20.0,
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
@@ -20,14 +20,15 @@
   "problems": [
    "W&S river corridors joined as area parks: 15",
    "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
-   "55 line parks filed under another state but crossing this area kept: CA-1301, CA-5628, CA-5565, CA-5595, CA-6003, CA-5536, CA-1599, US-0881"
+   "55 line parks filed under another state but crossing this area kept: CA-1301, CA-5628, CA-5565, CA-5595, CA-6003, CA-5536, CA-1599, US-0881",
+   "49 spots outside this area left for their own area"
   ],
   "with official lines": 56
  },
  "pass2": {
   "agree with the pass before": 37,
   "cell_m": 10.0,
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
@@ -51,7 +52,7 @@
  "pass3": {
   "agree with the pass before": 28,
   "cell_m": 5.0,
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
@@ -75,7 +76,7 @@
  "pass5": {
   "cell_m": 5.0,
   "checked": 0,
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 424,
@@ -152,12 +153,12 @@
   "US-MI": {
    "candidates": 0,
    "candidates (saved outline only)": 0,
-   "lines": 58,
+   "lines": 9,
    "n-fers": 0,
    "not sure": 0,
-   "pass1": 58,
+   "pass1": 9,
    "pass2": 0,
-   "spots": 58,
+   "spots": 9,
    "very tight": 0,
    "water only": 0
   },
