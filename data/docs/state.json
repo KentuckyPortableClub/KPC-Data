@@ -109,7 +109,7 @@
    "status": "failed",
    "parks": 181,
    "updated": "2026-10-31",
-   "why": "maps 82 -> 62"
+   "why": "maps 82 -> 63"
   },
   "US-ND": {
    "status": "done",
@@ -359,8 +359,8 @@
   "CA-ON": {
    "status": "partial",
    "parks": 1180,
-   "checked": 24,
-   "left": 1156,
+   "checked": 656,
+   "left": 524,
    "updated": "2026-10-31"
   }
  },
@@ -391,32 +391,33 @@
   "ohv.parks.ca.gov": 1793523879.4483232,
   "www.fws.org": 1793528476.71733,
   "www.intermountainhistories.org": 1793534667.8100796,
-  "www.wildlife.utah.gov": 1793535065.415651
+  "www.wildlife.utah.gov": 1793535065.415651,
+  "www.chapel-hill-north-forest-trails.ca": 1793541853.2473147
  },
  "last": {
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-UT",
    "CA-ON",
    "CA-QC",
    "CA-NB",
    "CA-NS",
    "CA-PE",
-   "CA-NL"
+   "CA-NL",
+   "CA-MB"
   ],
   "stat": {
-   "requests": 695,
-   "parks": 257,
-   "maps_ok": 187,
-   "maps_found": 182,
-   "dates": 0,
-   "rules": 202,
-   "browser": 187,
-   "robots": 1,
-   "strikes": 0,
-   "errors": 0,
-   "skipped_fresh": 640
+   "requests": 1954,
+   "parks": 813,
+   "maps_ok": 446,
+   "maps_found": 441,
+   "dates": 13,
+   "rules": 513,
+   "browser": 111,
+   "robots": 6,
+   "strikes": 3,
+   "errors": 3,
+   "skipped_fresh": 24
   }
  }
 }

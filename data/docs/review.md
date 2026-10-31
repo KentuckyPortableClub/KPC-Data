@@ -56,7 +56,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-MI | 388 | 25 | 19 | 17 | 1 | 13 | 11 | 363 | 26 | 255 | 0 |
 | US-OH | 276 | 17 | 5 | 16 | 0 | 14 | 3 | 259 | 274 | 0 | 0 |
 | US-UT | 692 | 32 | 10 | 27 | 2 | 20 | 10 | 660 | 58 | 424 | 0 |
-| CA-ON | 24 | 3 | 3 | 2 | 0 | 1 | 2 | 21 | 3 | 7 | 0 |
+| CA-ON | 656 | 341 | 341 | 336 | 13 | 29 | 299 | 315 | 37 | 323 | 0 |
 
 ## US-KY sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -4204,11 +4204,56 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## CA-ON sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
+| CA-0052 | Long Point Biosphere Reserve | https://long-point-biosphere-region-open-data-hub-lpwbrf.hub.arcgis.com/ | page ✓name · linked from the agency page (long-point- | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-5989 | Sulpher Spring Conservation Area | https://storymaps.arcgis.com/stories/8ec38d635d764afda0c5565520f54cae | page · linked from the agency page (storymaps.a | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-5556 | Glassco Park Conservation Area | https://store.avenza.com/products/william-granger-greenway-toronto-and-region-conservation | page ✓name · third-party app host (store.avenza.com), · third-party host, linked by the agency ( | date unknown (date unknown, checked 2026-10-31) · posted — | https://trca.ca/regulation-mapping-update/ ✓ |  |
+| CA-5555 | Boyd North Conservation Area | https://store.avenza.com/products/william-granger-greenway-toronto-and-region-conservation | page ✓name · third-party app host (store.avenza.com), · third-party host, linked by the agency ( | date unknown (date unknown, checked 2026-10-31) · posted — | https://trca.ca/regulation-mapping-update/ ✓ |  |
+| CA-5557 | East Duffins Headwaters Conservation Are | https://store.avenza.com/products/east-duffins-headwaters-toronto-and-region-conservation- | page ✓name · third-party app host (store.avenza.com), · third-party host, linked by the agency ( | date unknown (date unknown, checked 2026-10-31) · posted — | https://trca.ca/regulation-mapping-update/ ✓ |  |
+| CA-5560 | West Duffins Headwaters Conservation Are | https://store.avenza.com/products/clubine-agreement-forest-toronto-and-region-conservation | page ✓name · third-party app host (store.avenza.com), · third-party host, linked by the agency ( | date unknown (date unknown, checked 2026-10-31) · posted — | https://trca.ca/regulation-mapping-update/ ✓ |  |
+| CA-5944 | Chinguacousy Park Recreation Park | https://www.brampton.ca/EN/residents/Recreation/Community-Centres/Chinguacousy-Park/Docume | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Apr 10, 2026 | https://www.brampton.ca/EN/residents/Recreation/Customer-Care/Pages/Pa ✓ |  |
+| CA-1307 | Beamer Memorial Conservation Area | https://brucetrail.org/map-5-niagara-iroquoia-beamer-memorial-conservation-area/ | page ✓name · linked from the agency page (brucetrail. | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-5628 | Bruce Trail National Recreation Trail | https://brucetrail.org/product-category/downloadable-maps-edition-31/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-5617 | Calton Swamp Wetland Complex Wildlife Ma | https://www.catfishcreek.ca/wp-content/uploads/2016/10/Calton-Swamp-Wetland-Complex-trail- | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2016-10 |  ✗ |  |
+| CA-5620 | Yarmouth Natural Heritage Area Conservat | https://www.catfishcreek.ca/wp-content/uploads/2016/10/Yarmouth-Natural-Heritage-Area-Trai | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2016-10 |  ✗ |  |
+| CA-5616 | Hawkins Tract Conservation Area | https://www.catfishcreek.ca/wp-content/uploads/2016/10/Hawkins-Tract-Trail-Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2016-10 |  ✗ |  |
+| CA-5618 | Archie Coulter Conservation Area | https://www.catfishcreek.ca/wp-content/uploads/2016/10/Archie-Coulter-Trail-Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2016-10 |  ✗ |  |
 | CA-0177 | Chapleau Crown Game Preserve | https://chapleau.ca/visitors/attractions/ofsa-trail-maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-1043 | Mount Nemo Conservation Reserve | https://www.conservationhalton.ca/wp-content/uploads/2026/04/Mount-Nemo-Updated-Jan-2026-3 | pdf ✓name · the agency site | 2026 (the PDF file's own stamp (may be the print da) · posted 2026-04 | https://www.conservationhalton.ca/policies-and-guidelines/ ✓ |  |
+| CA-1587 | Tiffany Falls Conservation Area | https://conservationhamilton.ca/regulated-areas-map-tool/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://conservationhamilton.ca/board-policies-and-guidelines/ ✓ |  |
+| CA-5356 | Confederation Beach Park Conservation Ar | https://conservationhamilton.ca/wp-content/uploads/2023/04/Confed-Park-Map-2023.pdf | pdf ✓name · combined map: covers 4 units · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2023-04 | https://conservationhamilton.ca/board-policies-and-guidelines/ ✓ |  |
+| CA-5565 | Dofasco 2000 Trail Conservation Area | https://conservationhamilton.ca/wp-content/uploads/2024/02/Dofasco-Trail-2000-Brochure-202 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2024-02 | https://conservationhamilton.ca/board-policies-and-guidelines/ ✓ |  |
+| CA-5362 | Fifty Point Conservation Area | https://conservationhamilton.ca/wp-content/uploads/2020/07/Fifty-Point-Brochure-2023_INDD- | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2020-07 | https://conservationhamilton.ca/board-policies-and-guidelines/ ✓ |  |
+| CA-5936 | Fanshawe Conservation Area | https://www.fanshaweconservationarea.ca/mapsanddownloads | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-5938 | Wildwood Conservation Area | https://13e5ed78-06c1-4939-866a-9feee17f9b91.filesusr.com/ugd/437a89_ba7126095b2a41c3a0d82 | pdf · combined map: covers 2 units · linked from the agency page (13e5ed78-06 | date unknown (date unknown, checked 2026-10-31) · posted Feb 08, 2023 |  ✗ |  |
+| CA-6367 | Kinghurst Conservation Area | https://media-003-ca.cdn.govstack.com/saugeenconservation-018-ca/media/4jrnkkhw/kinghurst- | pdf ✓name · linked from the agency page (media-003-c | date unknown (date unknown, checked 2026-10-31) · posted Aug 17, 2026 |  ✗ |  |
+| CA-6359 | Mildmay-Carrick Conservation Area | https://media-003-ca.cdn.govstack.com/saugeenconservation-018-ca/media/q2cpy5jc/mildmay-ca | pdf ✓name · linked from the agency page (media-003-c | date unknown (date unknown, checked 2026-10-31) · posted Aug 17, 2026 |  ✗ |  |
+| CA-6617 | H. R. Frink Conservation Area | https://media-002-ca.cdn.govstack.com/quinteconservation-013-ca/media/02kk4e23/frink-centr | pdf ✓name · linked from the agency page (media-002-c | date unknown (date unknown, checked 2026-10-31) · posted Aug 13, 2026 | https://www.quinteconservation.ca/permits-and-planning/property-regula ✓ |  |
+| CA-6211 | Oak Ridges Moraine National Recreation T | https://www.oakridgestrail.org/trail-map/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-5626 | Kettle Creek Conservation Area | https://www.kettlecreekconservation.on.ca/map-your-property/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.kettlecreekconservation.on.ca/regulation-services/ ✓ |  |
+| CA-5612 | Deer Creek Conservation Area | https://www.lprca.on.ca/wp-content/uploads/2026/04/DCCA-Map-2026.pdf | pdf ✓name · combined map: covers 3 units · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted 2026-04 | https://www.lprca.on.ca/planning-permits/regulation-permits/ ✓ |  |
+| CA-5623 | Dan Patterson Conservation Area | https://www.kettlecreekconservation.on.ca/wp-content/uploads/2022/05/WetlandTrail-Closure. | pdf · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted 2022-05 | https://www.kettlecreekconservation.on.ca/regulation-services/ ✓ |  |
+| CA-1279 | A.W. Campbell Conservation Area | https://www.scrca.on.ca/wp-content/uploads/2015/02/map-cambell-campground.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2015: check it is still current (the PDF file's own stamp (may be the print da) · posted 2015-02 | https://www.scrca.on.ca/about-us/publications/ ✓ | Campground map: the agency has no park map. |
+| CA-5614 | Norfolk Conservation Area | https://www.lprca.on.ca/wp-content/uploads/2026/04/DCCA-Map-2026.pdf | pdf ✓name · combined map: covers 3 units · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted 2026-04 | https://www.lprca.on.ca/planning-permits/regulation-permits/ ✓ |  |
+| CA-6213 | Clark Wright Conservation Area | https://www.scrca.on.ca/wp-content/uploads/2013/11/trail-clark-wright.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2013-11 |  ✗ |  |
 | CA-1280 | Abitibi Lake Narrows Wilderness Area | https://files.ontario.ca/418.1.1en-figure-1-regional-setting-large.jpg | image · linked from the agency page (files.ontar | date unknown (date unknown, checked 2026-10-31) · posted Apr 05, 2016 |  ✗ |  |
-| CA-0259 | La Verendrye Provincial Park | https://www.ontarioparks.ca/park/laverendrye/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.ontarioparks.ca/reservations/rules ✓ |  |
+| CA-1046 | Rattlesnake Point Conservation Area | https://ontarioconservationareas.ca/find-a-conservation-area/map/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0172 | Castle Creek Provincial Park | https://www.ontarioparks.ca/park/castlecreek/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0416 | Trout Lake Provincial Park | https://www.ontarioparks.ca/park/troutlake/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0424 | Wakami Lake Provincial Park | https://www.ontarioparks.ca/pdf/maps/wakamilake/wakami_backcountry.pdf | pdf ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted Nov 01, 2024 |  ✗ |  |
+| CA-0285 | Manitou Islands Provincial Park | https://www.ontarioparks.ca/park/manitouislands/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0199 | East English River Provincial Park | https://www.ontarioparks.ca/park/eastenglishriver/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-1038 | Amable du Fond River Provincial Park | https://www.ontarioparks.ca/park/amabledufondriver/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0359 | Quetico Provincial Park | https://www.ontarioparks.ca/park/quetico/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0222 | Gravel River Provincial Park | https://www.ontarioparks.ca/park/gravelriver/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0242 | Kabitotikwia River Provincial Park | https://www.ontarioparks.ca/park/kabitotikwiariver/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0334 | Oxtongue River-Ragged Falls Provincial P | https://www.ontarioparks.ca/park/oxtongueriverraggedfalls/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0167 | Butler Lake Provincial Park | https://www.ontarioparks.ca/park/butlerlake/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-0147 | Batchawana Bay Provincial Park | https://www.ontarioparks.ca/park/batchawanariver/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-5937 | Pittock Conservation Area | https://www.pittockconservationarea.ca/maps-guides | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.pittockconservationarea.ca/about ✓ |  |
+| CA-6619 | Depot Lakes Conservation Area | https://www.quinteconservation.ca/outdoor-spaces/mobile-trail-maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.quinteconservation.ca/permits-and-planning/property-regula ✓ |  |
+| CA-6003 | Great Lakes Waterfront Trail Recreation  | https://waterfronttrail.org/great-waterfront-trail-adventure/route-itinerary/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
 
-### CA-ON no map yet (21): the reason
+### CA-ON no map yet (315): the reason
 - CA-0023 Frontenac Arch Biosphere Reserve: no map link on file and none on the park page
 - CA-0027 Georgian Bay Littoral Biosphere Reserve: no map link on file and none on the park page
 - CA-0063 Niagara Escarpment Biosphere Reserve: no map link on file and none on the park page
@@ -4230,9 +4275,29 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - CA-1408 Ganley Harbour Wilderness Area: no map link on file and none on the park page (needs browser: the page is built by script)
 - CA-1439 Hilliardton Marsh Conservation Reserve: no map link on file and none on the park page
 - CA-1467 Kishkebus Lake Wilderness Area: no map link on file and none on the park page (needs browser: the page is built by script)
+- CA-1512 McLaughlin Bay Reserve Wildlife Area: no map link on file and none on the park page
+- CA-1535 Murray Overlook Scenic Site: no map link on file and none on the park page
+- CA-1542 New Brunswick House Post Wilderness Area: no map link on file and none on the park page (needs browser: the page is built by script)
+- CA-1559 Old Brunswick House Wilderness Area: no map link on file and none on the park page (needs browser: the page is built by script)
+- CA-1566 Outer Barn Island Wilderness Area: no map link on file and none on the park page (needs browser: the page is built by script)
+- CA-1573 Peisk Lake (Payshk Ohsahgaheegahn) Conservati: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://chrs.ca/en/heritage-river-story-maps)
+- CA-1574 Petawawa Centennial Park Conservation Reserve: no map link on file and none on the park page
+- CA-1586 Presqu'ile Island Wilderness Area: no map link on file and none on the park page
+- CA-1596 Hog's Back Conservation Reserve: no map link on file and none on the park page
+- CA-1599 South Point Trail (Rondeau) Provincial Park: no map link on file and none on the park page
+- CA-1620 Sherman Falls Conservation Reserve: no map link on file and none on the park page
+- CA-1621 Shirleys Bay Conservation Reserve: no map link on file and none on the park page
+- CA-1627 Sleeping Giant Wilderness Area: no map link on file and none on the park page (needs browser: the page is built by script)
+- CA-1651 Summit Muskeg Preserve Conservation Reserve: no map link on file and none on the park page
+- CA-1657 Glengarry Landing National Historic Site: no map link on file and none on the park page
+- CA-1658 Sunnidale Recreation Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.barrie.ca/services-payments/maps-gis)
+- CA-1659 Dumfries Conservation Area: no map link on file and none on the park page
+- CA-1660 Edenvale Conservation Area: no map link on file and none on the park page
+- CA-1661 Fort Willow Conservation Area: no map link on file and none on the park page
 
 ## robots.txt said no (hosts we did not read)
-- mcelroy.ca: 1 addresses (User-agent: * | Disallow: /admin/ | Disallow: /bushlog/search | Disallow: /bushlog/related | Disallo)
+- forms.office.com: 5 addresses (﻿User-agent: Bingbot | Allow: / | User-agent: Googlebot | Allow: / | User-agent: Twitterbot | Allow:)
+- www.google.com: 1 addresses (User-agent: * | User-agent: Yandex | Disallow: /search | Allow: /search/about | Allow: /search/howse)
 
 ## hosts resting a day (three strikes)
 - carules.elaws.us
@@ -4250,6 +4315,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - www.agfc
 - www.camdenexpedition.org
 - www.cgcounty.org
+- www.chapel-hill-north-forest-trails.ca
 - www.dfg.idaho.gov
 - www.emnrd.state.nm.us
 - www.fws.org
