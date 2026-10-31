@@ -1,0 +1,87 @@
+{
+ "request": "requests/9-drv-nm3.json",
+ "id": "9-drv-nm3",
+ "chat": 9,
+ "kind": "page",
+ "report": "FHWA AR/NV/OK/WY + ITD distinct byway names",
+ "asked": {
+  "chat": 9,
+  "kind": "page",
+  "urls": [
+   "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/9/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/61/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/79/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/105/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "https://gis.itd.idaho.gov/arcgisprod/rest/services/ArcGISOnline/IdahoTransportationLayersForOpenData/MapServer/94/query?where=1%3D1&outFields=BywayName1,BywayName2,Desig&returnGeometry=false&returnDistinctValues=true&f=json",
+   "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/RoadNetwork_Other/FeatureServer/6/query?where=1%3D1&outFields=BywayName&returnGeometry=false&returnDistinctValues=true&f=json"
+  ],
+  "report": "FHWA AR/NV/OK/WY + ITD distinct byway names"
+ },
+ "answered": "2026-10-31 05:44Z",
+ "results": [
+  {
+   "url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/9/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "status": 200,
+   "final_url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/9/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "title": "",
+   "text": "{\"displayFieldName\":\"NAME\",\"fieldAliases\":{\"NAME\":\"NAME\"},\"fields\":[{\"name\":\"NAME\",\"type\":\"esriFieldTypeString\",\"alias\":\"NAME\",\"length\":254}],\"features\":[{\"attributes\":{\"NAME\":\"Arkansas Scenic 7 Byway\"}},{\"attributes\":{\"NAME\":\"Bienville Trace Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Crowley's Ridge Parkway\"}},{\"attributes\":{\"NAME\":\"River Road Scenic Byway\"}},{\"attributes\":{\"NAME\":\"St. Francis Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Talimena Scenic Drive\"}},{\"attributes\":{\"NAME\":\"Great River Road\"}},{\"attributes\":{\"NAME\":\"Mountain Gateway Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Mount Magazine Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Ozark Highlands Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Pig Trail Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Sylamore Scenic Byway\"}}]}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/61/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "status": 200,
+   "final_url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/61/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "title": "",
+   "text": "{\"displayFieldName\":\"NAME\",\"fieldAliases\":{\"NAME\":\"NAME\"},\"fields\":[{\"name\":\"NAME\",\"type\":\"esriFieldTypeString\",\"alias\":\"NAME\",\"length\":254}],\"features\":[{\"attributes\":{\"NAME\":\"Bitter Springs Back Country Byway\"}},{\"attributes\":{\"NAME\":\"Gold Butte Back Country Byway\"}},{\"attributes\":{\"NAME\":\"California Trail Back Country Byway\"}},{\"attributes\":{\"NAME\":\"Highway 93\"}},{\"attributes\":{\"NAME\":\"Extraterrestrial Highway\"}},{\"attributes\":{\"NAME\":\"Mt. Wilson Back Country Byway\"}},{\"attributes\":{\"NAME\":\"Pyramid Lake Scenic Byway\"}},{\"attributes\":{\"NAME\":\"The Loneliest Road in America\"}},{\"attributes\":{\"NAME\":\"Angel Lake Road\"}},{\"attributes\":{\"NAME\":\"Barrel Springs Back Country Byway\"}},{\"attributes\":{\"NAME\":\"City of Las Vegas, Las Vegas Boulevard State Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Las Vegas Strip\"}},{\"attributes\":{\"NAME\":\"Buckhorn Back Country Byway\"}},{\"attributes\":{\"NAME\":\"Deer Creek Road (State Route 158)\"}},{\"attributes\":{\"NAME\":\"Fort Churchill to Wellington Back Country Byway\"}},{\"attributes\":{\"NAME\":\"Kyle Canyon Road (State Route 157)\"}},{\"attributes\":{\"NAME\":\"Lamoille Canyon Road\"}},{\"attributes\":{\"NAME\":\"Lake Tahoe - Eastshore Drive\"}},{\"attributes\":{\"NAME\":\"Lovelock Cave Back Country Byway\"}},{\"attributes\":{\"NAME\":\"Lunar Crater Back Country Byway\"}},{\"attributes\":{\"NAME\":\"Red Rock Canyon Back Country Byway\"}},{\"attributes\":{\"NAME\":\"Mount Rose Highway\"}},{\"attributes\":{\"NAME\":\"Mt. Charleston Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Red Rock Canyon Road\"}},{\"attributes\":{\"NAME\":\"Valley of Fire State Park Roadways\"}}]}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/79/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "status": 200,
+   "final_url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/79/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "title": "",
+   "text": "{\"displayFieldName\":\"NAME\",\"fieldAliases\":{\"NAME\":\"NAME\"},\"fields\":[{\"name\":\"NAME\",\"type\":\"esriFieldTypeString\",\"alias\":\"NAME\",\"length\":254}],\"features\":[{\"attributes\":{\"NAME\":\"Cherokee Hills Byway\"}},{\"attributes\":{\"NAME\":\"Historic Route 66\"}},{\"attributes\":{\"NAME\":\"Talimena Scenic Drive\"}},{\"attributes\":{\"NAME\":\"Wichita Mountains Byway\"}},{\"attributes\":{\"NAME\":\"Mountain Gateway Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Mountain Pass Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Osage Nation Heritage Trail Byway\"}}]}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/105/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "status": 200,
+   "final_url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/105/query?where=1%3D1&outFields=NAME&returnGeometry=false&returnDistinctValues=true&f=json",
+   "title": "",
+   "text": "{\"displayFieldName\":\"NAME\",\"fieldAliases\":{\"NAME\":\"NAME\"},\"fields\":[{\"name\":\"NAME\",\"type\":\"esriFieldTypeString\",\"alias\":\"NAME\",\"length\":254}],\"features\":[{\"attributes\":{\"NAME\":\"Bighorn Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Big Spring Scenic Backway\"}},{\"attributes\":{\"NAME\":\"Beartooth Highway\"}},{\"attributes\":{\"NAME\":\"Chief Joseph Scenic Highway\"}},{\"attributes\":{\"NAME\":\"Cloud Peak Skyway\"}},{\"attributes\":{\"NAME\":\"Flaming Gorge - Green River Basin Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Mirror Lake Scenic Byway - UT Section\"}},{\"attributes\":{\"NAME\":\"Mirror Lake Scenic Byway - WY Section\"}},{\"attributes\":{\"NAME\":\"Oregon Trail-Bear Lake Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Pioneer Historic Byway\"}},{\"attributes\":{\"NAME\":\"Red Gulch/Alkali National Back Country Byway\"}},{\"attributes\":{\"NAME\":\"Seminoe to Alcova Scenic Backway\"}},{\"attributes\":{\"NAME\":\"Wyoming Centennial Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Bridger Valley Historic Byway\"}},{\"attributes\":{\"NAME\":\"Buffalo Bill Cody Scenic Byway\"}},{\"attributes\":{\"NAME\":\"Medicine Wheel Passage\"}},{\"attributes\":{\"NAME\":\"Muddy Creek Historic Backway\"}},{\"attributes\":{\"NAME\":\"Oregon Trail Historic Byway\"}},{\"attributes\":{\"NAME\":\"Snowy Range Scenic Byway\"}},{\"attributes\":{\"NAME\":\"South Big Horn/Red Wall Scenic Backway\"}},{\"attributes\":{\"NAME\":\"Wind River Canyon Scenic Byway\"}}]}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gis.itd.idaho.gov/arcgisprod/rest/services/ArcGISOnline/IdahoTransportationLayersForOpenData/MapServer/94/query?where=1%3D1&outFields=BywayName1,BywayName2,Desig&returnGeometry=false&returnDistinctValues=true&f=json",
+   "status": 200,
+   "final_url": "https://gis.itd.idaho.gov/arcgisprod/rest/services/ArcGISOnline/IdahoTransportationLayersForOpenData/MapServer/94/query?where=1%3D1&outFields=BywayName1,BywayName2,Desig&returnGeometry=false&returnDistinctValues=true&f=json",
+   "title": "",
+   "text": "{\"displayFieldName\":\"BywayName1\",\"fieldAliases\":{\"BywayName1\":\"BywayName1\",\"BywayName2\":\"BywayName2\",\"Desig\":\"Desig\"},\"fields\":[{\"name\":\"BywayName1\",\"type\":\"esriFieldTypeString\",\"alias\":\"BywayName1\",\"length\":40},{\"name\":\"BywayName2\",\"type\":\"esriFieldTypeString\",\"alias\":\"BywayName2\",\"length\":25},{\"name\":\"Desig\",\"type\":\"esriFieldTypeString\",\"alias\":\"Desig\",\"length\":20}],\"features\":[{\"attributes\":{\"BywayName1\":\"City of Rocks\",\"BywayName2\":\"Back Country\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Pposed Snake River Canyon\",\"BywayName2\":\"Scenic\",\"Desig\":\"Proposed\"}},{\"attributes\":{\"BywayName1\":\"Teton\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"St. Joe River\",\"BywayName2\":\"Scenic\",\"Desig\":\"Local \"}},{\"attributes\":{\"BywayName1\":\"Ponderosa Pine\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Elk River\",\"BywayName2\":\"Back Country\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"St. Joe River\",\"BywayName2\":\"Scenic\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"Oregon Trail\",\"BywayName2\":\"Back Country\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Panhandle Historic Rivers\",\"BywayName2\":\" \",\"Desig\":\"All American\"}},{\"attributes\":{\"BywayName1\":\"Northwest Passage\",\"BywayName2\":\"Scenic\",\"Desig\":\"All American\"}},{\"attributes\":{\"BywayName1\":\"Elk River\",\"BywayName2\":\"Back Country\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Snake River Canyon\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Thousand Springs\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Lake Coeur D'Alene\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Gold Rush\",\"BywayName2\":\"Historic\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"International Selkirk\",\"BywayName2\":\"Scenic\",\"Desig\":null}},{\"attributes\":{\"BywayName1\":\"Hells Canyon\",\"BywayName2\":\"Scenic\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"City of Rocks\",\"BywayName2\":\"Back Country\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"Snake River Canyon\",\"BywayName2\":\"Scenic\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"Fort Henry\",\"BywayName2\":\"Historic\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"Mesa Falls\",\"BywayName2\":\"Scenic\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"White Pine\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Mesa Falls\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Lost Gold Trails\",\"BywayName2\":\" \",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"Oregon Trail Bear Lake\",\"BywayName2\":\"Scenic\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"Oregon Trail\",\"BywayName2\":\"Back Country\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"Lewis and Clark\",\"BywayName2\":\"Back Country\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"Lost Gold Trails\",\"BywayName2\":\" \",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Wild Horse Trail\",\"BywayName2\":\"Scenic\",\"Desig\":\"All American\"}},{\"attributes\":{\"BywayName1\":\"Lower Payette River Heritage\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Fort Henry\",\"BywayName2\":\"Historic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Western Heritage\",\"BywayName2\":\"Historic\",\"Desig\":\"Natl SB\"}},{\"attributes\":{\"BywayName1\":\"Owyhee Uplands\",\"BywayName2\":\"Back Country\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"Sacajawea\",\"BywayName2\":\"Historic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"White Horse Trail\",\"BywayName2\":\"Scenic\",\"Desig\":\"State \"}},{\"attributes\":{\"BywayName1\":\"Pposed Snake River Canyon\",\"BywayName2\":\"Scenic\",\"Desig\":null}},{\"attributes\":{\"BywayName1\":\"Peaks to Craters\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Wildlife Canyon\",\"BywayName2\":\"Scenic\",\"Desig\":\"Local\"}},{\"attributes\":{\"BywayName1\":\"Sawtooth\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Payette River\",\"BywayName2\":\"Scenic\",\"Desig\":\"Natl SB\"}},{\"attributes\":{\"BywayName1\":\"Pend Oreille\",\"BywayName2\":\"Scenic\",\"Desig\":\"Natl SB\"}},{\"attributes\":{\"BywayName1\":\"Salmon River\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"Pioneer\",\"BywayName2\":\"Historic\",\"Desig\":\"Natl SB\"}},{\"attributes\":{\"BywayName1\":\"Oregon Trail Bear Lake\",\"BywayName2\":\"Scenic\",\"Desig\":\"State\"}},{\"attributes\":{\"BywayName1\":\"International Selkirk\",\"BywayName2\":\"Scenic\",\"Desig\":\"All American\"}}]}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/RoadNetwork_Other/FeatureServer/6/query?where=1%3D1&outFields=BywayName&returnGeometry=false&returnDistinctValues=true&f=json",
+   "status": 200,
+   "final_url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/RoadNetwork_Other/FeatureServer/6/query?where=1%3D1&outFields=BywayName&returnGeometry=false&returnDistinctValues=true&f=json",
+   "title": "",
+   "text": "{\"objectIdFieldName\":\"OBJECTID\",\"globalIdFieldName\":\"GlobalID\",\"geometryType\":\"esriGeometryPolyline\",\"spatialReference\":{\"wkid\":102605,\"latestWkid\":8826},\"hasM\":false,\"hasZ\":false,\"fields\":[{\"name\":\"BywayName\",\"alias\":\"Byway Name\",\"type\":\"esriFieldTypeString\",\"length\":255}],\"features\":[{\"attributes\":{\"BywayName\":\"City of Rocks Back Country Byway\"}},{\"attributes\":{\"BywayName\":\"Elk River Back Country Byway\"}},{\"attributes\":{\"BywayName\":\"Fort Henry Historic Byway\"}},{\"attributes\":{\"BywayName\":\"Gold Rush Historic Byway\"}},{\"attributes\":{\"BywayName\":\"Hells Canyon Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Lake Coeur d'Alene Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Lewis and Clark Back Country Byway\"}},{\"attributes\":{\"BywayName\":\"Lost Gold Trails Loop\"}},{\"attributes\":{\"BywayName\":\"Lower Payette River Heritage Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Mesa Falls Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Northwest Passage Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Oregon Trail Back Country Byway\"}},{\"attributes\":{\"BywayName\":\"Oregon Trail Bear Lake Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Owyhee Uplands Back Country Byway\"}},{\"attributes\":{\"BywayName\":\"Panhandle Historic Rivers Passage\"}},{\"attributes\":{\"BywayName\":\"Payette River Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Peaks to Craters Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Pend Oreille Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Pioneer Historic Byway\"}},{\"attributes\":{\"BywayName\":\"Ponderosa Pine Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Proposed Snake River Canyon Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Sacajawea Historic Byway\"}},{\"attributes\":{\"BywayName\":\"Salmon River Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Sawtooth Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Snake River Canyon Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"St Joe River Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Teton Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Thousand Springs Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Western Heritage Historic Byway\"}},{\"attributes\":{\"BywayName\":\"White Pine Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Wild Horse Trail Scenic Byway\"}},{\"attributes\":{\"BywayName\":\"Wildlife Canyon Scenic Byway\"}}]}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 13,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 6
+ },
+ "short": "6 result(s), 6 read OK, 0 screenshot(s)"
+}
