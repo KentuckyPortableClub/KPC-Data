@@ -104,7 +104,9 @@ jobs:
             # Oct 28 (HQ storage): the pair-reuse caches travel in the bundle, not the repo (saved answers, not data people see)
             tar xzf "$BUNDLE" --wildcards 'data/fers/reuse-p*' 2>/dev/null || true
           fi
-          find bundle/http -type f -mtime +120 -delete 2>/dev/null || true
+          find bundle/http -type f -mtime +60 -delete 2>/dev/null || true   # B1 (Oct 30): 60 days (an older answer is re-read; the layer-edit check keeps unchanged ones cheap)
+          # B1: and at most ~300 MB of saved answers: the oldest go first (a 1 GB bundle made tar + upload push jobs past their time limit)
+          find bundle/http -type f -printf '%T@ %s %p\n' 2>/dev/null | sort -n | awk -v cap=$((300*1024*1024)) '{t+=$2; a[NR]=$3; s[NR]=$2} END{for(i=1;i<=NR&&t>cap;i++){print a[i]; t-=s[i]}}' | xargs -r rm -f || true
           # the last good USGS water copy of this area (never aged out: each tile carries its own date, rule 13)
           mkdir -p bundle/water
           if gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D . --clobber 2>/dev/null; then tar xzf "$WATER_ASSET" bundle/water 2>/dev/null || true; fi
@@ -219,7 +221,9 @@ jobs:
         if: always()
         run: |
           echo "{\"stage\":\"worker\",\"tag\":\"$RUN_TAG\",\"states\":\"$STATES\",\"date\":\"$(date -u +%FT%TZ)\",\"run\":\"$GITHUB_RUN_ID\"}" > bundle/stamp.json
-          find bundle/http -type f -mtime +120 -delete 2>/dev/null || true
+          find bundle/http -type f -mtime +60 -delete 2>/dev/null || true   # B1 (Oct 30): 60 days (an older answer is re-read; the layer-edit check keeps unchanged ones cheap)
+          # B1: and at most ~300 MB of saved answers: the oldest go first (a 1 GB bundle made tar + upload push jobs past their time limit)
+          find bundle/http -type f -printf '%T@ %s %p\n' 2>/dev/null | sort -n | awk -v cap=$((300*1024*1024)) '{t+=$2; a[NR]=$3; s[NR]=$2} END{for(i=1;i<=NR&&t>cap;i++){print a[i]; t-=s[i]}}' | xargs -r rm -f || true
           tar czf "$BUNDLE" bundle data/fers
           bash kpcdata/.github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$BUNDLE"   # the copy already up becomes .prev (last 2 kept per area)
           gh release upload fers-bundles "$BUNDLE" --clobber -R "$REPO" || { echo "::error title=2-fer line::bundle upload failed"; exit 1; }
