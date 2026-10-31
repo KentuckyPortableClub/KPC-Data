@@ -1,15 +1,15 @@
-# Layer intake review (2026-10-30)
+# Layer intake review (2026-10-31)
 
 Every lead in data/intake/queue.json, probed politely (metadata and counts only, never geometry). Chat 9 approves a READY row by setting `approved: true` in ready.json; the nightly key rebuild reads approved rows later. LIVE-ONLY = read live, never stored. ASK = the publisher must be asked (nothing stated, or hosted for an agency). WATER-ONLY = lakes / reservoirs: for the 2-fer owner step only, never a park outline. RETRY = the probe did not open (error, rest, robots, 403): probed again next run, three failures → chat 9 checks the url. Terms are read on the publisher's OWN item page first (the Nevada lesson).
 
 | verdict | rows |
 |---|---|
 | READY | 2 |
-| WATER-ONLY | 28 |
+| WATER-ONLY | 34 |
 | LIVE-ONLY | 1 |
-| ASK-THE-PUBLISHER | 157 |
-| RETRY | 269 |
-| REJECT | 1128 |
+| ASK-THE-PUBLISHER | 295 |
+| RETRY | 304 |
+| REJECT | 1383 |
 
 ## READY (2)
 
@@ -81,7 +81,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - GB-0198 Thames Basin Heaths SPA - Yateley Heath Woods Site of Significant Scientific Interest → polygon "Castle Bottom to Yateley and Hawley Commons"
 - TEST: ok
 
-## WATER-ONLY (28)
+## WATER-ONLY (34)
 
 ### ogc_services/Ramsar_Wetlands  ·  AU  ·  from harvester
 - url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer/0
@@ -347,6 +347,63 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field LAND_PROJECT_NAME · 472 records · last edit 2021-06-14 · sample Henry Lake Canal And Structure (P-5, C-431, S-452) / Smart Lake Canal And Structure (P-6) / Fannie Lake Canal And Structure (P-7)
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
+### Fishing Access Site Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/2
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host fwp-gis.mt.gov)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "Montana Fish, Wildlife & Parks" · item https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 333 records · sample Glen Lake / Blanchard Lake / Smith Lake
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### KDWP_Wildlife_Areas_export (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/q2CglofYX6ACNEeu/ArcGIS/rest/services/KDWPT_Wildlife_Areas_view/FeatureServer/0
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: nothing stated about use on the item page or the service
+- publisher: ? → official (government words: Government)
+- FLAG: water only: for the 2-fer owner step only
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4ba0c134788847db91fa87b44dc3c9d2 · owner jjones_KDWPT · org Kansas State Government GIS
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 274 records · last edit 2026-09-09 · sample Hamilton State Fishing Lake and Wildlife Area / Cottonwood Flats Wildlife Area / Finney State Fishing Lake and Wildlife Area
+- overlap: same publisher as sgksb
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### DNR Managed Lands (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://dnrmaps.wi.gov/arcgis/rest/services/ER_Biotics/ER_Biotics_WGS84_Managed_Lands/MapServer/3
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host dnrmaps.wi.gov)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "WDNR WDNR-LF" · item https://dnrmaps.wi.gov/arcgis/rest/services/ER_Biotics/ER_Biotics_WGS84_Managed_Lands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROP_NAME · 1214 records · sample Bashaw Lake - Island No 1 / Bass Hollow State Natural Area / Bass Lake - Bass Island
+- overlap: same service as sgwic (another layer of it)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Waterbodies (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/9
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: AGFC)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "No warranty is made by the AGFC as to the accuracy, reliability, or completeness of these data for in" · item https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field fname · 1240 records · sample Madison Co. WMA Pond P101 / Madison Co. WMA Pond P1004 / Madison Co. WMA Pond P102
+- overlap: same publisher as arw
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Quarries, Ponds and Reservoirs (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/8
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: Environment)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "(c) States of Guernsey 2017" · item https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Proposed Natural Heritage Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services-eu1.arcgis.com/Jhij7i46ouO8Cc0N/ArcGIS/rest/services/NPWSDesignatedAreas/FeatureServer/1
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Government)
+- FLAG: water only: for the 2-fer owner step only
+- terms: OPEN · source item page · "nd Heritage. This copyright material is licensed for re-use under the Creative Commons Attribution 4.0 International licence. http://creativecommons.org/license Copyright Gover" · item https://www.arcgis.com/home/item.html?id=41c7209da92341e6b7014087c8229f46 · owner NPWS_Ireland · org NPWS
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 1180 records · last edit 2026-04-01 · sample Dromore Lakes / Dromore Lakes / Bruse Hill
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
 ## LIVE-ONLY (1)
 
 ### Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park)  ·  CZ  ·  from chat 9
@@ -378,7 +435,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - CZ-0139 Ještěd Nature Park → polygon "Ještěd"
 - TEST: ok
 
-## ASK-THE-PUBLISHER (157)
+## ASK-THE-PUBLISHER (295)
 
 ### AerialPhotoViewer/Orthophoto_Coverage_Area  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0
@@ -1706,7 +1763,1170 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field LAND_PROJECT_NAME · 101 records · last edit 2026-10-15 · sample Alafia River Corridor / Alafia River Reserve / Alligator Creek Salinity Barrier
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## RETRY (269)
+### Iowa Department of Natural Resources - Public Hunting Atlas  (atlas crawler, US-IA)  ·    ·  from atlas crawler
+- url: https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Atlas_Web_Application/FeatureServer/2
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government words: Department)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4a015ae7b9cd4f73a0f49a974c1682d7 · owner Monica.Thelen_iowadnr · org Iowa Department of Natural Resources
+- facts: arcgis-layer · esriGeometryPolygon · name field AREA_NAME · 1844 records · last edit 2026-10-28 · sample ADAIR WILDLIFE AREA / ALDO LEOPOLD WILDLIFE AREA / ANDERSON PRAIRIE COMPLEX
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### DNREC Pond Maps (map viewer) (atlas crawler, US-DE)  ·    ·  from atlas crawler
+- url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Aerial_Basemap/MapServer/6
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host enterprise.firstmap.delaware.gov)
+- terms: CREDIT · source item page · "DNREC Division of Parks and Recreation" · item https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Aerial_Basemap/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 761 records · sample Fork Branch Nature Preserve / Fork Branch Nature Preserve / Alapocas Run State Park
+- overlap: same publisher as sgdea
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### DNREC Pond Maps (map viewer) (atlas crawler, US-DE)  ·    ·  from atlas crawler
+- url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Basemap_Color/MapServer/13
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host enterprise.firstmap.delaware.gov)
+- terms: CREDIT · source item page · "DNREC Division of Parks and Recreation" · item https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Basemaps/DE_Basemap_Color/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1910 records · sample Fork Branch Nature Preserve / Fork Branch Nature Preserve / Fork Branch Nature Preserve
+- overlap: same publisher as sgdea
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### DNREC Managed Lands (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://enterprise.firstmaptest.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host enterprise.firstmaptest.delaware.gov)
+- terms: CREDIT · source item page · "The State of Delaware makes no warranty or representation, expressed or implied, with respect to the quality, content, accuracy," · item https://enterprise.firstmaptest.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1329 records · sample Angola Neck Nature Preserve / Fork Branch Nature Preserve / Fork Branch Nature Preserve
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Recreation Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/akarcgis/rest/services/Recreation/BLM_AK_Recreation/MapServer/100
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by BLM "as is" and may contain errors or omissions. The User assumes the entire risk associa" · item https://gis.blm.gov/akarcgis/rest/services/Recreation/BLM_AK_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 43 records · sample Mount Prindle RNA / None / White Mountains SRMA
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM AZ Recreation Sites (Polygon) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 71 records · sample None / Crossroads Open Area / Copper Basin Dunes Open Area
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM AZ Recreation Sites (Polygon) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/MapServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 71 records · sample None / Crossroads Open Area / Copper Basin Dunes Open Area
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM Natl Recreation Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recreation/MapServer/9
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 588 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Recreation Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 3478 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Recreation Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 3478 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Recreation Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 3478 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM CA Recreation Polygons (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/caarcgis/rest/services/Recreation/BLM_CA_RECS/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/caarcgis/rest/services/Recreation/BLM_CA_RECS/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 90 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### ParkBoundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/ParkBoundaries/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: State Parks)
+- terms: CREDIT · source item page · "COPYRIGHT 2022 CALIFORNIA STATE PARKS, ALL RIGHTS RESERVED These datasets and materials (“Materials" · item https://www.arcgis.com/home/item.html?id=0fea4fa1db734794bdb3b5410bb3eed9 · owner Carla.CruzMedina · org California State Parks
+- facts: arcgis-layer · esriGeometryPolygon · name field UNITNAME · 461 records · last edit 2026-10-01 · sample Wildwood Canyon / Andrew Molera SP / Angel Island SP
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM Colorado Recreation Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_CO_Recreation/FeatureServer/4
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_CO_Recreation/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 278 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM Colorado Recreation Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_Colorado_Recreation_for_HUB/MapServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by BLM "as is" and may contain errors or omissions. The User assumes the entire risk associa" · item https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_Colorado_Recreation_for_HUB/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 278 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Recreation Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 3478 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM Wilderness Study Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/68
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.colorado.gov)
+- terms: CREDIT · source item page · "Colorado makes no representations or warranty as to the completeness, accuracy, timeliness, or content of any data made available through this site. The State of Colora" · item https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NLCS_NAME · 72 records · sample San Luis Hills / Weber Mountain / Menefee Mountain
+- overlap: same service as sgcoa (another layer of it)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### State Park Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/5
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host fwp-gis.mt.gov)
+- terms: CREDIT · source item page · "Montana Fish, Wildlife & Parks" · item https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 55 records · sample Thompson Chain-of-Lakes / Finley Point / Big Arm
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Wildlife Management Area Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/8
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host fwp-gis.mt.gov)
+- terms: CREDIT · source item page · "Montana Fish, Wildlife & Parks" · item https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 70 records · sample Pablo / Ray Kuhns / Mount Silcox
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM ID Recreation Area Poly (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) "as is" and might contain errors or omissions. The User a" · item https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 76 records · sample North Junipers Motorized Closure / Red Road Open Campfire Area / Egin Lakes Recreation Access
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### IDNR Properties (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host maps.dnr.illinois.gov)
+- terms: NOTHING STATED · source item page · item https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 384 records · sample Burning Star No. 5 / Devil's Island / Cape Bend
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Protected and Recreational OpenSpace (Polygons) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.eea.mass.gov/server/rest/services/Protected_and_Recreational_OpenSpace_Polygons/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.eea.mass.gov)
+- terms: CREDIT · source item page · "These data are very useful for most statewide and regional planning purposes. However, they are not a legal record of ownership, and the user should understand " · item https://gis.eea.mass.gov/server/rest/services/Protected_and_Recreational_OpenSpace_Polygons/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 61892 records · sample Kuhn Property / Tarpaulin Cove Sanctuary / Nemasket River Access
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Managed Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gisservice.mt.gov)
+- terms: CREDIT · source item page · "Montana State Library Montana State Library" · item https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field MANAME · 1531 records
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### State Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.dmr.nd.gov/dmrpublicservices/rest/services/State_Parks/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.dmr.nd.gov)
+- terms: CREDIT · source item page · "North Dakota Department of Parks and Recreation" · item https://gis.dmr.nd.gov/dmrpublicservices/rest/services/State_Parks/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 22 records · sample Fort Stevenson State Park / Beaver Lake State Park / Fort Abraham Lincoln State Park
+- overlap: same publisher as sgndd
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NGPC Properties (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://cert.outdoornebraska.gov/arcgis/rest/services/Public/NGPC_Properties/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host cert.outdoornebraska.gov)
+- terms: CREDIT · source item page · "Acknowledgement of the Nebraska Game and Parks Commission would be appreciated in products derived from t" · item https://cert.outdoornebraska.gov/arcgis/rest/services/Public/NGPC_Properties/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field AreaName · 339 records · sample Cowboy Trail (NERT) / Cheyenne SRA / Kea West WMA
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Recreation Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/nmarcgis/rest/services/Recreation/BLM_NM_RGDN_Recreation/MapServer/5
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/nmarcgis/rest/services/Recreation/BLM_NM_RGDN_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · sample Orilla Verde
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Recreation Sites Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/23
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC DATA: None, these are considered public domain Bureau of Land Management, Oregon State Office BLM Admin State" · item https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 2380 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Boundary FPA Service Area  (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.odf.oregon.gov/odfags/rest/services/Boundary/Boundary_FPA_Service_Area/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.odf.oregon.gov)
+- terms: CREDIT · source item page · "rces. The digital data and their documentation have been reviewed for accuracy and completeness; however, the Oregon Department of Forestry and its representatives make" · item https://www.arcgis.com/home/item.html?id=1f6e059413264ba7a14b69af587e5807 · owner Steve.TIMBROOK_ODF · org Oregon ArcGIS Online
+- facts: arcgis-layer · esriGeometryPolygon · name field UnitName · 77 records · sample Klamath Falls / Grants Pass / Coos Bay
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### DEM Managed Recreational Land (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://risegis.ri.gov/hosting/rest/services/RIDEM/Outdoor_Recreation_Map_v4/FeatureServer/21
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host risegis.ri.gov)
+- terms: NOTHING STATED · source item page · item https://risegis.ri.gov/hosting/rest/services/RIDEM/Outdoor_Recreation_Map_v4/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 535 records · sample Round Top / High Rocks Gorge / Mary C Donovan Marsh
+- overlap: same publisher as sgria
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM UT National Monuments and National Conservation Areas (P (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/utarcgis/rest/services/NLCS/BLM_UT_NMNCA/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) “as is” and may contain errors or omissions. The User ass" · item https://gis.blm.gov/utarcgis/rest/services/NLCS/BLM_UT_NMNCA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NLCS_NAME · 33 records · sample Beaver Dam Wash - Designated Road Area / Beaver Dam Wash - Designated Road Area / Beaver Dam Wash
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM UT Wilderness Study Areas (Polygon) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/utarcgis/rest/services/NLCS/BLM_UT_WSA/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/utarcgis/rest/services/NLCS/BLM_UT_WSA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NLCS_NAME · 98 records · sample West Cold Springs / Diamond Breaks / North Stansbury Mountains
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM UT Wild Horse and Burro Herd Management Areas (Polygon) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/utarcgis/rest/services/Range/BLM_UT_WHB/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/utarcgis/rest/services/Range/BLM_UT_WHB/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field HMA_NAME · 20 records · sample Kingtop / Cedar Mountain / Onaqui Mountain
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM UT Congressionally Designated Recreation Areas (Polygon) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) “as is” and may contain errors or omissions. The User ass" · item https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field RECS_NAME · 26 records · sample San Rafael Swell / San Rafael Swell / San Rafael Swell
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### DWR_WMAs_Dissolve (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.dwr.virginia.gov/arcgis/rest/services/Public/DGIF_WMAs/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host services.dwr.virginia.gov)
+- terms: NOTHING STATED · source item page · item https://services.dwr.virginia.gov/arcgis/rest/services/Public/DGIF_WMAs/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field WMA_NAME · 71 records · sample Amelia / Balthrope Marsh / Bear Garden
+- overlap: same publisher as sgvag
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### SP_Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/ArcGIS/rest/services/SP_Boundary/FeatureServer/3
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "re-distribution of this dataset for profit is prohibited. All rights credited to Virginia Department of Conservation and Recreation. VA-DCR, Virginia State Parks" · item https://www.arcgis.com/home/item.html?id=ed5fd662aff446a2b4bb714159791a0a · owner Peter.lostritto_vdcr · org Virginia Department of Conservation and Recreation
+- facts: arcgis-layer · esriGeometryPolygon · name field LABEL · 44 records · last edit 2026-10-29 · sample Shenandoah River State Park / Bear Creek Lake State Park / Breaks Interstate Park
+- overlap: same publisher as sgvab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Wildlife Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASFISHWILDLIFE_WM_NOCACHE/MapServer/20
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host anrmaps.vermont.gov)
+- terms: NOTHING STATED · source item page · item https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASFISHWILDLIFE_WM_NOCACHE/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 931 records · sample Tinmouth Channel WMA / Tinmouth Channel WMA / Tinmouth Channel WMA
+- overlap: same publisher as sgvta
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Managed Lands (FPR) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASFPR_WM_NOCACHE/MapServer/32
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host anrmaps.vermont.gov)
+- terms: CREDIT · source item page · "VTANRGIS" · item https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASFPR_WM_NOCACHE/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 938 records · sample Hapgood State Forest / Granville Reservation State Forest / Button Bay State Park
+- overlap: same publisher as sgvta
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Campground Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/19
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC DATA: None, these are considered public domain Bureau of Land Management, Oregon State Office BLM Admin State" · item https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 108 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Day Use Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/20
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC DATA: None, these are considered public domain Bureau of Land Management, Oregon State Office BLM Admin State" · item https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 66 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Natural Area/ Endangered Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/21
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC DATA: None, these are considered public domain Bureau of Land Management, Oregon State Office BLM Admin State" · item https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 2 records · sample None / None
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### OHV Designated Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/22
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC DATA: None, these are considered public domain Bureau of Land Management, Oregon State Office BLM Admin State" · item https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 19 records · sample South Millican OHV Area / North Millican OHV Area / Millican Plateau OHV Area
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Hanford Reach (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services9.arcgis.com/EGheeB0VDT6EarZv/ArcGIS/rest/services/MonumentParks1_WFL1/FeatureServer/29
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (a government word of the country: Parks)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=87c72ab1b488427397962b42bf284a46 · owner sferguson22_UnityOnline
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · last edit 2024-08-09 · sample Hanford Reach National Monument
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### WildlifeHabitatManagementAreas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/cWzdqIyxbijuhPLw/ArcGIS/rest/services/WildlifeHabitatManagementAreaBoundaries/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: wgfd)
+- terms: CREDIT · source item page · "Game and Fish Department provide this data and any related materials "as is", without warranty of any kind, expressed or implied, including the utility of the data o" · item https://www.arcgis.com/home/item.html?id=6e7cb62dfe31482d88a8dd92d9ee0cea · owner WyomingGameAndFish@wgfd
+- facts: arcgis-layer · esriGeometryPolygon · name field WHMA_Name · 115 records · last edit 2025-07-14 · sample Kerns / Sunlight Basin / Bud Love
+- overlap: same publisher as sgwya
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Protected Areas (open-data portal) (atlas crawler, US-FL)  ·    ·  from atlas crawler
+- url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Conservation)
+- terms: NON-COMMERCIAL · source item page · "No commercial use: Neither (a) the WDPCA Materials and the GD-PAME Materials nor (b) any work derived from" · item https://www.arcgis.com/home/item.html?id=ae78aeb913a343d69e950b53e29076f7 · owner UNEP-WCMC-Publisher · org UN Environment World Conservation Monitoring Centre
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 500394 records · last edit 2026-10-16 · sample Sikhote-Alin / Kronotskiy / Commander Islands
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NY State Parks and Historic Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisservices.dec.ny.gov/arcgis/rest/services/hvnrm/hvnrm_scenic_and_recreation/MapServer/4
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host gisservices.dec.ny.gov)
+- terms: NOTHING STATED · source item page · item https://gisservices.dec.ny.gov/arcgis/rest/services/hvnrm/hvnrm_scenic_and_recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 836 records · sample Robert Moses / Robert Moses / Robert Moses
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Provincial Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geonb.snb.ca/arcgis/rest/services/GeoNB_Basemap_Topo/MapServer/25
+- WHY: publisher unsure: no government word found, ask who publishes it
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "Service New Brunswick" · item https://geonb.snb.ca/arcgis/rest/services/GeoNB_Basemap_Topo/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME
+- overlap: same publisher as NB-PP Govern
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Protected Natural Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis-erd-der.gnb.ca/server/rest/services/OpenData/PNAs/MapServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host gis-erd-der.gnb.ca)
+- terms: NOTHING STATED · source item page · item https://gis-erd-der.gnb.ca/server/rest/services/OpenData/PNAs/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 208 records · sample Green Island / Caughey-Taylor, Private Land Component / Meduxnekeag Valley
+- overlap: same publisher as NB WMZ
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/qRqOFxxnwUHOSocZ/ArcGIS/rest/services/CRD_Parks/FeatureServer/3
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: Parks)
+- terms: CREDIT · source item page · "Please inform the point of contact before distributing this data outside the CRD." · item https://www.arcgis.com/home/item.html?id=f0a830c834774b05bddd1a63a004764e · owner chrisboneuvic8
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 1853 records · last edit 2025-03-18 · sample Gulf Islands National Park Reserve (Little Group Islands) / Gulf Islands National Park Reserve (Dock Island) / Gulf Islands National Park Reserve
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### PARKS (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services3.arcgis.com/qrcTTRTwUoS8N47o/ArcGIS/rest/services/PARKS/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: City of)
+- terms: OPEN · source item page · "Open Government Licence - Vancouver. GIS and CAD Services,City of Vancouver. GIS and CAD Services,City of Vancouv" · item https://www.arcgis.com/home/item.html?id=4d17cf27f10941fd91b79fcb9e1d4ec6 · owner ENMHT@vancouver.ca_vancouver_bc · org City of Vancouver
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME · 264 records · sample  {no name} /  {no name} /  {no name}
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Parks and Protected Area System (WebMap) (2024) (poly) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/cU3ioSm7E1EuXfAs/arcgis/rest/services/Other_Contextual_Information__WebMap_/FeatureServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Province of)
+- terms: CREDIT · source item page · "Province of Nova Scotia (2024-03-28) Data acquired from the Nova Scotia Geographic Data Directory - https://nsgi.novascotia.ca/gdd/" · item https://www.arcgis.com/home/item.html?id=9dae6ee8321447f685a994c7624e7f0a · owner dominic_NSNT · org Nova Scotia Nature Trust
+- facts: arcgis-layer · esriGeometryPolygon · name field Pro_Name · 821 records · last edit 2025-08-14 · sample Atlantic Coastal Plain Flora Conservation Lands / Jim Campbells Barren Wilderness Area / Lake Rossignol Wilderness Area
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### British Columbia Provincial Parks, Eco Reserves and Protecte (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Provincial_Parks_Eco_Reserves_and_Protected_Areas_-_View/FeatureServer/10
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: Provincia)
+- terms: OPEN · source item page · "The data set provided by this web service is licensed under Open Government Licence - British Columbia The B.C.'s Map Hub and associated materials, including map application" · item https://www.arcgis.com/home/item.html?id=bd852a2c42924732a69b37632c25c585 · owner databcfme · org B.C.'s Map Hub
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_CLASS · 930 records · last edit 2026-10-30 · sample Class A / None / Class A
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### DNR Management Units (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host apps.bwsr.state.mn.us)
+- terms: NOTHING STATED · source item page · item https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 6715 records · sample Miscellaneous / Miscellaneous / Miscellaneous
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NOAA_MPA_Inventory (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/NOAA_MPA_Inventory_2023/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Office of)
+- terms: CREDIT · source item page · "Data are not to be used for navigation. For more details on data use and limitations, please review the metadata. The MPA Center shall not be held liable for im" · item https://www.arcgis.com/home/item.html?id=eb2b36aecb004f14ac29cf0260624291 · owner MPA_noaa · org NOAA GeoPlatform
+- facts: arcgis-layer · esriGeometryPolygon · name field Site_Name · 981 records · last edit 2026-10-22 · sample Walrus Islands State Game Sanctuary / Cape Hatteras National Seashore / Ofu Vaoto Marine Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Conservation Authority Admin Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host ws.lioservices.lrc.gov.on.ca)
+- terms: CREDIT · source item page · "https://www.ontario.ca/page/open-government-licence-ontario" · item https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field LEGAL_NAME · 36 records · sample Hamilton Region Conservation Authority / Lower Thames Valley Conservation Authority / North Bay Mattawa Conservation Authority
+- overlap: same service as Ontario Park (another layer of it)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### National Wildlife Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/9
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host ws.lioservices.lrc.gov.on.ca)
+- terms: CREDIT · source item page · "https://www.ontario.ca/page/open-government-licence-ontario" · item https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field OFFICIAL_NAME · 5 records · sample Moose River Migratory Bird Sanctuary / Moose River Migratory Bird Sanctuary / Hannah Bay Bird Sanctuary
+- overlap: same service as Ontario Park (another layer of it)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Wildlife Management Unit (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/5
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host ws.lioservices.lrc.gov.on.ca)
+- terms: CREDIT · source item page · "https://www.ontario.ca/page/open-government-licence-ontario" · item https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field OFFICIAL_NAME · 151 records · sample 3 / 67 / 87D
+- overlap: same publisher as Ontario Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Terrestrial Protected Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/Environment_LCC/MapServer/193
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host www.apps.geomatics.gov.nt.ca)
+- terms: CREDIT · source item page · "NWT Centre for Geomatics, 2024 Metadata by Conservation Planning and Implementation Unit, Department of Environment and Natural Resources (ENR), Government of t" · item https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/Environment_LCC/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 25 records · sample Banks Island Migratory Bird Sanctuary No. 2 / Anderson River Delta Migratory Bird Sanctuary / Kendall Island Migratory Bird Sanctuary
+- overlap: same service as NT GNWT Envi (another layer of it)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### USFS Administrative Forest Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services8.arcgis.com/nm8Z54pdbnOzit8c/ArcGIS/rest/services/USFS_Administrative_Forest_Boundaries/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "US Forest Service Enterprise Map Services Program URL: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ForestSystemBoundaries_01/MapServer/1 US Forest Servi" · item https://www.arcgis.com/home/item.html?id=4148ace29519459ab6017f9df01143ed · owner sig-nal_admin
+- facts: arcgis-layer · esriGeometryPolygon · name field FORESTNAME · 1 records · last edit 2025-03-18 · sample Los Padres National Forest
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### National Forests (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/46
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.colorado.gov)
+- terms: CREDIT · source item page · "Colorado makes no representations or warranty as to the completeness, accuracy, timeliness, or content of any data made available through this site. The State of Colora" · item https://gis.colorado.gov/public/rest/services/OIT/Colorado_State_Basemap/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field FORESTNAME · 12 records · sample Arapaho National Forest / Grand Mesa National Forest / Gunnison National Forest
+- overlap: same service as sgcoa (another layer of it)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### State Park (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/CT_Outdoor_Recreation_20160209/FeatureServer/8
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "CT DEEP" · item https://www.arcgis.com/home/item.html?id=59265efc13904d71a907f7879417273a · owner deepgis · org Department of Energy & Environmental Protection
+- facts: arcgis-layer · esriGeometryPolygon · name field PROPERTY · 197 records · last edit 2019-11-08 · sample Above All State Park Scenic Reserve / Beaver Brook State Park Scenic Reserve / Beckett Hill State Park Scenic Reserve
+- overlap: same publisher as ctd
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### State Park Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/CT_Outdoor_Recreation_20160209/FeatureServer/9
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "CT DEEP" · item https://www.arcgis.com/home/item.html?id=59265efc13904d71a907f7879417273a · owner deepgis · org Department of Energy & Environmental Protection
+- facts: arcgis-layer · esriGeometryPolygon · name field PROPERTY · 28 records · last edit 2019-11-08 · sample Airline State Park Trail (North Trail) / Airline State Park Trail (Northern Section) / Airline State Park Trail (Southern Section)
+- overlap: same publisher as ctd
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### WyoStateParks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis2.statelands.wyo.gov/arcgis/rest/services/WyoStateParks/MapServer/26
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host gis2.statelands.wyo.gov)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=0bed4209a7cd42b38b05d7782ff252af · owner shianne.fornstrom
+- facts: arcgis-layer · esriGeometryPolygon · name field Facility · 12 records
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Michigan State Park Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/dnrParksAndRecreation/FeatureServer/5
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Department)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or dis Michigan Department of Natural Resources" · item https://www.arcgis.com/home/item.html?id=f70c70db65094084a3f742f8cf469e34 · owner MichiganDNR · org Michigan Department of Natural Resources
+- facts: arcgis-layer · esriGeometryPolygon · name field FACILITY · 108 records · last edit 2026-08-24 · sample Warren Woods State Park / Dodge 4 State Park / Interlochen State Park
+- overlap: same publisher as mid
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Michigan DNR Parks and Recreation Management Units (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/dnrParksAndRecreation/FeatureServer/6
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Department)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or dis Michigan Department of Natural Resources" · item https://www.arcgis.com/home/item.html?id=f70c70db65094084a3f742f8cf469e34 · owner MichiganDNR · org Michigan Department of Natural Resources
+- facts: arcgis-layer · esriGeometryPolygon · name field MGMT_UNIT · 9 records · last edit 2026-08-24 · sample Western UP / Gaylord / Cadillac
+- overlap: same publisher as mid
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### State-Owned Land (Latest) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services3.arcgis.com/zMTrRjxZirPAKsKd/arcgis/rest/services/State_Owned_Land_NC_Latest_02/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "DISCLAIMER: The NC Department of Administration, State Property Office is charged with maintaining a" · item https://www.arcgis.com/home/item.html?id=fcb3d26b5a644d78805678203153f15d · owner Jason.Brown@doa.nc.gov · org             North Carolina Department of Administration
+- facts: arcgis-layer · esriGeometryPolygon · name field DivName · 6316 records · last edit 2026-10-27 · sample ADMINISTRATION / ADMINISTRATION GENERAL / ADMINISTRATION GENERAL
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### DNR Managed Surface Lands by Surface Trust (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Managed_Lands/MapServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.dnr.wa.gov)
+- terms: CREDIT · source item page · "Department of Natural Resources (DNR)" · item https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Managed_Lands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARCEL_NM · 13554 records · sample None / None / None
+- overlap: same publisher as sgwac
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### All_BC_Canadian Protected and Conserved Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/Pzf9OxaJOkeUTgzs/ArcGIS/rest/services/BC_Canadian_Protected_and_Conserved_Areas/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: OPEN · source item page · "Open Government Licence - Canada (http://open.canada.ca/en/open-government-licence-canada) CPCAD is compiled and" · item https://www.arcgis.com/home/item.html?id=6238b7bbd4a241778f9fc33600fbe6e2 · owner Conservation@BCPF
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME_E · 3047 records · last edit 2026-06-30 · sample Privately Protected Area (NCC 60000) / Privately Protected Area (NCC 60001) / Privately Protected Area (NCC 60002)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Wildlife Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://rdmaps.gov.mb.ca/arcgis/rest/services/MapGallery/MG_GEOLOGY_CLIENT/MapServer/24
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host rdmaps.gov.mb.ca)
+- terms: NOTHING STATED · source item page · item https://rdmaps.gov.mb.ca/arcgis/rest/services/MapGallery/MG_GEOLOGY_CLIENT/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME_EN · 146 records · sample Westlake Wildlife Management Area / Alonsa Wildlife Management Area / Pembina Valley Wildlife Management Area
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Provincial Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://rdmaps.gov.mb.ca/arcgis/rest/services/iMaQs/imaqsMining/MapServer/32
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host rdmaps.gov.mb.ca)
+- terms: NOTHING STATED · source item page · item https://rdmaps.gov.mb.ca/arcgis/rest/services/iMaQs/imaqsMining/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME_EN · 94 records · sample Hyland Provincial Park / Portage Spillway Provincial Park / Whitefish Lake Provincial Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Protected and Conserved Area Network (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.saskatchewan.ca/arcgis/rest/services/Planning/FeatureServer/20
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Ministry)
+- terms: CREDIT · source item page · "The Protected and Conserved Areas Network custodian is Fish, Wildlife and Lands Branch, Saskatchewan Ministry of Environment, 3211 Albert Street, Regina, S4S 5W" · item https://gis.saskatchewan.ca/arcgis/rest/services/Planning/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME_E · 611 records · sample Fish And Wildlife Development Fund / Waskwei River / Fish And Wildlife Development Fund
+- overlap: same publisher as SK-ALL Gover
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### WMA Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/10
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: AGFC)
+- terms: CREDIT · source item page · "No warranty is made by the AGFC as to the accuracy, reliability, or completeness of these data for in" · item https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field fname · 196 records · sample River Bend WMA / Bell Slough WMA / Bayou Des Arc WMA
+- overlap: same publisher as arw
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Education Regions (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/11
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: AGFC)
+- terms: CREDIT · source item page · "No warranty is made by the AGFC as to the accuracy, reliability, or completeness of these data for in" · item https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field fname · 9 records · sample Rick Evans Grandview Prairie Nature Center Education Region / Ponca Nature Center Education Region / J.B. and Jonelle Hunt Family Ozark Highlands Nature Center E
+- overlap: same publisher as arw
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Fisheries Districts (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/12
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: AGFC)
+- terms: CREDIT · source item page · "No warranty is made by the AGFC as to the accuracy, reliability, or completeness of these data for in" · item https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field fname · 10 records · sample Fisheries Division District 2 / Fisheries Division District 8 / Fisheries Division District 1
+- overlap: same publisher as arw
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Wildlife Regions (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/13
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: AGFC)
+- terms: CREDIT · source item page · "No warranty is made by the AGFC as to the accuracy, reliability, or completeness of these data for in" · item https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field fname · 7 records · sample Wildlife Management Division District 2 / Wildlife Management Division District 5 / Wildlife Management Division District 3
+- overlap: same publisher as arw
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Fisheries Mgmt (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/8
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: AGFC)
+- terms: CREDIT · source item page · "No warranty is made by the AGFC as to the accuracy, reliability, or completeness of these data for in" · item https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field fname · 311 records · sample Jim Collins Caged Fish Operation / C.B. Charlie Craig Hatchery Pond #12 / Pot Shoals Net Pens
+- overlap: same publisher as arw
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Oklahoma Wildlife Refuge (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/ArcGIS/rest/services/OklahomaRecreationalAreas/FeatureServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "Authorized reference use only ODOT" · item https://www.arcgis.com/home/item.html?id=5c48be66df194c5787a1b920c2dccf29 · owner OKDOT_GIS · org Oklahoma Department of Transportation
+- facts: arcgis-layer · esriGeometryPolygon · name field ORGNAME · 9 records · last edit 2018-11-07 · sample DEEP FORK NATIONAL WILDLIFE REFUGE / LITTLE RIVER NATIONAL WILDLIFE REFUGE / OPTIMA NATIONAL WILDLIFE REFUGE
+- overlap: same service as sgoka (another layer of it)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM Administrative Unit District Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARENT_NAME · 51 records · sample ANCHORAGE DISTRICT OFFICE / FAIRBANKS DISTRICT OFFICE / ARCTIC DISTRICT OFFICE
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM Administrative Unit Field Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer/3
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field ADMU_NAME · 125 records · sample ANCHORAGE FIELD OFFICE / GLENNALLEN FIELD OFFICE / EASTERN INTERIOR FIELD OFFICE
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM Administrative Unit Other Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer/4
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field ADMU_NAME · 0 records
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Florida State Park Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host ags.dep.state.fl.us)
+- terms: CREDIT · source item page · "FDEP/DRP Florida Department of Environmental Protection, Division of Recreation and Parks, Office of Park Planning" · item https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 179 records · sample Windley Key Fossil Reef Geological State Park / Bulow Creek State Park / Fanning Springs State Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Florida State Park Burn Goals (Previous Year) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/10
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host ags.dep.state.fl.us)
+- terms: CREDIT · source item page · "FDEP/DRP Florida DEP, Division of Recreation and Parks" · item https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME · 740 records · sample Anclote Key Preserve State Park / Yellow River Marsh Preserve State Park / Yellow River Marsh Preserve State Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Florida State Park Management Zones (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/4
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host ags.dep.state.fl.us)
+- terms: CREDIT · source item page · "FDEP/DRP Florida DEP Division of Recreation and Parks" · item https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME · 5015 records · sample Addison Blockhouse Historic State Park / Alfred B. Maclay Gardens State Park / Alfred B. Maclay Gardens State Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Florida State Park Natural Communities (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/5
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host ags.dep.state.fl.us)
+- terms: CREDIT · source item page · "FDEP/DRP Florida DEP Division of Recreation and Parks" · item https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 40963 records · sample Anastasia State Park / Anastasia State Park / Anastasia State Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Florida State Park Structures (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/7
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host ags.dep.state.fl.us)
+- terms: CREDIT · source item page · "FDEP/DRP Florida Department of Environmental Protection, Division of Recreation and Parks, Office of Park Planning http://www.dep.state.fl.us/parks/planning/def" · item https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 2180 records · sample Garden Welcome Center / Lakeside Pavilion / Entrance Station
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Florida State Park Burn Goals (Current Year) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/9
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host ags.dep.state.fl.us)
+- terms: CREDIT · source item page · "FDEP/DRP Florida DEP, Division of Recreation and Parks" · item https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME · 797 records · sample Anclote Key Preserve State Park / Yellow River Marsh Preserve State Park / Yellow River Marsh Preserve State Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Area Restrictions (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Recreation_Trails/FeatureServer/123
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: NON-COMMERCIAL · source item page · "Not for commercial use and may not be used in 3rd party apps without source attribution. Contact IDPR for Sc" · item https://www.arcgis.com/home/item.html?id=5a08280a853b41b69115a3fc0abbd2bc · owner aernst_idpr · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolygon · name field Restricted_Area_Name · 19 records · last edit 2026-10-27 · sample Rapid River National Wild and Scenic River / BLM Four Rivers OHV Prohibition Areas / Mores Cr Summit Parking Restriction
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM Field Office Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Recreation_Trails/FeatureServer/124
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: NON-COMMERCIAL · source item page · "Not for commercial use and may not be used in 3rd party apps without source attribution. Contact IDPR for Sc" · item https://www.arcgis.com/home/item.html?id=5a08280a853b41b69115a3fc0abbd2bc · owner aernst_idpr · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolygon · name field DIST_NAME · 12 records · last edit 2026-10-18 · sample Twin Falls District Office / Twin Falls District Office / Boise District Office
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM Land Unit Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Recreation_Trails/FeatureServer/125
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: NON-COMMERCIAL · source item page · "Not for commercial use and may not be used in 3rd party apps without source attribution. Contact IDPR for Sc" · item https://www.arcgis.com/home/item.html?id=5a08280a853b41b69115a3fc0abbd2bc · owner aernst_idpr · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolygon · name field DIST_NAME · 4131 records · last edit 2026-10-18 · sample Twin Falls / Twin Falls / Twin Falls
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Counties (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Recreation_Trails/FeatureServer/126
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: NON-COMMERCIAL · source item page · "Not for commercial use and may not be used in 3rd party apps without source attribution. Contact IDPR for Sc" · item https://www.arcgis.com/home/item.html?id=5a08280a853b41b69115a3fc0abbd2bc · owner aernst_idpr · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 44 records · last edit 2026-10-18 · sample Ada Co. / Adams Co. / Bannock Co.
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### National Forests (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Recreation_Trails/FeatureServer/129
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: NON-COMMERCIAL · source item page · "Not for commercial use and may not be used in 3rd party apps without source attribution. Contact IDPR for Sc" · item https://www.arcgis.com/home/item.html?id=5a08280a853b41b69115a3fc0abbd2bc · owner aernst_idpr · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolygon · name field Forest_Name · 42 records · last edit 2026-10-18 · sample Caribou-Targhee National Forest / Caribou-Targhee National Forest / Boise National Forest
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Wilderness (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Recreation_Trails/FeatureServer/132
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a federal / national agency named)
+- terms: NON-COMMERCIAL · source item page · "Not for commercial use and may not be used in 3rd party apps without source attribution. Contact IDPR for Sc" · item https://www.arcgis.com/home/item.html?id=5a08280a853b41b69115a3fc0abbd2bc · owner aernst_idpr · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 19 records · last edit 2026-10-18 · sample Gospel-Hump Wilderness / Craters of the Moon National Wilderness Area / Sawtooth Wilderness
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### TN_State_Parks_Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/Ezk9fcjSUkeadg6u/ArcGIS/rest/services/Exploring_Tennessee_State_Parks_WebMap/FeatureServer/1
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=e966c1d180f14249bf62d29344031e0a · owner njbohrer_uagis · org University of Arizona GIS
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME · 61 records · last edit 2025-12-07 · sample Chickasaw State Park / Cordell Hull Birthplace State Park / Cove Lake State Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### State of Tennessee (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/Ezk9fcjSUkeadg6u/ArcGIS/rest/services/Exploring_Tennessee_State_Parks_WebMap/FeatureServer/2
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=e966c1d180f14249bf62d29344031e0a · owner njbohrer_uagis · org University of Arizona GIS
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · last edit 2025-12-07 · sample Tennessee
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM AZ Travel Management Areas (Polygon) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/azarcgis/rest/services/transportation/BLM_AZ_TMAP/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/azarcgis/rest/services/transportation/BLM_AZ_TMAP/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field TMA_NM · 82 records · sample Ajo / Prescott Metro / La Posa
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM AZ Travel Management Plans (Polygon) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/azarcgis/rest/services/transportation/BLM_AZ_TMAP/MapServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/azarcgis/rest/services/transportation/BLM_AZ_TMAP/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field TMP_NM · 42 records · sample Agua Fria NM / Alamo-Wenden / Apache Navajo Metro
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### BLM AZ Off-Highway Vehicle Designations (Polygon) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/azarcgis/rest/services/transportation/BLM_AZ_TMAP/MapServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/azarcgis/rest/services/transportation/BLM_AZ_TMAP/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field LUP_NM · 181 records · sample Bradshaw-Harquahala Mtns. RMP / Safford RMP / Lake Havasu FO RMP
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NLCS Wilderness Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. This dataset is provided to meet the Modernizing Access to Our Public Land (MAPLand) Act requirements. The distributor of this data shall not be he" · item https://gis.blm.gov/natl/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NLCS_NAME · 306 records · sample Malpais Mesa Wilderness / Newberry Mountains Wilderness / Little Chuckwalla Mountains Wilderness
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NLCS Wilderness Study Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. This dataset is provided to meet the Modernizing Access to Our Public Land (MAPLand) Act requirements. The distributor of this data shall not be he" · item https://gis.blm.gov/natl/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NLCS_NAME · 1093 records · sample Central Arctic Management Area / Central Arctic Management Area / Central Arctic Management Area
+- overlap: same publisher as hab
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### National Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.planning.gov.bm/arcgis/rest/services/PlanningLayers/MapServer/14
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Dept)
+- terms: CREDIT · source item page · "Govt of Bermuda, Dept of Planning The Department of Conservation Services" · item https://gis.planning.gov.bm/arcgis/rest/services/PlanningLayers/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field FullName · 123 records · sample Railway Trail National Park / Railway Trail National Park / Railway Trail National Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Áreas de uso público (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://mapas.msj.go.cr/server/rest/services/SIG_BASE/SIG_SER_Areas_Uso_Publico_SJ/MapServer/0
+- WHY: publisher unsure: no government word found, ask who publishes it
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "Municipalidad de San José, Dpto. Información Catastral y Geográfica, Sección de Información Geográfica FUENTE: Base geográfica creada por el equipo de la Secció" · item https://mapas.msj.go.cr/server/rest/services/SIG_BASE/SIG_SER_Areas_Uso_Publico_SJ/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NOMBRE · 5728 records · sample PARQUE TRES MARÍAS 1 / PARQUE BELGRANO 1 / PARQUE BELGRANO 2
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Protected Area Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/3R3y1KXaPJ9BFnsU/ArcGIS/rest/services/Jamaica_Protected_Areas/FeatureServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Government)
+- terms: CREDIT · source item page · "NEPA,NRCA,GOJ" · item https://www.arcgis.com/home/item.html?id=bafe2fe2f7684b4db80b216cc8dc09f8 · owner nepaportal_GOJ · org Government of Jamaica
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 27 records · last edit 2024-02-19 · sample Cabarita Point / Long Island / Amity Hall
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Áreas Naturales Protegidas, 2025 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geomaticasig1.semarnat.gob.mx/arcgis/rest/services/aps/SIVECA/MapServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host geomaticasig1.semarnat.gob.mx)
+- terms: NOTHING STATED · source item page · item https://geomaticasig1.semarnat.gob.mx/arcgis/rest/services/aps/SIVECA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field nombre · 232 records · sample Felipe Carrillo Puerto / Kowtahyolo / Chunyaxché
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Marine Protected Area Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.ngdc.noaa.gov/arcgis/rest/services/nccos/BenthicMapping_USVIInsularShelf2017/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.ngdc.noaa.gov)
+- terms: CREDIT · source item page · "Costa, B., L. Kracker, T. Battista, W. Sautter, A. Mabrouk, K. Edwards, C. Taylor, and E. Ebert NOAA Marine Protected Areas Center in joint effort with the US D" · item https://gis.ngdc.noaa.gov/arcgis/rest/services/nccos/BenthicMapping_USVIInsularShelf2017/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Site_Name · 8 records · sample Grammanik Bank / Hind Bank Marine Conservation District / Compass Point Pond Marine Reserve and Wildlife Sanctuary
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NPARK_DEC_2022_GB_BFE_V4 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Parks_December_2022_Boundaries_GB_BFE_V4/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: National)
+- terms: CREDIT · source item page · "https://www.ons.gov.uk/methodology/geography/licences Office for National Statistics" · item https://www.arcgis.com/home/item.html?id=b34810bf481c43d6a128d80e9bfe20db · owner ONSGeography_data · org Office for National Statistics
+- facts: arcgis-layer · esriGeometryPolygon · name field NPARK22CD · 15 records · last edit 2026-09-21 · sample E26000001 / E26000002 / E26000004
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Protected Areas (CAPAD) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.environment.gov.au)
+- terms: OPEN · source item page · "This dataset is available under the CC-BY data licencing model and users are required to acknowledge the Australian Government, Dep" · item https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 14492 records · sample Mumbannar N.C.R. / Noojee B.R / Unnamed WA38395
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Commonwealth_Heritage_List_Australia (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Commonwealth_Heritage_List/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.environment.gov.au)
+- terms: CREDIT · source item page · "Australia, Commonwealth Heritage List - Spatial Database is copyright (c) Commonwealth of Australia, Heritage Branch of the Australian Government Department of" · item https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Commonwealth_Heritage_List/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 385 records · sample Small Arms Magazine (former) / Enoggera Magazine Complex / Victoria Barracks Precinct
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### National_Heritage_List_Australia (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/National_Heritage_List/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host gis.environment.gov.au)
+- terms: CREDIT · source item page · "Australian Government Department of the Environment, 2016 Department of the Environment, 2016" · item https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/National_Heritage_List/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 151 records · sample Wave Hill Walk Off Route / Cockatoo Island / Cascades Female Factory
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NPWS Estate (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/EDP/Estate/MapServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host mapprod3.environment.nsw.gov.au)
+- terms: NOTHING STATED · source item page · item https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/EDP/Estate/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 898 records · sample Aberbaldie Nature Reserve / Abercrombie Karst Conservation Reserve / Abercrombie River National Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### LIST Public Land Classification (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/38
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 6033 records · sample None / None / None
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Protected areas and forests of Queensland (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/10
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field namecaps · 1010 records · sample COOLOOTHIN CONSERVATION PARK / WELFORD NATIONAL PARK / MALANDA FALLS CONSERVATION PARK
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Queensland special wildlife reserve (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/15
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 3 records · sample Pullen Pullen Special Wildlife Reserve / Edgbaston Special Wildlife Reserve / Pilungah Special Wildlife Reserve
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Wet Tropics of Queensland World Heritage Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/20
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 14 records · sample Wet Tropics Of Queensland / Wet Tropics Of Queensland / Wet Tropics Of Queensland
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### World heritage areas of Queensland (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/25
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample Australian Fossil Mammal Sites (Riversleigh) / Gondwana Rainforests of Australia / K'gari (Fraser Island)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Nationally designated areas (NatDA) -polygons small scale vi (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv24_Dyna_WM/MapServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "European Environment Agency © European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv24_Dyna_WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field siteName · 137829 records · sample font del greou - feuilla / sur la chaume / V
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Nationally designated areas (NatDA) - Medium scale viewing (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv24_Dyna_WM/MapServer/3
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv24_Dyna_WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field siteName · 137829 records · sample font del greou - feuilla / sur la chaume / V
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Nationally designated areas (NatDA) - Large scale viewing (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv24_Dyna_WM/MapServer/4
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv24_Dyna_WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field siteName · 138867 records · sample font del greou - feuilla / sur la chaume / Solrød Kommune private
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Habitats Directive Sites (pSCI, SCI or SAC) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: Natur)
+- terms: CREDIT · source item page · "EEA, Copenhagen, 2025" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITENAME · 23799 records · sample Parndorfer Heide / Wachau / Pannonische Sanddünen
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Birds Directive Sites (SPA) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/1
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: Natur)
+- terms: CREDIT · source item page · "EEA, Copenhagen, 2025" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITENAME · 5634 records · sample Villacher Alpe (Dobratsch) / Steirische Grenzmur mit Gamlitzbach und Gnasbach / Dachstein
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Habitats and Birds Directive Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: Natur)
+- terms: CREDIT · source item page · "EEA, Copenhagen, 2025" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITENAME · 27173 records · sample Parndorfer Heide / Wachau / Pannonische Sanddünen
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### FWSNationalRealtyBoundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/US_Fish_and_Wildlife_Service/FeatureServer/7
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "ly on a computer system at the U.S. Fish and Wildlife Service, USFWS, no warranty expressed or implied is made regarding the accuracy or utility of the data and informatio" · item https://www.arcgis.com/home/item.html?id=e104a8f42d43430299c4da65ad6c0e30 · owner CEMML_CAMPP · org Colorado State University
+- facts: arcgis-layer · esriGeometryPolygon · name field ORGNAME · 1274 records · last edit 2024-12-05 · sample ABERNATHY FISH TECHNOLOGY CENTER / ADAMS COUNTY WATERFOWL PRODUCTION AREA / ADAMS COUNTY WATERFOWL PRODUCTION AREA
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NMS_Bndy_Update_02062026 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/C8EMgrsFcRFL6LrL/arcgis/rest/services/NMS_Boundaries_02032022/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Office of)
+- terms: CREDIT · source item page · "NOAA's Office of National Marine Sanctuaries (ONMS) oversees a system of sanctuaries and other managed areas around the country. The legal boundaries of these s" · item https://www.arcgis.com/home/item.html?id=0720ee22d97b4d28881dad03d16f9d82 · owner Tony.Reyer_noaa · org NOAA GeoPlatform
+- facts: arcgis-layer · esriGeometryPolygon · name field NMS_Name · 18 records · last edit 2026-06-12 · sample Channel Islands / Chumash Heritage / Cordell Bank
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Registro Unico Nacional AP (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government host mapas.parquesnacionales.gov.co)
+- terms: CREDIT · source item page · "Parques Nacionales Naturales de Colombia Parques Nacionales Naturales de Colombia" · item https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field ap_nombre · 1947 records · sample Cueva de los Guácharos / Nukak / Dinaboy
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Area of Biodiversity Importance (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/3
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "(c) States of Guernsey 2017" · item https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Site
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### SSS (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/5
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "(c) States of Guernsey 2017" · item https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Site
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Εθνικοί Δρυμοί (Εθνικά πάρκα) - Αισθητικά Δάση - Διατηρητέα  (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geohub.necca.gov.gr/server/rest/services/ELBIOS-EXTERNAL_DATA/PRC_TERMAR_CDDA2020/MapServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host geohub.necca.gov.gr)
+- terms: NOTHING STATED · source item page · item https://geohub.necca.gov.gr/server/rest/services/ELBIOS-EXTERNAL_DATA/PRC_TERMAR_CDDA2020/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field siteName · 803 records · sample Pindos / Ainos / Agioi Pantes Lasithiou
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### ΚΑΤΑΦΥΓΙΑ ΑΓΡΙΑΣ ΖΩΗΣ (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geohub.necca.gov.gr/server/rest/services/LIFE-IP4NATURA/%CE%9A%CE%91%CE%A4%CE%91%CE%A6%CE%A5%CE%93%CE%99%CE%91_%CE%91%CE%93%CE%A1%CE%99%CE%91%CE%A3_%CE%96%CE%A9%CE%97%CE%A3/FeatureServer/23
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host geohub.necca.gov.gr)
+- terms: NOTHING STATED · source item page · item https://geohub.necca.gov.gr/server/rest/services/LIFE-IP4NATURA/%CE%9A%CE%91%CE%A4%CE%91%CE%A6%CE%A5%CE%93%CE%99%CE%91_%CE%91%CE%93%CE%A1%CE%99%CE%91%CE%A3_%CE%96%CE%A9%CE%97%CE%A3/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 607 records · sample ΓΚΡΑΒΑ-ΛΑΚΚΑ (ΚΛΗΜΕΝΤΙΟΥ) / ΟΡΟΣ ΧΑΡΑΚΑ (ΓΑΥΡΙΟΥ ΑΝΔΡΟΥ) / ΝΕΟΧΩΡΙ (ΚΟΜΙΤΑΤΩΝ-ΚΑΡΥΑΣ)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Kawasan Konservasi (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geoservices.big.go.id/gis/rest/services/PTRA/Atlas_250K_KawasanKonservasi/MapServer/7
+- WHY: publisher unsure: no government word found, ask who publishes it
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "Badan Informasi Geospasial" · item https://geoservices.big.go.id/gis/rest/services/PTRA/Atlas_250K_KawasanKonservasi/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 35780 records · sample Areal Penggunaan Lain / Areal Penggunaan Lain / Areal Penggunaan Lain
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Special Protection Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services-eu1.arcgis.com/Jhij7i46ouO8Cc0N/ArcGIS/rest/services/NPWSDesignatedAreas/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Government)
+- terms: OPEN · source item page · "nd Heritage. This copyright material is licensed for re-use under the Creative Commons Attribution 4.0 International licence. http://creativecommons.org/license Copyright Gover" · item https://www.arcgis.com/home/item.html?id=41c7209da92341e6b7014087c8229f46 · owner NPWS_Ireland · org NPWS
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 202 records · last edit 2026-07-30 · sample Saltee Islands SPA / Puffin Island SPA / Inishkea Islands SPA
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Natural Heritage Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services-eu1.arcgis.com/Jhij7i46ouO8Cc0N/ArcGIS/rest/services/NPWSDesignatedAreas/FeatureServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Government)
+- terms: OPEN · source item page · "nd Heritage. This copyright material is licensed for re-use under the Creative Commons Attribution 4.0 International licence. http://creativecommons.org/license Copyright Gover" · item https://www.arcgis.com/home/item.html?id=41c7209da92341e6b7014087c8229f46 · owner NPWS_Ireland · org NPWS
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 171 records · last edit 2026-04-01 · sample Slieve Rushen Bog NHA / Sovereign Islands NHA / Inishduff NHA
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Special Area of Conservation (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services-eu1.arcgis.com/Jhij7i46ouO8Cc0N/ArcGIS/rest/services/NPWSDesignatedAreas/FeatureServer/3
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Government)
+- terms: OPEN · source item page · "nd Heritage. This copyright material is licensed for re-use under the Creative Commons Attribution 4.0 International licence. http://creativecommons.org/license Copyright Gover" · item https://www.arcgis.com/home/item.html?id=41c7209da92341e6b7014087c8229f46 · owner NPWS_Ireland · org NPWS
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 433 records · last edit 2026-07-30 · sample Killyconny Bog (Cloghbally) SAC / Lough Oughter and Associated Loughs SAC / Ballyallia Lake SAC
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### National Park Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services-eu1.arcgis.com/Jhij7i46ouO8Cc0N/ArcGIS/rest/services/NationalParkBoundaries/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Government)
+- terms: OPEN · source item page · "tats, biodiversity or the environment in general. Please refer to the Creative Commons Attribution 4.0 International license: Section 5 – Disclaimer of Warranties and Limitatio" · item https://www.arcgis.com/home/item.html?id=52a9dfe0a98b48c3b4b7d113857dbbd3 · owner NPWS_Ireland · org NPWS
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 6 records · last edit 2025-02-12 · sample Wicklow Mountains National Park / Wild Nephin National Park / Killarney National Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Coastal National Park (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services-eu1.arcgis.com/mUgkK1QjC37PAGmP/ArcGIS/rest/services/BIP2022_WFL1/FeatureServer/32
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Government)
+- terms: CREDIT · source item page · "er express or implied. While every effort has been made to ensure the accuracy of the information displayed, it is of course possible that errors, omissions and inconsi" · item https://www.arcgis.com/home/item.html?id=ac62dce3ed1049a1b5d1b8258b3ca7be · owner maps.gov.je · org gov.je arcgis online
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 27 records · last edit 2026-06-15 · sample Coastal National Park / Coastal National Park / Coastal National Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Aires protégées provinciales terrestres (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geoportail.oeil.nc/arcgis/rest/services/GEOPORTAIL_SUIVI/AIRE_PROTEGEE_TERRESTRE/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Gouvernement)
+- terms: CREDIT · source item page · "Province Sud, Province Nord, Gouvernement de la Nouvelle-Calédonie" · item https://geoportail.oeil.nc/arcgis/rest/services/GEOPORTAIL_SUIVI/AIRE_PROTEGEE_TERRESTRE/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NOM · 36 records · sample Ilot de Pam / Aoupinié / Barrage de Yaté
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### National Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geodata.rw/server/rest/services/basemap/National_Parks/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: National)
+- terms: CREDIT · source item page · "RDB RDB" · item https://geodata.rw/server/rest/services/basemap/National_Parks/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field areaname · 11 records · sample Nyungwe National Park / Nyungwe National Park / Volcanoes National Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Protected_Areas_LandCover_2024 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gh.space.gov.rw/server/rest/services/Protected_Areas/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (a government word of the country: MOE)
+- terms: CREDIT · source item page · "MOE" · item https://gh.space.gov.rw/server/rest/services/Protected_Areas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field areaname · 209 records · sample Nyungwe National Park / Nyungwe National Park / Nyungwe National Park
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Marine National Monuments (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://maps.coast.noaa.gov/arcgis/rest/services/Hosted/MarineNationalMonuments/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host maps.coast.noaa.gov)
+- terms: NOTHING STATED · source item page · item https://maps.coast.noaa.gov/arcgis/rest/services/Hosted/MarineNationalMonuments/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field sitename · 32 records · last edit 2026-07-28 · sample Ahyi / Alice Springs / Archaean
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Sistema nacional de áreas protegidas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://sit.mvot.gub.uy/arcgis/rest/services/07_EXTERNO/LUGARES_PROTEGIDOS/MapServer/5
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ? → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Dirección Nacional de Biodiversidad y Servicios Ecosistémicos – OAN Ministerio de Ambiente." · item https://sit.mvot.gub.uy/arcgis/rest/services/07_EXTERNO/LUGARES_PROTEGIDOS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field nombre · 24 records · sample Esteros de Farrapos e Islas del Río Uruguay / Quebrada de los Cuervos y Sierras del Yerbal / San Miguel
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### GISDB.LDR.SA_Provinces (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/9
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → official (government host paca.environment.gov.za)
+- terms: NOTHING STATED · source item page · item https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field OLD_NAME · 11 records · sample   /   /  
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+## RETRY (304)
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
 - url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
@@ -2273,33 +3493,33 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. '/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 
 
-### Civil War Battlefields  ·    ·  from gis-hunter
+### Civil War Battlefields  ·  None  ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
-- publisher: ? → unsure (did not open)
-- terms: NOTHING STATED · source none
-- facts: status rest
+- WHY: did not open 3 times (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?): chat 9 checks the url
+- publisher: ? → unsure ()
+- terms: ? · source ?
+- facts: status bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer?
 
-### Civil War Battlefields (time-enabled)  ·    ·  from gis-hunter
+### Civil War Battlefields (time-enabled)  ·  None  ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
-- publisher: ? → unsure (did not open)
-- terms: NOTHING STATED · source none
-- facts: status rest
+- WHY: did not open 3 times (bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat): chat 9 checks the url
+- publisher: ? → unsure ()
+- terms: ? · source ?
+- facts: status bot error URL can't contain control characters. '/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/Feat
 
 ### Walnut Woods Park JWT  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (error Invalid URL): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status error Invalid URL
 
 ### Canyon De Chelly National Monument, AZ (Data Basin Dataset)  ·    ·  from gis-hunter
 - url: http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (not json): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status not json
 
 ### Iceland Honeymoon 2024_WFL1  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer
@@ -2324,10 +3544,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Little Turtle_WFL1  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (error Token Required): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status error Token Required
 
 ### Little Turtle_WTL1  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer
@@ -2399,12 +3619,12 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: ? · source ?
 - facts: status bot error URL can't contain control characters. "/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - 
 
-### Watershed of the Blanchard River  ·    ·  from gis-hunter
+### Watershed of the Blanchard River  ·  None  ·  from gis-hunter
 - url: https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
-- publisher: ? → unsure (did not open)
-- terms: NOTHING STATED · source none
-- facts: status rest
+- WHY: did not open 3 times (bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe): chat 9 checks the url
+- publisher: ? → unsure ()
+- terms: ? · source ?
+- facts: status bot error URL can't contain control characters. '/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureSe
 
 ### Flint River  ·    ·  from gis-hunter
 - url: https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer
@@ -2436,10 +3656,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Trails_Connected_to_the_Razorback_Regional_Greenway  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (error Token Required): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status rest
+- facts: status error Token Required
 
 ### 2005 US Civil War Map (Web Mercator)  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/YpWVqIbOT80sKVHP/arcgis/rest/services/2005_US_Civil_War_Map_WM/MapServer
@@ -3706,10 +4926,11 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: same publisher as Manitoba Par
 - closes: not probed
 
-### Manitoba wil (LAYER line, CA-MB)  ·    ·  from chat 8 LAYER line
+### Refuges (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
 - terms: NOTHING STATED · source none
 - facts: status rest
 - overlap: already read as Manitoba wil
@@ -3725,7 +4946,321 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: same service as Manitoba Par (another layer of it)
 - closes: not probed
 
-## REJECT (1128)
+### Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### TDEC_Public_Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### NYS_Park_Polygon (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as sgnyb
+- closes: not probed
+
+### Utah State Park Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_State_Park_Management_Areas/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (no publisher words at all)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: already read as sguta
+- closes: not probed
+
+### Hiking Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### Historic Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### StateParks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### Public Land Use Zone (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geospatial.alberta.ca/titan/rest/services/ags_apps/ags_apps_land_use_management/MapServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → official (government host geospatial.alberta.ca)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as AB-PLUZ Gove
+- closes: not probed
+
+### FWSBoundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (no publisher words at all)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as sgazd
+- closes: not probed
+
+### FL_Conservation_Lands_web (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: already read as fnl
+- closes: not probed
+
+### Wildlife Management Areas Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: already read as sgnva
+- closes: not probed
+
+### Manitoba Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: already read as Manitoba Par
+- closes: not probed
+
+### Wildlife_Management_Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
+- terms: NOTHING STATED · source none
+- facts: status rest
+- overlap: same publisher as Manitoba Par
+- closes: not probed
+
+### Wildlife Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2
+- WHY: did not open (404): probed again next run (failed 1 of 3)
+- publisher: ? → official (government host gisservices.dec.ny.gov)
+- terms: NOTHING STATED · source none
+- facts: status 404
+- closes: not probed
+
+### Protected_Areas_Project (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/oEazpvC7G00gPDRM/arcgis/rest/services/Protected_Areas/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → unsure (no publisher words at all)
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### Utah Scenic Byways (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### Local Nature Reserves (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### National Parks (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0
+- publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
+- did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### National Trails (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0
+- publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
+- did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### Areas of Outstanding Natural Beauty (England) © Natural Engl (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### Country Parks (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### Sites of Special Scientific Interest (England) © Natural Eng (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_England/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### ESG_FFH_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### S_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### main.IUCN_Ia_AT_2025 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### main.IUCN_Ib_AT_2025 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### ESG_VSR_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### NP_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### ESG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### NSG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### BP_AT_2025 (exkl. St - Untere Mur) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### LSG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### GLT_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### NAP_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+### Protected Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
+- WHY: did not open (rest): probed again next run (failed 1 of 3); did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
+- terms: NOTHING STATED · source none
+- facts: status rest
+- closes: not probed
+
+## REJECT (1383)
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
@@ -4127,7 +5662,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 32 records · sample Albany / Barker Bay Albany / Batavia NHL
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
+- closes: 0 of 51 tested missing parks (by name 0, pin only 0; 2603 of the area's 2603 missing parks lie in the layer's extent)
 
 ### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/3
@@ -5574,7 +7109,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPoint · name field name · 12 records · last edit 2023-08-21
 - closes: not probed
 
-### Star-Spangled Banner National Historic Trail Official Centerline  ·    ·  from gis-hunter
+### Star_Spangled_Banner_National_Historic_Trail_Official_Center (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Sta_Spangled_Banner_National_Historic_Trail_Official_Centerline/FeatureServer/0
 - WHY: the publisher closed it (internal / sign-in / by request)
 - publisher: ? → official (a federal / national agency named)
@@ -8123,11 +9658,11 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolyline · name field NLCS_NAME · 1058 records · last edit 2026-06-16
 - closes: not probed
 
-### Iditarod National Historic Trail BLM Official Temp  ·    ·  from gis-hunter
+### Iditarod_Trail_Centerline (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Iditarod_National_Historic_Trail_BLM_Official_Temp/FeatureServer/0
 - WHY: no polygons (esriGeometryPolyline)
 - publisher: ? → official (a federal / national agency named)
-- terms: CREDIT · source item page · "Should provide/reference 'supplemental information' when data is presented or published. Kevin Keeler - Bureau of Land Management Kevin Keeler - Bureau of Land " · item https://www.arcgis.com/home/item.html?id=37787244e85c450c8247c34eb221954c · owner cor_nps · org National Park Service
+- terms: CREDIT · source item page · "Should provide/reference 'supplemental information' when data is presented or published. Kevin Keeler - Bureau of Land Management" · item https://www.arcgis.com/home/item.html?id=37787244e85c450c8247c34eb221954c · owner cor_nps · org National Park Service
 - facts: arcgis-layer · esriGeometryPolyline · name field Website · 26 records · last edit 2023-04-03
 - overlap: same publisher as akht
 - closes: not probed
@@ -13035,6 +14570,2171 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: CREDIT · source item page · "The State of Delaware makes no warranty or representation, expressed or implied, with respect to the quality, content, accuracy," · item https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 419 records · sample GUNPOWDER NECK / HANESVILLE / BETTERTON
 - overlap: same publisher as sgdea
+- closes: not probed
+
+### National Forest System Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (government host apps.fs.usda.gov)
+- terms: CLOSED · source item page · "urisdiction, or restrictions that may be in place on either public or private land. Natural hazards may or may not be depicted on the data and maps, and land users sho" · item https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field trail_name · 86217 records
+- overlap: same publisher as fsod
+- closes: not probed
+
+### Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host mapservices.nps.gov)
+- terms: CREDIT · source item page · "to use the related graphics as data. The National Park Service gives no warranty, expressed or implied, as to National Park Service, ngp_support@nps.gov Trail data are co" · item https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field UNITNAME
+- closes: not probed
+
+### NPS_Trails_A (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/National_Park_Service_Trails/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "This work is licensed under the Esri Master License Agreement. View Summary | View Terms of Use National Park Service (NPS)" · item https://www.arcgis.com/home/item.html?id=0086120c2bda4f929a931147a4c6f542 · owner Federal_User_Community · org Esri U.S. Federal Datasets
+- facts: arcgis-layer · esriGeometryPolyline · name field UNITNAME · 31550 records · last edit 2026-09-10
+- closes: not probed
+
+### Historical_Trails_Lines (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services3.arcgis.com/OYP7N6mAJJCyH6hd/ArcGIS/rest/services/National_Historic_Trails/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a government word of the country: National)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=8a1335cc5067423aad53522c8118eecb · owner NBAM_Org
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAILNAME · 3423 records · last edit 2025-02-20
+- closes: not probed
+
+### USGS Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services9.arcgis.com/FF3qnCUixr5w9JQi/ArcGIS/rest/services/USGS_Trails/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "FOR DEMO PURPOSES ONLY USGS The National Map: National Transportation Dataset; U.S. Census Bureau – TIGER/Line; U.S. Forest Service. USGS The National Map: Nati" · item https://www.arcgis.com/home/item.html?id=68d32a89d53a40ec9215d0d8b86c5a87 · owner jgrayson@esri.com_geoxc · org Esri Geo Experience Center
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 409958 records · last edit 2022-06-03
+- closes: not probed
+
+### Trails_and_Pathways (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://enterprise.firstmaptest.delaware.gov/arcgis/rest/services/Transportation/DE_Multimodal/MapServer/28
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host enterprise.firstmaptest.delaware.gov)
+- terms: CREDIT · source item page · "DelDOT Delaware State Parks" · item https://enterprise.firstmaptest.delaware.gov/arcgis/rest/services/Transportation/DE_Multimodal/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAIL_NAME · 6320 records
+- closes: not probed
+
+### StateTrails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/ArcGIS/rest/services/Virginia_State_Trails/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Department)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=b34e9e5982874bb6970070d37e935ab0 · owner allison.tillett_vdcr · org Virginia Department of Conservation and Recreation
+- facts: arcgis-layer · esriGeometryPolyline · name field Land_Unit · 2636 records · last edit 2024-04-20
+- overlap: same publisher as sgvab
+- closes: not probed
+
+### State Park Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://www.gis.dcnr.state.pa.us/agsprod/rest/services/Parks/StateParkTrailsMASTER/MapServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host www.gis.dcnr.state.pa.us)
+- terms: CREDIT · source item page · "PA DCNR, Bureau of State Parks" · item https://www.gis.dcnr.state.pa.us/agsprod/rest/services/Parks/StateParkTrailsMASTER/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 6148 records
+- closes: not probed
+
+### State Park Trails Simplified (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://www.gis.dcnr.state.pa.us/agsprod/rest/services/Parks/StateParksTrailsSimplifiedPortal/MapServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host www.gis.dcnr.state.pa.us)
+- terms: NOTHING STATED · source item page · item https://www.gis.dcnr.state.pa.us/agsprod/rest/services/Parks/StateParksTrailsSimplifiedPortal/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 2228 records
+- closes: not probed
+
+### ASP Park Facility (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host arcgis.dnr.alaska.gov)
+- terms: CREDIT · source item page · "Alaska Department of Natural Resources Alaska Department of Natural Resources, Division of Parks and Outdoor Recreation" · item https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 87 records
+- overlap: same service as sgake (another layer of it)
+- closes: not probed
+
+### ASP Park Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/1
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host arcgis.dnr.alaska.gov)
+- terms: CREDIT · source item page · "Alaska Department of Natural Resources Alaska Department of Natural Resources, Division of Parks and Outdoor Recreation" · item https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field PARK_NAME · 343 records
+- overlap: same service as sgake (another layer of it)
+- closes: not probed
+
+### ASP Park Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2
+- WHY: already read as sgake: nothing new to take
+- publisher: ? → official (government host arcgis.dnr.alaska.gov)
+- terms: CREDIT · source item page · "Alaska Department of Natural Resources Alaska Department of Natural Resources, Division of Parks and Outdoor Recreation" · item https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 157 records · sample Mosquito Lake / Centennial Lake / Juneau
+- overlap: already read as sgake
+- closes: not probed
+
+### ASP Park Road (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/3
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host arcgis.dnr.alaska.gov)
+- terms: CREDIT · source item page · "Alaska Department of Natural Resources Alaska Department of Natural Resources, Division of Parks and Outdoor Recreation" · item https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field PARKNAME · 504 records
+- overlap: same service as sgake (another layer of it)
+- closes: not probed
+
+### SCORP Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/7HDiw78fcUiM2BWn/ArcGIS/rest/services/SCORP_Parks/FeatureServer/11
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (government words: Department)
+- terms: CLOSED · source item page · "Temporarily Internal Use Only State of Alaska Division of Parks and Outdoor Recreation, Alaska Map Company, LLC State o" · item https://www.arcgis.com/home/item.html?id=b3caceb2700f4e76b71a971fb0fbd40e · owner ggreenberg_temp · org Alaska Department of Natural Resources ArcGIS Online
+- facts: arcgis-layer · esriGeometryPolygon · name field ParkName · 2506 records · last edit 2023-07-22 · sample Furrow Creek Park / Mental Health Parcel C1004 / Mental Health Parcel C1005
+- overlap: same publisher as sgakc
+- closes: not probed
+
+### SCORP_Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/7HDiw78fcUiM2BWn/ArcGIS/rest/services/SCORP_Trails_/FeatureServer/0
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (government words: Department)
+- terms: CLOSED · source item page · "Internal use only. State of Alaska Division of Parks and Outdoor Recreation, Alaska Map Company, LLC" · item https://www.arcgis.com/home/item.html?id=3f1d2a7633104faa85211a9babef3394 · owner AlaskaGeospatialOffice · org Alaska Department of Natural Resources ArcGIS Online
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAIL_NAME · 17146 records · last edit 2026-04-24
+- overlap: same publisher as sgakc
+- closes: not probed
+
+### Wildlife Management Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://conservationgis.alabama.gov/adcnrweb/rest/services/WildlifeManagementAreas/MapServer/0
+- WHY: already read as sgalc: nothing new to take
+- publisher: ? → official (government host conservationgis.alabama.gov)
+- terms: NOTHING STATED · source item page · item https://conservationgis.alabama.gov/adcnrweb/rest/services/WildlifeManagementAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 42 records · sample Barbour Wildlife Management Area / Black Warrior Wildlife Management Area / Blue Spring Wildlife Management Area
+- overlap: already read as sgalc
+- closes: not probed
+
+### Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://conservationgis.alabama.gov/adcnrweb/rest/services/DCNRTrails/MapServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host conservationgis.alabama.gov)
+- terms: NOTHING STATED · source item page · item https://conservationgis.alabama.gov/adcnrweb/rest/services/DCNRTrails/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field TrailName · 566 records
+- overlap: same publisher as sgala
+- closes: not probed
+
+### State Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://conservationgis.alabama.gov/adcnrweb/rest/services/StateParks/MapServer/0
+- WHY: already read as sgala: nothing new to take
+- publisher: ? → official (government host conservationgis.alabama.gov)
+- terms: NOTHING STATED · source item page · item https://conservationgis.alabama.gov/adcnrweb/rest/services/StateParks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 21 records · sample Blue Springs State Park / Buck's Pocket State Park / Cathedral Caverns State Park
+- overlap: already read as sgala
+- closes: not probed
+
+### StateParks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0
+- WHY: already read as sgarb: nothing new to take
+- publisher: ? → official (government host gis.ardot.gov)
+- terms: CREDIT · source item page · "Darin Mitchell, GISP Senior GIS Analyst - Arkansas State Parks" · item https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 52 records · last edit 2026-01-10 · sample Millwood State Park / Lake Catherine State Park / Parkin Archeological State Park
+- overlap: already read as sgarb
+- closes: not probed
+
+### ARKANSAS_TRAILS (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/22
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.arkansas.gov)
+- terms: CREDIT · source item page · "Darin Mitchell, GISP Senior GIS Analyst - Arkansas State Parks Michael Conway GIS/Database Analyst Arkansas Natural Heritage Commission" · item https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 384 records
+- overlap: same publisher as sgara
+- closes: not probed
+
+### Missouri Department of Natural Resources Lands (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0
+- WHY: already read as sgmoa: nothing new to take
+- publisher: ? → official (government host gis.dnr.mo.gov)
+- terms: CREDIT · source item page · "Missouri Department of Natural Resources, Division of State Parks, Planning and Development Program and Missouri Office of Administration, Information Technolog" · item https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field LOC_NAME · 207 records · sample Ha Ha Tonka State Park / Arrow Rock State Historic Site / Arrow Rock State Historic Site
+- overlap: already read as sgmoa
+- closes: not probed
+
+### AL Historic Routes (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services8.arcgis.com/EGLHaPsFjrD7UY3t/ArcGIS/rest/services/Alabama_Trails_Existing_and_Proposed_Network/FeatureServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=5d9e07864ad447a3b5d3889cd6dfa00f · owner sgreen12_Jaxstate
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 309 records · last edit 2026-04-13
+- closes: not probed
+
+### SCORP_Moto (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Moto/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host arcgis.water.nv.gov)
+- terms: CREDIT · source item page · "NEVADA DIVISION OF OUTDOOR RECREATION MAKES NO WARRANTIES OR GUARANTEES, EITHER EXPRESSED OR IMPLIED AS TO THE COMPLETENESS, ACCURACY, OR CORRECTNE" · item https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Moto/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field trailname · 675 records · last edit 2025-10-29
+- overlap: same publisher as sgnvb
+- closes: not probed
+
+### BLM AZ Recreation Sites (Point) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/MapServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field UNIT_NAME · 520 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### National Scenic and Historic Trails (NSHT) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/National_Scenic_and_Historic_Trails_NSHT/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "These data are provided by BLM &quot;as is&quot; and may contain errors or omissions. The User assumes the entire ri" · item https://www.arcgis.com/home/item.html?id=f58bf22e5e164446921487dab1732f49 · owner cherndon@blm.gov_BLM_EGIS · org Bureau of Land Management
+- facts: arcgis-layer · esriGeometryPolyline · name field Trail_Name · 19 records · last edit 2024-05-21
+- closes: not probed
+
+### Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/COTREX_Trails_Populated_2026/FeatureServer/54
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Parks & Wildlife)
+- terms: CREDIT · source item page · "This map layer is a product and property of Colorado Parks Wildlife, a division of the Colorado Department of Natural Resources. Care" · item https://www.arcgis.com/home/item.html?id=25ba8f80269b4fd0a47b48f6704f3db1 · owner Stewardship_Admin · org Colorado Parks & Wildlife
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 82300 records · last edit 2026-08-12
+- overlap: same publisher as cow
+- closes: not probed
+
+### State Parks Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://tpwd.texas.gov/arcgis/rest/services/Parks/TexasStateParksTrails/MapServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host tpwd.texas.gov)
+- terms: CREDIT · source item page · "For informational use only. TPWD|SP|NR|PGR" · item https://tpwd.texas.gov/arcgis/rest/services/Parks/TexasStateParksTrails/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field ParkName · 3307 records
+- overlap: same publisher as sgtxb
+- closes: not probed
+
+### Trail Head (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_CO_Recreation/MapServer/16
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_CO_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field UNIT_NAME · 264 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM Colorado Recreation Points (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_Colorado_Recreation_for_HUB/MapServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by BLM "as is" and may contain errors or omissions. The User assumes the entire risk associa" · item https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_Colorado_Recreation_for_HUB/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field UNIT_NAME · 1891 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### CPW Facilities (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: Parks & Wildlife)
+- terms: CREDIT · source item page · "This map is a product and property of the Colorado Parks and Wildlife, a division of the Colorado Department of Natural Resourc" · item https://www.arcgis.com/home/item.html?id=168fccb0583f42f1afe57de6c9ce846d · owner rsaccoCPW · org Colorado Parks & Wildlife
+- facts: arcgis-layer · esriGeometryPoint · name field PROPNAME · 5520 records · last edit 2026-08-27
+- overlap: same service as cow (another layer of it)
+- closes: not probed
+
+### CPW Managed Properties (public access only) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/5
+- WHY: already read as cow: nothing new to take
+- publisher: ? → official (government words: Parks & Wildlife)
+- terms: CREDIT · source item page · "This map is a product and property of the Colorado Parks and Wildlife, a division of the Colorado Department of Natural Resourc" · item https://www.arcgis.com/home/item.html?id=168fccb0583f42f1afe57de6c9ce846d · owner rsaccoCPW · org Colorado Parks & Wildlife
+- facts: arcgis-layer · esriGeometryPolygon · name field PropName · 920 records · last edit 2026-08-27 · sample 63 Ranch STL / 63 Ranch SWA / Adams SWA
+- overlap: already read as cow
+- closes: not probed
+
+### Florida State Park Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0
+- WHY: already read as sgfla: nothing new to take
+- publisher: ? → official (government host ca.dep.state.fl.us)
+- terms: CREDIT · source item page · "FDEP/DRP Florida Department of Environmental Protection, Division of Recreation and Parks, Office of Park Planning" · item https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 179 records · sample Windley Key Fossil Reef Geological State Park / Bulow Creek State Park / Fanning Springs State Park
+- overlap: already read as sgfla
+- closes: not probed
+
+### Reserves (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1
+- WHY: already read as sghib: nothing new to take
+- publisher: ? → official (government host geodata.hawaii.gov)
+- terms: CREDIT · source item page · "DISCLAIMER: Information contained in these files is derived from public records that are constantly" · item https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 381 records · sample MOKUPUKU ISLET SEABIRD SANCTUARY / PAOKALANI ISLET SEABIRD SANCTUARY / PUU WAAWAA FOREST RESERVE
+- overlap: already read as sghib
+- closes: not probed
+
+### Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host programs.iowadnr.gov)
+- terms: CREDIT · source item page · "Iowa Department of Natural Resources" · item https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field Trail_Name · 2386 records
+- overlap: same service as sgiaa (another layer of it)
+- closes: not probed
+
+### BLM Natl Recreation Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/3
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "Bureau of Land Management, Headquarters (HQ)" · item https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field UNIT_NAME · 10241 records
+- overlap: same service as rma (another layer of it)
+- closes: not probed
+
+### BLM ID Recreation Site Point (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Site_Point/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) "as is" and might contain errors or omissions. The User a" · item https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Site_Point/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field UNIT_NAME · 375 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.odf.oregon.gov/ags3/rest/services/Basemaps/ProtectionMap/MapServer/38
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.odf.oregon.gov)
+- terms: CREDIT · source item page · "ODF" · item https://gis.odf.oregon.gov/ags3/rest/services/Basemaps/ProtectionMap/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field DSG_NAME · 25870 records
+- closes: not probed
+
+### Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis1.idl.idaho.gov/arcgis/rest/services/Portal/IDLTrails/FeatureServer/2
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis1.idl.idaho.gov)
+- terms: CREDIT · source item page · "for, nor is it suitable for legal, engineering, orsurveying purposes. Data from disparate sources may not be invertical/horizontal alignment. Consumers of this informati" · item https://gis1.idl.idaho.gov/arcgis/rest/services/Portal/IDLTrails/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field TrailName · 12911 records
+- closes: not probed
+
+### Oregon State Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0
+- WHY: already read as osp: nothing new to take
+- publisher: ? → official (government host maps.prd.state.or.us)
+- terms: CREDIT · source item page · "Oregon Parks and Recreation Department Oregon Parks and Recreation Department" · item https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 422 records · sample Rough and Ready / Butteville Store / Government Island
+- overlap: already read as osp
+- closes: not probed
+
+### ICT Official Route (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/ArcGIS/rest/services/Idaho_Centennial_Trail_Official_Route/FeatureServer/52
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: State of)
+- terms: CREDIT · source item page · "The Idaho Department of Parks and Recreation assumes no liability for any loss that may result from the use of this data. The Idaho Department of Parks and" · item https://www.arcgis.com/home/item.html?id=b61cb238af7849d2b139269939679ffe · owner State_of_Idaho · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 3 records · last edit 2026-09-10
+- closes: not probed
+
+### Idaho Routes (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Recreation_Trails/FeatureServer/128
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a federal / national agency named)
+- terms: NON-COMMERCIAL · source item page · "Not for commercial use and may not be used in 3rd party apps without source attribution. Contact IDPR for Sc" · item https://www.arcgis.com/home/item.html?id=5a08280a853b41b69115a3fc0abbd2bc · owner aernst_idpr · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolyline · name field NAME · 57887 records · last edit 2026-10-29
+- closes: not probed
+
+### NonMotorizedTrails_Statewide_2025 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/WOPmQY9FJsLgGOzw/ArcGIS/rest/services/NonMotorizedTrails/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: State Parks)
+- terms: CREDIT · source item page · "Do not use this layer in a scale lower than 1:2000, Trails have been Global Positioned mostly, but some may look to cross boundaries depending on scale and line" · item https://www.arcgis.com/home/item.html?id=232091c3001c465d8676ef84f9bfa05f · owner WYSPHST · org Wyoming State Parks, Historic Sites, & Trails
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 392 records · last edit 2026-04-28
+- overlap: same publisher as sgwyb
+- closes: not probed
+
+### WA State Park Park Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/4LKAHwqnBooVDUlX/ArcGIS/rest/services/ParkBoundaries/FeatureServer/2
+- WHY: already read as sgwaa: nothing new to take
+- publisher: ? → official (government words: State Parks)
+- terms: CREDIT · source item page · "Liability Disclaimer: The Washington State Parks and Recreation Commission (WSPRC) provides these g" · item https://www.arcgis.com/home/item.html?id=3385b003af5248e59c1fa68e1411c446 · owner brian.hall@parks.wa.gov_wa_stateparks · org Washington State Parks and Recreation
+- facts: arcgis-layer · esriGeometryPolygon · name field ParkName · 207 records · last edit 2026-10-29 · sample Alta Lake / Anderson Lake / Battle Ground Lake
+- overlap: already read as sgwaa
+- closes: not probed
+
+### Park Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/IOshH1zLrIieqrNk/ArcGIS/rest/services/Park_Areas/FeatureServer/0
+- WHY: already read as nep: nothing new to take
+- publisher: ? → official (government words: Commission)
+- terms: OPEN · source item page · "There are no restrictions on the use and distribution of data provided in this map or service. Information displaye" · item https://www.arcgis.com/home/item.html?id=ba20d669b821473089a5d542b54f9771 · owner NGPC.GISAdmin · org Nebraska Game & Parks Commission
+- facts: arcgis-layer · esriGeometryPolygon · name field AreaName · 74 records · last edit 2023-03-23 · sample Alexandria SRA / Arbor Lodge SHP / Ash Hollow SHP
+- overlap: already read as nep
+- closes: not probed
+
+### DNR Owned Lands and Conservation Easements (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0
+- WHY: already read as mdd: nothing new to take
+- publisher: ? → official (government host mdgeodata.md.gov)
+- terms: CREDIT · source item page · "MD iMAP, DNR, MDP, MDA MD iMAP, DNR" · item https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field DNRName · 580 records · sample BOHEMIA RIVER SP / DNR Held Conservation Easements - Central / DNR Held Conservation Easements - Central
+- overlap: already read as mdd
+- closes: not probed
+
+### Wildlife Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MaineDIFW_WildlifeManagementAreas/FeatureServer/0
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (government words: State of)
+- terms: CLOSED · source item page · "ffice, The Nature Conservancy, New England Forestry Foundation, Maine private land trusts, US Park Service, US Fish and Wildlife, Maine municipal towns, Appalachian Mo" · item https://www.arcgis.com/home/item.html?id=102d42001c5e4335a2dd67487f39ba6b · owner Jason.Czapiga@maine.gov_maine · org State of Maine
+- facts: arcgis-layer · esriGeometryPolygon · name field HOLD1_NAME · 1343 records · last edit 2025-07-18 · sample Maine Department Of Inland Fisheries And Wildlife / Maine Department Of Inland Fisheries And Wildlife / Maine Department Of Inland Fisheries And Wildlife
+- overlap: same publisher as sgmea
+- closes: not probed
+
+### Maine_Conserved_Lands (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/Maine_Conserved_Lands_Municipal/FeatureServer/0
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (government words: State of)
+- terms: CLOSED · source item page · "ffice, The Nature Conservancy, New England Forestry Foundation, Maine private land trusts, US Park Service, US Fish and Wildlife, Maine municipal towns, Appalachian Mo" · item https://www.arcgis.com/home/item.html?id=01a85de2583c4db89e252ad4d50c2bd5 · owner Tracy.Scopel@maine.gov_maine · org State of Maine
+- facts: arcgis-layer · esriGeometryPolygon · name field HOLD1_NAME · 2141 records · last edit 2026-10-30 · sample Maine Minor Civil Division / Maine Minor Civil Division / Maine Minor Civil Division
+- overlap: same publisher as sgmea
+- closes: not probed
+
+### TN State Parks Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Boundaries/FeatureServer/0
+- WHY: already read as sgtna: nothing new to take
+- publisher: ? → official (government words: Dept)
+- terms: CREDIT · source item page · "This information has been compiled by TDEC/TN State Parks staff from a variety of sources and is subject to change without noti" · item https://www.arcgis.com/home/item.html?id=1b28885be2274ea885f32af5352094e1 · owner andrew.mcdonagh · org TN Dept of Environment and Conservation
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME · 66 records · last edit 2026-08-14 · sample Chickasaw State Park / Cordell Hull Birthplace State Park / Cove Lake State Park
+- overlap: already read as sgtna
+- closes: not probed
+
+### DNR Hiking Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/2
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 9464 records
+- closes: not probed
+
+### State Trails Minnesota (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/trans_state_trails_minnesota/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host enterprise.gisdata.mn.gov)
+- terms: CREDIT · source item page · "ined only by the DNR GIS Data License Agreement. See the Distribution Liability section below for a link." · item https://enterprise.gisdata.mn.gov/home/item.html?id=a2244a38d9f34dc1a3f4cbcb0901af40 · owner commonsAdmin
+- facts: arcgis-layer · esriGeometryPolyline · name field trail_name · 978 records
+- overlap: same publisher as sgmna
+- closes: not probed
+
+### State Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/GOcSXpzwBHyk2nog/ArcGIS/rest/services/NDGISHUB_State_Parks/FeatureServer/0
+- WHY: already read as sgndb: nothing new to take
+- publisher: ? → official (government words: State of)
+- terms: CREDIT · source item page · "his map is free from errors and disclaims any legal responsibility or liability for interpretations made from this data. The State of North Dakota has compiled this data" · item https://www.arcgis.com/home/item.html?id=1559f698420942b08e06138ccecd5a74 · owner NDGISHDP-GNF · org State of North Dakota
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 21 records · last edit 2026-06-22 · sample Fort Stevenson State Park / Beaver Lake State Park / Fort Abraham Lincoln State Park
+- overlap: already read as sgndb
+- closes: not probed
+
+### CL: Solid (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6
+- WHY: already read as sgnha: nothing new to take
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "GRANIT" · item https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 13502 records · sample Connecticut Lakes WMA North (West) / Connecticut Lakes WMA North (East) / Connecticut Lakes State Forest
+- overlap: already read as sgnha
+- closes: not probed
+
+### nhtrails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services8.arcgis.com/hg1B9Egwk1I5p300/ArcGIS/rest/services/NH_Recreational_Trails/FeatureServer/1
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Fish and Game)
+- terms: CREDIT · source item page · "Intended for planning use only. Users of this data are responsible for determining the safety of acces" · item https://www.arcgis.com/home/item.html?id=1de57c4fdac1464f940e543631140ab5 · owner kcallahan · org NH Fish and Game Department
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAILNAME · 15843 records · last edit 2026-08-05
+- overlap: same publisher as sgnhb
+- closes: not probed
+
+### Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/5
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host mapsdep.nj.gov)
+- terms: CREDIT · source item page · "NJDEP NJDEP" · item https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 394 records
+- overlap: same publisher as sgnja
+- closes: not probed
+
+### NJ State Park Service Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/63
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host mapsdep.nj.gov)
+- terms: CREDIT · source item page · "NJDEP NJDEP" · item https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field PARK_NAME · 3305 records
+- overlap: same publisher as sgnja
+- closes: not probed
+
+### SCORPRecAreas_Master (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0
+- WHY: already read as sgnvb: nothing new to take
+- publisher: ? → official (government host arcgis.water.nv.gov)
+- terms: OPEN · source item page · "CC0 1.0 Universal NEVADA DIVISION OF OUTDOOR RECREATION OR THE NEVADA DEPARTMENT OF CONSERVAI" · item https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 759 records · last edit 2026-01-27 · sample Lake Mead / Death Valley National Park / Ash Meadows National Wildlife Refuge
+- overlap: already read as sgnvb
+- closes: not probed
+
+### BLM Natl Recreation Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9
+- WHY: already read as rma: nothing new to take
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "Bureau of Land Management, Headquarters (HQ)" · item https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 588 records · sample None / None / None
+- overlap: already read as rma
+- closes: not probed
+
+### Oklahoma Wildlife Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/ArcGIS/rest/services/OklahomaRecreationalAreas/FeatureServer/0
+- WHY: already read as sgokb: nothing new to take
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "Authorized reference use only ODOT" · item https://www.arcgis.com/home/item.html?id=5c48be66df194c5787a1b920c2dccf29 · owner OKDOT_GIS · org Oklahoma Department of Transportation
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 111 records · last edit 2018-11-07 · sample Tenkiller Wildlife Management Area / Deep Fork Wildlife Management Area / Okmulgee Public Hunting Area
+- overlap: already read as sgokb
+- closes: not probed
+
+### State Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/ArcGIS/rest/services/OklahomaRecreationalAreas/FeatureServer/3
+- WHY: already read as sgoka: nothing new to take
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "Authorized reference use only ODOT" · item https://www.arcgis.com/home/item.html?id=5c48be66df194c5787a1b920c2dccf29 · owner OKDOT_GIS · org Oklahoma Department of Transportation
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME · 50 records · last edit 2018-11-07 · sample Walnut Creek State Park / Sequoyah Bay State Park / Natural Falls State Park
+- overlap: already read as sgoka
+- closes: not probed
+
+### Interpretive Site (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/7
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "PUBLIC DATA: None, these are considered public domain Bureau of Land Management, Oregon State Office BLM Admin State" · item https://gis.blm.gov/orarcgis/rest/services/Facility/BLM_OR_Recreation_Site/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field UNIT_NAME · 127 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### Oregon State Scenic Waterway Water Courses (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://maps.prd.state.or.us/arcgis/rest/services/Admin_boundaries/AD_SCENIC_WATERWAYS/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host maps.prd.state.or.us)
+- terms: CREDIT · source item page · "Oregon Parks and Recreation Department Oregon Parks and Recreation Department" · item https://maps.prd.state.or.us/arcgis/rest/services/Admin_boundaries/AD_SCENIC_WATERWAYS/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 44 records
+- overlap: same publisher as osp
+- closes: not probed
+
+### National Scenic and Historic Trails (NSHT) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/KbxwQRRfWyEYLgp4/ArcGIS/rest/services/National_Scenic_and_Historic_Trails_NSHT/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "These data are provided by BLM &quot;as is&quot; and may contain errors or omissions. The User assumes the entire ri" · item https://www.arcgis.com/home/item.html?id=f58bf22e5e164446921487dab1732f49 · owner cherndon@blm.gov_BLM_EGIS · org Bureau of Land Management
+- facts: arcgis-layer · esriGeometryPolyline · name field Trail_Name · 19 records · last edit 2024-05-21
+- closes: not probed
+
+### Fish_Hatcheries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/VVapzOPgBae5joyC/ArcGIS/rest/services/Fish_Hatcheries/FeatureServer/31
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: ODFW)
+- terms: CREDIT · source item page · "Locations were reviewed by numerous ODFW biologists. Data were compiled by Milton Hill and Jon Bowers. Locations were reviewed by numerous ODFW biologists. Data wer" · item https://www.arcgis.com/home/item.html?id=e12f2c8fd8f140359017caa7fe4f65b0 · owner weyandtal_CDMSmith · org CDM Smith AGO Projects
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 5 records · last edit 2022-11-09
+- closes: not probed
+
+### Conservation Easements 202610 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://mapservices.pasda.psu.edu/server/rest/services/pasda/WeConservePA/MapServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "WeConservePA, Irina Beal, GIS Analyst" · item https://mapservices.pasda.psu.edu/server/rest/services/pasda/WeConservePA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field sitename · 4772 records · sample Armstrong / Woodlands Tract - Glade Run Lake / Getty
+- closes: not probed
+
+### SC_State_Parks_by_ALM (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/x5wCko8UnSi4h0CB/ArcGIS/rest/services/SC_State_Parks_by_ALM/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → hosted for an agency (ArcGIS Online org x5wCko8UnSi4h0CB = Clemson University (hosts layers for SCDNR))
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=86cd7d32b68d453fb530ccb56d6966b6 · owner almcgin@clemson.edu_Clemson · org Clemson University
+- facts: arcgis-layer · esriGeometryPoint · name field Name · 47 records · last edit 2026-09-10
+- closes: not probed
+
+### South Carolina State Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0
+- WHY: already read as sgscb: nothing new to take
+- publisher: ? → official (government words: Dept)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4e6a49de963f43e087fa8de66c15f20a · owner BG59031@tn.gov_TDEC · org TN Dept of Environment and Conservation
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 55 records · last edit 2021-08-02 · sample Aiken State Park / Andrew Jackson State Park / Baker Creek State Park
+- overlap: already read as sgscb
+- closes: not probed
+
+### Recreational Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/RecreationalTrails/MapServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host ert.gfp.sd.gov)
+- terms: CREDIT · source item page · "SDGFP" · item https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/RecreationalTrails/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field Park · 298 records
+- closes: not probed
+
+### Federal Horse Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/10
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host kygisserver.ky.gov)
+- terms: CREDIT · source item page · "Kentucky State Parks, Kentucky Division of Geographic Information (DGI), US Forest Service, US Parks Service" · item https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAIL_NAME · 1334 records
+- closes: not probed
+
+### Federal Hiking Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/11
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host kygisserver.ky.gov)
+- terms: CREDIT · source item page · "Kentucky State Parks, Kentucky Division of Geographic Information (DGI), US Forest Service, US Parks Service" · item https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAIL_NAME · 1334 records
+- closes: not probed
+
+### Federal ATV Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host kygisserver.ky.gov)
+- terms: CREDIT · source item page · "Kentucky State Parks, Kentucky Division of Geographic Information (DGI), US Forest Service, US Parks Service" · item https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAIL_NAME · 1334 records
+- closes: not probed
+
+### Federal Bicycle Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/9
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host kygisserver.ky.gov)
+- terms: CREDIT · source item page · "Kentucky State Parks, Kentucky Division of Geographic Information (DGI), US Forest Service, US Parks Service" · item https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAIL_NAME · 1334 records
+- closes: not probed
+
+### Park Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/1mtXwieMId59thmg/ArcGIS/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0
+- WHY: already read as sgtxa: nothing new to take
+- publisher: ? → official (government words: Parks and Wildlife)
+- terms: CREDIT · source item page · "ldlife Department’s (TPWD) Geographic Information System (GIS). It is intended for general informational purposes only and may not have been prepared for or be suitable for" · item https://www.arcgis.com/home/item.html?id=47c52b2c0edb4af0ad2c27a17b262b87 · owner TPWD_StateParks · org Texas Parks and Wildlife
+- facts: arcgis-layer · esriGeometryPolygon · name field ParkName · 116 records · last edit 2026-03-06 · sample Copper Breaks / Lake Colorado City / Devil's Sinkhole
+- overlap: already read as sgtxa
+- closes: not probed
+
+### Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/orarcgis/rest/services/Basemaps/BLM_ORWA_Cached_Basemap/MapServer/8
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: OPEN · source item page · "R METADATA ELEMENT: ACCESS CONSTRAINT None, these data are considered public domain. ATTRIBUTE FOR METADATA ELEMENT: USE CONSTRAINT These data are provided by Bureau of Land" · item https://gis.blm.gov/orarcgis/rest/services/Basemaps/BLM_ORWA_Cached_Basemap/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field DSGNAME · 53024 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### WA Fish Hatcheries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services3.arcgis.com/q5Jezm9AgzqyE7Q6/ArcGIS/rest/services/WA_Fish_Hatcheries/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=c8d300a930184304aa66f3375e159e77 · owner joshahmann · org Parametrix
+- facts: arcgis-layer · esriGeometryPoint · name field Points_Name · 2 records · last edit 2024-07-22
+- closes: not probed
+
+### State_Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/10
+- WHY: already read as sgwvc: nothing new to take
+- publisher: ? → official (government host gis.transportation.wv.gov)
+- terms: CREDIT · source item page · "This map was developed by the West Virginia Department of Transportation Strategic Data Management Technology Divis" · item https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Loc_Nm · 36 records · sample Blennerhassett Island Historical State Park / Blackwater Falls State Park / Canaan Valley Resort State Park
+- overlap: already read as sgwvc
+- closes: not probed
+
+### BLM WY General Recreacreation Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/wyarcgis/rest/services/Recreation/BLM_WY_Recreation_Areas_HUB/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/wyarcgis/rest/services/Recreation/BLM_WY_Recreation_Areas_HUB/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field Site_name · 140 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM WY Recreation Features (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/wyarcgis/rest/services/Recreation/BLM_WY_Recreation_Features_HUB/FeatureServer/1
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/wyarcgis/rest/services/Recreation/BLM_WY_Recreation_Features_HUB/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field UNIT_NAME · 1429 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### Trails and Pathways (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://enterprise.firstmaptest.delaware.gov/arcgis/rest/services/Transportation/DE_Trails_and_Pathways/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host enterprise.firstmaptest.delaware.gov)
+- terms: CREDIT · source item page · "The State of Delaware makes no warranty or representation, expressed or implied, with respect to the quality, content, accuracy," · item https://enterprise.firstmaptest.delaware.gov/arcgis/rest/services/Transportation/DE_Trails_and_Pathways/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAIL_NAME · 971 records
+- closes: not probed
+
+### trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://epv.ci.juneau.ak.us/arcgis/rest/services/prod/unc_cbj_specific_departmental_map_layers_2d/MapServer/37
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host epv.ci.juneau.ak.us)
+- terms: CREDIT · source item page · "Simonson, et. al." · item https://epv.ci.juneau.ak.us/arcgis/rest/services/prod/unc_cbj_specific_departmental_map_layers_2d/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 330 records
+- closes: not probed
+
+### Trans_Trail_NFS_Publish (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host apps.fs.usda.gov)
+- terms: CREDIT · source item page · "USDA Forest Service" · item https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field trail_name · 86217 records
+- overlap: same publisher as fsod
+- closes: not probed
+
+### Statewide Railtrails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/16
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 881 records
+- closes: not probed
+
+### nhtrails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services8.arcgis.com/hg1B9Egwk1I5p300/arcgis/rest/services/NH_Recreational_Trails/FeatureServer/1
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Fish and Game)
+- terms: CREDIT · source item page · "Intended for planning use only. Users of this data are responsible for determining the safety of acces" · item https://www.arcgis.com/home/item.html?id=1de57c4fdac1464f940e543631140ab5 · owner kcallahan · org NH Fish and Game Department
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAILNAME · 15843 records · last edit 2026-08-05
+- overlap: same publisher as sgnhb
+- closes: not probed
+
+### New Jersey Statewide Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Land_lu/MapServer/121
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host mapsdep.nj.gov)
+- terms: NOTHING STATED · source item page · item https://mapsdep.nj.gov/arcgis/rest/services/Features/Land_lu/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field PARK_NAME · 12761 records
+- overlap: same publisher as sgnja
+- closes: not probed
+
+### State Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://dnrmaps.wi.gov/arcgis/rest/services/PR_TRAILS/PR_STATE_TRAIL_DISS_WTM_Ext/MapServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host dnrmaps.wi.gov)
+- terms: CREDIT · source item page · "surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user a" · item https://dnrmaps.wi.gov/arcgis/rest/services/PR_TRAILS/PR_STATE_TRAIL_DISS_WTM_Ext/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field PROP_NAME · 42 records
+- overlap: same publisher as sgwia
+- closes: not probed
+
+### WVSRA_RailTrails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.transportation.wv.gov/arcgis/rest/services/Hosted/WVSRA_RailTrails/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.transportation.wv.gov)
+- terms: CREDIT · source item page · "WVGISTC, WVDOT WVGISTC, WVDOT" · item https://gis.transportation.wv.gov/arcgis/rest/services/Hosted/WVSRA_RailTrails/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field trailname · 21 records
+- overlap: same publisher as sgwvc
+- closes: not probed
+
+### Forever Wild Tracts (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0
+- WHY: already read as sgalb: nothing new to take
+- publisher: ? → official (government host conservationgis.alabama.gov)
+- terms: NOTHING STATED · source item page · item https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 228 records · sample FW 101 - DeSoto State Park - River City Addition / FW 103 - Yates Lake West Weil Trust Addition / FW 100 - Live Oak Landing Tract
+- overlap: already read as sgalb
+- closes: not probed
+
+### nps_boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/ArcGIS/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2
+- WHY: already read as sgakd: nothing new to take
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "Property ownership data is compiled from deeds, plats, surveys, and other source data. These are not engineering quality drawings and should be used for adminis" · item https://www.arcgis.com/home/item.html?id=a2848257cf5541338bab9b656440bd0c · owner karndt@nps.gov_nps · org National Park Service
+- facts: arcgis-layer · esriGeometryPolygon · name field PARKNAME · 437 records · last edit 2026-10-16 · sample Haleakala National Park / Saguaro National Park / Manassas National Battlefield Park
+- overlap: already read as sgakd
+- closes: not probed
+
+### National Wild and Scenic River Line (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiverSegments_01/MapServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host apps.fs.usda.gov)
+- terms: CREDIT · source item page · "US Forest Service Enterprise Map Services Program Managing Agencies United States Forest Service (USFS), National Park Service (NPS), Bureau of Land Management " · item https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiverSegments_01/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field localwebsite · 249 records
+- overlap: same publisher as fsod
+- closes: not probed
+
+### Conservation Area Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5
+- WHY: already read as sgmoc: nothing new to take
+- publisher: ? → official (government host gisblue.mdc.mo.gov)
+- terms: CREDIT · source item page · "Although all data in this data set have been compiled by the Missouri Department of Conservation, no warranty, expressed or implied, is made by th" · item https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Area_Name · 1049 records · sample Fountain Grove CA / Chesapeake Fish Hatchery / Daniel Boone CA
+- overlap: already read as sgmoc
+- closes: not probed
+
+### Protected Natural Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis-erd-der.gnb.ca/server/rest/services/OpenData/PNAs/FeatureServer/0
+- WHY: already read as New Brunswic: nothing new to take
+- publisher: ? → official (government host gis-erd-der.gnb.ca)
+- terms: NOTHING STATED · source item page · item https://gis-erd-der.gnb.ca/server/rest/services/OpenData/PNAs/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 208 records · sample Green Island / Caughey-Taylor, Private Land Component / Meduxnekeag Valley
+- overlap: already read as New Brunswic
+- closes: not probed
+
+### Federal Protected Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10
+- WHY: already read as Ontario fede: nothing new to take
+- publisher: ? → official (government host ws.lioservices.lrc.gov.on.ca)
+- terms: CREDIT · source item page · "https://www.ontario.ca/page/open-government-licence-ontario" · item https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field OFFICIAL_NAME · 36 records · sample Fort St. Joseph Natural Historic Park / Fathom Five National Marine Park / Wye Marsh National Wildlife Area
+- overlap: already read as Ontario fede
+- closes: not probed
+
+### Conservation Reserve Regulated (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2
+- WHY: already read as Ontario cons: nothing new to take
+- publisher: ? → official (government host ws.lioservices.lrc.gov.on.ca)
+- terms: CREDIT · source item page · "https://www.ontario.ca/page/open-government-licence-ontario" · item https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROTECTED_SITE_IDENT · 306 records · sample C2338 / C2638 / C2329
+- overlap: already read as Ontario cons
+- closes: not probed
+
+### Municipal Park (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/3
+- WHY: already read as Ontario muni: nothing new to take
+- publisher: ? → official (government host ws.lioservices.lrc.gov.on.ca)
+- terms: CREDIT · source item page · "https://www.ontario.ca/page/open-government-licence-ontario" · item https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field OFFICIAL_NAME · 388 records · sample Potential Rouge Park North of Steeles / Potential Rouge Park North of Steeles / Potential Rouge Park North of Steeles
+- overlap: already read as Ontario muni
+- closes: not probed
+
+### Provincial Park Regulated (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/4
+- WHY: already read as Ontario Park: nothing new to take
+- publisher: ? → official (government host ws.lioservices.lrc.gov.on.ca)
+- terms: CREDIT · source item page · "https://www.ontario.ca/page/open-government-licence-ontario" · item https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field CLUSTER_NAME · 347 records · sample Silent Lake Cluster (Southeast Zone) / MacGregor Point Cluster (Southwest Zone) / Sharbot Lake Cluster (Southeast Zone)
+- overlap: already read as Ontario Park
+- closes: not probed
+
+### Federal/Territorial Conservation Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/Environment_LCC/MapServer/195
+- WHY: already read as NT GNWT Envi: nothing new to take
+- publisher: ? → official (government host www.apps.geomatics.gov.nt.ca)
+- terms: CREDIT · source item page · "NWT Centre for Geomatics, 2024 Metadata by Conservation Planning and Implementation Unit, Department of Environment and Natural Resources (ENR), Government of t" · item https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/Environment_LCC/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 4 records · sample Pingo Canadian Landmark / Gwich'in Territorial Park / Hidden Lake Territorial Park
+- overlap: already read as NT GNWT Envi
+- closes: not probed
+
+### Established Territorial Park (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/Environment_LCC/MapServer/204
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government host www.apps.geomatics.gov.nt.ca)
+- terms: CREDIT · source item page · "NWT Centre for Geomatics, 2024 Citation: Northwest Territories Centre for Geomatics, Department of Environment and Natural Resour" · item https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/Environment_LCC/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 45 records
+- overlap: same service as NT GNWT Envi (another layer of it)
+- closes: not probed
+
+### SK Regional Parks (as titled) (LAYER line, CA-SK)  ·    ·  from chat 8 LAYER line
+- url: https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/6
+- WHY: already read as Saskatchewan~6: nothing new to take
+- publisher: ? → official (government words: Ministry)
+- terms: CREDIT · source item page · "The standard license for this data prohibits redistribution of the data in whole or in part. A commercial or end user license is available. There are some restr" · item https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME · 106 records · sample Antelope Lake Regional Park / Assiniboia Regional Park / Atton's Lake Regional Park
+- overlap: already read as Saskatchewan~6
+- closes: not probed
+
+### LandsAreaStatistics (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_LandsAreaStatistics_01/MapServer/0
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (government host apps.fs.usda.gov)
+- terms: CLOSED · source item page · "urisdiction, or restrictions that may be in place on either public or private land. Natural hazards may or may not be depicted on the data and maps, and users should e" · item https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_LandsAreaStatistics_01/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field sdaname · 114738 records · sample  /  / 
+- overlap: same publisher as fsod
+- closes: not probed
+
+### State Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://conservationexplorer.dcnr.pa.gov/arcgis/rest/services/PA_Public/State_Parks/MapServer/0
+- WHY: already read as sgpab: nothing new to take
+- publisher: ? → official (government host conservationexplorer.dcnr.pa.gov)
+- terms: CREDIT · source item page · "Pennsylvania. Dept. of Conservation and Natural Resources. Bureau of State Parks. PA DCNR" · item https://conservationexplorer.dcnr.pa.gov/arcgis/rest/services/PA_Public/State_Parks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field StParkName · 240 records · sample Patterson State Park / Prouty Place State Park / Ole Bull State Park
+- overlap: already read as sgpab
+- closes: not probed
+
+### National Wild and Scenic Rivers (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0
+- WHY: already read as fwsr: nothing new to take
+- publisher: ? → official (government host apps.fs.usda.gov)
+- terms: CREDIT · source item page · "US Forest Service Enterprise Map Services Program" · item https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 261 records
+- overlap: already read as fwsr
+- closes: not probed
+
+### Wildlife Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services3.arcgis.com/E0jzW6yplmtrRw7o/ArcGIS/rest/services/Wildlife_Management_Areas/FeatureServer/6
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=498d5c18c4e24ec686faea645fbb7422 · owner leif_kindberg
+- facts: arcgis-layer · esriGeometryPolygon · name field fname · 1955 records · last edit 2024-07-29 · sample   / Norfork WMA Food Plot / Norfork WMA Food Plot
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### NDSP_State_Park_Bondaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1
+- WHY: already read as sgnve: nothing new to take
+- publisher: ? → official (government host arcgis.water.nv.gov)
+- terms: CREDIT · source item page · "ive purposes only. It does not represent a survey of the premises. No liability is assumed as to the sufficiency or accuracy of the data delineated hereon. State of Neva" · item https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field landname · 30 records · last edit 2026-06-23 · sample Mormon Station Historic State Monument / Cathedral Gorge State Park / Kershaw - Ryan State Park
+- overlap: already read as sgnve
+- closes: not probed
+
+### Trails Managed for Public (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/arcgis/rest/services/transportation/BLM_Natl_GTLF_Public_Display/MapServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/arcgis/rest/services/transportation/BLM_Natl_GTLF_Public_Display/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field ROUTE_PRMRY_NM · 19520 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### TrailsAndPathways (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/TrailsAndPathways/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "eographic data, tabular data, and analytical data, are provided &quot;as is&quot; and &quot;as available&quot;, with no guarantees relating to the availability, comp" · item https://www.arcgis.com/home/item.html?id=3080c0a2859a4d23a279e17e17c703c8 · owner UtahAGRC · org Utah Automated Geographic Reference Center (AGRC)
+- facts: arcgis-layer · esriGeometryPolyline · name field SystemName · 48142 records · last edit 2026-10-09
+- overlap: same publisher as sgutc
+- closes: not probed
+
+### BLM Natl Trails Managed for Public (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "BLM Admin State" · item https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field ROUTE_PRMRY_NM · 19520 records
+- overlap: same service as rma (another layer of it)
+- closes: not probed
+
+### Administrative Forest Boundaries - National Extent (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ForestSystemBoundaries_01/MapServer/0
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (government host apps.fs.usda.gov)
+- terms: CLOSED · source item page · "urisdiction, or restrictions that may be in place on either public or private land. Natural hazards may or may not be depicted on the data and maps, and land users sho" · item https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ForestSystemBoundaries_01/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field forestname · 112 records · sample Beaverhead-Deerlodge National Forest / Bitterroot National Forest / Idaho Panhandle National Forests
+- overlap: same publisher as fsod
+- closes: not probed
+
+### Ashton Tetonia Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/ArcGIS/rest/services/IDPR_Visitation_view/FeatureServer/3
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: State of)
+- terms: CREDIT · source item page · "Idaho Department of Parks and Recreation" · item https://www.arcgis.com/home/item.html?id=d7d95253ad284abcb04466dc441336d4 · owner Idaho_Department_of_Parks_and_Recreation · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolyline · 2 records · last edit 2023-10-18
+- closes: not probed
+
+### Iron Belle Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SegmentName · 816 records
+- closes: not probed
+
+### Recreation Search Points (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/DNRRecreationSearchPointsOPENDATA/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (government words: Department)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstan Michigan Departmen" · item https://www.arcgis.com/home/item.html?id=798784a03029426b9139cbec5bcb44b0 · owner MichiganDNR · org Michigan Department of Natural Resources
+- facts: arcgis-layer · esriGeometryPoint · name field Title · 863 records · last edit 2026-10-30
+- overlap: same publisher as mid
+- closes: not probed
+
+### Wildlife Property Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2
+- WHY: already read as sgmib: nothing new to take
+- publisher: ? → official (government words: Department)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstan Michigan Departmen" · item https://www.arcgis.com/home/item.html?id=f3c94855d54b448c9613f00079d34e66 · owner MichiganDNR · org Michigan Department of Natural Resources
+- facts: arcgis-layer · esriGeometryPolygon · name field OfficialWLDProjectAreaName · 235 records · last edit 2026-10-30 · sample (Bay City SP - middle day-use portion, adj. to Tobico Marsh  / (Saginaw Contained Disposal Facility (special adj. area)) / (select pvt-owned lands with State reserved hunting rights)
+- overlap: already read as sgmib
+- closes: not probed
+
+### DNR Parks Unit Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8
+- WHY: already read as sgmia: nothing new to take
+- publisher: ? → official (government words: Department)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstan Michigan Departmen" · item https://www.arcgis.com/home/item.html?id=876d19a2df964cee99b90a762d822061 · owner MichiganDNR · org Michigan Department of Natural Resources
+- facts: arcgis-layer · esriGeometryPolygon · name field Facility · 109 records · last edit 2026-10-30 · sample Young State Park / W.C. Wetzel Recreation Area / Onaway State Park
+- overlap: already read as sgmia
+- closes: not probed
+
+### Game Lands - general (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21
+- WHY: already read as ncg: nothing new to take
+- publisher: ? → official (government words: Commission)
+- terms: CREDIT · source item page · "hat the information provided is accurate as possible, the NCWRC gives no warranty, expressed or implied, as to the accuracy, reliability, or completeness of this informati" · item https://www.arcgis.com/home/item.html?id=e5ddff9b96204c6181be7c022e61d946 · owner ncwildlife.gov · org North Carolina Wildlife Resources Commission
+- facts: arcgis-layer · esriGeometryPolygon · 95 records · last edit 2026-10-14
+- overlap: already read as ncg
+- closes: not probed
+
+### State Forest (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.dmr.nd.gov/dmrpublicservices/rest/services/State_Forest/MapServer/0
+- WHY: already read as sgndd: nothing new to take
+- publisher: ? → official (government host gis.dmr.nd.gov)
+- terms: CREDIT · source item page · "North Dakota Game and Fish Department" · item https://gis.dmr.nd.gov/dmrpublicservices/rest/services/State_Forest/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 27 records
+- overlap: already read as sgndd
+- closes: not probed
+
+### Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/nmarcgis/rest/services/Recreation/BLM_NM_RGDN_Recreation/MapServer/4
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/nmarcgis/rest/services/Recreation/BLM_NM_RGDN_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field TRIALNAME · 214 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### NYS DEC Lands (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0
+- WHY: already read as sgnya: nothing new to take
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "1. The NYS DEC asks to be credited in derived products. 2. Secondary Distribution of the data is not allowed. 3. Any docum" · item https://www.arcgis.com/home/item.html?id=84b4cce8a8974c31a1c5584540f3aaae · owner NYSDEC_PUB · org New York State Department of Environmental Conservation
+- facts: arcgis-layer · esriGeometryPolygon · name field FACILITY · 3238 records · last edit 2026-10-30 · sample Lewis Fp Detached Parcel / East Osceola State Forest / East Branch Fish Creek State Forest
+- overlap: already read as sgnya
+- closes: not probed
+
+### Public_WMA_Boundaries_10302026 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/jRf8jjFwxedITdFe/ArcGIS/rest/services/Public_WMA_Boundaries/FeatureServer/1
+- WHY: already read as odw: nothing new to take
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "ry determinations and/or land ownership purposes. No guarantee of the accuracy of the content, usability or presentation of the data can be or is made. Neither the Stat" · item https://www.arcgis.com/home/item.html?id=25e889952822414d8431fec19d68e289 · owner ODWC_GIS · org Oklahoma Department of Wildlife Conservation
+- facts: arcgis-layer · esriGeometryPolygon · name field WMANAME · 105 records · last edit 2026-10-30 · sample Altus Lugert Wildlife Management Area / American Horse Lake / Arbuckle Springs Wildlife Management Area
+- overlap: already read as odw
+- closes: not probed
+
+### Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://maps.dcnr.pa.gov/agsprod/rest/services/BRC/EPAT_NEW/FeatureServer/1
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host maps.dcnr.pa.gov)
+- terms: CREDIT · source item page · "PA DCNR" · item https://maps.dcnr.pa.gov/agsprod/rest/services/BRC/EPAT_NEW/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field NAME01 · 684 records
+- closes: not probed
+
+### Explore PA trails - Trails 202406 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://mapservices.pasda.psu.edu/server/rest/services/pasda/ExplorePAtrails/MapServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://mapservices.pasda.psu.edu/server/rest/services/pasda/ExplorePAtrails/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field NAME01 · 684 records
+- closes: not probed
+
+### StateFacilities (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/StateFacilityLocations/FeatureServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "eographic data, tabular data, and analytical data, are provided &quot;as is&quot; and &quot;as available&quot;, with no guarantees relating to the availability, comp" · item https://www.arcgis.com/home/item.html?id=a2cc4865b1a94352922c1a83bda24ba5 · owner UtahAGRC · org Utah Automated Geographic Reference Center (AGRC)
+- facts: arcgis-layer · esriGeometryPoint · name field BUILDNAME · 4761 records · last edit 2026-03-07
+- overlap: same publisher as sgutc
+- closes: not probed
+
+### Potomac Heritage NST (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/ArcGIS/rest/services/POHE_Trail_Centerline_FTDS_view/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "The distributor of this data shall not be held liable for improper or incorrect use of the data described and/or contained herein. These data and related graphi" · item https://www.arcgis.com/home/item.html?id=52b9fb061acb492789db4d7e84f4604a · owner POHE_GIS · org National Park Service
+- facts: arcgis-layer · esriGeometryPolyline · name field TRNAME · 600 records · last edit 2026-10-30
+- overlap: same publisher as akht
+- closes: not probed
+
+### AreaBoundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/FeatureServer/1
+- WHY: already read as sgwag: nothing new to take
+- publisher: ? → official (government host geodataservices.wdfw.wa.gov)
+- terms: CREDIT · source item page · "Washington Department of Fish and Wildlife Washington Department of Fish and Wildlife" · item https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field WildlifeAreaName · 33 records · sample Asotin Creek / Big Bend / Chehalis
+- overlap: already read as sgwag
+- closes: not probed
+
+### Refuge faunique (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://servicescarto.mern.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/10
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host servicescarto.mern.gouv.qc.ca)
+- terms: CREDIT · source item page · "Veuillez consulter la licence d'utilisation à l'adresse suivante : http://geoboutique.mern.gouv.qc.ca/PDF_ZIP/Licence.pdf Ministère de l'Énergie et des Ressourc" · item https://servicescarto.mern.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 9 records
+- closes: not probed
+
+### Parc régional (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://servicescarto.mern.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host servicescarto.mern.gouv.qc.ca)
+- terms: CREDIT · source item page · "Veuillez consulter la licence d'utilisation à l'adresse suivante : http://geoboutique.mern.gouv.qc.ca/PDF_ZIP/Licence.pdf Ministère de l'Énergie et des Ressourc" · item https://servicescarto.mern.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 16 records
+- closes: not probed
+
+### Refuge d_oiseaux migrateurs (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://servicescarto.mern.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/9
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host servicescarto.mern.gouv.qc.ca)
+- terms: CREDIT · source item page · "Veuillez consulter la licence d'utilisation à l'adresse suivante : http://geoboutique.mern.gouv.qc.ca/PDF_ZIP/Licence.pdf Ministère de l'Énergie et des Ressourc" · item https://servicescarto.mern.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 28 records
+- closes: not probed
+
+### Parc national du Québec (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/5
+- WHY: already read as Québec Parc ~2: nothing new to take
+- publisher: ? → official (government host servicescarto.mrnf.gouv.qc.ca)
+- terms: CREDIT · source item page · "Veuillez consulter la licence d'utilisation à l'adresse suivante : http://geoboutique.mern.gouv.qc.ca/PDF_ZIP/Licence.pdf Ministère de l'Énergie et des Ressourc" · item https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 28 records
+- overlap: already read as Québec Parc ~2
+- closes: not probed
+
+### Protected Area as Legislated (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/2
+- WHY: already read as Saskatchewan~2: nothing new to take
+- publisher: ? → official (government words: Ministry)
+- terms: CREDIT · source item page · "Saskatchewan Ministry of Parks, Culture and Sport Saskatchewan Ministry of Parks, Culture and Sport" · item https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARKNM · 24 records · sample Anderson Island Protected Area / Besant Midden Protected Area / Brockelbank Hill Protected Area
+- overlap: already read as Saskatchewan~2
+- closes: not probed
+
+### RFMC (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/14
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: AGFC)
+- terms: CREDIT · source item page · "No warranty is made by the AGFC as to the accuracy, reliability, or completeness of these data for in" · item https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 5 records
+- overlap: same publisher as arw
+- closes: not probed
+
+### RMCC (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/15
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: AGFC)
+- terms: CREDIT · source item page · "No warranty is made by the AGFC as to the accuracy, reliability, or completeness of these data for in" · item https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 7 records
+- overlap: same publisher as arw
+- closes: not probed
+
+### Public Access (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/5
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: AGFC)
+- terms: CREDIT · source item page · "No warranty is made by the AGFC as to the accuracy, reliability, or completeness of these data for in" · item https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field fname · 4357 records
+- overlap: same publisher as arw
+- closes: not probed
+
+### Water Containment Features (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/6
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: AGFC)
+- terms: CREDIT · source item page · "No warranty is made by the AGFC as to the accuracy, reliability, or completeness of these data for in" · item https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field fname · 262 records
+- overlap: same publisher as arw
+- closes: not probed
+
+### Physical Line Features (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: AGFC)
+- terms: CREDIT · source item page · "No warranty is made by the AGFC as to the accuracy, reliability, or completeness of these data for in" · item https://gisec2.agfc.com/arcgis/rest/services/Operations/VUEWorks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field fname · 81 records
+- overlap: same publisher as arw
+- closes: not probed
+
+### Local Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/2
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host kygisserver.ky.gov)
+- terms: CREDIT · source item page · "Kentucky State Parks, Kentucky Division of Geographic Information (DGI), US Forest Service, US Parks Service" · item https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field NAME · 2009 records
+- closes: not probed
+
+### Rails to Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/3
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host kygisserver.ky.gov)
+- terms: CREDIT · source item page · "Kentucky State Parks, Kentucky Division of Geographic Information (DGI), US Forest Service, US Parks Service" · item https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field trl_Name · 23 records
+- closes: not probed
+
+### KDFWR Horse Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/4
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host kygisserver.ky.gov)
+- terms: CREDIT · source item page · "Kentucky State Parks, Kentucky Division of Geographic Information (DGI), US Forest Service, US Parks Service" · item https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 148 records
+- closes: not probed
+
+### KDFWR Blue Water Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/5
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host kygisserver.ky.gov)
+- terms: CREDIT · source item page · "Kentucky State Parks, Kentucky Division of Geographic Information (DGI), US Forest Service, US Parks Service" · item https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field Trail_Name · 37 records
+- closes: not probed
+
+### State Park Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/6
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host kygisserver.ky.gov)
+- terms: CREDIT · source item page · "Kentucky State Parks, Kentucky Division of Geographic Information (DGI), US Forest Service, US Parks Service" · item https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAIL_NAME · 348 records
+- closes: not probed
+
+### Federal Motorcyle Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/8
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host kygisserver.ky.gov)
+- terms: CREDIT · source item page · "Kentucky State Parks, Kentucky Division of Geographic Information (DGI), US Forest Service, US Parks Service" · item https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreational_Trails_WGS84WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field TRAIL_NAME · 1334 records
+- closes: not probed
+
+### USFS Wilderness (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/ArcGIS/rest/services/OklahomaRecreationalAreas/FeatureServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "Authorized reference use only ODOT" · item https://www.arcgis.com/home/item.html?id=5c48be66df194c5787a1b920c2dccf29 · owner OKDOT_GIS · org Oklahoma Department of Transportation
+- facts: arcgis-layer · esriGeometryPolygon · 2 records · last edit 2018-11-07
+- overlap: same service as sgoka (another layer of it)
+- closes: not probed
+
+### Major Streams (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/ArcGIS/rest/services/OklahomaRecreationalAreas/FeatureServer/5
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Department)
+- terms: CREDIT · source item page · "Authorized reference use only ODOT" · item https://www.arcgis.com/home/item.html?id=5c48be66df194c5787a1b920c2dccf29 · owner OKDOT_GIS · org Oklahoma Department of Transportation
+- facts: arcgis-layer · esriGeometryPolyline · name field NAME · 385 records · last edit 2018-11-07
+- overlap: same service as sgoka (another layer of it)
+- closes: not probed
+
+### Trail Construction (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/ArcGIS/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/2
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPolyline · name field seg_name · 14 records · last edit 2026-10-27
+- closes: not probed
+
+### Razorback Greenway (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/ArcGIS/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/5
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPolyline · name field seg_name · 258 records · last edit 2026-10-27
+- closes: not probed
+
+### Off-Street Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/ArcGIS/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/6
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPolyline · name field seg_name · 4859 records · last edit 2026-10-27
+- closes: not probed
+
+### On-Street Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services6.arcgis.com/VcV5jchX8PVtkcbc/ArcGIS/rest/services/dataVIEWER_of_NW_Arkansas_Trails_2021_WFL1/FeatureServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "All rights are reserved. University of Arkansas, Center for Advanced Spatial Technologies (CAST), Northwest Arkansas Regional Planning Commission (NWARPC), WeAr" · item https://www.arcgis.com/home/item.html?id=528785584c214a33a4696e145ef9ffaf · owner brian_prod · org Center for Advanced Spatial Technologies
+- facts: arcgis-layer · esriGeometryPolyline · name field seg_name · 317 records · last edit 2026-10-27
+- closes: not probed
+
+### SCORP_NonMoto_Trails_Master (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_NonMoto_Trails_Master/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host arcgis.water.nv.gov)
+- terms: OPEN · source item page · "CC0 1.0 Universal NEVADA DIVISION OF OUTDOOR RECREATION OR THE NEVADA DEPARTMENT OF CONSERVAI" · item https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_NonMoto_Trails_Master/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field trailname · 6686 records · last edit 2026-01-27
+- overlap: same publisher as sgnvb
+- closes: not probed
+
+### BLM Administrative Unit State Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/admin_boundaries/BLM_Natl_AdminUnit/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 12 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### Bureau of Land Management (BLM) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/lands/BLM_Natl_SMA_Cached_BLM_Only/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/lands/BLM_Natl_SMA_Cached_BLM_Only/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 11472 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM Natl Top Mountain Bike Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recreation/MapServer/5
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field UNIT_NAME · 367 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM Natl Trails Managed for Public (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recreation/MapServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field ROUTE_PRMRY_NM · 19520 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM Natl Trails Not Assessed for Public (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recreation/MapServer/8
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "PUBLIC. BLM. These data are provided by Bureau of Land Management (BLM) “as is” and might contain errors or omissions. The User a" · item https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field ROUTE_PRMRY_NM · 5038 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### Florida State Park Roads (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/11
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host ags.dep.state.fl.us)
+- terms: CREDIT · source item page · "FDEP/DRP Florida DEP, Division of Recreation and Parks" · item https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field NAME · 12951 records
+- closes: not probed
+
+### Florida State Park Trails and Walkways (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/12
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host ags.dep.state.fl.us)
+- terms: CREDIT · source item page · "FDEP/DRP Florida Department of Environmental Protection, Division of Recreation and Parks, Bureau of Natural and Cultural Resources" · item https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field NAME · 7709 records
+- closes: not probed
+
+### Florida State Park Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/8
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host ags.dep.state.fl.us)
+- terms: CREDIT · source item page · "FDEP/DRP Florida Department of Environmental Protection, Division of Recreation and Parks, Office of Park Planning" · item https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field NAME · 1387 records
+- closes: not probed
+
+### Emergency Route Closures (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Recreation_Trails/FeatureServer/127
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a federal / national agency named)
+- terms: NON-COMMERCIAL · source item page · "Not for commercial use and may not be used in 3rd party apps without source attribution. Contact IDPR for Sc" · item https://www.arcgis.com/home/item.html?id=5a08280a853b41b69115a3fc0abbd2bc · owner aernst_idpr · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolyline · name field NAME · 45 records · last edit 2026-10-29
+- closes: not probed
+
+### Regions (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Recreation_Trails/FeatureServer/131
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a federal / national agency named)
+- terms: NON-COMMERCIAL · source item page · "Not for commercial use and may not be used in 3rd party apps without source attribution. Contact IDPR for Sc" · item https://www.arcgis.com/home/item.html?id=5a08280a853b41b69115a3fc0abbd2bc · owner aernst_idpr · org State of Idaho
+- facts: arcgis-layer · esriGeometryPolygon · 3 records · last edit 2026-10-18
+- closes: not probed
+
+### Cowboy Trail Improvements (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/IOshH1zLrIieqrNk/ArcGIS/rest/services/TrailsNewmap/FeatureServer/5
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Commission)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4c79a30a5a4342c59bbbb062eacc3f2d · owner NGPC.GISAdmin · org Nebraska Game & Parks Commission
+- facts: arcgis-layer · esriGeometryPolyline · 29 records · last edit 2026-03-05
+- overlap: same publisher as nep
+- closes: not probed
+
+### State Park Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/IOshH1zLrIieqrNk/ArcGIS/rest/services/TrailsNewmap/FeatureServer/6
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Commission)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4c79a30a5a4342c59bbbb062eacc3f2d · owner NGPC.GISAdmin · org Nebraska Game & Parks Commission
+- facts: arcgis-layer · esriGeometryPolyline · name field ParkName · 612 records · last edit 2026-03-03
+- overlap: same publisher as nep
+- closes: not probed
+
+### River Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/IOshH1zLrIieqrNk/ArcGIS/rest/services/TrailsNewmap/FeatureServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Commission)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4c79a30a5a4342c59bbbb062eacc3f2d · owner NGPC.GISAdmin · org Nebraska Game & Parks Commission
+- facts: arcgis-layer · esriGeometryPolyline · name field ParkName · 25 records · last edit 2026-04-28
+- overlap: same publisher as nep
+- closes: not probed
+
+### Nebraska State Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services5.arcgis.com/IOshH1zLrIieqrNk/ArcGIS/rest/services/TrailsNewmap/FeatureServer/8
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government words: Commission)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=4c79a30a5a4342c59bbbb062eacc3f2d · owner NGPC.GISAdmin · org Nebraska Game & Parks Commission
+- facts: arcgis-layer · esriGeometryPolyline · name field ParkName · 394 records · last edit 2026-03-03
+- overlap: same publisher as nep
+- closes: not probed
+
+### TDEC_Public_Trai_SpatialJoin1 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/Ezk9fcjSUkeadg6u/ArcGIS/rest/services/Exploring_Tennessee_State_Parks_WebMap/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → hosted for an agency (a university account holds an agency layer)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=e966c1d180f14249bf62d29344031e0a · owner njbohrer_uagis · org University of Arizona GIS
+- facts: arcgis-layer · esriGeometryPolyline · name field PARK_NAME · 1917 records · last edit 2025-12-07
+- closes: not probed
+
+### DNR Trail Temporary Closures (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/0
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 192 records
+- closes: not probed
+
+### DNR Trail Temporary Reroutes (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/1
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 9 records
+- closes: not probed
+
+### Use Permit MOU Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/10
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 202 records
+- closes: not probed
+
+### DNR ORV Routes (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/11
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 1895 records
+- closes: not probed
+
+### DNR Biking Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/3
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 3012 records
+- closes: not probed
+
+### DNR Equestrian Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/4
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 1584 records
+- closes: not probed
+
+### DNR Skiing Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/5
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 4135 records
+- closes: not probed
+
+### DNR Snowshoe Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/6
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 1727 records
+- closes: not probed
+
+### DNR State-designated Water Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/8
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 45 records
+- closes: not probed
+
+### GEM Hunter Walking Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/9
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gisagoegle.state.mi.us)
+- terms: OPEN · source item page · "aset is a public record and, as more fully described below, there are no restrictions on the use, reproduction, or distribution of this dataset. Notwithstanding the foregoing," · item https://gisagoegle.state.mi.us/arcgis/rest/services/DNR/DNRTrailsOPENDATA/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field SiteName · 467 records
+- closes: not probed
+
+### WSPS Properties (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_WSPS_Property_Info_WTM_Ext/MapServer/0
+- WHY: already read as sgwib: nothing new to take
+- publisher: ? → official (government host dnrmaps.wi.gov)
+- terms: CREDIT · source item page · "surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user a" · item https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_WSPS_Property_Info_WTM_Ext/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROP_NAME · 81 records · sample American Legion State Forest / Amnicon Falls State Park / Aztalan State Park
+- overlap: already read as sgwib
+- closes: not probed
+
+### Beaver_Habitat (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/rCcfuAf877pT4w3i/ArcGIS/rest/services/Mount_St__Helens_National_Volcanic_Monument_WFL1/FeatureServer/1
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=d690001da89b4f7d8ba2634c7f14ad16 · owner jasmine.ortiz@wsu.edu_wsuniv · org Washington State University
+- facts: arcgis-layer · esriGeometryPolygon · 2 records · last edit 2026-04-26
+- closes: not probed
+
+### Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/rCcfuAf877pT4w3i/ArcGIS/rest/services/Mount_St__Helens_National_Volcanic_Monument_WFL1/FeatureServer/2
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=d690001da89b4f7d8ba2634c7f14ad16 · owner jasmine.ortiz@wsu.edu_wsuniv · org Washington State University
+- facts: arcgis-layer · esriGeometryPolyline · name field trail_name · 46 records · last edit 2026-04-26
+- closes: not probed
+
+### AP - Habitats espèces floristiques men. ou vuln. - MELCCFP (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 29 records
+- overlap: same service as Québec ecolo (another layer of it)
+- closes: not probed
+
+### AP - Réserves écologiques - MELCCFP (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/10
+- WHY: already read as Québec ecolo: nothing new to take
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 75 records
+- overlap: already read as Québec ecolo
+- closes: not probed
+
+### AP - Habitats fauniques - MELCCFP Faune (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 1095 records
+- overlap: same service as Québec ecolo (another layer of it)
+- closes: not probed
+
+### Ensemble des aires protégées et autres mesures de conservati (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23
+- WHY: already read as Québec prote: nothing new to take
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 5611 records
+- overlap: already read as Québec prote
+- closes: not probed
+
+### Territoires d’importance pour la conservation (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/24
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 52 records
+- overlap: same service as Québec ecolo (another layer of it)
+- closes: not probed
+
+### AP - Parc marin du Saguenay–Saint-Laurent - MELCCFP Parcs (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 1 records
+- overlap: same service as Québec ecolo (another layer of it)
+- closes: not probed
+
+### AP - Parcs nationaux du Québec - MELCCFP Parcs (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/4
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 34 records
+- overlap: same service as Québec ecolo (another layer of it)
+- closes: not probed
+
+### AP - Paysages humanisés - MELCCFP (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/5
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 1 records
+- overlap: same service as Québec ecolo (another layer of it)
+- closes: not probed
+
+### AP - Refuges fauniques - MELCCFP Faune (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/6
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 8 records
+- overlap: same service as Québec ecolo (another layer of it)
+- closes: not probed
+
+### AP - Réserves aquatiques - MELCCFP (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/7
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 12 records
+- overlap: same service as Québec ecolo (another layer of it)
+- closes: not probed
+
+### AP - Réserves de biodiversité - MELCCFP (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/8
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 87 records
+- overlap: same service as Québec ecolo (another layer of it)
+- closes: not probed
+
+### AP - Réserves de territoire aux fins d’aire protégée - MELCC (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/9
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "r, sans être inscrits dans le Registre des aires protégées. Il pourra © Gouvernement du Québec © Gouvernement du Québec, Ministère de l'Environnement, de la Lutt" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=7e367217e7e5438dadc492f9b7770613 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 84 records
+- overlap: same service as Québec ecolo (another layer of it)
+- closes: not probed
+
+### Scenic Highways And Byways (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.ardot.gov/referenced/rest/services/TPP_GISMapping/Designated_Routes/MapServer/3
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.ardot.gov)
+- terms: NOTHING STATED · source item page · item https://gis.ardot.gov/referenced/rest/services/TPP_GISMapping/Designated_Routes/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field Name · 968 records
+- overlap: same publisher as sgarb
+- closes: not probed
+
+### ARKANSAS_TRAILS (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/MapServer/22
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host gis.arkansas.gov)
+- terms: CREDIT · source item page · "Darin Mitchell, GISP Senior GIS Analyst - Arkansas State Parks Michael Conway GIS/Database Analyst Arkansas Natural Heritage Commission" · item https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 384 records
+- overlap: same publisher as sgara
+- closes: not probed
+
+### TRTE_TRANS_CULT_NHT1DesignatedAlignment_ln (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/TRTE_NHT/FeatureServer/0
+- WHY: the publisher closed it (internal / sign-in / by request)
+- publisher: ? → official (a federal / national agency named)
+- terms: CLOSED · source item page · "cal boundary, that crosses many ownership jurisdictions. Do not cross private land without permission. This data set should not be displayed or used at scales that exc" · item https://www.arcgis.com/home/item.html?id=3730e8a68d4e40e09b3dcb4d950f2b28 · owner ntirres_nps · org National Park Service
+- facts: arcgis-layer · esriGeometryPolyline · name field UNITNAME · 2006 records · last edit 2026-09-17
+- overlap: same publisher as akht
+- closes: not probed
+
+### nps_boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2
+- WHY: already read as sgakd: nothing new to take
+- publisher: ? → official (a federal / national agency named)
+- terms: CREDIT · source item page · "Property ownership data is compiled from deeds, plats, surveys, and other source data. These are not engineering quality drawings and should be used for adminis" · item https://www.arcgis.com/home/item.html?id=a2848257cf5541338bab9b656440bd0c · owner karndt@nps.gov_nps · org National Park Service
+- facts: arcgis-layer · esriGeometryPolygon · name field PARKNAME · 437 records · last edit 2026-10-16 · sample Haleakala National Park / Saguaro National Park / Manassas National Battlefield Park
+- overlap: already read as sgakd
+- closes: not probed
+
+### Areas Protegidas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://mapageneral.mineria.gob.do/arcgis/rest/services/PortalMapa/Portal_AP/MapServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://mapageneral.mineria.gob.do/arcgis/rest/services/PortalMapa/Portal_AP/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 192 records
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Nationalparken (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kort.nunagis.gl/refserver/rest/services/Kortportal/Kortportal_AdministrativeGraenser/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://kort.nunagis.gl/refserver/rest/services/Kortportal/Kortportal_AdministrativeGraenser/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon
+- closes: not probed
+
+### Protected or Important Areas of Greenland Display Layer (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services-eu1.arcgis.com/0uK40YtWoUkQMlYW/arcgis/rest/services/Protected_Areas_of_Greenland_DisplayLayer/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Institute in the publisher words)
+- terms: NOTHING STATED · source item page · item https://www.arcgis.com/home/item.html?id=e881a2caeab44096ac8dd655fdb83aed · owner KarlBrixZinglersen · org Greenland Institute of Natural Resources
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 2679 records · last edit 2024-03-15 · sample Qinngeq Kujalleq (Qinngua dalen) / Søndre Isortoq / Qingartarsuaq
+- closes: not probed
+
+### Forest Reserve (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services1.arcgis.com/4TXrdeWh0RyCqPgB/ArcGIS/rest/services/Montserrat_Vectors/FeatureServer/176
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (a university account)
+- terms: CREDIT · source item page · "For use in SeaSketch only. Blue Halo Montserrat, 2017." · item https://www.arcgis.com/home/item.html?id=be354c4e5535495faa126ad8b9d81ca7 · owner wmcclin · org University of California, Santa Barbara
+- facts: arcgis-layer · esriGeometryPolygon · 2 records · last edit 2021-05-06
+- closes: not probed
+
+### Road warning (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/1
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 68576 records
+- closes: not probed
+
+### Roads (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/2
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 80589 records
+- closes: not probed
+
+### Track or trail warning (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/4
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 7579 records
+- closes: not probed
+
+### Walking track (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/5
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 5992 records
+- closes: not probed
+
+### Great walk (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/6
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 716 records
+- closes: not probed
+
+### Horse trail (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 1530 records
+- closes: not probed
+
+### Mountain bike trail (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/8
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 1492 records
+- closes: not probed
+
+### Trail bike trail (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/9
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (government host spatial-gis.information.qld.gov.au)
+- terms: OPEN · source item page · "© State of Queensland (Department of Environment and Science) 2022 [![Creative Commons — Attribution 4.0 International Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](htt" · item https://spatial-gis.information.qld.gov.au/arcgis/rest/services/Environment/ParksTerrestrialProtectedAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline · name field name · 524 records
+- closes: not probed
+
+### Landschaftsschutzgebiete (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: CREDIT · source item page · "://www.gesetze-im-internet.de/geonutzv/GeoNutzV.pdf ) genutzt werden. © Bundesamt für Naturschutz (BfN) 2026, Daten bearbeitet Bundesamt für Naturschutz (BfN) 20" · item https://www.arcgis.com/home/item.html?id=2beeb8ed32d94730b5b70750ba434a4d · owner esri_DE_content · org Esri Deutschland
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 9195 records · last edit 2026-10-27 · sample Wiesen- und Teichgebiet Eulo und Jamno / Wald- und Restseengebiet Döbern / Grubenseen in der Rückersdorfer Heide
+- closes: not probed
+
+### Naturschutzgebiete (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/1
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: CREDIT · source item page · "://www.gesetze-im-internet.de/geonutzv/GeoNutzV.pdf ) genutzt werden. © Bundesamt für Naturschutz (BfN) 2026, Daten bearbeitet Bundesamt für Naturschutz (BfN) 20" · item https://www.arcgis.com/home/item.html?id=2beeb8ed32d94730b5b70750ba434a4d · owner esri_DE_content · org Esri Deutschland
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 9035 records · last edit 2026-10-27 · sample Borkum Riffgrund / Doggerbank / Fehmarnbelt
+- closes: not probed
+
+### Naturparke (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/2
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: CREDIT · source item page · "://www.gesetze-im-internet.de/geonutzv/GeoNutzV.pdf ) genutzt werden. © Bundesamt für Naturschutz (BfN) 2026, Daten bearbeitet Bundesamt für Naturschutz (BfN) 20" · item https://www.arcgis.com/home/item.html?id=2beeb8ed32d94730b5b70750ba434a4d · owner esri_DE_content · org Esri Deutschland
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 105 records · last edit 2026-10-27 · sample Ammergauer Alpen / Kyffhäuser / Harz Sachsen-Anhalt (Mansfelder Land)
+- closes: not probed
+
+### Nationalparke (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/3
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: CREDIT · source item page · "://www.gesetze-im-internet.de/geonutzv/GeoNutzV.pdf ) genutzt werden. © Bundesamt für Naturschutz (BfN) 2026, Daten bearbeitet Bundesamt für Naturschutz (BfN) 20" · item https://www.arcgis.com/home/item.html?id=2beeb8ed32d94730b5b70750ba434a4d · owner esri_DE_content · org Esri Deutschland
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 16 records · last edit 2026-10-27 · sample Müritz-Nationalpark / Hamburgisches Wattenmeer / Schleswig-Holsteinisches Wattenmeer
+- closes: not probed
+
+### Fauna_Flora_Habitat_Gebiete (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/4
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: CREDIT · source item page · "://www.gesetze-im-internet.de/geonutzv/GeoNutzV.pdf ) genutzt werden. © Bundesamt für Naturschutz (BfN) 2026, Daten bearbeitet Bundesamt für Naturschutz (BfN) 20" · item https://www.arcgis.com/home/item.html?id=2beeb8ed32d94730b5b70750ba434a4d · owner esri_DE_content · org Esri Deutschland
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 4547 records · last edit 2026-10-27 · sample Spreckenser Moor / Fintlandsmoor und Dänikhorster Moor / Kammmolch-Biotop Mührgehege/Oetzendorf
+- closes: not probed
+
+### Biosphaerenreservate (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/5
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: CREDIT · source item page · "://www.gesetze-im-internet.de/geonutzv/GeoNutzV.pdf ) genutzt werden. © Bundesamt für Naturschutz (BfN) 2026, Daten bearbeitet Bundesamt für Naturschutz (BfN) 20" · item https://www.arcgis.com/home/item.html?id=2beeb8ed32d94730b5b70750ba434a4d · owner esri_DE_content · org Esri Deutschland
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 54 records · last edit 2026-10-27 · sample Schorfheide-Chorin / Spreewald / Biosphärenreservat Südost-Rügen
+- closes: not probed
+
+### Vogelschutzgebiete (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/6
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: CREDIT · source item page · "://www.gesetze-im-internet.de/geonutzv/GeoNutzV.pdf ) genutzt werden. © Bundesamt für Naturschutz (BfN) 2026, Daten bearbeitet Bundesamt für Naturschutz (BfN) 20" · item https://www.arcgis.com/home/item.html?id=2beeb8ed32d94730b5b70750ba434a4d · owner esri_DE_content · org Esri Deutschland
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 742 records · last edit 2026-10-27 · sample Kämmericher Senke / Schlei / Staatsforsten Barlohe
+- closes: not probed
+
+### Nationale_Naturmonumente (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/7
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (Esri in the publisher words)
+- terms: CREDIT · source item page · "://www.gesetze-im-internet.de/geonutzv/GeoNutzV.pdf ) genutzt werden. © Bundesamt für Naturschutz (BfN) 2026, Daten bearbeitet Bundesamt für Naturschutz (BfN) 20" · item https://www.arcgis.com/home/item.html?id=2beeb8ed32d94730b5b70750ba434a4d · owner esri_DE_content · org Esri Deutschland
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 8 records · last edit 2026-10-27 · sample Grünes Band Hessen / Grünes Band Thüringen / Bruchhauser Steine
+- closes: not probed
+
+### NatDA - IUCN management categories - small scale viewing (ra (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv24_Dyna_WM/MapServer/2
+- WHY: no polygons (no geometry)
+- publisher: ? → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv24_Dyna_WM/MapServer/info/iteminfo
+- facts: arcgis-layer
+- closes: not probed
+
+### friluftsliv_kartlagt_verdi (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_kartlagt/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a government word of the country: Miljø)
+- terms: OPEN · source item page · "CCBY 4.0 Miljødirektoratet Miljødirektoratet" · item https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_kartlagt/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 43893 records
+- closes: not probed
+
+### naturvern_omrade (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kart.miljodirektoratet.no/arcgis/rest/services/vern/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a government word of the country: Miljø)
+- terms: CREDIT · source item page · "NLOD Miljødirektoratet" · item https://kart.miljodirektoratet.no/arcgis/rest/services/vern/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 3514 records
+- closes: not probed
+
+### naturvern_omraade (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kart3.miljodirektoratet.no/arcgis/rest/services/vern/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "NLOD (https://data.norge.no/nlod) Miljodirektoratet" · item https://kart3.miljodirektoratet.no/arcgis/rest/services/vern/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 3514 records
+- closes: not probed
+
+### ProtectedAreas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arcgis.sdi.abudhabi.ae/agspublish/rest/services/OpenData/ADSDI_OpenData/MapServer/127
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://arcgis.sdi.abudhabi.ae/agspublish/rest/services/OpenData/ADSDI_OpenData/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME_AR · 19 records · sample محمية السراب / محمية المها العربي / الدلفاوية
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Naturreservat (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kartor.regeringen.ax/arcgis/rest/services/Miljo/Skyddsomraden/MapServer/7
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: OPEN · source item page · "CC BY 4.0 © Ålands landskapsregering" · item https://kartor.regeringen.ax/arcgis/rest/services/Miljo/Skyddsomraden/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 62 records
+- closes: not probed
+
+### Natura 2000 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://kartor.regeringen.ax/arcgis/rest/services/Miljo/Skyddsomraden/MapServer/9
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: OPEN · source item page · "CC BY 4.0 © Ålands landskapsregering" · item https://kartor.regeringen.ax/arcgis/rest/services/Miljo/Skyddsomraden/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 98 records
+- closes: not probed
+
+### lim_unidades_conservação_mma_a (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://pamgia.ibama.gov.br/server/rest/services/BasesSincronizadas/lim_unidades_conserva%C3%A7%C3%A3o_mma_a/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host pamgia.ibama.gov.br)
+- terms: CREDIT · source item page · "Secretaria de Biodiversidade, Florestas e Direitos AnimaisDepartamento de Áreas ProtegidasCadastro Nacional de Unidades de Conservação" · item https://pamgia.ibama.gov.br/server/rest/services/BasesSincronizadas/lim_unidades_conserva%C3%A7%C3%A3o_mma_a/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 3471 records
+- closes: not probed
+
+### Protected areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.forest-atlas.org/server/rest/services/cod/Localisation_aacs_en/MapServer/102
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: Ministry)
+- terms: OPEN · source item page · "CC by 4.0 Ministry of the Environment and Sustainable Development, Ministry of Mines, Congolese" · item https://gis.forest-atlas.org/server/rest/services/cod/Localisation_aacs_en/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 74 records
+- closes: not probed
+
+### Protected Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.forest-atlas.org/server/rest/services/cog/Affectation_terre_en/MapServer/47
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government words: Ministry)
+- terms: CREDIT · source item page · "Copyrights go mainly to the Ministry of Forest Economy for Sustainable Development and Environment" · item https://gis.forest-atlas.org/server/rest/services/cog/Affectation_terre_en/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 16 records
+- closes: not probed
+
+### Áreas Protegidas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/MapServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NombreOriginal · 246 records · sample La Portada / Cerro Ñielol / Cinco Hermanas
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Áreas Protegidas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ingtgeo.gov.cv/arcgisingt/rest/services/SDI/areas_protegidas_2022/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "INGT, DNA" · item https://ingtgeo.gov.cv/arcgisingt/rest/services/SDI/areas_protegidas_2022/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 47 records
+- closes: not probed
+
+### Sistema Nacional de Áreas Protegidas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geovisorm.controlrecursosyenergia.gob.ec/arcgis/rest/services/MAAE_WGS84_17S/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "MAAE MAAE" · item https://geovisorm.controlrecursosyenergia.gob.ec/arcgis/rest/services/MAAE_WGS84_17S/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 60 records
+- closes: not probed
+
+### Ramsar øki (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.us.fo/arcgis/rest/services/ramsar/us_ramsar_oki/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: CREDIT · source item page · "©Umhvørvisstovan" · item https://gis.us.fo/arcgis/rest/services/ramsar/us_ramsar_oki/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 3 records
+- closes: not probed
+
+### Aires protegées (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.forest-atlas.org/server/rest/services/gab/forest_gabon/MapServer/25
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ? → not official (ESRI in the publisher words)
+- terms: CREDIT · source item page · "Ce jeu de données est produit par le MEFMEPCTAT et WRI avec le soutien de l'Environnement de Norvège et le Département pour le Développement International de le" · item https://gis.forest-atlas.org/server/rest/services/gab/forest_gabon/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 14 records
+- closes: not probed
+
+### Recycling points (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "(c) States of Guernsey 2017" · item https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint
+- closes: not probed
+
+### Boundaries 2010 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/11
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "(c) States of Guernsey 2017" · item https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline
+- closes: not probed
+
+### Habitat Vegetation 2010 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/12
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "(c) States of Guernsey 2017" · item https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon
+- closes: not probed
+
+### Boundaries 1999 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/14
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "(c) States of Guernsey 2017" · item https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline
+- closes: not probed
+
+### Habitat Vegetation 1999 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/15
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "(c) States of Guernsey 2017" · item https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon
+- closes: not probed
+
+### Area of Biodiversity Importance - Foreshore  (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/4
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "(c) States of Guernsey 2017" · item https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon
+- closes: not probed
+
+### Streams (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/7
+- WHY: no polygons (esriGeometryPolyline)
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "(c) States of Guernsey 2017" · item https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolyline
+- closes: not probed
+
+### Water Catchment (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/9
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (a government word of the country: Environment)
+- terms: CREDIT · source item page · "(c) States of Guernsey 2017" · item https://gps.digimap.gg/arcgis/rest/services/StatesOfGuernsey/EnvironmentalOL/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon
+- closes: not probed
+
+### AFCD Gazetted Country Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ginfo.cedd.gov.hk/server/rest/services/Basemap/MapServer/291
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://ginfo.cedd.gov.hk/server/rest/services/Basemap/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Особо охраняемые природные территорий (полигоны) (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arcgis.gharysh.kz/server/rest/services/Open_MCHS/Open_MCHS/MapServer/101
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://arcgis.gharysh.kz/server/rest/services/Open_MCHS/Open_MCHS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 76 records · sample Алматинский государственный природный заповедник / Маркакольский государственный природный заповедник / Алакольский государственный природный заповедник
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Protected Area Network (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gisapps.nsdi.gov.lk/server/rest/services/Srilanka/Biota/MapServer/1
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://gisapps.nsdi.gov.lk/server/rest/services/Srilanka/Biota/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 119 records · sample Kotte marsh_2 / Kotte marsh_1 / Kolonnawa_2
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### National Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.forest-atlas.org/server/rest/services/lbr/forest_atlas/MapServer/2
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://gis.forest-atlas.org/server/rest/services/lbr/forest_atlas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 14 records · sample Gbi Krahn-Bassa / Kpo Mountains / Foya
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Reserves (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.forest-atlas.org/server/rest/services/lbr/forest_atlas/MapServer/3
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://gis.forest-atlas.org/server/rest/services/lbr/forest_atlas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 2 records · sample Lake Piso / East Nimba
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Заштитени подрачја (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://portal.app.gov.mk/arcgis/rest/services/PPRSM/karta37_PPRSM_namena_na_zemjiste_WMS_novo/MapServer/94
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://portal.app.gov.mk/arcgis/rest/services/PPRSM/karta37_PPRSM_namena_na_zemjiste_WMS_novo/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SiteName · 91 records
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Reservas/Parques Nacionais (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://www.mozgis.gov.mz/server/rest/services/Data/%C3%81rea_Protegida/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://www.mozgis.gov.mz/server/rest/services/Data/%C3%81rea_Protegida/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 11 records
+- closes: not probed
+
+### ANPAdministracionNacionalDefinitivas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geoservicios.sernanp.gob.pe/arcgis/rest/services/servicios_ogc/peru_sernanp_0102/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geoservicios.sernanp.gob.pe)
+- terms: CREDIT · source item page · "SERNANP" · item https://geoservicios.sernanp.gob.pe/arcgis/rest/services/servicios_ogc/peru_sernanp_0102/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 104 records
+- closes: not probed
+
+### ANPAdministracionNacionalTransitorias (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geoservicios.sernanp.gob.pe/arcgis/rest/services/servicios_ogc/peru_sernanp_0102/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geoservicios.sernanp.gob.pe)
+- terms: CREDIT · source item page · "SERNANP sernanp.gob.pe" · item https://geoservicios.sernanp.gob.pe/arcgis/rest/services/servicios_ogc/peru_sernanp_0102/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 6 records
+- closes: not probed
+
+### ANPAdministracionRegional (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geoservicios.sernanp.gob.pe/arcgis/rest/services/servicios_ogc/peru_sernanp_0102/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geoservicios.sernanp.gob.pe)
+- terms: CREDIT · source item page · "SERNANP" · item https://geoservicios.sernanp.gob.pe/arcgis/rest/services/servicios_ogc/peru_sernanp_0102/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 48 records
+- closes: not probed
+
+### ANPAdministracionPrivada (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://geoservicios.sernanp.gob.pe/arcgis/rest/services/servicios_ogc/peru_sernanp_0102/MapServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host geoservicios.sernanp.gob.pe)
+- terms: CREDIT · source item page · "SERNANP" · item https://geoservicios.sernanp.gob.pe/arcgis/rest/services/servicios_ogc/peru_sernanp_0102/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 233 records
+- closes: not probed
+
+### Areas_Silvestres_Protegidas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://visor.infona.gov.py/server/rest/services/Areas_Silvestres_Protegidas/Areas_Silvestres_Protegidas/MapServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://visor.infona.gov.py/server/rest/services/Areas_Silvestres_Protegidas/Areas_Silvestres_Protegidas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field nombre · 116 records · sample YBYCUI / MACIZO ACAHAY / SANTA ELENA (CAVERNA, VALLEMI)
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### ProtectedAreas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.gisqatar.org.qa/server/rest/services/Vector/Protected_Areas/FeatureServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://services.gisqatar.org.qa/server/rest/services/Vector/Protected_Areas/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITENAME · 13 records · sample Al Mashabiya / Al Thakhira / Al Reem
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### lay_up_javne_povrsine_2013 (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis1.ljubljana.si/arcgis/rest/services/MOLENP/MapServer/35
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://gis1.ljubljana.si/arcgis/rest/services/MOLENP/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 3459 records
+- closes: not probed
+
+### Chránené územia podľa zákona NR SR č. 287/1994 Z. z. o ochra (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://arc.sazp.sk/arcgis/rest/services/atlassr/atlassr_08/MapServer/220
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source item page · item https://arc.sazp.sk/arcgis/rest/services/atlassr/atlassr_08/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 64 records
+- closes: not probed
+
+### ENV_DB.LDR.World_Heritage_Site (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host paca.environment.gov.za)
+- terms: NOTHING STATED · source item page · item https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 9 records
+- closes: not probed
+
+### ENV_DB.LDR.National_Park (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host paca.environment.gov.za)
+- terms: NOTHING STATED · source item page · item https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 26 records
+- closes: not probed
+
+### ENV_DB.LDR.Nature_Reserve (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host paca.environment.gov.za)
+- terms: NOTHING STATED · source item page · item https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 1441 records
+- closes: not probed
+
+### ENV_DB.LDR.Forest_Nature_Reserve (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host paca.environment.gov.za)
+- terms: NOTHING STATED · source item page · item https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 57 records
+- closes: not probed
+
+### ENV_DB.LDR.Forest_Wilderness_Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/4
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host paca.environment.gov.za)
+- terms: NOTHING STATED · source item page · item https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 12 records
+- closes: not probed
+
+### ENV_DB.LDR.Marine_Protected_Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/5
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host paca.environment.gov.za)
+- terms: NOTHING STATED · source item page · item https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 42 records
+- closes: not probed
+
+### ENV_DB.LDR.Mountain_Catchment _Area (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/6
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host paca.environment.gov.za)
+- terms: NOTHING STATED · source item page · item https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 16 records
+- closes: not probed
+
+### ENV_DB.LDR.Protected_Environment (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/7
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host paca.environment.gov.za)
+- terms: NOTHING STATED · source item page · item https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 55 records
+- closes: not probed
+
+### ENV_DB.LDR.Special_Nature_Reserve (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/8
+- WHY: no name field: an outline needs a name to match a park
+- publisher: ? → official (government host paca.environment.gov.za)
+- terms: NOTHING STATED · source item page · item https://paca.environment.gov.za/par/rest/services/PACA/SAPAD/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 2 records
 - closes: not probed
 
 ## Known-answer test rows
