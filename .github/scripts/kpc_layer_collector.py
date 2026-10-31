@@ -247,7 +247,10 @@ def external(log, qs, queue, seen, n):
     """Brandon's outside research: each (park or trail, layer) the researcher assigned, tested like a LAYER line: polygon layers =
     one multipoint query per 120 POTA pins (pin inside + name tier); line layers (trails) = the pin within 200 m of a named line.
     SURE / LIKELY -> chat 11 (data/waiting/questions/layers.json); every layer it touched -> the intake queue (publisher + licence test)."""
-    D = load(EXT_F, {}) or {}
+    D = {}
+    for f in sorted(EXT_F.parent.glob('external-sources-*.json')):   # Brandon Oct 30 7:43 PM: more workbooks coming: every external-sources-<name>.json is read
+        for key, urls in (load(f, {}) or {}).items():
+            if isinstance(urls, list) and '|' in key: D.setdefault(key, []).extend(u for u in urls if u not in D.get(key, []))
     if not D: return None
     P = ext_index(); KN = known_layers(); t0 = time.time()
     R = load(EXT_OUT, {'about': "Outside research (Oct 30) tested by the layer collector: per park/trail and layer, what the pin test found. 'source assigned, exact feature not verified' until here.", 'pairs': {}, 'layers': {}}) or {}

@@ -10,6 +10,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: kpc-collector
   cancel-in-progress: false
@@ -51,7 +52,7 @@ jobs:
           echo "fp=$F" >> "$GITHUB_OUTPUT"
           # Oct 30 (HQ 7:45 PM): Brandon's outside-research pairs still untested = work (from Oct 31; tonight = the one hand run)
           LEFT=$(python3 -c "import json;print(json.load(open('kpcdata/data/intake/external-results.json'))['summary']['pairs left'])" 2>/dev/null || echo 1)
-          if [ "$LEFT" != 0 ] && [ "$(date -u +%Y%m%d)" -ge 20261031 ] && [ -f kpcdata/data/intake/external-sources-oct30.json ]; then O=changed; fi
+          if [ "$LEFT" != 0 ] && ls kpcdata/data/intake/external-sources-*.json >/dev/null 2>&1; then O=changed; fi   # Brandon 7:43 PM: run straight through
           if [ "$F" = "$O" ] && [ "${{ github.event_name }}" = schedule ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Layer collector::nothing new"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi
       - name: Collect + pin-test
         if: ${{ steps.fp.outputs.work == '1' }}
@@ -65,3 +66,11 @@ jobs:
           python3 .github/scripts/kpc_week_numbers.py || true   # the control panel's numbers, fresh after each collector run
           python3 .github/scripts/kpc_status.py board "Layer collector" green "LAYER lines + crawler layers pin-tested" "chat 11 answers data/waiting/questions/layers.json" || true
           bash ../links/.github/scripts/kpc_push_data.sh . "layer collector: LAYER lines + crawler layers (questions for chat 11)" data/intake data/waiting/questions data/status || true
+      - name: Straight through (Brandon Oct 30 7:43 PM) - outside-research pairs left = start the next run now
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          LEFT=$(python3 -c "import json;print(json.load(open('kpcdata/data/intake/external-results.json'))['summary']['pairs left'])" 2>/dev/null || echo 0)
+          echo "::notice title=Outside research::$LEFT pairs left"
+          if [ "$LEFT" != 0 ]; then gh workflow run kpc-collector.yml -R ${{ github.repository }} --ref main || true; fi
