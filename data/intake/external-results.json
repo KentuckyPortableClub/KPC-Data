@@ -32276,6 +32276,24 @@
    "kind": "Parks",
    "result": "failed",
    "why": "RuntimeError: no name field (SURVEY_PROTECTED_AREA_ID, PARCEL_ID_NUMBER, PARCEL_DESIGNATOR, CL"
+  },
+  "US-8103|https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2": {
+   "ref": "US-8103",
+   "kind": "Parks",
+   "result": "no hit",
+   "why": "the pin is not inside (or within 200 m of) any record"
+  },
+  "US-2081|https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2": {
+   "ref": "US-2081",
+   "kind": "Parks",
+   "result": "no hit",
+   "why": "the pin is not inside (or within 200 m of) any record"
+  },
+  "US-8082|https://gisservices.dec.ny.gov/arcgis/rest/services/dil/dil_land_activities/MapServer/2": {
+   "ref": "US-8082",
+   "kind": "Parks",
+   "result": "no hit",
+   "why": "the pin is not inside (or within 200 m of) any record"
   }
  },
  "layers": {
@@ -32508,7 +32526,7 @@
   "https://services1.arcgis.org/KbxwQRRfWyEYLgp4/ArcGIS/rest/services/National_Scenic_and_Historic_Trails_NSHT/FeatureServer/0": {
    "new_to_us": true,
    "host": "services1.arcgis.org",
-   "tries": 1,
+   "tries": 2,
    "error": "RuntimeError: answer rest"
   },
   "https://services3.arcgis.com/E0jzW6yplmtrRw7o/ArcGIS/rest/services/Wildlife_Management_Areas/FeatureServer/6": {
@@ -32947,7 +32965,7 @@
   "https://gis2.idaho.gov/arcgis/rest/services/DPR/Idaho_Trails_Map/MapServer": {
    "new_to_us": true,
    "host": "gis2.idaho.gov",
-   "tries": 1,
+   "tries": 2,
    "error": "RuntimeError: answer rest"
   },
   "https://gis2.statelands.wyo.gov/arcgis/rest/services/WyoStateParks/MapServer": {
@@ -33147,7 +33165,7 @@
   "https://arcgis.mdwfp.com/arcgis/rest/services/Public/Public_WMA_Data/MapServer": {
    "new_to_us": true,
    "host": "arcgis.mdwfp.com",
-   "tries": 1,
+   "tries": 2,
    "error": "RuntimeError: answer rest"
   },
   "https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70": {
@@ -33256,7 +33274,7 @@
   "https://nhnm-gisweb.unm.edu/arcgis/rest/services/NMEDB/NM_State_Parks/MapServer/0": {
    "new_to_us": true,
    "host": "nhnm-gisweb.unm.edu",
-   "tries": 1,
+   "tries": 2,
    "error": "RuntimeError: answer rest"
   },
   "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0": {
@@ -33301,7 +33319,8 @@
    "tries": 1,
    "geometry": "esriGeometryPolygon",
    "title": "Wildlife Management Areas",
-   "error": "RuntimeError: answer 404"
+   "error": "RuntimeError: answer 404",
+   "name_field": "WMA"
   },
   "https://gisservices.dec.ny.gov/arcgis/rest/services/hvnrm/hvnrm_scenic_and_recreation/MapServer/4": {
    "new_to_us": true,
@@ -34057,13 +34076,13 @@
   "https://arcgis.mdwfp.com/arcgis/rest/services/Public/Public_Lakes/MapServer/3": {
    "new_to_us": true,
    "host": "arcgis.mdwfp.com",
-   "tries": 1,
+   "tries": 2,
    "error": "RuntimeError: answer rest"
   },
   "https://arcgis.mdwfp.com/arcgis/rest/services/Public/Public_WMA_Data/MapServer/2": {
    "new_to_us": true,
    "host": "arcgis.mdwfp.com",
-   "tries": 1,
+   "tries": 2,
    "error": "RuntimeError: answer rest"
   },
   "https://gis.mississippi.edu/server/rest/services/Administrative/MS_WildlifeManagementAreas_2019/MapServer": {
@@ -34279,13 +34298,13 @@
   "Parks SURE": 15,
   "Parks UNLIKELY": 267,
   "Parks failed": 1426,
-  "Parks no hit": 842,
+  "Parks no hit": 845,
   "Trail LIKELY": 57,
   "Trail SURE": 113,
   "Trail UNLIKELY": 245,
   "Trail failed": 939,
   "Trail no hit": 1203,
-  "pairs left": 69,
+  "pairs left": 66,
   "new layers": 236
  },
  "built": "2026-10-31"
