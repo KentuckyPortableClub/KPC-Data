@@ -107,13 +107,15 @@
    "questions": {
     "gis-hunter": {
      "- YES": 81,
-     "rows": 484,
+     "rows": 534,
      "- NO": 342,
      "SURE YES": 3,
      "SURE NO": 3,
      "LIKELY NO": 28,
      "LIKELY YES": 11,
-     "- open": 16
+     "- open": 16,
+     "SURE open": 47,
+     "LIKELY open": 3
     },
     "key-pieces": {
      "- NO": 80,
@@ -123,12 +125,12 @@
     },
     "layers": {
      "LIKELY YES": 4,
-     "rows": 282,
+     "rows": 838,
      "LIKELY NO": 33,
      "SURE NO": 2,
      "SURE YES": 4,
-     "LIKELY open": 99,
-     "SURE open": 140
+     "LIKELY open": 242,
+     "SURE open": 553
     },
     "not-sure-for-chat9": {
      "- open": 146,
@@ -157,11 +159,11 @@
      "RETRY": 269,
      "approved": 2
     },
-    "queue rows": 1447,
+    "queue rows": 1562,
     "collector": {
      "asked": 45,
      "evidence": 9,
-     "failed": 127,
+     "failed": 154,
      "no match": 54
     },
     "finders found": 148
