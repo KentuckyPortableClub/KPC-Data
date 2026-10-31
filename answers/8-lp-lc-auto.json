@@ -1,0 +1,80 @@
+{
+ "request": "requests/8-lp-lc-auto.json",
+ "id": "8-lp-lc-auto",
+ "chat": 8,
+ "kind": "layer-probe",
+ "report": "Found the UPDATED Lewis and Clark NHT Auto Route (data.gov: 'LECL Auto Route Final Combined', last updated Nov 26 2025, says it connects all 16 trail states incl. PA/WV/OH/KY/IN/IL -- replaces the 2017 Illinois-to-Oregon-only auto route currently wired in trails-hand.json). Please confirm layer 0 exists and returns features, and list field names (looking for a segment/state name field). Also check if there's more than one sub-layer (0, 1, 2...) since 'Final Combined' may merge several route pieces.",
+ "asked": {
+  "chat": 8,
+  "kind": "layer-probe",
+  "layers": [
+   "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/LECL_Lewis_and_Clark_NHT_Auto_Route_Final_Combined/FeatureServer/0"
+  ],
+  "report": "Found the UPDATED Lewis and Clark NHT Auto Route (data.gov: 'LECL Auto Route Final Combined', last updated Nov 26 2025, says it connects all 16 trail states incl. PA/WV/OH/KY/IN/IL -- replaces the 2017 Illinois-to-Oregon-only auto route currently wired in trails-hand.json). Please confirm layer 0 exists and returns features, and list field names (looking for a segment/state name field). Also check if there's more than one sub-layer (0, 1, 2...) since 'Final Combined' may merge several route pieces."
+ },
+ "answered": "2026-10-31 04:11Z",
+ "results": [
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/LECL_Lewis_and_Clark_NHT_Auto_Route_Final_Combined/FeatureServer/0",
+   "answers": true,
+   "service": "LECL_Lewis_and_Clark_NHT_Auto_Route_Final_Combined",
+   "licence": "",
+   "years_in_text": [],
+   "description": "",
+   "item_licence": "The National Park Service shall not be held liable for improper or incorrect use of the data described and/or contained herein. These data and related graphics (i.e. GIF or JPG format files) are not legal documents and are not intended to be used as such. The information contained in these data is d",
+   "item_modified": "2026-03-18",
+   "item_owner": "rmcooper@nps.gov_nps",
+   "item_org": "National Park Service",
+   "item_title": "LECL Lewis and Clark NHT Auto Route Final Combined",
+   "item_credits": "Lewis and Clark National Historic Trail Virtual Student Federal Service (VSFS) Interns: Casey Harper, Cat Schooley, Chelsea Gross, Claire Alcorn, Evan Stone, Nicolas Hurst, Rodger Plack, Tess Hennessee, Tyler Simmons",
+   "item_about": "As of 2025, this data set represents the official National Park Service centerline of the Lewis and Clark National Historic Trail Auto Route. The spatial data was created by the National Park Service with the assistance of interns from the U.S. Department of State Virtual Student Federal Service program. This layer was derived from roads data using TIGER/Line shapefiles from the U.S. Census Bureau. The Lewis and Clark National Historic Trail Auto Route is a system of roads and highways bracketing each side of the Lewis and Clark National Historic Trail, which commemorates the 1803-1806 expedit",
+   "layers": [
+    {
+     "id": null,
+     "name": "LECL_Lewis_and_Clark_NHT_Auto_Route_Final_Combined",
+     "geom": "Polyline",
+     "nameField": "FULLNAME",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "FID",
+      "LINEARID",
+      "FULLNAME",
+      "RTTYP",
+      "MTFCC",
+      "Shape_Leng",
+      "Shape_Le_1",
+      "ORIG_FID",
+      "Shape_Le_2",
+      "Shape__Length"
+     ],
+     "last_edit": "2026-03-18",
+     "layer_copyright": "",
+     "records": 3396,
+     "sample": [
+      " ",
+      "N Roosevelt Dr",
+      "S Roosevelt Dr",
+      "E Columbia River Hwy",
+      "E Columbia River Hwy",
+      "W Marine Dr",
+      "W Marine Dr",
+      "US Hwy 30"
+     ]
+    }
+   ]
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
