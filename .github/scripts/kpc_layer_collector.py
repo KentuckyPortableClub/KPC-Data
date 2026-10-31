@@ -231,6 +231,9 @@ def ext_index():
             if v and len(v) > 6 and v[5] is not None: out[r] = (v[5], v[6], v[0], f.stem)
     for r, v in ((load('data/parkinfo/CA.json', {}) or {}).get('parks') or {}).items():   # HQ 8:50 PM: Canada too
         if v and len(v) > 10 and v[5] is not None: out[r] = (v[5], v[6], v[0], f'CA-{v[10]}')
+    for f in pathlib.Path('data/pota/t').glob('*.json'):   # the world: POTA's own pins
+        for row in load(f, []) or []:
+            if row and len(row) > 3 and row[0] not in out and not str(row[0]).startswith(('US-', 'CA-')): out[row[0]] = (row[2], row[3], row[1], 'W-' + str(row[0]).split('-')[0])
     return out
 
 
@@ -257,13 +260,32 @@ def external(log, qs, queue, seen, n):
     P = ext_index(); KN = known_layers(); t0 = time.time()
     R = load(EXT_OUT, {'about': "Outside research (Oct 30) tested by the layer collector: per park/trail and layer, what the pin test found. 'source assigned, exact feature not verified' until here.", 'pairs': {}, 'layers': {}}) or {}
     R.setdefault('pairs', {}); R.setdefault('layers', {})
+    HINT = {}
+    for f in sorted(EXT_F.parent.glob('world-sources-*.json')):   # HQ Oct 31 1:05 AM: world outside research ('rest' = REST layers; 'other' = leads for chat 9)
+        for ref, v in ((load(f, {}) or {}).get('rest') or {}).items():
+            if isinstance(v, dict) and v.get('layer'):
+                D.setdefault(f'Parks|{ref}', [])
+                if v['layer'] not in D[f'Parks|{ref}']: D[f'Parks|{ref}'].append(v['layer'])
+                if v.get('field'): HINT[v['layer'].rstrip('/')] = v['field']
     by = {}
     for key, urls in D.items():
         kind, ref = key.split('|', 1)
         for u in urls or []: by.setdefault(u.rstrip('/'), []).append((ref, kind))
-    def order(u):   # Delaware first (HQ: one small state first), then US order by state
-        sts = sorted({(P.get(r) or (0, 0, '', 'US-ZZ'))[3] for r, _ in by[u]})
-        return (0 if 'US-DE' in sts else 1, 0 if any(x.startswith('US-') for x in sts) else 1, sts[0] if sts else 'US-ZZ', u)   # US first, then Canada
+    # a service ROOT (…/MapServer with no layer number): its polygon / line layers, each tested (Oct 31: 31 roots had 'no name field')
+    roots = R.setdefault('roots', {})
+    for u in [x for x in list(by) if re.search(r'/(MapServer|FeatureServer)$', x, re.I)]:
+        if u not in roots:
+            try:
+                j = get_json(u)
+                roots[u] = [f"{u}/{l['id']}" for l in j.get('layers') or [] if not l.get('subLayerIds') and 'oint' not in str(l.get('geometryType', ''))][:12]
+            except Exception as e: roots[u] = []; R['layers'].setdefault(u, {})['error'] = f'service root did not open: {str(e)[:60]}'  # noqa: BLE001
+        kids = roots[u]
+        if kids:
+            for c in kids: by.setdefault(c, []).extend(x for x in by[u] if x not in by.get(c, []))
+            for r, k in by.pop(u): R['pairs'].setdefault(f'{r}|{u}', {'ref': r, 'kind': k, 'result': 'split', 'why': f'service root: tested on its {len(kids)} layers'})
+    def order(u):   # Delaware first (the small test), then US, Canada, North America, W1-W10, the rest (kpc_order)
+        sts = sorted({(P.get(r) or (0, 0, '', 'ZZ-ZZ'))[3] for r, _ in by[u]})
+        return (0 if 'US-DE' in sts else 1, 0 if any(x.startswith('US-') for x in sts) else 1, min((O.rank(x) for x in sts), default=(9, 0)), sts[0] if sts else 'ZZ', u)
     for u in sorted(by, key=order):
         if time.time() - t0 > EXT_MIN * 60: break   # the rest next run (pairs already done are skipped)
         todo = [(r, k) for r, k in by[u] if f'{r}|{u}' not in R['pairs']]
@@ -276,7 +298,8 @@ def external(log, qs, queue, seen, n):
             names = [f_['name'] for f_ in flds]
             strs = [f_['name'] for f_ in flds if 'String' in str(f_.get('type', ''))] or names
             df = meta.get('displayField')
-            fld = (next((nm for nm in names if NAMEF.search(nm)), None)
+            fld = ((HINT.get(u) if HINT.get(u) in names else None)   # the researcher's own field
+                   or next((nm for nm in names if NAMEF.search(nm)), None)
                    or (df if df in strs else None)   # the layer's own display field
                    or next((nm for nm in strs if re.search(r'name|_nm$|nm$|^nom|titre|title|label|desc', nm, re.I) and not re.search(r'file|admin|agency|owner|county|state|type|code', nm, re.I)), None)
                    or next((nm for nm in strs if re.search(r'name|_nm$|nm$', nm, re.I)), None))
@@ -343,7 +366,9 @@ def external(log, qs, queue, seen, n):
             seen.add(u)
         json.dump(R, open(EXT_OUT, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)   # saved as it goes (a timeout loses nothing)
     c = {}
-    for v in R['pairs'].values(): c[(v['kind'], v['result'])] = c.get((v['kind'], v['result']), 0) + 1
+    for v in R['pairs'].values():
+        g = 'US' if v['ref'].startswith('US-') else 'Canada' if v['ref'].startswith('CA-') else 'World'
+        c[(f"{g} {v['kind']}", v['result'])] = c.get((f"{g} {v['kind']}", v['result']), 0) + 1
     R['summary'] = {f'{k} {r}': x for (k, r), x in sorted(c.items())}
     R['summary']['pairs left'] = sum(1 for u in by for r, _ in by[u] if f'{r}|{u}' not in R['pairs'])
     R['summary']['new layers'] = sum(1 for l in R['layers'].values() if l.get('new_to_us'))
