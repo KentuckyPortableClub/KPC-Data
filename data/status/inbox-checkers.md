@@ -56,7 +56,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT official documents bot (2026-10-31): grade me: US-IA US-AZ US-NM US-CA US-OR US-WA US-AK US-HI data/docs/<area>.json + review.md — chunk 1 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41181282483)
 - FROM BOT official documents bot (2026-10-31): grade me: US-IA US-CA US-OR US-WA US-AK US-HI US-MI US-OH data/docs/<area>.json + review.md — chunk 2 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41181282483)
 - FROM BOT official documents bot (2026-10-31): grade me: US-IA US-OR US-WA US-AK US-HI US-MI US-OH US-UT data/docs/<area>.json + review.md — chunk 3 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41181282483)
-- FROM BOT 2-fer line (chat 2; 2026-10-31): grade me: US-LA (la) — READY · known 19/19 on 2026-10-30 · US-LA: live 8, not sure 0, water only 1 · files data/fers/<state>.json + line-la.json + missing-la.json · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41194655861)
+- FROM BOT 2-fer line (chat 2; 2026-10-31): STOPPED (not for grading): CA-BC (cabc) — water not checked: CA-BC: 12 rows (the USGS water map / files had no answer there): never READY with one · CA-BC: live 45, not sure 52, water only 0 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41194649275)
 - FROM WAITING ROOM (held since 2026-10-31): campinfo data/campinfo/US-MA.json held: F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-AR.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-AZ.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
@@ -92,7 +92,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-WA.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): docs data/docs/US-WI.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-WY.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
-- FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/CA-BC.json held: F-2 NOT SURE 13 -> 18 (over 30% change)
+- FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/CA-BC.json held: F-2 NOT SURE 13 -> 52 (over 30% change)
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/CA-NB.json held: F-S3 10 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-6540+CA-6549 125 km, CA-6542+CA-6545 114 km
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/CA-NU.json held: F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-4569+CA-4594 202 km
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/CA-ON.json.gz held: F-S3 54 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-0154+CA-0304 102 km, CA-0444+CA-1699 118 km

@@ -1,0 +1,22 @@
+{
+ "filter": {
+  "rule": "pairs expected only from POTA history are kept when the outlines are within 1000 m (box to box), or a park has no outline, or one session logged both",
+  "left_out_far": 0,
+  "kept_no_outline": 0,
+  "kept_same_session": 0,
+  "kept_not_measured": 0,
+  "outlines_measured": 0
+ },
+ "about": "MISSING CHECK (chat 2, Oct 27 2026; HQ 3:46 PM, Brandon: 'chat 8 can't verify what's missing'). For each area of a 2-fer run, every See kpc_fers_expected.py. Chat 8 reviews DROPPED + NEVER LOOKED AT.",
+ "area": "CA-BC",
+ "date": "2026-10-31",
+ "pass": true,
+ "counts": {
+  "FOUND": 0,
+  "DROPPED": 0,
+  "NEVER LOOKED AT": 0
+ },
+ "FOUND": [],
+ "DROPPED": [],
+ "NEVER LOOKED AT": []
+}
