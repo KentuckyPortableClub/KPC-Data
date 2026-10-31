@@ -109,7 +109,7 @@
    "status": "failed",
    "parks": 181,
    "updated": "2026-10-31",
-   "why": "maps 82 -> 63"
+   "why": "maps 82 -> 64"
   },
   "US-ND": {
    "status": "done",
@@ -273,10 +273,24 @@
    "updated": "2026-10-31"
   },
   "US-MT": {
-   "status": "partial",
+   "status": "done",
    "parks": 254,
-   "checked": 175,
-   "left": 79,
+   "checked": 254,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-NV": {
+   "status": "done",
+   "parks": 367,
+   "checked": 367,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-AZ": {
+   "status": "partial",
+   "parks": 123,
+   "checked": 29,
+   "left": 94,
    "updated": "2026-10-31"
   }
  },
@@ -299,32 +313,33 @@
   "www.wildhorsesonline.blm.gov": 1793513189.776288,
   "www.dfg.idaho.gov": 1793513234.0375862,
   "www.idfg.idaho.goc": 1793513355.179098,
-  "www.idfg.idah.gov": 1793513445.116335
+  "www.idfg.idah.gov": 1793513445.116335,
+  "www.sangres.com": 1793517776.629486
  },
  "last": {
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-ID",
    "US-MT",
    "US-NV",
    "US-AZ",
    "US-NM",
    "US-CA",
-   "US-OR"
+   "US-OR",
+   "US-WA"
   ],
   "stat": {
-   "requests": 1375,
-   "parks": 699,
-   "maps_ok": 307,
-   "maps_found": 270,
-   "dates": 0,
-   "rules": 343,
-   "browser": 279,
-   "robots": 4,
-   "strikes": 21,
-   "errors": 21,
-   "skipped_fresh": 19
+   "requests": 1226,
+   "parks": 656,
+   "maps_ok": 278,
+   "maps_found": 255,
+   "dates": 1,
+   "rules": 347,
+   "browser": 237,
+   "robots": 12,
+   "strikes": 3,
+   "errors": 3,
+   "skipped_fresh": 175
   }
  }
 }
