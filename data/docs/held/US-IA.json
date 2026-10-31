@@ -987,17 +987,9 @@
    "page": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Big-Creek-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.iowadnr.gov/media/1248/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "how": "the page in a browser ('Big Creek State Park map and flyer \n(9.85 MB)\n.pdf')",
-    "page": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Big-Creek-State-Park",
-    "posted": "May 12, 2026",
-    "posted_how": "posted: the server's file date",
-    "checked": "2026-10-31",
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://www.iowadnr.gov/portals/idnr/uploads/parks/parkmaps/bigcreekma)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.iowadnr.gov/places-go/state-parks/parks-use-rules-guidelines",
@@ -1008,7 +1000,9 @@
    "agency": "government agency (iowadnr.gov)",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
    "map_tried": [
     {
@@ -1026,8 +1020,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7,
-   "browser_checked": "2026-10-31"
+   "ver": 7
   },
   "US-2282": {
    "n": "Blackhawk State Park",
@@ -1619,17 +1612,9 @@
    "page": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Lake-of-Three-Fires-State-Park",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.iowadnr.gov/media/1202/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "how": "the page in a browser ('Lake of Three Fires State Park map and flyer \n(10.8 MB)\n.pdf')",
-    "page": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Lake-of-Three-Fires-State-Park",
-    "posted": "Mar 25, 2026",
-    "posted_how": "posted: the server's file date",
-    "checked": "2026-10-31",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.iowadnr.gov/places-go/state-parks/parks-use-rules-guidelines",
@@ -1640,10 +1625,11 @@
    "agency": "government agency (iowadnr.gov)",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
-   "ver": 7,
-   "browser_checked": "2026-10-31"
+   "ver": 7
   },
   "US-2302": {
    "n": "Lake Wapello State Park",
@@ -4864,14 +4850,14 @@
  "read": "2026-10-31",
  "counts": {
   "parks": 181,
-  "map ok": 64,
-  "map found by the bot": 59,
+  "map ok": 62,
+  "map found by the bot": 57,
   "date on the map": 6,
-  "posted date only": 50,
+  "posted date only": 48,
   "date unknown": 8,
-  "no map": 117,
+  "no map": 119,
   "rules ok": 124,
-  "needs browser": 0,
+  "needs browser": 2,
   "handover hints": 0,
   "runs hints": 1,
   "host resting / robots": 0,

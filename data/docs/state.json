@@ -109,7 +109,7 @@
    "status": "failed",
    "parks": 181,
    "updated": "2026-10-31",
-   "why": "maps 82 -> 64"
+   "why": "maps 82 -> 62"
   },
   "US-ND": {
    "status": "done",
@@ -350,10 +350,17 @@
    "updated": "2026-10-31"
   },
   "US-UT": {
-   "status": "partial",
+   "status": "done",
    "parks": 692,
-   "checked": 640,
-   "left": 52,
+   "checked": 692,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "CA-ON": {
+   "status": "partial",
+   "parks": 1180,
+   "checked": 24,
+   "left": 1156,
    "updated": "2026-10-31"
   }
  },
@@ -390,26 +397,26 @@
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-AK",
-   "US-HI",
-   "US-MI",
-   "US-OH",
    "US-UT",
    "CA-ON",
-   "CA-QC"
+   "CA-QC",
+   "CA-NB",
+   "CA-NS",
+   "CA-PE",
+   "CA-NL"
   ],
   "stat": {
-   "requests": 1426,
-   "parks": 1360,
-   "maps_ok": 249,
-   "maps_found": 208,
-   "dates": 2,
-   "rules": 283,
-   "browser": 200,
-   "robots": 7,
-   "strikes": 6,
-   "errors": 6,
-   "skipped_fresh": 406
+   "requests": 695,
+   "parks": 257,
+   "maps_ok": 187,
+   "maps_found": 182,
+   "dates": 0,
+   "rules": 202,
+   "browser": 187,
+   "robots": 1,
+   "strikes": 0,
+   "errors": 0,
+   "skipped_fresh": 640
   }
  }
 }

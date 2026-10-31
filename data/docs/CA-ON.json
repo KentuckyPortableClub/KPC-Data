@@ -1,0 +1,686 @@
+{
+ "area": "CA-ON",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "CA-0023": {
+   "n": "Frontenac Arch Biosphere Reserve",
+   "t": "Biosphere Reserve",
+   "page": "https://en.unesco.org/biosphere/eu-na/frontenac-arch",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "CA-0027": {
+   "n": "Georgian Bay Littoral Biosphere Reserve",
+   "t": "Biosphere Reserve",
+   "page": "https://gbbr.ca",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (gbbr.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-0063": {
+   "n": "Niagara Escarpment Biosphere Reserve",
+   "t": "Biosphere Reserve",
+   "page": "https://escarpment.ca/see-our-preserves",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (escarpment.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-0177": {
+   "n": "Chapleau Crown Game Preserve",
+   "t": "Game Preserve",
+   "page": "https://chapleau.ca/visitors/attractions/chapleau-crown-game-preserve/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://chapleau.ca/visitors/attractions/ofsa-trail-maps/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('OFSA Trail Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (chapleau.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://chapleau.ca/visitors/attractions/location-maps/",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Location & Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "CA-0195": {
+   "n": "Morning Glory Provincial Nature Reserve",
+   "t": "Provincial Nature Reserve",
+   "page": "https://www.ontarioparks.com/park/duclospoint",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.ontarioparks.ca/park/duclospoint/maps)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "https://www.ontarioparks.ca/reservations/rules",
+    "how": "a link on the park's page ('Rules and Regulations')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.ontarioparks.ca/park/duclospoint/maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (ontarioparks.ca)"
+    }
+   ],
+   "ver": 7
+  },
+  "CA-0234": {
+   "n": "Ipperwash Dunes & Swales Nature Reserve",
+   "t": "Nature Reserve",
+   "page": "http://www.ontariotrails.on.ca/trails/view/ipperwash-dunes--swales",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (ontariotrails.on.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-0259": {
+   "n": "La Verendrye Provincial Park",
+   "t": "Provincial Park",
+   "page": "https://www.ontarioparks.com/park/laverendrye",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.ontarioparks.ca/park/laverendrye/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (ontarioparks.ca)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.ontarioparks.ca/reservations/rules",
+    "how": "a link on the park's page ('Rules and Regulations')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "CA-0268": {
+   "n": "Le Pate Provincial Park",
+   "t": "Provincial Park",
+   "page": "",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-1280": {
+   "n": "Abitibi Lake Narrows Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.ontario.ca/page/lake-abitibi-islands-provincial-park-management-statement",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://files.ontario.ca/418.1.1en-figure-1-regional-setting-large.jpg",
+    "status": "ok",
+    "kind": "image",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Enlarge Figure 1 - Regional Setting Map.')",
+    "posted": "Apr 05, 2016",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (files.ontario.ca)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Ontario Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-1298": {
+   "n": "Bannister Lake Complex Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://www.alltrails.com/trail/canada/ontario/bannister-lake-conservation-area-loop",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "CA-1300": {
+   "n": "Barron Canyon Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mcelroy.ca/notes/barron_canyon.html",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: robots https://mcelroy.ca/photo/map/10a-7204)",
+    "how": "a link on the park's page ('map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (mcelroy.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://mcelroy.ca/photo/map/10a-7204",
+     "status": "robots",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "CA-1301": {
+   "n": "Barron Canyon National Geologic Trail",
+   "t": "National Geologic Trail",
+   "page": "https://www.algonquinpark.on.ca/visit/recreational_activites/barron-canyon-trail.php",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.algonquinpark.on.ca/virtual/canoe_routes_map/index.php; opened, a page that does not name this park (a generic agency page is not its map) https://www.algonquinpark.on.ca/visit/services/advertisers-map-and-dat)",
+    "how": "a link on the park's page ('Canoe Routes Map Online')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (algonquinpark.on.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.algonquinpark.on.ca/virtual/canoe_routes_map/index.php",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Canoe Routes Map Online')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.algonquinpark.on.ca/visit/services/advertisers-map-and-database.php",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Commercial Services')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "CA-1305": {
+   "n": "Bat Cave Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://en.wikipedia.org/wiki/List_of_protected_areas_of_Ontario",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-1312": {
+   "n": "Beverly Swamp Conservation Area",
+   "t": "Conservation Area",
+   "page": "https://conservationhamilton.ca/beverly-swamp/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://conservationhamilton.ca/wp-content/uploads/2020/10/Hunting-Map; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://conservationhamilton.ca/wp-content/uploads/2025/10/Hamilton-Fi)",
+    "how": "a link on the park's page ('Beverly Swamp Hunting Map')"
+   },
+   "rules": {
+    "url": "https://conservationhamilton.ca/board-policies-and-guidelines/",
+    "how": "a link on the park's page ('Board Policies and Guidelines')",
+    "status": "ok"
+   },
+   "agency": "government agency (conservationhamilton.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://conservationhamilton.ca/wp-content/uploads/2020/10/Hunting-Map.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Beverly Swamp Hunting Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://conservationhamilton.ca/wp-content/uploads/2025/10/Hamilton-Firearms-and-Bow-Hunting-map.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Firearms and bow hunting map for Hamilton area')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "CA-1340": {
+   "n": "Cape Henrietta-Maria Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://www.ibacanada.com/mobile/site.jsp?siteID=ON130",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-1346": {
+   "n": "Cedar Valley Conservation Area",
+   "t": "Conservation Area",
+   "page": "https://www.alltrails.com/parks/canada/ontario/cedar-valley-conservation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "CA-1349": {
+   "n": "Remic Rapids and Bate Island Conservation Park",
+   "t": "Conservation Park",
+   "page": "https://ncc-ccn.gc.ca/places/remic-rapids-park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (ncc-ccn.gc.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-1366": {
+   "n": "Decew Falls Conservation Area",
+   "t": "Conservation Area",
+   "page": "https://ivebeenbit.ca/niagara-decew-falls-ontario/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (ivebeenbit.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-1368": {
+   "n": "North Maple Regional Park",
+   "t": "Regional Park",
+   "page": "https://www.vaughan.ca/about-city-vaughan/projects-and-initiatives/community-projects/north-maple-regional-park-nmrp",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (vaughan.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "CA-1386": {
+   "n": "Eau Claire Gorge Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://ontarioconservationareas.ca/conservation-areas/eau-claire-gorge/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ontarioconservationareas.ca/find-a-conservation-area/map/)",
+    "how": "a link on the park's page ('Conservation Areas Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (ontarioconservationareas.ca)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://ontarioconservationareas.ca/find-a-conservation-area/map/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Conservation Areas Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "CA-1394": {
+   "n": "Fairy Point Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.ontario.ca/laws/regulation/901098",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Ontario Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page is built by script",
+   "ver": 7
+  },
+  "CA-1408": {
+   "n": "Ganley Harbour Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.ontario.ca/laws/regulation/901098",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Ontario Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page is built by script",
+   "ver": 7
+  },
+  "CA-1439": {
+   "n": "Hilliardton Marsh Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://www.ontario.ca/page/hilliardton-marsh-conservation-reserve-management-statement",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Ontario Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "CA-1467": {
+   "n": "Kishkebus Lake Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.ontario.ca/laws/regulation/901098",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": null,
+   "agency": "Ontario Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page is built by script",
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 24,
+  "map ok": 3,
+  "map found by the bot": 3,
+  "date on the map": 0,
+  "posted date only": 1,
+  "date unknown": 2,
+  "no map": 21,
+  "rules ok": 3,
+  "needs browser": 7,
+  "handover hints": 0,
+  "runs hints": 0,
+  "host resting / robots": 0,
+  "map names the park": 2,
+  "region overview only": 0
+ }
+}

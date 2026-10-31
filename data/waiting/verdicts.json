@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T12:13Z",
+ "checked": "2026-10-31T13:09Z",
  "switched_on": false,
  "results": [
   {
@@ -583,9 +583,12 @@
   {
    "path": "data/fers/US-CO.json",
    "kind": "fers",
-   "why": [],
+   "why": [
+    "F-2 candidates 17 -> 40 (over 30% change)",
+    "F-2 23 new candidate pairs since the live file (over 10% of 17): a person looks at them first, e.g. US-0192+US-11897, US-0223+US-9625, US-0652+US-12190"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/US-DE.json",

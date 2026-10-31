@@ -55,7 +55,8 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-HI | 102 | 14 | 8 | 10 | 1 | 8 | 5 | 88 | 44 | 50 | 0 |
 | US-MI | 388 | 25 | 19 | 17 | 1 | 13 | 11 | 363 | 26 | 255 | 0 |
 | US-OH | 276 | 17 | 5 | 16 | 0 | 14 | 3 | 259 | 274 | 0 | 0 |
-| US-UT | 640 | 28 | 6 | 27 | 2 | 18 | 8 | 612 | 60 | 455 | 0 |
+| US-UT | 692 | 32 | 10 | 27 | 2 | 20 | 10 | 660 | 58 | 424 | 0 |
+| CA-ON | 24 | 3 | 3 | 2 | 0 | 1 | 2 | 21 | 3 | 7 | 0 |
 
 ## US-KY sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -4131,76 +4132,107 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
 | US-11112 | Factory Butte BLM Recreation Management  | https://www.blm.gov/sites/blm.gov/files/BLMUtahFactoryButteMap.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
-| US-5897 | Lower Last Chance BLM Wilderness Area | https://www.blm.gov/programs/national-conservation-lands/utah | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.blm.gov/programs/recreation/know-before-you-go ✓ |  |
-| US-5768 | Bonanza BLM Herd Management Area | https://www.blm.gov/programs/wild-horse-and-burro/herd-management | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.blm.gov/programs/recreation/know-before-you-go ✓ |  |
+| US-11661 | Bar M Trail System BLM Recreation Manage | https://www.blm.gov/sites/blm.gov/files/documents/files/BLMUtahKlonzo%26MoabBrandsMap.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ |  |
+| US-11705 | Poison Spider Mesa BLM Recreation Manage | https://www.blm.gov/sites/default/files/documents/files/BLMUtahPoisonSpiderMesa.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ | is managed by Moab Field Office |
+| US-5897 | Lower Last Chance BLM Wilderness Area | https://www.blm.gov/programs/national-conservation-lands/utah | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| US-5768 | Bonanza BLM Herd Management Area | https://www.blm.gov/programs/wild-horse-and-burro/herd-management | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
 | US-5930 | Bicknell Bottoms State Waterfowl Managem | https://capitolreefcountry.com/outdoor-activities/trails/ | page ✓name · linked from the agency page (capitolreef | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
-| US-0895 | Virgin National Wild and Scenic River | https://www.fws.gov/rivers/map | page ✓name · linked from the agency page (fws.gov) | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
-| US-10813 | Ouray National Fish Hatchery | https://www.fws.gov/fish-hatchery/ouray/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/policies ✓ |  |
 | US-5756 | Browns Park National Wildlife Management | https://www.fws.gov/refuge/browns-park/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/locations/browns-park-national-wildlife-refuge/rul ✓ | is administered by the U.S. Fish and Wildlife Service |
+| US-0895 | Virgin National Wild and Scenic River | https://www.fws.gov/rivers/map | page ✓name · linked from the agency page (fws.gov) | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
 | US-0559 | Ouray National Wildlife Refuge | https://www.fws.gov/refuge/ouray/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/locations/ouray-national-wildlife-refuge/rules-and ✓ |  |
-| US-0828 | Golden Spike National Historical Park | https://www.nps.gov/gosp/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted April 29, 2025 | https://www.nps.gov/gosp/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4578 | Pony Express National Historic Trail | https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.p | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 22, 2018 | https://www.nps.gov/poex/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0010 | Canyonlands National Park | https://www.nps.gov/cany/planyourvisit/upload/IslandRoadsandTrailsUpdated24-508forweb.pdf | pdf ✓name · combined map: covers 4 units · the agency site | 2024 (the PDF file's own stamp (may be the print da) · posted Mar 26, 2024 | https://www.nps.gov/cany/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4575 | Old Spanish National Historic Trail | https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-M | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 22, 2018 | https://www.nps.gov/olsp/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4573 | Mormon Pioneer National Historic Trail | https://www.nps.gov/mopi/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 28, 2026 | https://www.nps.gov/mopi/learn/management/lawsandpolicies.htm ✓ |  |
+| US-10813 | Ouray National Fish Hatchery | https://www.fws.gov/fish-hatchery/ouray/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/policies ✓ |  |
+| US-0072 | Zion National Park | https://www.nps.gov/zion/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 11, 2026 | https://www.nps.gov/zion/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0965 | Timpanogos Cave National Monument | https://www.nps.gov/tica/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted April 23, 2025 | https://www.nps.gov/tica/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0010 | Canyonlands National Park | https://www.nps.gov/cany/planyourvisit/upload/IslandRoadsandTrailsUpdated24-508forweb.pdf | pdf ✓name · combined map: covers 4 units · the agency site | 2024 (the PDF file's own stamp (may be the print da) · posted Mar 26, 2024 | https://www.nps.gov/cany/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4566 | California National Historic Trail | https://www.nps.gov/cali/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 28, 2026 | https://www.nps.gov/cali/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4573 | Mormon Pioneer National Historic Trail | https://www.nps.gov/mopi/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 28, 2026 | https://www.nps.gov/mopi/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0943 | Hovenweep National Monument | https://www.nps.gov/hove/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted April 18, 2025 | https://www.nps.gov/hove/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0011 | Capitol Reef National Park | https://www.nps.gov/care/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted December 2, 2020 | https://www.nps.gov/care/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0950 | Natural Bridges National Monument | https://www.nps.gov/nabr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted April 29, 2025 | https://www.nps.gov/nabr/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0004 | Arches National Park | https://www.nps.gov/arch/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted April 29, 2025 | https://www.nps.gov/arch/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0921 | Dinosaur National Monument | https://www.nps.gov/dino/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted November 15, 2019 | https://www.nps.gov/dino/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0828 | Golden Spike National Historical Park | https://www.nps.gov/gosp/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted April 29, 2025 | https://www.nps.gov/gosp/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0009 | Bryce Canyon National Park | https://www.nps.gov/brca/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted September 29, 2026 | https://www.nps.gov/brca/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4398 | Uinta-Wasatch-Cache National Forest | https://www.fs.usda.gov/r04/uinta-wasatch-cache/maps-guides | page ✓name · forest map only · the agency site | date unknown (date unknown, checked 2026-10-31) · posted January 7, 2026 | https://www.fs.usda.gov/visit/know-before-you-go ✓ | administered by the Forest Service |
+| US-0921 | Dinosaur National Monument | https://www.nps.gov/dino/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted November 15, 2019 | https://www.nps.gov/dino/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4398 | Uinta-Wasatch-Cache National Forest | https://www.fs.usda.gov/r04/uinta-wasatch-cache/maps-guides | page ✓name · forest map only; forest map only · the agency site | date unknown (date unknown, checked 2026-10-31) · posted January 7, 2026 | https://www.fs.usda.gov/visit/know-before-you-go ✓ | administered by the Forest Service |
+| US-11092 | Midway Utah State Fish Hatchery | https://dwrapps.utah.gov/fishing/ | page · off the government, not linked by the ag | — (date unknown, checked 2026-10-31) · posted — | https://wildlife.utah.gov/rules ✓ |  |
 | US-5929 | Flight Park State Recreation Area | https://stateparks.utah.gov/wp-content/uploads/flightpark-digital-brochure-2024.pdf | pdf ✓name · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted 2024 |  ✗ |  |
+| US-10963 | Logan Aquatic Animal Health & Research C | https://dwrapps.utah.gov/fishing/ | page · off the government, not linked by the ag | — (date unknown, checked 2026-10-31) · posted — | https://wildlife.utah.gov/rules ✓ |  |
 | US-11921 | The Casting of the Lots – Dominguez-Esca | https://wikimapia.org/10213548/Casting-of-Lots#:~:text=%22TH | page · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
 
-### US-UT no map yet (612): the reason
+### US-UT no map yet (660): the reason
 - US-10061 Pine Canyon WMA State Conservation Area: no map link on file and none on the park page
-- US-10730 Cedar Mountain Day Use Site BLM Special Recre: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10730 Cedar Mountain Day Use Site BLM Special Recre: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
 - US-10794 Logan Canyon National Scenic Byway National P: no map link on file and none on the park page
-- US-10963 Logan Aquatic Animal Health & Research Center: no working map link (tried: ok https://dwrapps.utah.gov/fishing/) (needs browser: the map link refused a plain reader (ok))
-- US-10964 Cathedral Valley Scenic Backway BLM Special R: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10965 Great Western Trail BLM Historic Trail: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10966 K-Hill Trail BLM Recreation Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10967 Birch Hollow BLM Recreation Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10968 Buckskin, White House, Wire Pass Day Use BLM : no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10971 Smith Creek BLM Wild and Scenic River: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10973 Middle Fork Taylor Creek BLM Wild and Scenic : no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10975 Oak Creek BLM Wild and Scenic River: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10976 Kolob Creek BLM Wild and Scenic River: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10977 Bull Creek Pass Backcountry Byway BLM Recreat: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10979 Portal Trail BLM Recreation Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10981 Grouse Creek Mountains Desingated Routes BLM : no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10984 Hideout Canyon Camping Area BLM Recreation Ma: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10988 Peek-A-Boo Staging Area BLM Recreation Manage: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10992 North Wash BLM Recreation Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10997 North Fork Virgin River Merriam's Turkey View: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-10999 Cottonwood Wash BLM Recreation Management Are: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11001 Gooseberry Mesa National Recreation Trail: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11002 Otter Creek Reservoir BLM Special Recreation : no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11004 Hurricane Cliffs Trail System BLM Recreation : no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11005 Wire Mesa Trail BLM Recreation Management Are: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11006 Hogup Mountains Designated Routes BLM Recreat: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10964 Cathedral Valley Scenic Backway BLM Special R: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10965 Great Western Trail BLM Historic Trail: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10966 K-Hill Trail BLM Recreation Management Area: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10967 Birch Hollow BLM Recreation Management Area: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10968 Buckskin, White House, Wire Pass Day Use BLM : no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10971 Smith Creek BLM Wild and Scenic River: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10973 Middle Fork Taylor Creek BLM Wild and Scenic : no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10975 Oak Creek BLM Wild and Scenic River: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10976 Kolob Creek BLM Wild and Scenic River: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10977 Bull Creek Pass Backcountry Byway BLM Recreat: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10979 Portal Trail BLM Recreation Management Area: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10981 Grouse Creek Mountains Desingated Routes BLM : no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10984 Hideout Canyon Camping Area BLM Recreation Ma: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10988 Peek-A-Boo Staging Area BLM Recreation Manage: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10992 North Wash BLM Recreation Management Area: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10997 North Fork Virgin River Merriam's Turkey View: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-10999 Cottonwood Wash BLM Recreation Management Are: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11001 Gooseberry Mesa National Recreation Trail: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11002 Otter Creek Reservoir BLM Special Recreation : no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11004 Hurricane Cliffs Trail System BLM Recreation : no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11005 Wire Mesa Trail BLM Recreation Management Are: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11006 Hogup Mountains Designated Routes BLM Recreat: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
 - US-11008 Devil's Playground Desigated Routes BLM Recre: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11009 South Caineville Mesa Trail BLM Recreation Ma: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11010 Crystal Peak Rockhounding Area BLM Special Re: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11011 Flying Monkey Trail BLM Recreation Management: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11009 South Caineville Mesa Trail BLM Recreation Ma: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11010 Crystal Peak Rockhounding Area BLM Special Re: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11011 Flying Monkey Trail BLM Recreation Management: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
 - US-11090 Kamas Utah State Fish Hatchery: no map link on file and none on the park page
-- US-11092 Midway Utah State Fish Hatchery: no working map link (tried: ok https://dwrapps.utah.gov/fishing/) (needs browser: the map link refused a plain reader (ok))
 - US-11095 DWR Wahweap Warm Water State Fish Hatchery: no map link on file and none on the park page
-- US-11099 Klondike Bluffs BLM Recreation Management Are: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11099 Klondike Bluffs BLM Recreation Management Are: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
 - US-11105 Coldwater Canyon State Wildlife Habitat Manag: no map link on file and none on the park page
 - US-11106 Kamas West Hills State Wildlife Habitat Manag: no map link on file and none on the park page
-- US-11109 Hidden Splendor Trailhead BLM Recreation Mana: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11110 Sego Canyon Rock Art BLM Interpretive Site: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11109 Hidden Splendor Trailhead BLM Recreation Mana: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11110 Sego Canyon Rock Art BLM Interpretive Site: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
 - US-11111 Pinhook Battleground National Historic Site: no map link on file and none on the park page
-- US-11113 Baptist Draw BLM Special Recreation Managemen: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11113 Baptist Draw BLM Special Recreation Managemen: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11116 Desolation Gray Canyons Screen Cabins BLM Spe: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11117 Trin-Alcove/Three Canyon BLM Wilderness Area: no map (one file shared by 73 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+
+## CA-ON sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| CA-0177 | Chapleau Crown Game Preserve | https://chapleau.ca/visitors/attractions/ofsa-trail-maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| CA-1280 | Abitibi Lake Narrows Wilderness Area | https://files.ontario.ca/418.1.1en-figure-1-regional-setting-large.jpg | image · linked from the agency page (files.ontar | date unknown (date unknown, checked 2026-10-31) · posted Apr 05, 2016 |  ✗ |  |
+| CA-0259 | La Verendrye Provincial Park | https://www.ontarioparks.ca/park/laverendrye/maps | page ✓name · linked from the agency page (ontariopark | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.ontarioparks.ca/reservations/rules ✓ |  |
+
+### CA-ON no map yet (21): the reason
+- CA-0023 Frontenac Arch Biosphere Reserve: no map link on file and none on the park page
+- CA-0027 Georgian Bay Littoral Biosphere Reserve: no map link on file and none on the park page
+- CA-0063 Niagara Escarpment Biosphere Reserve: no map link on file and none on the park page
+- CA-0195 Morning Glory Provincial Nature Reserve: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.ontarioparks.ca/park/duclospoint/maps)
+- CA-0234 Ipperwash Dunes & Swales Nature Reserve: no map link on file and none on the park page
+- CA-0268 Le Pate Provincial Park: no map link on file and none on the park page
+- CA-1298 Bannister Lake Complex Conservation Reserve: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- CA-1300 Barron Canyon Conservation Reserve: no working map link (tried: robots https://mcelroy.ca/photo/map/10a-7204)
+- CA-1301 Barron Canyon National Geologic Trail: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.algonquinpark.on.ca/virtual/canoe_routes_map/index.php; opened, a page that does not name this park (a generic agency page is not its map) https://www.algonquinpark.on.ca/visit/services/advertisers-map-and-dat)
+- CA-1305 Bat Cave Wilderness Area: no map link on file and none on the park page
+- CA-1312 Beverly Swamp Conservation Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://conservationhamilton.ca/wp-content/uploads/2020/10/Hunting-Map; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://conservationhamilton.ca/wp-content/uploads/2025/10/Hamilton-Fi)
+- CA-1340 Cape Henrietta-Maria Conservation Reserve: no map link on file and none on the park page
+- CA-1346 Cedar Valley Conservation Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- CA-1349 Remic Rapids and Bate Island Conservation Par: no map link on file and none on the park page
+- CA-1366 Decew Falls Conservation Area: no map link on file and none on the park page
+- CA-1368 North Maple Regional Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- CA-1386 Eau Claire Gorge Conservation Reserve: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ontarioconservationareas.ca/find-a-conservation-area/map/)
+- CA-1394 Fairy Point Wilderness Area: no map link on file and none on the park page (needs browser: the page is built by script)
+- CA-1408 Ganley Harbour Wilderness Area: no map link on file and none on the park page (needs browser: the page is built by script)
+- CA-1439 Hilliardton Marsh Conservation Reserve: no map link on file and none on the park page
+- CA-1467 Kishkebus Lake Wilderness Area: no map link on file and none on the park page (needs browser: the page is built by script)
 
 ## robots.txt said no (hosts we did not read)
-- doifwsnextprod.prod.acquia-sites.com: 2 addresses (User-agent: * | Disallow: /)
-- usfs-public.app.box.com: 1 addresses (User-agent: Twitterbot | Disallow: / | Allow: /representation  # Twitter needs to be able to display)
-- widnr.widen.net: 3 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /content/ | Allow: /view/ | Disallow: /)
-- www.google.com: 1 addresses (User-agent: * | User-agent: Yandex | Disallow: /search | Allow: /search/about | Allow: /search/howse)
+- mcelroy.ca: 1 addresses (User-agent: * | Disallow: /admin/ | Disallow: /bushlog/search | Disallow: /bushlog/related | Disallo)
 
 ## hosts resting a day (three strikes)
 - carules.elaws.us
