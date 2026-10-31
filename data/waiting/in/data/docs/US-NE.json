@@ -6,18 +6,18 @@
    "n": "Boyer Chute National Wildlife Refuge",
    "t": "National Wildlife Refuge",
    "page": "https://www.fws.gov/refuge/boyer_chute/",
-   "checked": "2026-10-29",
+   "checked": "2026-10-31",
    "map": {
     "url": "https://www.fws.gov/refuge/boyer-chute/map",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
+    "date_how": "date unknown, checked 2026-10-31",
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-29",
+    "checked": "2026-10-31",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -33,24 +33,24 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 7
   },
   "US-0442": {
    "n": "Crescent Lake National Wildlife Refuge",
    "t": "National Wildlife Refuge",
    "page": "https://www.fws.gov/refuge/crescent_lake/",
-   "checked": "2026-10-29",
+   "checked": "2026-10-31",
    "map": {
     "url": "https://www.fws.gov/refuge/crescent-lake/map",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
+    "date_how": "date unknown, checked 2026-10-31",
     "how": "a link on the park's page ('Interactive Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-29",
+    "checked": "2026-10-31",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -64,24 +64,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 7
   },
   "US-0443": {
    "n": "Fort Niobrara National Wildlife Refuge",
    "t": "National Wildlife Refuge",
    "page": "https://www.fws.gov/refuge/fort_niobrara/",
-   "checked": "2026-10-29",
+   "checked": "2026-10-31",
    "map": {
     "url": "https://www.fws.gov/refuge/fort-niobrara/map",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
+    "date_how": "date unknown, checked 2026-10-31",
     "how": "a link on the park's page ('Interactive Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-29",
+    "checked": "2026-10-31",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -95,24 +95,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 7
   },
   "US-0445": {
    "n": "North Platte National Wildlife Refuge",
    "t": "National Wildlife Refuge",
    "page": "https://www.fws.gov/refuge/north_platte/",
-   "checked": "2026-10-29",
+   "checked": "2026-10-31",
    "map": {
     "url": "https://www.fws.gov/refuge/north-platte/map",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
+    "date_how": "date unknown, checked 2026-10-31",
     "how": "a link on the park's page ('Interactive Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-29",
+    "checked": "2026-10-31",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -128,7 +128,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 7
   },
   "US-0446": {
    "n": "Funk WPA Wetland Management District",
@@ -208,7 +208,9 @@
    "agency": "government agency (outdoornebraska.gov)",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7
   },
@@ -253,7 +255,9 @@
    "agency": "government agency (history.nebraska.gov)",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7
   },
@@ -524,7 +528,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-31"
   },
   "US-4011": {
    "n": "Chalco Hills State Recreation Area",
@@ -562,7 +567,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-31"
   },
   "US-4012": {
    "n": "Elkhorn Crossing State Park",
@@ -728,7 +734,9 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7
   },
@@ -837,23 +845,4608 @@
    "handover": [],
    "notes": [],
    "ver": 7
+  },
+  "US-4578": {
+   "n": "Pony Express National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/poex/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Mar 22, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/poex/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5656": {
+   "n": "Flanagan Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/flanagan-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-5658": {
+   "n": "Lake Zorinsky State Park",
+   "t": "State Park",
+   "page": "https://www.recreation.gov/camping/gateways/307",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.recreation.gov/rules-reservation-policies",
+    "how": "a link on the park's page ('Rules Reservation Policies')",
+    "status": "ok"
+   },
+   "agency": "government agency (recreation.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0447": {
+   "n": "Valentine National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/valentine/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/valentine/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Interactive Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/locations/valentine-national-wildlife-refuge/rules-and-policies",
+    "how": "a link on the park's page ('Rules and Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0675": {
+   "n": "Missouri National Recreational River National Wild & Scenic River",
+   "t": "National Wild & Scenic River",
+   "page": "https://www.nps.gov/mnrr/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/mnrr/planyourvisit/maps.htm)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/mnrr/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/mnrr/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "September 21, 2024",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0900": {
+   "n": "Agate Fossil Beds National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/agfo/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/agfo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 2, 2021",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/agfo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0942": {
+   "n": "Homestead National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/home/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/home/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "December 13, 2021",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/home/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0962": {
+   "n": "Scotts Bluff National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/scbl/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/scbl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 11, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/scbl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11273": {
+   "n": "Pressey Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11867": {
+   "n": "Hickory Ridge Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-11868": {
+   "n": "Pawnee Prairie Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-11871": {
+   "n": "Bassway Strip Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12087": {
+   "n": "Scotia Canal Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12088": {
+   "n": "Davis Creek Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12089": {
+   "n": "Arcadia Diversion Dam Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12090": {
+   "n": "Milburn Dam Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12091": {
+   "n": "Myrtle E. Hall Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12362": {
+   "n": "Buffalo Bill State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://outdoornebraska.gov/location/buffalo-bill/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/07/Buffalo-Bill-SRA-22-July-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "https://outdoornebraska.gov/location/buffalo-bill/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12383": {
+   "n": "East Gothenburg Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12384": {
+   "n": "Kinter’s Ford Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12385": {
+   "n": "Lores Branch Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12386": {
+   "n": "Prairie Knoll Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12397": {
+   "n": "Berggren-Young Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12407": {
+   "n": "Brady Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12408": {
+   "n": "West Brady Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12444": {
+   "n": "Loch Linda Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12445": {
+   "n": "Ayr Lake Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12619": {
+   "n": "Bur Oak Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12686": {
+   "n": "East Phillips Canyon Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (gismaps.outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12736": {
+   "n": "Gifford Point Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12946": {
+   "n": "Elwood Reservoir Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12947": {
+   "n": "Coot Shallows Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-12948": {
+   "n": "Cornhusker Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13093": {
+   "n": "Oak Glen Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/#undefined",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13202": {
+   "n": "Deep Well Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13204": {
+   "n": "Wilkinson Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13205": {
+   "n": "Dr. Bruce Cowgill Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13212": {
+   "n": "Arnold Trupp Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13213": {
+   "n": "Guide Rock Diversion Dam Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13272": {
+   "n": "West Gothenburg Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13327": {
+   "n": "Cozad Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13328": {
+   "n": "West Cozad Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13329": {
+   "n": "Plum Creek Canyon Reservoir Wildlife Management Area",
+   "t": "State Recreation Area",
+   "page": "https://outdoornebraska.gov/location/plum-creek/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/guides-maps/",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('GUIDES & MAPS')",
+    "page": "https://outdoornebraska.gov/location/plum-creek/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13378": {
+   "n": "Sherman Reservoir Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13379": {
+   "n": "Kent Diversion Dam Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (gismaps.outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13380": {
+   "n": "Mirdan Canal Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (gismaps.outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13433": {
+   "n": "North Platte National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/north-platte/map",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13434": {
+   "n": "Wildcat Hills Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13491": {
+   "n": "Cedar Valley Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13492": {
+   "n": "Wellfleet Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13536": {
+   "n": "Alexandria Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13537": {
+   "n": "Alfon C. Haring Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/#undefined",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13540": {
+   "n": "Rakes Creek Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13608": {
+   "n": "American Game Marsh Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13609": {
+   "n": "Anderson Bridge Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13610": {
+   "n": "Arrowhead Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/#undefined",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13611": {
+   "n": "Darr Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (gismaps.outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13612": {
+   "n": "Darr Strip Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/#undefined",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13613": {
+   "n": "Ballards Marsh Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13614": {
+   "n": "Kirkpatrick Basin North Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-13615": {
+   "n": "Kirkpatrick Basin South Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/)",
+    "how": "the page in a browser ('View the interactive map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2609": {
+   "n": "Ash Hollow State Park",
+   "t": "State Park",
+   "page": "http://outdoornebraska.gov/ashhollow/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/01/Ash-Hollow-SHP.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/ashhollow/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2610": {
+   "n": "Arbor Lodge State Historical Park",
+   "t": "State Historical Park",
+   "page": "http://outdoornebraska.gov/arborlodge/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.arbordayfarm.org/about/property-map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('VIEW PARK MAP')",
+    "page": "http://outdoornebraska.gov/arborlodge/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "off the government, not linked by the agency"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2611": {
+   "n": "Bowring Ranch State Historical Park",
+   "t": "State Historical Park",
+   "page": "http://outdoornebraska.gov/bowringranch/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/guides-maps/",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('GUIDES & MAPS')",
+    "page": "http://outdoornebraska.gov/bowringranch/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2612": {
+   "n": "Buffalo Bill Ranch State Historical Park",
+   "t": "State Historical Park",
+   "page": "http://outdoornebraska.gov/buffalobillranch/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/07/Buffalo-Bill-SRA-22-July-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/buffalobillranch/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2613": {
+   "n": "Chadron State Park",
+   "t": "State Park",
+   "page": "http://outdoornebraska.gov/chadron/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/04/Chadron-State-Park-FINAL-9-APR-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/chadron/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2614": {
+   "n": "Eugene T. Mahoney State Park",
+   "t": "State Park",
+   "page": "http://outdoornebraska.gov/mahoney/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/01/Mahoney-2025-park-map-web.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/mahoney/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2615": {
+   "n": "Fort Atkinson State Historical Park",
+   "t": "State Historical Park",
+   "page": "http://outdoornebraska.gov/fortatkinson/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2024/04/FortAtkinson13-Dec-2023.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/fortatkinson/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2616": {
+   "n": "Fort Hartsuff State Historical Park",
+   "t": "State Historical Park",
+   "page": "http://outdoornebraska.gov/forthartsuff/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/01/Fort-Hartsuff-Final-22-JAN-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/forthartsuff/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2617": {
+   "n": "Fort Kearny State Historical Park",
+   "t": "State Historical Park",
+   "page": "http://outdoornebraska.gov/fortkearny/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/06/Fort-Kearny-SHP-SRA-17-June-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/fortkearny/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2618": {
+   "n": "Fort Robinson State Park",
+   "t": "State Park",
+   "page": "http://outdoornebraska.gov/fortrobinson/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/02/Fort-Robinson-Brochure-Layout-4-Feb-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/fortrobinson/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2619": {
+   "n": "Indian Cave State Park",
+   "t": "State Park",
+   "page": "http://outdoornebraska.gov/indiancave/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/02/Indian-Cave-SP-map-2025.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/indiancave/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2620": {
+   "n": "Niobrara State Park",
+   "t": "State Park",
+   "page": "http://outdoornebraska.gov/niobrara/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/07/Niobrara-State-Park-27-JULY-2026-1.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/niobrara/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2621": {
+   "n": "Platte River State Park",
+   "t": "State Park",
+   "page": "http://outdoornebraska.gov/platteriver/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2024/12/FINAL-PlatteRiverSP-12-3-2024.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/platteriver/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2622": {
+   "n": "Ponca State Park",
+   "t": "State Park",
+   "page": "http://outdoornebraska.gov/ponca/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/PoncaSP-Brochure-22-Mar-2021.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/ponca/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2623": {
+   "n": "Rock Creek Station State Historical Park",
+   "t": "State Historical Park",
+   "page": "http://outdoornebraska.gov/rockcreekstation/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/02/Rock-Creek-Station-Brochure-22-JAN-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/rockcreekstation/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-2624": {
+   "n": "Smith Falls State Park",
+   "t": "State Park",
+   "page": "http://outdoornebraska.gov/smithfalls/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/03/Smith-Falls-State-Park-FINAL-13-Jan-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/smithfalls/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3371": {
+   "n": "Nebraska National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/detail/nebraska",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r02/nebraska/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/detail/nebraska",
+    "posted": "October 30, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-31",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r02/nebraska",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3372": {
+   "n": "Samuel R McKelvie National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30324",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r02/nebraska/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30324",
+    "posted": "October 30, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-31",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r02/nebraska",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3376": {
+   "n": "Victoria Springs State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/victoriasprings/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/Victoria-Springs-Brochure-07-Dec-2020.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/victoriasprings/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-3487": {
+   "n": "DeSoto (NE) National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/desoto/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/desoto/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/desoto/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-3491": {
+   "n": "Lake Wanahoo State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://lpnnrd.org/outdoor-recreation/lake-wanahoo/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://lpnnrd.org/wp-content/uploads/2021/05/Lake-Wanahoo-Trail-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('DOWNLOAD TRAIL MAP')",
+    "posted": "2021-05",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4014": {
+   "n": "Prairie Queen State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/prairie-queen",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4016": {
+   "n": "Cottontail Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/cottontail-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://lpsnrd.maps.arcgis.com/apps/MapJournal/index.html?appid=a07535)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "map_tried": [
+    {
+     "url": "https://lpsnrd.maps.arcgis.com/apps/MapJournal/index.html?appid=a07535d5d2f64bffbef4ca2ec6c8cd0e&section=2",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (lpsnrd.maps.arcgis.com)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-4018": {
+   "n": "Wildwood Lake Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/wildwood-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4019": {
+   "n": "Wild Plum Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/wild-plum-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://lpsnrd.maps.arcgis.com/apps/MapJournal/index.html?appid=a07535)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "map_tried": [
+    {
+     "url": "https://lpsnrd.maps.arcgis.com/apps/MapJournal/index.html?appid=a07535d5d2f64bffbef4ca2ec6c8cd0e&section=8",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (lpsnrd.maps.arcgis.com)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-4020": {
+   "n": "Timber Point Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/timber-point-wetland",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://lpsnrd.maps.arcgis.com/apps/MapJournal/index.html?appid=a07535)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "map_tried": [
+    {
+     "url": "https://lpsnrd.maps.arcgis.com/apps/MapJournal/index.html?appid=a07535d5d2f64bffbef4ca2ec6c8cd0e&section=7",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (lpsnrd.maps.arcgis.com)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-4021": {
+   "n": "Red Cedar Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/red-cedar-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://lpsnrd.maps.arcgis.com/apps/MapJournal/index.html?appid=a07535)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "map_tried": [
+    {
+     "url": "https://lpsnrd.maps.arcgis.com/apps/MapJournal/index.html?appid=a07535d5d2f64bffbef4ca2ec6c8cd0e&section=5",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (lpsnrd.maps.arcgis.com)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-4022": {
+   "n": "Merganser Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/merganser-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://lpsnrd.maps.arcgis.com/apps/MapJournal/index.html?appid=a07535)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "map_tried": [
+    {
+     "url": "https://lpsnrd.maps.arcgis.com/apps/MapJournal/index.html?appid=a07535d5d2f64bffbef4ca2ec6c8cd0e&section=4",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (lpsnrd.maps.arcgis.com)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-4023": {
+   "n": "Chalkrock Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/chalkrock-wma",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4024": {
+   "n": "Bruning Dam Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/bruning-dam",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4026": {
+   "n": "Liberty Cove State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/liberty-cove",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4028": {
+   "n": "Prairie Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/prairie-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4029": {
+   "n": "Roseland Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/roseland-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4030": {
+   "n": "Bear Creek Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/bear-creek-wma",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4031": {
+   "n": "Big Indian State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/big-indian-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4032": {
+   "n": "Clatonia State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/clatonia-public-use-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4033": {
+   "n": "Cub Creek (southern) State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/cub-creek-recreation-area-southern",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4034": {
+   "n": "Leisure Lake Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/leisure-lake-wma",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4035": {
+   "n": "Swanton Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/swanton-wma",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4037": {
+   "n": "Willard L. Meyer State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/willard-l-meyer-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4038": {
+   "n": "Wolf-Wildcat Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://www.nrdnet.org/rec-area/wolf-wildcat-wma",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4039": {
+   "n": "Maple Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/maple-creek-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 http://www.lenrd.org/maple-creek-recreation-area)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "map_tried": [
+    {
+     "url": "http://www.lenrd.org/maple-creek-recreation-area",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (lenrd.org)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-4040": {
+   "n": "Maskenthine Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/maskenthine-lake-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-4041": {
+   "n": "Pilger State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.nrdnet.org/rec-area/pilger-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-5622": {
+   "n": "Niobrara National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.nps.gov/niob/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/niob/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "September 12, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/niob/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5625": {
+   "n": "Mormon Island State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/mormonisland/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/06/Mormon-Island-SRA-9-June-2026-1.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/mormonisland/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5626": {
+   "n": "Windmill State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/windmill/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/02/Windmill-SRA-FINAL-11-Feb-2025-RGB.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/windmill/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5627": {
+   "n": "Cheyenne State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/cheyenne/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/12/Cheyenne-SRA-3-NOV-2025-FINAL.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/cheyenne/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5628": {
+   "n": "Fort Kearny State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/fortkearnysra/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/06/Fort-Kearny-SHP-SRA-17-June-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/fortkearnysra/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5629": {
+   "n": "Sherman Reservoir State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://outdoornebraska.gov/sherman/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/06/Sherman_Reservoir_SRA_-Map_2025.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "https://outdoornebraska.gov/sherman/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5630": {
+   "n": "Calamus Reservoir State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/calamus/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/Calamus_SRA-22-Jan-2020.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/calamus/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5631": {
+   "n": "Merritt Reservoir State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/merrittreservoir/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/07/Merritt-Reservior-Online-Map-FINAL-25-July-2025.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/merrittreservoir/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5632": {
+   "n": "North Loup State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/northloup/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/guides-maps/",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('GUIDES & MAPS')",
+    "page": "http://outdoornebraska.gov/northloup/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5642": {
+   "n": "Swanson Reservoir State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://outdoornebraska.gov/swansonreservoir/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/03/Swanson-ReservoirBrochurePRELIMINARY16-Sep-2024.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "https://outdoornebraska.gov/swansonreservoir/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5646": {
+   "n": "Lake McConaughy State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://outdoornebraska.gov/lakemcconaughy/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/Park-Map.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "https://outdoornebraska.gov/lakemcconaughy/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5647": {
+   "n": "Branched Oak State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/branchedoak/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/Branched-Oak-Brochure-19-May-2022.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/branchedoak/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5648": {
+   "n": "Memphis Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/memphis/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/CampMap_Memphis_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/memphis/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5649": {
+   "n": "Pawnee State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/pawnee/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/Pawnee_ConestogaSRA_brochure-map-1.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/pawnee/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5650": {
+   "n": "Louisville State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/louisville/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/05/Louisville-SRA-park-map-April-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/louisville/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5651": {
+   "n": "Olive Creek Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/olivecreek/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/CampMap_OliveCreek_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/olivecreek/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5652": {
+   "n": "Bluestem Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/bluestem/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/06/Bluestem-SRA-9-June-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/bluestem/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5653": {
+   "n": "Stagecoach Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/stagecoach/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/CampMap_Stagecoach_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/stagecoach/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5654": {
+   "n": "Wagon Train Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/wagontrain/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/01/Wagon-Train-Final-16-Jan-2025.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/wagontrain/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5655": {
+   "n": "Lake Minatare State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/lakeminatare/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/03/Lake-Minatare-FINAL-24-Mar-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD LAKE MINATARE PARK MAP')",
+    "page": "http://outdoornebraska.gov/lakeminatare/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5657": {
+   "n": "Standing Bear Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.recreation.gov/camping/gateways/294",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.recreation.gov/rules-reservation-policies",
+    "how": "a link on the park's page ('Rules Reservation Policies')",
+    "status": "ok"
+   },
+   "agency": "government agency (recreation.gov)",
+   "runs": [
+    "is operated by the City of Omaha"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5659": {
+   "n": "Alexandria Lakes State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/alexandria/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/01/Alexandria-Landscape-Layout-15-Feb-2022.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/alexandria/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5660": {
+   "n": "Box Butte Reservoir State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://outdoornebraska.gov/boxbutte/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2024/07/Box-Butte-FINAL-04-Apr-2024.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "https://outdoornebraska.gov/boxbutte/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5661": {
+   "n": "Bridgeport State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/bridgeport/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/Bridgeport-31-Aug-2020.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/bridgeport/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5662": {
+   "n": "Conestoga Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/conestoga/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2024/08/Conestoga-SRA.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/conestoga/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5663": {
+   "n": "Dead Timber State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/deadtimber/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2024/08/Dead-Timber-11-Apr-2022.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/deadtimber/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5664": {
+   "n": "Enders Reservoir State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/endersreservoir/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/04/Enders-Layout-FINAL-8-APR-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/endersreservoir/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5665": {
+   "n": "Fremont Lakes State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/fremontlakes/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/07/Fremont-Lakes-SRA-park-map.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('VIEW PARK MAP')",
+    "page": "http://outdoornebraska.gov/fremontlakes/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5666": {
+   "n": "Gallagher Canyon State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/gallaghercanyon/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/06/Gallagher-Canyon-SRA-June-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/gallaghercanyon/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [
+    "is owned by Central Nebraska Public Power and Irrigation District"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5667": {
+   "n": "Johnson Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/johnsonlake/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2024/08/JohnsonLakeSRA-26-July-2024.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/johnsonlake/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5668": {
+   "n": "Keller Park State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/kellerpark/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2024/08/Keller-19-Aug-2024.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/kellerpark/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5669": {
+   "n": "Lake Maloney State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/lakemaloney/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/04/CampMap_LakeMaloney_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/lakemaloney/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5671": {
+   "n": "Lake Ogallala State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/lakeogallala/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/Park-Map-1.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('LAKE OGALLALA PARK MAP')",
+    "page": "http://outdoornebraska.gov/lakeogallala/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5672": {
+   "n": "Pelican Point State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://outdoornebraska.gov/pelicanpoint/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/CampMap_PelicanPoint_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "https://outdoornebraska.gov/pelicanpoint/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5673": {
+   "n": "Red Willow Reservoir State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/redwillow/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/12/Red-Willow-Online-Map-FINAL-8-Dec-2025.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/redwillow/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5674": {
+   "n": "Summit Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/summitlake/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/SummitLakeSRA.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/summitlake/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5675": {
+   "n": "Sutherland Reservoir State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/sutherland/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/CampMap_Sutherland_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/sutherland/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5676": {
+   "n": "Two Rivers State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/tworivers/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/07/Two-Rivers-park-map.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/tworivers/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5677": {
+   "n": "Union Pacific State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/unionpacific/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/CampMap_UnionPacific_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/unionpacific/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5678": {
+   "n": "Verdon Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/verdon/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/01/Verdon-Final-21-Jun-2022.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/verdon/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-5679": {
+   "n": "Willow Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/willowcreek/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/Willow-Creek-Park-Map-06-Apr-2020.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/willowcreek/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-7478": {
+   "n": "Oglala National Grassland",
+   "t": "National Grassland",
+   "page": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30328",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r02/nebraska/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30328",
+    "posted": "October 30, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-31",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r02/nebraska",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-8614": {
+   "n": "War Axe State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/waraxe/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/CampMap_WarAxe_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/waraxe/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-8615": {
+   "n": "Wood River West Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://nebraskabirdingtrails.com/wood-river-west-wildlife-management-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-8616": {
+   "n": "Martin's Reach Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "http://nebraskabirdingtrails.com/martins-reach-wildlife-management-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-9356": {
+   "n": "Willow Lake Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "http://nebraskabirdingtrails.com/willow-lake-wildlife-management-area/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-9357": {
+   "n": "Blue River State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/blueriver/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2024/07/Blue-River-SRA-PRELIMINARY-15-Feb-2022-Portrait-Layout.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/blueriver/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9358": {
+   "n": "Cottonwood Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://outdoornebraska.gov/cottonwood/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/CampMap_Cottonwood_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "https://outdoornebraska.gov/cottonwood/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9359": {
+   "n": "Danish Alps State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/danishalps/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/01/Danish-Alps-Brochure-11-Apr-2022.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/danishalps/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9360": {
+   "n": "Lewis and Clark Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/lewisandclark/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2024/04/Lewis-Clark-Brochure-map-11-22-23.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/lewisandclark/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.nwo.usace.army.mil/Missions/DamandLakeProjects/MissouriRiverDams/GavinsPoint/BoatingRecreationMaps.aspx",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (nwo.usace.army.mil)"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9362": {
+   "n": "Long Pine State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://outdoornebraska.gov/longpine/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/04/CampMap_LongPine_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "https://outdoornebraska.gov/longpine/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9363": {
+   "n": "Medicine Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/medicinecreek/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/06/Medicine-Creek-SRA-Final-26-June-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/medicinecreek/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9364": {
+   "n": "Riverview State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/riverviewmarina/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/CampMap_Riverview_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/riverviewmarina/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9365": {
+   "n": "Rock Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://outdoornebraska.gov/rockcreeklake/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/02/Rock-Creek-Station-Brochure-22-JAN-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "https://outdoornebraska.gov/rockcreeklake/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9366": {
+   "n": "Rock Creek Station State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/rockcreekstationsra/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2026/02/Rock-Creek-Station-Brochure-22-JAN-2026.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/rockcreekstationsra/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9367": {
+   "n": "Rockford Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/rockford/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/Rockford-Lake-Layout-21-Jun-2022.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/rockford/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9368": {
+   "n": "Sandy Channel State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/sandychannel/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/CampMap_SandyChannel_Main_03182016.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/sandychannel/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9369": {
+   "n": "Schramm Park State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/schramm/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2024/06/Schramm-Park-Map.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/schramm/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9370": {
+   "n": "Walgren Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/walgrenlake/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2025/01/Walgren-Lake-Final-24-Jan-2025.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/walgrenlake/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
+  },
+  "US-9371": {
+   "n": "Wildcat Hills State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "http://outdoornebraska.gov/wildcathills/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/02/Wildcat-Hills-Layout-FINAL-19-Jul-2022.pdf",
+    "status": "HTTP 403",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('DOWNLOAD PARK MAP')",
+    "page": "http://outdoornebraska.gov/wildcathills/",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-31",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (outdoornebraska.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7,
+   "browser_checked": "2026-10-31"
   }
  },
  "read": "2026-10-31",
  "counts": {
-  "parks": 33,
-  "map ok": 8,
-  "map found by the bot": 6,
+  "parks": 198,
+  "map ok": 20,
+  "map found by the bot": 14,
   "date on the map": 1,
-  "posted date only": 3,
-  "date unknown": 4,
-  "no map": 25,
-  "rules ok": 10,
-  "needs browser": 5,
+  "posted date only": 12,
+  "date unknown": 7,
+  "no map": 178,
+  "rules ok": 24,
+  "needs browser": 4,
   "handover hints": 0,
-  "runs hints": 2,
+  "runs hints": 4,
   "host resting / robots": 0,
-  "map names the park": 8,
+  "map names the park": 16,
   "region overview only": 0
  }
 }

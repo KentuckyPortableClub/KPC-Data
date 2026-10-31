@@ -109,7 +109,7 @@
    "status": "failed",
    "parks": 181,
    "updated": "2026-10-31",
-   "why": "maps 82 -> 64"
+   "why": "maps 82 -> 63"
   },
   "US-ND": {
    "status": "done",
@@ -245,10 +245,24 @@
    "updated": "2026-10-31"
   },
   "US-NE": {
-   "status": "partial",
+   "status": "done",
    "parks": 198,
-   "checked": 33,
-   "left": 165,
+   "checked": 198,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-CO": {
+   "status": "done",
+   "parks": 276,
+   "checked": 276,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-WY": {
+   "status": "partial",
+   "parks": 294,
+   "checked": 64,
+   "left": 230,
    "updated": "2026-10-31"
   }
  },
@@ -261,32 +275,34 @@
   "fhwaapps.fhwa.dot.gov": 1793500064.3382714,
   "www.camdenexpedition.org": 1793500272.2389379,
   "www.agfc": 1793500611.0041478,
-  "mip.agri.arkansas.gov": 1793500699.890685
+  "mip.agri.arkansas.gov": 1793500699.890685,
+  "cpw.state.co.us": 1793507938.9465082,
+  "wgfapps.wyo.gov": 1793508618.257194
  },
  "last": {
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-OK",
-   "US-TX",
-   "US-KS",
    "US-NE",
    "US-CO",
    "US-WY",
-   "US-ID"
+   "US-ID",
+   "US-MT",
+   "US-NV",
+   "US-AZ"
   ],
   "stat": {
-   "requests": 1664,
-   "parks": 782,
-   "maps_ok": 418,
-   "maps_found": 308,
-   "dates": 50,
-   "rules": 411,
-   "browser": 218,
-   "robots": 239,
-   "strikes": 0,
-   "errors": 0,
-   "skipped_fresh": 0
+   "requests": 1296,
+   "parks": 655,
+   "maps_ok": 266,
+   "maps_found": 238,
+   "dates": 0,
+   "rules": 207,
+   "browser": 282,
+   "robots": 7,
+   "strikes": 6,
+   "errors": 3,
+   "skipped_fresh": 64
   }
  }
 }

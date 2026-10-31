@@ -1,22 +1,6 @@
 {
  "about": "KPC bot status board: per bot the last run, green / red, what it made, what is waiting on whom. Written by kpc_status.py from each workflow; a members-only page reads it later.",
  "bots": {
-  "GIS hunter": {
-   "areas": "",
-   "last_run": "2026-10-31",
-   "made": "chunk 1: data/gis-hunter + questions",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41165556229",
-   "waiting_on": "chat 11 answers data/waiting/questions/gis-hunter.json"
-  },
-  "Layer collector": {
-   "areas": "",
-   "last_run": "2026-10-31",
-   "made": "LAYER lines + crawler layers pin-tested",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41160218096",
-   "waiting_on": "chat 11 answers data/waiting/questions/layers.json"
-  },
   "campground info bot": {
    "areas": "left: 51",
    "last_run": "2026-10-30",
@@ -54,7 +38,7 @@
    "last_run": "2026-10-31",
    "made": "chunk 2 saved",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41107629547",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41162369401",
    "waiting_on": "chat 8 grades review.md samples"
   },
   "park detective": {
@@ -75,7 +59,7 @@
   },
   "waiting room": {
    "last_run": "2026-10-31",
-   "made": "heartbeat 1 h old, 63 files waiting",
+   "made": "heartbeat 0 h old, 68 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },

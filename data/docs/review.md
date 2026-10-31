@@ -40,8 +40,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-OK | 205 | 106 | 99 | 97 | 2 | 92 | 12 | 95 | 41 | 1 | 0 |
 | US-TX | 222 | 111 | 26 | 105 | 46 | 43 | 22 | 111 | 89 | 3 | 0 |
 | US-KS | 145 | 15 | 7 | 15 | 1 | 11 | 3 | 130 | 15 | 79 | 0 |
-| US-NE | 33 | 8 | 6 | 8 | 1 | 3 | 4 | 25 | 10 | 5 | 0 |
-| US-CO | 35 | 14 | 4 | 14 | 0 | 11 | 3 | 21 | 15 | 11 | 0 |
+| US-NE | 198 | 20 | 14 | 16 | 1 | 12 | 7 | 178 | 24 | 4 | 0 |
+| US-CO | 276 | 72 | 48 | 51 | 1 | 65 | 6 | 203 | 42 | 1 | 0 |
+| US-WY | 64 | 9 | 9 | 9 | 0 | 8 | 1 | 55 | 10 | 42 | 0 |
 | US-OH | 276 | 17 | 5 | 16 | 0 | 14 | 3 | 259 | 274 | 0 | 0 |
 
 ## US-KY sample (random 12 per agency group, seed 28)
@@ -2819,16 +2820,28 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## US-NE sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| US-0441 | Boyer Chute National Wildlife Refuge | https://www.fws.gov/refuge/boyer-chute/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/boyer-chute/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
-| US-0443 | Fort Niobrara National Wildlife Refuge | https://www.fws.gov/refuge/fort-niobrara/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/locations/fort-niobrara-national-wildlife-refuge/r ✓ |  |
-| US-0445 | North Platte National Wildlife Refuge | https://www.fws.gov/refuge/north-platte/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/locations/north-platte-national-wildlife-refuge/ru ✓ | is managed by the Nebraska Game and Parks Commission |
-| US-0442 | Crescent Lake National Wildlife Refuge | https://www.fws.gov/refuge/crescent-lake/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/locations/crescent-lake-national-wildlife-refuge/r ✓ |  |
+| US-2610 | Arbor Lodge State Historical Park | https://www.arbordayfarm.org/about/property-map | page · off the government, not linked by the ag | — (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| US-3487 | DeSoto (NE) National Wildlife Refuge | https://www.fws.gov/refuge/desoto/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/refuge/desoto/visit-us/rules-policies ✓ |  |
+| US-0442 | Crescent Lake National Wildlife Refuge | https://www.fws.gov/refuge/crescent-lake/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/locations/crescent-lake-national-wildlife-refuge/r ✓ |  |
+| US-0447 | Valentine National Wildlife Refuge | https://www.fws.gov/refuge/valentine/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/locations/valentine-national-wildlife-refuge/rules ✓ |  |
+| US-0441 | Boyer Chute National Wildlife Refuge | https://www.fws.gov/refuge/boyer-chute/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/refuge/boyer-chute/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
+| US-0443 | Fort Niobrara National Wildlife Refuge | https://www.fws.gov/refuge/fort-niobrara/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/locations/fort-niobrara-national-wildlife-refuge/r ✓ |  |
+| US-0445 | North Platte National Wildlife Refuge | https://www.fws.gov/refuge/north-platte/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/locations/north-platte-national-wildlife-refuge/ru ✓ | is managed by the Nebraska Game and Parks Commission |
+| US-3491 | Lake Wanahoo State Recreation Area | https://lpnnrd.org/wp-content/uploads/2021/05/Lake-Wanahoo-Trail-Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2021-05 |  ✗ |  |
 | US-4017 | Lincoln Saline Wetland State Park | https://www.lincoln.ne.gov/files/sharedassets/public/v/1/parks-amp-rec/saline-wetlands/con | pdf ✓name · the agency site | 2008: check it is still current (file stamp 2008 (older than the posting 2025 ) · posted Feb 26, 2025 |  ✗ |  |
 | US-4566 | California National Historic Trail | https://www.nps.gov/cali/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 28, 2026 | https://www.nps.gov/cali/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0942 | Homestead National Historical Park | https://www.nps.gov/home/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted December 13, 2021 | https://www.nps.gov/home/learn/management/lawsandpolicies.htm ✓ |  |
+| US-5622 | Niobrara National Wild and Scenic River | https://www.nps.gov/niob/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted September 12, 2025 | https://www.nps.gov/niob/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4578 | Pony Express National Historic Trail | https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.p | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 22, 2018 | https://www.nps.gov/poex/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4572 | Lewis and Clark National Historic Trail | https://www.nps.gov/lecl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 5, 2026 | https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0962 | Scotts Bluff National Monument | https://www.nps.gov/scbl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted May 11, 2024 | https://www.nps.gov/scbl/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0900 | Agate Fossil Beds National Monument | https://www.nps.gov/agfo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 2, 2021 | https://www.nps.gov/agfo/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4573 | Mormon Pioneer National Historic Trail | https://www.nps.gov/mopi/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted August 28, 2026 | https://www.nps.gov/mopi/learn/management/lawsandpolicies.htm ✓ |  |
+| US-3371 | Nebraska National Forest | https://www.fs.usda.gov/r02/nebraska/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted October 30, 2026 | https://www.fs.usda.gov/r02/nebraska ✓ |  |
+| US-3372 | Samuel R McKelvie National Forest | https://www.fs.usda.gov/r02/nebraska/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted October 30, 2026 | https://www.fs.usda.gov/r02/nebraska ✓ |  |
+| US-7478 | Oglala National Grassland | https://www.fs.usda.gov/r02/nebraska/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted October 30, 2026 | https://www.fs.usda.gov/r02/nebraska ✓ |  |
 
-### US-NE no map yet (25): the reason
+### US-NE no map yet (178): the reason
 - US-0446 Funk WPA Wetland Management District: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/rainwater-basin-wetland-management-district)
 - US-12337 Cub Creek (northern) State Recreation Area: no map link on file and none on the park page
 - US-2608 Ashfall Fossil Beds State Historical Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
@@ -2854,39 +2867,89 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-4027 Lone Star State Recreation Area: no map link on file and none on the park page
 - US-4036 Walnut Creek State Recreation Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-4576 Oregon National Historic Trail: 
+- US-5656 Flanagan Lake State Recreation Area: no map link on file and none on the park page
+- US-5658 Lake Zorinsky State Park: no map link on file and none on the park page
+- US-0675 Missouri National Recreational River National: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/mnrr/planyourvisit/maps.htm)
+- US-11273 Pressey Wildlife Management Area: no map link on file and none on the park page
+- US-11867 Hickory Ridge Wildlife Management Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- US-11868 Pawnee Prairie Wildlife Management Area: no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/) (needs browser: the page refused a plain reader (HTTP 403))
+- US-11871 Bassway Strip Wildlife Management Area: no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/) (needs browser: the page refused a plain reader (HTTP 403))
+- US-12087 Scotia Canal Wildlife Management Area: no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/) (needs browser: the page refused a plain reader (HTTP 403))
+- US-12088 Davis Creek Wildlife Management Area: no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/) (needs browser: the page refused a plain reader (HTTP 403))
+- US-12089 Arcadia Diversion Dam Wildlife Management Are: no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/) (needs browser: the page refused a plain reader (HTTP 403))
+- US-12090 Milburn Dam Wildlife Management Area: no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/) (needs browser: the page refused a plain reader (HTTP 403))
+- US-12091 Myrtle E. Hall Wildlife Management Area: no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/) (needs browser: the page refused a plain reader (HTTP 403))
+- US-12362 Buffalo Bill State Recreation Area: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
+- US-12383 East Gothenburg Wildlife Management Area: no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/) (needs browser: the page refused a plain reader (HTTP 403))
+- US-12384 Kinter’s Ford Wildlife Management Area: no map (one file shared by 44 parks was dropped: https://gismaps.outdoornebraska.gov/ngpc_public_access_atlas/) (needs browser: the page refused a plain reader (HTTP 403))
 
 ## US-CO sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
+| US-11908 | North Fruita Desert BLM Special Recreati | https://www.blm.gov/documents/grand-junction-fo/public-room/map/north-fruita-desert-18-roa | page · the agency site | — (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| US-9594 | Gunnison Gorge BLM National Conservation | https://www.blm.gov/sites/blm.gov/files/uploads/programs_national-conservation-lands_color | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 |  ✗ | is managed by the BLM Uncompahgre Field Office |
+| US-9600 | Zapata Falls BLM National Recreation Are | https://www.blm.gov/sites/default/files/docs/2023-10/2023%20-%20Zapata%20Falls%20Special%2 | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted 2023-10 |  ✗ |  |
+| US-9593 | Dominguez-Escalante BLM National Conserv | https://www.blm.gov/sites/default/files/docs/2024-04/2023%20-%20Dominguez-Escalante%20Nati | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted 2024-04 |  ✗ |  |
+| US-9595 | McInnis Canyons BLM National Conservatio | https://www.blm.gov/sites/blm.gov/files/documents/files/MCNCA%20Travel%20Map.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Nov 05, 2020 | https://www.coloradocanyonsassociation.org/news/2019/7/1/know-before-y ✓ |  |
+| US-11906 | Bangs BLM Special Recreation Management  | https://www.blm.gov/sites/default/files/docs/2021-09/GJFO_Bangs_Map_20210910.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted 2021-09 |  ✗ |  |
+| US-11952 | Dolores River Canyon BLM Recreation Mana | https://www.blm.gov/sites/default/files/docs/2021-01/Dolores_River_SRMA_20200901.pdf | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted 2021-01 |  ✗ |  |
+| US-4411 | Browns Canyon National Monument | https://www.blm.gov/sites/default/files/docs/2024-05/final.print_.2021%20reprint%20Browns% | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted 2024-05 |  ✗ |  |
+| US-1234 | Pearl Lake State Park | https://cpw.state.co.us/sites/default/files/dam/jxbwjvncno/steamboat-lake-and-pearl-lake-s | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 18, 2026 |  ✗ |  |
+| US-1220 | Harvey Gap State Park | https://cpw.state.co.us/sites/default/files/dam/ni3mctk5uv/harvey-gap-state-park-brochure. | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 18, 2026 |  ✗ |  |
+| US-1213 | Cherry Creek State Park | https://cpw.state.co.us/sites/default/files/dam/weqlvdc5nv/cherry-creek-state-park-brochur | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 18, 2026 |  ✗ |  |
+| US-12353 | Roaring Judy State Fish Hatchery | https://cpw.state.co.us/sites/default/files/dam/aaa02nnbav/roaring-judy-state-fish-hatcher | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 18, 2026 |  ✗ |  |
+| US-1211 | Castlewood Canyon State Park | https://cpw.state.co.us/sites/default/files/dam/4ejxonyydw/castlewood-canyon-state-park-br | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 18, 2026 |  ✗ |  |
+| US-1219 | Golden Gate Canyon State Park | https://cpw.state.co.us/sites/default/files/dam/mg6idc0ah0/golden-gate-canyon-state-park-b | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 18, 2026 |  ✗ |  |
+| US-1212 | Chatfield State Park | https://cpw.state.co.us/sites/default/files/dam/tskv7n0amk/chatfield-state-park-brochure.p | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 18, 2026 |  ✗ |  |
+| US-1232 | North Sterling State Park | https://cpw.state.co.us/sites/default/files/dam/giluo2xhmo/north-sterling-state-park-broch | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 18, 2026 |  ✗ |  |
+| US-1233 | Paonia State Park | https://cpw.state.co.us/sites/default/files/dam/rie2gnkljj/paonia-state-park-brochure.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 18, 2026 |  ✗ |  |
+| US-1226 | Lathrop State Park | https://cpw.state.co.us/sites/default/files/dam/zfkfimxlrt/lathrop-state-park-brochure.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 18, 2026 |  ✗ |  |
 | US-10540 | Bellevue-Watson State Fish Hatchery | https://cpw.state.co.us/sites/default/files/dam/ieozaiss1x/bellvue-watson-state-fish-hatch | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 18, 2026 |  ✗ | operated by Colorado Parks |
-| US-0222 | Baca National Wildlife Refuge | https://www.fws.gov/refuge/baca/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/baca/visit-us/rules-policies ✓ |  |
-| US-0220 | Alamosa National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/AlamosaRiverTrail%20Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Nov 29, 2021 | https://www.fws.gov/refuge/alamosa/visit-us/rules-policies ✓ |  |
+| US-1235 | Ridgway State Park | https://cpw.state.co.us/sites/default/files/dam/8zv3rdntpw/ridgway-state-park-brochure.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Mar 18, 2026 |  ✗ |  |
 | US-0221 | Arapaho National Wildlife Refuge | https://www.fws.gov/refuge/arapaho/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/arapaho/visit-us/rules-policies ✓ |  |
+| US-0220 | Alamosa National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/AlamosaRiverTrail%20Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Nov 29, 2021 | https://www.fws.gov/refuge/alamosa/visit-us/rules-policies ✓ |  |
+| US-0226 | Rocky Mountain Arsenal National Wildlife | https://www.fws.gov/refuge/rocky-mountain-arsenal/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/locations/rocky-mountain-arsenal-national-wildlife ✓ |  |
+| US-0224 | Monte Vista National Wildlife Refuge | https://www.fws.gov/refuge/monte-vista/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/refuge/monte-vista/visit-us/rules-policies ✓ |  |
+| US-9590 | Leadville National Fish Hatchery Nationa | https://www.fws.gov/fish-hatchery/leadville/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/policies ✓ |  |
+| US-0225 | Rocky Flats National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/2024-06/rocky-flats-nwr-brochure-web.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted 2024-06 | https://www.fws.gov/locations/rocky-flats-national-wildlife-refuge/rul ✓ |  |
+| US-0222 | Baca National Wildlife Refuge | https://www.fws.gov/refuge/baca/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/baca/visit-us/rules-policies ✓ |  |
+| US-8295 | Great Sand Dunes National Preserve | https://www.nps.gov/grsa/planyourvisit/maps.htm#GlobalNav-toggle | page · the agency site | — (date unknown, checked 2026-10-31) · posted February 15, 2023 | https://www.nps.gov/grsa/learn/management/lawsandpolicies.htm ✓ |  |
+| US-9683 | Amache National Historic Site | https://www.nps.gov/amch/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted April 22, 2025 | https://www.nps.gov/amch/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0921 | Dinosaur National Monument | https://www.nps.gov/dino/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted November 15, 2019 | https://www.nps.gov/dino/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0925 | Florissant Fossil Beds National Monument | https://www.nps.gov/flfo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted April 1, 2024 | https://www.nps.gov/flfo/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0059 | Rocky Mountain National Park | https://www.nps.gov/romo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted August 31, 2026 | https://www.nps.gov/romo/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0943 | Hovenweep National Monument | https://www.nps.gov/hove/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted April 18, 2025 | https://www.nps.gov/hove/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0918 | Colorado National Monument | https://www.nps.gov/colm/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted April 29, 2025 | https://www.nps.gov/colm/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0051 | Mesa Verde National Park | https://www.nps.gov/meve/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted April 21, 2025 | https://www.nps.gov/meve/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4575 | Old Spanish National Historic Trail | https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-M | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 22, 2018 | https://www.nps.gov/olsp/learn/management/lawsandpolicies.htm ✓ |  |
-| US-9683 | Amache National Historic Site | https://www.nps.gov/amch/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted April 22, 2025 | https://www.nps.gov/amch/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4578 | Pony Express National Historic Trail | https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.p | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 22, 2018 | https://www.nps.gov/poex/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0033 | Great Sand Dunes National Park | https://www.nps.gov/grsa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted February 15, 2023 | https://www.nps.gov/grsa/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0008 | Black Canyon of the Gunnison National Pa | https://www.nps.gov/blca/planyourvisit/upload/Black_Canyon_unigrid_2023_508_web.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted 2023 | https://www.nps.gov/blca/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4579 | Santa Fe National Historic Trail | https://www.nps.gov/safe/planyourvisit/upload/National-Park-Service-Santa-Fe-Trail-Map-508 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 22, 2018 | https://www.nps.gov/safe/learn/management/lawsandpolicies.htm ✗ |  |
-| US-4566 | California National Historic Trail | https://www.nps.gov/cali/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted August 28, 2026 | https://www.nps.gov/cali/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4558 | Continental Divide Trail National Scenic | https://www.fs.usda.gov/trails/continental-divide-nst | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fs.usda.gov/trails/continental-divide-nst/plan-visit/know- ✓ |  |
+| US-0652 | Curecanti National Recreation Area | https://www.nps.gov/cure/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted October 31, 2024 | https://www.nps.gov/cure/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0801 | Bent's Old Fort National Historic Site | https://www.nps.gov/beol/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted September 17, 2026 | https://www.nps.gov/beol/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4558 | Continental Divide Trail National Scenic | https://www.fs.usda.gov/trails/continental-divide-nst/maps-guides | page · the agency site | — (date unknown, checked 2026-10-31) · posted September 9, 2025 | https://www.fs.usda.gov/trails/continental-divide-nst/plan-visit/know- ✓ |  |
+| US-4405 | Rio Grande National Forest | https://www.fs.usda.gov/r02/riogrande/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted June 11, 2025 | https://www.fs.usda.gov/r02/riogrande ✓ |  |
+| US-4397 | Manti-La Sal National Forest | https://www.fs.usda.gov/r04/manti-lasal/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted May 7, 2026 | https://www.fs.usda.gov/r04/manti-lasal ✓ |  |
+| US-4410 | White River National Forest | https://www.fs.usda.gov/r02/whiteriver/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted October 20, 2026 | https://www.fs.usda.gov/whiteriver/alerts-notices ✗ |  |
+| US-7491 | Comanche National Grassland | https://www.fs.usda.gov/r02/psicc/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted January 21, 2026 | https://www.fs.usda.gov/psicc/alerts-notices ✗ |  |
+| US-4407 | San Isabel National Forest | https://www.fs.usda.gov/r02/psicc/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted January 21, 2026 | https://www.fs.usda.gov/r02/psicc ✓ |  |
+| US-11902 | Camp Hale National Monument | https://www.fs.usda.gov/r02/whiteriver/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted October 20, 2026 | https://www.fs.usda.gov/r02/whiteriver ✓ |  |
+| US-4409 | Uncompahgre National Forest | https://www.fs.usda.gov/r02/gmug/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted December 1, 2025 | https://www.fs.usda.gov/recmain/alerts-notices ✗ |  |
+| US-4403 | Medicine Bow - Routt National Forest | https://www.fs.usda.gov/sites/nfs/files/legacy-media/mrtb/Vicinity%20map%20of%20all%20unit | pdf · the agency site | 2010-06-04 (file stamp 2010 (older than the posting 2025 ) · posted Feb 17, 2025 | https://www.fs.usda.gov/r02/mbrtb ✓ |  |
+| US-4408 | San Juan National Forest | https://www.fs.usda.gov/r02/sanjuan/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted June 3, 2025 | https://www.fs.usda.gov/r02/sanjuan/fire/info ✓ |  |
+| US-4401 | Grand Mesa National Forest | https://www.fs.usda.gov/r02/gmug/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted December 1, 2025 | https://www.fs.usda.gov/r02/gmug ✓ |  |
+| US-4413 | Chimney Rock National Monument | https://www.fs.usda.gov/r02/sanjuan/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-31) · posted June 3, 2025 | https://www.fs.usda.gov/r02/sanjuan/fire/info ✓ |  |
 
-### US-CO no map yet (21): the reason
-- US-11902 Camp Hale National Monument: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11907 Calamity Camp BLM Historic Preservation Site: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-11911 Damaree BLM Wilderness Area: no map link on file and none on the park page (needs browser: host on the browser list)
+### US-CO no map yet (204): the reason
+- US-11907 Calamity Camp BLM Historic Preservation Site: no map (one file shared by 21 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11911 Damaree BLM Wilderness Area: no map (one file shared by 21 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
 - US-1208 Arkansas River Headwaters Recreation Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/iv4cywcl7k/ahra-state-)
-- US-12106 Brainard Lake Recreation Area National Forest: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-12173 Tabeguache BLM Historic Trail: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12106 Brainard Lake Recreation Area National Forest: no map (one file shared by 5 parks was dropped: https://www.fs.usda.gov/r02/arp/maps-guides) (needs browser: host on the browser list)
+- US-12173 Tabeguache BLM Historic Trail: no map (one file shared by 21 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
 - US-12189 Buena Vista State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/ioxpf0j8to/buenavistac)
 - US-13106 Penitente Canyon Recreation Site: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-4397 Manti-La Sal National Forest: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-5749 Kokopelli's Trail National Recreation Area: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-9597 Kremmling BLM National Recreation Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-5749 Kokopelli's Trail National Recreation Area: no map (one file shared by 21 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-9597 Kremmling BLM National Recreation Area: no map (one file shared by 21 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
 - US-9652 Grenada State Wildlife Area: no map link on file and none on the park page
-- US-0183 Penrose Commons National Recreation Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0183 Penrose Commons National Recreation Area: no map (one file shared by 21 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
 - US-0184 Ramah State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/vhuuk6xtqt/ramahswa_ge)
 - US-0185 Hugo State Wildlife Area: no map link on file and none on the park page
 - US-0188 Kinney Lake State Wildlife Area: no map link on file and none on the park page
@@ -2895,6 +2958,82 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-0192 Beaver Creek State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/gane8l4dru/beavercreek)
 - US-0195 Ogden-Treat State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/luho5iquia/ogdentreats)
 - US-0223 Browns Park National Wildlife Refuge: 
+- US-0227 Two Ponds National Wildlife Refuge: no working map link (tried: robots https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/docum)
+- US-10532 Wellington State Wildlife Area: no map link on file and none on the park page
+- US-10533 Watson Lake State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/q3p3ltiltz/watsonlakes)
+- US-10534 Garfield Creek State Wildlife Area: no map link on file and none on the park page
+- US-10535 West Rifle Creek State Wildlife Area: no map link on file and none on the park page
+- US-10539 Rifle Falls State Fish Hatchery: no map link on file and none on the park page
+- US-11884 The Palisade BLM Wilderness Area: no map (one file shared by 21 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11885 West Lake State Wildlife Area: no map link on file and none on the park page
+- US-11887 Sewemup Mesa BLM Wilderness Area: no map (one file shared by 21 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11888 Horsethief Canyon State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/wnjyciyqwg/horsethiefc)
+- US-11889 Piceance State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/q3uei2ss2z/piceanceswa)
+- US-11890 Colorado River Island State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/cx3suzulsg/coloradoriv)
+- US-11891 Tilman Bishop State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/8vmyexd8yr/tilmanbisho)
+- US-11892 Jerry Creek Reservoirs State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/3vlqkpqxxy/jerrycreek_)
+- US-11893 Plateau Creek State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/2vpsrlsa7n/plateaucree)
+- US-11894 Orchard Mesa State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/ywqalrisem/orchardmesa)
+- US-11895 Tarryall Reservoir State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/dwzdg6rpn6/tarryallres)
+- US-11896 Little Book Cliffs BLM Wilderness Area: no map (one file shared by 21 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11897 Beaver Creek BLM Wilderness Area: no map (one file shared by 21 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11898 Adobe Badlands BLM Wilderness Area: no map (one file shared by 21 parks was dropped: https://www.blm.gov/maps) (needs browser: host on the browser list)
+- US-11899 South Republican State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/pki9psccbb/southrepubl)
+
+## US-WY sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-10947 | The Battle of Red Buttes National Battle | https://www.hmdb.org/results.asp?Search=Place&Town=Casper&State=Wyoming | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
+| US-10791 | Pilot Hill State Wildlife Habitat Manage | https://wgfapps.wyo.gov/GISFLS/Com_Lands/WHMA_Pilot%20Hill.pdf | pdf ✓name · linked from the agency page (wgfapps.wyo | date unknown (date unknown, checked 2026-10-31) · posted May 08, 2026 | https://wgfd.wyo.gov/public-access/walk-area-rules ✓ |  |
+| US-10798 | Viva Naughton State Wildlife Habitat Man | https://wgfapps.wyo.gov/GISFLS/Com_Lands/PAA_Viva%20Naughton.pdf | pdf ✓name · linked from the agency page (wgfapps.wyo | date unknown (date unknown, checked 2026-10-31) · posted May 08, 2026 | https://wgfd.wyo.gov/public-access/walk-area-rules ✓ |  |
+| US-10807 | Black Butte State Wildlife Habitat Manag | https://wgfapps.wyo.gov/GISFLS/Com_Lands/WHMA_Black%20Butte.pdf | pdf ✓name · linked from the agency page (wgfapps.wyo | date unknown (date unknown, checked 2026-10-31) · posted May 08, 2026 | https://wgfd.wyo.gov/public-access/walk-area-rules ✓ |  |
+| US-10789 | North Glendo State Wildlife Habitat Mana | https://wgfapps.wyo.gov/GISFLS/Com_Lands/WHMA_North%20Glendo.pdf | pdf ✓name · linked from the agency page (wgfapps.wyo | date unknown (date unknown, checked 2026-10-31) · posted May 08, 2026 | https://wgfd.wyo.gov/public-access/walk-area-rules ✓ |  |
+| US-10805 | Sinks Canyon State Wildlife Habitat Mana | https://wgfapps.wyo.gov/GISFLS/Com_Lands/WHMA_Sinks%20Canyon.pdf | pdf ✓name · linked from the agency page (wgfapps.wyo | date unknown (date unknown, checked 2026-10-31) · posted May 08, 2026 | https://wgfd.wyo.gov/public-access/walk-area-rules ✓ |  |
+| US-10778 | Sand Creek State Wildlife Habitat Manage | https://wgfapps.wyo.gov/GISFLS/Com_Lands/WHMA_Sand%20Creek.pdf | pdf ✓name · linked from the agency page (wgfapps.wyo | date unknown (date unknown, checked 2026-10-31) · posted May 08, 2026 | https://wgfd.wyo.gov/public-access/walk-area-rules ✓ |  |
+| US-10792 | John/Annie Woodhouse State Wildlife Habi | https://wgfapps.wyo.gov/GISFLS/Com_Lands/WHMA_John_Annie%20Woodhouse.pdf | pdf ✓name · linked from the agency page (wgfapps.wyo | date unknown (date unknown, checked 2026-10-31) · posted May 08, 2026 | https://wgfd.wyo.gov/public-access/walk-area-rules ✓ |  |
+| US-10809 | Luke Lynch State Wildlife Habitat Manage | https://wgfapps.wyo.gov/GISFLS/Com_Lands/WHMA_Luke%20Lynch.pdf | pdf ✓name · linked from the agency page (wgfapps.wyo | date unknown (date unknown, checked 2026-10-31) · posted May 08, 2026 | https://wgfd.wyo.gov/public-access/walk-area-rules ✓ |  |
+
+### US-WY no map yet (55): the reason
+- US-10776 Packers Lake Public Access Area BLM Special R: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://wgfapps.wyo.gov/GISFLS/Com_Lands/PAA_Packers%20Lake.pdf)
+- US-10795 Shoshone Cavern AKA Spirit Mtn Cave BLM Speci: no map link on file and none on the park page
+- US-10817 Story State Fish Hatchery: no map link on file and none on the park page
+- US-10818 Auburn State Fish Hatchery: no map link on file and none on the park page
+- US-10821 Dan Speas State Fish Hatchery: no map link on file and none on the park page
+- US-10822 Daniel State Fish Hatchery: no map link on file and none on the park page
+- US-10823 Dubois State Fish Hatchery: no map link on file and none on the park page
+- US-10824 Ten Sleep State Fish Hatchery: no map link on file and none on the park page
+- US-10825 Tillett Springs State Fish Hatchery: no map link on file and none on the park page
+- US-10835 Pacific Creek BLM Interpretive Site: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10836 Emigrant Gap BLM Interpretive Site: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10837 Little Sandy Crossing BLM Historic Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10838 Buckskin Crossing BLM Interpretive Site: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10839 Devil's Gate BLM Interpretive Site: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10840 Gebo - Causley Historic Mining District BLM I: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10842 Boar's Tusk BLM Recreation Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10848 Castle Gardens Scenic Area BLM Recreation Man: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10849 CCC Ponds/Pinedale Pathway BLM Recreation Man: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10850 Cedar Canyon Petroglyphs BLM Recreation Manag: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10854 Corral Creek Campground BLM Recreation Manage: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10855 Deep Gulch BLM Recreation Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10856 Dome Rock BLM Recreation Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10857 Dugway Recreation Site BLM Recreation Managem: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10860 Four Bear Trail BLM Recreation Management Are: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10861 Fremont Lake Road / Skyline Drive BLM Recreat: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10862 Gooseberry Badlands Scenic Overlook Trail BLM: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10863 Green River/Warrne Bridge River Access Area B: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10865 Lance Creek Fossil Site BLM Recreation Manage: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10876 Lone Tree Trail BLM Recreation Management Are: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10877 Mallo Trail BLM Recreation Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10880 Paintrock Canyon Trail BLM Recreation Managem: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10881 Pine Creek Camp Area BLM Recreation Managemen: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10882 Prior Flat Campground BLM Recreation Manageme: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10883 Red Canyon Overlook BLM Interpretive Site: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10884 Red Gulch/Alkali Backcountry Byway BLM Specia: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10885 Rim Lake BLM Recreation Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10886 Salt Lick Trail BLM Recreation Management Are: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10888 Shirley Basin Reservoir BLM Special Recreatio: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10891 Teton Reservoir BLM Recreation Management Are: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10892 The Redds Day Use Area BLM Recreation Managem: no map link on file and none on the park page (needs browser: host on the browser list)
 
 ## US-OH sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -2960,15 +3099,18 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-1968 Lake Hope State Park: no map link on file and none on the park page
 
 ## robots.txt said no (hosts we did not read)
-- doifwsnextprod.prod.acquia-sites.com: 1 addresses (User-agent: * | Disallow: /)
-- tpwd.texas.gov: 237 addresses (Sitemap: http://tpwd.texas.gov/sitemap.xml | User-agent: * | Disallow: /tours/ | Disallow: /files/ |)
-- www.google.com: 1 addresses (User-agent: * | User-agent: Yandex | Disallow: /search | Allow: /search/about | Allow: /search/howse)
+- cpw.widen.net: 1 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Disallow: /)
+- doifwsnextprod.prod.acquia-sites.com: 3 addresses (User-agent: * | Disallow: /)
+- store.usgs.gov: 1 addresses (User-agent: * | Allow: /core/*.css$ | Allow: /core/*.css? | Allow: /core/*.js$ | Allow: /core/*.js? )
+- www.hmdb.org: 2 addresses (User-agent: * | Sitemap: https://www.hmdb.org/sitemap.asp | Crawl-delay: 0.1 | Disallow: /PhotoFullS)
 
 ## hosts resting a day (three strikes)
+- cpw.state.co.us
 - fhwaapps.fhwa.dot.gov
 - iowaculture.gov
 - mip.agri.arkansas.gov
 - sojournertruthstatepark.info
+- wgfapps.wyo.gov
 - www.agfc
 - www.camdenexpedition.org
 - www.cgcounty.org
