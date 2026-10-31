@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-6617.json",
+ "id": "10-auto-CA-6617",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-6617",
+  "name": "H. R. Frink Conservation Area",
+  "agency": "government agency (quinteconservation.ca)",
+  "url": "https://media-002-ca.cdn.govstack.com/quinteconservation-013-ca/media/02kk4e23/frink-centre.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 15:18Z",
+ "results": [
+  {
+   "url": "https://media-002-ca.cdn.govstack.com/quinteconservation-013-ca/media/02kk4e23/frink-centre.pdf",
+   "map_url": "https://media-002-ca.cdn.govstack.com/quinteconservation-013-ca/media/02kk4e23/frink-centre.pdf",
+   "saved": [
+    "maps/CA-6617_h-r-frink-conservation-area.jpg"
+   ],
+   "bytes": 431021,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
