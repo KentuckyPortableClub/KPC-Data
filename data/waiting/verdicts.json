@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T02:50Z",
+ "checked": "2026-10-31T02:59Z",
  "switched_on": false,
  "results": [
   {
@@ -14,15 +14,6 @@
    "kind": "key",
    "why": [],
    "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/why-not.json",
-   "kind": "key",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
    "verdict": "PASS"
   },
   {
@@ -42,6 +33,15 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/docs/US-AR.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/docs/US-CO.json",
    "kind": "docs",
    "why": [
@@ -54,6 +54,15 @@
   },
   {
    "path": "data/docs/US-CT.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/docs/US-DC.json",
    "kind": "docs",
    "why": [
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
@@ -498,13 +507,6 @@
   },
   {
    "path": "data/us-key/overrides.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/us-key/why-not.json",
    "kind": "key",
    "why": [],
    "notes": [],

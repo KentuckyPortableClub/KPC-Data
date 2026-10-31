@@ -47,8 +47,10 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT official documents bot (2026-10-31): grade me: US-IA US-SD US-NY US-CT US-VT US-NH US-MD US-DC data/docs/<area>.json + review.md — chunk 2 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41107629547)
 - FROM BOT official documents bot (2026-10-31): grade me: US-IA US-NY US-CT US-VT US-NH US-MD US-DC US-AR data/docs/<area>.json + review.md — chunk 3 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41107629547)
 - FROM BOT official documents bot (2026-10-31): grade me: US-IA US-VT US-NH US-MD US-DC US-AR US-OK US-TX data/docs/<area>.json + review.md — chunk 4 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41107629547)
+- FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-AR.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-CO.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-CT.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-DC.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-DE.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-LA.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-10-31): docs data/docs/US-MA.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
@@ -79,3 +81,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/US-NM.json held: F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand) · F-2 18 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-0012+US-4516, US-0678+US-4517, US-0752+US-4579
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): fers data/fers/US-RI.json held: F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)
 - FROM WAITING ROOM (held since 2026-10-30, 1 days): truth data/truth/US-KY.json held: F-K known answer US-3800: Cedar Creek Lake WMA OFF at 796 ac (now verdict agree, 796.0 ac)
+- FROM BOT official documents bot (2026-10-31): grade me: US-IA US-MD US-DC US-AR US-OK US-TX US-KS US-NE data/docs/<area>.json + review.md — chunk 5 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41107629547)

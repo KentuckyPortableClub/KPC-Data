@@ -207,14 +207,14 @@
    "parks": 35,
    "checked": 35,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-31"
   },
   "US-AR": {
    "status": "done",
    "parks": 306,
    "checked": 306,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-31"
   },
   "US-LA": {
    "status": "done",
@@ -224,11 +224,10 @@
    "updated": "2026-10-29"
   },
   "US-OK": {
-   "status": "done",
+   "status": "failed",
    "parks": 205,
-   "checked": 205,
-   "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-31",
+   "why": "maps 97 -> 80"
   },
   "US-TX": {
    "status": "done",
@@ -256,32 +255,37 @@
   "iowaculture.gov": 1793486206.7553685,
   "www.cgcounty.org": 1793486529.479077,
   "www.lclt.org": 1793490459.2514486,
-  "sojournertruthstatepark.info": 1793494272.6810167
+  "sojournertruthstatepark.info": 1793494272.6810167,
+  "www.usna.usda.gov": 1793499944.1139243,
+  "fhwaapps.fhwa.dot.gov": 1793500064.3382714,
+  "www.camdenexpedition.org": 1793500272.2389379,
+  "www.agfc": 1793500611.0041478,
+  "mip.agri.arkansas.gov": 1793500699.890685
  },
  "last": {
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-VT",
-   "US-NH",
    "US-MD",
    "US-DC",
    "US-AR",
    "US-OK",
-   "US-TX"
+   "US-TX",
+   "US-KS",
+   "US-NE"
   ],
   "stat": {
-   "requests": 1618,
-   "parks": 672,
-   "maps_ok": 369,
-   "maps_found": 333,
-   "dates": 19,
-   "rules": 384,
-   "browser": 303,
-   "robots": 4,
-   "strikes": 0,
-   "errors": 0,
-   "skipped_fresh": 0
+   "requests": 1255,
+   "parks": 548,
+   "maps_ok": 348,
+   "maps_found": 295,
+   "dates": 6,
+   "rules": 261,
+   "browser": 301,
+   "robots": 3,
+   "strikes": 15,
+   "errors": 12,
+   "skipped_fresh": 176
   }
  }
 }
