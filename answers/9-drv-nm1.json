@@ -1,0 +1,97 @@
+{
+ "request": "requests/9-drv-nm1.json",
+ "id": "9-drv-nm1",
+ "chat": 9,
+ "kind": "page",
+ "report": "FHWA byway layers: all feature names",
+ "asked": {
+  "chat": 9,
+  "kind": "page",
+  "urls": [
+   "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/9/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/29/query?where=1%3D1&outFields=BywayName1,Designation&returnGeometry=false&f=json&resultRecordCount=500",
+   "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/61/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/79/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/93/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/105/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/107/query?where=1%3D1&outFields=Trail_Name&returnGeometry=false&f=json&resultRecordCount=500"
+  ],
+  "report": "FHWA byway layers: all feature names"
+ },
+ "answered": "2026-10-31 05:32Z",
+ "results": [
+  {
+   "url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/9/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "status": 200,
+   "final_url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/9/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "title": "",
+   "text": "{\"error\":{\"code\":400,\"message\":\"Pagination is not supported.\",\"details\":[]}}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/29/query?where=1%3D1&outFields=BywayName1,Designation&returnGeometry=false&f=json&resultRecordCount=500",
+   "status": 200,
+   "final_url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/29/query?where=1%3D1&outFields=BywayName1,Designation&returnGeometry=false&f=json&resultRecordCount=500",
+   "title": "",
+   "text": "{\"error\":{\"code\":400,\"message\":\"Pagination is not supported.\",\"details\":[]}}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/61/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "status": 200,
+   "final_url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/61/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "title": "",
+   "text": "{\"error\":{\"code\":400,\"message\":\"Pagination is not supported.\",\"details\":[]}}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/79/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "status": 200,
+   "final_url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/79/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "title": "",
+   "text": "{\"error\":{\"code\":400,\"message\":\"Pagination is not supported.\",\"details\":[]}}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/93/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "status": 200,
+   "final_url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/93/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "title": "",
+   "text": "{\"error\":{\"code\":400,\"message\":\"Pagination is not supported.\",\"details\":[]}}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/105/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "status": 200,
+   "final_url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/105/query?where=1%3D1&outFields=NAME&returnGeometry=false&f=json&resultRecordCount=500",
+   "title": "",
+   "text": "{\"error\":{\"code\":400,\"message\":\"Pagination is not supported.\",\"details\":[]}}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/107/query?where=1%3D1&outFields=Trail_Name&returnGeometry=false&f=json&resultRecordCount=500",
+   "status": 200,
+   "final_url": "https://geo.dot.gov/server/rest/services/US_Scenic_Byways/MapServer/107/query?where=1%3D1&outFields=Trail_Name&returnGeometry=false&f=json&resultRecordCount=500",
+   "title": "",
+   "text": "{\"error\":{\"code\":400,\"message\":\"Pagination is not supported.\",\"details\":[]}}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 13,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 7
+ },
+ "short": "7 result(s), 7 read OK, 0 screenshot(s)"
+}
