@@ -229,6 +229,8 @@ def ext_index():
     for f in pathlib.Path('data/parkinfo').glob('US-*.json'):
         for r, v in ((load(f, {}) or {}).get('parks') or {}).items():
             if v and len(v) > 6 and v[5] is not None: out[r] = (v[5], v[6], v[0], f.stem)
+    for r, v in ((load('data/parkinfo/CA.json', {}) or {}).get('parks') or {}).items():   # HQ 8:50 PM: Canada too
+        if v and len(v) > 10 and v[5] is not None: out[r] = (v[5], v[6], v[0], f'CA-{v[10]}')
     return out
 
 
@@ -261,7 +263,7 @@ def external(log, qs, queue, seen, n):
         for u in urls or []: by.setdefault(u.rstrip('/'), []).append((ref, kind))
     def order(u):   # Delaware first (HQ: one small state first), then US order by state
         sts = sorted({(P.get(r) or (0, 0, '', 'US-ZZ'))[3] for r, _ in by[u]})
-        return (0 if 'US-DE' in sts else 1, sts[0] if sts else 'US-ZZ', u)
+        return (0 if 'US-DE' in sts else 1, 0 if any(x.startswith('US-') for x in sts) else 1, sts[0] if sts else 'US-ZZ', u)   # US first, then Canada
     for u in sorted(by, key=order):
         if time.time() - t0 > EXT_MIN * 60: break   # the rest next run (pairs already done are skipped)
         todo = [(r, k) for r, k in by[u] if f'{r}|{u}' not in R['pairs']]
@@ -270,8 +272,15 @@ def external(log, qs, queue, seen, n):
         try:
             meta = get_json(u); gt = str(meta.get('geometryType', ''))
             L['geometry'] = gt; L['title'] = meta.get('name', '')
-            names = [f_.get('name') for f_ in meta.get('fields') or [] if f_.get('name')]
-            fld = next((nm for nm in names if NAMEF.search(nm)), None)
+            flds = [f_ for f_ in meta.get('fields') or [] if f_.get('name')]
+            names = [f_['name'] for f_ in flds]
+            strs = [f_['name'] for f_ in flds if 'String' in str(f_.get('type', ''))] or names
+            df = meta.get('displayField')
+            fld = (next((nm for nm in names if NAMEF.search(nm)), None)
+                   or (df if df in strs else None)   # the layer's own display field
+                   or next((nm for nm in strs if re.search(r'name|_nm$|nm$|^nom|titre|title|label|desc', nm, re.I) and not re.search(r'file|admin|agency|owner|county|state|type|code', nm, re.I)), None)
+                   or next((nm for nm in strs if re.search(r'name|_nm$|nm$', nm, re.I)), None))
+            if not names and meta.get('subLayers'): raise RuntimeError('a group layer (its sub-layers hold the data)')
             if not fld: raise RuntimeError('no name field (' + ', '.join(names[:8]) + ')')
             L['name_field'] = fld
         except Exception as e:  # noqa: BLE001
@@ -288,10 +297,17 @@ def external(log, qs, queue, seen, n):
                 for i in range(0, len(pts), 120):
                     chunk = pts[i:i + 120]
                     mp = {'points': [[round(v[1], 5), round(v[0], 5)] for _, _, v in chunk], 'spatialReference': {'wkid': 4326}}
-                    j = get_json(u + '/query', {'geometry': json.dumps(mp, separators=(',', ':')), 'geometryType': 'esriGeometryMultipoint', 'inSR': 4326,
-                                                'spatialRel': 'esriSpatialRelIntersects', 'outFields': '*', 'returnGeometry': 'true', 'outSR': 4326,
-                                                'maxAllowableOffset': 0.002, 'geometryPrecision': 5})
-                    feats = j.get('features') or []
+                    try:
+                        j = get_json(u + '/query', {'geometry': json.dumps(mp, separators=(',', ':')), 'geometryType': 'esriGeometryMultipoint', 'inSR': 4326,
+                                                    'spatialRel': 'esriSpatialRelIntersects', 'outFields': '*', 'returnGeometry': 'true', 'outSR': 4326,
+                                                    'maxAllowableOffset': 0.002, 'geometryPrecision': 5})
+                        feats = j.get('features') or []
+                    except RuntimeError as e:   # some servers refuse a multipoint: one point at a time
+                        if 'nvalid' not in str(e) and 'rror' not in str(e): raise
+                        feats = []
+                        for _r, _k, (la1, lo1, _p, _s) in chunk:
+                            feats += (get_json(u + '/query', {'geometry': f'{lo1},{la1}', 'geometryType': 'esriGeometryPoint', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects',
+                                                              'outFields': '*', 'returnGeometry': 'true', 'outSR': 4326, 'maxAllowableOffset': 0.002}).get('features') or [])
                     for r, k, (la, lo, pn, st) in chunk:
                         best = None
                         for f_ in feats:
