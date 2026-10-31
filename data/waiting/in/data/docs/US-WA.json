@@ -1,0 +1,3486 @@
+{
+ "area": "US-WA",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-12296": {
+   "n": "Raging River State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/geo/ragingriver.pdf",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/ragingriver.pdf)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/ragingriver.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12315": {
+   "n": "Dragoon Creek State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://wadnr.maps.arcgis.com/apps/Shortlist/index.html?appid=98a7fe4ea3764440ad59f0d9b0b280e3",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://wadnr.maps.arcgis.com/apps/Shortlist/index.html?appi)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "map_tried": [
+    {
+     "url": "https://wadnr.maps.arcgis.com/apps/Shortlist/index.html?appi",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12316": {
+   "n": "Sherry Creek State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://wadnr.maps.arcgis.com/apps/Shortlist/index.html?appid=98a7fe4ea3764440ad59f0d9b0b280e3",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://wadnr.maps.arcgis.com/apps/Shortlist/index.html?appi)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: opened, a statewide map viewer, not this park's map (chat 8 F2)"
+   ],
+   "map_tried": [
+    {
+     "url": "https://wadnr.maps.arcgis.com/apps/Shortlist/index.html?appi",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0054": {
+   "n": "Nez Perce National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/nepe/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/nepe/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 27, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/nepe/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0061": {
+   "n": "San Juan Island American Camp National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/sajh/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/sajh/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "February 27, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/sajh/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0731": {
+   "n": "Columbia River Gorge National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/crgnsa",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r06/columbiarivergorge",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r06/columbiarivergorge",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-0824": {
+   "n": "Fort Vancouver National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/fova/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/fova/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "November 3, 2023",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/fova/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0849": {
+   "n": "Minidoka National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/miin/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/miin/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 30, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/miin/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10408": {
+   "n": "Horse Heaven Hills Recreation Area BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/horse-heaven-hills",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10421": {
+   "n": "International Selkirk Loop National Scenic Byway National Parkway",
+   "t": "National Parkway",
+   "page": "https://fhwaapps.fhwa.dot.gov/bywaysp/byway/2486",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (fhwaapps.fhwa.dot.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: rest"
+   ],
+   "ver": 7
+  },
+  "US-10695": {
+   "n": "Coffeepot Lake Nature Recreation Area",
+   "t": "Nature Recreation Area",
+   "page": "https://www.blm.gov/visit/coffeepot-lake-recreation-site",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10709": {
+   "n": "Klickitat National Wild & Scenic River",
+   "t": "National Wild & Scenic River",
+   "page": "https://www.fs.usda.gov/recarea/crgnsa/recreation/wateractivities/recarea/?recid=44590&actid=83",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r06/columbiarivergorge",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10711": {
+   "n": "Marckworth State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/managed-lands/forest-and-trust-lands  https://www.wta.org/go-hiking/hikes/marckworth-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-11145": {
+   "n": "Naneum Ridge State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/NaneumRidge",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.wa.gov/sites/default/files/2026-10/amp_rec_cookie_closure.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2026-10-21",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('map of the closure here')",
+    "posted": "2026-10",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": null,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "2026"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-11903": {
+   "n": "San Juan Island English Camp National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/sajh/planyourvisit/basicinfo.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/sajh/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "February 27, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/sajh/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12246": {
+   "n": "Pacific Lake Recreation Site - Lakeview Ranch BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/pacific-lake-recreation-site-lakeview-ranch",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12254": {
+   "n": "Crab Creek - Rocky Ford Area BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/crab-creek-rocky-ford-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12278": {
+   "n": "Boundary Reservoir BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/boundary-reservoir-recreation-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12279": {
+   "n": "South Huckleberry Mountains BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/south-huckleberry-mountains",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12281": {
+   "n": "North Huckleberry Mountains BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/north-huckleberry-mountains",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12284": {
+   "n": "Camas Meadows Natural Area State Preserve",
+   "t": "State Preserve",
+   "page": "https://www.dnr.wa.gov/CamasMeadows",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.wa.gov/sites/default/files/2025-03/amp_na_brochure.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "APRIL 2017",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Washington Natural Areas')",
+    "posted": "2025-03",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 11,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 11 units",
+    "date_label": "2017: check it is still current"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/forest-regulation/cultural-resources",
+    "how": "a link on the park's page ('Cultural Resources')",
+    "status": "ok"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12318": {
+   "n": "Dishman Hills State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://www.dnr.wa.gov/DishmanHills",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.wa.gov/sites/default/files/2025-03/eng_rms_dish_both.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "June 2014",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Dishman Hills Trail Map')",
+    "posted": "2025-03",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 3,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 3 units",
+    "date_label": "2014: check it is still current"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/forest-regulation/cultural-resources",
+    "how": "a link on the park's page ('Cultural Resources')",
+    "status": "ok"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12343": {
+   "n": "White Salmon National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/river/white-salmon",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/rivers/map; opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/rivers/map?river=white-salmon)",
+    "how": "a link on the park's page ('System-wide Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.fws.gov/rivers/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('System-wide Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fws.gov)"
+    },
+    {
+     "url": "https://www.fws.gov/rivers/map?river=white-salmon",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View larger map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "linked from the agency page (fws.gov)"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12403": {
+   "n": "Columbia Basin Hatchery Creek State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://wdfw.wa.gov/fishing/locations/lowland-lakes/columbia-basin-hatchery-cr",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12480": {
+   "n": "Govan BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/govan-recreation-site",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12488": {
+   "n": "Columbia Basin Upland Restoration State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/upland-restoration-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-12563": {
+   "n": "Douglas Creek BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/visit/douglas-creek",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12565": {
+   "n": "Skookum Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dnr.wa.gov/forest-and-trust-lands/little-pend-oreille-state-forest#skookum",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-09/amp_rec_tacoma_creek_cl; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/lpo.pdf)",
+    "how": "a link on the park's page ('Click here to view a map of the closures')"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-09/amp_rec_tacoma_creek_closures.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Click here to view a map of the closures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/lpo.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12566": {
+   "n": "Sheep Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dnr.wa.gov/forest-and-trust-lands/little-pend-oreille-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-09/amp_rec_tacoma_creek_cl; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/lpo.pdf)",
+    "how": "a link on the park's page ('Click here to view a map of the closures')"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-09/amp_rec_tacoma_creek_closures.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Click here to view a map of the closures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/lpo.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12567": {
+   "n": "Douglas Falls State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://dnr.wa.gov/forest-and-trust-lands/little-pend-oreille-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-09/amp_rec_tacoma_creek_cl; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/lpo.pdf)",
+    "how": "a link on the park's page ('Click here to view a map of the closures')"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-09/amp_rec_tacoma_creek_closures.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Click here to view a map of the closures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/lpo.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12569": {
+   "n": "Beverly Dunes State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://dnr.wa.gov/forest-and-trust-lands/naneum-ridge-state-forest",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2026-10/amp_rec_cookie_closure.; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/naneumcolockum.pdf)",
+    "how": "a link on the park's page ('map of the closure here')"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2026-10/amp_rec_cookie_closure.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('map of the closure here')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/naneumcolockum.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-12828": {
+   "n": "Packer Creek BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/oregon-washington/public-room/map/washington-rock-creek-recreation-area-packer-creek-georeferenced",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12829": {
+   "n": "Duffy Creek BLM Recreation Management Area",
+   "t": "BLM Recreation Management Area",
+   "page": "https://www.blm.gov/documents/oregon-washington/public-room/map/washington-duffy-creek-and-douglas-creek-recreation",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12830": {
+   "n": "Old Ruby State Park State Heritage Area",
+   "t": "State Heritage Area",
+   "page": "https://parks.wa.gov/about/news-center/field-guide-blog/old-ruby-state-park-heritage-site-history",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-12831": {
+   "n": "Ruby BLM Special Recreation Management Area",
+   "t": "BLM Special Recreation Management Area",
+   "page": "https://tinyurl.com/yuar3znk",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13391": {
+   "n": "Olequa Crossing State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://wdfw.wa.gov/places-to-go/water-access-sites/olequa-crossing-322",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-13392": {
+   "n": "Massey Bar State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://wdfw.wa.gov/places-to-go/water-access-sites/massey-bar-472",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13396": {
+   "n": "Steel Bridge State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://wdfw.wa.gov/places-to-go/water-access-sites/steel-bridge-699",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13397": {
+   "n": "Modrow Bridge State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://wdfw.wa.gov/places-to-go/water-access-sites/modrow-bridge-490",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13398": {
+   "n": "Beginner's Hole State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://wdfw.wa.gov/places-to-go/water-access-sites/beginners-hole-257",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13399": {
+   "n": "Hand State Recreation Site",
+   "t": "State Recreation Site",
+   "page": "https://wdfw.wa.gov/places-to-go/water-access-sites/hand-422",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13419": {
+   "n": "Chambers Lake State Fishing Lake",
+   "t": "State Fishing Lake",
+   "page": "https://wdfw.wa.gov/fishing/locations/lowland-lakes/chambers-lake-thurston",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [
+    "maintained by Thurston County Parks"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13441": {
+   "n": "Lake Desire State Fishing Lake",
+   "t": "State Fishing Lake",
+   "page": "https://wdfw.wa.gov/fishing/locations/lowland-lakes/lake-desire",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-13516": {
+   "n": "Horseshoe -Kitsap- State Fishing Lake",
+   "t": "State Fishing Lake",
+   "page": "https://wdfw.wa.gov/fishing/locations/lowland-lakes/horseshoe-lake-kitsap",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-3171": {
+   "n": "Spokane River Centennial State Trail",
+   "t": "State Trail",
+   "page": "https://parks.wa.gov/find-parks/state-parks/spokane-river-centennial-state-park-trail",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://parks.wa.gov/DocumentCenter/View/9837/Centennial-Trail-State-P)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://parks.wa.gov/DocumentCenter/View/9837/Centennial-Trail-State-Park-PDF?bidId=",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-3181": {
+   "n": "Doe Island Marine State Park",
+   "t": "State Park",
+   "page": "https://www.parks.wa.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3385": {
+   "n": "Mt. St. Helens National Monument",
+   "t": "National Monument",
+   "page": "https://www.fs.usda.gov/giffordpinchot/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r06/giffordpinchot",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-3424": {
+   "n": "Ice Age Floods National Geologic Trail",
+   "t": "National Geologic Trail",
+   "page": "https://www.nps.gov/iafl/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/iafl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 11, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/iafl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4376": {
+   "n": "Manhattan Project National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/mapr/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/mapr/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "April 17, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/mapr/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4385": {
+   "n": "Umatilla National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/r06/umatilla",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r06/umatilla/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "October 20, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r06/umatilla",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Department of Agriculture, Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-4477": {
+   "n": "Idaho Panhandle National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/r01/idahopanhandle",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/r01/idahopanhandle",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r01/idahopanhandle/safety-ethics",
+    "how": "a link on the park's page ('Know Before You Go')",
+    "status": "ok"
+   },
+   "agency": "U.S. Department of Agriculture, Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-4555": {
+   "n": "Hanford Reach National Monument",
+   "t": "National Monument",
+   "page": "https://www.fws.gov/national-monument/hanford-reach",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/national-monument/hanford-reach/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/national-monument/hanford-reach/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4562": {
+   "n": "Pacific Crest Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.fs.usda.gov/trails/pacific-crest-nst",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/trails/pacific-crest-nst",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/trails/alerts-notices",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "U.S. Department of Agriculture, Forest Service (overall trail administration)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-4563": {
+   "n": "Pacific Northwest National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.fs.usda.gov/trails/pacific-northwest-nst",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fs.usda.gov/trails/pacific-northwest-nst",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/trails/alerts-notices",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "U.S. Department of Agriculture, Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7
+  },
+  "US-4572": {
+   "n": "Lewis and Clark National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/lecl/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/lecl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4576": {
+   "n": "Oregon National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/oreg/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/oreg/planyourvisit/upload/National-Park-Service-Oregon-Trail-Map-508.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Mar 22, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/oreg/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5565": {
+   "n": "Ahtanum State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/Ahtanum",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/eng_rms_buck_ck_all.pdf)",
+    "how": "a link on the park's page ('trail map')"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/eng_rms_buck_ck_all.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5566": {
+   "n": "Blanchard State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/Blanchard",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.wa.gov/recreation/using-our-mobile-maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Trail Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5567": {
+   "n": "Capitol State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/Capitol",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.wa.gov/sites/default/files/2025-12/amp_rec_mclane_closure.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('View a map of the closure here')",
+    "posted": "2025-12",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": null,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('Know your recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/eng_rms_mclane_nature_trail_2018.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": "2018-07-13",
+     "date_how": "file stamp 2018 (older than the posting 2025 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+     "how": "a link on the park's page ('trail map')",
+     "posted": "2025-03",
+     "posted_how": "posted: the upload folder in the address",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 3,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5568": {
+   "n": "Elbe Hills-Tahoma State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/ElbeHillsTahoma",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.wa.gov/recreation/using-our-mobile-maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Trail Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5569": {
+   "n": "Green Mountain-Tahuya State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/GreenMountainTahuya",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/eng_rms_green_08_full.p; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/eng_tahuya_both.pdf)",
+    "how": "a link on the park's page ('trail map')"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/eng_rms_green_08_full.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2009-02-05",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/eng_tahuya_both.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5570": {
+   "n": "Little Pend Oreille State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/LittlePendOreille",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-09/amp_rec_tacoma_creek_cl; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/lpo.pdf)",
+    "how": "a link on the park's page ('Click here to view a map of the closures')"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-09/amp_rec_tacoma_creek_closures.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Click here to view a map of the closures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/lpo.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5571": {
+   "n": "Loomis-Loup Loup State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/LoomisLoupLoup",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.wa.gov/recreation/using-our-mobile-maps; opened, a page that does not name this park (a generic agency page is not its map) https://dnr.wa.gov/recreation/where-go-what-do)",
+    "how": "a link on the park's page ('Trail Maps')"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.wa.gov/recreation/using-our-mobile-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Visit the Go! Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5572": {
+   "n": "Olympic Peninsula State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/OlympicPeninsula",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/amp_rec_colville_bike_t; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/amp_rec_foothillsmap.pd)",
+    "how": "a link on the park's page ('trail map')"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/amp_rec_colville_bike_trails.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2020-06-16",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 2,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/amp_rec_foothillsmap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5573": {
+   "n": "Teanaway State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/Teanaway",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.wa.gov/sites/default/files/2026-07/amp_rec_west_teanaway_2026_closure.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('View a map of the closures')",
+    "posted": "2026-07",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": "file",
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/",
+    "how": "a link on the park's page ('WDFW regulations.')",
+    "status": "ok"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5574": {
+   "n": "Tiger Mountain State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/tiger",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://dnr.wa.gov/recreation/using-our-mobile-maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Trail Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5576": {
+   "n": "Yacolt Burn State Forest",
+   "t": "State Forest",
+   "page": "https://www.dnr.wa.gov/Yacolt",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/yacolt.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wa.gov/sites/default/files/2025-03/eng_rms_three_06_full_v)",
+    "how": "a link on the park's page ('non-motorized trail maps')"
+   },
+   "rules": {
+    "url": "https://dnr.wa.gov/recreation/where-go-what-do",
+    "how": "a link on the park's page ('recreation rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (dnr.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/yacolt.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('non-motorized trail maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://dnr.wa.gov/sites/default/files/2025-03/eng_rms_three_06_full_vert.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('trail map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-6227": {
+   "n": "Snake River National Wild & Scenic River",
+   "t": "National Wild & Scenic River",
+   "page": "https://www.rivers.gov/rivers/river/snake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/rivers/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('System-wide Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "linked from the agency page (fws.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8662": {
+   "n": "Chestnut Beach National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.nww.usace.army.mil/Missions/Recreation/Lower-Granite-Dam-and-Lake/Chestnut-Beach/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://unblock.federalregister.gov/",
+    "how": "Corps lakes: 36 CFR Part 327 (one national rule book) + the lake page",
+    "status": "ok"
+   },
+   "agency": "U.S. Army Corps of Engineers",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8663": {
+   "n": "Plymouth Park National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.nwp.usace.army.mil/Missions/Recreation/Columbia.aspx",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://unblock.federalregister.gov/",
+    "how": "Corps lakes: 36 CFR Part 327 (one national rule book) + the lake page",
+    "status": "ok"
+   },
+   "agency": "U.S. Army Corps of Engineers",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the page refused a plain reader (HTTP 403)",
+   "ver": 7
+  },
+  "US-8666": {
+   "n": "Whatcom Wildlife Area/Lake Terrell State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://wdfw.wa.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0052": {
+   "n": "Mount Rainier National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/mora/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/mora/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "October 15, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/mora/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0055": {
+   "n": "North Cascades National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/noca/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 17, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/noca/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0056": {
+   "n": "Olympic National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/olym/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 12, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/olym/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0120": {
+   "n": "Ginkgo Petrified Forest State Park",
+   "t": "State Park",
+   "page": "https://www.parks.wa.gov/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-0340": {
+   "n": "Spring Creek Hatchery State Park",
+   "t": "State Park",
+   "page": "https://www.parks.wa.gov/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-0378": {
+   "n": "Miller Peninsula State Park",
+   "t": "State Park",
+   "page": "https://www.parks.wa.gov/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-0379": {
+   "n": "Dugualla State Park",
+   "t": "State Park",
+   "page": "https://www.parks.wa.gov/",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-0575": {
+   "n": "Columbia National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0576": {
+   "n": "Conboy Lake National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/conboy-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/conboy-lake/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/conboy-lake/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0578": {
+   "n": "Dungeness National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0580": {
+   "n": "Franz Lake National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0582": {
+   "n": "Julia Butler Hansen National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/julia-butler-hansen-columbian-white-tailed-deer",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/julia-butler-hansen-columbian-white-tailed-deer/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/julia-butler-hansen-columbian-white-tailed-deer/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0584": {
+   "n": "Little Pend Oreille National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/little-pend-oreille",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/little-pend-oreille/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/little-pend-oreille/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "is managed by the Federal Government",
+    "managed by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0585": {
+   "n": "Mcnary National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0590": {
+   "n": "Ridgefield National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/ridgefield",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/ridgefield/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/ridgefield/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0591": {
+   "n": "Saddle Mountain National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0592": {
+   "n": "San Juan Islands National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0593": {
+   "n": "Steigerwald Lake National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/steigerwald-lake",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/steigerwald-lake/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/steigerwald-lake/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0594": {
+   "n": "Toppenish National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/toppenish",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/toppenish/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/toppenish/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0595": {
+   "n": "Turnbull National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.org",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: rest"
+   ],
+   "ver": 7
+  },
+  "US-0596": {
+   "n": "Umatilla National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/umatilla",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/umatilla/visit-us",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/umatilla/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "run by the U.S. Fish & Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/refuge/umatilla/map",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-31",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0597": {
+   "n": "Willapa National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/willapa",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/refuge/willapa/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/willapa/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0693": {
+   "n": "Ross Lake National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.nps.gov",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0694": {
+   "n": "Ebey's Landing Reserve National Conservation Area",
+   "t": "National Conservation Area",
+   "page": "https://www.nps.gov/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0699": {
+   "n": "Lake Roosevelt National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.nps.gov/laro/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/laro/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "July 19, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/laro/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0727": {
+   "n": "Lake Lenore Caves State Park",
+   "t": "State Park",
+   "page": "https://parks.wa.gov/find-parks/state-parks/lake-lenore-caves-state-park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://parks.wa.gov/find-parks/state-parks/lake-lenore-caves-state-pa)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Washington State Parks and Recreation Commission",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "map_tried": [
+    {
+     "url": "https://parks.wa.gov/find-parks/state-parks/lake-lenore-caves-state-park",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0874": {
+   "n": "Whitman Mission National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/index.htm",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.nps.gov/whmi/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 2, 2020",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/whmi/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10407": {
+   "n": "Columbia Plateau State Park Trail State Trail",
+   "t": "State Trail",
+   "page": "https://parks.wa.gov/find-parks/state-parks/columbia-plateau-state-park-trail",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10409": {
+   "n": "Jackson House State Park Heritage State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://parks.wa.gov/find-parks/state-parks/jackson-house-state-park-heritage-site",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10410": {
+   "n": "Nisqually State Park",
+   "t": "State Park",
+   "page": "https://parks.wa.gov/find-parks/state-parks/nisqually-state-park",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10411": {
+   "n": "Willapa Hills State Park Trail State Trail",
+   "t": "State Trail",
+   "page": "https://parks.wa.gov/find-parks/state-parks/willapa-hills-state-park-trail",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10624": {
+   "n": "George Creek Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/george-creek-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10625": {
+   "n": "Weatherly Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/weatherly-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://wdfw.maps.arcgis.com/apps/MapJournal/index.html?appid=9b46358c)",
+    "how": "a link on the park's page ('Forest Health Story Map')"
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://wdfw.maps.arcgis.com/apps/MapJournal/index.html?appid=9b46358c50cb4ac99325991d23c4157f",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Forest Health Story Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10626": {
+   "n": "Grouse Flat Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/grouse-flats-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://wdfw.maps.arcgis.com/apps/MapJournal/index.html?appid=9b46358c)",
+    "how": "a link on the park's page ('Forest Health Story Map')"
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://wdfw.maps.arcgis.com/apps/MapJournal/index.html?appid=9b46358c50cb4ac99325991d23c4157f",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Forest Health Story Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10627": {
+   "n": "4-0 Ranch Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/4-o-ranch-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://wdfw.maps.arcgis.com/apps/MapJournal/index.html?appid=9b46358c)",
+    "how": "a link on the park's page ('Forest Health Story Map')"
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://wdfw.maps.arcgis.com/apps/MapJournal/index.html?appid=9b46358c50cb4ac99325991d23c4157f",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Forest Health Story Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10628": {
+   "n": "Shumaker Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/shumaker-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10629": {
+   "n": "Swakane Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/swakane-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10630": {
+   "n": "Colockum Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/colockum-wildlife-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://wdfw.maps.arcgis.com/apps/MapJournal/index.html?appid=9b46358c)",
+    "how": "a link on the park's page ('Forest Health Story Map')"
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://wdfw.maps.arcgis.com/apps/MapJournal/index.html?appid=9b46358c50cb4ac99325991d23c4157f",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Forest Health Story Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10631": {
+   "n": "Revere Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/revere-wildlife-area",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10655": {
+   "n": "Banks Lake Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/banks-lake-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10665": {
+   "n": "Rustler Gulch Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/rustlers-gulch-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://wdfw.maps.arcgis.com/apps/MapJournal/index.html?appid=9b46358c)",
+    "how": "a link on the park's page ('Forest Health Story Map')"
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://wdfw.maps.arcgis.com/apps/MapJournal/index.html?appid=9b46358c50cb4ac99325991d23c4157f",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Forest Health Story Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10693": {
+   "n": "McDonald Bridge Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/mcdonald-bridge-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10694": {
+   "n": "Sun Lakes Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/sun-lakes-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://wdfw.wa.gov/sites/default/files/2026-07/lenoregr-2022-rco-leno)",
+    "how": "a link on the park's page ('Lake Lenore Gun Range Map (PDF)')"
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://wdfw.wa.gov/sites/default/files/2026-07/lenoregr-2022-rco-lenore.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Lake Lenore Gun Range Map (PDF)')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-31",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10706": {
+   "n": "Klickitat State Park State Trail",
+   "t": "State Trail",
+   "page": "https://parks.wa.gov/find-parks/state-parks/klickitat-state-park-trail",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (parks.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-10707": {
+   "n": "Dillacort Canyon Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/dillacort-canyon-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10708": {
+   "n": "Mineral Springs Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://wdfw.wa.gov/places-to-go/wildlife-areas/mineral-springs-wildlife-area-unit",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://wdfw.wa.gov/about/wdfw-lands/public-conduct",
+    "how": "a link on the park's page ('Public Conduct Rules')",
+    "status": "ok",
+    "rules_scope": "agency"
+   },
+   "agency": "government agency (wdfw.wa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10710": {
+   "n": "Little White Salmon National Fish Hatchery",
+   "t": "National Fish Hatchery",
+   "page": "https://www.fws.gov/fish-hatchery/little-white-salmon",
+   "checked": "2026-10-31",
+   "map": {
+    "url": "https://www.fws.gov/fish-hatchery/little-white-salmon/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-31",
+    "how": "a link on the park's page ('Interactive Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-31",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": null,
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  }
+ },
+ "read": "2026-10-31",
+ "counts": {
+  "parks": 118,
+  "map ok": 38,
+  "map found by the bot": 21,
+  "date on the map": 3,
+  "posted date only": 17,
+  "date unknown": 18,
+  "no map": 80,
+  "rules ok": 69,
+  "needs browser": 33,
+  "handover hints": 0,
+  "runs hints": 3,
+  "host resting / robots": 0,
+  "map names the park": 36,
+  "region overview only": 0
+ }
+}

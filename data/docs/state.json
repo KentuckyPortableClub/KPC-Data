@@ -308,10 +308,17 @@
    "updated": "2026-10-31"
   },
   "US-OR": {
-   "status": "partial",
+   "status": "done",
    "parks": 440,
-   "checked": 27,
-   "left": 413,
+   "checked": 440,
+   "left": 0,
+   "updated": "2026-10-31"
+  },
+  "US-WA": {
+   "status": "partial",
+   "parks": 536,
+   "checked": 118,
+   "left": 418,
    "updated": "2026-10-31"
   }
  },
@@ -339,33 +346,33 @@
   "www.emnrd.state.nm.us": 1793520736.2128708,
   "carules.elaws.us": 1793521915.7272446,
   "parks.ca.gov": 1793523383.026051,
-  "ohv.parks.ca.gov": 1793523879.4483232
+  "ohv.parks.ca.gov": 1793523879.4483232,
+  "www.fws.org": 1793528476.71733
  },
  "last": {
   "when": "2026-10-31",
   "areas": [
    "US-IA",
-   "US-CA",
    "US-OR",
    "US-WA",
    "US-AK",
    "US-HI",
    "US-MI",
-   "US-OH"
+   "US-OH",
+   "US-UT"
   ],
   "stat": {
-   "requests": 1379,
-   "parks": 506,
-   "maps_ok": 314,
-   "maps_found": 161,
-   "dates": 106,
-   "rules": 401,
-   "browser": 147,
+   "requests": 1618,
+   "parks": 712,
+   "maps_ok": 296,
+   "maps_found": 254,
+   "dates": 15,
+   "rules": 451,
+   "browser": 172,
    "robots": 3,
-   "strikes": 6,
-   "errors": 6,
-   "skipped_fresh": 112,
-   "handovers": 1
+   "strikes": 3,
+   "errors": 3,
+   "skipped_fresh": 27
   }
  }
 }

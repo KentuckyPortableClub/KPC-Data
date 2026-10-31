@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-31T09:27Z",
+ "checked": "2026-10-31T10:22Z",
  "switched_on": false,
  "results": [
   {
@@ -407,6 +407,17 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/docs/US-WA.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/docs/US-WI.json",
    "kind": "docs",
    "why": [
@@ -602,7 +613,42 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/us-key/US-AK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-AL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-AR.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/us-key/US-DC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-GA.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-IL.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -630,6 +676,13 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/us-key/US-MO.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/us-key/US-MS.json",
    "kind": "key",
    "why": [],
@@ -637,7 +690,28 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/us-key/US-NC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-OK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/us-key/US-PA.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/US-TN.json",
    "kind": "key",
    "why": [],
    "notes": [],
@@ -690,6 +764,15 @@
    "kind": "key",
    "why": [],
    "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/refresh.json",
+   "kind": "key",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "PASS"
   },
   {
