@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-CA-5944.json",
+ "id": "10-auto-CA-5944",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-5944",
+  "name": "Chinguacousy Park Recreation Park",
+  "agency": "government agency (brampton.ca)",
+  "url": "https://www.brampton.ca/EN/residents/Recreation/Community-Centres/Chinguacousy-Park/Documents/Chinguacousy-Park-20260407-web.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-31 15:17Z",
+ "results": [
+  {
+   "url": "https://www.brampton.ca/EN/residents/Recreation/Community-Centres/Chinguacousy-Park/Documents/Chinguacousy-Park-20260407-web.pdf",
+   "map_url": "https://www.brampton.ca/EN/residents/Recreation/Community-Centres/Chinguacousy-Park/Documents/Chinguacousy-Park-20260407-web.pdf",
+   "saved": [
+    "maps/CA-5944_chinguacousy-park-recreation-par.jpg"
+   ],
+   "bytes": 415559,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
