@@ -4,13 +4,13 @@
  "states": [
   "CA-ON"
  ],
- "since": "2026-10-29",
- "date": "2026-10-29 11:32 UTC",
+ "since": "2026-11-02",
+ "date": "2026-11-02 18:26 UTC",
  "verdict": "STOPPED",
  "why": [
-  "water not checked: CA-ON: 4 rows (the USGS water map / files had no answer there): never READY with one"
+  "water not checked: CA-ON: 6 rows (the USGS water map / files had no answer there): never READY with one"
  ],
- "known_answers": "19/19 on 2026-10-29",
+ "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
   "FOUND": 0,
   "DROPPED": 24,
@@ -18,44 +18,44 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-10-29",
-   "pairs tested": 1495,
-   "pairs whose boxes touch": 1495
+   "date": "2026-11-02",
+   "pairs tested": 4523,
+   "pairs whose boxes touch": 4523
   },
   "pass2": {
-   "agree with the pass before": 896,
-   "date": "2026-10-29",
-   "pairs tested": 268
+   "agree with the pass before": 874,
+   "date": "2026-11-02",
+   "pairs tested": 299
   },
   "pass3": {
-   "agree with the pass before": 0,
-   "date": "2026-10-29",
-   "pairs tested": 0
+   "agree with the pass before": 274,
+   "date": "2026-11-02",
+   "pairs tested": 289
   },
   "pass5": {
-   "checked": 22,
-   "date": "2026-10-29",
+   "checked": 24,
+   "date": "2026-11-02",
    "pairs tested": 0,
-   "still not checked": 4
+   "still not checked": 6
   }
  },
  "files": {
   "CA-ON": "data/fers/CA-ON.json"
  },
  "CA-ON": {
-  "rows": 1027,
-  "live": 107,
+  "rows": 1017,
+  "live": 110,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 4,
-   "no public owner on the ownership map": 30
+   "water not checked": 6,
+   "no public owner on the ownership map": 35
   },
-  "dropped": 747,
-  "merged": 139
+  "dropped": 767,
+  "merged": 99
  },
  "water_weak": {
-  "CA-ON": 4
+  "CA-ON": 6
  },
  "states_ready": [],
  "states_held": [

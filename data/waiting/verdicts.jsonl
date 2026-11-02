@@ -135225,5 +135225,23 @@
 {"date": "2026-11-02T16:41Z", "kind": "release", "path": "data/us-key/US-WV.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
 {"date": "2026-11-02T16:41Z", "kind": "release", "path": "data/us-key/US-WY.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
 {"date": "2026-11-02T16:41Z", "kind": "release", "path": "data/campinfo/US-AK.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
-{"date": "2026-11-02T17:53Z", "kind": "tidy", "path": "59 held copies / old generations removed", "verdict": "TIDY", "by": "github-actions[bot]"}
-{"date": "2026-11-02T17:53Z", "kind": "fers", "path": "data/fers/US-MN.json.gz", "verdict": "HOLD", "why": ["F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km"], "notes": []}
+{"date": "2026-11-02T16:54Z", "kind": "tidy", "path": "59 held copies / old generations removed", "verdict": "TIDY", "by": "github-actions[bot]"}
+{"date": "2026-11-02T16:55Z", "kind": "fers", "path": "data/fers/US-IA.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/CA-AB.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/CA-BC.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/CA-NL.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/CA-NS.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/CA-NT.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/CA-ON.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/CA-QC.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/CA-SK.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/CA-YT.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/answers-applied.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/hardlook-joins.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/index.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/layers.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T17:31Z", "kind": "release", "path": "data/ca-key/why-not.json", "verdict": "RELEASE", "by": "KentuckyPortableClub"}
+{"date": "2026-11-02T18:27Z", "kind": "tidy", "path": "4 held copies / old generations removed", "verdict": "TIDY", "by": "github-actions[bot]"}
+{"date": "2026-11-02T18:27Z", "kind": "fers", "path": "data/fers/CA-ON.json.gz", "verdict": "HOLD", "why": ["F-2 candidates 13 -> 101 (over 30% change)", "F-2 NOT SURE 302 -> 41 (over 30% change)", "F-2 88 new candidate pairs since the live file (over 10% of 13): a person looks at them first, e.g. CA-0006+CA-6003, CA-0010+CA-0168, CA-0010+CA-0241"], "notes": []}
+{"date": "2026-11-02T18:27Z", "kind": "fers", "path": "data/fers/US-CT.json", "verdict": "HOLD", "why": ["F-2 candidates 26 -> 37 (over 30% change)", "F-2 11 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-12620+US-4561, US-1682+US-4556, US-1697+US-4561"], "notes": ["replaces live data/fers/US-CT.json.gz (same file, other format): promotion removes the old name"]}
+{"date": "2026-11-02T18:27Z", "kind": "fers", "path": "data/fers/US-SC.json", "verdict": "HOLD", "why": ["F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 127 rows for 234 (over 10% fewer)"], "notes": []}

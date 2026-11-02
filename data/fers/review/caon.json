@@ -1,10 +1,58 @@
 {
  "area": "caon",
- "date": "2026-10-29",
+ "date": "2026-11-02",
  "states": [
   "CA-ON"
  ],
  "rows": [
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0010",
+    "CA-0168"
+   ],
+   "names": {
+    "CA-0010": "Bruce Peninsula National Park",
+    "CA-0168": "Cabot Head Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "21805.1 ac",
+   "sort": 21805.1,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0010+CA-0168@area@45.210,-81.451",
+   "sources": {
+    "CA-0010": "read from the agency 2026-10-29",
+    "CA-0168": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0050",
+    "CA-0395"
+   ],
+   "names": {
+    "CA-0050": "Lake Superior National Marine Area",
+    "CA-0395": "Sleeping Giant Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "4955.4 ac",
+   "sort": 4955.4,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0050+CA-0395@area@48.336,-88.789",
+   "sources": {
+    "CA-0050": "read from the agency 2026-10-29",
+    "CA-0395": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
+  },
   {
    "area": "caon",
    "state": "CA-ON",
@@ -23,10 +71,34 @@
    "reason": "water not checked (the USGS water map did not answer): run pass 5",
    "id": "CA-0050+CA-0394@area@48.656,-87.015",
    "sources": {
-    "CA-0050": "downloaded 2026-10-29",
-    "CA-0394": "downloaded 2026-10-29"
+    "CA-0050": "read from the agency 2026-10-29",
+    "CA-0394": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0010",
+    "CA-0241"
+   ],
+   "names": {
+    "CA-0010": "Bruce Peninsula National Park",
+    "CA-0241": "Johnston Harbour-Pine Tree Point Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "2305.0 ac",
+   "sort": 2305.0,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0010+CA-0241@area@45.102,-81.496",
+   "sources": {
+    "CA-0010": "read from the agency 2026-10-29",
+    "CA-0241": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -46,10 +118,10 @@
    "reason": "water not checked (the USGS water map did not answer): run pass 5",
    "id": "CA-0402+CA-4867@area@46.077,-83.922",
    "sources": {
-    "CA-0402": "downloaded 2026-10-29",
-    "CA-4867": "downloaded 2026-10-29"
+    "CA-0402": "read from the agency 2026-11-02",
+    "CA-4867": "read from the agency 2026-10-29"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -64,12 +136,12 @@
    "size": "25899 yd of line",
    "sort": 592.0,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-5628+CA-6608@trail@44.280,-80.546",
+   "id": "CA-5628+CA-6608@trail@44.284,-80.539",
    "sources": {
     "CA-5628": "official line (trails bot)",
-    "CA-6608": "downloaded 2026-10-29"
+    "CA-6608": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -89,7 +161,7 @@
     "CA-5628": "official line (trails bot)",
     "CA-6003": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -106,10 +178,10 @@
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
    "id": "CA-5105+CA-5628@trail@43.498,-79.938",
    "sources": {
-    "CA-5105": "downloaded 2026-10-29",
+    "CA-5105": "read from the agency 2026-11-02",
     "CA-5628": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -124,12 +196,12 @@
    "size": "17756 yd of line",
    "sort": 405.9,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-1440+CA-5628@trail@43.516,-79.978",
+   "id": "CA-1440+CA-5628@trail@43.509,-79.957",
    "sources": {
-    "CA-1440": "downloaded 2026-10-29",
+    "CA-1440": "read from the agency 2026-11-02",
     "CA-5628": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -146,10 +218,30 @@
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
    "id": "CA-1541+CA-5628@trail@43.472,-79.939",
    "sources": {
-    "CA-1541": "downloaded 2026-10-29",
+    "CA-1541": "read from the agency 2026-11-02",
     "CA-5628": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-5628",
+    "CA-5665"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "14515 yd of line",
+   "sort": 331.8,
+   "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "CA-5628+CA-5665@trail@44.648,-80.997",
+   "sources": {
+    "CA-5628": "official line (trails bot)",
+    "CA-5665": "read from the agency 2026-11-02"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -164,12 +256,32 @@
    "size": "11297 yd of line",
    "sort": 258.2,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-1046+CA-5628@trail@43.468,-79.912",
+   "id": "CA-1046+CA-5628@trail@43.473,-79.933",
    "sources": {
-    "CA-1046": "downloaded 2026-10-29",
+    "CA-1046": "read from the agency 2026-11-02",
     "CA-5628": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-1043",
+    "CA-5628"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "10986 yd of line",
+   "sort": 251.2,
+   "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "CA-1043+CA-5628@trail@43.416,-79.866",
+   "sources": {
+    "CA-1043": "read from the agency 2026-11-02",
+    "CA-5628": "official line (trails bot)"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -186,10 +298,10 @@
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
    "id": "CA-5627+CA-5628@trail@44.525,-80.932",
    "sources": {
-    "CA-5627": "downloaded 2026-10-29",
+    "CA-5627": "read from the agency 2026-11-02",
     "CA-5628": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -207,9 +319,29 @@
    "id": "CA-5628+CA-6611@trail@44.515,-80.365",
    "sources": {
     "CA-5628": "official line (trails bot)",
-    "CA-6611": "downloaded 2026-10-29"
+    "CA-6611": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-5628",
+    "CA-6008"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "8599 yd of line",
+   "sort": 196.6,
+   "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "CA-5628+CA-6008@trail@44.751,-80.941",
+   "sources": {
+    "CA-5628": "official line (trails bot)",
+    "CA-6008": "read from the agency 2026-11-02"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -224,12 +356,53 @@
    "size": "8100 yd of line",
    "sort": 185.2,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-5628+CA-5658@trail@44.755,-81.137",
+   "id": "CA-5628+CA-5658@trail@44.754,-81.138",
    "sources": {
     "CA-5628": "official line (trails bot)",
-    "CA-5658": "downloaded 2026-10-29"
+    "CA-5658": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-5628",
+    "CA-5653"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "7648 yd of line",
+   "sort": 174.8,
+   "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "CA-5628+CA-5653@trail@44.561,-80.990",
+   "sources": {
+    "CA-5628": "official line (trails bot)",
+    "CA-5653": "read from the agency 2026-11-02"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0365",
+    "CA-4882"
+   ],
+   "names": {},
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "158.6 ac",
+   "sort": 158.6,
+   "reason": "water only: boat or kayak",
+   "id": "CA-0365+CA-4882@area@45.051,-75.678",
+   "sources": {
+    "CA-0365": "read from the agency 2026-11-02",
+    "CA-4882": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -244,12 +417,12 @@
    "size": "6721 yd of line",
    "sort": 153.7,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-5628+CA-5959@trail@44.548,-80.952",
+   "id": "CA-5628+CA-5959@trail@44.561,-80.956",
    "sources": {
     "CA-5628": "official line (trails bot)",
-    "CA-5959": "downloaded 2026-10-29"
+    "CA-5959": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -269,10 +442,10 @@
    "reason": "water not checked (the USGS water map did not answer): run pass 5",
    "id": "CA-0050+CA-1282@area@48.694,-87.987",
    "sources": {
-    "CA-0050": "downloaded 2026-10-29",
-    "CA-1282": "downloaded 2026-10-29"
+    "CA-0050": "read from the agency 2026-10-29",
+    "CA-1282": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -289,10 +462,10 @@
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
    "id": "CA-5578+CA-5628@trail@43.147,-79.160",
    "sources": {
-    "CA-5578": "downloaded 2026-10-29",
+    "CA-5578": "read from the agency 2026-11-02",
     "CA-5628": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -307,12 +480,12 @@
    "size": "6255 yd of line",
    "sort": 143.0,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-5628+CA-6609@trail@44.417,-80.441",
+   "id": "CA-5628+CA-6609@trail@44.417,-80.440",
    "sources": {
     "CA-5628": "official line (trails bot)",
-    "CA-6609": "downloaded 2026-10-29"
+    "CA-6609": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -327,12 +500,12 @@
    "size": "5643 yd of line",
    "sort": 129.0,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-5092+CA-5628@trail@44.768,-81.084",
+   "id": "CA-5092+CA-5628@trail@44.769,-81.077",
    "sources": {
-    "CA-5092": "downloaded 2026-10-29",
+    "CA-5092": "read from the agency 2026-11-02",
     "CA-5628": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -347,12 +520,56 @@
    "size": "5621 yd of line",
    "sort": 128.5,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-1297+CA-5628@trail@43.134,-79.379",
+   "id": "CA-1297+CA-5628@trail@43.133,-79.383",
    "sources": {
-    "CA-1297": "downloaded 2026-10-29",
+    "CA-1297": "read from the agency 2026-11-02",
     "CA-5628": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0050",
+    "CA-0370"
+   ],
+   "names": {
+    "CA-0050": "Lake Superior National Marine Area",
+    "CA-0370": "Ruby Lake Provincial Park"
+   },
+   "what": "water map weak here (fix later: a better water source)",
+   "kind": "area",
+   "size": "124.8 ac",
+   "sort": 124.8,
+   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0050+CA-0370@area@48.960,-88.233",
+   "sources": {
+    "CA-0050": "read from the agency 2026-10-29",
+    "CA-0370": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-11-02 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-5628",
+    "CA-5656"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "4862 yd of line",
+   "sort": 111.2,
+   "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "CA-5628+CA-5656@trail@44.310,-80.531",
+   "sources": {
+    "CA-5628": "official line (trails bot)",
+    "CA-5656": "read from the agency 2026-11-02"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -367,58 +584,12 @@
    "size": "4091 yd of line",
    "sort": 93.5,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-5628+CA-5654@trail@44.383,-80.523",
+   "id": "CA-5628+CA-5654@trail@44.384,-80.523",
    "sources": {
     "CA-5628": "official line (trails bot)",
-    "CA-5654": "downloaded 2026-10-29"
+    "CA-5654": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "caon",
-   "state": "CA-ON",
-   "refs": [
-    "CA-0050",
-    "CA-0370"
-   ],
-   "names": {
-    "CA-0050": "Lake Superior National Marine Area",
-    "CA-0370": "Ruby Lake Provincial Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "91.5 ac",
-   "sort": 91.5,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0050+CA-0370@area@48.960,-88.235",
-   "sources": {
-    "CA-0050": "downloaded 2026-10-29",
-    "CA-0370": "downloaded 2026-10-29"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "caon",
-   "state": "CA-ON",
-   "refs": [
-    "CA-0050",
-    "CA-0386"
-   ],
-   "names": {
-    "CA-0050": "Lake Superior National Marine Area",
-    "CA-0386": "Shesheeb Bay Provincial Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "87.8 ac",
-   "sort": 87.8,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0050+CA-0386@area@48.593,-88.281",
-   "sources": {
-    "CA-0050": "downloaded 2026-10-29",
-    "CA-0386": "downloaded 2026-10-29"
-   },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -433,36 +604,12 @@
    "size": "3549 yd of line",
    "sort": 81.1,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-5628+CA-5943@trail@43.772,-79.946",
+   "id": "CA-5628+CA-5943@trail@43.769,-79.942",
    "sources": {
     "CA-5628": "official line (trails bot)",
-    "CA-5943": "downloaded 2026-10-29"
+    "CA-5943": "read from the agency 2026-10-29"
    },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "caon",
-   "state": "CA-ON",
-   "refs": [
-    "CA-0365",
-    "CA-4882"
-   ],
-   "names": {
-    "CA-0365": "Rideau River Provincial Park",
-    "CA-4882": "Rideau Canal National Historic Site"
-   },
-   "what": "water only (boat spot): is there really no land?",
-   "kind": "area",
-   "size": "79.3 ac",
-   "sort": 79.3,
-   "reason": "water only: boat or kayak",
-   "id": "CA-0365+CA-4882@area@45.051,-75.678",
-   "sources": {
-    "CA-0365": "downloaded 2026-10-29",
-    "CA-4882": "downloaded 2026-10-29",
-    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -477,12 +624,12 @@
    "size": "2898 yd of line",
    "sort": 66.2,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-5628+CA-6610@trail@44.484,-80.555",
+   "id": "CA-5628+CA-6610@trail@44.486,-80.554",
    "sources": {
     "CA-5628": "official line (trails bot)",
-    "CA-6610": "downloaded 2026-10-29"
+    "CA-6610": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -497,12 +644,36 @@
    "size": "2784 yd of line",
    "sort": 63.6,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-1046+CA-5536@trail@43.474,-79.932",
+   "id": "CA-1046+CA-5536@trail@43.478,-79.937",
    "sources": {
-    "CA-1046": "downloaded 2026-10-29",
+    "CA-1046": "read from the agency 2026-11-02",
     "CA-5536": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0050",
+    "CA-1479"
+   ],
+   "names": {
+    "CA-0050": "Lake Superior National Marine Area",
+    "CA-1479": "Lake Superior North Shore Conservation Reserve"
+   },
+   "what": "water map weak here (fix later: a better water source)",
+   "kind": "area",
+   "size": "61.0 ac",
+   "sort": 61.0,
+   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0050+CA-1479@area@48.761,-87.200",
+   "sources": {
+    "CA-0050": "read from the agency 2026-10-29",
+    "CA-1479": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -517,12 +688,83 @@
    "size": "2632 yd of line",
    "sort": 60.2,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-5669+CA-6003@trail@42.029,-83.013",
+   "id": "CA-5669+CA-6003@trail@42.035,-83.024",
    "sources": {
-    "CA-5669": "downloaded 2026-10-29",
+    "CA-5669": "read from the agency 2026-11-02",
     "CA-6003": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0050",
+    "CA-0386"
+   ],
+   "names": {
+    "CA-0050": "Lake Superior National Marine Area",
+    "CA-0386": "Shesheeb Bay Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "52.8 ac",
+   "sort": 52.8,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0050+CA-0386@area@48.593,-88.285",
+   "sources": {
+    "CA-0050": "read from the agency 2026-10-29",
+    "CA-0386": "read from the agency 2026-11-02"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0010",
+    "CA-0273"
+   ],
+   "names": {
+    "CA-0010": "Bruce Peninsula National Park",
+    "CA-0273": "Little Cove Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "43.6 ac",
+   "sort": 43.6,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0010+CA-0273@area@45.247,-81.612",
+   "sources": {
+    "CA-0010": "read from the agency 2026-10-29",
+    "CA-0273": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0078",
+    "CA-0354"
+   ],
+   "names": {
+    "CA-0078": "Pukaskwa National Park",
+    "CA-0354": "Pukaskwa River Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "36.3 ac",
+   "sort": 36.3,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0078+CA-0354@area@48.263,-85.524",
+   "sources": {
+    "CA-0078": "read from the agency 2026-10-29",
+    "CA-0354": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -539,10 +781,10 @@
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
    "id": "CA-5372+CA-5628@trail@43.671,-79.991",
    "sources": {
-    "CA-5372": "downloaded 2026-10-29",
+    "CA-5372": "read from the agency 2026-10-29",
     "CA-5628": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -557,36 +799,12 @@
    "size": "1386 yd of line",
    "sort": 31.7,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-1541+CA-5536@trail@43.475,-79.949",
+   "id": "CA-1541+CA-5536@trail@43.476,-79.948",
    "sources": {
-    "CA-1541": "downloaded 2026-10-29",
+    "CA-1541": "read from the agency 2026-11-02",
     "CA-5536": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "caon",
-   "state": "CA-ON",
-   "refs": [
-    "CA-0050",
-    "CA-1479"
-   ],
-   "names": {
-    "CA-0050": "Lake Superior National Marine Area",
-    "CA-1479": "Lake Superior North Shore Conservation Reserve"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "29.3 ac",
-   "sort": 29.3,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-0050+CA-1479@area@48.752,-87.217",
-   "sources": {
-    "CA-0050": "downloaded 2026-10-29",
-    "CA-1479": "downloaded 2026-10-29",
-    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -603,10 +821,34 @@
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
    "id": "CA-0094+CA-6003@trail@42.371,-82.390",
    "sources": {
-    "CA-0094": "downloaded 2026-10-29",
+    "CA-0094": "read from the agency 2026-10-29",
     "CA-6003": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0050",
+    "CA-0353"
+   ],
+   "names": {
+    "CA-0050": "Lake Superior National Marine Area",
+    "CA-0353": "Puff Island Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "25.2 ac",
+   "sort": 25.2,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0050+CA-0353@area@48.661,-88.040",
+   "sources": {
+    "CA-0050": "read from the agency 2026-10-29",
+    "CA-0353": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -623,30 +865,10 @@
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
    "id": "CA-5596+CA-6003@trail@42.874,-79.423",
    "sources": {
-    "CA-5596": "downloaded 2026-10-29",
+    "CA-5596": "read from the agency 2026-11-02",
     "CA-6003": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "caon",
-   "state": "CA-ON",
-   "refs": [
-    "CA-6003",
-    "CA-6371"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "trail",
-   "size": "517 yd of line",
-   "sort": 11.8,
-   "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-6003+CA-6371@trail@42.003,-82.801",
-   "sources": {
-    "CA-6003": "official line (trails bot)",
-    "CA-6371": "downloaded 2026-10-29"
-   },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -664,9 +886,33 @@
    "id": "CA-5628+CA-5657@trail@44.462,-80.554",
    "sources": {
     "CA-5628": "official line (trails bot)",
-    "CA-5657": "downloaded 2026-10-29"
+    "CA-5657": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0078",
+    "CA-0435"
+   ],
+   "names": {
+    "CA-0078": "Pukaskwa National Park",
+    "CA-0435": "White Lake Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "7.7 ac",
+   "sort": 7.7,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0078+CA-0435@area@48.538,-86.160",
+   "sources": {
+    "CA-0078": "read from the agency 2026-10-29",
+    "CA-0435": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -675,10 +921,7 @@
     "CA-4882",
     "CA-5956"
    ],
-   "names": {
-    "CA-4882": "Rideau Canal National Historic Site",
-    "CA-5956": "Perth Wildlife Reserve"
-   },
+   "names": {},
    "what": "water only (boat spot): is there really no land?",
    "kind": "area",
    "size": "7.2 ac",
@@ -686,11 +929,35 @@
    "reason": "water only: boat or kayak",
    "id": "CA-4882+CA-5956@area@44.888,-76.197",
    "sources": {
-    "CA-4882": "downloaded 2026-10-29",
-    "CA-5956": "downloaded 2026-10-29",
+    "CA-4882": "read from the agency 2026-11-02",
+    "CA-5956": "read from the agency 2026-11-02",
     "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0050",
+    "CA-0346"
+   ],
+   "names": {
+    "CA-0050": "Lake Superior National Marine Area",
+    "CA-0346": "Porphyry Island Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "7.0 ac",
+   "sort": 7.0,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0050+CA-0346@area@48.352,-88.635",
+   "sources": {
+    "CA-0050": "read from the agency 2026-10-29",
+    "CA-0346": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -710,7 +977,27 @@
     "CA-5536": "official line (trails bot)",
     "CA-5628": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-5143",
+    "CA-6003"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "229 yd of line",
+   "sort": 5.2,
+   "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "CA-5143+CA-6003@trail@44.220,-76.538",
+   "sources": {
+    "CA-5143": "read from the agency 2026-10-29",
+    "CA-6003": "official line (trails bot)"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -725,12 +1012,12 @@
    "size": "222 yd of line",
    "sort": 5.1,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-6003+CA-6370@trail@41.997,-82.848",
+   "id": "CA-6003+CA-6370@trail@41.997,-82.849",
    "sources": {
     "CA-6003": "official line (trails bot)",
-    "CA-6370": "downloaded 2026-10-29"
+    "CA-6370": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -745,12 +1032,12 @@
    "size": "211 yd of line",
    "sort": 4.8,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-1297+CA-6003@trail@43.159,-79.378",
+   "id": "CA-1297+CA-6003@trail@43.158,-79.378",
    "sources": {
-    "CA-1297": "downloaded 2026-10-29",
+    "CA-1297": "read from the agency 2026-11-02",
     "CA-6003": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -759,10 +1046,7 @@
     "CA-4882",
     "CA-5642"
    ],
-   "names": {
-    "CA-4882": "Rideau Canal National Historic Site",
-    "CA-5642": "Rock Dunder Nature Reserve"
-   },
+   "names": {},
    "what": "water only (boat spot): is there really no land?",
    "kind": "area",
    "size": "3.5 ac",
@@ -770,11 +1054,11 @@
    "reason": "water only: boat or kayak",
    "id": "CA-4882+CA-5642@area@44.536,-76.206",
    "sources": {
-    "CA-4882": "downloaded 2026-10-29",
-    "CA-5642": "downloaded 2026-10-29",
+    "CA-4882": "read from the agency 2026-11-02",
+    "CA-5642": "read from the agency 2026-11-02",
     "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -789,12 +1073,79 @@
    "size": "151 yd of line",
    "sort": 3.5,
    "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-5564+CA-5628@trail@43.503,-79.932",
+   "id": "CA-5564+CA-5628@trail@43.501,-79.929",
    "sources": {
-    "CA-5564": "downloaded 2026-10-29",
+    "CA-5564": "read from the agency 2026-11-02",
     "CA-5628": "official line (trails bot)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-5577",
+    "CA-6003"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "151 yd of line",
+   "sort": 3.5,
+   "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "CA-5577+CA-6003@trail@43.254,-79.096",
+   "sources": {
+    "CA-5577": "read from the agency 2026-11-02",
+    "CA-6003": "official line (trails bot)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0053",
+    "CA-0279"
+   ],
+   "names": {
+    "CA-0053": "Long Point National Wildlife Area",
+    "CA-0279": "Long Point Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "3.2 ac",
+   "sort": 3.2,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0053+CA-0279@area@42.578,-80.373",
+   "sources": {
+    "CA-0053": "read from the agency 2026-10-29",
+    "CA-0279": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-0050",
+    "CA-0222"
+   ],
+   "names": {
+    "CA-0050": "Lake Superior National Marine Area",
+    "CA-0222": "Gravel River Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "3.0 ac",
+   "sort": 3.0,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0050+CA-0222@area@48.906,-87.742",
+   "sources": {
+    "CA-0050": "read from the agency 2026-10-29",
+    "CA-0222": "read from the agency 2026-11-02"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -814,33 +1165,57 @@
    "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
    "id": "CA-0050+CA-0360@area@48.837,-87.444",
    "sources": {
-    "CA-0050": "downloaded 2026-10-29",
-    "CA-0360": "downloaded 2026-10-29"
+    "CA-0050": "read from the agency 2026-10-29",
+    "CA-0360": "read from the agency 2026-11-02"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
    "state": "CA-ON",
    "refs": [
     "CA-0050",
-    "CA-0222"
+    "CA-0379"
    ],
    "names": {
     "CA-0050": "Lake Superior National Marine Area",
-    "CA-0222": "Gravel River Provincial Park"
+    "CA-0379": "Schreiber Channel Provincial Park"
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "1.5 ac",
-   "sort": 1.5,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0050+CA-0222@area@48.919,-87.774",
+   "size": "1.3 ac",
+   "sort": 1.3,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0050+CA-0379@area@48.796,-87.347",
    "sources": {
-    "CA-0050": "downloaded 2026-10-29",
-    "CA-0222": "downloaded 2026-10-29"
+    "CA-0050": "read from the agency 2026-10-29",
+    "CA-0379": "read from the agency 2026-11-02",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
+    "CA-4882",
+    "CA-5957"
+   ],
+   "names": {
+    "CA-4882": "Rideau Canal National Historic Site",
+    "CA-5957": "Portland Bay Conservation Area"
+   },
+   "what": "water map weak here (fix later: a better water source)",
+   "kind": "area",
+   "size": "1.1 ac",
+   "sort": 1.1,
+   "reason": "water not checked (the USGS water map did not answer): run pass 5",
+   "id": "CA-4882+CA-5957@area@44.703,-76.182",
+   "sources": {
+    "CA-4882": "read from the agency 2026-11-02",
+    "CA-5957": "read from the agency 2026-11-02"
+   },
+   "checked": "2026-11-02"
   },
   {
    "area": "caon",
@@ -849,42 +1224,19 @@
     "CA-5671",
     "CA-5895"
    ],
-   "names": {
-    "CA-5671": "Wilket Creek Park Wilderness Park",
-    "CA-5895": "Serena Gundy Park Wilderness Park"
-   },
+   "names": {},
    "what": "water only (boat spot): is there really no land?",
    "kind": "area",
    "size": "1.1 ac",
    "sort": 1.1,
    "reason": "water only: boat or kayak",
-   "id": "CA-5671+CA-5895@area@43.718,-79.353",
+   "id": "CA-5671+CA-5895@area@43.717,-79.353",
    "sources": {
-    "CA-5671": "downloaded 2026-10-29",
-    "CA-5895": "downloaded 2026-10-29",
+    "CA-5671": "read from the agency 2026-11-02",
+    "CA-5895": "read from the agency 2026-11-02",
     "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "caon",
-   "state": "CA-ON",
-   "refs": [
-    "CA-6003",
-    "CA-6362"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "trail",
-   "size": "38 yd of line",
-   "sort": 0.9,
-   "reason": "no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
-   "id": "CA-6003+CA-6362@trail@42.012,-82.781",
-   "sources": {
-    "CA-6003": "official line (trails bot)",
-    "CA-6362": "downloaded 2026-10-29"
-   },
-   "checked": "2026-10-29"
+   "checked": "2026-11-02"
   }
  ]
 }
