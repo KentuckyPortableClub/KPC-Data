@@ -1,4 +1,4 @@
-# Flow board (2026-11-02 13:26Z, kpc_flow.py)
+# Flow board (2026-11-02 17:30Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
 ## STUCK (2)
@@ -12,8 +12,8 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - 29 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - 5 · HELD trails files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - 9 · HELD truth files (a check failed; data/waiting/today.md says why) · since 2026-11-01
-- 4 · HELD world-key files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - 1 · 2-fer checker: found work · since 2026-11-01
+- 1 · HELD ca-key files (a check failed; data/waiting/today.md says why) · since 2026-11-02
 ### chat 3
 - 1 · T5 site checker: found work · since 2026-11-01
 ### chat 9
@@ -24,15 +24,19 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - 29 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - 5 · HELD trails files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - 9 · HELD truth files (a check failed; data/waiting/today.md says why) · since 2026-11-01
-- 4 · HELD world-key files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - 1 · 2-fer checker: found work · since 2026-11-01
 - 2 · questions/aliases-nov1.json waiting for an answer · since 2026-11-02
-- 396 · questions/hardlook.json waiting for an answer · since 2026-11-02
-- 49 · questions/nearmiss-nov2.json waiting for an answer · since 2026-11-02
-- 296 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-02
+- 28 · questions/aliases-nov2.json waiting for an answer · since 2026-11-02
+- 1,937 · questions/hardlook.json waiting for an answer · since 2026-11-02
+- 152 · questions/layers.json waiting for an answer · since 2026-11-02
+- 45 · questions/nearmiss-nov2.json waiting for an answer · since 2026-11-02
+- 22 · questions/parked.json waiting for an answer · since 2026-11-02
+- 1 · HELD ca-key files (a check failed; data/waiting/today.md says why) · since 2026-11-02
+- 139 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-02
 ### bots
 - 1 · Storage keeper (weekly): found work · since 2026-11-01
 - 303 · layers in the list the intake bot has not checked yet · since 2026-11-02
+- 1 · Skipped-run watchdog: found work · since 2026-11-02
 
 ## The whole line
 | stage | pile | count | waits on | last moved |
@@ -45,23 +49,26 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 4 engine | engine finds handed to the collector (last hand-back) | 0 | layer collector (every 2 h) | 2026-11-01 |
 | 5 collector | outside-research layer x park pairs not pin-tested yet | 0 | layer collector (every 2 h) | 2026-11-01 |
 | 6 questions | questions/aliases-nov1.json waiting for an answer | 2 | chat 11 | 2026-11-02 |
+| 6 questions | questions/aliases-nov2.json waiting for an answer | 28 | chat 11 | 2026-11-02 |
 | 6 questions | questions/aliases-oct31.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
 | 6 questions | questions/gis-hunter.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
-| 6 questions | questions/hardlook.json waiting for an answer | 396 | chat 11 | 2026-11-02 |
+| 6 questions | questions/hardlook.json waiting for an answer | 1,937 | chat 11 | 2026-11-02 |
 | 6 questions | questions/key-pieces.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
-| 6 questions | questions/layers.json waiting for an answer | 0 | chat 11 | 2026-11-02 |
+| 6 questions | questions/layers.json waiting for an answer | 152 | chat 11 | 2026-11-02 |
 | 6 questions | questions/lost-finds-nov1.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
-| 6 questions | questions/nearmiss-nov2.json waiting for an answer | 49 | chat 11 | 2026-11-02 |
+| 6 questions | questions/nearmiss-nov2.json waiting for an answer | 45 | chat 11 | 2026-11-02 |
 | 6 questions | questions/no-recheck.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
 | 6 questions | questions/not-sure-for-chat9.json waiting for an answer | 146 | chat 9 | 2026-11-01 |
+| 6 questions | questions/parked.json waiting for an answer | 22 | chat 11 | 2026-11-02 |
 | 6 questions | questions/world-finder.json waiting for an answer | 0 | chat 11 | 2026-11-01 |
+| 7 waiting room | HELD ca-key files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-02 |
 | 7 waiting room | HELD campinfo files (a check failed; data/waiting/today.md says why) | 3 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
 | 7 waiting room | HELD docs files (a check failed; data/waiting/today.md says why) | 49 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
 | 7 waiting room | HELD fers files (a check failed; data/waiting/today.md says why) | 29 | chat 2 (fix) + chat 11 | 2026-11-01 |
 | 7 waiting room | HELD trails files (a check failed; data/waiting/today.md says why) | 5 | chat 2 (fix) + chat 11 | 2026-11-01 |
 | 7 waiting room | HELD truth files (a check failed; data/waiting/today.md says why) | 9 | chat 2 (fix) + chat 11 | 2026-11-01 |
-| 7 waiting room | HELD world-key files (a check failed; data/waiting/today.md says why) | 4 | chat 2 (fix) + chat 11 | 2026-11-01 |
-| 7 waiting room | files waiting for a grader (data/status/grade-queue.md) | 296 | chat 11 | 2026-11-02 |
+| 7 waiting room | files waiting for a grader (data/status/grade-queue.md) | 139 | chat 11 | 2026-11-02 |
 | 8 bots | 2-fer checker: found work | 1 | chat 2 + chat 11 | 2026-11-01 |
+| 8 bots | Skipped-run watchdog: found work | 1 | HQ | 2026-11-02 |
 | 8 bots | Storage keeper (weekly): found work | 1 | HQ | 2026-11-01 |
 | 8 bots | T5 site checker: found work | 1 | chat 3 | 2026-11-01 |
