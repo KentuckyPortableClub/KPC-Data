@@ -3162,6 +3162,425 @@
    }
   },
   {
+   "ref": "CA-5326",
+   "area": "CA-BC",
+   "park": "Hatley Park National Historic Site",
+   "agency_group": "pc.gc.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-BC",
+   "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82?f=html",
+   "service_url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+   "name_field": "COMMON_SITE_NAME",
+   "agency": "Government of British Columbia (Historic Places)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 6130250,
+   "record_name": "Royal Roads Military College; Hatley Park; Former Royal Roads Military College NHS; Hatley Castle",
+   "layer": "PACK-CA-BC-land-416",
+   "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82/query?where=OBJECTID%3D6130250&outFields=%2A&f=html",
+   "where": "OBJECTID=6130250",
+   "pin_m": 0,
+   "acres_approx": 562.0,
+   "grade": "official",
+   "envelope": [
+    -123.4901,
+    48.42089,
+    -123.46009,
+    48.43982
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82/query?geometry=-123.473%2C48.4349&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Royal Roads Military College; Hatley Park; Former Royal Roads Military College NHS; Hatley Castle' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-BC-park-72",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-trail-75",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-76",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-BC-parks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-BC-provincial_park-British_Columbia_Provincial_Parks_Ecolog-10",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-BC-wildlife_area-British_Columbia_Wildlife_Management_Are-9",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-land-416",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-land-417",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-420",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-421",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Royal Roads Military College; Hatley Park; Former Royal Roads Military College NHS; Hatley Castle; WRONG KIND?: park is a historic, record is a park",
+    "why_this_record": "record 'Royal Roads Military College; Hatley Park; Former Royal Roads Military College NHS; Hatley Castle' (PACK-CA-BC-land-416); pin inside; about 562.0 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)"
+   }
+  },
+  {
+   "ref": "CA-6398",
+   "area": "CA-BC",
+   "park": "Craigflower Manor House National Historic Site",
+   "agency_group": "pc.gc.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-BC",
+   "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82?f=html",
+   "service_url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+   "name_field": "COMMON_SITE_NAME",
+   "agency": "Government of British Columbia (Historic Places)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 6127684,
+   "record_name": "Craigflower Manor",
+   "layer": "PACK-CA-BC-land-416",
+   "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82/query?where=OBJECTID%3D6127684&outFields=%2A&f=html",
+   "where": "OBJECTID=6127684",
+   "pin_m": 0,
+   "acres_approx": 1.5,
+   "grade": "official",
+   "envelope": [
+    -123.42527,
+    48.4516,
+    -123.42377,
+    48.45268
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Craigflower Farm Historic Site",
+     "layer": "PACK-CA-BC-park-420",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82/query?geometry=-123.424%2C48.4517&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Craigflower Manor' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-BC-park-72",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-trail-75",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-76",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-BC-parks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-BC-provincial_park-British_Columbia_Provincial_Parks_Ecolog-10",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-BC-wildlife_area-British_Columbia_Wildlife_Management_Are-9",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-land-416",
+      "gave": "hit (2 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-land-417",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-420",
+      "gave": "hit (2 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-421",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Craigflower Manor",
+    "why_this_record": "same land also in PACK-CA-BC-park-420 'Craigflower Farm Historic Site': merged, counted once; record 'Craigflower Manor' (PACK-CA-BC-land-416); pin inside; about 1.5 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)"
+   }
+  },
+  {
+   "ref": "CA-4842",
+   "area": "CA-NS",
+   "park": "Marconi National Historic Site",
+   "agency_group": "pc.gc.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NS",
+   "url": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29?f=html",
+   "service_url": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29",
+   "name_field": "NAME1",
+   "agency": "NS-NHS Nova",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 26,
+   "record_name": "Marconi Wireless Station",
+   "layer": "PACK-CA-NS-land-66",
+   "record_link": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29/query?where=OBJECTID%3D26&outFields=%2A&f=html",
+   "where": "OBJECTID=26",
+   "pin_m": 8,
+   "acres_approx": 4.1,
+   "grade": "official",
+   "envelope": [
+    -59.95308,
+    46.2109,
+    -59.95078,
+    46.21209
+   ],
+   "rule": "R-G12",
+   "others": [],
+   "source_url": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29/query?geometry=-59.9528%2C46.211&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Marconi Wireless Station' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NS-land-66",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-80",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-81",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-82",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-land-83",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-land-390",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-land-391",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-431",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-432",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-433",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (8 m): candidate only (G-F1); NAME SOLVED: agency calls it Marconi Wireless Station",
+    "why_this_record": "record 'Marconi Wireless Station' (PACK-CA-NS-land-66); pin 8 m from the edge; about 4.1 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5802",
+   "area": "CA-NS",
+   "park": "Black-Binney House National Historic Site",
+   "agency_group": "pc.gc.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "CA-NS",
+   "url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0?f=html",
+   "service_url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0",
+   "name_field": "HRTG_NM",
+   "agency": "Heritage Properties",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 185,
+   "record_name": "Black-Binney House",
+   "layer": "PACK-CA-NS-land-83",
+   "record_link": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?where=OBJECTID%3D185&outFields=%2A&f=html",
+   "where": "OBJECTID=185",
+   "pin_m": 0,
+   "acres_approx": 0.3,
+   "grade": "official",
+   "envelope": [
+    -63.57169,
+    44.64376,
+    -63.57102,
+    44.64416
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?geometry=-63.5713%2C44.644&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Black-Binney House' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NS-land-66",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-80",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-81",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-82",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-land-83",
+      "gave": "hit (25 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Black-Binney House' (PACK-CA-NS-land-83); pin inside; about 0.3 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "CA-6408",
    "area": "CA-QC",
    "park": "Phare de l'Île-Brion Historic Site",
@@ -4183,6 +4602,757 @@
     ],
     "solved": "",
     "why_this_record": "record 'Killarney Lake Park' (PACK-CA-NB-preserve-78); pin inside; about 573.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5166",
+   "area": "CA-NB",
+   "park": "Dominion Park Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 1,
+   "record_name": "Dominion Park",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html",
+   "where": "OBJECTID=1",
+   "pin_m": 0,
+   "acres_approx": 7.5,
+   "grade": "official",
+   "envelope": [
+    -66.12576,
+    45.26806,
+    -66.1225,
+    45.27064
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Dominion Public Site",
+     "layer": "PACK-CA-NB-land-73",
+     "tier": "T-4",
+     "pin_m": 138201
+    },
+    {
+     "record_name": "Dominion Public Building Site",
+     "layer": "PACK-CA-NB-land-73",
+     "tier": "T-4",
+     "pin_m": 212692
+    },
+    {
+     "record_name": "former Princess Coal Reclamation and Dominion Coal",
+     "layer": "PACK-CA-NB-land-73",
+     "tier": "T-4",
+     "pin_m": 471432
+    },
+    {
+     "record_name": "Dominion Street, Glace Bay",
+     "layer": "PACK-CA-NB-land-73",
+     "tier": "T-4",
+     "pin_m": 488627
+    }
+   ],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.1227%2C45.2692&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Dominion Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "hit (0 at pin, 6 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Dominion Park' (PACK-CA-NB-park-77); pin inside; about 7.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5190",
+   "area": "CA-NB",
+   "park": "Little River Reservoir Park Conservation Area",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 12,
+   "record_name": "Little River Reservoir",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "where": "OBJECTID=12",
+   "pin_m": 0,
+   "acres_approx": 359.9,
+   "grade": "official",
+   "envelope": [
+    -65.98068,
+    45.30037,
+    -65.95642,
+    45.31384
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "",
+     "layer": "PACK-CA-NB-park-427",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-65.973%2C45.309&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Little River Reservoir' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-preserve-78",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-427",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-428",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-429",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-430",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a park, record is a lake",
+    "why_this_record": "same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'Little River Reservoir' (PACK-CA-NB-park-77); pin inside; about 359.9 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5219",
+   "area": "CA-NB",
+   "park": "Riverview Memorial Park Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 24,
+   "record_name": "Riverview Park",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D24&outFields=%2A&f=html",
+   "where": "OBJECTID=24",
+   "pin_m": 0,
+   "acres_approx": 5.8,
+   "grade": "official",
+   "envelope": [
+    -66.08475,
+    45.26731,
+    -66.08202,
+    45.26917
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0826%2C45.2679&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Riverview Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Riverview Park' (PACK-CA-NB-park-77); pin inside; about 5.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5224",
+   "area": "CA-NB",
+   "park": "Seaside Park Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 21,
+   "record_name": "Seaside Park",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D21&outFields=%2A&f=html",
+   "where": "OBJECTID=21",
+   "pin_m": 2,
+   "acres_approx": 17.4,
+   "grade": "official",
+   "envelope": [
+    -66.08362,
+    45.24495,
+    -66.08063,
+    45.24921
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Kejimkujik Seaside - South West Port Mouton PID 70065214",
+     "layer": "PACK-CA-NB-land-73",
+     "tier": "T-4",
+     "pin_m": 181698
+    },
+    {
+     "record_name": "",
+     "layer": "PACK-CA-NB-park-427",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0823%2C45.2492&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Seaside Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-preserve-78",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-427",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-428",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-429",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-430",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (2 m): candidate only (G-F1)",
+    "why_this_record": "same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'Seaside Park' (PACK-CA-NB-park-77); pin 2 m from the edge; about 17.4 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5691",
+   "area": "CA-NB",
+   "park": "Jervis Bay-Ross Memorial Park Natural Monument",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 7,
+   "record_name": "Jervis Bay Ross Memorial Park",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D7&outFields=%2A&f=html",
+   "where": "OBJECTID=7",
+   "pin_m": 5,
+   "acres_approx": 3.6,
+   "grade": "official",
+   "envelope": [
+    -66.03706,
+    45.28701,
+    -66.0356,
+    45.28869
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "",
+     "layer": "PACK-CA-NB-park-427",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0359%2C45.2877&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Jervis Bay Ross Memorial Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-preserve-78",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-427",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-428",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-429",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-430",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-NB in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "no hit (0 at pin, 7 by name)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a historic, record is a park",
+    "why_this_record": "same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'Jervis Bay Ross Memorial Park' (PACK-CA-NB-park-77); pin 5 m from the edge; about 3.6 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5694",
+   "area": "CA-NB",
+   "park": "King Square West Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 33,
+   "record_name": "King Square West",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D33&outFields=%2A&f=html",
+   "where": "OBJECTID=33",
+   "pin_m": 0,
+   "acres_approx": 5.7,
+   "grade": "official",
+   "envelope": [
+    -66.07905,
+    45.25742,
+    -66.07636,
+    45.25932
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0768%2C45.2582&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'King Square West' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'King Square West' (PACK-CA-NB-park-77); pin inside; about 5.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5697",
+   "area": "CA-NB",
+   "park": "Larche Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 30,
+   "record_name": "Larche Memorial Park",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D30&outFields=%2A&f=html",
+   "where": "OBJECTID=30",
+   "pin_m": 0,
+   "acres_approx": 1.8,
+   "grade": "official",
+   "envelope": [
+    -66.11859,
+    45.24249,
+    -66.11737,
+    45.24378
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "",
+     "layer": "PACK-CA-NB-park-427",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.1179%2C45.2436&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Larche Memorial Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-preserve-78",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-427",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-428",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-429",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-430",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (0 m): candidate only (G-F1)",
+    "why_this_record": "same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'Larche Memorial Park' (PACK-CA-NB-park-77); pin 0 m from the edge; about 1.8 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5713",
+   "area": "CA-NB",
+   "park": "Queen Square West Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 25,
+   "record_name": "Queen Square West",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D25&outFields=%2A&f=html",
+   "where": "OBJECTID=25",
+   "pin_m": 0,
+   "acres_approx": 5.7,
+   "grade": "official",
+   "envelope": [
+    -66.07142,
+    45.25375,
+    -66.06875,
+    45.25566
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0702%2C45.2548&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Queen Square West' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (1 at pin, 5 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Queen Square West' (PACK-CA-NB-park-77); pin inside; about 5.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
     "confidence": {
      "level": "sure",
      "double_check": "name + pin inside; check the size against the agency page"
@@ -10645,6 +11815,725 @@
    "pass": 1
   },
   {
+   "ref": "US-7522",
+   "area": "US-AR",
+   "park": "Cherokee State Recreation Area",
+   "agency_group": "State Recreation Area",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-AR",
+   "url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0?f=html",
+   "service_url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0",
+   "name_field": "RECPROJECTSITEAREANAME",
+   "agency": "US Army Corps of Engineers (USACE recreation areas, ArcGIS Online) - USACE recreation areas (site area name)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 471,
+   "record_name": "CHEROKEE",
+   "layer": "WB-US-503",
+   "record_link": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0/query?where=OBJECTID%3D471&outFields=%2A&f=html",
+   "where": "OBJECTID=471",
+   "pin_m": 0,
+   "acres_approx": 35.8,
+   "grade": "official",
+   "envelope": [
+    -92.79176,
+    35.1261,
+    -92.78273,
+    35.13038
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "CHEROKEE LAKE",
+     "layer": "PACK-US-AR-trail-0",
+     "tier": "T-4",
+     "pin_m": 785714
+    },
+    {
+     "record_name": "CHEROKEE LAKE",
+     "layer": "PACK-US-AZ-trail-22",
+     "tier": "T-4",
+     "pin_m": 785714
+    },
+    {
+     "record_name": "Cherokee Cross Country",
+     "layer": "PACK-US-AR-trail-3",
+     "tier": "T-4",
+     "pin_m": 847344
+    },
+    {
+     "record_name": "CHEROKEE FSA",
+     "layer": "US-FWS-interest",
+     "tier": "T-4",
+     "pin_m": 872132
+    }
+   ],
+   "source_url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0/query?geometry=-92.7866%2C35.1299&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'CHEROKEE' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "hit (0 at pin, 10 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-32",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-33",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-34",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-36",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-42",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-43",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-63",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-land-184",
+      "gave": "hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-AR-preserve-220",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AR-park-221",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-land-222",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-trail-22",
+      "gave": "hit (0 at pin, 10 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'CHEROKEE' (WB-US-503); pin inside; about 35.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-9168",
+   "area": "US-AR",
+   "park": "Lake Jack Nolen State Recreation Area",
+   "agency_group": "State Recreation Area",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-AR",
+   "url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11?f=html",
+   "service_url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11",
+   "name_field": "fisheries_name",
+   "agency": "Arkansas Game and Fish Commission (AGOL org 5bMc8SlGDYGINZr5) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 258,
+   "record_name": "Lake Jack Nolen",
+   "layer": "PACK-US-AR-land-222",
+   "record_link": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11/query?where=OBJECTID%3D258&outFields=%2A&f=html",
+   "where": "OBJECTID=258",
+   "pin_m": 47,
+   "acres_approx": 191.9,
+   "grade": "official",
+   "envelope": [
+    -94.21423,
+    35.20213,
+    -94.19368,
+    35.21216
+   ],
+   "rule": "R-G12",
+   "others": [],
+   "source_url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11/query?geometry=-94.2001%2C35.2051&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Lake Jack Nolen' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-32",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-33",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-34",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-36",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-42",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-43",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-63",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-land-184",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-preserve-220",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-park-221",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-land-222",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-trail-22",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (47 m): candidate only (G-F1)",
+    "why_this_record": "record 'Lake Jack Nolen' (PACK-US-AR-land-222); pin 47 m from the edge; about 191.9 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-13324",
+   "area": "US-NV",
+   "park": "Sparks State Historical Monument",
+   "agency_group": "southwestexplorers.com",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-NV",
+   "url": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0?f=html",
+   "service_url": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+   "name_field": "name",
+   "agency": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 517,
+   "record_name": "City of Sparks",
+   "layer": "PACK-US-NV-land-303",
+   "record_link": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?where=OBJECTID%3D517&outFields=%2A&f=html",
+   "where": "OBJECTID=517",
+   "pin_m": 2,
+   "acres_approx": 3.0,
+   "grade": "official",
+   "envelope": [
+    -119.76698,
+    39.53775,
+    -119.76558,
+    39.53878
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "City of Sparks",
+     "layer": "PACK-US-NV-land-305",
+     "tier": "T-3",
+     "pin_m": 2
+    },
+    {
+     "record_name": "Sparks Marina",
+     "layer": "PACK-US-NV-land-303",
+     "tier": "T-4",
+     "pin_m": 2944
+    },
+    {
+     "record_name": "Sparks Marina",
+     "layer": "PACK-US-NV-land-305",
+     "tier": "T-4",
+     "pin_m": 2944
+    }
+   ],
+   "source_url": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?geometry=-119.767%2C39.5382&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'City of Sparks' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-45",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-trail-54",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-wildlife-302",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-303",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-NV-park-304",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-305",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-NV-park-306",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-307",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (2 m): candidate only (G-F1)",
+    "why_this_record": "same land also in PACK-US-NV-land-305 'City of Sparks': merged, counted once; record 'City of Sparks' (PACK-US-NV-land-303); pin 2 m from the edge; about 3.0 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-13259",
    "area": "US-NV",
    "park": "Great Basin Highway Scenic Byway Scenic Site",
@@ -14286,6 +16175,247 @@
    "pass": 1
   },
   {
+   "ref": "CA-2720",
+   "area": "CA-SK",
+   "park": "Little Armit River Recreation Site",
+   "agency_group": "mapcarta.com",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-SK",
+   "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4?f=html",
+   "service_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4",
+   "name_field": "PARKNM",
+   "agency": "Government of Saskatchewan, Ministry of Parks, Culture and Sport (gis.saskatchewan.ca)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 3246,
+   "record_name": "Armit River Recreation Site",
+   "layer": "PACK-CA-SK-park-413",
+   "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?where=OBJECTID%3D3246&outFields=%2A&f=html",
+   "where": "OBJECTID=3246",
+   "pin_m": 0,
+   "acres_approx": 145.0,
+   "grade": "official",
+   "envelope": [
+    -101.68378,
+    52.82719,
+    -101.67183,
+    52.83443
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Armit River Recreation Site",
+     "layer": "PACK-CA-SK-park-450",
+     "tier": "T-3",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?geometry=-101.677%2C52.8332&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Armit River Recreation Site' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-SK-land-69",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-trail-74",
+      "gave": "no hit (0 at pin, 7 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-413",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-449",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-450",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-451",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-452",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-453",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-454",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Armit River Recreation Site",
+    "why_this_record": "same land also in PACK-CA-SK-park-450 'Armit River Recreation Site': merged, counted once; record 'Armit River Recreation Site' (PACK-CA-SK-park-413); pin inside; about 145.0 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-6132",
+   "area": "CA-BC",
+   "park": "Fraser River National Heritage Area",
+   "agency_group": "chrs.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-BC",
+   "url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW",
+   "service_url": "https://openmaps.gov.bc.ca/geo/pub/wfs",
+   "name_field": "PROTECTED_LANDS_NAME",
+   "agency": "BC Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": "WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW.fid-1a2d3bd_1a19d64f2d4_-4193",
+   "record_name": "FRASER RIVER BREAKS PARK",
+   "layer": "CA-BC-parks",
+   "record_link": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3EPROTECTED_LANDS_NAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Afraser%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E",
+   "where": "id=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW.fid-1a2d3bd_1a19d64f2d4_-4193",
+   "pin_m": 0,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": null,
+   "rule": null,
+   "others": [
+    {
+     "record_name": "FRASER RIVER ECOLOGICAL RESERVE",
+     "layer": "CA-BC-parks",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "FRASER RIVER PARK",
+     "layer": "CA-BC-parks",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Fraser River Walking Bridge",
+     "layer": "PACK-CA-BC-land-416",
+     "tier": "T-4",
+     "pin_m": 173287
+    },
+    {
+     "record_name": "River Exploration - Mackenzie and Simon Fraser",
+     "layer": "PACK-CA-BC-land-416",
+     "tier": "T-4",
+     "pin_m": 234419
+    }
+   ],
+   "source_url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3EPROTECTED_LANDS_NAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Afraser%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'FRASER RIVER BREAKS PARK' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-BC-park-72",
+      "gave": "no hit (0 at pin, 7 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-trail-75",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-76",
+      "gave": "hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "CA-BC-parks",
+      "gave": "hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "CA-BC-provincial_park-British_Columbia_Provincial_Parks_Ecolog-10",
+      "gave": "hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "CA-BC-wildlife_area-British_Columbia_Wildlife_Management_Are-9",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-land-416",
+      "gave": "hit (0 at pin, 12 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-land-417",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-420",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-421",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a river, record is a park",
+    "why_this_record": "record 'FRASER RIVER BREAKS PARK' (CA-BC-parks); pin inside; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "other names at the pin: fraser river ecological reserve; fraser river park; check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-13324",
    "area": "US-NV",
    "park": "Sparks State Historical Monument",
@@ -17193,6 +19323,2346 @@
    "pass": 1
   },
   {
+   "ref": "US-4481",
+   "area": "US-UT",
+   "park": "Sawtooth National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-UT",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0",
+   "name_field": "trail_name",
+   "agency": "National Forest System Trails",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 10996636,
+   "record_name": "SAWTOOTH",
+   "layer": "PACK-US-AR-trail-0",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0/query?where=OBJECTID%3D10996636&outFields=%2A&f=html",
+   "where": "OBJECTID=10996636",
+   "pin_m": 0,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": null,
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Sawtooth Scenic Byway",
+     "layer": "PACK-US-UT-trail-56",
+     "tier": "T-4",
+     "pin_m": 28616
+    },
+    {
+     "record_name": "SOUTH SAWTOOTH CONNECTOR",
+     "layer": "PACK-US-AR-trail-0",
+     "tier": "T-4",
+     "pin_m": 40083
+    },
+    {
+     "record_name": "N. FK BARON-SAWTOOTH LK.",
+     "layer": "PACK-US-AR-trail-0",
+     "tier": "T-4",
+     "pin_m": 71410
+    },
+    {
+     "record_name": "N. FK BARON-SAWTOOTH LK.",
+     "layer": "PACK-US-AR-trail-0",
+     "tier": "T-4",
+     "pin_m": 73134
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0/query?where=trail_name%20LIKE%20%27%25SAWTOOTH%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'SAWTOOTH' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-UT-park-7",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-8",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-18",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-28",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-37",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-40",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-56",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-57",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-351",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-352",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-353",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-381",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-UT-trail-DPRTrails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "hit (0 at pin, 22 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'SAWTOOTH' (PACK-US-AR-trail-0); pin inside; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-5992",
+   "area": "US-UT",
+   "park": "Big Creek USFS Wild Horse Territory & BLM Herd Management Area",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-UT",
+   "url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+   "name_field": "HA_NAME",
+   "agency": "BLM herd areas",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 164,
+   "record_name": "Big Creek",
+   "layer": "PACK-US-land-188",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?where=OBJECTID%3D164&outFields=%2A&f=html",
+   "where": "OBJECTID=164",
+   "pin_m": 0,
+   "acres_approx": 3449.7,
+   "grade": "official",
+   "envelope": [
+    -112.70599,
+    40.43572,
+    -112.66834,
+    40.5141
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Bureau of Land Management",
+     "layer": "US-BLM-sma",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?geometry=-112.704%2C40.4908&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Big Creek' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-UT-park-7",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-8",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-18",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-28",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-37",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-40",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-56",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-57",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-351",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-352",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-353",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-381",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-UT-trail-DPRTrails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-UT in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "no hit (0 at pin, 4 by name)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Big Creek' (PACK-US-land-188); pin inside; about 3449.7 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-0731",
+   "area": "US-WA",
+   "park": "Columbia River Gorge National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-WA",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 10,
+   "record_name": "Columbia River Gorge National Scenic Area",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D10&outFields=%2A&f=html",
+   "where": "OBJECTID=10",
+   "pin_m": 0,
+   "acres_approx": 209917.8,
+   "grade": "official",
+   "envelope": [
+    -122.40128,
+    45.51056,
+    -120.87111,
+    45.7937
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Columbia River Gorge National Scenic Area",
+     "layer": "PACK-US-land-187",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Columbia River Gorge National Scenic Area",
+     "layer": "US-USFS-admin",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Columbia River Gorge National Scenic Area",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-4",
+     "pin_m": 104
+    },
+    {
+     "record_name": "Columbia River Gorge National Scenic Area",
+     "layer": "US-USFS-ownership",
+     "tier": "T-4",
+     "pin_m": 109
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-121.29%2C45.6967&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Columbia River Gorge National Scenic Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "no hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (2 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "no hit (0 at pin, 14 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (2 at pin, 2 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 18 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 15 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 4 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a forest, record is a river",
+    "why_this_record": "same land also in PACK-US-land-187 'Columbia River Gorge National Scenic Area', US-USFS-admin 'Columbia River Gorge National Scenic Area', PACK-US-WA-park-363 'Columbia Hills': merged, counted once; record 'Columbia River Gorge National Scenic Area' (US-USFS-ownership); pin inside; about 209917.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10709",
+   "area": "US-WA",
+   "park": "Klickitat National Wild & Scenic River",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-WA",
+   "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0?f=html",
+   "service_url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+   "name_field": "ManagedPlaceName",
+   "agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": null,
+   "record_name": "Klickitat",
+   "layer": "PACK-US-WA-wildlife-364",
+   "record_link": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-121.26%2C45.7159&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "where": "id=None",
+   "pin_m": 0,
+   "acres_approx": 27794.0,
+   "grade": "official",
+   "envelope": [
+    -121.3266,
+    45.70298,
+    -120.47004,
+    45.99087
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Klickitat",
+     "layer": "PACK-US-WA-wildlife-368",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Klickitat",
+     "layer": "PACK-US-WA-wildlife-369",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Klickitat",
+     "layer": "WB-US-475",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Klickitat Wild and Scenic River",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-4",
+     "pin_m": 576
+    }
+   ],
+   "source_url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-121.26%2C45.7159&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Klickitat' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "no hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "no hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "hit (2 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (3 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "hit (1 at pin, 7 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Klickitat",
+    "why_this_record": "same land also in PACK-US-WA-wildlife-368 'Klickitat', PACK-US-WA-wildlife-369 'Klickitat', WB-US-475 'Klickitat': merged, counted once; record 'Klickitat' (PACK-US-WA-wildlife-364); pin inside; about 27794.0 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-3385",
+   "area": "US-WA",
+   "park": "Mt. St. Helens National Monument",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-WA",
+   "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1?f=html",
+   "service_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
+   "name_field": "NAME",
+   "agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 2698,
+   "record_name": "Mount Saint Helens National Volcanic Monument",
+   "layer": "PACK-US-WA-land-366",
+   "record_link": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?where=OBJECTID%3D2698&outFields=%2A&f=html",
+   "where": "OBJECTID=2698",
+   "pin_m": 0,
+   "acres_approx": 112634.3,
+   "grade": "official",
+   "envelope": [
+    -122.38572,
+    46.06394,
+    -122.04279,
+    46.4439
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Mount Saint Helens",
+     "layer": "PACK-US-WA-wildlife-364",
+     "tier": "T-4",
+     "pin_m": 12702
+    },
+    {
+     "record_name": "Mt St Helens",
+     "layer": "PACK-US-WA-preserve-365",
+     "tier": "T-4",
+     "pin_m": 19170
+    },
+    {
+     "record_name": "Mt St Helens",
+     "layer": "PACK-US-WA-preserve-365",
+     "tier": "T-4",
+     "pin_m": 19590
+    },
+    {
+     "record_name": "Mt St Helens",
+     "layer": "PACK-US-WA-preserve-365",
+     "tier": "T-4",
+     "pin_m": 21213
+    }
+   ],
+   "source_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?geometry=-122.217%2C46.2769&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Mount Saint Helens National Volcanic Monument' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Mount Saint Helens National Volcanic Monument' (PACK-US-WA-land-366); pin inside; about 112634.3 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-4385",
+   "area": "US-WA",
+   "park": "Umatilla National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-WA",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 148,
+   "record_name": "Umatilla National Forest",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D148&outFields=%2A&f=html",
+   "where": "OBJECTID=148",
+   "pin_m": 0,
+   "acres_approx": 1417666.6,
+   "grade": "official",
+   "envelope": [
+    -119.95011,
+    44.70582,
+    -117.24831,
+    46.47556
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Umatilla National Forest",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-4",
+     "pin_m": 101557
+    },
+    {
+     "record_name": "Umatilla National Forest",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-4",
+     "pin_m": 124904
+    },
+    {
+     "record_name": "Umatilla National Forest",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-4",
+     "pin_m": 150563
+    },
+    {
+     "record_name": "Umatilla National Forest",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-4",
+     "pin_m": 153211
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-118.667%2C45.1946&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Umatilla National Forest' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (0 at pin, 6 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-WA-land-366 'Umatilla National Forest', PACK-US-WA-land-366 'Umatilla National Forest', PACK-US-WA-land-366 'Umatilla National Forest': merged, counted once; record 'Umatilla National Forest' (US-USFS-ownership); pin inside; about 1417666.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-4477",
+   "area": "US-WA",
+   "park": "Idaho Panhandle National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-WA",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 187,
+   "record_name": "Idaho Panhandle National Forests",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D187&outFields=%2A&f=html",
+   "where": "OBJECTID=187",
+   "pin_m": 0,
+   "acres_approx": 2498280.8,
+   "grade": "official",
+   "envelope": [
+    -117.18965,
+    46.89611,
+    -115.06943,
+    49.00094
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Idaho Panhandle National Forest",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-4",
+     "pin_m": 34522
+    },
+    {
+     "record_name": "Idaho Panhandle National Forest",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-4",
+     "pin_m": 36317
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-116.572%2C48.2663&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Idaho Panhandle National Forests' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-WA-land-366 'Idaho Panhandle National Forest', PACK-US-WA-land-366 'Idaho Panhandle National Forest': merged, counted once; record 'Idaho Panhandle National Forests' (US-USFS-ownership); pin inside; about 2498280.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-4427",
+   "area": "US-AZ",
+   "park": "Apache-Sitgreaves National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-AZ",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 189,
+   "record_name": "Apache-Sitgreaves National Forests",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D189&outFields=%2A&f=html",
+   "where": "OBJECTID=189",
+   "pin_m": 0,
+   "acres_approx": 2015863.6,
+   "grade": "official",
+   "envelope": [
+    -111.09595,
+    32.97653,
+    -109.0467,
+    34.74951
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-110.617%2C34.3885&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Apache-Sitgreaves National Forests' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-trail-22",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-park-223",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-wildlife-224",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-225",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-wildlife-226",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-park-227",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Apache-Sitgreaves National Forests' (US-USFS-ownership); pin inside; about 2015863.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-11902",
+   "area": "US-CO",
+   "park": "Camp Hale National Monument",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-CO",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+   "name_field": "fullname",
+   "agency": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 36,
+   "record_name": "Camp Hale - Continental Divide National Monument",
+   "layer": "PACK-US-land-187",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?where=OBJECTID%3D36&outFields=%2A&f=html",
+   "where": "OBJECTID=36",
+   "pin_m": 13,
+   "acres_approx": 53635.3,
+   "grade": "official",
+   "envelope": [
+    -106.3451,
+    39.35335,
+    -106.0425,
+    39.57462
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Haleakala National Park",
+     "layer": "PACK-US-AZ-land-44",
+     "tier": "T-6",
+     "pin_m": 5149006
+    },
+    {
+     "record_name": "White River National Forest",
+     "layer": "US-USFS-ownership",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "White River National Forest",
+     "layer": "US-USFS-admin",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?geometry=-106.325%2C39.4352&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Camp Hale - Continental Divide National Monument' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-CO-wildlife-46",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CO-wildlife-231",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CO-park-232",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CO-land-233",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (13 m): candidate only (G-F1); NAME SOLVED: agency calls it Camp Hale - Continental Divide National Monument",
+    "why_this_record": "same land also in US-USFS-ownership 'White River National Forest', US-USFS-admin 'White River National Forest': merged, counted once; record 'Camp Hale - Continental Divide National Monument' (PACK-US-land-187); pin 13 m from the edge; about 53635.3 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-4397",
+   "area": "US-CO",
+   "park": "Manti-La Sal National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-CO",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 65,
+   "record_name": "Manti-La Sal National Forest",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D65&outFields=%2A&f=html",
+   "where": "OBJECTID=65",
+   "pin_m": 0,
+   "acres_approx": 1340004.4,
+   "grade": "official",
+   "envelope": [
+    -111.88474,
+    37.57724,
+    -108.92418,
+    39.98115
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-111.425%2C39.2833&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Manti-La Sal National Forest' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-CO-wildlife-46",
+      "gave": "blocked (blocked (host resting: 3 strikes))"
+     },
+     {
+      "source": "PACK-US-CO-wildlife-231",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CO-park-232",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CO-land-233",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Manti-La Sal National Forest' (US-USFS-ownership); pin inside; about 1340004.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-4477",
+   "area": "US-MT",
+   "park": "Idaho Panhandle National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-MT",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 187,
+   "record_name": "Idaho Panhandle National Forests",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D187&outFields=%2A&f=html",
+   "where": "OBJECTID=187",
+   "pin_m": 0,
+   "acres_approx": 2498280.8,
+   "grade": "official",
+   "envelope": [
+    -117.18965,
+    46.89611,
+    -115.06943,
+    49.00094
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-116.572%2C48.2663&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Idaho Panhandle National Forests' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-MT-park-286",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MT-wildlife-287",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MT-land-288",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MN-wildlife-29",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Idaho Panhandle National Forests' (US-USFS-ownership); pin inside; about 2498280.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-4424",
+   "area": "US-OK",
+   "park": "Ouachita National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-OK",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 113,
+   "record_name": "Ouachita National Forest",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D113&outFields=%2A&f=html",
+   "where": "OBJECTID=113",
+   "pin_m": 0,
+   "acres_approx": 1784193.4,
+   "grade": "official",
+   "envelope": [
+    -95.04062,
+    33.70695,
+    -92.75538,
+    35.07553
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Ouachita County Training School",
+     "layer": "PACK-US-AK-land-41",
+     "tier": "T-4",
+     "pin_m": 153465
+    },
+    {
+     "record_name": "Ouachita River Lock and Dam No. 8",
+     "layer": "PACK-US-AK-land-41",
+     "tier": "T-6",
+     "pin_m": 197851
+    },
+    {
+     "record_name": "Ouachita Wildlife Management Area - Leflore",
+     "layer": "PACK-US-OK-land-205",
+     "tier": "T-6",
+     "pin_m": 58820
+    },
+    {
+     "record_name": "Ouachita Wildlife Management Area -  LeFlore Unit",
+     "layer": "PACK-US-OK-wildlife-318",
+     "tier": "T-6",
+     "pin_m": 58824
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-93.8138%2C34.6854&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Ouachita National Forest' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-OK-trail-55",
+      "gave": "blocked (blocked (host resting: 3 strikes))"
+     },
+     {
+      "source": "PACK-US-OK-land-205",
+      "gave": "hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-OK-park-317",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OK-wildlife-318",
+      "gave": "hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-MN-wildlife-29",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Ouachita National Forest' (US-USFS-ownership); pin inside; about 1784193.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-4514",
+   "area": "US-OK",
+   "park": "Cibola National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-OK",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 20,
+   "record_name": "Cibola National Forest",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html",
+   "where": "OBJECTID=20",
+   "pin_m": 0,
+   "acres_approx": 1883163.2,
+   "grade": "official",
+   "envelope": [
+    -108.636,
+    33.43395,
+    -99.53996,
+    36.69824
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "CIBOLA NATIONAL WILDLIFE REFUGE",
+     "layer": "PACK-US-MN-wildlife-29",
+     "tier": "T-6",
+     "pin_m": 781140
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-106.475%2C35.2021&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Cibola National Forest' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-OK-trail-55",
+      "gave": "blocked (blocked (host resting: 3 strikes))"
+     },
+     {
+      "source": "PACK-US-OK-land-205",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OK-park-317",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OK-wildlife-318",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MN-wildlife-29",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Cibola National Forest' (US-USFS-ownership); pin inside; about 1883163.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-4501",
+   "area": "US-SD",
+   "park": "Custer Gallatin National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-SD",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 145,
+   "record_name": "Custer Gallatin National Forest",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D145&outFields=%2A&f=html",
+   "where": "OBJECTID=145",
+   "pin_m": 0,
+   "acres_approx": 3042860.1,
+   "grade": "official",
+   "envelope": [
+    -111.59333,
+    44.48663,
+    -103.00894,
+    46.2925
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-105.997%2C45.5048&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Custer Gallatin National Forest' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-SD-park-17",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-SD-park-335",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-SD-land-336",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Custer Gallatin National Forest' (US-USFS-ownership); pin inside; about 3042860.1 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-4514",
+   "area": "US-TX",
+   "park": "Cibola National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-TX",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 20,
+   "record_name": "Cibola National Forest",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html",
+   "where": "OBJECTID=20",
+   "pin_m": 0,
+   "acres_approx": 1883163.2,
+   "grade": "official",
+   "envelope": [
+    -108.636,
+    33.43395,
+    -99.53996,
+    36.69824
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-106.475%2C35.2021&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Cibola National Forest' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-TX-trail-Texas_State_Parks_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-TX-park-347",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-TX-wildlife-348",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-TX-wildlife-349",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-TX-land-350",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "US-TX-trail-Texas_Paddling_Trails_Feature_Layer-1",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MI-land-26",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Cibola National Forest' (US-USFS-ownership); pin inside; about 1883163.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-2046",
+   "area": "CA-QC",
+   "park": "Parc Parent Recreation Park",
+   "agency_group": "Recreation Park",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-QC",
+   "url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html",
+   "service_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1",
+   "name_field": "name",
+   "agency": "WDPA (last resort)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "W-10",
+   "record": 443465,
+   "record_name": "Forêt-Héritage (partie Parent) Natural Area Under Private Stewardship",
+   "layer": "WDPA-last-resort-WDPA_v0",
+   "record_link": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D443465&outFields=%2A&f=html",
+   "where": "OBJECTID=443465",
+   "pin_m": 147,
+   "acres_approx": 8.8,
+   "grade": "approx",
+   "envelope": [
+    -74.1048,
+    45.84281,
+    -74.10206,
+    45.84588
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Milieu naturel de conservation volontaire de la Forêt-Héritage (partie Parent)",
+     "layer": "PACK-CA-QC-park-447",
+     "tier": "T-4",
+     "pin_m": 146
+    },
+    {
+     "record_name": "Parent AWOS",
+     "layer": "PACK-CA-NB-land-73",
+     "tier": "T-4",
+     "pin_m": 234597
+    },
+    {
+     "record_name": "baie de l'Île Locas (partie Cordeau-Parent) Natural Area Under Private Stewardship",
+     "layer": "WDPA-last-resort-WDPA_v0",
+     "tier": "T-4",
+     "pin_m": 34638
+    },
+    {
+     "record_name": "Tourbière de Lanoraie (partie Parent) Natural Area Under Private Stewardship",
+     "layer": "WDPA-last-resort-WDPA_v0",
+     "tier": "T-4",
+     "pin_m": 63545
+    }
+   ],
+   "source_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-74.1031%2C45.8416&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Forêt-Héritage (partie Parent) Natural Area Under Private Stewardship' at the POTA pin (approximate source) [WDPA (last resort): no official layer had a record]",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-QC-park-90",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-91",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-392",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-393",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-394",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-wildlife-395",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-439",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-440",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-441",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-442",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-443",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-444",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-445",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-446",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-447",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-448",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-79",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-QC in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "hit (2 at pin, 18 by name)"
+     }
+    ],
+    "solved": "pin just outside (147 m): candidate only (G-F1); NAME SOLVED: agency calls it Forêt-Héritage (partie Parent) Natural Area Under Private Stewardship",
+    "why_this_record": "same land also in PACK-CA-QC-park-447 'Milieu naturel de conservation volontaire de la Forêt-Héritage (partie Parent)': merged, counted once; record 'Forêt-Héritage (partie Parent) Natural Area Under Private Stewardship' (WDPA-last-resort-WDPA_v0); pin 147 m from the edge; about 8.8 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "WDPA (last resort): no official layer had a record; approximate only, a person must check (W-10); approximate source: never a full YES"
+    }
+   },
+   "g": "approx",
+   "source_policy": "WDPA (last resort)",
+   "label": "WDPA (last resort)",
+   "whynot": {
+    "tag": "WDPA (last resort): approximate only; no official layer had a record for this park (club rule W-10)",
+    "step_reached": "W-10",
+    "date": "2026-11-02"
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)"
+   }
+  },
+  {
    "ref": "US-5981",
    "area": "US-UT",
    "park": "Simpson Springs Pony Express Station National Historic Site",
@@ -17973,103 +22443,6 @@
      "level": "likely",
      "double_check": "check the kind of place and the size"
     }
-   },
-   "pass": 1
-  },
-  {
-   "ref": "US-0658",
-   "area": "US-FL",
-   "park": "Timucuan Preserve National Conservation Area",
-   "agency_group": "nps.gov",
-   "kind": "outline",
-   "date": "2026-11-02",
-   "status": "candidate",
-   "st": "US-FL",
-   "url": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9?f=html",
-   "service_url": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9",
-   "name_field": "MANAME",
-   "agency": "Florida Natural Areas Inventory conservation lands",
-   "licence": "see the publisher",
-   "answer": "",
-   "checked_by": "",
-   "tier": "T-2",
-   "band": "WEAK",
-   "step": "L0",
-   "record": 3006,
-   "record_name": "Timucuan Preserve Federally Managed Lands",
-   "layer": "PACK-US-FL-land-186",
-   "record_link": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9/query?where=OBJECTID%3D3006&outFields=%2A&f=html",
-   "where": "OBJECTID=3006",
-   "pin_m": 0,
-   "acres_approx": 14568.9,
-   "grade": "official",
-   "envelope": [
-    -81.65648,
-    30.3651,
-    -81.41754,
-    30.58576
-   ],
-   "rule": null,
-   "others": [],
-   "source_url": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9/query?geometry=-81.4639%2C30.4443&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
-   "read_date": "2026-11-02",
-   "rule_g": "LIKELY",
-   "rule_g_why": "names overlap",
-   "size_band": "unknown",
-   "why": "T-2 WEAK: 'Timucuan Preserve Federally Managed Lands' at the POTA pin",
-   "notes": {
-    "where_looked": [
-     {
-      "source": "US-FL-USFS-WSR-segments",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "PACK-US-FL-land-186",
-      "gave": "hit (1 at pin, 0 by name)"
-     },
-     {
-      "source": "WDPA (last resort)",
-      "gave": "not asked: an official layer has a record for this park (W-10)"
-     }
-    ],
-    "solved": "NAME SOLVED: agency calls it Timucuan Preserve Federally Managed Lands",
-    "why_this_record": "record 'Timucuan Preserve Federally Managed Lands' (PACK-US-FL-land-186); pin inside; about 14568.9 acres; Rule G: LIKELY (names overlap); size unknown",
-    "confidence": {
-     "level": "likely",
-     "double_check": "check the kind of place and the size"
-    }
-   },
-   "ruling": {
-    "ruling": "pin only",
-    "tag": "official layer exists (W-10): WDPA rejected; question for chat 11",
-    "why": "W-10 (Nov 1): WDPA is rejected because an official layer exists for this park. NPS Land Resources Division boundary 'Timucuan Ecological and Historic Preserve' (record 1047) has the POTA pin inside. PAD-US has it under that name (record 3312, not the POTA name 'Timucuan Preserve National Conservation Area'); Florida conservation lands has 'Timucuan Preserve Federally Managed Lands' (record 3006). Candidate only until chat 11 accepts.",
-    "official_found": [
-     {
-      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-      "record": 1047,
-      "record_name": "Timucuan Ecological and Historic Preserve",
-      "pin_m": 0,
-      "link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=OBJECTID%3D1047&outFields=%2A&f=html"
-     },
-     {
-      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-      "record": 3312,
-      "record_name": "Timucuan Ecological and Historic Preserve",
-      "pin_m": 0,
-      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?where=OBJECTID%3D3312&outFields=%2A&f=html"
-     },
-     {
-      "layer": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9",
-      "record": 3006,
-      "record_name": "Timucuan Preserve Federally Managed Lands",
-      "pin_m": 0,
-      "link": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9/query?where=OBJECTID%3D3006&outFields=%2A&f=html"
-     }
-    ],
-    "date": "2026-11-01"
-   },
-   "whynot": {
-    "ruling": "club ruling: pin only until a person accepts this new layer (W-10 (Nov 1): WDPA is rejected because an official layer exists for this park. NPS Land Resources Division boundary 'Tim)"
    },
    "pass": 1
   },
@@ -20314,6 +24687,218 @@
     ],
     "solved": "NAME SOLVED: agency calls it Delaware Wild and Scenic River",
     "why_this_record": "record 'Delaware Wild and Scenic River' (PACK-US-land-386); pin inside; about 21307.8 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-0961",
+   "area": "US-NM",
+   "park": "Salinas Pueblo Missions, Gran Quivira Unit, National Monument",
+   "agency_group": "nps.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-NM",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2?f=html",
+   "service_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+   "name_field": "UNIT_NAME",
+   "agency": "National Park Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 1282,
+   "record_name": "Salinas Pueblo Missions National Monument",
+   "layer": "US-NPS-boundary",
+   "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=OBJECTID%3D1282&outFields=%2A&f=html",
+   "where": "OBJECTID=1282",
+   "pin_m": 0,
+   "acres_approx": 1070.1,
+   "grade": "official",
+   "envelope": [
+    -106.3822,
+    34.25572,
+    -106.07269,
+    34.59791
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "NEW MEXICO",
+     "layer": "US-NPS-tracts",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?geometry=-106.091%2C34.26&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Salinas Pueblo Missions National Monument' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-NM-trail-53",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NM-wildlife-300",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NM-park-301",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "no hit (5 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Salinas Pueblo Missions National Monument",
+    "why_this_record": "same land also in US-NPS-tracts 'NEW MEXICO': merged, counted once; record 'Salinas Pueblo Missions National Monument' (US-NPS-boundary); pin inside; about 1070.1 acres; Rule G: LIKELY (names overlap); size unknown",
     "confidence": {
      "level": "likely",
      "double_check": "check the kind of place and the size"
@@ -27251,7 +31836,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: blocked (host resting: 3 strikes)",
-    "record_link": "not checked: blocked (host resting: 3 strikes)"
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -27358,6 +31944,571 @@
     "confidence": {
      "level": "likely",
      "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-5756",
+   "area": "US-UT",
+   "park": "Browns Park National Wildlife Management Area",
+   "agency_group": "fws.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-UT",
+   "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0",
+   "name_field": "Property_N",
+   "agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 27,
+   "record_name": "Browns Park WMA",
+   "layer": "PACK-US-UT-land-351",
+   "record_link": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D27&outFields=%2A&f=html",
+   "where": "OBJECTID=27",
+   "pin_m": 0,
+   "acres_approx": 3133.5,
+   "grade": "official",
+   "envelope": [
+    -109.1661,
+    40.82942,
+    -109.04869,
+    40.90594
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Browns Canyon",
+     "layer": "PACK-US-UT-trail-28",
+     "tier": "T-4",
+     "pin_m": 241302
+    },
+    {
+     "record_name": "Brownstone",
+     "layer": "PACK-US-UT-trail-28",
+     "tier": "T-4",
+     "pin_m": 246247
+    },
+    {
+     "record_name": "Browns Hole Road",
+     "layer": "PACK-US-UT-trail-28",
+     "tier": "T-4",
+     "pin_m": 282890
+    },
+    {
+     "record_name": "Browns Hole Road",
+     "layer": "PACK-US-UT-trail-28",
+     "tier": "T-4",
+     "pin_m": 282977
+    }
+   ],
+   "source_url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?geometry=-109.148%2C40.8886&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Browns Park WMA' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-UT-park-7",
+      "gave": "hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-8",
+      "gave": "hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-18",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-28",
+      "gave": "hit (0 at pin, 10 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-37",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-40",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-56",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-57",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-351",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Browns Park WMA' (PACK-US-UT-land-351); pin inside; about 3133.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-0390",
+   "area": "US-MS",
+   "park": "Noxubee National Wildlife Refuge",
+   "agency_group": "fws.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-MS",
+   "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+   "name_field": "ORGNAME",
+   "agency": "US Fish and Wildlife Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 324,
+   "record_name": "SAM D. HAMILTON NOXUBEE NATIONAL WILDLIFE REFUGE",
+   "layer": "US-FWS-approved",
+   "record_link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0/query?where=OBJECTID%3D324&outFields=%2A&f=html",
+   "where": "OBJECTID=324",
+   "pin_m": 0,
+   "acres_approx": 61614.9,
+   "grade": "approximate",
+   "envelope": [
+    -88.94534,
+    33.1892,
+    -88.69718,
+    33.40313
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "SAM D. HAMILTON NOXUBEE NATIONAL WILDLIFE REFUGE",
+     "layer": "US-FWS-interest",
+     "tier": "T-4",
+     "pin_m": 179
+    },
+    {
+     "record_name": "SAM D. HAMILTON NOXUBEE NATIONAL WILDLIFE REFUGE",
+     "layer": "US-FWS-nwrs",
+     "tier": "T-4",
+     "pin_m": 179
+    },
+    {
+     "record_name": "Sam D. Hamilton Noxubee National Wildlife Refuge",
+     "layer": "US-FWS-huntunits",
+     "tier": "T-4",
+     "pin_m": 188
+    },
+    {
+     "record_name": "Sam D. Hamilton Noxubee National Wildlife Refuge",
+     "layer": "US-FWS-huntunits",
+     "tier": "T-4",
+     "pin_m": 272
+    }
+   ],
+   "source_url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0/query?geometry=-88.8728%2C33.2715&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'SAM D. HAMILTON NOXUBEE NATIONAL WILDLIFE REFUGE' at the POTA pin (approximate source)",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-MS-land-198",
+      "gave": "error (HTTP None)"
+     },
+     {
+      "source": "PACK-US-MS-land-199",
+      "gave": "error (HTTP None)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it SAM D. HAMILTON NOXUBEE NATIONAL WILDLIFE REFUGE",
+    "why_this_record": "same land also in US-FWS-huntunits 'Sam D. Hamilton Noxubee National Wildlife Refuge', US-FWS-huntunits 'Sam D. Hamilton Noxubee National Wildlife Refuge', US-FWS-huntunits 'Sam D. Hamilton Noxubee National Wildlife Refuge': merged, counted once; record 'SAM D. HAMILTON NOXUBEE NATIONAL WILDLIFE REFUGE' (US-FWS-approved); pin inside; about 61614.9 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "approximate source: never a full YES"
+    }
+   },
+   "whynot": {
+    "tag": "approximate only (US-FWS-approved is graded approximate: FWS ArcGIS org QVENGdaPbd4LUkLV (authoritative approved acquisition boundaries))",
+    "step_reached": "L0",
+    "date": "2026-11-02"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-0329",
+   "area": "US-CT",
+   "park": "Silvio O Conte National Wildlife Refuge",
+   "agency_group": "fws.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-CT",
+   "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
+   "name_field": "ORGNAME",
+   "agency": "US Fish and Wildlife Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 675,
+   "record_name": "SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE",
+   "layer": "US-FWS-interest",
+   "record_link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D675&outFields=%2A&f=html",
+   "where": "OBJECTID=675",
+   "pin_m": 0,
+   "acres_approx": 26815.6,
+   "grade": "official",
+   "envelope": [
+    -71.81542,
+    44.76032,
+    -71.67105,
+    44.91839
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Silvio O.Conte NFWR- Deadmans Swamp Unit",
+     "layer": "PACK-US-CT-land-235",
+     "tier": "T-4",
+     "pin_m": 358694
+    },
+    {
+     "record_name": "Silvio O.Conte NFWR- Maromas Division",
+     "layer": "PACK-US-CT-land-235",
+     "tier": "T-4",
+     "pin_m": 366062
+    },
+    {
+     "record_name": "Silvio O. Conte NFWR- Whalebone Cove Division",
+     "layer": "PACK-US-CT-land-235",
+     "tier": "T-4",
+     "pin_m": 376290
+    },
+    {
+     "record_name": "Silvio O. Conte NFWR- Roger Tory Peterson Unit",
+     "layer": "PACK-US-CT-land-235",
+     "tier": "T-4",
+     "pin_m": 383405
+    }
+   ],
+   "source_url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?geometry=-71.7018%2C44.7678&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-CT-land-185",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CT-land-234",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CT-land-235",
+      "gave": "hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "PACK-US-MI-land-26",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE' (US-FWS-interest); pin inside; about 26815.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-0329",
+   "area": "US-MA",
+   "park": "Silvio O Conte National Wildlife Refuge",
+   "agency_group": "fws.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "US-MA",
+   "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
+   "name_field": "ORGNAME",
+   "agency": "US Fish and Wildlife Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 675,
+   "record_name": "SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE",
+   "layer": "US-FWS-interest",
+   "record_link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D675&outFields=%2A&f=html",
+   "where": "OBJECTID=675",
+   "pin_m": 0,
+   "acres_approx": 26815.6,
+   "grade": "official",
+   "envelope": [
+    -71.81542,
+    44.76032,
+    -71.67105,
+    44.91839
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Silvio O Conte National Fish and Wildlife Refuge",
+     "layer": "PACK-US-MA-land-269",
+     "tier": "T-4",
+     "pin_m": 248673
+    },
+    {
+     "record_name": "Silvio O Conte National Fish and Wildlife Refuge",
+     "layer": "PACK-US-MA-land-269",
+     "tier": "T-4",
+     "pin_m": 277557
+    },
+    {
+     "record_name": "Silvio O Conte National Fish and Wildlife Refuge",
+     "layer": "PACK-US-MA-land-269",
+     "tier": "T-4",
+     "pin_m": 277872
+    },
+    {
+     "record_name": "Silvio O Conte National Fish and Wildlife Refuge",
+     "layer": "PACK-US-MA-land-269",
+     "tier": "T-4",
+     "pin_m": 277893
+    }
+   ],
+   "source_url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?geometry=-71.7018%2C44.7678&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-MA-trail-50",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MA-land-194",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MA-land-269",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-MA-land-270",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MA-park-271",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "no hit (3 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MI-land-26",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE' (US-FWS-interest); pin inside; about 26815.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
     }
    },
    "pass": 1

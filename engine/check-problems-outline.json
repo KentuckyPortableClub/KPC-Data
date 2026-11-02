@@ -1,1 +1,102 @@
-[]
+[
+ {
+  "ref": "US-0658",
+  "area": "US-FL",
+  "park": "Timucuan Preserve National Conservation Area",
+  "agency_group": "nps.gov",
+  "kind": "outline",
+  "date": "2026-11-02",
+  "status": "check failed",
+  "st": "US-FL",
+  "url": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9?f=html",
+  "service_url": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9",
+  "name_field": "MANAME",
+  "agency": "Florida Natural Areas Inventory conservation lands",
+  "licence": "see the publisher",
+  "answer": "",
+  "checked_by": "",
+  "tier": "T-2",
+  "band": "WEAK",
+  "step": "L0",
+  "record": 3006,
+  "record_name": "Timucuan Preserve Federally Managed Lands",
+  "layer": "PACK-US-FL-land-186",
+  "record_link": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9/query?where=OBJECTID%3D3006&outFields=%2A&f=html",
+  "where": "OBJECTID=3006",
+  "pin_m": 0,
+  "acres_approx": 14568.9,
+  "grade": "official",
+  "envelope": [
+   -81.65648,
+   30.3651,
+   -81.41754,
+   30.58576
+  ],
+  "rule": null,
+  "others": [],
+  "source_url": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9/query?geometry=-81.4639%2C30.4443&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+  "read_date": "2026-11-02",
+  "rule_g": "LIKELY",
+  "rule_g_why": "names overlap",
+  "size_band": "unknown",
+  "why": "T-2 WEAK: 'Timucuan Preserve Federally Managed Lands' at the POTA pin",
+  "notes": {
+   "where_looked": [
+    {
+     "source": "US-FL-USFS-WSR-segments",
+     "gave": "no hit (0 at pin, 0 by name)"
+    },
+    {
+     "source": "PACK-US-FL-land-186",
+     "gave": "hit (1 at pin, 0 by name)"
+    },
+    {
+     "source": "WDPA (last resort)",
+     "gave": "not asked: an official layer has a record for this park (W-10)"
+    }
+   ],
+   "solved": "NAME SOLVED: agency calls it Timucuan Preserve Federally Managed Lands",
+   "why_this_record": "record 'Timucuan Preserve Federally Managed Lands' (PACK-US-FL-land-186); pin inside; about 14568.9 acres; Rule G: LIKELY (names overlap); size unknown",
+   "confidence": {
+    "level": "likely",
+    "double_check": "check the kind of place and the size"
+   }
+  },
+  "ruling": {
+   "ruling": "pin only",
+   "tag": "official layer exists (W-10): WDPA rejected; question for chat 11",
+   "why": "W-10 (Nov 1): WDPA is rejected because an official layer exists for this park. NPS Land Resources Division boundary 'Timucuan Ecological and Historic Preserve' (record 1047) has the POTA pin inside. PAD-US has it under that name (record 3312, not the POTA name 'Timucuan Preserve National Conservation Area'); Florida conservation lands has 'Timucuan Preserve Federally Managed Lands' (record 3006). Candidate only until chat 11 accepts.",
+   "official_found": [
+    {
+     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "record": 1047,
+     "record_name": "Timucuan Ecological and Historic Preserve",
+     "pin_m": 0,
+     "link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=OBJECTID%3D1047&outFields=%2A&f=html"
+    },
+    {
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "record": 3312,
+     "record_name": "Timucuan Ecological and Historic Preserve",
+     "pin_m": 0,
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?where=OBJECTID%3D3312&outFields=%2A&f=html"
+    },
+    {
+     "layer": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9",
+     "record": 3006,
+     "record_name": "Timucuan Preserve Federally Managed Lands",
+     "pin_m": 0,
+     "link": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9/query?where=OBJECTID%3D3006&outFields=%2A&f=html"
+    }
+   ],
+   "date": "2026-11-01"
+  },
+  "whynot": {
+   "ruling": "club ruling: pin only until a person accepts this new layer (W-10 (Nov 1): WDPA is rejected because an official layer exists for this park. NPS Land Resources Division boundary 'Tim)"
+  },
+  "pass": 1,
+  "check_problem": [
+   "url does not open (HTTP 304)"
+  ]
+ }
+]
