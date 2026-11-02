@@ -8,9 +8,9 @@ name: KPC copy site data to KPC-Data (Step B3)
 on:
   workflow_dispatch:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '41 10 * * *'
+    - cron: '40 10 * * *'   # G9 Nov 2: was '41 10 * * *' (spread the start times; now 1 min earlier)
     # Oct 29 (BOT C): a second look in the evening so a key rebuilt in the day reaches chat 11's sample the same night
-    - cron: '41 1 * * *'
+    - cron: '40 1 * * *'   # G9 Nov 2: was '41 1 * * *' (spread the start times; now 1 min earlier)
     # Oct 30 (Brandon 11:01 AM, 'All 3'): every hour a quick look: only when a map key changed in KPC-Links does the copy run
     # (so chat 11's sample shows a new build within the hour); else the run ends in seconds
     - cron: '11 * * * *'

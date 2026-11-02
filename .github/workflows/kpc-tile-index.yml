@@ -3,7 +3,7 @@ name: KPC tile index (nightly)
 # {updated, keys: ["37_-86", ...]} from the tiles that exist, so the site only asks for real tiles (no 404s). Never goes red.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '47 7 * * *'
+    - cron: '46 7 * * *'   # G9 Nov 2: was '47 7 * * *' (spread the start times; now 1 min earlier)
   workflow_dispatch:
 permissions:
   contents: write

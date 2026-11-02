@@ -4,7 +4,7 @@ name: KPC SOTA public land
 # rebase). Never fails.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '23 9 3 * *'   # monthly, the 3rd at 4:23 AM Central (Brandon GO Oct 28: was daily)
+    - cron: '24 9 3 * *'   # monthly, the 3rd at 4:23 AM Central (Brandon GO Oct 28: was daily)   # G9 Nov 2: was '23 9 3 * *' (spread the start times; now 1 min later)
   workflow_dispatch:
 permissions:
   contents: write

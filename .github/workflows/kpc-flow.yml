@@ -5,7 +5,7 @@ name: KPC flow board - every pile of work, who it waits on, when it last moved (
 # Every chat sees its lines at the start (KPC-Links .claude/build/inbox_now.py). Reads only, decides nothing, never red.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '47 */3 * * *'
+    - cron: '46 */3 * * *'   # G9 Nov 2: was '47 */3 * * *' (spread the start times; now 1 min earlier)
   workflow_dispatch:
 permissions:
   contents: write

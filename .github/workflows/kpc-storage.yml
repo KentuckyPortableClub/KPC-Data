@@ -5,7 +5,7 @@ name: KPC storage keeper (Sundays; measures all, cleans this repo)
 # Ends red ONLY when a repo is over its line (KPC-Links 650 MB, KPC-Data 400 MB) = the one email that matters.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '7 9 * * 0'
+    - cron: '6 9 * * 0'   # G9 Nov 2: was '7 9 * * 0' (spread the start times; now 1 min earlier)
   workflow_dispatch:
 permissions:
   contents: write

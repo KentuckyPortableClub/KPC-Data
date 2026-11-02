@@ -6,7 +6,7 @@ name: KPC outside documents merge (into data/docs through the waiting room)
 on:
   workflow_dispatch:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '27 6 * * *'
+    - cron: '26 6 * * *'   # G9 Nov 2: was '27 6 * * *' (spread the start times; now 1 min earlier)
 permissions:
   contents: write
   actions: write

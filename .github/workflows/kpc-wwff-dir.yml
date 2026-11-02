@@ -4,7 +4,7 @@ name: KPC WWFF + SOTA directory copy
 # rebase). Never fails.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '23 9 * * 0'
+    - cron: '24 9 * * 0'   # G9 Nov 2: was '23 9 * * 0' (spread the start times; now 1 min later)
   workflow_dispatch:
 permissions:
   contents: write

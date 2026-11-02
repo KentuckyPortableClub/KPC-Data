@@ -4,7 +4,7 @@ name: KPC national trail lines
 # rebase). Never fails.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '13 7 * * 1'   # Nov 1: weekly (Mondays), so new finds reach the key within a week (was monthly)
+    - cron: '12 7 * * 1'   # Nov 1: weekly (Mondays), so new finds reach the key within a week (was monthly)   # G9 Nov 2: was '13 7 * * 1' (spread the start times; now 1 min earlier)
   workflow_dispatch:
 permissions:
   contents: write

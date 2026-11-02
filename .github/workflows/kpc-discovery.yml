@@ -12,7 +12,7 @@ on:
         description: 'Steps: A (catalog search) B (test leads) C (Maps tab, browser) D (write the list)'
         default: 'A,B,C,D'
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '29 9 * * 3'   # Brandon Nov 1 1:20 PM 'set all them to run on their own': every Wednesday, 8 states / provinces in turn (all of them in 8 weeks)
+    - cron: '28 9 * * 3'   # Brandon Nov 1 1:20 PM 'set all them to run on their own': every Wednesday, 8 states / provinces in turn (all of them in 8 weeks)   # G9 Nov 2: was '29 9 * * 3' (spread the start times; now 1 min earlier)
 permissions:
   contents: write
 env:   # the inputs with their defaults: a timed run has no inputs (Nov 1, chat 10)

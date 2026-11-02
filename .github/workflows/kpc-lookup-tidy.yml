@@ -4,7 +4,7 @@ name: KPC look-up branch tidy (weekly)
 # the current files, so old screenshots really leave the repo. Main never holds look-up files. Never goes red.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '23 11 * * 0'
+    - cron: '24 11 * * 0'   # G9 Nov 2: was '23 11 * * 0' (spread the start times; now 1 min later)
   workflow_dispatch:
 permissions:
   contents: write

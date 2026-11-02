@@ -24,7 +24,7 @@ on:
         description: 'Which jobs, in order: questions gaps (any subset)'
         default: 'questions'
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '41 10 * * *'   # Oct 31 (Brandon 'fold detective into look up'): daily, answers the look-up branch's 'dig' questions
+    - cron: '39 10 * * *'   # Oct 31 (Brandon 'fold detective into look up'): daily, answers the look-up branch's 'dig' questions   # G9 Nov 2: was '41 10 * * *' (spread the start times; now 2 min earlier)
 permissions:
   contents: write
   actions: write

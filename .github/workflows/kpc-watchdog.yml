@@ -4,8 +4,8 @@ name: KPC skipped-run watchdog
 # hand (kpc_watchdog.py). Remembered in data/status/watchdog.json; one board line. Never red.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '7 */2 * * *'
-    - cron: '37 */2 * * *'   # a second chance: GitHub skips the watchdog too
+    - cron: '6 */2 * * *'   # G9 Nov 2: was '7 */2 * * *' (spread the start times; now 1 min earlier)
+    - cron: '36 */2 * * *'   # a second chance: GitHub skips the watchdog too   # G9 Nov 2: was '37 */2 * * *' (spread the start times; now 1 min earlier)
   workflow_dispatch:
     inputs:
       size:

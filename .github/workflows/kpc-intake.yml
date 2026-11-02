@@ -20,7 +20,7 @@ on:
         description: 'yes = print the known-answer test table and the GATE line'
         default: ''
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '41 8 * * *'
+    - cron: '40 8 * * *'   # G9 Nov 2: was '41 8 * * *' (spread the start times; now 1 min earlier)
 permissions:
   contents: write
   actions: write

@@ -4,7 +4,7 @@ name: KPC park links by state
 # rebase). Never fails.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '41 8 * * 2'
+    - cron: '39 8 * * 2'   # G9 Nov 2: was '41 8 * * 2' (spread the start times; now 2 min earlier)
   workflow_dispatch:
     inputs:
       states:

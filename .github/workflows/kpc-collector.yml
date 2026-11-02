@@ -6,7 +6,7 @@ name: KPC layer collector (starts itself when the Fable / atlas files have new w
 # layers to the intake queue, reasons in data/intake/collector.json. Nothing goes on a map without chat 11's YES. Never red.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '17 */2 * * *'
+    - cron: '16 */2 * * *'   # G9 Nov 2: was '17 */2 * * *' (spread the start times; now 1 min earlier)
   workflow_dispatch:
 permissions:
   contents: write

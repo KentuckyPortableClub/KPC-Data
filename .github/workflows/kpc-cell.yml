@@ -9,7 +9,7 @@ on:
         description: 'also the two test parks outside KY (Chincoteague NWR VA, Red Rock Canyon NCA NV): yes / no'
         default: 'yes'
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '17 9 3 * *'
+    - cron: '16 9 3 * *'   # G9 Nov 2: was '17 9 3 * *' (spread the start times; now 1 min earlier)
 permissions:
   contents: write
 concurrency:

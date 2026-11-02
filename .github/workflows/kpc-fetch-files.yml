@@ -7,7 +7,7 @@ name: KPC fetch files - boundary files by their link (daily for new links, month
 on:
   workflow_dispatch:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '41 10 * * *'
+    - cron: '38 10 * * *'   # G9 Nov 2: was '41 10 * * *' (spread the start times; now 3 min earlier)
 permissions:
   contents: write
 concurrency:

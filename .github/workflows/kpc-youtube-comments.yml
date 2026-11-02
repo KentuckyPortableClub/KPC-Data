@@ -6,7 +6,7 @@ name: KPC YouTube comments
 # Memory: data/status/youtube-seen.json (60 days). Never fails. Tick 'dry_run' to print instead of posting.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '37 13 * * *'    # 8:37 AM Central (7:37 in winter)
+    - cron: '36 13 * * *'    # 8:37 AM Central (7:37 in winter)   # G9 Nov 2: was '37 13 * * *' (spread the start times; now 1 min earlier)
   workflow_dispatch:
     inputs:
       dry_run:

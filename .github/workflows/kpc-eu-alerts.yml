@@ -4,7 +4,7 @@ name: KPC Europe weather warnings
 # warnings really changed (a new time stamp alone is not a change). Never fails. No secrets.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '41 */6 * * *'
+    - cron: '40 */6 * * *'   # G9 Nov 2: was '41 */6 * * *' (spread the start times; now 1 min earlier)
   workflow_dispatch:
 permissions:
   contents: write
