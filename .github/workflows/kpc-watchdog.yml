@@ -24,6 +24,28 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 .github/scripts/kpc_watchdog.py
+      - name: TRUE SIZE, once a day (Nov 2, Brandon 'we gain size so quick'; GitHub's own number lags a day or more)
+        if: ${{ github.event.schedule == '7 */2 * * *' || github.event_name == 'workflow_dispatch' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          H=$(date -u +%H); [ "${{ github.event_name }}" = workflow_dispatch ] || [ "$H" = 08 ] || exit 0
+          git clone -q --mirror "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}" /tmp/m.git && MB=$(du -sm /tmp/m.git | cut -f1) || exit 0
+          python3 - "$MB" <<'PY'
+          import json, sys, datetime as dt, pathlib, subprocess
+          mb = int(sys.argv[1]); p = pathlib.Path('data/status/size.json')
+          d = json.load(open(p)) if p.exists() else {}
+          h = d.setdefault('days', {}); today = dt.date.today().isoformat(); h[today] = mb
+          days = sorted(h); wk = h[days[-8]] if len(days) >= 8 else h[days[0]]
+          per_day = round((mb - wk) / max(1, min(7, len(days) - 1)), 1) if len(days) > 1 else 0
+          d.update(updated=today, mb=mb, per_day=per_day, line=400, about='KPC-Data size from a fresh full copy (what GitHub stores), daily; kpc-watchdog.yml')
+          json.dump(d, open(p, 'w'), indent=1)
+          alarm = mb > 600 or per_day > 25
+          msg = f'KPC-Data is {mb} MB (fresh copy), {per_day:+} MB a day over the last week' + (' -> TOO FAST / TOO BIG: find the bot that rewrites a big file (git log --stat on main)' if alarm else '')
+          print(f"::{'warning' if alarm else 'notice'} title=Repo size::{msg}")
+          subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'board', 'Repo size (daily)', 'amber' if alarm else 'green', msg[:300], 'HQ (alarm: >600 MB or >25 MB a day)'], check=False)
+          PY
       - name: Save
         continue-on-error: true
         run: |
