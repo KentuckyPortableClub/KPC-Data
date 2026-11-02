@@ -913,3 +913,79 @@ It decides nothing: it ranks. Score 0 = all pass; +3 OUTSIDE / WAY OFF / MISMATC
 | 9 | US-12322 | L.T. Murray State Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+4 more flags). |
 | 9 | US-12323 | Quilomene State Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+4 more flags). |
 | 9 | US-12552 | Skagit Bay Estuary State Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+4 more flags). |
+
+## US-WI
+
+- parks: 348 (332 with an outline graded, 16 with no outline, 0 with records this tool can't read)
+- pass every test: 184; have flags: 164
+- flags: TINY HOLES 79, SELF-INTERSECTION 69, SLIVERS 39, NEAR 34, DUPLICATE 26, MISMATCH 18, OFF 16, SCATTERED 11, SPILL 11, OUTSIDE 5, CONFLICT 5, WEAK 2, STALE CHECK 1, FAR 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 11 | US-4263 | Piers Gorge Unit of Menominee River State Recreation Area | MISMATCH: The record name 'Menominee River State Recreation Area' does not match POTA's name 'Piers Gorge Unit of Menominee River State Recreation Area' (score 0.33) (+6 more flags). |
+| 10 | US-4262 | Pemene Falls Unit of Menominee River State Recreation Area | MISMATCH: The record name 'Menominee River State Recreation Area' does not match POTA's name 'Pemene Falls Unit of Menominee River State Recreation Area' (score 0.33) (+5 more flags). |
+| 10 | US-7260 | Northern Highland American Legion State Forest | MISMATCH: The record name 'Northern Highland State Forest' does not match POTA's name 'Northern Highland American Legion State Forest' (score 0.50) (+5 more flags). |
+| 8 | US-4236 | Upper Mississippi River National Wildlife Refuge | SPILL: The outline covers 48% of US-11955 Genoa National Fish Hatchery, with no 2-fer row (maybe the wrong record) (+5 more flags). |
+| 7 | US-1457 | Kinnickinnic State Park | CONFLICT: The park is a state park but the record is a wma (+2 more flags). |
+| 7 | US-4238 | Ice Age National Scenic Trail | SPILL: The outline covers 49% of US-8363 Gibraltar Rock State Natural Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4342 | Herb Behnke Unit of Wolf River Bottoms State Wildlife Area | MISMATCH: The record name 'Wolf River Bottoms Wildlife Area' does not match POTA's name 'Herb Behnke Unit of Wolf River Bottoms State Wildlife Area' (score 0.50) (+2 more flags). |
+| 7 | US-4343 | LaSage Unit of Wolf River Bottoms State Wildlife Area | MISMATCH: The record name 'Wolf River Bottoms Wildlife Area' does not match POTA's name 'LaSage Unit of Wolf River Bottoms State Wildlife Area' (score 0.67) (+2 more flags). |
+| 7 | US-4533 | Chequamegon-Nicolet National Forest | MISMATCH: The record name 'Chequamegon National Forest' does not match POTA's name 'Chequamegon-Nicolet National Forest' (score 0.50) (+4 more flags). |
+| 6 | US-0602 | Leopold Wetland Management District | MISMATCH: The record name 'WINNEBAGO COUNTY WATERFOWL PRODUCTION AREA OF WI' does not match POTA's name 'Leopold Wetland Management District' (score 0.00) (+3 more flags). |
+
+## US-WV
+
+- parks: 172 (165 with an outline graded, 7 with no outline, 0 with records this tool can't read)
+- pass every test: 52; have flags: 120
+- flags: STALE CHECK 104, TINY HOLES 16, SELF-INTERSECTION 13, NEAR 9, SLIVERS 8, OFF 7, SCATTERED 3, OUTSIDE 3, SPILL 1, MISMATCH 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | US-0632 | Monongahela National Forest | SPILL: The outline covers 100% of US-12436 Big Draft Wilderness Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4526 | George Washington & Jefferson National Forest | MISMATCH: The record name 'George Washington National Forest' does not match POTA's name 'George Washington & Jefferson National Forest' (score 0.67) (+4 more flags). |
+| 5 | US-7027 | Slatyfork Wildlife Management Area | OUTSIDE: POTA's pin is 5.9 km outside the outline (+2 more flags). |
+| 4 | US-7043 | Tate Lohr Wildlife Management Area | OUTSIDE: POTA's pin is 2.4 km outside the outline (+1 more flag). |
+| 3 | US-0608 | Ohio River Islands National Wildlife Refuge | OFF: The outline is 2.0 times smaller than the official 5,468 acres (2,743 ac drawn) (+2 more flags). |
+| 3 | US-0696 | New River Gorge National Park | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-80.9237665219749 37.7561387567045]; 4 piece(s) under 10 m wide; 115 pieces spread over 55 km (+2 more flags). |
+| 3 | US-12442 | Roaring Plains West Wilderness Area | OUTSIDE: POTA's pin is 725 m outside the outline. |
+| 3 | US-7002 | Lewis Wetzel Wildlife Management Area | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-80.702877241717 39.4826422075845]; 1 hole(s) under 100 m2 (+2 more flags). |
+| 3 | US-7024 | Elk River Wildlife Management Area | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-80.6598976299176 38.620640714525]; 2 hole(s) under 100 m2 (+2 more flags). |
+| 3 | US-7044 | Tug Fork Wildlife Management Area | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-81.6552318831789 37.4372274713279]; 1 hole(s) under 100 m2 (+2 more flags). |
+
+## US-WY
+
+- parks: 294 (212 with an outline graded, 82 with no outline, 0 with records this tool can't read)
+- pass every test: 142; have flags: 152
+- flags: MISMATCH 83, NEAR 41, SPILL 35, SELF-INTERSECTION 23, OUTSIDE 19, TINY HOLES 15, OFF 12, DUPLICATE 10, SLIVERS 9, WEAK 7, SCATTERED 4, FAR 3, CONFLICT 2, STALE CHECK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 11 | US-6204 | Little Colorado BLM Herd Management Area | FAR: POTA's pin is 11.8 km outside the outline (+2 more flags). |
+| 10 | US-10897 | Greater Sand Dunes BLM Special Recreation Management Area | OUTSIDE: POTA's pin is 1.9 km outside the outline (+3 more flags). |
+| 10 | US-13245 | Flaming Gorge - Green River Basin Scenic Byway - All-American Road National Parkway | OUTSIDE: POTA's pin is 1.6 km outside the outline (+3 more flags). |
+| 10 | US-4403 | Medicine Bow - Routt National Forest | MISMATCH: The record name 'Medicine Bow National Forest' does not match POTA's name 'Medicine Bow - Routt National Forest' (score 0.67) (+5 more flags). |
+| 9 | US-10810 | Green Mountain BLM Herd Management Area | OUTSIDE: POTA's pin is 905 m outside the outline (+2 more flags). |
+| 9 | US-10930 | Devil's Playground BLM WSA Wilderness Area | MISMATCH: The record name 'Devil's Playground-Twin Buttes' does not match POTA's name 'Devil's Playground BLM WSA Wilderness Area' (score 0.50) (+4 more flags). |
+| 9 | US-10944 | Twin Buttes BLM WSA Wilderness Area | MISMATCH: The record name 'Devil's Playground-Twin Buttes' does not match POTA's name 'Twin Buttes BLM WSA Wilderness Area' (score 0.50) (+4 more flags). |
+| 9 | US-4475 | Caribou-Targhee National Forest | MISMATCH: The record name 'Targhee National Forest' does not match POTA's name 'Caribou-Targhee National Forest' (score 0.50) (+4 more flags). |
+| 9 | US-4535 | Bridger-Teton National Forest | MISMATCH: The record name 'Teton National Forest' does not match POTA's name 'Bridger-Teton National Forest' (score 0.50) (+4 more flags). |
+| 9 | US-6221 | Fontenelle Creek BLM Recreation Management Area | OUTSIDE: POTA's pin is 1.1 km outside the outline (+2 more flags). |
+
+## CA-AB
+
+- parks: 459 (398 with an outline graded, 61 with no outline, 0 with records this tool can't read)
+- pass every test: 282; have flags: 177
+- flags: OFF 74, NEAR 55, CONFLICT 25, DUPLICATE 23, INVALID 20, SPILL 14, TINY HOLES 12, TOO COARSE 6, MISMATCH 5, OUTSIDE 5, SLIVERS 4, WAY OFF 4, FAR 3, SCATTERED 2, WEAK 2
+
+| score | ref | park | why |
+|---|---|---|---|
+| 12 | CA-0109 | Waterton Biosphere Reserve | FAR: POTA's pin is 29.0 km outside the outline (+3 more flags). |
+| 8 | CA-6112 | Kananaskis Country Provincial Park | FAR: POTA's pin is 12.4 km outside the outline (+1 more flag). |
+| 7 | CA-1164 | Beaver Lake Provincial Recreation Area | OUTSIDE: POTA's pin is 5.1 km outside the outline (+2 more flags). |
+| 6 | CA-1194 | Sylvan Lake Provincial Park | FAR: POTA's pin is 13.4 km outside the outline (+1 more flag). |
+| 6 | CA-6125 | Porcupine Hills Public Land Use Zone Other Conservation Area | MISMATCH: The record name 'Porcupine Hills' does not match POTA's name 'Porcupine Hills Public Land Use Zone Other Conservation Area' (score 0.67) (+3 more flags). |
+| 5 | CA-1174 | Crow Lake Provincial Park | NEAR: POTA's pin is 180 m outside the outline (+4 more flags). |
+| 5 | CA-1197 | Victoria Settlement Provincial Park | OUTSIDE: POTA's pin is 3.6 km outside the outline (+2 more flags). |
+| 5 | CA-2958 | Buck Lake Provincial Recreation Area | CONFLICT: The record is the whole lake but the park is a recreation area on it (+2 more flags). |
+| 5 | CA-3117 | Travers Reservoir Provincial Recreation Area | CONFLICT: The record is the whole lake but the park is a recreation area on it (+2 more flags). |
+| 5 | CA-6588 | Barrier Lake Provincial Recreation Area | CONFLICT: The record is the whole lake but the park is a recreation area on it (+2 more flags). |
