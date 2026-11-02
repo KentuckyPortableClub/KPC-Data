@@ -62,7 +62,7 @@ def changed_since_yes(it, rel):
     g = lambda *a: subprocess.run(['git', '-C', str(W.DATA)] + list(a), capture_output=True, text=True).stdout.strip()
     snip = str(it.get('chat11') or '')[:40]
     c = g('log', '-1', '--format=%H', '-S', snip, '--', 'data/waiting/approved.json')
-    if not c: return False   # no history to compare (shallow checkout): trust the YES as before
+    if not c: return True    # Nov 2 (ledger 35): no history to prove the folder is the build chat 11 graded (the restart removed it) = NOT released; a fresh verdict with the build id is needed (it was 'trust the YES', which let the Nov 1 world YES release today's world build)
     path = f'data/waiting/in/{rel}'.rstrip('/')
     then, now = g('rev-parse', f'{c}:{path}'), g('rev-parse', f'HEAD:{path}')
     return bool(then and now and then != now and not then.startswith(c[:0] + 'fatal'))
@@ -88,6 +88,40 @@ def build_mismatch(it, rel):
     if not ib: return f'the YES has no build id; the waiting room holds build {hb} (write "build": "{hb}" on the item)'
     if ib != hb: return f'the YES is for build {ib}, the waiting room holds build {hb}'
     return ''
+
+
+HOLD_SENT = re.compile(r'[^.;\n]*\b(held|hold|holds|pins?|wrong|not right|mismatch\w*|NO)\b[^.;\n]*', re.I)
+REF_ANY = re.compile(r'\b[A-Z0-9]{1,4}-\d{4,5}\b')
+
+
+def held_refs(it):
+    """Nov 2 (ledger 35): the parks a verdict keeps back. An explicit 'hold': [refs] on the item, plus every park number written in a
+    sentence of the verdict that says held / hold / pin / wrong / NO (chat 12's world YES named 10 wrong joins: they went live)."""
+    out = {str(r) for r in (it.get('hold') or [])}
+    for m in HOLD_SENT.finditer(str(it.get('chat11') or '') + ' ' + str(it.get('chat2') or '')):
+        out |= set(REF_ANY.findall(m.group(0)))
+    return out
+
+
+def keep_held(f, rel, hold):
+    """In a key file about to be released: each held park keeps its LIVE version, or becomes a pin when it has none."""
+    import gzip
+    try: new = W.load(f, None)
+    except Exception: return 0  # noqa: BLE001
+    if not isinstance(new, dict) or not isinstance(new.get('parks'), dict): return 0
+    hit = [r for r in new['parks'] if r in hold]
+    if not hit: return 0
+    live = (W.load(W.DATA / rel.replace('.gz', ''), {}) or {}).get('parks') or {}
+    for r in hit:
+        if r in live: new['parks'][r] = live[r]
+        else:
+            q = {k: v for k, v in (new['parks'][r] or {}).items() if k in ('n', 't', 'la', 'lo')}
+            q.update(m=[], c=[], held='held by the verdict: shown as a pin until a YES'); new['parks'][r] = q
+    if not DRY:
+        txt = json.dumps(new, ensure_ascii=False, separators=(',', ':'))
+        if str(f).endswith('.gz'): pathlib.Path(f).write_bytes(gzip.compress(txt.encode('utf-8'), 6))
+        else: pathlib.Path(f).write_text(txt, encoding='utf-8')
+    return len(hit)
 
 
 def verdict_ok(v):
@@ -169,6 +203,8 @@ def per_park_release(A, log, U):
     if k in U: print('::notice title=Per-park release::this KEY NO was already used for a per-park release'); return
     held_dir = W.W / 'in' / 'data/us-key'
     if not held_dir.is_dir(): return
+    if not str(it.get('chat2') or '').strip():   # Nov 2 (ledger 35): Rule G-4 holds for the per-park release too
+        print("::notice title=Per-park release::waits for chat 2's recheck line (Rule G-4) on the KEY NO item"); return
     bwhy = build_mismatch(it, 'data/us-key/')
     if bwhy: print(f'::notice title=Per-park release::{bwhy}'); return
     if not it.get('build') and changed_since_yes(it, 'data/us-key/'):
@@ -235,10 +271,12 @@ def main():
             if rel.endswith('/') and (W.W / 'in' / rel).is_dir() and not it.get('build') and changed_since_yes(it, rel):
                 log.append({'item': it, 'result': 'skipped: the held build changed after the YES (a newer rebuild was copied in): chat 11 re-samples (data/waiting/preview/)'}); continue
             if rel.endswith('/') and (W.W / 'in' / rel).is_dir():   # a whole folder approved (a key rebuild: data/us-key/)
+                hold = held_refs(it)
                 for f in sorted((W.W / 'in' / rel).rglob('*.json*')):
                     r2 = str(f.relative_to(W.W / 'in'))
+                    kept = keep_held(f, r2, hold) if hold and item_kind(it) == 'key' else 0
                     if not DRY: W.mode_release(r2)
-                    log.append({'item': r2, 'result': 'released (approved folder)'})
+                    log.append({'item': r2, 'result': 'released (approved folder)' + (f'; {kept} park(s) the verdict holds kept as live / pins' if kept else '')})
                 continue
             if (W.W / 'in' / rel).exists():
                 if not DRY: W.mode_release(rel)
