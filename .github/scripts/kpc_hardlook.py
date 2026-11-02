@@ -218,7 +218,11 @@ def main():
             if j2 and j2.get('features'): j, w = j2, w + ' (then a name-word search)'
         if j is None:
             if re.match(r'HTTP 4|error 4', err) or 'robots' in err: q.update(read=TODAY, result=f'layer did not answer ({err})'); R[ref] = q
-            n['layer did not answer'] += 1; continue   # a time-out / 5xx: tried again next run
+            tries = int((R.get(ref) or {}).get('tries') or 0) + 1   # Nov 2: 47 rows were re-asked every chained run forever
+            if tries >= 3: q.update(read=TODAY, result=f'layer did not answer 3 times ({err})', tries=tries)
+            else: q['tries'] = tries
+            R[ref] = {**(R.get(ref) or {}), **q} if tries < 3 else q
+            n['layer did not answer'] += 1; continue   # a time-out / 5xx: tried again next run, 3 times at most
         F = j.get('features') or []
         if not F: q.update(read=TODAY, where=w, result='record not found with that id / name'); n['record not found'] += 1; R[ref] = q; continue
         lat, lon = float(v.get('lat') or 0), float(v.get('lon') or 0)

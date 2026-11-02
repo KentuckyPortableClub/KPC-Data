@@ -45,8 +45,15 @@ def _openpyxl():
     try:
         import openpyxl
     except ImportError:
-        for extra in ([], ['--break-system-packages']):
-            if subprocess.run([sys.executable, '-m', 'pip', 'install', '-q', 'openpyxl', *extra], capture_output=True).returncode == 0: break
+        import importlib, site
+        for cmd in ([sys.executable, '-m', 'pip', 'install', '-q', 'openpyxl'], [sys.executable, '-m', 'pip', 'install', '-q', '--user', '--break-system-packages', 'openpyxl'],
+                    ['sudo', 'apt-get', 'install', '-y', '-qq', 'python3-openpyxl']):
+            try:
+                if subprocess.run(cmd, capture_output=True, timeout=300).returncode == 0: break
+            except Exception: pass  # noqa: BLE001
+        for d in [site.getusersitepackages(), '/usr/lib/python3/dist-packages']:   # a --user / apt install is not on this run's path yet
+            if d not in sys.path: sys.path.append(d)
+        importlib.invalidate_caches()
         import openpyxl
     return openpyxl
 
