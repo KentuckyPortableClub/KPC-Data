@@ -4211,6 +4211,107 @@
    "pass": 1
   },
   {
+   "ref": "CA-5967",
+   "area": "CA-MB",
+   "park": "Churchill Rocket Research Range National Heritage Site",
+   "agency_group": "pc.gc.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-MB",
+   "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2?f=html",
+   "service_url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2",
+   "name_field": null,
+   "agency": "Manitoba wil~2",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 115,
+   "record_name": "Churchill Wildlife Management Area",
+   "layer": "PACK-CA-MB-park-426",
+   "record_link": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2/query?where=OBJECTID%3D115&outFields=%2A&f=html",
+   "where": "OBJECTID=115",
+   "pin_m": 0,
+   "acres_approx": 2105934.5,
+   "grade": "official",
+   "envelope": [
+    -94.23125,
+    56.52157,
+    -92.49998,
+    58.83022
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2/query?geometry=-93.819%2C58.7375&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Churchill Wildlife Management Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-MB-park-422",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-MB-park-423",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-MB-park-424",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-MB-park-425",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-MB-park-426",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=115",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-MB in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "no hit (0 at pin, 13 by name)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Churchill Wildlife Management Area' (PACK-CA-MB-park-426); pin inside; about 2105934.5 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "CA-6408",
    "area": "CA-QC",
    "park": "Phare de l'Île-Brion Historic Site",
@@ -6457,6 +6558,1107 @@
      "level": "likely",
      "double_check": "check the kind of place and the size"
     }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5005",
+   "area": "CA-QC",
+   "park": "Parc des Rapides Regional Park",
+   "agency_group": "montreal.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-QC",
+   "url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23?f=html",
+   "service_url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23",
+   "name_field": null,
+   "agency": "Québec prote",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 4652,
+   "record_name": "Aire de concentration d'oiseaux aquatiques des Rapides de Lachine (Lasalle)",
+   "layer": "PACK-CA-QC-park-447",
+   "record_link": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23/query?where=OBJECTID%3D4652&outFields=%2A&f=html",
+   "where": "OBJECTID=4652",
+   "pin_m": 68,
+   "acres_approx": 651.3,
+   "grade": "official",
+   "envelope": [
+    -73.62244,
+    45.41037,
+    -73.57131,
+    45.43473
+   ],
+   "rule": "R-G12",
+   "others": [],
+   "source_url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23/query?geometry=-73.5932%2C45.4295&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Aire de concentration d'oiseaux aquatiques des Rapides de Lachine (Lasalle)' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-QC-park-90",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-91",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-392",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-393",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-394",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-wildlife-395",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-439",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-440",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-441",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-442",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-443",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-444",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-445",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-446",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-447",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-448",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-79",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (68 m): candidate only (G-F1); NAME SOLVED: agency calls it Aire de concentration d'oiseaux aquatiques des Rapides de Lachine (Lasalle)",
+    "why_this_record": "record 'Aire de concentration d'oiseaux aquatiques des Rapides de Lachine (Lasalle)' (PACK-CA-QC-park-447); pin 68 m from the edge; about 651.3 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-0785",
+   "area": "CA-NB",
+   "park": "Mary's Point Ramsar Site",
+   "agency_group": "rsis.ramsar.org",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NB",
+   "url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html",
+   "service_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1",
+   "name_field": "name",
+   "agency": "WDPA (last resort)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "W-10",
+   "record": 429905,
+   "record_name": "Mary’s Point",
+   "layer": "WDPA-last-resort-WDPA_v0",
+   "record_link": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D429905&outFields=%2A&f=html",
+   "where": "OBJECTID=429905",
+   "pin_m": 0,
+   "acres_approx": 5281.1,
+   "grade": "approx",
+   "envelope": [
+    -64.71149,
+    45.70892,
+    -64.64155,
+    45.77075
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "",
+     "layer": "PACK-CA-NB-park-427",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "Shepody National Wildlife Area",
+     "layer": "WDPA-last-resort-WDPA_v0",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-64.6704%2C45.7255&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names equal once kind words are stripped; WDPA (last resort): never SURE",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Mary’s Point' at the POTA pin (approximate source) [WDPA (last resort): no official layer had a record]",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-preserve-78",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-427",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-428",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-429",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-430",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-NB in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "hit (2 at pin, 0 by name)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'Mary’s Point' (WDPA-last-resort-WDPA_v0); pin inside; about 5281.1 acres; Rule G: LIKELY (names equal once kind words are stripped; WDPA (last resort): never SURE); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "WDPA (last resort): no official layer had a record; approximate only, a person must check (W-10); approximate source: never a full YES"
+    }
+   },
+   "g": "approx",
+   "source_policy": "WDPA (last resort)",
+   "label": "WDPA (last resort)",
+   "whynot": {
+    "tag": "WDPA (last resort): approximate only; no official layer had a record for this park (club rule W-10)",
+    "step_reached": "W-10",
+    "date": "2026-11-02"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-1863",
+   "area": "CA-NS",
+   "park": "Southern Bight-Minas Basin Ramsar Site",
+   "agency_group": "rsis.ramsar.org",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NS",
+   "url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html",
+   "service_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1",
+   "name_field": "name",
+   "agency": "WDPA (last resort)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "W-10",
+   "record": 429909,
+   "record_name": "Southern Bight-Minas Basin",
+   "layer": "WDPA-last-resort-WDPA_v0",
+   "record_link": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D429909&outFields=%2A&f=html",
+   "where": "OBJECTID=429909",
+   "pin_m": 0,
+   "acres_approx": 53198.7,
+   "grade": "approx",
+   "envelope": [
+    -64.41153,
+    45.1031,
+    -64.1304,
+    45.23222
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-64.2666%2C45.2166&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names equal once kind words are stripped; WDPA (last resort): never SURE",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Southern Bight-Minas Basin' at the POTA pin (approximate source) [WDPA (last resort): no official layer had a record]",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NS-land-66",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-80",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-81",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-82",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-land-83",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-land-390",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-land-391",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-431",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-432",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NS-park-433",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-NS in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "hit (1 at pin, 0 by name)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Southern Bight-Minas Basin' (WDPA-last-resort-WDPA_v0); pin inside; about 53198.7 acres; Rule G: LIKELY (names equal once kind words are stripped; WDPA (last resort): never SURE); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "WDPA (last resort): no official layer had a record; approximate only, a person must check (W-10); approximate source: never a full YES"
+    }
+   },
+   "g": "approx",
+   "source_policy": "WDPA (last resort)",
+   "label": "WDPA (last resort)",
+   "whynot": {
+    "tag": "WDPA (last resort): approximate only; no official layer had a record for this park (club rule W-10)",
+    "step_reached": "W-10",
+    "date": "2026-11-02"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-4549",
+   "area": "CA-NL",
+   "park": "Grand Codroy Estuary Ramsar Site",
+   "agency_group": "rsis.ramsar.org",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NL",
+   "url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html",
+   "service_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1",
+   "name_field": "name",
+   "agency": "WDPA (last resort)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "W-10",
+   "record": 428604,
+   "record_name": "Grand Codroy Estuary",
+   "layer": "WDPA-last-resort-WDPA_v0",
+   "record_link": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D428604&outFields=%2A&f=html",
+   "where": "OBJECTID=428604",
+   "pin_m": 0,
+   "acres_approx": 1879.8,
+   "grade": "approx",
+   "envelope": [
+    -59.34055,
+    47.82841,
+    -59.2573,
+    47.8537
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-59.3389%2C47.8375&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names equal once kind words are stripped; WDPA (last resort): never SURE",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Grand Codroy Estuary' at the POTA pin (approximate source) [WDPA (last resort): no official layer had a record]",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NL-wildlife-79",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-NL in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "hit (1 at pin, 0 by name)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Grand Codroy Estuary' (WDPA-last-resort-WDPA_v0); pin inside; about 1879.8 acres; Rule G: LIKELY (names equal once kind words are stripped; WDPA (last resort): never SURE); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "WDPA (last resort): no official layer had a record; approximate only, a person must check (W-10); approximate source: never a full YES"
+    }
+   },
+   "g": "approx",
+   "source_policy": "WDPA (last resort)",
+   "label": "WDPA (last resort)",
+   "whynot": {
+    "tag": "WDPA (last resort): approximate only; no official layer had a record for this park (club rule W-10)",
+    "step_reached": "W-10",
+    "date": "2026-11-02"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-4347",
+   "area": "CA-NT",
+   "park": "Whooping Crane Summer Range Ramsar Site",
+   "agency_group": "rsis.ramsar.org",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NT",
+   "url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html",
+   "service_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1",
+   "name_field": "name",
+   "agency": "WDPA (last resort)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "W-10",
+   "record": 445606,
+   "record_name": "Whooping Crane Summer Range",
+   "layer": "WDPA-last-resort-WDPA_v0",
+   "record_link": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D445606&outFields=%2A&f=html",
+   "where": "OBJECTID=445606",
+   "pin_m": 0,
+   "acres_approx": 4009277.7,
+   "grade": "approx",
+   "envelope": [
+    -115.91364,
+    59.47132,
+    -112.06084,
+    60.95882
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "WOOD BUFFALO NATIONAL PARK OF CANADA",
+     "layer": "CA-PC-np-legal",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "",
+     "layer": "PACK-CA-park-438",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "Wood Buffalo National Park Of Canada",
+     "layer": "WDPA-last-resort-WDPA_v0",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "Parc national Wood Buffalo",
+     "layer": "WDPA-last-resort-WDPA_v0",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-113.543%2C60.017&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names equal once kind words are stripped; WDPA (last resort): never SURE",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Whooping Crane Summer Range' at the POTA pin (approximate source) [WDPA (last resort): no official layer had a record]",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NT-land-84",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NT-park-85",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NT-park-418",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-NT in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "hit (3 at pin, 0 by name)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Whooping Crane Summer Range' (WDPA-last-resort-WDPA_v0); pin inside; about 4009277.7 acres; Rule G: LIKELY (names equal once kind words are stripped; WDPA (last resort): never SURE); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "WDPA (last resort): no official layer had a record; approximate only, a person must check (W-10); approximate source: never a full YES"
+    }
+   },
+   "g": "approx",
+   "source_policy": "WDPA (last resort)",
+   "label": "WDPA (last resort)",
+   "whynot": {
+    "tag": "WDPA (last resort): approximate only; no official layer had a record for this park (club rule W-10)",
+    "step_reached": "W-10",
+    "date": "2026-11-02"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10345",
+   "area": "US-NV",
+   "park": "Carson Lake and Pasture Wildlife Management Area",
+   "agency_group": "ndow.org",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-NV",
+   "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0",
+   "name_field": "LandName",
+   "agency": "Nevada Department of Wildlife (wild, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 16,
+   "record_name": "Carson Lake WMA",
+   "layer": "PACK-US-NV-wildlife-302",
+   "record_link": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0/query?where=OBJECTID%3D16&outFields=%2A&f=html",
+   "where": "OBJECTID=16",
+   "pin_m": 0,
+   "acres_approx": 30112.0,
+   "grade": "official",
+   "envelope": [
+    -118.78208,
+    39.27033,
+    -118.63909,
+    39.38044
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0/query?geometry=-118.688%2C39.3569&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Carson Lake WMA' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-45",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-trail-54",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-wildlife-302",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-303",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-NV-park-304",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-305",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-NV-park-306",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-307",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "no hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Carson Lake WMA",
+    "why_this_record": "record 'Carson Lake WMA' (PACK-US-NV-wildlife-302); pin inside; about 30112.0 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-13239",
+   "area": "US-NV",
+   "park": "Mason Valley Hatchery Outponds State Fish Hatchery",
+   "agency_group": "ndow.org",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-NV",
+   "url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html",
+   "service_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1",
+   "name_field": "name",
+   "agency": "WDPA (last resort)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "W-10",
+   "record": 488360,
+   "record_name": "Mason Valley",
+   "layer": "WDPA-last-resort-WDPA_v0",
+   "record_link": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D488360&outFields=%2A&f=html",
+   "where": "OBJECTID=488360",
+   "pin_m": 0,
+   "acres_approx": 16714.4,
+   "grade": "approx",
+   "envelope": [
+    -119.16272,
+    39.01929,
+    -119.04174,
+    39.15041
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-119.116%2C39.0793&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Mason Valley' at the POTA pin (approximate source) [WDPA (last resort): no official layer had a record]",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-45",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-trail-54",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-wildlife-302",
+      "gave": "skipped record 9 (Mason Valley WMA): chat 11 said NO"
+     },
+     {
+      "source": "PACK-US-NV-wildlife-302",
+      "gave": "no hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-303",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-park-304",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-305",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-park-306",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-307",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "no hit (0 at pin, 9 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 8 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-NV in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "hit (1 at pin, 13 by name)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Mason Valley' (WDPA-last-resort-WDPA_v0); pin inside; about 16714.4 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "WDPA (last resort): no official layer had a record; approximate only, a person must check (W-10); approximate source: never a full YES"
+    }
+   },
+   "g": "approx",
+   "source_policy": "WDPA (last resort)",
+   "label": "WDPA (last resort)",
+   "whynot": {
+    "tag": "WDPA (last resort): approximate only; no official layer had a record for this park (club rule W-10)",
+    "step_reached": "W-10",
+    "date": "2026-11-02"
    },
    "pass": 1
   },
@@ -13634,6 +14836,235 @@
    "pass": 1
   },
   {
+   "ref": "US-13474",
+   "area": "US-NV",
+   "park": "Kyle (Kiel) Ranch National Historic Site",
+   "agency_group": "southwestexplorers.com",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-NV",
+   "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1?f=html",
+   "service_url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+   "name_field": "RESNAME",
+   "agency": "National Register of Historic Places Polygons",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 378910,
+   "record_name": "Kyle Ranch",
+   "layer": "PACK-US-AK-land-41",
+   "record_link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D378910&outFields=%2A&f=html",
+   "where": "OBJECTID=378910",
+   "pin_m": 0,
+   "acres_approx": 17.1,
+   "grade": "official",
+   "envelope": [
+    -115.14214,
+    36.20306,
+    -115.13875,
+    36.20648
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?geometry=-115.14%2C36.2033&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Kyle Ranch' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-45",
+      "gave": "no hit (0 at pin, 6 by name)"
+     },
+     {
+      "source": "PACK-US-NV-trail-54",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-wildlife-302",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-303",
+      "gave": "no hit (0 at pin, 12 by name)"
+     },
+     {
+      "source": "PACK-US-NV-park-304",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-305",
+      "gave": "no hit (0 at pin, 12 by name)"
+     },
+     {
+      "source": "PACK-US-NV-park-306",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-307",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "hit (1 at pin, 25 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 4 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 8 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 10 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 10 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 6 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 10 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 6 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Kyle Ranch",
+    "why_this_record": "record 'Kyle Ranch' (PACK-US-AK-land-41); pin inside; about 17.1 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: blocked (HTTP 403: server refuses this client)",
+    "record_link": "not checked: blocked (HTTP 403: server refuses this client)"
+   }
+  },
+  {
    "ref": "US-13259",
    "area": "US-NV",
    "park": "Great Basin Highway Scenic Byway Scenic Site",
@@ -19080,8 +20511,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: blocked (HTTP 403: server refuses this client)",
-    "record_link": "not checked: blocked (HTTP 403: server refuses this client)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -19283,7 +20715,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: blocked (host resting: 3 strikes)",
-    "record_link": "not checked: blocked (host resting: 3 strikes)"
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -19485,8 +20918,229 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: blocked (host resting: 3 strikes)",
-    "record_link": "not checked: blocked (host resting: 3 strikes)"
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
+  },
+  {
+   "ref": "US-0831",
+   "area": "US-MO",
+   "park": "Harry S. Truman Family Farm National Historic Site",
+   "agency_group": "nps.gov",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "US-MO",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2?f=html",
+   "service_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+   "name_field": "UNIT_NAME",
+   "agency": "National Park Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 1091,
+   "record_name": "Harry S Truman National Historic Site",
+   "layer": "US-NPS-boundary",
+   "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=OBJECTID%3D1091&outFields=%2A&f=html",
+   "where": "OBJECTID=1091",
+   "pin_m": 0,
+   "acres_approx": 13.5,
+   "grade": "official",
+   "envelope": [
+    -94.53247,
+    38.90049,
+    -94.41398,
+    39.09439
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "MISSOURI",
+     "layer": "US-NPS-tracts",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?geometry=-94.5312%2C38.9015&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Harry S Truman National Historic Site' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-MO-land-197",
+      "gave": "no hit (0 at pin, 19 by name)"
+     },
+     {
+      "source": "PACK-US-MO-park-281",
+      "gave": "no hit (0 at pin, 7 by name)"
+     },
+     {
+      "source": "PACK-US-MO-preserve-282",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MO-land-283",
+      "gave": "no hit (0 at pin, 19 by name)"
+     },
+     {
+      "source": "PACK-US-MO-preserve-284",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MO-wildlife-285",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-493",
+      "gave": "no hit (0 at pin, 19 by name)"
+     },
+     {
+      "source": "WB-US-494",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "hit (3 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Harry S Truman National Historic Site",
+    "why_this_record": "same land also in US-NPS-tracts 'MISSOURI': merged, counted once; record 'Harry S Truman National Historic Site' (US-NPS-boundary); pin inside; about 13.5 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
   },
   {
    "ref": "US-13324",
@@ -21809,8 +23463,7 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: blocked (host resting: 3 strikes)",
-    "record_link": "not checked: blocked (host resting: 3 strikes)",
-    "source_url": "not checked: blocked (host resting: 3 strikes)"
+    "record_link": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -26298,7 +27951,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: blocked (host resting: 3 strikes)",
-    "record_link": "not checked: blocked (host resting: 3 strikes)"
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -26652,7 +28306,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: blocked (host resting: 3 strikes)",
-    "record_link": "not checked: blocked (host resting: 3 strikes)"
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -26998,7 +28653,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: blocked (host resting: 3 strikes)",
-    "record_link": "not checked: blocked (host resting: 3 strikes)"
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -29313,6 +30969,652 @@
     ],
     "solved": "NAME SOLVED: agency calls it Habitat d'une espèce floristique menacée ou vulnérable du Boisé-de-Marly",
     "why_this_record": "record 'Habitat d'une espèce floristique menacée ou vulnérable du Boisé-de-Marly' (WB-CANAD-79); pin inside; about 36.0 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5626",
+   "area": "CA-ON",
+   "park": "Kettle Creek Conservation Area",
+   "agency_group": "kettlecreekconservation.on.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-ON",
+   "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11?f=html",
+   "service_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11",
+   "name_field": null,
+   "agency": "Conservation authorities (admin areas: NOT the CA land)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 417,
+   "record_name": "Kettle Creek Conservation Authority",
+   "layer": "CA-ON-ca-admin",
+   "record_link": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?where=OBJECTID%3D417&outFields=%2A&f=html",
+   "where": "OBJECTID=417",
+   "pin_m": 0,
+   "acres_approx": 126642.9,
+   "grade": "approximate",
+   "envelope": [
+    -81.37515,
+    42.6484,
+    -80.91255,
+    42.93174
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?geometry=-81.1466%2C42.8237&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Kettle Creek Conservation Authority' at the POTA pin (approximate source)",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-ON-preserve-67",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-preserve-68",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-CA-ON-park-86",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-trail-87",
+      "gave": "no hit (0 at pin, 7 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-wildlife-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-pp",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "CA-ON-cr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-municipal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-396",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-397",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-398",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-399",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-400",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-401",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-402",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-403",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-404",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-405",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-406",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-407",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-408",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-409",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-410",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-411",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-412",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-434",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-435",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-436",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-437",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-nwa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-90",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-ca-admin",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Kettle Creek Conservation Authority",
+    "why_this_record": "record 'Kettle Creek Conservation Authority' (CA-ON-ca-admin); pin inside; about 126642.9 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "approximate source: never a full YES"
+    }
+   },
+   "whynot": {
+    "tag": "approximate only (CA-ON-ca-admin is graded approximate: Land Information Ontario)",
+    "step_reached": "L0",
+    "date": "2026-11-02"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5663",
+   "area": "CA-ON",
+   "park": "Hepworth Management Area",
+   "agency_group": "greysauble.on.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-ON",
+   "url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3?f=html",
+   "service_url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3",
+   "name_field": "PROP_NAME",
+   "agency": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 1056,
+   "record_name": "Hepworth",
+   "layer": "PACK-CA-ON-land-405",
+   "record_link": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1056&outFields=%2A&f=html",
+   "where": "OBJECTID=1056",
+   "pin_m": 19,
+   "acres_approx": 93.6,
+   "grade": "official",
+   "envelope": [
+    -81.12001,
+    44.62841,
+    -81.10941,
+    44.63745
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Hepworth Creek",
+     "layer": "PACK-CA-ON-land-405",
+     "tier": "T-4",
+     "pin_m": 6834
+    },
+    {
+     "record_name": "Hepworth Creek",
+     "layer": "PACK-CA-ON-land-405",
+     "tier": "T-4",
+     "pin_m": 7529
+    },
+    {
+     "record_name": "Grey Sauble Conservation Authority",
+     "layer": "CA-ON-ca-admin",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?geometry=-81.1159%2C44.6283&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Hepworth' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-ON-preserve-67",
+      "gave": "blocked (blocked (host resting: 3 strikes))"
+     },
+     {
+      "source": "PACK-CA-ON-preserve-68",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-CA-ON-park-86",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-trail-87",
+      "gave": "no hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-wildlife-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-pp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-cr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-municipal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-396",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-397",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-398",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-399",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-400",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-401",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-402",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-403",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-404",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-405",
+      "gave": "hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-406",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-407",
+      "gave": "blocked (blocked (host resting: 3 strikes))"
+     },
+     {
+      "source": "PACK-CA-ON-land-408",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-409",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-410",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-411",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-412",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-434",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-435",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-436",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-437",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-nwa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-90",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-ca-admin",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (19 m): candidate only (G-F1)",
+    "why_this_record": "same land also in CA-ON-ca-admin 'Grey Sauble Conservation Authority': merged, counted once; record 'Hepworth' (PACK-CA-ON-land-405); pin 19 m from the edge; about 93.6 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5664",
+   "area": "CA-ON",
+   "park": "Massie Hills Management Area",
+   "agency_group": "greysauble.on.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-ON",
+   "url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3?f=html",
+   "service_url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3",
+   "name_field": "PROP_NAME",
+   "agency": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 1053,
+   "record_name": "Massie Hills",
+   "layer": "PACK-CA-ON-land-405",
+   "record_link": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1053&outFields=%2A&f=html",
+   "where": "OBJECTID=1053",
+   "pin_m": 2,
+   "acres_approx": 231.8,
+   "grade": "official",
+   "envelope": [
+    -80.82758,
+    44.50072,
+    -80.80948,
+    44.51015
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Massie Hills",
+     "layer": "PACK-CA-ON-land-405",
+     "tier": "T-4",
+     "pin_m": 1358
+    },
+    {
+     "record_name": "The Massie",
+     "layer": "PACK-CA-ON-trail-87",
+     "tier": "T-6",
+     "pin_m": 23
+    },
+    {
+     "record_name": "Grey Sauble Conservation Authority",
+     "layer": "CA-ON-ca-admin",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?geometry=-80.8101%2C44.5076&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Massie Hills' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-ON-preserve-67",
+      "gave": "blocked (blocked (host resting: 3 strikes))"
+     },
+     {
+      "source": "PACK-CA-ON-preserve-68",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-CA-ON-park-86",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-trail-87",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-wildlife-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-pp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-cr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-municipal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-396",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-397",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-398",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-399",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-400",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-401",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-402",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-403",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-404",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-405",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-406",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-407",
+      "gave": "blocked (blocked (host resting: 3 strikes))"
+     },
+     {
+      "source": "PACK-CA-ON-land-408",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-409",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-410",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-411",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-412",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-434",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-435",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-436",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-437",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-nwa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-90",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-ca-admin",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (2 m): candidate only (G-F1)",
+    "why_this_record": "same land also in CA-ON-ca-admin 'Grey Sauble Conservation Authority': merged, counted once; record 'Massie Hills' (PACK-CA-ON-land-405); pin 2 m from the edge; about 231.8 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
     "confidence": {
      "level": "likely",
      "double_check": "check the kind of place and the size"
@@ -37692,6 +39994,982 @@
    "pass": 1
   },
   {
+   "ref": "CA-6132",
+   "area": "CA-BC",
+   "park": "Fraser River National Heritage Area",
+   "agency_group": "chrs.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-BC",
+   "url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW",
+   "service_url": "https://openmaps.gov.bc.ca/geo/pub/wfs",
+   "name_field": "PROTECTED_LANDS_NAME",
+   "agency": "BC Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": "WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW.fid-7e3ee5a5_1a19de7b699_-4c63",
+   "record_name": "FRASER RIVER BREAKS PARK",
+   "layer": "CA-BC-parks",
+   "record_link": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3EPROTECTED_LANDS_NAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Afraser%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E",
+   "where": "id=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW.fid-7e3ee5a5_1a19de7b699_-4c63",
+   "pin_m": 0,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": null,
+   "rule": null,
+   "others": [
+    {
+     "record_name": "FRASER RIVER ECOLOGICAL RESERVE",
+     "layer": "CA-BC-parks",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "FRASER RIVER PARK",
+     "layer": "CA-BC-parks",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Fraser River Walking Bridge",
+     "layer": "PACK-CA-BC-land-416",
+     "tier": "T-4",
+     "pin_m": 173287
+    },
+    {
+     "record_name": "River Exploration - Mackenzie and Simon Fraser",
+     "layer": "PACK-CA-BC-land-416",
+     "tier": "T-4",
+     "pin_m": 234419
+    }
+   ],
+   "source_url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3EPROTECTED_LANDS_NAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Afraser%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'FRASER RIVER BREAKS PARK' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-BC-park-72",
+      "gave": "no hit (0 at pin, 7 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-trail-75",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-76",
+      "gave": "hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "CA-BC-parks",
+      "gave": "hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "CA-BC-provincial_park-British_Columbia_Provincial_Parks_Ecolog-10",
+      "gave": "hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "CA-BC-wildlife_area-British_Columbia_Wildlife_Management_Are-9",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-land-416",
+      "gave": "hit (0 at pin, 12 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-land-417",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-420",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-park-421",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a river, record is a park",
+    "why_this_record": "record 'FRASER RIVER BREAKS PARK' (CA-BC-parks); pin inside; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "other names at the pin: fraser river ecological reserve; fraser river park; check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-6115",
+   "area": "CA-NL",
+   "park": "Bay du Nord Heritage River National Heritage Area",
+   "agency_group": "chrs.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NL",
+   "url": "https://services5.arcgis.com/khIMcsNnPXZQg2Ef/arcgis/rest/services/Provincial_Protected_Areas_NL/FeatureServer/0?f=html",
+   "service_url": "https://services5.arcgis.com/khIMcsNnPXZQg2Ef/arcgis/rest/services/Provincial_Protected_Areas_NL/FeatureServer/0",
+   "name_field": "NAME_E",
+   "agency": "Provincial_Protected_Areas_NL",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 90,
+   "record_name": "Bay du Nord Wilderness Reserve",
+   "layer": "PACK-CA-NL-wildlife-79",
+   "record_link": "https://services5.arcgis.com/khIMcsNnPXZQg2Ef/arcgis/rest/services/Provincial_Protected_Areas_NL/FeatureServer/0/query?where=OBJECTID%3D90&outFields=%2A&f=html",
+   "where": "OBJECTID=90",
+   "pin_m": 0,
+   "acres_approx": 719330.1,
+   "grade": "official",
+   "envelope": [
+    -55.49635,
+    47.77643,
+    -54.35854,
+    48.3884
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Bay du Nord Wilderness Reserve",
+     "layer": "WDPA-last-resort-WDPA_v0",
+     "tier": "T-4",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services5.arcgis.com/khIMcsNnPXZQg2Ef/arcgis/rest/services/Provincial_Protected_Areas_NL/FeatureServer/0/query?geometry=-55.3567%2C47.9395&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Bay du Nord Wilderness Reserve' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NL-wildlife-79",
+      "gave": "hit (1 at pin, 12 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-NL in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "hit (1 at pin, 25 by name)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a river, record is a preserve",
+    "why_this_record": "same land also in WDPA-last-resort-WDPA_v0 'Bay du Nord Wilderness Reserve': merged, counted once; record 'Bay du Nord Wilderness Reserve' (PACK-CA-NL-wildlife-79); pin inside; about 719330.1 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "WDPA (last resort): no official layer had a record; approximate only, a person must check (W-10); name or pin only: read the agency map"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5166",
+   "area": "CA-NB",
+   "park": "Dominion Park Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 1,
+   "record_name": "Dominion Park",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html",
+   "where": "OBJECTID=1",
+   "pin_m": 0,
+   "acres_approx": 7.5,
+   "grade": "official",
+   "envelope": [
+    -66.12576,
+    45.26806,
+    -66.1225,
+    45.27064
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Dominion Public Site",
+     "layer": "PACK-CA-NB-land-73",
+     "tier": "T-4",
+     "pin_m": 138201
+    },
+    {
+     "record_name": "Dominion Public Building Site",
+     "layer": "PACK-CA-NB-land-73",
+     "tier": "T-4",
+     "pin_m": 212692
+    },
+    {
+     "record_name": "former Princess Coal Reclamation and Dominion Coal",
+     "layer": "PACK-CA-NB-land-73",
+     "tier": "T-4",
+     "pin_m": 471432
+    },
+    {
+     "record_name": "Dominion Street, Glace Bay",
+     "layer": "PACK-CA-NB-land-73",
+     "tier": "T-4",
+     "pin_m": 488627
+    }
+   ],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.1227%2C45.2692&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Dominion Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "hit (0 at pin, 6 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Dominion Park' (PACK-CA-NB-park-77); pin inside; about 7.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5190",
+   "area": "CA-NB",
+   "park": "Little River Reservoir Park Conservation Area",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 12,
+   "record_name": "Little River Reservoir",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "where": "OBJECTID=12",
+   "pin_m": 0,
+   "acres_approx": 359.9,
+   "grade": "official",
+   "envelope": [
+    -65.98068,
+    45.30037,
+    -65.95642,
+    45.31384
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "",
+     "layer": "PACK-CA-NB-park-427",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-65.973%2C45.309&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Little River Reservoir' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-preserve-78",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-427",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-428",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-429",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-430",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a park, record is a lake",
+    "why_this_record": "same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'Little River Reservoir' (PACK-CA-NB-park-77); pin inside; about 359.9 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5219",
+   "area": "CA-NB",
+   "park": "Riverview Memorial Park Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 24,
+   "record_name": "Riverview Park",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D24&outFields=%2A&f=html",
+   "where": "OBJECTID=24",
+   "pin_m": 0,
+   "acres_approx": 5.8,
+   "grade": "official",
+   "envelope": [
+    -66.08475,
+    45.26731,
+    -66.08202,
+    45.26917
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0826%2C45.2679&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Riverview Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Riverview Park' (PACK-CA-NB-park-77); pin inside; about 5.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5224",
+   "area": "CA-NB",
+   "park": "Seaside Park Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 21,
+   "record_name": "Seaside Park",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D21&outFields=%2A&f=html",
+   "where": "OBJECTID=21",
+   "pin_m": 2,
+   "acres_approx": 17.4,
+   "grade": "official",
+   "envelope": [
+    -66.08362,
+    45.24495,
+    -66.08063,
+    45.24921
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Kejimkujik Seaside - South West Port Mouton PID 70065214",
+     "layer": "PACK-CA-NB-land-73",
+     "tier": "T-4",
+     "pin_m": 181698
+    },
+    {
+     "record_name": "",
+     "layer": "PACK-CA-NB-park-427",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0823%2C45.2492&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Seaside Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-preserve-78",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-427",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-428",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-429",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-430",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (2 m): candidate only (G-F1)",
+    "why_this_record": "same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'Seaside Park' (PACK-CA-NB-park-77); pin 2 m from the edge; about 17.4 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5691",
+   "area": "CA-NB",
+   "park": "Jervis Bay-Ross Memorial Park Natural Monument",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 7,
+   "record_name": "Jervis Bay Ross Memorial Park",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D7&outFields=%2A&f=html",
+   "where": "OBJECTID=7",
+   "pin_m": 5,
+   "acres_approx": 3.6,
+   "grade": "official",
+   "envelope": [
+    -66.03706,
+    45.28701,
+    -66.0356,
+    45.28869
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "",
+     "layer": "PACK-CA-NB-park-427",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0359%2C45.2877&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Jervis Bay Ross Memorial Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-preserve-78",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-427",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-428",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-429",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-430",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-NB in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "no hit (0 at pin, 7 by name)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a historic, record is a park",
+    "why_this_record": "same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'Jervis Bay Ross Memorial Park' (PACK-CA-NB-park-77); pin 5 m from the edge; about 3.6 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5694",
+   "area": "CA-NB",
+   "park": "King Square West Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 33,
+   "record_name": "King Square West",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D33&outFields=%2A&f=html",
+   "where": "OBJECTID=33",
+   "pin_m": 0,
+   "acres_approx": 5.7,
+   "grade": "official",
+   "envelope": [
+    -66.07905,
+    45.25742,
+    -66.07636,
+    45.25932
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0768%2C45.2582&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'King Square West' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'King Square West' (PACK-CA-NB-park-77); pin inside; about 5.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5697",
+   "area": "CA-NB",
+   "park": "Larche Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 30,
+   "record_name": "Larche Memorial Park",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D30&outFields=%2A&f=html",
+   "where": "OBJECTID=30",
+   "pin_m": 0,
+   "acres_approx": 1.8,
+   "grade": "official",
+   "envelope": [
+    -66.11859,
+    45.24249,
+    -66.11737,
+    45.24378
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "",
+     "layer": "PACK-CA-NB-park-427",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.1179%2C45.2436&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Larche Memorial Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-preserve-78",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-427",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-428",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-429",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-430",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (0 m): candidate only (G-F1)",
+    "why_this_record": "same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'Larche Memorial Park' (PACK-CA-NB-park-77); pin 0 m from the edge; about 1.8 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5713",
+   "area": "CA-NB",
+   "park": "Queen Square West Recreation Park",
+   "agency_group": "saintjohn.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "found",
+   "st": "CA-NB",
+   "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html",
+   "service_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
+   "name_field": "Park_Name",
+   "agency": "Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 25,
+   "record_name": "Queen Square West",
+   "layer": "PACK-CA-NB-park-77",
+   "record_link": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D25&outFields=%2A&f=html",
+   "where": "OBJECTID=25",
+   "pin_m": 0,
+   "acres_approx": 5.7,
+   "grade": "official",
+   "envelope": [
+    -66.07142,
+    45.25375,
+    -66.06875,
+    45.25566
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0702%2C45.2548&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-02",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Queen Square West' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-NB-land-65",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (1 at pin, 5 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-park-77",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Queen Square West' (PACK-CA-NB-park-77); pin inside; about 5.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-0042",
    "area": "US-AL",
    "park": "Fort Gaines National Historic Site",
@@ -42326,234 +45604,6 @@
     "confidence": {
      "level": "likely",
      "double_check": "check the kind of place and the size"
-    }
-   },
-   "pass": 1
-  },
-  {
-   "ref": "CA-4773",
-   "area": "CA-AB",
-   "park": "Banff Park Museum National Historic Site",
-   "agency_group": "parks.canada.ca",
-   "kind": "outline",
-   "date": "2026-11-02",
-   "status": "candidate",
-   "st": "CA-AB",
-   "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0?f=html",
-   "service_url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
-   "name_field": "NAME",
-   "agency": "Protected Area Designations",
-   "licence": "see the publisher",
-   "answer": "",
-   "checked_by": "",
-   "tier": "T-3",
-   "band": "WEAK",
-   "step": "L0",
-   "record": 435,
-   "record_name": "Banff",
-   "layer": "PACK-CA-AB-preserve-71",
-   "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0/query?where=OBJECTID%3D435&outFields=%2A&f=html",
-   "where": "OBJECTID=435",
-   "pin_m": 0,
-   "acres_approx": 1695148.1,
-   "grade": "official",
-   "envelope": [
-    -117.31713,
-    50.70507,
-    -115.16493,
-    52.27146
-   ],
-   "rule": null,
-   "others": [
-    {
-     "record_name": "Banff Park Museum",
-     "layer": "Q-1371",
-     "tier": "T-3",
-     "pin_m": 34
-    },
-    {
-     "record_name": "BANFF NATIONAL PARK OF CANADA",
-     "layer": "CA-PC-np-legal",
-     "tier": "T-4",
-     "pin_m": null
-    },
-    {
-     "record_name": "",
-     "layer": "Q-1778",
-     "tier": "T-6",
-     "pin_m": null
-    }
-   ],
-   "source_url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0/query?geometry=-115.572%2C51.174&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
-   "read_date": "2026-11-02",
-   "rule_g": "LIKELY",
-   "rule_g_why": "names overlap",
-   "size_band": "unknown",
-   "why": "T-3 WEAK: 'Banff' at the POTA pin",
-   "notes": {
-    "where_looked": [
-     {
-      "source": "PACK-CA-AB-park-64",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "PACK-CA-AB-park-70",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "PACK-CA-AB-preserve-71",
-      "gave": "hit (1 at pin, 0 by name)"
-     },
-     {
-      "source": "PACK-CA-AB-park-419",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "CA-PC-np-legal",
-      "gave": "hit (1 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-918",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-919",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-920",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-921",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-922",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-923",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-924",
-      "gave": "error (HTTP 404)"
-     },
-     {
-      "source": "Q-925",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-926",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-927",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-929",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-930",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-931",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-932",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-933",
-      "gave": "blocked (blocked (host resting: 3 strikes))"
-     },
-     {
-      "source": "Q-934",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-935",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-936",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-937",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-938",
-      "gave": "blocked (blocked (host resting: 3 strikes))"
-     },
-     {
-      "source": "Q-939",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-940",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-942",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-943",
-      "gave": "error (HTTP 404)"
-     },
-     {
-      "source": "Q-944",
-      "gave": "error (HTTP 404)"
-     },
-     {
-      "source": "Q-945",
-      "gave": "error (HTTP 404)"
-     },
-     {
-      "source": "Q-946",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-947",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-1190",
-      "gave": "error (HTTP 404)"
-     },
-     {
-      "source": "Q-1205",
-      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
-     },
-     {
-      "source": "Q-1777",
-      "gave": "no hit (0 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-1778",
-      "gave": "hit (1 at pin, 0 by name)"
-     },
-     {
-      "source": "Q-1371",
-      "gave": "hit (1 at pin, 1 by name)"
-     },
-     {
-      "source": "WDPA (last resort)",
-      "gave": "not asked: an official layer has a record for this park (W-10)"
-     }
-    ],
-    "solved": "NAME SOLVED: agency calls it Banff",
-    "why_this_record": "same land also in CA-PC-np-legal 'BANFF NATIONAL PARK OF CANADA', Q-1778 '': merged, counted once; record 'Banff' (PACK-CA-AB-preserve-71); pin inside; about 1695148.1 acres; Rule G: LIKELY (names overlap); size unknown",
-    "confidence": {
-     "level": "likely",
-     "double_check": "other names at the pin: banff park museum; check the kind of place and the size"
     }
    },
    "pass": 1

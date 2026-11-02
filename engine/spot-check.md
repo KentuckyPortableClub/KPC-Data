@@ -1,53 +1,17 @@
-# Spot check: all kinds (20 random rows of 1809)
+# Spot check: all kinds (20 random rows of 1951)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
-## US-4514 Cibola National Forest (US-OK)
-- status: found
-- tier: T-1
-- band: STRONG
-- record_name: Cibola National Forest
+## US-0731 Columbia River Gorge National Forest (US-WA)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Columbia River Gorge National Scenic Area
 - url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html
-- record_link: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html
-- source_url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-106.475%2C35.2021&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D10&outFields=%2A&f=html
+- source_url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-121.29%2C45.6967&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Cibola National Forest' (US-USFS-ownership); pin inside; about 1883163.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
-- answer: 
-
-## CA-5258 Killarney Lake Park Recreation Park (CA-NB)
-- status: found
-- tier: T-2
-- band: STRONG
-- record_name: Killarney Lake Park
-- url: https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0?f=html
-- record_link: https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0/query?where=OBJECTID%3D105&outFields=%2A&f=html
-- source_url: https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0/query?geometry=-66.6301%2C46.0165&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Killarney Lake Park' (PACK-CA-NB-preserve-78); pin inside; about 573.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
-- answer: 
-
-## CA-4908 Fort Temiscamingue National Historic Site (CA-QC)
-- status: candidate
-- tier: T-2
-- band: WEAK
-- record_name: Obadjiwan–Fort Témiscamingue National Historic Site
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4684&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-79.4569%2C47.2903&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Obadjiwan–Fort Témiscamingue National Historic Site' (Q-1781); pin inside; about 65.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## CA-6560 Kingsburg Beach Provincial Park (CA-NS)
-- status: candidate
-- tier: T-1
-- band: WEAK
-- record_name: Kingsburg Beach Provincial Park
-- url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0?f=html
-- record_link: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D136&outFields=%2A&f=html
-- source_url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?geometry=-64.2585%2C44.2745&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Kingsburg Beach Provincial Park' (PACK-CA-NS-park-80); pin inside; about 2.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
+- why: same land also in PACK-US-land-187 'Columbia River Gorge National Scenic Area', US-USFS-admin 'Columbia River Gorge National Scenic Area', PACK-US-WA-park-363 'Columbia Hills': merged, counted once; record 'Columbia River Gorge National Scenic Area' (US-USFS-ownership); pin inside; about 209917.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
 - answer: 
 
 ## CA-4785 Yellowhead Pass National Historic Site (CA-AB)
@@ -62,55 +26,55 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Yellowhead Pass' (Q-1371); pin 58 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## CA-1708 Whitefish River Sandy Till Conservation Reserve (CA-ON)
+## CA-6400 Seal Cove Smoked Herring Stands National Historic Site (CA-NB)
+- status: candidate
+- tier: T-6
+- band: WEAK
+- record_name: Seal Cove
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1395&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-66.84%2C44.649&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Seal Cove' (PACK-CA-NB-land-73); pin inside; about 31.5 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- answer: 
+
+## CA-4777 Frog Lake National Historic Site (CA-AB)
+- status: candidate
+- tier: T-4
+- band: WEAK
+- record_name: Frog Lake
+- url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0?f=html
+- record_link: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?where=OBJECTID%3D75&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?geometry=-110.359%2C53.831&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 36
+- why: record 'Frog Lake' (Q-1371); pin 36 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: weak
+- answer: 
+
+## CA-1020 RécréoParc de Sainte-Catherine Regional Park (CA-QC)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: WHITEFISH RIVER CONSERVATION RESERVE
-- url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2?f=html
-- record_link: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?where=OBJECTID%3D11233&outFields=%2A&f=html
-- source_url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?geometry=-80.8927%2C48.0587&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Sainte-Catherine
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1986&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-73.5755%2C45.4092&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-CA-ON-park-435 'WHITEFISH RIVER CONSERVATION RESERVE': merged, counted once; record 'WHITEFISH RIVER CONSERVATION RESERVE' (CA-ON-cr); pin inside; about 9467.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Sainte-Catherine' (PACK-CA-NB-land-73); pin inside; about 4395.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-11215 Bear Paw Battlefield National Monument (US-MT)
+## CA-5713 Queen Square West Recreation Park (CA-NB)
 - status: found
 - tier: T-2
 - band: STRONG
-- record_name: Bear Paw Battlefield
-- url: https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70?f=html
-- record_link: https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70/query?where=OBJECTID%3D209&outFields=%2A&f=html
-- source_url: https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70/query?geometry=-109.213%2C48.3775&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Queen Square West
+- url: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html
+- record_link: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D25&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0702%2C45.2548&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in US-NPS-boundary 'Nez Perce National Historical Park': merged, counted once; record 'Bear Paw Battlefield' (Q-1306); pin inside; about 1064.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Queen Square West' (PACK-CA-NB-park-77); pin inside; about 5.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## CA-6558 Horne Settlement Provincial Park (CA-NS)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Horne Settlement Provincial Park
-- url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0?f=html
-- record_link: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D82&outFields=%2A&f=html
-- source_url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?geometry=-63.5612%2C44.9439&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-CA-NS-park-81 'Horne Settlement Provincial Park': merged, counted once; record 'Horne Settlement Provincial Park' (PACK-CA-NS-park-80); pin 0 m from the edge; about 4.0 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
-- answer: 
-
-## CA-0986 Parc Frédéric-Back Regional Park (CA-QC)
-- status: candidate
-- tier: T-2
-- band: CONFLICT
-- record_name: Frédéric-Back - Complexe de Soccer
-- url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0?f=html
-- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D1779&outFields=%2A&f=html
-- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.6379%2C45.5623&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Frédéric-Back - Complexe de Soccer' (Q-1819); pin inside; about 9.2 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## US-4477 Idaho Panhandle National Forest (US-MT)
+## US-4477 Idaho Panhandle National Forest (US-WA)
 - status: found
 - tier: T-2
 - band: STRONG
@@ -119,43 +83,81 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - record_link: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D187&outFields=%2A&f=html
 - source_url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-116.572%2C48.2663&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Idaho Panhandle National Forests' (US-USFS-ownership); pin inside; about 2498280.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: same land also in PACK-US-WA-land-366 'Idaho Panhandle National Forest', PACK-US-WA-land-366 'Idaho Panhandle National Forest': merged, counted once; record 'Idaho Panhandle National Forests' (US-USFS-ownership); pin inside; about 2498280.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-4397 Manti-La Sal National Forest (US-CO)
-- status: found
-- tier: T-1
-- band: STRONG
-- record_name: Manti-La Sal National Forest
-- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html
-- record_link: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D65&outFields=%2A&f=html
-- source_url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-111.425%2C39.2833&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+## US-5981 Simpson Springs Pony Express Station National Historic Site (US-UT)
+- status: candidate
+- tier: T-6
+- band: WEAK
+- record_name: Pony Express Route
+- url: https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0?f=html
+- record_link: https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?where=OBJECTID%3D9937&outFields=%2A&f=html
+- source_url: https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?geometry=-112.787%2C40.0396&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Manti-La Sal National Forest' (US-USFS-ownership); pin inside; about 1340004.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: same land also in PACK-US-AK-land-214 'Pony Express Route', WB-US-482 'Pony Express Route', Q-1277 'Pony Express Route': merged, counted once; record 'Pony Express Route' (PACK-US-land-208); pin inside; about 22349.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
-## CA-4817 Castle Hill National Historic Site (CA-NL)
-- status: found
-- tier: T-1
-- band: STRONG
-- record_name: Castle Hill National Historic Site
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D14&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-53.9719%2C47.2509&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Castle Hill National Historic Site' (PACK-CA-NB-land-73); pin inside; about 57.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
-- answer: 
-
-## US-0684 Lower Delaware National Wild and Scenic River (US-NJ)
+## CA-4776 First Oil Well in Western Canada National Historic Site (CA-AB)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Delaware Wild and Scenic River
-- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0?f=html
-- record_link: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html
-- source_url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0/query?geometry=-74.872%2C40.297&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: First Oil Well in Western Canada
+- url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0?f=html
+- record_link: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?where=OBJECTID%3D42&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?geometry=-113.987%2C49.0716&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 71
+- why: record 'First Oil Well in Western Canada' (Q-1371); pin 71 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- answer: 
+
+## CA-0956 Boisé de Marly Forest Reserve (CA-QC)
+- status: candidate
+- tier: T-2
+- band: WEAK
+- record_name: Habitat d'une espèce floristique menacée ou vulnérable du Boisé-de-Marly
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/24?f=html
+- record_link: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/24/query?where=OBJECTID%3D52&outFields=%2A&f=html
+- source_url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/24/query?geometry=-71.3328%2C46.754&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Delaware Wild and Scenic River' (PACK-US-land-386); pin inside; about 21307.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Habitat d'une espèce floristique menacée ou vulnérable du Boisé-de-Marly' (WB-CANAD-79); pin inside; about 36.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## CA-4347 Whooping Crane Summer Range Ramsar Site (CA-NT)
+- status: candidate
+- tier: T-2
+- band: WEAK
+- record_name: Whooping Crane Summer Range
+- url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html
+- record_link: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D445606&outFields=%2A&f=html
+- source_url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-113.543%2C60.017&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- label: WDPA (last resort)
+- pin_m: 0
+- why: record 'Whooping Crane Summer Range' (WDPA-last-resort-WDPA_v0); pin inside; about 4009277.7 acres; Rule G: LIKELY (names equal once kind words are stripped; WDPA (last resort): never SURE); size unknown; confidence: weak
+- answer: 
+
+## CA-4549 Grand Codroy Estuary Ramsar Site (CA-NL)
+- status: candidate
+- tier: T-2
+- band: WEAK
+- record_name: Grand Codroy Estuary
+- url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html
+- record_link: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D428604&outFields=%2A&f=html
+- source_url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-59.3389%2C47.8375&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- label: WDPA (last resort)
+- pin_m: 0
+- why: record 'Grand Codroy Estuary' (WDPA-last-resort-WDPA_v0); pin inside; about 1879.8 acres; Rule G: LIKELY (names equal once kind words are stripped; WDPA (last resort): never SURE); size unknown; confidence: weak
+- answer: 
+
+## CA-4901 Chambly Canal National Historic Site (CA-QC)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Lieu historique national du Canal-de-Chambly
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1968&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-73.2539%2C45.4087&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 6
+- why: record 'Lieu historique national du Canal-de-Chambly' (Q-1781); pin 6 m from the edge; about 404.1 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
 ## US-6185 South Pass Historic Landmark National Historic Site (US-WY)
@@ -170,40 +172,52 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in PACK-US-land-208 'Rock Springs Field Office ERMA', PACK-US-AK-land-214 'Rock Springs Field Office ERMA', WB-US-482 'Rock Springs Field Office ERMA': merged, counted once; record 'South Pass Historic Landscape ACEC' (WB-US-485); pin inside; about 53776.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-13486 Bellamy River Wildlife Management Area - East Wildlife Management Area (US-NH)
-- status: found
-- tier: T-2
-- band: STRONG
-- record_name: Bellamy River WMA - East
-- url: https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0?f=html
-- record_link: https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0/query?where=OBJECTID%3D5894&outFields=%2A&f=html
-- source_url: https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0/query?geometry=-70.8419%2C43.1294&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Bellamy River WMA - East' (PACK-US-NH-land-204); pin inside; about 21.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
-- answer: 
-
-## CA-5010 Parc René-Lévesque Regional Park (CA-QC)
-- status: found
-- tier: T-2
-- band: STRONG
-- record_name: René-Lévesque
-- url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0?f=html
-- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D2194&outFields=%2A&f=html
-- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.6712%2C45.429&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'René-Lévesque' (Q-1819); pin inside; about 43.1 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
-- answer: 
-
-## CA-4805 St. Andrews Rectory National Historic Site (CA-MB)
+## US-11902 Camp Hale National Monument (US-CO)
 - status: candidate
 - tier: T-3
-- band: CONFLICT
-- record_name: Lieu historique national du Presbytère-St. Andrew’s
+- band: WEAK
+- record_name: Camp Hale - Continental Divide National Monument
+- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0?f=html
+- record_link: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?where=OBJECTID%3D36&outFields=%2A&f=html
+- source_url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?geometry=-106.325%2C39.4352&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 13
+- why: same land also in US-USFS-ownership 'White River National Forest', US-USFS-admin 'White River National Forest': merged, counted once; record 'Camp Hale - Continental Divide National Monument' (PACK-US-land-187); pin 13 m from the edge; about 53635.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## CA-2219 Parc Central Recreation Park (CA-QC)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Parc Central
+- url: https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0?f=html
+- record_link: https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0/query?where=OBJECTID%3D2&outFields=%2A&f=html
+- source_url: https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0/query?geometry=-71.9943%2C45.3549&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 5
+- why: same land also in Q-1820 'Parc Central': merged, counted once; record 'Parc Central' (Q-1820); pin 5 m from the edge; about 94.5 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- answer: 
+
+## CA-4913 Louis S. St. Laurent National Historic Site (CA-QC)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Louis S. St. Laurent
+- url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0?f=html
+- record_link: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?where=OBJECTID%3D101&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?geometry=-71.8263%2C45.242&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 25
+- why: record 'Louis S. St. Laurent' (Q-1371); pin 25 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- answer: 
+
+## CA-4896 Battle of the Chateauguay National Historic Site (CA-QC)
+- status: candidate
+- tier: T-2
+- band: WEAK
+- record_name: Battle of the Châteauguay National Historic Site CNPA
 - url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2559&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-96.9774%2C50.0661&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2042&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-73.929%2C45.1587&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Lieu historique national du Presbytère-St. Andrew’s' (Q-1781); pin inside; about 6.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Battle of the Châteauguay National Historic Site CNPA' (Q-1781); pin inside; about 3.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## CA-5843 St. Mary's Basilica National Historic Site (CA-NS)
@@ -218,27 +232,15 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'St. Marys Basilica' (PACK-CA-NS-land-83); pin 1 m from the edge; about 1.0 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-4424 Ouachita National Forest (US-OK)
-- status: found
-- tier: T-1
-- band: STRONG
-- record_name: Ouachita National Forest
-- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html
-- record_link: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D113&outFields=%2A&f=html
-- source_url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-93.8138%2C34.6854&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Ouachita National Forest' (US-USFS-ownership); pin inside; about 1784193.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
-- answer: 
-
-## CA-5224 Seaside Park Recreation Park (CA-NB)
+## US-5992 Big Creek USFS Wild Horse Territory & BLM Herd Management Area (US-UT)
 - status: candidate
-- tier: T-3
+- tier: T-6
 - band: WEAK
-- record_name: Seaside Park
-- url: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D21&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?geometry=-66.0823%2C45.2492&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 2
-- why: same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'Seaside Park' (PACK-CA-NB-park-77); pin 2 m from the edge; about 17.4 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- record_name: Big Creek
+- url: https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1?f=html
+- record_link: https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?where=OBJECTID%3D164&outFields=%2A&f=html
+- source_url: https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?geometry=-112.704%2C40.4908&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Big Creek' (PACK-US-land-188); pin inside; about 3449.7 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
