@@ -1,0 +1,268 @@
+row,park,old F URL,correct URL,why column F was replaced
+2,Florida Trail National Scenic Trail,https://www.fs.usda.gov/fnst,https://www.fs.usda.gov/r08/florida/recreation/groups/florida-national-scenic-trail-recreation-sites-and-trail-segments,HTTP 404
+241,Frog Pond State Conservation Area,https://www.sfwmd.gov/recreation-site/southern-glades-wildlife-and-environmental-area-and-frog-pond-wildlife-management,https://www.sfwmd.gov/document/frog-pond-map,HTTP 404
+401,Bay Creek State Conservation Area,https://map.mysuwanneeriver.com/tracts/bay-creek-21/,https://map.mysuwanneeriver.com/tracts/bay-creek-20/,HTTP 404
+564,Todd Sanctuary State Conservation Area,http://www.aswp.org/pages/todd,https://www.aswp.org/our-places/todd-nature-reserve/,HTTP 500 over http; https version redirects to the current reserve page
+962,Adirondack State Park,https://dec.ny.gov/welcome-to-the-adirondacks,https://dec.ny.gov/things-to-do/hiking/adirondack-backcountry/backcountry-information-for-adirondack-park,opens a different or general page
+979,Catskill State Park,https://dec.ny.gov/nature/forests-trees/forest-preserve/welcome-to-the-catskills,https://dec.ny.gov/things-to-do/hiking/catskill-backcountry-information,opens a different or general page
+1033,Sojourner Truth State Park,https://sojournertruthstatepark.info/,https://parks.ny.gov/visit/state-parks/sojourner-truth-state-park,"SSL error, site does not open (sojournertruthstatepark.info is not an agency site)"
+1044,Amherst State Park,http://www.amherststatepark.org/ASP/Welcome.html,https://www.amherst.ny.us/content/parks_detail.php?park_num=park_0007,HTTP 500 (amherststatepark.org is a friends-group site); the park is maintained by the Town of Amherst
+1238,Mexico Point State Park,http://mexicopointpark.com/wp/?page_id=23,https://parks.ny.gov/visit/state-parks/mexico-point-boat-launch,HTTP 500 (mexicopointpark.com is the town's Mexico Point Park site); State Parks page for the Mexico Point state facility
+1856,Breaks Interstate State Park,http://www.breakspark.com/,https://www.breakspark.com/,HTTP 500 over http; the https site opens
+1859,Occoquan Bay National Wildlife Refuge,http://www.fws.gov/refuge/occoquan_bay/,https://www.fws.gov/refuge/occoquan-bay/visit-us,HTTP 404 (checked with the web-fetch tool; new page opened and title matches)
+2071,Fort Dobbs State Historic Site,http://www.fortdobbs.org/visit,https://historicsites.nc.gov/all-sites/fort-dobbs,HTTP 500
+2106,Green River State Game Land,https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Green-River.pdf,https://www.ncwildlife.gov/wildlife-habitat/county-municipality-resources/green-growth-toolbox,HTTP 0
+2132,Needmore State Game Land,https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Needmore.pdf,https://www.ncwildlife.gov/hunting/regulations/proposed-regulations/needmore-game-land-public-comments,HTTP 0
+2137,R Wayne Bailey-Caswell State Game Land,https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/R-Wayne-Bailey.pdf,https://www.ncwildlife.gov/outdoors/shooting-ranges-north-carolina/r-wayne-bailey-caswell-shooting-range,HTTP 0
+2152,Thomas Wolfe Memorial State Historic Site,http://wolfememorial.com/,https://historicsites.nc.gov/all-sites/thomas-wolfe-memorial,HTTP 500
+2225,Tillery State Game Land,https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Tillery.pdf,https://www.ncwildlife.gov/outdoors/disabled-access/accessible-hunting-opportunities/huntmaster-hunt-unit/district-3-tillery-depot,HTTP 0
+2811,Glen Echo National Heritage Site,https://www.nps.gov/articles/600052.htm,https://www.nps.gov/glec/index.htm,opens a different or general page
+2981,Pinnacles National Park,https://www.nps.gov/articles/airprofiles-pinn.htm,https://www.nps.gov/pinn/index.htm,opens a different or general page
+3312,Mountain Home Demonstration State Forest,https://www.fire.ca.gov/what-we-do/natural-resource-management/forestry/forest-management,https://www.fire.ca.gov/what-we-do/natural-resource-management/demonstration-state-forests/mountain-home-demonstration-state-forest,"column F is the general CAL FIRE forest-management page, not this forest"
+3366,Table Rock State Park,https://mostateparks.com/map/table-rock-state-park,https://mostateparks.com/park/table-rock-state-park,HTTP 404
+3379,Mastodon State Historic Site,https://mostateparks.com/park/mastodon-state-historic-site,https://mostateparks.com/key-location/shelter-mastodon,HTTP 404
+3433,Bollinger Mill State Historic Site,https://mostateparks.com/park/bollinger-mill-state-historic-site,https://mostateparks.com/key-location/bollinger-mill,HTTP 404
+3436,Battle of Carthage State Historic Site,https://mostateparks.com/park/battle-carthage-state-historic-site,https://mostateparks.com/historic-site/battle-carthage-state-historic-site,HTTP 404
+3437,Nathan Boone Homestead State Historic Site,https://mostateparks.com/park/nathan-and-olive-boone-homestead-state-historic-site,https://mostateparks.com/key-location/shelter-nathan-and-olive-boone-homestead,HTTP 404
+3447,Confederate Memorial State Historic Site,https://mostateparks.com/park/confederate-memorial-state-historic-site,https://mostateparks.com/key-location/playground-confederate-memorial,HTTP 404
+3455,Gov. Daniel Dunklin's Grave State Historic Site,https://mostateparks.com/park/gov-daniel-dunklins-grave-state-historic-site,https://mostateparks.com/historic-site/gov-daniel-dunklins-grave-state-historic-site,HTTP 404
+3463,Iliniwek Village State Historic Site,https://mostateparks.com/park/iliniwek-village-state-historic-site,https://mostateparks.com/historic-site/iliniwek-village-state-historic-site,HTTP 404
+3468,Bruce R. Watkins Cultural Heritage Center State Park,http://www.brucewatkinscenter.com/,https://www.brucewatkinscenter.com/,HTTP 500 over http; the https site opens
+3471,Sandy Creek Covered Bridge State Historic Site,https://mostateparks.com/park/sandy-creek-covered-bridge-state-historic-site,https://mostateparks.com/historic-site/sandy-creek-covered-bridge-state-historic-site,HTTP 404
+3472,Battle of Athens State Historic Site,https://mostateparks.com/park/battle-athens-state-historic-site,https://mostateparks.com/event/battle-athens-reenactment,HTTP 404
+3481,Mark Twain Birthplace State Historic Site,https://mostateparks.com/park/mark-twain-birthplace-state-historic-site,https://mostateparks.com/key-location/overlook-mark-twain-birthplace,HTTP 404
+3492,Bothwell Lodge State Historic Site,https://mostateparks.com/park/bothwell-lodge-state-historic-site,https://mostateparks.com/key-location/bothwell-lodge,HTTP 404
+3499,First Missouri State Capitol State Historic Site,https://mostateparks.com/park/first-missouri-state-capitol-state-historic-site,https://mostateparks.com/park/first-missouri-state-capitol-hs/picnicking,HTTP 404
+3503,Arrow Rock State Historic Site,https://mostateparks.com/park/arrow-rock-state-historic-site,https://mostateparks.com/key-location/arrow-rock-jail,HTTP 404
+3508,Battle of Island Mound State Historic Site,https://mostateparks.com/park/battle-island-mound-state-historic-site,https://mostateparks.com/key-location/picnic-shelter-battle-island-mound,HTTP 404
+3509,Shepherd of the Hills State Park,https://mostateparks.com/park/shepherd-of-the-hills-state-park,https://mostateparks.com/park/shepherd-hills-state-park,HTTP 404
+3519,Harry S. Truman Birthplace State Historic Site,https://mostateparks.com/park/harry-s-truman-birthplace-state-historic-site,https://mostateparks.com/historic-site/harry-s-truman-birthplace-state-historic-site,HTTP 404
+3522,Thomas Hart Benton Home and Studio State Historic Site,https://mostateparks.com/park/thomas-hart-benton-home-and-studio-state-historic-site,https://mostateparks.com/historic-site/thomas-hart-benton-home-and-studio-state-historic-site,HTTP 404
+3528,Jewell Cemetery State Historic Site,https://mostateparks.com/park/jewell-cemetery-state-historic-site,https://mostateparks.com/event/public-meeting-jewell-cemetery,HTTP 404
+3539,Union Covered Bridge State Historic Site,https://mostateparks.com/park/union-covered-bridge-state-historic-site,https://mostateparks.com/key-location/union-covered-bridge,HTTP 404
+3543,Possum Woods State Conservation Area,https://mdc.mo.gov/discover-nature/places/possum-woods-conservation-area,https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9506.pdf,MDC page removed (HTTP 403 'page ... was removed'); MDC's Emmenegger Nature Park & Possum Woods area brochure still opens
+3562,Hunter-Dawson State Historic Site,https://mostateparks.com/park/hunter-dawson-state-historic-site,https://mostateparks.com/park/hunter-dawson-hs/hunter-dawson-home,HTTP 404
+3566,Walnut Woods State Conservation Area,https://mdc.mo.gov/discover-nature/places/walnut-woods-conservation-area,https://www.libertymissouri.gov/1714/Parks-Trails,"MDC page removed (Access Denied, page removed); area now listed by City of Liberty Parks & Recreation (checked with the web-fetch tool)"
+3596,Rush Creek State Conservation Area,https://mdc.mo.gov/discover-nature/places/rush-creek-conservation-area,https://www.libertymissouri.gov/1714/Parks-Trails,"MDC page removed (Access Denied, page removed); area now listed by City of Liberty Parks & Recreation (checked with the web-fetch tool)"
+3609,Gen. John J. Pershing Boyhood Home State Historic Site,https://mostateparks.com/park/gen-john-j-pershing-boyhood-home-state-historic-site,https://mostateparks.com/historic-site/gen-john-j-pershing-boyhood-home-state-historic-site,HTTP 404
+3623,Sugar Creek State Conservation Area,https://mdc.mo.gov/discover-nature/places/sugar-creek,https://mdc.mo.gov/discover-nature/places/sugar-creek-lake-moberly,HTTP 404
+3645,Osage Village State Historic Site,https://mostateparks.com/park/osage-village-state-historic-site,https://mostateparks.com/historic-site/osage-village-state-historic-site,HTTP 404
+3674,Locust Creek Covered Bridge State Historic Site,https://mostateparks.com/map/locust-creek-covered-bridge-state-historic-site,https://mostateparks.com/key-location/locust-creek-covered-bridge,HTTP 404
+3685,Dillard Mill State Historic Site,https://mostateparks.com/park/dillard-mill-state-historic-site,https://mostateparks.com/park/dillard-mill-hs/playground,HTTP 404
+3697,Scott Joplin House State Historic Site,https://mostateparks.com/park/scott-joplin-house-state-historic-site,https://mostateparks.com/key-location/scott-joplin-house,HTTP 404
+3761,Sappington Cemetery State Historic Site,https://mostateparks.com/park/sappington-african-american-cemetery-state-historic-site,https://mostateparks.com/historic-site/sappington-cemetery-state-historic-site,HTTP 404
+3772,Towosahgy State Historic Site,https://mostateparks.com/park/towosahgy-state-historic-site,https://mostateparks.com/historic-site/towosahgy-state-historic-site,HTTP 404
+3814,Boone's Lick State Historic Site,https://mostateparks.com/park/boones-lick-state-historic-site,https://mostateparks.com/historic-site/boones-lick-state-historic-site,HTTP 404
+3898,Jay Nixon State Park,https://mostateparks.com/park/jay-nixon-state-park,https://mostateparks.com/park/jay-nixon-backcountry,HTTP 404
+4608,Vesta Cedar Glade State Natural Area,https://www.tn.gov/environment/program-areas/na-natural-areas/natural-areas-middle-region/middle-region/na-na-vesta-cedar-glade.html,https://www.tn.gov/environment/natural-areas/what-we-do/sna/cb/vesta-cedar-glade.html,HTTP 404 (checked with the web-fetch tool; new page opened and title matches)
+4661,Sellars Farm State Archeological Reserve,https://www.tn.gov/environment/program-areas/arch-archaeology/state-archaeological-parks-areas/sellars-farm-state-archaeological-area.html,https://www.tn.gov/environment/program-areas/archaeology/arch-parks/sellars-farm.html,HTTP 404 (checked with the web-fetch tool; new page opened and title matches)
+4699,Savage Gulf State Park,https://www.tn.gov/environment/program-areas/na-natural-areas/natural-areas-east-region/east-region-/na-na-savage-gulf.html,https://tnstateparks.com/parks/savage-gulf,tn.gov natural-area page is HTTP 404; the park is now run by Tennessee State Parks and this page was confirmed in the owner's browser pass
+4748,Sherwood Forest State Natural Area,https://www.tn.gov/environment/program-areas/na-natural-areas/natural-areas-middle-region/middle-region/na-na-sherwood-forest.html,https://www.tn.gov/environment/natural-areas/what-we-do/sna/cu/sherwood-forest.html,HTTP 404 (checked with the web-fetch tool; new page opened and title matches)
+4780,Bone Cave Natural State Conservation Area,https://www.tn.gov/environment/program-areas/na-natural-areas/natural-areas-middle-region/middle-region/bone-cave.html,https://www.tn.gov/environment/natural-areas/what-we-do/sna/cu/big-bone-cave.html,HTTP 404 (checked with the web-fetch tool; new page opened and title matches)
+5708,Millersylvania State Park,https://www.parks.wa.gov/386/Millersylvania,https://parks.wa.gov/find-parks/state-parks/millersylvania-state-park,HTTP 404
+5710,Squak Mountain State Park,https://www.parks.wa.gov/588/Squak-Mountain,https://parks.wa.gov/find-parks/state-parks/squak-mountain-state-park,HTTP 404
+5717,Pacific Beach State Park,https://www.parks.wa.gov/428/Pacific-Beach-State-Park,https://parks.wa.gov/find-parks/state-parks/pacific-beach-state-park,HTTP 404
+5724,Nolte State Park,https://www.parks.wa.gov/552/Nolte,https://parks.wa.gov/find-parks/state-parks/nolte-state-park,HTTP 404
+5783,Mill Creek/Bennington Lake National Recreation Area,https://www.nww.usace.army.mil/,https://www.nww.usace.army.mil/Locations/District-Locks-and-Dams/Mill-Creek-Dam-and-Bennington-Lake/,column F is only the Walla Walla District home page; the project page opens (checked with the web-fetch tool)
+5785,Seaquest State Park,https://www.parks.wa.gov/430/Seaquest-State-Park,https://parks.wa.gov/find-parks/state-parks/seaquest-state-park,HTTP 404
+5786,Lake Easton State Park,https://www.parks.wa.gov/532/Lake-Easton,https://parks.wa.gov/find-parks/state-parks/lake-easton-state-park,HTTP 404
+5787,Lewis and Clark State Park,https://www.parks.wa.gov/1252/Lewis-and-Clark,https://parks.wa.gov/find-parks/state-parks/lewis-clark-state-park,HTTP 404
+5810,Rasar State Park,https://www.parks.wa.gov/571/Rasar,https://parks.wa.gov/find-parks/state-parks/rasar-state-park,HTTP 404
+5818,Twin Harbors State Park,https://www.parks.wa.gov/431/Twin-Harbors-State-Park,https://parks.wa.gov/find-parks/state-parks/twin-harbors-state-park,HTTP 404
+5824,Olallie State Park,https://www.parks.wa.gov/555/Olallie,https://parks.wa.gov/find-parks/state-parks/olallie-state-park,HTTP 404
+5895,Rockport State Park,https://www.parks.wa.gov/574/Rockport,https://parks.wa.gov/find-parks/state-parks/rockport-state-park,HTTP 404
+5927,Lake Lenore Caves State Park,https://parks.wa.gov/find-parks/state-parks/lake-lenore-caves-state-park,https://parks.wa.gov/about/news-center/field-guide-blog/lake-lenore-caves-state-park-heritage-site-history,HTTP 404
+5934,Fields Spring State Park,https://www.parks.wa.gov/872/Fields-Spring,https://parks.wa.gov/find-parks/state-parks/fields-spring-state-park,HTTP 404
+5996,Fuller Bridge State Recreation Area,https://wdfw.wa.gov/places-to-go/water-access-sites/30208,https://wdfw.wa.gov/places-to-go/water-access-sites/fuller-bridge-303,HTTP 404
+6257,Big Thompson Ponds State Wildlife Area,https://cpw.state.co.us/learn/Maps/BigThompsonPondsSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/big-thompson-ponds-swa,HTTP 0
+6264,Boedecker Reservoir State Wildlife Area,https://cpw.state.co.us/learn/Maps/BoedeckerReservoirSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/boedecker-reservoir-swa,HTTP 0
+6265,Brush Hollow State Wildlife Area,https://cpw.state.co.us/swa/Brush%20Hollow%20SWA,https://cpw.state.co.us/state-wildlife-areas/brush-hollow-swa,HTTP 404
+6278,Wellington State Wildlife Area,https://cpw.state.co.us/swa/Wellington%20SWA,https://cpw.state.co.us/state-wildlife-areas/wellington-swa,HTTP 404
+6295,Smith Reservoir State Wildlife Area,https://cpw.state.co.us/swa/Smith%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/smith-reservoir-swa,HTTP 404
+6298,Deweese Reservoir State Wildlife Area,https://cpw.state.co.us/swa/Deweese%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/deweese-reservoir-swa,HTTP 404
+6302,Centennial Valley State Wildlife Area,https://cpw.state.co.us/learn/Maps/CentennialValleySWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/centennial-valley-swa,HTTP 0
+6307,Flagler Reservoir State Wildlife Area,https://cpw.state.co.us/swa/Flagler%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/flagler-reservoir-swa,HTTP 404
+6308,63 Ranch State Wildlife Area,https://cpw.state.co.us/learn/Maps/63RanchSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/63-ranch-swa,HTTP 0
+6311,Prewitt Reservoir State Wildlife Area,https://cpw.state.co.us/swa/Prewitt%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/prewitt-reservoir-swa,HTTP 404
+6317,Brush State Wildlife Area,https://cpw.state.co.us/learn/Maps/BrushSWA.pdf,https://cpw.state.co.us/state-wildlife-areas/brush-swa,HTTP 0
+6319,Pony Express State Wildlife Area,https://cpw.state.co.us/learn/Maps/PonyExpressSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/pony-express-swa,HTTP 0
+6321,Cottonwood State Wildlife Area,https://cpw.state.co.us/swa/Cottonwood%20SWA,https://cpw.state.co.us/state-wildlife-areas/cottonwood-swa,HTTP 404
+6322,Echo Canyon Reservoir State Wildlife Area,https://cpw.state.co.us/learn/Maps/EchoCanyonReservoirSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/echo-canyon-reservoir-swa,HTTP 0
+6327,Coller State Wildlife Area,https://cpw.state.co.us/learn/Maps/CollerSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/coller-swa,HTTP 0
+6329,Gypsum Ponds State Wildlife Area,https://cpw.state.co.us/swa/Gypsum%20Ponds%20SWA,https://cpw.state.co.us/state-wildlife-areas/gypsum-ponds-swa,HTTP 404
+6330,Blue River State Wildlife Area,https://cpw.state.co.us/learn/Maps/BlueRiverSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/blue-river-swa,HTTP 0
+6333,Big Meadows Reservoir State Wildlife Area,https://cpw.state.co.us/swa/Big%20Meadows%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/big-meadows-reservoir-swa,HTTP 404
+6334,Bodo State Wildlife Area,https://cpw.state.co.us/learn/Maps/BodoSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/bodo-swa,HTTP 0
+6335,Windy Gap Watchable State Wildlife Area,https://cpw.state.co.us/swa/Windy%20Gap%20WWA,https://cpw.state.co.us/state-wildlife-areas/windy-gap-watchable-wildlife-area,HTTP 404
+6340,Alma State Wildlife Area,https://cpw.state.co.us/swa/Alma%20SWA,https://cpw.state.co.us/state-wildlife-areas/alma-swa,HTTP 404
+6341,Brown Lakes State Wildlife Area,https://cpw.state.co.us/swa/Brown%20Lakes%20SWA,https://cpw.state.co.us/state-wildlife-areas/brown-lakes-swa,HTTP 404
+6342,Holbrook Reservoir State Wildlife Area,https://cpw.state.co.us/learn/Maps/HolbrookReservoirSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/holbrook-reservoir-swa,HTTP 0
+6349,Bravo State Wildlife Area,https://cpw.state.co.us/swa/Bravo%20SWA,https://cpw.state.co.us/state-wildlife-areas/bravo-swa,HTTP 404
+6350,Cherokee State Wildlife Area,https://cpw.state.co.us/learn/Maps/CherokeeSWA_LowerUnits_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/cherokee-swa-all-units,HTTP 0
+6352,Timpas Creek State Wildlife Area,https://cpw.state.co.us/swa/Timpas%20Creek%20SWA,https://cpw.state.co.us/state-wildlife-areas/timpas-creek-swa,HTTP 404
+6354,Karval Reservoir State Wildlife Area,https://cpw.state.co.us/swa/Karval%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/karval-reservoir-swa,HTTP 404
+6357,Four Mile State Wildlife Area,https://cpw.state.co.us/swa/Four%20Mile%20SWA,https://cpw.state.co.us/state-wildlife-areas/four-mile-swa,HTTP 404
+6358,Dowdy Lake State Wildlife Area,https://cpw.state.co.us/learn/Maps/DowdyWestParvinSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/dowdy-lake-swa,HTTP 0
+6359,Wahatoya State Wildlife Area,https://cpw.state.co.us/swa/Wahatoya%20SWA%20(Daigre%20Lake),https://cpw.state.co.us/state-wildlife-areas/wahatoya-swa,HTTP 404
+6366,Delaney Butte Lakes State Wildlife Area,https://cpw.state.co.us/swa/Delaney%20Butte%20Lakes%20SWA,https://cpw.state.co.us/state-wildlife-areas/delaney-butte-lakes-swa,HTTP 404
+6367,Hugo State Wildlife Area,https://cpw.state.co.us/swa/Hugo%20SWA,https://cpw.state.co.us/state-wildlife-areas/hugo-swa,HTTP 404
+6368,Kinney Lake State Wildlife Area,https://cpw.state.co.us/swa/Kinney%20Lake%20SWA,https://cpw.state.co.us/state-wildlife-areas/kinney-lake-swa,HTTP 404
+6370,Duck Creek State Wildlife Area,https://cpw.state.co.us/swa/Duck%20Creek%20SWA,https://cpw.state.co.us/state-wildlife-areas/duck-creek-swa,HTTP 404
+6371,Sedgwick Bar State Wildlife Area,https://cpw.state.co.us/learn/Maps/SedgwickBarSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/sedgwick-bar-swa,HTTP 0
+6372,Totten Reservoir State Wildlife Area,https://cpw.state.co.us/swa/Totten%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/totten-reservoir-swa,HTTP 404
+6375,Bellaire Lake State Wildlife Area,https://cpw.state.co.us/learn/Maps/BellaireLakeSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/bellaire-lake-swa,HTTP 0
+6379,Deadman State Wildlife Area,https://cpw.state.co.us/learn/Maps/GranadaDeadmanSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/deadman-swa,HTTP 0
+6382,Apishapa State Wildlife Area,https://cpw.state.co.us/swa/Apishapa%20SWA,https://cpw.state.co.us/state-wildlife-areas/apishapa-swa,HTTP 404
+6384,Fort Lyon State Wildlife Area,https://cpw.state.co.us/learn/Maps/JohnMartinSWA_FtLyonSWA.pdf,https://cpw.state.co.us/state-wildlife-areas/fort-lyon-swa,HTTP 0
+6386,Joe Moore Reservoir State Wildlife Area,https://cpw.state.co.us/swa/Joe%20Moore%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/joe-moore-reservoir-swa,HTTP 404
+6387,Two Buttes State Wildlife Area,https://cpw.state.co.us/swa/Two%20Buttes%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/two-buttes-reservoir-swa,HTTP 404
+6397,Adobe Creek State Wildlife Area,https://cpw.state.co.us/swa/Adobe%20Creek%20Reservoir%20SWA%20(Blue%20Lake),https://cpw.state.co.us/state-wildlife-areas/adobe-creek-res-swa-blue-lake,HTTP 404
+6398,Garfield Creek State Wildlife Area,https://cpw.state.co.us/swa/Garfield%20Creek%20SWA,https://cpw.state.co.us/state-wildlife-areas/garfield-creek-swa,HTTP 404
+6399,West Rifle Creek State Wildlife Area,https://cpw.state.co.us/swa/West%20Rifle%20Creek%20SWA,https://cpw.state.co.us/state-wildlife-areas/west-rifle-creek-swa,HTTP 404
+6400,Cowdrey Lake State Wildlife Area,https://cpw.state.co.us/swa/Cowdrey%20Lake%20SWA,https://cpw.state.co.us/state-wildlife-areas/cowdrey-lake-swa,HTTP 404
+6401,Playa Blanca State Wildlife Area,https://cpw.state.co.us/learn/Maps/PlayaBlancaSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/playa-blanca-swa,HTTP 0
+6402,Queens State Wildlife Area,https://cpw.state.co.us/swa/Queens%20SWA,https://cpw.state.co.us/state-wildlife-areas/queens-swa,HTTP 404
+6403,Bliss State Wildlife Area,https://cpw.state.co.us/learn/Maps/BlissSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/bliss-swa,HTTP 0
+6411,Haviland Lake State Wildlife Area,https://cpw.state.co.us/swa/Haviland%20Lake%20SWA,https://cpw.state.co.us/state-wildlife-areas/haviland-lake-swa,HTTP 404
+6416,Burchfield State Wildlife Area,https://cpw.state.co.us/learn/Maps/BurchfieldSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/burchfield-swa,HTTP 0
+6417,Dan Noble State Wildlife Area,https://cpw.state.co.us/swa/Dan%20Noble%20SWA,https://cpw.state.co.us/state-wildlife-areas/dan-noble-swa,HTTP 404
+6419,Sand Draw State Wildlife Area,https://cpw.state.co.us/learn/Maps/SandDrawSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/sand-draw-swa,HTTP 0
+6421,Beaver Creek Reservoir State Wildlife Area,https://cpw.state.co.us/swa/Beaver%20Creek%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/beaver-creek-reservoir-swa,HTTP 404
+6422,Billy Creek State Wildlife Area,https://cpw.state.co.us/swa/Billy%20Creek%20SWA,https://cpw.state.co.us/state-wildlife-areas/billy-creek-swa,HTTP 404
+6423,Bosque Del Oso State Wildlife Area,https://cpw.state.co.us/swa/Bosque%20Del%20Oso%20SWA,https://cpw.state.co.us/state-wildlife-areas/bosque-del-oso-swa,HTTP 404
+6430,Horse Creek Reservoir State Wildlife Area,https://cpw.state.co.us/learn/Maps/HorseCreekReservoirSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/horse-creek-reservoir-swa-timber-lake,HTTP 0
+6440,Black Ridge Canyons Wilderness Area,https://www.blm.gov/programs/national-conservation-lands/colorado/black-ridge-canyons-wilderness,https://www.blm.gov/visit/black-ridge-canyons-wilderness,HTTP 404
+6442,Andrews Lake State Wildlife Area,https://cpw.state.co.us/learn/Maps/AndrewsLakeSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/andrews-lake-swa,HTTP 0
+6456,Huerfano State Wildlife Area,https://cpw.state.co.us/learn/Maps/HuerfanoSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/huerfano-swa,HTTP 0
+6457,Terrace Reservoir State Wildlife Area,https://cpw.state.co.us/swa/Terrace%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/terrace-reservoir-swa,HTTP 404
+6458,Williams Creek Reservoir State Wildlife Area,https://cpw.state.co.us/learn/Maps/WilliamsCreekReservoirSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/williams-creek-reservoir-swa,HTTP 0
+6462,Coalbed Canyon State Wildlife Area,https://cpw.state.co.us/swa/Coalbed%20Canyon%20SWA,https://cpw.state.co.us/state-wildlife-areas/coalbed-canyon-swa,HTTP 404
+6463,Devil Creek State Wildlife Area,https://cpw.state.co.us/swa/Devil%20Creek%20SWA,https://cpw.state.co.us/state-wildlife-areas/devil-creek-swa,HTTP 404
+6464,Dry Creek Basin State Wildlife Area,https://cpw.state.co.us/swa/Dry%20Creek%20Basin%20SWA,https://cpw.state.co.us/state-wildlife-areas/dry-creek-basin-swa,HTTP 404
+6465,Escalante State Wildlife Area,https://cpw.state.co.us/learn/Maps/EscalanteSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/escalante-swa,HTTP 0
+6472,Alberta Park Reservoir State Wildlife Area,https://cpw.state.co.us/swa/Alberta%20Park%20Reservoir%20SWA,https://cpw.state.co.us/state-wildlife-areas/alberta-park-reservoir-swa,HTTP 404
+6473,Beaver Lake State Wildlife Area,https://cpw.state.co.us/swa/Beaver%20Lake%20SWA,https://cpw.state.co.us/state-wildlife-areas/beaver-lake-swa,HTTP 404
+6474,Bitter Brush State Wildlife Area,https://cpw.state.co.us/learn/Maps/BitterBrushSWA_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/bitter-brush-swa,HTTP 0
+6476,Colorow Mountain State Wildlife Area,https://cpw.state.co.us/learn/Maps/ColorowMountainSWA.pdf,https://cpw.state.co.us/state-wildlife-areas/colorow-mountain-swa,HTTP 0
+6482,Browns Park State Wildlife Area,https://cpw.state.co.us/learn/Maps/BrownsParkSWA_Wiggins_geo.pdf,https://cpw.state.co.us/state-wildlife-areas/browns-park-swa,HTTP 0
+6997,Dardanelle Wildlife Management Area,https://corpsLakes.erdc.dren.mil/visitors/projects.cfm?ID=M404450,https://www.agfc.com/wma/dardanelle-wma/,"CorpsLakes page does not open (HTTP 503 to our fetcher, timed out in the web-fetch tool); the WMA is managed by AGFC"
+7013,Talimena Scenic Byway State Trail,https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5085750.pdf,https://www.fs.usda.gov/r08/ouachita/recreation/talimena-national-scenic-byway,old PDF link HTTP 404
+7139,Ozan Wildlife Management Area,https://www.agfc.com/en/zone-map/740/,https://www.agfc.com/wma/ozan-wma/,HTTP 404
+7154,Brewer Lake Wildlife Management Area,https://www.agfc.com/wma/brewer-lake-wma/,https://www.agfc.com/wma/w-e-brewer-scatter-creek-wma/,HTTP 404
+7200,Caney Creek Wilderness Area Wilderness Zone,https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fsm9_039458.pdf,https://www.fs.usda.gov/r08/ouachita/recreation/caney-creek-wilderness,old PDF link HTTP 404
+7214,Roth Prairie Wildlife Management Area,https://www.agfc.com/en/zone-map/757/,https://www.agfc.com/wma/roth-prairie-natural-area-wma/,HTTP 404
+7218,Pine City State Natural Area,https://www.agfc.com/en/zone-map/745/,https://www.agfc.com/wma/pine-city-natural-area-wma/,HTTP 404
+7241,Ring Slough Wildlife Management Area,https://www.agfc.com/en/zone-map/754/,https://www.agfc.com/wma/ring-slough-wma/,HTTP 404
+7252,Little Bayou Wildlife Management Area,https://www.agfc.com/en/zone-map/727/,https://www.agfc.com/wma/little-bayou-wma/,HTTP 404
+7260,Bearcat Hollow Wildlife Management Area,https://www.agfc/wma/bearcat-hollow-wma/,https://www.agfc.com/wma/bearcat-hollow-wma/,HTTP 0
+7336,City of Rocks Reserve National Conservation Area,https://nps.gov,https://www.nps.gov/ciro/index.htm,opens a different or general page
+7342,Hagerman Fossil Beds National Monument,https://nps.gov,https://www.nps.gov/hafo/index.htm,opens a different or general page
+7350,Pioneer Historic National Scenic Byway National Parkway,https://www.fhwa.dot.gov,https://fhwaapps.fhwa.dot.gov/bywaysp/StateMaps/Show/byway/2049,column F is only the FHWA home page; the byway's America's Byways page opens
+7351,Payette River National Scenic Byway National Parkway,https://www.fhwa.dot.gov,https://fhwaapps.fhwa.dot.gov/bywaysp/StateMaps/Show/byway/2037,column F is only the FHWA home page; the byway's America's Byways page opens
+7355,Western Heritage National Scenic Byway National Parkway,https://www.fhwa.dot.gov,https://fhwaapps.fhwa.dot.gov/bywaysp/StateMaps/Show/byway/2593,column F is only the FHWA home page; the byway's America's Byways page opens
+7396,Northwest Passage National Scenic Byway National Parkway,https://www.fhwa.dot.gov,https://fhwaapps.fhwa.dot.gov/bywaysp/StateMaps/Show/byway/2043,column F is only the FHWA home page; the byway's America's Byways page opens
+7470,Pend Oreille National Scenic Byway National Parkway,https://www.fhwa.dot.gov,https://fhwaapps.fhwa.dot.gov/bywaysp/StateMaps/Show/byway/2044,column F is only the FHWA home page; the byway's America's Byways page opens
+8625,Sipsey Wilderness Wilderness Area,https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd493196.pdf,https://www.fs.usda.gov/r08/alabama/wilderness,old PDF link HTTP 404
+8878,Fantasy Canyon Geologic Site BLM Interpretive Site,https://www.blm.gov/visit/fantasy-canyon-geologic-site,https://www.blm.gov/visit/fantasy-canyon,"column F BLM page shows ""Access Denied ... content not published or has moved"" in the owner's browser pass; current page of the same site found with BLM site search and read in browser"
+8885,Desert Lake State Waterfowl Management Area,http://www.utahbirds.org/counties/emery/DesertLake.htm,https://wildlife.utah.gov/wmas,"column F is a birding club page (utahbirds.org, HTTP 500), not an agency page"
+8933,Red Cliffs Dinosaur Track Site BLM Historic Area,https://www.blm.gov/visit/red-cliffs-dinosaur-track-site,https://www.blm.gov/visit/silver-reef-trail-and-red-cliffs-dinosaur-tracksite,"column F BLM page shows ""Access Denied ... content not published or has moved"" in the owner's browser pass; current page of the same site found with BLM site search and read in browser"
+8966,Black Ridge Canyons Wilderness Area,https://www.blm.gov/programs/national-conservation-lands/colorado/black-ridge-canyons-wilderness,https://www.blm.gov/visit/black-ridge-canyons-wilderness,HTTP 404
+9007,Moccasin Mountain Kiosk BLM Interpretive Site,https://www.blm.gov/visit/moccasin-mountain-kiosk,https://www.blm.gov/visit/moccasin-mountain-dinosaur-tracksite,"column F BLM page shows ""Access Denied ... content not published or has moved"" in the owner's browser pass; current page of the same site found with BLM site search and read in browser"
+9102,Paria Canyon - Vermillion Cliffs BLM Wilderness Area,https://www.blm.gov/visit/paria-canyon-vermilion-cliffs-wilderness-area,https://www.blm.gov/visit/paria-canyon-vermilion-cliffs-wilderness,column F URL failed in the owner's browser pass (spelling); current page found with BLM site search and read in browser
+9153,Jones Hole National Fish Hatchery,https://www.fws.gov/fish-hatchery/jones-hole/visit-us,https://www.fws.gov/locations/jones-hole-national-fish-hatchery,HTTP 404
+9160,Little Hole National Scenic Trail,https://www.flaminggorgecountry.com/Little-Hole-National-Scenic-Trail/,https://www.fs.usda.gov/r04/ashley/recreation/little-hole-boat-launch-area,"column F is a county tourism page (flaminggorgecountry.com), not an agency page"
+9355,Starr Spring BLM Recreation Management Area,https://www.blm.gov/visit/starr-spring-campground,https://www.blm.gov/visit/starr-springs-campground,"column F BLM page shows ""Access Denied ... content not published or has moved"" in the owner's browser pass; current page of the same site found with BLM site search and read in browser"
+9423,Taylor Creek Wilderness Area,http://www.blm.gov/ut/st/en/fo/st__george/blm_special_areas/national_landscape/wilderness/taylor_creek.html,https://www.blm.gov/visit/taylor-creek-wilderness,"column F is an old BLM URL structure that no longer exists; current page found by search, confirmed in the owner's browser pass"
+9607,Sandhills State Park,https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/pratt-sandhills-wildlife-area,https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/sand-hills,"opens a different page (Pratt Sandhills Wildlife Area, not Sand Hills State Park); checked with the web-fetch tool, new page opened and title matches"
+9618,Pottawatomie No 2 State Fishing Lake,https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Pottawatomie-Lake-No.-2,https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/pottawatomie-state-fishing-lake-no-2,HTTP 404 (checked with the web-fetch tool; new page opened and title matches)
+9678,Pottawatomie No 1 State Fishing Lake,https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Pottawatomie-Lake-No.-1,https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-fishing-lakes/pottawatomie-state-fishing-lake-no-1,HTTP 404 (checked with the web-fetch tool; new page opened and title matches)
+9723,Glen Elder State Park,https://www.ksoutdoors.gov/about-kdwp/where-we-work/wildlife-areas/glen-elder-wildlife-area,https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/glen-elder,"opens a different page (Glen Elder Wildlife Area, not the state park page); checked with the web-fetch tool, new page opened and title matches"
+9915,Talimena Scenic Byway State Trail,https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5085750.pdf,https://www.fs.usda.gov/r08/ouachita/recreation/talimena-national-scenic-byway,old PDF link HTTP 404
+9941,Spavinaw Wildlife Management Area,http://www.wildlifedepartment.com/wildlife-management-areas/spavinaw,https://www.wildlifedepartment.com/hunting/wma/northeast/spavinaw-pha,HTTP 404 (checked with the web-fetch tool; new page opened and title matches)
+9948,Lexington Wildlife Management Area,http://www.wildlifedepartment.com/wildlife-management-areas/lexington,https://www.wildlifedepartment.com/hunting/wma/southeast/lexington-wma,HTTP 404 (checked with the web-fetch tool; new page opened and title matches)
+9972,Okmulgee Wildlife Management Area,http://www.wildlifedepartment.com/wildlife-management-areas/okmulgee,https://www.wildlifedepartment.com/hunting/wma/northeast/okmulgee-pha,HTTP 404 (checked with the web-fetch tool; new page opened and title matches)
+10014,Arbuckle Springs Wildlife Management Area,http://www.wildlifedepartment.com/hunting/wma/southeast/arbuckle-springs,https://www.wildlifedepartment.com/hunting/wma/southeast/arbuckle-springs-wma,HTTP 404 (checked with the web-fetch tool; new page opened and title matches)
+10033,Honobia Creek Wildlife Management Area,http://www.wildlifedepartment.com/wildlife-management-areas/honobia-creek,https://www.wildlifedepartment.com/hunting/wma/southeast/honobia-creek-wma,HTTP 500
+10108,Flanagan Lake State Recreation Area,https://www.nrdnet.org/rec-area/flanagan-lake,https://www.nrdnet.org/recreation-areas/flanagan-lake,HTTP 404
+10109,Prairie Queen State Recreation Area,https://www.nrdnet.org/rec-area/prairie-queen,https://www.nrdnet.org/recreation-areas/prairie-queen,HTTP 404
+10130,Chimney Rock National Historic Site,https://www.nps.gov/nr/travel/scotts_bluff/chimney_rock.html,https://www.nps.gov/places/000/chimney-rock.htm,HTTP 404
+10138,Elkhorn Crossing State Park,https://www.nrdnet.org/rec-area/elkhorn-crossing-recreation-area,https://www.nrdnet.org/recreation-areas/elkhorn-crossing-recreation-area,HTTP 404
+10147,Wildwood Lake Wildlife Management Area,https://www.nrdnet.org/rec-area/wildwood-lake,https://www.nrdnet.org/recreation-areas/wildwood-lake,HTTP 404
+10148,Prairie Lake State Recreation Area,https://www.nrdnet.org/rec-area/prairie-lake,https://www.nrdnet.org/recreation-areas/prairie-lake,HTTP 404
+10150,Chalkrock Wildlife Management Area,https://www.nrdnet.org/rec-area/chalkrock-wma,https://www.nrdnet.org/recreation-areas/chalkrock-wma,HTTP 404
+10155,Prairie View State Recreation Area,https://www.nrdnet.org/rec-area/prairie-view-recreation-area,https://www.nrdnet.org/recreation-areas/prairie-view-recreation-area,HTTP 404
+10158,Cottontail Wildlife Management Area,https://www.nrdnet.org/rec-area/cottontail-lake,https://www.nrdnet.org/recreation-areas/cottontail-lake,HTTP 404
+10163,Platte River Landing State Park,https://www.nrdnet.org/rec-area/platte-river-landing,https://www.nrdnet.org/recreation-areas/platte-river-landing,HTTP 404
+10170,Wild Plum Wildlife Management Area,https://www.nrdnet.org/rec-area/wild-plum-lake,https://www.nrdnet.org/trees/american-plum,HTTP 404
+10172,Liberty Cove State Recreation Area,https://www.nrdnet.org/rec-area/liberty-cove,https://www.nrdnet.org/recreation-areas/liberty-cove,HTTP 404
+10173,Merganser Wildlife Management Area,https://www.nrdnet.org/rec-area/merganser-lake,https://www.nrdnet.org/recreation-areas/merganser-lake,HTTP 404
+10174,Roseland Lake State Recreation Area,https://www.nrdnet.org/rec-area/roseland-lake,https://www.nrdnet.org/recreation-areas/roseland-lake,HTTP 404
+10177,Red Cedar Wildlife Management Area,https://www.nrdnet.org/rec-area/red-cedar-lake,https://www.nrdnet.org/recreation-areas/red-cedar-lake,HTTP 404
+10178,Bear Creek Wildlife Management Area,https://www.nrdnet.org/rec-area/bear-creek-wma,https://www.nrdnet.org/recreation-areas/bear-creek-wma,HTTP 404
+10179,Maskenthine Lake State Recreation Area,https://www.nrdnet.org/rec-area/maskenthine-lake-recreation-area,https://www.nrdnet.org/recreation-areas/maskenthine-lake-recreation-area,HTTP 404
+10183,Rock Creek Station State Historical Park,https://outdoornebraska.gov/location/rock-creek-station-sra/,https://outdoornebraska.gov/location/rock-creek-station-shp/,column F points to Rock Creek Station State Recreation Area page (wrong park); SHP page opens (checked with the web-fetch tool) and title matches
+10184,Timber Point Wildlife Management Area,https://www.nrdnet.org/rec-area/timber-point-wetland,https://www.nrdnet.org/recreation-areas/timber-point-wetland,HTTP 404
+10188,Maple Creek State Recreation Area,https://www.nrdnet.org/rec-area/maple-creek-recreation-area,https://www.nrdnet.org/recreation-areas/maple-creek-recreation-area,HTTP 404
+10193,Bruning Dam Wildlife Management Area,https://www.nrdnet.org/rec-area/bruning-dam,https://www.nrdnet.org/recreation-areas/bruning-dam,HTTP 404
+10199,Big Indian State Recreation Area,https://www.nrdnet.org/rec-area/big-indian-recreation-area,https://www.nrdnet.org/recreation-areas/big-indian-recreation-area,HTTP 404
+10200,Pilger State Recreation Area,https://www.nrdnet.org/rec-area/pilger-recreation-area,https://www.nrdnet.org/recreation-areas/pilger-recreation-area,HTTP 404
+10206,Clatonia State Recreation Area,https://www.nrdnet.org/rec-area/clatonia-public-use-area,https://www.nrdnet.org/recreation-areas/clatonia-public-use-area,HTTP 404
+10207,Wolf-Wildcat Wildlife Management Area,https://www.nrdnet.org/rec-area/wolf-wildcat-wma,https://www.nrdnet.org/recreation-areas/wolf-wildcat-wma,HTTP 404
+10213,Buckley Creek State Recreation Area,https://www.nrdnet.org/rec-area/buckley-creek,https://www.nrdnet.org/recreation-areas/buckley-creek,HTTP 404
+10219,Cub Creek (southern) State Recreation Area,https://www.nrdnet.org/rec-area/cub-creek-recreation-area-southern,https://www.nrdnet.org/recreation-areas/cub-creek-recreation-area-southern,HTTP 404
+10220,Swanton Wildlife Management Area,https://www.nrdnet.org/rec-area/swanton-wma,https://www.nrdnet.org/recreation-areas/swanton-wma,HTTP 404
+10221,Willard L. Meyer State Recreation Area,https://www.nrdnet.org/rec-area/willard-l-meyer-recreation-area,https://www.nrdnet.org/recreation-areas/willard-l-meyer-recreation-area,HTTP 404
+10223,Neligh Mill State Historic Site,https://history.nebraska.gov/visit/mill,https://history.nebraska.gov/neligh-mill-state-historic-site/,column F URL hit a bot check then redirected to unrelated pages in the owner's browser pass; current page found with History Nebraska site search and read in browser
+10224,Leisure Lake Wildlife Management Area,https://www.nrdnet.org/rec-area/leisure-lake-wma,https://www.nrdnet.org/recreation-areas/leisure-lake-wma,HTTP 404
+10236,Lone Star State Recreation Area,https://www.nrdnet.org/rec-area/lone-star,https://www.nrdnet.org/recreation-areas/lone-star,HTTP 404
+10264,Cub Creek (northern) State Recreation Area,https://www.nrdnet.org/rec-area/cub-creek-recreation-area-northern,https://www.nrdnet.org/recreation-areas/cub-creek-recreation-area-northern,HTTP 404
+10747,Story State Fish Hatchery,https://wgfd.wyo.gov/About-Us/Offices-and-Facilities/Story-Fish-Hatchery,https://wgfd.wyo.gov/story-fish-hatchery,HTTP 404
+10802,Dan Speas State Fish Hatchery,https://wgfd.wyo.gov/About-Us/Offices-and-Facilities/Dan-Speas-Fish-Hatchery,https://wgfd.wyo.gov/dan-speas-fish-hatchery,HTTP 404
+10840,Fort Bonneville State Historic Site,http://www.fortwiki.com/Fort_Bonneville_(1),https://wyoparks.wyo.gov/index.php/places-to-go/view-full-list-of-wyoming-historic-sites,"column F is a wiki (fortwiki.com, HTTP 500), not an agency page"
+10842,Clarks Fork State Fish Hatchery,https://wgfd.wyo.gov/About-Us/Offices-and-Facilities/Clarks-Fork-Hatchery,https://wgfd.wyo.gov/clarks-fork-fish-hatchery,HTTP 404
+10867,Dubois State Fish Hatchery,https://wgfd.wyo.gov/About-Us/Offices-and-Facilities/Dubois-Fish-Hatchery,https://wgfd.wyo.gov/dubois-fish-hatchery,HTTP 404
+10868,Ten Sleep State Fish Hatchery,https://wgfd.wyo.gov/About-Us/Offices-and-Facilities/Ten-Sleep-Fish-Hatchery,https://wgfd.wyo.gov/ten-sleep-fish-hatchery,HTTP 404
+10905,Daniel State Fish Hatchery,https://wgfd.wyo.gov/About-Us/Offices-and-Facilities/Daniel-Fish-Hatchery,https://wgfd.wyo.gov/daniel-fish-hatchery,HTTP 404
+11546,Herbert Hoover National Historic Site,https://www.nps.gov/nr/travel/presidents/herbert_hoover_nhs.html,https://www.nps.gov/heho/index.htm,HTTP 404
+11561,Union Grove State Park,https://www.iowadnr.gov/portals/idnr/uploads/parks/parkmaps/uniongrovemap.pdf,https://www.iowadnr.gov/places-go/state-parks/all-parks/union-grove-state-park,HTTP 0
+11563,Yellow River State Forest,https://www.iowadnr.gov/Portals/idnr/uploads/forests/maps/YRSFRoadMap.pdf,https://www.iowadnr.gov/things-do/fishing/iowa-fish-species/yellow-bass,HTTP 0
+11633,Lower Gar State Recreation Area,https://www.iowadnr.gov/Fishing/Where-to-Fish/Lakes-Ponds-Reservoirs/LakeDetails/lakeCode/LGA30,https://www.iowadnr.gov/places-go/state-parks/all-parks/lower-gar-state-recreation-area,HTTP 404
+11634,Bixby State Preserve,https://www.iowadnr.gov/Portals/idnr/uploads/fish/maps/tmg22.pdf,https://www.iowadnr.gov/places-go/state-preserves/bixby-state-preserve,HTTP 0
+11637,Volga River State Recreation Area,https://www.iowadnr.gov/portals/idnr/uploads/parks/parkmaps/volgarivermap.pdf,https://www.iowadnr.gov/places-go/state-parks/all-parks/volga-river-state-recreation-area,HTTP 0
+11655,Little River Wildlife Management Area,https://www.iowadnr.gov/Portals/idnr/uploads/fish/maps/lri27.pdf,https://www.iowadnr.gov/places-go/state-preserves/little-maquoketa-river-mounds-state-preserve,HTTP 0
+11673,Riverton Wildlife Management Area,https://www.iowadnr.gov/portals/idnr/uploads/wildlife/wmamaps/riverton.pdf,https://www.iowadnr.gov/news-release/2023-08-18/riverton-wildlife-area-wetland-pumping-delayed,HTTP 0
+11702,Wittrock Indian Village State Preserve,https://www.iowadnr.gov/portals/idnr/uploads/preserves/preservesguide.pdf?amp;tabid=944,https://www.iowadnr.gov/places-go/state-preserves/wittrock-indian-village-state-preserve,HTTP 0
+11994,Ballard State Forest,https://www.nh.gov/nhdfl/,https://www.nhdfl.dncr.nh.gov/urban-community-forestry/taylor-mill-ballard-state-forest,"old nh.gov/nhdfl link is Page Not Found (agency moved to nhdfl.dncr.nh.gov); new place page checked with the web-fetch tool, opens and title matches"
+11998,Urban Forestry Center State Forest,https://www.nh.gov/nhdfl/natural-heritage/state-owned-reservations/urban-forestry-center.htm,https://www.nhdfl.dncr.nh.gov/urban-community-forestry/urban-forestry-center,"old nh.gov/nhdfl link is Page Not Found (agency moved to nhdfl.dncr.nh.gov); new place page checked with the web-fetch tool, opens and title matches"
+12023,Wentworth- Coolidge Mansion State Historic Site,https://www.nhstateparks.org/visit/historic-sites/wentworth-coolidge-mansion,https://www.nhstateparks.org/find-parks-trails/wentworth-coolidge-mansion,HTTP 404
+12040,Shieling State Forest,https://www.nh.gov/nhdfl/,https://www.nhdfl.dncr.nh.gov/urban-community-forestry/shieling-forest,"old nh.gov/nhdfl link is Page Not Found (agency moved to nhdfl.dncr.nh.gov); new place page checked with the web-fetch tool, opens and title matches"
+12063,Franklin Pierce Homestead State Historic Site,https://www.nhstateparks.org/visit/historic-sites/franklin-pierce-homestead,https://www.nhstateparks.org/find-parks-trails/franklin-pierce-homestead-historic-site,HTTP 404
+12064,Fox State Forest,https://www.nh.gov/nhdfl/natural-heritage/state-owned-reservations/fox-forest.htm,https://www.nhdfl.dncr.nh.gov/forest-management/fox-forest,"old nh.gov/nhdfl link is Page Not Found (agency moved to nhdfl.dncr.nh.gov); new place page checked with the web-fetch tool, opens and title matches"
+12318,Goddard Memorial State Park,https://riparks.com/Locations/LocationGoddard.html,https://riparks.ri.gov/parks/goddard-memorial-state-park,HTTP 404
+12319,Arcadia Management Area,https://riparks.com/Locations/LocationArcadia.html,https://riparks.ri.gov/other-state-lands/arcadia-wildlife-management-area,HTTP 404
+12322,Colt State Park,https://www.riparks.com/parks/colt.php,https://riparks.ri.gov/parks/colt-state-park,HTTP 404
+12324,Beavertail State Park,https://www.riparks.com/parks/beavertail.php,https://riparks.ri.gov/parks/beavertail-state-park,HTTP 404
+12325,Rocky Point State Park,https://riparks.com/Locations/LocationRockyPoint.html,https://riparks.ri.gov/parks/rocky-point-state-park,HTTP 404
+12326,Haines Memorial State Park,https://riparks.com/Locations/LocationHaines.html,https://riparks.ri.gov/parks/haines-memorial-state-park,HTTP 404
+12327,Fort Wetherill State Park,https://www.riparks.com/Locations/LocationFortWetherill.html,https://riparks.ri.gov/parks/fort-wetherill-state-park,HTTP 404
+12329,Brenton Point State Park,https://www.riparks.com/parks/brenton.php,https://riparks.ri.gov/parks/brenton-point-state-park,HTTP 404
+12330,Fort Adams State Park,https://www.riparks.com/Locations/LocationFortAdams.html,https://riparks.ri.gov/parks/fort-adams-state-park,HTTP 404
+12336,Burlingame State Park,https://www.riparks.com/Locations/LocationBurlingameCampground.html,https://riparks.ri.gov/parks/burlingame-state-park,HTTP 404
+12340,Misquamicut State Beach,https://riparks.com/beach/misquamicut.php,https://riparks.ri.gov/beaches/misquamicut-state-beach,HTTP 404
+12342,Lincoln Woods State Park,https://riparks.com/Locations/LocationLincolnWoods.html,https://riparks.ri.gov/parks/lincoln-woods-state-park,HTTP 404
+12343,Scarborough North State Beach,https://riparks.com/beach/scarborough-north.php,https://riparks.ri.gov/beaches/scarborough-north-state-beach,HTTP 404
+12348,Roger W. Wheeler State Beach,https://riparks.com/beach/roger-wheeler.php,https://riparks.ri.gov/beaches/roger-w-wheeler-state-beach,HTTP 404
+12355,East Matunuck State Beach,https://riparks.com/beach/east-matunuck.php,https://riparks.ri.gov/beaches/east-matunuck-state-beach,HTTP 404
+12363,East State Beach,https://riparks.com/beach/east-beach.php,https://riparks.ri.gov/beaches/east-beach,HTTP 404
+12366,Salty Brine State Beach,https://riparks.com/beach/salty-brine.php,https://riparks.ri.gov/beaches/salty-brine-state-beach,HTTP 404
+12367,Charlestown Breachway State Park,https://riparks.com/beach/charlestown.php,https://riparks.ri.gov/beaches/charlestown-breachway,HTTP 404
+12376,Jerimoth Hill State Recreation Area,https://www.townoffoster.com/sites/g/files/vyhlif4421/f/pages/jerimoth_hill_map.pdf,https://www.townoffosterri.gov/196/Jerimoth-Hill,HTTP 0
+12461,Penobscot River Corridor - Katahdin Woods and Waters National Monument,https://www.nps.gov/kaww/planyourvisit/outdooractivities.htm,https://www.nps.gov/kaww/planyourvisit/hours.htm,HTTP 404
+12609,Esler Field Wildlife Management Area,https://www.wlf.louisiana.gov/page/esler-field,https://www.wlf.louisiana.gov/page/camp-beauregard-formerly-esler-field,"HTTP 404 (owner's browser pass; current page of the same place, renamed, read in browser)"
+12620,Fort Johnson North Wildlife Management Area,https://www.wlf.louisiana.gov/page/fort-johnson-north,https://www.wlf.louisiana.gov/page/fort-polk-north,"HTTP 404 (owner's browser pass; current page of the same place, renamed, read in browser)"
+12627,Fort Johnson-Vernon Wildlife Management Area,https://www.wlf.louisiana.gov/page/fort-johnson-vernon,https://www.wlf.louisiana.gov/page/fort-polk-vernon,"HTTP 404 (owner's browser pass; current page of the same place, renamed, read in browser)"
+12698,Ashe Lake State Recreation Area,https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd586432.pdf,https://www.fs.usda.gov/r08/mississippi/recreation/ashe-lake,old PDF link HTTP 404
+12721,Turkey Fork Lake State Recreation Area,https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5213290.pdf,https://www.fs.usda.gov/r08/mississippi/recreation/turkey-fork,old PDF link HTTP 404
+12815,Denali State Park,http://dnr.alaska.gov/parks/aspunits/matsu/denalisp.htm http://dnr.alaska.gov/parks/brochures/denalisp.pdf,https://dnr.alaska.gov/parks/aspunits/matsu/denalisp.htm,HTTP 0
+12892,Chilkat State Park,http://dnr.alaska.gov/parks/aspunits/southeast/chilkootlksrs.htm,https://dnr.alaska.gov/parks/aspunits/southeast/chilkatsp.htm,HTTP 500
+12963,Aniakchak National Wild and Scenic River,https://www.nps.gov/ania/index.htm https://www.rivers.gov/rivers/aniakchak.php,https://www.nps.gov/ania/planyourvisit/hours.htm,HTTP 404

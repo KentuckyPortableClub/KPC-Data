@@ -1,0 +1,430 @@
+{
+"about": "outside research uscamp-nov1: parking / access layers",
+"layers": {
+"https://services.arcgis.com/Eb8P5h4CJk8utIBz/arcgis/rest/services/StagingAreas/FeatureServer/0": {
+"agency": "Alberta Environment and Protected Areas",
+"field": "TYPE",
+"parks": ""
+},
+"https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_parks/MapServer/0": {
+"agency": "BC Parks",
+"field": "PROTECTED_LANDS_NAME",
+"parks": ""
+},
+"https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/1": {
+"agency": "BC Recreation Sites and Trails (Ministry of Forests)",
+"field": "PROJECT_NAME",
+"parks": ""
+},
+"https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/15": {
+"agency": "Ontario Ministry of Natural Resources (LIO)",
+"field": "SITE_NAME",
+"parks": ""
+},
+"https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open04/MapServer/20": {
+"agency": "Ontario Ministry of Natural Resources (LIO) – Ontario Trails Network data",
+"field": "",
+"parks": ""
+},
+"https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/2026_ARWRice_Parking_-_Public_View/FeatureServer/0": {
+"agency": "Arkansas Game and Fish Commission",
+"field": "",
+"parks": ""
+},
+"https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/ParkingPoints/FeatureServer/0": {
+"agency": "California State Parks",
+"field": "UNITNAME",
+"parks": ""
+},
+"https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/OHV_Trailheads_withUse/FeatureServer/101": {
+"agency": "California State Parks (OHMVR)",
+"field": "FORESTNAME",
+"parks": ""
+},
+"https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/COTREX_Trailheads_June_2025/FeatureServer/0": {
+"agency": "Colorado Parks and Wildlife (COTREX)",
+"field": "name",
+"parks": ""
+},
+"https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/DEEP_Property_Access_Locations/FeatureServer/0": {
+"agency": "Connecticut DEEP",
+"field": "PROPERTY",
+"parks": ""
+},
+"https://services2.arcgis.com/JSw5FPLGACZknOZv/arcgis/rest/services/Parking_Areas_State_Parks/FeatureServer/0": {
+"agency": "Delaware DNREC (State Parks)",
+"field": "Name",
+"parks": ""
+},
+"https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/PBS_Park_Entrances_Statewide/FeatureServer/0": {
+"agency": "Florida DEP Div. of Recreation and Parks",
+"field": "SITE_NAME",
+"parks": ""
+},
+"https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Park_Points/FeatureServer/0": {
+"agency": "Georgia DNR (State Parks points)",
+"field": "NAME",
+"parks": ""
+},
+"https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/State_Parking_Inventory/FeatureServer/0": {
+"agency": "Hawaii DLNR",
+"field": "POC_Name",
+"parks": ""
+},
+"https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Trail_Infrastructure_Points/FeatureServer/0": {
+"agency": "Iowa DNR",
+"field": "Type",
+"parks": ""
+},
+"https://gisdata.in.gov/server/rest/services/Hosted/DNR_Recreation_Sites_RO/FeatureServer/8": {
+"agency": "Indiana DNR",
+"field": "site",
+"parks": ""
+},
+"https://gisdata.in.gov/server/rest/services/Hosted/Trailheads_1/FeatureServer/0": {
+"agency": "Indiana DNR",
+"field": "trailheadname",
+"parks": ""
+},
+"https://services5.arcgis.com/RMHPuOW5MJ6iyTV6/arcgis/rest/services/Public_hunting_areas_entrance/FeatureServer/0": {
+"agency": "Kentucky Dept of Fish and Wildlife Resources",
+"field": "AREANAME",
+"parks": ""
+},
+"https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Public_Hunting_Area_Entrances_in_Kentucky/FeatureServer/0": {
+"agency": "Kentucky Div. of Geographic Information (KDFWR data)",
+"field": "AREANAME",
+"parks": ""
+},
+"https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DWSP_Public_Access_Map_Parking_and_Access/FeatureServer/0": {
+"agency": "Massachusetts DCR Division of Water Supply Protection",
+"field": "",
+"parks": ""
+},
+"https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DFW_Parking_for_Recreation_Maps_V3_view/FeatureServer/0": {
+"agency": "Massachusetts Division of Fisheries and Wildlife",
+"field": "SITE_NAME",
+"parks": ""
+},
+"https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/WMA_AccessPoints/FeatureServer/0": {
+"agency": "Maine Dept of Inland Fisheries and Wildlife",
+"field": "WMA_name",
+"parks": ""
+},
+"https://gisblue.mdc.mo.gov/arcgis/rest/services/Infrastructure/MDC_Infrastructure/MapServer/8": {
+"agency": "Missouri Dept of Conservation",
+"field": "Area_Name",
+"parks": ""
+},
+"https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_FAS_POINTS/FeatureServer/0": {
+"agency": "Montana Fish, Wildlife and Parks",
+"field": "NAME",
+"parks": ""
+},
+"https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/Montana_State_Parks_Trailheads/FeatureServer/0": {
+"agency": "Montana Fish, Wildlife and Parks",
+"field": "SITE_NAME",
+"parks": ""
+},
+"https://services6.arcgis.com/nRIB86xC7kq6wavB/arcgis/rest/services/NC_State_Parks_Points/FeatureServer/0": {
+"agency": "NC Division of Parks and Recreation",
+"field": "NAME",
+"parks": ""
+},
+"https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/Game_Land_Access/FeatureServer/1": {
+"agency": "NC Wildlife Resources Commission",
+"field": "TYPE",
+"parks": ""
+},
+"https://services8.arcgis.com/hg1B9Egwk1I5p300/arcgis/rest/services/nh_access_sites/FeatureServer/0": {
+"agency": "NH Fish and Game",
+"field": "",
+"parks": ""
+},
+"https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/Public_Access_Point_Locations_in_New_Jersey/FeatureServer/249": {
+"agency": "NJ DEP",
+"field": "",
+"parks": ""
+},
+"https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/Open_Space__State_Owned__Points_of_Interest_h/FeatureServer/62": {
+"agency": "NJ DEP State Park Service",
+"field": "SITE_NAME",
+"parks": ""
+},
+"https://services6.arcgis.com/DZHaqZm9cxOD4CWM/arcgis/rest/services/Public_Fishing_Parking_Areas/FeatureServer/2": {
+"agency": "NYS DEC",
+"field": "",
+"parks": ""
+},
+"https://gis.ohiodnr.gov/arcgis/rest/services/DWC_Services/Watercraft_Paddling_Draw/MapServer/14": {
+"agency": "Ohio DNR Division of Parks and Watercraft",
+"field": "",
+"parks": ""
+},
+"https://gis.ohiodnr.gov/arcgis/rest/services/DOW_Services/HuntingRegulations_AGOL_3/MapServer/12": {
+"agency": "Ohio DNR Division of Wildlife",
+"field": "PARK_NAME",
+"parks": ""
+},
+"https://gis.ohiodnr.gov/arcgis/rest/services/OCM_Services/PublicAccess/FeatureServer/0": {
+"agency": "Ohio DNR Office of Coastal Management",
+"field": "SiteName",
+"parks": ""
+},
+"https://gis.prd.state.or.us/arcgis/rest/services/Land_Ownership/LO_OPRD_Access_Points/FeatureServer/0": {
+"agency": "Oregon Parks and Recreation Dept",
+"field": "NAME",
+"parks": ""
+},
+"https://www.gis.dcnr.pa.gov/agsprod/rest/services/BRC/LocalParks/MapServer/0": {
+"agency": "Pennsylvania DCNR",
+"field": "",
+"parks": ""
+},
+"https://tpwd.texas.gov/arcgis/rest/services/Inland/RACA_Reference_Data/FeatureServer/2": {
+"agency": "Texas Parks and Wildlife Dept (Inland Fisheries)",
+"field": "Label",
+"parks": ""
+},
+"https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/UtahTrailheads/FeatureServer/0": {
+"agency": "Utah Geospatial Resource Center (UGRC)",
+"field": "PrimaryName",
+"parks": ""
+},
+"https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VATrailheads/FeatureServer/0": {
+"agency": "Virginia DCR",
+"field": "Park_Name",
+"parks": ""
+},
+"https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VSP_Entrance_POINTS/FeatureServer/19": {
+"agency": "Virginia DCR (State Parks)",
+"field": "",
+"parks": ""
+},
+"https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkEntrances/FeatureServer/0": {
+"agency": "Washington State Parks",
+"field": "ParkName",
+"parks": ""
+},
+"https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkingAreas/FeatureServer/0": {
+"agency": "Washington State Parks",
+"field": "ParkName",
+"parks": ""
+},
+"https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trailheads_PublicView/FeatureServer/0": {
+"agency": "Washington State Parks",
+"field": "TRAIL_HEAD_NAME",
+"parks": ""
+},
+"https://dnrmaps.wi.gov/arcgis/rest/services/WM_LMS/WM_LMS_Conservation_Infrastructure_WTM_Int/MapServer/27": {
+"agency": "Wisconsin DNR (Land Mgmt)",
+"field": "PARKING_LOT_NAME",
+"parks": ""
+},
+"https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/West_Virginia_Parking_Areas/FeatureServer/38": {
+"agency": "West Virginia DNR",
+"field": "Name",
+"parks": ""
+},
+"https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/CG_DAYUSE_PARKING/FeatureServer/9": {
+"agency": "Wyoming State Parks, Historic Sites and Trails",
+"field": "name",
+"parks": ""
+},
+"https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/Trailheads_Statewide/FeatureServer/0": {
+"agency": "Wyoming State Parks, Historic Sites and Trails",
+"field": "Name",
+"parks": ""
+}
+},
+"rows": {
+"uscamp-0": {
+"State / province": "CA-AB",
+"Parking / access layer URL": "https://services.arcgis.com/Eb8P5h4CJk8utIBz/arcgis/rest/services/StagingAreas/FeatureServer/0"
+},
+"uscamp-1": {
+"State / province": "CA-BC",
+"Parking / access layer URL": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_parks/MapServer/0"
+},
+"uscamp-2": {
+"State / province": "CA-BC",
+"Parking / access layer URL": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/1"
+},
+"uscamp-3": {
+"State / province": "CA-ON",
+"Parking / access layer URL": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/15"
+},
+"uscamp-4": {
+"State / province": "CA-ON",
+"Parking / access layer URL": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open04/MapServer/20"
+},
+"uscamp-5": {
+"State / province": "US-AR",
+"Parking / access layer URL": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/2026_ARWRice_Parking_-_Public_View/FeatureServer/0"
+},
+"uscamp-6": {
+"State / province": "US-CA",
+"Parking / access layer URL": "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/ParkingPoints/FeatureServer/0"
+},
+"uscamp-10": {
+"State / province": "US-CA",
+"Parking / access layer URL": "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/OHV_Trailheads_withUse/FeatureServer/101"
+},
+"uscamp-11": {
+"State / province": "US-CO",
+"Parking / access layer URL": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/COTREX_Trailheads_June_2025/FeatureServer/0"
+},
+"uscamp-12": {
+"State / province": "US-CT",
+"Parking / access layer URL": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/DEEP_Property_Access_Locations/FeatureServer/0"
+},
+"uscamp-13": {
+"State / province": "US-DE",
+"Parking / access layer URL": "https://services2.arcgis.com/JSw5FPLGACZknOZv/arcgis/rest/services/Parking_Areas_State_Parks/FeatureServer/0"
+},
+"uscamp-14": {
+"State / province": "US-FL",
+"Parking / access layer URL": "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/PBS_Park_Entrances_Statewide/FeatureServer/0"
+},
+"uscamp-15": {
+"State / province": "US-GA",
+"Parking / access layer URL": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Park_Points/FeatureServer/0"
+},
+"uscamp-16": {
+"State / province": "US-HI",
+"Parking / access layer URL": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/State_Parking_Inventory/FeatureServer/0"
+},
+"uscamp-17": {
+"State / province": "US-IA",
+"Parking / access layer URL": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Trail_Infrastructure_Points/FeatureServer/0"
+},
+"uscamp-18": {
+"State / province": "US-IN",
+"Parking / access layer URL": "https://gisdata.in.gov/server/rest/services/Hosted/DNR_Recreation_Sites_RO/FeatureServer/8"
+},
+"uscamp-19": {
+"State / province": "US-IN",
+"Parking / access layer URL": "https://gisdata.in.gov/server/rest/services/Hosted/Trailheads_1/FeatureServer/0"
+},
+"uscamp-20": {
+"State / province": "US-KY",
+"Parking / access layer URL": "https://services5.arcgis.com/RMHPuOW5MJ6iyTV6/arcgis/rest/services/Public_hunting_areas_entrance/FeatureServer/0"
+},
+"uscamp-21": {
+"State / province": "US-KY",
+"Parking / access layer URL": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Public_Hunting_Area_Entrances_in_Kentucky/FeatureServer/0"
+},
+"uscamp-22": {
+"State / province": "US-MA",
+"Parking / access layer URL": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DWSP_Public_Access_Map_Parking_and_Access/FeatureServer/0"
+},
+"uscamp-23": {
+"State / province": "US-MA",
+"Parking / access layer URL": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DFW_Parking_for_Recreation_Maps_V3_view/FeatureServer/0"
+},
+"uscamp-24": {
+"State / province": "US-ME",
+"Parking / access layer URL": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/WMA_AccessPoints/FeatureServer/0"
+},
+"uscamp-25": {
+"State / province": "US-MO",
+"Parking / access layer URL": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Infrastructure/MDC_Infrastructure/MapServer/8"
+},
+"uscamp-26": {
+"State / province": "US-MT",
+"Parking / access layer URL": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_FAS_POINTS/FeatureServer/0"
+},
+"uscamp-27": {
+"State / province": "US-MT",
+"Parking / access layer URL": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/Montana_State_Parks_Trailheads/FeatureServer/0"
+},
+"uscamp-28": {
+"State / province": "US-NC",
+"Parking / access layer URL": "https://services6.arcgis.com/nRIB86xC7kq6wavB/arcgis/rest/services/NC_State_Parks_Points/FeatureServer/0"
+},
+"uscamp-29": {
+"State / province": "US-NC",
+"Parking / access layer URL": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/Game_Land_Access/FeatureServer/1"
+},
+"uscamp-30": {
+"State / province": "US-NH",
+"Parking / access layer URL": "https://services8.arcgis.com/hg1B9Egwk1I5p300/arcgis/rest/services/nh_access_sites/FeatureServer/0"
+},
+"uscamp-31": {
+"State / province": "US-NJ",
+"Parking / access layer URL": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/Public_Access_Point_Locations_in_New_Jersey/FeatureServer/249"
+},
+"uscamp-32": {
+"State / province": "US-NJ",
+"Parking / access layer URL": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/Open_Space__State_Owned__Points_of_Interest_h/FeatureServer/62"
+},
+"uscamp-33": {
+"State / province": "US-NY",
+"Parking / access layer URL": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/arcgis/rest/services/Public_Fishing_Parking_Areas/FeatureServer/2"
+},
+"uscamp-34": {
+"State / province": "US-OH",
+"Parking / access layer URL": "https://gis.ohiodnr.gov/arcgis/rest/services/DWC_Services/Watercraft_Paddling_Draw/MapServer/14"
+},
+"uscamp-35": {
+"State / province": "US-OH",
+"Parking / access layer URL": "https://gis.ohiodnr.gov/arcgis/rest/services/DOW_Services/HuntingRegulations_AGOL_3/MapServer/12"
+},
+"uscamp-36": {
+"State / province": "US-OH",
+"Parking / access layer URL": "https://gis.ohiodnr.gov/arcgis/rest/services/OCM_Services/PublicAccess/FeatureServer/0"
+},
+"uscamp-37": {
+"State / province": "US-OR",
+"Parking / access layer URL": "https://gis.prd.state.or.us/arcgis/rest/services/Land_Ownership/LO_OPRD_Access_Points/FeatureServer/0"
+},
+"uscamp-38": {
+"State / province": "US-PA",
+"Parking / access layer URL": "https://www.gis.dcnr.pa.gov/agsprod/rest/services/BRC/LocalParks/MapServer/0"
+},
+"uscamp-39": {
+"State / province": "US-TX",
+"Parking / access layer URL": "https://tpwd.texas.gov/arcgis/rest/services/Inland/RACA_Reference_Data/FeatureServer/2"
+},
+"uscamp-40": {
+"State / province": "US-UT",
+"Parking / access layer URL": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/UtahTrailheads/FeatureServer/0"
+},
+"uscamp-41": {
+"State / province": "US-VA",
+"Parking / access layer URL": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VATrailheads/FeatureServer/0"
+},
+"uscamp-42": {
+"State / province": "US-VA",
+"Parking / access layer URL": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VSP_Entrance_POINTS/FeatureServer/19"
+},
+"uscamp-43": {
+"State / province": "US-WA",
+"Parking / access layer URL": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkEntrances/FeatureServer/0"
+},
+"uscamp-44": {
+"State / province": "US-WA",
+"Parking / access layer URL": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkingAreas/FeatureServer/0"
+},
+"uscamp-45": {
+"State / province": "US-WA",
+"Parking / access layer URL": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Trailheads_PublicView/FeatureServer/0"
+},
+"uscamp-46": {
+"State / province": "US-WI",
+"Parking / access layer URL": "https://dnrmaps.wi.gov/arcgis/rest/services/WM_LMS/WM_LMS_Conservation_Infrastructure_WTM_Int/MapServer/27"
+},
+"uscamp-47": {
+"State / province": "US-WV",
+"Parking / access layer URL": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/West_Virginia_Parking_Areas/FeatureServer/38"
+},
+"uscamp-48": {
+"State / province": "US-WY",
+"Parking / access layer URL": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/CG_DAYUSE_PARKING/FeatureServer/9"
+},
+"uscamp-49": {
+"State / province": "US-WY",
+"Parking / access layer URL": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/Trailheads_Statewide/FeatureServer/0"
+}
+}
+}
