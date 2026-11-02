@@ -197,7 +197,7 @@
    "km_to_record": 35.6,
    "evidence": "Looked: GNWT Environment_LCC/204 territorial park points (pin check), /193-195; GNWT ATLAS_Public 35/36 Commissioner's land tenure, 37 territorial land, 6 surveyed parcels (at pin and around the GNWT point); CPCAD; DFRP/4. Result: PIN OFF: real about 60.52,-116.22 (GNWT Environment_LCC/204 Twin Falls Gorge point); sheet pin about 40 km away. Alexandra Falls, Louise Falls and the campground are uni",
    "source": "https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT_Operational/ATLAS_Public/MapServer/35",
-   "date": "2026-11-01"
+   "date": "2026-11-02"
   },
   "CA-4319": {
    "name": "Anuniaqvia Niqiqyuam (Darnley Bay) Marine Protected Area",
@@ -395,7 +395,7 @@
    "km_to_record": 79.9,
    "evidence": "Looked: SK ParksAsTitled 0-7 and ParksAsLegislated 0-5 (name + pin); SK Planning 0-20 (NWA, Ramsar, WSA parcels, pastures, game preserves, ecological reserves); SK Heritage Property Search (points only); DFRP/4; Saskatoon/Regina parcels; SK cadastre (needs token, not usable). Result: PIN OFF: real 54.1066,-106.9311 (SK Parks polygon); sheet pin 80 km away. Also Planning/20 OBJECTID 3197. Confidenc",
    "source": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/2",
-   "date": "2026-11-01"
+   "date": "2026-11-02"
   },
   "CA-2704": {
    "name": "Kelvington Recreation Site",
@@ -450,7 +450,7 @@
    "km_to_record": 1.8,
    "evidence": "Looked: SK ParksAsTitled 0-7 and ParksAsLegislated 0-5 (name + pin); SK Planning 0-20 (NWA, Ramsar, WSA parcels, pastures, game preserves, ecological reserves); SK Heritage Property Search (points only); DFRP/4; Saskatoon/Regina parcels; SK cadastre (needs token, not usable). Result: NAME SOLVED: agency calls it Besant Recreation Site (on Hwy 1 just west of Mortlach). PIN OFF: polygon 1.8 km from ",
    "source": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/2",
-   "date": "2026-11-01"
+   "date": "2026-11-02"
   },
   "CA-2768": {
    "name": "Neely Lake Recreation Site",
@@ -494,7 +494,7 @@
    "km_to_record": 119.1,
    "evidence": "Looked: SK ParksAsTitled 0-7 and ParksAsLegislated 0-5 (name + pin); SK Planning 0-20 (NWA, Ramsar, WSA parcels, pastures, game preserves, ecological reserves); SK Heritage Property Search (points only); DFRP/4; Saskatoon/Regina parcels; SK cadastre (needs token, not usable). Result: PIN OFF: real 56.3363,-103.275 (SK Parks polygon); sheet pin 120 km away. Also Planning/20 OBJECTID 2946. Confidenc",
    "source": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/2",
-   "date": "2026-11-01"
+   "date": "2026-11-02"
   },
   "CA-2854": {
    "name": "Spiritwood Recreation Site",
@@ -527,7 +527,7 @@
    "km_to_record": 36.4,
    "evidence": "Looked: SK ParksAsTitled 0-7 and ParksAsLegislated 0-5 (name + pin); SK Planning 0-20 (NWA, Ramsar, WSA parcels, pastures, game preserves, ecological reserves); SK Heritage Property Search (points only); DFRP/4; Saskatoon/Regina parcels; SK cadastre (needs token, not usable). Result: PIN OFF: real 58.0989,-103.7905 (SK Parks polygon); sheet pin 36 km away. Also Planning/20 OBJECTID 3439. Confidenc",
    "source": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/2",
-   "date": "2026-11-01"
+   "date": "2026-11-02"
   },
   "CA-4927": {
    "name": "Battle of Tourond's Coulee / Fish Creek National Historic Site",
@@ -571,7 +571,7 @@
    "km_to_record": 382.4,
    "evidence": "Looked: GeoYukon GY_ParksProtectedAreas/0 (names in REMARKS) and /3; GY_LandTenure/27 (REMARKS) at pin and by name; GY_CultureHeritage/0 (points), /15 (FN heritage sites), /19 (heritage rivers); Yukon Register of Historic Places (YRHP) boundary text; DFRP/4; open.yukon.ca / yukon.ca campground map PDFs. Result: NAME SOLVED: no Yukon Habitat Protection Area by this name; agency layer calls it the T",
    "source": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_CultureHeritage/MapServer/19",
-   "date": "2026-11-01"
+   "date": "2026-11-02"
   },
   "CA-4939": {
    "name": "S.S. Keno National Historic Site",
@@ -616,6 +616,105 @@
    "evidence": "Yukon 'Parks and Campgrounds - Surveyed' layer. Earlier try failed only because the name is not in a NAME field; the campground name is in REMARKS. REMARKS 'LOT 32 GROUP 904 LITTLE SALMON LAKE (TERRITORIAL PARK CAMPGROUND)'. PIN OFF by 1.2 km; the other Little Salmon lot (11) is Drury Creek, 31 km away. Pin is 1217 m from the lot. Surveyed lot outline (official Yukon government). POTA check: api.p",
    "source": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
    "date": "2026-11-01"
+  },
+  "US-0884": {
+   "name": "Kings River National Wild and Scenic River",
+   "pota_pin": [
+    36.8423,
+    -118.875
+   ],
+   "km_to_record": 0.4,
+   "evidence": "PIN OFFSET: no hit at 200 m, but the Kings WSR line (USFS/NPS) is 440 m from the pin. Checked with ?f=json plus a point query.",
+   "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiverSegments_01/MapServer/0",
+   "date": "2026-11-02"
+  },
+  "US-6281": {
+   "name": "Loxahatchee River National Wild and Scenic River",
+   "pota_pin": [
+    26.9881,
+    -80.1429
+   ],
+   "km_to_record": 0.7,
+   "evidence": "PIN OFFSET: the checker uses a 200 m buffer and got no hit, but this record (managed by NPS/FL State Parks) is 698 m from the pin. That is a different record from the aquatic preserve in O. Checked with ?f=json plus a point query.",
+   "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiverSegments_01/MapServer/0",
+   "date": "2026-11-02"
+  },
+  "US-0280": {
+   "name": "Oxford Slough Wetland Management District",
+   "pota_pin": [
+    42.2358,
+    -111.993
+   ],
+   "km_to_record": 0.3,
+   "evidence": "N tried the NWRS boundaries layer, which has no WPAs. FWS Approved Acquisition Boundaries has the WPA. The pin is 263 m off (PIN OFFSET); the pin falls in the Bear River Watershed CA (container). The POTA name says 'Wetland Management District', but the unit is a WPA. Verified ?f=json + point query.",
+   "source": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+   "date": "2026-11-02"
+  },
+  "US-2230": {
+   "name": "Castle Rocks State Park",
+   "pota_pin": [
+    42.1367,
+    -113.677
+   ],
+   "km_to_record": 0.4,
+   "evidence": "IDL surface-management layer, STATEPR = Idaho Parks & Recreation land. The pin sits 402 m off, on BLM polygon 2936822. Total is about 1,742 ac, which matches the size of Castle Rocks SP. The Cassia Co. parcel service needs a login. PIN OFFSET. Verified ?f=json + point query.",
+   "source": "https://gis1.idl.idaho.gov/arcgis/rest/services/Portal/Idaho_Surface_Management_Agency/MapServer/0",
+   "date": "2026-11-02"
+  },
+  "US-0897": {
+   "name": "Westfield National Wild and Scenic River",
+   "pota_pin": [
+    42.0842,
+    -72.5856
+   ],
+   "km_to_record": 31.9,
+   "evidence": "PIN OFFSET of about 28 km: the POTA pin (42.0842,-72.5856) sits at Springfield/Agawam on the lower Westfield River. The designated WSR segments are in the Berkshire hilltowns: nearest point 42.2237,-72.8684 (OID 739), 28 km away, and OID 732, 32 km away. Found by a name query on wsr_river_name and checked with ?f=json. The checker missed it because it only looks within 200 m.",
+   "source": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiverSegments_01/MapServer/0",
+   "date": "2026-11-02"
+  },
+  "US-7097": {
+   "name": "Chickasaw Wildlife Management Area",
+   "pota_pin": [
+    33.9856,
+    -88.9355
+   ],
+   "km_to_record": 3.4,
+   "evidence": "PIN OFFSET: pin sits on a private inholding (OID 31); nearest Chickasaw WMA piece is 3.4 km away, main pieces 6.7-8.3 km. Tombigbee NF in I is the container. MS Forestry Commission basemap WMA layer (state agency; MDWFP-managed WMAs, fields NAME/OWNER/MANAGER). Layer stores each WMA as several fragment records; AREAACRE is the whole WMA. Not tried before: N's MDWFP Public_WMA_Data is dead and the ",
+   "source": "https://arcsrv.mfc.ms.gov/server/rest/services/MFCBasemap/MapServer/70",
+   "date": "2026-11-02"
+  },
+  "CA-4813": {
+   "name": "La Coupe Dry Dock National Historic Site",
+   "pota_pin": [
+    45.9159,
+    -64.267
+   ],
+   "km_to_record": 5.7,
+   "evidence": "Directory of Federal Real Property: La Coupe Dry Dock National Historic Site (custodian Parks Canada Agency). WHERE: DFRP layer 4 by name; POTA API (coords equal the sheet pin); Parks Canada page (it lists the site under Fort Beauséjour–Fort Cumberland and gives no coordinates). WHAT: exact-name polygon, 1.56 ha, Westmorland. PIN OFF: real location 45.8632,-64.2755 (DFRP 04269 centroid), ~5.8 km S",
+   "source": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4",
+   "date": "2026-11-02"
+  },
+  "CA-4829": {
+   "name": "Canso Islands National Historic Site",
+   "pota_pin": [
+    45.3462,
+    -60.9705
+   ],
+   "km_to_record": 154.2,
+   "evidence": "WHERE: DFRP layer 4, Parks Canada page parks.canada.ca/lhn-nhs/ns/canso, POTA API. NAME SOLVED: Parks Canada now calls the site \"Canso Islands National Historic Site\"; its archaeological site is Grassy Island, which DFRP still lists as Grassy Island Fort NHS (Parks Canada, 12.7 ha). PIN OFF: real location 45.3373,-60.9719 (DFRP 29944 centroid), ~0.8–1 km S of the pin (45.3462,-60.9705). The visito",
+   "source": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4",
+   "date": "2026-11-02"
+  },
+  "US-6086": {
+   "name": "Conger BLM Herd Management Area",
+   "pota_pin": [
+    38.169,
+    -113.721
+   ],
+   "km_to_record": 99.7,
+   "evidence": "BLM national Herd Management Area polygons (public hub copy; the gis.blm.gov/natl WH_Burro service needs a token). PIN OFFSET: the POTA pin (38.169,-113.721, near Bible Spring HMA, 1.1 km) is ~100 km south of the real Conger HMA (centroid 39.190,-113.732, Millard Co. UT). The UT_WHB layer in column N had 'no hit' because of the bad pin. Search at the HMA, not at the pin.",
+   "source": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/ArcGIS/rest/services/BLM_Natl_Wild_Horse_and_Burro_Heard_Mgmt_Area_Polygons/FeatureServer/0",
+   "date": "2026-11-02"
   }
  }
 }
