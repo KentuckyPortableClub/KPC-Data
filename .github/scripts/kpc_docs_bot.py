@@ -126,9 +126,16 @@ def late(): return time.time() - T0 > LIMIT
 def load(p, d):
     try: return json.load(open(p, encoding='utf-8'))
     except Exception: return d  # noqa: BLE001
+# Nov 2 (G3, outside review; HQ 10:15 AM): a page's map link once carried an embedded Google API key into data/docs/W-GB.json. Every
+# saved file now has keys / tokens in links replaced by REMOVED (a Google key anywhere, and key= / token= / signature= query values).
+SECRET_RX = [(re.compile(r'AIza[0-9A-Za-z_\-]{30,}'), 'REMOVED'),
+             (re.compile(r'(?i)((?:[?&;]|%3F|%26)(?:key|api_?key|apikey|token|access_token|auth|sig|signature|client_secret|password)(?:=|%3D))[^&"\'\s<>]+'), r'\1REMOVED')]
+def scrub(text):
+    for rx, rep in SECRET_RX: text = rx.sub(rep, text)
+    return text
 def save(p, obj):
     pathlib.Path(p).parent.mkdir(parents=True, exist_ok=True)
-    pathlib.Path(p).write_text(json.dumps(obj, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    pathlib.Path(p).write_text(scrub(json.dumps(obj, ensure_ascii=False, indent=1)) + '\n', encoding='utf-8')
 def host_of(u): return urllib.parse.urlparse(u).netloc.lower().split(':')[0]
 def base_host(h): return re.sub(r'^(www\d?|m)\.', '', h)
 def low(x): return ' '.join(re.sub(r'[^a-z0-9 ]', ' ', str(x or '').lower().replace('&', ' and ')).split())
