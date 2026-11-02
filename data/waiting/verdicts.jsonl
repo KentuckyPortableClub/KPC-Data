@@ -135093,3 +135093,12 @@
 {"date": "2026-11-02T16:01Z", "kind": "wwff", "path": "data/wwff/PYFF.json", "verdict": "HOLD", "why": ["F-4 checker error: AttributeError: 'list' object has no attribute 'get'"], "notes": []}
 {"date": "2026-11-02T16:01Z", "kind": "wwff", "path": "data/wwff/SMFF.json", "verdict": "HOLD", "why": ["F-4 checker error: AttributeError: 'list' object has no attribute 'get'"], "notes": []}
 {"date": "2026-11-02T16:01Z", "kind": "wwff", "path": "data/wwff/VEFF.json", "verdict": "HOLD", "why": ["F-4 checker error: AttributeError: 'list' object has no attribute 'get'"], "notes": []}
+{"date": "2026-11-02T16:08Z", "kind": "key", "path": "data/ca-key/CA-NL.json", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-02T16:08Z", "kind": "key", "path": "data/ca-key/CA-QC.json", "verdict": "HOLD", "why": ["F-O1 outlines 450 -> 438 (more than 1% lost)"], "notes": []}
+{"date": "2026-11-02T16:08Z", "kind": "key", "path": "data/ca-key/answers-applied.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-11-02T16:08Z", "kind": "key", "path": "data/ca-key/hardlook-joins.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-11-02T16:08Z", "kind": "campinfo", "path": "data/campinfo/US-AK.json", "verdict": "PASS", "why": [], "notes": ["no live copy: first time this file is published"]}
+{"date": "2026-11-02T16:08Z", "kind": "fers", "path": "data/fers/CA-AB.json.gz", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-02T16:08Z", "kind": "fers", "path": "data/fers/CA-QC.json.gz", "verdict": "PASS", "why": [], "notes": []}
+{"date": "2026-11-02T16:08Z", "kind": "fers", "path": "data/fers/US-WI.json", "verdict": "HOLD", "why": ["F-2 candidates 27 -> 3 (over 30% change)", "F-2 NOT SURE 8 -> 105 (over 30% change)", "F-2 only 3 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)", "F-K known 2-fer missing: US-4238 + US-8363"], "notes": ["replaces live data/fers/US-WI.json.gz (same file, other format): promotion removes the old name"]}
+{"date": "2026-11-02T16:08Z", "kind": "key", "path": "data/world-key/PY.json", "verdict": "HOLD", "why": ["F-O2 5 of 29 outlines carry a layer name that shares no word with the park (17%; live 0/0): outlines swapped to other parks?"], "notes": ["no live copy: first time this file is published"]}
