@@ -409,7 +409,13 @@ def has_outline(r): return bool((r or {}).get('m') or (r or {}).get('c'))
 NAME_STOP = set('state park parks national forest wildlife management area wma the of and nature preserve recreation lake river natural historic '
                 'site county city regional reserve conservation memorial trail wilderness refuge nwr sp sf creek fish game public lands land unit at on in '
                 'de la le du des provincial'.split())
-def name_words(s): return {w for w in re.findall(r'[a-z0-9]+', str(s or '').lower()) if len(w) > 2 and w not in NAME_STOP}
+def name_words(s):
+    """Nov 2 (chat 12, Cameroon / Paraguay): accents stripped first ('Bénoué' = 'Benoue', 'Lobéké' = 'Lobeke'; the old compare split
+    'Bénoué' into 'b' + 'nou'), any apostrophe dropped ('Ma’an' = "Ma'an")."""
+    import unicodedata
+    t = unicodedata.normalize('NFKD', str(s or '')).encode('ascii', 'ignore').decode().lower()
+    t = re.sub(r"['’`´]", '', t)
+    return {w for w in re.findall(r'[a-z0-9]+', t) if len(w) > 2 and w not in NAME_STOP}
 
 
 PADUS = 'https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query'
