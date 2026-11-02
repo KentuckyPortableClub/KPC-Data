@@ -5,14 +5,14 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 1951,
-    "parks": 1346,
-    "parks_with_hit": 193,
-    "SURE": 140,
-    "LIKELY": 109,
-    "UNLIKELY_evidence": 632,
-    "strong": 74,
-    "already_approved": 205,
+    "rows": 2134,
+    "parks": 1483,
+    "parks_with_hit": 197,
+    "SURE": 144,
+    "LIKELY": 112,
+    "UNLIKELY_evidence": 692,
+    "strong": 75,
+    "already_approved": 208,
     "open_without_whynot": 430,
     "non_official_candidates": 1,
     "unlikely_as_questions": 0,
@@ -31,19 +31,19 @@
     },
     {
      "reason": "not found: no-layer: no official record at the pin or by name",
-     "parks": 288
+     "parks": 401
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 267
+     "parks": 294
     },
     {
      "reason": "already approved: already approved",
-     "parks": 205
+     "parks": 208
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
-     "parks": 185
+     "parks": 206
     }
    ],
    "examples": [
@@ -108,20 +108,20 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 1951,
-    "found_or_candidate": 249,
+    "rows": 2134,
+    "found_or_candidate": 256,
     "blocked": 147,
-    "hit_rate": 0.128,
+    "hit_rate": 0.12,
     "bands": {
-     "STRONG": 74,
-     "WEAK": 169,
+     "STRONG": 75,
+     "WEAK": 175,
      "CONFLICT": 6
     },
     "tiers": {
-     "T-1": 27,
+     "T-1": 28,
      "T-2": 82,
-     "T-3": 112,
-     "T-4": 13,
+     "T-3": 116,
+     "T-4": 15,
      "T-6": 15
     },
     "every_open_park_has_whynot": false,
@@ -296,12 +296,12 @@
   "outline": {
    "pass1": {
     "error": 430,
-    "already approved": 205,
-    "found": 74,
-    "candidate": 179,
-    "evidence": 628,
+    "already approved": 208,
+    "found": 75,
+    "candidate": 185,
+    "evidence": 688,
     "blocked": 147,
-    "not found": 288
+    "not found": 401
    },
    "pass2": null,
    "pass2_solved": null,
