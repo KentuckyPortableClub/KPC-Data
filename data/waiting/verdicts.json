@@ -1,7 +1,63 @@
 {
- "checked": "2026-11-02T19:05Z",
+ "checked": "2026-11-02T22:32Z",
  "switched_on": false,
  "results": [
+  {
+   "path": "data/ca-key/CA-AB.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-NB.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-NL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-NS.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-ON.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-PE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/index.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/why-not.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
   {
    "path": "data/campinfo/US-MA.json",
    "kind": "campinfo",
@@ -519,11 +575,33 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/fers/CA-BC.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 NOT SURE 52 -> 14 (over 30% change)"
+   ],
+   "notes": [
+    "replaces live data/fers/CA-BC.json (same file, other format): promotion removes the old name"
+   ],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/fers/CA-NT.json",
    "kind": "fers",
    "why": [],
    "notes": [],
    "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-ON.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 candidates 13 -> 101 (over 30% change)",
+    "F-2 NOT SURE 302 -> 41 (over 30% change)",
+    "F-2 88 new candidate pairs since the live file (over 10% of 13): a person looks at them first, e.g. CA-0006+CA-6003, CA-0010+CA-0168, CA-0010+CA-0241"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/CA-QC.json.gz",
@@ -579,6 +657,18 @@
     "F-2 77 new candidate pairs since the live file (over 10% of 66): a person looks at them first, e.g. US-0046+US-4562, US-0049+US-4562, US-0049+US-4566"
    ],
    "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-CO.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 candidates 40 -> 64 (over 30% change)",
+    "F-2 25 new candidate pairs since the live file (over 10% of 40): a person looks at them first, e.g. US-0033+US-4575, US-0059+US-4558, US-0652+US-4575"
+   ],
+   "notes": [
+    "replaces live data/fers/US-CO.json (same file, other format): promotion removes the old name"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -673,12 +763,30 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/fers/US-MD.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 NOT SURE 8 -> 4 (over 30% change)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
    "path": "data/fers/US-MI.json.gz",
    "kind": "fers",
    "why": [
     "F-2 candidates 82 -> 108 (over 30% change)",
     "F-2 NOT SURE 9 -> 34 (over 30% change)",
     "F-2 39 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, US-10716+US-4239"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-MN.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -724,18 +832,20 @@
    "path": "data/fers/US-NE.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 15 -> 45 (over 30% change)",
-    "F-2 30 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360"
+    "F-2 candidates 15 -> 46 (over 30% change)",
+    "F-2 31 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360"
    ],
    "notes": [],
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-NH.json.gz",
+   "path": "data/fers/US-NH.json",
    "kind": "fers",
-   "why": [],
+   "why": [
+    "F-4 data/fers/US-NH.json replaces live data/fers/US-NH.json.gz (other format) with 130 rows for 167 (over 10% fewer)"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/US-NM.json.gz",

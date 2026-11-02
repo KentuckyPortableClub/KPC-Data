@@ -1,518 +1,124 @@
 {
  "about": "ca-key: the HELD build (data/waiting/in/data/ca-key/) vs the LIVE key (data/ca-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'ca-key'). Written by kpc_key_summary.py.",
- "made": "2026-11-02 17:38 UTC",
+ "made": "2026-11-02 22:32 UTC",
  "totals": {
-  "gained": 0,
-  "lost": 13,
-  "pieces_changed": 0,
+  "gained": 2,
+  "lost": 0,
+  "pieces_changed": 543,
   "grade_changed": 0
  },
  "per_area": {
-  "CA-QC": {
+  "CA-NB": {
    "gained": 0,
-   "lost": 13,
-   "pieces_changed": 0,
+   "lost": 0,
+   "pieces_changed": 235,
+   "grade_changed": 0
+  },
+  "CA-NL": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 55,
+   "grade_changed": 0
+  },
+  "CA-NS": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 238,
+   "grade_changed": 0
+  },
+  "CA-ON": {
+   "gained": 2,
+   "lost": 0,
+   "pieces_changed": 10,
+   "grade_changed": 0
+  },
+  "CA-PE": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 5,
    "grade_changed": 0
   }
  },
- "gained": [],
- "lost": [
+ "gained": [
   {
-   "area": "CA-QC",
-   "ref": "CA-1023",
-   "name": "Réserve faunique de Matane Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "area": "CA-ON",
+   "ref": "CA-5356",
+   "name": "Confederation Beach Park Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "Québec Réser:n-Réserve faunique de Matane",
-     "Réserve faunique de Matane",
-     306986,
-     "reviewed"
+     "Hard look~10:540",
+     "Confederation Beach Park",
+     286,
+     "name · Hard look~10 (live top-up)"
     ]
    ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1023"
+   "pota": "https://pota.app/#/park/CA-5356"
   },
   {
-   "area": "CA-QC",
-   "ref": "CA-1024",
-   "name": "Réserve faunique de Papineau-Labelle Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "area": "CA-ON",
+   "ref": "CA-5367",
+   "name": "McQuesten House / Whitehern National Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "Québec Réser:n-Réserve faunique de Papineau-Labelle",
-     "Réserve faunique de Papineau-Labelle",
-     392843,
-     "name · Québec Réserve faunique (MRNF)"
+     "Hard look~10:464",
+     "Whitehern",
+     1,
+     "name · Hard look~10 (live top-up)"
     ]
    ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1024"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1025",
-   "name": "Réserve faunique des Chic-Chocs Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique des Chic-Chocs",
-     "Réserve faunique des Chic-Chocs",
-     274590,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1025"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1026",
-   "name": "Réserve faunique des Laurentides Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique des Laurentides",
-     "Réserve faunique des Laurentides",
-     1931967,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1026"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1027",
-   "name": "Réserve faunique La Vérendrye Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique La Vérendrye",
-     "Réserve faunique La Vérendrye",
-     3032645,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1027"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1028",
-   "name": "Réserve faunique Mastigouche Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique Mastigouche",
-     "Réserve faunique Mastigouche",
-     381759,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1028"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1029",
-   "name": "Réserve faunique Rouge-Matawin Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique Rouge-Matawin",
-     "Réserve faunique Rouge-Matawin",
-     338188,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1029"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1928",
-   "name": "Ashuapmushuan Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique Ashuapmushuan",
-     "Réserve faunique Ashuapmushuan",
-     1080746,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1928"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-2208",
-   "name": "Port-Cartier-Sept-Iles Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique de Port-Cartier-Sept-Îles",
-     "Réserve faunique de Port-Cartier-Sept-Îles",
-     1574986,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-2208"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-2209",
-   "name": "Port-Daniel  Reserve Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique de Port-Daniel",
-     "Réserve faunique de Port-Daniel",
-     15850,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-2209"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-2211",
-   "name": "Portneuf Reserve faunique Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique de Portneuf",
-     "Réserve faunique de Portneuf",
-     188069,
-     "name · Québec Réserve faunique (MRNF)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-2211"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-2218",
-   "name": "Rimouski Reserve Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique de Rimouski",
-     "Réserve faunique de Rimouski",
-     180344,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-2218"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-2242",
-   "name": "Saint-Maurice Reserve Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique du Saint-Maurice",
-     "Réserve faunique du Saint-Maurice",
-     189589,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-2242"
+   "pota": "https://pota.app/#/park/CA-5367"
   }
  ],
+ "lost": [],
  "grade_changed": [],
  "sample": [
   {
-   "area": "CA-QC",
-   "ref": "CA-1023",
-   "name": "Réserve faunique de Matane Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "area": "CA-ON",
+   "ref": "CA-5356",
+   "name": "Confederation Beach Park Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "Québec Réser:n-Réserve faunique de Matane",
-     "Réserve faunique de Matane",
-     306986,
-     "reviewed"
+     "Hard look~10:540",
+     "Confederation Beach Park",
+     286,
+     "name · Hard look~10 (live top-up)"
     ]
    ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1023"
+   "pota": "https://pota.app/#/park/CA-5356"
   },
   {
-   "area": "CA-QC",
-   "ref": "CA-1024",
-   "name": "Réserve faunique de Papineau-Labelle Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "area": "CA-ON",
+   "ref": "CA-5367",
+   "name": "McQuesten House / Whitehern National Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "Québec Réser:n-Réserve faunique de Papineau-Labelle",
-     "Réserve faunique de Papineau-Labelle",
-     392843,
-     "name · Québec Réserve faunique (MRNF)"
+     "Hard look~10:464",
+     "Whitehern",
+     1,
+     "name · Hard look~10 (live top-up)"
     ]
    ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1024"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1025",
-   "name": "Réserve faunique des Chic-Chocs Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique des Chic-Chocs",
-     "Réserve faunique des Chic-Chocs",
-     274590,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1025"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1026",
-   "name": "Réserve faunique des Laurentides Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique des Laurentides",
-     "Réserve faunique des Laurentides",
-     1931967,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1026"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1027",
-   "name": "Réserve faunique La Vérendrye Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique La Vérendrye",
-     "Réserve faunique La Vérendrye",
-     3032645,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1027"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1028",
-   "name": "Réserve faunique Mastigouche Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique Mastigouche",
-     "Réserve faunique Mastigouche",
-     381759,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1028"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1029",
-   "name": "Réserve faunique Rouge-Matawin Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique Rouge-Matawin",
-     "Réserve faunique Rouge-Matawin",
-     338188,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1029"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-1928",
-   "name": "Ashuapmushuan Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique Ashuapmushuan",
-     "Réserve faunique Ashuapmushuan",
-     1080746,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-1928"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-2208",
-   "name": "Port-Cartier-Sept-Iles Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique de Port-Cartier-Sept-Îles",
-     "Réserve faunique de Port-Cartier-Sept-Îles",
-     1574986,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-2208"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-2209",
-   "name": "Port-Daniel  Reserve Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique de Port-Daniel",
-     "Réserve faunique de Port-Daniel",
-     15850,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-2209"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-2211",
-   "name": "Portneuf Reserve faunique Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique de Portneuf",
-     "Réserve faunique de Portneuf",
-     188069,
-     "name · Québec Réserve faunique (MRNF)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-2211"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-2218",
-   "name": "Rimouski Reserve Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique de Rimouski",
-     "Réserve faunique de Rimouski",
-     180344,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-2218"
-  },
-  {
-   "area": "CA-QC",
-   "ref": "CA-2242",
-   "name": "Saint-Maurice Reserve Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "Québec Réser:n-Réserve faunique du Saint-Maurice",
-     "Réserve faunique du Saint-Maurice",
-     189589,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-2242"
+   "pota": "https://pota.app/#/park/CA-5367"
   }
  ]
 }
