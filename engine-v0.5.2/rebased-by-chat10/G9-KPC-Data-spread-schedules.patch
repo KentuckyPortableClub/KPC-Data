@@ -1,0 +1,460 @@
+diff --git a/.github/workflows/kpc-camp-layers.yml b/.github/workflows/kpc-camp-layers.yml
+index dacd9a8f..d6a49d18 100644
+--- a/.github/workflows/kpc-camp-layers.yml
++++ b/.github/workflows/kpc-camp-layers.yml
+@@ -6,7 +6,7 @@ name: KPC campground layers (official campground point layers -> campground list
+ on:
+   workflow_dispatch:
+   schedule:
+-    - cron: '47 7 * * 6'
++    - cron: '49 7 * * 6'   # G9 Nov 2: was '47 7 * * 6' (spread the start times; now 2 min later)
+ permissions:
+   contents: write
+   actions: write
+diff --git a/.github/workflows/kpc-cell.yml b/.github/workflows/kpc-cell.yml
+index 2f0c8989..c0ffe33a 100644
+--- a/.github/workflows/kpc-cell.yml
++++ b/.github/workflows/kpc-cell.yml
+@@ -9,7 +9,7 @@ on:
+         description: 'also the two test parks outside KY (Chincoteague NWR VA, Red Rock Canyon NCA NV): yes / no'
+         default: 'yes'
+   schedule:
+-    - cron: '17 9 3 * *'
++    - cron: '16 9 3 * *'   # G9 Nov 2: was '17 9 3 * *' (spread the start times; now 1 min earlier)
+ permissions:
+   contents: write
+ concurrency:
+diff --git a/.github/workflows/kpc-closures.yml b/.github/workflows/kpc-closures.yml
+index 0fc0fbaa..9494ed22 100644
+--- a/.github/workflows/kpc-closures.yml
++++ b/.github/workflows/kpc-closures.yml
+@@ -28,7 +28,7 @@ on:
+         description: 'yes = read script-built pages (under 400 characters of text) in headless Chromium'
+         default: 'yes'
+   schedule:
+-    - cron: '37 */6 * * *'
++    - cron: '38 */6 * * *'   # G9 Nov 2: was '37 */6 * * *' (spread the start times; now 1 min later)
+ permissions:
+   contents: write
+   actions: write
+diff --git a/.github/workflows/kpc-collector.yml b/.github/workflows/kpc-collector.yml
+index 29c5a3fe..d837dc40 100644
+--- a/.github/workflows/kpc-collector.yml
++++ b/.github/workflows/kpc-collector.yml
+@@ -6,7 +6,7 @@ name: KPC layer collector (starts itself when the Fable / atlas files have new w
+ # layers to the intake queue, reasons in data/intake/collector.json. Nothing goes on a map without chat 11's YES. Never red.
+ on:
+   schedule:
+-    - cron: '17 */2 * * *'
++    - cron: '16 */2 * * *'   # G9 Nov 2: was '17 */2 * * *' (spread the start times; now 1 min earlier)
+   workflow_dispatch:
+ permissions:
+   contents: write
+diff --git a/.github/workflows/kpc-copy-from-links.yml b/.github/workflows/kpc-copy-from-links.yml
+index aeffff01..6b5058fc 100644
+--- a/.github/workflows/kpc-copy-from-links.yml
++++ b/.github/workflows/kpc-copy-from-links.yml
+@@ -8,9 +8,9 @@ name: KPC copy site data to KPC-Data (Step B3)
+ on:
+   workflow_dispatch:
+   schedule:
+-    - cron: '41 10 * * *'
++    - cron: '40 10 * * *'   # G9 Nov 2: was '41 10 * * *' (spread the start times; now 1 min earlier)
+     # Oct 29 (BOT C): a second look in the evening so a key rebuilt in the day reaches chat 11's sample the same night
+-    - cron: '41 1 * * *'
++    - cron: '40 1 * * *'   # G9 Nov 2: was '41 1 * * *' (spread the start times; now 1 min earlier)
+     # Oct 30 (Brandon 11:01 AM, 'All 3'): every hour a quick look: only when a map key changed in KPC-Links does the copy run
+     # (so chat 11's sample shows a new build within the hour); else the run ends in seconds
+     - cron: '11 * * * *'
+diff --git a/.github/workflows/kpc-detective.yml b/.github/workflows/kpc-detective.yml
+index 92cb118d..ed08dbfd 100644
+--- a/.github/workflows/kpc-detective.yml
++++ b/.github/workflows/kpc-detective.yml
+@@ -24,7 +24,7 @@ on:
+         description: 'Which jobs, in order: questions gaps (any subset)'
+         default: 'questions'
+   schedule:
+-    - cron: '41 10 * * *'   # Oct 31 (Brandon 'fold detective into look up'): daily, answers the look-up branch's 'dig' questions
++    - cron: '39 10 * * *'   # Oct 31 (Brandon 'fold detective into look up'): daily, answers the look-up branch's 'dig' questions   # G9 Nov 2: was '41 10 * * *' (spread the start times; now 2 min earlier)
+ permissions:
+   contents: write
+   actions: write
+diff --git a/.github/workflows/kpc-discovery.yml b/.github/workflows/kpc-discovery.yml
+index 2f4e6ed9..cd76e908 100644
+--- a/.github/workflows/kpc-discovery.yml
++++ b/.github/workflows/kpc-discovery.yml
+@@ -12,7 +12,7 @@ on:
+         description: 'Steps: A (catalog search) B (test leads) C (Maps tab, browser) D (write the list)'
+         default: 'A,B,C,D'
+   schedule:
+-    - cron: '29 9 * * 3'   # Brandon Nov 1 1:20 PM 'set all them to run on their own': every Wednesday, 8 states / provinces in turn (all of them in 8 weeks)
++    - cron: '28 9 * * 3'   # Brandon Nov 1 1:20 PM 'set all them to run on their own': every Wednesday, 8 states / provinces in turn (all of them in 8 weeks)   # G9 Nov 2: was '29 9 * * 3' (spread the start times; now 1 min earlier)
+ permissions:
+   contents: write
+ env:   # the inputs with their defaults: a timed run has no inputs (Nov 1, chat 10)
+diff --git a/.github/workflows/kpc-docs-merge.yml b/.github/workflows/kpc-docs-merge.yml
+index 9b0f3776..76e411e5 100644
+--- a/.github/workflows/kpc-docs-merge.yml
++++ b/.github/workflows/kpc-docs-merge.yml
+@@ -6,7 +6,7 @@ name: KPC outside documents merge (into data/docs through the waiting room)
+ on:
+   workflow_dispatch:
+   schedule:
+-    - cron: '27 6 * * *'
++    - cron: '26 6 * * *'   # G9 Nov 2: was '27 6 * * *' (spread the start times; now 1 min earlier)
+ permissions:
+   contents: write
+   actions: write
+diff --git a/.github/workflows/kpc-engine.yml b/.github/workflows/kpc-engine.yml
+index 97526724..a952449d 100644
+--- a/.github/workflows/kpc-engine.yml
++++ b/.github/workflows/kpc-engine.yml
+@@ -10,7 +10,7 @@ on:
+         description: 'areas (blank = the acceptance areas)'
+         default: ''
+   schedule:
+-    - cron: '7 4 * * *'
++    - cron: '8 4 * * *'   # G9 Nov 2: was '7 4 * * *' (spread the start times; now 1 min later)
+     - cron: '37 */3 * * *'   # Brandon Nov 1 4:37 AM 'leave test running 24 hours': every 3 h for the first 24 h after it lands (the step below stops these after day 1)
+ permissions:
+   contents: write
+diff --git a/.github/workflows/kpc-eu-alerts.yml b/.github/workflows/kpc-eu-alerts.yml
+index 8102632d..4207e528 100644
+--- a/.github/workflows/kpc-eu-alerts.yml
++++ b/.github/workflows/kpc-eu-alerts.yml
+@@ -4,7 +4,7 @@ name: KPC Europe weather warnings
+ # warnings really changed (a new time stamp alone is not a change). Never fails. No secrets.
+ on:
+   schedule:
+-    - cron: '41 */6 * * *'
++    - cron: '40 */6 * * *'   # G9 Nov 2: was '41 */6 * * *' (spread the start times; now 1 min earlier)
+   workflow_dispatch:
+ permissions:
+   contents: write
+diff --git a/.github/workflows/kpc-fetch-files.yml b/.github/workflows/kpc-fetch-files.yml
+index 2d89eb69..e2af1a95 100644
+--- a/.github/workflows/kpc-fetch-files.yml
++++ b/.github/workflows/kpc-fetch-files.yml
+@@ -7,7 +7,7 @@ name: KPC fetch files - boundary files by their link (daily for new links, month
+ on:
+   workflow_dispatch:
+   schedule:
+-    - cron: '41 10 * * *'
++    - cron: '38 10 * * *'   # G9 Nov 2: was '41 10 * * *' (spread the start times; now 3 min earlier)
+ permissions:
+   contents: write
+ concurrency:
+diff --git a/.github/workflows/kpc-flow.yml b/.github/workflows/kpc-flow.yml
+index 010d6566..05729199 100644
+--- a/.github/workflows/kpc-flow.yml
++++ b/.github/workflows/kpc-flow.yml
+@@ -5,7 +5,7 @@ name: KPC flow board - every pile of work, who it waits on, when it last moved (
+ # Every chat sees its lines at the start (KPC-Links .claude/build/inbox_now.py). Reads only, decides nothing, never red.
+ on:
+   schedule:
+-    - cron: '47 */3 * * *'
++    - cron: '46 */3 * * *'   # G9 Nov 2: was '47 */3 * * *' (spread the start times; now 1 min earlier)
+   workflow_dispatch:
+ permissions:
+   contents: write
+diff --git a/.github/workflows/kpc-intake.yml b/.github/workflows/kpc-intake.yml
+index eb31593f..68e905c9 100644
+--- a/.github/workflows/kpc-intake.yml
++++ b/.github/workflows/kpc-intake.yml
+@@ -20,7 +20,7 @@ on:
+         description: 'yes = print the known-answer test table and the GATE line'
+         default: ''
+   schedule:
+-    - cron: '41 8 * * *'
++    - cron: '40 8 * * *'   # G9 Nov 2: was '41 8 * * *' (spread the start times; now 1 min earlier)
+ permissions:
+   contents: write
+   actions: write
+diff --git a/.github/workflows/kpc-lookup-tidy.yml b/.github/workflows/kpc-lookup-tidy.yml
+index e9082567..6213018b 100644
+--- a/.github/workflows/kpc-lookup-tidy.yml
++++ b/.github/workflows/kpc-lookup-tidy.yml
+@@ -4,7 +4,7 @@ name: KPC look-up branch tidy (weekly)
+ # the current files, so old screenshots really leave the repo. Main never holds look-up files. Never goes red.
+ on:
+   schedule:
+-    - cron: '23 11 * * 0'
++    - cron: '24 11 * * 0'   # G9 Nov 2: was '23 11 * * 0' (spread the start times; now 1 min later)
+   workflow_dispatch:
+ permissions:
+   contents: write
+diff --git a/.github/workflows/kpc-map-links.yml b/.github/workflows/kpc-map-links.yml
+index 85524049..32c4f0e6 100644
+--- a/.github/workflows/kpc-map-links.yml
++++ b/.github/workflows/kpc-map-links.yml
+@@ -11,7 +11,7 @@ on:
+         description: 'yes = Tennessee only'
+         default: 'yes'
+   schedule:
+-    - cron: '11 5 2 * *'   # monthly, whole US (chat 10 Oct 31: HQ 9:25 PM 'wired, not hand fed')
++    - cron: '10 5 2 * *'   # monthly, whole US (chat 10 Oct 31: HQ 9:25 PM 'wired, not hand fed')   # G9 Nov 2: was '11 5 2 * *' (spread the start times; now 1 min earlier)
+ permissions:
+   contents: write
+   actions: write
+diff --git a/.github/workflows/kpc-map-pictures.yml b/.github/workflows/kpc-map-pictures.yml
+index 0f2dcf2a..b3690151 100644
+--- a/.github/workflows/kpc-map-pictures.yml
++++ b/.github/workflows/kpc-map-pictures.yml
+@@ -7,7 +7,7 @@ name: KPC map picture maker (KPC_9) - pictures for chat 11's open questions (too
+ # sends its row BACK to chat 11 in data/waiting/questions/second-look.json with the picture's address (grade with the map).
+ on:
+   schedule:
+-    - cron: '23 7 * * *'
++    - cron: '24 7 * * *'   # G9 Nov 2: was '23 7 * * *' (spread the start times; now 1 min later)
+   workflow_dispatch:
+     inputs:
+       answer:
+diff --git a/.github/workflows/kpc-parking-explorer.yml b/.github/workflows/kpc-parking-explorer.yml
+index 14524744..a30180c2 100644
+--- a/.github/workflows/kpc-parking-explorer.yml
++++ b/.github/workflows/kpc-parking-explorer.yml
+@@ -5,7 +5,7 @@ name: KPC parking layer explorer
+ # Monthly (the 3rd, before the access run on the 6th) + by hand. Never fails (a failed run emails Brandon).
+ on:
+   schedule:
+-    - cron: '17 9 3 * *'
++    - cron: '18 9 3 * *'   # G9 Nov 2: was '17 9 3 * *' (spread the start times; now 1 min later)
+   workflow_dispatch:
+     inputs:
+       minutes:
+diff --git a/.github/workflows/kpc-picture-trace.yml b/.github/workflows/kpc-picture-trace.yml
+index 1ad19301..104fbedb 100644
+--- a/.github/workflows/kpc-picture-trace.yml
++++ b/.github/workflows/kpc-picture-trace.yml
+@@ -10,7 +10,7 @@ on:
+         description: 'yes = trace every map again (after a tracer change), not only the new ones'
+         default: 'no'
+   schedule:
+-    - cron: '47 6 * * 0'
++    - cron: '49 6 * * 0'   # G9 Nov 2: was '47 6 * * 0' (spread the start times; now 2 min later)
+ permissions:
+   contents: write
+   actions: write
+diff --git a/.github/workflows/kpc-pota-activity.yml b/.github/workflows/kpc-pota-activity.yml
+index 322dbfcf..96ca229b 100644
+--- a/.github/workflows/kpc-pota-activity.yml
++++ b/.github/workflows/kpc-pota-activity.yml
+@@ -4,7 +4,7 @@ name: KPC POTA activity - activations per park, whole world (weekly, branch tool
+ on:
+   workflow_dispatch:
+   schedule:
+-    - cron: '11 5 * * 0'
++    - cron: '10 5 * * 0'   # G9 Nov 2: was '11 5 * * 0' (spread the start times; now 1 min earlier)
+ permissions:
+   contents: write
+ concurrency:
+diff --git a/.github/workflows/kpc-retry-hosts.yml b/.github/workflows/kpc-retry-hosts.yml
+index e5e112ba..a9f57e32 100644
+--- a/.github/workflows/kpc-retry-hosts.yml
++++ b/.github/workflows/kpc-retry-hosts.yml
+@@ -6,7 +6,7 @@ name: KPC retry list - the research's blocked servers, one honest try from GitHu
+ on:
+   workflow_dispatch:
+   schedule:
+-    - cron: '27 9 3 * *'
++    - cron: '26 9 3 * *'   # G9 Nov 2: was '27 9 3 * *' (spread the start times; now 1 min earlier)
+ permissions:
+   contents: write
+ concurrency:
+diff --git a/.github/workflows/kpc-scoreboard.yml b/.github/workflows/kpc-scoreboard.yml
+index d0534693..a787fa9a 100644
+--- a/.github/workflows/kpc-scoreboard.yml
++++ b/.github/workflows/kpc-scoreboard.yml
+@@ -6,7 +6,7 @@ name: KPC scoreboard (nightly counts, facts only)
+ on:
+   workflow_dispatch:
+   schedule:
+-    - cron: '23 7 * * *'
++    - cron: '21 7 * * *'   # G9 Nov 2: was '23 7 * * *' (spread the start times; now 2 min earlier)
+ permissions:
+   contents: write
+ concurrency:
+diff --git a/.github/workflows/kpc-sota-land.yml b/.github/workflows/kpc-sota-land.yml
+index 71b1a4fc..1e856d14 100644
+--- a/.github/workflows/kpc-sota-land.yml
++++ b/.github/workflows/kpc-sota-land.yml
+@@ -4,7 +4,7 @@ name: KPC SOTA public land
+ # rebase). Never fails.
+ on:
+   schedule:
+-    - cron: '23 9 3 * *'   # monthly, the 3rd at 4:23 AM Central (Brandon GO Oct 28: was daily)
++    - cron: '24 9 3 * *'   # monthly, the 3rd at 4:23 AM Central (Brandon GO Oct 28: was daily)   # G9 Nov 2: was '23 9 3 * *' (spread the start times; now 1 min later)
+   workflow_dispatch:
+ permissions:
+   contents: write
+diff --git a/.github/workflows/kpc-state-leaders.yml b/.github/workflows/kpc-state-leaders.yml
+index 79c8f0fb..0682ab02 100644
+--- a/.github/workflows/kpc-state-leaders.yml
++++ b/.github/workflows/kpc-state-leaders.yml
+@@ -4,7 +4,7 @@ name: KPC state leaders
+ # Only parks with new activations are re-read (the cache below). One commit per run, only real changes. Never fails. No secrets.
+ on:
+   schedule:
+-    - cron: '23 6 * * 3'    # weekly only, Wed 1:23 AM Central (Brandon GO Oct 28: the daily Kentucky run was dropped)
++    - cron: '21 6 * * 3'    # weekly only, Wed 1:23 AM Central (Brandon GO Oct 28: the daily Kentucky run was dropped)   # G9 Nov 2: was '23 6 * * 3' (spread the start times; now 2 min earlier)
+   workflow_dispatch:
+     inputs:
+       states:
+diff --git a/.github/workflows/kpc-state-links.yml b/.github/workflows/kpc-state-links.yml
+index dff5226f..218b2998 100644
+--- a/.github/workflows/kpc-state-links.yml
++++ b/.github/workflows/kpc-state-links.yml
+@@ -4,7 +4,7 @@ name: KPC park links by state
+ # rebase). Never fails.
+ on:
+   schedule:
+-    - cron: '41 8 * * 2'
++    - cron: '39 8 * * 2'   # G9 Nov 2: was '41 8 * * 2' (spread the start times; now 2 min earlier)
+   workflow_dispatch:
+     inputs:
+       states:
+diff --git a/.github/workflows/kpc-state-trails.yml b/.github/workflows/kpc-state-trails.yml
+index e95efa48..35e73087 100644
+--- a/.github/workflows/kpc-state-trails.yml
++++ b/.github/workflows/kpc-state-trails.yml
+@@ -4,7 +4,7 @@ name: KPC state trail lines
+ # rebase). Never fails.
+ on:
+   schedule:
+-    - cron: '29 7 4 * *'
++    - cron: '28 7 4 * *'   # G9 Nov 2: was '29 7 4 * *' (spread the start times; now 1 min earlier)
+   workflow_dispatch:
+     inputs:
+       states:
+diff --git a/.github/workflows/kpc-storage.yml b/.github/workflows/kpc-storage.yml
+index 55057df6..c361780f 100644
+--- a/.github/workflows/kpc-storage.yml
++++ b/.github/workflows/kpc-storage.yml
+@@ -5,7 +5,7 @@ name: KPC storage keeper (Sundays; measures all, cleans this repo)
+ # Ends red ONLY when a repo is over its line (KPC-Links 650 MB, KPC-Data 400 MB) = the one email that matters.
+ on:
+   schedule:
+-    - cron: '7 9 * * 0'
++    - cron: '6 9 * * 0'   # G9 Nov 2: was '7 9 * * 0' (spread the start times; now 1 min earlier)
+   workflow_dispatch:
+ permissions:
+   contents: write
+diff --git a/.github/workflows/kpc-tile-index.yml b/.github/workflows/kpc-tile-index.yml
+index ba638b31..0da596e0 100644
+--- a/.github/workflows/kpc-tile-index.yml
++++ b/.github/workflows/kpc-tile-index.yml
+@@ -3,7 +3,7 @@ name: KPC tile index (nightly)
+ # {updated, keys: ["37_-86", ...]} from the tiles that exist, so the site only asks for real tiles (no 404s). Never goes red.
+ on:
+   schedule:
+-    - cron: '47 7 * * *'
++    - cron: '46 7 * * *'   # G9 Nov 2: was '47 7 * * *' (spread the start times; now 1 min earlier)
+   workflow_dispatch:
+ permissions:
+   contents: write
+diff --git a/.github/workflows/kpc-us-access.yml b/.github/workflows/kpc-us-access.yml
+index 999e125d..a698299b 100644
+--- a/.github/workflows/kpc-us-access.yml
++++ b/.github/workflows/kpc-us-access.yml
+@@ -4,7 +4,7 @@ name: KPC US access points
+ # rebase). Never fails.
+ on:
+   schedule:
+-    - cron: '41 8 6 * *'          # monthly, the 6th (after the US key on the 1st)
++    - cron: '39 8 6 * *'          # monthly, the 6th (after the US key on the 1st)   # G9 Nov 2: was '41 8 6 * *' (spread the start times; now 2 min earlier)
+   workflow_dispatch:
+     inputs:
+       states:
+diff --git a/.github/workflows/kpc-us-trails.yml b/.github/workflows/kpc-us-trails.yml
+index 27a257b8..681592e8 100644
+--- a/.github/workflows/kpc-us-trails.yml
++++ b/.github/workflows/kpc-us-trails.yml
+@@ -4,7 +4,7 @@ name: KPC national trail lines
+ # rebase). Never fails.
+ on:
+   schedule:
+-    - cron: '13 7 * * 1'   # Nov 1: weekly (Mondays), so new finds reach the key within a week (was monthly)
++    - cron: '12 7 * * 1'   # Nov 1: weekly (Mondays), so new finds reach the key within a week (was monthly)   # G9 Nov 2: was '13 7 * * 1' (spread the start times; now 1 min earlier)
+   workflow_dispatch:
+ permissions:
+   contents: write
+diff --git a/.github/workflows/kpc-waiting-room.yml b/.github/workflows/kpc-waiting-room.yml
+index 0e7f5e03..1e239358 100644
+--- a/.github/workflows/kpc-waiting-room.yml
++++ b/.github/workflows/kpc-waiting-room.yml
+@@ -7,7 +7,7 @@ name: KPC waiting room (by hand; nightly release-approved)
+ # Never goes red (EMAIL rule): every step continues on error; the only save is data/waiting + data/status.
+ on:
+   schedule:
+-    - cron: '43 */2 * * *'   # Oct 31 1:15 AM (HQ, Brandon 'no rest for the bots'): release-approved every 2 hours too, so chat 11's YES goes live the same night
++    - cron: '42 */2 * * *'   # Oct 31 1:15 AM (HQ, Brandon 'no rest for the bots'): release-approved every 2 hours too, so chat 11's YES goes live the same night   # G9 Nov 2: was '43 */2 * * *' (spread the start times; now 1 min earlier)
+     - cron: '13 11 * * *'   # Oct 29 11:25 PM (chat 2 BOT D, Brandon 11:18 PM 'build it!'): nightly release-approved, after the 10:41 UTC daily copy
+   workflow_dispatch:
+     inputs:
+diff --git a/.github/workflows/kpc-watchdog.yml b/.github/workflows/kpc-watchdog.yml
+index c0b69020..852c005e 100644
+--- a/.github/workflows/kpc-watchdog.yml
++++ b/.github/workflows/kpc-watchdog.yml
+@@ -4,8 +4,8 @@ name: KPC skipped-run watchdog
+ # hand (kpc_watchdog.py). Remembered in data/status/watchdog.json; one board line. Never red.
+ on:
+   schedule:
+-    - cron: '7 */2 * * *'
+-    - cron: '37 */2 * * *'   # a second chance: GitHub skips the watchdog too
++    - cron: '6 */2 * * *'   # G9 Nov 2: was '7 */2 * * *' (spread the start times; now 1 min earlier)
++    - cron: '36 */2 * * *'   # a second chance: GitHub skips the watchdog too   # G9 Nov 2: was '37 */2 * * *' (spread the start times; now 1 min earlier)
+   workflow_dispatch:
+     inputs:
+       size:
+diff --git a/.github/workflows/kpc-workshop.yml b/.github/workflows/kpc-workshop.yml
+index 6001911e..32bdc821 100644
+--- a/.github/workflows/kpc-workshop.yml
++++ b/.github/workflows/kpc-workshop.yml
+@@ -35,7 +35,7 @@ on:
+         description: "yes = the ONE keyed fill (Brandon Oct 29 9:34 AM): campinfo US-KY federal rows from Recreation.gov's API, ONLY empty fields, into data/waiting/in (chat 11 grades, a person releases). Never on the schedule."
+         default: ''
+   schedule:
+-    - cron: '17 9 * * 0'
++    - cron: '16 9 * * 0'   # G9 Nov 2: was '17 9 * * 0' (spread the start times; now 1 min earlier)
+ permissions:
+   contents: write
+   actions: write
+diff --git a/.github/workflows/kpc-world-finder.yml b/.github/workflows/kpc-world-finder.yml
+index ef0fda4b..4e98f5c0 100644
+--- a/.github/workflows/kpc-world-finder.yml
++++ b/.github/workflows/kpc-world-finder.yml
+@@ -5,7 +5,7 @@ name: KPC world finder v2 (stage 1, hidden)
+ # time passes. Hidden data only (freeze): candidates for chat 11, leads for the intake. Never goes red.
+ on:
+   schedule:
+-    - cron: '23 */6 * * *'   # Oct 30 (Brandon 6:01 AM 'set timer'): 5 chunks every 6 h = round the clock until stage 1 is done (then each run finds nothing and stops)
++    - cron: '24 */6 * * *'   # Oct 30 (Brandon 6:01 AM 'set timer'): 5 chunks every 6 h = round the clock until stage 1 is done (then each run finds nothing and stops)   # G9 Nov 2: was '23 */6 * * *' (spread the start times; now 1 min later)
+   workflow_dispatch:
+     inputs:
+       countries:
+diff --git a/.github/workflows/kpc-wwff-dir.yml b/.github/workflows/kpc-wwff-dir.yml
+index 36fd4af0..30f0cfd1 100644
+--- a/.github/workflows/kpc-wwff-dir.yml
++++ b/.github/workflows/kpc-wwff-dir.yml
+@@ -4,7 +4,7 @@ name: KPC WWFF + SOTA directory copy
+ # rebase). Never fails.
+ on:
+   schedule:
+-    - cron: '23 9 * * 0'
++    - cron: '24 9 * * 0'   # G9 Nov 2: was '23 9 * * 0' (spread the start times; now 1 min later)
+   workflow_dispatch:
+ permissions:
+   contents: write
+diff --git a/.github/workflows/kpc-youtube-comments.yml b/.github/workflows/kpc-youtube-comments.yml
+index d6a2f869..0eef06bb 100644
+--- a/.github/workflows/kpc-youtube-comments.yml
++++ b/.github/workflows/kpc-youtube-comments.yml
+@@ -6,7 +6,7 @@ name: KPC YouTube comments
+ # Memory: data/status/youtube-seen.json (60 days). Never fails. Tick 'dry_run' to print instead of posting.
+ on:
+   schedule:
+-    - cron: '37 13 * * *'    # 8:37 AM Central (7:37 in winter)
++    - cron: '36 13 * * *'    # 8:37 AM Central (7:37 in winter)   # G9 Nov 2: was '37 13 * * *' (spread the start times; now 1 min earlier)
+   workflow_dispatch:
+     inputs:
+       dry_run:
