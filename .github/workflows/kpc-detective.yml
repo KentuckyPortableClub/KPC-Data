@@ -9,8 +9,13 @@ name: KPC park detective (missing outlines + questions)
 # A job works in MINUTES chunks (max 5 chunks x 55 min); when areas remain and 'chain' allows, the job starts the next one.
 # WEEKLY (Monday 10:41 UTC): only once data/detective/state.json says 'proven' (Brandon's GO after chat 8 graded the first batches).
 on:
+  # Nov 2 review (G11): a watchdog restart passes as_schedule=<the missed cron>, so it runs exactly like that scheduled run.
   workflow_dispatch:
     inputs:
+      as_schedule:
+        description: 'Set by the watchdog only: run as the missed scheduled run of this cron (empty = a normal by-hand run)'
+        required: false
+        default: ''
       areas:
         description: 'Areas (e.g. "US-KY US-NV"); blank = the next unfinished areas in queue order (KY NV ID MS WA UT AR OR NC, the rest of the US, then ON QC NB NS, other provinces)'
         default: ''
@@ -61,7 +66,7 @@ jobs:
         run: |
           cd kpcdata
           N=$(python3 .github/scripts/kpc_dig_bridge.py in ../lk | grep -o '^NEW=[0-9]*' | cut -d= -f2)
-          if [ "${{ github.event_name }}" = schedule ]; then
+          if [ "${{ (inputs.as_schedule && 'schedule') || github.event_name }}" = schedule ]; then
             OPEN=$(python3 -c "import json;q=json.load(open('data/detective/questions.json')).get('questions',[]);a=json.load(open('data/detective/answers.json')).get('answers',{});print(sum(1 for x in q if x.get('id') not in a))" 2>/dev/null || echo 0)
             if [ "${N:-0}" = 0 ] && [ "$OPEN" = 0 ]; then echo "no dig question waiting"; echo "skip=1" >> "$GITHUB_OUTPUT"; exit 0; fi
             echo "AREAS=" >> "$GITHUB_ENV"; echo "JOBS=questions" >> "$GITHUB_ENV"

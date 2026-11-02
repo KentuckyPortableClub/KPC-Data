@@ -4,8 +4,13 @@ name: KPC GIS hunter (Fable lists, hidden)
 # Decides nothing: candidates -> data/waiting/questions/gis-hunter.json (chat 11 YES / NO), new layers -> data/intake/queue.json,
 # rows -> data/gis-hunter/worklog-<area>.md. Hidden data only (freeze). Dispatch only; chains itself; never goes red.
 on:
+  # Nov 2 review (G11): a watchdog restart passes as_schedule=<the missed cron>, so it runs exactly like that scheduled run.
   workflow_dispatch:
     inputs:
+      as_schedule:
+        description: 'Set by the watchdog only: run as the missed scheduled run of this cron (empty = a normal by-hand run)'
+        required: false
+        default: ''
       country:
         description: 'US or CA (used when areas is blank)'
         default: 'US'
@@ -34,8 +39,8 @@ env:   # the inputs with their defaults: a timed run has no inputs (Nov 1, chat 
   I_AREAS: ${{ inputs.areas || '' }}
   I_CHUNKS: ${{ inputs.chunks || '5' }}
   I_CHAIN: ${{ inputs.chain || '4' }}
-  I_PASS: ${{ inputs.pass || (github.event_name == 'schedule' && format('weekly-{0}', github.run_id)) || '' }}
-  I_THEN: ${{ inputs.then || (github.event_name == 'schedule' && 'CA') || '' }}
+  I_PASS: ${{ inputs.pass || ((github.event_name == 'schedule' || inputs.as_schedule) && format('weekly-{0}', github.run_id)) || '' }}
+  I_THEN: ${{ inputs.then || ((github.event_name == 'schedule' || inputs.as_schedule) && 'CA') || '' }}
 concurrency:
   group: kpc-gis-hunter
   cancel-in-progress: false

@@ -9,6 +9,11 @@ on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '51 6 * * *'
   workflow_dispatch:
+    inputs:
+      as_schedule:
+        description: 'Set by the watchdog only: run as the missed scheduled run of this cron (empty = a normal by-hand run)'
+        required: false
+        default: ''
 permissions:
   contents: write
 concurrency:
@@ -23,7 +28,7 @@ jobs:
         id: when
         run: |
           D=$(date -u +%Y%m%d)
-          if [ "$D" -lt 20261101 ] && [ "${{ github.event_name }}" = schedule ] || [ "$D" -gt 20261108 ]; then echo "off=1" >> $GITHUB_OUTPUT; echo "::notice title=Outside-KY trial::not in the Nov 1-7 week: nothing to do"; fi
+          if [ "$D" -lt 20261101 ] && [ "${{ (inputs.as_schedule && 'schedule') || github.event_name }}" = schedule ] || [ "$D" -gt 20261108 ]; then echo "off=1" >> $GITHUB_OUTPUT; echo "::notice title=Outside-KY trial::not in the Nov 1-7 week: nothing to do"; fi
           echo "day=$(( ( $(date -u +%s) - $(date -u -d 2026-11-01 +%s) ) / 86400 ))" >> $GITHUB_OUTPUT
       - name: Scripts + data (KPC-Links, read-only)
         if: steps.when.outputs.off != '1'

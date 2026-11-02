@@ -4,7 +4,13 @@ name: KPC WDPA phone book - who runs the parks we still miss (every 6 h, leads o
 # terms). The park-info engine then searches by that agency (core/adapters.py agency()). data/intake/phonebook.json + .md.
 # Chains itself while parks are left (about 1,300 lookups a run at one request per 2 s). Never red, never emails.
 on:
+  # Nov 2 review (G11): a watchdog restart passes as_schedule=<the missed cron>, so it runs exactly like that scheduled run.
   workflow_dispatch:
+    inputs:
+      as_schedule:
+        description: 'Set by the watchdog only: run as the missed scheduled run of this cron (empty = a normal by-hand run)'
+        required: false
+        default: ''
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '53 */6 * * *'
 permissions:
@@ -46,7 +52,7 @@ jobs:
           bash ../links/.github/scripts/kpc_push_data.sh . "WDPA phone book (leads: who runs the parks we still miss)" data/intake/phonebook.json data/intake/phonebook.md data/status || echo "::error title=kpc_push_data.sh::stopped with an error (exit $?), see the log above"
           echo "left=$(grep -o '^LEFT=[0-9]*' /tmp/pb.txt | cut -d= -f2)" >> "$GITHUB_OUTPUT"
       - name: Next run while parks are left
-        if: steps.b.outputs.left != '' && steps.b.outputs.left != '0' && github.event_name == 'workflow_dispatch'
+        if: steps.b.outputs.left != '' && steps.b.outputs.left != '0' && (github.event_name == 'workflow_dispatch' && !inputs.as_schedule)
         id: kept_green_1
         continue-on-error: true
         env:

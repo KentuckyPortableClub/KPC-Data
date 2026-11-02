@@ -11,6 +11,10 @@ on:
     - cron: '13 11 * * *'   # Oct 29 11:25 PM (chat 2 BOT D, Brandon 11:18 PM 'build it!'): nightly release-approved, after the 10:41 UTC daily copy
   workflow_dispatch:
     inputs:
+      as_schedule:
+        description: 'Set by the watchdog only: run as the missed scheduled run of this cron (empty = a normal by-hand run)'
+        required: false
+        default: ''
       mode:
         description: 'replay | check | undo | undo-bot | release | questions | release-approved'
         default: 'replay'
@@ -69,7 +73,7 @@ jobs:
             *) echo "::notice title=Waiting room::unknown mode $M" ;;
           esac
       - name: The look-up branch (AUTO-3 files save-map requests there)
-        if: ${{ github.event_name == 'schedule' || inputs.mode == 'release-approved' }}
+        if: ${{ (github.event_name == 'schedule' || inputs.as_schedule) || inputs.mode == 'release-approved' }}
         id: kept_green_2
         continue-on-error: true
         uses: actions/checkout@v5
@@ -77,7 +81,7 @@ jobs:
           ref: lookup
           path: lk
       - name: Work the bots do themselves (AUTO-1 recheck of SURE rows, AUTO-2 strong layers, AUTO-3 picture maps; Brandon Oct 30 6:17 AM)
-        if: ${{ github.event_name == 'schedule' || inputs.mode == 'release-approved' }}
+        if: ${{ (github.event_name == 'schedule' || inputs.as_schedule) || inputs.mode == 'release-approved' }}
         id: kept_green_3
         continue-on-error: true
         env:
@@ -98,7 +102,7 @@ jobs:
           true
       - name: KEY DOCTOR after the build (report only; outside review Nov 2, Brandon OK 6:34 AM) -> data/status/key-doctor/ + the board
         # Nov 2 general review: every release run (the 2-hourly ones too), so a stuck YES / build-id trap shows within 2 h, not next morning
-        if: ${{ github.event_name == 'schedule' || inputs.mode == 'release-approved' }}
+        if: ${{ (github.event_name == 'schedule' || inputs.as_schedule) || inputs.mode == 'release-approved' }}
         id: kept_green_4
         continue-on-error: true
         run: |

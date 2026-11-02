@@ -4,8 +4,13 @@ name: KPC park-info engine (outside build) - nightly, outputs on tools-out engin
 # nothing (green, one notice). Once it is there it runs by itself every night: selftest, then the test areas (US-KY, US-TN, US-RI,
 # CA-ON, CH), outputs on tools-out engine/ (nothing live: chat 11 grades through the waiting room). Chains on exit 3. Never red.
 on:
+  # Nov 2 review (G11): a watchdog restart passes as_schedule=<the missed cron>, so it runs exactly like that scheduled run.
   workflow_dispatch:
     inputs:
+      as_schedule:
+        description: 'Set by the watchdog only: run as the missed scheduled run of this cron (empty = a normal by-hand run)'
+        required: false
+        default: ''
       areas:
         description: 'areas (blank = the acceptance areas)'
         default: ''
@@ -61,7 +66,7 @@ jobs:
           D=.github/scripts/draft/tools/kpc_engine
           if [ ! -d $D ]; then echo "::notice title=Engine::not delivered yet (waiting for $D): nothing to do"; exit 0; fi
           F=$(git log --diff-filter=A --format=%ct -- $D | tail -1); NOW=$(date +%s)
-          if [ "${{ github.event.schedule }}" = '37 */3 * * *' ] && [ -n "$F" ] && [ $((NOW - F)) -gt 86400 ]; then echo "::notice title=Engine::24-hour test over: nightly runs only"; exit 0; fi
+          if [ "${{ (github.event.schedule || inputs.as_schedule) }}" = '37 */3 * * *' ] && [ -n "$F" ] && [ $((NOW - F)) -gt 86400 ]; then echo "::notice title=Engine::24-hour test over: nightly runs only"; exit 0; fi
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git worktree add -q -B tools-out ../out origin/tools-out
           for k in hardlook camping parking docs portals acres layers; do python3 .github/scripts/kpc_intake_reader.py $k >/dev/null 2>&1 || echo "::error title=kpc_intake_reader.py::stopped with an error (exit $?), see the log above"; done

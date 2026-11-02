@@ -8,6 +8,10 @@ on:
     - cron: '9 4 * * 0'      # Sundays
   workflow_dispatch:
     inputs:
+      as_schedule:
+        description: 'Set by the watchdog only: run as the missed scheduled run of this cron (empty = a normal by-hand run)'
+        required: false
+        default: ''
       areas:
         description: 'Areas, e.g. "US-KY US-TN" (blank = every US + Canada area with a 2-fer file)'
         default: ''
@@ -56,7 +60,7 @@ jobs:
           cd kpcdata
           pip install -q -r .github/scripts/tools/kpc_fers_check/requirements.txt || echo "::warning title=install::an install step failed (exit $?); the next steps may not work"
           A="${IN_AREAS:-US-KY $(ls data/fers | grep -E '^(US|CA)-[A-Z]{2}\.json(\.gz)?$' | sed 's/\.json.*//' | grep -v '^US-KY$' | tr '\n' ' ')}"
-          [ "${{ github.event_name }}" = schedule ] && R="" || R="--resume"
+          [ "${{ (inputs.as_schedule && 'schedule') || github.event_name }}" = schedule ] && R="" || R="--resume"
           python3 .github/scripts/tools/kpc_fers_check/kpc_fers_check.py --areas $A $R --fers-dir data/fers --key-dir data --out data/fers-check --max-minutes 50 2>&1 | tee /tmp/fers.log | tail -30 || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
           grep -q 'rerun with --resume' /tmp/fers.log && echo "more=yes" >> $GITHUB_OUTPUT || true   # ok: nothing to do is fine
           rm -rf data/fers-check/.cache || true   # ok: nothing to do is fine

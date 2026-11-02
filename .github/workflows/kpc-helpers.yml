@@ -13,6 +13,10 @@ on:
     - cron: '37 5 * * 0'
   workflow_dispatch:
     inputs:
+      as_schedule:
+        description: 'Set by the watchdog only: run as the missed scheduled run of this cron (empty = a normal by-hand run)'
+        required: false
+        default: ''
       jobs:
         description: 'Which: match linkfix sitecheck (any)'
         default: 'match'
@@ -21,7 +25,7 @@ permissions:
   actions: write
 jobs:
   match:
-    if: ${{ (github.event_name == 'schedule' && github.event.schedule == '23 10 * * *') || contains(inputs.jobs, 'match') }}
+    if: ${{ ((github.event_name == 'schedule' || inputs.as_schedule) && (github.event.schedule || inputs.as_schedule) == '23 10 * * *') || contains(inputs.jobs, 'match') }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     concurrency:
@@ -92,7 +96,7 @@ jobs:
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY
   linkfix:
-    if: ${{ (github.event_name == 'schedule' && github.event.schedule == '37 5 * * 0') || contains(inputs.jobs, 'linkfix') }}
+    if: ${{ ((github.event_name == 'schedule' || inputs.as_schedule) && (github.event.schedule || inputs.as_schedule) == '37 5 * * 0') || contains(inputs.jobs, 'linkfix') }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
@@ -132,7 +136,7 @@ jobs:
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY
   sitecheck:
-    if: ${{ (github.event_name == 'schedule' && github.event.schedule == '37 5 * * 0') || contains(inputs.jobs, 'sitecheck') }}
+    if: ${{ ((github.event_name == 'schedule' || inputs.as_schedule) && (github.event.schedule || inputs.as_schedule) == '37 5 * * 0') || contains(inputs.jobs, 'sitecheck') }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:

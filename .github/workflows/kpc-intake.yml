@@ -5,8 +5,13 @@ name: KPC layer intake (probes map-layer leads for chat 9)
 # is stored. Manners: kpc_manners.py. Up to 'chunks' chunks of 55 minutes in one job, one save per chunk; when rows remain and
 # 'chain' allows, the next job starts itself. Nightly it runs only when the queue holds unprobed rows (a skip is a green run).
 on:
+  # Nov 2 review (G11): a watchdog restart passes as_schedule=<the missed cron>, so it runs exactly like that scheduled run.
   workflow_dispatch:
     inputs:
+      as_schedule:
+        description: 'Set by the watchdog only: run as the missed scheduled run of this cron (empty = a normal by-hand run)'
+        required: false
+        default: ''
       rows:
         description: 'Blank = every unprobed queue row; or a space-separated list of urls to (re)probe'
         default: ''
@@ -49,7 +54,7 @@ jobs:
         continue-on-error: true
         run: |
           cd kpcdata
-          if [ "${{ github.event_name }}" = schedule ]; then
+          if [ "${{ (inputs.as_schedule && 'schedule') || github.event_name }}" = schedule ]; then
             N=$(python3 - <<'PY' 2>/dev/null || echo 0
           import json, re, time
           def strip(u): return re.sub(r'\?.*$', '', (u or '').strip()).rstrip('/')

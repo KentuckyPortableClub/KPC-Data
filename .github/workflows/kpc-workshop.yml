@@ -8,8 +8,13 @@ name: KPC bot workshop (truth checker, hours fees permits, campground info)
 # A job = up to 300 minutes; when areas remain and 'chain' allows, the job starts the next one. Never fails except a failed save.
 # WEEKLY (Sunday 09:17 UTC): the truth checker only, and only once data/truth/state.json says 'proven' (the Kentucky gate passed).
 on:
+  # Nov 2 review (G11): a watchdog restart passes as_schedule=<the missed cron>, so it runs exactly like that scheduled run.
   workflow_dispatch:
     inputs:
+      as_schedule:
+        description: 'Set by the watchdog only: run as the missed scheduled run of this cron (empty = a normal by-hand run)'
+        required: false
+        default: ''
       bots:
         description: 'Which bots, in order: truth hours campinfo (any subset)'
         default: 'truth hours campinfo'
@@ -63,7 +68,7 @@ jobs:
         continue-on-error: true
         run: |
           cd kpcdata
-          if [ "${{ github.event_name }}" = schedule ]; then
+          if [ "${{ (inputs.as_schedule && 'schedule') || github.event_name }}" = schedule ]; then
             P=$(python3 -c "import json;print((json.load(open('data/truth/state.json')).get('proven') or ''))" 2>/dev/null || echo '')
             if [ -z "$P" ]; then echo "truth checker not proven yet: nothing to do"; echo "skip=1" >> "$GITHUB_OUTPUT"; exit 0; fi
             python3 -c "

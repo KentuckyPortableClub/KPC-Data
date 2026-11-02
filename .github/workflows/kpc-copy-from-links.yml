@@ -6,7 +6,13 @@ name: KPC copy site data to KPC-Data (Step B3)
 # EU alerts every 6 h). They come here the day their bot moves (B5). Only folders changed daily or less are copied.
 # KPC-Links is read only. One commit per run, only when something changed. Never fails.
 on:
+  # Nov 2 review (G11): a watchdog restart passes as_schedule=<the missed cron>, so it runs exactly like that scheduled run.
   workflow_dispatch:
+    inputs:
+      as_schedule:
+        description: 'Set by the watchdog only: run as the missed scheduled run of this cron (empty = a normal by-hand run)'
+        required: false
+        default: ''
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '40 10 * * *'   # G9 Nov 2: was '41 10 * * *' (spread the start times; now 1 min earlier)
     # Oct 29 (BOT C): a second look in the evening so a key rebuilt in the day reaches chat 11's sample the same night
@@ -46,7 +52,7 @@ jobs:
           O=$(cat kpcdata/data/waiting/key-seen.txt 2>/dev/null || echo none)
           echo "fp=$F" >> "$GITHUB_OUTPUT"
           H=$(date -u +%H:%M)
-          if [ "${{ github.event_name }}" = schedule ] && [ "${{ github.event.schedule }}" = '11 * * * *' ] && [ "$F" = "$O" ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Copy::no new key build: nothing to do"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi
+          if [ "${{ (inputs.as_schedule && 'schedule') || github.event_name }}" = schedule ] && [ "${{ (github.event.schedule || inputs.as_schedule) }}" = '11 * * * *' ] && [ "$F" = "$O" ]; then echo "work=0" >> "$GITHUB_OUTPUT"; echo "::notice title=Copy::no new key build: nothing to do"; else echo "work=1" >> "$GITHUB_OUTPUT"; fi
   copy:
     needs: gate
     if: ${{ needs.gate.outputs.work == '1' }}
