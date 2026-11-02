@@ -591,6 +591,38 @@ def t5_health(raw_parts: list, geom) -> dict:
 
 
 # ---- T6 spill
+REPAIRABLE = {"SELF-INTERSECTION", "TINY HOLES", "SLIVERS", "INVALID"}
+
+
+def shape_repair(g) -> dict:
+    """make_valid, then drop holes under 100 m2 and pieces under 10 m wide (the T5 sizes). OK when the result is a valid area
+    that keeps 99 % or more of the land (a repair never moves or reshapes a park). Returns {ok, area_change_pct, holes, pieces, geojson}."""
+    try:
+        v = shapely.make_valid(g)
+        polys = polys_of(v)
+        c = v.centroid
+        fwd, _ = local_proj(c.x, c.y)
+        keep, holes, pieces = [], 0, 0
+        for p in polys:
+            pm = tx(p, fwd)
+            if pm.area > 0 and 2 * shapely.maximum_inscribed_circle(pm, 0.25).length < 10:
+                pieces += 1; continue
+            ins = [r for r, rm in zip(p.interiors, tx(p, fwd).interiors) if Polygon(rm).area >= 100]
+            holes += len(p.interiors) - len(ins)
+            keep.append(Polygon(p.exterior, ins))
+        if not keep:
+            return {"ok": False, "why": "nothing left after the repair"}
+        r = unary_union(keep)
+        a0, a1 = tx(g if g.is_valid else v, fwd).area, tx(r, fwd).area
+        chg = abs(a1 - a0) / a0 * 100 if a0 else 100.0
+        ok = r.is_valid and not r.is_empty and chg <= 1.0
+        return {"ok": ok, "area_change_pct": round(chg, 3), "holes": holes, "pieces": pieces,
+                "geojson": shapely.geometry.mapping(shapely.set_precision(r, 1e-6)) if ok else None,
+                **({} if ok else {"why": f"the repair would change the land by {chg:.1f} %"})}
+    except Exception as e:  # noqa: BLE001
+        return {"ok": False, "why": f"{type(e).__name__}: {str(e)[:80]}"}
+
+
 def t6_spill(ref: str, name: str, geom, others: list, excused: set, tree=None) -> dict:
     """T6: the outline covers > 30% of ANOTHER POTA park's pin area (its outline, else 500 m around its pin),
     with a different name and no 2-fer row = SPILL."""
@@ -1253,6 +1285,8 @@ def grade_park(P, pin, acres_list, world: bool):
         tests["T5"] = {"flag": "CAN'T TELL", "note": "the park's records could not be read (see problems)"}
     else:
         tests["T5"] = t5_health(P["raw"], g)
+        if set(tests["T5"].get("flags") or []) & REPAIRABLE:
+            tests["T5"]["repair"] = shape_repair(g)   # Nov 2 5:55 PM (HQ pile-down A): a bot repairs, a person is not asked
     if g is None:
         tests["T7"] = {"flag": "NO OUTLINE"}
     else:
@@ -1389,11 +1423,26 @@ def question_of(area: str, rec: dict, built: str) -> dict:
         "question": QUESTION_TEXT, "answer": None, "checked_by": None, "how": None,
         "source": f"KPC 10 map audit, {built}", "st": area, "url": r0.get("link", ""), "name_field": r0.get("name_field", ""),
         "licence": "", "note": f"score {rec['score']}: {flag_summary(rec['tests'])}", "score": rec["score"], "picture": "",
+        "flags": [f for _, f in flags_of(rec["tests"])], "down": rec["status"] != "graded",
+        "repaired": bool((rec["tests"].get("T5") or {}).get("repair", {}).get("ok")),
     }
 
 
 def write_outputs(out: Path, results: dict, built: str):
     out.mkdir(parents=True, exist_ok=True)
+    rep = {}
+    for area, recs in results.items():
+        for r in recs:
+            rp = (r["tests"].get("T5") or {}).get("repair")
+            if rp and rp.get("ok"):
+                rep.setdefault(area, {})[r["ref"]] = {"record": (r["records"][0] if r["records"] else {}).get("id", ""), "geojson": rp.pop("geojson"),
+                                                      "area_change_pct": rp["area_change_pct"], "holes": rp["holes"], "pieces": rp["pieces"]}
+            elif rp:
+                rp.pop("geojson", None)
+    if rep:
+        (out / "repairs").mkdir(exist_ok=True)
+        for area, d in rep.items():
+            (out / "repairs" / f"{area}.json").write_text(json.dumps({"area": area, "built": built, "about": "Shapes the map audit repaired (make_valid, holes under 100 m2 and pieces under 10 m wide dropped, land kept within 1 %). Use instead of the saved outline.", "parks": d}, ensure_ascii=False), encoding="utf-8")
     for area, recs in results.items():
         (out / f"{area}.json").write_text(json.dumps({"area": area, "built": built, "tool": TOOL, "parks": recs},
                                                       indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
