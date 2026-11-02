@@ -102,6 +102,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "CA-5843",
+   "Park name (as the agency writes it)": "St. Marys Basilica",
+   "Size": 1,
+   "Unit": "acres",
+   "Agency": "Heritage Properties",
+   "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?where=OBJECTID%3D406&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0; read 2026-11-02"
+  },
+  {
    "Park number (if matched)": "CA-4794",
    "Park name (as the agency writes it)": "Kootenai House",
    "Size": 0,
@@ -217,6 +226,24 @@
    "Agency": "Parks",
    "Source page": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D25&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-0962",
+   "Park name (as the agency writes it)": "Angrignon",
+   "Size": 238,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D1237&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-0992",
+   "Park name (as the agency writes it)": "La Fontaine",
+   "Size": 88,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D2186&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0; read 2026-11-02"
   },
   {
    "Park number (if matched)": "US-0731",
@@ -372,42 +399,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0; read 2026-11-02"
   },
   {
-   "Park number (if matched)": "US-5756",
-   "Park name (as the agency writes it)": "Browns Park WMA",
-   "Size": 3134,
-   "Unit": "acres",
-   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
-   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D27&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-2219",
-   "Park name (as the agency writes it)": "Parc Central",
-   "Size": 94,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0/query?where=OBJECTID%3D2&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-0962",
-   "Park name (as the agency writes it)": "Angrignon",
-   "Size": 238,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D1237&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-0992",
-   "Park name (as the agency writes it)": "La Fontaine",
-   "Size": 88,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D2186&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0; read 2026-11-02"
-  },
-  {
    "Park number (if matched)": "US-7893",
    "Park name (as the agency writes it)": "Augusta Canal National Heritage Area",
    "Size": 133,
@@ -433,6 +424,24 @@
    "Agency": "National Register of Historic Places Polygons",
    "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D394660&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-5756",
+   "Park name (as the agency writes it)": "Browns Park WMA",
+   "Size": 3134,
+   "Unit": "acres",
+   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D27&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-2219",
+   "Park name (as the agency writes it)": "Parc Central",
+   "Size": 94,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0/query?where=OBJECTID%3D2&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0; read 2026-11-02"
   },
   {
    "Park number (if matched)": "US-0054",
@@ -550,6 +559,24 @@
    "Agency": "US Fish and Wildlife Service",
    "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D4297&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-0329",
+   "Park name (as the agency writes it)": "SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE",
+   "Size": 26816,
+   "Unit": "acres",
+   "Agency": "US Fish and Wildlife Service",
+   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D675&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-11955",
+   "Park name (as the agency writes it)": "Genoa National Fish Hatchery",
+   "Size": 160,
+   "Unit": "acres",
+   "Agency": "US Fish and Wildlife Service",
+   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0/query?where=OBJECTID%3D1602&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0; read 2026-11-02"
   },
   {
    "Park number (if matched)": "US-0042",
@@ -757,7 +784,7 @@
    "Agency/area": "Heritage Properties",
    "Kind": "GIS layer",
    "Example URL": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0",
-   "# times used": 14,
+   "# times used": 15,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -777,7 +804,7 @@
    "Agency/area": "Parks",
    "Kind": "GIS layer",
    "Example URL": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
-   "# times used": 20,
+   "# times used": 22,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -798,16 +825,6 @@
    "Kind": "GIS layer",
    "Example URL": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
    "# times used": 3,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "services3.arcgis.com",
-   "Agency/area": null,
-   "Kind": "GIS layer",
-   "Example URL": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0",
-   "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -838,6 +855,16 @@
    "Kind": "GIS layer",
    "Example URL": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "# times used": 2,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "services3.arcgis.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0",
+   "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"

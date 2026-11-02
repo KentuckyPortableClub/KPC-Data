@@ -5,15 +5,15 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 1710,
-    "parks": 1207,
-    "parks_with_hit": 178,
-    "SURE": 124,
-    "LIKELY": 88,
-    "UNLIKELY_evidence": 533,
-    "strong": 67,
-    "already_approved": 193,
-    "open_without_whynot": 429,
+    "rows": 1809,
+    "parks": 1263,
+    "parks_with_hit": 186,
+    "SURE": 130,
+    "LIKELY": 97,
+    "UNLIKELY_evidence": 574,
+    "strong": 70,
+    "already_approved": 201,
+    "open_without_whynot": 430,
     "non_official_candidates": 1,
     "unlikely_as_questions": 0,
     "strong_but_not_sure": 0,
@@ -21,7 +21,7 @@
     "size_way_off_questions": 0
    },
    "fails": [
-    "open parks without a why-not: 429",
+    "open parks without a why-not: 430",
     "non-official publishers: 1"
    ],
    "top_miss_reasons": [
@@ -31,19 +31,19 @@
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 223
+     "parks": 239
     },
     {
      "reason": "not found: no-layer: no official record at the pin or by name",
-     "parks": 196
+     "parks": 230
     },
     {
      "reason": "already approved: already approved",
-     "parks": 193
+     "parks": 201
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
-     "parks": 160
+     "parks": 168
     }
    ],
    "examples": [
@@ -108,19 +108,19 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 1710,
-    "found_or_candidate": 212,
+    "rows": 1809,
+    "found_or_candidate": 227,
     "blocked": 147,
-    "hit_rate": 0.124,
+    "hit_rate": 0.125,
     "bands": {
-     "STRONG": 67,
-     "WEAK": 139,
+     "STRONG": 70,
+     "WEAK": 151,
      "CONFLICT": 6
     },
     "tiers": {
-     "T-1": 25,
-     "T-2": 67,
-     "T-3": 96,
+     "T-1": 27,
+     "T-2": 73,
+     "T-3": 103,
      "T-4": 11,
      "T-6": 13
     },
@@ -295,13 +295,13 @@
  "passes": {
   "outline": {
    "pass1": {
-    "error": 429,
-    "already approved": 193,
-    "found": 67,
-    "candidate": 147,
-    "evidence": 531,
+    "error": 430,
+    "already approved": 201,
+    "found": 70,
+    "candidate": 159,
+    "evidence": 572,
     "blocked": 147,
-    "not found": 196
+    "not found": 230
    },
    "pass2": null,
    "pass2_solved": null,
