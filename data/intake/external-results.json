@@ -297342,6 +297342,54 @@
    "kind": "Parks",
    "result": "failed",
    "why": "RuntimeError: no name field ()"
+  },
+  "US-13474|https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1": {
+   "ref": "US-13474",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name",
+   "record_name": "Kyle Ranch",
+   "acres": 17
+  },
+  "US-0054|https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2": {
+   "ref": "US-0054",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (historical)",
+   "record_name": "Nez Perce National Historical Park",
+   "acres": 4209
+  },
+  "US-11215|https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70": {
+   "ref": "US-11215",
+   "kind": "Parks",
+   "result": "SURE",
+   "why": "same proper name (battlefield)",
+   "record_name": "Bear Paw Battlefield",
+   "acres": 1057
+  },
+  "US-10345|https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0": {
+   "ref": "US-10345",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared carson, lake; extra: park pasture / record -",
+   "record_name": "Carson Lake WMA",
+   "acres": 29908
+  },
+  "US-5968|https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0": {
+   "ref": "US-5968",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared howard, slough; extra: park waterfowl / record -",
+   "record_name": "Howard Slough WMA",
+   "acres": 2521
+  },
+  "US-5971|https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0": {
+   "ref": "US-5971",
+   "kind": "Parks",
+   "result": "LIKELY",
+   "why": "shared crane, harold; extra: park waterfowl / record -",
+   "record_name": "Harold Crane WMA",
+   "acres": 9798
   }
  },
  "layers": {
@@ -298203,7 +298251,7 @@
    "host": "gisservice.mt.gov",
    "geometry": "esriGeometryPolygon",
    "title": "Managed Areas",
-   "name_field": "Mang_Name"
+   "name_field": "MANAME"
   },
   "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21": {
    "new_to_us": false,
@@ -304164,8 +304212,8 @@
   "Canada Trail SURE": 16,
   "Canada Trail UNLIKELY": 12,
   "Canada Trail no hit": 2,
-  "US Parks LIKELY": 274,
-  "US Parks SURE": 3730,
+  "US Parks LIKELY": 277,
+  "US Parks SURE": 3733,
   "US Parks UNLIKELY": 684,
   "US Parks failed": 585,
   "US Parks no hit": 1264,

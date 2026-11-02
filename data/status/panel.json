@@ -1,5 +1,5 @@
 {
- "made": "2026-11-02 14:34 UTC",
+ "made": "2026-11-02 14:35 UTC",
  "snap": {
   "date": "2026-11-02",
   "outlines": {
@@ -49,14 +49,16 @@
    },
    "layers": {
     "LIKELY YES": 2131,
-    "rows": 25485,
+    "rows": 25836,
     "LIKELY NO": 213,
     "SURE NO": 8,
     "LIKELY NOT SURE": 6711,
     "SURE YES": 15607,
     "SURE NOT SURE": 526,
     "LIKELY bot YES": 12,
-    "SURE bot YES": 277
+    "SURE bot YES": 277,
+    "SURE open": 229,
+    "LIKELY open": 122
    },
    "lost-finds-nov1": {},
    "nearmiss-nov2": {
@@ -105,14 +107,14 @@
    },
    "queue rows": 2110,
    "collector": {
-    "asked": 102,
+    "asked": 113,
     "failed": 196,
     "evidence": 9,
-    "no match": 340,
-    "no hit": 217481,
-    "UNLIKELY": 21484,
-    "LIKELY": 6276,
-    "SURE": 875
+    "no match": 417,
+    "no hit": 222273,
+    "UNLIKELY": 21619,
+    "LIKELY": 6404,
+    "SURE": 1092
    },
    "finders found": 150
   },
@@ -335,7 +337,7 @@
    "last_run": "2026-11-02",
    "made": "read by the layers bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452441619",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463136448",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: external-sources-eu-haul5-trails.json": {
@@ -1023,7 +1025,7 @@
    "last_run": "2026-11-02",
    "made": "read by the hours bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463133068",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452495690",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: hours-fees-blocked-us-nov1.csv": {
@@ -1031,7 +1033,7 @@
    "last_run": "2026-11-02",
    "made": "read by the hours bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463133068",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452495690",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: hours-fees-ca-nov1.xlsx": {
@@ -1039,7 +1041,7 @@
    "last_run": "2026-11-02",
    "made": "read by the hours bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463133068",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452495690",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: hours-fees-us-nov1.xlsx": {
@@ -1047,7 +1049,7 @@
    "last_run": "2026-11-02",
    "made": "read by the hours bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463133068",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452495690",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: parking-hunt-engine.json": {
