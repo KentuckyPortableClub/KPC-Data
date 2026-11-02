@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 188 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 196 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -120,57 +120,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/fers/US-NH.json.gz | PASS |  |
 | ? | ? | data/fers/US-NV.json.gz | PASS |  |
 | ? | ? | data/hours/US-KY.json | PASS |  |
-| ? | ? | data/us-key/US-AK.json | PASS |  |
-| ? | ? | data/us-key/US-AL.json | PASS |  |
-| ? | ? | data/us-key/US-AR.json | PASS |  |
-| ? | ? | data/us-key/US-AZ.json | PASS |  |
-| ? | ? | data/us-key/US-CA.json | PASS |  |
-| ? | ? | data/us-key/US-CO.json | PASS |  |
-| ? | ? | data/us-key/US-CT.json | PASS |  |
-| ? | ? | data/us-key/US-DC.json | PASS |  |
-| ? | ? | data/us-key/US-DE.json | PASS |  |
-| ? | ? | data/us-key/US-FL.json | PASS |  |
-| ? | ? | data/us-key/US-GA.json | PASS |  |
-| ? | ? | data/us-key/US-HI.json | PASS |  |
-| ? | ? | data/us-key/US-IA.json | PASS |  |
-| ? | ? | data/us-key/US-ID.json | PASS |  |
-| ? | ? | data/us-key/US-IL.json | PASS |  |
-| ? | ? | data/us-key/US-IN.json | PASS |  |
-| ? | ? | data/us-key/US-KS.json | PASS |  |
-| ? | ? | data/us-key/US-LA.json | PASS |  |
-| ? | ? | data/us-key/US-MA.json | PASS |  |
-| ? | ? | data/us-key/US-MD.json | PASS |  |
-| ? | ? | data/us-key/US-ME.json | PASS |  |
-| ? | ? | data/us-key/US-MI.json | PASS |  |
-| ? | ? | data/us-key/US-MN.json | PASS |  |
-| ? | ? | data/us-key/US-MO.json | PASS |  |
-| ? | ? | data/us-key/US-MS.json | PASS |  |
-| ? | ? | data/us-key/US-MT.json | PASS |  |
-| ? | ? | data/us-key/US-NC.json | PASS |  |
-| ? | ? | data/us-key/US-ND.json | PASS |  |
-| ? | ? | data/us-key/US-NE.json | PASS |  |
-| ? | ? | data/us-key/US-NH.json | PASS |  |
-| ? | ? | data/us-key/US-NJ.json | PASS |  |
-| ? | ? | data/us-key/US-NM.json | PASS |  |
-| ? | ? | data/us-key/US-NV.json | PASS |  |
-| ? | ? | data/us-key/US-NY.json | PASS |  |
-| ? | ? | data/us-key/US-OH.json | PASS |  |
-| ? | ? | data/us-key/US-OK.json | PASS |  |
-| ? | ? | data/us-key/US-OR.json | PASS |  |
-| ? | ? | data/us-key/US-PA.json | PASS |  |
-| ? | ? | data/us-key/US-RI.json | PASS |  |
-| ? | ? | data/us-key/US-SC.json | PASS |  |
-| ? | ? | data/us-key/US-SD.json | PASS |  |
-| ? | ? | data/us-key/US-TN.json | PASS |  |
-| ? | ? | data/us-key/US-TX.json | PASS |  |
-| ? | ? | data/us-key/US-UT.json | PASS |  |
-| ? | ? | data/us-key/US-VA.json | PASS |  |
-| ? | ? | data/us-key/US-VT.json | PASS |  |
-| ? | ? | data/us-key/US-WA.json | PASS |  |
-| ? | ? | data/us-key/US-WI.json | PASS |  |
-| ? | ? | data/us-key/US-WV.json | PASS |  |
-| ? | ? | data/us-key/US-WY.json | PASS |  |
 | 2026-11-01 | 1 | data/trails/finds-lines-report.json | HOLD | F-T1 the line has no points |
+| 2026-11-01 | 1 | data/world-key/CM.json | RELEASE |  |
+| 2026-11-01 | 1 | data/world-key/GB.json | RELEASE |  |
+| 2026-11-01 | 1 | data/world-key/PY.json | RELEASE |  |
 | ? | ? | data/ca-key/answers-applied.json | PASS |  |
 | ? | ? | data/ca-key/hardlook-joins.json | PASS |  |
 | ? | ? | data/ca-key/index.json | PASS |  |
@@ -186,6 +139,61 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/why-not.json | PASS |  |
 | ? | ? | data/us-key/zip-mszp.json | PASS |  |
 | ? | ? | data/us-key/zip-mszw.json | PASS |  |
+| ? | ? | data/world-key/AE.json | RELEASE |  |
+| ? | ? | data/world-key/AS.json | RELEASE |  |
+| ? | ? | data/world-key/AX.json | RELEASE |  |
+| ? | ? | data/world-key/BE.json | RELEASE |  |
+| ? | ? | data/world-key/BM.json | RELEASE |  |
+| ? | ? | data/world-key/BS.json | RELEASE |  |
+| ? | ? | data/world-key/BT.json | RELEASE |  |
+| ? | ? | data/world-key/BW.json | RELEASE |  |
+| ? | ? | data/world-key/BZ.json | RELEASE |  |
+| ? | ? | data/world-key/CC.json | RELEASE |  |
+| ? | ? | data/world-key/CD.json | RELEASE |  |
+| ? | ? | data/world-key/CG.json | RELEASE |  |
+| ? | ? | data/world-key/CL.json | RELEASE |  |
+| ? | ? | data/world-key/CO.json | RELEASE |  |
+| ? | ? | data/world-key/CV.json | RELEASE |  |
+| ? | ? | data/world-key/CX.json | RELEASE |  |
+| ? | ? | data/world-key/DO.json | RELEASE |  |
+| ? | ? | data/world-key/EC.json | RELEASE |  |
+| ? | ? | data/world-key/ES.json | RELEASE |  |
+| ? | ? | data/world-key/FO.json | RELEASE |  |
+| ? | ? | data/world-key/GA.json | RELEASE |  |
+| ? | ? | data/world-key/GE.json | RELEASE |  |
+| ? | ? | data/world-key/GL.json | RELEASE |  |
+| ? | ? | data/world-key/GR.json | RELEASE |  |
+| ? | ? | data/world-key/GT.json | RELEASE |  |
+| ? | ? | data/world-key/GU.json | RELEASE |  |
+| ? | ? | data/world-key/GY.json | RELEASE |  |
+| ? | ? | data/world-key/ID.json | RELEASE |  |
+| ? | ? | data/world-key/IM.json | RELEASE |  |
+| ? | ? | data/world-key/JE.json | RELEASE |  |
+| ? | ? | data/world-key/KE.json | RELEASE |  |
+| ? | ? | data/world-key/LK.json | RELEASE |  |
+| ? | ? | data/world-key/LR.json | RELEASE |  |
+| ? | ? | data/world-key/MK.json | RELEASE |  |
+| ? | ? | data/world-key/MP.json | RELEASE |  |
+| ? | ? | data/world-key/MT.json | RELEASE |  |
+| ? | ? | data/world-key/MV.json | RELEASE |  |
+| ? | ? | data/world-key/MX.json | RELEASE |  |
+| ? | ? | data/world-key/NC.json | RELEASE |  |
+| ? | ? | data/world-key/NF.json | RELEASE |  |
+| ? | ? | data/world-key/NI.json | RELEASE |  |
+| ? | ? | data/world-key/NZ.json | RELEASE |  |
+| ? | ? | data/world-key/OM.json | RELEASE |  |
+| ? | ? | data/world-key/PA.json | RELEASE |  |
+| ? | ? | data/world-key/PE.json | RELEASE |  |
+| ? | ? | data/world-key/PF.json | RELEASE |  |
+| ? | ? | data/world-key/PR.json | RELEASE |  |
+| ? | ? | data/world-key/QA.json | RELEASE |  |
+| ? | ? | data/world-key/RW.json | RELEASE |  |
+| ? | ? | data/world-key/SJ.json | RELEASE |  |
+| ? | ? | data/world-key/SV.json | RELEASE |  |
+| ? | ? | data/world-key/UM.json | RELEASE |  |
+| ? | ? | data/world-key/UY.json | RELEASE |  |
+| ? | ? | data/world-key/VI.json | RELEASE |  |
+| ? | ? | data/world-key/ZA.json | RELEASE |  |
 | ? | ? | data/wwff/CTFF.json | HOLD | F-4 checker error: AttributeError: 'list' object has no attribute 'get' |
 | ? | ? | data/wwff/D4FF.json | HOLD | F-4 checker error: AttributeError: 'list' object has no attribute 'get' |
 | ? | ? | data/wwff/KFF.json | HOLD | F-4 checker error: AttributeError: 'list' object has no attribute 'get' |
@@ -213,16 +221,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | pin-typos.json | 0 | 0 |
 | world-finder.json | 0 | 3762 |
 
-## Approvals not used yet: 11
+## Approvals not used yet: 5
 
-- us-key: chat 11 'KEY NO 2026-10-30 (Indiana build, 6/6 sample): the six IN State Recreation Areas (Moores Creek US-5682, Allens Creek US-5684, Lieber US-5685, Fairfax US-5686, Salt Creek US-5688, Red Bridge US-7842) are joined to records named 'Monroe Lake', 'Cagles Mill Lake' and 'Mississinewa Lake' (reason only 'name'). The record is the lake property, not the recreation area; mapping.md says Indiana lake SRAs need their own layer, not a join. Chat 2: if the polygon's own unitname/subunit says the SRA name, tell me and it is a YES. Names and acres only, no maps seen.' by chat 11, chat 2 '-'
-- us-key: chat 11 'KEY YES 2026-10-31 6/6 (Indiana build of 03:47 UTC; the preview lists only these 6 changes: 6 gained, 0 lost). Moores Creek US-5682 155 ac, Allens Creek US-5684 290 ac, Lieber US-5685 718 ac, Fairfax US-5686 741 ac, Salt Creek US-5688 313 ac, Red Bridge US-7842 203 ac: each now has its OWN-size piece (not the whole lake, e.g. Monroe Lake), so the earlier KEY NO problem is gone. Judged by name, kind and acres only; no agency map seen. Piece labels still show the lake name; chat 2 says the SRA name is in the subunit field.' by chat 11, chat 2 '-'
-- us-key: chat 11 'KEY NO 2026-10-31 (build of 11:13 UTC, 29 of 30 sample parks fine). One bad join: Milford State Fish Hatchery US-7393 (KS) is joined to 'Milford Wildlife Area' (sgksb27, size 0, reason 'name + Recreation.gov point inside'). A fish hatchery is not a wildlife area; I already said NO to the Milford Lake / Outlet Park / Recreation Area records for it. Drop it back to a pin and I will say KEY YES. Everything else in the sample is OK by name, kind and size (no agency map seen): the many trail lines (size 0 = line, e.g. Appalachian Trail, Trail of Tears, Pacific Crest), Pinnell Mountain, General Crook, Big Canoe Creek 382 ac, Buena Vista SWA 90 ac, and the 4 lost outlines (Rogue River-Siskiyou, Jemez Historic Site, Santa Clara River Reserve, Big Eddy) back to safe pins.' by chat 11, chat 2 '-'
 - us-key: chat 11 'KEY NO 2026-11-01 (build of 09:11 UTC, sample read: 29 of 30 fine, trails and aliases look right). One bad join is still in: Milford State Fish Hatchery US-7393 (KS) is joined to 'Milford Wildlife Area' (sgksb27, size 0). A fish hatchery is not the wildlife area. Make it a pin, rebuild, and I will say KEY YES.' by chat 11, chat 2 '-'
 - us-key: chat 11 'KEY NO 2026-11-01 11:14 UTC build (+218): sample 20 of 30 fine (67%). The fault class is the new 'same full name, far from the pin' joins (pin NOT inside the record). Bad or doubtful: Walnut Creek SRA US-4036 (NE), Smith River BLM RMA US-12840 (joined to the 329,827 ac Smith River NRA, a bigger parent), Twin Buttes US-10944, Clear Creek BLM RMA US-13581, Long Lake SRA US-4260 (joined to a State Habitat Area), Pine Island SP US-13016, Mt. St. Helens NM US-3385 (0 ac pieces), Salt Creek SRA US-5688 (second piece Salt Creek F&W Area is another place), Fortymile WSR US-11828 (joined to the 247,230 ac SRMA), Julian Price US-12371 (a wetlands heritage area, a part). The Milford hatchery join is gone (good). Fix: no outline when the pin is outside the record unless size and kind also agree, then rebuild.' by chat 11, chat 2 '-'
 - ca-key: chat 11 'KEY YES 2026-11-01 Canada key (preview of 103 gained, 0 lost, 0 grade changes), fresh read of the 30-park sample: all 30 are the same-name record (BC local and regional parks, Alberta public lands, a Quebec regional park), pin inside, sizes sensible (Memorial Park 2 ac, Ouareau 35,584 ac). Names, kinds, acres only; no maps seen.' by chat 11, chat 2 'rechecked 2026-11-02 6:50 AM (chat 2 G-4): 103 gained / 0 lost / 0 grade changes = the Canada answers BOT A applied (163 YES / 111 NO) + trail lines; no far or parent joins in the gained list. OK to release.'
-- us-key: chat 11 'KEY NO 2026-11-01 20:28 UTC build (+244): the 'far from the pin' fault is gone (0 of 30), but 25 of 30 are fine (83%, bar 90%). Still wrong in the build: Julian Price US-12371 (wetlands section only) and Fortymile US-11828 (SRMA + BLM field office; chat 2 says both are off in tonight's rebuild); Oxford Slough WMD US-0280 joined to the WPA record (my alias ruling was NO: a district is not one of its tracts); Iao Valley State Preserve US-6410 joined to the State Monument (ruling NOT SURE); Teanaway State Forest US-5573 joined to 'Teanaway Community Forest' (another unit). Take those five out and rebuild: I say KEY YES on the next sample.' by chat 11, chat 2 '-'
-- us-key: chat 11 'KEY NO 2026-11-02 08:16 UTC build (+244 outlines, 30-park sample 77%): the five old faults are fixed, but new alias joins are wrong: US-11828 Fortymile WSR joined to the Fortymile SRMA (a recreation area, not the river); US-8711 Owens Spring/Walker/Adams to the ADAMS piece only; US-5913 Historic Union Pacific Rail Trail SP to a generic 'Rail Trail'; US-0280 Oxford Slough WMD to the WPA (a part); US-5573 Teanaway State Forest to Teanaway Community Forest; US-12371 Julian Price to a wetlands register (a part); US-8287 Capitol SP to 'Capital Park' (unsure).' by chat 11, chat 2 '-'
 - fers-US-KY: chat 11 '' by chat 2, chat 2 'rechecked 2026-11-02 8:45 AM (chat 2 G-4): only the river-route rows were redone (Lewis and Clark + Trail of Tears pairs, run of 6:43 AM) with the creek cut (R5a: narrow channels off the main river no longer count) and each row now carries the trail's own 100-ft bank zone (route_zone, drawn on the Finder). Ballard WMA x L&C x Trail of Tears: 9.3 mi of bank -> 5.3 mi, the strip up the creek through the fields is gone (Brandon's Nov 1 screenshot). Every other row is unchanged. Please map-check the Ballard and Boatwright rows.'
-- us-key: chat 11 'KEY NO US-f3d48d30899 (built 16:08 UTC, +238 outlines): the 30-park sample is 28 of 30 (93%) and chat 2's seven fixes are in, so release the good parks and keep these as pins: US-5682, US-5684, US-5685, US-5686, US-5688, US-7842 (Indiana recreation areas joined by name to the whole reservoir), US-2365 (Jimmie Davis joined to Caney Creek Lake SP, a different park), US-4475 (Caribou-Targhee joined to old Cache NF, a part), US-4477 (Idaho Panhandle joined to Kaniksu NF, a part), US-4481 (Sawtooth joined to Challis NF, a part), US-10545 (Hillsdale joined to Decoppet Estate), US-10963 (Logan research center joined to a 0-acre station). Fixing those twelve is the only thing between this and a KEY YES.' by chat 11, chat 2 '-'
 - ca-key: chat 11 'KEY YES CA-f3d48d30899 (built 16:08 UTC, +56 outlines, 13 back to pins): 30-park sample is clean (30 of 30); the big records (Chapleau 1.79M ac, Frontenac Arch 628k ac) are real.' by chat 11, chat 2 '-'
