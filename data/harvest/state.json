@@ -1476,8 +1476,21 @@
     "https://sigservices.icnf.pt/server/rest/services/DPOT/PEAP_Work/MapServer",
     "https://sigservices.icnf.pt/server/rest/services/DPOT/PEPNSAC/MapServer",
     "https://sigservices.icnf.pt/server/rest/services/DPOT/PEPNSAC_AIE/MapServer",
+    "https://sigservices.icnf.pt/server/rest/services/DPOT/PS_PEPNPG/MapServer",
+    "https://sigservices.icnf.pt/server/rest/services/Filmagens/Filmagens_Fotos_AP/MapServer",
     "https://sigservices.icnf.pt/server/rest/services/Geoprocessos/FeatureServer",
     "https://sigservices.icnf.pt/server/rest/services/Geoprocessos/MapServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/AP_Cogestao_24Set/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/ATN__Registo_interno_view/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Bacias_hidrograficas_SNIRH/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/CED_2024/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/CE_Junho24/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Calendario__Portal_PRN/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Dados_SOSvespa/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Entidades_do_Plano_Nacional_do_Restauro_da_Natureza/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Formulário_VNP_Publico/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Fotos_da_Galeria_do_Portal_do_Restauro_da_Natureza/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/GIP/FeatureServer",
     "https://sigservices.icnf.pt/server/rest/services/Temas_Perímetro_Rega_Mira/MapServer",
     "https://sigservices.icnf.pt/server/rest/services/locais_contagem_aquaticas/MapServer"
    ],
@@ -1489,7 +1502,7 @@
     },
     {
      "step": "server",
-     "what": "https://sigservices.icnf.pt/server/rest/services: 25 folders, 132 services read"
+     "what": "https://sigservices.icnf.pt/server/rest/services: 25 folders, 144 services read"
     }
    ],
    "steps": [
@@ -2034,19 +2047,6 @@
     "https://kort.vd.dk/server/rest/services/Grunddata/Søbeskyttelseslinjer/MapServer",
     "https://kort.vd.dk/server/rest/services/Grunddata/VP3_Vandomraadeplaner/MapServer",
     "https://kort.vd.dk/server/rest/services/Grunddata/Åbeskyttelseslinjer/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/2D_kort/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/6470_24_04_2026_tif/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje1_V2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje1_V2/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje3_V2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje3_V2/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje4_V2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje4_V2/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje5_V2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje5_V2/MapServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje6_V2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_linje2_V2/FeatureServer",
-    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_linje2_V2/MapServer",
     "https://kort.vd.dk/server/rest/services/MKV_E1260_Data/MapServer",
     "https://kort.vd.dk/server/rest/services/afvanding_digitalisering_ler2/FeatureServer",
     "https://kort.vd.dk/server/rest/services/afvanding_digitalisering_ler2/MapServer"
@@ -2059,7 +2059,7 @@
     },
     {
      "step": "server",
-     "what": "https://kort.vd.dk/server/rest/services: 39 folders, 53 services read"
+     "what": "https://kort.vd.dk/server/rest/services: 39 folders, 40 services read"
     }
    ],
    "steps": [
