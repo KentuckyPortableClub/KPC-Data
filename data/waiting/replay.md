@@ -1,12 +1,12 @@
 # Waiting room REPLAY TEST
-Run 2026-11-02 14:34Z: **FAIL** (17 of 38 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
+Run 2026-11-02 16:13Z: **FAIL** (17 of 38 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
 
 | result | case | expect | what the checker said |
 |---|---|---|---|
 | **MISS** | ACCESS: 178 far points (NY, Oct 28 15:57, the tuned run that still kept on-land far points) | HOLD | HOLD: case could not load: data 2c6610ba:data/access/US-NY.json not in the git history (needs fetch-depth 0) |
 | **MISS** | ACCESS: a timed-out layer shrinks a state (simulated: 70% of NY parks dropped) | HOLD | HOLD: case could not load: data 1600e869:data/access/US-NY.json not in the git history (needs fetch-depth 0) |
 | **MISS** | FED CAMPS: office-address rows + ids in two state files (GA + SC before the Oct 29 sweep) | HOLD | HOLD: case could not load: links 54a2a9410:data/campfed/US-GA.json not in the git history (needs fetch-depth 0) |
-| ok | POTA LIST: a short answer would retire parks (simulated: 3% fewer parks) | HOLD | HOLD: F-P1 POTA parks 79,913 -> 77,515 (more than 1% or 5 gone): needs a second read |
+| ok | POTA LIST: a short answer would retire parks (simulated: 3% fewer parks) | HOLD | HOLD: F-P1 POTA parks 79,917 -> 77,519 (more than 1% or 5 gone): needs a second read |
 | ok | 2-FER LINE CHECK: READY with rows not checked (Michigan water lesson, simulated) | HOLD | HOLD: F-S1 status READY with 1 rows STORE NOT READ / not checked (must be STOPPED); no live copy: first time this file is published; F-S1 1 rows where a map did not a |
 | **MISS** | DOCS: 83 WV parks on one rules page (Oct 28 11:27) | HOLD | HOLD: case could not load: data 7a2f9ae1:data/docs/US-WV.json not in the git history (needs fetch-depth 0) |
 | **MISS** | DOCS: VA maps on inciweb (Oct 28 15:08) | HOLD | HOLD: case could not load: data cac42d02:data/docs/US-VA.json not in the git history (needs fetch-depth 0) |
