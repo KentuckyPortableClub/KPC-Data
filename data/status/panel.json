@@ -1,5 +1,5 @@
 {
- "made": "2026-11-02 16:42 UTC",
+ "made": "2026-11-02 17:31 UTC",
  "snap": {
   "date": "2026-11-02",
   "outlines": {
@@ -21,6 +21,7 @@
   },
   "questions": {
    "aliases-nov1": {},
+   "aliases-nov2": {},
    "aliases-oct31": {
     "- YES": 21,
     "rows": 33,
@@ -49,7 +50,7 @@
    },
    "layers": {
     "LIKELY YES": 2131,
-    "rows": 25836,
+    "rows": 25852,
     "LIKELY NO": 213,
     "SURE NO": 8,
     "LIKELY NOT SURE": 6711,
@@ -57,8 +58,8 @@
     "SURE NOT SURE": 526,
     "LIKELY bot YES": 12,
     "SURE bot YES": 476,
-    "SURE open": 30,
-    "LIKELY open": 122
+    "SURE open": 43,
+    "LIKELY open": 125
    },
    "lost-finds-nov1": {},
    "nearmiss-nov2": {
@@ -105,13 +106,13 @@
     "READY": 2,
     "approved": 2
    },
-   "queue rows": 2110,
+   "queue rows": 2112,
    "collector": {
     "asked": 113,
     "failed": 196,
     "evidence": 9,
     "no match": 417,
-    "no hit": 222273,
+    "no hit": 222291,
     "UNLIKELY": 21619,
     "LIKELY": 6404,
     "SURE": 1092
@@ -247,9 +248,9 @@
   "Hard look reader": {
    "areas": "",
    "last_run": "2026-11-02",
-   "made": " 2026-11-02; left 47",
+   "made": " 2026-11-02; left 0",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41467090705",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41467785785",
    "waiting_on": "chat 11 answers data/waiting/questions/hardlook.json"
   },
   "Intake: acres-engine.json": {
@@ -257,7 +258,7 @@
    "last_run": "2026-11-02",
    "made": "read by the acres bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41444145541",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41478272858",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: acres-us-ca-oct31.json": {
@@ -265,7 +266,7 @@
    "last_run": "2026-11-02",
    "made": "read by the acres bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41444145541",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41478272858",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: camping-ca-nov1.json": {
@@ -273,7 +274,7 @@
    "last_run": "2026-11-02",
    "made": "read by the camping bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452999013",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41478272858",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: camping-engine.json": {
@@ -281,7 +282,7 @@
    "last_run": "2026-11-02",
    "made": "read by the camping bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452999013",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41478272858",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: camping-mapping-bundle-nov1.json": {
@@ -289,7 +290,7 @@
    "last_run": "2026-11-02",
    "made": "read by the camping bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452999013",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41478272858",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: camping-us-oct31.json": {
@@ -297,7 +298,7 @@
    "last_run": "2026-11-02",
    "made": "read by the camping bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452999013",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41478272858",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: docs-found-carib-nov1.json": {
@@ -337,7 +338,7 @@
    "last_run": "2026-11-02",
    "made": "read by the layers bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463136448",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41491699956",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: external-sources-eu-haul5-trails.json": {
@@ -1081,7 +1082,7 @@
    "last_run": "2026-11-02",
    "made": "read by the parking bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41444145541",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41478272858",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: portals-engine.json": {
@@ -1225,7 +1226,7 @@
    "last_run": "2026-11-02",
    "made": "exit 3 2026-11-02 (US-KY,US-AK,US-AL,US-AR,US-AZ,US-CA,US-CO,US-CT,US-DC,US-DE,US-FL,US-GA,US-HI,US-IA,US-ID,US-IL,US-IN,US-KS,US-LA,US-MA,US-MD,US-ME,US-MI,US-MN,US-MO,US-MS,US-MT,US-NC,US-ND,US-NE,US-NH,US-NJ,US-NM,US-NV,US-NY,US-OH,US-OK,US-OR,US-PA,US-RI,US-SC,US-SD,US-TN,US-TX,US-UT,US-VA,US-VT",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41444145541",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41478272858",
    "waiting_on": "chat 11 grades tools-out engine/ per kind"
   },
   "Picture-map tracer (draft)": {
@@ -1414,7 +1415,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-02",
-   "made": "heartbeat 0 h old, 196 files waiting",
+   "made": "heartbeat 1 h old, 139 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
