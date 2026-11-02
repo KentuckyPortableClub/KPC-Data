@@ -1,0 +1,2568 @@
+{
+ "area": "US-DC",
+ "built": "2026-11-02",
+ "tool": "KPC-map-audit",
+ "parks": [
+  {
+   "ref": "US-0015",
+   "name": "Chesapeake and Ohio Canal National Historical Park",
+   "key_name": "Chesapeake and Ohio Canal National Historical Park",
+   "type": "National Historical Park",
+   "grade": "pin",
+   "pin": [
+    39.6007,
+    -77.8265
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "US-0653",
+   "name": "Constitution Gardens National Park",
+   "key_name": "Constitution Gardens National Park",
+   "type": "National Park",
+   "grade": "official",
+   "pin": [
+    38.8904,
+    -77.0436
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 42.8,
+   "records": [
+    {
+     "id": "padus#3533",
+     "name": "Constitution Gardens",
+     "type": "Other Designation Special Designation Area",
+     "category": "Fee",
+     "acres": 43.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3533&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3533"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 42.8,
+     "official_acres": 43.0,
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Constitution Gardens National Park",
+     "record_name": "Constitution Gardens"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-0654",
+   "name": "National Capital Parks - East Park",
+   "key_name": "National Capital Parks - East Park",
+   "type": "Park",
+   "grade": "official",
+   "pin": [
+    38.8746,
+    -76.9795
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 3908.0,
+   "records": [
+    {
+     "id": "padus#3536",
+     "name": "National Capital Parks",
+     "type": "Other Designation Special Designation Area",
+     "category": "Fee",
+     "acres": 3908.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3536&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3536"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 304.2
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 3908.0,
+     "official_acres": 3908.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "National Capital Parks - East Park",
+     "record_name": "National Capital Parks"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "SELF-INTERSECTION",
+     "pieces": 1066,
+     "flags": [
+      "SELF-INTERSECTION",
+      "SLIVERS",
+      "TINY HOLES"
+     ],
+     "note": "Ring Self-intersection[-76.9973262626343 38.8420157268575]; 305 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+    },
+    "T6": {
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-0825",
+       "name": "Frederick Douglass National Historic Site",
+       "share": 0.99
+      },
+      {
+       "ref": "US-13597",
+       "name": "George Mason National Memorial",
+       "share": 0.48
+      },
+      {
+       "ref": "US-13621",
+       "name": "Desert Shield and Desert Storm National Memorial",
+       "share": 0.35
+      }
+     ],
+     "count": 3
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 10,
+   "why": "MISMATCH: The record name 'National Capital Parks' does not match POTA's name 'National Capital Parks - East Park' (score 0.50) (+5 more flags)."
+  },
+  {
+   "ref": "US-0655",
+   "name": "National Mall and Memorial Parks National Park",
+   "key_name": "National Mall and Memorial Parks National Park",
+   "type": "Park",
+   "grade": "pin",
+   "pin": [
+    38.8897,
+    -77.0282
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "US-0656",
+   "name": "Rock Creek Park",
+   "key_name": "Rock Creek Park",
+   "type": "Park",
+   "grade": "official",
+   "pin": [
+    38.9596,
+    -77.0531
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 1743.0,
+   "records": [
+    {
+     "id": "padus#3541",
+     "name": "Rock Creek Park",
+     "type": "Other Designation Special Designation Area",
+     "category": "Fee",
+     "acres": 1743.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3541&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3541"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 1743.0,
+     "official_acres": 1743.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Rock Creek Park",
+     "record_name": "Rock Creek Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "SLIVERS",
+     "pieces": 3,
+     "flags": [
+      "SLIVERS"
+     ],
+     "note": "1 piece(s) under 10 m wide"
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "SLIVERS: The shape has problems: 1 piece(s) under 10 m wide."
+  },
+  {
+   "ref": "US-0657",
+   "name": "President's Park (White House) Park",
+   "key_name": "President's Park (White House) Park",
+   "type": "Park",
+   "grade": "pin",
+   "pin": [
+    38.8948,
+    -77.035
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "US-0670",
+   "name": "George Washington Memorial Parkway",
+   "key_name": "George Washington Memorial Parkway",
+   "type": "Memorial Parkway",
+   "grade": "official",
+   "pin": [
+    38.9618,
+    -77.1478
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 131.3,
+   "records": [
+    {
+     "id": "padus#3547",
+     "name": "George Washington Memorial Parkway",
+     "type": "Parkway Special Designation Area",
+     "category": "Fee",
+     "acres": 131.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3547&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#271109",
+     "name": "George Washington Memorial Parkway",
+     "type": "National Park National Park",
+     "category": "Fee",
+     "acres": 4.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=271109&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3547",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#271109"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NOTE",
+     "metres": 3850.2,
+     "was": "OUTSIDE",
+     "note": "the park spans several states / provinces (US-DC, US-MD, US-VA): POTA's one pin may be in another part (the key says MD)"
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 131.3,
+     "official_acres": 135.0,
+     "times": 1.03,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "George Washington Memorial Parkway",
+     "record_name": "George Washington Memorial Parkway"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "SLIVERS",
+     "pieces": 79,
+     "flags": [
+      "SLIVERS"
+     ],
+     "note": "60 piece(s) under 10 m wide"
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "record 3547: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record 271109: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+   ],
+   "status": "graded",
+   "score": 1,
+   "why": "SLIVERS: The shape has problems: 60 piece(s) under 10 m wide."
+  },
+  {
+   "ref": "US-0776",
+   "name": "Franklin Delano Roosevelt National Memorial",
+   "key_name": "Franklin Delano Roosevelt National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.8835,
+    -77.043
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 8.1,
+   "records": [
+    {
+     "id": "padus#3263",
+     "name": "Franklin Delano Roosevelt Memorial",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 8.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3263&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3263"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 8.1,
+     "official_acres": 8.0,
+     "times": 1.02,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Franklin Delano Roosevelt National Memorial",
+     "record_name": "Franklin Delano Roosevelt Memorial"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-0780",
+   "name": "Korean War Veterans National Memorial",
+   "key_name": "Korean War Veterans National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.8878,
+    -77.0478
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 1.5,
+   "records": [
+    {
+     "id": "padus#3266",
+     "name": "Korean War Veterans Memorial",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 2.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3266&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3266"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 1.5,
+     "official_acres": 2.0,
+     "times": 1.29,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Korean War Veterans National Memorial",
+     "record_name": "Korean War Veterans Memorial"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-0783",
+   "name": "Lincoln National Memorial",
+   "key_name": "Lincoln National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.8893,
+    -77.0502
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 7.2,
+   "records": [
+    {
+     "id": "padus#3268",
+     "name": "Lincoln Memorial",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 7.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3268&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3268"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 7.2,
+     "official_acres": 7.0,
+     "times": 1.03,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Lincoln National Memorial",
+     "record_name": "Lincoln Memorial"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-0784",
+   "name": "Lyndon Baines Johnson Memorial Grove on the Potomac National Memorial",
+   "key_name": "Lyndon Baines Johnson Memorial Grove on the Potomac National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.8779,
+    -77.0509
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 18.1,
+   "records": [
+    {
+     "id": "padus#3269",
+     "name": "Lyndon Baines Johnson Memorial Grove on the Potomac",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 18.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3269&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3269"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 18.1,
+     "official_acres": 18.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Lyndon Baines Johnson Memorial Grove on the Potomac National Memorial",
+     "record_name": "Lyndon Baines Johnson Memorial Grove on the Potomac"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-0785",
+   "name": "Martin Luther King Jr. National Memorial",
+   "key_name": "Martin Luther King Jr. National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.8864,
+    -77.0444
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 2.7,
+   "records": [
+    {
+     "id": "padus#3270",
+     "name": "Martin Luther King, Jr., Memorial",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 3.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3270&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3270"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 2.7,
+     "official_acres": 3.0,
+     "times": 1.1,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Martin Luther King Jr. National Memorial",
+     "record_name": "Martin Luther King, Jr., Memorial"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-0791",
+   "name": "Theodore Roosevelt Island National Memorial",
+   "key_name": "Theodore Roosevelt Island National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.8972,
+    -77.064
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 100.2,
+   "records": [
+    {
+     "id": "padus#3275",
+     "name": "Theodore Roosevelt Island",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 100.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3275&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3275"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 100.2,
+     "official_acres": 100.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Theodore Roosevelt Island National Memorial",
+     "record_name": "Theodore Roosevelt Island"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-0792",
+   "name": "Thomas Jefferson National Memorial",
+   "key_name": "Thomas Jefferson National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.8814,
+    -77.0365
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 19.6,
+   "records": [
+    {
+     "id": "padus#3276",
+     "name": "Thomas Jefferson Memorial",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 20.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3276&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3276"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 19.6,
+     "official_acres": 20.0,
+     "times": 1.02,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Thomas Jefferson National Memorial",
+     "record_name": "Thomas Jefferson Memorial"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-0793",
+   "name": "Vietnam Veterans National Memorial",
+   "key_name": "Vietnam Veterans National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.8913,
+    -77.0477
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 2.2,
+   "records": [
+    {
+     "id": "padus#3277",
+     "name": "Vietnam Veterans Memorial",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 2.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3277&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3277"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 2.2,
+     "official_acres": 2.0,
+     "times": 1.08,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Vietnam Veterans National Memorial",
+     "record_name": "Vietnam Veterans Memorial"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-0794",
+   "name": "Washington Monument National Memorial",
+   "key_name": "Washington Monument National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.8894,
+    -77.0355
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 104.4,
+   "records": [
+    {
+     "id": "padus#3278",
+     "name": "Washington Monument",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 104.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3278&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3278"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 104.4,
+     "official_acres": 104.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Washington Monument National Memorial",
+     "record_name": "Washington Monument"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-0795",
+   "name": "World War I National Memorial",
+   "key_name": "World War I National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.896,
+    -77.0329
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 2.0,
+   "records": [
+    {
+     "id": "padus#3279",
+     "name": "World War I Memorial",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 2.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3279&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3279"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 2.0,
+     "official_acres": 2.0,
+     "times": 1.02,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "World War I National Memorial",
+     "record_name": "World War I Memorial"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "DUPLICATE",
+     "parks": {
+      "US-0796": [
+       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3279"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-0796."
+  },
+  {
+   "ref": "US-0796",
+   "name": "World War II National Memorial",
+   "key_name": "World War II National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.8894,
+    -77.0402
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 10.6,
+   "records": [
+    {
+     "id": "padus#3280",
+     "name": "World War II Memorial",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 9.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3280&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#3279",
+     "name": "World War I Memorial",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 2.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3279&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3280",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3279"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 10.6,
+     "official_acres": 11.0,
+     "times": 1.04,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "World War II National Memorial",
+     "record_name": "World War II Memorial",
+     "worst_record": {
+      "name": "World War I Memorial",
+      "score": 0.667
+     }
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "DUPLICATE",
+     "parks": {
+      "US-0795": [
+       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3279"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-0795."
+  },
+  {
+   "ref": "US-0805",
+   "name": "Carter G. Woodson Home National Historic Site",
+   "key_name": "Carter G. Woodson Home National Historic Site",
+   "type": "National Historic Site",
+   "grade": "official",
+   "pin": [
+    38.9108,
+    -77.0241
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 0.1,
+   "records": [
+    {
+     "id": "padus#3115",
+     "name": "Carter G. Woodson Home National Historic Site",
+     "type": "National Historic Site Historic or Cultural Area",
+     "category": "Fee",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3115&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3115"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 1.6
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 0.1
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Carter G. Woodson Home National Historic Site",
+     "record_name": "Carter G. Woodson Home National Historic Site"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "NEAR: POTA's pin is 2 m outside the outline."
+  },
+  {
+   "ref": "US-0814",
+   "name": "Ford's Theatre National Historic Site",
+   "key_name": "Ford's Theatre National Historic Site",
+   "type": "National Historic Site",
+   "grade": "official",
+   "pin": [
+    38.8967,
+    -77.026
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 0.3,
+   "records": [
+    {
+     "id": "padus#3124",
+     "name": "Ford's Theatre National Historic Site",
+     "type": "National Historic Site Historic or Cultural Area",
+     "category": "Fee",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3124&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3124"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 12.9
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 0.3
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Ford's Theatre National Historic Site",
+     "record_name": "Ford's Theatre National Historic Site"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "SLIVERS",
+     "pieces": 2,
+     "flags": [
+      "SLIVERS"
+     ],
+     "note": "1 piece(s) under 10 m wide"
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 2,
+   "why": "NEAR: POTA's pin is 13 m outside the outline (+1 more flag)."
+  },
+  {
+   "ref": "US-0825",
+   "name": "Frederick Douglass National Historic Site",
+   "key_name": "Frederick Douglass National Historic Site",
+   "type": "National Historic Site",
+   "grade": "official",
+   "pin": [
+    38.863,
+    -76.9854
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 8.4,
+   "records": [
+    {
+     "id": "padus#3136",
+     "name": "Frederick Douglass National Historic Site",
+     "type": "National Historic Site Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 8.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3136&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3136"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 8.4,
+     "official_acres": 8.0,
+     "times": 1.05,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Frederick Douglass National Historic Site",
+     "record_name": "Frederick Douglass National Historic Site"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-0848",
+   "name": "Mary McLeod Bethune Council House National Historic Site",
+   "key_name": "Mary McLeod Bethune Council House National Historic Site",
+   "type": "National Historic Site",
+   "grade": "official",
+   "pin": [
+    38.9081,
+    -77.0307
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 0.1,
+   "records": [
+    {
+     "id": "padus#3157",
+     "name": "Mary McLeod Bethune Council House National Historic Site",
+     "type": "National Historic Site Historic or Cultural Area",
+     "category": "Fee",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3157&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3157"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 3.7
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 0.1
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Mary McLeod Bethune Council House National Historic Site",
+     "record_name": "Mary McLeod Bethune Council House National Historic Site"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "SLIVERS",
+     "pieces": 1,
+     "flags": [
+      "SLIVERS"
+     ],
+     "note": "1 piece(s) under 10 m wide"
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 2,
+   "why": "NEAR: POTA's pin is 4 m outside the outline (+1 more flag)."
+  },
+  {
+   "ref": "US-0853",
+   "name": "Pennsylvania Avenue National Historic Site",
+   "key_name": "Pennsylvania Avenue National Historic Site",
+   "type": "National Historic Site",
+   "grade": "official",
+   "pin": [
+    38.8958,
+    -77.0313
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 18.2,
+   "records": [
+    {
+     "id": "padus#3162",
+     "name": "Pennsylvania Avenue National Historic Site",
+     "type": "National Historic Site Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 18.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3162&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3162"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 18.2,
+     "official_acres": 18.0,
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Pennsylvania Avenue National Historic Site",
+     "record_name": "Pennsylvania Avenue National Historic Site"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "SLIVERS",
+     "pieces": 23,
+     "flags": [
+      "SLIVERS"
+     ],
+     "note": "2 piece(s) under 10 m wide"
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "SLIVERS: The shape has problems: 2 piece(s) under 10 m wide."
+  },
+  {
+   "ref": "US-13543",
+   "name": "US National Arboretum Botanical Gardens",
+   "key_name": "US National Arboretum Botanical Gardens",
+   "type": "Botanical Gardens",
+   "grade": "official",
+   "pin": [
+    38.9064,
+    -76.9694
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 380.3,
+   "records": [
+    {
+     "id": "padus#5957",
+     "name": "National Arboretum",
+     "type": "FL Federal Other or Unknown",
+     "category": "Fee",
+     "acres": 380.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=5957&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#5957"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 21.7
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 380.3,
+     "official_acres": 380.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.25,
+     "pota_name": "US National Arboretum Botanical Gardens",
+     "record_name": "National Arboretum"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "SELF-INTERSECTION",
+     "pieces": 92,
+     "flags": [
+      "SELF-INTERSECTION",
+      "SLIVERS",
+      "TINY HOLES"
+     ],
+     "note": "Ring Self-intersection[-76.969578657269 38.9116879156705]; 37 piece(s) under 10 m wide; 18 hole(s) under 100 m2"
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 7,
+   "why": "MISMATCH: The record name 'National Arboretum' does not match POTA's name 'US National Arboretum Botanical Gardens' (score 0.25) (+4 more flags)."
+  },
+  {
+   "ref": "US-13597",
+   "name": "George Mason National Memorial",
+   "key_name": "George Mason National Memorial",
+   "type": "National Memorial",
+   "grade": "pin",
+   "pin": [
+    38.8796,
+    -77.0392
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "US-13621",
+   "name": "Desert Shield and Desert Storm National Memorial",
+   "key_name": "Desert Shield and Desert Storm National Memorial",
+   "type": "National Memorial",
+   "grade": "pin",
+   "pin": [
+    38.8915,
+    -77.0512
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "US-4564",
+   "name": "Potomac Heritage Trail National Scenic Trail",
+   "key_name": "Potomac Heritage Trail National Scenic Trail",
+   "type": "National Scenic Trail",
+   "grade": "official",
+   "pin": [
+    38.6148,
+    -77.2748
+   ],
+   "outline_from": [
+    "trails/US-4564.json"
+   ],
+   "acres_drawn": null,
+   "records": [
+    {
+     "id": "trl:US-4564",
+     "name": "Potomac Heritage Trail National Scenic Trail",
+     "type": "trail",
+     "layer": "trails/US-4564.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Potomac Heritage Trail National Scenic Trail",
+     "record_name": "Potomac Heritage Trail National Scenic Trail"
+    },
+    "T4": {
+     "park_kind": "trail",
+     "record_kind": "trail",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "CAN'T TELL: no layer known for record id 'trl…'"
+   ],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-4567",
+   "name": "Captain John Smith Chesapeake National Historic Trail",
+   "key_name": "Captain John Smith Chesapeake National Historic Trail",
+   "type": "National Historic Trail",
+   "grade": "official",
+   "pin": [
+    38.9049,
+    -77.0681
+   ],
+   "outline_from": [
+    "trails/US-4567.json"
+   ],
+   "acres_drawn": null,
+   "records": [
+    {
+     "id": "trl:US-4567",
+     "name": "Captain John Smith Chesapeake National Historic Trail",
+     "type": "trail",
+     "layer": "trails/US-4567.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 305.3
+    },
+    "T2": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Captain John Smith Chesapeake National Historic Trail",
+     "record_name": "Captain John Smith Chesapeake National Historic Trail"
+    },
+    "T4": {
+     "park_kind": "trail",
+     "record_kind": "trail",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "CAN'T TELL: no layer known for record id 'trl…'"
+   ],
+   "status": "graded",
+   "score": 1,
+   "why": "NEAR: POTA's pin is 305 m outside the outline."
+  },
+  {
+   "ref": "US-4581",
+   "name": "Star-Spangled Banner National Historic Trail",
+   "key_name": "Star-Spangled Banner National Historic Trail",
+   "type": "National Historic Trail",
+   "grade": "official",
+   "pin": [
+    39.2652,
+    -76.5836
+   ],
+   "outline_from": [
+    "trails/US-4581.json"
+   ],
+   "acres_drawn": null,
+   "records": [
+    {
+     "id": "trl:US-4581",
+     "name": "Star-Spangled Banner National Historic Trail",
+     "type": "trail",
+     "layer": "trails/US-4581.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Star-Spangled Banner National Historic Trail",
+     "record_name": "Star-Spangled Banner National Historic Trail"
+    },
+    "T4": {
+     "park_kind": "trail",
+     "record_kind": "trail",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "CAN'T TELL: no layer known for record id 'trl…'"
+   ],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-4582",
+   "name": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "key_name": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "type": "National Historic Trail",
+   "grade": "official",
+   "pin": [
+    41.312,
+    -73.9709
+   ],
+   "outline_from": [
+    "trails/US-4582.json"
+   ],
+   "acres_drawn": null,
+   "records": [
+    {
+     "id": "trl:US-4582",
+     "name": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+     "type": "trail",
+     "layer": "trails/US-4582.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+     "record_name": "Washington-Rochambeau Revolutionary Route National Historic Trail"
+    },
+    "T4": {
+     "park_kind": "trail",
+     "record_kind": "trail",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "CAN'T TELL: no layer known for record id 'trl…'"
+   ],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-7499",
+   "name": "Dwight D. Eisenhower National Memorial",
+   "key_name": "Dwight D. Eisenhower National Memorial",
+   "type": "National Memorial",
+   "grade": "official",
+   "pin": [
+    38.887,
+    -77.0187
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 1.2,
+   "records": [
+    {
+     "id": "padus#3259",
+     "name": "Dwight D. Eisenhower Memorial",
+     "type": "National Memorial Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 1.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3259&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3259"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 1.2,
+     "official_acres": 1.0,
+     "times": 1.23,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Dwight D. Eisenhower National Memorial",
+     "record_name": "Dwight D. Eisenhower Memorial"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-7891",
+   "name": "African American Civil War National Memorial",
+   "key_name": "African American Civil War National Memorial",
+   "type": "National Memorial",
+   "grade": "pin",
+   "pin": [
+    38.9165,
+    -77.0259
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "US-7892",
+   "name": "Belmont-Paul Women's Equality National Monument",
+   "key_name": "Belmont-Paul Women's Equality National Monument",
+   "type": "National Monument",
+   "grade": "official",
+   "pin": [
+    38.8923,
+    -77.0037
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 0.3,
+   "records": [
+    {
+     "id": "padus#3340",
+     "name": "Belmont-Paul Women's Equality National Monument",
+     "type": "National Monument National Monument",
+     "category": "Fee",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3340&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3340"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 0.3
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Belmont-Paul Women's Equality National Monument",
+     "record_name": "Belmont-Paul Women's Equality National Monument"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-9898",
+   "name": "Mount Vernon National Historic Trail",
+   "key_name": "Mount Vernon National Historic Trail",
+   "type": "National Historic Trail",
+   "grade": "pin",
+   "pin": [
+    38.793,
+    -77.0496
+   ],
+   "outline_from": [
+    "trails/US-9898.json"
+   ],
+   "acres_drawn": null,
+   "records": [
+    {
+     "id": "trl:US-9898",
+     "name": "Mount Vernon National Historic Trail",
+     "type": "trail",
+     "layer": "trails/US-9898.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Mount Vernon National Historic Trail",
+     "record_name": "Mount Vernon National Historic Trail"
+    },
+    "T4": {
+     "park_kind": "trail",
+     "record_kind": "trail",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "detail_m": 0.09,
+     "declared_m": null,
+     "coordinate_step_m": 0.09,
+     "median_spacing_m": 0.0,
+     "flag": "PASS"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-9901",
+   "name": "Civil War Defenses of Washington National Historic Trail",
+   "key_name": "Civil War Defenses of Washington National Historic Trail",
+   "type": "National Historic Trail",
+   "grade": "pin",
+   "pin": [
+    38.9346,
+    -77.126
+   ],
+   "outline_from": [
+    "trails/US-9901.json"
+   ],
+   "acres_drawn": null,
+   "records": [
+    {
+     "id": "trl:US-9901",
+     "name": "Civil War Defenses of Washington National Historic Trail",
+     "type": "trail",
+     "layer": "trails/US-9901.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 82.3
+    },
+    "T2": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Civil War Defenses of Washington National Historic Trail",
+     "record_name": "Civil War Defenses of Washington National Historic Trail"
+    },
+    "T4": {
+     "park_kind": "trail",
+     "record_kind": "trail",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "detail_m": 0.09,
+     "declared_m": null,
+     "coordinate_step_m": 0.09,
+     "median_spacing_m": 0.0,
+     "flag": "PASS"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "NEAR: POTA's pin is 82 m outside the outline."
+  }
+ ]
+}
