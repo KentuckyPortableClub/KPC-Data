@@ -1,7 +1,113 @@
 {
- "checked": "2026-11-02T17:52Z",
+ "checked": "2026-11-02T17:53Z",
  "switched_on": false,
  "results": [
+  {
+   "path": "data/ca-key/CA-AB.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-BC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-NL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-NS.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-NT.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-ON.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-QC.json",
+   "kind": "key",
+   "why": [
+    "F-O1 outlines 450 -> 438 (more than 1% lost)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/ca-key/CA-SK.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/CA-YT.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/answers-applied.json",
+   "kind": "key",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/hardlook-joins.json",
+   "kind": "key",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/index.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/layers.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/ca-key/why-not.json",
+   "kind": "key",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
   {
    "path": "data/campinfo/US-MA.json",
    "kind": "campinfo",
@@ -582,15 +688,13 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-CT.json",
+   "path": "data/fers/US-CT.json.gz",
    "kind": "fers",
    "why": [
     "F-2 candidates 26 -> 37 (over 30% change)",
     "F-2 11 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-12620+US-4561, US-1682+US-4556, US-1697+US-4561"
    ],
-   "notes": [
-    "replaces live data/fers/US-CT.json.gz (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
@@ -613,13 +717,6 @@
    ],
    "notes": [],
    "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-IA.json",
-   "kind": "fers",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-ID.json.gz",
@@ -673,21 +770,21 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-MD.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 NOT SURE 8 -> 4 (over 30% change)"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
    "path": "data/fers/US-MI.json.gz",
    "kind": "fers",
    "why": [
     "F-2 candidates 82 -> 108 (over 30% change)",
     "F-2 NOT SURE 9 -> 34 (over 30% change)",
     "F-2 39 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, US-10716+US-4239"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-MN.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -811,10 +908,11 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-SC.json",
+   "path": "data/fers/US-SC.json.gz",
    "kind": "fers",
    "why": [
-    "F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 127 rows for 234 (over 10% fewer)"
+    "F-2 candidates 26 -> 17 (over 30% change)",
+    "F-2 only 16 of 26 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -887,14 +985,12 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-WV.json",
+   "path": "data/fers/US-WV.json.gz",
    "kind": "fers",
    "why": [
     "F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950"
    ],
-   "notes": [
-    "replaces live data/fers/US-WV.json.gz (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
