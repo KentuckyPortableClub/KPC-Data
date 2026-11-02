@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 125 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 130 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -87,30 +87,35 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-02 | 0 | data/docs/US-WY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-02 | 0 | data/fers/US-AK.json.gz | HOLD | F-2 NOT SURE 5 -> 8 (over 30% change); F-2 10 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. CA-0044+US-0069, US-0003+US-0878, US-0026+US-0889 |
 | 2026-11-02 | 0 | data/fers/US-CA.json.gz | HOLD | F-2 candidates 66 -> 133 (over 30% change); F-2 77 new candidate pairs since the live file (over 10% of 66): a person looks at them first, e.g. US-0046+US-4562, US-0049+US-4562, US-0049+US-4566 |
+| 2026-11-02 | 0 | data/fers/US-CT.json | HOLD | F-2 candidates 26 -> 37 (over 30% change); F-2 11 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-12620+US-4561, US-1682+US-4556, US-1697+US-4561 |
 | 2026-11-02 | 0 | data/fers/US-ID.json.gz | HOLD | F-2 16 new candidate pairs since the live file (over 10% of 46): a person looks at them first, e.g. US-0274+US-4566, US-0274+US-4576, US-0276+US-4576 |
 | 2026-11-02 | 0 | data/fers/US-MT.json.gz | HOLD | F-2 candidates 23 -> 41 (over 30% change); F-2 NOT SURE 7 -> 4 (over 30% change); F-2 18 new candidate pairs since the live file (over 10% of 23): a person looks at them first, e.g. US-0028+US-0883, US-0028+US-4558, US-0 |
 | 2026-11-02 | 0 | data/fers/US-ND.json | HOLD | F-4 data/fers/US-ND.json replaces live data/fers/US-ND.json.gz (other format) with 48 rows for 83 (over 10% fewer) |
 | 2026-11-02 | 0 | data/fers/US-NM.json.gz | HOLD | F-2 only 6 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 30 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US- |
 | 2026-11-02 | 0 | data/fers/US-NY.json.gz | HOLD | F-2 candidates 32 -> 86 (over 30% change); F-2 only 19 of 32 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 67 new candidate pairs since the live file (over 10%  |
 | 2026-11-02 | 0 | data/fers/US-OR.json.gz | HOLD | F-2 candidates 62 -> 91 (over 30% change); F-2 33 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0199+US-4566, US-0510+US-4566, US-10002+US-4576 |
+| 2026-11-02 | 0 | data/fers/US-SC.json | HOLD | F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 127 rows for 234 (over 10% fewer) |
 | 2026-11-02 | 0 | data/fers/US-UT.json.gz | HOLD | F-2 candidates 62 -> 98 (over 30% change); F-2 37 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0072+US-6010, US-0558+US-4578, US-0645+US-4575; F-S3 3 live rows whose two |
 | 2026-11-02 | 0 | data/fers/US-WA.json.gz | HOLD | F-2 candidates 40 -> 196 (over 30% change); F-2 158 new candidate pairs since the live file (over 10% of 40): a person looks at them first, e.g. US-0055+US-4563, US-0056+US-4563, US-0575+US-12250; F-S3 5 live rows whose  |
 | 2026-11-02 | 0 | data/fers/US-WI.json | HOLD | F-2 candidates 27 -> 3 (over 30% change); F-2 NOT SURE 8 -> 105 (over 30% change); F-2 only 3 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer mi |
+| 2026-11-02 | 0 | data/fers/US-WV.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950 |
 | 2026-11-02 | 0 | data/fers/US-WY.json.gz | HOLD | F-2 candidates 45 -> 72 (over 30% change); F-2 NOT SURE 46 -> 12 (over 30% change); F-2 only 29 of 45 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 43 new candi |
 | ? | ? | data/fers/CA-AB.json.gz | PASS |  |
+| ? | ? | data/fers/CA-BC.json.gz | PASS |  |
 | ? | ? | data/fers/CA-NT.json | PASS |  |
+| ? | ? | data/fers/CA-ON.json.gz | PASS |  |
 | ? | ? | data/fers/CA-QC.json.gz | PASS |  |
 | ? | ? | data/fers/US-AL.json | PASS |  |
-| ? | ? | data/fers/US-CT.json | ? |  |
+| ? | ? | data/fers/US-CO.json.gz | PASS |  |
 | ? | ? | data/fers/US-IA.json | PASS |  |
 | ? | ? | data/fers/US-IN.json.gz | PASS |  |
 | ? | ? | data/fers/US-KS.json | PASS |  |
 | ? | ? | data/fers/US-KY.json.gz | PASS |  |
+| ? | ? | data/fers/US-MD.json.gz | HOLD | F-2 candidates 65 -> 140 (over 30% change); F-2 only 45 of 65 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 95 new candidate pairs since the live file (over 10% |
+| ? | ? | data/fers/US-MN.json.gz | HOLD | F-2 NOT SURE 9 -> 18 (over 30% change); F-2 33 new candidate pairs since the live file (over 10% of 103): a person looks at them first, e.g. US-0371+US-4239, US-11151+US-6466, US-11152+US-4490; F-S3 2 live rows whose two |
 | ? | ? | data/fers/US-MS.json | HOLD | F-2 NOT SURE 6 -> 9 (over 30% change); F-2 8 new candidate pairs since the live file (over 10% of 5): a person looks at them first, e.g. US-0390+US-4498, US-2547+US-7119, US-4493+US-7114 |
-| ? | ? | data/fers/US-NH.json.gz | PASS |  |
+| ? | ? | data/fers/US-NH.json | ? |  |
 | ? | ? | data/fers/US-NV.json.gz | PASS |  |
-| ? | ? | data/fers/US-SC.json | ? |  |
-| ? | ? | data/fers/US-WV.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950 |
 | ? | ? | data/hours/US-KY.json | PASS |  |
 | 2026-11-01 | 1 | data/trails/finds-lines-report.json | HOLD | F-T1 the line has no points |
 | ? | ? | data/us-key/answers-applied.json | PASS |  |
@@ -142,8 +147,9 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | gis-hunter.json | 0 | 534 |
 | hardlook.json | 0 | 0 |
 | key-pieces.json | 0 | 307 |
-| layers.json | 152 | 25836 |
+| layers.json | 158 | 25852 |
 | lost-finds-nov1.json | 0 | 0 |
+| map-audit.json | 2097 | 2097 |
 | nearmiss-nov2.json | 45 | 45 |
 | no-recheck.json | 0 | 13 |
 | not-sure-for-chat9.json | 146 | 146 |
