@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-02T14:17Z",
+ "checked": "2026-11-02T16:01Z",
  "switched_on": false,
  "results": [
   {
@@ -521,15 +521,56 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/fers/CA-BC.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-NB.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-NU.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-ON.json.gz",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-YT.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/fers/US-AK.json.gz",
    "kind": "fers",
    "why": [
     "F-2 NOT SURE 5 -> 8 (over 30% change)",
-    "F-2 10 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. CA-0044+US-0069, US-0003+US-0878, US-0026+US-0889",
-    "F-K known 2-fer missing: US-0029 + US-12607"
+    "F-2 10 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. CA-0044+US-0069, US-0003+US-0878, US-0026+US-0889"
    ],
    "notes": [],
    "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-AL.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-AR.json",
@@ -563,6 +604,13 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/fers/US-CO.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/fers/US-CT.json.gz",
    "kind": "fers",
    "why": [
@@ -578,8 +626,7 @@
    "why": [
     "F-2 candidates 145 -> 192 (over 30% change)",
     "F-2 NOT SURE 41 -> 24 (over 30% change)",
-    "F-2 56 new candidate pairs since the live file (over 10% of 145): a person looks at them first, e.g. US-0235+US-6296, US-0240+US-3620, US-0247+US-3660",
-    "F-K known 2-fer missing: US-3627 + US-4559"
+    "F-2 56 new candidate pairs since the live file (over 10% of 145): a person looks at them first, e.g. US-0235+US-6296, US-0240+US-3620, US-0247+US-3660"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -597,8 +644,7 @@
    "path": "data/fers/US-ID.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 16 new candidate pairs since the live file (over 10% of 46): a person looks at them first, e.g. US-0274+US-4566, US-0274+US-4576, US-0276+US-4576",
-    "F-K known 2-fer missing: US-4481 + US-7362"
+    "F-2 16 new candidate pairs since the live file (over 10% of 46): a person looks at them first, e.g. US-0274+US-4566, US-0274+US-4576, US-0276+US-4576"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -620,12 +666,17 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/fers/US-KY.json.gz",
+   "path": "data/fers/US-KS.json",
    "kind": "fers",
    "why": [],
-   "notes": [
-    "replaces live data/fers/US-KY.json (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/US-KY.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
    "verdict": "PASS"
   },
   {
@@ -649,7 +700,7 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-MS.json",
+   "path": "data/fers/US-MO.json",
    "kind": "fers",
    "why": [],
    "notes": [],
@@ -707,8 +758,7 @@
    "kind": "fers",
    "why": [
     "F-2 only 6 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 30 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-0012+US-4516, US-0458+US-4568, US-0462+US-4568",
-    "F-K known 2-fer missing: US-4558 + US-4575"
+    "F-2 30 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-0012+US-4516, US-0458+US-4568, US-0462+US-4568"
    ],
    "notes": [
     "replaces live data/fers/US-NM.json (same file, other format): promotion removes the old name"
@@ -728,9 +778,7 @@
    "why": [
     "F-2 candidates 32 -> 86 (over 30% change)",
     "F-2 only 19 of 32 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 67 new candidate pairs since the live file (over 10% of 32): a person looks at them first, e.g. US-0456+US-4556, US-0681+US-9140, US-0931+US-4239",
-    "F-K known 2-fer missing: US-2028 + US-2128",
-    "F-K known 2-fer missing: US-2028 + US-2061"
+    "F-2 67 new candidate pairs since the live file (over 10% of 32): a person looks at them first, e.g. US-0456+US-4556, US-0681+US-9140, US-0931+US-4239"
    ],
    "notes": [
     "replaces live data/fers/US-NY.json (same file, other format): promotion removes the old name"
@@ -830,12 +878,16 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-WI.json.gz",
+   "path": "data/fers/US-WI.json",
    "kind": "fers",
    "why": [
-    "F-2 NOT SURE 8 -> 2 (over 30% change)"
+    "F-2 candidates 27 -> 3 (over 30% change)",
+    "F-2 NOT SURE 8 -> 105 (over 30% change)",
+    "F-2 only 3 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
-   "notes": [],
+   "notes": [
+    "replaces live data/fers/US-WI.json.gz (same file, other format): promotion removes the old name"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -851,11 +903,10 @@
    "path": "data/fers/US-WY.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 45 -> 74 (over 30% change)",
+    "F-2 candidates 45 -> 72 (over 30% change)",
     "F-2 NOT SURE 46 -> 12 (over 30% change)",
     "F-2 only 29 of 45 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 45 new candidate pairs since the live file (over 10% of 45): a person looks at them first, e.g. US-0031+US-4535, US-0070+US-4558, US-0070+US-4574",
-    "F-K known 2-fer missing: US-6170 + US-6173"
+    "F-2 43 new candidate pairs since the live file (over 10% of 45): a person looks at them first, e.g. US-0031+US-4535, US-0070+US-4558, US-0070+US-4574"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -863,6 +914,118 @@
   {
    "path": "data/hours/US-KY.json",
    "kind": "hours",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-10303.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-10418.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-10419.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-10420.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-10422.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-10715.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-10794.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-10876.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-10886.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-10966.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-11005.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-11011.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-11121.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-11127.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-11164.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-11167.json",
+   "kind": "trails",
    "why": [],
    "notes": [],
    "verdict": "PASS"
@@ -877,6 +1040,13 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/trails/US-11758.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/trails/US-11905.json",
    "kind": "trails",
    "why": [
@@ -885,6 +1055,216 @@
    ],
    "notes": [],
    "verdict": "HOLD"
+  },
+  {
+   "path": "data/trails/US-12096.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-12349.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-13229.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-13461.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-13490.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-13571.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-5787.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-5892.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-5898.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-5918.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-5982.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-5986.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-5988.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6013.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6015.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6016.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6036.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6038.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6039.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6054.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6055.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6056.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6061.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6068.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6082.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6083.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-6143.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-8322.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-9898.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/trails/US-9901.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
   },
   {
    "path": "data/trails/US-9905.json",
@@ -906,6 +1286,13 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/trails/US-9933.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/trails/finds-lines-report.json",
    "kind": "trails",
    "why": [
@@ -919,9 +1306,11 @@
   {
    "path": "data/trails/index.json",
    "kind": "trails",
-   "why": [],
+   "why": [
+    "F-4 checker error: AttributeError: 'list' object has no attribute 'get'"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/truth/US-CT.json",
@@ -1457,26 +1846,12 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/world-key/AU.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/world-key/AX.json",
    "kind": "key",
    "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/BE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
    "verdict": "PASS"
   },
   {
@@ -1606,27 +1981,6 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/world-key/CZ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/DE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/DK.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/world-key/DO.json",
    "kind": "key",
    "why": [],
@@ -1642,13 +1996,6 @@
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/ES.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
    "verdict": "PASS"
   },
   {
@@ -1686,15 +2033,6 @@
    ],
    "notes": [],
    "verdict": "HOLD"
-  },
-  {
-   "path": "data/world-key/GE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
   },
   {
    "path": "data/world-key/GL.json",
@@ -1742,13 +2080,6 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/world-key/HU.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/world-key/ID.json",
    "kind": "key",
    "why": [],
@@ -1758,26 +2089,12 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/world-key/IE.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/world-key/IM.json",
    "kind": "key",
    "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/IT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
    "verdict": "PASS"
   },
   {
@@ -1809,15 +2126,6 @@
   },
   {
    "path": "data/world-key/LR.json",
-   "kind": "key",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/MK.json",
    "kind": "key",
    "why": [],
    "notes": [
@@ -1880,32 +2188,7 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/world-key/NI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/NO.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/world-key/NZ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/OM.json",
    "kind": "key",
    "why": [],
    "notes": [
@@ -1950,17 +2233,10 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/world-key/PT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/world-key/PY.json",
    "kind": "key",
    "why": [
-    "F-O2 5 of 30 outlines carry a layer name that shares no word with the park (17%; live 0/0): outlines swapped to other parks?"
+    "F-O2 5 of 29 outlines carry a layer name that shares no word with the park (17%; live 0/0): outlines swapped to other parks?"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -1983,13 +2259,6 @@
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/world-key/SI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
    "verdict": "PASS"
   },
   {
@@ -2049,58 +2318,74 @@
   {
    "path": "data/wwff/CTFF.json",
    "kind": "wwff",
-   "why": [],
+   "why": [
+    "F-4 checker error: AttributeError: 'list' object has no attribute 'get'"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/wwff/D4FF.json",
    "kind": "wwff",
-   "why": [],
+   "why": [
+    "F-4 checker error: AttributeError: 'list' object has no attribute 'get'"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/wwff/KFF.json",
    "kind": "wwff",
-   "why": [],
+   "why": [
+    "F-4 checker error: AttributeError: 'list' object has no attribute 'get'"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/wwff/OMFF.json",
    "kind": "wwff",
-   "why": [],
+   "why": [
+    "F-4 checker error: AttributeError: 'list' object has no attribute 'get'"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/wwff/ONFF.json",
    "kind": "wwff",
-   "why": [],
+   "why": [
+    "F-4 checker error: AttributeError: 'list' object has no attribute 'get'"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/wwff/PYFF.json",
    "kind": "wwff",
-   "why": [],
+   "why": [
+    "F-4 checker error: AttributeError: 'list' object has no attribute 'get'"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/wwff/SMFF.json",
    "kind": "wwff",
-   "why": [],
+   "why": [
+    "F-4 checker error: AttributeError: 'list' object has no attribute 'get'"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/wwff/VEFF.json",
    "kind": "wwff",
-   "why": [],
+   "why": [
+    "F-4 checker error: AttributeError: 'list' object has no attribute 'get'"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   }
  ]
 }
