@@ -297742,6 +297742,12 @@
    "why": "shared river, whitefish; extra: park sandy, till / record -",
    "record_name": "WHITEFISH RIVER CONSERVATION RESERVE",
    "acres": 9404
+  },
+  "CA-6132|https://openmaps.gov.bc.ca/geo/pub/wfs": {
+   "ref": "CA-6132",
+   "kind": "Parks",
+   "result": "failed",
+   "why": "RuntimeError: answer 400"
   }
  },
  "layers": {
@@ -304585,7 +304591,7 @@
    "new_to_us": true,
    "host": "openmaps.gov.bc.ca",
    "error": "RuntimeError: answer 400",
-   "tries": 2
+   "tries": 3
   },
   "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29": {
    "new_to_us": false,
@@ -304613,7 +304619,7 @@
   "Canada Parks LIKELY": 142,
   "Canada Parks SURE": 723,
   "Canada Parks UNLIKELY": 198,
-  "Canada Parks failed": 838,
+  "Canada Parks failed": 839,
   "Canada Parks no hit": 787,
   "Canada Parks split": 21,
   "Canada Trail LIKELY": 7,
@@ -304640,7 +304646,7 @@
   "World Parks split": 822,
   "World Trail UNLIKELY": 1,
   "World Trail no hit": 1,
-  "pairs left": 1,
+  "pairs left": 0,
   "new layers": 817
  },
  "built": "2026-11-02",

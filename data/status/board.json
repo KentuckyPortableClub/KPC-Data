@@ -14,7 +14,7 @@
    "last_run": "2026-11-02",
    "made": "waiting for audit 23, waiting for audit answers 42",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41524396953",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41537829302",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -134,7 +134,7 @@
    "last_run": "2026-11-02",
    "made": "read by the layers bot (2026-11-02)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41519852946",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41537880021",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: external-sources-eu-haul5-trails.json": {
@@ -1006,7 +1006,7 @@
    "last_run": "2026-11-02",
    "made": "LAYER lines + crawler layers pin-tested",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41491699956",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41538434335",
    "waiting_on": "chat 11 answers data/waiting/questions/layers.json"
   },
   "Map audit": {
@@ -1052,9 +1052,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-02",
-   "made": "2026-11-02 18:17 UTC: 1 skipped run(s) started again: kpc-youtube-comments.yml (missed Nov 02 13:36 UTC, NOT restarted: its next scheduled run catches up)",
+   "made": "2026-11-02 22:30 UTC: 8 skipped run(s) started again: kpc-closures.yml (missed Nov 02 18:38 UTC); kpc-collector.yml (missed Nov 02 20:16 UTC); kpc-copy-from-links.yml (missed Nov 02 21:11 UTC); kpc-eu-alerts.yml (missed Nov 02 18:40 UTC); kpc-flow.yml (missed Nov 02 21:46 UTC); kpc-waiting-room.yml ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41499045429",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41537829302",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1150,7 +1150,7 @@
    "last_run": "2026-11-02",
    "made": "1 areas read, 1 saved; see data/closures/review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41537876236",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452437501",
    "waiting_on": "chat 11 grades the Kentucky side-by-side; Brandon GO before any merge (CL-5)"
   },
   "hours fees permits bot": {
@@ -1166,7 +1166,7 @@
    "last_run": "2026-11-02",
    "made": "NOs: 313 of 313 NOs landed; 0 missing; 13 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-02.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41491918659",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41537909210",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1219,7 +1219,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-02",
-   "made": "heartbeat 3 h old, 130 files waiting",
+   "made": "heartbeat 0 h old, 138 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
