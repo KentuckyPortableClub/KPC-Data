@@ -94,13 +94,43 @@ jobs:
           import json, os
           ap = json.load(open('data/waiting/approved.json')) if os.path.exists('data/waiting/approved.json') else {}
           out = []
+          # Nov 2 12:40 PM (HQ ruling on chat 2's stale Quebec copy): KEYS FLOW ONE WAY, KPC-Data -> website. The key bots BUILD in
+          # KPC-Links, so only key FILES a build has CHANGED since the last copy come over (data/waiting/key-files-seen.json = the
+          # hash of every KPC-Links key file at its last copy); an unchanged KPC-Links copy is an old mirror and never replaces
+          # KPC-Data's file (it is put back here). First run: everything recorded, nothing copied.
+          import hashlib, subprocess
+          SP = 'data/waiting/key-files-seen.json'
+          first = not os.path.exists(SP)
+          seen = {} if first else json.load(open(SP))
+          def back(rel):   # put KPC-Data's own file back (or remove a file KPC-Data does not have)
+              if subprocess.run(['git', 'checkout', '-q', 'HEAD', '--', rel], capture_output=True).returncode:
+                  try: os.remove(rel)
+                  except OSError: pass
+          newk, hashes = {}, {}
           for k in ('us-key', 'ca-key', 'world-key'):
+              d = f'../links/data/{k}'
+              for f in sorted(os.listdir(d)) if os.path.isdir(d) else []:
+                  rel = f'data/{k}/{f}'
+                  if not os.path.isfile('../links/' + rel): continue
+                  h = hashes[rel] = hashlib.sha1(open('../links/' + rel, 'rb').read()).hexdigest()
+                  if not first and f != 'index.json' and seen.get(rel) != h: newk.setdefault(k, []).append(f)
+              if first: seen.update({r: h for r, h in hashes.items() if r.startswith(f'data/{k}/')})
+          for k in ('us-key', 'ca-key', 'world-key'):
+              n = newk.get(k, [])
+              print(f'::notice title=Copy::{k}: {len(n)} key file(s) changed by a build since the last copy' + (f' ({" ".join(n[:12])})' if n else ': nothing comes over (keys flow KPC-Data -> website)'), flush=True)
+              if not n: continue
               try: hb = json.load(open(f'data/waiting/in/data/{k}/index.json')).get('build')
               except Exception: hb = None
               v = [str(it.get('chat11') or '').upper() for it in (ap.get('items') or []) if isinstance(it, dict) and it.get('what') == k and str(it.get('build') or '') == str(hb)]
               if hb and not (v and k != 'us-key' and v[-1].lstrip('KEY ').startswith('NO')):
-                  print(f'::notice title=Copy::{k} build {hb} is held for chat 11 / its release: not replaced', flush=True); continue
+                  print(f'::notice title=Copy::{k} build {hb} is held for chat 11 / its release: not replaced (comes over once it is graded)', flush=True); continue
+              d = f'../links/data/{k}'
+              for f in os.listdir(d):
+                  rel = f'data/{k}/{f}'
+                  if f in n: seen[rel] = hashes[rel]
+                  elif f != 'index.json': back(rel)   # unchanged = an old mirror: KPC-Data's own file stays
               out.append(f'data/{k}')
+          json.dump(seen, open(SP, 'w'), indent=0, sort_keys=True)
           print('DIRS=' + ' '.join(out))
           PY
           )
